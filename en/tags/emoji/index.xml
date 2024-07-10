@@ -1,8 +1,0 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Emoji - Tag - LoveIt</title>
-        <link>http://localhost:1313/en/tags/emoji/</link>
-        <description>Emoji - Tag - LoveIt</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>chen_q_i@163.com (chenqi)</managingEditor>
-            <webMaster>chen_q_i@163.com (chenqi)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="http://localhost:1313/en/tags/emoji/" rel="self" type="application/rss+xml" /></channel>
-</rss>
