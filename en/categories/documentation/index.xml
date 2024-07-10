@@ -1,0 +1,8 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Documentation - Category - LoveIt</title>
+        <link>https://chenqi199.github.io/en/categories/documentation/</link>
+        <description>Documentation - Category - LoveIt</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>chen_q_i@163.com (chenqi)</managingEditor>
+            <webMaster>chen_q_i@163.com (chenqi)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://chenqi199.github.io/en/categories/documentation/" rel="self" type="application/rss+xml" /></channel>
+</rss>
