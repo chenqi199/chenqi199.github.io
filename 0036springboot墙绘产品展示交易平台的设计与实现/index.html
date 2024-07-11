@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer" />
+        <meta name="robots" content="noodp" />
+        <title>0036springboot墙绘产品展示交易平台的设计与实现 - chenqi blog</title><meta name="Description" content="Hugo theme - chenqi"><meta property="og:url" content="https://chenqi199.github.io/0036springboot%E5%A2%99%E7%BB%98%E4%BA%A7%E5%93%81%E5%B1%95%E7%A4%BA%E4%BA%A4%E6%98%93%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/">
+  <meta property="og:site_name" content="chenqi blog">
+  <meta property="og:title" content="0036springboot墙绘产品展示交易平台的设计与实现">
+  <meta property="og:description" content="0036springboot墙绘产品展示交易平台的设计与实现 微信： chen_q123456 qq:462201886 github:chenqi199 gitee :chen_q_i 所有项目 包安装运行 所有项目列表excel 腾讯文档 项目清单 包安装运">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-07-11T17:19:50+08:00">
+    <meta property="article:modified_time" content="2024-07-11T17:19:50+08:00">
+    <meta property="article:tag" content="Springboot">
+    <meta property="article:tag" content="Java">
+    <meta property="article:tag" content="Vue">
+    <meta property="article:tag" content="论文">
+    <meta property="article:tag" content="项目">
+    <meta property="og:image" content="https://chenqi199.github.io/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chenqi199.github.io/logo.png">
+  <meta name="twitter:title" content="0036springboot墙绘产品展示交易平台的设计与实现">
+  <meta name="twitter:description" content="0036springboot墙绘产品展示交易平台的设计与实现 微信： chen_q123456 qq:462201886 github:chenqi199 gitee :chen_q_i 所有项目 包安装运行 所有项目列表excel 腾讯文档 项目清单 包安装运">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chenqi199.github.io/0036springboot%E5%A2%99%E7%BB%98%E4%BA%A7%E5%93%81%E5%B1%95%E7%A4%BA%E4%BA%A4%E6%98%93%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" /><link rel="prev" href="https://chenqi199.github.io/0037springboot%E7%BD%91%E4%B8%8A%E7%A7%9F%E8%B5%81%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" /><link rel="next" href="https://chenqi199.github.io/0035springboot%E6%B5%B7%E6%BB%A8%E4%BD%93%E8%82%B2%E9%A6%86%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "0036springboot墙绘产品展示交易平台的设计与实现",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chenqi199.github.io\/0036springboot%E5%A2%99%E7%BB%98%E4%BA%A7%E5%93%81%E5%B1%95%E7%A4%BA%E4%BA%A4%E6%98%93%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0\/"
+        },"image": ["https:\/\/chenqi199.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "springboot, java, vue, 论文, 项目","wordcount":  3553 ,
+        "url": "https:\/\/chenqi199.github.io\/0036springboot%E5%A2%99%E7%BB%98%E4%BA%A7%E5%93%81%E5%B1%95%E7%A4%BA%E4%BA%A4%E6%98%93%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0\/","datePublished": "2024-07-11T17:19:50+08:00","dateModified": "2024-07-11T17:19:50+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/chenqi199.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "chenqi"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/0036springboot%E5%A2%99%E7%BB%98%E4%BA%A7%E5%93%81%E5%B1%95%E7%A4%BA%E4%BA%A4%E6%98%93%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/0036springboot%E5%A2%99%E7%BB%98%E4%BA%A7%E5%93%81%E5%B1%95%E7%A4%BA%E4%BA%A4%E6%98%93%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">0036springboot墙绘产品展示交易平台的设计与实现</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="chenqi199" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>chenqi</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-07-11">2024-07-11</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 3553 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 8 分钟&nbsp;<span id="/0036springboot%E5%A2%99%E7%BB%98%E4%BA%A7%E5%93%81%E5%B1%95%E7%A4%BA%E4%BA%A4%E6%98%93%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" class="leancloud_visitors" data-flag-title="0036springboot墙绘产品展示交易平台的设计与实现">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#微信-chen_q123456--qq462201886">微信： chen_q123456  qq:462201886</a></li>
+        <li><a href="#githubchenqi199-gitee-chen_q_i">github:chenqi199 gitee :chen_q_i</a></li>
+        <li><a href="#所有项目httpsgithubcomgraduationproject-springbootallspringbootprojects-包安装运行"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">所有项目</a> 包安装运行</a></li>
+        <li><a href="#所有项目列表excel-腾讯文档-项目清单httpsdocsqqcomsheetdshrfsvz5aevyt3n3tabbb08j2-包安装运行"><a href="https://docs.qq.com/sheet/DSHRFSVZ5aEVYT3N3?tab=BB08J2">所有项目列表excel 腾讯文档 项目清单</a> 包安装运行</a></li>
+        <li><a href="#githubhttpschenqi199githubio"><a href="https://chenqi199.github.io">github</a></a></li>
+        <li><a href="#giteehttpsgiteecomchen_q_i"><a href="https://gitee.com/chen_q_i">gitee</a></a></li>
+        <li><a href="#点击播放视频-">点击播放视频 ▼</a></li>
+        <li><a href="#0036springboot墙绘产品展示交易平台的设计与实现-部分论文">0036springboot墙绘产品展示交易平台的设计与实现 部分论文</a></li>
+        <li><a href="#0036springboot墙绘产品展示交易平台的设计与实现-项目图片">0036springboot墙绘产品展示交易平台的设计与实现 项目图片</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="0036springboot墙绘产品展示交易平台的设计与实现">0036springboot墙绘产品展示交易平台的设计与实现</h1>
+<h3 id="微信-chen_q123456--qq462201886">微信： chen_q123456  qq:462201886</h3>
+<h3 id="githubchenqi199-gitee-chen_q_i">github:chenqi199 gitee :chen_q_i</h3>
+<h3 id="所有项目httpsgithubcomgraduationproject-springbootallspringbootprojects-包安装运行"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">所有项目</a> 包安装运行</h3>
+<h3 id="所有项目列表excel-腾讯文档-项目清单httpsdocsqqcomsheetdshrfsvz5aevyt3n3tabbb08j2-包安装运行"><a href="https://docs.qq.com/sheet/DSHRFSVZ5aEVYT3N3?tab=BB08J2" target="_blank" rel="noopener noreffer ">所有项目列表excel 腾讯文档 项目清单</a> 包安装运行</h3>
+<h3 id="githubhttpschenqi199githubio"><a href="https://chenqi199.github.io" target="_blank" rel="noopener noreffer ">github</a></h3>
+<h3 id="giteehttpsgiteecomchen_q_i"><a href="https://gitee.com/chen_q_i" target="_blank" rel="noopener noreffer ">gitee</a></h3>
+<h3 id="点击播放视频-">点击播放视频 ▼</h3>
+<p><a href="https://player.bilibili.com/player.html?isOutside=true&amp;aid=BV16ia6epENY&amp;bvid=BV16ia6epENY&amp;cid=500001610571632&amp;p=37" target="_blank" rel="noopener noreffer "><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.sstatic.net/Vp2cE.png"
+        data-srcset="https://i.sstatic.net/Vp2cE.png, https://i.sstatic.net/Vp2cE.png 1.5x, https://i.sstatic.net/Vp2cE.png 2x"
+        data-sizes="auto"
+        alt="https://i.sstatic.net/Vp2cE.png"
+        title="Watch the video" /></a></p>
+<h3 id="0036springboot墙绘产品展示交易平台的设计与实现-部分论文">0036springboot墙绘产品展示交易平台的设计与实现 部分论文</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span><span class="lnt">75
+</span><span class="lnt">76
+</span><span class="lnt">77
+</span><span class="lnt">78
+</span><span class="lnt">79
+</span><span class="lnt">80
+</span><span class="lnt">81
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="err">﻿</span>
+</span></span><span class="line"><span class="cl">    <span class="err">毕</span> <span class="err">业</span> <span class="err">设</span> <span class="err">计（论</span> <span class="err">文）</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="err">题目：墙绘产品展示交易平台设计与实现</span>
+</span></span><span class="line"><span class="cl"><span class="err">摘</span>  <span class="err">要</span>
+</span></span><span class="line"><span class="cl"><span class="err">现代经济快节奏发展以及不断完善升级的信息化技术，让传统数据信息的管理升级为软件存储，归纳，集中处理数据信息的管理方式。本墙绘产品展示交易平台就是在这样的大环境下诞生，其可以帮助管理者在短时间内处理完毕庞大的数据信息，使用这种软件工具可以帮助管理人员提高事务处理效率，达到事半功倍的效果。此墙绘产品展示交易平台利用当下成熟完善的</span><span class="n">SSM框架</span><span class="err">，使用跨平台的可开发大型商业网站的</span><span class="n">Java语言</span><span class="err">，以及最受欢迎的</span><span class="n">RDBMS应用软件之一的Mysql数据库进行程序开发</span><span class="o">.</span><span class="err">墙绘产品展示交易平台的开发根据操作人员需要设计的界面简洁美观，在功能模块布局上跟同类型网站保持一致，程序在实现基本要求功能时，也为数据信息面临的安全问题提供了一些实用的解决方案。可以说该程序在帮助管理者高效率地处理工作事务的同时，也实现了数据信息的整体化，规范化与自动化。</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="err">关键词：墙绘产品展示交易平台；</span><span class="n">SSM框架</span><span class="err">；</span><span class="n">Mysql</span><span class="err">；自动化</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Abstract</span>
+</span></span><span class="line"><span class="cl"><span class="n">The</span> <span class="n">fast</span><span class="o">-</span><span class="n">paced</span> <span class="n">development</span> <span class="n">of</span> <span class="n">the</span> <span class="n">modern</span> <span class="n">economy</span> <span class="ow">and</span> <span class="n">the</span> <span class="n">continuous</span> <span class="n">improvement</span> <span class="ow">and</span> <span class="n">upgrading</span> <span class="n">of</span> <span class="n">information</span> <span class="n">technology</span> <span class="n">have</span> <span class="n">allowed</span> <span class="n">the</span> <span class="n">management</span> <span class="n">of</span> <span class="n">traditional</span> <span class="n">data</span> <span class="n">information</span> <span class="n">to</span> <span class="n">be</span> <span class="n">upgraded</span> <span class="n">to</span> <span class="n">software</span> <span class="n">storage</span><span class="p">,</span> <span class="n">induction</span><span class="p">,</span> <span class="ow">and</span> <span class="n">centralized</span> <span class="n">management</span> <span class="n">of</span> <span class="n">data</span> <span class="n">information</span><span class="o">.</span> <span class="n">This</span> <span class="n">book</span> <span class="n">lending</span> <span class="n">system</span> <span class="n">was</span> <span class="n">born</span> <span class="ow">in</span> <span class="n">such</span> <span class="n">a</span> <span class="n">large</span> <span class="n">environment</span><span class="p">,</span> <span class="n">which</span> <span class="n">can</span> <span class="n">help</span> <span class="n">managers</span> <span class="n">to</span> <span class="n">process</span> <span class="n">huge</span> <span class="n">data</span> <span class="n">information</span> <span class="ow">in</span> <span class="n">a</span> <span class="n">short</span> <span class="n">time</span><span class="o">.</span> <span class="n">Using</span> <span class="n">this</span> <span class="n">software</span> <span class="k">tool</span> <span class="n">can</span> <span class="n">help</span> <span class="n">managers</span> <span class="n">improve</span> <span class="n">transaction</span> <span class="n">processing</span> <span class="n">efficiency</span> <span class="ow">and</span> <span class="n">achieve</span> <span class="n">double</span> <span class="n">the</span> <span class="n">result</span> <span class="n">with</span> <span class="n">half</span> <span class="n">the</span> <span class="n">effort</span><span class="o">.</span> <span class="n">This</span> <span class="n">book</span> <span class="n">lending</span> <span class="n">system</span> <span class="n">uses</span> <span class="n">the</span> <span class="n">current</span> <span class="n">mature</span> <span class="ow">and</span> <span class="n">perfect</span> <span class="n">SSM</span> <span class="n">framework</span><span class="p">,</span> <span class="n">cross</span><span class="o">-</span><span class="n">platform</span> <span class="n">Java</span> <span class="n">language</span> <span class="n">that</span> <span class="n">can</span> <span class="n">be</span> <span class="n">used</span> <span class="n">to</span> <span class="n">develop</span> <span class="n">large</span><span class="o">-</span><span class="n">scale</span> <span class="n">commercial</span> <span class="n">websites</span><span class="p">,</span> <span class="ow">and</span> <span class="n">Mysql</span> <span class="n">database</span><span class="p">,</span> <span class="n">one</span> <span class="n">of</span> <span class="n">the</span> <span class="n">most</span> <span class="n">popular</span> <span class="n">RDBMS</span> <span class="n">application</span> <span class="n">software</span><span class="p">,</span> <span class="k">for</span> <span class="n">program</span> <span class="n">development</span><span class="o">.</span> <span class="n">It</span> <span class="n">realizes</span> <span class="n">the</span> <span class="n">functions</span> <span class="n">of</span> <span class="n">book</span> <span class="n">basic</span> <span class="n">data</span> <span class="n">management</span><span class="p">,</span> <span class="n">book</span> <span class="n">borrowing</span> <span class="ow">and</span> <span class="k">return</span><span class="p">,</span> <span class="n">review</span> <span class="n">of</span> <span class="n">registered</span> <span class="n">teacher</span> <span class="n">information</span><span class="p">,</span> <span class="ow">and</span> <span class="n">announcement</span> <span class="n">information</span> <span class="n">release</span><span class="o">.</span> <span class="n">The</span> <span class="n">development</span> <span class="n">of</span> <span class="n">the</span> <span class="n">book</span> <span class="n">lending</span> <span class="n">system</span> <span class="n">is</span> <span class="n">designed</span> <span class="n">to</span> <span class="n">be</span> <span class="n">simple</span> <span class="ow">and</span> <span class="n">beautiful</span> <span class="n">according</span> <span class="n">to</span> <span class="n">the</span> <span class="n">needs</span> <span class="n">of</span> <span class="n">the</span> <span class="n">operator</span><span class="o">.</span> <span class="n">The</span> <span class="n">layout</span> <span class="n">of</span> <span class="n">the</span> <span class="n">function</span> <span class="n">module</span> <span class="n">is</span> <span class="n">consistent</span> <span class="n">with</span> <span class="n">the</span> <span class="n">same</span> <span class="n">type</span> <span class="n">of</span> <span class="n">website</span><span class="o">.</span> <span class="n">When</span> <span class="n">the</span> <span class="n">program</span> <span class="n">realizes</span> <span class="n">the</span> <span class="n">basic</span> <span class="n">requirements</span><span class="p">,</span> <span class="n">it</span> <span class="n">also</span> <span class="n">provides</span> <span class="n">some</span> <span class="n">practical</span> <span class="n">solutions</span> <span class="k">for</span> <span class="n">the</span> <span class="n">security</span> <span class="n">problems</span> <span class="n">faced</span> <span class="n">by</span> <span class="n">the</span> <span class="n">data</span> <span class="n">information</span><span class="o">.</span> <span class="o">.</span> <span class="n">It</span> <span class="n">can</span> <span class="n">be</span> <span class="n">said</span> <span class="n">that</span> <span class="n">this</span> <span class="n">program</span> <span class="ow">not</span> <span class="n">only</span> <span class="n">helps</span> <span class="n">managers</span> <span class="n">efficiently</span> <span class="n">handle</span> <span class="n">work</span> <span class="n">affairs</span><span class="p">,</span> <span class="n">but</span> <span class="n">also</span> <span class="n">realizes</span> <span class="n">the</span> <span class="n">integration</span><span class="p">,</span> <span class="n">standardization</span> <span class="ow">and</span> <span class="n">automation</span> <span class="n">of</span> <span class="n">data</span> <span class="n">information</span><span class="o">.</span>
+</span></span><span class="line"><span class="cl"><span class="n">Key</span> <span class="n">Words</span><span class="err">：</span><span class="n">Book</span> <span class="n">borrowing</span> <span class="n">system</span><span class="p">;</span> <span class="n">SSM</span> <span class="n">framework</span><span class="p">;</span> <span class="n">Mysql</span><span class="p">;</span> <span class="n">automation</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="err">目</span> <span class="err">录</span>	<span class="n">III</span>
+</span></span><span class="line"><span class="cl"><span class="mi">1</span> <span class="err">绪论</span>	<span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="mf">1.1</span> <span class="err">研究背景</span>	<span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="mf">1.2</span> <span class="err">目的和意义</span>	<span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="mf">1.3</span> <span class="err">论文结构安排</span>	<span class="mi">2</span>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span> <span class="err">相关技术</span>	<span class="mi">3</span>
+</span></span><span class="line"><span class="cl"><span class="mf">2.1</span> <span class="n">SSM框架介绍</span>	<span class="mi">3</span>
+</span></span><span class="line"><span class="cl"><span class="mf">2.2</span> <span class="n">B</span><span class="o">/</span><span class="n">S结构介绍</span>	<span class="mi">3</span>
+</span></span><span class="line"><span class="cl"><span class="mf">2.3</span> <span class="n">Mysql数据库介绍</span>	<span class="mi">4</span>
+</span></span><span class="line"><span class="cl"><span class="mi">3</span> <span class="err">系统分析</span>	<span class="mi">6</span>
+</span></span><span class="line"><span class="cl"><span class="mf">3.1</span> <span class="err">系统可行性分析</span>	<span class="mi">6</span>
+</span></span><span class="line"><span class="cl"><span class="mf">3.1</span><span class="o">.</span><span class="mi">1</span> <span class="err">技术可行性分析</span>	<span class="mi">6</span>
+</span></span><span class="line"><span class="cl"><span class="mf">3.1</span><span class="o">.</span><span class="mi">2</span> <span class="err">经济可行性分析</span>	<span class="mi">6</span>
+</span></span><span class="line"><span class="cl"><span class="mf">3.1</span><span class="o">.</span><span class="mi">3</span> <span class="err">运行可行性分析</span>	<span class="mi">6</span>
+</span></span><span class="line"><span class="cl"><span class="mf">3.2</span> <span class="err">系统性能分析</span>	<span class="mi">7</span>
+</span></span><span class="line"><span class="cl"><span class="mf">3.2</span><span class="o">.</span><span class="mi">1</span> <span class="err">易用性指标</span>	<span class="mi">7</span>
+</span></span><span class="line"><span class="cl"><span class="mf">3.2</span><span class="o">.</span><span class="mi">2</span> <span class="err">可扩展性指标</span>	<span class="mi">7</span>
+</span></span><span class="line"><span class="cl"><span class="mf">3.2</span><span class="o">.</span><span class="mi">3</span> <span class="err">健壮性指标</span>	<span class="mi">7</span>
+</span></span><span class="line"><span class="cl"><span class="mf">3.2</span><span class="o">.</span><span class="mi">4</span> <span class="err">安全性指标</span>	<span class="mi">8</span>
+</span></span><span class="line"><span class="cl"><span class="mf">3.3</span> <span class="err">系统流程分析</span>	<span class="mi">8</span>
+</span></span><span class="line"><span class="cl"><span class="mf">3.3</span><span class="o">.</span><span class="mi">1</span> <span class="err">操作流程分析</span>	<span class="mi">8</span>
+</span></span><span class="line"><span class="cl"><span class="mf">3.3</span><span class="o">.</span><span class="mi">2</span> <span class="err">登录流程分析</span>	<span class="mi">9</span>
+</span></span><span class="line"><span class="cl"><span class="mf">3.3</span><span class="o">.</span><span class="mi">3</span> <span class="err">信息添加流程分析</span>	<span class="mi">10</span>
+</span></span><span class="line"><span class="cl"><span class="mf">3.3</span><span class="o">.</span><span class="mi">4</span> <span class="err">信息删除流程分析</span>	<span class="mi">11</span>
+</span></span><span class="line"><span class="cl"><span class="mi">4</span> <span class="err">系统设计</span>	<span class="mi">12</span>
+</span></span><span class="line"><span class="cl"><span class="mf">4.1</span> <span class="err">系统概要设计</span>	<span class="mi">12</span>
+</span></span><span class="line"><span class="cl"><span class="mf">4.2</span> <span class="err">系统功能结构设计</span>	<span class="mi">12</span>
+</span></span><span class="line"><span class="cl"><span class="mf">4.3</span> <span class="err">数据库设计</span>	<span class="mi">13</span>
+</span></span><span class="line"><span class="cl"><span class="mf">4.3</span><span class="o">.</span><span class="mi">1</span> <span class="err">数据库</span><span class="n">E</span><span class="o">-</span><span class="n">R图设计</span>	<span class="mi">13</span>
+</span></span><span class="line"><span class="cl"><span class="mf">4.3</span><span class="o">.</span><span class="mi">2</span> <span class="err">数据库表结构设计</span>	<span class="mi">14</span>
+</span></span><span class="line"><span class="cl"><span class="mi">5</span> <span class="err">系统实现</span>	<span class="mi">17</span>
+</span></span><span class="line"><span class="cl"><span class="mf">5.1</span><span class="err">用户信息管理</span>	<span class="mi">17</span>
+</span></span><span class="line"><span class="cl"><span class="mf">5.2</span> <span class="err">黑名单管理</span>	<span class="mi">17</span>
+</span></span><span class="line"><span class="cl"><span class="mf">5.3</span><span class="err">商品分类管理</span>	<span class="mi">18</span>
+</span></span><span class="line"><span class="cl"><span class="mf">5.1</span><span class="err">订单管理管理</span>	<span class="mi">19</span>
+</span></span><span class="line"><span class="cl"><span class="mi">6</span> <span class="err">系统测试</span>	<span class="mi">19</span>
+</span></span><span class="line"><span class="cl"><span class="mf">6.1</span> <span class="err">系统测试的特点</span> 	<span class="mi">20</span>
+</span></span><span class="line"><span class="cl"><span class="mf">6.2</span> <span class="err">系统功能测试</span>	<span class="mi">20</span>
+</span></span><span class="line"><span class="cl"><span class="mf">6.2</span><span class="o">.</span><span class="mi">1</span> <span class="err">登录功能测试</span>	<span class="mi">20</span>
+</span></span><span class="line"><span class="cl"><span class="mf">6.2</span><span class="o">.</span><span class="mi">2</span> <span class="err">添加类别功能测试</span>	<span class="mi">20</span>
+</span></span><span class="line"><span class="cl"><span class="mf">6.3</span> <span class="err">测试结果分析</span>	<span class="mi">21</span>
+</span></span><span class="line"><span class="cl"><span class="err">结</span>  <span class="err">论</span>	<span class="mi">22</span>
+</span></span><span class="line"><span class="cl"><span class="err">致</span>  <span class="err">谢</span>	<span class="mi">23</span>
+</span></span><span class="line"><span class="cl"><span class="err">参考文献</span>	<span class="mi">24</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mi">1</span> <span class="err">绪论</span>
+</span></span><span class="line"><span class="cl"><span class="mf">1.1</span> <span class="err">研究背景</span>
+</span></span><span class="line"><span class="cl"><span class="err">当前社会各行业领域竞争压力非常大，随着当前时代的信息化，科学化发展，让社会各行业领域都争相使用新的信息技术，对行业内的各种相关数据进行科学化，规范化管理。这样的大环境让那些止步不前，不接受信息改革带来的信息技术的企业随时面临被淘汰，被取代的风险。所以当今，各个行业领域，不管是传统的教育行业，餐饮行业，还是旅游行业，医疗行业等领域都将使用新的信息技术进行信息革命，改变传统的纸质化，需要人手工处理工作事务的办公环境。软件信息技术能够覆盖社会各行业领域是时代的发展要求，各种数据以及文件真正实现电子化是信息社会发展的不可逆转的必然趋势。本墙绘产品展示交易平台也是紧跟科学技术的发展，运用当今一流的软件技术实现软件系统的开发，让医生管理信息完全通过管理系统实现科学化，规范化，程序化管理。从而帮助信息管理者节省事务处理的时间，降低数据处理的错误率，对于基础数据的管理水平可以起到促进作用，也从一定程度上对随意的业务管理工作进行了避免，同时，墙绘产品展示交易平台的数据库里面存储的各种动态信息，也为上层管理人员作出重大决策提供了大量的事实依据。总之，墙绘产品展示交易平台是一款可以真正提升管理者的办公效率的软件系统。</span>
+</span></span><span class="line"><span class="cl"><span class="mf">1.2</span> <span class="err">目的和意义</span>
+</span></span><span class="line"><span class="cl"><span class="err">信息数据的处理完全依赖人工进行操作，会耗费大量的人工成本，特别是面对大量的数据信息时，传统人工操作不仅不能对数据的出错率进行保证，还容易出现各种信息资源的低利用率与低安全性问题。更有甚者，耽误大量的宝贵时间，尤其是对信息的更新，归纳与统计更是耗财耗力的过程。所以电子化信息管理的出现就能缓解以及改变传统人工方式面临的处境，一方面可以确保信息数据在短时间被高效处理，还能节省人力成本，另一方面可以确保信息数据的安全性，可靠性，并可以实现信息数据的快速检索与修改操作，这些优点是之前的旧操作模式无法比拟的。因此墙绘产品展示交易平台为数据信息的管理模式的升级与改革提供了重要的窗口。</span>
+</span></span><span class="line"><span class="cl"><span class="mf">1.3</span> <span class="err">论文结构安排</span>
+</span></span><span class="line"><span class="cl"><span class="err">为了帮助用户更好的了解和理解程序的开发流程与相关内容，本文将通过六个章节进行内容阐述。</span>
+</span></span><span class="line"><span class="cl"><span class="err">第一章：描述了程序的开发背景，程序运用于现实生活的目的与意义，以及程序文档的结构安排信息；</span>
+</span></span><span class="line"><span class="cl"><span class="err">第二章：描述了程序的开发环境，包括程序开发涉及到的技术，程序开发使用的数据存储工具等信息；</span>
+</span></span><span class="line"><span class="cl"><span class="err">第三章：描述了程序着手进行开发时，会面临的可行性问题，并对程序功能以及性能要求进行描述；</span>
+</span></span><span class="line"><span class="cl"><span class="err">第四章：描述了程序大功能模块下的功能细分信息，以及存储程序数据的数据库表文件结构的设计信息等；</span>
+</span></span><span class="line"><span class="cl"><span class="err">第五章：描述了程序的功能实现界面的内容，也对程序操作人员操作的部分功能进行了描述；</span>
+</span></span><span class="line"><span class="cl"><span class="err">第六章：描述了程序功能的测试内容，并介绍了系统测试的概念与方法。</span>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span> <span class="err">相关技术</span>
+</span></span><span class="line"><span class="cl"><span class="mf">2.1</span> <span class="n">SSM框架介绍</span>
+</span></span><span class="line"><span class="cl"><span class="err">本课题程序开发使用到的框架技术，英文名称缩写是</span><span class="n">SSM</span><span class="err">，在</span><span class="n">JavaWeb开发中使用的流行框架有SSH</span><span class="err">、</span><span class="n">SSM</span><span class="err">、</span><span class="n">SpringMVC等</span><span class="err">，作为一个课题程序采用</span><span class="n">SSH框架也可以</span><span class="err">，</span><span class="n">SSM框架也可以</span><span class="err">，</span><span class="n">SpringMVC也可以</span><span class="err">。</span><span class="n">SSH框架是属于重量级别的框架</span><span class="err">，配置繁琐，不够灵活，修改程序需要修改好多个文件，并且运行起来也占用内存较高，</span><span class="n">CPU使用率相对也高</span><span class="err">，</span><span class="n">SpringMVC是Spring开发的一套MVC架构</span><span class="err">，更灵活更好用，</span><span class="n">SSM框架取中间值</span><span class="err">，既没有</span><span class="n">SSH臃肿</span><span class="err">，也没有</span><span class="n">SpringMVC简化</span><span class="err">，属于中间级别的，在配置过程和使用过程中更能编写和理解。</span><span class="n">MyBatis框架取代Hibernate框架是因为它更灵活</span><span class="err">，不需要完全在框架里操作，它在数据操作上可以写出更灵活的代码，它的性能也比</span><span class="n">Hibernate框架更稳定</span><span class="err">。总的来说，使用</span><span class="n">SSM框架是通过综合考虑而使用的</span><span class="err">，网上有很多的使用教程和心得体会，而且</span><span class="n">SSM又是这么的流行</span><span class="err">，用</span><span class="n">SSM框架开发是顺其自然的</span><span class="err">。</span>
+</span></span><span class="line"><span class="cl"><span class="mf">2.2</span> <span class="n">B</span><span class="o">/</span><span class="n">S结构介绍</span>  
+</span></span><span class="line"><span class="cl"><span class="err">在早期，一些使用</span><span class="n">HTML语言编写的文件</span><span class="err">，再集合一些其它资源文件就可以组成一个最简单的</span><span class="n">Web程序</span><span class="err">，了解了</span><span class="n">Web程序也需要了解Web站点</span><span class="err">，它们之间的关系就是一个或者多个</span><span class="n">Web程序可以放在Internet上的一个Web站点</span><span class="err">（</span><span class="n">Web服务器</span><span class="err">）中进行使用。可以说</span><span class="n">Web应用程序的开发也带动了B</span><span class="o">/</span><span class="n">S这种网络结构模式的兴起</span><span class="err">。</span><span class="n">B是Brower</span><span class="err">（浏览器）的首字母，</span><span class="n">S是Server</span><span class="err">（服务器）的首字母，两个首字母进行组合就成了网络结构模式的简称</span><span class="n">B</span><span class="o">/</span><span class="n">S</span><span class="err">。由于这种结构模式通过安装在客户端的浏览器进行服务器的访问，可以把程序的核心功能安排在服务器中进行处理，给程序的开发，后期使用和维护省去了许多工作。图</span><span class="mf">2.1</span><span class="err">展示的就是使用这种架构开发的程序的工作原理。</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="err">图</span><span class="mf">2.1</span> <span class="n">B</span><span class="o">/</span><span class="n">S架构的工作原理图</span>
+</span></span><span class="line"><span class="cl"><span class="mf">2.3</span> <span class="n">Mysql数据库介绍</span>
+</span></span><span class="line"><span class="cl"><span class="err">开发的程序面向用户的只是程序的功能界面，让用户操作程序界面的各个功能，那么很多人就会问，用户使用程序功能生成的数据信息放在哪里的？这个就需要涉及到数据库的知识了，一般来说，程序开发通常就会对常用数据存储工具的特点进行分析比对，比如</span><span class="n">Mysql数据库的特点与优势</span><span class="err">，</span><span class="n">Access数据库的特点与优势</span><span class="err">，</span><span class="n">Sqlserver数据库的特点与优势等</span><span class="err">，最终看哪个数据库与需要开发的程序比较匹配，也符合程序功能运行需要的数据存储要求，比如，需要开发商业级别的程序，存储的数据对数据库要求较高，可以选用</span><span class="n">Oracle</span><span class="err">，如果只是比较简单的程序，对数据存储没有过多要求，可以选用微软旗下的</span><span class="n">Access</span><span class="err">，当开发程序要求数据库占用空间小，并能满足程序数据存储要求时，就可以考虑</span><span class="n">Oracle公司从瑞典MySQL</span> <span class="n">AB公司在很早之前就收购过一个关系型数据库</span><span class="err">，它是现在的</span><span class="n">Mysql数据库</span><span class="err">。在数据库工具里面它是最受认可的其中一个应用软件。需要说明的信息就是，本程序的开发就运用到了此数据库。它将程序数据通过</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="0036springboot墙绘产品展示交易平台的设计与实现-项目图片">0036springboot墙绘产品展示交易平台的设计与实现 项目图片</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0036springbootimg_001.jpg"
+        data-srcset="/images/0036springbootimg_001.jpg, /images/0036springbootimg_001.jpg 1.5x, /images/0036springbootimg_001.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0036springbootimg_001.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0036springbootimg_003.jpg"
+        data-srcset="/images/0036springbootimg_003.jpg, /images/0036springbootimg_003.jpg 1.5x, /images/0036springbootimg_003.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0036springbootimg_003.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0036springbootimg_002.jpg"
+        data-srcset="/images/0036springbootimg_002.jpg, /images/0036springbootimg_002.jpg 1.5x, /images/0036springbootimg_002.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0036springbootimg_002.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0036springbootimg_012.jpg"
+        data-srcset="/images/0036springbootimg_012.jpg, /images/0036springbootimg_012.jpg 1.5x, /images/0036springbootimg_012.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0036springbootimg_012.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0036springbootimg_006.jpg"
+        data-srcset="/images/0036springbootimg_006.jpg, /images/0036springbootimg_006.jpg 1.5x, /images/0036springbootimg_006.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0036springbootimg_006.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0036springbootimg_007.jpg"
+        data-srcset="/images/0036springbootimg_007.jpg, /images/0036springbootimg_007.jpg 1.5x, /images/0036springbootimg_007.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0036springbootimg_007.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0036springbootimg_013.jpg"
+        data-srcset="/images/0036springbootimg_013.jpg, /images/0036springbootimg_013.jpg 1.5x, /images/0036springbootimg_013.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0036springbootimg_013.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0036springbootimg_005.jpg"
+        data-srcset="/images/0036springbootimg_005.jpg, /images/0036springbootimg_005.jpg 1.5x, /images/0036springbootimg_005.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0036springbootimg_005.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0036springbootimg_011.jpg"
+        data-srcset="/images/0036springbootimg_011.jpg, /images/0036springbootimg_011.jpg 1.5x, /images/0036springbootimg_011.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0036springbootimg_011.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0036springbootimg_010.jpg"
+        data-srcset="/images/0036springbootimg_010.jpg, /images/0036springbootimg_010.jpg 1.5x, /images/0036springbootimg_010.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0036springbootimg_010.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0036springbootimg_004.jpg"
+        data-srcset="/images/0036springbootimg_004.jpg, /images/0036springbootimg_004.jpg 1.5x, /images/0036springbootimg_004.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0036springbootimg_004.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0036springbootimg_009.jpg"
+        data-srcset="/images/0036springbootimg_009.jpg, /images/0036springbootimg_009.jpg 1.5x, /images/0036springbootimg_009.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0036springbootimg_009.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0036springbootimg_008.jpg"
+        data-srcset="/images/0036springbootimg_008.jpg, /images/0036springbootimg_008.jpg 1.5x, /images/0036springbootimg_008.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0036springbootimg_008.jpg"
+        title="图片" /></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2024-07-11</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/0036springboot%E5%A2%99%E7%BB%98%E4%BA%A7%E5%93%81%E5%B1%95%E7%A4%BA%E4%BA%A4%E6%98%93%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://chenqi199.github.io/0036springboot%E5%A2%99%E7%BB%98%E4%BA%A7%E5%93%81%E5%B1%95%E7%A4%BA%E4%BA%A4%E6%98%93%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" data-title="0036springboot墙绘产品展示交易平台的设计与实现" data-hashtags="springboot,java,vue,论文,项目"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://chenqi199.github.io/0036springboot%E5%A2%99%E7%BB%98%E4%BA%A7%E5%93%81%E5%B1%95%E7%A4%BA%E4%BA%A4%E6%98%93%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" data-hashtag="springboot"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://chenqi199.github.io/0036springboot%E5%A2%99%E7%BB%98%E4%BA%A7%E5%93%81%E5%B1%95%E7%A4%BA%E4%BA%A4%E6%98%93%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" data-title="0036springboot墙绘产品展示交易平台的设计与实现"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://chenqi199.github.io/0036springboot%E5%A2%99%E7%BB%98%E4%BA%A7%E5%93%81%E5%B1%95%E7%A4%BA%E4%BA%A4%E6%98%93%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" data-title="0036springboot墙绘产品展示交易平台的设计与实现"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://chenqi199.github.io/0036springboot%E5%A2%99%E7%BB%98%E4%BA%A7%E5%93%81%E5%B1%95%E7%A4%BA%E4%BA%A4%E6%98%93%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" data-title="0036springboot墙绘产品展示交易平台的设计与实现" data-ralateuid="https://gitee.com/chen_q_i"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/springboot/">Springboot</a>,&nbsp;<a href="/tags/java/">Java</a>,&nbsp;<a href="/tags/vue/">Vue</a>,&nbsp;<a href="/tags/%E8%AE%BA%E6%96%87/">论文</a>,&nbsp;<a href="/tags/%E9%A1%B9%E7%9B%AE/">项目</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/0037springboot%E7%BD%91%E4%B8%8A%E7%A7%9F%E8%B5%81%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" class="prev" rel="prev" title="0037springboot网上租赁系统设计与实现"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>0037springboot网上租赁系统设计与实现</a>
+            <a href="/0035springboot%E6%B5%B7%E6%BB%A8%E4%BD%93%E8%82%B2%E9%A6%86%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" class="next" rel="next" title="0035springboot海滨体育馆管理系统的设计与实现">0035springboot海滨体育馆管理系统的设计与实现<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.128.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="chenqi199" target="_blank">chenqi</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
