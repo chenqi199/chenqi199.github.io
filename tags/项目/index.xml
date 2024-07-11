@@ -1,16 +1,80 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>项目 - 标签 - LoveIt</title>
+        <title>项目 - 标签 - chenqi blog</title>
         <link>https://chenqi199.github.io/tags/%E9%A1%B9%E7%9B%AE/</link>
-        <description>项目 - 标签 - LoveIt</description>
+        <description>项目 - 标签 - chenqi blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>chen_q_i@163.com (chenqi)</managingEditor>
-            <webMaster>chen_q_i@163.com (chenqi)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 11 Jul 2024 12:25:23 &#43;0800</lastBuildDate><atom:link href="https://chenqi199.github.io/tags/%E9%A1%B9%E7%9B%AE/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>chen_q_i@163.com (chenqi)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 11 Jul 2024 17:17:35 &#43;0800</lastBuildDate><atom:link href="https://chenqi199.github.io/tags/%E9%A1%B9%E7%9B%AE/" rel="self" type="application/rss+xml" /><item>
+    <title>0000springboot在线拍卖系统</title>
+    <link>https://chenqi199.github.io/0000springboot%E5%9C%A8%E7%BA%BF%E6%8B%8D%E5%8D%96%E7%B3%BB%E7%BB%9F/</link>
+    <pubDate>Thu, 11 Jul 2024 17:17:35 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/0000springboot%E5%9C%A8%E7%BA%BF%E6%8B%8D%E5%8D%96%E7%B3%BB%E7%BB%9F/</guid>
+    <description><![CDATA[0000springboot在线拍卖系统 微信： chen_q123456 qq:462201886 github:chenqi199 gitee :chen_q_i 所有项目 包安装运行 所有项目列表excel 腾讯文档 项目清单 包安装运行 github gitee 点击播放视频 ▼]]></description>
+</item>
+<item>
     <title>0001springboot医护人员排班系统</title>
     <link>https://chenqi199.github.io/0001springboot%E5%8C%BB%E6%8A%A4%E4%BA%BA%E5%91%98%E6%8E%92%E7%8F%AD%E7%B3%BB%E7%BB%9F/</link>
-    <pubDate>Thu, 11 Jul 2024 12:25:23 &#43;0800</pubDate>
+    <pubDate>Thu, 11 Jul 2024 17:17:35 &#43;0800</pubDate>
     <author>chenqi</author>
     <guid>https://chenqi199.github.io/0001springboot%E5%8C%BB%E6%8A%A4%E4%BA%BA%E5%91%98%E6%8E%92%E7%8F%AD%E7%B3%BB%E7%BB%9F/</guid>
-    <description><![CDATA[0001springboot医护人员排班系统 所有项目 所有项目列表excel 腾讯文档】项目清单 github gitee 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22]]></description>
+    <description><![CDATA[0001springboot医护人员排班系统 微信： chen_q123456 qq:462201886 github:chenqi199 gitee :chen_q_i 所有项目 包安装运行 所有项目列表excel 腾讯文档 项目清单 包安装运行 github gitee 点击播放视]]></description>
+</item>
+<item>
+    <title>0002springboot图书个性化推荐系统的设计与实现</title>
+    <link>https://chenqi199.github.io/0002springboot%E5%9B%BE%E4%B9%A6%E4%B8%AA%E6%80%A7%E5%8C%96%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/</link>
+    <pubDate>Thu, 11 Jul 2024 17:17:35 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/0002springboot%E5%9B%BE%E4%B9%A6%E4%B8%AA%E6%80%A7%E5%8C%96%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/</guid>
+    <description><![CDATA[0002springboot图书个性化推荐系统的设计与实现 微信： chen_q123456 qq:462201886 github:chenqi199 gitee :chen_q_i 所有项目 包安装运行 所有项目列表excel 腾讯文档 项目清单 包安装运行]]></description>
+</item>
+<item>
+    <title>0003springboot网页时装购物系统</title>
+    <link>https://chenqi199.github.io/0003springboot%E7%BD%91%E9%A1%B5%E6%97%B6%E8%A3%85%E8%B4%AD%E7%89%A9%E7%B3%BB%E7%BB%9F/</link>
+    <pubDate>Thu, 11 Jul 2024 17:17:35 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/0003springboot%E7%BD%91%E9%A1%B5%E6%97%B6%E8%A3%85%E8%B4%AD%E7%89%A9%E7%B3%BB%E7%BB%9F/</guid>
+    <description><![CDATA[0003springboot网页时装购物系统 微信： chen_q123456 qq:462201886 github:chenqi199 gitee :chen_q_i 所有项目 包安装运行 所有项目列表excel 腾讯文档 项目清单 包安装运行 github gitee 点击播放视]]></description>
+</item>
+<item>
+    <title>0004springboot学生心理咨询评估系统</title>
+    <link>https://chenqi199.github.io/0004springboot%E5%AD%A6%E7%94%9F%E5%BF%83%E7%90%86%E5%92%A8%E8%AF%A2%E8%AF%84%E4%BC%B0%E7%B3%BB%E7%BB%9F/</link>
+    <pubDate>Thu, 11 Jul 2024 17:17:35 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/0004springboot%E5%AD%A6%E7%94%9F%E5%BF%83%E7%90%86%E5%92%A8%E8%AF%A2%E8%AF%84%E4%BC%B0%E7%B3%BB%E7%BB%9F/</guid>
+    <description><![CDATA[0004springboot学生心理咨询评估系统 微信： chen_q123456 qq:462201886 github:chenqi199 gitee :chen_q_i 所有项目 包安装运行 所有项目列表excel 腾讯文档 项目清单 包安装运行 github gitee 点击播]]></description>
+</item>
+<item>
+    <title>0005springboot网上订餐系统</title>
+    <link>https://chenqi199.github.io/0005springboot%E7%BD%91%E4%B8%8A%E8%AE%A2%E9%A4%90%E7%B3%BB%E7%BB%9F/</link>
+    <pubDate>Thu, 11 Jul 2024 17:17:35 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/0005springboot%E7%BD%91%E4%B8%8A%E8%AE%A2%E9%A4%90%E7%B3%BB%E7%BB%9F/</guid>
+    <description><![CDATA[0005springboot网上订餐系统 微信： chen_q123456 qq:462201886 github:chenqi199 gitee :chen_q_i 所有项目 包安装运行 所有项目列表excel 腾讯文档 项目清单 包安装运行 github gitee 点击播放视频 ▼]]></description>
+</item>
+<item>
+    <title>0006springboot大学生租房平台的设计与实现</title>
+    <link>https://chenqi199.github.io/0006springboot%E5%A4%A7%E5%AD%A6%E7%94%9F%E7%A7%9F%E6%88%BF%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/</link>
+    <pubDate>Thu, 11 Jul 2024 17:17:35 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/0006springboot%E5%A4%A7%E5%AD%A6%E7%94%9F%E7%A7%9F%E6%88%BF%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/</guid>
+    <description><![CDATA[0006springboot大学生租房平台的设计与实现 微信： chen_q123456 qq:462201886 github:chenqi199 gitee :chen_q_i 所有项目 包安装运行 所有项目列表excel 腾讯文档 项目清单 包安装运行 github gitee]]></description>
+</item>
+<item>
+    <title>0007springboot房屋租赁系统</title>
+    <link>https://chenqi199.github.io/0007springboot%E6%88%BF%E5%B1%8B%E7%A7%9F%E8%B5%81%E7%B3%BB%E7%BB%9F/</link>
+    <pubDate>Thu, 11 Jul 2024 17:17:35 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/0007springboot%E6%88%BF%E5%B1%8B%E7%A7%9F%E8%B5%81%E7%B3%BB%E7%BB%9F/</guid>
+    <description><![CDATA[0007springboot房屋租赁系统 微信： chen_q123456 qq:462201886 github:chenqi199 gitee :chen_q_i 所有项目 包安装运行 所有项目列表excel 腾讯文档 项目清单 包安装运行 github gitee 点击播放视频 ▼]]></description>
+</item>
+<item>
+    <title>0008springboot月度员工绩效考核管理系统</title>
+    <link>https://chenqi199.github.io/0008springboot%E6%9C%88%E5%BA%A6%E5%91%98%E5%B7%A5%E7%BB%A9%E6%95%88%E8%80%83%E6%A0%B8%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/</link>
+    <pubDate>Thu, 11 Jul 2024 17:17:35 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/0008springboot%E6%9C%88%E5%BA%A6%E5%91%98%E5%B7%A5%E7%BB%A9%E6%95%88%E8%80%83%E6%A0%B8%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/</guid>
+    <description><![CDATA[0008springboot月度员工绩效考核管理系统 微信： chen_q123456 qq:462201886 github:chenqi199 gitee :chen_q_i 所有项目 包安装运行 所有项目列表excel 腾讯文档 项目清单 包安装运行 github gitee 点]]></description>
 </item>
 </channel>
 </rss>
