@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer" />
+        <meta name="robots" content="noodp" />
+        <title>0323springboot电影订票及评论网站的设计与实现 - chenqi blog</title><meta name="Description" content="Hugo theme - chenqi"><meta property="og:url" content="https://chenqi199.github.io/0323springboot%E7%94%B5%E5%BD%B1%E8%AE%A2%E7%A5%A8%E5%8F%8A%E8%AF%84%E8%AE%BA%E7%BD%91%E7%AB%99%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/">
+  <meta property="og:site_name" content="chenqi blog">
+  <meta property="og:title" content="0323springboot电影订票及评论网站的设计与实现">
+  <meta property="og:description" content="0323springboot电影订票及评论网站的设计与实现 微信： chen_q123456 qq:462201886 github:chenqi199 所有项目 包安装运行 所有项目列表excel 腾讯文档 项目清单 包安装运行 github 0">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-07-12T17:16:48+08:00">
+    <meta property="article:modified_time" content="2024-07-12T17:16:48+08:00">
+    <meta property="article:tag" content="Springboot">
+    <meta property="article:tag" content="Java">
+    <meta property="article:tag" content="Vue">
+    <meta property="article:tag" content="论文">
+    <meta property="article:tag" content="项目">
+    <meta property="og:image" content="https://chenqi199.github.io/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chenqi199.github.io/logo.png">
+  <meta name="twitter:title" content="0323springboot电影订票及评论网站的设计与实现">
+  <meta name="twitter:description" content="0323springboot电影订票及评论网站的设计与实现 微信： chen_q123456 qq:462201886 github:chenqi199 所有项目 包安装运行 所有项目列表excel 腾讯文档 项目清单 包安装运行 github 0">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chenqi199.github.io/0323springboot%E7%94%B5%E5%BD%B1%E8%AE%A2%E7%A5%A8%E5%8F%8A%E8%AF%84%E8%AE%BA%E7%BD%91%E7%AB%99%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" /><link rel="prev" href="https://chenqi199.github.io/0324springboot%E4%BC%81%E4%B8%9Aoa%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" /><link rel="next" href="https://chenqi199.github.io/0322springboot%E7%BE%8E%E5%A6%86%E8%B4%AD%E7%89%A9%E7%BD%91%E7%AB%99%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "0323springboot电影订票及评论网站的设计与实现",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chenqi199.github.io\/0323springboot%E7%94%B5%E5%BD%B1%E8%AE%A2%E7%A5%A8%E5%8F%8A%E8%AF%84%E8%AE%BA%E7%BD%91%E7%AB%99%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0\/"
+        },"image": ["https:\/\/chenqi199.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "springboot, java, vue, 论文, 项目","wordcount":  18306 ,
+        "url": "https:\/\/chenqi199.github.io\/0323springboot%E7%94%B5%E5%BD%B1%E8%AE%A2%E7%A5%A8%E5%8F%8A%E8%AF%84%E8%AE%BA%E7%BD%91%E7%AB%99%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0\/","datePublished": "2024-07-12T17:16:48+08:00","dateModified": "2024-07-12T17:16:48+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/chenqi199.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "chenqi"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/0323springboot%E7%94%B5%E5%BD%B1%E8%AE%A2%E7%A5%A8%E5%8F%8A%E8%AF%84%E8%AE%BA%E7%BD%91%E7%AB%99%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/0323springboot%E7%94%B5%E5%BD%B1%E8%AE%A2%E7%A5%A8%E5%8F%8A%E8%AF%84%E8%AE%BA%E7%BD%91%E7%AB%99%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">0323springboot电影订票及评论网站的设计与实现</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="chenqi199" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>chenqi</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-07-12">2024-07-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 18306 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 37 分钟&nbsp;<span id="/0323springboot%E7%94%B5%E5%BD%B1%E8%AE%A2%E7%A5%A8%E5%8F%8A%E8%AF%84%E8%AE%BA%E7%BD%91%E7%AB%99%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" class="leancloud_visitors" data-flag-title="0323springboot电影订票及评论网站的设计与实现">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#微信-chen_q123456--qq462201886">微信： chen_q123456  qq:462201886</a></li>
+        <li><a href="#githubchenqi199">github:chenqi199</a></li>
+        <li><a href="#所有项目httpsgithubcomgraduationproject-springbootallspringbootprojects-包安装运行"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">所有项目</a> 包安装运行</a></li>
+        <li><a href="#所有项目列表excel-腾讯文档-项目清单httpsdocsqqcomsheetdshrfsvz5aevyt3n3tabbb08j2-包安装运行"><a href="https://docs.qq.com/sheet/DSHRFSVZ5aEVYT3N3?tab=BB08J2">所有项目列表excel 腾讯文档 项目清单</a> 包安装运行</a></li>
+        <li><a href="#githubhttpschenqi199githubio"><a href="https://chenqi199.github.io">github</a></a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#点击播放视频-">点击播放视频 ▼</a></li>
+        <li><a href="#所有项目httpsgithubcomgraduationproject-springbootallspringbootprojects-包安装运行-1"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">所有项目</a> 包安装运行</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#11研究背景与意义"><strong>1.1研究背景与意义</strong></a>
+      <ul>
+        <li><a href="#111研究背景"><strong>1.1.1研究背景</strong></a></li>
+        <li><a href="#112研究意义"><strong>1.1.2研究意义</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#12国内外研究现状"><strong>1.2国内外研究现状</strong></a>
+      <ul>
+        <li><a href="#121国外研究现状"><strong>1.2.1国外研究现状</strong></a></li>
+        <li><a href="#122国内研究现状"><strong>1.2.2国内研究现状</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#13研究内容与方法"><strong>1.3研究内容与方法</strong></a>
+      <ul>
+        <li><a href="#131研究内容"><strong>1.3.1研究内容</strong></a></li>
+        <li><a href="#132研究方法"><strong>1.3.2研究方法</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#14论文的组织结构"><strong>1.4论文的组织结构</strong></a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#21-bs结构"><strong>2.1 B/S结构</strong></a></li>
+    <li><a href="#22-java语言"><strong>2.2 Java语言</strong></a></li>
+    <li><a href="#23-ssm框架"><strong>2.3 SSM框架</strong></a></li>
+    <li><a href="#24-mysql数据库"><strong>2.4 MySQL数据库</strong></a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#31系统的需求分析"><strong>3.1系统的需求分析</strong></a></li>
+    <li><a href="#32系统的可行性分析"><strong>3.2系统的可行性分析</strong></a>
+      <ul>
+        <li><a href="#321经济可行性"><strong>3.2.1经济可行性</strong></a></li>
+        <li><a href="#322技术可行性"><strong>3.2.2技术可行性</strong></a></li>
+        <li><a href="#323操作可行性"><strong>3.2.3操作可行性</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#41系统的总体功能设计"><strong>4.1系统的总体功能设计</strong></a></li>
+    <li><a href="#42数据库设计"><strong>4.2数据库设计</strong></a>
+      <ul>
+        <li><a href="#421概念设计"><strong>4.2.1概念设计</strong></a></li>
+        <li><a href="#422逻辑设计"><strong>4.2.2逻辑设计</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#51管理员角色功能设计"><strong>5.1管理员角色功能设计</strong></a>
+      <ul>
+        <li><a href="#511个人中心"><strong>5.1.1个人中心</strong></a></li>
+        <li><a href="#512管理员管理"><strong>5.1.2管理员管理</strong></a></li>
+        <li><a href="#513电影管理"><strong>5.1.3电影管理</strong></a></li>
+        <li><a href="#514电影评价管理"><strong>5.1.4电影评价管理</strong></a></li>
+        <li><a href="#515电影收藏管理"><strong>5.1.5电影收藏管理</strong></a></li>
+        <li><a href="#516电影订单管理"><strong>5.1.6电影订单管理</strong></a></li>
+        <li><a href="#517基础数据管理"><strong>5.1.7基础数据管理</strong></a></li>
+        <li><a href="#518公告信息管理"><strong>5.1.8公告信息管理</strong></a></li>
+        <li><a href="#519用户管理"><strong>5.1.9用户管理</strong></a></li>
+        <li><a href="#5110轮播图管理"><strong>5.1.10轮播图管理</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#52用户角色功能设计"><strong>5.2用户角色功能设计</strong></a>
+      <ul>
+        <li><a href="#521个人中心"><strong>5.2.1个人中心</strong></a></li>
+        <li><a href="#522电影管理"><strong>5.2.2电影管理</strong></a></li>
+        <li><a href="#523电影评价管理"><strong>5.2.3电影评价管理</strong></a></li>
+        <li><a href="#524电影收藏管理"><strong>5.2.4电影收藏管理</strong></a></li>
+        <li><a href="#525电影订单管理"><strong>5.2.5电影订单管理</strong></a></li>
+        <li><a href="#525公告信息管理"><strong>5.2.5公告信息管理</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#61测试概述"><strong>6.1测试概述</strong></a></li>
+    <li><a href="#62管理员登录模块测试"><strong>6.2管理员登录模块测试</strong></a></li>
+    <li><a href="#63用户登录模块测试"><strong>6.3用户登录模块测试</strong></a></li>
+    <li><a href="#64电影管理模块测试"><strong>6.4电影管理模块测试</strong></a></li>
+    <li><a href="#65公告信息管理模块测试"><strong>6.5公告信息管理模块测试</strong></a></li>
+    <li><a href="#66用户管理模块测试"><strong>6.6用户管理模块测试</strong></a></li>
+    <li><a href="#66测试结果"><strong>6.6测试结果</strong></a></li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#0323springboot电影订票及评论网站的设计与实现-项目图片">0323springboot电影订票及评论网站的设计与实现 项目图片</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="0323springboot电影订票及评论网站的设计与实现httpsgithubcomgraduationproject-springboot0323springboot"><a href="https://github.com/GraduationProject-springboot/0323springboot" target="_blank" rel="noopener noreffer ">0323springboot电影订票及评论网站的设计与实现</a></h1>
+<h3 id="微信-chen_q123456--qq462201886">微信： chen_q123456  qq:462201886</h3>
+<h3 id="githubchenqi199">github:chenqi199</h3>
+<h3 id="所有项目httpsgithubcomgraduationproject-springbootallspringbootprojects-包安装运行"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">所有项目</a> 包安装运行</h3>
+<h3 id="所有项目列表excel-腾讯文档-项目清单httpsdocsqqcomsheetdshrfsvz5aevyt3n3tabbb08j2-包安装运行"><a href="https://docs.qq.com/sheet/DSHRFSVZ5aEVYT3N3?tab=BB08J2" target="_blank" rel="noopener noreffer ">所有项目列表excel 腾讯文档 项目清单</a> 包安装运行</h3>
+<h3 id="githubhttpschenqi199githubio"><a href="https://chenqi199.github.io" target="_blank" rel="noopener noreffer ">github</a></h3>
+<h1 id="0323springboot电影订票及评论网站的设计与实现">0323springboot电影订票及评论网站的设计与实现</h1>
+<h3 id="点击播放视频-">点击播放视频 ▼</h3>
+<p><a href="https://player.bilibili.com/player.html?isOutside=true&amp;aid=BV1T1bpekEK7&amp;bvid=BV1T1bpekEK7&amp;cid=500001612673256&amp;p=21" target="_blank" rel="noopener noreffer "><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.sstatic.net/Vp2cE.png"
+        data-srcset="https://i.sstatic.net/Vp2cE.png, https://i.sstatic.net/Vp2cE.png 1.5x, https://i.sstatic.net/Vp2cE.png 2x"
+        data-sizes="auto"
+        alt="https://i.sstatic.net/Vp2cE.png"
+        title="Watch the video" /></a></p>
+<h3 id="所有项目httpsgithubcomgraduationproject-springbootallspringbootprojects-包安装运行-1"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">所有项目</a> 包安装运行</h3>
+<p>基于SSM的电影订票及评论网站的设计与实现</p>
+<h1 id="摘要">摘要</h1>
+<p>当下，正处于信息化的时代，许多行业顺应时代的变化，结合使用计算机技术向数字化、信息化建设迈进。以前相关行业对于电影订票及评论信息的管理和控制，采用人工登记的方式保存相关数据，这种以人力为主的管理模式已然落后。本人结合使用主流的程序开发技术，设计了一款基于SSM的电影订票及评论网站，可以较大地减少人力、财力的损耗，方便相关人员及时更新和保存信息。本系统主要使用B/S开发模式，在MyEclipse开发平台上，运用Java语言设计相关的系统功能模块，MySQL数据库管理相关的系统数据信息，SSM框架设计和开发系统功能架构，最后通过使用Tomcat服务器，在浏览器中发布设计的系统，并且完成系统与数据库的交互工作。本文对系统的需求分析、可行性分析、技术支持、功能设计、数据库设计、功能测试等内容做了较为详细的介绍，并且在本文中也展示了系统主要的功能模块设计界面和操作界面，并对其做出了必要的解释说明，方便用户对系统进行操作和使用，以及后期的相关人员对系统进行更新和维护。本系统的实现可以极大地提高相关行业的工作效率，提升用户的使用体验，因此在现实生活中运用本系统具有很大的使用价值。</p>
+<p>**关键词：**电影订票及评论管理；Java语言；B/S结构；MySQL数据库</p>
+<p>Design and Implementation of a Movie Booking and Review Website Based on
+SSM</p>
+<h1 id="abstract">Abstract</h1>
+<p>At present, we are in the era of informationization. Many industries
+conform to the changes of the times and use computer technology to move
+towards digitalization and informationization. In the past, the
+management and control of movie booking and review information in
+related industries used manual registration to save relevant data. This
+manpower-based management model has fallen behind. Combining the
+mainstream program development technology, I designed a movie booking
+and review website based on SSM, which can greatly reduce the loss of
+human and financial resources and facilitate relevant personnel to
+update and save information in a timely manner. This system mainly uses
+the B/S development model. On the MyEclipse development platform, the
+Java language is used to design the relevant system function modules,
+the MySQL database manages the relevant system data information, the SSM
+framework design and the development system function architecture, and
+finally through the use of the Tomcat server, Publish the designed
+system in the browser, and complete the interaction between the system
+and the database. This paper gives a detailed introduction to the system
+requirements analysis, feasibility analysis, technical support,
+functional design, database design, functional testing, etc., and also
+shows the main function module design interface and operation interface
+of the system in this paper, and Necessary explanations are given to
+facilitate users to operate and use the system, as well as to update and
+maintain the system later by relevant personnel. The implementation of
+this system can greatly improve the work efficiency of related
+industries and improve the user experience, so the application of this
+system in real life has great use value.</p>
+<p><strong>Key words:</strong> Movie booking and comment management; Java language; B/S
+structure; MySQL database</p>
+<p><strong>目录</strong></p>
+<p>[摘要 <a href="#%e6%91%98%e8%a6%81" rel="">I</a>](#摘要)</p>
+<p>[Abstract <a href="#abstract" rel="">II</a>](#abstract)</p>
+<p>[1绪论 <a href="#%e7%bb%aa%e8%ae%ba" rel="">1</a>](#绪论)</p>
+<p>[1.1研究背景与意义 <a href="#%e7%a0%94%e7%a9%b6%e8%83%8c%e6%99%af%e4%b8%8e%e6%84%8f%e4%b9%89" rel="">1</a>](#研究背景与意义)</p>
+<p>[1.1.1研究背景 <a href="#%e7%a0%94%e7%a9%b6%e8%83%8c%e6%99%af" rel="">1</a>](#研究背景)</p>
+<p>[1.1.2研究意义 <a href="#%e7%a0%94%e7%a9%b6%e6%84%8f%e4%b9%89" rel="">1</a>](#研究意义)</p>
+<p>[1.2国内外研究现状 <a href="#%e5%9b%bd%e5%86%85%e5%a4%96%e7%a0%94%e7%a9%b6%e7%8e%b0%e7%8a%b6" rel="">2</a>](#国内外研究现状)</p>
+<p>[1.2.1国外研究现状 <a href="#%e5%9b%bd%e5%a4%96%e7%a0%94%e7%a9%b6%e7%8e%b0%e7%8a%b6" rel="">2</a>](#国外研究现状)</p>
+<p>[1.2.2国内研究现状 <a href="#%e5%9b%bd%e5%86%85%e7%a0%94%e7%a9%b6%e7%8e%b0%e7%8a%b6" rel="">2</a>](#国内研究现状)</p>
+<p>[1.3研究内容与方法 <a href="#%e7%a0%94%e7%a9%b6%e5%86%85%e5%ae%b9%e4%b8%8e%e6%96%b9%e6%b3%95" rel="">2</a>](#研究内容与方法)</p>
+<p>[1.3.1研究内容 <a href="#%e7%a0%94%e7%a9%b6%e5%86%85%e5%ae%b9" rel="">2</a>](#研究内容)</p>
+<p>[1.3.2研究方法 <a href="#%e7%a0%94%e7%a9%b6%e6%96%b9%e6%b3%95" rel="">3</a>](#研究方法)</p>
+<p>[1.4论文的组织结构 <a href="#%e8%ae%ba%e6%96%87%e7%9a%84%e7%bb%84%e7%bb%87%e7%bb%93%e6%9e%84" rel="">3</a>](#论文的组织结构)</p>
+<p>[2相关技术介绍 <a href="#%e7%9b%b8%e5%85%b3%e6%8a%80%e6%9c%af%e4%bb%8b%e7%bb%8d" rel="">4</a>](#相关技术介绍)</p>
+<p>[2.1 B/S结构 <a href="#bs%e7%bb%93%e6%9e%84" rel="">4</a>](#bs结构)</p>
+<p>[2.2 Java语言 <a href="#java%e8%af%ad%e8%a8%80" rel="">4</a>](#java语言)</p>
+<p>[2.3 SSM框架 <a href="#ssm%e6%a1%86%e6%9e%b6" rel="">4</a>](#ssm框架)</p>
+<p>[2.4 MySQL数据库 <a href="#mysql%e6%95%b0%e6%8d%ae%e5%ba%93" rel="">5</a>](#mysql数据库)</p>
+<p>[3系统分析 <a href="#%e7%b3%bb%e7%bb%9f%e5%88%86%e6%9e%90" rel="">6</a>](#系统分析)</p>
+<p>[3.1系统的需求分析 <a href="#%e7%b3%bb%e7%bb%9f%e7%9a%84%e9%9c%80%e6%b1%82%e5%88%86%e6%9e%90" rel="">6</a>](#系统的需求分析)</p>
+<p>[3.2系统的可行性分析 <a href="#%e7%b3%bb%e7%bb%9f%e7%9a%84%e5%8f%af%e8%a1%8c%e6%80%a7%e5%88%86%e6%9e%90" rel="">6</a>](#系统的可行性分析)</p>
+<p>[3.2.1经济可行性 <a href="#%e7%bb%8f%e6%b5%8e%e5%8f%af%e8%a1%8c%e6%80%a7" rel="">6</a>](#经济可行性)</p>
+<p>[3.2.2技术可行性 <a href="#%e6%8a%80%e6%9c%af%e5%8f%af%e8%a1%8c%e6%80%a7" rel="">6</a>](#技术可行性)</p>
+<p>[3.2.3操作可行性 <a href="#%e6%93%8d%e4%bd%9c%e5%8f%af%e8%a1%8c%e6%80%a7" rel="">7</a>](#操作可行性)</p>
+<p>[4系统设计 <a href="#%e7%b3%bb%e7%bb%9f%e8%ae%be%e8%ae%a1" rel="">8</a>](#系统设计)</p>
+<p>[4.1系统的总体功能设计 <a href="#%e7%b3%bb%e7%bb%9f%e7%9a%84%e6%80%bb%e4%bd%93%e5%8a%9f%e8%83%bd%e8%ae%be%e8%ae%a1" rel="">8</a>](#系统的总体功能设计)</p>
+<p>[4.2数据库设计 <a href="#%e6%95%b0%e6%8d%ae%e5%ba%93%e8%ae%be%e8%ae%a1" rel="">8</a>](#数据库设计)</p>
+<p>[4.2.1概念设计 <a href="#%e6%a6%82%e5%bf%b5%e8%ae%be%e8%ae%a1" rel="">8</a>](#概念设计)</p>
+<p>[4.2.2逻辑设计 <a href="#%e9%80%bb%e8%be%91%e8%ae%be%e8%ae%a1" rel="">11</a>](#逻辑设计)</p>
+<p>[5系统实现 <a href="#%e7%b3%bb%e7%bb%9f%e5%ae%9e%e7%8e%b0" rel="">15</a>](#系统实现)</p>
+<p>[5.1管理员角色功能设计 <a href="#%e7%ae%a1%e7%90%86%e5%91%98%e8%a7%92%e8%89%b2%e5%8a%9f%e8%83%bd%e8%ae%be%e8%ae%a1" rel="">15</a>](#管理员角色功能设计)</p>
+<p>[5.1.1个人中心 <a href="#%e4%b8%aa%e4%ba%ba%e4%b8%ad%e5%bf%83" rel="">15</a>](#个人中心)</p>
+<p>[5.1.2管理员管理 <a href="#%e7%ae%a1%e7%90%86%e5%91%98%e7%ae%a1%e7%90%86" rel="">15</a>](#管理员管理)</p>
+<p>[5.1.3电影管理 <a href="#%e7%94%b5%e5%bd%b1%e7%ae%a1%e7%90%86" rel="">15</a>](#电影管理)</p>
+<p>[5.1.4电影评价管理 <a href="#%e7%94%b5%e5%bd%b1%e8%af%84%e4%bb%b7%e7%ae%a1%e7%90%86" rel="">16</a>](#电影评价管理)</p>
+<p>[5.1.5电影收藏管理 <a href="#%e7%94%b5%e5%bd%b1%e6%94%b6%e8%97%8f%e7%ae%a1%e7%90%86" rel="">17</a>](#电影收藏管理)</p>
+<p>[5.1.6电影订单管理 <a href="#%e7%94%b5%e5%bd%b1%e8%ae%a2%e5%8d%95%e7%ae%a1%e7%90%86" rel="">17</a>](#电影订单管理)</p>
+<p>[5.1.7基础数据管理 <a href="#%e5%9f%ba%e7%a1%80%e6%95%b0%e6%8d%ae%e7%ae%a1%e7%90%86" rel="">18</a>](#基础数据管理)</p>
+<p>[5.1.8公告信息管理 <a href="#%e5%85%ac%e5%91%8a%e4%bf%a1%e6%81%af%e7%ae%a1%e7%90%86" rel="">19</a>](#公告信息管理)</p>
+<p>[5.1.9用户管理 <a href="#%e7%94%a8%e6%88%b7%e7%ae%a1%e7%90%86" rel="">19</a>](#用户管理)</p>
+<p>[5.1.10轮播图管理 <a href="#%e8%bd%ae%e6%92%ad%e5%9b%be%e7%ae%a1%e7%90%86" rel="">20</a>](#轮播图管理)</p>
+<p>[5.2用户角色功能设计 <a href="#%e7%94%a8%e6%88%b7%e8%a7%92%e8%89%b2%e5%8a%9f%e8%83%bd%e8%ae%be%e8%ae%a1" rel="">20</a>](#用户角色功能设计)</p>
+<p>[5.2.1个人中心 <a href="#%e4%b8%aa%e4%ba%ba%e4%b8%ad%e5%bf%83-1" rel="">20</a>](#个人中心-1)</p>
+<p>[5.2.2电影管理 <a href="#%e7%94%b5%e5%bd%b1%e7%ae%a1%e7%90%86-1" rel="">21</a>](#电影管理-1)</p>
+<p>[5.2.3电影评价管理 <a href="#%e7%94%b5%e5%bd%b1%e8%af%84%e4%bb%b7%e7%ae%a1%e7%90%86-1" rel="">21</a>](#电影评价管理-1)</p>
+<p>[5.2.4电影收藏管理 <a href="#%e7%94%b5%e5%bd%b1%e6%94%b6%e8%97%8f%e7%ae%a1%e7%90%86-1" rel="">22</a>](#电影收藏管理-1)</p>
+<p>[5.2.5电影订单管理 <a href="#%e7%94%b5%e5%bd%b1%e8%ae%a2%e5%8d%95%e7%ae%a1%e7%90%86-1" rel="">22</a>](#电影订单管理-1)</p>
+<p>[5.2.5公告信息管理 <a href="#%e5%85%ac%e5%91%8a%e4%bf%a1%e6%81%af%e7%ae%a1%e7%90%86-1" rel="">23</a>](#公告信息管理-1)</p>
+<p>[6系统测试 <a href="#%e7%b3%bb%e7%bb%9f%e6%b5%8b%e8%af%95" rel="">24</a>](#系统测试)</p>
+<p>[6.1测试概述 <a href="#%e6%b5%8b%e8%af%95%e6%a6%82%e8%bf%b0" rel="">24</a>](#测试概述)</p>
+<p>[6.2管理员登录模块测试 <a href="#%e7%ae%a1%e7%90%86%e5%91%98%e7%99%bb%e5%bd%95%e6%a8%a1%e5%9d%97%e6%b5%8b%e8%af%95" rel="">24</a>](#管理员登录模块测试)</p>
+<p>[6.3用户登录模块测试 <a href="#%e7%94%a8%e6%88%b7%e7%99%bb%e5%bd%95%e6%a8%a1%e5%9d%97%e6%b5%8b%e8%af%95" rel="">27</a>](#用户登录模块测试)</p>
+<p>[6.4电影管理模块测试 <a href="#%e7%94%b5%e5%bd%b1%e7%ae%a1%e7%90%86%e6%a8%a1%e5%9d%97%e6%b5%8b%e8%af%95" rel="">28</a>](#电影管理模块测试)</p>
+<p>[6.5公告信息管理模块测试
+<a href="#%e5%85%ac%e5%91%8a%e4%bf%a1%e6%81%af%e7%ae%a1%e7%90%86%e6%a8%a1%e5%9d%97%e6%b5%8b%e8%af%95" rel="">29</a>](#公告信息管理模块测试)</p>
+<p>[6.6用户管理模块测试 <a href="#%e7%94%a8%e6%88%b7%e7%ae%a1%e7%90%86%e6%a8%a1%e5%9d%97%e6%b5%8b%e8%af%95" rel="">30</a>](#用户管理模块测试)</p>
+<p>[6.6测试结果 <a href="#%e6%b5%8b%e8%af%95%e7%bb%93%e6%9e%9c" rel="">31</a>](#测试结果)</p>
+<p>[7总结与展望 <a href="#%e6%80%bb%e7%bb%93%e4%b8%8e%e5%b1%95%e6%9c%9b" rel="">32</a>](#总结与展望)</p>
+<p>[参考文献 <a href="#%e5%8f%82%e8%80%83%e6%96%87%e7%8c%ae" rel="">33</a>](#参考文献)</p>
+<p>[致谢 <a href="#%e8%87%b4%e8%b0%a2" rel="">34</a>](#致谢)</p>
+<h1 id="heading"></h1>
+<h1 id="1绪论"><strong>1绪论</strong></h1>
+<h2 id="11研究背景与意义"><strong>1.1研究背景与意义</strong></h2>
+<h3 id="111研究背景"><strong>1.1.1研究背景</strong></h3>
+<p>近年来，第三产业发展非常迅速，诸如计算机服务、旅游、娱乐、体育等服务行业，对整个社会的经济建设起到了极大地促进作用，这一点是毋庸置疑的。现下，国家也出台了一些列的政策来支持和鼓励第三服务产业的发展与完善，用以带动社会经济的发展^[1]^。所以，整体来说，国家是比较提倡发展第三方服务行业的。纵观计算机领域的整个发展历程，从计算机的诞生到现在，已经有几百年的历史了，计算机应用技术也逐步趋于成熟，并且相关的设计人员也在不断地对其进行改进和完善。再到如今，计算机已经发展成为一个比较热门的行业了。在高校中，计算机、人工智能等专业热度非常高，许多学生在选择专业的时候，大都优先考虑计算机专业。在社会上，计算机类行业也成为了比较受欢迎的行业，从在浏览器中访问的网址，到手机上的各种应用程序，到大型的软件服务设备，基本上都离不开计算机技术支持，以及硬件的支撑。</p>
+<p>如今，互联网几乎遍布于世界的各个角落，人工智能、大数据占据的越来越重要的社会地位，比如疫情期间，通过大数据技术进行筛查，确定哪些人员无接触史，哪些人员需要重点观察，由此可以在极短的时间内，以最快的速度对疫情进行防控。在这个大背景环境的推动下，本人通过学习Java语言、MySQL数据库、SSM框架等相关的计算机技术，打好坚实的技术基础，方便后期对系统进行研发。而后再通过对系统进行需求分析、可行性分析、总体功能设计等工作准备，确定系统的总体功能需求，方便接下来详细地系统功能模块进行设计和实现，最后成功的研发了一款基于SSM的电影订票及评论网站。本系统改善了传统的管理模式，将原先的手工记录和管理信息，改进为使用计算机存储和管理信息记录，极大地方便了工作人员对相关数据进行处理，为相关行业节约了不少的员工费用和管理开销，并且能够在较短的时间内响应用户的需求，这种便捷的操作，对于用户来说可以节省了不少时间和精力，也省去了不少的麻烦，极大了方便了用户。</p>
+<h3 id="112研究意义"><strong>1.1.2研究意义</strong></h3>
+<p>传统的信息化管理模式，主要是以人力为主进行管理和控制，由工作人员负责登记用户信息，再通过对照之前的信息记录，确定是否给用户提供相关的使用需求，以及如何提供能让用户满意的使用需求。这种管理模式已经适应不了时代的变化了，正在不断地走下坡路，并且逐步被信息化管理模式所取代。所谓的信息化管理模式，是现在主流的一种管理模式，其通过与计算机技术相结合的方式，对行业的整个工作模式和服务流程进行改进和完善。其主要通过使用计算机等设备，将工作服务流程电子化，并且进行存储记录，用以提高行业整体的服务水平。结合使用计算机技术，本人研发出一款基于SSM的电影订票及评论网站，采用电子化的方式对数据信息进行存储，便于工作人员对相关信息进行记录和管理，有利于提高相关行业的工作运营效率以及工作人员的管理速度，以此更好的满足用户的相关需求，最终达到提升用户的使用感受的目的，由此可见设计和实现本系统具有重要的意义和价值。</p>
+<h2 id="12国内外研究现状"><strong>1.2国内外研究现状</strong></h2>
+<h3 id="121国外研究现状"><strong>1.2.1国外研究现状</strong></h3>
+<p>美国是最先发展计算机技术的众多国家之一，早在上个世纪，美国就快速的将计算机技术发展起来，并且将其运用在军事、医院、学校、社会服务等场所。日本、德国等国家紧随其后，不断地发展和完善计算机技术，侧重将医疗、社会服务等领域与计算机技术相结合^[2]^。而后随着社会的发展与进步，计算机技术逐渐趋于成熟。许多发达国家在探索将计算机技术应用于各行各业中时，从另一个角度来看，也在不断地推进社会的信息化管理进程，使得电影订票及评论管理也变得更加网络化、信息化了。有许多专家表示，可以结合使用图像处理软件、人工智能技术等相关工具，深度地分析电影订票及评论网站，主要从简化运行操作，加设功能模块，美化系统界面，保障数据安全等方面，更深层次地提升和优化系统，并且尽可能地在理想状态下做到实时的信息共享^[3]^。</p>
+<h3 id="122国内研究现状"><strong>1.2.2国内研究现状</strong></h3>
+<p>国内的计算机技术的发展虽然晚于国外，尤其是美国、英国、德国等发达国家。但是我国的计算机技术发展势头非常迅猛，近些年，也逐渐走向成熟和完善的阶段。现在，选择网上购物已经成为人们日常生活的一种常态趋势，当然这也离不开对于天猫、支付宝、微信等应用软件的使用^[4]^。许多企业结合使用了云计算、人工智能等先进的计算机技术，自主研发了行业相关的信息管理系统，使得计算机技术越来越成熟，系统功能越来越完备。结合计算机技术，采用主流的B/S开发结构模式开发一款基于SSM的电影订票及评论网站。由此，本系统能够支持工作人员随时随地的通过使用浏览器进行访问操作，支持随时随地对相关的电影订票及评论进行管理，便于及时为用户提供一定的功能服务。并且所设计的系统基本上能够符合用户的客观使用需求，有利于充分协调相关行业的人力、财力、物力等资源，不断提高电影订票及评论的管理质量和水平。</p>
+<h2 id="13研究内容与方法"><strong>1.3研究内容与方法</strong></h2>
+<h3 id="131研究内容"><strong>1.3.1研究内容</strong></h3>
+<p>本文首先介绍了电影订票及评论网站的研究背景与意义，其次介绍了系统的总体功能设计，接着将总体功能设计拆分成了各个功能子模块，然后对每一个小的功能子模块进行了详细设计，最后介绍了系统的功能模块展示结果和测试结果。系统主要分为管理员角色和用户角色，具体的功能设计包括注册登录管理、用户信息管理、商品信息管理、订单信息管理等模块。注册登录管理功能是新用户在使用系统前，需要通过注册步骤，登记详细的信息资料，而后再通过输入正确的账号和密码，成功登录系统后，即可通过一系列的操作来满足自己的相关需求。用户信息管理功能是管理相关的用户信息资料，管理人员根据现实情况的需要，选择性的对用户信息记录进行更新处理。商品信息管理是管理相关的商品信息记录，保存详情的商品情况，方便及时响应用户的服务请求。订单信息管理是管理相关的订单信息记录，方便相关人员及时查看订单信息，如果遇到异常的订单信息，可以及时对其进行处理，在较短的时间内解决问题，提高用户的使用体验。</p>
+<h3 id="132研究方法"><strong>1.3.2研究方法</strong></h3>
+<p>本系统采用B/S结构，在MyEclipse平台上，通过使用Java语言设计系统相关的功能模块，MySQL数据库管理系统相关的数据信息，并且对其进行必要的管理和控制。系统设计的最关键的环节，则是需要通过SSM框架设计系统功能架构，再通过Tomcat服务器将系统发布到浏览器上，以便相关用户的操作和使用。本系统的设计和实现促进了相关行业的信息化建设，有利于简化相关人员工作流程，提高工作效率，提升工作幸福感。</p>
+<h2 id="14论文的组织结构"><strong>1.4论文的组织结构</strong></h2>
+<p>基于SSM的电影订票及评论网站的设计与实现大致可以被分成七个章节，每一个章节的具体内容如下：</p>
+<p>第一章为绪论，本章主要介绍了系统的研究现状、背景依据等内容。根据本章所介绍的研究现状、研究背景等内容，了解当前相关的系统软件产品的实际研究情况，再通过介绍相关的研究内容以及研究方法等内容，总体概括系统的整个开发流程和实现步骤，为系统提供可靠的理论依据和技术支持。</p>
+<p>第二章为相关技术介绍，本章主要介绍了开发所使用的相关技术。本系统主要使用的开发技术包括Java语言、SSM框架、MySQL数据库等，并且所使用的开发模式为B/S结构。其中，Java语言具有跨平台性，可移植性高，可以支持在不同的浏览器上运行本系统，MySQL数据库占用内存少，执行速度快，对于中小型系统的数据管理是非常好的选择。</p>
+<p>第三章为系统分析，本章主要介绍了需求分析、可行性分析等内容。根据需求分析，确认使用者对系统的实际使用需求，再通过对系统进行可行性分析，重点分析系统研发的实际意义和使用价值，系统性能的稳定性和功能操作的便捷性，以及成功投入市场的可能性。</p>
+<p>第四章为系统设计，本章主要介绍了系统的总体功能设计、数据库设计等内容。通过介绍系统的总体功能设计，总体规划系统的功能模块，为实现系统提供参考依据和设计思路，做好功能设计的准备工作。再通过介绍数据库设计，设计相关的数据二维表格存放和管理与系统有关的数据信息，便于相关人员管理与系统有关的数据信息，维护和更新数据信息的安全。</p>
+<p>第五章为系统实现，系统实现阶段主要介绍了用户信息管理、商品信息管理、订单信息管理等功能模块。通过前面介绍的需求分析、总体功能设计、数据库设计等相关内容，实现系统的具体功能设计。对系统的各个功能模块进行设计和实现的过程，就是具体的系统实现过程，在整个系统开发过程中，这一阶段是极为重要，直接关系到用户对系统的使用感受。</p>
+<p>第六章为系统测试，本章主要介绍了测试功能、结果分析等相关内容。系统测试阶段通过采用功能测试的方式，测试所设计的系统功能模块能否正常打开并使用，在系统运行过程中是否发生异常，如运行异常、数据异常、结果异常等，并且根据测试结果，给出相应的测试总结，由此得出相关结论，说明系统是否达到预期要求、设计目的。</p>
+<p>第七章为总结与展望，对全文内容进行总结，并且对未来提出展望。总体来说，本系统的开发是比较理想的，未来的工作主要是针对于系统的功能和性能等方面，做一定的改进和完善，不断地优化系统的功能设计，美化系统的界面设计，简化系统的操作难度，使其能够满足更多用户的使用需求。</p>
+<h1 id="heading-1"></h1>
+<h1 id="2相关技术介绍"><strong>2相关技术介绍</strong></h1>
+<h2 id="21-bs结构"><strong>2.1 B/S结构</strong></h2>
+<p>就软件开发的现状而言，目前主要使用的系统开发结构模式大致可以分为C/S模式和B/S模式^[5]^。其中，C/S模式全称为客户端/服务器模式，B/S模式全称为浏览器/服务器模式。用户在使用基于C/S模式开发的系统时，必须下载相应的客户端，即应用程序，才能操作和使用软件系统的相关功能模块。从使用者的角度来看，由于下载和安装客户端的步骤比较繁琐，期间还需要确保下载网速的稳定性，以及安装步骤的正确性，进而增加了用户放弃使用该系统的可能性，由此可见C/S模式具有很大的局限性。</p>
+<p>由于C/S模式适用于小范围的局域网，并且具有一定的通信效率，所以在以前系统规模很小的时代，主要使用C/S模式对系统开发。随着时代地发展以及社会地进步，C/S模式也越来越满足不了开发者的设计需要，以及使用者的使用需求^[6]^。当下，C/S模式已经满足不了实际的系统程序设计要求，由此，B/S模式以C/S模式为基础而被提出，并且在近些年逐渐发展成为主流的开发结构模式。在B/S模式下开发的系统，不再需要用户下载和安装相应的应用程序，直接通过使用浏览器，输入正确的网站地址，以访问网站的形式实现系统的相关功能操作，这一特点对C/S模式下的开发设计做出了极大地改进，当然，使用本系统的前提是确保账号和密码是合法的。</p>
+<h2 id="22-java语言"><strong>2.2 Java语言</strong></h2>
+<p>Java语言是由美国sun公司提出的一种面向对象的程序设计语言，它拥有着优秀的技术体系结构。目前在市场上，很大一部分的应用系统主要使用Java语言进行开发^[7]^。Java语言具有简单易懂，操作方便，健壮性强等优点，开发人员能够的在短时间内理解和掌握Java语言，并将其运用到具体的系统开发过程中学。针对于系统内存管理问题，Java语言为解决这类问题，内部提供了垃圾回收机制。为了极大地简化了开发编程的难易程度，Java语言还将C语言中的指针，改进成了引用，所以受到了很多开发人员的喜爱。Java语言还具有跨平台性的特点，意味着它的可移植性非常高，这一特点有利于开发人员更新和维护相关代码，由它所开发的系统可以支持在不同的浏览器中打开。因为使用Java开发的系统兼容性较强，代码通用性较高，为了后期方便对系统进行完善和维护，所以本人最终选择使用Java语言开发本系统。</p>
+<h2 id="23-ssm框架"><strong>2.3 SSM框架</strong></h2>
+<p>SSM框架主要由Spring、SpringMVC、MyBatis这三个框架所集成的，是现在比较流行的一种Java开发框架，能够适用于大中型的应用程序的设计和搭建。Spring是前几十年前兴起的一种轻量级的、开源的Java开发框架，使用它可以解决相关的系统对象创建和对象依赖问题，并且也可以将高耦合的系统分解为低耦合的多个功能模块，方便对系统模块进行明确的分工，对功能代码进行理解和修改，这就极大地减轻了设计人员的开发压力^[8]^。SpringMVC框架是基于Spring框架而被提出的，它以MVC三层架构为核心，对Spring的相关技术进行了整合，主要针对于Web端进行技术架构，通过对相关的请求处理进行细化处理，用来响应用户的使用请求。MyBatis框架是一种开源的Java持久层框架，它改进了手动设置参数和获取结果记录的方式，通过支持对数据库进行存储过程、高级映射等处理，使得数据库的操作更加定制化、透明化，因此降低了数据库访问的复杂性，提高了开发的工作效率。</p>
+<h2 id="24-mysql数据库"><strong>2.4 MySQL数据库</strong></h2>
+<p>MySQL数据库是目前使用较多的关系型数据库。因为其具有开源免费、占用内存少、安装简单、操作便捷、使用灵活等优点，所以经常被运用于中小型的系统开发中^[9]^。MySQL数据库可以支持多线程，在同一个时间内，能够同时响应多个用户的使用需求。MySQL数据库还自带了优化器，方便设计人员在
+使用过程中，快速的查询相关的数据信息^[10]^。除此之外，SQL
+server数据库在当下也是使用比较频繁的，它在数据安全、系统稳定等方面还是比有所保障，但是由于其收费使用、占用内存大、操作复杂、维护成本高，
+一般适用于中型及以上的系统开发中。MySQL数据库也有着许多的应用程序接口，以供相关的编程语言使用，编写的代码具有极高的通用性和维护性，并且MySQL数据库能够迅速的处理上千条数据记录，在系统故发生障时，能通过日志文件快速恢复。MySQL数据库与SQL
+server数据库相比较，综合考虑成本开销、占存大小、代码通用、数据维护、操作难易程度等方面，MySQL数据库占有很大的优势，在数据库设计人员的眼中，MySQL数据库的实际运用价值极高。</p>
+<h1 id="heading-2"></h1>
+<h1 id="3系统分析"><strong>3系统分析</strong></h1>
+<h2 id="31系统的需求分析"><strong>3.1系统的需求分析</strong></h2>
+<p>需求分析阶段是设计系统功能模块的总方向，可以这样来说，系统的整个的开发流程以及设计进度，基本上都是以需求分析为基本依据的^[11]^。需求分析阶段可以确定系统的基本功能设计，以及在最后的系统验收阶段，再通过对需求分析报告进行对比，验证系统的功能设计是否合理，能否满足用户的基本需要，最终判断总结系统是否成功现实。本文主要通过问卷调查的方式，来分析电影订票及评论网站所需要的相关功能^[12]^。根据调查结果显示，系统用户主要有两种类型，一种是以使用为主要目的的用户角色类型，另一种是以管理为主要目的的管理员角色类型。本系统主要功能需求包括用户信息管理、商品信息管理、订单信息管理等模块。其中，密码信息、用户信息、商品信息等都是非常重要的数据记录，在系统设计的过程中，需要进行一定的加密处理，确保数据安全性，切实的保护好用户的重要信息。</p>
+<h2 id="32系统的可行性分析"><strong>3.2系统的可行性分析</strong></h2>
+<h3 id="321经济可行性"><strong>3.2.1经济可行性</strong></h3>
+<p>对系统进行经济可行性分析，也可以被称为对系统进行经济可行性研究，它是从社会的经济发展出发，通过研究整个的系统可行性，对成本收益情况进行全面地、具体地分析，并且根据所分析的可行性报告，为相关的投资者提供最科学的决策理论和最优的投资方案。本系统的开发促进了相关行业的信息化管理，管理人员可以直接通过在浏览器上发布电影订票及评论网站的网站地址，即可用户根据一定的需要，有选择的对系统相关功能进行操作。这种方式打破了时间和空间的限制，可以使得相关行业在较短的时间内最大化地管理电影订票及评论的相关信息。并且本系统所使用的开发技术和相关工具，大部分是开源的、免费的，所以可以节约很大一笔开发成本。综合上述内容分析可知，本系统的实现在经济层面上是具备可行性的。</p>
+<h3 id="322技术可行性"><strong>3.2.2技术可行性</strong></h3>
+<p>本系统是基于Java语言而进行开发的，因为Java语言容易学习、使用简单、可移植性高、稳定性强等特点，所以许多的开发技术人员均喜欢使用Java语言进行系统设计，市场上很多应用程序是由Java语言进行开发实现的。并且Java语言还具有跨平台的优点，这意味着所设计的系统是与平台无关的，也就说明由Java语言开发的系统可以支持在不同的浏览器上运行和使用。本系统使用的是MySQL数据库，相同条件下，对比其他数据库，MySQL数据库语法简单，数据库设计人员可以尽可能快的对其学习和掌握，所以一直是中小型系统最优的数据库选择。MySQL数据库还具有占用系统内存少、功能齐全、响应速度快、使用不收费等特点，能够在极短时间内处理上千条信息记录，所以能够保证系统可以高效地运行和工作。综合上述内容分析可知，系统的实现在技术层面上是具备可行性的。</p>
+<h3 id="323操作可行性"><strong>3.2.3操作可行性</strong></h3>
+<p>如今，人们的日常生活已经离不开互联网的使用，在一定程度上，行业的信息化建设促进着社会的发展。人们通过使用手机上的应用程序，比如，通过使用电子商务系统，可以实现网上购物、在线支付等功能；通过使用国家官方网站，可以查看最新消息，申报个人业务；通过使用医院管理系统，可以进行网上预约挂号，在线查看体检报告等操作。在这些应用的背景下，本系统使用的是B/S开发结构模式，网站界面以人性化的设计为主，具有美观友好、交互性好等优点，用户不需要掌握一定的编程技术，直接通过对系统进行简单的功能操作，即可满足自己的使用需求。本系统还设计了一些提示信息，便于用户更好的理解系统相关功能，较快的以正确的操作方式来使用系统。综合上述内容分析可知，系统的实现在操作层面上是具备可行性的。</p>
+<h1 id="4系统设计"><strong>4系统设计</strong></h1>
+<h2 id="41系统的总体功能设计"><strong>4.1系统的总体功能设计</strong></h2>
+<p>系统的总体功能设计，是需求分析的下一个阶段，是系统实现的上一个阶段，它是系统详细功能设计的一个大方向，也就是说系统的各类子功能模块的设计，都是以总体功能设计为目标而进行的。通过对系统进行需求分析可知，可以大致了解系统具体所需要的相关功能。本系统主要的功能需求包括用户信息管理、商品信息管理、订单信息管理等模块。本系统的总体功能设计图如图4-1所示。</p>
+<p>电影订票及评论网站</p>
+<p>用户信息管理</p>
+<p>公告信息管理</p>
+<p>电影订单管理</p>
+<p>电影评价管理</p>
+<p>电影信息管理</p>
+<p>用户信息修改</p>
+<p>用户信息新增</p>
+<p>电影信息添加</p>
+<p>电影信息删除</p>
+<p>电影信息修改</p>
+<p>电影评价添加</p>
+<p>电影评价修改</p>
+<p>电影评价删除</p>
+<p>公告信息添加</p>
+<p>公告信息删改</p>
+<p>公告信息删除</p>
+<p>电影订单添加</p>
+<p>电影订单修改</p>
+<p>电影订单删除</p>
+<p>基础数据管理</p>
+<p>基础数据修改</p>
+<p>基础数据删除</p>
+<p>基础数据添加</p>
+<p>图4-1系统总体功能设计图</p>
+<h2 id="42数据库设计"><strong>4.2数据库设计</strong></h2>
+<h3 id="421概念设计"><strong>4.2.1概念设计</strong></h3>
+<p>本系统使用轻量级的MySQL数据库，对系统相关的数据信息进行管理和维护^[13]^。数据库设计阶段主要可以被分为两个阶段，分别为概念设计和逻辑设计阶段。在整个的数据库设计的过程中，两个阶段起到作用是不同的，概念设计阶段是实现基础，逻辑设计阶段最终目标^[14]^。概念设计阶段主要通过使用实体-联系图（E-R图）的方式，将现实世界中用户的相关需求抽象化为虚拟世界中的概念模型。本人通过设计E-R图，详细的对系统中的实体以及实体之间的联系进行了表达。各实体信息的E-R图如图4-2、图4-3、图4-4、图4-5、图4-6、图4-7、图4-8、图4-9所示，系统总体E-R图如图4-10所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image1.emf"
+        data-srcset="media/image1.emf, media/image1.emf 1.5x, media/image1.emf 2x"
+        data-sizes="auto"
+        alt="media/image1.emf"
+        title="media/image1.emf" /></p>
+<p>图4-2管理员信息E-R图</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image2.emf"
+        data-srcset="media/image2.emf, media/image2.emf 1.5x, media/image2.emf 2x"
+        data-sizes="auto"
+        alt="media/image2.emf"
+        title="media/image2.emf" /></p>
+<p>图4-3用户信息E-R图</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image3.emf"
+        data-srcset="media/image3.emf, media/image3.emf 1.5x, media/image3.emf 2x"
+        data-sizes="auto"
+        alt="media/image3.emf"
+        title="media/image3.emf" /></p>
+<p>图4-4电影信息E-R图</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image4.emf"
+        data-srcset="media/image4.emf, media/image4.emf 1.5x, media/image4.emf 2x"
+        data-sizes="auto"
+        alt="media/image4.emf"
+        title="media/image4.emf" /></p>
+<p>图4-5字典信息E-R图</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image5.emf"
+        data-srcset="media/image5.emf, media/image5.emf 1.5x, media/image5.emf 2x"
+        data-sizes="auto"
+        alt="media/image5.emf"
+        title="media/image5.emf" /></p>
+<p>图4-6电影订单信息E-R图</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image6.emf"
+        data-srcset="media/image6.emf, media/image6.emf 1.5x, media/image6.emf 2x"
+        data-sizes="auto"
+        alt="media/image6.emf"
+        title="media/image6.emf" /></p>
+<p>图4-7电影收藏信息E-R图</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image7.emf"
+        data-srcset="media/image7.emf, media/image7.emf 1.5x, media/image7.emf 2x"
+        data-sizes="auto"
+        alt="media/image7.emf"
+        title="media/image7.emf" /></p>
+<p>图4-8电影评价信息E-R图</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image8.emf"
+        data-srcset="media/image8.emf, media/image8.emf 1.5x, media/image8.emf 2x"
+        data-sizes="auto"
+        alt="media/image8.emf"
+        title="media/image8.emf" /></p>
+<p>图4-9公告信息E-R图</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image9.emf"
+        data-srcset="media/image9.emf, media/image9.emf 1.5x, media/image9.emf 2x"
+        data-sizes="auto"
+        alt="media/image9.emf"
+        title="media/image9.emf" /></p>
+<p>图4-10系统总体E-R图</p>
+<h3 id="422逻辑设计"><strong>4.2.2逻辑设计</strong></h3>
+<p>逻辑设计阶段主要的工作是将概念设计中的E-R图，转换成方便系统进行存储和管理的二维表格形式^[15]^。这一阶段也可以被称为数据库的详细设计，其直接关系到系统功能模块的正常运行、数据信息的正常更新等。在设计过程中，需要充分考虑数据库的规范性和合理性，使得能够满足系统的功能和性能需求。本系统相关的数据表格设计内容如下所示。</p>
+<p>表4-1管理员信息表</p>
+<hr>
+<p>序号        列名             数据类型              说明          允许空</p>
+<pre><code>1           id                Int                 编号            否
+
+2        username            String              用户名           是
+
+3        password            String               密码            是
+
+4          role              String               角色            是
+
+5        addtime              Date              新增时间          是
+</code></pre>
+<hr>
+<p>表4-2用户信息表</p>
+<hr>
+<p>序号         列名              数据类型              说明          允许空</p>
+<pre><code>1            id                 Int                 编号            否
+
+2         username             String               账号            是
+
+3         password             String               密码            是
+
+4       yonghu_name            String             用户姓名          是
+
+5        sex_types            Integer               性别            是
+
+6     yonghu_id_number         String             身份证号          是
+
+7       yonghu_phone           String              手机号           是
+
+8       yonghu_photo           String               照片            是
+
+9        new_money           BigDecimal             余额            是
+
+10     yonghu_delete          Integer               假删            是
+
+11      create_time             Date              创建时间          是
+</code></pre>
+<hr>
+<p>表4-3电影信息表</p>
+<hr>
+<p>序号          列名               数据类型              说明          允许空</p>
+<pre><code>1             id                  Int                 编号            否
+
+2       dianying_name            String             电影名称          是
+
+3       dianying_photo           String             电影照片          是
+
+4       dianying_types          Integer             电影类型          是
+
+5       zuowei_number           Integer             电影座位          是
+
+6     dianying_old_money       BigDecimal             原价            是
+
+7     dianying_new_money       BigDecimal             现价            是
+
+8         zan_number            Integer                赞             是
+
+9         cai_number            Integer                踩             是
+
+10      shangxia_types          Integer             是否上架          是
+
+11     dianying_delete          Integer             逻辑删除          是
+
+12     dianying_content          String             电影简介          是
+
+13       create_time              Date              创建时间          是
+</code></pre>
+<hr>
+<p>表4-4字典信息表</p>
+<hr>
+<p>序号        列名             数据类型              说明          允许空</p>
+<pre><code>1           id                Int                 编号            否
+
+2        dic_code            String               字段            是
+
+3        dic_name            String              字段名           是
+
+4       code_index          Integer               编码            是
+
+5       index_name           String             编码名字          是
+
+6        super_id           Integer            父字段编号         是
+
+7         beizhu             String               备注            是
+
+8      create_time            Date              创建时间          是
+</code></pre>
+<hr>
+<p>表4-5电影订单信息表</p>
+<hr>
+<p>序号               列名                    数据类型              说明          允许空</p>
+<pre><code>1                  id                       Int                 编号            否
+
+2      dianying_order_uuid_number          String              订单号           是
+
+3             dianying_id                 Integer               电影            是
+
+4              yonghu_id                  Integer               用户            是
+
+5          buy_zuowei_number               String            购买的座位         是
+
+6           buy_zuowei_time                 date             购买的日期         是
+
+7      dianying_order_true_price         BigDecimal           实付价格          是
+
+8         dianying_order_types            Integer             订单类型          是
+
+9     dianying_order_payment_types        Integer             支付类型          是
+
+10            insert_time                   Date            订单创建时间        是
+
+11            create_time                   Date              创建时间          是
+</code></pre>
+<hr>
+<p>表4-6电影收藏信息表</p>
+<hr>
+<p>序号             列名                   数据类型              说明          允许空</p>
+<pre><code>1                id                      Int                 编号            否
+
+2            dianying_id               Integer               电影            是
+
+3             yonghu_id                Integer               用户            是
+
+4     dianying_collection_types        Integer               类型            是
+
+5            insert_time                 Date              收藏时间          是
+
+6            create_time                 Date              创建时间          是
+</code></pre>
+<hr>
+<p>表4-7电影评价信息表</p>
+<hr>
+<p>序号             列名                   数据类型              说明          允许空</p>
+<pre><code>1                id                      Int                 编号            否
+
+2            dianying_id               Integer               电影            是
+
+3             yonghu_id                Integer               用户            是
+
+4     dianying_commentback_text         String             评价内容          是
+
+5            reply_text                 String             回复内容          是
+
+6            insert_time                 Date              评价时间          是
+
+7            update_time                 Date              回复时间          是
+
+8            create_time                 Date              创建时间          是
+</code></pre>
+<hr>
+<p>表4-8公告信息表</p>
+<hr>
+<p>序号        列名             数据类型              说明          允许空</p>
+<pre><code>1           id                Int                 编号            否
+
+2       news_name            String           公告信息标题        是
+
+3       news_types          Integer           公告信息类型        是
+
+4       news_photo           String           公告信息图片        是
+
+5      insert_time            Date            公告信息时间        是
+
+6      news_content          String           公告信息详情        是
+
+7      news_delete          Integer               假删            是
+
+8      create_time            Date              创建时间          是
+</code></pre>
+<hr>
+<h1 id="5系统实现"><strong>5系统实现</strong></h1>
+<h2 id="51管理员角色功能设计"><strong>5.1管理员角色功能设计</strong></h2>
+<h3 id="511个人中心"><strong>5.1.1个人中心</strong></h3>
+<p>通过设计个人中心功能模块，管理用户可以选择查看个人资料信息，选择更新个人相关的资料信息记录；也可以选择修改账号密码，通过不定期的对个人账户密码进行更新，保障个人信息安全，修改密码界面设计如图5-1所示，个人信息界面设计如图5-2所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image10.png"
+        data-srcset="media/image10.png, media/image10.png 1.5x, media/image10.png 2x"
+        data-sizes="auto"
+        alt="media/image10.png"
+        title="media/image10.png" />{width=&ldquo;5.766666666666667in&rdquo; height=&ldquo;1.475in&rdquo;}</p>
+<p>图5-1修改密码界面</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image11.png"
+        data-srcset="media/image11.png, media/image11.png 1.5x, media/image11.png 2x"
+        data-sizes="auto"
+        alt="media/image11.png"
+        title="media/image11.png" />{width=&ldquo;5.761111111111111in&rdquo; height=&ldquo;1.24375in&rdquo;}</p>
+<p>图5-2个人信息界面</p>
+<h3 id="512管理员管理"><strong>5.1.2管理员管理</strong></h3>
+<p>通过设计管理员管理功能模块，管理用户可以选择查看详细的管理员信息资料，比如查看管理员用户名、管理员密码等信息；可以选择修改相关管理员信息记录；也可以选择删除已经失效的管理员信息记录，管理员管理界面设计如图5-3所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image12.png"
+        data-srcset="media/image12.png, media/image12.png 1.5x, media/image12.png 2x"
+        data-sizes="auto"
+        alt="media/image12.png"
+        title="media/image12.png" />{width=&ldquo;5.766666666666667in&rdquo; height=&ldquo;1.70625in&rdquo;}</p>
+<p>图5-3管理员界面</p>
+<h3 id="513电影管理"><strong>5.1.3电影管理</strong></h3>
+<p>通过设计电影管理功能模块，管理用户可以管理相关的电影信息记录，可以选择查看电影的详情信息，比如查看电影名称、电影类型、电影图片、现价等信息；可以选择修改电影相关的信息记录；可以选择删除已经失效的电影信息记录；根据电影的实际情况，可以选择增加或者减少电影的购买价格；也可以选择添加新的电影信息记录，需要注意的是，需要输入正确的字符格式，才能成功添加新的电影信息记录，电影管理界面设计如图5-4所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image13.png"
+        data-srcset="media/image13.png, media/image13.png 1.5x, media/image13.png 2x"
+        data-sizes="auto"
+        alt="media/image13.png"
+        title="media/image13.png" />{width=&ldquo;5.759722222222222in&rdquo;
+height=&ldquo;2.6847222222222222in&rdquo;}</p>
+<p>图5-4电影管理界面</p>
+<h3 id="514电影评价管理"><strong>5.1.4电影评价管理</strong></h3>
+<p>通过设计电影评价管理功能模块，管理用户可以管理相关的电影评价信息记录，可以选择查看电影评价的详情信息，比如查看电影名称、用户姓名、评价内容、评价时间等信息；可以选择修改电影评价相关的信息记录；可以选择删除已经失效的电影评价信息记录；根据电影评价的实际情况，可以选择更新电影的评价内容；也可以选择添加新的电影评价信息记录，需要注意的是，需要输入正确的字符格式，才能成功添加新的电影评价信息记录，电影评价管理界面设计如图5-5所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image14.png"
+        data-srcset="media/image14.png, media/image14.png 1.5x, media/image14.png 2x"
+        data-sizes="auto"
+        alt="media/image14.png"
+        title="media/image14.png" />{width=&ldquo;5.759722222222222in&rdquo;
+height=&ldquo;2.7645833333333334in&rdquo;}</p>
+<p>图5-5电影评价管理界面</p>
+<h3 id="515电影收藏管理"><strong>5.1.5电影收藏管理</strong></h3>
+<p>通过设计电影收藏管理功能模块，管理用户可以管理相关的电影收藏信息记录，可以选择查看电影收藏单的详情信息，比如查看电影名称、电影图片、用户姓名、收藏时间等信息；可以选择修改电影收藏相关的信息记录；可以选择删除已经失效的电影收藏信息记录；根据电影收藏的实际情况，可以选择更新电影的收藏时间；也可以选择添加新的电影收藏信息记录，需要注意的是，需要输入正确的字符格式，才能成功添加新的电影收藏信息记录，电影收藏管理界面设计如图5-6所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image15.png"
+        data-srcset="media/image15.png, media/image15.png 1.5x, media/image15.png 2x"
+        data-sizes="auto"
+        alt="media/image15.png"
+        title="media/image15.png" />{width=&ldquo;5.7659722222222225in&rdquo;
+height=&ldquo;2.6569444444444446in&rdquo;}</p>
+<p>图5-6电影收藏管理界面</p>
+<h3 id="516电影订单管理"><strong>5.1.6电影订单管理</strong></h3>
+<p>通过设计电影订单管理功能模块，管理用户可以管理相关的电影订单信息记录，可以选择查看电影订单的详情信息，比如查看电影名称、电影图片、电影类型、用户姓名、订单号、购买的座位、购买的日期、实付价格等信息；可以选择修改电影订单相关的信息记录；可以选择删除已经失效的电影订单信息记录；根据电影订单的实际情况，可以选择更新电影的购买位置和时间；也可以选择添加新的电影订单信息记录，需要注意的是，需要输入正确的字符格式，才能成功添加新的电影订单信息记录，电影订单管理界面设计如图5-7所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image16.png"
+        data-srcset="media/image16.png, media/image16.png 1.5x, media/image16.png 2x"
+        data-sizes="auto"
+        alt="media/image16.png"
+        title="media/image16.png" />{width=&ldquo;5.75625in&rdquo; height=&ldquo;2.8291666666666666in&rdquo;}</p>
+<p>图5-7电影订单管理界面</p>
+<h3 id="517基础数据管理"><strong>5.1.7基础数据管理</strong></h3>
+<p>通过设计基础数据管理功能模块，管理用户可以管理相关的电影类型、公告信息类型信息记录，可以选择查看电影类型、公告信息类型的详情信息，比如查看电影类型、公告信息类型的名称信息；可以选择修改电影类型、公告信息类型相关的信息记录；可以选择删除已经失效的电影类型、公告信息类型信息记录；也可以选择添加新的电影类型、公告信息类型信息记录，需要注意的是，需要输入正确的字符格式，才能成功添加新的电影类型、公告信息类型信息记录，电影类型管理界面设计如图5-8所示，公告信息类型管理界面设计如图5-9所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image17.png"
+        data-srcset="media/image17.png, media/image17.png 1.5x, media/image17.png 2x"
+        data-sizes="auto"
+        alt="media/image17.png"
+        title="media/image17.png" />{width=&ldquo;5.764583333333333in&rdquo;
+height=&ldquo;2.4340277777777777in&rdquo;}</p>
+<p>图5-8电影类型管理界面</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image18.png"
+        data-srcset="media/image18.png, media/image18.png 1.5x, media/image18.png 2x"
+        data-sizes="auto"
+        alt="media/image18.png"
+        title="media/image18.png" />{width=&ldquo;5.761111111111111in&rdquo;
+height=&ldquo;2.272222222222222in&rdquo;}</p>
+<p>图5-9公告信息类型管理界面</p>
+<h3 id="518公告信息管理"><strong>5.1.8公告信息管理</strong></h3>
+<p>通过设计公告信息管理功能模块，管理用户可以管理相关的公告信息记录，可以选择查看公告信息的详情信息，比如查看公告信息标题、公告信息类型、公告信息时间等信息；可以选择修改相关的公告信息记录；可以选择删除已经失效的公告信息记录；也可以选择添加新的公告信息记录，需要注意的是，需要输入正确的字符格式，才能成功添加新的公告信息记录，公告信息管理界面设计如图5-10所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image19.png"
+        data-srcset="media/image19.png, media/image19.png 1.5x, media/image19.png 2x"
+        data-sizes="auto"
+        alt="media/image19.png"
+        title="media/image19.png" />{width=&ldquo;5.752777777777778in&rdquo;
+height=&ldquo;2.6618055555555555in&rdquo;}</p>
+<p>图5-10公告信息管理界面</p>
+<h3 id="519用户管理"><strong>5.1.9用户管理</strong></h3>
+<p>通过设计用户管理功能模块，管理用户可以管理相关的用户信息资料，可以选择查看用户详细资料，比如查看用户账号、姓名、图片、手机号等信息；可以选择修改用户相关的信息记录；可以选择删除已经注销的用户信息记录；也可以选择添加新的用户信息记录，需要注意的是，需要输入正确的字符格式，才能成功添加新的用户信息记录，用户管理界面设计如图5-11所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image20.png"
+        data-srcset="media/image20.png, media/image20.png 1.5x, media/image20.png 2x"
+        data-sizes="auto"
+        alt="media/image20.png"
+        title="media/image20.png" />{width=&ldquo;5.752777777777778in&rdquo;
+height=&ldquo;2.665277777777778in&rdquo;}</p>
+<p>图5-11用户管理界面</p>
+<h3 id="5110轮播图管理"><strong>5.1.10轮播图管理</strong></h3>
+<p>通过设计轮播图管理功能模块，管理用户可以管理相关的轮播图信息记录，可以选择查看轮播图信息的详情信息，比如查看轮播图名称、轮播图片等信息；可以选择修改相关的轮播图信息记录；可以选择删除已经失效的轮播图信息记录；也可以选择添加新的轮播图信息记录，需要注意的是，需要输入正确的字符格式，才能成功添加新的轮播图信息记录，轮播图管理界面设计如图5-12所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image21.png"
+        data-srcset="media/image21.png, media/image21.png 1.5x, media/image21.png 2x"
+        data-sizes="auto"
+        alt="media/image21.png"
+        title="media/image21.png" />{width=&ldquo;5.757638888888889in&rdquo;
+height=&ldquo;2.563888888888889in&rdquo;}</p>
+<p>图5-12轮播图管理界面</p>
+<h2 id="52用户角色功能设计"><strong>5.2用户角色功能设计</strong></h2>
+<h3 id="521个人中心"><strong>5.2.1个人中心</strong></h3>
+<p>通过设计的个人中心功能模块，保管人员用户可以查看个人相关的信息资料，比如用户姓名、照片、手机号、身份证号、性别、余额等；也可以通过用户姓名、照片、手机号、身份证号、性别、余额等信息，选择更新个人信息资料，需要注意的是，需要输入正确的字符格式，才能成功更新个人资料信息记录；也可以选择修改个人密码信息，保障个人账户安全，修改密码界面设计如图5-13所示，个人信息界面设计如图5-14所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image22.png"
+        data-srcset="media/image22.png, media/image22.png 1.5x, media/image22.png 2x"
+        data-sizes="auto"
+        alt="media/image22.png"
+        title="media/image22.png" />{width=&ldquo;5.766666666666667in&rdquo;
+height=&ldquo;1.4472222222222222in&rdquo;}</p>
+<p>图5-13修改密码界面</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image23.png"
+        data-srcset="media/image23.png, media/image23.png 1.5x, media/image23.png 2x"
+        data-sizes="auto"
+        alt="media/image23.png"
+        title="media/image23.png" />{width=&ldquo;5.766666666666667in&rdquo; height=&ldquo;2.04375in&rdquo;}</p>
+<p>图5-14个人信息界面</p>
+<h3 id="522电影管理"><strong>5.2.2电影管理</strong></h3>
+<p>通过设计电影管理功能模块，用户可以管理相关的电影信息记录，可以选择查看电影的详情信息，比如查看电影名称、电影类型、电影图片、现价等信息，电影管理界面设计如图5-15所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image24.png"
+        data-srcset="media/image24.png, media/image24.png 1.5x, media/image24.png 2x"
+        data-sizes="auto"
+        alt="media/image24.png"
+        title="media/image24.png" />{width=&ldquo;5.75625in&rdquo; height=&ldquo;2.6458333333333335in&rdquo;}</p>
+<p>图5-15电影管理界面</p>
+<h3 id="523电影评价管理"><strong>5.2.3电影评价管理</strong></h3>
+<p>通过设计电影评价管理功能模块，用户可以管理相关的电影评价信息记录，可以选择查看电影评价的详情信息，比如查看电影名称、用户姓名、评价内容、评价时间等信息，电影评价管理界面设计如图5-16所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image25.png"
+        data-srcset="media/image25.png, media/image25.png 1.5x, media/image25.png 2x"
+        data-sizes="auto"
+        alt="media/image25.png"
+        title="media/image25.png" />{width=&ldquo;5.761111111111111in&rdquo;
+height=&ldquo;2.265972222222222in&rdquo;}</p>
+<p>图5-16电影评价管理界面</p>
+<h3 id="524电影收藏管理"><strong>5.2.4电影收藏管理</strong></h3>
+<p>通过设计电影收藏管理功能模块，用户可以管理相关的电影收藏信息记录，可以选择查看电影收藏的详情信息，比如查看电影名称、电影图片、用户姓名、收藏时间等信息，电影收藏管理界面设计如图5-17所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image26.png"
+        data-srcset="media/image26.png, media/image26.png 1.5x, media/image26.png 2x"
+        data-sizes="auto"
+        alt="media/image26.png"
+        title="media/image26.png" />{width=&ldquo;5.7659722222222225in&rdquo;
+height=&ldquo;2.629861111111111in&rdquo;}</p>
+<p>图5-17电影收藏管理界面</p>
+<h3 id="525电影订单管理"><strong>5.2.5电影订单管理</strong></h3>
+<p>通过设计电影订单管理功能模块，用户可以管理相关的电影订单信息记录，可以选择查看电影订单的详情信息，比如查看电影名称、电影图片、电影类型、用户姓名、订单号、购买的座位、购买的日期、实付价格等信息，电影订单管理界面设计如图5-18所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image27.png"
+        data-srcset="media/image27.png, media/image27.png 1.5x, media/image27.png 2x"
+        data-sizes="auto"
+        alt="media/image27.png"
+        title="media/image27.png" />{width=&ldquo;5.75625in&rdquo; height=&ldquo;2.7118055555555554in&rdquo;}</p>
+<p>图5-18电影订单管理界面</p>
+<h3 id="525公告信息管理"><strong>5.2.5公告信息管理</strong></h3>
+<p>通过设计公告信息管理功能模块，用户可以管理相关的公告信息记录，可以选择查看公告的详情信息，比如查看公告信息标题、公告信息类型、公告信息时间等信息，公告信息管理界面设计如图5-19所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image28.png"
+        data-srcset="media/image28.png, media/image28.png 1.5x, media/image28.png 2x"
+        data-sizes="auto"
+        alt="media/image28.png"
+        title="media/image28.png" />{width=&ldquo;5.7659722222222225in&rdquo;
+height=&ldquo;2.6694444444444443in&rdquo;}</p>
+<p>图5-19公告信息管理界面</p>
+<h1 id="heading-3"></h1>
+<h1 id="6系统测试"><strong>6系统测试</strong></h1>
+<h2 id="61测试概述"><strong>6.1测试概述</strong></h2>
+<p>系统测试是将系统的软件、硬件看成一个整体，对系统设计进行测试。系统测试阶段主要的任务是通过对照系统说明书，检验系统的设计是否符合要求。在测试的过程中，可以在非常短的时间中，快速地查找系统存在漏洞，并尽快对其进行解决和处理，达到改进和完善系统的目的^[16]^。白盒测试和黑盒测试是常用的系统测试方法。白盒测试又被称为结构测试，其主要通过对系统的内部代码、结构进行测试，检测系统的代码结构、逻辑关系、数据结构等内容是否是合理的、有效的，对于某些设计不合理的代码，测试人员将形成相关的程序清单，并将其反馈给开发技术人员，再由开发技术人员对代码进行一定的修改^[17]^。黑盒测试又被称为功能测试，其主要通过对系统的功能运行、界面操作进行测试，检测系统的功能设计是否合理，能否正常使用。测试人员会记录某些设计不合理的，或者不能正常操作的功能模块，并将其撰写成相关的测试报告，并将相关报告告知相关开发人员，开发技术人员根据测试报告，对系统进行更新和完善^[18]^。除此之外，还有性能测试、单元测试、安全测试等，本人主要使用功能测试对本系统进行检验，测试流程图如图6-1所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image29.emf"
+        data-srcset="media/image29.emf, media/image29.emf 1.5x, media/image29.emf 2x"
+        data-sizes="auto"
+        alt="media/image29.emf"
+        title="media/image29.emf" /></p>
+<p>图6-1测试流程图</p>
+<h2 id="62管理员登录模块测试"><strong>6.2管理员登录模块测试</strong></h2>
+<p>管理员登录模块测试如表6-1，表6-2所示。</p>
+<p>表6-1管理员登录模块测试表1</p>
+<p>+:&mdash;&mdash;&mdash;&mdash;:+:&mdash;&mdash;&mdash;&mdash;:+:&mdash;&mdash;&mdash;&mdash;-:+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| 测试项目编号 | 001          | 测试项目名称  | 管理员登录模块       |
++&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| &gt; 测试用     |              |               |                      |
+| 例编号：001  |              |               |                      |
++&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| &gt; (1)      |              |               |                      |
+| &gt; 输入：     |              |               |                      |
+| 账号：admin  |              |               |                      |
+| &gt;            |              |               |                      |
+| &gt; 密码：222  |              |               |                      |
++&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| &gt; (2)      |              |               |                      |
+| &gt; 输         |              |               |                      |
+| 出：系统提示 |              |               |                      |
+| ：&ldquo;账户或密  |              |               |                      |
+| 码不正确&rdquo;。  |              |               |                      |
++&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| &gt; (3)      |              |               |                      |
+| &gt; 步骤及操作 |              |               |                      |
+| ：在浏览器中 |              |               |                      |
+| 输入网站，点 |              |               |                      |
+| 击管理员登录 |              |               |                      |
+| 按钮，填写相 |              |               |                      |
+| 关的登录内容 |              |               |                      |
++&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+</p>
+<p>表6-2管理员登录模块测试表2</p>
+<p>+:&mdash;&mdash;&mdash;&mdash;:+:&mdash;&mdash;&mdash;&mdash;:+:&mdash;&mdash;&mdash;&mdash;-:+:&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;:+
+| 测试项目编号 | 002          | 测试项目名称  | 管理员登录模块       |
++&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| &gt; 测试用     |              |               |                      |
+| 例编号：002  |              |               |                      |
++&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| &gt; (1)      |              |               |                      |
+| &gt; 输入：     |              |               |                      |
+| 账号：admin  |              |               |                      |
+| &gt;            |              |               |                      |
+| &gt;            |              |               |                      |
+|  密码：admin |              |               |                      |
++&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| &gt; (2)      |              |               |                      |
+| &gt; 输出：操作 |              |               |                      |
+| 成功，页面自 |              |               |                      |
+| 动跳转到主页 |              |               |                      |
++&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| &gt; (3)      |              |               |                      |
+| &gt; 步骤及操作 |              |               |                      |
+| ：在浏览器中 |              |               |                      |
+| 输入网站，点 |              |               |                      |
+| 击管理员登录 |              |               |                      |
+| 按钮，填写相 |              |               |                      |
+| 关的登录内容 |              |               |                      |
++&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+</p>
+<p>管理员登录模块测试的实现界面如图6-2，图6-3，图6-4，图6-5所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image30.png"
+        data-srcset="media/image30.png, media/image30.png 1.5x, media/image30.png 2x"
+        data-sizes="auto"
+        alt="media/image30.png"
+        title="media/image30.png" />{width=&ldquo;5.764583333333333in&rdquo;
+height=&ldquo;4.5993055555555555in&rdquo;}</p>
+<p>图6-4管理员登录模块测试界面1</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image31.png"
+        data-srcset="media/image31.png, media/image31.png 1.5x, media/image31.png 2x"
+        data-sizes="auto"
+        alt="media/image31.png"
+        title="media/image31.png" />{width=&ldquo;5.761111111111111in&rdquo;
+height=&ldquo;4.936111111111111in&rdquo;}</p>
+<p>图6-5管理员登录模块测试界面2</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image32.png"
+        data-srcset="media/image32.png, media/image32.png 1.5x, media/image32.png 2x"
+        data-sizes="auto"
+        alt="media/image32.png"
+        title="media/image32.png" />{width=&ldquo;5.767361111111111in&rdquo;
+height=&ldquo;4.105555555555555in&rdquo;}</p>
+<p>图6-2管理员登录模块测试界面3</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image33.png"
+        data-srcset="media/image33.png, media/image33.png 1.5x, media/image33.png 2x"
+        data-sizes="auto"
+        alt="media/image33.png"
+        title="media/image33.png" />{width=&ldquo;5.7659722222222225in&rdquo;
+height=&ldquo;1.9680555555555554in&rdquo;}</p>
+<p>图6-3管理员登录模块测试界面4</p>
+<h2 id="63用户登录模块测试"><strong>6.3用户登录模块测试</strong></h2>
+<p>用户登录模块测试如表6-3所示。</p>
+<p>表6-3用户登录模块测试表</p>
+<p>+:&mdash;&mdash;&mdash;&mdash;:+:&mdash;&mdash;&mdash;&mdash;:+:&mdash;&mdash;&mdash;&mdash;-:+:&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;:+
+| 测试项目编号 | 003          | 测试项目名称  | 用户登录模块         |
++&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| &gt; 测试用     |              |               |                      |
+| 例编号：003  |              |               |                      |
++&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| &gt; (1)      |              |               |                      |
+| &gt; 输         |              |               |                      |
+| 入：账号：a1 |              |               |                      |
+| &gt;            |              |               |                      |
+| &gt;            |              |               |                      |
+| 密码：123456 |              |               |                      |
++&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| &gt; (2)      |              |               |                      |
+| &gt; 输出：操作 |              |               |                      |
+| 成功，页面自 |              |               |                      |
+| 动跳转到主页 |              |               |                      |
++&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| &gt; (3)      |              |               |                      |
+| &gt; 步骤及操   |              |               |                      |
+| 作：在浏览器 |              |               |                      |
+| 中输入网站， |              |               |                      |
+| 点击用户登录 |              |               |                      |
+| 按钮，填写相 |              |               |                      |
+| 关的登录内容 |              |               |                      |
++&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+</p>
+<p>用户登录模块测试的实现界面如图6-6，图6-7所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image34.png"
+        data-srcset="media/image34.png, media/image34.png 1.5x, media/image34.png 2x"
+        data-sizes="auto"
+        alt="media/image34.png"
+        title="media/image34.png" />{width=&ldquo;5.7659722222222225in&rdquo;
+height=&ldquo;4.241666666666666in&rdquo;}</p>
+<p>图6-6用户登录模块测试界面1</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image35.png"
+        data-srcset="media/image35.png, media/image35.png 1.5x, media/image35.png 2x"
+        data-sizes="auto"
+        alt="media/image35.png"
+        title="media/image35.png" />{width=&ldquo;5.7625in&rdquo; height=&ldquo;1.4423611111111112in&rdquo;}</p>
+<p>图6-7用户登录模块测试界面2</p>
+<h2 id="64电影管理模块测试"><strong>6.4电影管理模块测试</strong></h2>
+<p>电影管理模块测试如表6-4所示。</p>
+<p>表6-4电影管理模块测试表</p>
+<p>+:&mdash;&mdash;&mdash;&mdash;:+:&mdash;&mdash;&mdash;&mdash;:+:&mdash;&mdash;&mdash;&mdash;-:+:&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;:+
+| 测试项目编号 | 004          | 测试项目名称  | 电影管理模块         |
++&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| &gt; 测试用     |              |               |                      |
+| 例编号：004  |              |               |                      |
++&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| &gt; (1)      |              |               |                      |
+| &gt; 输         |              |               |                      |
+| 入：电影名称 |              |               |                      |
+| ：电影名称1  |              |               |                      |
++&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| &gt; (2)      |              |               |                      |
+| &gt; 输出       |              |               |                      |
+| ：操作成功， |              |               |                      |
+| 页面自动跳转 |              |               |                      |
+| 到电影管理相 |              |               |                      |
+| 应的电影信息 |              |               |                      |
+| 成功查询界面 |              |               |                      |
++&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| &gt; (3)      |              |               |                      |
+| &gt; 步骤及     |              |               |                      |
+| 操作：在浏览 |              |               |                      |
+| 器中输入网站 |              |               |                      |
+| ，点击电影管 |              |               |                      |
+| 理按钮，输入 |              |               |                      |
+| 电影名称信息 |              |               |                      |
+| ，对相关电影 |              |               |                      |
+| 信息进行查询 |              |               |                      |
++&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+</p>
+<p>电影管理模块测试的实现界面如图6-8，图6-9所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image36.png"
+        data-srcset="media/image36.png, media/image36.png 1.5x, media/image36.png 2x"
+        data-sizes="auto"
+        alt="media/image36.png"
+        title="media/image36.png" />{width=&ldquo;5.7625in&rdquo; height=&ldquo;2.6680555555555556in&rdquo;}</p>
+<p>图6-8电影管理测试界面1</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image37.png"
+        data-srcset="media/image37.png, media/image37.png 1.5x, media/image37.png 2x"
+        data-sizes="auto"
+        alt="media/image37.png"
+        title="media/image37.png" />{width=&ldquo;5.756944444444445in&rdquo;
+height=&ldquo;2.002083333333333in&rdquo;}</p>
+<p>图6-9电影管理测试界面2</p>
+<h2 id="65公告信息管理模块测试"><strong>6.5公告信息管理模块测试</strong></h2>
+<p>公告信息管理模块测试如表6-5所示。</p>
+<p>表6-5公告信息管理模块测试表</p>
+<p>+:&mdash;&mdash;&mdash;&mdash;:+:&mdash;&mdash;&mdash;&mdash;:+:&mdash;&mdash;&mdash;&mdash;-:+:&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;:+
+| 测试项目编号 | 005          | 测试项目名称  | 公告信息管理模块     |
++&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| &gt; 测试用     |              |               |                      |
+| 例编号：005  |              |               |                      |
++&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| &gt; (1)      |              |               |                      |
+| &gt; 输入：     |              |               |                      |
+| 公告标题：公 |              |               |                      |
+| 告信息标题1  |              |               |                      |
++&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| &gt; (2)      |              |               |                      |
+| &gt; 输出：操   |              |               |                      |
+| 作成功，页面 |              |               |                      |
+| 自动跳转到公 |              |               |                      |
+| 告信息管理相 |              |               |                      |
+| 应的公告信息 |              |               |                      |
+| 成功查询界面 |              |               |                      |
++&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| &gt; (3)      |              |               |                      |
+| &gt; 步骤及操作 |              |               |                      |
+| ：在浏览器中 |              |               |                      |
+| 输入网站，点 |              |               |                      |
+| 击公告信息管 |              |               |                      |
+| 理按钮，输入 |              |               |                      |
+| 公告标题信息 |              |               |                      |
+| ，对相关公告 |              |               |                      |
+| 信息进行查询 |              |               |                      |
++&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+</p>
+<p>公告信息管理模块测试的实现界面如图6-10，图6-11所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image38.png"
+        data-srcset="media/image38.png, media/image38.png 1.5x, media/image38.png 2x"
+        data-sizes="auto"
+        alt="media/image38.png"
+        title="media/image38.png" />{width=&ldquo;5.7625in&rdquo; height=&ldquo;2.6770833333333335in&rdquo;}</p>
+<p>图6-10公告信息管理测试界面1</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image39.png"
+        data-srcset="media/image39.png, media/image39.png 1.5x, media/image39.png 2x"
+        data-sizes="auto"
+        alt="media/image39.png"
+        title="media/image39.png" />{width=&ldquo;5.757638888888889in&rdquo; height=&ldquo;1.9375in&rdquo;}</p>
+<p>图6-11公告信息管理测试界面2</p>
+<h2 id="66用户管理模块测试"><strong>6.6用户管理模块测试</strong></h2>
+<p>用户管理模块测试如表6-6所示。</p>
+<p>表6-6用户管理模块测试表</p>
+<p>+:&mdash;&mdash;&mdash;&mdash;:+:&mdash;&mdash;&mdash;&mdash;:+:&mdash;&mdash;&mdash;&mdash;-:+:&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;:+
+| 测试项目编号 | 006          | 测试项目名称  | 用户管理模块         |
++&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| &gt; 测试用     |              |               |                      |
+| 例编号：006  |              |               |                      |
++&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| &gt; (1)      |              |               |                      |
+| &gt; 输         |              |               |                      |
+| 入：用户姓名 |              |               |                      |
+| ：用户姓名1  |              |               |                      |
++&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| &gt; (2)      |              |               |                      |
+| &gt; 输出       |              |               |                      |
+| ：操作成功， |              |               |                      |
+| 页面自动跳转 |              |               |                      |
+| 到用户管理相 |              |               |                      |
+| 应的用户信息 |              |               |                      |
+| 成功查询界面 |              |               |                      |
++&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| &gt; (3)      |              |               |                      |
+| &gt; 步骤及     |              |               |                      |
+| 操作：在浏览 |              |               |                      |
+| 器中输入网站 |              |               |                      |
+| ，点击用户管 |              |               |                      |
+| 理按钮，输入 |              |               |                      |
+| 用户姓名信息 |              |               |                      |
+| ，对相关用户 |              |               |                      |
+| 信息进行查询 |              |               |                      |
++&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+</p>
+<p>用户管理模块测试的实现界面如图6-12，图6-13所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image40.png"
+        data-srcset="media/image40.png, media/image40.png 1.5x, media/image40.png 2x"
+        data-sizes="auto"
+        alt="media/image40.png"
+        title="media/image40.png" />{width=&ldquo;5.75625in&rdquo; height=&ldquo;2.8027777777777776in&rdquo;}</p>
+<p>图6-12用户管理测试界面2</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image41.png"
+        data-srcset="media/image41.png, media/image41.png 1.5x, media/image41.png 2x"
+        data-sizes="auto"
+        alt="media/image41.png"
+        title="media/image41.png" />{width=&ldquo;5.761111111111111in&rdquo;
+height=&ldquo;2.1381944444444443in&rdquo;}</p>
+<p>图6-13用户管理测试界面2</p>
+<h2 id="66测试结果"><strong>6.6测试结果</strong></h2>
+<p>在不同的操作系统、浏览器等测试环境中，对电影订票及评论网站进行测试，在一定程度上，也影响着系统的测试结果。为了加强系统的适用性和稳定性，本人通过在windows10操作系统的计算机上，使用360、谷歌、IE等不同类型的浏览器，对系统进行了详细的功能测试。</p>
+<p>本系统主要使用功能测试的方法进行测试，系统测试的结果表明，本人开发的基于SSM的电影订票及评论网站，虽然还存在着一些不足，比如页面不够美观，数据安全有待加强等，但是整体来说，能够满足相关行业管理电影订票及评论的相关功能需求，并且有利于改进相关行业的管理模式，提高服务质量，提升管理水平。因此，本系统的设计与实现基本上是比较成功。</p>
+<h1 id="heading-4"></h1>
+<h1 id="7总结与展望"><strong>7总结与展望</strong></h1>
+<p>本文首先通过介绍课题的研究现状、研究方法等内容，解释系统的研发所具备实用价值和理论依据，并且便于初步地了解和认识系统。其次通过介绍系统的开发工具，阐明系统开发的实现可能以及技术支持，接着通过系统分析过程，分析系统的研发在现实生活中的需求情况以及运用可行性，再通过设计系统的功能模块、数据库表格等，详细的对系统功能进行设计，有利于更快更好的实现系统，最后通过系统测试过程，测试所设计的系统是否能够正常使用，能否满足用户的相关需求，并对相关的测试结果进行总结。</p>
+<p>整体来说，本系统的设计是比较理想的，但是由于本人经验不够丰富，时间不够充裕，所设计的系统功能可能不够完备，页面可能不够美观，数据安全可能有待加强。本人将提高自己的专业技术水平，学习更加先进的计算机技术，并将其运用到系统的设计中，不断地对系统进行优化和完善，在未来设计出一款功能更强大、页面更美观、数据安全更高的系统软件，提高系统的实用价值，使其能够被到运用更多的应用场景中。</p>
+<h1 id="heading-5"></h1>
+<h1 id="参考文献"><strong>参考文献</strong></h1>
+<p>[1]王金朔,孙延辉.基于SSM和Java的网上订餐系统设计[J].信息通信,2018(10):99-100.</p>
+<p>[2]欧楠.计算机软件开发中 Java 语言的应用分析[J].
+信息与电脑(理论版),2019(04):110-111.</p>
+<p>[3]周劼翀.计算机软件开发中 Java 编程语言的应用研究[J].
+信息与电脑(理论版), 2019(05): 131-132.</p>
+<p>[4]马梓昂，贾克斌. 基于 Web 的高性能智能快递柜管理系统[J].
+计算机应用与软件，2020, 37(4): 1-5,47.</p>
+<p>[5]吴晓珊,曹旭东等.基于 B/S
+架构的管理系统软件开发[J].计算机测量与控制, 2019, 27(02): 123-128.</p>
+<p>[6]张海宾.基于 C/S 架构客户端嵌入 B/S
+架构系统的设计与实现[J].电子世界, 2017, 4(17): 125-126.</p>
+<p>[7]杨兰.计算机软件开发的 JAVA 编程语言及其实际应用[J]. 电子设计工程,
+2017, 25(21): 49-52+56.</p>
+<p>[8]洪植林. 基于SSM框架的高校实验室信息管理系统的设计与实现[D].
+浙江:浙江工业大学，2016.</p>
+<p>[9]郭冰. 基于MySQL数据库的索引优化研究[J].信息与电脑(理论 版),
+2019(12): 154-156 +163.</p>
+<p>[10]李艳杰.基于JAVA与MySQL数据库的移动端题库练习系统的设计与实现[J].黑龙江科学,2022,13(02):56-57.</p>
+<p>[11]乔岚. 基于MyBatis 和 Spring 的JavaEE 数据持久层的研究与应用[J].
+信息与电脑（理论版），2017，378(08): 79-82.</p>
+<p>[12]翟剑锟. Spring
+框架技术分析及应用研究[D].中国科学院大学(工程管理与信息技术学院),
+2013.</p>
+<p>[13]梁琰.MySQL 数据库在 PHP 网页中的动态应用研究[J]. 电脑知识与技术,
+2019, 15 (09): 7-8.</p>
+<p>[14]黄文娟.基于Java和MySQL的图书馆信息化管理系统设计[J].电子设计工程,
+2019, 27(02): 20-24.</p>
+<p>[15]陈年飞,王麒森,王志勃. MySQL 数据库中关于索引的研究[J].
+信息与电脑(理论版), 2019(05): 175-176.</p>
+<p>[16]张新华, 何永前. 软件测试方法概述[J]. 科技视界, 2012(4):125-125.</p>
+<p>[17]王力文. 软件测试管理系统的研究与设计[D].上海交通大学,2017.</p>
+<p>[18]施莹超. 计算机软件测试技术与开发应用探讨[J]. 信息与电脑
+(理论版),2019, 31(21): 88-89+92.</p>
+<h1 id="heading-6"></h1>
+<h1 id="致谢"><strong>致谢</strong></h1>
+<p>大学生活将要结束了，这样想来，时间还真过得非常快。在本次的毕业设计过程中，我需要跟许多帮助过我的人表示最真诚地感谢。非常感谢我的导师，在导师的指导下，我汲取了很多书本上没有记录的专业知识，使得我成功地设计出了基于SSM的电影订票及评论网站，也顺利地撰写完了毕业论文。感谢我的同学和朋友们，正当我在设计系统遇到非常棘手的困难时，是我的同学和朋友们帮助我分析问题，寻找问题的最佳解决方案，而后得以成功地解决问题。感谢我的家人，一直不断地支持和鼓励我，为我提供了一个温暖的避风港，让我可以无忧无虑的在学校学习。感谢我的学校，为我们提供了一个师资力量雄厚、图书种类繁多的学习环境，让我们可以在一个良好的学习氛围中，学习到许多有价值的知识，可以使我扩充知识面，扩宽视野，积累专业知识，提高专业水平和能力。由此打下扎实的技术基础，在未来，有利于寻找更多的就业机会，更好的适应社会生活。</p>
+<h3 id="0323springboot电影订票及评论网站的设计与实现-项目图片">0323springboot电影订票及评论网站的设计与实现 项目图片</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0323springbootimg_001.jpg"
+        data-srcset="/images/0323springbootimg_001.jpg, /images/0323springbootimg_001.jpg 1.5x, /images/0323springbootimg_001.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0323springbootimg_001.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0323springbootimg_003.jpg"
+        data-srcset="/images/0323springbootimg_003.jpg, /images/0323springbootimg_003.jpg 1.5x, /images/0323springbootimg_003.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0323springbootimg_003.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0323springbootimg_002.jpg"
+        data-srcset="/images/0323springbootimg_002.jpg, /images/0323springbootimg_002.jpg 1.5x, /images/0323springbootimg_002.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0323springbootimg_002.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0323springbootimg_006.jpg"
+        data-srcset="/images/0323springbootimg_006.jpg, /images/0323springbootimg_006.jpg 1.5x, /images/0323springbootimg_006.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0323springbootimg_006.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0323springbootimg_007.jpg"
+        data-srcset="/images/0323springbootimg_007.jpg, /images/0323springbootimg_007.jpg 1.5x, /images/0323springbootimg_007.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0323springbootimg_007.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0323springbootimg_005.jpg"
+        data-srcset="/images/0323springbootimg_005.jpg, /images/0323springbootimg_005.jpg 1.5x, /images/0323springbootimg_005.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0323springbootimg_005.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0323springbootimg_004.jpg"
+        data-srcset="/images/0323springbootimg_004.jpg, /images/0323springbootimg_004.jpg 1.5x, /images/0323springbootimg_004.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0323springbootimg_004.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0323springbootimg_009.jpg"
+        data-srcset="/images/0323springbootimg_009.jpg, /images/0323springbootimg_009.jpg 1.5x, /images/0323springbootimg_009.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0323springbootimg_009.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0323springbootimg_008.jpg"
+        data-srcset="/images/0323springbootimg_008.jpg, /images/0323springbootimg_008.jpg 1.5x, /images/0323springbootimg_008.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0323springbootimg_008.jpg"
+        title="图片" /></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2024-07-12</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/0323springboot%E7%94%B5%E5%BD%B1%E8%AE%A2%E7%A5%A8%E5%8F%8A%E8%AF%84%E8%AE%BA%E7%BD%91%E7%AB%99%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://chenqi199.github.io/0323springboot%E7%94%B5%E5%BD%B1%E8%AE%A2%E7%A5%A8%E5%8F%8A%E8%AF%84%E8%AE%BA%E7%BD%91%E7%AB%99%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" data-title="0323springboot电影订票及评论网站的设计与实现" data-hashtags="springboot,java,vue,论文,项目"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://chenqi199.github.io/0323springboot%E7%94%B5%E5%BD%B1%E8%AE%A2%E7%A5%A8%E5%8F%8A%E8%AF%84%E8%AE%BA%E7%BD%91%E7%AB%99%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" data-hashtag="springboot"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://chenqi199.github.io/0323springboot%E7%94%B5%E5%BD%B1%E8%AE%A2%E7%A5%A8%E5%8F%8A%E8%AF%84%E8%AE%BA%E7%BD%91%E7%AB%99%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" data-title="0323springboot电影订票及评论网站的设计与实现"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://chenqi199.github.io/0323springboot%E7%94%B5%E5%BD%B1%E8%AE%A2%E7%A5%A8%E5%8F%8A%E8%AF%84%E8%AE%BA%E7%BD%91%E7%AB%99%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" data-title="0323springboot电影订票及评论网站的设计与实现"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://chenqi199.github.io/0323springboot%E7%94%B5%E5%BD%B1%E8%AE%A2%E7%A5%A8%E5%8F%8A%E8%AF%84%E8%AE%BA%E7%BD%91%E7%AB%99%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" data-title="0323springboot电影订票及评论网站的设计与实现" data-ralateuid="https://gitee.com/chen_q_i"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/springboot/">Springboot</a>,&nbsp;<a href="/tags/java/">Java</a>,&nbsp;<a href="/tags/vue/">Vue</a>,&nbsp;<a href="/tags/%E8%AE%BA%E6%96%87/">论文</a>,&nbsp;<a href="/tags/%E9%A1%B9%E7%9B%AE/">项目</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/0324springboot%E4%BC%81%E4%B8%9Aoa%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" class="prev" rel="prev" title="0324springboot企业OA管理系统的设计与实现"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>0324springboot企业OA管理系统的设计与实现</a>
+            <a href="/0322springboot%E7%BE%8E%E5%A6%86%E8%B4%AD%E7%89%A9%E7%BD%91%E7%AB%99%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" class="next" rel="next" title="0322springboot美妆购物网站的设计与实现">0322springboot美妆购物网站的设计与实现<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.128.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="chenqi199" target="_blank">chenqi</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

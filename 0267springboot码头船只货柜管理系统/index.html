@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer" />
+        <meta name="robots" content="noodp" />
+        <title>0267springboot码头船只货柜管理系统 - chenqi blog</title><meta name="Description" content="Hugo theme - chenqi"><meta property="og:url" content="https://chenqi199.github.io/0267springboot%E7%A0%81%E5%A4%B4%E8%88%B9%E5%8F%AA%E8%B4%A7%E6%9F%9C%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/">
+  <meta property="og:site_name" content="chenqi blog">
+  <meta property="og:title" content="0267springboot码头船只货柜管理系统">
+  <meta property="og:description" content="0267springboot码头船只货柜管理系统 微信： chen_q123456 qq:462201886 github:chenqi199 所有项目 包安装运行 所有项目列表excel 腾讯文档 项目清单 包安装运行 github 0267sp">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-07-12T17:16:47+08:00">
+    <meta property="article:modified_time" content="2024-07-12T17:16:47+08:00">
+    <meta property="article:tag" content="Springboot">
+    <meta property="article:tag" content="Java">
+    <meta property="article:tag" content="Vue">
+    <meta property="article:tag" content="论文">
+    <meta property="article:tag" content="项目">
+    <meta property="og:image" content="https://chenqi199.github.io/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chenqi199.github.io/logo.png">
+  <meta name="twitter:title" content="0267springboot码头船只货柜管理系统">
+  <meta name="twitter:description" content="0267springboot码头船只货柜管理系统 微信： chen_q123456 qq:462201886 github:chenqi199 所有项目 包安装运行 所有项目列表excel 腾讯文档 项目清单 包安装运行 github 0267sp">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chenqi199.github.io/0267springboot%E7%A0%81%E5%A4%B4%E8%88%B9%E5%8F%AA%E8%B4%A7%E6%9F%9C%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" /><link rel="prev" href="https://chenqi199.github.io/0268springboot%E5%8F%8D%E6%AC%BA%E8%AF%88%E5%B9%B3%E5%8F%B0%E7%9A%84%E5%BB%BA%E8%AE%BE/" /><link rel="next" href="https://chenqi199.github.io/0329springboot%E4%BB%98%E8%B4%B9%E9%97%AE%E7%AD%94%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "0267springboot码头船只货柜管理系统",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chenqi199.github.io\/0267springboot%E7%A0%81%E5%A4%B4%E8%88%B9%E5%8F%AA%E8%B4%A7%E6%9F%9C%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F\/"
+        },"image": ["https:\/\/chenqi199.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "springboot, java, vue, 论文, 项目","wordcount":  10962 ,
+        "url": "https:\/\/chenqi199.github.io\/0267springboot%E7%A0%81%E5%A4%B4%E8%88%B9%E5%8F%AA%E8%B4%A7%E6%9F%9C%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F\/","datePublished": "2024-07-12T17:16:47+08:00","dateModified": "2024-07-12T17:16:47+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/chenqi199.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "chenqi"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/0267springboot%E7%A0%81%E5%A4%B4%E8%88%B9%E5%8F%AA%E8%B4%A7%E6%9F%9C%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/0267springboot%E7%A0%81%E5%A4%B4%E8%88%B9%E5%8F%AA%E8%B4%A7%E6%9F%9C%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">0267springboot码头船只货柜管理系统</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="chenqi199" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>chenqi</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-07-12">2024-07-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 10962 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 22 分钟&nbsp;<span id="/0267springboot%E7%A0%81%E5%A4%B4%E8%88%B9%E5%8F%AA%E8%B4%A7%E6%9F%9C%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" class="leancloud_visitors" data-flag-title="0267springboot码头船只货柜管理系统">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#微信-chen_q123456--qq462201886">微信： chen_q123456  qq:462201886</a></li>
+        <li><a href="#githubchenqi199">github:chenqi199</a></li>
+        <li><a href="#所有项目httpsgithubcomgraduationproject-springbootallspringbootprojects-包安装运行"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">所有项目</a> 包安装运行</a></li>
+        <li><a href="#所有项目列表excel-腾讯文档-项目清单httpsdocsqqcomsheetdshrfsvz5aevyt3n3tabbb08j2-包安装运行"><a href="https://docs.qq.com/sheet/DSHRFSVZ5aEVYT3N3?tab=BB08J2">所有项目列表excel 腾讯文档 项目清单</a> 包安装运行</a></li>
+        <li><a href="#githubhttpschenqi199githubio"><a href="https://chenqi199.github.io">github</a></a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#点击播放视频-">点击播放视频 ▼</a></li>
+        <li><a href="#所有项目httpsgithubcomgraduationproject-springbootallspringbootprojects-包安装运行-1"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">所有项目</a> 包安装运行</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#项目背景与问题概述">项目背景与问题概述</a></li>
+    <li><a href="#研究的意义">研究的意义</a></li>
+    <li><a href="#研究内容">研究内容</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#21-java语言">2.1 Java语言</a></li>
+    <li><a href="#22-mysql数据库">2.2 MYSQL数据库</a></li>
+    <li><a href="#23-idea开发工具">2.3 IDEA开发工具</a></li>
+    <li><a href="#24-spring-boot框架">2.4 Spring Boot框架</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#31-可行性分析">3.1 可行性分析</a>
+      <ul>
+        <li><a href="#311-技术可行性">3.1.1 技术可行性</a></li>
+        <li><a href="#312-经济可行性">3.1.2 经济可行性</a></li>
+        <li><a href="#313-操作可行性">3.1.3 操作可行性</a></li>
+      </ul>
+    </li>
+    <li><a href="#32-性能需求">3.2 性能需求</a></li>
+    <li><a href="#34-功能需求">3.4 功能需求</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#41-功能结构设计">4.1 功能结构设计</a></li>
+    <li><a href="#42-数据库设计">4.2 数据库设计</a>
+      <ul>
+        <li><a href="#421-主要实体属性图">4.2.1 主要实体属性图</a></li>
+        <li><a href="#422-主要实体关系图">4.2.2 主要实体关系图</a></li>
+        <li><a href="#423-主要数据库表的设计">4.2.3 主要数据库表的设计</a></li>
+      </ul>
+    </li>
+    <li><a href="#51-管理员功能实现">5.1 管理员功能实现</a>
+      <ul>
+        <li><a href="#511-船只信息管理">5.1.1 船只信息管理</a></li>
+        <li><a href="#512-货柜信息管理">5.1.2 货柜信息管理</a></li>
+        <li><a href="#513-路线信息管理">5.1.3 路线信息管理</a></li>
+        <li><a href="#514-新闻管理">5.1.4 新闻管理</a></li>
+        <li><a href="#515-用户管理">5.1.5 用户管理</a></li>
+      </ul>
+    </li>
+    <li><a href="#52-用户功能实现">5.2 用户功能实现</a>
+      <ul>
+        <li><a href="#521-船只信息">5.2.1 船只信息</a></li>
+        <li><a href="#522-新闻信息">5.2.2 新闻信息</a></li>
+        <li><a href="#523-更改个人信息">5.2.3 更改个人信息</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#61-功能测试">6.1 功能测试</a>
+      <ul>
+        <li><a href="#611-登录功能测试">6.1.1 登录功能测试</a></li>
+        <li><a href="#612-修改密码功能测试">6.1.2 修改密码功能测试</a></li>
+      </ul>
+    </li>
+    <li><a href="#62-系统测试结果">6.2 系统测试结果</a></li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#0267springboot码头船只货柜管理系统-项目图片">0267springboot码头船只货柜管理系统 项目图片</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="0267springboot码头船只货柜管理系统httpsgithubcomgraduationproject-springboot0267springboot"><a href="https://github.com/GraduationProject-springboot/0267springboot" target="_blank" rel="noopener noreffer ">0267springboot码头船只货柜管理系统</a></h1>
+<h3 id="微信-chen_q123456--qq462201886">微信： chen_q123456  qq:462201886</h3>
+<h3 id="githubchenqi199">github:chenqi199</h3>
+<h3 id="所有项目httpsgithubcomgraduationproject-springbootallspringbootprojects-包安装运行"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">所有项目</a> 包安装运行</h3>
+<h3 id="所有项目列表excel-腾讯文档-项目清单httpsdocsqqcomsheetdshrfsvz5aevyt3n3tabbb08j2-包安装运行"><a href="https://docs.qq.com/sheet/DSHRFSVZ5aEVYT3N3?tab=BB08J2" target="_blank" rel="noopener noreffer ">所有项目列表excel 腾讯文档 项目清单</a> 包安装运行</h3>
+<h3 id="githubhttpschenqi199githubio"><a href="https://chenqi199.github.io" target="_blank" rel="noopener noreffer ">github</a></h3>
+<h1 id="0267springboot码头船只货柜管理系统">0267springboot码头船只货柜管理系统</h1>
+<h3 id="点击播放视频-">点击播放视频 ▼</h3>
+<p><a href="https://player.bilibili.com/player.html?isOutside=true&amp;aid=BV1jqaLe1EbH&amp;bvid=BV1jqaLe1EbH&amp;cid=500001610884678&amp;p=34" target="_blank" rel="noopener noreffer "><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.sstatic.net/Vp2cE.png"
+        data-srcset="https://i.sstatic.net/Vp2cE.png, https://i.sstatic.net/Vp2cE.png 1.5x, https://i.sstatic.net/Vp2cE.png 2x"
+        data-sizes="auto"
+        alt="https://i.sstatic.net/Vp2cE.png"
+        title="Watch the video" /></a></p>
+<h3 id="所有项目httpsgithubcomgraduationproject-springbootallspringbootprojects-包安装运行-1"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">所有项目</a> 包安装运行</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image1.png"
+        data-srcset="media/image1.png, media/image1.png 1.5x, media/image1.png 2x"
+        data-sizes="auto"
+        alt="media/image1.png"
+        title="media/image1.png" />{width=&ldquo;2.0416666666666665in&rdquo;
+height=&ldquo;0.47152777777777777in&rdquo;}</p>
+<p>遵 义 师 范 学 院</p>
+<p>本 科 毕 业 论 文（设计）</p>
+<hr>
+<p>题 目：      <strong>Error: Reference source not found</strong></p>
+<hr>
+<hr>
+<p>学 院：                                 信息工程学院</p>
+<p>专 业：                               计算机科学与技术</p>
+<p>年 级：                                    2018级</p>
+<p>姓 名：                                    黎冬梅</p>
+<p>学 号：                                 184090602006</p>
+<p>指导老师：                                 李雪梅</p>
+<hr>
+<p>二〇二二年三月</p>
+<h1 id="摘要">摘要</h1>
+<p>针对于码头船只货柜信息管理方面的不规范，容错率低，管理人员处理数据费工费时，采用新开发的码头船只货柜管理系统可以从根源上规范整个数据处理流程。</p>
+<p>码头船只货柜管理系统能够实现货柜管理，路线管理，新闻管理，船只管理，用户管理等功能。该系统采用了Mysql数据库，Java语言，Spring
+Boot框架等技术进行编程实现。</p>
+<p>码头船只货柜管理系统可以提高码头船只货柜信息管理问题的解决效率，优化码头船只货柜信息处理流程，提交信息处理效率。</p>
+<p>**关键词：**码头船只货柜管理系统，Mysql数据库，Java语言</p>
+<p><strong>Abstract</strong></p>
+<p>In view of the irregularities in the management of container information
+of dock ships, the low fault tolerance rate, and the time-consuming and
+labor-intensive processing of data by managers, the newly developed
+container management system for dock ships can standardize the entire
+data processing process from the root.</p>
+<p>The terminal vessel container management system can realize functions
+such as container management, route management, news management, vessel
+management, and user management. The system uses Mysql database, Java
+language, Spring Boot framework and other technologies for programming.</p>
+<p>The terminal vessel container management system can improve the solution
+efficiency of the terminal vessel container information management
+problem, optimize the terminal vessel container information processing
+process, and submit the information processing efficiency.</p>
+<p>**Key Words：**Terminal vessel container management system;，Mysql
+database;，Java language</p>
+<p>目录</p>
+<p><a href="#%e7%bb%aa%e8%ae%ba" rel="">第1章 绪论 1</a></p>
+<p><a href="#%e9%a1%b9%e7%9b%ae%e8%83%8c%e6%99%af%e4%b8%8e%e9%97%ae%e9%a2%98%e6%a6%82%e8%bf%b0" rel="">1.1 课题背景 1</a></p>
+<p><a href="#%e7%a0%94%e7%a9%b6%e7%9a%84%e6%84%8f%e4%b9%89" rel="">1.2 课题意义 1</a></p>
+<p><a href="#%e7%a0%94%e7%a9%b6%e5%86%85%e5%ae%b9" rel="">1.3 研究内容 2</a></p>
+<p><a href="#section" rel="">第2章 开发环境与技术 3</a></p>
+<p><a href="#java%e8%af%ad%e8%a8%80" rel="">2.1 JAVA语言 3</a></p>
+<p><a href="#mysql%e6%95%b0%e6%8d%ae%e5%ba%93" rel="">2.2 MYSQL数据库 3</a></p>
+<p><a href="#idea%e5%bc%80%e5%8f%91%e5%b7%a5%e5%85%b7" rel="">2.3 IDEA开发工具 4</a></p>
+<p><a href="#spring-boot%e6%a1%86%e6%9e%b6" rel="">2.4 SPRING BOOT框架 4</a></p>
+<p><a href="#%e7%b3%bb%e7%bb%9f%e5%88%86%e6%9e%90" rel="">第3章 系统分析 5</a></p>
+<p><a href="#%e5%8f%af%e8%a1%8c%e6%80%a7%e5%88%86%e6%9e%90" rel="">3.1 可行性分析 5</a></p>
+<p><a href="#%e6%8a%80%e6%9c%af%e5%8f%af%e8%a1%8c%e6%80%a7" rel="">3.1.1 技术可行性 5</a></p>
+<p><a href="#%e7%bb%8f%e6%b5%8e%e5%8f%af%e8%a1%8c%e6%80%a7" rel="">3.1.2 经济可行性 5</a></p>
+<p><a href="#%e6%93%8d%e4%bd%9c%e5%8f%af%e8%a1%8c%e6%80%a7" rel="">3.1.3 操作可行性 5</a></p>
+<p><a href="#__RefHeading___Toc20939" rel="">3.2 系统流程 5</a></p>
+<p><a href="#__RefHeading___Toc7369" rel="">3.2.1 操作流程 6</a></p>
+<p><a href="#__RefHeading___Toc13429" rel="">3.2.2 登录流程 6</a></p>
+<p><a href="#__RefHeading___Toc25772" rel="">3.2.3 删除信息流程 7</a></p>
+<p><a href="#__RefHeading___Toc2755" rel="">3.2.4 添加信息流程 7</a></p>
+<p><a href="#%e6%80%a7%e8%83%bd%e9%9c%80%e6%b1%82" rel="">3.3 性能需求 8</a></p>
+<p><a href="#%e5%8a%9f%e8%83%bd%e9%9c%80%e6%b1%82" rel="">3.4 功能需求 9</a></p>
+<p><a href="#%e7%b3%bb%e7%bb%9f%e8%ae%be%e8%ae%a1" rel="">第4章 系统设计 11</a></p>
+<p><a href="#%e5%8a%9f%e8%83%bd%e7%bb%93%e6%9e%84%e8%ae%be%e8%ae%a1" rel="">4.1 功能结构设计 11</a></p>
+<p><a href="#%e6%95%b0%e6%8d%ae%e5%ba%93%e8%ae%be%e8%ae%a1" rel="">4.2 数据库设计 12</a></p>
+<p><a href="#%e4%b8%bb%e8%a6%81%e5%ae%9e%e4%bd%93%e5%b1%9e%e6%80%a7%e5%9b%be" rel="">4.2.1 数据库概念设计 12</a></p>
+<p><a href="#%e4%b8%bb%e8%a6%81%e6%95%b0%e6%8d%ae%e5%ba%93%e8%a1%a8%e7%9a%84%e8%ae%be%e8%ae%a1" rel="">4.2.2 数据库物理设计 15</a></p>
+<p><a href="#__RefHeading___Toc10138" rel="">第5章 系统实现 18</a></p>
+<p><a href="#%e7%ae%a1%e7%90%86%e5%91%98%e5%8a%9f%e8%83%bd%e5%ae%9e%e7%8e%b0" rel="">5.1 管理员功能实现 18</a></p>
+<p><a href="#%e8%88%b9%e5%8f%aa%e4%bf%a1%e6%81%af%e7%ae%a1%e7%90%86" rel="">5.1.1 船只信息管理 18</a></p>
+<p><a href="#%e8%b4%a7%e6%9f%9c%e4%bf%a1%e6%81%af%e7%ae%a1%e7%90%86" rel="">5.1.2 货柜信息管理 18</a></p>
+<p><a href="#%e8%b7%af%e7%ba%bf%e4%bf%a1%e6%81%af%e7%ae%a1%e7%90%86" rel="">5.1.3 路线信息管理 19</a></p>
+<p><a href="#%e6%96%b0%e9%97%bb%e7%ae%a1%e7%90%86" rel="">5.1.4 新闻管理 19</a></p>
+<p><a href="#%e7%94%a8%e6%88%b7%e7%ae%a1%e7%90%86" rel="">5.1.5 用户管理 20</a></p>
+<p><a href="#%e7%94%a8%e6%88%b7%e5%8a%9f%e8%83%bd%e5%ae%9e%e7%8e%b0" rel="">5.2 用户功能实现 20</a></p>
+<p><a href="#%e8%88%b9%e5%8f%aa%e4%bf%a1%e6%81%af" rel="">5.2.1 船只信息 20</a></p>
+<p><a href="#%e6%96%b0%e9%97%bb%e4%bf%a1%e6%81%af" rel="">5.2.2 新闻信息 21</a></p>
+<p><a href="#%e6%9b%b4%e6%94%b9%e4%b8%aa%e4%ba%ba%e4%bf%a1%e6%81%af" rel="">5.2.3 更改个人信息 21</a></p>
+<p><a href="#%e7%b3%bb%e7%bb%9f%e6%b5%8b%e8%af%95" rel="">第6章 系统测试 23</a></p>
+<p><a href="#%e5%8a%9f%e8%83%bd%e6%b5%8b%e8%af%95" rel="">6.1 功能测试 23</a></p>
+<p><a href="#%e7%99%bb%e5%bd%95%e5%8a%9f%e8%83%bd%e6%b5%8b%e8%af%95" rel="">6.1.1 登录功能测试 23</a></p>
+<p><a href="#%e4%bf%ae%e6%94%b9%e5%af%86%e7%a0%81%e5%8a%9f%e8%83%bd%e6%b5%8b%e8%af%95" rel="">6.1.2 修改密码功能测试 24</a></p>
+<p><a href="#%e7%b3%bb%e7%bb%9f%e6%b5%8b%e8%af%95%e7%bb%93%e6%9e%9c" rel="">6.2 系统测试结果 25</a></p>
+<p><a href="#%e7%bb%93-%e8%ae%ba" rel="">结 论 26</a></p>
+<p><a href="#%e5%8f%82%e8%80%83%e6%96%87%e7%8c%ae" rel="">参考文献 28</a></p>
+<p><a href="#__RefHeading___Toc14512" rel="">致 谢 29</a></p>
+<h1 id="1绪论">1绪论</h1>
+<h2 id="项目背景与问题概述">项目背景与问题概述</h2>
+<p>二十一世纪互联网的出现，改变了几千年以来人们的生活，不仅仅是生活物资的丰富，还有精神层次的丰富。时代进步的标志，就是让人们过上更好的生活。在互联网诞生之前，码头船只货柜采用纸张记事的操作，不仅浪费大量的人力和物力成本，效率上也提不上去，如果随着计算机的发展以及机械的发展，可以为码头船只货柜管理提供一个新的思路。</p>
+<p>本课题研究和开发码头船只货柜管理系统，让安装在计算机上的该系统变成管理人员的小帮手，提高码头船只货柜信息处理速度，规范码头船只货柜信息处理流程，让管理人员的产出效益更高。</p>
+<h2 id="研究的意义">研究的意义</h2>
+<p>本课题研发的码头船只货柜管理系统，就是提供码头船只货柜信息处理的解决方案，它可以短时间处理完信息，并且只需要使用者动动鼠标和键盘就能获取自己需要的信息，并且这些信息都有专门的存储设备，而且数据的备份和迁移都可以设定为无人值守，从人力角度和信息处理角度以及信息安全角度，码头船只货柜管理系统是完胜传统纸质操作的，所以码头船只货柜管理系统就是如此的值得信赖。</p>
+<h2 id="研究内容">研究内容</h2>
+<p>论文里的系统采用了从数据库和网上两条途径搜索相关资料整理，最后决定用Spring
+Boot来开发一个网站，用来解决码头船只货柜相关问题。</p>
+<h1 id="heading"></h1>
+<h1 id="开发环境与技术" class="unnumbered">2开发环境与技术</h1>
+<p>码头船只货柜管理系统采用基于B/S架构，对应使用Spring Boot
+技术来展现其表示层，分别对不同需求的用户服务，旨在最大程度满足不同用户的需求。服务层采用Spring
+MVC技术来提供统一接口，降低其与其他系统间的耦合度，提供安全数据通信，提高系统可扩展性、兼容性以及集成能力。</p>
+<h2 id="21-java语言">2.1 Java语言</h2>
+<p>Java语言是当今为止依然在编程语言行业具有生命力的常青树之一。Java语言最原始的诞生，不仅仅是创造者感觉C语言在编程上面很麻烦，如果只是专注于业务逻辑的处理，会导致忽略了各种指针以及垃圾回收这些操作，导致出现问题需要解决的时间往往大于正常编程处理业务逻辑的时间，这些是非常浪费时间的。Java语言的创造者就完美的解决了这个问题，把指针处理和垃圾处理全部自动化，虽然这会损失一些性能，但是随着计算机硬件的不断发展，这些性能是可以忽略考虑的。并且C语言是针对硬件开发的语言，在符合条件的硬件上面进行编程可以最大化利用硬件的性能，但是随着硬件的变化或者操作系统的变更，如果还是用C语言的话需要对整个程序进行重新编程，只有随着市场变化而变化的语言才是符合潮流，符合生存规律的语言。Java语言的创造者就针对C语言的缺点专门开发了Java语言。让Java语言不管是在什么样的环境里都是可以运行，因为在Java语言运行外面套了一个壳，也就是虚拟机，只要是Java虚拟机能安装的电脑都可以运行Java的程序。</p>
+<h2 id="22-mysql数据库">2.2 MYSQL数据库</h2>
+<p>MySQL数据库是关系型数据库的一种，也是传统的行式数据模式，获取一些数据是先一行一行的获取，然后一行一行的显示，与最近大数据兴起的列式数据库有着明显的不同。行式数据库主要是处理最重要的数据逻辑部分，并且必须是有效数据，这样每一处的数据关联都是不可损坏，如果对数据安全性比较高的肯定是需要选择MySQL数据库，列式数据库的发明仅仅是因为读取效率高，与传统的MySQL数据库比起来在数据写入方面并不会高明到哪里。MySQL虽然比起oracle或者SQL
+SERVER来讲，安装包只是几十兆甚至几百兆，有点小，但是功能并不会弱到哪里，严格遵循SQL标准语法。MySQL的数据存放形式从大向小的说是数据库最大，然后是表，每个表里面存放数据是有一定的规则的，数据存放是表格形式的，也就是说有横也有竖，横着的为行，一般表示一条数据，每个表都有字段，而字段是以列的形式存在，这样能保证一条数据每一个字段对应的是相同数据类型的数据。表与表之间还可以进行关联，进行分表操作，如果一条数据相关项目属性太多，那么可以把有效的相关联系做成关联，可以设定是否唯一。</p>
+<h2 id="23-idea开发工具">2.3 IDEA开发工具</h2>
+<p>IDEA是捷克共和国的Java程序员开发人员创造的一个开发软件，刚开始主要是对于用Eclipse软件他们用得不顺手，所以直接开发了这款软件。之所以不顺手原因在于没有代码提升功能，原因是Eclipse只是把代码提示作为一种插件形式的存在，如果有些程序开发人员不清楚代码提示插件可能会出问题，并且代码提示只是用来作为插件，所以功能上有所欠缺。IDEA不仅仅代码提示做的很好，在代码重构上面更上如虎添翼，程序开发人员可以选择一段代码然后IDEA就会对代码进行分解重构，有效的把代码弄得更够层次感，复用性更高，用着更简洁和方便，大大的减少了代码工作量，提升了代码开发效率。当然，IDEA对于使用者这么好，肯定也是有目的的，原因在于插件越多越友好，就需要花费大量的金钱来使用，所以说IDEA使用主要是看自己喜好。</p>
+<h2 id="24-spring-boot框架">2.4 Spring Boot框架</h2>
+<p>Spring
+Boot是一种不需要代码生成的一种框架，并且可以不需要配置任何的XML文件就可以，因为Spring
+Boot里面自带了很多接口，只需要配置不同的接口就会自动的应用并且识别需要的依赖，在配置方面非常的方便，使用起来感觉像没有用到框架的感觉。Spring
+Boot有很多默认的配置文件，并且可以对默认的配置文件进行修改，可以设置为自动加载，可以对异常处理分为全局异常处理和默认异常处理。Spring
+Boot使用过程中就像是使用什么直接注册什么，所谓的注册也就是在对应的类和方法上面进行一个特殊的声明即可。</p>
+<h1 id="3-系统分析">3 系统分析</h1>
+<h2 id="31-可行性分析">3.1 可行性分析</h2>
+<p>设计出一个码头船只货柜管理系统需要花费大量的时间和精力，所以一旦决定要设计某个系统必须要进行相应的可行性分析。以下部分是从三个角度来进行可行性分析，确保开发成功的前提是有可行性分析，只有进行提前分析，符合程序开发流程才不至于导致开发过程的中断。</p>
+<h3 id="311-技术可行性">3.1.1 技术可行性</h3>
+<p>Spring
+Boot框架是一个成熟的框架，MySQL数据库是一个成熟的数据库，基于Spring
+Boot开发一个码头船只货柜管理系统以网页形式访问，是可以实现的。</p>
+<h3 id="312-经济可行性">3.1.2 经济可行性</h3>
+<p>从资源配置的角度来衡量软件项目的实际价值，分析研发软件项目所需成本费用和项目开发成功后所带来的经济效益。发现开发一个码头船只货柜管理的成本很低，但是使用了之后会带了很大的收益。</p>
+<h3 id="313-操作可行性">3.1.3 操作可行性</h3>
+<p>码头船只货柜管理系统的具体实现，本身参考人类的正常操作逻辑，把常用的操作习惯当做主要的导航实现，可以让使用者更快速的理解并且上手操作，实现符合逻辑的操作流程是操作可行性的具体体现。</p>
+<p>系统以B/S架构实现主要功能，对客户和管理员角色明确分工，实际功能简单明了。开发工具IDEA区别于之前使用的Eclipse开发工具，它可以最大限度的提高开发人员的工作效率，而且还有令人愉悦的开发体验。</p>
+<p>以上就是从不同的角度来分析，确保了码头船只货柜管理系统的正常开展。</p>
+<h2 id="32-性能需求">3.2 性能需求</h2>
+<p>在需求分析中就应该对项目所需服务器性能进行分析，这样才符合正常的分析流程。只谈功能需求不谈性能需求，是一件很严重的事情，可能会导致使用过程中出现一系列不可预测的问题，所以性能需求也是需要考虑的重要项。</p>
+<p>下面就是从几个方面来进行系统的性能分析，从每个角度来分析系统性能。</p>
+<p>(1)系统数据的容量：从数据角度来分析，每个表和每个数据库，达到的数据量到一定的程度，是否需要分表或者是分库，超过了数据的设定限度，可能会导致数据反映迟钝，容错量增加。</p>
+<p>(2)数据精度的要求：需要对需求分析里面数据设定环节，考虑相应的数据精度问题，需要发现数据是常用的精度还是非常用的精度，进而设定不同的数值。数据的精度问题，会直接导致设计的性能问题。</p>
+<p>(3)时间响应要求：从用户提交操作，到页面反映，中间有个数据处理的问题，如果数据量大，那么考虑索引问题和分库问题，数据量再大就要考虑增加列式数据库的问题，这些都要根据数据量的增加以及逻辑的严密性来进行判断，才能符合用户的要求，毕竟响应时间太久操作起来也不舒服。</p>
+<p>系统的性能需求从业务需求之初就能大致了解到性能需求相关的概念，再从系统性能需求来逐条实现，可以让设计的系统有使用价值。</p>
+<h2 id="34-功能需求">3.4 功能需求</h2>
+<p>码头船只货柜管理系统根据使用权限的角度进行功能分析，并运用用例图来展示各个权限需要操作的功能。</p>
+<p>图3.5即为管理员用例图，管理员权限操作的功能包括管理用户，管理船只，管理路线，管理货柜，管理新闻等。</p>
+<p>个人中心：个人中心包括个人信息和修改密码，方便管理员查看个人信息，修改个人信息和密码；</p>
+<p>管理员管理：管理员添加其他管理员的信息，并修改，删除其他管理员的信息；</p>
+<p>船只信息管理：管理员增删改查船只信息；</p>
+<p>基础数据管理：基础数据管理包括船只类型管理，货柜类型管理以及新闻类型管理；</p>
+<p>货柜信息管理：管理员增删改查货柜信息；</p>
+<p>路线信息管理：管理员增删改查路线信息；</p>
+<p>新闻管理：管理员增删改查新闻信息；</p>
+<p>用户管理：管理员增删改查用户信息；</p>
+<p>轮播图管理：管理员添加轮播图信息，修改轮播图信息，删除轮播图信息等；</p>
+<p>管理员登录：管理员需要对码头船只货柜管理系统进行登录；</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image2.wmf"
+        data-srcset="media/image2.wmf, media/image2.wmf 1.5x, media/image2.wmf 2x"
+        data-sizes="auto"
+        alt="media/image2.wmf"
+        title="media/image2.wmf" /></p>
+<p>图3.5 管理员用例图</p>
+<p>图3.6即为用户用例图，用户权限操作的功能包括查看船只，查看新闻，查看路线以及货柜信息等。</p>
+<p>个人中心：个人中心包括个人信息和修改密码，方便用户查看个人信息，修改个人信息和密码；</p>
+<p>船只信息：用户查询船只，查看船只信息；</p>
+<p>货柜信息：用户查询货柜，查看货柜信息；</p>
+<p>路线信息：用户查询路线，查看路线信息；</p>
+<p>新闻信息：用户查询新闻，查看新闻信息；</p>
+<p>注册登录：用户需要注册码头船只货柜管理系统，注册后才可以登录码头船只货柜管理系统；</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image3.wmf"
+        data-srcset="media/image3.wmf, media/image3.wmf 1.5x, media/image3.wmf 2x"
+        data-sizes="auto"
+        alt="media/image3.wmf"
+        title="media/image3.wmf" /></p>
+<p>图3.6 用户用例图</p>
+<h1 id="4-系统设计">4 系统设计</h1>
+<p>系统的设计一切都是为了用户的使用，虽然用户使用过程中可能只是面对着浏览器进行各种操作，但是不代表着系统对于用户在浏览器上的操作不进行处理，所以说，设计一个系统需要考虑到方方面面。</p>
+<h2 id="41-功能结构设计">4.1 功能结构设计</h2>
+<p>图4.1即为设计的系统功能结构，系统分为管理员和用户两个操作权限，管理员权限操作的功能包括管理用户，管理船只，管理路线，管理货柜，管理新闻等。用户权限操作的功能包括查看船只，查看新闻，查看路线以及货柜信息等。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image4.wmf"
+        data-srcset="media/image4.wmf, media/image4.wmf 1.5x, media/image4.wmf 2x"
+        data-sizes="auto"
+        alt="media/image4.wmf"
+        title="media/image4.wmf" />图4.1 系统功能结构</p>
+<h2 id="42-数据库设计">4.2 数据库设计</h2>
+<p>码头船只货柜管理系统运行中产生的数据需要按照提前设置的存储规则进行保存，而这个存储规则则是在数据库的设计中进行设置的。通常情况下，为了更好的配合系统运行，也要给用户带来良好的使用体验，设计一个很好的数据库是必须的，因为它能减少用户的等待时间，还可以对系统的请求在最短时间内进行响应。所以，对数据库设计时，需要花费一定的时间来分析系统对于数据存储的要求以及存储的具体数据，然后设计具体的存储规则，保证数据库能够对系统的各种数据请求进行及时回应，缩短数据处理时间，并在一定程度上降低数据冗余，节省存储空间。</p>
+<h3 id="421-主要实体属性图">4.2.1 主要实体属性图</h3>
+<p>实体-联系图还有一个名称即E-R图，是Entity Relationship
+Diagram各英文单词首字母的缩写，它这种概念模型通常用于对现实世界进行描述。同时它还是一种能够直观表达数据中实体，联系，属性的有效手段。绘制E-R图能够选择的工具也有很多，但是Office
+Visio 这款软件在E-R图的绘制上一般都是作为首选工具，因为它是基于可视化处理，使用它创建E-R图非常简单。使用基本的E-R图构成元素，比如椭圆，菱形，矩形，还有实线段来表达对应的信息，椭圆代表属性，即实体的特征，矩形代表实体，即数据库中的一个具体数据表，菱形代表实体中相互关系，实线段主要是完成椭圆，矩形，菱形的连接，基于这样的方式即可完成对本系统的E-R图进行完整绘制。</p>
+<p>（1）图4.4即为货柜这个实体所拥有的属性值。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image5.wmf"
+        data-srcset="media/image5.wmf, media/image5.wmf 1.5x, media/image5.wmf 2x"
+        data-sizes="auto"
+        alt="media/image5.wmf"
+        title="media/image5.wmf" /></p>
+<p>图4.4 货柜实体属性图</p>
+<p>（2）图4.5即为用户这个实体所拥有的属性值。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image6.wmf"
+        data-srcset="media/image6.wmf, media/image6.wmf 1.5x, media/image6.wmf 2x"
+        data-sizes="auto"
+        alt="media/image6.wmf"
+        title="media/image6.wmf" /></p>
+<p>图4.5 用户实体属性图</p>
+<p>（3）图4.6即为船只这个实体所拥有的属性值。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image7.wmf"
+        data-srcset="media/image7.wmf, media/image7.wmf 1.5x, media/image7.wmf 2x"
+        data-sizes="auto"
+        alt="media/image7.wmf"
+        title="media/image7.wmf" /></p>
+<p>图4.6 船只实体属性图</p>
+<ol start="4">
+<li>图4.7即为管理员这个实体所拥有的属性值。</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image8.wmf"
+        data-srcset="media/image8.wmf, media/image8.wmf 1.5x, media/image8.wmf 2x"
+        data-sizes="auto"
+        alt="media/image8.wmf"
+        title="media/image8.wmf" /></p>
+<p>图4.7 管理员实体属性图</p>
+<h3 id="422-主要实体关系图">4.2.2 主要实体关系图</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image9.wmf"
+        data-srcset="media/image9.wmf, media/image9.wmf 1.5x, media/image9.wmf 2x"
+        data-sizes="auto"
+        alt="media/image9.wmf"
+        title="media/image9.wmf" /></p>
+<p>图4.8 实体间关系E-R图</p>
+<h3 id="423-主要数据库表的设计">4.2.3 主要数据库表的设计</h3>
+<p>本小节主要任务即是根据上述内容进行数据存储结构的设计，也就是在数据库中设计存放本系统的数据的数据表，设计数据表时，需要对各个字段进行确定，通常来说，一个实体与一张数据表相对应，实体的属性就用来表示字段名称，不同的字段表示的数据类型以及取值都不相同，这里需要根据系统实际数据的情况进行设置，同时也需要在具体表中确定该表的主键，以及该表各个字段是否能够保持空等进行说明，设计完成一张数据表的结构之后，在保存时同样要命名，尽量选择英文名称进行命名并保存，方便今后系统对数据表进行数据存储访问时，在提高数据存储效率的同时，还不容易导致系统出错。接下来就对设计的数据表进行展示。</p>
+<p>表4.1 船只信息表</p>
+<hr>
+<p>字段                     注释                       类型           空</p>
+<p>id (主键)                主键                       int(11)        否</p>
+<p>chuanzhi_uuid_number     船只编号                   varchar(200)   是</p>
+<p>chuanzhi_name            船只名称                   varchar(200)   是</p>
+<p>chuanzhi_types           船只类型                   int(200)       是</p>
+<p>chuanzhi_photo           船只图片                   varchar(200)   是</p>
+<p>chuanzhi_xinghao         船只型号                   varchar(200)   是</p>
+<p>chuanzhi_caizhi          船只材质                   varchar(200)   是</p>
+<p>chuanzhi_content         详情                       text           是</p>
+<p>chuanzhi_delete          假删                       int(11)        是</p>
+<p>create_time              创建时间                   timestamp      是</p>
+<hr>
+<p>表4.2 货柜信息表</p>
+<hr>
+<p>字段                  注释                         类型           空</p>
+<p>id (主键)             主键                         int(11)        否</p>
+<p>chuanzhi_id           船只                         int(11)        是</p>
+<p>huogui_uuid_number    货柜编号                     varchar(200)   是</p>
+<p>huogui_xinghao        货柜型号                     varchar(200)   是</p>
+<p>huogui_types          货柜类型                     int(200)       是</p>
+<p>huogui_delete         假删                         int(11)        是</p>
+<p>create_time           创建时间                     timestamp      是</p>
+<hr>
+<p>表4.3 路线信息表</p>
+<hr>
+<p>字段                  注释                         类型           空</p>
+<p>id (主键)             主键                         int(11)        否</p>
+<p>chuanzhi_id           船只                         int(11)        是</p>
+<p>luxian_uuid_number    路线编号                     varchar(200)   是</p>
+<p>luxian_content        路线详情                     text           是</p>
+<p>luxian_delete         假删                         int(11)        是</p>
+<p>create_time           创建时间                     timestamp      是</p>
+<hr>
+<p>表4.4 新闻表</p>
+<hr>
+<p>字段           注释                                类型           空</p>
+<p>id (主键)      主键                                int(11)        否</p>
+<p>news_name      新闻标题                            varchar(200)   是</p>
+<p>news_types     新闻类型                            int(11)        是</p>
+<p>news_photo     新闻图片                            varchar(200)   是</p>
+<p>insert_time    新闻时间                            timestamp      是</p>
+<p>news_content   新闻详情                            text           是</p>
+<p>news_delete    假删                                int(11)        是</p>
+<p>create_time    创建时间                            timestamp      是</p>
+<hr>
+<p>表4.5 管理员表</p>
+<hr>
+<p>字段           注释                             类型              空</p>
+<p>id (主键)      主键                             bigint(20)        否</p>
+<p>username       用户名                           varchar(100)      否</p>
+<p>password       密码                             varchar(100)      否</p>
+<p>role           角色                             varchar(100)      是</p>
+<p>addtime        新增时间                         timestamp         否</p>
+<hr>
+<p>表4.6 用户表</p>
+<hr>
+<p>字段                注释                            类型           空</p>
+<p>id (主键)           主键                            int(11)        否</p>
+<p>username            账号                            varchar(200)   是</p>
+<p>password            密码                            varchar(200)   是</p>
+<p>yonghu_name         用户姓名                        varchar(200)   是</p>
+<p>sex_types           性别                            int(11)        是</p>
+<p>yonghu_id_number    身份证号                        varchar(200)   是</p>
+<p>yonghu_phone        手机号                          varchar(200)   是</p>
+<p>yonghu_photo        照片                            varchar(200)   是</p>
+<p>yonghu_delete       假删                            int(11)        是</p>
+<p>create_time         创建时间                        timestamp      是</p>
+<hr>
+<p>[]{#__RefHeading___Toc10138 .anchor}<strong>5 系统实现</strong></p>
+<p>编程人员在搭建的开发环境中，运用编程技术实现本系统设计的各个操作权限的功能。在本节中，就展示部分操作权限的功能与界面。</p>
+<h2 id="51-管理员功能实现">5.1 管理员功能实现</h2>
+<h3 id="511-船只信息管理">5.1.1 船只信息管理</h3>
+<p>图5.1
+即为编码实现的船只信息管理界面，管理员在该界面中新增船只信息，船只信息包括船只材质，船只型号等信息，管理员可以对船只信息进行查询，更改等操作。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image10.png"
+        data-srcset="media/image10.png, media/image10.png 1.5x, media/image10.png 2x"
+        data-sizes="auto"
+        alt="media/image10.png"
+        title="media/image10.png" />{width=&ldquo;5.759722222222222in&rdquo;
+height=&ldquo;2.747916666666667in&rdquo;}</p>
+<p>图5.1 船只信息管理界面</p>
+<h3 id="512-货柜信息管理">5.1.2 货柜信息管理</h3>
+<p>图5.2
+即为编码实现的货柜信息管理界面，管理员在该界面中对货柜信息进行新增，货柜信息包括货柜类型，货柜型号等信息，在本界面，管理员可以更改货柜信息，查询货柜信息等。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image11.png"
+        data-srcset="media/image11.png, media/image11.png 1.5x, media/image11.png 2x"
+        data-sizes="auto"
+        alt="media/image11.png"
+        title="media/image11.png" />{width=&ldquo;5.759722222222222in&rdquo;
+height=&ldquo;2.747916666666667in&rdquo;}</p>
+<p>图5.2 货柜信息管理界面</p>
+<h3 id="513-路线信息管理">5.1.3 路线信息管理</h3>
+<p>图5.3
+即为编码实现的路线信息管理界面，管理员在该界面中具备对路线信息新增，查询，编辑，删除等操作权限。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image12.png"
+        data-srcset="media/image12.png, media/image12.png 1.5x, media/image12.png 2x"
+        data-sizes="auto"
+        alt="media/image12.png"
+        title="media/image12.png" />{width=&ldquo;5.759722222222222in&rdquo;
+height=&ldquo;2.747916666666667in&rdquo;}</p>
+<p>图5.3 路线信息管理界面</p>
+<h3 id="514-新闻管理">5.1.4 新闻管理</h3>
+<p>图5.4
+即为编码实现的新闻管理界面，管理员在该界面中具备发布新闻，编辑新闻，查询新闻等权限。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image13.png"
+        data-srcset="media/image13.png, media/image13.png 1.5x, media/image13.png 2x"
+        data-sizes="auto"
+        alt="media/image13.png"
+        title="media/image13.png" />{width=&ldquo;5.759722222222222in&rdquo;
+height=&ldquo;2.747916666666667in&rdquo;}</p>
+<p>图5.4 新闻管理界面</p>
+<h3 id="515-用户管理">5.1.5 用户管理</h3>
+<p>图5.5
+即为编码实现的用户管理界面，管理员在该界面中为用户的账号重置密码，更改用户资料，查询用户等。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image14.png"
+        data-srcset="media/image14.png, media/image14.png 1.5x, media/image14.png 2x"
+        data-sizes="auto"
+        alt="media/image14.png"
+        title="media/image14.png" />{width=&ldquo;5.759722222222222in&rdquo;
+height=&ldquo;2.747916666666667in&rdquo;}</p>
+<p>图5.5 用户管理界面</p>
+<h2 id="52-用户功能实现">5.2 用户功能实现</h2>
+<h3 id="521-船只信息">5.2.1 船只信息</h3>
+<p>图5.6 即为编码实现的船只信息界面，用户在该界面中查询船只，查看船只信息。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image15.png"
+        data-srcset="media/image15.png, media/image15.png 1.5x, media/image15.png 2x"
+        data-sizes="auto"
+        alt="media/image15.png"
+        title="media/image15.png" />{width=&ldquo;5.757638888888889in&rdquo;
+height=&ldquo;2.6368055555555556in&rdquo;}</p>
+<p>图5.6 船只信息界面</p>
+<h3 id="522-新闻信息">5.2.2 新闻信息</h3>
+<p>图5.7 即为编码实现的新闻信息界面，用户在该界面中查询并查看新闻信息。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image16.png"
+        data-srcset="media/image16.png, media/image16.png 1.5x, media/image16.png 2x"
+        data-sizes="auto"
+        alt="media/image16.png"
+        title="media/image16.png" />{width=&ldquo;5.766666666666667in&rdquo;
+height=&ldquo;2.501388888888889in&rdquo;}</p>
+<p>图5.7 新闻信息界面</p>
+<h3 id="523-更改个人信息">5.2.3 更改个人信息</h3>
+<p>图5.8
+即为编码实现的更改个人信息界面，用户在该界面中对个人信息进行查看，对登记错误的个人信息进行更改，也包括更改个人照片，更改手机号等信息。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image17.png"
+        data-srcset="media/image17.png, media/image17.png 1.5x, media/image17.png 2x"
+        data-sizes="auto"
+        alt="media/image17.png"
+        title="media/image17.png" />{width=&ldquo;5.759722222222222in&rdquo;
+height=&ldquo;2.4618055555555554in&rdquo;}</p>
+<p>图5.8 更改个人信息界面</p>
+<h1 id="6-系统测试"><strong>6 系统测试</strong></h1>
+<p>在整个软件开发过程中，系统测试这个环节也必须要重视的，所以必须在系统测试环节做好应该做好的事情，让程序开发从开始到结束都有一个完美的流程。</p>
+<h2 id="61-功能测试">6.1 功能测试</h2>
+<p>本节主要选择一些功能进行具体测试描述，在相应的功能里面，根据不同的合法与不合法条件输入看程序是否设定的有相关的判断，能否达到使用效果。以下会描述部分功能的测试过程和结果。</p>
+<h3 id="611-登录功能测试">6.1.1 登录功能测试</h3>
+<p>登录是一个常规功能，虽然是常规功能，但是用处很大，可以拒绝非法用户访问，只有合法用户才可以访问对应的功能，这样能保证程序设定的功能符合安全性要求。</p>
+<p>表6.1 管理员登录功能测试表</p>
+<hr>
+<p>管理员账号       管理员密码         结果</p>
+<p>uuu              uuu                成功登录系统</p>
+<p>yyy              uuu                登录失败</p>
+<p>uuu              yyy                登录失败</p>
+<hr>
+<p>只有正确的账号密码才会进行跳转到对应的功能区，如果输入的账号密码不对的话，肯定会有相关提示，用来提示操作人员注意输入正确的账号密码，这样有助于提高用户体验。这里以使用者提交错误的账号为&quot;yyy&quot;,正确的密码为&quot;uuu&quot;为例进行测试，具体反馈结果看下面。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image18.png"
+        data-srcset="media/image18.png, media/image18.png 1.5x, media/image18.png 2x"
+        data-sizes="auto"
+        alt="media/image18.png"
+        title="media/image18.png" />{width=&ldquo;5.759722222222222in&rdquo;
+height=&ldquo;2.747916666666667in&rdquo;}</p>
+<p>图6.1 登录失败提示</p>
+<h3 id="612-修改密码功能测试">6.1.2 修改密码功能测试</h3>
+<p>任何用户角色都有安全性要求，那么对应的密码最好是经常更改，只有经常更改才会降低坏人的有机可乘几率，达到密码保护的最低要求，当然，如果用户登录人离开了，为了防止其他人乘机篡改密码，那么也会设定旧密码要求，只有输入正确的旧密码才可以进行密码的修改。下面就是测试过程。</p>
+<p>表6.2 修改密码功能测试表</p>
+<hr>
+<p>之前的旧密码       设置的新密码                  结果</p>
+<p>uuu                yyy                           成功修改密码</p>
+<p>hhh                yyy                           修改密码失败</p>
+<p>uuu                                              修改密码失败</p>
+<hr>
+<p>不管是旧密码错误还是新密码不合规，都会提示相应的要求，下面就是关于旧密码输入错误的提示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image19.png"
+        data-srcset="media/image19.png, media/image19.png 1.5x, media/image19.png 2x"
+        data-sizes="auto"
+        alt="media/image19.png"
+        title="media/image19.png" />{width=&ldquo;5.759722222222222in&rdquo;
+height=&ldquo;2.747916666666667in&rdquo;}</p>
+<p>图6.2 错误的旧密码反馈提示</p>
+<h2 id="62-系统测试结果">6.2 系统测试结果</h2>
+<p>对码头船只货柜管理系统进行了各种检测，包含功能检测和性能检测，甚至是系统的操作性方面也进行了检测，以及兼容性检测，通过各方面检测结果来判定系统是符合设计目标，达到开发预期。系统是可以实现所开发的功能，并且在扩展性或者是稳定性上面，也有很好的表现，能完全的满足用户需求。</p>
+<h1 id="结-论">结 论</h1>
+<p>由于本人学习的是计算机方面的专业，对于计算机软件方面的相关知识也进行过课堂上的学习以及课后的实际操作练习，因此，对于开发一款已经确定了课题的码头船只货柜管理系统，从功能需求，功能模块划分，数据库的选择，数据库的设计，编程语言的确定，系统界面的布局和设计等知识，我都有个大致的思路。所以，在参照软件设计思想以及设计流程的基础上，我运用已经具备的理论知识，加上后期从网络渠道获取的相关技术知识，我能够根据制定的系统开发时间安排完成各个阶段性的开发任务。并能够在系统完成开发后期，编写相应的系统文档。</p>
+<p>码头船只货柜管理系统制作期间，我也遇到过一些难题，在最开始的时候，我并不知道该系统具体要设计几个功能模块，以及数据表需要设计几张表，还有对于开发技术的深度理论学习还不充分等，值得庆幸的是，我在面临这些困难时，我能够通过网络或者通过学院提供的图书馆寻求解决办法。比如在不知道具体功能的情况下，我从网上下载了很多的与码头船只货柜管理系统相关的程序，分析了它们的功能之后，我再结合即将开发的码头船只货柜管理系统进行综合分析，选取了适合码头船只货柜管理系统的功能部分，再结合实际情况以及使用者的需求确定本系统功能。对于数据表的设计，我先是在图书馆借阅了一本数据库方面的书籍进行查看，然后查看相似系统对于数据表的结构设计等知识，然后在本系统功能确定的情况下，结合本系统设计了配套的数据表，对于难度最大的开发技术部分，我花费了很多的时间研究网络上的相似系统的功能模块上的代码，一般都是对基础数据的增加，更新，查询或修改方面的代码，然后把本系统能够运用的代码部分在简单更改后进行使用，在完成了一个功能模块以及又一个功能模块之后，又经过了简单的测试工作，最终呈现出一个完整的能够解决用户实际问题的码头船只货柜管理系统。该系统唯一不足的就是代码方面还有很多重复的部分，不够精简，还有用户操作本系统，对于用户的误操作行为，本系统还不能及时反馈，这也是一大缺点。</p>
+<p>码头船只货柜管理系统完成了，其相应的配套文档也需要进行编写，该文档主要描述码头船只货柜管理系统是如何进行分析，设计以及实现的，让其他阅读本文档的人增加对该系统的了解，编写文档过程中，由于自己平时对于办公软件的操作不是很频繁，根据学院要求的文档排版格式进行编辑也花了很多时间，在不断学习排版技巧以及对本系统配套文档的反复修改之后，最终在学院规定的时间内进行了文档定稿。</p>
+<p>毕业项目各个工作进行到此，我也是收获颇丰，正因为自己努力学习知识，积极寻求解决办法，才让我能够提交一个完整的作品。制作毕业项目让我又得到了成长，不仅是专业知识的增加，也包括解决问题的能力得到了提高，很感谢学院给的制作毕业项目的机会。</p>
+<h1 id="参考文献">参考文献</h1>
+<p>[1]崔柏乐,王水,刘力源,陆武民.智能货柜仓储管理系统设计[J].电子制作,2020,(Z2):44-45+101.</p>
+<p>[2]许为龙,张洪宾,郑琳.冷链物流货柜监测系统的设计与实现[J].卫星电视与宽带多媒体,2020,(03):50-51.</p>
+<p>[3]余涛.计算机软件开发中Java编程语言的应用研究[J].信息记录材料,2020,21(01):113-115.</p>
+<p>[4]王子虎,胡丽珍.基于计算机软件安全开发的JAVA编程语言研究[J].数字技术与应用,2019,37(12):133-134.</p>
+<p>[5]刘星淇.Java编程语言的特点与应用分析[J].通讯世界,2019,26(09):149-150.</p>
+<p>[6]张云健.计算机软件Java编程特点及其技术应用[J].信息与电脑(理论版),2019(13):97-98.</p>
+<p>[7]张振超,吴杰,陈序蓬.浅谈Java中Mysql数据库的连接与操作[J].信息记录材料,2020,21(02):144-145.</p>
+<p>[8]范开勇,陈宇收.MySQL数据库性能优化研究[J].中国新通信,2019,21(01):57.</p>
+<p>[9]丁佳.基于JSP+MySQL的用户登录系统SQL注入实例及防范[J].网络安全技术与应用,2020(09):49-51.</p>
+<p>[10]王丹,孙晓宇,杨路斌,高胜严.基于SpringBoot的软件统计分析系统设计与实现[J].软件工程,2019,22(03):40-42.</p>
+<p>[11]张峰.应用SpringBoot改变web应用开发模式[J].科技创新与应用,2017(23):193-194.</p>
+<p>[12]谢志坚.计算机应用软件开发技术支撑思考[J].电子世界,2020(15):53-54.</p>
+<p>[13]姬晓鹏.计算机软件开发技术与设计探究[J].电子测试,2020(16):133-134.</p>
+<p>[14]Raffi Khatchadourian.Automated refactoring of legacy Java software
+to enumerated types[J].Automated Software Engineering,2017,24(4).</p>
+<p>[15]Ben White.Marx and Chayanov at the margins:understanding agrarian
+change in Java[J].The Journal of Peasant Studies,2018,45(5-6).</p>
+<p>[]{#__RefHeading___Toc14512 .anchor}<strong>致谢</strong></p>
+<p>也许是大学校园在管理上比较开放，学习知识时不像高中时期那样一整天都在学习，而是一天当中抽出部分时间安排学习，其余的时间就可以自由安排，可以去社会上参加实践，可以在学校的图书馆阅读书籍，丰富自己的知识，也可以加入学校的社团进行个人能力的锻炼等等，加上学院的学生都来自全国各地，大家的风俗习惯都有些不一样，这样同学之间也有更多的话题进行畅聊。基于这些原因，我觉得我的性格也逐渐变得开朗起来，正因为如此，我很快乐的度过了大学四年时光。然而，我们都要面临毕业，同学间，师生间也将面临分离，我们都会离开学校，进入社会这样的大环境学习并生活。虽然很不舍，但这也是人生成长中必经的阶段！</p>
+<p>临走之际，对这几年的大学生活简单的进行了回想，发现自己学到的专业知识也增加了很多，在本专业上，自己也得到了一定的实操能力锻炼。这些成长都是我们的专业老师带来的，他们这几年辛苦教学，我们也从中获取了许多的专业知识，提高了个人的专业方面的能力，非常感谢他们。</p>
+<p>还有一位老师也需要在此特别感谢，即论文指导老师。可以说最后这一年，跟指导老师接触比较多，指导老师在本专业上，非常全能，在我进行本课题的任务期间，导师给予我全面的指导，也能根据我的不足之处推荐合适的书籍让我查看，让我的能力得以提升，继而可以从容面对开发期间遇到的困难。</p>
+<p>另外，我也要感谢我的寝室室友，还有我们班上的同学，从接到毕业项目任务之后，我们常常谈论各自课题进展的情况以及面临的问题，也经常互相鼓励对方要积极认真面对毕业项目，这种陪伴，让我在制作毕业项目期间并没有产生过多的焦虑，非常感谢他们。</p>
+<p>最后时刻，我也要对我的大学校园表达谢意，我的大学校园是一个非常美丽的地方，而我这几年，在这么优美的环境下学习知识，我已经感到非常幸福。希望在今后能看到我的校园在众多师生共同努力下变得强大，校园的环境也将变得更加美丽。</p>
+<p><strong>毕业论文（设计）原创性声明</strong></p>
+<p>本人郑重声明：所呈交的本科毕业论文（设计），是本人在导师的指导下，独立进行研究工作所取得的成果。除文中已经注明引用的内容外，本论文不含任何其他个人或集体已经发表或撰写过的作品或成果。对本文的研究做出重要贡献的个人和集体，均已在文中以明确方式标明。本声明的法律结果由本人承担。</p>
+<p>作者签名：</p>
+<p>日期： 年 月 日</p>
+<p><strong>毕业论文（设计）使用授权声明</strong></p>
+<p>本人完全了解遵义师范学院关于收集、保存、使用毕业论文（设计）的规定，即：</p>
+<ul>
+<li>
+<p>按照学校要求提交毕业论文（设计）的印刷本和电子版本；</p>
+</li>
+<li>
+<p>学校有权收藏、使用并向国家有关部门或机构送交论文的印刷本和电子版本；</p>
+</li>
+<li>
+<p>允许论文被查阅和借阅；</p>
+</li>
+<li>
+<p>学校可以公布论文的全部或部分内容，可以采用影印、缩印或其它复制手段保存论文。</p>
+</li>
+</ul>
+<p>作者签名： 指导教师签名：</p>
+<p>日期： 年 月 日</p>
+<h3 id="0267springboot码头船只货柜管理系统-项目图片">0267springboot码头船只货柜管理系统 项目图片</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0267springbootimg_001.jpg"
+        data-srcset="/images/0267springbootimg_001.jpg, /images/0267springbootimg_001.jpg 1.5x, /images/0267springbootimg_001.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0267springbootimg_001.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0267springbootimg_003.jpg"
+        data-srcset="/images/0267springbootimg_003.jpg, /images/0267springbootimg_003.jpg 1.5x, /images/0267springbootimg_003.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0267springbootimg_003.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0267springbootimg_002.jpg"
+        data-srcset="/images/0267springbootimg_002.jpg, /images/0267springbootimg_002.jpg 1.5x, /images/0267springbootimg_002.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0267springbootimg_002.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0267springbootimg_006.jpg"
+        data-srcset="/images/0267springbootimg_006.jpg, /images/0267springbootimg_006.jpg 1.5x, /images/0267springbootimg_006.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0267springbootimg_006.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0267springbootimg_005.jpg"
+        data-srcset="/images/0267springbootimg_005.jpg, /images/0267springbootimg_005.jpg 1.5x, /images/0267springbootimg_005.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0267springbootimg_005.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0267springbootimg_004.jpg"
+        data-srcset="/images/0267springbootimg_004.jpg, /images/0267springbootimg_004.jpg 1.5x, /images/0267springbootimg_004.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0267springbootimg_004.jpg"
+        title="图片" /></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2024-07-12</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/0267springboot%E7%A0%81%E5%A4%B4%E8%88%B9%E5%8F%AA%E8%B4%A7%E6%9F%9C%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://chenqi199.github.io/0267springboot%E7%A0%81%E5%A4%B4%E8%88%B9%E5%8F%AA%E8%B4%A7%E6%9F%9C%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" data-title="0267springboot码头船只货柜管理系统" data-hashtags="springboot,java,vue,论文,项目"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://chenqi199.github.io/0267springboot%E7%A0%81%E5%A4%B4%E8%88%B9%E5%8F%AA%E8%B4%A7%E6%9F%9C%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" data-hashtag="springboot"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://chenqi199.github.io/0267springboot%E7%A0%81%E5%A4%B4%E8%88%B9%E5%8F%AA%E8%B4%A7%E6%9F%9C%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" data-title="0267springboot码头船只货柜管理系统"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://chenqi199.github.io/0267springboot%E7%A0%81%E5%A4%B4%E8%88%B9%E5%8F%AA%E8%B4%A7%E6%9F%9C%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" data-title="0267springboot码头船只货柜管理系统"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://chenqi199.github.io/0267springboot%E7%A0%81%E5%A4%B4%E8%88%B9%E5%8F%AA%E8%B4%A7%E6%9F%9C%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" data-title="0267springboot码头船只货柜管理系统" data-ralateuid="https://gitee.com/chen_q_i"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/springboot/">Springboot</a>,&nbsp;<a href="/tags/java/">Java</a>,&nbsp;<a href="/tags/vue/">Vue</a>,&nbsp;<a href="/tags/%E8%AE%BA%E6%96%87/">论文</a>,&nbsp;<a href="/tags/%E9%A1%B9%E7%9B%AE/">项目</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/0268springboot%E5%8F%8D%E6%AC%BA%E8%AF%88%E5%B9%B3%E5%8F%B0%E7%9A%84%E5%BB%BA%E8%AE%BE/" class="prev" rel="prev" title="0268springboot反欺诈平台的建设"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>0268springboot反欺诈平台的建设</a>
+            <a href="/0329springboot%E4%BB%98%E8%B4%B9%E9%97%AE%E7%AD%94%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" class="next" rel="next" title="0329springboot付费问答系统的设计与实现">0329springboot付费问答系统的设计与实现<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.128.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="chenqi199" target="_blank">chenqi</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
