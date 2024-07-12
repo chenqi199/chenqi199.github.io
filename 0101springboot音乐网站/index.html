@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer" />
+        <meta name="robots" content="noodp" />
+        <title>0101springboot音乐网站 - chenqi blog</title><meta name="Description" content="Hugo theme - chenqi"><meta property="og:url" content="https://chenqi199.github.io/0101springboot%E9%9F%B3%E4%B9%90%E7%BD%91%E7%AB%99/">
+  <meta property="og:site_name" content="chenqi blog">
+  <meta property="og:title" content="0101springboot音乐网站">
+  <meta property="og:description" content="0101springboot音乐网站 微信： chen_q123456 qq:462201886 github:chenqi199 所有项目 包安装运行 所有项目列表excel 腾讯文档 项目清单 包安装运行 github 0101springbo">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-07-12T10:05:27+08:00">
+    <meta property="article:modified_time" content="2024-07-12T10:05:27+08:00">
+    <meta property="article:tag" content="Springboot">
+    <meta property="article:tag" content="Java">
+    <meta property="article:tag" content="Vue">
+    <meta property="article:tag" content="论文">
+    <meta property="article:tag" content="项目">
+    <meta property="og:image" content="https://chenqi199.github.io/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chenqi199.github.io/logo.png">
+  <meta name="twitter:title" content="0101springboot音乐网站">
+  <meta name="twitter:description" content="0101springboot音乐网站 微信： chen_q123456 qq:462201886 github:chenqi199 所有项目 包安装运行 所有项目列表excel 腾讯文档 项目清单 包安装运行 github 0101springbo">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chenqi199.github.io/0101springboot%E9%9F%B3%E4%B9%90%E7%BD%91%E7%AB%99/" /><link rel="prev" href="https://chenqi199.github.io/0102springboot%E6%8A%97%E7%96%AB%E7%89%A9%E8%B5%84%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" /><link rel="next" href="https://chenqi199.github.io/0142springboot%E5%9C%A8%E7%BA%BF%E5%AE%B6%E5%85%B7%E5%95%86%E5%9F%8E%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0--%E8%AE%BA%E6%96%87pf/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "0101springboot音乐网站",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chenqi199.github.io\/0101springboot%E9%9F%B3%E4%B9%90%E7%BD%91%E7%AB%99\/"
+        },"image": ["https:\/\/chenqi199.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "springboot, java, vue, 论文, 项目","wordcount":  10858 ,
+        "url": "https:\/\/chenqi199.github.io\/0101springboot%E9%9F%B3%E4%B9%90%E7%BD%91%E7%AB%99\/","datePublished": "2024-07-12T10:05:27+08:00","dateModified": "2024-07-12T10:05:27+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/chenqi199.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "chenqi"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/0101springboot%E9%9F%B3%E4%B9%90%E7%BD%91%E7%AB%99/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/0101springboot%E9%9F%B3%E4%B9%90%E7%BD%91%E7%AB%99/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">0101springboot音乐网站</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="chenqi199" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>chenqi</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-07-12">2024-07-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 10858 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 22 分钟&nbsp;<span id="/0101springboot%E9%9F%B3%E4%B9%90%E7%BD%91%E7%AB%99/" class="leancloud_visitors" data-flag-title="0101springboot音乐网站">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#微信-chen_q123456--qq462201886">微信： chen_q123456  qq:462201886</a></li>
+        <li><a href="#githubchenqi199">github:chenqi199</a></li>
+        <li><a href="#所有项目httpsgithubcomgraduationproject-springbootallspringbootprojects-包安装运行"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">所有项目</a> 包安装运行</a></li>
+        <li><a href="#所有项目列表excel-腾讯文档-项目清单httpsdocsqqcomsheetdshrfsvz5aevyt3n3tabbb08j2-包安装运行"><a href="https://docs.qq.com/sheet/DSHRFSVZ5aEVYT3N3?tab=BB08J2">所有项目列表excel 腾讯文档 项目清单</a> 包安装运行</a></li>
+        <li><a href="#githubhttpschenqi199githubio"><a href="https://chenqi199.github.io">github</a></a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#点击播放视频-">点击播放视频 ▼</a></li>
+        <li><a href="#所有项目httpsgithubcomgraduationproject-springbootallspringbootprojects-包安装运行-1"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">所有项目</a> 包安装运行</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#13系统设计思想">1.3系统设计思想</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#21-mysql数据库">2.1 MYSQL数据库</a></li>
+    <li><a href="#22-bs结构">2.2 B/S结构</a></li>
+    <li><a href="#23-spring-boot框架简介">2.3 Spring Boot框架简介</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#31可行性分析">3.1可行性分析</a>
+      <ul>
+        <li><a href="#311技术可行性">3.1.1技术可行性</a></li>
+        <li><a href="#312经济可行性">3.1.2经济可行性</a></li>
+        <li><a href="#313操作可行性">3.1.3操作可行性</a></li>
+      </ul>
+    </li>
+    <li><a href="#32系统性能分析">3.2系统性能分析</a>
+      <ul>
+        <li><a href="#321-系统安全性">3.2.1 系统安全性</a></li>
+        <li><a href="#322-数据完整性">3.2.2 数据完整性</a></li>
+      </ul>
+    </li>
+    <li><a href="#34系统流程和逻辑">3.4系统流程和逻辑</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#41概述">4.1概述</a></li>
+    <li><a href="#42系统结构">4.2系统结构</a></li>
+    <li><a href="#43数据库设计">4.3.数据库设计</a>
+      <ul>
+        <li><a href="#431数据库实体">4.3.1数据库实体</a></li>
+        <li><a href="#432数据库设计表">4.3.2数据库设计表</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#51-管理员模块的实现">5.1 管理员模块的实现</a>
+      <ul>
+        <li><a href="#511-用户信息管理">5.1.1 用户信息管理</a></li>
+        <li><a href="#512-歌曲分类管理">5.1.2 歌曲分类管理</a></li>
+        <li><a href="#513-歌曲信息管理">5.1.3 歌曲信息管理</a></li>
+        <li><a href="#514-轮播图管理">5.1.4 轮播图管理</a></li>
+      </ul>
+    </li>
+    <li><a href="#52-用户模块的实现">5.2 用户模块的实现</a>
+      <ul>
+        <li><a href="#521-歌曲信息">5.2.1 歌曲信息</a></li>
+        <li><a href="#522-歌曲评论">5.2.2 歌曲评论</a></li>
+        <li><a href="#523-用户注册">5.2.3 用户注册</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#61概念和意义">6.1概念和意义</a></li>
+    <li><a href="#62特性">6.2特性</a></li>
+    <li><a href="#63重要性">6.3重要性</a></li>
+    <li><a href="#64测试方法">6.4测试方法</a></li>
+    <li><a href="#65-功能测试">6.5 功能测试</a></li>
+    <li><a href="#66可用性测试">6.6可用性测试</a></li>
+    <li><a href="#67性能测试">6.7性能测试</a></li>
+    <li><a href="#68测试分析">6.8测试分析</a></li>
+    <li><a href="#69测试结果分析">6.9测试结果分析</a></li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#0101springboot音乐网站-项目图片">0101springboot音乐网站 项目图片</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="0101springboot音乐网站httpsgithubcomgraduationproject-springboot0101springboot"><a href="https://github.com/GraduationProject-springboot/0101springboot" target="_blank" rel="noopener noreffer ">0101springboot音乐网站</a></h1>
+<h3 id="微信-chen_q123456--qq462201886">微信： chen_q123456  qq:462201886</h3>
+<h3 id="githubchenqi199">github:chenqi199</h3>
+<h3 id="所有项目httpsgithubcomgraduationproject-springbootallspringbootprojects-包安装运行"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">所有项目</a> 包安装运行</h3>
+<h3 id="所有项目列表excel-腾讯文档-项目清单httpsdocsqqcomsheetdshrfsvz5aevyt3n3tabbb08j2-包安装运行"><a href="https://docs.qq.com/sheet/DSHRFSVZ5aEVYT3N3?tab=BB08J2" target="_blank" rel="noopener noreffer ">所有项目列表excel 腾讯文档 项目清单</a> 包安装运行</h3>
+<h3 id="githubhttpschenqi199githubio"><a href="https://chenqi199.github.io" target="_blank" rel="noopener noreffer ">github</a></h3>
+<h1 id="0101springboot音乐网站">0101springboot音乐网站</h1>
+<h3 id="点击播放视频-">点击播放视频 ▼</h3>
+<p><a href="https://player.bilibili.com/player.html?isOutside=true&amp;aid=BV1jqaLe1ECs&amp;bvid=BV1jqaLe1ECs&amp;cid=500001610719942&amp;p=2" target="_blank" rel="noopener noreffer "><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.sstatic.net/Vp2cE.png"
+        data-srcset="https://i.sstatic.net/Vp2cE.png, https://i.sstatic.net/Vp2cE.png 1.5x, https://i.sstatic.net/Vp2cE.png 2x"
+        data-sizes="auto"
+        alt="https://i.sstatic.net/Vp2cE.png"
+        title="Watch the video" /></a></p>
+<h3 id="所有项目httpsgithubcomgraduationproject-springbootallspringbootprojects-包安装运行-1"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">所有项目</a> 包安装运行</h3>
+<p>音乐网站</p>
+<p>摘要</p>
+<p>随着信息技术在管理上越来越深入而广泛的应用，管理信息系统的实施在技术上已逐步成熟。本文介绍了音乐网站的开发全过程。通过分析音乐网站管理的不足，创建了一个计算机管理音乐网站的方案。文章介绍了音乐网站的系统分析部分，包括可行性分析等，系统设计部分主要介绍了系统功能设计和数据库设计。</p>
+<p>本音乐网站管理员功能有个人中心，用户管理，歌曲分类管理，歌曲信息管理，管理员管理，系统管理等。用户可以注册登录，试听歌曲，可以下载歌曲。因而具有一定的实用性。</p>
+<p>本站是一个B/S模式系统，采用Spring
+Boot框架，MYSQL数据库设计开发，充分保证系统的稳定性。系统具有界面清晰、操作简单，功能齐全的特点，使得音乐网站管理工作系统化、规范化。本系统的使用使管理人员从繁重的工作中解脱出来，实现无纸化办公，能够有效的提高音乐网站管理效率。</p>
+<p>**关键词：**音乐网站；Spring Boot框架；MYSQL数据库</p>
+<p><strong>Abstract</strong></p>
+<p>With the deepening and extensive application of information technology
+in management, the implementation of management information systems has
+gradually matured in technology. This article introduces the whole
+process of music website development. By analyzing the deficiencies of
+music website management, a program for computer management of music
+websites was created. The article introduces the system analysis part of
+the music website, including feasibility analysis, etc. The system
+design part mainly introduces the system function design and database
+design.</p>
+<p>The administrator functions of this music website include personal
+center, user management, song classification management, song
+information management, administrator management, system management,
+etc. Users can register and log in, listen to songs, and download songs.
+So it has a certain practicability.</p>
+<p>This site is a B/S model system, using Spring Boot framework, MYSQL
+database design and development, fully guarantee the stability of the
+system. The system has the characteristics of clear interface, simple
+operation and complete functions, which makes the management of music
+websites systematized and standardized. The use of this system frees
+managers from heavy work, realizes a paperless office, and can
+effectively improve the efficiency of music website management.</p>
+<p>**Keywords:**Music website; Spring Boot framework; MYSQL database</p>
+<p>目录</p>
+<p><a href="#%e7%b3%bb%e7%bb%9f%e6%a6%82%e8%bf%b0" rel="">1系统概述 1</a></p>
+<p><a href="#__RefHeading___Toc31167" rel="">1.1 研究背景 1</a></p>
+<p><a href="#__RefHeading___Toc19841" rel="">1.2研究目的 1</a></p>
+<p><a href="#%e7%b3%bb%e7%bb%9f%e8%ae%be%e8%ae%a1%e6%80%9d%e6%83%b3" rel="">1.3系统设计思想 1</a></p>
+<p><a href="#%e7%9b%b8%e5%85%b3%e6%8a%80%e6%9c%af" rel="">2相关技术 2</a></p>
+<p><a href="#mysql%e6%95%b0%e6%8d%ae%e5%ba%93" rel="">2.1 MYSQL数据库 2</a></p>
+<p><a href="#bs%e7%bb%93%e6%9e%84" rel="">2.2 B/S结构 3</a></p>
+<p><a href="#spring-boot%e6%a1%86%e6%9e%b6%e7%ae%80%e4%bb%8b" rel="">2.3 Spring Boot框架简介 4</a></p>
+<p><a href="#%e7%b3%bb%e7%bb%9f%e5%88%86%e6%9e%90" rel="">3系统分析 4</a></p>
+<p><a href="#%e5%8f%af%e8%a1%8c%e6%80%a7%e5%88%86%e6%9e%90" rel="">3.1可行性分析 4</a></p>
+<p><a href="#%e6%8a%80%e6%9c%af%e5%8f%af%e8%a1%8c%e6%80%a7" rel="">3.1.1技术可行性 4</a></p>
+<p><a href="#%e7%bb%8f%e6%b5%8e%e5%8f%af%e8%a1%8c%e6%80%a7" rel="">3.1.2经济可行性 5</a></p>
+<p><a href="#%e6%93%8d%e4%bd%9c%e5%8f%af%e8%a1%8c%e6%80%a7" rel="">3.1.3操作可行性 5</a></p>
+<p><a href="#%e7%b3%bb%e7%bb%9f%e6%80%a7%e8%83%bd%e5%88%86%e6%9e%90" rel="">3.2系统性能分析 5</a></p>
+<p><a href="#%e7%b3%bb%e7%bb%9f%e5%ae%89%e5%85%a8%e6%80%a7" rel="">3.2.1 系统安全性 5</a></p>
+<p><a href="#%e6%95%b0%e6%8d%ae%e5%ae%8c%e6%95%b4%e6%80%a7" rel="">3.2.2 数据完整性 5</a></p>
+<p><a href="#__RefHeading___Toc18544" rel="">3.3系统界面分析 6</a></p>
+<p><a href="#%e7%b3%bb%e7%bb%9f%e6%b5%81%e7%a8%8b%e5%92%8c%e9%80%bb%e8%be%91" rel="">3.4系统流程和逻辑 7</a></p>
+<p><a href="#%e7%b3%bb%e7%bb%9f%e6%a6%82%e8%a6%81%e8%ae%be%e8%ae%a1" rel="">4系统概要设计 8</a></p>
+<p><a href="#%e6%a6%82%e8%bf%b0" rel="">4.1概述 8</a></p>
+<p><a href="#%e7%b3%bb%e7%bb%9f%e7%bb%93%e6%9e%84" rel="">4.2系统结构 9</a></p>
+<p><a href="#%e6%95%b0%e6%8d%ae%e5%ba%93%e8%ae%be%e8%ae%a1" rel="">4.3.数据库设计 9</a></p>
+<p><a href="#%e6%95%b0%e6%8d%ae%e5%ba%93%e5%ae%9e%e4%bd%93" rel="">4.3.1数据库实体 9</a></p>
+<p><a href="#%e6%95%b0%e6%8d%ae%e5%ba%93%e8%ae%be%e8%ae%a1%e8%a1%a8" rel="">4.3.2数据库设计表 11</a></p>
+<p><a href="#%e7%b3%bb%e7%bb%9f%e8%af%a6%e7%bb%86%e5%ae%9e%e7%8e%b0" rel="">5系统详细实现 13</a></p>
+<p><a href="#%e7%ae%a1%e7%90%86%e5%91%98%e6%a8%a1%e5%9d%97%e7%9a%84%e5%ae%9e%e7%8e%b0" rel="">5.1 管理员模块的实现 13</a></p>
+<p><a href="#%e7%94%a8%e6%88%b7%e4%bf%a1%e6%81%af%e7%ae%a1%e7%90%86" rel="">5.1.1 用户信息管理 13</a></p>
+<p><a href="#%e6%ad%8c%e6%9b%b2%e5%88%86%e7%b1%bb%e7%ae%a1%e7%90%86" rel="">5.1.2 歌曲分类管理 14</a></p>
+<p><a href="#%e6%ad%8c%e6%9b%b2%e4%bf%a1%e6%81%af%e7%ae%a1%e7%90%86" rel="">5.1.3 歌曲信息管理 14</a></p>
+<p><a href="#%e8%bd%ae%e6%92%ad%e5%9b%be%e7%ae%a1%e7%90%86" rel="">5.1.4 轮播图管理 15</a></p>
+<p><a href="#%e7%94%a8%e6%88%b7%e6%a8%a1%e5%9d%97%e7%9a%84%e5%ae%9e%e7%8e%b0" rel="">5.2 用户模块的实现 16</a></p>
+<p><a href="#%e6%ad%8c%e6%9b%b2%e4%bf%a1%e6%81%af" rel="">5.2.1 歌曲信息 16</a></p>
+<p><a href="#%e6%ad%8c%e6%9b%b2%e8%af%84%e8%ae%ba" rel="">5.2.2 歌曲评论 16</a></p>
+<p><a href="#%e7%94%a8%e6%88%b7%e6%b3%a8%e5%86%8c" rel="">5.2.3 用户注册 17</a></p>
+<p><a href="#%e7%b3%bb%e7%bb%9f%e6%b5%8b%e8%af%95" rel="">6系统测试 17</a></p>
+<p><a href="#%e6%a6%82%e5%bf%b5%e5%92%8c%e6%84%8f%e4%b9%89" rel="">6.1概念和意义 17</a></p>
+<p><a href="#%e7%89%b9%e6%80%a7" rel="">6.2特性 18</a></p>
+<p><a href="#%e9%87%8d%e8%a6%81%e6%80%a7" rel="">6.3重要性 18</a></p>
+<p><a href="#%e6%b5%8b%e8%af%95%e6%96%b9%e6%b3%95" rel="">6.4测试方法 19</a></p>
+<p><a href="#%e5%8a%9f%e8%83%bd%e6%b5%8b%e8%af%95" rel="">6.5 功能测试 19</a></p>
+<p><a href="#%e5%8f%af%e7%94%a8%e6%80%a7%e6%b5%8b%e8%af%95" rel="">6.6可用性测试 20</a></p>
+<p><a href="#%e6%80%a7%e8%83%bd%e6%b5%8b%e8%af%95" rel="">6.7性能测试 20</a></p>
+<p><a href="#%e6%b5%8b%e8%af%95%e5%88%86%e6%9e%90" rel="">6.8测试分析 20</a></p>
+<p><a href="#%e6%b5%8b%e8%af%95%e7%bb%93%e6%9e%9c%e5%88%86%e6%9e%90" rel="">6.9测试结果分析 21</a></p>
+<p><a href="#%e7%bb%93%e8%ae%ba" rel="">结论 21</a></p>
+<p><a href="#%e8%87%b4%e8%b0%a2%e8%af%ad" rel="">致谢语 22</a></p>
+<p><a href="#%e5%8f%82%e8%80%83%e6%96%87%e7%8c%ae" rel="">参考文献 22</a></p>
+<h1 id="heading"></h1>
+<h1 id="1系统概述">1系统概述</h1>
+<p>[]{#__RefHeading___Toc31167 .anchor}1.1 研究背景</p>
+<p>随着计算机技术的发展以及计算机网络的逐渐普及，互联网成为人们查找信息的重要场所，二十一世纪是信息的时代，所以信息的管理显得特别重要。因此，使用计算机来管理音乐网站的相关信息成为必然。开发合适的音乐网站，可以方便管理人员对音乐网站的管理，提高信息管理工作效率及查询效率，有利于更好的为人们服务。</p>
+<p>[]{#__RefHeading___Toc19841 .anchor}1.2研究目的</p>
+<p>随着互联网技术的快速发展，网络时代的到来，网络信息也将会改变当今社会。各行各业在日常企业经营管理等方面也在慢慢的向规范化和网络化趋势汇合。音乐网站的信息化程度体现在将互联网与信息技术应用于经营与管理，以现代化工具代替传统手工作业。无疑，使用网络信息化管理使信息管理更先进、更高效、更科学，信息交流更迅速。</p>
+<p>对于之前音乐网站的管理，大部分都是使用传统的人工方式去管理，这样导致了管理效率低下、出错频率高。而且，时间一长的话，积累下来的数据信息不容易保存，对于查询、更新还有维护会带来不少问题。对于数据交接也存在很大的隐患。如果采用电子化的存储方式就会带来很大的改善，而且给用户的查询带来了很大便利，因此设计一个音乐网站刻不容缓，能够提高信息的管理水平。</p>
+<h2 id="13系统设计思想">1.3系统设计思想</h2>
+<p>一个成功的网站应明确建设网站的目的，确定网站的功能，确定网站规模、投入费用，进行必要的市场分析等。只有详细的策划，才能避免在网站建设中出现的很多问题，使网站建设能顺利进行。同时，一个大型的计算机网站系统，必须有一个正确的设计指导思想，通过合理选择数据结构、网络结构、操作系统以及开发环境，构成一个完善的网络体系结构，才能充分发挥计算机信息管理的优势。根据现实生活中网民的实际需求，本系统的设计按照下述原则进行。</p>
+<ol>
+<li>
+<p>有效性：实际上这里的有效性包括两个方面的意思：有用性和可用性。有用性是指站点潜在的能满足用户需求的功能，而可用性是指能够通过站点的操作实现特定的目标。可以看出一个站点如果不能恰当运行或设计得非常槽糕就不是一个好站点。可用站点的效益应该非常高，并易于学习，在实现用户目标时令人满意而不出错。</p>
+</li>
+<li>
+<p>高可靠性：一个实用的网站同时必须是可靠的，本设计通过合理而先进的网络设计以及软、硬件的优化选型，可保证网站的可靠性与容错性。</p>
+</li>
+<li>
+<p>高安全性：在设计中，将充分利用网络软、硬件提供的各种安全措施，既可以保证用户共享资源，充分考虑系统及数据资源的容灾、备份、恢复的要求。为系统提供强大的数据库备份工具。可以保证关键数据的安全性。操作权限级，设置不同的角色确保每一步的操作权限，可以由管理员进行设置。</p>
+</li>
+<li>
+<p>先进性：采用目前国际上最先进的开发技术，使用JSP开发技术，MYSQL作为网站后台数据库。采用这些技术降低了以后的系统运营成本，提高了系统的稳定性和易维护性。</p>
+</li>
+<li>
+<p>采用标准技术：本网站的所有设计遵循国际上现行的标准进行，以提高系统的开放性。</p>
+</li>
+<li>
+<p>外观和技术平衡：系统采用Web风格的界面设计，界面友好、美观，使用方便，易学易用。网站设计的关键问题是外观和技术的平衡。外现不好的网站令人厌烦，站点可以运行很好，但却不能带动用户积极性，相反，如果外观非常有表现力，但技术有限，用户则会感到非常失望。在外观与技术之间需要确定一个清晰而连续的关系，即外观与站点的意图相关，对不同类型的网站处理方法不同。</p>
+</li>
+</ol>
+<h1 id="2相关技术">2相关技术</h1>
+<h2 id="21-mysql数据库">2.1 MYSQL数据库</h2>
+<p>MySQL是一个真正的多用户、多线程SQL数据库服务器。
+是基于SQL的客户/服务器模式的关系数据库管理系统，它的有点有有功能强大、使用简单、管理方便、安全可靠性高、运行速度快、多线程、跨平台性、完全网络化、稳定性等，非常适用于Web站点或者其他应用软件的数据库后端的开发工作。此外，用户可利用许多语言编写访问MySQL数据库的程序。作为开放源代码运动的产物之一，MySQL关系数据库管理系统越来越受到人们的青睐，应用范围也越来越广。速度和易用性使MySQL特别适用于Web站点或应用软件的数据库后端的开发工作。</p>
+<p>MYSQL数据库具有以下特点：</p>
+<p>1、C和C ++中使用和测试，以确保源代码的编译器的便携性和灵活性。</p>
+<p>2、支持多种操作系统AIX的，FreeBSD下，HP-UX，Linux和Mac
+OS中，Novell公司的Netware，OpenBSD系统，OS/2裹时，Solaris，Windows等。</p>
+<p>3、提供了用于不同的编程语言的API。编程语言，如C,, C
+++，Python和Java的，的Perl，PHP，埃菲尔铁塔，Ruby和Tcl的。</p>
+<p>4、以及使用的CPU资源来支持多线程。</p>
+<p>5、算法优化查询SQL，切实提高搜索速度。</p>
+<p>6、网络上的客户端和服务器可以用来编程任何独立的编程环境，也有中国，GB2312，BIG5，日文写作，一般基金，用于支持多国语言，并且可以嵌入在数据表和其他软件shift_jis访问柱可以用作的名称。</p>
+<p>7、TCP / IP，ODBC和JDBC数据库，并提供连接到其他。</p>
+<p>8、管理工具的管理，控制和优化数据库的操作。</p>
+<p>9、可以数以千万计的记录在一个大的数据库。</p>
+<h2 id="22-bs结构">2.2 B/S结构</h2>
+<p>B/S架构是一种基于互联网系统的软件系统开发架构，是现如今在软件系统开发中采用非常大量的一种软件系统结构。现如今B/S架构已经被大量使用，打破了C/S结构的结构，给基于网络结构的软件系统提供了良好的支持。B/S架构伴随着计算机网络技术发展而逐步的发展和更新。伴随着互联网的进一步发展，就要求大多数的管理系统要求不仅仅可以在一台电脑上使用，同时可以在接入互联网的其他电脑也可以使用对系统进行操作和使用。在这样的背景下基于B/S架构的软件系统设计方法得到了越来越大量的使用，基础部分也在不断的更新。</p>
+<p>B/S架构是利用操作系统中的浏览器来进行使用的，不是一种窗体软件系统，不需要在使用系统的电脑上进行安装。B/S架构的运行方式是在远程的服务器上把开发的软件系统部署在远程的服务器上，在部署好软件系统之后就可以实现在任何接入互联网的电脑上访问部署好的软件系统。B/S架构给使用管理系统的用户带来极大的便利。</p>
+<p>在三层体系结构的B/S（Browser/Server，浏览器/服务器结构）系统中，用户可以通过浏览器向分布在网络上的众多服务器发出请求。B/S系统极大地简化了客户机的工作量，客户机上只需要安装、配置少量的客户端运行软件即可，服务器将担负大量的工作，对数据库的访问以及应用程序的执行都将由服务器来完成。</p>
+<p>B/S架构的不断成熟，主要使用WWW浏览器技术，结合多种浏览器脚本语言，用通用浏览器需要实现原本复杂的专有软件来实现的强大功能，并节约了开发成本，是一种新的软件架构。B/S系统包括：表示逻辑层，控制逻辑层，数据展现层，三层是相对独立又相互关联。</p>
+<h2 id="23-spring-boot框架简介">2.3 Spring Boot框架简介</h2>
+<p>Spring
+Boot是由Pivotal团队提供的全新<a href="https://baike.baidu.com/item/%e6%a1%86%e6%9e%b6/1212667" target="_blank" rel="noopener noreffer ">框架</a>，其设计目的是用来<a href="https://baike.baidu.com/item/%e7%ae%80%e5%8c%96/3374416" target="_blank" rel="noopener noreffer ">简化</a>新<a href="https://baike.baidu.com/item/Spring/85061" target="_blank" rel="noopener noreffer ">Spring</a>应用的初始搭建以及开发过程。该框架使用了特定的方式来进行配置，从而使开发人员不再需要定义样板化的配置。通过这种方式，Spring
+Boot致力于在蓬勃发展的快速应用开发领域(rapid application
+development)成为领导者。</p>
+<p>SpringBoot可以与经典的Java开发工具一起使用或者作为命令行工具安装。无论如何，需要JavaSDK1.6或者更高版本，本项目用到的是JDK1.8版本。</p>
+<h1 id="3系统分析">3系统分析</h1>
+<h2 id="31可行性分析">3.1可行性分析</h2>
+<p>通过对本音乐网站实行的目的初步调查和分析，提出可行性方案并对其一一进行论证。我们在这里主要从技术可行性、经济可行性、操作可行性等方面进行分析。</p>
+<h3 id="311技术可行性">3.1.1技术可行性</h3>
+<p>本音乐网站采用SSM框架，JAVA作为开发语言，是基于WEB平台的B/S架构系统。</p>
+<p>（1）Java提供了稳定的性能、优秀的升级性、更快速的开发、更简便的管理、全新的语言以及服务。整个系统帮用户做了大部分不重要的琐碎的工作。</p>
+<p>（2）基于B/S模式的系统的开发已发展日趋成熟。</p>
+<p>（3）众所周知，Java是面向对象的开发语言。程序开发员可以在Eclipse平台上面方便的使用一些已知的解决方案。
+  </p>
+<p>因此，音乐网站在开发技术上具有很高可行性，且开发人员掌握了一定的开发技术，所以此系统的开发技术具有可行性。</p>
+<h3 id="312经济可行性">3.1.2经济可行性</h3>
+<p>本音乐网站采用的软件都是开源的，这样能够削减很多的精力和资源，降低开发成本。同时对计算机的配置要求也极低，即使是淘汰下来的计算机也能够满足需要，因此，本系统在经济上是完全具有可行性的，所以在经济上是十分可行的。</p>
+<h3 id="313操作可行性">3.1.3操作可行性</h3>
+<p>本音乐网站的界面简单易操作，用户只要平时有在用过电脑，都能进行访问和操作。本系统具有易操作、易管理、交互性好的特点，在操作上是非常简单的，因此在操作上具有很高的可行性。</p>
+<p>综上所述，此系统开发目标已明确，在技术、经济和操作方面都具有很高的可行性，并且投入少、功能完善、管理方便，因此系统的开发是完全可行的。</p>
+<h2 id="32系统性能分析">3.2系统性能分析</h2>
+<h3 id="321-系统安全性">3.2.1 系统安全性</h3>
+<p>此音乐网站要严格控制管理权限，具体要求如下：</p>
+<p>（1）要想对音乐网站进行管理，首先要依靠用户名和密码在系统中登陆，无权限的用户不可以通过任何方式登录系统和对系统的任何信息和数据进行查看，这样可以保证系统的安全可靠性和准确性。</p>
+<p>（2）在具体实现中对不同的权限进行设定，不同权限的用户在系统中登陆后，不可以越级操作。</p>
+<h3 id="322-数据完整性">3.2.2 数据完整性</h3>
+<p>（1）所有记录信息要保持全面，信息记录内容不可以是空。</p>
+<p>（2）各种数据间相互联系要保持正确。</p>
+<p>（3）相同数据在不同记录中要保持一致。</p>
+<p>[]{#__RefHeading___Toc18544 .anchor}3.3系统界面分析</p>
+<p>目前，界面设计已经成为对软件质量进行评价的一条关键指标，一个好的用户界面可以使用户使用系统的信心和兴趣增加，从而使工作效率提高，JSP技术是将JAVA语言作为脚本语言的，JSP网页给整个服务器端的JAVA库单元提供了一个接口用来服务HTTP的应用程序。创建动态页面比较方便。客户界面是指软件系统与用户交互的接口，往往涵盖输出、输入、人机对话的界面格式等。</p>
+<p>1.输出设计</p>
+<p>输出是由电脑对输入的基本信息进行解决，生成高质量的有效信息，并使之具有一定的格式，提供给管理者使用，这是输出设计的主要责任和目标。</p>
+<p>系统开发的过程与实施过程相反，并不是从输入设计到输出设计，而是从输出设计到输入设计。这是由于输出表格与使用者直接相联系，设计的目的应当是确保使用者可以很方便的使用输出表格，并且可以将各部门的有用信息及时的反映出来。输出设计的准绳是既要整体琢磨不同管理层的所有需要，又要简洁，不要提供给用户不需要的信息。</p>
+<p>2.输入设计</p>
+<p>输入数据的收集和录入是比较麻烦的，需要非常多的人力和一定设备，而且经常出错。一旦输入系统的数据不正确，那么处理后的输出就会扩大这些错误，因此输入的数据的准确性对整个系统的性能起着决定性意义。</p>
+<p>输入设计有以下几点原则：</p>
+<p>1）输入量应尽量保持在能够满足处理要求的最低限度。输入量越少，错误率就会越少，数据的准备时间也越少。</p>
+<p>2）应尽可能的使输入的准备以及输入的过程进行时比较方便，这样使错误的发生率降低。</p>
+<p>3）应尽量早检查输入数据（尽量接近原数据发生点）,以便使错误更正比较及时。</p>
+<p>4）输入数据尽早地记录成其处理所需的形式，以防止数据由一种介质转移到另一种介质时需要转录而可能发生的错误。</p>
+<h2 id="34系统流程和逻辑">3.4系统流程和逻辑</h2>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image1.wmf"
+        data-srcset="media/image1.wmf, media/image1.wmf 1.5x, media/image1.wmf 2x"
+        data-sizes="auto"
+        alt="media/image1.wmf"
+        title="media/image1.wmf" /></p>
+<p>图3-3登录流程图</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image2.wmf"
+        data-srcset="media/image2.wmf, media/image2.wmf 1.5x, media/image2.wmf 2x"
+        data-sizes="auto"
+        alt="media/image2.wmf"
+        title="media/image2.wmf" /></p>
+<p>图3-4修改密码流程图</p>
+<h1 id="4系统概要设计">4系统概要设计</h1>
+<h2 id="41概述">4.1概述</h2>
+<p>本系统采用B/S结构(Browser/Server,浏览器/服务器结构)和基于Web服务两种模式，是一个适用于Internet环境下的模型结构。只要用户能连上Internet,便可以在任何时间、任何地点使用。系统工作原理图如图4-1所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image3.wmf"
+        data-srcset="media/image3.wmf, media/image3.wmf 1.5x, media/image3.wmf 2x"
+        data-sizes="auto"
+        alt="media/image3.wmf"
+        title="media/image3.wmf" /></p>
+<p>图4-1系统工作原理图</p>
+<h2 id="42系统结构">4.2系统结构</h2>
+<p>本系统是基于B/S架构的网站系统，设计的功能结构图如下图所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image4.wmf"
+        data-srcset="media/image4.wmf, media/image4.wmf 1.5x, media/image4.wmf 2x"
+        data-sizes="auto"
+        alt="media/image4.wmf"
+        title="media/image4.wmf" /></p>
+<p>图4-2功能结构图</p>
+<h2 id="43数据库设计">4.3.数据库设计</h2>
+<h3 id="431数据库实体">4.3.1数据库实体</h3>
+<p>概念设计的目标是设计出反映某个组织部门信息需求的数据库系统概念模式，数据库系统的概念模式独立于数据库系统的逻辑结构、独立于数据库管理系统（DBMS）、独立于计算机系统。</p>
+<p>概念模式的设计方法是在需求分析的基础上，用概念数据模型（例如E-R模型）表示数据及数据之间的相互联系，设计出反映用户信息需求和处理需求的数据库系统概念模式。概念设计的目标是准确描述应用领域的信息模式，支持用户的各种应用，这样既容易转换为数据库系统逻辑模式，又容易为用户理解。数据库系统概念模式是面向现实世界的数据模型，不能直接用于数据库系统的实现。在此阶段，用户可以参与和评价数据库系统的设计，从而有利于保证数据库系统的设计与用户的需求相吻合。在概念模式的设计中，E-R模型法是最常见的设计方法。本系统的E-R图如下图所示：</p>
+<p>（1）管理员信息的实体属性图如下：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image5.wmf"
+        data-srcset="media/image5.wmf, media/image5.wmf 1.5x, media/image5.wmf 2x"
+        data-sizes="auto"
+        alt="media/image5.wmf"
+        title="media/image5.wmf" /></p>
+<p>图4.12 管理员信息实体属性图</p>
+<p>（2）歌曲信息实体属性图如图4.13所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image6.wmf"
+        data-srcset="media/image6.wmf, media/image6.wmf 1.5x, media/image6.wmf 2x"
+        data-sizes="auto"
+        alt="media/image6.wmf"
+        title="media/image6.wmf" /></p>
+<p>图4.13 歌曲信息实体属性图</p>
+<p>（3）用户信息实体属性图如图4.14所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image7.wmf"
+        data-srcset="media/image7.wmf, media/image7.wmf 1.5x, media/image7.wmf 2x"
+        data-sizes="auto"
+        alt="media/image7.wmf"
+        title="media/image7.wmf" /></p>
+<p>图4.14 用户信息实体属性图</p>
+<h3 id="432数据库设计表">4.3.2数据库设计表</h3>
+<p>音乐网站需要后台数据库，下面介绍数据库中的各个表的详细信息：</p>
+<p>表4.1 歌曲信息评论表</p>
+<hr>
+<pre><code> 字段          类型       空         默认                        注释
+</code></pre>
+<p>id (主键)    bigint(20)    否                                     主键</p>
+<pre><code>addtime     timestamp     否   CURRENT_TIMESTAMP               创建时间
+
+ refid      bigint(20)    否                                   关联表id
+
+userid      bigint(20)    否                                    用户id
+</code></pre>
+<p>nickname    varchar(200)   是         NULL                       用户名</p>
+<pre><code>content      longtext     否                                   评论内容
+
+ reply       longtext     是         NULL                      回复内容
+</code></pre>
+<hr>
+<p>表4.2 歌曲分类</p>
+<hr>
+<pre><code>  字段          类型       空         默认                        注释
+</code></pre>
+<p>id (主键)     bigint(20)    否                                     主键</p>
+<pre><code>addtime      timestamp     否   CURRENT_TIMESTAMP               创建时间
+</code></pre>
+<p>gequfenlei   varchar(200)   是         NULL                      歌曲分类</p>
+<hr>
+<p>表4.3 歌曲信息</p>
+<hr>
+<pre><code>   字段            类型       空         默认                      注释
+
+ id (主键)      bigint(20)    否                                   主键
+
+  addtime       timestamp     否   CURRENT_TIMESTAMP             创建时间
+</code></pre>
+<p>gequmingcheng   varchar(200)   是         NULL                    歌曲名称</p>
+<pre><code>  haibao       varchar(200)   是         NULL                      海报
+
+gequfenlei     varchar(200)   是         NULL                    歌曲分类
+
+  geshou       varchar(200)   是         NULL                      歌手
+
+   zuoci       varchar(200)   是         NULL                      作词
+
+   zuoqu       varchar(200)   是         NULL                      作曲
+
+   yinle       varchar(200)   是         NULL                      音乐
+
+  shipin       varchar(200)   是         NULL                      视频
+
+gequjianjie      longtext     是         NULL                    歌曲简介
+
+ clicktime       datetime     是         NULL                  最近点击时间
+
+ clicknum        int(11)      是           0                     点击次数
+</code></pre>
+<hr>
+<p>表4.4 管理员表</p>
+<hr>
+<pre><code> 字段          类型       空         默认                        注释
+</code></pre>
+<p>id (主键)    bigint(20)    否                                     主键</p>
+<p>username    varchar(100)   否                                    用户名</p>
+<p>password    varchar(100)   否                                     密码</p>
+<pre><code> role      varchar(100)   是        管理员                       角色
+
+addtime     timestamp     否   CURRENT_TIMESTAMP               新增时间
+</code></pre>
+<hr>
+<p>表4.5 音乐下载</p>
+<hr>
+<pre><code>    字段            类型       空         默认                      注释
+
+ id (主键)       bigint(20)    否                                   主键
+
+  addtime        timestamp     否   CURRENT_TIMESTAMP             创建时间
+
+ yonghuming     varchar(200)   是         NULL                     用户名
+</code></pre>
+<p>yonghuxingming   varchar(200)   是         NULL                    用户姓名</p>
+<p>gequmingcheng    varchar(200)   是         NULL                    歌曲名称</p>
+<pre><code> gequfenlei     varchar(200)   是         NULL                    歌曲分类
+
+   geshou       varchar(200)   是         NULL                      歌手
+
+   yinle        varchar(200)   是         NULL                      音乐
+</code></pre>
+<hr>
+<p>表4.6 用户</p>
+<hr>
+<pre><code>    字段            类型       空         默认                      注释
+
+ id (主键)       bigint(20)    否                                   主键
+
+  addtime        timestamp     否   CURRENT_TIMESTAMP             创建时间
+
+ yonghuming     varchar(200)   否                                  用户名
+
+    mima        varchar(200)   否                                   密码
+</code></pre>
+<p>yonghuxingming   varchar(200)   否                                 用户姓名</p>
+<pre><code>  touxiang      varchar(200)   是         NULL                      头像
+
+  xingbie       varchar(200)   是         NULL                      性别
+
+  nianling      varchar(200)   是         NULL                      年龄
+
+shoujihaoma     varchar(200)   是         NULL                    手机号码
+
+  youxiang      varchar(200)   是         NULL                      邮箱
+</code></pre>
+<hr>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image8.gif"
+        data-srcset="media/image8.gif, media/image8.gif 1.5x, media/image8.gif 2x"
+        data-sizes="auto"
+        alt="media/image8.gif"
+        title="media/image8.gif" />{width=&ldquo;9.722222222222222e-3in&rdquo;
+height=&ldquo;9.722222222222222e-3in&rdquo;}</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image8.gif"
+        data-srcset="media/image8.gif, media/image8.gif 1.5x, media/image8.gif 2x"
+        data-sizes="auto"
+        alt="media/image8.gif"
+        title="media/image8.gif" />{width=&ldquo;9.722222222222222e-3in&rdquo;
+height=&ldquo;9.722222222222222e-3in&rdquo;}</p>
+<h1 id="5系统详细实现">5系统详细实现</h1>
+<h2 id="51-管理员模块的实现">5.1 管理员模块的实现</h2>
+<h3 id="511-用户信息管理">5.1.1 用户信息管理</h3>
+<p>音乐网站的系统管理员可以管理用户，可以对用户信息修改删除以及查询操作。具体界面的展示如图5.1所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image9.png"
+        data-srcset="media/image9.png, media/image9.png 1.5x, media/image9.png 2x"
+        data-sizes="auto"
+        alt="media/image9.png"
+        title="media/image9.png" />{width=&ldquo;6.373611111111111in&rdquo;
+height=&ldquo;2.9159722222222224in&rdquo;}</p>
+<p>图5.1 用户信息管理界面</p>
+<h3 id="512-歌曲分类管理">5.1.2 歌曲分类管理</h3>
+<p>系统管理员可以查看对歌曲分类进行添加，修改，删除以及查询操作。具体界面如图5.2所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image10.png"
+        data-srcset="media/image10.png, media/image10.png 1.5x, media/image10.png 2x"
+        data-sizes="auto"
+        alt="media/image10.png"
+        title="media/image10.png" />{width=&ldquo;6.372222222222222in&rdquo;
+height=&ldquo;2.8444444444444446in&rdquo;}</p>
+<p>图5.2 歌曲分类管理界面</p>
+<h3 id="513-歌曲信息管理">5.1.3 歌曲信息管理</h3>
+<p>系统管理员可以对歌曲信息进行添加，修改，删除以及查询操作。界面如下图所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image11.png"
+        data-srcset="media/image11.png, media/image11.png 1.5x, media/image11.png 2x"
+        data-sizes="auto"
+        alt="media/image11.png"
+        title="media/image11.png" />{width=&ldquo;6.372916666666667in&rdquo;
+height=&ldquo;2.9027777777777777in&rdquo;}</p>
+<p>图5.3 歌曲信息管理界面</p>
+<h3 id="514-轮播图管理">5.1.4 轮播图管理</h3>
+<p>系统管理员可以对轮播图进行添加修改删除操作。界面如下图所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image12.png"
+        data-srcset="media/image12.png, media/image12.png 1.5x, media/image12.png 2x"
+        data-sizes="auto"
+        alt="media/image12.png"
+        title="media/image12.png" />{width=&ldquo;6.375694444444444in&rdquo;
+height=&ldquo;3.138888888888889in&rdquo;}</p>
+<p>图5.4 轮播图管理界面</p>
+<h2 id="52-用户模块的实现">5.2 用户模块的实现</h2>
+<h3 id="521-歌曲信息">5.2.1 歌曲信息</h3>
+<p>用户可以在歌曲信息里面点播歌曲进行播放。界面如下图所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image13.png"
+        data-srcset="media/image13.png, media/image13.png 1.5x, media/image13.png 2x"
+        data-sizes="auto"
+        alt="media/image13.png"
+        title="media/image13.png" />{width=&ldquo;6.3694444444444445in&rdquo;
+height=&ldquo;2.8381944444444445in&rdquo;}</p>
+<p>图5.5 歌曲信息界面</p>
+<h3 id="522-歌曲评论">5.2.2 歌曲评论</h3>
+<p>用户可以对歌曲信息进行评论。界面如下图所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image14.png"
+        data-srcset="media/image14.png, media/image14.png 1.5x, media/image14.png 2x"
+        data-sizes="auto"
+        alt="media/image14.png"
+        title="media/image14.png" />{width=&ldquo;6.367361111111111in&rdquo;
+height=&ldquo;3.222916666666667in&rdquo;}</p>
+<p>图5.6 歌曲评论界面</p>
+<h3 id="523-用户注册">5.2.3 用户注册</h3>
+<p>用户需要注册才可以登录。界面如下图所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image15.png"
+        data-srcset="media/image15.png, media/image15.png 1.5x, media/image15.png 2x"
+        data-sizes="auto"
+        alt="media/image15.png"
+        title="media/image15.png" />{width=&ldquo;4.09375in&rdquo; height=&ldquo;5.09375in&rdquo;}</p>
+<p>图5.7 用户注册界面</p>
+<h1 id="6系统测试">6系统测试</h1>
+<h2 id="61概念和意义">6.1概念和意义</h2>
+<p>测试的定义：程序测试是为了发现错误而执行程序的过程。测试(Testing)的任务与目的可以描述为：</p>
+<p>目的：发现程序的错误；</p>
+<p>任务：通过在计算机上执行程序，暴露程序中潜在的错误。</p>
+<p>另一个预测是相关的术语叫纠错(Debugging)。它的目的与任务可以规定为：</p>
+<p>目的：定位和纠正错误；</p>
+<p>任务：消除软件故障，保证程序的可靠运行。测试与纠错的关系，可以用图6-1的数据流图来说明。图中表明，每一次测试都要准备好若干必要的测试数据，与被测试程序一道送入计算机执行。通常把一次程序执行需要的测试数据，称为一个&quot;测试用例(Test
+Case)。每一个测试用例产生一个相应的&quot;测试结果&quot;。如果它与&quot;期望结果&quot;不想符合，便说明程序中存在错误，需要用纠错来改正。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image16.png"
+        data-srcset="media/image16.png, media/image16.png 1.5x, media/image16.png 2x"
+        data-sizes="auto"
+        alt="media/image16.png"
+        title="media/image16.png" />{width=&ldquo;5.759722222222222in&rdquo; height=&ldquo;1.78125in&rdquo;}</p>
+<p>图6.1测试与纠错信息流程</p>
+<h2 id="62特性">6.2特性</h2>
+<p>（1）挑剔性</p>
+<p>测试是为了证明程序有错，而不是证明程序无错。因此，对于被测程序就是要&quot;纯毛求疵&quot;，就是要&quot;鸡蛋里挑骨头&quot;。</p>
+<p>（2）复杂性</p>
+<p>测试仪程序则比较容易，这其实是一个误区。设计测试用力是一项需要细致和高度技巧的高能工作，稍有不慎就会顾此失彼，发生不应用得数楼。</p>
+<p>（3）不彻底性</p>
+<p>实际测试都是不彻底的，当然不能够保证测试后的程序不存在遗漏的错误。</p>
+<p>（4）经济性</p>
+<p>通场这种测试称为&quot;选择测试（Selective
+Testing）&quot;。为了降低测试成本，选择测试用力是应注意遵守&quot;经济性&quot;的原则。</p>
+<h2 id="63重要性">6.3重要性</h2>
+<p>软件测试在软件生命周期中占据重要的地位，在传统的瀑布模型中，软件测试学仅处于运行维护阶段之前，是软件产品交付用户使用之前保证软件质量的重要手段。近来，软件工程界趋向于一种新的观点，即认为软件生命周期每一阶段中都应包含测试，从而检验本阶段的成果是否接近预期的目标，尽可能早的发现错误并加以修正，如果不在早期阶段进行测试，错误的延时扩散常常会导致最后成品测试的巨大困难。</p>
+<h2 id="64测试方法">6.4测试方法</h2>
+<p>首先我们来说界面测试，界面测试是为了使程序在不同的的操作平台上能够运行界面，并且能够保持原来的风格。我把完整程序拷贝到Windows
+7环境下，似的程序运行正常，运行界面上的字体图片等设置都能够保持得非常好。不出现字体变形等情况！</p>
+<p>其次进行功能测试。该系统测试采用的是单元测试，集成测试，完善性测试等多种方式进行测试。</p>
+<p>经过测试，所有功能都能得以实现，没有任何变形。至此，在功能的测试上也已经比较圆满的完成了。</p>
+<p>由于经验不足，写代码时出现了一些考虑不周的系统缺陷，写代码的时候会出现与设想不一致，比如说代码不规范导致接口与接口之间出现问题，功能与客户的要求不符合，这样导致产品不能过关，无法交付。所以产品在上线前必须反复测试，经过反复测试，修改，再测试，再修改，产品才能够不断完善。在整个系统测试中，根据需求文档和设计文档，逐一对功能进行检测并写好测试用例，有效避免残片缺陷，因为产品出现缺陷不仅影响功能，而且可以导致数据的不准确，导致产品质量的降低，经过测试，才能使得产品的稳定性和成熟度得到极大的提升，产品质量也才有保证。</p>
+<h2 id="65-功能测试">6.5 功能测试</h2>
+<p>功能测试主要包括五项内容：适用性、准确性、可操作性、依从性、安全性。</p>
+<p>本系统功能测试如表6.1所示：</p>
+<p>表6.1 系统功能测试</p>
+<hr>
+<pre><code>           测试内容                            测试结果
+
+            适用性                                好
+
+            准确性                                好
+
+           可操作性                               好
+
+            依从性                                好
+
+            安全性                                好
+</code></pre>
+<hr>
+<h2 id="66可用性测试">6.6可用性测试</h2>
+<p>可用性测试用于检测系统的可操作性、可理解性、可学习性等方面内容。具体测试方面如表6.2所示。</p>
+<p>表6.2 系统可用性测试</p>
+<hr>
+<pre><code>                     测试项                        测试人员的评价
+
+     窗口移动、大小改变、关闭等操作是否正常        是
+
+                操作模块是否友好                   是
+
+        模块、提示内容等文字描述是否正确           是
+
+             模块布局是否协调、合理                是
+
+ 模块的状态是否正确（对选中项能否发生对应切换）    是
+
+             鼠标、键盘操作是否支持                是
+
+             所需数据项是否正确显示                是
+
+                操作流程是否合理                   是
+
+                是否提供帮助信息                   是
+</code></pre>
+<hr>
+<h2 id="67性能测试">6.7性能测试</h2>
+<p>性能测试主要通过模拟系统运行环境，测试系统性能是否符合客户需求。性能测试的重要技术指标就是：系统运行速度、网络响应时间和支持并发节点数。</p>
+<p>1）系统运行速度：通过在不同计算机上试运行本系统，没有发现有任何迟滞、停顿现象。</p>
+<p>2）网络响应时间：网络响应时间主要包括网络最小响应时间、平均响应时间、最大响应时间三个参数。经过测试，在网络运营良好状态下，NBA局域网内响应时间三参数为：1/2/6s，NBA外网响应时间三参数为3/7/12s，符合客户需求，属于用户心理可承受范围。</p>
+<p>3）支持并发节点数：经过模拟环境测试，本系统在并发节点达46个时，网络运营速度会发生较大波动，延迟时间10秒左右，符合客户需求。</p>
+<h2 id="68测试分析">6.8测试分析</h2>
+<p>本网站设计时借鉴了国内外优秀网站的优点，从界面到系统设计都保证了用户能够方便操作。系统的主要特点和优点归纳如下：</p>
+<p>（1）本系统用的移置性和针对性都比较高，因为针对性高可以提供更好的服务而移置性可以在多个系统上运行，更给客户带来了极大的方便。</p>
+<p>（2）该完整内容全面，管理方便可以及时的全面的处理各种错误，异常，这样避免了很多因用户的马虎操作而出现的失误，其操作方便，用户界面友好，能够上网的人都可以很好的进行操作。</p>
+<h2 id="69测试结果分析">6.9测试结果分析</h2>
+<p>经过对上述测试结果分析，本系统符合用户需求。所有基本功能点实现，操作简单，操作流程简单合理，产品运行性能良好，是一款值得推广的音乐网站。</p>
+<h1 id="结论">结论</h1>
+<p>在这次毕业设计中遇到的最困难的方面就是在数据库方面的知识，在刚开始进行毕业设计的时候感觉十分困难，根本不知道该从何处下手，但不断的坚持，设计最终被完成。无论多么的困难，只要能够坚持下来，善于去找到好的材料来研究，在研究中充分利用资源，没有困难是不会被成功解决的。</p>
+<p>在开发系统的过程中，本人运用到了JSP技术和平时学习中所了解的一些技术，通过实现这些技术，大大提高了整个系统的性能。在论文中这些技术都做了比较详细的介绍。本系统还存在很多缺点和不完善的地方，例如有些细节上做的还不够完善，有些功能模块还需要加强。在今后的日子里，能够对这些不足进行改善。</p>
+<p>通过这次最终的毕业设计，平时所学到的知识不仅融合了，而且获得了许多计算机知识。在整个设计过程中明白了许多东西，也培养独立工作能力，树立信心，对自己能力的工作能力，我相信以后会学习和工作生活中有至关重要的作用。同时也大大提高了手的能力，使其难以充分体会探索的乐趣和成功的创作过程，设计过程中汲取的东西，是一笔宝贵的财富。</p>
+<p>回顾过去做毕业设计的整个过程，充满了付出和收获，但是当你看到成果的时候的感觉，是一种难以用言语表达的喜悦之感这些在毕业设计过程中学习到的东西将会使我终身受益！</p>
+<p>最后，感谢指导老师的关心和指导，在我毕业设计的整个过程中，他给与了我很多的帮助和讲解，在导师的帮助下我的毕业设计才能如此顺利的完成。</p>
+<h1 id="致谢语">致谢语</h1>
+<p>经过几个多月的不断学习，我的毕业设计终于如期完成。此次毕业设计是对我们日常所学计算机理论知识的一次综合性评测，也是将理论应用到实践的一项考察。</p>
+<p>首先我要感谢此次指导我的老师，是他的及时纠正我在设计当中出现的问题，使得我的设计高质量完成。指导老师在我本次音乐网站的开发过程中，为程序、框架的设计、代码等方面以及论文设计提供了很多宝贵的意见，并且为我推荐了许多相关的资料，他的指导和建议使我受益匪浅，通过老师的耐心辅导和指点，我的论文顺利完成，在此，我表示深刻的感谢。</p>
+<p>我也要感谢帮助过我的同学们，和我一起探讨论文的不足，给我的设计提出宝贵的建议，在这次设计中他们的帮助使得我的设计更加完善更加具体。</p>
+<p>最后，我也要感谢学校为我们提供了一个良好的学校环境。祝愿学校的领导教师以及和我一起奋斗的同学们工作顺利，事业有成，也要祝愿学校的前景更加辉煌。</p>
+<h1 id="参考文献">参考文献</h1>
+<p>[1]付昕.
+基于B/S模式仓库管理系统的实现[J].山东省农业管理干部学院学报, 2010,
+27(4):166-168</p>
+<p>[2] 雷文华, 薛小文. MATLAB和Servlet在网络数据处理中的应用[J].
+电子测试, 2010, (11):81-86.</p>
+<p>[3] 黄艳峰. 在Java语言中实施&quot;案例教学&quot;的研究与探索[J].
+电脑知识与技术, 2010, 6(5):1148-1149</p>
+<p>[4] 王玉英. 基于JSP的MySQL数据库访问技术[J]. 现代计算机：专业版,
+2010, 19(14):63-66</p>
+<p>[5] 赵钢. JSP Servlet+EJB的Web模式应用研究[J]. 电子设计工程, 2013,
+21(13):47-49</p>
+<p>[6] David L.Anderson.Managing Information
+Systems.清华大学出版社，2002：16</p>
+<p>[7] 王家华．软件工程[M]，沈阳：东北大学出版社，2011：46</p>
+<p>[8] 张孝祥,徐明华.软件开发课堂.清华大学出版社，2009：55</p>
+<p>[9] 崔洋.MySQL数据库应用从入门到精通.中国铁道出版社，2013：27</p>
+<p>[10] 王珊,萨师煊.数据库系统概论.高等教育出版社, 2006：16</p>
+<p>[11] 崔洋.MySQL数据库应用从入门到精通.中国铁道出版社，2013：27</p>
+<p>[12] 王珊,萨师煊.数据库系统概论.高等教育出版社, 2006：16</p>
+<p>[13] 张海潘.软件工程导论.清华大学出版社，2008：86</p>
+<p>[14] 黄艳峰. 在Java语言中实施&quot;案例教学&quot;的研究与探索[J].
+电脑知识与技术, 2010, 6(5):1148-1149</p>
+<p>[15] 王玉英. 基于JSP的MySQL数据库访问技术[J]. 现代计算机：专业版,
+2010, 19(14):63-66</p>
+<h3 id="0101springboot音乐网站-项目图片">0101springboot音乐网站 项目图片</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0101springbootimg_001.jpg"
+        data-srcset="/images/0101springbootimg_001.jpg, /images/0101springbootimg_001.jpg 1.5x, /images/0101springbootimg_001.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0101springbootimg_001.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0101springbootimg_003.jpg"
+        data-srcset="/images/0101springbootimg_003.jpg, /images/0101springbootimg_003.jpg 1.5x, /images/0101springbootimg_003.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0101springbootimg_003.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0101springbootimg_002.jpg"
+        data-srcset="/images/0101springbootimg_002.jpg, /images/0101springbootimg_002.jpg 1.5x, /images/0101springbootimg_002.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0101springbootimg_002.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0101springbootimg_012.jpg"
+        data-srcset="/images/0101springbootimg_012.jpg, /images/0101springbootimg_012.jpg 1.5x, /images/0101springbootimg_012.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0101springbootimg_012.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0101springbootimg_006.jpg"
+        data-srcset="/images/0101springbootimg_006.jpg, /images/0101springbootimg_006.jpg 1.5x, /images/0101springbootimg_006.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0101springbootimg_006.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0101springbootimg_007.jpg"
+        data-srcset="/images/0101springbootimg_007.jpg, /images/0101springbootimg_007.jpg 1.5x, /images/0101springbootimg_007.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0101springbootimg_007.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0101springbootimg_013.jpg"
+        data-srcset="/images/0101springbootimg_013.jpg, /images/0101springbootimg_013.jpg 1.5x, /images/0101springbootimg_013.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0101springbootimg_013.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0101springbootimg_005.jpg"
+        data-srcset="/images/0101springbootimg_005.jpg, /images/0101springbootimg_005.jpg 1.5x, /images/0101springbootimg_005.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0101springbootimg_005.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0101springbootimg_011.jpg"
+        data-srcset="/images/0101springbootimg_011.jpg, /images/0101springbootimg_011.jpg 1.5x, /images/0101springbootimg_011.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0101springbootimg_011.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0101springbootimg_010.jpg"
+        data-srcset="/images/0101springbootimg_010.jpg, /images/0101springbootimg_010.jpg 1.5x, /images/0101springbootimg_010.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0101springbootimg_010.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0101springbootimg_004.jpg"
+        data-srcset="/images/0101springbootimg_004.jpg, /images/0101springbootimg_004.jpg 1.5x, /images/0101springbootimg_004.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0101springbootimg_004.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0101springbootimg_009.jpg"
+        data-srcset="/images/0101springbootimg_009.jpg, /images/0101springbootimg_009.jpg 1.5x, /images/0101springbootimg_009.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0101springbootimg_009.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0101springbootimg_008.jpg"
+        data-srcset="/images/0101springbootimg_008.jpg, /images/0101springbootimg_008.jpg 1.5x, /images/0101springbootimg_008.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0101springbootimg_008.jpg"
+        title="图片" /></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2024-07-12</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/0101springboot%E9%9F%B3%E4%B9%90%E7%BD%91%E7%AB%99/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://chenqi199.github.io/0101springboot%E9%9F%B3%E4%B9%90%E7%BD%91%E7%AB%99/" data-title="0101springboot音乐网站" data-hashtags="springboot,java,vue,论文,项目"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://chenqi199.github.io/0101springboot%E9%9F%B3%E4%B9%90%E7%BD%91%E7%AB%99/" data-hashtag="springboot"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://chenqi199.github.io/0101springboot%E9%9F%B3%E4%B9%90%E7%BD%91%E7%AB%99/" data-title="0101springboot音乐网站"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://chenqi199.github.io/0101springboot%E9%9F%B3%E4%B9%90%E7%BD%91%E7%AB%99/" data-title="0101springboot音乐网站"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://chenqi199.github.io/0101springboot%E9%9F%B3%E4%B9%90%E7%BD%91%E7%AB%99/" data-title="0101springboot音乐网站" data-ralateuid="https://gitee.com/chen_q_i"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/springboot/">Springboot</a>,&nbsp;<a href="/tags/java/">Java</a>,&nbsp;<a href="/tags/vue/">Vue</a>,&nbsp;<a href="/tags/%E8%AE%BA%E6%96%87/">论文</a>,&nbsp;<a href="/tags/%E9%A1%B9%E7%9B%AE/">项目</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/0102springboot%E6%8A%97%E7%96%AB%E7%89%A9%E8%B5%84%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" class="prev" rel="prev" title="0102springboot抗疫物资管理系统"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>0102springboot抗疫物资管理系统</a>
+            <a href="/0142springboot%E5%9C%A8%E7%BA%BF%E5%AE%B6%E5%85%B7%E5%95%86%E5%9F%8E%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0--%E8%AE%BA%E6%96%87pf/" class="next" rel="next" title="0142springboot在线家具商城设计与实现--论文pf">0142springboot在线家具商城设计与实现--论文pf<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.128.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="chenqi199" target="_blank">chenqi</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
