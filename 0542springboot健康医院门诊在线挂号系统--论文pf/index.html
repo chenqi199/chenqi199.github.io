@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer" />
+        <meta name="robots" content="noodp" />
+        <title>0542springboot健康医院门诊在线挂号系统--论文pf - chenqi blog</title><meta name="Description" content="Hugo theme - chenqi"><meta property="og:url" content="https://chenqi199.github.io/0542springboot%E5%81%A5%E5%BA%B7%E5%8C%BB%E9%99%A2%E9%97%A8%E8%AF%8A%E5%9C%A8%E7%BA%BF%E6%8C%82%E5%8F%B7%E7%B3%BB%E7%BB%9F--%E8%AE%BA%E6%96%87pf/">
+  <meta property="og:site_name" content="chenqi blog">
+  <meta property="og:title" content="0542springboot健康医院门诊在线挂号系统--论文pf">
+  <meta property="og:description" content="0542springboot健康医院门诊在线挂号系统–论文pf 微信： chen_q123456 qq:462201886 github:chenqi199 所有项目 包安装运行 所有项目列表excel 腾讯文档 项目清">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-07-18T17:58:48+08:00">
+    <meta property="article:modified_time" content="2024-07-18T17:58:48+08:00">
+    <meta property="article:tag" content="Springboot">
+    <meta property="article:tag" content="Java">
+    <meta property="article:tag" content="Vue">
+    <meta property="article:tag" content="论文">
+    <meta property="article:tag" content="项目">
+    <meta property="og:image" content="https://chenqi199.github.io/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chenqi199.github.io/logo.png">
+  <meta name="twitter:title" content="0542springboot健康医院门诊在线挂号系统--论文pf">
+  <meta name="twitter:description" content="0542springboot健康医院门诊在线挂号系统–论文pf 微信： chen_q123456 qq:462201886 github:chenqi199 所有项目 包安装运行 所有项目列表excel 腾讯文档 项目清">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chenqi199.github.io/0542springboot%E5%81%A5%E5%BA%B7%E5%8C%BB%E9%99%A2%E9%97%A8%E8%AF%8A%E5%9C%A8%E7%BA%BF%E6%8C%82%E5%8F%B7%E7%B3%BB%E7%BB%9F--%E8%AE%BA%E6%96%87pf/" /><link rel="prev" href="https://chenqi199.github.io/0543springboot%E5%81%9C%E8%BD%A6%E5%9C%BA%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F--%E8%AE%BA%E6%96%87pf/" /><link rel="next" href="https://chenqi199.github.io/0541springboot%E5%81%A5%E8%BA%AB%E6%88%BF%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F--%E8%AE%BA%E6%96%87pf/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "0542springboot健康医院门诊在线挂号系统--论文pf",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chenqi199.github.io\/0542springboot%E5%81%A5%E5%BA%B7%E5%8C%BB%E9%99%A2%E9%97%A8%E8%AF%8A%E5%9C%A8%E7%BA%BF%E6%8C%82%E5%8F%B7%E7%B3%BB%E7%BB%9F--%E8%AE%BA%E6%96%87pf\/"
+        },"image": ["https:\/\/chenqi199.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "springboot, java, vue, 论文, 项目","wordcount":  16797 ,
+        "url": "https:\/\/chenqi199.github.io\/0542springboot%E5%81%A5%E5%BA%B7%E5%8C%BB%E9%99%A2%E9%97%A8%E8%AF%8A%E5%9C%A8%E7%BA%BF%E6%8C%82%E5%8F%B7%E7%B3%BB%E7%BB%9F--%E8%AE%BA%E6%96%87pf\/","datePublished": "2024-07-18T17:58:48+08:00","dateModified": "2024-07-18T17:58:48+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/chenqi199.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "chenqi"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/0542springboot%E5%81%A5%E5%BA%B7%E5%8C%BB%E9%99%A2%E9%97%A8%E8%AF%8A%E5%9C%A8%E7%BA%BF%E6%8C%82%E5%8F%B7%E7%B3%BB%E7%BB%9F--%E8%AE%BA%E6%96%87pf/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/0542springboot%E5%81%A5%E5%BA%B7%E5%8C%BB%E9%99%A2%E9%97%A8%E8%AF%8A%E5%9C%A8%E7%BA%BF%E6%8C%82%E5%8F%B7%E7%B3%BB%E7%BB%9F--%E8%AE%BA%E6%96%87pf/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">0542springboot健康医院门诊在线挂号系统--论文pf</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="chenqi199" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>chenqi</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-07-18">2024-07-18</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 16797 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 34 分钟&nbsp;<span id="/0542springboot%E5%81%A5%E5%BA%B7%E5%8C%BB%E9%99%A2%E9%97%A8%E8%AF%8A%E5%9C%A8%E7%BA%BF%E6%8C%82%E5%8F%B7%E7%B3%BB%E7%BB%9F--%E8%AE%BA%E6%96%87pf/" class="leancloud_visitors" data-flag-title="0542springboot健康医院门诊在线挂号系统--论文pf">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#微信-chen_q123456--qq462201886">微信： chen_q123456  qq:462201886</a></li>
+        <li><a href="#githubchenqi199">github:chenqi199</a></li>
+        <li><a href="#所有项目httpsgithubcomgraduationproject-springbootallspringbootprojects-包安装运行"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">所有项目</a> 包安装运行</a></li>
+        <li><a href="#所有项目列表excel-腾讯文档-项目清单httpsdocsqqcomsheetdshrfsvz5aevyt3n3tabbb08j2-包安装运行"><a href="https://docs.qq.com/sheet/DSHRFSVZ5aEVYT3N3?tab=BB08J2">所有项目列表excel 腾讯文档 项目清单</a> 包安装运行</a></li>
+        <li><a href="#githubhttpschenqi199githubio"><a href="https://chenqi199.github.io">github</a></a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#点击播放视频-">点击播放视频 ▼</a></li>
+        <li><a href="#所有项目httpsgithubcomgraduationproject-springbootallspringbootprojects-包安装运行-1"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">所有项目</a> 包安装运行</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#11-课题背景">1.1 课题背景</a></li>
+    <li><a href="#12-课题意义">1.2 课题意义</a></li>
+    <li><a href="#13-研究内容">1.3 研究内容</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#22-java语言技术">2.2 Java语言技术</a></li>
+    <li><a href="#25-vue-element框架">2.5 VUE-element框架</a></li>
+    <li><a href="#24-springboot框架">2.4 SpringBoot框架</a></li>
+    <li><a href="#25-其他技术使用">2.5 其他技术使用</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#31可行性分析">3.1可行性分析</a></li>
+    <li><a href="#32系统性能分析">3.2系统性能分析</a></li>
+    <li><a href="#33系统流程分析">3.3系统流程分析</a></li>
+    <li><a href="#34功能用例描述">3.4功能用例描述</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#41-系统整体设计">4.1 系统整体设计</a></li>
+    <li><a href="#42-功能结构设计">4.2 功能结构设计</a></li>
+    <li><a href="#43-数据库设计">4.3 数据库设计</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#51用户信息管理">5.1用户信息管理</a></li>
+    <li><a href="#52-药品信息管理">5.2 药品信息管理</a></li>
+    <li><a href="#53医生信息管理">5.3医生信息管理</a></li>
+    <li><a href="#54公告信息管理">5.4公告信息管理</a></li>
+    <li><a href="#55-关键技术难点">5.5 关键技术难点</a></li>
+    <li><a href="#61测试目的"><strong>6.1测试目的</strong></a></li>
+    <li><a href="#62测试环境"><strong>6.2测试环境</strong></a></li>
+    <li><a href="#63测试用例"><strong>6.3测试用例</strong></a></li>
+    <li><a href="#64测试结果"><strong>6.4测试结果</strong></a></li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#0542springboot健康医院门诊在线挂号系统--论文pf-项目图片">0542springboot健康医院门诊在线挂号系统&ndash;论文pf 项目图片</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="0542springboot健康医院门诊在线挂号系统--论文pfhttpsgithubcomgraduationproject-springboot0542springboot"><a href="https://github.com/GraduationProject-springboot/0542springboot" target="_blank" rel="noopener noreffer ">0542springboot健康医院门诊在线挂号系统&ndash;论文pf</a></h1>
+<h3 id="微信-chen_q123456--qq462201886">微信： chen_q123456  qq:462201886</h3>
+<h3 id="githubchenqi199">github:chenqi199</h3>
+<h3 id="所有项目httpsgithubcomgraduationproject-springbootallspringbootprojects-包安装运行"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">所有项目</a> 包安装运行</h3>
+<h3 id="所有项目列表excel-腾讯文档-项目清单httpsdocsqqcomsheetdshrfsvz5aevyt3n3tabbb08j2-包安装运行"><a href="https://docs.qq.com/sheet/DSHRFSVZ5aEVYT3N3?tab=BB08J2" target="_blank" rel="noopener noreffer ">所有项目列表excel 腾讯文档 项目清单</a> 包安装运行</h3>
+<h3 id="githubhttpschenqi199githubio"><a href="https://chenqi199.github.io" target="_blank" rel="noopener noreffer ">github</a></h3>
+<h1 id="0542springboot健康医院门诊在线挂号系统--论文pf">0542springboot健康医院门诊在线挂号系统&ndash;论文pf</h1>
+<h3 id="点击播放视频-">点击播放视频 ▼</h3>
+<p><a href="https://player.bilibili.com/player.html?isOutside=true&amp;aid=BV1eMbYemE1U&amp;bvid=BV1eMbYemE1U&amp;cid=500001617129089&amp;p=43" target="_blank" rel="noopener noreffer "><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.sstatic.net/Vp2cE.png"
+        data-srcset="https://i.sstatic.net/Vp2cE.png, https://i.sstatic.net/Vp2cE.png 1.5x, https://i.sstatic.net/Vp2cE.png 2x"
+        data-sizes="auto"
+        alt="https://i.sstatic.net/Vp2cE.png"
+        title="Watch the video" /></a></p>
+<h3 id="所有项目httpsgithubcomgraduationproject-springbootallspringbootprojects-包安装运行-1"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">所有项目</a> 包安装运行</h3>
+<p><strong>毕 业 设 计（论 文）</strong></p>
+<p>题目：[健康医院门诊在线挂号系统的设计与实现]{.underline}</p>
+<p><strong>摘 要</strong></p>
+<p>伴随着信息技术与互联网技术的不断发展，校园也进到了一个新的信息化时代，传统管理技术性没法高效率、容易地管理医院门诊在线挂号信息内容。为了实现时代的发展必须，提升医院门诊在线挂号高效率，各种各样医院门诊在线挂号体系应时而生，健康医院门诊在线挂号管理系统的实现是信息内容时代浪潮时代的产物之一。</p>
+<p>一切系统都要遵循系统设计的基本流程。它还需要通过市场调查、需求分析报告、汇总设计、详尽设计以及测试，根据Java语言表达设计，完成健康医院门诊在线挂号管理系统。该系统根据B/S，即所谓的电脑浏览器/网络服务器方式，运用Java技术性，选用MySQL作为后台系统。系统主要包含对管理用户，图书分类、图书信息，可以对订单发货。用户可以查看管理员发布的图书，可以对图书购买下单等功能模块。</p>
+<p>文中重点介绍健康医院门诊在线挂号管理的专业技术发展背景和发展状况，随后遵照软件传统式研发流程，最先挑选适用思维和语言软件开发平台，依据需求分析报告模块和设计数据库结构，再根据系统功能模块的设计制作系统功能模块图、流程表和E-R图。随后设计架构以及编写代码，并实现系统能模块。最终基本完成系统检测和功能测试。结果显示，该系统能够实现所需要的作用，功能没有明显缺陷。</p>
+<p><strong>关键词</strong>：健康医院门诊在线挂号系统；Java语言；MySQL；B/S架构</p>
+<p><strong>Abstract</strong></p>
+<p>With the continuous development of information technology and internet
+technology, campuses have entered a new era of informatization.
+Traditional management techniques cannot efficiently and easily manage
+the online registration information content of hospital outpatient
+services. In order to achieve the development of the times, it is
+necessary to improve the efficiency of hospital outpatient online
+registration. Various hospital outpatient online registration systems
+have emerged, and the implementation of the health hospital outpatient
+online registration management system is one of the products of the
+information content era.</p>
+<p>All systems must follow the basic process of system design. It also
+needs to complete the online registration management system for health
+hospital outpatient services through market research, demand analysis
+reports, summary design, detailed design, and testing, expressed in Java
+language. The system uses Java technology and MySQL as the backend
+system based on B/S, which is the so-called computer browser/network
+server method. The system mainly includes managing users, book
+classification, book information, and can ship orders. Users can view
+the books published by the administrator and place orders for books
+through functional modules.</p>
+<p>The article focuses on introducing the professional and technological
+development background and status of online registration management in
+health hospital outpatient clinics. Subsequently, following the
+traditional software development process, the suitable thinking and
+language software development platform was first selected, and based on
+the requirement analysis report module and database structure design,
+the system functional module diagram, flowchart, and E-R diagram were
+created according to the design of the system functional module.
+Subsequently, design the architecture and write code, and implement the
+system's functional modules. Finally, the system inspection and
+functional testing were basically completed. The results showed that the
+system was able to achieve the required function without obvious
+defects.</p>
+<p><strong>Key words:</strong> Health Hospital Outpatient Online Registration System;
+Java language; MySQL； B/S architecture</p>
+<h1 id="heading"></h1>
+<p><a href="#section" rel="">目 录 III</a><a href="#%e7%ac%ac1%e7%ab%a0-%e7%bb%aa%e8%ae%ba" rel="">第1章 绪论 1</a></p>
+<p><a href="#%e8%af%be%e9%a2%98%e8%83%8c%e6%99%af" rel="">1.1 课题背景 1</a></p>
+<p><a href="#%e8%af%be%e9%a2%98%e6%84%8f%e4%b9%89" rel="">1.2 课题意义 1</a></p>
+<p><a href="#%e7%a0%94%e7%a9%b6%e5%86%85%e5%ae%b9" rel="">1.3 研究内容 2</a></p>
+<p><a href="#%e7%ac%ac2%e7%ab%a0-%e5%bc%80%e5%8f%91%e7%8e%af%e5%a2%83%e4%b8%8e%e6%8a%80%e6%9c%af" rel="">第2章 开发环境与技术 3</a></p>
+<p><a href="#__RefHeading___Toc18497" rel="">2.1 MYSQL数据库 3</a></p>
+<p><a href="#__RefHeading___Toc11616" rel="">2.2 vue技术 3</a></p>
+<p><a href="#__RefHeading___Toc31186" rel="">2.3 Spring Boot框架 4</a></p>
+<p><a href="#%e7%ac%ac3%e7%ab%a0-%e7%b3%bb%e7%bb%9f%e5%88%86%e6%9e%90" rel="">第3章 系统分析 6</a></p>
+<p><a href="#__RefHeading___Toc7736" rel="">3.1 可行性分析 6</a></p>
+<p><a href="#__RefHeading___Toc19409" rel="">3.1.1 技术可行性 6</a></p>
+<p><a href="#__RefHeading___Toc6843" rel="">3.1.2 经济可行性 6</a></p>
+<p><a href="#__RefHeading___Toc1735" rel="">3.1.3 操作可行性 6</a></p>
+<p><a href="#__RefHeading___Toc22645" rel="">3.2 系统流程 7</a></p>
+<p><a href="#__RefHeading___Toc360" rel="">3.2.1 操作流程 7</a></p>
+<p><a href="#__RefHeading___Toc20043" rel="">3.2.2 登录流程 7</a></p>
+<p><a href="#__RefHeading___Toc27491" rel="">3.2.3 删除信息流程 8</a></p>
+<p><a href="#__RefHeading___Toc14339" rel="">3.2.4 添加信息流程 9</a></p>
+<p><a href="#__RefHeading___Toc6359" rel="">3.3 性能需求 9</a></p>
+<p><a href="#%e7%ac%ac4%e7%ab%a0-%e7%b3%bb%e7%bb%9f%e8%ae%be%e8%ae%a1" rel="">第4章 系统设计 11</a></p>
+<p><a href="#%e7%b3%bb%e7%bb%9f%e6%95%b4%e4%bd%93%e8%ae%be%e8%ae%a1" rel="">4.1 设计原则 11</a></p>
+<p><a href="#%e5%8a%9f%e8%83%bd%e7%bb%93%e6%9e%84%e8%ae%be%e8%ae%a1" rel="">4.2 功能结构设计 11</a></p>
+<p><a href="#%e6%95%b0%e6%8d%ae%e5%ba%93%e8%ae%be%e8%ae%a1" rel="">4.3 数据库设计 12</a></p>
+<p><a href="#__RefHeading___Toc13953" rel="">4.3.2 数据库物理设计 12</a></p>
+<p><a href="#__RefHeading___Toc29928" rel="">5.1用户信息管理 14</a></p>
+<p><a href="#%e8%8d%af%e5%93%81%e4%bf%a1%e6%81%af%e7%ae%a1%e7%90%86" rel="">5.2 药品信息管理 15</a></p>
+<p><a href="#%e5%8c%bb%e7%94%9f%e4%bf%a1%e6%81%af%e7%ae%a1%e7%90%86" rel="">5.3医生信息管理 16</a></p>
+<p><a href="#%e5%85%ac%e5%91%8a%e4%bf%a1%e6%81%af%e7%ae%a1%e7%90%86" rel="">5.1公告信息管理 17</a></p>
+<p><a href="#__RefHeading___Toc11906" rel="">第6章 系统测试 18</a></p>
+<p><a href="#%e6%b5%8b%e8%af%95%e7%94%a8%e4%be%8b" rel="">6.1 功能测试 18</a></p>
+<p><a href="#__RefHeading___Toc14453" rel="">6.1.1 登录功能测试 18</a></p>
+<p><a href="#__RefHeading___Toc27860" rel="">6.1.2 修改密码功能测试 19</a></p>
+<p><a href="#__RefHeading___Toc18652" rel="">6.2 测试结果 19</a></p>
+<p><a href="#%e7%bb%93-%e8%ae%ba" rel="">结 论 20</a></p>
+<p><a href="#section-1" rel="">致 谢 21</a></p>
+<p><a href="#%e5%8f%82%e8%80%83%e6%96%87%e7%8c%ae" rel="">参考文献 22</a></p>
+<h1 id="第1章-绪论">第1章 绪论</h1>
+<h2 id="11-课题背景">1.1 课题背景</h2>
+<p>伴随着科技的进步，电子计算机已经成为人们日常生活不可或缺的办公工具。在这样的背景下，互联网技术被用于各个领域。为了能提高日常生活高效率，互联网信息技术性蓬勃发展。在这样的背景下，人类社会发展进到了一个新的信息时期。健康医院门诊在线挂号管理方法一直是信息管理方法的一大难题。健康医院门诊在线挂号管理人员流动性大，信息量多。这时，探寻合理方便快捷的健康医院门诊在线挂号管理方案是重中之重。而日益完善的电子计算机信息管理方法已经成为解决这一问题的唯一选择。现如今，电子计算机信息管理方法早已非常容易解决健康医院门诊在线挂号管理信息。实际上，信息管理方法早已渗入各行各业的信息全面管理中，并发挥了主导作用。随着现在社会主义社会的不断发展，平凡人的生活水准有了很大提高，互联网完成了许多方面，使互联网变成最直观、最简单、最便捷的接入口。</p>
+<p>与传统健康医院门诊在线挂号管理方案对比，应用健康医院门诊在线挂号管理系统具备很多特点：最先，可以有效地提高健康医院门诊在线挂号管理信息查找，仅需输入有关信息即可在几秒内意见反馈预期成果；次之，能够存放大量健康医院门诊在线挂号管理管理信息，确保健康医院门诊在线挂号管理管理信息安全性；与纸质文件对比，健康医院门诊在线挂号管理系统节约了更多的空间和人力资源管理。这种优势大大的提高了效率降低成本。因而，必须开发设计健康医院门诊在线挂号管理系统，高效管理健康医院门诊在线挂号管理信息，不但提高健康医院门诊在线挂号管理效益，提高客户信息安全性，便捷及时与管理人员意见反馈信息，提升与管理人员之间的互动，提高健康医院门诊在线挂号管理的感受抗压强度。</p>
+<h2 id="12-课题意义">1.2 课题意义</h2>
+<p>现如今，信息种类变得越来越多，信息的容量也变得越来越大，这就是信息时代的标志。近些年，计算机科学发展得也越来越快，而且软件开发技术也越来越成熟，因此，在生活中的各个领域，只要存在信息管理，几乎都有计算机的影子，可以说很多行业都采用计算机的方式管理信息。信息计算机化处理相比手工操作，有着保密性强，效率高，存储空间大，成本低等诸多优点。针对药品信息信息管理，采用健康医院门诊在线挂号系统可以有效管理，使信息管理能够更加科学和规范。</p>
+<p>总之，在实际中使用健康医院门诊在线挂号系统，其意义如下：</p>
+<p>第一点：健康医院门诊在线挂号系统的实际运用，可以帮助管理人员在短时间内完成信息处理工作；</p>
+<p>第二点：通过系统页面的合理排版布局，可以更加直观的展示系统的内容，并且使用者可以随时阅读页面信息，随时操作系统提供的功能；</p>
+<p>第三点：可以实现信息管理计算机化；</p>
+<p>第四点：可以降低信息管理成本；</p>
+<h2 id="13-研究内容">1.3 研究内容</h2>
+<p>对健康医院门诊在线挂号系统设计制作，不仅需要技术支撑，也需要大量的理论研究。本文在对健康医院门诊在线挂号系统进行介绍时，将按照如下内容进行。</p>
+<p>第一部分：介绍健康医院门诊在线挂号系统研究的背景意义，便于用户了解系统；</p>
+<p>第二部分：介绍开发健康医院门诊在线挂号系统需要搭建的环境，包括技术和工具；</p>
+<p>第三部分：介绍用户对健康医院门诊在线挂号系统的功能要求，以及对健康医院门诊在线挂号系统的性能要求等；</p>
+<p>第四部分：介绍数据库的设计方案，以及根据功能要求设计的功能结构；</p>
+<p>第五部分：介绍通过编码最终实现的系统功能运行效果；</p>
+<p>第六部分：介绍系统的功能测试，对系统进行综合检测，并及时解决系统出现的问题，直至系统运行正常。</p>
+<h1 id="第2章-开发环境与技术">第2章 开发环境与技术</h1>
+<p>健康医院门诊在线挂号系统的编码实现需要搭建一定的环境和使用相应的技术，接下来的内容就是对健康医院门诊在线挂号系统用到的技术和工具进行介绍。</p>
+<p><strong>2.1 MySQL数据库</strong></p>
+<p>MySQL是一种具有安全系数、安全系数、混合开发性、高效化等特征的轻量关联数据库智能管理系统。MySQL由C语言和C++语言构成，由于C语言和C++语言是混合开发的，因此MySQL源码是生命期的。MySQL提供多种多样数据种类，常见的数据种类包含。伴随着数据库技术发展，MySQL逐步形成数据库管理方法的重要工具之一。它不仅能提供简单实用的操作作用，还能实现复杂多变的数据检索方法和查询记录导出方式。因为MySQL具有较好的兼容模式和扩展性，因而广泛应用于各行各业。</p>
+<p>MySQL在WEB行业越来越受单位和个人开发者的亲睐。大部分大中小型网址都采用MySQL数据库，它不仅可以提供简单高效的数据浏览作用，还会对数据进行相应的分析解决。因为Linux电脑操作系统和MySQL数据库全是开源系统免费体验，能够为公司节约许多费用，让很多企业使用Linux
+MySQL做为网址数据库，体型小，启动速度快，也不会影响网址性能，导致用户体验感极差。</p>
+<p>MySQL数据库能够支持各种各样操作系统的运作，包含AIX、HP-UX、OS/2
+Wrap、Solaris、Mac
+OS、Linux和Windows等。性能好，使用便捷。因而，MySQL数据库已成为当下数据库行业最流行用户之一。MySQL数据库系统使用面向对象设计方式，用户至上开展编程设计。是利用面向对象观念来达到各项功能。它不仅能管理方法大中型数据表或关系数据库，还可以把这种复杂且庞大信息系统集成到一个简单的中小型数据库系统内。现阶段，中国很多公司早已运用了这一尖端技术。</p>
+<h2 id="22-java语言技术">2.2 Java语言技术</h2>
+<p>Java语言已经存在了25年有余。通过这些年的发展趋势，it行业在市场占有率上仍然占据一半，仍然受到了很多程序员的工作钟爱。许多从业者都是在学习培训。近年来随着从业者的提高，Java语言的位置并没减少，算得上是常青藤。Java语言学习培训比较简单，自然，它是对于C前辈们的
+而言的，C
+语言非常强劲。Java取消了许多特点，如go这种描述，也取消了主文件，让所有文件夹全是类，类是二维数组以及各种对象，也使Java处理一些对象的引入和回收利用，让开发者只需建立对象，应用对象，编写代码逻辑，不需要留意性能，让各种各样文件存储给Java自己解决，你能花很多时间科学研究应用软件相互关系，使研发更为集中化，如同跑车驾驶员一样，只要了解各种汽车的性能，实际操作，不需要科学研究如何生产车轮子，使软件开发更为详尽。</p>
+<h2 id="25-vue-element框架">2.5 VUE-element框架</h2>
+<p>Vue是用于构建用户界面的渐进式框架,是当前最流行的前端框架之一^Error:\ Reference\ source\ not\ found^。Vue的渐进式如下：声明式渲染-组件系统-客户端路由-大数据状态管理-构建工具。</p>
+<p>不同于其它重量级框架,
+Vue采用了自底向上增量开发的设计。这种方法使整个软件开发变得简单了许多，同时也使得我们对软件的维护和升级更加方便。这一点对于需要在短时间内完成大量工作的项目非常重要。Vue是一个轻量级的前端框架，他有许多的模块，在实际项目开发过程中，我们会根据不同的需求来选择不同的功能，可以直接调用封装好的组件进行开发，提高系统的可扩展性和开发速度。</p>
+<p>Vue具有响应式数据绑定和组合的视图组件两个核心点。在技术上,Vue.js将视图模型层集中在MVM模式上，视图与模型之间通过双向数据绑定进行连接^Error:\ Reference\ source\ not\ found^。它允许用户使用不同版本的视图来进行交互，从而减少了编程工作量；同时还能方便地修改或删除视图。因此，Vue可以被应用于多种Web应用程序当中。</p>
+<p>Vue使用了虚拟DOM。DOM是可直接在网页上进行显示与交互的重要元素，JS是对整个数据库表结构进行管理。然而，DOM是由多个节点组成的复杂数据结构，各个节点之间相互联系、相互作用，并且相互之间具有很强的独立性。这些特点决定了其存储与查询效率很低。所以当交互操作较多时会出现许多冗余信息，导致JS运行速度变慢，数据处理速度变慢，影响了系统响应速度。而且对大型数据库而言，由于各数据库具有各自独立的数据模型及数据组织方式，所以重建过程十分缓慢且也易出错。
+因此在数据处理过程中，常常要耗费大量的时间才能够完成，因此在性能方面受到了较大的影响。Vue采用虚拟DOM来处理上诉，虚拟DOM是由内存产生的DOM对应数据结构，通过虚拟DOM能以最低成本对界面进行重新渲染，这也是Vue的运行速度较快的原因。</p>
+<p>ElementUI是饿了么外卖前端团队上线的根据VUE2.0的组件库，是如今与VUE协作开发的更加好的UI库。根据对各种各样软件系统的解读与优化，形成了一套详细解决方案，并把这种解决方法装包成可器重的界面模板，供开发人员启用，减少了开发人员撰写应用软件难度，提升了软件质量。</p>
+<p>ElementUI包括四个设计原理：一致性（Consistency）、意见反馈（Feedback）、高效率（Efficiency）、可控性（Controllability）。在软件开发环节中，这种设计原理根植于全部开发全过程。在其中，&ldquo;一致性&quot;指的是在全部开发环境里，所有功能都能够规范使用或操作，并保持一定的融洽，即手机软件应具有较好的实用性；&ldquo;意见反馈&quot;指的是在系统和用户互动过程中遇到不正确时，立即提供相关提醒和解决方法，以保证程序流程的正常使用；&ldquo;高效率&quot;指的是在新项目开发中，ElementUI有很多组件供开发人员挑选，由此可见，大大降低了开发人员生产制造轮子的时长，开发了通俗易懂的界面，协助用户快速开启系统软件；&ldquo;可控性&quot;规定产品具有充足强的可扩展性、扩展性和抗压强度，以便更好地适用别的应用软件。</p>
+<p>它官网上有每一个组件Element，寻找所需要的组件，拷贝其编码，拷贝到工程项目所在位置。用户能通过电脑浏览器看到这样的组件在多个界面里的表明和两者之间的关联，并且可以改动删除他们。它具有较好的兼容模式，也支持自定义菜单作用。用户也可以根据给的正式文件，设定各种各样特性、事情、方法，使构件按照要求的形式产生变化。</p>
+<p>此系统已经被应用
+vue-admin-template基本上模板能够快速搭建后台管理界面。通过这些架构，大家能够快速构建一个界面清楚、实际操作简单实用、功能完善、维修方便的渠道。在这个基础上，开发能够节省了大量的开发时长，github上会有详尽的表明，非常容易快速查找难题。</p>
+<h2 id="24-springboot框架">2.4 SpringBoot框架</h2>
+<p>Spring
+Boot框架是一个SpringMVC架构的快速轻量快速框架，能够帮助开发人员迅速搭建靠谱高效率的应用程序。依据自动部署和协议书，改善了Spring的研究过程，使开发人员可以更加专注于领域模型。</p>
+<p>Spring
+Boot有许多特性，当中最主要的是它提供了内置Tomcat、Jetty、Undertow等Web网络服务器能够轻松搭建Web应用程序。除此之外，它也提供自动部署、无需撰写XML文件等功能。这种功能使开发人员能够迅速建立和布署应用程序，而无需解决繁杂的环境变量和其它繁琐复杂每日任务。</p>
+<p>开发系统时，Spring
+Boot能够帮助开发人员完成模块化设计和松耦合的代码结构，从而更好地日常维护拓展应用程序。除此之外，它也提供了很多常见的库和部件，如Spring
+Data、Spring
+Security等，能够轻松集成化这种部件，完成数据库操作、验证、受权等功能。</p>
+<h2 id="25-其他技术使用">2.5 其他技术使用</h2>
+<p>Spring-jdbc联接：</p>
+<p>这是一个专业生产制造Connection对象工厂类，大部分全部用以建立数据库联接框架都是会完成这一插口，Springjdbc包就实现了这一插口，实现类是DriverManagerdasource、现阶段的项目是由DataSource的getconection方式获得配备MYSQL5.7数据库连接信息。</p>
+<p>提交Fileupload文件：</p>
+<p>项目中应用Fileupload完成文件提交，通常是Fileupload前面提交文件提交请求，请求形式为POST：&lt;form
+action=&quot;uploadServlet&quot; method=&quot;post&quot;
+.&hellip;=&quot;&quot;&gt;请求编码方式：等候文件提交，启用Fileitem的isformField()方式，判断出表格域到底还是不是表格域，文件提交到后台管理，应用Fileupload接受文件信息，并把文件解决包存储在硬盘和库中。</p>
+<p>Alibaba驱动：</p>
+<p>比照各大网站Alibaba.Druid是JAVA语言中比较好的数据库连接池。Druid可提供强有力的拓展和监控功能。该项目应用Alibababa.Druid开展数据库系统连接，Druid
+0.1.18
+以后，全部版本号都分享到maven中央仓库，在项目pome中.在xml里加入dependency就可以使用。</p>
+<p>log4j日志：</p>
+<p>健康医院门诊在线挂号系统处理和日志信息纪录，应用log4j开展日志日常维护管理与查询，其核心优势是错误处理：在logback中，应用软件里的出现异常不被应用软件认知，特性提升，关键或没有废弃物体制，log4j在很多情况下，可采取设计的一套无废弃物体制，防止经常日志搜集所引起的jvm
+gc。操作方法很简单，在pom中.新增log4j有关jar xml就可以。</p>
+<h1 id="第3章-系统分析">第3章 系统分析</h1>
+<h2 id="31可行性分析">3.1可行性分析</h2>
+<p><strong>技术可行性分析</strong></p>
+<p>研发设计程序流程选择面向对象设计、功能齐全、简单实用的Java编程设计核心理念。MySQL数据库存储数据。IDEA工具作为编程软件，Windows
+10计算机操作系统作为应用系统，以及数据库可视化工具等技术职称。一般来说，该程序流程的开发能够从技术上开展是可行的。</p>
+<p><strong>经济可行性分析</strong></p>
+<p>开发的程序并不是向着商业程序方向设计与开发的，反而是做为一个新的毕业论文新项目开发的。它主要运用于检测小朋友们在院校所学的知识，并锻练用戶使用网络、书籍和其他方式自学能力。因而，程序软件的开发不容易涉及到边际收益，也不会为软件的选择付钱。你可以在开发软件的官网上下载所需要的软件，并依据所需要的安装方法将应用安装到你的电脑里。一般来说，开发这一程序并没有社会经济发展花费。</p>
+<p><strong>运行可行性分析</strong></p>
+<p>由于程序软件就是针对大部分一般操作用户，考虑到他的知识与文化水准，尤其开发了一个可操作度高的程序软件，能够轻而易举地让用户应用，数据可视化操作页面。一般来说，从用户操作程序的角度看，这一程序其实并不难操作。只需用户开启程序，就能避免专职人员学习培训开展程序作用操作。</p>
+<h2 id="32系统性能分析">3.2系统性能分析</h2>
+<p>需求分析报告包含根据用户实际需求制订功能和定制系统的性能需求分析报告。因而，在一般数据分析系统时，一方面要数据分析系统的作用，另一方面要知道全面的性能。终究，性能更加好的全面的设计设计和开发能够保证系统质量以及可靠性。</p>
+<p>下面，从易学易用性、系统时间特性、系统稳定性等多个方面系统性能展开分析表明。</p>
+<p>(1)系统容积规定:明确系统进行数据处理方法容量更大化。换句话说，假如系统建立模型容量临界点超出这一临界点，系统可能设备异常。</p>
+<p>（2）系统精度规定：明确传送数据所需要的精度值，包含数值计算方法的精度值、数据信息精度系数的设定等。</p>
+<p>（3）时长特点规定：系统建立模型有时限要求，那也是系统的时间也特点。一般剖析数据处理方法的时间也，设定用户标准的响应速度，及其系统在超负荷运行中能够偏移的范围值，要提前剖析明确。</p>
+<p>（4）适应能力规定：当系统应对系统环境变化时，其融入这些变化的能力也要根据参数信息来反映。比如，应对变动的必须，系统必须通过强调必须设计方案的一个过程或系统来适应变化来反映系统的适应能力。</p>
+<p>（5）易学易用性：除开作用应该考虑用户要求外，人机交互设计还要考虑到用户的用户习惯，包含界面风格、页面色彩选择与色彩搭配。尝试让用户接受简单学习后单独实际操作系统。</p>
+<p>(6)系统稳定性:针对新手来说，容易出现一个问题，那便是产品设计开发的系统，由于人工操作失误奔溃，有的还会造成电脑崩溃。这种情况也说明了容错机制能力低系统不靠谱。</p>
+<h2 id="33系统流程分析">3.3系统流程分析</h2>
+<p>管理员假如要操作系统提供的功能，那么就要在系统的登录界面，填写管理员登录的账号信息和密码信息，管理员需要保证这两者能够验证身份的账号以及密码信息的正确性，这样管理员就可以通过登录界面进入系统后台操作界面。图3.1就是健康医院门诊在线挂号系统操作流程图。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image1.wmf"
+        data-srcset="media/image1.wmf, media/image1.wmf 1.5x, media/image1.wmf 2x"
+        data-sizes="auto"
+        alt="media/image1.wmf"
+        title="media/image1.wmf" /></p>
+<p>图3.1 系统操作流程图</p>
+<p>健康医院门诊在线挂号系统登录流程如下图。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image2.wmf"
+        data-srcset="media/image2.wmf, media/image2.wmf 1.5x, media/image2.wmf 2x"
+        data-sizes="auto"
+        alt="media/image2.wmf"
+        title="media/image2.wmf" /></p>
+<p>图3.2　系统登录流程图</p>
+<p>健康医院门诊在线挂号系统用户添加流程如下图。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image3.wmf"
+        data-srcset="media/image3.wmf, media/image3.wmf 1.5x, media/image3.wmf 2x"
+        data-sizes="auto"
+        alt="media/image3.wmf"
+        title="media/image3.wmf" /></p>
+<p>图3.3 添加信息流程图</p>
+<p>健康医院门诊在线挂号系统删除流程如下图所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image4.wmf"
+        data-srcset="media/image4.wmf, media/image4.wmf 1.5x, media/image4.wmf 2x"
+        data-sizes="auto"
+        alt="media/image4.wmf"
+        title="media/image4.wmf" /></p>
+<p>图3.4 信息删除流程图</p>
+<h2 id="34功能用例描述">3.4功能用例描述</h2>
+<p>通过对健康医院门诊在线挂号系统的用户及管理员的用例分析，将本系统的主要用例描述如下：</p>
+<p>表 3.6 健康医院门诊在线挂号系统查看用户信息用例描述</p>
+<p>+&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 名称           | 健康医院门诊在线挂号系统查看用户信息                |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 说明           | 健康医院门诊在线挂号系统查看用户信息                |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 参与者         | 健康医院门诊在线挂号系统用户                        |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 先决条件       | 系                                                  |
+|                | 统正常运行，且用户已经登陆健康医院门诊在线挂号系统  |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 输入信息       | 用户名称或用户编号                                  |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 结果           | 显示用户详情                                        |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 过程           | 1.  用户在查找输入框输入用户名称                    |
+|                |                                                     |
+|                |     2. 点击搜索按钮                                |
+|                |                                                     |
+|                | 3. 系统显示出符合条件的用户的简要信息              |
+|                |                                                     |
+|                | 4. 用户点击用户进行浏览用户详情                    |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+</p>
+<p>表3.7 健康医院门诊在线挂号系统用户登录用例描述</p>
+<p>+&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 名称           | 健康医院门诊在线挂号系统用户登录                    |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 说明           | 健康医                                              |
+|                | 院门诊在线挂号系统用户输入自己的账号和密码进行登录  |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 参与者         | 健康医院门诊在线挂号系统用户                        |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 先决条件       | 系统正常运行                                        |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 输入信息       | 账号和密码                                          |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 结果           | 跳转系统首页                                        |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 后置条件       | 如果用户登录成功，则该用户可以查看个人中心等操作    |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 过程           | 1. 用户进入登录界面                                |
+|                |                                                     |
+|                | 2. 用户输入自己的账号和密码                        |
+|                |                                                     |
+|                | 3. 用户提交输入的信息                              |
+|                |                                                     |
+|                | 4. 系统对用户输入的账号和密码进行校验              |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+</p>
+<p>表3.8 健康医院门诊在线挂号系统用户修改个人信息用例描述</p>
+<p>+&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 名称           | 健康医院门诊在线挂号系统用户修改个人信息            |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 说明           | 健康医院门诊在线挂号系统用户修改个人信息            |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 参与者         | 健康医院门诊在线挂号系统用户                        |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 先决条件       | 系                                                  |
+|                | 统正常运行，且用户已经登陆健康医院门诊在线挂号系统  |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 输入信息       | 无                                                  |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 结果           | 弹出修改成功或失败                                  |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 过程           | 1. 用户点击个人中心                                |
+|                |                                                     |
+|                | 2. 在对应的输入框输入要修改的内容                  |
+|                |                                                     |
+|                | 3. 点击更新信息                                    |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+</p>
+<p>表3.9 健康医院门诊在线挂号系统挂号信息管理用例描述</p>
+<p>+&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 名称           | 健康医院门诊在线挂号系统挂号信息管理                |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 说明           | 健康医院门诊                                        |
+|                | 在线挂号系统用户对挂号信息进行添加修改和删除查看等  |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 参与者         | 健康医院门诊在线挂号系统用户                        |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 先决条件       | 系                                                  |
+|                | 统正常运行，且用户已经登陆健康医院门诊在线挂号系统  |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 输入信息       | 无                                                  |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 过程           | 1. 用户点击挂号信息                                |
+|                |                                                     |
+|                | 2. 可以对挂号信息进行相关的维护和搜索              |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+</p>
+<p>表 3.10 健康医院门诊在线挂号系统药品信息用例描述</p>
+<p>+&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 名称           | 健康医院门诊在线挂号系统管理员管理药品信息          |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 说明           | 健康医院门                                          |
+|                | 诊在线挂号系统管理员查看、增加、删除、修改药品信息  |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 参与者         | 健康医院门诊在线挂号系统管理员                      |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 先决条件       | 系统                                                |
+|                | 正常运行，且管理员已经登陆健康医院门诊在线挂号系统  |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 输入信息       | 无                                                  |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 结果           | 管理员查看、增加、删除、修改药品信息                |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 过程           | 管理员点击药品信息列表                              |
+|                |                                                     |
+|                | 可以对药品信息进行相关的维护和搜索                  |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+</p>
+<p>表 3.11 健康医院门诊在线挂号系统管理员系统公告管理用例描述</p>
+<p>+&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 名称           | 健康医院门诊在线挂号系统管理员系统公告管理          |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 说明           | 健康医院门                                          |
+|                | 诊在线挂号系统管理员查看、增加、删除、修改系统公告  |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 参与者         | 健康医院门诊在线挂号系统管理员                      |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 先决条件       | 系统                                                |
+|                | 正常运行，且管理员已经登陆健康医院门诊在线挂号系统  |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 输入信息       | 无                                                  |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 结果           | 管理员查看、增加、删除、修改系统公告                |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| 过程           | 1.  管理员点击系统公告管理                          |
+|                |                                                     |
+|                | 2.  管理员对系统公告进行增加、删除和修改            |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+</p>
+<h1 id="第4章-系统设计">第4章 系统设计</h1>
+<p>一个成功设计的系统在内容上必定是丰富的，在系统外观或系统功能上必定是对用户友好的。所以为了提升系统的价值，吸引更多的访问者访问系统，以及让来访用户可以花费更多时间停留在系统上，则表明该系统设计得比较专业。</p>
+<h2 id="41-系统整体设计">4.1 系统整体设计</h2>
+<p>健康医院门诊在线挂号系统选用B/S架构模式，即网页页面和网站架构设计的开发方式。这类系统构造可以理解为对
+C/S
+系统构造的改变与推广能够进行信息分布式处理，减少资源成本，提升订制系统的性能。在这种设计下，极少有事务处理在前进行，绝大多数重要事务管理的思路需要在服务端完成。</p>
+<p>系统的性能层为表明给用户页面，用以表明与理解用户信息，回到用户所提供的信息，交到系统解决方法，给予用户与系统之间的沟通控制面板；系统通讯层承担为性能层提供以下数据信息，并把性能层与系统环境间的通信连接下去，HTTP/HTTPS协议书、AJAX和一些需要用到的API；系统的控制层主要从事从HTTP要求中获得信息，获取主要参数，并把它发放给不一样的处理方法服务项目(service层)，将service层处理过的数据返回到前面(本系统应用JSON数据)；系统业务逻辑层的主要作用是识别解决用户的键入信息，完成具体业务逻辑和数据浏览；系统数据浏览层主要从事实际操作数据，为业务逻辑层或控制层给予数据服务项目；系统数据库是系统存放数据的区域，完成特殊业务需要数据适用，必须纪录信息才能达到业务流程，系统底层支撑工具采用JavaJDK、SpringMVC、MySQL等技术来进行支持。系统整体架构设计如图所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image5.png"
+        data-srcset="media/image5.png, media/image5.png 1.5x, media/image5.png 2x"
+        data-sizes="auto"
+        alt="media/image5.png"
+        title="media/image5.png" />{width=&ldquo;5.766666666666667in&rdquo;
+height=&ldquo;3.0729166666666665in&rdquo;}</p>
+<p>图4.1 系统整体功能结构图</p>
+<h2 id="42-功能结构设计">4.2 功能结构设计</h2>
+<p>在前面分析的管理员功能的基础上，进行接下来的设计工作，最终展示设计的管理员结构图（见下图）。管理员增删改查药品信息</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image6.jpeg"
+        data-srcset="media/image6.jpeg, media/image6.jpeg 1.5x, media/image6.jpeg 2x"
+        data-sizes="auto"
+        alt="media/image6.jpeg"
+        title="media/image6.jpeg" />{width=&ldquo;5.7555555555555555in&rdquo;
+height=&ldquo;2.3020833333333335in&rdquo;}</p>
+<h2 id="43-数据库设计">4.3 数据库设计</h2>
+<p>开发一个系统也需要提前设计数据库。这里的数据库是相关数据的集合，存储在一起的这些数据也是按照一定的组织方式进行的。目前，数据库能够服务于多种应用程序，则是源于它存储方式最佳，具备数据冗余率低的优势。虽然数据库为程序提供信息存储服务，但它与程序之间也可以保持较高的独立性。总而言之，数据库经历了很长一段时间的发展，从最初的不为人知，到现在的人尽皆知，其相关技术也越发成熟，同时也拥有着坚实的理论基础。</p>
+<p>（1）下图是药品收藏实体和其具备的属性。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image7.jpeg"
+        data-srcset="media/image7.jpeg, media/image7.jpeg 1.5x, media/image7.jpeg 2x"
+        data-sizes="auto"
+        alt="media/image7.jpeg"
+        title="media/image7.jpeg" />{width=&ldquo;3.75in&rdquo; height=&ldquo;2.082638888888889in&rdquo;}<br>
+药品收藏实体属性图</p>
+<p>（2）下图是用户实体和其具备的属性。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image8.jpeg"
+        data-srcset="media/image8.jpeg, media/image8.jpeg 1.5x, media/image8.jpeg 2x"
+        data-sizes="auto"
+        alt="media/image8.jpeg"
+        title="media/image8.jpeg" />{width=&ldquo;5.554861111111111in&rdquo;
+height=&ldquo;2.986111111111111in&rdquo;}<br>
+用户实体属性图</p>
+<p>（3）下图是药品实体和其具备的属性。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image9.jpeg"
+        data-srcset="media/image9.jpeg, media/image9.jpeg 1.5x, media/image9.jpeg 2x"
+        data-sizes="auto"
+        alt="media/image9.jpeg"
+        title="media/image9.jpeg" />{width=&ldquo;5.554861111111111in&rdquo;
+height=&ldquo;2.986111111111111in&rdquo;}<br>
+药品实体属性图</p>
+<p>（4）下图是公告信息实体和其具备的属性。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image10.jpeg"
+        data-srcset="media/image10.jpeg, media/image10.jpeg 1.5x, media/image10.jpeg 2x"
+        data-sizes="auto"
+        alt="media/image10.jpeg"
+        title="media/image10.jpeg" />{width=&ldquo;3.75in&rdquo; height=&ldquo;2.082638888888889in&rdquo;}<br>
+公告信息实体属性图</p>
+<p>（5）下图是医生收藏实体和其具备的属性。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image11.jpeg"
+        data-srcset="media/image11.jpeg, media/image11.jpeg 1.5x, media/image11.jpeg 2x"
+        data-sizes="auto"
+        alt="media/image11.jpeg"
+        title="media/image11.jpeg" />{width=&ldquo;3.75in&rdquo; height=&ldquo;2.082638888888889in&rdquo;}<br>
+医生收藏实体属性图</p>
+<p>（6）下图是医生评价实体和其具备的属性。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image12.jpeg"
+        data-srcset="media/image12.jpeg, media/image12.jpeg 1.5x, media/image12.jpeg 2x"
+        data-sizes="auto"
+        alt="media/image12.jpeg"
+        title="media/image12.jpeg" />{width=&ldquo;3.75in&rdquo; height=&ldquo;2.082638888888889in&rdquo;}<br>
+医生评价实体属性图</p>
+<p>（7）下图是购物车实体和其具备的属性。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image13.jpeg"
+        data-srcset="media/image13.jpeg, media/image13.jpeg 1.5x, media/image13.jpeg 2x"
+        data-sizes="auto"
+        alt="media/image13.jpeg"
+        title="media/image13.jpeg" />{width=&ldquo;3.75in&rdquo; height=&ldquo;2.082638888888889in&rdquo;}<br>
+购物车实体属性图</p>
+<p>（8）下图是药品评价实体和其具备的属性。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image14.jpeg"
+        data-srcset="media/image14.jpeg, media/image14.jpeg 1.5x, media/image14.jpeg 2x"
+        data-sizes="auto"
+        alt="media/image14.jpeg"
+        title="media/image14.jpeg" />{width=&ldquo;3.75in&rdquo; height=&ldquo;2.082638888888889in&rdquo;}<br>
+药品评价实体属性图</p>
+<p>（9）下图是药品订单实体和其具备的属性。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image15.jpeg"
+        data-srcset="media/image15.jpeg, media/image15.jpeg 1.5x, media/image15.jpeg 2x"
+        data-sizes="auto"
+        alt="media/image15.jpeg"
+        title="media/image15.jpeg" />{width=&ldquo;5.554861111111111in&rdquo;
+height=&ldquo;2.986111111111111in&rdquo;}<br>
+药品订单实体属性图</p>
+<p>（10）下图是医生实体和其具备的属性。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image16.jpeg"
+        data-srcset="media/image16.jpeg, media/image16.jpeg 1.5x, media/image16.jpeg 2x"
+        data-sizes="auto"
+        alt="media/image16.jpeg"
+        title="media/image16.jpeg" />{width=&ldquo;5.554861111111111in&rdquo;
+height=&ldquo;2.986111111111111in&rdquo;}<br>
+医生实体属性图</p>
+<p>（11）下图是论坛实体和其具备的属性。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image17.jpeg"
+        data-srcset="media/image17.jpeg, media/image17.jpeg 1.5x, media/image17.jpeg 2x"
+        data-sizes="auto"
+        alt="media/image17.jpeg"
+        title="media/image17.jpeg" />{width=&ldquo;5.554861111111111in&rdquo;
+height=&ldquo;2.9854166666666666in&rdquo;}<br>
+论坛实体属性图</p>
+<p>（12）下图是挂号实体和其具备的属性。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image18.jpeg"
+        data-srcset="media/image18.jpeg, media/image18.jpeg 1.5x, media/image18.jpeg 2x"
+        data-sizes="auto"
+        alt="media/image18.jpeg"
+        title="media/image18.jpeg" />{width=&ldquo;3.75in&rdquo; height=&ldquo;2.082638888888889in&rdquo;}<br>
+挂号实体属性图</p>
+<p>（13）下图是收货地址实体和其具备的属性。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image19.jpeg"
+        data-srcset="media/image19.jpeg, media/image19.jpeg 1.5x, media/image19.jpeg 2x"
+        data-sizes="auto"
+        alt="media/image19.jpeg"
+        title="media/image19.jpeg" />{width=&ldquo;5.555555555555555in&rdquo;
+height=&ldquo;2.9854166666666666in&rdquo;}<br>
+收货地址实体属性图</p>
+<p>[]{#__RefHeading___Toc13953 .anchor}<strong>数据库表设计</strong></p>
+<p>数据库里面的数据表存放的就是各种数据记录，我们在进行系统增删改查操作时，其实也是在对应数据表里面进行的增删改查操作，一个好的数据库能够缩短信息处理时间，所以说数据库的设计工作不容小觑，数据库里面设置哪些表，表里面的字段设计以及字段类型和字段长度等信息都要考虑周到才行，比如时间这个字段，它的数据类型就不能是int型，不然在系统操作中就会弹出输入数据格式不符合要求的报错提示。下面简单介绍健康医院门诊在线挂号系统的一些数据表。</p>
+<p>[]{#__RefHeading___Toc29928 .anchor}表4.1收货地址表</p>
+<hr>
+<p>序号        列名              数据类型              说明          允许空</p>
+<pre><code>1           Id                 Int                  id             否
+
+2        yonghu_id           Integer             创建用户          是
+
+3      address_name           String              收货人           是
+
+4      address_phone          String               电话            是
+
+5      address_dizhi          String               地址            是
+
+6     isdefault_types        Integer           是否默认地址        是
+
+7       insert_time            Date              添加时间          是
+
+8       update_time            Date              修改时间          是
+
+9       create_time            Date              创建时间          是
+</code></pre>
+<hr>
+<p>表4.2购物车表</p>
+<hr>
+<p>序号        列名             数据类型              说明          允许空</p>
+<pre><code>1           Id                Int                  id             否
+
+2       yonghu_id           Integer             所属用户          是
+
+3       yaopin_id           Integer               药品            是
+
+4       buy_number          Integer             购买数量          是
+
+5      create_time            Date              添加时间          是
+
+6      update_time            Date              更新时间          是
+
+7      insert_time            Date              创建时间          是
+</code></pre>
+<hr>
+<p>表4.3字典表</p>
+<hr>
+<p>序号        列名             数据类型              说明          允许空</p>
+<pre><code>1           Id                Int                  id             否
+
+2        dic_code            String               字段            是
+
+3        dic_name            String              字段名           是
+
+4       code_index          Integer               编码            是
+
+5       index_name           String             编码名字          是
+
+6        super_id           Integer             父字段id          是
+
+7         beizhu             String               备注            是
+
+8      create_time            Date              创建时间          是
+</code></pre>
+<hr>
+<p>表4.4论坛表</p>
+<hr>
+<p>序号         列名               数据类型              说明          允许空</p>
+<pre><code>1            Id                  Int                  id             否
+
+2        forum_name             String             帖子标题          是
+
+3         yonghu_id            Integer               用户            是
+
+4        yisheng_id            Integer               医生            是
+
+5         users_id             Integer              管理员           是
+
+6       forum_content           String             发布内容          是
+
+7         super_ids            Integer               父id            是
+
+8     forum_state_types        Integer             帖子状态          是
+
+9        insert_time             Date              发帖时间          是
+
+10       update_time             Date              修改时间          是
+
+11       create_time             Date              创建时间          是
+</code></pre>
+<hr>
+<p>表4.5公告信息表</p>
+<hr>
+<p>序号        列名             数据类型              说明          允许空</p>
+<pre><code>1           Id                Int                  id             否
+
+2       news_name            String             公告标题          是
+
+3       news_types          Integer             公告类型          是
+
+4       news_photo           String             公告图片          是
+
+5      insert_time            Date              添加时间          是
+
+6      news_content          String             公告详情          是
+
+7      create_time            Date              创建时间          是
+</code></pre>
+<hr>
+<p>表4.6药品表</p>
+<hr>
+<p>序号          列名                数据类型              说明          允许空</p>
+<pre><code>1             Id                   Int                  id             否
+
+2         yaopin_name             String             药品名称          是
+
+3     yaopin_uuid_number          String             药品编号          是
+
+4        yaopin_photo             String             药品照片          是
+
+5         zan_number             Integer                赞             是
+
+6         cai_number             Integer                踩             是
+
+7        yaopin_types            Integer             药品类型          是
+
+8     yaopin_kucun_number        Integer             药品库存          是
+
+9      yaopin_old_money         BigDecimal           药品原价          是
+
+10     yaopin_new_money         BigDecimal           现价/积分         是
+
+11      yaopin_clicknum          Integer             药品热度          是
+
+12      yaopin_content            String             药品介绍          是
+
+13      shangxia_types           Integer             是否上架          是
+
+14       yaopin_delete           Integer             逻辑删除          是
+
+15        insert_time              Date              录入时间          是
+
+16        create_time              Date              创建时间          是
+</code></pre>
+<hr>
+<p>表4.7药品收藏表</p>
+<hr>
+<p>序号            列名                  数据类型              说明          允许空</p>
+<pre><code>1               Id                     Int                  id             否
+
+2            yaopin_id               Integer               药品            是
+
+3            yonghu_id               Integer               用户            是
+
+4     yaopin_collection_types        Integer               类型            是
+
+5           insert_time                Date              收藏时间          是
+
+6           create_time                Date              创建时间          是
+</code></pre>
+<hr>
+<p>表4.8药品评价表</p>
+<hr>
+<p>序号            列名                  数据类型              说明          允许空</p>
+<pre><code>1               Id                     Int                  id             否
+
+2            yaopin_id               Integer               药品            是
+
+3            yonghu_id               Integer               用户            是
+
+4     yaopin_commentback_text         String             评价内容          是
+
+5           insert_time                Date              评价时间          是
+
+6           reply_text                String             回复内容          是
+
+7           update_time                Date              回复时间          是
+
+8           create_time                Date              创建时间          是
+</code></pre>
+<hr>
+<p>表4.9药品订单表</p>
+<hr>
+<p>序号              列名                    数据类型              说明          允许空</p>
+<pre><code>1                 Id                       Int                  id             否
+
+2      yaopin_order_uuid_number           String             订单编号          是
+
+3             address_id                 Integer             收货地址          是
+
+4              yaopin_id                 Integer               药品            是
+
+5              yonghu_id                 Integer               用户            是
+
+6             buy_number                 Integer             购买数量          是
+
+7       yaopin_order_true_price         BigDecimal           实付价格          是
+
+8      yaopin_order_courier_name          String             快递公司          是
+
+9     yaopin_order_courier_number         String             快递单号          是
+
+10        yaopin_order_types             Integer             订单类型          是
+
+11    yaopin_order_payment_types         Integer             支付类型          是
+
+12            insert_time                  Date            订单创建时间        是
+
+13            create_time                  Date              创建时间          是
+</code></pre>
+<hr>
+<p>表4.10医生表</p>
+<hr>
+<p>序号           列名                 数据类型              说明          允许空</p>
+<pre><code>1              Id                    Int                  id             否
+
+2      yisheng_uuid_number          String             医生工号          是
+
+3         yisheng_name              String             医生名称          是
+
+4         yisheng_types            Integer               科室            是
+
+5         zhiwei_types             Integer               职位            是
+
+6       yisheng_zhichneg            String               职称            是
+
+7         yisheng_photo             String             医生头像          是
+
+8         yisheng_phone             String             联系方式          是
+
+9     yisheng_yisheng_yuyue         String             挂号须知          是
+
+10        yisheng_email             String               邮箱            是
+
+11      yisheng_new_money         BigDecimal           挂号价格          是
+
+12       yisheng_content            String             履历介绍          是
+
+13         create_time               Date              创建时间          是
+</code></pre>
+<hr>
+<p>表4.11医生收藏表</p>
+<hr>
+<p>序号             列名                  数据类型              说明          允许空</p>
+<pre><code>1                Id                     Int                  id             否
+
+2            yisheng_id               Integer               医生            是
+
+3            yonghu_id                Integer               用户            是
+
+4     yisheng_collection_types        Integer               类型            是
+
+5           insert_time                 Date              收藏时间          是
+
+6           create_time                 Date              创建时间          是
+</code></pre>
+<hr>
+<p>表4.12医生评价表</p>
+<hr>
+<p>序号             列名                  数据类型              说明          允许空</p>
+<pre><code>1                Id                     Int                  id             否
+
+2            yisheng_id               Integer               医生            是
+
+3            yonghu_id                Integer               用户            是
+
+4     yisheng_commentback_text         String             评价内容          是
+
+5           insert_time                 Date              评价时间          是
+
+6            reply_text                String             回复内容          是
+
+7           update_time                 Date              回复时间          是
+
+8           create_time                 Date              创建时间          是
+</code></pre>
+<hr>
+<p>表4.13挂号表</p>
+<hr>
+<p>序号          列名                数据类型              说明          允许空</p>
+<pre><code>1             Id                   Int                  id             否
+
+2         yisheng_id             Integer               医生            是
+
+3          yonghu_id             Integer               用户            是
+
+4     yisheng_yuyue_time           Date              挂号时间          是
+
+5     yisheng_yuyue_text          String               备注            是
+
+6     yisheng_yuyue_types        Integer             挂号状态          是
+
+7         insert_time              Date              添加时间          是
+
+8         create_time              Date              创建时间          是
+</code></pre>
+<hr>
+<p>表4.14用户表</p>
+<hr>
+<p>序号         列名              数据类型              说明          允许空</p>
+<pre><code>1            Id                 Int                  id             否
+
+2       yonghu_name            String             用户名称          是
+
+3       yonghu_phone           String            用户手机号         是
+
+4     yonghu_id_number         String           用户身份证号        是
+
+5       yonghu_photo           String             用户头像          是
+
+6       yonghu_email           String             用户邮箱          是
+
+7        new_money           BigDecimal             余额            是
+
+8      yonghu_delete          Integer             逻辑删除          是
+
+9       insert_time             Date              添加时间          是
+
+10      create_time             Date              创建时间          是
+</code></pre>
+<hr>
+<p>表4.15管理员表</p>
+<hr>
+<p>序号        列名             数据类型              说明          允许空</p>
+<pre><code>1           Id                Int                  id             否
+
+2        username            String              医院名           是
+
+3        password            String               密码            是
+
+4          role              String               角色            是
+
+5        addtime              Date              新增时间          是
+</code></pre>
+<hr>
+<h1 id="第5章-系统实现">第5章 系统实现</h1>
+<h2 id="51用户信息管理">5.1用户信息管理</h2>
+<p>如图5.1显示的就是用户信息管理页面，此页面提供给管理员的功能有：用户信息的查询管理，可以删除用户信息、修改用户信息、新增用户信息，</p>
+<p>还进行了对用户名称的模糊查询的条件</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image20.png"
+        data-srcset="media/image20.png, media/image20.png 1.5x, media/image20.png 2x"
+        data-sizes="auto"
+        alt="media/image20.png"
+        title="media/image20.png" />{width=&ldquo;5.770138888888889in&rdquo;
+height=&ldquo;3.3631944444444444in&rdquo;}</p>
+<p>图5.1 用户信息管理页面</p>
+<h2 id="52-药品信息管理">5.2 药品信息管理</h2>
+<p>如图5.2显示的就是药品信息管理页面，此页面提供给管理员的功能有：查看已发布的药品信息数据，修改药品信息，药品信息作废，即可删除，还进行了对药品信息名称的模糊查询
+药品信息信息的类型查询等等一些条件。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image21.png"
+        data-srcset="media/image21.png, media/image21.png 1.5x, media/image21.png 2x"
+        data-sizes="auto"
+        alt="media/image21.png"
+        title="media/image21.png" />{width=&ldquo;5.768055555555556in&rdquo;
+height=&ldquo;3.3340277777777776in&rdquo;}</p>
+<p>图5.2 药品信息管理页面</p>
+<h2 id="53医生信息管理">5.3医生信息管理</h2>
+<p>如图5.3显示的就是医生信息管理页面，此页面提供给管理员的功能有：根据医生信息进行条件查询，还可以对医生信息进行新增、修改、查询操作等等。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image22.png"
+        data-srcset="media/image22.png, media/image22.png 1.5x, media/image22.png 2x"
+        data-sizes="auto"
+        alt="media/image22.png"
+        title="media/image22.png" />{width=&ldquo;5.764583333333333in&rdquo;
+height=&ldquo;3.290277777777778in&rdquo;}</p>
+<p>图5.3 医生信息管理页面</p>
+<h2 id="54公告信息管理">5.4公告信息管理</h2>
+<p>如图5.4显示的就是公告信息管理页面，此页面提供给管理员的功能有：根据公告信息进行新增、修改、查询操作等等。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="media/image23.png"
+        data-srcset="media/image23.png, media/image23.png 1.5x, media/image23.png 2x"
+        data-sizes="auto"
+        alt="media/image23.png"
+        title="media/image23.png" />{width=&ldquo;5.770833333333333in&rdquo; height=&ldquo;3.30625in&rdquo;}</p>
+<p>图5.4 公告信息管理页面</p>
+<h2 id="55-关键技术难点">5.5 关键技术难点</h2>
+<p>用户操作鉴权问题。</p>
+<p>技术难点：鉴权是指当前用户是否有权限区访问系统得资源，是指是指验证用户是否拥有访问系统的权利，对用户进行鉴权，防止非法用户占用网络资源，非法用户接入网络，被骗取关键信息。</p>
+<p>解决方案：通过设置token以及refreshtoken去防止用户token过期而导致得权限不足现象，当用户得token过期后就用refreshtoken去请求最新得token去赋值给用户得每次请求从而完成页面正常使用，如果refreshtoken也存在过期情况，则跳转到登录界面，防止非法入侵，更加增加系统安全性。</p>
+<p>生成token关键代码：</p>
+<p>if (apiUserUriMapping == null) {</p>
+<blockquote>
+<p>resultMap.put(&quot;StatusCode&quot;,</p>
+</blockquote>
+<p>CommonEnum.SIGNATURE_NOT_MATCH.getResultCode());</p>
+<p>resultMap.put(&quot;AccessToken&quot;, &quot;&quot;);</p>
+<p>resultMap.put(&quot;TokenAvailableTime&quot;, &quot;&quot;);</p>
+<p>resultMap.put(&quot;Msg&quot;, CommonEnum.SIGNATURE_NOT_MATCH.getResultMsg());</p>
+<p>} else {</p>
+<p>// 创建token</p>
+<p>String token = this.tokenService.createToken(cacheService, appid,
+appkey);</p>
+<p>resultMap.put(&quot;StatusCode&quot;, CommonEnum.SUCCESS.getResultCode());</p>
+<p>resultMap.put(&quot;AccessToken&quot;, token);</p>
+<p>resultMap.put(&quot;TokenAvailableTime&quot;,cacheService.ttl(token,RedisDbConstant.DB_10) +
+&quot;&quot;); resultMap.put(&quot;Msg&quot;, CommonEnum.SUCCESS.getResultMsg())。</p>
+<p>[]{#__RefHeading___Toc11906 .anchor}<strong>6章</strong>
+进入系统测试代表着系统软件已经结束编号实现方案阶段，接下来会做的是测试系统软件，即系统软件测试，这个测试是非常有必要的，主要原因是开发系统软件工作人员，自已的开发技术以及开发逻辑思维比较有限，应对繁杂的实际操作逻辑系统，会有大大小小错误，这种错误是在所难免的。根据及时地测试，能够快速清除程序流程里的错误，也能够减少操作过程中问题，进而真真正正确保在之后的使用中修补这类问题高投入。立即测试、及早发现和处理问题，都是提升开发全过程高效率的一种表现方式。总而言之，大家应注意软件开发生命周期每一个阶段，搞好每一个阶段应该做的每日任务。从头至尾应该保证软件开发的品质</p>
+<h2 id="61测试目的"><strong>6.1测试目的</strong></h2>
+<p>系统提供功能测试功能主要运用于测试系统软件研发的功能是不是有误，功能自身的设计原理正确与否合理，系统软件开发设计存不存在隐藏经营风险难题，在学生的具体开发与适用场景和测试阶段，给消费者真实运用反馈和觉得意见反馈测试结果，为项目风险评估和功能测试提供一定的信息。目前后台管理系统软件主要分测试系统软件前端应用与后台管理员的使用。前端目的是为了测试系统软件学生怎么注册、账号登录、医生管理、预约挂号管理、药品管理、订单管理等自动跳转等。后边管理员的主要功能是测试每一个控制模块数据信息日常维护功能。</p>
+<h2 id="62测试环境"><strong>6.2测试环境</strong></h2>
+<p>我们这个健康医院门诊在线挂号系统的功能测试方法采用和的黑盒测试方法，黑盒测试是系统测试的一般方法，用来测试我们这个健康医院门诊在线挂号系统是否符合需求基本的要求、逻辑是否通常、功能设计是否合规。系统测试环境如下图表6.1所展示。</p>
+<p>表6.1 系统测试环境</p>
+<hr>
+<p>测试环境   软件环境     操作系统               Windows 10家庭版</p>
+<pre><code>                       系统类型       64 位操作系统, 基于 x64 的处理器
+
+                        浏览器                  Google浏览器
+
+                        数据库                    MySQL5.7
+
+          硬件环境       设备                 Windows台式电脑机
+
+                         内存                      16.00G
+
+                         硬盘                       2550G
+
+                        处理器         Intel(R) Core(TM) i5-8300H CPU
+</code></pre>
+<hr>
+<h2 id="63测试用例"><strong>6.3测试用例</strong></h2>
+<p>系统完成之后对系统进行了一些主要功能的测试、主要包含挂号信息、挂号信息以及公告信息的测试。只有测试通过的程序模块才可以进行系统软件浏览。下面是系统的一些主要功能测试:</p>
+<p>表6.1 用户登录测试表</p>
+<hr>
+<p>测试目的    操作流程                           测试用例             测试结果</p>
+<p>用户登录    填写用户名密码，点击首页登录按钮   错误填写用户名密码   提示错误信息</p>
+<pre><code>                                             正确填写用户和密码   登录成功
+</code></pre>
+<hr>
+<p>表6.2新增挂号信息测试表</p>
+<hr>
+<p>测试项目       操作流程                                     测试用例           测试结果</p>
+<p>新增挂号信息   管理员登陆后点击新增物资按钮，新增挂号信息   挂号信息为空       新增失败，提示请填写内容</p>
+<pre><code>                                                          合规填写挂号信息   新增成功
+</code></pre>
+<hr>
+<p>表6.3新增公告类型测试表</p>
+<hr>
+<p>测试项目       操作流程                                         测试用例           测试结果</p>
+<p>新增公告类型   管理员登陆后点击新增公告类型按钮，新增公告类型   公告类型为空       新增失败，提示请填写内容</p>
+<pre><code>                                                              合规填写公告类型   新增成功
+</code></pre>
+<hr>
+<p>表6.4新增药品信息测试表</p>
+<hr>
+<p>测试项目       操作流程                                         测试用例           测试结果</p>
+<p>新增药品信息   管理员登陆后点击新增药品信息按钮，新增药品信息   药品信息为空       新增失败，提示请填写内容</p>
+<pre><code>                                                              合规填写药品信息   新增成功
+</code></pre>
+<hr>
+<h2 id="64测试结果"><strong>6.4测试结果</strong></h2>
+<p>通过大量测试优化调节改善，健康医院门诊在线挂号系统依然能保证系统市场需求的正常的运行，基本上特性无错误，能更好地满足软件开发技术和学生的需求。在设备总体运行测试环节中，系统软件功能设计较为简单，在功能测试之中遇到了一些错误，如学生空指针异常，MySQL数据库版本不一致，也会导致sql语句无法正常运行，管理员用户名设定，环境分辨不太好，输入错误账户密码信息或可登陆。这类错误正常情况下不可以产生。在回到代码检查的时候，发觉管理人员信息和数据库的DAO代码存有错误，代码和数据库本身没有树立良好的联接。通过这次测试，我能更为当心代码和数据库的操作，正常情况下不容易出现这种错误。</p>
+<h1 id="结-论">结 论</h1>
+<p>本课题研究研究方向为以实现健康医院门诊在线挂号系统。通过数据搜索、技术途径、功能设计、模块化设计、概念模型设计、界面设计方案、作用编号、系统测试等阶段性工作，我顺利完成了健康医院门诊在线挂号系统，供总体目标用户应用。</p>
+<p>健康医院门诊在线挂号系统选用Java思维和语言MySQL数据库系统开展设计开发。与大部分相近系统对比，主要特点如下所展示：</p>
+<p>（1）健康医院门诊在线挂号系统的功效彻底依据目标消费群体的应用必须展开分析、设计与编号，并通过实施过程中的最终测试阶段，最终决定它的功能基本完成，能够在日常生活中发挥出信息内容管理的意义。</p>
+<p>（2）健康医院门诊在线挂号系统的界面设计方案比较简单，具备简易直观地特性，而且每个程序模块都是有独立的界面表明，用户点一下不一样的功效会有对应的界面，每一个界面撞色搭配更统一，界面空间布局合理，界面上所使用的各种图片都要经过Photoshop等图片编辑工具装饰，因而，当用户访问系统的每个界面时，能够一目了然地发现系统标注的所有信息。</p>
+<p>（3）健康医院门诊在线挂号系统使用和实际操作十分方便，由于系统能够避免大部分用户的操作失误状况，因此用户能够在短时间内寻找所需要的作用及使用，能节省处理时间，系统也改善了操作流程，删掉了一些繁琐复杂操作流程，与此同时，该系统也将一些基础功能放到每个界面的醒目地域，大大改善了用户实际操作健康医院门诊在线挂号系统的功效。</p>
+<p>因为缺乏系统项目经验，健康医院门诊在线挂号系统也存在一些缺点，详细如下：</p>
+<p>（1）在文件存储层面，定制的数据分析表不科学，好几个表格中纪录同一数据信息，导致内存空间的消耗和系统响应速度的延迟时间。</p>
+<p>（2）针对系统编码，有许多编码并没有注解，针对开发者，系统后面更新与维护将耗费大量时长，提升系统更新与维护难度，很多编码应用同样的函数公式，该函数公式在每一个编码文档中再次撰写，不另行启用，使系统松垮，它也耗费了很多的内存空间。</p>
+<p>因而，不久的将来，我就必须花时间来完善健康医院门诊在线挂号系统。针对以上数据库系统里的缓存溢出难题，我计划学习培训数据库连接池里的技术性，以提升缓存溢出状况。针对编号文件占用内存空间过严重的问题，我计划应用函数调用作用，将同样的函数公式写上编号文档上，让所有需要用到该函数编号文件进行函数调用，为了节约内存空间，使系统更加轻。</p>
+<p>总的说来，这次编写毕业设计作品，我真正锻炼了自己的实际操作能力，以前只知道理论知识，现在通过实践，我对理论知识的认识变得更加深刻，由于编写程序时间比较短暂，程序开发期间遇到过很多坎坷，但最后都通过老师还有同学帮忙解决了，可以说这次的毕设作品进展得还算顺利。</p>
+<h1 id="heading-1"></h1>
+<p>制作毕设项目这段时间，忙碌又充实。从最开始选题的不知所措，到现在毕设项目完成时的淡然，两种完全不同的心境，也意味着我这段时间在不断成长。项目制作是一个很耗费时间与精力的任务，如果说仅仅依靠自己的话，那肯定达不到毕设的标准。所以，这一路走来，导师给予我的帮助也是非常大的。不管我处于哪个阶段，比如选题阶段，比如分析系统功能阶段，设计系统结构阶段，系统编码阶段等，都有导师参与指导，他提出的建议和技术上的指导让我可以更快地完成这个毕设项目。此刻，我非常感谢导师，感谢他提供的帮助。</p>
+<p>毕设项目制作期间，我身边的同学也及时指出了我系统的错误，并帮助我完善已开发的系统，还提供了很多文档撰写的技巧，所以，我也非常庆幸能和他们一起努力制作项目，也非常感谢他们一直以来的陪伴。</p>
+<p>大学短短几年，能够得到成长，也离不开授课老师们，他们一直在校园为广大学子传授知识，用他们毕生所学，教出一批批优秀的用户，我这几年的成熟与成长也得益于他们的教导。所以我也非常感谢校园的各位老师。</p>
+<p>即将离开校园，回想这几年的时光，还真挺不舍。安安静静在校园走了一圈，发现我的大学校园真的很美，我也感谢学校给我们提供这么美好的学习环境，以及给了我上大学的机会。感谢母校！</p>
+<h1 id="参考文献">参考文献</h1>
+<p>[1]江涛.药品信息网上预订系统的设计与分析[J].现代商贸工业,2020,41(22):150.</p>
+<p>[2]徐微微.晓庄连锁药品信息药品信息预订系统的设计[J].企业导报,2016(08):180-181.</p>
+<p>[3]张振超,吴杰,陈序蓬.浅谈Java中Mysql数据库的连接与操作[J].信息记录材料,2020,21(02):144-145.</p>
+<p>[4]郑智方,魏恺乐,李彬,谢易壮.MySQL得到广泛使用的原因以及它的嵌入应用[J].科技风,2020(05):114.</p>
+<p>[5]赵秀芹,刘杨青,李瑞祥.MySQL数据库使用技巧三例[J].网络安全和信息化,2019(08):90-91.</p>
+<p>[6]余涛.计算机软件开发中Java编程语言的应用研究[J].信息记录材料,2020,21(01):113-115.</p>
+<p>[7]岳青玲.Java面向对象编程的三大特性[J].电子技术与软件工程,2019(24):239-240.</p>
+<p>[8]耿学.关于Java
+Web中中文乱码问题的探讨[J].现代信息科技,2020,4(01):74-75+78.</p>
+<p>[9]张彦芳.Java
+Web项目开发中的中文乱码问题与对策[J].电脑知识与技术,2020,16(09):96-97.</p>
+<p>[10]韩思凡.Web开发中的vue与H T
+ML的基础应用[J].科学技术创新,2020(14):71-72.</p>
+<p>[11]赵晓丹.网页开发中的vue技术分析[J].南方农机,2019,50(20):247-248.</p>
+<p>[12]薛茹.基于Spring
+Boot框架的Web系统研究与应用[J].计算机产品与流通,2018(07):30.</p>
+<p>[13]邱丹萍.Web开发中Spring
+Boot框架的分析[J].电脑知识与技术,2020,16(17):81-82.</p>
+<p>[14]仲崇文.关于计算机软件开发中常见问题的研究[J].通讯世界,2020,27(07):89-90.</p>
+<p>[15]Raffi Khatchadourian.Automated refactoring of legacy Java software
+to enumerated types[J].Automated Software Engineering,2017,24(4).</p>
+<p>[16]Ben White.Marx and Chayanov at the margins:understanding agrarian
+change in Java[J].The Journal of Peasant Studies,2018,45(5-6).</p>
+<h3 id="0542springboot健康医院门诊在线挂号系统--论文pf-项目图片">0542springboot健康医院门诊在线挂号系统&ndash;论文pf 项目图片</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0542springbootimg_001.jpg"
+        data-srcset="/images/0542springbootimg_001.jpg, /images/0542springbootimg_001.jpg 1.5x, /images/0542springbootimg_001.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0542springbootimg_001.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0542springbootimg_003.jpg"
+        data-srcset="/images/0542springbootimg_003.jpg, /images/0542springbootimg_003.jpg 1.5x, /images/0542springbootimg_003.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0542springbootimg_003.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0542springbootimg_002.jpg"
+        data-srcset="/images/0542springbootimg_002.jpg, /images/0542springbootimg_002.jpg 1.5x, /images/0542springbootimg_002.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0542springbootimg_002.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0542springbootimg_006.jpg"
+        data-srcset="/images/0542springbootimg_006.jpg, /images/0542springbootimg_006.jpg 1.5x, /images/0542springbootimg_006.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0542springbootimg_006.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0542springbootimg_007.jpg"
+        data-srcset="/images/0542springbootimg_007.jpg, /images/0542springbootimg_007.jpg 1.5x, /images/0542springbootimg_007.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0542springbootimg_007.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0542springbootimg_005.jpg"
+        data-srcset="/images/0542springbootimg_005.jpg, /images/0542springbootimg_005.jpg 1.5x, /images/0542springbootimg_005.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0542springbootimg_005.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0542springbootimg_004.jpg"
+        data-srcset="/images/0542springbootimg_004.jpg, /images/0542springbootimg_004.jpg 1.5x, /images/0542springbootimg_004.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0542springbootimg_004.jpg"
+        title="图片" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0542springbootimg_008.jpg"
+        data-srcset="/images/0542springbootimg_008.jpg, /images/0542springbootimg_008.jpg 1.5x, /images/0542springbootimg_008.jpg 2x"
+        data-sizes="auto"
+        alt="/images/0542springbootimg_008.jpg"
+        title="图片" /></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2024-07-18</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/0542springboot%E5%81%A5%E5%BA%B7%E5%8C%BB%E9%99%A2%E9%97%A8%E8%AF%8A%E5%9C%A8%E7%BA%BF%E6%8C%82%E5%8F%B7%E7%B3%BB%E7%BB%9F--%E8%AE%BA%E6%96%87pf/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://chenqi199.github.io/0542springboot%E5%81%A5%E5%BA%B7%E5%8C%BB%E9%99%A2%E9%97%A8%E8%AF%8A%E5%9C%A8%E7%BA%BF%E6%8C%82%E5%8F%B7%E7%B3%BB%E7%BB%9F--%E8%AE%BA%E6%96%87pf/" data-title="0542springboot健康医院门诊在线挂号系统--论文pf" data-hashtags="springboot,java,vue,论文,项目"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://chenqi199.github.io/0542springboot%E5%81%A5%E5%BA%B7%E5%8C%BB%E9%99%A2%E9%97%A8%E8%AF%8A%E5%9C%A8%E7%BA%BF%E6%8C%82%E5%8F%B7%E7%B3%BB%E7%BB%9F--%E8%AE%BA%E6%96%87pf/" data-hashtag="springboot"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://chenqi199.github.io/0542springboot%E5%81%A5%E5%BA%B7%E5%8C%BB%E9%99%A2%E9%97%A8%E8%AF%8A%E5%9C%A8%E7%BA%BF%E6%8C%82%E5%8F%B7%E7%B3%BB%E7%BB%9F--%E8%AE%BA%E6%96%87pf/" data-title="0542springboot健康医院门诊在线挂号系统--论文pf"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://chenqi199.github.io/0542springboot%E5%81%A5%E5%BA%B7%E5%8C%BB%E9%99%A2%E9%97%A8%E8%AF%8A%E5%9C%A8%E7%BA%BF%E6%8C%82%E5%8F%B7%E7%B3%BB%E7%BB%9F--%E8%AE%BA%E6%96%87pf/" data-title="0542springboot健康医院门诊在线挂号系统--论文pf"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://chenqi199.github.io/0542springboot%E5%81%A5%E5%BA%B7%E5%8C%BB%E9%99%A2%E9%97%A8%E8%AF%8A%E5%9C%A8%E7%BA%BF%E6%8C%82%E5%8F%B7%E7%B3%BB%E7%BB%9F--%E8%AE%BA%E6%96%87pf/" data-title="0542springboot健康医院门诊在线挂号系统--论文pf" data-ralateuid="https://gitee.com/chen_q_i"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/springboot/">Springboot</a>,&nbsp;<a href="/tags/java/">Java</a>,&nbsp;<a href="/tags/vue/">Vue</a>,&nbsp;<a href="/tags/%E8%AE%BA%E6%96%87/">论文</a>,&nbsp;<a href="/tags/%E9%A1%B9%E7%9B%AE/">项目</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/0543springboot%E5%81%9C%E8%BD%A6%E5%9C%BA%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F--%E8%AE%BA%E6%96%87pf/" class="prev" rel="prev" title="0543springboot停车场管理系统--论文pf"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>0543springboot停车场管理系统--论文pf</a>
+            <a href="/0541springboot%E5%81%A5%E8%BA%AB%E6%88%BF%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F--%E8%AE%BA%E6%96%87pf/" class="next" rel="next" title="0541springboot健身房管理系统--论文pf">0541springboot健身房管理系统--论文pf<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.128.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="chenqi199" target="_blank">chenqi</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
