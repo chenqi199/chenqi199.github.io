@@ -3,168 +3,20 @@
 
 # [0444springboot新冠物资管理--论文pf](https://github.com/GraduationProject-springboot/0444springboot)
 
-### 微信： chen_q123456  qq:462201886
-### github:chenqi199
+![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-### [所有项目](https://github.com/GraduationProject-springboot/allSpringbootProjects) 包安装运行
+# [项目清单](https://chenqi1990.site) 包安装运行
 
-### [所有项目列表excel 腾讯文档 项目清单](https://docs.qq.com/sheet/DSHRFSVZ5aEVYT3N3?tab=BB08J2) 包安装运行
-
-### [github](https://chenqi199.github.io)
-
-
-
-
-
-
-
-
-# 0444springboot新冠物资管理--论文pf
+### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://player.bilibili.com/player.html?isOutside=true&aid=BV1ULbQeREgz&bvid=BV1ULbQeREgz&cid=500001616875322&p=44)
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=44)
 
-### [所有项目](https://github.com/GraduationProject-springboot/allSpringbootProjects) 包安装运行
 
-
-
-
-
-
-
-
-
-
-
-
-**毕 业 设 计（论 文）**
-
-题目：[新冠物资管理]{.underline}
-
-**摘 要**
-
-使用旧方法对新冠物资管理的信息进行系统化管理已经不再让人们信赖了，把现在的网络信息技术运用在新冠物资管理的管理上面可以解决许多信息管理上面的难题，比如处理数据时间很长，数据存在错误不能及时纠正等问题。这次开发的新冠物资管理对字典管理、论坛管理、疫情公告管理、留言反馈管理、疫情资讯管理、物资管理、物资收藏管理、物资发放管理、物资捐赠管理、物资留言管理、物资入库管理、物资申请管理、用户管理、员工管理、管理员管理等进行集中化处理。经过前面自己查阅的网络知识，加上自己在学校课堂上学习的知识，决定开发系统选择小程序模式这种高效率的模式完成系统功能开发。这种模式让操作员基于浏览器的方式进行网站访问，采用的主流的Java语言这种面向对象的语言进行新冠物资管理程序的开发，在数据库的选择上面，选择功能强大的MySQL数据库进行数据的存放操作。新冠物资管理的开发让用户查看物资信息变得容易，让管理员高效管理物资信息。
-
-**关键词**：新冠物资管理；物资信息；公告；自助资讯
-
-**Abstract**
-
-Using the old method to systematically manage the tourist attraction
-information no longer makes people trust. Applying the current network
-information technology to the management of tourist attraction
-information can solve many problems in information management, such as
-processing data for a long time, data There are problems such as errors
-that cannot be corrected in time. The self-guided website developed this
-time centralizes the city information of attractions, tourist
-attractions information, comment information, and self-help information.
-After learning the network knowledge I had previously consulted and the
-knowledge I learned in the school classroom, I decided to develop the
-system to select the 小程序 mode, an efficient mode to complete system
-function development. This mode allows the operator to access the
-website based on the browser. The mainstream Java language is used in
-the object-oriented language to develop the self-guided website program.
-In the database selection, select the powerful MySQL database for data.
-Store operation. The development of self-guided websites makes it easy
-for users to view information on attractions, allowing administrators to
-efficiently manage information on attractions.
-
-**Key Words：**Self-guided tour website; tourist attractions; reviews;
-self-help information
-
-[1 绪论 1](#绪论)
-
-[1.1 研究背景 1](#研究背景)
-
-[1.2目的和意义 1](#目的和意义)
-
-[1.3 论文结构安排 2](#论文结构安排)
-
-[2 相关技术 3](#相关技术)
-
-[2.1 VUE介绍 3](#__RefHeading___Toc11520)
-
-[2.2 MySQL数据库介绍 3](#__RefHeading___Toc15751)
-
-[2.3 JAVA语言介绍 5](#__RefHeading___Toc14457)
-
-[3 系统分析 7](#系统分析)
-
-[3.1系统可行性分析 7](#系统可行性分析)
-
-[3.1.1 技术可行性分析 7](#技术可行性分析)
-
-[3.1.2 经济可行性分析 7](#经济可行性分析)
-
-[3.1.3 运行可行性分析 7](#运行可行性分析)
-
-[3.2系统性能分析 8](#系统性能分析)
-
-[3.2.1 系统安全性 8](#系统安全性)
-
-[3.2.2 数据完整性 8](#数据完整性)
-
-[3.2.3系统可扩展性 9](#系统可扩展性)
-
-[3.3系统流程分析 9](#系统流程分析)
-
-[3.3.1系统登录流程 10](#系统登录流程)
-
-[3.3.2信息添加流程 11](#信息添加流程)
-
-[3.3.3信息删除流程 11](#信息删除流程)
-
-[3.4系统功能分析 12](#系统功能分析)
-
-[4 系统设计 13](#系统设计)
-
-[4.1系统概要设计 13](#系统概要设计)
-
-[4.2系统功能结构设计 13](#系统功能结构设计)
-
-[4.3数据库设计 13](#数据库设计)
-
-[4.3.1数据库E-R图设计 13](#数据库e-r图设计)
-
-[4.3.2 数据库表结构设计 14](#数据库表结构设计)
-
-[5 系统实现 15](#系统实现)
-
-[5.1管理员功能介绍 15](#管理员功能介绍)
-
-[5.1.1管理员登录 15](#管理员登录)
-
-[5.1.2 物资管理 15](#物资管理)
-
-[5.1.3 公告信息管理 16](#公告信息管理)
-
-[5.1.4公告类型管理 16](#公告类型管理)
-
-[6系统测试 18](#软件测试)
-
-[6.1 本系统测试  18](#__RefHeading___Toc15020)
-
-[6.1.1 登录功能测试 18](#__RefHeading___Toc24098)
-
-[6.1.2 注册功能测试 19](#__RefHeading___Toc16431)
-
-[6.2测试结果分析 19](#__RefHeading___Toc1771)
-
-[结 论 20](#结-论)
-
-[参考文献 22](#参考文献)
-
-[致 谢 23](#致-谢)
-
-#   {#section .unnumbered}
-
-# 1 绪论
-
+# 绪论
 ## 1.1 研究背景
-
 现在大家正处于互联网加的时代，这个时代它就是一个信息内容无比丰富，信息处理与管理变得越加高效的网络化的时代，这个时代让大家的生活不仅变得更加地便利化，也让时间变得更加地宝贵化，因为每天的每分钟，每秒钟这些时间都能让人们处理大批量的日常事务，这些场景，是之前的手工模式无法与之相抗衡的。对于物资信息的管理来说，传统的通过纸质文档记录信息的方式已经落后了，依靠手工管理物资信息，不仅花费较长的工作时间，在对记录各种信息的文档进行信息查询以及信息核对操作时，也不能及时保证信息的准确性，基于这样的办公低效率环境下，对于物资信息的处理就要提出新的解决方案。因为这个时代的信息一直都在高速发展，要是不抱着发展的观念看待事情，极有可能被这个市场快速遗忘，甚至被无情地淘汰掉。所以尽早开发一款新冠物资管理进行信息的快速处理，既跟上了时代的发展脚步，也能让自己的核心竞争力有所提升。
-
 ## 1.2目的和意义
-
 现如今，信息的类型愈来愈多，信息容量也非常大，这也是信息时代的缩影。近些年，电子信息科学发展趋势变的越来越快，应用软件开发也日趋成熟。因而，在生活的各行各业，只要是有信息管理方法，基本都有电子计算机阴影。可以这么说，很多行业都利用计算机来处理信息。与手工制作对比，信息计算机化解决具备安全性强、工作效率高、内存空间大、成本费用低等特点。对于高校老师成效信息管理方法，选用新冠物资管理系统能够高效管理，使信息管理方法更为科学化。
 
 简单点来说，结合实际应用新冠物资管理系统的价值如下所示：
@@ -176,9 +28,7 @@ self-help information
 第三点：可以实现信息管理的计算机化；
 
 第四点：能降低信息人力成本。
-
 ## 1.3 论文结构安排
-
 编写新冠物资管理相对应的论文，其实就是对开发完成的程序进行再次解读的过程。本论文从七个方面的内容讲解了开发的程序，具体内容如下：
 
 第一个部分：就是论文的绪论，这个部分就是介绍在什么样的背景下开发的程序，以及这个程序开发出来具有什么意义等内容。
@@ -194,66 +44,45 @@ self-help information
 第六个部分：就是程序已经完成了开发的前提之下，需要检测程序的各个模块是否衔接正常，程序各个功能能否在网络等一切外部条件正常的情况下运行，这期间要是出现任何错误都需要及时记录并在后期进行修补完善。
 
 第七个部分：就是论文最后的总结部分，描述遇到的问题，采用的解决思路等内容。
-
 # 2 相关技术
-
 新冠物资管理系统的编码实现需要搭建一定的环境和使用相应的技术，接下来的内容就是对新冠物资管理系统用到的技术和工具进行介绍。
 
-**2.1 MySQL数据库**
+2.1 MySQL数据库
 
 本课题研究研发的应用程序在数据操作里是难以预测的，而且常常产生变化。没有办法直接从word里写数据信息，这不但不安全，并且难以实现应用程序的功能。想要实现运用所需要的文件存储功能，就必定要选择专业数据库存储软件。大部分，应用程序达到的功能并不太繁杂，市场中所有关系数据库软件都能实现。但MySQL数据库，安装文件小，组装速度更快，使用方便，即便组装问题改进，不用再次安装操作系统，也不会影响电脑中第三方软件的运转，损耗网络资源少，最主要的是功能充分满足设计定位，因此最终选择MySQL数据库做为软件开发技术所需要的数据库。
 
-**2.2 Java语言**
+2.2 Java语言
 
-Java语言已经存在了25年有余。通过这些年的发展趋势，it行业在市场占有率上仍然占据一半，仍然受到了很多程序员的工作钟爱。许多从业者都是在学习培训。近年来随着从业者的提高，Java语言的位置并没减少，算得上是常青藤。Java语言学习培训比较简单，自然，它是对于C前辈们的
-而言的，C 语言非常强劲。Java取消了许多CJava 特点，如go
-这种阐述，也取消了主文件，让所有文件夹全是类，类是二维数组以及各种对象，也使Java处理一些对象的引入和回收利用，让开发者只需建立对象，应用对象，编写代码逻辑，不需要留意性能，让各种各样文件存储给Java自己解决，你能花很多时间科学研究应用软件相互关系，使研发更为集中化，如同跑车驾驶员一样，只要了解各种汽车的性能，实际操作，不需要科学研究如何生产车轮子，使软件开发更为详尽。
+Java语言已经存在了25年有余。通过这些年的发展趋势，it行业在市场占有率上仍然占据一半，仍然受到了很多程序员的工作钟爱。许多从业者都是在学习培训。近年来随着从业者的提高，Java语言的位置并没减少，算得上是常青藤。Java语言学习培训比较简单，自然，它是对于C前辈们的  而言的，C  语言非常强劲。Java取消了许多CJava  特点，如go 这种阐述，也取消了主文件，让所有文件夹全是类，类是二维数组以及各种对象，也使Java处理一些对象的引入和回收利用，让开发者只需建立对象，应用对象，编写代码逻辑，不需要留意性能，让各种各样文件存储给Java自己解决，你能花很多时间科学研究应用软件相互关系，使研发更为集中化，如同跑车驾驶员一样，只要了解各种汽车的性能，实际操作，不需要科学研究如何生产车轮子，使软件开发更为详尽。
 
-**2.3 Spring Boot框架**
+2.3 Spring Boot框架
 
-在过去的两三年的Spring生态系统中，最令人兴奋的是Spring
-Boot框架。或许从取名上能够得知这一框架设计初心：快速开启Spring运用。因此Spring
-实质上，Boot应用程序是一个根据Spring框架的应用程序。这是Spring"协议书先于配置"理论的良好实践物质。可以帮助开发者迅速、更有效地搭建根据Spring生态系统的应用程序。
+`	`在过去的两三年的Spring生态系统中，最令人兴奋的是Spring Boot框架。或许从取名上能够得知这一框架设计初心：快速开启Spring运用。因此Spring 实质上，Boot应用程序是一个根据Spring框架的应用程序。这是Spring“协议书先于配置”理论的良好实践物质。可以帮助开发者迅速、更有效地搭建根据Spring生态系统的应用程序。
 
-Spring Boot有什么魔法？全自动配置、发展依靠、Actuator、命令行界面(CLI)
-是Spring Boot最主要的四个核心特点，在其中CLI是Spring
-Boot的能选特点尽管功能齐全，却也引入了一套非传统的开发模型，因此本系列文章只注重别的三个特点。如标题，文中是本系列的第一部分，将为您开启Spring
-Boot大门口，关键为您进一步分析启动过程及全自动配置完成基本原理。把握这一部分主要内容，了解一些Spring框架的基本知识，也会让你游刃有余。
+Spring Boot有什么魔法？全自动配置、发展依靠、Actuator、命令行界面(CLI) 是Spring Boot最主要的四个核心特点，在其中CLI是Spring Boot的能选特点尽管功能齐全，却也引入了一套非传统的开发模型，因此本系列文章只注重别的三个特点。如标题，文中是本系列的第一部分，将为您开启Spring Boot大门口，关键为您进一步分析启动过程及全自动配置完成基本原理。把握这一部分主要内容，了解一些Spring框架的基本知识，也会让你游刃有余。
 
-**2.4 B/S框架**
+2.4 B/S框架
 
 B/S架构是互联网行业区别C/S架构，用以叙述浏览器与服务器之间的架构方式。一般来说，挑选B/S架构的主要原因是维修方便。当软件开发时，能够在本地进行检测。一般综合开发工具都有各自的开发与一键部署。当地浏览器能够及时出效果。测试工程师有专业的网络服务器，仅需布署就可以。假如正中间有什么问题，能够整顿。应用软件更新，只需后台维护编码，顾客依然应用以前的浏览器开展访问，因此客户端十分方便。现在市面上大部分每一个电脑操作系统服务平台只要是有窗口模式，除开命令行操作页面对话框，窗口模式可以放置浏览器，因此一切带窗口模式的计算机操作系统自已的浏览器或其它生产商的浏览器，或挪动浏览器，都能够访问网络服务器。访问网络服务器占用客户端网络资源非常少，不易出差错。即便客户端有问题，也仅需重新装系统，随后组装浏览器就可以。在程序流程性能和用户体验层面，挑选B/S架构开发设计应用软件特别适合如今的社会的主力发展趋向。
 
+
 # 3 系统分析
-
 ## 3.1系统可行性分析
-
 需要使用大部分精力开发的新冠物资管理为了充分降低开发风险，特意在开发之前进行可行性分析这个验证系统开发是否可行的步骤。本文就会从技术角度，经济角度，还有用户使用的程序的运行角度进行综合阐述。
-
 ### 3.1.1 技术可行性分析
-
 开发程序选择的是面向对象的，功能强大的，简单易用的Java程序设计语言，数据库的开发工具使用到了MySQL数据库，由于自己之前接触过一些简单的程序开发方面的设计作品，所以对Myeclipse工具的使用比较熟练，对于数据库的操作技巧也有一定的积累。另外，程序开发需要在自己电脑上安装的软件并不多，在win7操作系统的大环境下，能够完全搭建好程序开发的操作环境，比如Myeclipse工具，MySQL数据库工具，游览器，以及处理程序图片的Photoshop工具等都能安装在自己的电脑上。总的说来，开发这个程序在技术上是可以实现的。
-
 ### 3.1.2 经济可行性分析
-
 开发出来的程序并不是朝着商业程序的方向进行设计开发的，它只是作为一个毕业设计项目进行开发，主要用于检验学生在学校所学知识的一个检验，也锻炼学生运用网络，图书等工具进行自学的能力。所以开发这个程序软件并不会涉及到经济上面的开销，在开发软件的选择上也不会额外付费安装软件，在开发软件的官网上面就可以下载需要的软件，并根据提示的安装步骤安装软件到自己的电脑上面。总的说来，开发这个程序在经济上也不存在经费支出。
-
 ### 3.1.3 运行可行性分析
-
 因为这个程序软件从开始开发到开发截止都是根据用户的需求进行定制，考虑到此程序软件是面向广大普通操作用户，鉴于他们的知识文化水平，特意开发出一个可操作性强的，能够很容易让使用用户上手的，具有可视化操作界面的一个程序软件。总的说来，这个程序站在用户运行程序的角度上分析，是不存在操作难的问题的。用户只要打开程序就可以免去专人培训进行程序功能操作。
 
 经过上面从技术的角度，从经济的角度，从程序运行的角度这三个角度分析现打算开发的程序，可以得出该程序软件是可以进行开发操作的。
-
 ## 3.2系统性能分析
-
 ### 3.2.1 系统安全性
-
 程序在使用中是不允许其他访问者随意窃取程序里面的隐秘信息，也不允许其他操作者越权操作其他管理用户操作的功能，要真正杜绝这些现象就必须在程序开发之前把程序的安全性给考虑进去。
 
 比如现在很多程序都会把用户注册的功能给考虑进去，让用户在注册页面功能区填写自己的个人信息，这些数据信息涵盖了用户本人的姓名，用户对程序登录设置的密码，用户经常使用的邮箱，用户的常用联系方式还有用户的所住地址等信息，这些信息都是设计到用户本人的隐私，那么这些信息在传输给程序后台时，是需要进行管理并保存至对应的数据库文件里面。要是有人恶意窃取程序的数据信息，也就会让那些注册了此程序软件的用户的个人隐秘信息都会遭到泄露。这些信息落入其他不法分子手里，他们极有可能根据用户的隐私信息去骚扰用户，并把这些信息用于各种商业用途谋取其他非法的利益。所以数据安全性是一个系统能不能使用的首要标准。
-
 ### 3.2.2 数据完整性
-
 数据完整性是确保数据信息是否具有可靠性，是否具有参考价值的一个重要因素，数据信息只描述一部分，或者必有的数据信息反而为空等现象都是代表着这个数据信息不完整，有数据缺陷，这是个很严肃的问题，因为这样的数据信息跟垃圾信息没什么两样。
 
 说到数据完整性，不得不提最常用的程序表单功能。这些表单主要就是提取广大用户的数据信息的，需要广大用户根据表单上的要求，填写自己的姓名信息，以及自己的联系方式信息，有些也会有额外的信息填写要求，有必须要填的选项，也有不需要必填的选项。假如广大用户为了保护自己的隐私，或者不想受到其他人的骚扰，不填写必填项等信息，广大用户在最后提交此表单的时候，往往都是提交不了的。
@@ -261,690 +90,362 @@ B/S架构是互联网行业区别C/S架构，用以叙述浏览器与服务器�
 数据完整性不仅仅限于登记的数据要完整，它也需要程序里面的所有数据信息之间存在关联，而且这种联系也是要求不能出差错的。
 
 由于数据表之间也会存在一定的联系，所以同一个数据也会出现在另一个表格里面，那么这两个表格记录的同一个数据应该是一样的。不能够是同样的数据信息在不同表中不一样。
-
 ### 3.2.3系统可扩展性
-
 一切事物都是一直在发展，程序员开发软件也需要带着发展的思维去进行软件开发操作，这样的话，开发出来的程序在应对管理所需时，也会相对应的进行程序升级与更新。不论是功能完善还是数据库升级都能在原来的基础上对原有程序进行迭代升级。让开发出来的程序能够走得越来越远。这也是广大用户对程序软件的使用要求。
-
 ## 3.3系统流程分析
-
 管理员假如要操作系统提供的功能，那么管理员就要在系统的登录界面，填写管理员登录的账号信息，填写相应的密码信息，管理员需要保证这两者能够验证身份的账号以及密码信息的正确性，这样管理员就可以通过登录界面进入系统后台操作界面。图3.1就是开发的程序软件新冠物资管理它的操作流程图。
 
-![](media/image1.wmf)
+![](/images/0400stringboot/0444springboot/blog.001.png)
 
 图3.1 系统操作流程图
-
 ### 3.3.1系统登录流程
-
 新冠物资管理的登录流程，针对的角色就是操作员的操作角色。在登录界面需要的必填信息就是账号信息，配上登录的密码信息就能登录新冠物资管理，需要注意的就是必填的账号信息和登录密码信息，都需要进行验证，系统会判断账号还有填写的密码信息的正确性，只有这两者信息都正确了，就能成功登录新冠物资管理了。系统登录流程图如下图。
 
-![](media/image2.wmf)
+![](/images/0400stringboot/0444springboot/blog.002.png)
 
 图3.2　系统登录流程图
-
 ### 3.3.2信息添加流程
-
 用户在添加信息的界面填写的任何数据信息也是需要验证的，系统会判断用户填写信息的格式还有数据信息是不是合法信息，如果用户填写的信息是合法内容，系统就会在数据库对应的数据表里面添加信息。添加信息流程如下图。
 
-![](media/image3.wmf)
+![](/images/0400stringboot/0444springboot/blog.003.png)
 
 图3.3 添加信息流程图
-
 ### 3.3.3信息删除流程
-
 对于那些已经失效的信息，需要用户及时进行删除，这样有利于腾出空间存放其他信息。删除信息也是先从数据库对应数据表里面删除数据，接着就是更新数据表的信息。这样删除的数据，在用户操作界面就查看不到了。信息删除流程如下图所示。
 
-![](media/image4.wmf)
+![](/images/0400stringboot/0444springboot/blog.004.png)
 
 图3.4 信息删除流程图
-
 ## 3.4系统功能分析
-
 新冠物资管理具有管理员角色，用户角色，这几个操作权限。
 
 新冠物资管理针对管理员设置的功能有：添加并管理各种类型信息，管理用户账户信息，管理物资信息，管理公告信息等内容。
 
 新冠物资管理针对用户设置的功能有：查看并修改个人信息，查看物资信息，查看公告信息等内容。
-
 # 4 系统设计
-
 ## 4.1系统概要设计
-
 新冠物资管理并没有使用C/S结构，而是基于网络浏览器的方式去访问服务器，进而获取需要的数据信息，这种依靠浏览器进行数据访问的模式就是现在用得比较广泛的适用于广域网并且没有网速限制要求的小程序结构，图4.1就是开发出来的程序工作原理图。
 
-![](media/image5.wmf)
+![](/images/0400stringboot/0444springboot/blog.005.png)
 
 图4.1 程序工作的原理图
-
 ## 4.2系统功能结构设计
-
 新冠物资管理针对管理员设置的功能有：添加并管理各种类型信息，管理用户账户信息，管理物资信息，管理公告信息等内容。
 
 新冠物资管理针对用户设置的功能有：查看并修改个人信息，查看物资信息，查看公告信息等内容。
-
 ## 4.3数据库设计
-
 ### 4.3.1数据库E-R图设计
-
 程序设计是离不开对应数据库的设计操作的，这样的做法就是减少数据对程序的依赖性，所以数据库的设计也是需要花费大量的日常时间来进行设计的，在设计中对程序开发需要存储的数据信息进行实体划分，先确认实体，然后设计实体的属性等操作，这种设计就是数据库设计里面不能少的必须有的E-R模型设计。为了降低程序设计的对应的数据库设计难度，开发人员也可以使用相应的工具来进行E-R模型设计，现在市面上设计E-R模型的工具有PowerDesigner建模工具，Navicat制作工具，还有微软的Visio绘图工具。为了简便起见，本程序在设计E-R模型的时候，就选用了微软的Visio这款功能强大，操作便利的绘图工具。
 
 （1）下图是物资留言实体和其具备的属性。
 
-![](media/image6.jpeg){width="3.75in" height="2.082638888888889in"}\
+![C:/Users/Administrator/Desktop/temp111\8.5\\_\_\_\_img\物资留言.jpg](/images/0400stringboot/0444springboot/blog.006.jpeg "C:/Users/Administrator/Desktop/temp111\8.5\\_\_\_\_img\物资留言.jpg")
 物资留言实体属性图
 
 （2）下图是用户实体和其具备的属性。
 
-![](media/image7.jpeg){width="5.554861111111111in"
-height="2.986111111111111in"}\
+![C:/Users/Administrator/Desktop/temp111\8.5\\_\_\_\_img\用户.jpg](/images/0400stringboot/0444springboot/blog.007.jpeg "C:/Users/Administrator/Desktop/temp111\8.5\\_\_\_\_img\用户.jpg")
 用户实体属性图
 
 （3）下图是员工实体和其具备的属性。
 
-![](media/image8.jpeg){width="5.554861111111111in"
-height="2.986111111111111in"}\
+![C:/Users/Administrator/Desktop/temp111\8.5\\_\_\_\_img\员工.jpg](/images/0400stringboot/0444springboot/blog.008.jpeg "C:/Users/Administrator/Desktop/temp111\8.5\\_\_\_\_img\员工.jpg")
 员工实体属性图
 
 （4）下图是疫情公告实体和其具备的属性。
 
-![](media/image9.jpeg){width="3.75in" height="2.082638888888889in"}\
+![C:/Users/Administrator/Desktop/temp111\8.5\\_\_\_\_img\疫情公告.jpg](/images/0400stringboot/0444springboot/blog.009.jpeg "C:/Users/Administrator/Desktop/temp111\8.5\\_\_\_\_img\疫情公告.jpg")
 疫情公告实体属性图
 
 （5）下图是留言反馈实体和其具备的属性。
 
-![](media/image10.jpeg){width="3.75in" height="2.082638888888889in"}\
+![C:/Users/Administrator/Desktop/temp111\8.5\\_\_\_\_img\留言反馈.jpg](/images/0400stringboot/0444springboot/blog.010.jpeg "C:/Users/Administrator/Desktop/temp111\8.5\\_\_\_\_img\留言反馈.jpg")
 留言反馈实体属性图
 
 （6）下图是物资捐赠实体和其具备的属性。
 
-![](media/image11.jpeg){width="5.554861111111111in"
-height="2.9854166666666666in"}\
+![C:/Users/Administrator/Desktop/temp111\8.5\\_\_\_\_img\物资捐赠.jpg](/images/0400stringboot/0444springboot/blog.011.jpeg "C:/Users/Administrator/Desktop/temp111\8.5\\_\_\_\_img\物资捐赠.jpg")
 物资捐赠实体属性图
 
 （7）下图是论坛实体和其具备的属性。
 
-![](media/image12.jpeg){width="5.554861111111111in"
-height="2.986111111111111in"}\
+![C:/Users/Administrator/Desktop/temp111\8.5\\_\_\_\_img\论坛.jpg](/images/0400stringboot/0444springboot/blog.012.jpeg "C:/Users/Administrator/Desktop/temp111\8.5\\_\_\_\_img\论坛.jpg")
 论坛实体属性图
 
 （8）下图是物资实体和其具备的属性。
 
-![](media/image13.jpeg){width="5.554861111111111in"
-height="2.986111111111111in"}\
+![C:/Users/Administrator/Desktop/temp111\8.5\\_\_\_\_img\物资.jpg](/images/0400stringboot/0444springboot/blog.013.jpeg "C:/Users/Administrator/Desktop/temp111\8.5\\_\_\_\_img\物资.jpg")
 物资实体属性图
 
 （9）下图是物资收藏实体和其具备的属性。
 
-![](media/image14.jpeg){width="3.75in" height="2.082638888888889in"}\
+![C:/Users/Administrator/Desktop/temp111\8.5\\_\_\_\_img\物资收藏.jpg](/images/0400stringboot/0444springboot/blog.014.jpeg "C:/Users/Administrator/Desktop/temp111\8.5\\_\_\_\_img\物资收藏.jpg")
 物资收藏实体属性图
 
 （10）下图是物资发放实体和其具备的属性。
 
-![](media/image15.jpeg){width="5.554861111111111in"
-height="2.9854166666666666in"}\
+![C:/Users/Administrator/Desktop/temp111\8.5\\_\_\_\_img\物资发放.jpg](/images/0400stringboot/0444springboot/blog.015.jpeg "C:/Users/Administrator/Desktop/temp111\8.5\\_\_\_\_img\物资发放.jpg")
 物资发放实体属性图
 
 （11）下图是物资入库实体和其具备的属性。
 
-![](media/image16.jpeg){width="5.555555555555555in"
-height="2.9854166666666666in"}\
+![C:/Users/Administrator/Desktop/temp111\8.5\\_\_\_\_img\物资入库.jpg](/images/0400stringboot/0444springboot/blog.016.jpeg "C:/Users/Administrator/Desktop/temp111\8.5\\_\_\_\_img\物资入库.jpg")
 物资入库实体属性图
 
 （12）下图是物资申请实体和其具备的属性。
 
-![](media/image17.jpeg){width="5.554861111111111in"
-height="2.9854166666666666in"}\
+![C:/Users/Administrator/Desktop/temp111\8.5\\_\_\_\_img\物资申请.jpg](/images/0400stringboot/0444springboot/blog.017.jpeg "C:/Users/Administrator/Desktop/temp111\8.5\\_\_\_\_img\物资申请.jpg")
 物资申请实体属性图
 
 （13）下图是疫情资讯实体和其具备的属性。
 
-![](media/image18.jpeg){width="3.75in" height="2.082638888888889in"}\
+![C:/Users/Administrator/Desktop/temp111\8.5\\_\_\_\_img\疫情资讯.jpg](/images/0400stringboot/0444springboot/blog.018.jpeg "C:/Users/Administrator/Desktop/temp111\8.5\\_\_\_\_img\疫情资讯.jpg")
 疫情资讯实体属性图
 
 ### 4.3.2 数据库表结构设计
-
 本课题数据库是一个关系数据库，因此二维表的结构设计都比较重要。终究，二维表格实体模型是关系数据库里的关系模型。在设计关系模型以前，还要了解一些常见的关系模型这个概念。充分了解了表构造设计最常见的定义后，我们应该应用以前绘制的E-R实体模型去完成表结构的设计，并且在库中建立数据分析表，并取名每一个数据分析表。下列设计结论以表格形式表明。
 
 表4.1字典表
 
-  ------ ---------------- -------------------- ------------------- --------
-   序号        列名             数据类型              说明          允许空
-
-    1           Id                Int                  id             否
-
-    2        dic_code            String               字段            是
-
-    3        dic_name            String              字段名           是
-
-    4       code_index          Integer               编码            是
-
-    5       index_name           String             编码名字          是
-
-    6        super_id           Integer             父字段id          是
-
-    7         beizhu             String               备注            是
-
-    8      create_time            Date              创建时间          是
-  ------ ---------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|dic\_code|String|字段|是|
+|3|dic\_name|String|字段名|是|
+|4|code\_index|Integer|编码|是|
+|5|index\_name|String|编码名字|是|
+|6|super\_id|Integer|父字段id|是|
+|7|beizhu|String|备注|是|
+|8|create\_time|Date|创建时间|是|
 表4.2论坛表
 
-  ------ ------------------- -------------------- ------------------- --------
-   序号         列名               数据类型              说明          允许空
-
-    1            Id                  Int                  id             否
-
-    2        forum_name             String             帖子标题          是
-
-    3         yonghu_id            Integer               用户            是
-
-    4        yuangong_id           Integer               员工            是
-
-    5         users_id             Integer              管理员           是
-
-    6       forum_content           String             发布内容          是
-
-    7         super_ids            Integer               父id            是
-
-    8        forum_types           Integer             帖子类型          是
-
-    9     forum_state_types        Integer             帖子状态          是
-
-    10       insert_time             Date              发帖时间          是
-
-    11       update_time             Date              修改时间          是
-
-    12       create_time             Date              创建时间          是
-  ------ ------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|forum\_name|String|帖子标题|是|
+|3|yonghu\_id|Integer|用户|是|
+|4|yuangong\_id|Integer|员工|是|
+|5|users\_id|Integer|管理员|是|
+|6|forum\_content|String|发布内容|是|
+|7|super\_ids|Integer|父id|是|
+|8|forum\_types|Integer|帖子类型|是|
+|9|forum\_state\_types|Integer|帖子状态|是|
+|10|insert\_time|Date|发帖时间|是|
+|11|update\_time|Date|修改时间|是|
+|12|create\_time|Date|创建时间|是|
 表4.3疫情公告表
 
-  ------ ----------------- -------------------- ------------------- --------
-   序号        列名              数据类型              说明          允许空
-
-    1           Id                 Int                  id             否
-
-    2      gonggao_name           String             公告名称          是
-
-    3      gonggao_photo          String             公告图片          是
-
-    4      gonggao_types         Integer             公告类型          是
-
-    5       insert_time            Date              发布时间          是
-
-    6     gonggao_content         String             公告详情          是
-
-    7       create_time            Date              创建时间          是
-  ------ ----------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|gonggao\_name|String|公告名称|是|
+|3|gonggao\_photo|String|公告图片|是|
+|4|gonggao\_types|Integer|公告类型|是|
+|5|insert\_time|Date|发布时间|是|
+|6|gonggao\_content|String|公告详情|是|
+|7|create\_time|Date|创建时间|是|
 表4.4留言反馈表
 
-  ------ ---------------- -------------------- ------------------- --------
-   序号        列名             数据类型              说明          允许空
-
-    1           Id                Int                  id             否
-
-    2       yonghu_id           Integer               用户            是
-
-    3      liuyan_name           String             留言标题          是
-
-    4      liuyan_text           String             留言内容          是
-
-    5      insert_time            Date              留言时间          是
-
-    6       reply_text           String             回复内容          是
-
-    7      update_time            Date              回复时间          是
-
-    8      create_time            Date              创建时间          是
-  ------ ---------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|yonghu\_id|Integer|用户|是|
+|3|liuyan\_name|String|留言标题|是|
+|4|liuyan\_text|String|留言内容|是|
+|5|insert\_time|Date|留言时间|是|
+|6|reply\_text|String|回复内容|是|
+|7|update\_time|Date|回复时间|是|
+|8|create\_time|Date|创建时间|是|
 表4.5疫情资讯表
 
-  ------ ---------------- -------------------- ------------------- --------
-   序号        列名             数据类型              说明          允许空
-
-    1           Id                Int                  id             否
-
-    2       news_name            String             资讯名称          是
-
-    3       news_photo           String             资讯图片          是
-
-    4       news_types          Integer             资讯类型          是
-
-    5      insert_time            Date              发布时间          是
-
-    6      news_content          String             资讯详情          是
-
-    7      create_time            Date              创建时间          是
-  ------ ---------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|news\_name|String|资讯名称|是|
+|3|news\_photo|String|资讯图片|是|
+|4|news\_types|Integer|资讯类型|是|
+|5|insert\_time|Date|发布时间|是|
+|6|news\_content|String|资讯详情|是|
+|7|create\_time|Date|创建时间|是|
 表4.6物资表
 
-  ------ ------------------- -------------------- ------------------- --------
-   序号         列名               数据类型              说明          允许空
-
-    1            Id                  Int                  id             否
-
-    2         wuzi_name             String             物资名称          是
-
-    3     wuzi_uuid_number          String             物资编号          是
-
-    4        wuzi_photo             String             物资照片          是
-
-    5        wuzi_cangku            String             所属仓库          是
-
-    6       wuzi_address            String             物资位置          是
-
-    7        wuzi_types            Integer             物资类型          是
-
-    8     wuzi_kucun_number        Integer             物资数量          是
-
-    9       wuzi_clicknum          Integer             物资热度          是
-
-    10      wuzi_content            String             物资介绍          是
-
-    11     shangxia_types          Integer             是否上架          是
-
-    12       wuzi_delete           Integer             逻辑删除          是
-
-    13       insert_time             Date              录入时间          是
-
-    14       create_time             Date              创建时间          是
-  ------ ------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|wuzi\_name|String|物资名称|是|
+|3|wuzi\_uuid\_number|String|物资编号|是|
+|4|wuzi\_photo|String|物资照片|是|
+|5|wuzi\_cangku|String|所属仓库|是|
+|6|wuzi\_address|String|物资位置|是|
+|7|wuzi\_types|Integer|物资类型|是|
+|8|wuzi\_kucun\_number|Integer|物资数量|是|
+|9|wuzi\_clicknum|Integer|物资热度|是|
+|10|wuzi\_content|String|物资介绍|是|
+|11|shangxia\_types|Integer|是否上架|是|
+|12|wuzi\_delete|Integer|逻辑删除|是|
+|13|insert\_time|Date|录入时间|是|
+|14|create\_time|Date|创建时间|是|
 表4.7物资收藏表
 
-  ------ ----------------------- -------------------- ------------------- --------
-   序号           列名                 数据类型              说明          允许空
-
-    1              Id                    Int                  id             否
-
-    2            wuzi_id               Integer               物资            是
-
-    3           yonghu_id              Integer               用户            是
-
-    4     wuzi_collection_types        Integer               类型            是
-
-    5          insert_time               Date              收藏时间          是
-
-    6          create_time               Date              创建时间          是
-  ------ ----------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|wuzi\_id|Integer|物资|是|
+|3|yonghu\_id|Integer|用户|是|
+|4|wuzi\_collection\_types|Integer|类型|是|
+|5|insert\_time|Date|收藏时间|是|
+|6|create\_time|Date|创建时间|是|
 表4.8物资发放表
 
-  ------ ---------------------------- -------------------- ------------------- --------
-   序号              列名                   数据类型              说明          允许空
-
-    1                 Id                      Int                  id             否
-
-    2            yuangong_id                Integer               员工            是
-
-    3              wuzi_id                  Integer               物资            是
-
-    4      wuzi_fafang_uuid_number           String           物资发放编号        是
-
-    5         wuzi_fafang_number            Integer             发放数量          是
-
-    6             ruku_time                   Date              发放时间          是
-
-    7        wuzi_fafang_address             String             发放位置          是
-
-    8        wuzi_fafang_content             String             发放缘由          是
-
-    9     wuzi_fafang_beizhu_content         String               备注            是
-
-    10           insert_time                  Date              录入时间          是
-
-    11           create_time                  Date              创建时间          是
-  ------ ---------------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|yuangong\_id|Integer|员工|是|
+|3|wuzi\_id|Integer|物资|是|
+|4|wuzi\_fafang\_uuid\_number|String|物资发放编号|是|
+|5|wuzi\_fafang\_number|Integer|发放数量|是|
+|6|ruku\_time|Date|发放时间|是|
+|7|wuzi\_fafang\_address|String|发放位置|是|
+|8|wuzi\_fafang\_content|String|发放缘由|是|
+|9|wuzi\_fafang\_beizhu\_content|String|备注|是|
+|10|insert\_time|Date|录入时间|是|
+|11|create\_time|Date|创建时间|是|
 表4.9物资捐赠表
 
-  ------ --------------------------- -------------------- ------------------- --------
-   序号             列名                   数据类型              说明          允许空
-
-    1                Id                      Int                  id             否
-
-    2     wuzi_juanzeng_uuid_number         String             捐赠编号          是
-
-    3              wuzi_id                 Integer               物资            是
-
-    4             yonghu_id                Integer               用户            是
-
-    5        wuzi_juanzeng_text             String             捐赠缘由          是
-
-    6       wuzi_juanzeng_number           Integer             捐赠数量          是
-
-    7            insert_time                 Date            物资捐赠时间        是
-
-    8     wuzi_juanzeng_yesno_types        Integer             捐赠状态          是
-
-    9     wuzi_juanzeng_yesno_text          String             捐赠回复          是
-
-    10    wuzi_juanzeng_shenhe_time          Date              回复时间          是
-
-    11           create_time                 Date              创建时间          是
-  ------ --------------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|wuzi\_juanzeng\_uuid\_number|String|捐赠编号|是|
+|3|wuzi\_id|Integer|物资|是|
+|4|yonghu\_id|Integer|用户|是|
+|5|wuzi\_juanzeng\_text|String|捐赠缘由|是|
+|6|wuzi\_juanzeng\_number|Integer|捐赠数量|是|
+|7|insert\_time|Date|物资捐赠时间|是|
+|8|wuzi\_juanzeng\_yesno\_types|Integer|捐赠状态|是|
+|9|wuzi\_juanzeng\_yesno\_text|String|捐赠回复|是|
+|10|wuzi\_juanzeng\_shenhe\_time|Date|回复时间|是|
+|11|create\_time|Date|创建时间|是|
 表4.10物资留言表
 
-  ------ ------------------ -------------------- ------------------- --------
-   序号         列名              数据类型              说明          允许空
-
-    1            Id                 Int                  id             否
-
-    2         wuzi_id             Integer               物资            是
-
-    3        yonghu_id            Integer               用户            是
-
-    4     wuzi_liuyan_text         String             留言内容          是
-
-    5       insert_time             Date              留言时间          是
-
-    6        reply_text            String             回复内容          是
-
-    7       update_time             Date              回复时间          是
-
-    8       create_time             Date              创建时间          是
-  ------ ------------------ -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|wuzi\_id|Integer|物资|是|
+|3|yonghu\_id|Integer|用户|是|
+|4|wuzi\_liuyan\_text|String|留言内容|是|
+|5|insert\_time|Date|留言时间|是|
+|6|reply\_text|String|回复内容|是|
+|7|update\_time|Date|回复时间|是|
+|8|create\_time|Date|创建时间|是|
 表4.11物资入库表
 
-  ------ ----------------------- -------------------- ------------------- --------
-   序号           列名                 数据类型              说明          允许空
-
-    1              Id                    Int                  id             否
-
-    2          yuangong_id             Integer               员工            是
-
-    3            wuzi_id               Integer               物资            是
-
-    4     wuzi_ruku_uuid_number         String           物资入库编号        是
-
-    5       wuzi_ruku_number           Integer             入库数量          是
-
-    6           ruku_time                Date              入库时间          是
-
-    7       wuzi_ruku_content           String             入库备注          是
-
-    8          insert_time               Date              录入时间          是
-
-    9          create_time               Date              创建时间          是
-  ------ ----------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|yuangong\_id|Integer|员工|是|
+|3|wuzi\_id|Integer|物资|是|
+|4|wuzi\_ruku\_uuid\_number|String|物资入库编号|是|
+|5|wuzi\_ruku\_number|Integer|入库数量|是|
+|6|ruku\_time|Date|入库时间|是|
+|7|wuzi\_ruku\_content|String|入库备注|是|
+|8|insert\_time|Date|录入时间|是|
+|9|create\_time|Date|创建时间|是|
 表4.12物资申请表
 
-  ------ ------------------------ -------------------- ------------------- --------
-   序号            列名                 数据类型              说明          允许空
-
-    1               Id                    Int                  id             否
-
-    2     wuzi_yuyue_uuid_number         String             申请编号          是
-
-    3            wuzi_id                Integer               物资            是
-
-    4           yonghu_id               Integer               用户            是
-
-    5        wuzi_yuyue_text             String             申请缘由          是
-
-    6       wuzi_yuyue_number           Integer             申请数量          是
-
-    7          insert_time                Date            物资申请时间        是
-
-    8     wuzi_yuyue_yesno_types        Integer             申请状态          是
-
-    9     wuzi_yuyue_yesno_text          String             申请回复          是
-
-    10    wuzi_yuyue_shenhe_time          Date              审核时间          是
-
-    11         create_time                Date              创建时间          是
-  ------ ------------------------ -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|wuzi\_yuyue\_uuid\_number|String|申请编号|是|
+|3|wuzi\_id|Integer|物资|是|
+|4|yonghu\_id|Integer|用户|是|
+|5|wuzi\_yuyue\_text|String|申请缘由|是|
+|6|wuzi\_yuyue\_number|Integer|申请数量|是|
+|7|insert\_time|Date|物资申请时间|是|
+|8|wuzi\_yuyue\_yesno\_types|Integer|申请状态|是|
+|9|wuzi\_yuyue\_yesno\_text|String|申请回复|是|
+|10|wuzi\_yuyue\_shenhe\_time|Date|审核时间|是|
+|11|create\_time|Date|创建时间|是|
 表4.13用户表
 
-  ------ -------------------- -------------------- ------------------- --------
-   序号          列名               数据类型              说明          允许空
-
-    1             Id                  Int                  id             否
-
-    2     yonghu_uuid_number         String             用户编号          是
-
-    3        yonghu_name             String             用户姓名          是
-
-    4        yonghu_phone            String            用户手机号         是
-
-    5      yonghu_id_number          String           用户身份证号        是
-
-    6        yonghu_photo            String             用户头像          是
-
-    7        yonghu_email            String             用户邮箱          是
-
-    8       jinyong_types           Integer             账户状态          是
-
-    9        create_time              Date              创建时间          是
-  ------ -------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|yonghu\_uuid\_number|String|用户编号|是|
+|3|yonghu\_name|String|用户姓名|是|
+|4|yonghu\_phone|String|用户手机号|是|
+|5|yonghu\_id\_number|String|用户身份证号|是|
+|6|yonghu\_photo|String|用户头像|是|
+|7|yonghu\_email|String|用户邮箱|是|
+|8|jinyong\_types|Integer|账户状态|是|
+|9|create\_time|Date|创建时间|是|
 表4.14员工表
 
-  ------ ---------------------- -------------------- ------------------- --------
-   序号           列名                数据类型              说明          允许空
-
-    1              Id                   Int                  id             否
-
-    2     yuangong_uuid_number         String               工号            是
-
-    3        yuangong_name             String             员工姓名          是
-
-    4        yuangong_phone            String            员工手机号         是
-
-    5      yuangong_id_number          String           员工身份证号        是
-
-    6        yuangong_photo            String             员工头像          是
-
-    7        yuangong_email            String             员工邮箱          是
-
-    8        jinyong_types            Integer             账户状态          是
-
-    9         create_time               Date              创建时间          是
-  ------ ---------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|yuangong\_uuid\_number|String|工号|是|
+|3|yuangong\_name|String|员工姓名|是|
+|4|yuangong\_phone|String|员工手机号|是|
+|5|yuangong\_id\_number|String|员工身份证号|是|
+|6|yuangong\_photo|String|员工头像|是|
+|7|yuangong\_email|String|员工邮箱|是|
+|8|jinyong\_types|Integer|账户状态|是|
+|9|create\_time|Date|创建时间|是|
 表4.15管理员表
 
-  ------ ---------------- -------------------- ------------------- --------
-   序号        列名             数据类型              说明          允许空
-
-    1           Id                Int                  id             否
-
-    2        username            String              用户名           是
-
-    3        password            String               密码            是
-
-    4          role              String               角色            是
-
-    5        addtime              Date              新增时间          是
-  ------ ---------------- -------------------- ------------------- --------
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|username|String|用户名|是|
+|3|password|String|密码|是|
+|4|role|String|角色|是|
+|5|addtime|Date|新增时间|是|
 
 # 5 系统实现
-
 ## 5.1管理员功能介绍
-
 ### 5.1.1管理员登录
-
 系统登录功能是程序必不可少的功能，在登录页面必填的数据有两项，一项就是账号，另一项数据就是密码，当管理员正确填写并提交这二者数据之后，管理员就可以进入系统后台功能操作区。下图就是管理员登录页面。
 
-![](media/image19.png){width="5.763888888888889in"
-height="3.2284722222222224in"}
+![](/images/0400stringboot/0444springboot/blog.019.png)
 
 图5.1 管理员登录页面
-
 ### 5.1.2 物资管理
-
 项目管理页面提供的功能操作有：查看物资，删除物资操作，新增物资操作，修改物资操作。下图就是物资管理页面。
 
-![](media/image20.png){width="5.763888888888889in"
-height="3.2284722222222224in"}
+![](/images/0400stringboot/0444springboot/blog.020.png)
 
-图5.2 物资管理页面
-
+图5.2  物资管理页面
 ### 5.1.3 公告信息管理
-
 公告信息管理页面提供的功能操作有：新增公告，修改公告，删除公告操作。下图就是公告信息管理页面。
 
-![](media/image21.png){width="5.763888888888889in"
-height="3.2284722222222224in"}
+![](/images/0400stringboot/0444springboot/blog.021.png)
 
 图5.3 公告信息管理页面
-
 ### 5.1.4公告类型管理
-
 公告类型管理页面显示所有公告类型，在此页面既可以让管理员添加新的公告信息类型，也能对已有的公告类型信息执行编辑更新，失效的公告类型信息也能让管理员快速删除。下图就是公告类型管理页面。
 
-![](media/image22.png){width="5.763888888888889in"
-height="3.2284722222222224in"}
+![](/images/0400stringboot/0444springboot/blog.022.png)
 
 图5.4 公告类型列表页面
 
-### 5.1.5 疫情资讯管理
 
+### 5.1.5 疫情资讯管理
 如图5.5显示的就是疫情资讯管理页面，此页面提供给管理员的功能有：新增疫情资讯,修改疫情资讯,删除疫情资讯。
 
-![](media/image23.png){width="5.763888888888889in"
-height="3.2284722222222224in"}
+![](/images/0400stringboot/0444springboot/blog.023.png)
 
 图5.5疫情资讯管理页面
-
 ### 5.1.6 疫情资讯类型管理
-
 如图5.6显示的就是疫情资讯类型管理页面，此页面提供给管理员的功能有：新增疫情资讯类型,修改疫情资讯类型,删除疫情资讯类型。
 
-![](media/image24.png){width="5.763888888888889in"
-height="3.2284722222222224in"}
+![](/images/0400stringboot/0444springboot/blog.024.png)
 
 图5.6 疫情资讯类型管理页面
 
-### **6.1软件测试**
 
-软件测试包含软件办公环境、软件开发需求和软件源代码具体内容。软件测试还包含五个要素：软件质量、技术性、职工、流程及互联网资源。软件测试总体目标包含测试覆盖率信息和测试高效化信息。
-
-控制模块测试：本一部分务必涉及到程序编码理论知识，由程序开发员工进行。当程序开发工作人员依据代码开发程序的程序模块时，控制模块级测试。一般来说，这类联接测试又被称为黑盒子测试。
-
-系统测试：当程序测试进入这个连接时，这就意味着程序测试已经完成了一半。这一部分测试还有另一个名字，称之为黑盒子测试，主要运用于测试系统软件是不是按期望运作。
-
-### **6.2测试环境**
-
-新冠物资管理系统测试所选择的测试网站是IDEA服务平台自然环境。测试时，用户必须开启MySQL数据库系统开展数据文件的额外操控，再打开IDEA，创建文件夹打开网页，将新冠物资管理系统程序导入到IDEA平台上，再将文档部署到Tomcat网络服务器中，最终操作流程。这时，用户能够电脑操作系统中的每一个作用。查询程序流程是否满足用户的需求。
-
-### **6.3测试测试用例** 
-
-用户登陆所需要的信息包含登陆名字以及相应的登陆密码。仅有录入数据信息恰当，才可以进行系统软件浏览解决。用户登陆测试全过程见表6.1所显示:
-
-表6.1 用户登录测试表
-
-  -------------- ---------------------------------- ------------------------ -------------- --------------
-  测试目的       操作流程                           测试用例                 预测结果       测试结果
-
-  用户登录       填写用户名密码，点击首页登录按钮   错误填写用户名还有密码   登录失败       提示错误信息
-
-                                                    正确填写用户名和密码     登录成功       登录成功
-  -------------- ---------------------------------- ------------------------ -------------- --------------
-
-表6.2添加课程信息测试表
-
-  -------------- ------------------------------------------------ ------------------ ------------------------ --------------------------
-  测试项目       操作流程                                         测试用例           预测结果                 测试结果
-
-  添加课程信息   管理员登陆后点击添加课程信息按钮，添加课程信息   课程名称为空       添加失败，弹出提示按钮   添加失败，提示请填写内容
-
-                                                                  合理填写名称课程   添加成功                 添加成功
-  -------------- ------------------------------------------------ ------------------ ------------------------ --------------------------
-
-### **6.4测试结果**
-
-经检测，从新冠物资管理系统作用的角度看，此系统的每一个作用在符合用户规定的情形下可以保持正常运转。从新冠物资管理系统特性的角度看，系统软件可以保持24钟头连续操作，应对用户的操作失误个人行为，提早设定不正确信息反馈。除此之外，系统软件界面风格考虑到了用户的读书习惯，能让用户在短期内得到所需要的具体内容。总而言之，此系统能够投入生产，协助用户解决问题，更好地发挥实用价值。
-
-# 结 论
-
-开发新冠物资管理是作为毕设作品进行设计的，这个毕设作品是我在校进行知识学习的一个毕业考核项目，也是检验我通过网络工具，图书工具等学习工具进行自学的能力水平，让我在根据程序开发的需求分析初步完成程序功能之外，还接触了程序的测试过程，了解程序测试的具体的过程，以及遇到问题怎么去寻找相应的解决办法等等，毕业作品的制作以及设计才是学校对我真正的考验。
-
-在程序软件没能进行开发之前，我去了学校的图书馆借了有关数据库操作的书籍，在查看了sqlserver和MySQL两种数据库的相关知识之后，我最后选择了我比较熟悉的MySQL数据库。在编程语言的抉择上，由于自己之前接触过Java程序的开发，所以为了让我尽快在短时间内完成程序制作，我确定用Java编程语言进行程序编程。另外我从百度上下载了很多的有关信息增加，信息删除等操作的源代码，并通过不断调试以及完成配套的数据库的设计，开始完成程序的各个部分的功能。每当我粗心大意，致使我深陷程序开发困扰不能自拔之时，值得庆幸的是，我就会得到老师，还有我的寝室同学的耐心指导。
-
-历经长达几个月的毕业作品制作，我凭借自己的知识技能，还有大家的指导帮助，能够在学校规定的时间段之内提交毕业作品。虽然已经算是完成了毕业作品，但是付出了这么多心血，还是想把这个作品做得更加完美一点。针对我的毕业作品新冠物资管理，我觉得还有很多方面需要完善，第一就是界面上需要细微调整，比如色彩搭配有点违背广众的审美，需要细微调整，还有系统里面的字体大小也需要调大一点，太小的字体看起来有些费眼。然后在程序的功能上因为自己的入门开发水平的影响，所以目前只能做到这个境界，这个系统相比其他类似系统来说功能很简单，逻辑结构设计得也比较合理。
-
-自己一个人完成程序的开发，我不仅亲自体验了程序的开发流程，体验到了程序开发的各种不易。这种体验也还加深了我对知识的尊重。学海无涯，知识不是大学短短四年就能学完的，在大学学到的知识在最终经历检验时，才会深深地明白自己的知识积累原来还很浅薄。所以今后不管身在何处，自己的学习心态一定要时刻体现出来，要深刻明白知识学到手里就是自己的。同时，自己也不必过多抱怨学到的知识没有用处，相信学到的知识总会有派上用处的那天。不要等到需要用时再去学习知识，那样就会导致自己错失很多本该属于自己的机遇。
-
-# 参考文献
-
-\[1\]张孝祥,徐明华.JAVA基础与案例开发详解\[M\].清华大学出版社,2012.
-
-\[2\]康牧.JSP动态网站开发实用教程\[M\].清华大学出版社,2011.
-
-\[3\]刘亚宾.精通Eclipse\--JAVA技术大系\[M\].电子工业出版社,2015.
-
-\[4\]张知青.基于关系数据库的查询方法及优化技术分析\[J\].煤炭技术,2012,31(05):218-220.
-
-\[5\]赵钢.JSP
-Servlet+EJB的Web模式应用研究\[J\].电子设计工程,2013,21(13):47-49
-
-\[6\]肖英.解决Servlet开发中的中文乱码问题\[J\].科技传播,2011,(1)11-25
-
-\[7\]卫红春.信息系统分析与设计\[M\].北京：清华大学出版社,2009.
-
-\[8\]于万波.网站开发与应用案例教程\[M\].清华大学出版社，2009.
-
-\[9\]黎连业,王华,李淑春.软件测试与测试技术\[M\].清华大学出版社，2009.
-
-\[10\]宋丽娜.基于JSP的Web开发中文乱码问题的研究与解决\[J\].电子技术,2013,42(11):5-7.
-
-\[11\]汪君宇.基于JSP的Web应用软件开发技术分析\[J\].科技创新与应用,2018(16):158-160.
-
-\[12\]王建国.数据库设计在网站开发中的应用\[J\].山东农业工程学院学报,2017,34(04):158-159+164.
-
-\[13\]曾志明.网站开发技术的比较研究\[J\].电脑知识与技术,2010,6(05):1075-1078.
-
-\[14\]朱钧.基于角色的jsp通用权限系统设计与实现\[D\].山东大学,2014.
-
-\[15\]陈志誉. Java工具及其调度方法研究\[D\].华南理工大学,2018.
-
-\[16\]熊培伶.网站界面优化\[J\].通讯世界,2018(08):84-85.
-
-\[17\]白胜,赵亚楠,拓昱晓,张颖姣,康奇,郭小燕.基于BS架构的网站平台的设计与实现\[J\].电脑知识与技术,2018,14(34):48-50+61.
-
-\[18\]Xin-hua YOU. Brief Discuss the Application of Object-oriented in
-Java Language Programming Course\[A\]. Advanced Science and Industry
-Research Center.Proceedings of 2018 3rd International Conference on
-Automation, Mechanical and Electrical Engineering (AMEE
-2018)\[C\].Advanced Science and Industry Research Center:Science and
-Engineering Research Center,2018:5.
-
-\[19\]Menglin Liu. Design and Research of Batch Query System Based on
-Java\[A\]. Research Institute of Management Science and Industrial
-Engineering.Proceedings of 2018 4th World Conference on Control,
-Electronics and Computer Engineering (WCCECE 2018)\[C\].Research
-Institute of Management Science and Industrial
-Engineering:计算机科学与电子技术国际学会(Computer Science and Electronic
-Technology International Society),2018:5.
-
-# 致 谢
-
-在这个毕业设计即将完成的最后的时刻，我很想对我的老师，还有我周边的朋友以及我的同班同学们表示我的谢意，谢谢你们在毕业设计的制作阶段对我提供的各种帮助，我的指导老师给我的毕业设计提供了许多种指导方案，包括论文大纲的安排，程序功能结构的设计，以及程序的亮点等部分都很有耐心的进行了及时地指导，让我的毕业设计能够达到学院验收的水平。另外还有陪伴我的同学们以及朋友们，我们在这几个月一起泡图书馆，一起讨论以及制作毕业设计，让我在进行毕设作品创作中一直很有动力。特别是在我进行程序文档的编写过程中的时候，有很多格式问题还有文档内容的问题，都是你们一一指出并纠正，让我少走了很多弯路。
-
-最后的时刻，我要感谢我的大学，感谢所有学校的领导还有老师们，正因为有你们，我才能够在大学这几年学到很多有用的知识，才能更好地成长起来！相信我在毕业之后步入社会，我也能把学校所学到的知识进行灵活运用，我也会注重在社会上进行学习！让自己步入一个更高的台阶！遇到更好的自己！
+# 系统
 
 
-### 0444springboot新冠物资管理--论文pf 项目图片
-![图片](/images/0444springbootimg_001.jpg)
-![图片](/images/0444springbootimg_003.jpg)
-![图片](/images/0444springbootimg_002.jpg)
-![图片](/images/0444springbootimg_012.jpg)
-![图片](/images/0444springbootimg_006.jpg)
-![图片](/images/0444springbootimg_007.jpg)
-![图片](/images/0444springbootimg_005.jpg)
-![图片](/images/0444springbootimg_011.jpg)
-![图片](/images/0444springbootimg_010.jpg)
-![图片](/images/0444springbootimg_004.jpg)
-![图片](/images/0444springbootimg_009.jpg)
-![图片](/images/0444springbootimg_008.jpg)
 
 
 

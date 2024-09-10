@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer" />
+        <meta name="robots" content="noodp" />
+        <title>0793springboot某银行OA系统 - chenqi blog</title><meta name="Description" content="Hugo theme - chenqi"><meta property="og:url" content="https://chenqi199.github.io/0793springboot%E6%9F%90%E9%93%B6%E8%A1%8Coa%E7%B3%BB%E7%BB%9F/">
+  <meta property="og:site_name" content="chenqi blog">
+  <meta property="og:title" content="0793springboot某银行OA系统">
+  <meta property="og:description" content="0793springboot某银行OA系统 项目清单 包安装运行 github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第1章 引言 1.1 研究动机与目的 信息技术的飞速">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-07-03T18:31:06+08:00">
+    <meta property="article:modified_time" content="2024-07-03T18:31:06+08:00">
+    <meta property="article:tag" content="Springboot">
+    <meta property="article:tag" content="Java">
+    <meta property="article:tag" content="Vue">
+    <meta property="article:tag" content="论文">
+    <meta property="article:tag" content="项目">
+    <meta property="og:image" content="https://chenqi199.github.io/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chenqi199.github.io/logo.png">
+  <meta name="twitter:title" content="0793springboot某银行OA系统">
+  <meta name="twitter:description" content="0793springboot某银行OA系统 项目清单 包安装运行 github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第1章 引言 1.1 研究动机与目的 信息技术的飞速">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chenqi199.github.io/0793springboot%E6%9F%90%E9%93%B6%E8%A1%8Coa%E7%B3%BB%E7%BB%9F/" /><link rel="prev" href="https://chenqi199.github.io/0788springboot%E5%A4%A7%E5%AD%A6%E7%94%9F%E7%A4%BE%E5%9B%A2%E6%B4%BB%E5%8A%A8%E5%B9%B3%E5%8F%B0/" /><link rel="next" href="https://chenqi199.github.io/0792springboot%E9%85%92%E5%BA%97%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "0793springboot某银行OA系统",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chenqi199.github.io\/0793springboot%E6%9F%90%E9%93%B6%E8%A1%8Coa%E7%B3%BB%E7%BB%9F\/"
+        },"image": ["https:\/\/chenqi199.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "springboot, java, vue, 论文, 项目","wordcount":  10407 ,
+        "url": "https:\/\/chenqi199.github.io\/0793springboot%E6%9F%90%E9%93%B6%E8%A1%8Coa%E7%B3%BB%E7%BB%9F\/","datePublished": "2024-07-03T18:31:06+08:00","dateModified": "2024-07-03T18:31:06+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/chenqi199.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "chenqi"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/0793springboot%E6%9F%90%E9%93%B6%E8%A1%8Coa%E7%B3%BB%E7%BB%9F/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/0793springboot%E6%9F%90%E9%93%B6%E8%A1%8Coa%E7%B3%BB%E7%BB%9F/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">0793springboot某银行OA系统</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="chenqi199" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>chenqi</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-07-03">2024-07-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 10407 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 21 分钟&nbsp;<span id="/0793springboot%E6%9F%90%E9%93%B6%E8%A1%8Coa%E7%B3%BB%E7%BB%9F/" class="leancloud_visitors" data-flag-title="0793springboot某银行OA系统">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">github 项目仓库</a> 开源仅有后端代码</a></li>
+        <li><a href="#点击播放视频-">点击播放视频 ▼</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#11-研究动机与目的">1.1 研究动机与目的</a></li>
+    <li><a href="#12-研究意义">1.2 研究意义</a></li>
+    <li><a href="#13-国内外研究现状">1.3 国内外研究现状</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#21-数据库技术">2.1 数据库技术</a></li>
+    <li><a href="#22-编程环境">2.2 编程环境</a></li>
+    <li><a href="#23-bs结构">2.3 B/S结构</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#31-需求分析概述">3.1 需求分析概述</a></li>
+    <li><a href="#32-系统需求分析">3.2 系统需求分析</a>
+      <ul>
+        <li><a href="#321非功能性需求">3.2.1非功能性需求</a></li>
+        <li><a href="#322功能需求">3.2.2功能需求</a></li>
+      </ul>
+    </li>
+    <li><a href="#33-可行性分析">3.3 可行性分析</a>
+      <ul>
+        <li><a href="#331操作可行性">3.3.1操作可行性</a></li>
+        <li><a href="#332经济可行性">3.3.2经济可行性</a></li>
+        <li><a href="#333技术可行性">3.3.3技术可行性</a></li>
+      </ul>
+    </li>
+    <li><a href="#34-系统开发环境需求">3.4 系统开发环境需求</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#41系统总体设计">4.1系统总体设计</a>
+      <ul>
+        <li><a href="#411界面层设计">4.1.1界面层设计</a></li>
+        <li><a href="#412数据层设计">4.1.2数据层设计</a></li>
+        <li><a href="#413业务逻辑层设计">4.1.3业务逻辑层设计</a></li>
+      </ul>
+    </li>
+    <li><a href="#42系统功能设计">4.2系统功能设计</a>
+      <ul>
+        <li><a href="#421系统登录设计">4.2.1系统登录设计</a></li>
+        <li><a href="#422员工管理设计">4.2.2员工管理设计</a></li>
+        <li><a href="#423日常工作管理设计">4.2.3日常工作管理设计</a></li>
+        <li><a href="#424员工任务管理设计">4.2.4员工任务管理设计</a></li>
+        <li><a href="#425申请管理设计">4.2.5申请管理设计</a></li>
+      </ul>
+    </li>
+    <li><a href="#43-数据库设计">4.3 数据库设计</a>
+      <ul>
+        <li><a href="#431er图设计">4.3.1ER图设计</a></li>
+        <li><a href="#432数据库表设计">4.3.2数据库表设计</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#51系统登录">5.1系统登录</a></li>
+    <li><a href="#52系统主界面实现">5.2系统主界面实现</a></li>
+    <li><a href="#54员工基本档案">5.4员工基本档案</a></li>
+    <li><a href="#55部门经理管理">5.5部门经理管理</a></li>
+    <li><a href="#56日常工作管理">5.6日常工作管理</a></li>
+    <li><a href="#57工作任务管理">5.7工作任务管理</a></li>
+    <li><a href="#58信息申请管理">5.8信息申请管理</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="0793springboot某银行oa系统httpsgithubcomgraduationproject-springboot0793springboot"><a href="https://github.com/GraduationProject-springboot/0793springboot" target="_blank" rel="noopener noreffer ">0793springboot某银行OA系统</a></h1>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        data-srcset="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 1.5x, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        title="picture" /></p>
+<h1 id="项目清单httpschenqi1990site-包安装运行"><a href="https://chenqi1990.site" target="_blank" rel="noopener noreffer ">项目清单</a> 包安装运行</h1>
+<h3 id="github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">github 项目仓库</a> 开源仅有后端代码</h3>
+<h3 id="点击播放视频-">点击播放视频 ▼</h3>
+<p><a href="" rel=""><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.sstatic.net/Vp2cE.png"
+        data-srcset="https://i.sstatic.net/Vp2cE.png, https://i.sstatic.net/Vp2cE.png 1.5x, https://i.sstatic.net/Vp2cE.png 2x"
+        data-sizes="auto"
+        alt="https://i.sstatic.net/Vp2cE.png"
+        title="Watch the video" /></a></p>
+<h1 id="第1章-引言">第1章 引言</h1>
+<h2 id="11-研究动机与目的">1.1 研究动机与目的</h2>
+<p>信息技术的飞速发展，极大节省了企业的管理成本，提高了企业管理效率。各种信息系统在企业管理应用过程中，为企业决策制定提供了可靠的支持。</p>
+<p>随着银行企业规模的扩大，管理也愈加庞大和困难，信息处理与使用也至关重要。同时，“物竞天择适者生存”的法则，市场竞争日益加剧，银行间的竞争已经从根本上演变成为人才竞争，使得银行对企业办公管理越发重视。</p>
+<p>在银行企业发展过程中， OA系统积累了大量的企业办公相关数据，而实际工作中人事管理对象是一个单位或若干单位中员工的基本信息，而这些信息是不断变化的，随着这些数据变化，企业对OA系统提出了新的需求。但是，目前企业内的数据管理系统大多是针对企业独立运用而建立起的，各种管理和计算功能都分布在企业内一个个独立的系统中，这些独立分布的数据管理可以方便企业的单独管理，但是，对于企业办公这种分散、人员众多、数据源复杂、统计困难，由于缺乏统一的规范，使得各每做一项工作，都需要花费很多精力和时间，给企业大规模集成使用带来了诸多不便。</p>
+<p>建立一套银行OA系统，可以利用先进的信息技术对企业内的企业办公进行管理，一方面通过无纸化办公降低企业成本；另一方面，通过与企业内部其他办公系统的信息共享，提高企业办公管理效率，加强信息化管理，提高本单位经济效益。</p>
+<h2 id="12-研究意义">1.2 研究意义</h2>
+<p>银行OA系统包括多个功能模块，各个功能都存在于一个系统内，数据库存储了系统所有数据。而各功能模块也可以自由拓展，为管理者预留足够的升级空间，提高维护效率；系统模块间也相对独立，有效控制用户访问权限，保障银行OA系统的数据安全。</p>
+<p>随着计算机技术的逐渐成熟，计算机研究成为了人们生活的重要组成部分，涉猎社会各个领域，在企业办公管理中也得到了广泛应用，很多企业都开始运用信息技术处理相关业务。传统管理方式相对落后，完成某项工作需要大量的人力及物力资源，但所产生结果的精细程度并不高，尤其是在信息处理方面，不能实现高效快捷的处理方式。</p>
+<p>银行OA系统可以使公司的人事干部从繁重琐碎的人事工作中解脱出来，把主要精力投入到日常工作中。同时，这也是企业的科学化、信息化、正规化管理与世界先进管理技术接轨的重要条件。</p>
+<p>银行OA系统通过数据库服务来进行对各部门之间需要进行的信息交互进行整合，从而使得服务的调用来替代各信息系统之间功能的调用，提高了企业信息系统的可扩展性和复用性，同时还可以有效的整合企业内部个信息系统的功能，为企业用户提供一个资源统一办公的平台，有效解决企业各信息系统之间的信息孤岛问题。</p>
+<h2 id="13-国内外研究现状">1.3 国内外研究现状</h2>
+<p>在高速发展的经济环境中，随着信息技术飞速发展和不断完善，人们的需求也产生了质的变化，普遍认识到企业的发挥在那不再是仅仅是产品竞争，已转向人才与服务的竞争，只有在此类竞争在取胜，才能提升企业的市场地位。激烈的市场竞争也给企业企业办公管理提出了更高的要求，使得银行OA系统在功能上也不断完善，功能的层次结构也日益清晰。</p>
+<p>以人才竞争为主的企业竞争也导致了银行OA系统中的企业办公数据逐渐成为了企业经营的数据中心，也要求银行OA系统在保证银行OA系统基本功能的同时，还需要更加具有战略性，不仅能够满足企业企业办公管理基本要求，还需具备一定的统计分析功能，使企业更加适应激烈的市场竞争。</p>
+<p>随着企业对企业办公管理的愈加重视，国外企业的银行OA系统得到了广泛的应用，由于其受到长期的重视，得到了长足的发展。相比于国内而言，国外大企业的企业办公管理已经趋于成熟，形成了各自较为完整的企业办公管理体系，诸如“世界500强”的跨国公司，像苹果公司、福特公司等。</p>
+<p>以美国为代表的发达国家最早开展企业办公管理领域的研究，应用也非常成熟，以此，企业办公管理的研究、开发和应用也是种位列世界前茅。尤其是在跨国企业中，一个完整的银行OA系统可以有效地管理来自世界各地的分支机构。通过系统的相关信息能够合理的分配岗位职权，保证每一个岗位和人员实现最佳匹配。</p>
+<p>在国内，目前并不缺乏企业管理、企业办公管理方面的思想和理念，但是这些思想和理念还难以体现在银行OA系统中。随着计算机技术，特别是网络技术的发展，国内银行OA系统的发展就必须要进行企业办公管理的核心技术规范化。国内许多企业的银行OA系统，都是企业委托软件公司进行自主研发的，由于缺乏全国性统一规范，导致这些系统实现技术的多样，很难将这些系统移植到其他平台中。同时，随着信息技术的不断完善发展，一些新的系统开发方法、技术和平台被引入到银行OA系统开发的过程中，员工自助服务、在线学习、企业办公外包等各种资源管理新概念和模式的不断涌现，目前国内的银行OA系统很难适应这种新理念的发展，从而使企业的银行OA系统变得更加复杂和庞大。</p>
+<p>通过对国内外研究资料了解到，目前各领域的银行OA系统还没得到统一的完善，适应性普遍较差，针对性不强，主要引进其他企业取得成功的一些管理系统，而没有根据这些成熟的系统重新的调配企业的业务流程以及框架。因此，想要找到适合自己企业发展的银行OA系统，必须要有一定的针对性，企业应该朝着这个方向借鉴和研发银行OA系统。</p>
+<h1 id="第2章-相关技术介绍">第2章 相关技术介绍</h1>
+<h2 id="21-数据库技术">2.1 数据库技术</h2>
+<p>MYSQL是开源的关系型数据库，使用SQL语言进行管理。因为MYSQL是开放的，所以任何人都可以根据需要进行更改。MYSQL的速度快，数据存储完全，得到众多用户的肯定。</p>
+<p>MYSQL数据库安装后，需要通过DOS窗口进行管理，通过输入命令控制。如链接远程数据库使用mysql -hlocalhost -uroot –pwelcome命令。这种方式管理起来比较繁琐，效率低下。而通过第三方的图形可视化管理工具可以直观的快捷的创建数据库，也可以新建数据库表，修改数据库表数据。本系统使用Navicat for MySQL进行管理，首先输入用户名和密码链接数据库，然后创建数据库和数据库表。连接名是连接的名称，主机名和IP地址输入对应的信息，如果本机，就输入localhost，默认端口为3306，用户名默认root，密码为安装设置的。链接数据库后，就可以对数据库进行图形化管理。</p>
+<h2 id="22-编程环境">2.2 编程环境</h2>
+<p>本系统开发工具选择MyEclipse，是企业级的开发平台，通过对Eclipse的扩展，完善成为功能齐全的编译工具。MyEclipse完成JAVA代码编写后，可以发布代码，部署环境。程序员在MyEclipse的可视化开发环境中，对代码进行调试，提高开发效率。MyEclipse功能强大，对各种源码提供支持，可以编译Servlet、SSH、SSM、EJB3、JDBC等工具。</p>
+<h2 id="23-bs结构">2.3 B/S结构</h2>
+<p>管理系统开发模式一般包括两种，B/S和C/S模式。其中S均为服务器，B为浏览器，而C为客户端。B/S模式是浏览器访问服务器的模式，通常企业网站，购物网站都是这种模式。而C/S模式是通过客户端访问服务器，客户端需要安装对应的软件后才能启动，如PC端的腾讯聊天软件，杀毒软件等。</p>
+<p>而在web开发中，一般指的是B/S结构，客户端只需要安装浏览器就可以访问服务器上的资源，极大的提高了维护成本，开发者只需要部署服务器和维护数据库即可。对于B/S架构，大部分的业务逻辑都在服务器端进行处理。所以，B/S结构的优势明显，B/S结构不局限于局域网内，可以在所有的网络中运行，交互性高。B/S结构的升级不涉及到客户端，只需要管理服务器即可。B/S结构的不足地方是数据安全性较差，客户端浏览器的版本不同，也可能造成浏览效果存在些许差异。</p>
+<h1 id="第3章-需求分析">第3章 需求分析</h1>
+<h2 id="31-需求分析概述">3.1 需求分析概述</h2>
+<p>系统需求分析包括需求的收集和系统需求的管理。首先需要走访客户，实地调查客户，完成需求的收集和分析，并通过文档的形式整理需求。系统需求完成获取、分析和指定。</p>
+<p>通过对银行OA系统的分析了解，整理银行OA系统的需求。银行OA系统是企业管理的一部分，调查企业的工作流程，分析企业办公管理者的业务范围，指定银行OA系统的开发范围。银行OA系统主要表现在几个地方。</p>
+<p>工作的科学管理。通过员工记录任务信息，保存在公司服务器中，可以随时随地的查看。</p>
+<p>信息申请，包括出勤、出差、请假、报销、会议申请进行审批。</p>
+<p>报表分析，根据企业的要求，将系统中必要的信息制作成报表，每月进行汇总，整理报告内容，以供相关部门领导进行企业事务决策。</p>
+<h2 id="32-系统需求分析">3.2 系统需求分析</h2>
+<h3 id="321非功能性需求">3.2.1非功能性需求</h3>
+<p>系统的安全性需求中，开发系统，不但要满足系统功能，也要保证系统可以安全，可靠的数据基础。本系统采用的是b/s模式，在数据安全上更应该严格控制。除了在系统结构上保障数据安全外，在物理物理中，也要进行处理。包括将电缆进行隐蔽，屏蔽外散信号。远离强辐射源，保证数据传输正确。定期检查线路，保护端口。在系统数据服务上，设置身份认证，访问控制，使用代理服务器，使用防火墙等。</p>
+<p>信息共享的需求，在管理系统中，不但要对本系统内部的数据进行共享，也要为其它系统提供数据支持的预留接口和访问其它系统的支持，充分考虑相关系统的数据共享问题。</p>
+<p>性能需求中，是在时间、空间上的要求。时间方面，要保证系统24小时持续工作，并支持多人同时访问服务器的负载，且页面响应时间不慢于1000ms。空间上，系统初期的数据虽然较小，但也要保证数据安全和将来的数据升级需求。</p>
+<h3 id="322功能需求">3.2.2功能需求</h3>
+<p>银行OA系统是企业发展必备系统，可以为企业发展方向做正确的预测，也可以为企业内部提供高效的企业办公管理服务。银行OA系统设计的用户包括三类，管理员、经理和员工。</p>
+<p>其中管理员是系统用户，为系统最高权限的用户，进行系统信息的录入和管理。在银行OA系统启用时，管理系统的初始化数据，特别是系统用户，设置好各角色及其账号。管理系统数据，对银行OA系统的初始信息进行维护补充，并及时审核各类数据。</p>
+<p>企业部门经理拥有一般员工的所有权限，除此之外，还可以管理企业办公信息和统计查询功能。其中办公管理包括出勤、出差、请假、报销、会议申请管理。</p>
+<p>员工用户包括日常工作管理：添加日常工作信息，管理日程信息，记录任务和会议时间等。查询历史记录的信息，对错误的信息进行修改。对出勤、出差、请假、报销、会议进行申请，等待管理员审批，审批通过后，查看审批状态。记录个人工作事项。</p>
+<p>其中管理员用例如3.1所示，经理用例图如3.2所示，员工用例图如3.3所示：</p>
+<p>管理员</p>
+<p>人事管理</p>
+<p>公共信息管理</p>
+<p>个人管理</p>
+<p>工作日常管理</p>
+<p>审批管理</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0793springboot/blog.001.png"
+        data-srcset="/images/0700stringboot/0793springboot/blog.001.png, /images/0700stringboot/0793springboot/blog.001.png 1.5x, /images/0700stringboot/0793springboot/blog.001.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0793springboot/blog.001.png"
+        title="/images/0700stringboot/0793springboot/blog.001.png" /></p>
+<p>图3.1 管理员用例图</p>
+<p>其中经理用例图如3.2所示：</p>
+<p>经理</p>
+<p>个人中心</p>
+<p>出勤出差管理</p>
+<p>请假报销管理</p>
+<p>会议申请</p>
+<p>工作任务</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0793springboot/blog.002.png"
+        data-srcset="/images/0700stringboot/0793springboot/blog.002.png, /images/0700stringboot/0793springboot/blog.002.png 1.5x, /images/0700stringboot/0793springboot/blog.002.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0793springboot/blog.002.png"
+        title="/images/0700stringboot/0793springboot/blog.002.png" /></p>
+<p>图3.2 经理用例图</p>
+<p>其中员工用例图如3.2所示：</p>
+<p>员工</p>
+<p>个人中心</p>
+<p>工作日常</p>
+<p>工作任务</p>
+<p>会议时间</p>
+<p>用户登录</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0793springboot/blog.003.png"
+        data-srcset="/images/0700stringboot/0793springboot/blog.003.png, /images/0700stringboot/0793springboot/blog.003.png 1.5x, /images/0700stringboot/0793springboot/blog.003.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0793springboot/blog.003.png"
+        title="/images/0700stringboot/0793springboot/blog.003.png" /></p>
+<p>图3.2 员工用例图</p>
+<p>根据用例图得出以下部分用例规约：</p>
+<p><code>	</code>表3.1 管理员登录用例规约</p>
+<table>
+<thead>
+<tr>
+<th>规约NO：2021001</th>
+<th>用例名称： 账号登录</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>基本流</td>
+<td><p>1. 运行银行OA系统。</p><p>2. 在用户名和密码栏中，输入对应的账号和密码。如果不输入或者输入不合要求的字符串，提示错误信息。</p><p>3. 确定登录银行OA系统。</p><p>4. 查询银行OA系统的用户数据库信息，具有权限的用户验证成功，否则无法通过。</p><p>5. 注销操作，退出银行OA系统。</p><p></p></td>
+<td></td>
+</tr>
+<tr>
+<td>备选流</td>
+<td><p>a1. 连续多次失败，限制用户操作。</p><p>a2. 数据库链接失败，提示链接异常。</p><p>a3. 退出银行OA系统。</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>员工信息管理用例规约如表3.2所示。</p>
+<p><code>	</code>表3.2 员工管理用例规约</p>
+<table>
+<thead>
+<tr>
+<th>规约NO：2021002</th>
+<th>用例名称： 员工管理</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>基本流</td>
+<td><p>1、选择创建员工。在员工创建的空白页面中，输入员工的基本信息。需要根据系统提示的要求，输入符合要求的信息，否则不能进行保存。系统验证员工信息，并把员工信息保存到员工数据库表中。</p><p>2.选择修改员工，在员工创建的空白页面中，系统加载员工信息，输入需要修改的员工信息。系统验证员工信息，根据需要修改的员工编号，更新员工数据。</p><p>3. 选择删除员工，系统验证要删除的员工信息，如果不存在约束，执行删除操作，并更新数据库记录。 </p><p>4. 员工查询，初始状态中，默认查询所有的员工信息，并创建到员工列表页面。如果传入查询条件，则根据条件进行查询，更新列表。</p></td>
+<td></td>
+</tr>
+<tr>
+<td>备选流</td>
+<td><p>a1. 添加员工的时候，如果存在该员工，提示用户更换员工。</p><p>a2. 删除员工，遇到约束条件，提示需要删除对应的记录后，执行该操作。</p><p>a3. 数据库连接等异常出现时，返回主页。</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>工作任务信息管理用例规约如表3.3所示。</p>
+<p><code>	</code>表3.3 工作任务用例规约</p>
+<table>
+<thead>
+<tr>
+<th>规约NO：2021003</th>
+<th>用例名称： 工作任务管理</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>基本流</td>
+<td><p>1、选择创建工作任务。在工作任务创建的空白页面中，输入工作任务的基本信息。需要根据系统提示的要求，输入符合要求的信息，否则不能进行保存。系统验证工作任务信息，并把工作任务信息保存到工作任务数据库表中。</p><p>2.选择修改工作任务，在工作任务创建的空白页面中，系统加载工作任务信息，输入需要修改的工作任务信息。系统验证工作任务信息，根据需要修改的工作任务编号，更新工作任务数据。</p><p>3. 选择删除工作任务，系统验证要删除的工作任务信息，如果不存在约束，执行删除操作，并更新数据库记录。 </p><p>4. 工作任务查询，初始状态中，默认查询所有的工作任务信息，并创建到工作任务列表页面。如果传入查询条件，则根据条件进行查询，更新列表。</p></td>
+<td></td>
+</tr>
+<tr>
+<td>备选流</td>
+<td><p>a1. 添加工作任务的时候，如果存在该工作任务，提示用户更换工作任务。</p><p>a2. 删除工作任务，遇到约束条件，提示需要删除对应的记录后，执行该操作。</p><p>a3. 数据库连接等异常出现时，返回主页。</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="33-可行性分析">3.3 可行性分析</h2>
+<h3 id="331操作可行性">3.3.1操作可行性</h3>
+<p>本银行OA系统使用web开发模式，系统操作流程使用市面上常见的软件布局，用户通过点击菜单操作后，系统自动反馈结果。另外，系统通过不同用户的权限进行控制，用户登录后，展现了可以操作的功能模块，不存在误操作的风险。因此，只要具有一般经验的用户就可以使用，在操作上具有可行性。</p>
+<h3 id="332经济可行性">3.3.2经济可行性</h3>
+<p>开发银行OA系统需要对经济可行性进行调研，首先说明的是系统投入情况。建设银行OA系统系统成本主要在服务器硬件和软件开发费用，大体需要10万内。而银行OA系统投入使用后，可以降低手工记录的错误；提高员工的工作积极性；也可以降低人工劳动，节约用人成本。总体来说，降低的用人成本已经高于开发系统的费用，对企业来说，无论从眼前还是企业可持续发来说，都具有很大优势。</p>
+<h3 id="333技术可行性">3.3.3技术可行性</h3>
+<p>银行OA系统选择的技术都是目前成熟的语言和数据库，并使用SpringBoot架构开发的web系统，对于初学者都可以完成。市场上也有许多JAVA技术开发的成功案例，证明开发语言具有可行性。而mysql数据库作为关系型数据库比较经典的数据库，更是占据很大比例，所以，开发本系统，在选择的技术上，具有可行性。</p>
+<h2 id="34-系统开发环境需求">3.4 系统开发环境需求</h2>
+<p>开发银行OA系统的环境包括两个方面，一个是硬件，一个是软件。银行OA系统的服务器软件要求操作系统最好使用Win7或者Win10，版本比较稳定。开发工具选择idea，服务器使用tomcat8.0，数据库使用mysql5.7，浏览器使用IE11。</p>
+<p>银行OA系统的服务器硬件要求也不高，CPU使用英特尔I5或者以上，显卡无要求，内存4G以上，储存10G以上。</p>
+<h1 id="第4章-系统设计">第4章 系统设计</h1>
+<h2 id="41系统总体设计">4.1系统总体设计</h2>
+<p>根据银行OA系统的需求分析，对系统进行设计，首先进行系统的架构设计。本银行OA系统使用SpringBoot架构进行开发，主要包括界面层、数据库层、业务逻辑层。</p>
+<h3 id="411界面层设计">4.1.1界面层设计</h3>
+<p>系统界面层是与用户交互的界面，界面层反映出系统的功能。通过制定规则，可以将界面层和逻辑层分离，单独进行开发。界面层要求简单大方，功能整洁，便于操作。本银行OA系统通过H5技术进行布局，使用java标签获取业务逻辑层的数据进行显示。收集数据是使用form表单进行控制，数据验证使用jquery技术。所有的界面层设计规范合理，各种图片，界面，js和css样式文件分别管理。</p>
+<h3 id="412数据层设计">4.1.2数据层设计</h3>
+<p>数据层通过实体表现，一个数据库表对应一个实体类，一个字段对应一个属性。字段类型对应属性类型，但是实体属性包括但是不限于字段个数。其中视图也对应实体。其中属性名称一般采用大写的格式。</p>
+<p>其中管理数据库链接操作的类单独出来，数据库连接串放置配置文件中，方便管理，本文使用mysql数据库，对应的是mysql驱动包。数据库操作类管理数据库访问接口、对数据库进行单表的增删改查操作。</p>
+<h3 id="413业务逻辑层设计">4.1.3业务逻辑层设计</h3>
+<p>业务逻辑层是系统核心层次，对数据处理进行控制，接收到界面层请求后，对具体的业务进行管理，把数据通过数据库层进行操作后返回给界面。业务逻辑层先完成系统通用的逻辑操作，如用户注册、用户登录、用户权限判断、数据库操作等。然后分析系统业务规则，对系统核心业务进行编写。</p>
+<h2 id="42系统功能设计">4.2系统功能设计</h2>
+<p>完成系统总体设计后，对银行OA系统进行功能设计。功能是建立在需求分析基础之上的。其中系统逻辑和功能模块图如4.1所示。</p>
+<p><code>            </code><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="blog.005.png"
+        data-srcset="blog.005.png, blog.005.png 1.5x, blog.005.png 2x"
+        data-sizes="auto"
+        alt="blog.005.png"
+        title="blog.005.png" /></p>
+<p>数据层</p>
+<p>逻辑处理层</p>
+<p>信息查询、</p>
+<p>统计预处理</p>
+<p>数</p>
+<p>信息处理</p>
+<p>系统模型管理</p>
+<p>用户界面层</p>
+<p>个人管理</p>
+<p>人事管理</p>
+<p>申请管理</p>
+<p>审批管理</p>
+<p>信息查询</p>
+<p>系统管理</p>
+<p>基于SpringBoot的某银行OA系统</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0793springboot/blog.004.png"
+        data-srcset="/images/0700stringboot/0793springboot/blog.004.png, /images/0700stringboot/0793springboot/blog.004.png 1.5x, /images/0700stringboot/0793springboot/blog.004.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0793springboot/blog.004.png"
+        title="/images/0700stringboot/0793springboot/blog.004.png" /></p>
+<p>图4.1系统逻辑和功能模块图</p>
+<h3 id="421系统登录设计">4.2.1系统登录设计</h3>
+<p>在进行银行OA系统管理前，需要身份认证，确定用户权限。那么用户登录就是系统第一个安全保障。不论哪一种系统用户都需要进行登录，使用系统提供的用户名和密码进行登录。然后系统到数据库用户表进行数据检索，如果符合信息就可以进入主页，否则限制登录。</p>
+<h3 id="422员工管理设计">4.2.2员工管理设计</h3>
+<p>员工管理包括员工基本信息管理和员工身份管理。管理员录入员工，把新员工信息导入到数据库中。如果使用本系统前，存在其它系统包含员工信息，可以设置相关接口进行数据库导入。对离职的员工进行数据定期删除。</p>
+<p>员工身份管理，一个员工可以是普通员工，也可以设置为经理，设置为经理后，其用户权限将不同。</p>
+<p>员工的账号和密码信息是根据用户信息一起保存到用户信息表中，管理员通过邮件等方式告知员工账号后，员工可以自行定期修改个人的账号信息和密码。</p>
+<h3 id="423日常工作管理设计">4.2.3日常工作管理设计</h3>
+<p>日常工作管理包括记录日常工作内容，个人的工作事项只能当前登录的用户查看，无权查看其它员工的工作内容。对个人工作日常内容进行修改或者删除操作。</p>
+<h3 id="424员工任务管理设计">4.2.4员工任务管理设计</h3>
+<p>银行存在许多任务信息，管理员第一时间登录系统，发布最新的任务，然后发放给员工和经理用户。</p>
+<p>当任务信息需要更正时，管理员对任务进行修改，也可以删除过期的任务信息。</p>
+<h3 id="425申请管理设计">4.2.5申请管理设计</h3>
+<p>员工用户登录后，发布申请信息，包括出勤、出差、请假、报销、会议进行申请，等待管理员审批，审批通过后，查看审批状态。</p>
+<h2 id="43-数据库设计">4.3 数据库设计</h2>
+<h3 id="431er图设计">4.3.1ER图设计</h3>
+<p>银行OA系统的整体E-R图如下所示。</p>
+<p>管理员</p>
+<p>申请信息</p>
+<p>员工</p>
+<p>工作</p>
+<p>权限</p>
+<p>类别</p>
+<p>管理</p>
+<p>记录</p>
+<p>管理</p>
+<p>对应</p>
+<p>审核</p>
+<p>1</p>
+<p>1</p>
+<p>n</p>
+<p>1</p>
+<p>n</p>
+<p>m</p>
+<p>m</p>
+<p>1</p>
+<p>1</p>
+<p>n</p>
+<p>姓名</p>
+<p>电话</p>
+<p>权限</p>
+<p>密码</p>
+<p>部门</p>
+<p>名称</p>
+<p>内容</p>
+<p>编号</p>
+<p>编号</p>
+<p>名称</p>
+<p>内容</p>
+<p>编号</p>
+<p>密码名</p>
+<p>登录名</p>
+<p>名称</p>
+<p>员工</p>
+<p>编号</p>
+<p>日期</p>
+<p>编号</p>
+<p>级别</p>
+<p>员工</p>
+<p>日期</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0793springboot/blog.006.png"
+        data-srcset="/images/0700stringboot/0793springboot/blog.006.png, /images/0700stringboot/0793springboot/blog.006.png 1.5x, /images/0700stringboot/0793springboot/blog.006.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0793springboot/blog.006.png"
+        title="/images/0700stringboot/0793springboot/blog.006.png" /></p>
+<p>图4.2 系统整体E-R图</p>
+<h3 id="432数据库表设计">4.3.2数据库表设计</h3>
+<p>数据库设计是管理系统必不可少的步骤，所有的数据都可以组成一个数据库存储起来。数据的关系组成了表与表之间的关系。数据库的设计关系到银行OA系统的成败，良好的设计，可以提升系统的性能。</p>
+<p>其中，本系统表详细设计如下。</p>
+<p>(1)部门表存储银行OA系统的部门信息。数据表内容见4.1所示。</p>
+<p>表4.1部门表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名</th>
+<th style="text-align:center">type</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">空值</th>
+<th>主外键</th>
+<th>数据名称</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">depid</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">不为空</td>
+<td>主键</td>
+<td>主键，默认值1，递增1</td>
+</tr>
+<tr>
+<td style="text-align:center">depname</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">不为空</td>
+<td></td>
+<td>具体的部门名称</td>
+</tr>
+<tr>
+<td style="text-align:center">depp_id</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">不为空</td>
+<td>外键</td>
+<td>父部门的编号</td>
+</tr>
+</tbody>
+</table>
+<p>(2)员工信息表存储银行OA系统的员工信息。数据表内容见4.2所示。</p>
+<p>表4.2员工信息表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名</th>
+<th style="text-align:center">type</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">空值</th>
+<th style="text-align:center">主外键</th>
+<th style="text-align:center">数据名称</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">userIdrs</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">不为空</td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">主键，默认值1，递增1</td>
+</tr>
+<tr>
+<td style="text-align:center">userorg_idrs</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">不为空</td>
+<td style="text-align:center">外键</td>
+<td style="text-align:center">部门外键</td>
+</tr>
+<tr>
+<td style="text-align:center">userghao</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">不为空</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">企业的员工工号，唯一</td>
+</tr>
+<tr>
+<td style="text-align:center">usernamers</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">不为空</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">姓名</td>
+</tr>
+<tr>
+<td style="text-align:center">usersexrs</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">性别，男或者女</td>
+</tr>
+<tr>
+<td style="text-align:center">useragers</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">不为空</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">年龄。20-70之间</td>
+</tr>
+<tr>
+<td style="text-align:center">userloginpw</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">不为空</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">密码，长度小于10</td>
+</tr>
+</tbody>
+</table>
+<p>(3)会议时间信息表存储银行OA系统的会议时间信息。数据表内容见图4.3所示。</p>
+<p>表4.3会议时间信息表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名</th>
+<th style="text-align:center">type</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">空值</th>
+<th style="text-align:center">主外键</th>
+<th style="text-align:center">数据名称</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">wdid</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">不为空</td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">主键，默认值1，递增1</td>
+</tr>
+<tr>
+<td style="text-align:center">Riqi</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">不为空</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">日期</td>
+</tr>
+<tr>
+<td style="text-align:center">User</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">不为空</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">用户</td>
+</tr>
+<tr>
+<td style="text-align:center">Con</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">400</td>
+<td style="text-align:center">不为空</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">内容</td>
+</tr>
+<tr>
+<td style="text-align:center">Title</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">40</td>
+<td style="text-align:center">不为空</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">会议时间</td>
+</tr>
+</tbody>
+</table>
+<p>(4)工作记录信息表存储银行OA系统的工作记录信息。数据表内容见4.4所示。</p>
+<p>表4.4工作日常信息表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名</th>
+<th style="text-align:center">type</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">空值</th>
+<th style="text-align:center">主外键</th>
+<th style="text-align:center">数据名称</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">不为空</td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">主键，默认值1，递增1</td>
+</tr>
+<tr>
+<td style="text-align:center">Title</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">不为空</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">标题</td>
+</tr>
+<tr>
+<td style="text-align:center">Riqi</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">不为空</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">日期</td>
+</tr>
+<tr>
+<td style="text-align:center">User</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">不为空</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">用户</td>
+</tr>
+<tr>
+<td style="text-align:center">Con</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">不为空</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">内容</td>
+</tr>
+</tbody>
+</table>
+<p>(5)类别信息表存储银行OA系统的类别信息。数据表内容见表4.5所示。</p>
+<p>表4.5类别信息表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名</th>
+<th style="text-align:center">type</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">空值</th>
+<th style="text-align:center">主外键</th>
+<th style="text-align:center">数据名称</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">不为空</td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">主键，默认值1，递增1</td>
+</tr>
+<tr>
+<td style="text-align:center">Title</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">不为空</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">类别</td>
+</tr>
+</tbody>
+</table>
+<p>(6)申请信息表存储银行OA系统的申请信息。数据表内容见表4.6所示。</p>
+<p>表4.6申请信息表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名</th>
+<th style="text-align:center">type</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">空值</th>
+<th style="text-align:center">主外键</th>
+<th style="text-align:center">数据名称</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">idrs</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">不为空</td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">主键，默认值1，递增1</td>
+</tr>
+<tr>
+<td style="text-align:center">Unameid</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">不为空</td>
+<td style="text-align:center">外键</td>
+<td style="text-align:center">员工外键</td>
+</tr>
+<tr>
+<td style="text-align:center">name</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">不为空</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">申请标题</td>
+</tr>
+<tr>
+<td style="text-align:center">Con</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">不为空</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">申请内容</td>
+</tr>
+<tr>
+<td style="text-align:center">Riqi</td>
+<td style="text-align:center">Datatime</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">不为空</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">申请日期</td>
+</tr>
+<tr>
+<td style="text-align:center">Zt</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">不为空</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">申请状态</td>
+</tr>
+<tr>
+<td style="text-align:center">Lb</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">不为空</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">类别</td>
+</tr>
+</tbody>
+</table>
+<p>(8)任务信息表存储银行OA系统的任务信息。数据表内容见表4.8所示。</p>
+<p>表4.8任务信息表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名</th>
+<th style="text-align:center">type</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">空值</th>
+<th style="text-align:center">主外键</th>
+<th style="text-align:center">数据名称</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Idtz</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">不为空</td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">主键，默认值1，递增1</td>
+</tr>
+<tr>
+<td style="text-align:center">Nametz</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">不为空</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">题目</td>
+</tr>
+<tr>
+<td style="text-align:center">Contz</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">5000</td>
+<td style="text-align:center">不为空</td>
+<td style="text-align:center">no</td>
+<td style="text-align:center">具体信息</td>
+</tr>
+<tr>
+<td style="text-align:center">Riqitz</td>
+<td style="text-align:center">Datatime</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">不为空</td>
+<td style="text-align:center">no</td>
+<td style="text-align:center"><p>日期格式</p><p>如2021-01-01</p></td>
+</tr>
+</tbody>
+</table>
+<p>(9)管理员信息表存储银行OA系统的管理员信息。数据表内容见表4.9所示。</p>
+<p>表4.9管理员信息表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名</th>
+<th style="text-align:center">type</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">空值</th>
+<th style="text-align:center">主外键</th>
+<th style="text-align:center">数据名称</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">userIda</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">不为空</td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">主键，默认值1，递增1</td>
+</tr>
+<tr>
+<td style="text-align:center">userNamea</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">不为空</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">字母数字组合</td>
+</tr>
+<tr>
+<td style="text-align:center">userPwa</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">不为空</td>
+<td style="text-align:center">No</td>
+<td style="text-align:center">字母数字组合</td>
+</tr>
+</tbody>
+</table>
+<h1 id="第5章-系统实现">第5章 系统实现</h1>
+<h2 id="51系统登录">5.1系统登录</h2>
+<p>在银行OA系统运行后，进入登录界面。登录界面比较简单，风格简洁，用户输入账号和密码后进入系统。界面如图5.1所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0793springboot/blog.007.png"
+        data-srcset="/images/0700stringboot/0793springboot/blog.007.png, /images/0700stringboot/0793springboot/blog.007.png 1.5x, /images/0700stringboot/0793springboot/blog.007.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0793springboot/blog.007.png"
+        title="/images/0700stringboot/0793springboot/blog.007.png" /></p>
+<p>图5.1 用户登录界面</p>
+<p><code>  	</code>使用form表单制作登录，账号和密码为input输入文本框，登录按钮为button，点击登录后，调用check方法，check是js验证。验证用户是否输入信息，通过alert进行提示消息，通过验证后，把表格信息进行提交。调用service的方法，通过返回的结果判断用户是否登录成功。</p>
+<p><code>	</code>在登录验证的服务器端方法中，通过用户输入的数据到数据库进行比对，如果查询到用户说明登录成功，反之登录失败。</p>
+<p><code>	</code>用户登录成功后，需要把用户信息保存到session中，也可以保存到cookie。Session是服务器对象，当页面跳转的时候，数据不会丢失。当需要权限控制时候，需要读取session保存的数据进行判断。</p>
+<h2 id="52系统主界面实现">5.2系统主界面实现</h2>
+<p><code>	</code>不同的用户主界面菜单不同，其中主界面使用FRAMESET框架，头部FRAME为top，加载的是一个jsp页面，显示系统名称和用户角色。左侧为left，加载了菜单列表，其中权限也是通过菜单进行控制的。不同用户的权限，显示的菜单不同。右侧的为left，加载了主功能内容页面。点击功能菜单，具体内容显示到left中。</p>
+<p>管理员主界面如图所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0793springboot/blog.008.png"
+        data-srcset="/images/0700stringboot/0793springboot/blog.008.png, /images/0700stringboot/0793springboot/blog.008.png 1.5x, /images/0700stringboot/0793springboot/blog.008.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0793springboot/blog.008.png"
+        title="/images/0700stringboot/0793springboot/blog.008.png" /></p>
+<p>图5.2 管理员主界面</p>
+<h2 id="54员工基本档案">5.4员工基本档案</h2>
+<p>员工基本档案是系统重要的组成部分，包含了员工基本信息。员工基本档案模块如5.3图所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0793springboot/blog.009.png"
+        data-srcset="/images/0700stringboot/0793springboot/blog.009.png, /images/0700stringboot/0793springboot/blog.009.png 1.5x, /images/0700stringboot/0793springboot/blog.009.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0793springboot/blog.009.png"
+        title="/images/0700stringboot/0793springboot/blog.009.png" /></p>
+<p>图5.3员工基本档案模块</p>
+<p>员工信息管理包括信息插入、查询和删除操作。在员工信息插入页面，通过form表单收集员工的基本信息，然后点击button按钮，使用js进行必填信息的验证，通过验证后，把信息提交到业务逻辑层。获取员工信息后，使用插入sql语句保存数据到员工信息表。</p>
+<p>点击员工信息管理时，在业务逻辑代码中，查询所有的员工信息到list集合，然后使用foreach标签循环显示到table中。点击删除员工，获取员工的主键编号，使用语句删除数据库记录后更新员工列表。</p>
+<h2 id="55部门经理管理">5.5部门经理管理</h2>
+<p>管理员进行管理操作，对部门经理进行修改或者删除，部门经理可以自己注册获取用户名和密码。其中部门经理管理界面如下所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0793springboot/blog.010.png"
+        data-srcset="/images/0700stringboot/0793springboot/blog.010.png, /images/0700stringboot/0793springboot/blog.010.png 1.5x, /images/0700stringboot/0793springboot/blog.010.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0793springboot/blog.010.png"
+        title="/images/0700stringboot/0793springboot/blog.010.png" /></p>
+<p>图5.4部门经理管理界面</p>
+<p>部门经理信息管理包括信息插入、查询和删除操作。在部门经理信息插入页面，通过form表单收集部门经理的基本信息，然后点击button按钮，使用js进行必填信息的验证，通过验证后，把信息提交到业务逻辑层。获取部门经理信息后，使用插入sql语句保存数据到部门经理信息表。</p>
+<p>点击部门经理信息管理时，在业务逻辑代码中，查询所有的部门经理信息到list集合，然后使用foreach标签循环显示到table中。点击删除部门经理，获取部门经理的主键编号，使用语句删除数据库记录后更新部门经理列表。</p>
+<h2 id="56日常工作管理">5.6日常工作管理</h2>
+<p>在此页面主要是输入日常工作信息，对个人的日常工作进行管理。其中日常工作管理界面如下所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0793springboot/blog.011.png"
+        data-srcset="/images/0700stringboot/0793springboot/blog.011.png, /images/0700stringboot/0793springboot/blog.011.png 1.5x, /images/0700stringboot/0793springboot/blog.011.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0793springboot/blog.011.png"
+        title="/images/0700stringboot/0793springboot/blog.011.png" /></p>
+<p>图5.5日常工作管理界面</p>
+<p>在日常工作信息插入页面，通过form表单收集日常工作的基本信息，然后点击button按钮，使用js进行必填信息的验证，通过验证后，把信息提交到业务逻辑层。获取日常工作信息后，使用插入sql语句保存数据到日常工作信息表。</p>
+<h2 id="57工作任务管理">5.7工作任务管理</h2>
+<p>各用户角色都可以发布工作任务需求，用户查看工作任务，工作任务管理界面如下所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0793springboot/blog.012.png"
+        data-srcset="/images/0700stringboot/0793springboot/blog.012.png, /images/0700stringboot/0793springboot/blog.012.png 1.5x, /images/0700stringboot/0793springboot/blog.012.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0793springboot/blog.012.png"
+        title="/images/0700stringboot/0793springboot/blog.012.png" /></p>
+<p>图5.7 工作任务管理界面</p>
+<p>工作任务信息管理包括信息插入、查询和删除操作。在工作任务信息插入页面，通过form表单收集工作任务的基本信息，然后点击button按钮，使用js进行必填信息的验证，通过验证后，把信息提交到业务逻辑层。获取工作任务信息后，使用插入sql语句保存数据到工作任务信息表。</p>
+<p>点击工作任务信息管理时，在业务逻辑代码中，查询所有的工作任务信息到list集合，然后使用foreach标签循环显示到table中。点击删除工作任务，获取工作任务的主键编号，使用语句删除数据库记录后更新工作任务列表。</p>
+<h2 id="58信息申请管理">5.8信息申请管理</h2>
+<p>部门经理用户登录系统后，申请信息，包括出勤、出差、请假、报销、会议。各种流程一样。其中请假申请信息后，可以对申请信息进行修改，删除操作。当管理员审核信息后，信息不能修改和删除。在用户信息查询中，可以查看请假信息，管理员对请假信息进行审核。其中请假申请界面如下所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0793springboot/blog.013.png"
+        data-srcset="/images/0700stringboot/0793springboot/blog.013.png, /images/0700stringboot/0793springboot/blog.013.png 1.5x, /images/0700stringboot/0793springboot/blog.013.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0793springboot/blog.013.png"
+        title="/images/0700stringboot/0793springboot/blog.013.png" /></p>
+<p>图5.9请假信息申请界面</p>
+<p>请假审批界面如下所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0793springboot/blog.014.png"
+        data-srcset="/images/0700stringboot/0793springboot/blog.014.png, /images/0700stringboot/0793springboot/blog.014.png 1.5x, /images/0700stringboot/0793springboot/blog.014.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0793springboot/blog.014.png"
+        title="/images/0700stringboot/0793springboot/blog.014.png" /></p>
+<p>图5.10请假审批界面</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2024-07-03</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/0793springboot%E6%9F%90%E9%93%B6%E8%A1%8Coa%E7%B3%BB%E7%BB%9F/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://chenqi199.github.io/0793springboot%E6%9F%90%E9%93%B6%E8%A1%8Coa%E7%B3%BB%E7%BB%9F/" data-title="0793springboot某银行OA系统" data-hashtags="springboot,java,vue,论文,项目"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://chenqi199.github.io/0793springboot%E6%9F%90%E9%93%B6%E8%A1%8Coa%E7%B3%BB%E7%BB%9F/" data-hashtag="springboot"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://chenqi199.github.io/0793springboot%E6%9F%90%E9%93%B6%E8%A1%8Coa%E7%B3%BB%E7%BB%9F/" data-title="0793springboot某银行OA系统"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://chenqi199.github.io/0793springboot%E6%9F%90%E9%93%B6%E8%A1%8Coa%E7%B3%BB%E7%BB%9F/" data-title="0793springboot某银行OA系统"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://chenqi199.github.io/0793springboot%E6%9F%90%E9%93%B6%E8%A1%8Coa%E7%B3%BB%E7%BB%9F/" data-title="0793springboot某银行OA系统" data-ralateuid="https://gitee.com/chen_q_i"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/springboot/">Springboot</a>,&nbsp;<a href="/tags/java/">Java</a>,&nbsp;<a href="/tags/vue/">Vue</a>,&nbsp;<a href="/tags/%E8%AE%BA%E6%96%87/">论文</a>,&nbsp;<a href="/tags/%E9%A1%B9%E7%9B%AE/">项目</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/0788springboot%E5%A4%A7%E5%AD%A6%E7%94%9F%E7%A4%BE%E5%9B%A2%E6%B4%BB%E5%8A%A8%E5%B9%B3%E5%8F%B0/" class="prev" rel="prev" title="0788springboot大学生社团活动平台"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>0788springboot大学生社团活动平台</a>
+            <a href="/0792springboot%E9%85%92%E5%BA%97%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" class="next" rel="next" title="0792springboot酒店管理系统">0792springboot酒店管理系统<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.128.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="chenqi199" target="_blank">chenqi</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

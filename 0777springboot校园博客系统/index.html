@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer" />
+        <meta name="robots" content="noodp" />
+        <title>0777springboot校园博客系统 - chenqi blog</title><meta name="Description" content="Hugo theme - chenqi"><meta property="og:url" content="https://chenqi199.github.io/0777springboot%E6%A0%A1%E5%9B%AD%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F/">
+  <meta property="og:site_name" content="chenqi blog">
+  <meta property="og:title" content="0777springboot校园博客系统">
+  <meta property="og:description" content="0777springboot校园博客系统 项目清单 包安装运行 github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第1章 概述 1.1 研究背景 随着现代网络技术发展，">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-06-28T18:31:05+08:00">
+    <meta property="article:modified_time" content="2024-06-28T18:31:05+08:00">
+    <meta property="article:tag" content="Springboot">
+    <meta property="article:tag" content="Java">
+    <meta property="article:tag" content="Vue">
+    <meta property="article:tag" content="论文">
+    <meta property="article:tag" content="项目">
+    <meta property="og:image" content="https://chenqi199.github.io/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chenqi199.github.io/logo.png">
+  <meta name="twitter:title" content="0777springboot校园博客系统">
+  <meta name="twitter:description" content="0777springboot校园博客系统 项目清单 包安装运行 github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第1章 概述 1.1 研究背景 随着现代网络技术发展，">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chenqi199.github.io/0777springboot%E6%A0%A1%E5%9B%AD%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F/" /><link rel="prev" href="https://chenqi199.github.io/0773springboot%E7%81%AB%E8%BD%A6%E8%AE%A2%E7%A5%A8%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" /><link rel="next" href="https://chenqi199.github.io/0776springboot%E5%A4%96%E5%8D%96%E7%82%B9%E9%A4%90%E7%B3%BB%E7%BB%9F/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "0777springboot校园博客系统",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chenqi199.github.io\/0777springboot%E6%A0%A1%E5%9B%AD%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F\/"
+        },"image": ["https:\/\/chenqi199.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "springboot, java, vue, 论文, 项目","wordcount":  7600 ,
+        "url": "https:\/\/chenqi199.github.io\/0777springboot%E6%A0%A1%E5%9B%AD%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F\/","datePublished": "2024-06-28T18:31:05+08:00","dateModified": "2024-06-28T18:31:05+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/chenqi199.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "chenqi"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/0777springboot%E6%A0%A1%E5%9B%AD%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/0777springboot%E6%A0%A1%E5%9B%AD%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">0777springboot校园博客系统</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="chenqi199" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>chenqi</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-06-28">2024-06-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 7600 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 16 分钟&nbsp;<span id="/0777springboot%E6%A0%A1%E5%9B%AD%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F/" class="leancloud_visitors" data-flag-title="0777springboot校园博客系统">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">github 项目仓库</a> 开源仅有后端代码</a></li>
+        <li><a href="#点击播放视频-">点击播放视频 ▼</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#11-研究背景">1.1 研究背景</a></li>
+    <li><a href="#12-研究目的">1.2 研究目的</a></li>
+    <li><a href="#13-研究内容">1.3 研究内容</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#21相关技术">2.1相关技术</a></li>
+    <li><a href="#22-java技术">2.2 JAVA技术</a></li>
+    <li><a href="#23-mysql数据库">2.3 MySQL数据库</a></li>
+    <li><a href="#在web应用技术中-mysql数据库支持不同的操作系统平台虽然在不同平台下的安装和配置都不相同但是差别也不是很大mysql在windows平台下两种安装方式二进制版和免安装版安装完mysql数据库之后需要启动服务进程相应的博主就可以连接数据库博主可通过命令行或者图形界面工具登录数据库">在WEB应用技术中， Mysql数据库支持不同的操作系统平台，虽然在不同平台下的安装和配置都不相同，但是差别也不是很大，Mysql在Windows平台下两种安装方式，二进制版和免安装版。安装完Mysql数据库之后，需要启动服务进程，相应的博主就可以连接数据库，博主可通过命令行或者图形界面工具登录数据库。</a></li>
+    <li><a href="#24-tomcat介绍">2.4 Tomcat介绍</a></li>
+    <li><a href="#25-springboot框架">2.5 SpringBoot框架</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#31-可行性分析">3.1 可行性分析</a>
+      <ul>
+        <li><a href="#311--技术可行性">3.1.1  技术可行性</a></li>
+        <li><a href="#312-经济可行性">3.1.2 经济可行性</a></li>
+        <li><a href="#313-操作可行性">3.1.3 操作可行性</a></li>
+      </ul>
+    </li>
+    <li><a href="#32-系统性能分析">3.2 系统性能分析</a></li>
+    <li><a href="#33-系统功能需求分析">3.3 系统功能需求分析</a></li>
+    <li><a href="#34-业务流程分析">3.4 业务流程分析</a>
+      <ul>
+        <li><a href="#341登录流程">3.4.1登录流程</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#41-系统的功能结构图">4.1 系统的功能结构图</a></li>
+    <li><a href="#42-系统数据库设计">4.2 系统数据库设计</a>
+      <ul>
+        <li><a href="#-421--数据库e-r图"><code> </code>4.2.1  数据库E-R图</a></li>
+        <li><a href="#422--数据表字段设计">4.2.2  数据表字段设计</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#51管理员登录">5.1管理员登录</a>
+      <ul>
+        <li><a href="#521-博主管理">5.2.1 博主管理</a></li>
+        <li><a href="#522-文章分类管理">5.2.2 文章分类管理</a></li>
+        <li><a href="#523轮播图管理">5.2.3轮播图管理</a></li>
+        <li><a href="#524-系统公告">5.2.4 系统公告</a></li>
+        <li><a href="#525-文章信息管理">5.2.5 文章信息管理</a></li>
+        <li><a href="#526-举报投诉管理">5.2.6 举报投诉管理</a></li>
+      </ul>
+    </li>
+    <li><a href="#531举报投诉管理">5.3.1举报投诉管理</a></li>
+    <li><a href="#heading"></a></li>
+    <li><a href="#heading-1"></a></li>
+    <li><a href="#532我的收藏管理">5.3.2我的收藏管理</a></li>
+    <li><a href="#我的收藏管理进行查看收藏名称收藏图片并进行详情删除操作如图5-10所示">我的收藏管理进行查看收藏名称、收藏图片并进行详情、删除操作如图5-10所示。</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="0777springboot校园博客系统httpsgithubcomgraduationproject-springboot0777springboot"><a href="https://github.com/GraduationProject-springboot/0777springboot" target="_blank" rel="noopener noreffer ">0777springboot校园博客系统</a></h1>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        data-srcset="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 1.5x, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        title="picture" /></p>
+<h1 id="项目清单httpschenqi1990site-包安装运行"><a href="https://chenqi1990.site" target="_blank" rel="noopener noreffer ">项目清单</a> 包安装运行</h1>
+<h3 id="github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">github 项目仓库</a> 开源仅有后端代码</h3>
+<h3 id="点击播放视频-">点击播放视频 ▼</h3>
+<p><a href="https://www.bilibili.com/video/BV14HerezEwW?p=132" target="_blank" rel="noopener noreffer "><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.sstatic.net/Vp2cE.png"
+        data-srcset="https://i.sstatic.net/Vp2cE.png, https://i.sstatic.net/Vp2cE.png 1.5x, https://i.sstatic.net/Vp2cE.png 2x"
+        data-sizes="auto"
+        alt="https://i.sstatic.net/Vp2cE.png"
+        title="Watch the video" /></a></p>
+<h1 id="第1章-概述">第1章 概述</h1>
+<h2 id="11-研究背景">1.1 研究背景</h2>
+<p><code> </code>随着现代网络技术发展，对于校园博客系统现在正处于网络发展的阶段，所以对它的要求也是比较严格的，要从这个系统的功能和博主实际需求来进行对系统制定开发的发展方式，依靠网络技术的的快速发展和现代通讯技术的结合为博主带来方便，可以方便管理员网上管理，校园博客系统信息，还可以通过这些技术实现发布校园博客系统等过程。当今社会互联网急速发展，电子商务系统也在国内爆炸式的发展起来。这种网络模式对长期使用互联网社会产生了深远的影响，在这种社会环境下开发一个适用于博主都可以操作的、简单的、便捷的校园博客系统的发展前景是非常好的。</p>
+<p>校园博客系统是一个典型的管理系统，在整个系统的发展来看包括数据库的设计、分析、连接、功能实现和系统维护以及博主的正确操作方式，对于上述的问题我们根据博主的实际情况来设计出一个典型的校园博客系统，在一定的基础上保证了这个系统的完整性和安全性。在整个系统程序当中的功能我们要保证博主方便使用而且易于操作的特点。在当今社会当中随着现代科学技术网络的快速发展和博主对网络技术意识不断提高，网络给博主带来强大的功能早已经被博主所接受，就拿这个校园博客系统来说，在整个系统当中开发它的要求是越来越高，同时所用的软件环境也是要不断提高。对于这个校园博客系统来说它已经满足现代化的信息化、潮流化的管理。能够有效的提高校园博客系统人员的工作效率和工作信心。</p>
+<h2 id="12-研究目的">1.2 研究目的</h2>
+<p>为了解决好这个校园博客系统，也更好的能够维护校园博客系统中出现的问题，同时也能够让博主能够正确的了解本校园博客系统。所以设计本系统。</p>
+<p>本系统主要根据博主的需求做出分析，让博主更好的在线查看校园博客系统信息等，管理员后台管理系统数据等功能。从这个系统的操作来说，能够有效的进行信息的添加、修改、查询、删除一些校园博客系统信息，在一定的程序上能够实现了自动化。设计该系统的主要目的是为实现通过网络来减少人力和财力的投入，不断提高工作效率。最终我们希望通过校园博客系统可以达到以下目的：</p>
+<p>提高校园博客系统的管理效率，实现管理上的井井有条。</p>
+<p>实现博主通过计算机平台及时更新网站校园博客系统信息，实现校园博客系统等。</p>
+<p>解决传统校园博客系统存在的弊端。</p>
+<h2 id="13-研究内容">1.3 研究内容</h2>
+<p>在目前所使用的软件开发主要是应用的java,校园博客系统开发来看它具有很大的意义，具体该系统的主要任务是：</p>
+<p>（1）对于这个系统网络环境它主要是让博主学会多种需求和业务上的流程以及各个角色的功能问题，同时对每一个业务和技术做出了解。</p>
+<p>（2）对于这系统的整个程序应用做出高效的升级、扩展和维护。</p>
+<p>（3）掌握系统的整体设计和结构计划，在一定的需求方面上满足博主的需求，确保在各个层次当中各功能的紧密配合后最终的功能实现，同时保证这个程序的独立性和各层次之间的紧密联系。</p>
+<p>（4）在整个系统框架的设计我们要进行深入的学习和设计，保证这个系统在使用过程中的灵活性和了扩展性，同时不断提高系统的安全性和满足博主的实际需求。</p>
+<p>从这个校园博客系统来看主要是满足博主的各自需求，同时根据这两方面进行了深入的研究，就拿本系统来说主要是对校园博客系统的背景选题意义、市场需求、数据库分析、功能模块的介绍和所用的开发技术来进行研发和介绍的。最后在对该系统做出测试分析和总结。</p>
+<h1 id="第二章开发技术介绍">第二章开发技术介绍</h1>
+<h2 id="21相关技术">2.1相关技术</h2>
+<p>校园博客系统是在Java + MySQL开发环境的基础上开发的。Java是一种服务器端脚本语言，易于学习，实用且面向博主。全球超过35％的Java驱动的互联网站点使用Java。MySQL是一个数据库管理系统，因为它的体积小但速度快，成本低，或者开源受到中小型网站的青睐。因此，Java + MySQL作为一个成熟的开发环境，可以满足校园博客系统设计和开发所需的稳定性，安全性和可扩展性要求。</p>
+<h2 id="22-java技术">2.2 JAVA技术</h2>
+<p>JAVA语言是目前软件市场上应用最广泛的语言开发程序。可以在多种平台上运用的，兼容性比较强，适应市面上大多数操作系统，不会出现乱码的现像，其扩展性和维护性都更好，具有分析问题和解决问题的能力，是面向过程的程序设计方便我们编写的代码更强壮。</p>
+<p>JAVA相对其它语言来说，比较简单，编译起来更方便一些，安全可靠性高。不完全统计，现在全世界大约有2000多万人在使用它，JAVA既可以镶嵌使用又可以独力的使用。JAVA大致可以分成两个部分，一种部分是JAVA负责的编译，另一种是JAVA负责的运行。JAVA和C++语言很相像，但JAVA在编程时是一种以对象为导向的方式来进行编译的，使得编出来的软件可以单机使用，也可以在互联网上使用，检查出错更为方便。JAVA分布式、体系结构中立的特点也使得其存储更快，编议更简单。面向对象包括四个特点，一是封装，就是说在定义类的时候可以实现一定的功能和属性。二是抽象，属于类的一种，可以把一个具有共同属性的类封装在一个抽象里，便于简单编议。三是继承，顾名思义就是带有前者的特性。还有一个就是多态的特点，可以多种一起运用，表现了它可扩展性好。</p>
+<h2 id="23-mysql数据库">2.3 MySQL数据库</h2>
+<p>数据库是系统开发过程中不可或缺的一部分。 在WEB应用方面，MySQL AB开发了一个具有很大优势的MySQL关系数据库管理系统。 MySQL可以将数据存储在不同的表中，这非常灵活，并且还可以提高系统在实际应用中的速度。 数据库访问最常用于标准SQL语言，MySQL用于SQL语言，因此它具有高度兼容性。数据库的操作是必不可少的，包括对数据库表的增加、删除、修改、查询等功能。现如今，数据库可以分为关系型数据库和非关系型数据库，Mysql属于关系性数据库，Mysql数据库是一款小型的关系型数据库，它以其自身特点：体积小、速度快、成本低等，Mysql数据库是目前最受欢迎的开源数据库。</p>
+<h2 id="在web应用技术中-mysql数据库支持不同的操作系统平台虽然在不同平台下的安装和配置都不相同但是差别也不是很大mysql在windows平台下两种安装方式二进制版和免安装版安装完mysql数据库之后需要启动服务进程相应的博主就可以连接数据库博主可通过命令行或者图形界面工具登录数据库">在WEB应用技术中， Mysql数据库支持不同的操作系统平台，虽然在不同平台下的安装和配置都不相同，但是差别也不是很大，Mysql在Windows平台下两种安装方式，二进制版和免安装版。安装完Mysql数据库之后，需要启动服务进程，相应的博主就可以连接数据库，博主可通过命令行或者图形界面工具登录数据库。</h2>
+<h2 id="24-tomcat介绍">2.4 Tomcat介绍</h2>
+<p>Tomcat 虽然是Apache的扩展，但是它们都是可以独立运行的，二者是不互相干扰的。当配置正确的时候，Apache服务器为HTML页面的运行提供技术支持，Tomcat 的任务则是运行Servle和Java 页面。Tomca也具有一定的HTML页面处理功能。Tomcat属于一种轻型的服务器，所以说在中小网站中并不具有普适性。但是当程序员需要开发或调试Java 程序时，则通常会将该服务器作为首选。对于一个仅具有计算机基础知识的人来说，计算机系统具有一个好的Apache服务器，可以很好的对HTML 页面进行访问。Tomcat是非常受欢迎的服务器，因为它具有较好的扩展性，而且在运行的时候不需要太多的系统资源，拥有程序员所需要的收发邮件功能，还能够支持负载平衡，该程序能够不断的更新，程序员能够根据自己的需要增加新的功能。</p>
+<h2 id="25-springboot框架">2.5 SpringBoot框架</h2>
+<p>Spring Boot是Pivotal团队的一个新框架，旨在简化新Spring应用程序的初始设置和开发。该框架使用特定的配置方法，无需开发人员定义样板配置。通过这种方式，Spring Boot旨在成为蓬勃发展的快速应用程序开发领域的领导者。
+Spring Boot特点：
+1、创建一个单独的Spring应用程序；
+2、嵌入式Tomcat，无需部署WAR文件；
+3、简化Maven配置；
+4、自动配置Spring；
+5、提供生产就绪功能，如指标，健康检查和外部配置；
+6、绝对没有代码生成和XML的配置要求；
+<code>  </code>安装步骤：
+<code>   </code>最基本的是，Spring Boot是一个可以被任何项目的构建系统使用的库集合。 为简单起见，该框架还提供了一个命令行界面，可用于运行和测试Boot应用程序。 可以从Spring存储库手动下载和安装框架的已发布版本，包括集成的CLI（命令行界面）。 更简单的方法是使用Groovy enVironment Manager（GVM），它负责处理Boot版本的安装和管理。 可以从GVM命令行GVM install springboot安装Boot及其CLI。 在OS X上安装Boot时可以使用Homebrew包管理器。要完成安装，首先使用brew tap pivotal / tap切换到pivotal存储库，然后执行brew install springboot命令。</p>
+<h1 id="第三章-系统分析">第三章 系统分析</h1>
+<p><code> </code>整个系统的功能模块主要是对各个项目元素组合、分解和更换做出对应的单元，最后在根据各个系统模块来做出一个简单的原则，系统的整体设计是根据博主的需求来进行设计的。为了更好的服务于博主要从校园博客系统的设计与实现方面上做出相应的功能模块和内部信息保持一致的联系。所以我们在设计时候要避免一些代码的相互的重复和耦合的情况发生。</p>
+<h2 id="31-可行性分析">3.1 可行性分析</h2>
+<p>可行性分析主要是针对这个项目开发是否有意义和价值观来进行的全面分析，在分析的过程当中发现这个系统所存在的不足之处。就拿这次校园博客系统的设计与实现来说主要是针对一些博主在发布校园博客系统信息时遇到不方便的操作和问题来进行解决问题的，最后能够让校园博客系统开发得到最大的用处。而且对于博主方面我们可以提供给一个简单方便操作的校园博客系统。所以我们要计算开发这个系统它能否有效的解决好这个系统经济问题，在开发完成以后所带来的利益是否大于开发过成当中的成本。所以可行性的研究与分析是这个系统在开发和设计上是必不可缺少的一部分。从该系统文章的全部来看，我们要从以下几个方面进行分析：</p>
+<p>技术可行性：在技术方面我们要从现有自己掌握的技术能否设计出我们当初所预定的目标。</p>
+<p>经济可行性：在这次系统开发和设计过程当中所用的经费是否大于以后给社会带来的价值观。</p>
+<p>操作可行性：系统在博主使用过程当中是否方便、简单，能否达到大部分的博主会使用。</p>
+<h3 id="311--技术可行性">3.1.1  技术可行性</h3>
+<p>技术的可行性分析主要是针对开发该系统所用到技术进行分析，对于校园博客系统的设计，可以在任何一个地方都进行使用和管理。通过当前我们所学的程序开发和语言介绍利用以上的技术开发该系统是比较合适的。而且我们在使用的数据库也是要保证这个系统的完整性、数据安全性好的条件。</p>
+<h3 id="312-经济可行性">3.1.2 经济可行性</h3>
+<p>经济可行性主要是决定这个系统是否具有价值存在，是否具有开发意义，如果开发的项目不能够节约物品和资源，反而使用的大量的人力、财力和物力不成正比甚至小于投资成本，那么该项目是不具备开发意义和价值的。在开发本项目的初期，节约成本是最基本的，设计和开发都是由本人一人完成的，并且在开发中使我学习到了很多的知识，也开拓了自己的眼界，在通过可行性分析之后，该项目的利大于弊，所以该项目是具有开发意义和价值的。</p>
+<h3 id="313-操作可行性">3.1.3 操作可行性</h3>
+<p>校园博客系统的开发登录界面它是我们最常见的一种登录窗口来完成的，博主可以使电脑来进行登录并简单的访问不需要做任何的操作。对于此次的系统开发它主要是基于Spring Boot框架和java技术及MySQL数据库来完成，让系统开发更加完美和完善，所以我们开出的系统界面更加人性化，博主使用也更加方便。而且系统在使用过程当中也拥有方便操作、易管理等特点。</p>
+<p>经过以上的叙述，所以开发此系统在经济上、技术上是满足开发条件的。</p>
+<h2 id="32-系统性能分析">3.2 系统性能分析</h2>
+<p>1.如果我们想要对前后台处理的层次分明那么我们就要采用Spring Boot框架来进行系统的开发这样就可以方便博主的使用。</p>
+<p>2.对于系统的开发和设计我们就要采用大家日常所需要的要求，这样一来可以提高系统的适用性也能保证系统利用价值。对于一个系统来说一个好的框架是很重要的，因为一个好的框架它可以提高系统的稳定和高效性。</p>
+<p>3.在系统界面上也要设计一个方便快捷的登录界面，这样就可以提高博主对系统操作性和适用性。</p>
+<p>4.在系统模块设计当中我们要对系统各个模块进行合理简化和设计，这样就能提高系统使用性。</p>
+<p>5.对于一个完整的系统来说对于它的测评和测试是比较重要的，所以我们在软件设计程序中要保持软件占用的时间和速度快的特点。</p>
+<p>6.对于这个系统来说我们首先要考虑所设计出的系统它具有那些突破和体现，所以我们尽力去改进这个系统去适应博主。</p>
+<h2 id="33-系统功能需求分析">3.3 系统功能需求分析</h2>
+<p>对于一个新的网站来说开发新网站我们就要做出这个系统的任务需求分析，因为对系统分析的质量好坏它可以决定这个网站开发的意义，俗话说得好一个好的开头是成功的一半，对于开发这个校园博客系统来说前期的分析是比较重要的，所以任务分析它可以决定这系统的开展和设计，这样就可以保证博主满意性。</p>
+<p>任务的需求它能决定这个系统开发过程当中一个重要环节，所以我们在系统开发过程所用质量是比较重要的，因为我们在系统应用过程当中不一定那会出现问题，所以我们在进行对系统分析是比较重要的，因为它可以决定这个系统功能和需求。</p>
+<p>本课题要求实现一套校园博客系统的开发与实现，主要实现功能包括管理员：首页、个人中心、博主管理、文章分类管理、文章信息管理、举报投诉管理、系统管理，博主；首页、个人中心、文章信息管理、举报投诉管理、我的收藏管理。</p>
+<p>（1）管理员用例需求如图3-1所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0777springboot/blog.001.png"
+        data-srcset="/images/0700stringboot/0777springboot/blog.001.png, /images/0700stringboot/0777springboot/blog.001.png 1.5x, /images/0700stringboot/0777springboot/blog.001.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0777springboot/blog.001.png"
+        title="/images/0700stringboot/0777springboot/blog.001.png" /></p>
+<p>图3-1管理员用例需求图</p>
+<ol start="2">
+<li>博主用例需求如图3-2所示：</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0777springboot/blog.002.png"
+        data-srcset="/images/0700stringboot/0777springboot/blog.002.png, /images/0700stringboot/0777springboot/blog.002.png 1.5x, /images/0700stringboot/0777springboot/blog.002.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0777springboot/blog.002.png"
+        title="/images/0700stringboot/0777springboot/blog.002.png" /></p>
+<p>图3-2博主用例图</p>
+<h2 id="34-业务流程分析">3.4 业务流程分析</h2>
+<p>在系统流程分析当中调查分析它是比较重要的环节，因为在这个系统当中它都涉及到每个环节的业务流程，所以从校园博客系统的整体设计上要保证各个信息的正确输入和输出以及对数据储存的完整，并结合实际的操作步骤来绘制出具体的流程图。具体流程图如下图3-3所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0777springboot/blog.003.png"
+        data-srcset="/images/0700stringboot/0777springboot/blog.003.png, /images/0700stringboot/0777springboot/blog.003.png 1.5x, /images/0700stringboot/0777springboot/blog.003.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0777springboot/blog.003.png"
+        title="/images/0700stringboot/0777springboot/blog.003.png" /></p>
+<p>图3-3系统开发流程图</p>
+<h3 id="341登录流程">3.4.1登录流程</h3>
+<p>为了保证系统的安全，博主要想进入校园博客系统必须进行登录操作，博主登录流程图如图3-4所示</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0777springboot/blog.004.png"
+        data-srcset="/images/0700stringboot/0777springboot/blog.004.png, /images/0700stringboot/0777springboot/blog.004.png 1.5x, /images/0700stringboot/0777springboot/blog.004.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0777springboot/blog.004.png"
+        title="/images/0700stringboot/0777springboot/blog.004.png" /></p>
+<p>图3-4 登录流程图</p>
+<h1 id="-第四章-系统设计"><code> </code>第四章 系统设计</h1>
+<h2 id="41-系统的功能结构图">4.1 系统的功能结构图</h2>
+<p>通过系统需求分析，本校园博客系统的功能结构设计如图4-1所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0777springboot/blog.005.png"
+        data-srcset="/images/0700stringboot/0777springboot/blog.005.png, /images/0700stringboot/0777springboot/blog.005.png 1.5x, /images/0700stringboot/0777springboot/blog.005.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0777springboot/blog.005.png"
+        title="/images/0700stringboot/0777springboot/blog.005.png" /></p>
+<p>图4-1 系统功能图</p>
+<h2 id="42-系统数据库设计">4.2 系统数据库设计</h2>
+<h3 id="-421--数据库e-r图"><code> </code>4.2.1  数据库E-R图</h3>
+<p>在该系统的信息中，由于数据库的支持，我们可以对数据库进行收集、整理、更新和加工等操作。由于数据库的存储功能强大，所以数据库已经成为了计算机必不可少的一部分，一个数据库的好坏直接影响该系统的质量和效率。一个系统中的数据库是必不可少的，并且起着决定性因素。通过之前的系统分析，可以规划出本系统中使用的主要等，下面设计出这几个关键实体的实体关系图：</p>
+<p>（1）文章信息管理实体E-R图如图4-2所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0777springboot/blog.006.png"
+        data-srcset="/images/0700stringboot/0777springboot/blog.006.png, /images/0700stringboot/0777springboot/blog.006.png 1.5x, /images/0700stringboot/0777springboot/blog.006.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0777springboot/blog.006.png"
+        title="/images/0700stringboot/0777springboot/blog.006.png" /></p>
+<p>图4-2 文章信息管理实体图</p>
+<p>（2）博主管理实体E-R图如图4-3所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0777springboot/blog.007.png"
+        data-srcset="/images/0700stringboot/0777springboot/blog.007.png, /images/0700stringboot/0777springboot/blog.007.png 1.5x, /images/0700stringboot/0777springboot/blog.007.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0777springboot/blog.007.png"
+        title="/images/0700stringboot/0777springboot/blog.007.png" /></p>
+<p>图4-3博主管理实体图</p>
+<p>（3）举报投诉管理实体E- R图，如图4-4所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0777springboot/blog.008.png"
+        data-srcset="/images/0700stringboot/0777springboot/blog.008.png, /images/0700stringboot/0777springboot/blog.008.png 1.5x, /images/0700stringboot/0777springboot/blog.008.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0777springboot/blog.008.png"
+        title="/images/0700stringboot/0777springboot/blog.008.png" /></p>
+<p>图4-4举报投诉管理实体图</p>
+<h3 id="422--数据表字段设计">4.2.2  数据表字段设计</h3>
+<p>每个数据库的使用都是隔开的，当它们在程序中运行时，他们就会与自己相关的协议和博主端进行通讯。而且系统会自动将这些数据进行连接。如果我们想要对某个数据库进行了解，那么我们就应选择该桥段，然后就会自动讲解。在点击完成按钮之后就会自动在对话框内弹出数据源的名称，然后进行下一步操作，输入正确的密码和账号进行登录。根据系统功能设计的要求和功能模块的划分，校园博客系统的设计与实现一共涉及到多个数据表。下面就介绍一下各别主要数据库表的设计结构及其功能建立数据库表:</p>
+<p>表1：bozhu表</p>
+<table>
+<thead>
+<tr>
+<th>列名</th>
+<th>数据类型</th>
+<th>长度</th>
+<th>约束</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>bigint</td>
+<td>19</td>
+<td>NOT NULL</td>
+</tr>
+<tr>
+<td>addtime</td>
+<td>varchar</td>
+<td>2000</td>
+<td><code> </code>NULL DEFAULT</td>
+</tr>
+<tr>
+<td>bozhuzhanghao</td>
+<td>tinyint</td>
+<td>2</td>
+<td><code> </code>NULL DEFAULT</td>
+</tr>
+<tr>
+<td>mima</td>
+<td>varchar</td>
+<td>2000</td>
+<td><code> </code>NULL DEFAULT</td>
+</tr>
+<tr>
+<td>bozhuxingming</td>
+<td>varchar</td>
+<td>2000</td>
+<td><code> </code>NULL DEFAULT</td>
+</tr>
+<tr>
+<td>touxiang</td>
+<td>varchar</td>
+<td>2000</td>
+<td><code> </code>NULL DEFAULT</td>
+</tr>
+<tr>
+<td>xingbie</td>
+<td>varchar</td>
+<td>2000</td>
+<td><code> </code>NULL DEFAULT</td>
+</tr>
+<tr>
+<td>nianling</td>
+<td>varchar</td>
+<td>2000</td>
+<td><code> </code>NULL DEFAULT</td>
+</tr>
+<tr>
+<td>shouji</td>
+<td>varchar</td>
+<td>2000</td>
+<td><code> </code>NULL DEFAULT</td>
+</tr>
+<tr>
+<td>youxiang</td>
+<td>varchar</td>
+<td>2000</td>
+<td><code> </code>NULL DEFAULT</td>
+</tr>
+</tbody>
+</table>
+<p>表2：jubaotousu表</p>
+<table>
+<thead>
+<tr>
+<th>列名</th>
+<th>数据类型</th>
+<th>长度</th>
+<th>约束</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>bigint</td>
+<td>19</td>
+<td>NOT NULL</td>
+</tr>
+<tr>
+<td>addtime</td>
+<td>varchar</td>
+<td>2000</td>
+<td><code> </code>NULL DEFAULT</td>
+</tr>
+<tr>
+<td>biaoti</td>
+<td>tinyint</td>
+<td>2</td>
+<td><code> </code>NULL DEFAULT</td>
+</tr>
+<tr>
+<td>leixing</td>
+<td>varchar</td>
+<td>2000</td>
+<td><code> </code>NULL DEFAULT</td>
+</tr>
+<tr>
+<td>tupian</td>
+<td>varchar</td>
+<td>2000</td>
+<td><code> </code>NULL DEFAULT</td>
+</tr>
+<tr>
+<td>jubaoneirong</td>
+<td>varchar</td>
+<td>2000</td>
+<td><code> </code>NULL DEFAULT</td>
+</tr>
+<tr>
+<td>jubaoshijian</td>
+<td>varchar</td>
+<td>2000</td>
+<td><code> </code>NULL DEFAULT</td>
+</tr>
+<tr>
+<td>bozhuzhanghao</td>
+<td>varchar</td>
+<td>2000</td>
+<td><code> </code>NULL DEFAULT</td>
+</tr>
+<tr>
+<td>shouji</td>
+<td>varchar</td>
+<td>2000</td>
+<td><code> </code>NULL DEFAULT</td>
+</tr>
+<tr>
+<td>sfsh</td>
+<td>varchar</td>
+<td>2000</td>
+<td><code> </code>NULL DEFAULT</td>
+</tr>
+<tr>
+<td>shhf</td>
+<td>varchar</td>
+<td>2000</td>
+<td><code> </code>NULL DEFAULT</td>
+</tr>
+</tbody>
+</table>
+<p>表3：wenzhangxinxi表</p>
+<table>
+<thead>
+<tr>
+<th>列名</th>
+<th>数据类型</th>
+<th>长度</th>
+<th>约束</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>int</td>
+<td>11</td>
+<td>NOT NULL</td>
+</tr>
+<tr>
+<td>addtime</td>
+<td>varchar</td>
+<td>255</td>
+<td>NOT NULL</td>
+</tr>
+<tr>
+<td>wenzhangbiaoti</td>
+<td>varchar</td>
+<td>255</td>
+<td>NOT NULL</td>
+</tr>
+<tr>
+<td>fenlei</td>
+<td>varchar</td>
+<td>2</td>
+<td>NOT NULL</td>
+</tr>
+<tr>
+<td>tupian</td>
+<td>varchar</td>
+<td>2</td>
+<td>NOT NULL</td>
+</tr>
+<tr>
+<td>wenzhangneirong</td>
+<td>varchar</td>
+<td>2</td>
+<td>NOT NULL</td>
+</tr>
+<tr>
+<td>faburiqi</td>
+<td>varchar</td>
+<td>2</td>
+<td>NOT NULL</td>
+</tr>
+<tr>
+<td>bozhuzhanghao</td>
+<td>varchar</td>
+<td>2</td>
+<td>NOT NULL</td>
+</tr>
+<tr>
+<td>youxiang</td>
+<td>varchar</td>
+<td>2</td>
+<td>NOT NULL</td>
+</tr>
+</tbody>
+</table>
+<p>表4：wenzhangfenlei表</p>
+<table>
+<thead>
+<tr>
+<th>列名</th>
+<th>数据类型</th>
+<th>长度</th>
+<th>约束</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td><code> </code>int</td>
+<td>9</td>
+<td>NOT NULL</td>
+</tr>
+<tr>
+<td>addtime</td>
+<td>char</td>
+<td>5</td>
+<td>NOT NULL</td>
+</tr>
+<tr>
+<td>fenlei</td>
+<td>char</td>
+<td>5</td>
+<td>NOT NULL</td>
+</tr>
+</tbody>
+</table>
+<p>#########</p>
+<h1 id="第五章-系统功能实现">第五章 系统功能实现</h1>
+<h2 id="51管理员登录">5.1管理员登录</h2>
+<p>管理员登录，通过填写用户名、密码、角色等信息，输入完成后选择登录即可进入校园博客系统，如图5-1所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0777springboot/blog.009.png"
+        data-srcset="/images/0700stringboot/0777springboot/blog.009.png, /images/0700stringboot/0777springboot/blog.009.png 1.5x, /images/0700stringboot/0777springboot/blog.009.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0777springboot/blog.009.png"
+        title="/images/0700stringboot/0777springboot/blog.009.png" /></p>
+<p>5.2管理员功能实现             图5-1管理员登录界面图</p>
+<h3 id="521-博主管理">5.2.1 博主管理</h3>
+<p>管理员对博主管理获取博主账号、博主姓名、头像、性别、年龄、手机、邮箱并进行详情、删除、修改。博主管理效果图如图5-2所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0777springboot/blog.010.png"
+        data-srcset="/images/0700stringboot/0777springboot/blog.010.png, /images/0700stringboot/0777springboot/blog.010.png 1.5x, /images/0700stringboot/0777springboot/blog.010.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0777springboot/blog.010.png"
+        title="/images/0700stringboot/0777springboot/blog.010.png" /></p>
+<p>图5-2博主管理界面图</p>
+<h3 id="522-文章分类管理">5.2.2 文章分类管理</h3>
+<p>管理员对文章分类管理查看分类等信息进行详情、删除、修改操作。文章分类管理效果图如图5-3所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0777springboot/blog.011.png"
+        data-srcset="/images/0700stringboot/0777springboot/blog.011.png, /images/0700stringboot/0777springboot/blog.011.png 1.5x, /images/0700stringboot/0777springboot/blog.011.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0777springboot/blog.011.png"
+        title="/images/0700stringboot/0777springboot/blog.011.png" /></p>
+<p>图5-3文章分类管理界面图</p>
+<h3 id="523轮播图管理">5.2.3轮播图管理</h3>
+<p>轮播图；该页面为轮播图管理界面。管理员可以在此页面进行首页轮播图的管理，通过新建操作可在轮播图中加入新的图片，还可以对以上传的图片进行修改操作，以及图片的删除操作。轮播图管理效果图如图5-4所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0777springboot/blog.012.png"
+        data-srcset="/images/0700stringboot/0777springboot/blog.012.png, /images/0700stringboot/0777springboot/blog.012.png 1.5x, /images/0700stringboot/0777springboot/blog.012.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0777springboot/blog.012.png"
+        title="/images/0700stringboot/0777springboot/blog.012.png" /></p>
+<p>图5-4轮播图管理界面图</p>
+<h3 id="524-系统公告">5.2.4 系统公告</h3>
+<p>管理员对系统公告进行编辑标题、简介、图片等信息进行详情、删除、修改操作。系统公告效果图如图5-5所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0777springboot/blog.013.png"
+        data-srcset="/images/0700stringboot/0777springboot/blog.013.png, /images/0700stringboot/0777springboot/blog.013.png 1.5x, /images/0700stringboot/0777springboot/blog.013.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0777springboot/blog.013.png"
+        title="/images/0700stringboot/0777springboot/blog.013.png" /></p>
+<p>图5-5系统公告界面图</p>
+<h3 id="525-文章信息管理">5.2.5 文章信息管理</h3>
+<p>管理员对文章信息管理进行编辑文章标题、分类、图片、发布日期、博主账号、邮箱等信息进行详情、删除、修改操作。文章信息管理效果图如图5-6所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0777springboot/blog.014.png"
+        data-srcset="/images/0700stringboot/0777springboot/blog.014.png, /images/0700stringboot/0777springboot/blog.014.png 1.5x, /images/0700stringboot/0777springboot/blog.014.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0777springboot/blog.014.png"
+        title="/images/0700stringboot/0777springboot/blog.014.png" /></p>
+<p>图5-6文章信息管理界面图</p>
+<h3 id="526-举报投诉管理">5.2.6 举报投诉管理</h3>
+<p>管理员对举报投诉管理进行编辑标题、类型、图片、举报内容、举报时间、博主账号、手机、审核回复、审核状态、审核等信息进行详情、删除、修改操作。举报投诉管理效果图如图5-7所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0777springboot/blog.015.png"
+        data-srcset="/images/0700stringboot/0777springboot/blog.015.png, /images/0700stringboot/0777springboot/blog.015.png 1.5x, /images/0700stringboot/0777springboot/blog.015.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0777springboot/blog.015.png"
+        title="/images/0700stringboot/0777springboot/blog.015.png" /></p>
+<p>图5-7举报投诉管理界面图</p>
+<p>5.3博主功能实现</p>
+<p>校园博客系统，在系统可以查看首页、个人中心、文章信息管理、举报投诉管理、我的收藏管理等内容，如图5-8所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0777springboot/blog.016.png"
+        data-srcset="/images/0700stringboot/0777springboot/blog.016.png, /images/0700stringboot/0777springboot/blog.016.png 1.5x, /images/0700stringboot/0777springboot/blog.016.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0777springboot/blog.016.png"
+        title="/images/0700stringboot/0777springboot/blog.016.png" /></p>
+<p>图5-8博主功能界面图</p>
+<h2 id="531举报投诉管理">5.3.1举报投诉管理</h2>
+<p><code> </code>博主对举报投诉管理进行查看标题、类型、图片、举报内容、举报时间、博主账号、手机、审核回复、审核状态、审核并进行详情、修改操作，如图5-9所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0777springboot/blog.017.png"
+        data-srcset="/images/0700stringboot/0777springboot/blog.017.png, /images/0700stringboot/0777springboot/blog.017.png 1.5x, /images/0700stringboot/0777springboot/blog.017.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0777springboot/blog.017.png"
+        title="/images/0700stringboot/0777springboot/blog.017.png" /></p>
+<p>图5-9举报投诉管理界面图</p>
+<h2 id="heading"></h2>
+<h2 id="heading-1"></h2>
+<h2 id="532我的收藏管理">5.3.2我的收藏管理</h2>
+<h2 id="我的收藏管理进行查看收藏名称收藏图片并进行详情删除操作如图5-10所示">我的收藏管理进行查看收藏名称、收藏图片并进行详情、删除操作如图5-10所示。</h2>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0777springboot/blog.018.png"
+        data-srcset="/images/0700stringboot/0777springboot/blog.018.png, /images/0700stringboot/0777springboot/blog.018.png 1.5x, /images/0700stringboot/0777springboot/blog.018.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0777springboot/blog.018.png"
+        title="/images/0700stringboot/0777springboot/blog.018.png" /></p>
+<p>图5-10我的收藏管理界面图</p>
+<p>5.4前台首页功能实现</p>
+<p>5.4.1 校园博客系统，在系统首页可以查看首页、文章信息、系统公告、个人中心、后台管理、在线客服等内容，如图5-11所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0777springboot/blog.019.png"
+        data-srcset="/images/0700stringboot/0777springboot/blog.019.png, /images/0700stringboot/0777springboot/blog.019.png 1.5x, /images/0700stringboot/0777springboot/blog.019.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0777springboot/blog.019.png"
+        title="/images/0700stringboot/0777springboot/blog.019.png" /></p>
+<p>图5-11系统功能界面图</p>
+<p><code>    </code>5.4.2博主注册，在注册页面通过查看博主账号、密码、博主姓名、性别、年龄、手机、邮箱等内容进行注册，如图5-12所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0777springboot/blog.020.png"
+        data-srcset="/images/0700stringboot/0777springboot/blog.020.png, /images/0700stringboot/0777springboot/blog.020.png 1.5x, /images/0700stringboot/0777springboot/blog.020.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0777springboot/blog.020.png"
+        title="/images/0700stringboot/0777springboot/blog.020.png" /></p>
+<p>图5-12博主注册界面图</p>
+<p>5.4.3博主登录，在登录页面通过填写账号、密码等信息进行登录，如图5-13所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0777springboot/blog.021.png"
+        data-srcset="/images/0700stringboot/0777springboot/blog.021.png, /images/0700stringboot/0777springboot/blog.021.png 1.5x, /images/0700stringboot/0777springboot/blog.021.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0777springboot/blog.021.png"
+        title="/images/0700stringboot/0777springboot/blog.021.png" /></p>
+<p>图5-13博主登录界面图</p>
+<p>5.4.4个人中心，在个人中心页面中可以查看博主账号、博主姓名、头像、性别、年龄、手机、邮箱等信息进行更新信息、退出登录，如图5-14所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0777springboot/blog.022.png"
+        data-srcset="/images/0700stringboot/0777springboot/blog.022.png, /images/0700stringboot/0777springboot/blog.022.png 1.5x, /images/0700stringboot/0777springboot/blog.022.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0777springboot/blog.022.png"
+        title="/images/0700stringboot/0777springboot/blog.022.png" /></p>
+<p>图5-14个人中心界面图</p>
+<p>5.4.5文章信息，在文章信息页面中可以查看文章标题、分类、图片、发布日期、博主账号、邮箱、点击次数等详细信息进行点我收藏，如图5-15所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0777springboot/blog.023.png"
+        data-srcset="/images/0700stringboot/0777springboot/blog.023.png, /images/0700stringboot/0777springboot/blog.023.png 1.5x, /images/0700stringboot/0777springboot/blog.023.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0777springboot/blog.023.png"
+        title="/images/0700stringboot/0777springboot/blog.023.png" /></p>
+<p>图5-15文章信息界面图</p>
+<h1 id="heading-2"></h1>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2024-06-28</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/0777springboot%E6%A0%A1%E5%9B%AD%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://chenqi199.github.io/0777springboot%E6%A0%A1%E5%9B%AD%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F/" data-title="0777springboot校园博客系统" data-hashtags="springboot,java,vue,论文,项目"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://chenqi199.github.io/0777springboot%E6%A0%A1%E5%9B%AD%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F/" data-hashtag="springboot"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://chenqi199.github.io/0777springboot%E6%A0%A1%E5%9B%AD%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F/" data-title="0777springboot校园博客系统"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://chenqi199.github.io/0777springboot%E6%A0%A1%E5%9B%AD%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F/" data-title="0777springboot校园博客系统"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://chenqi199.github.io/0777springboot%E6%A0%A1%E5%9B%AD%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F/" data-title="0777springboot校园博客系统" data-ralateuid="https://gitee.com/chen_q_i"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/springboot/">Springboot</a>,&nbsp;<a href="/tags/java/">Java</a>,&nbsp;<a href="/tags/vue/">Vue</a>,&nbsp;<a href="/tags/%E8%AE%BA%E6%96%87/">论文</a>,&nbsp;<a href="/tags/%E9%A1%B9%E7%9B%AE/">项目</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/0773springboot%E7%81%AB%E8%BD%A6%E8%AE%A2%E7%A5%A8%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" class="prev" rel="prev" title="0773springboot火车订票管理系统"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>0773springboot火车订票管理系统</a>
+            <a href="/0776springboot%E5%A4%96%E5%8D%96%E7%82%B9%E9%A4%90%E7%B3%BB%E7%BB%9F/" class="next" rel="next" title="0776springboot外卖点餐系统">0776springboot外卖点餐系统<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.128.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="chenqi199" target="_blank">chenqi</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

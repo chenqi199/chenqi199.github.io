@@ -1,0 +1,27 @@
+# 0647springboot大学生体质测试管理系统--论文
+
+
+# [0647springboot大学生体质测试管理系统--论文](https://github.com/GraduationProject-springboot/0647springboot)
+
+![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
+
+# [项目清单](https://chenqi1990.site) 包安装运行
+
+### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
+
+### 点击播放视频 ▼
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV14HerezEwW?p=4)
+
+
+#####   内容整理中  
+
+
+
+
+
+
+
+
+
+
+

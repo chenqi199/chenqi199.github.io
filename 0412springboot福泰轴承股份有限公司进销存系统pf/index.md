@@ -3,168 +3,20 @@
 
 # [0412springboot福泰轴承股份有限公司进销存系统pf](https://github.com/GraduationProject-springboot/0412springboot)
 
-### 微信： chen_q123456  qq:462201886
-### github:chenqi199
+![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-### [所有项目](https://github.com/GraduationProject-springboot/allSpringbootProjects) 包安装运行
+# [项目清单](https://chenqi1990.site) 包安装运行
 
-### [所有项目列表excel 腾讯文档 项目清单](https://docs.qq.com/sheet/DSHRFSVZ5aEVYT3N3?tab=BB08J2) 包安装运行
-
-### [github](https://chenqi199.github.io)
-
-
-
-
-
-
-
-
-# 0412springboot福泰轴承股份有限公司进销存系统pf
+### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://player.bilibili.com/player.html?isOutside=true&aid=BV1ULbQeREgz&bvid=BV1ULbQeREgz&cid=500001616869796&p=13)
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=13)
 
-### [所有项目](https://github.com/GraduationProject-springboot/allSpringbootProjects) 包安装运行
 
-
-
-
-
-
-
-
-
-
-
-
-**毕 业 设 计（论 文）**
-
-题目：[福泰轴承股份有限公司进销存系统]{.underline}
-
-**摘 要**
-
-使用旧方法对福泰轴承股份有限公司进销存系统的信息进行系统化管理已经不再让人们信赖了，把现在的网络信息技术运用在福泰轴承股份有限公司进销存系统的管理上面可以解决许多信息管理上面的难题，比如处理数据时间很长，数据存在错误不能及时纠正等问题。这次开发的福泰轴承股份有限公司进销存系统对仓库人员管理、字典管理、公告管理、供应商信息管理、客户管理、商品管理、商品出入库管理、商品销售管理、销售人员管理、商品退货管理、管理员管理等进行集中化处理。经过前面自己查阅的网络知识，加上自己在学校课堂上学习的知识，决定开发系统选择小程序模式这种高效率的模式完成系统功能开发。这种模式让操作员基于浏览器的方式进行网站访问，采用的主流的Java语言这种面向对象的语言进行福泰轴承股份有限公司进销存系统程序的开发，在数据库的选择上面，选择功能强大的Mysql数据库进行数据的存放操作。福泰轴承股份有限公司进销存系统的开发让用户查看商品信息变得容易，让管理员高效管理商品信息。
-
-**关键词**：福泰轴承股份有限公司进销存系统；商品信息；公告；自助资讯
-
-**Abstract**
-
-Using the old method to systematically manage the tourist attraction
-information no longer makes people trust. Applying the current network
-information technology to the management of tourist attraction
-information can solve many problems in information management, such as
-processing data for a long time, data There are problems such as errors
-that cannot be corrected in time. The self-guided website developed this
-time centralizes the city information of attractions, tourist
-attractions information, comment information, and self-help information.
-After learning the network knowledge I had previously consulted and the
-knowledge I learned in the school classroom, I decided to develop the
-system to select the 小程序 mode, an efficient mode to complete system
-function development. This mode allows the operator to access the
-website based on the browser. The mainstream Java language is used in
-the object-oriented language to develop the self-guided website program.
-In the database selection, select the powerful Mysql database for data.
-Store operation. The development of self-guided websites makes it easy
-for users to view information on attractions, allowing administrators to
-efficiently manage information on attractions.
-
-**Key Words：**Self-guided tour website; tourist attractions; reviews;
-self-help information
-
-[1 绪论 1](#绪论)
-
-[1.1 研究背景 1](#研究背景)
-
-[1.2目的和意义 1](#目的和意义)
-
-[1.3 论文结构安排 2](#论文结构安排)
-
-[2 相关技术 3](#相关技术)
-
-[2.1 VUE介绍 3](#vue介绍)
-
-[2.2 Mysql数据库介绍 3](#__RefHeading___Toc15751)
-
-[2.3 JAVA语言介绍 5](#java语言介绍)
-
-[3 系统分析 7](#系统分析)
-
-[3.1系统可行性分析 7](#系统可行性分析)
-
-[3.1.1 技术可行性分析 7](#技术可行性分析)
-
-[3.1.2 经济可行性分析 7](#经济可行性分析)
-
-[3.1.3 运行可行性分析 7](#运行可行性分析)
-
-[3.2系统性能分析 8](#系统性能分析)
-
-[3.2.1 系统安全性 8](#系统安全性)
-
-[3.2.2 数据完整性 8](#数据完整性)
-
-[3.2.3系统可扩展性 9](#系统可扩展性)
-
-[3.3系统流程分析 9](#系统流程分析)
-
-[3.3.1系统登录流程 10](#系统登录流程)
-
-[3.3.2信息添加流程 11](#信息添加流程)
-
-[3.3.3信息删除流程 11](#信息删除流程)
-
-[3.4系统功能分析 12](#系统功能分析)
-
-[4 系统设计 13](#系统设计)
-
-[4.1系统概要设计 13](#系统概要设计)
-
-[4.2系统功能结构设计 13](#系统功能结构设计)
-
-[4.3数据库设计 13](#数据库设计)
-
-[4.3.1数据库E-R图设计 13](#数据库e-r图设计)
-
-[4.3.2 数据库表结构设计 14](#数据库表结构设计)
-
-[5 系统实现 15](#系统实现)
-
-[5.1管理员功能介绍 15](#管理员功能介绍)
-
-[5.1.1管理员登录 15](#管理员登录)
-
-[5.1.2 商品管理 15](#商品管理)
-
-[5.1.3 公告信息管理 16](#公告信息管理)
-
-[5.1.4公告类型管理 16](#公告类型管理)
-
-[6系统测试 18](#__RefHeading___Toc24033)
-
-[6.1 本系统测试  18](#本系统测试)
-
-[6.1.1 登录功能测试 18](#登录功能测试)
-
-[6.1.2 注册功能测试 19](#注册功能测试)
-
-[6.2测试结果分析 19](#测试结果分析)
-
-[结 论 20](#结-论)
-
-[参考文献 22](#参考文献)
-
-[致 谢 23](#致-谢)
-
-#   {#section .unnumbered}
-
-# 1 绪论
-
+# 绪论
 ## 1.1 研究背景
-
 现在大家正处于互联网加的时代，这个时代它就是一个信息内容无比丰富，信息处理与管理变得越加高效的网络化的时代，这个时代让大家的生活不仅变得更加地便利化，也让时间变得更加地宝贵化，因为每天的每分钟，每秒钟这些时间都能让人们处理大批量的日常事务，这些场景，是之前的手工模式无法与之相抗衡的。对于商品信息的管理来说，传统的通过纸质文档记录信息的方式已经落后了，依靠手工管理商品信息，不仅花费较长的工作时间，在对记录各种信息的文档进行信息查询以及信息核对操作时，也不能及时保证信息的准确性，基于这样的办公低效率环境下，对于商品信息的处理就要提出新的解决方案。因为这个时代的信息一直都在高速发展，要是不抱着发展的观念看待事情，极有可能被这个市场快速遗忘，甚至被无情地淘汰掉。所以尽早开发一款福泰轴承股份有限公司进销存系统进行信息的快速处理，既跟上了时代的发展脚步，也能让自己的核心竞争力有所提升。
-
 ## 1.2目的和意义
-
 互联网加的时代一方面是加快信息的发展，另一方面也是对传统行业进行筛选，能够继续发展的，肯定是那些能够充分运用互联网技术进行自身升级改革的行业。那些停步不前的行业只能就此结束，进而被大家所遗忘。这次设计出来的福泰轴承股份有限公司进销存系统，它不仅能够让管理人员在信息增加，信息的编辑等事务处理上，节省很多的时间，也会砍掉一部分的人工成本，节省不必要开支的资金。另外，此系统的操作界面是可视化的界面，管理人员无需付费培训就能尽快上手。福泰轴承股份有限公司进销存系统的开发意义如下：
 
 1、管理人员再也不用在查询信息上花费大量宝贵的时间了，通过信息关键词字段就可以在几秒内获取需要的信息，在各种突发事件面前管理人员也不用慌张，可以从容淡定地处理各种相关信息。
@@ -174,9 +26,7 @@ self-help information
 3、有了这款信息管理类操作软件，所有需要进行处理的数据不用在纸质版本的文档上进行记载，而是基于电脑进行信息录入。
 
 4、商品方面的信息都是通过网站进行显示，其实质是这些信息都保存在网站对应的数据库里面。只要操作员不去恶意删除信息，那么这些信息将会永久保存。
-
 ## 1.3 论文结构安排
-
 编写福泰轴承股份有限公司进销存系统相对应的论文，其实就是对开发完成的程序进行再次解读的过程。本论文从七个方面的内容讲解了开发的程序，具体内容如下：
 
 第一个部分：就是论文的绪论，这个部分就是介绍在什么样的背景下开发的程序，以及这个程序开发出来具有什么意义等内容。
@@ -192,77 +42,50 @@ self-help information
 第六个部分：就是程序已经完成了开发的前提之下，需要检测程序的各个模块是否衔接正常，程序各个功能能否在网络等一切外部条件正常的情况下运行，这期间要是出现任何错误都需要及时记录并在后期进行修补完善。
 
 第七个部分：就是论文最后的总结部分，描述遇到的问题，采用的解决思路等内容。
-
 # 2 相关技术
-
-## 2.1 VUE介绍 
-
-[]{#__RefHeading___Toc15751 .anchor}Vue (读音 /vjuː/，类似于 view)
-是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue
-被设计为可以自底向上逐层应用。Vue
-的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。另一方面，当与[现代化的工具链](https://v2.cn.vuejs.org/v2/guide/single-file-components.html)以及各种[支持类库](https://github.com/vuejs/awesome-vue#libraries--plugins)结合使用时，Vue
-也完全能够为复杂的单页应用提供驱动。
-
+## 2.1 VUE介绍  
+Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。另一方面，当与[现代化的工具链](https://v2.cn.vuejs.org/v2/guide/single-file-components.html)以及各种[支持类库](https://github.com/vuejs/awesome-vue#libraries--plugins)结合使用时，Vue 也完全能够为复杂的单页应用提供驱动。
 ## 2.2 Mysql数据库介绍
-
-有了程序功能的操作，也需要对程序操作的各个功能所产生的数据信息存放在一个固定的仓库里面，这个所谓的仓库就是大家最熟悉的程序开发需要使用的数据库了，数据库能够发展到至今的模样，其实也是经历了很多的变化历程的，在最开始由于数据信息处理的需要开始推出最低级的数据管理，这个阶段也是数据库早期的人工管理的阶段，后来也经历了文件管理的阶段，这个阶段的数据管理因为信息不能够进行共享，加上管理的数据对配套的程序产生了较强的依赖性，在数据信息管理上也存在很多数据的重复记载造成数据冗余等问题。所以为了解决上述一系列文件管理阶段所产生的数据管理的问题，对数据管理方式进行了全方位的升级改造，也就让数据管理进入了一个全新的阶段------数据库系统的阶段。这个阶段也是数据库管理数据的一个全新的相当高级的阶段。
+有了程序功能的操作，也需要对程序操作的各个功能所产生的数据信息存放在一个固定的仓库里面，这个所谓的仓库就是大家最熟悉的程序开发需要使用的数据库了，数据库能够发展到至今的模样，其实也是经历了很多的变化历程的，在最开始由于数据信息处理的需要开始推出最低级的数据管理，这个阶段也是数据库早期的人工管理的阶段，后来也经历了文件管理的阶段，这个阶段的数据管理因为信息不能够进行共享，加上管理的数据对配套的程序产生了较强的依赖性，在数据信息管理上也存在很多数据的重复记载造成数据冗余等问题。所以为了解决上述一系列文件管理阶段所产生的数据管理的问题，对数据管理方式进行了全方位的升级改造，也就让数据管理进入了一个全新的阶段——数据库系统的阶段。这个阶段也是数据库管理数据的一个全新的相当高级的阶段。
 
 说到数据库，也不得不说数据库的模型，数据库拥有的数据模型有网状，还有层次，以及关系型这三样数据库模型。网状的结构就是把记录的每条信息都比喻成一个点，点跟点之间也有联系，最终就形成了一个像网一样的结构，就是所谓的网状数据模型。也有对数据记录使用树状结构的方式进行数据保存，这个就是层次数据模型，关系数据库模型运用在现在市面上常见的数据库当中了，像本系统开发使用的MySQL数据库，还有安装过程比较复杂的Sqlserver数据库，也有一些比较小巧的关系型数据库，像Access数据库，FoxPro数据库等数据库。这样的关系型数据库将数据表里面的行还有列进行相互关联形成一个二维矩阵的方式来保存程序所产生的数据信息。
 
 本次之所以选择MySQL数据库来当程序数据存放的仓库，则是因为此数据库安装不用费时，也不需要各种百度信息去解决安装过程中出现的任何问题，而且由于自己的电脑内存比较小，才4个G，为了更好的开发项目程序，针对低配置的电脑选择MySQL数据库也是情理之中。图2.3展示了数据列设计中需要使用的列类型。
 
-![](media/image1.png){width="5.7659722222222225in"
-height="4.079166666666667in"}
+![](/images/0400stringboot/0412springboot/blog.001.png)
 
-图2.3数据列类型图
-
+` `图2.3数据列类型图
 ## 2.3 JAVA语言介绍
-
-在1995年这一年的5月份，著名的Sun
-Microsystems公司在程序开发设计上面郑重推出一种面向对象开发的程序设计语言------Java，最开始的时候Java是由詹姆斯.高斯林这位伟大的JAVA之父来进行主导，但是在后来由于各种原因，让甲骨文公司这个针对商业程序创建了oracle大型数据库的公司收购了Java。Java的平台总共算下来有3个，分别为javaME和javaSE以及javaEE这3个java平台。下面将对其进行分别介绍。
+在1995年这一年的5月份，著名的Sun Microsystems公司在程序开发设计上面郑重推出一种面向对象开发的程序设计语言——Java，最开始的时候Java是由詹姆斯.高斯林这位伟大的JAVA之父来进行主导，但是在后来由于各种原因，让甲骨文公司这个针对商业程序创建了oracle大型数据库的公司收购了Java。Java的平台总共算下来有3个，分别为javaME和javaSE以及javaEE这3个java平台。下面将对其进行分别介绍。
 
 1.在电脑桌面程序的开发上面需要选择JavaME，这个用得也比较多。
 
-2.企业也会根据工作以及业务需要开发各种软件，那么就会选用JavcEE这个支持企业版软件的开发的Java平台，JavcEE主攻运用在企业领域上面的web应用，JavcEE也在javaSE的基础上获得了比如jsp技术
-，Servlet技术等程序开发技术的支持。
+2.企业也会根据工作以及业务需要开发各种软件，那么就会选用JavcEE这个支持企业版软件的开发的Java平台，JavcEE主攻运用在企业领域上面的web应用，JavcEE也在javaSE的基础上获得了比如jsp技术 ，Servlet技术等程序开发技术的支持。
 
-3.现在生活中手机的普及化，也使得手机端这样的移动设备的软件的兴起，JavaME这个迷你版java平台就能运用于移动端的软件开发操作。图2.4就是
-Java技术原理图。
+3.现在生活中手机的普及化，也使得手机端这样的移动设备的软件的兴起，JavaME这个迷你版java平台就能运用于移动端的软件开发操作。图2.4就是 Java技术原理图。
 
-![](media/image2.png){width="5.770833333333333in" height="3.59375in"}
+![](/images/0400stringboot/0412springboot/blog.002.png)
 
 图2.4 Java技术原理图
 
+
 # 3 系统分析
-
 ## 3.1系统可行性分析
-
 需要使用大部分精力开发的福泰轴承股份有限公司进销存系统为了充分降低开发风险，特意在开发之前进行可行性分析这个验证系统开发是否可行的步骤。本文就会从技术角度，经济角度，还有用户使用的程序的运行角度进行综合阐述。
-
 ### 3.1.1 技术可行性分析
-
 开发程序选择的是面向对象的，功能强大的，简单易用的Java程序设计语言，数据库的开发工具使用到了Mysql数据库，由于自己之前接触过一些简单的程序开发方面的设计作品，所以对Myeclipse工具的使用比较熟练，对于数据库的操作技巧也有一定的积累。另外，程序开发需要在自己电脑上安装的软件并不多，在win7操作系统的大环境下，能够完全搭建好程序开发的操作环境，比如Myeclipse工具，Mysql数据库工具，游览器，以及处理程序图片的Photoshop工具等都能安装在自己的电脑上。总的说来，开发这个程序在技术上是可以实现的。
-
 ### 3.1.2 经济可行性分析
-
 开发出来的程序并不是朝着商业程序的方向进行设计开发的，它只是作为一个毕业设计项目进行开发，主要用于检验学生在学校所学知识的一个检验，也锻炼学生运用网络，图书等工具进行自学的能力。所以开发这个程序软件并不会涉及到经济上面的开销，在开发软件的选择上也不会额外付费安装软件，在开发软件的官网上面就可以下载需要的软件，并根据提示的安装步骤安装软件到自己的电脑上面。总的说来，开发这个程序在经济上也不存在经费支出。
-
 ### 3.1.3 运行可行性分析
-
 因为这个程序软件从开始开发到开发截止都是根据用户的需求进行定制，考虑到此程序软件是面向广大普通操作用户，鉴于他们的知识文化水平，特意开发出一个可操作性强的，能够很容易让使用用户上手的，具有可视化操作界面的一个程序软件。总的说来，这个程序站在用户运行程序的角度上分析，是不存在操作难的问题的。用户只要打开程序就可以免去专人培训进行程序功能操作。
 
 经过上面从技术的角度，从经济的角度，从程序运行的角度这三个角度分析现打算开发的程序，可以得出该程序软件是可以进行开发操作的。
-
 ## 3.2系统性能分析
-
 ### 3.2.1 系统安全性
-
 程序在使用中是不允许其他访问者随意窃取程序里面的隐秘信息，也不允许其他操作者越权操作其他管理用户操作的功能，要真正杜绝这些现象就必须在程序开发之前把程序的安全性给考虑进去。
 
 比如现在很多程序都会把用户注册的功能给考虑进去，让用户在注册页面功能区填写自己的个人信息，这些数据信息涵盖了用户本人的姓名，用户对程序登录设置的密码，用户经常使用的邮箱，用户的常用联系方式还有用户的所住地址等信息，这些信息都是设计到用户本人的隐私，那么这些信息在传输给程序后台时，是需要进行管理并保存至对应的数据库文件里面。要是有人恶意窃取程序的数据信息，也就会让那些注册了此程序软件的用户的个人隐秘信息都会遭到泄露。这些信息落入其他不法分子手里，他们极有可能根据用户的隐私信息去骚扰用户，并把这些信息用于各种商业用途谋取其他非法的利益。所以数据安全性是一个系统能不能使用的首要标准。
-
 ### 3.2.2 数据完整性
-
 数据完整性是确保数据信息是否具有可靠性，是否具有参考价值的一个重要因素，数据信息只描述一部分，或者必有的数据信息反而为空等现象都是代表着这个数据信息不完整，有数据缺陷，这是个很严肃的问题，因为这样的数据信息跟垃圾信息没什么两样。
 
 说到数据完整性，不得不提最常用的程序表单功能。这些表单主要就是提取广大用户的数据信息的，需要广大用户根据表单上的要求，填写自己的姓名信息，以及自己的联系方式信息，有些也会有额外的信息填写要求，有必须要填的选项，也有不需要必填的选项。假如广大用户为了保护自己的隐私，或者不想受到其他人的骚扰，不填写必填项等信息，广大用户在最后提交此表单的时候，往往都是提交不了的。
@@ -270,595 +93,288 @@ Java技术原理图。
 数据完整性不仅仅限于登记的数据要完整，它也需要程序里面的所有数据信息之间存在关联，而且这种联系也是要求不能出差错的。
 
 由于数据表之间也会存在一定的联系，所以同一个数据也会出现在另一个表格里面，那么这两个表格记录的同一个数据应该是一样的。不能够是同样的数据信息在不同表中不一样。
-
 ### 3.2.3系统可扩展性
-
 一切事物都是一直在发展，程序员开发软件也需要带着发展的思维去进行软件开发操作，这样的话，开发出来的程序在应对管理所需时，也会相对应的进行程序升级与更新。不论是功能完善还是数据库升级都能在原来的基础上对原有程序进行迭代升级。让开发出来的程序能够走得越来越远。这也是广大用户对程序软件的使用要求。
-
 ## 3.3系统流程分析
-
 管理员假如要操作系统提供的功能，那么管理员就要在系统的登录界面，填写管理员登录的账号信息，填写相应的密码信息，管理员需要保证这两者能够验证身份的账号以及密码信息的正确性，这样管理员就可以通过登录界面进入系统后台操作界面。图3.1就是开发的程序软件福泰轴承股份有限公司进销存系统它的操作流程图。
 
-![](media/image3.wmf)
+![](/images/0400stringboot/0412springboot/blog.003.png)
 
 图3.1 系统操作流程图
-
 ### 3.3.1系统登录流程
-
 福泰轴承股份有限公司进销存系统的登录流程，针对的角色就是操作员的操作角色。在登录界面需要的必填信息就是账号信息，配上登录的密码信息就能登录福泰轴承股份有限公司进销存系统，需要注意的就是必填的账号信息和登录密码信息，都需要进行验证，系统会判断账号还有填写的密码信息的正确性，只有这两者信息都正确了，就能成功登录福泰轴承股份有限公司进销存系统了。系统登录流程图如下图。
 
-![](media/image4.wmf)
+![](/images/0400stringboot/0412springboot/blog.004.png)
 
 图3.2　系统登录流程图
-
 ### 3.3.2信息添加流程
-
 用户在添加信息的界面填写的任何数据信息也是需要验证的，系统会判断用户填写信息的格式还有数据信息是不是合法信息，如果用户填写的信息是合法内容，系统就会在数据库对应的数据表里面添加信息。添加信息流程如下图。
 
-![](media/image5.wmf)
+![](/images/0400stringboot/0412springboot/blog.005.png)
 
 图3.3 添加信息流程图
-
 ### 3.3.3信息删除流程
-
 对于那些已经失效的信息，需要用户及时进行删除，这样有利于腾出空间存放其他信息。删除信息也是先从数据库对应数据表里面删除数据，接着就是更新数据表的信息。这样删除的数据，在用户操作界面就查看不到了。信息删除流程如下图所示。
 
-![](media/image6.wmf)
+![](/images/0400stringboot/0412springboot/blog.006.png)
 
 图3.4 信息删除流程图
-
 ## 3.4系统功能分析
-
 福泰轴承股份有限公司进销存系统具有管理员角色，用户角色，这几个操作权限。
 
 福泰轴承股份有限公司进销存系统针对管理员设置的功能有：添加并管理各种类型信息，管理用户账户信息，管理商品信息，管理公告信息等内容。
 
 福泰轴承股份有限公司进销存系统针对用户设置的功能有：查看并修改个人信息，查看商品信息，查看公告信息等内容。
-
 # 4 系统设计
-
 ## 4.1系统概要设计
-
 福泰轴承股份有限公司进销存系统并没有使用C/S结构，而是基于网络浏览器的方式去访问服务器，进而获取需要的数据信息，这种依靠浏览器进行数据访问的模式就是现在用得比较广泛的适用于广域网并且没有网速限制要求的小程序结构，图4.1就是开发出来的程序工作原理图。
 
-![](media/image7.wmf)
+![](/images/0400stringboot/0412springboot/blog.007.png)
 
 图4.1 程序工作的原理图
-
 ## 4.2系统功能结构设计
-
 福泰轴承股份有限公司进销存系统针对管理员设置的功能有：添加并管理各种类型信息，管理用户账户信息，管理商品信息，管理公告信息等内容。
 
 福泰轴承股份有限公司进销存系统针对用户设置的功能有：查看并修改个人信息，查看商品信息，查看公告信息等内容。
-
 ## 4.3数据库设计
-
 ### 4.3.1数据库E-R图设计
-
 程序设计是离不开对应数据库的设计操作的，这样的做法就是减少数据对程序的依赖性，所以数据库的设计也是需要花费大量的日常时间来进行设计的，在设计中对程序开发需要存储的数据信息进行实体划分，先确认实体，然后设计实体的属性等操作，这种设计就是数据库设计里面不能少的必须有的E-R模型设计。为了降低程序设计的对应的数据库设计难度，开发人员也可以使用相应的工具来进行E-R模型设计，现在市面上设计E-R模型的工具有PowerDesigner建模工具，Navicat制作工具，还有微软的Visio绘图工具。为了简便起见，本程序在设计E-R模型的时候，就选用了微软的Visio这款功能强大，操作便利的绘图工具。
 
 （1）下图是商品出入库实体和其具备的属性。
 
-![](media/image8.jpeg){width="5.554861111111111in"
-height="2.9854166666666666in"}\
+![C:/Users/Administrator/Desktop/temp111\3.1\img\商品出入库.jpg](/images/0400stringboot/0412springboot/blog.008.jpeg "C:/Users/Administrator/Desktop/temp111\3.1\img\商品出入库.jpg")
 商品出入库实体属性图
 
 （2）下图是商品实体和其具备的属性。
 
-![](media/image9.jpeg){width="5.554861111111111in"
-height="2.986111111111111in"}\
+![C:/Users/Administrator/Desktop/temp111\3.1\img\商品.jpg](/images/0400stringboot/0412springboot/blog.009.jpeg "C:/Users/Administrator/Desktop/temp111\3.1\img\商品.jpg")
 商品实体属性图
 
 （3）下图是商品退货实体和其具备的属性。
 
-![](media/image10.jpeg){width="5.554861111111111in"
-height="2.9854166666666666in"}\
+![C:/Users/Administrator/Desktop/temp111\3.1\img\商品退货.jpg](/images/0400stringboot/0412springboot/blog.010.jpeg "C:/Users/Administrator/Desktop/temp111\3.1\img\商品退货.jpg")
 商品退货实体属性图
 
 （4）下图是公告实体和其具备的属性。
 
-![](media/image11.jpeg){width="3.75in" height="2.082638888888889in"}\
+![C:/Users/Administrator/Desktop/temp111\3.1\img\公告.jpg](/images/0400stringboot/0412springboot/blog.011.jpeg "C:/Users/Administrator/Desktop/temp111\3.1\img\公告.jpg")
 公告实体属性图
 
 （5）下图是销售人员实体和其具备的属性。
 
-![](media/image12.jpeg){width="5.554861111111111in"
-height="2.9854166666666666in"}\
+![C:/Users/Administrator/Desktop/temp111\3.1\img\销售人员.jpg](/images/0400stringboot/0412springboot/blog.012.jpeg "C:/Users/Administrator/Desktop/temp111\3.1\img\销售人员.jpg")
 销售人员实体属性图
 
 （6）下图是供应商信息实体和其具备的属性。
 
-![](media/image13.jpeg){width="5.554861111111111in"
-height="2.9854166666666666in"}\
+![C:/Users/Administrator/Desktop/temp111\3.1\img\供应商信息.jpg](/images/0400stringboot/0412springboot/blog.013.jpeg "C:/Users/Administrator/Desktop/temp111\3.1\img\供应商信息.jpg")
 供应商信息实体属性图
 
 （7）下图是商品销售实体和其具备的属性。
 
-![](media/image14.jpeg){width="5.554861111111111in"
-height="2.986111111111111in"}\
+![C:/Users/Administrator/Desktop/temp111\3.1\img\商品销售.jpg](/images/0400stringboot/0412springboot/blog.014.jpeg "C:/Users/Administrator/Desktop/temp111\3.1\img\商品销售.jpg")
 商品销售实体属性图
 
 （8）下图是客户实体和其具备的属性。
 
-![](media/image15.jpeg){width="5.554861111111111in"
-height="2.986111111111111in"}\
+![C:/Users/Administrator/Desktop/temp111\3.1\img\客户.jpg](/images/0400stringboot/0412springboot/blog.015.jpeg "C:/Users/Administrator/Desktop/temp111\3.1\img\客户.jpg")
 客户实体属性图
 
 （9）下图是仓库人员实体和其具备的属性。
 
-![](media/image16.jpeg){width="5.554861111111111in"
-height="2.9854166666666666in"}\
+![C:/Users/Administrator/Desktop/temp111\3.1\img\仓库人员.jpg](/images/0400stringboot/0412springboot/blog.016.jpeg "C:/Users/Administrator/Desktop/temp111\3.1\img\仓库人员.jpg")
 仓库人员实体属性图
 
 ### 4.3.2 数据库表结构设计
-
 本次程序开发选用的数据库管理工具是Mysql数据管理工具，使用它存放数据也需要创建程序对应的数据库文件，并命名刚创建的数据库文件，有了数据库也需要创建各种数据表来充实数据库，在数据表的创建中，不仅需要对数据表命名，也需要对数据表的字段进行设计，包括每个数据表里面需要设置的字段名称，字段对应的数据类型信息，字段的主键设置这个也是不可缺少的，因为每个数据表里面的主键就是标记着这个数据表跟其他数据表相区分的唯一标志。就相当于生活中的每个人都有姓名，但是上网搜索自己的名字，会发现全国上下有很多人的名字跟自己的名字一模一样，包括姓氏以及名字，区分每个人的唯一信息就是每个人的身份证号信息，主键在数据表里面也是起着这样的重要作用。下面就介绍本次开发的程序福泰轴承股份有限公司进销存系统的数据表结构信息。
 
 表4.1仓库人员表
 
-  ------ ------------------------- -------------------- ------------------- --------
-   序号            列名                  数据类型              说明          允许空
-
-    1               Id                     Int                  id             否
-
-    2       cangkurenyuan_name            String           仓库人员姓名        是
-
-    3       cangkurenyuan_phone           String          仓库人员手机号       是
-
-    4     cangkurenyuan_id_number         String         仓库人员身份证号      是
-
-    5       cangkurenyuan_photo           String           仓库人员照片        是
-
-    6     xiaoshourenyuan_zhuzhi          String              现住址           是
-
-    7       cangkurenyuan_email           String             电子邮箱          是
-
-    8           create_time                Date              创建时间          是
-  ------ ------------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|cangkurenyuan\_name|String|仓库人员姓名|是|
+|3|cangkurenyuan\_phone|String|仓库人员手机号|是|
+|4|cangkurenyuan\_id\_number|String|仓库人员身份证号|是|
+|5|cangkurenyuan\_photo|String|仓库人员照片|是|
+|6|xiaoshourenyuan\_zhuzhi|String|现住址|是|
+|7|cangkurenyuan\_email|String|电子邮箱|是|
+|8|create\_time|Date|创建时间|是|
 表4.2字典表
 
-  ------ ---------------- -------------------- ------------------- --------
-   序号        列名             数据类型              说明          允许空
-
-    1           Id                Int                  id             否
-
-    2        dic_code            String               字段            是
-
-    3        dic_name            String              字段名           是
-
-    4       code_index          Integer               编码            是
-
-    5       index_name           String             编码名字          是
-
-    6        super_id           Integer             父字段id          是
-
-    7         beizhu             String               备注            是
-
-    8      create_time            Date              创建时间          是
-  ------ ---------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|dic\_code|String|字段|是|
+|3|dic\_name|String|字段名|是|
+|4|code\_index|Integer|编码|是|
+|5|index\_name|String|编码名字|是|
+|6|super\_id|Integer|父字段id|是|
+|7|beizhu|String|备注|是|
+|8|create\_time|Date|创建时间|是|
 表4.3公告表
 
-  ------ ----------------- -------------------- ------------------- --------
-   序号        列名              数据类型              说明          允许空
-
-    1           Id                 Int                  id             否
-
-    2      gonggao_name           String             公告名称          是
-
-    3      gonggao_types         Integer             公告类型          是
-
-    4       insert_time            Date            公告发布时间        是
-
-    5     gonggao_content         String             公告详情          是
-
-    6       create_time            Date              创建时间          是
-  ------ ----------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|gonggao\_name|String|公告名称|是|
+|3|gonggao\_types|Integer|公告类型|是|
+|4|insert\_time|Date|公告发布时间|是|
+|5|gonggao\_content|String|公告详情|是|
+|6|create\_time|Date|创建时间|是|
 表4.4供应商信息表
 
-  ------ ----------------------------------- -------------------- ------------------- --------
-   序号                 列名                       数据类型              说明          允许空
-
-    1                    Id                          Int                  id             否
-
-    2         gongyingshang_uuid_number             String          供应商唯一编号       是
-
-    3            gongyingshang_name                 String            供应商名称         是
-
-    4              lianxiren_name                   String            联系人姓名         是
-
-    5              lianxiren_phone                  String           联系人手机号        是
-
-    6             lianxiren_address                 String               地址            是
-
-    7            gongyingshang_types               Integer            供应商类型         是
-
-    8     gongyingshang_xinyongdengji_types        Integer             信用等级          是
-
-    9           gongyingshang_content               String            供应商详情         是
-
-    10               create_time                     Date              创建时间          是
-  ------ ----------------------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|gongyingshang\_uuid\_number|String|供应商唯一编号|是|
+|3|gongyingshang\_name|String|供应商名称|是|
+|4|lianxiren\_name|String|联系人姓名|是|
+|5|lianxiren\_phone|String|联系人手机号|是|
+|6|lianxiren\_address|String|地址|是|
+|7|gongyingshang\_types|Integer|供应商类型|是|
+|8|gongyingshang\_xinyongdengji\_types|Integer|信用等级|是|
+|9|gongyingshang\_content|String|供应商详情|是|
+|10|create\_time|Date|创建时间|是|
 表4.5客户表
 
-  ------ -------------------- -------------------- ------------------- --------
-   序号          列名               数据类型              说明          允许空
-
-    1             Id                  Int                  id             否
-
-    2     xiaoshourenyuan_id        Integer             销售人员          是
-
-    3      kehu_uuid_number          String             客户编号          是
-
-    4         kehu_name              String             客户姓名          是
-
-    5         kehu_phone             String            客户手机号         是
-
-    6       kehu_id_number           String           客户身份证号        是
-
-    7         kehu_photo             String             客户照片          是
-
-    8        kehu_zhuzhi             String             客户住址          是
-
-    9       laiyuan_types           Integer             客户来源          是
-
-    10        sex_types             Integer               性别            是
-
-    11           age                Integer               年龄            是
-
-    12        kehu_email             String             客户邮箱          是
-
-    13       kehu_content            String             客户备注          是
-
-    14       insert_time              Date              录入时间          是
-
-    15       create_time              Date              创建时间          是
-  ------ -------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|xiaoshourenyuan\_id|Integer|销售人员|是|
+|3|kehu\_uuid\_number|String|客户编号|是|
+|4|kehu\_name|String|客户姓名|是|
+|5|kehu\_phone|String|客户手机号|是|
+|6|kehu\_id\_number|String|客户身份证号|是|
+|7|kehu\_photo|String|客户照片|是|
+|8|kehu\_zhuzhi|String|客户住址|是|
+|9|laiyuan\_types|Integer|客户来源|是|
+|10|sex\_types|Integer|性别|是|
+|11|age|Integer|年龄|是|
+|12|kehu\_email|String|客户邮箱|是|
+|13|kehu\_content|String|客户备注|是|
+|14|insert\_time|Date|录入时间|是|
+|15|create\_time|Date|创建时间|是|
 表4.6商品表
 
-  ------ ----------------------- -------------------- ------------------- --------
-   序号           列名                 数据类型              说明          允许空
-
-    1              Id                    Int                  id             否
-
-    2       gongyingshang_id           Integer              供应商           是
-
-    3     shangpin_uuid_number          String             商品编号          是
-
-    4         shangpin_name             String             商品名称          是
-
-    5        shangpin_photo             String             商品照片          是
-
-    6        shangpin_danwei            String               单位            是
-
-    7        shangpin_types            Integer             商品类型          是
-
-    8     shangpin_kucun_number        Integer             商品库存          是
-
-    9      shangpin_new_money         BigDecimal             进价            是
-
-    10     shangpin_old_money         BigDecimal             售价            是
-
-    11        cangku_types             Integer               仓库            是
-
-    12         daoqi_time                Date              到期时间          是
-
-    13      shangpin_content            String             商品介绍          是
-
-    14         insert_time               Date              录入时间          是
-
-    15         create_time               Date              创建时间          是
-  ------ ----------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|gongyingshang\_id|Integer|供应商|是|
+|3|shangpin\_uuid\_number|String|商品编号|是|
+|4|shangpin\_name|String|商品名称|是|
+|5|shangpin\_photo|String|商品照片|是|
+|6|shangpin\_danwei|String|单位|是|
+|7|shangpin\_types|Integer|商品类型|是|
+|8|shangpin\_kucun\_number|Integer|商品库存|是|
+|9|shangpin\_new\_money|BigDecimal|进价|是|
+|10|shangpin\_old\_money|BigDecimal|售价|是|
+|11|cangku\_types|Integer|仓库|是|
+|12|daoqi\_time|Date|到期时间|是|
+|13|shangpin\_content|String|商品介绍|是|
+|14|insert\_time|Date|录入时间|是|
+|15|create\_time|Date|创建时间|是|
 表4.7商品出入库表
 
-  ------ ---------------------------- -------------------- ------------------- --------
-   序号              列名                   数据类型              说明          允许空
-
-    1                 Id                      Int                  id             否
-
-    2            shangpin_id                Integer               商品            是
-
-    3          cangkurenyuan_id             Integer             仓库人员          是
-
-    4     shangpincuruku_uuid_number         String            出入库编号         是
-
-    5        shangpincuruku_name             String            出入库标题         是
-
-    6        shangpincuruku_types           Integer               类型            是
-
-    7           caozuo_number               Integer             操作数量          是
-
-    8           jieqing_types               Integer             钱款结清          是
-
-    9       shangpincuruku_content           String               备注            是
-
-    10           insert_time                  Date              录入时间          是
-
-    11           create_time                  Date              创建时间          是
-  ------ ---------------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|shangpin\_id|Integer|商品|是|
+|3|cangkurenyuan\_id|Integer|仓库人员|是|
+|4|shangpincuruku\_uuid\_number|String|出入库编号|是|
+|5|shangpincuruku\_name|String|出入库标题|是|
+|6|shangpincuruku\_types|Integer|类型|是|
+|7|caozuo\_number|Integer|操作数量|是|
+|8|jieqing\_types|Integer|钱款结清|是|
+|9|shangpincuruku\_content|String|备注|是|
+|10|insert\_time|Date|录入时间|是|
+|11|create\_time|Date|创建时间|是|
 表4.8商品销售表
 
-  ------ ------------------------------ -------------------- ------------------- --------
-   序号               列名                    数据类型              说明          允许空
-
-    1                  Id                       Int                  id             否
-
-    2             shangpin_id                 Integer               商品            是
-
-    3               kehu_id                   Integer               客户            是
-
-    4          xiaoshourenyuan_id             Integer             销售人员          是
-
-    5     shangpinxiaoshou_uuid_number         String             销售编号          是
-
-    6        shangpinxiaoshou_name             String             销售标题          是
-
-    7            caozuo_number                Integer             销售数量          是
-
-    8            jieqing_types                Integer             钱款结清          是
-
-    9             huafei_money               BigDecimal           销售金额          是
-
-    10           xiaoshou_time                  Date              销售时间          是
-
-    11      shangpinxiaoshou_content           String               备注            是
-
-    12            insert_time                   Date              录入时间          是
-
-    13            create_time                   Date              创建时间          是
-  ------ ------------------------------ -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|shangpin\_id|Integer|商品|是|
+|3|kehu\_id|Integer|客户|是|
+|4|xiaoshourenyuan\_id|Integer|销售人员|是|
+|5|shangpinxiaoshou\_uuid\_number|String|销售编号|是|
+|6|shangpinxiaoshou\_name|String|销售标题|是|
+|7|caozuo\_number|Integer|销售数量|是|
+|8|jieqing\_types|Integer|钱款结清|是|
+|9|huafei\_money|BigDecimal|销售金额|是|
+|10|xiaoshou\_time|Date|销售时间|是|
+|11|shangpinxiaoshou\_content|String|备注|是|
+|12|insert\_time|Date|录入时间|是|
+|13|create\_time|Date|创建时间|是|
 表4.9销售人员表
 
-  ------ --------------------------- -------------------- ------------------- --------
-   序号             列名                   数据类型              说明          允许空
-
-    1                Id                      Int                  id             否
-
-    2       xiaoshourenyuan_name            String           销售人员姓名        是
-
-    3       xiaoshourenyuan_phone           String          销售人员手机号       是
-
-    4     xiaoshourenyuan_id_number         String         销售人员身份证号      是
-
-    5       xiaoshourenyuan_photo           String           销售人员照片        是
-
-    6      xiaoshourenyuan_zhuzhi           String              现住址           是
-
-    7       xiaoshourenyuan_email           String             电子邮箱          是
-
-    8            create_time                 Date              创建时间          是
-  ------ --------------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|xiaoshourenyuan\_name|String|销售人员姓名|是|
+|3|xiaoshourenyuan\_phone|String|销售人员手机号|是|
+|4|xiaoshourenyuan\_id\_number|String|销售人员身份证号|是|
+|5|xiaoshourenyuan\_photo|String|销售人员照片|是|
+|6|xiaoshourenyuan\_zhuzhi|String|现住址|是|
+|7|xiaoshourenyuan\_email|String|电子邮箱|是|
+|8|create\_time|Date|创建时间|是|
 表4.10商品退货表
 
-  ------ -------------------------------- -------------------- ------------------- --------
-   序号                列名                     数据类型              说明          允许空
-
-    1                   Id                        Int                  id             否
-
-    2          shangpinxiaoshou_id              Integer             商品销售          是
-
-    3       xiaoshoutuihuo_uuid_number           String             退货编号          是
-
-    4             caozuo_number                 Integer             退货数量          是
-
-    5     xiaoshoutuihuo_yuanyou_content         String             退货缘由          是
-
-    6              tuihuan_jine                BigDecimal           退还金额          是
-
-    7              tuihuo_time                    Date              退货时间          是
-
-    8         xiaoshoutuihuo_content             String               备注            是
-
-    9              insert_time                    Date              录入时间          是
-
-    10             create_time                    Date              创建时间          是
-  ------ -------------------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|shangpinxiaoshou\_id|Integer|商品销售|是|
+|3|xiaoshoutuihuo\_uuid\_number|String|退货编号|是|
+|4|caozuo\_number|Integer|退货数量|是|
+|5|xiaoshoutuihuo\_yuanyou\_content|String|退货缘由|是|
+|6|tuihuan\_jine|BigDecimal|退还金额|是|
+|7|tuihuo\_time|Date|退货时间|是|
+|8|xiaoshoutuihuo\_content|String|备注|是|
+|9|insert\_time|Date|录入时间|是|
+|10|create\_time|Date|创建时间|是|
 表4.11管理员表
 
-  ------ ---------------- -------------------- ------------------- --------
-   序号        列名             数据类型              说明          允许空
-
-    1           Id                Int                  id             否
-
-    2        username            String              用户名           是
-
-    3        password            String               密码            是
-
-    4          role              String               角色            是
-
-    5        addtime              Date              新增时间          是
-  ------ ---------------- -------------------- ------------------- --------
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|username|String|用户名|是|
+|3|password|String|密码|是|
+|4|role|String|角色|是|
+|5|addtime|Date|新增时间|是|
 
 # 5 系统实现
-
 ## 5.1管理员功能介绍
-
 ### 5.1.1管理员登录
-
 系统登录功能是程序必不可少的功能，在登录页面必填的数据有两项，一项就是账号，另一项数据就是密码，当管理员正确填写并提交这二者数据之后，管理员就可以进入系统后台功能操作区。下图就是管理员登录页面。
 
-![](media/image17.png){width="5.763888888888889in"
-height="3.2284722222222224in"}
+![](/images/0400stringboot/0412springboot/blog.017.png)
 
 图5.1 管理员登录页面
-
 ### 5.1.2 商品管理
-
 项目管理页面提供的功能操作有：查看商品，删除商品操作，新增商品操作，修改商品操作。下图就是商品管理页面。
 
-![](media/image18.png){width="5.763888888888889in"
-height="3.2284722222222224in"}
+![](/images/0400stringboot/0412springboot/blog.018.png)
 
-图5.2 商品管理页面
-
+图5.2  商品管理页面
 ### 5.1.3 公告信息管理
-
 公告信息管理页面提供的功能操作有：新增公告，修改公告，删除公告操作。下图就是公告信息管理页面。
 
-![](media/image19.png){width="5.752083333333333in"
-height="3.251388888888889in"}
+![](/images/0400stringboot/0412springboot/blog.019.png)
 
 图5.3 公告信息管理页面
-
 ### 5.1.4公告类型管理
-
 公告类型管理页面显示所有公告类型，在此页面既可以让管理员添加新的公告信息类型，也能对已有的公告类型信息执行编辑更新，失效的公告类型信息也能让管理员快速删除。下图就是公告类型管理页面。
 
-![](media/image20.png){width="5.770138888888889in" height="2.95in"}
+![](/images/0400stringboot/0412springboot/blog.020.png)
 
 图5.4 公告类型列表页面
 
-[]{#__RefHeading___Toc24033
-.anchor}为了保证所开发出来的系统质量过关，让所开发出来的系统具备可靠性并能够投入运行使用，这就需要进行系统开发的最后一个关键步骤，那就是系统测试。可以说系统测试就是对系统开发前面的步骤，比如系统分析与设计等进行复查。尽管在程序开发期间，人们一直很注意避免系统出错，但这样还是会让很多的潜在的系统缺陷不容易被人们肉眼察觉，只有经过反复不断地测试才能及时暴露系统的运行问题，这个时候进行系统问题的纠正就能真正避免财产损失，截止到目前，市面上还没有从根本上解决开发出的程序的正确性证明。所以发现系统的错误以及缺陷的重要手段还是要依赖于系统测试。
-
-## 6.1 本系统测试 
-
-本系统的测试结合了计算机的软件以及硬件系统，对程序的全部功能，还有程序的运行稳定性等性能上进行了测试，测试过程中也再次对程序配套数据库的连接问题进行了系统化地测试操作。接下来就选取系统的一些功能进行测试演示。
-
-### 6.1.1 登录功能测试
-
-系统的登录功能主要起到一个验证身份的作用，目的就是防止外人恶意攻击系统，窃取系统的相关数据信息，系统的登录功能验证的信息有两项，一个是用户名，另一个就是密码信息。任何一个数据出现问题，系统就会提示。当然用户也不能进入系统。测试数据信息见下表。
-
-表6.1 登录功能测试数据
-
-+---------------------+------------+-----------------+---------------+
-| 测试项目            | 测试数据   | 期望结果        | 测试结果      |
-+---------------------+------------+-----------------+---------------+
-| 填写数据库          | 用户名：a1 | 登录通过        | 登录通过      |
-| 里面的用户名，密码  |            |                 |               |
-|                     | 密         |                 |               |
-|                     | 码：123456 |                 |               |
-+---------------------+------------+-----------------+---------------+
-| 填写的用户名，密码  | 用户名：a1 | 登录不通过      | 登录不通过    |
-| 在数据库中并不存在  |            |                 |               |
-|                     | 密         |                 |               |
-|                     | 码：aaaaa  |                 |               |
-+---------------------+------------+-----------------+---------------+
-| 填写数据库的用户    | 用户名：a1 | 登录不通过      | 登录不通过    |
-| 名，但填写密码有误  |            |                 |               |
-|                     | 密         |                 |               |
-|                     | 码：aaaaa  |                 |               |
-+---------------------+------------+-----------------+---------------+
-| 填写的用户          | 用         | 登录不通过      | 登录不通过    |
-| 名在数据库里面没有  | 户名：a111 |                 |               |
-| ，但填写的密码无误  |            |                 |               |
-|                     | 密         |                 |               |
-|                     | 码：123456 |                 |               |
-+---------------------+------------+-----------------+---------------+
-
-### 6.1.2 注册功能测试
-
-游客需要注册来获取账号密码信息，游客要是曾经进行过注册，再次填写同样的账号信息时，系统也会提示数据库已有相同账号信息，游客就不能注册成功了。测试结果详细见下表。
-
-表6.2 注册功能测试数据
-
-+----------------------+---------------+--------------+---------------+
-| 测试项目             | 测试数据      | 期望结果     | 测试结果      |
-+----------------------+---------------+--------------+---------------+
-| 填写的用户名，密码   | 用户名：a1    | 不能注册     | 不能注册      |
-| 在数据库里面已经存在 |               |              |               |
-|                      | 密码：123456  |              |               |
-+----------------------+---------------+--------------+---------------+
-| 填写的用户名，       | 用户名：a99   | 注册通过     | 注册通过      |
-| 密码在数据库里面没有 |               |              |               |
-|                      | 密码：123456  |              |               |
-+----------------------+---------------+--------------+---------------+
-
-## 6.2测试结果分析
-
-经过了程序开发的最后一个测试环节，对开发的程序软件福泰轴承股份有限公司进销存系统也下了定论，在测试期间程序的功能能够跟最开始的用户需求文档保持一致性，程序的界面设计以及数据库设计也都是参照用户的需求完成设计的。另外，程序开发也充分解决了系统的升级以及长时间保持稳定运行的问题，说明该程序软件还是挺可靠的，进行验收上交也是达标的。总的说来，截止到目前，该福泰轴承股份有限公司进销存系统功能可靠，有着简单的操作流程，能够从一定程度上解决数据信息操作方面出现的各种问题。
-
-# 结 论
-
-开发福泰轴承股份有限公司进销存系统是作为毕设作品进行设计的，这个毕设作品是我在校进行知识学习的一个毕业考核项目，也是检验我通过网络工具，图书工具等学习工具进行自学的能力水平，让我在根据程序开发的需求分析初步完成程序功能之外，还接触了程序的测试过程，了解程序测试的具体的过程，以及遇到问题怎么去寻找相应的解决办法等等，毕业作品的制作以及设计才是学校对我真正的考验。
-
-在程序软件没能进行开发之前，我去了学校的图书馆借了有关数据库操作的书籍，在查看了sqlserver和mysql两种数据库的相关知识之后，我最后选择了我比较熟悉的mysql数据库。在编程语言的抉择上，由于自己之前接触过Java程序的开发，所以为了让我尽快在短时间内完成程序制作，我确定用Java编程语言进行程序编程。另外我从百度上下载了很多的有关信息增加，信息删除等操作的源代码，并通过不断调试以及完成配套的数据库的设计，开始完成程序的各个部分的功能。每当我粗心大意，致使我深陷程序开发困扰不能自拔之时，值得庆幸的是，我就会得到老师，还有我的寝室同学的耐心指导。
-
-历经长达几个月的毕业作品制作，我凭借自己的知识技能，还有大家的指导帮助，能够在学校规定的时间段之内提交毕业作品。虽然已经算是完成了毕业作品，但是付出了这么多心血，还是想把这个作品做得更加完美一点。针对我的毕业作品福泰轴承股份有限公司进销存系统，我觉得还有很多方面需要完善，第一就是界面上需要细微调整，比如色彩搭配有点违背广众的审美，需要细微调整，还有系统里面的字体大小也需要调大一点，太小的字体看起来有些费眼。然后在程序的功能上因为自己的入门开发水平的影响，所以目前只能做到这个境界，这个系统相比其他类似系统来说功能很简单，逻辑结构设计得也比较合理。
-
-自己一个人完成程序的开发，我不仅亲自体验了程序的开发流程，体验到了程序开发的各种不易。这种体验也还加深了我对知识的尊重。学海无涯，知识不是大学短短四年就能学完的，在大学学到的知识在最终经历检验时，才会深深地明白自己的知识积累原来还很浅薄。所以今后不管身在何处，自己的学习心态一定要时刻体现出来，要深刻明白知识学到手里就是自己的。同时，自己也不必过多抱怨学到的知识没有用处，相信学到的知识总会有派上用处的那天。不要等到需要用时再去学习知识，那样就会导致自己错失很多本该属于自己的机遇。
-
-# 参考文献
-
-\[1\]张孝祥,徐明华.JAVA基础与案例开发详解\[M\].清华大学出版社,2012.
-
-\[2\]康牧.JSP动态网站开发实用教程\[M\].清华大学出版社,2011.
-
-\[3\]刘亚宾.精通Eclipse\--JAVA技术大系\[M\].电子工业出版社,2015.
-
-\[4\]张知青.基于关系数据库的查询方法及优化技术分析\[J\].煤炭技术,2012,31(05):218-220.
-
-\[5\]赵钢.JSP
-Servlet+EJB的Web模式应用研究\[J\].电子设计工程,2013,21(13):47-49
-
-\[6\]肖英.解决Servlet开发中的中文乱码问题\[J\].科技传播,2011,(1)11-25
-
-\[7\]卫红春.信息系统分析与设计\[M\].北京：清华大学出版社,2009.
-
-\[8\]于万波.网站开发与应用案例教程\[M\].清华大学出版社，2009.
-
-\[9\]黎连业,王华,李淑春.软件测试与测试技术\[M\].清华大学出版社，2009.
-
-\[10\]宋丽娜.基于JSP的Web开发中文乱码问题的研究与解决\[J\].电子技术,2013,42(11):5-7.
-
-\[11\]汪君宇.基于JSP的Web应用软件开发技术分析\[J\].科技创新与应用,2018(16):158-160.
-
-\[12\]王建国.数据库设计在网站开发中的应用\[J\].山东农业工程学院学报,2017,34(04):158-159+164.
-
-\[13\]曾志明.网站开发技术的比较研究\[J\].电脑知识与技术,2010,6(05):1075-1078.
-
-\[14\]朱钧.基于角色的jsp通用权限系统设计与实现\[D\].山东大学,2014.
-
-\[15\]陈志誉. Java工具及其调度方法研究\[D\].华南理工大学,2018.
-
-\[16\]熊培伶.网站界面优化\[J\].通讯世界,2018(08):84-85.
-
-\[17\]白胜,赵亚楠,拓昱晓,张颖姣,康奇,郭小燕.基于BS架构的网站平台的设计与实现\[J\].电脑知识与技术,2018,14(34):48-50+61.
-
-\[18\]Xin-hua YOU. Brief Discuss the Application of Object-oriented in
-Java Language Programming Course\[A\]. Advanced Science and Industry
-Research Center.Proceedings of 2018 3rd International Conference on
-Automation, Mechanical and Electrical Engineering (AMEE
-2018)\[C\].Advanced Science and Industry Research Center:Science and
-Engineering Research Center,2018:5.
-
-\[19\]Menglin Liu. Design and Research of Batch Query System Based on
-Java\[A\]. Research Institute of Management Science and Industrial
-Engineering.Proceedings of 2018 4th World Conference on Control,
-Electronics and Computer Engineering (WCCECE 2018)\[C\].Research
-Institute of Management Science and Industrial
-Engineering:计算机科学与电子技术国际学会(Computer Science and Electronic
-Technology International Society),2018:5.
-
-# 致 谢
-
-在这个毕业设计即将完成的最后的时刻，我很想对我的老师，还有我周边的朋友以及我的同班同学们表示我的谢意，谢谢你们在毕业设计的制作阶段对我提供的各种帮助，我的指导老师给我的毕业设计提供了许多种指导方案，包括论文大纲的安排，程序功能结构的设计，以及程序的亮点等部分都很有耐心的进行了及时地指导，让我的毕业设计能够达到学院验收的水平。另外还有陪伴我的同学们以及朋友们，我们在这几个月一起泡图书馆，一起讨论以及制作毕业设计，让我在进行毕设作品创作中一直很有动力。特别是在我进行程序文档的编写过程中的时候，有很多格式问题还有文档内容的问题，都是你们一一指出并纠正，让我少走了很多弯路。
-
-最后的时刻，我要感谢我的大学，感谢所有学校的领导还有老师们，正因为有你们，我才能够在大学这几年学到很多有用的知识，才能更好地成长起来！相信我在毕业之后步入社会，我也能把学校所学到的知识进行灵活运用，我也会注重在社会上进行学习！让自己步入一个更高的台阶！遇到更好的自己！
 
 
-### 0412springboot福泰轴承股份有限公司进销存系统pf 项目图片
-![图片](/images/0412springbootimg_001.jpg)
-![图片](/images/0412springbootimg_003.jpg)
-![图片](/images/0412springbootimg_002.jpg)
-![图片](/images/0412springbootimg_012.jpg)
-![图片](/images/0412springbootimg_006.jpg)
-![图片](/images/0412springbootimg_007.jpg)
-![图片](/images/0412springbootimg_005.jpg)
-![图片](/images/0412springbootimg_011.jpg)
-![图片](/images/0412springbootimg_010.jpg)
-![图片](/images/0412springbootimg_004.jpg)
-![图片](/images/0412springbootimg_009.jpg)
-![图片](/images/0412springbootimg_008.jpg)
+
+# 系统
+
+
 
 
 

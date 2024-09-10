@@ -3,70 +3,511 @@
 
 # [0576springboot校园便利平台_1jxhb--论文](https://github.com/GraduationProject-springboot/0576springboot)
 
-### 微信： chen_q123456  qq:462201886
-### github:chenqi199
+![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-### [所有项目](https://github.com/GraduationProject-springboot/allSpringbootProjects) 包安装运行
+# [项目清单](https://chenqi1990.site) 包安装运行
 
-### [所有项目列表excel 腾讯文档 项目清单](https://docs.qq.com/sheet/DSHRFSVZ5aEVYT3N3?tab=BB08J2) 包安装运行
+### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
-### [github](https://chenqi199.github.io)
-
-
+### 点击播放视频 ▼
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1eMbYemE1U?p=74)
 
 
+# 绪  论
+## 1.1研究背景
+自改革开放以来，国内的基础网络设施的不断进步和终端电子设备的高度普及，互联网用户规模越来越大。现在人们越来越离不开计算机网络、互联网所带来的好处了，如今各式各样的平台已广泛应用，不同于以往传统的管理方式了，只有跟上时代的发展才能不会被淘汰掉，所以将传统的线下管理带到线上去实施，能够很大程度的提升管理效率，好处也有很多，能够整体提升新时代的背景之下新的样貌，更加朝气蓬勃。基于以上情况，校园便利平台逐渐出现在人们视野之中，校园便利已成为人们生活中不可缺少的一部分，同时也将成为今后发展中很有潜力的增长点。
+## 1.2系统开发目的与意义
+### 1.2.1 开发目的
+开发一套校园便利平台可以让管理者在有限的时间内对校园便利信息做出相应的调整，对校园便利的一切信息往最好的一面进行优化管理，达到事半功倍的效用。
+
+在最原始的校园便利管理方式中，人们通过纸质用手写来记录校园便利的动作，利用这种方式有着特别大的弊端，比如重复记录，漏记等。针对这种情况，开发一个校园便利平台，帮助校园便利进行管理。当前国内开发的线上管理平台还不是那么全面，并且都是基于智能手机进行搭建的平台，因此开发一个校园便利平台也是有必要的，开发这样一个基于SpringBoot的校园便利平台，满足管理者在上面对个人中心、用户管理、商品类型管理、二手商品管理、校园跑腿管理、跑腿领单管理、完成订单管理、评价信息管理、系统管理、订单管理等功能进行管理，打造一个更好更便利的校园便利平台。
+### 1.2.2 开发意义
+校园便利平台可以说真正的打破了以往手工记录的固有模式，使想关工作人员对平台进行有效操作，打破了最原始只能在通过录像查看校园便利的限制。用户只要在有网络的地方，利用手机或计算机可以随时随地查看二手商品信息，并进行添加到购物车、立即购买、评论或收藏操作；修改个人信息和登录密码等；节约了用户的时间。
+
+校园便利平台还拥有功能强大的信息查询平台，它就像一个指明灯，直接将你指定的所需要的信息呈现有眼前，解决了你在查询中的尴尬，所以开发此平台意义重大；
+## 1.3研究现状
+如今在这高速发展的新时代，无论是在国内还是在国外，发展的势头突飞猛进，在经济领域也是一片光明。在这种背景下，互联网市场将成为了人类文明争夺的一种方针。于是无论是国内还是国外一些企事业单位都把目光投向了互联网这块市场，了解互联网的人数越来越多，具备一些网络意识的人将十分普遍。在这种互联网大浪潮的不断冲刷下，各种各样的平台被开发出来。计算机技术无论是在国内还是在国外都应用普遍，使计算机这一新型工具成为人们耳熟能详、妇孺皆知的新技术。计算机和互联网的广泛应用，让国与国之间的距离变“近”了，这个庞大的群体中。互联网发展也存在一些差距，我国近些年的互联网发展迅速，跻身于世界前列。
+
+本平台采用B/S架构、采用的数据库是MySQL，使用JAVA技术开发。该平台的开发方式无论在国内还是国外都比较常见，而且开发完成后使用普遍，可以给平台用户提供大量的便利[3]。该平台在国内外前景较为良好。
+
+# 2平台关键技术及工具简介
+## 2.1 B/S架构
+B/S结构就是指平台客户端与服务器分离，客户端通过浏览器访问服务端进行操作。
+
+B/S结构目前广泛应用于绝大部分平台搭建中，这种结构摒弃C/S结构客户端服务端不分离的缺点，具有更多的优势：
+
+（1）跨平台性：B/S的标准由标准化组织确立，适用于绝大多数的平台搭建，通用于应用之间。
+
+（2）低维护成本：客户端和服务器端分离，减轻了两端的压力，尤其是客户端，对客户端设备，硬件、软件要求都比较低，并且平台需要升级或维护时，只需要在服务器端升级或维护就可以，使相应的费用减少。 
+## 2.2Java语言
+Java语言正式诞生于1995年，是由SUN公司开发研制的OAK语言发展而来的。Java语言继承了OAK语言可跨平台运行的特点，融合了面向对象编程的风格，JAVA以其独有的开放性、跨平台性和面向网络的交互性席卷全球，以其安全性、易用性和开发周期短的特点，迅速从最初的编程语言发展成为全球第一大软件开发平台.广受时下程序开发人员的好评。后来又为了丰富Java语言的用途，提高生产力，将它进行设计和改造，以满足更多地开发和应用场景。经过改造后，它可以满足移动端开发，桌面应用开发和企业级应用开发。Java语言还为用户提供了丰富的类库，在掌握它的特性后，学习特定的工具包，就可以满足很多场景的开发。现在来看，Java语言在这三种平台的应用开发中，都占据了举足轻重的地位。
+
+与其他语言相比，Java语言具有很多的优点，Java语言简单比较容易理解，有c语言的基础很容易就可以学会，中文和英文的学习资源也比较多，而且Java语言经过许多年的沉淀发展，逐渐演变出很多成熟的框架技术。企业还还可以封装自己的框架，让开发变得简单。它还具有跨平台性较其他语言这一个最大的优势，这意味着它只需要一次编译就可以运行在其他平台上。
+## 2.3Mysql数据库
+没有数据库就没有Web平台，Mysql数据库是数据库中比较常用的，这都是源于它的特点。
+
+（1）Mysql是相比于Oracle更轻量、更简洁便于使用，在服务部署方面相对复杂度低，更利于毕设平台的开发[18]。
+
+（2）Mysql是免费开源的，对个人开发平台很友好。
+
+（3）Mysql占用空间内存比较小，发行版安装后不到100兆。
+
+（4）Mysql可以使用Sql语言进行调用，学习成本较低。
+
+（5）Mysql可支持互联网站数据共享也支持数据安全设置，防止数据泄露。
+
+（6）Mysql运行到各种版本的操作平台中无论是服务器上，还是我们开发用的笔记本上。
+
+（7）Mysql运行速度很快。
+## 2.4springboot框架
+Spring Boot是由Pivotal团队提供的轻量级框架，其“开箱即用”及“约定优于配置”的策略可以使开发者全身心的投入到业务逻辑代码的编写中，极大地提高了软件开发项目的效率。相比于Spring框架而言，Spring Boot框架更加能够节省程序员配置XML的时间，Spring Boot项目允许开发者使用它的所有模块和开发功能，此外， Spring Boot内置了服务器，简化了开发者启用服务器的整体流程，Spring Boot还可以自动适配不同类型的数据库以满足用户快速连接后台数据库管理的需求，这极大地方便了用户快速搭建应用程序的实现过程。 2014年4月，Spring Boot 1.0.0发布，截止到2022年2月，发布的Spring Boot版本为Spring Boot 3.0.0-M1。在平台的设计与开发中，为了能够快速搭建软件后台服务的开发环境，从技术实现的难度以及平台开发的成本两个方面考虑，Spring Boot框架能够使开发者更关注平台功能的业务逻辑代码实现，可采用Spring Boot框架搭建平台为前端提供数据服务。因此，本案例项目后台开发选择Spring Boot框架。
+## 2.5 Eclipse
+[Eclipse](https://so.csdn.net/so/search?q=Eclipse&spm=1001.2101.3001.7020) 是由Java语言作为基础开发的工具，并且全部代码都是开源，并支持组件集成。Eclipse本质其实是一个开源的框架和一组服务，以组件的形式，构成我们的开发工具。Eclipse自身自带标准的插件集，包括 Java 开发工具。
+
+# 3 平台需求分析
+需求分析在平台开发中有着十分重要的作用。软件项目凭借软件工程的思想和步骤可以大大的提高开发效率，缩短软件开发周期，保证了软件项目的质量。需求分析作为软件工程方法中的一步是至关重要的。软件需求工程是一门分析并记录软件需求的学科。需求分析简单的来说就是用户需要什么，平台需要什么，对此进行问题的列举，等级的排列，需要缜密的思分析和大量的调研。
+## 3.1系统整体分析及设计原则
+对于校园便利平台的搭建来说，系统分析首先要着眼于整体，对于分析一定要先分析整体，再分析部分。在校园便利平台中，整体要满足的就是人们通过平台进行校园便利信息管理的需求，同时平台还需要管理人员对校园便利平台的后台进行维护。
+
+本平台采取了一系列的设计原则，主要目的是为了平台的功能设计，还有管理人员在后期对平台维护时的方便，以及使用户能够简易的操作。最重要的设计原则包括：简单性、针对性、实用性、一致性、先进性。
+
+（1）简单性：在该平台中功能模块实现的同时，让用户操作起来简单明了，很快找到所需资源是最直接的目的。
+
+（2）针对性：该平台是根据设计需求为导向来开发校园便利平台的设计，所以针对性较强。
+
+（3）实用性：该设计能够满足校园便利平台的实际的功能需求，能够在实际中让用户真正使用到，具有实际的应用价值。
+
+（4）一致性：网站整体的页面布局，在不同的界面之间，img里的图片的放置位置以及大小都应该有严格的一致性。变量命名规则应该具有统一性。
+
+（5）先进性：本平台采用java作为开发语言、SpringBoot框架、MySQL作为平台数据库，它们被软件设计者们广泛使用。
+## 3.2平台可行性分析
+3.2.1　经济可行性分析
+
+由于开发本平台主要是为了测试自身的专业和设计能力，基本不考虑经济效益和后来的发展方向，只注重自身水平和设计能力的提高，并且对自身经济的要求也不高，只要有一台普通电脑就可以了，所以不需要考虑经济问题。
+
+3.2.2　技术可行性分析
+
+系统主要采用JAVA技术进行设计, 平台基于B/S架构模式，有针对性地解决了架C/S构安装麻烦不便维护等一系列问题。因为本平台是采用MySQL数据库和B/S结构进行设计的一个小型网站，所以应用程序和数据库更是缺一不可，要想使用该程序，必须保证功能完整，操作简单且直观易懂的特点。数据库的建立，对整体的完整和数据安全两方面必须得到保证。我们可以采用JAVA进行优化，加密函数，建立密库，这样可以有效的阻止在传输数据信息的过程中不易出现泄密状况，可以提高安全等级。在加密的同时我们可以开启JAVA安全模式，针对一些被执行命令和可以被使用的函数进行限制来提高平台的安全性。在早期，我已将JAVA的基本知识有了深度的理解，并对MySQL进行了解。对软件工程测试、UML等相关课程大概了解和学习过，通过掌握这些课程有了一定的平台开发、检验和辨别。采用JAVA以及MySQL结合起来开发该平台，必定是可行的并且是高效的。
+
+3.2.3　操作可行性分析
+
+平台的登录界面和业务逻辑简洁明了，采用一般的界面窗口来登录界面,整个平台更加人性化，用户操作更加简洁方便。本平台在操作和管理上比较容易，还具有很好的交互性等特点，在操作上是非常简单的。因此，本平台可以进行设计开发。通过电脑进行访问操作，用户一定能够很快就会对平台熟悉，尤其对老年群体，稍微简单了解下本平台，就能很快上手。
+## 3.3 平台用例分析 
+校园便利平台综合网络空间开发设计要求。目的是将传统管理方式转换为在网上管理，完成校园便利管理的方便快捷、安全性高、交易规范做了保障，目标明确。校园便利平台可以将功能划分为管理员功能和用户功能。
+
+（1）、管理员关键功能包含个人中心、用户管理、商品类型管理、二手商品管理、校园跑腿管理、跑腿领单管理、完成订单管理、评价信息管理、系统管理、订单管理等进行管理。管理员用例如下：
+
+![](/images/0500stringboot/0576springboot/blog.001.png)
+
+图3-1 管理员用例图
+
+（2）、用户关键功能包含个人中心、校园跑腿管理、跑腿领单管理、完成订单管理、评价信息管理等进行管理。用户用例如下：
+
+![](/images/0500stringboot/0576springboot/blog.002.png)
+
+图3-2 用户用例图
+
+## 3.4平台流程分析
+登录模块有许多规则，这些规则是用来限制用户权限的，用户进入平台前要进行登录，登录成功后方可对相关权限的操作。登录流程如下所示。
+
+![](/images/0500stringboot/0576springboot/blog.003.png)
+
+图3-3平台登录流程图
+
+添加新用户的流程是先查询新用户名是否已存在，如已有该用户名，需重拟用户名并同时输入新用户的其它信息，添加新用户到数据库时会先验证数据是否完整，信息都正确且完整时，返回并刷新用户列表；信息不正确时，会返回输入信息的那一步。该流程如图3-4所示。
+
+![](/images/0500stringboot/0576springboot/blog.004.png)
+
+图3-4添加新用户流程图
+
+
+# 4 平台设计
+## 4.1 平台架构设计
+整个平台采用B/S结构，用户可在浏览器中完成和整个平台的交互。
+
+用户在校园便利平台的浏览器界面进行的操作，浏览器操作传到服务器端，服务器端调用后台数据库，反馈给浏览器端。
+
+平台架构如图4-1所示：
+
+![绘图9](/images/0500stringboot/0576springboot/blog.005.jpeg)
+
+图4-1 平台架构图
+## 4.2 平台整体设计
+校园便利平台实现用户登录，查询信息，修改个人信息等。所有功能都通过与后台服务器的数据交互来完成的。
+
+具体的软件功能结构图如图4-2所示：
+
+![](/images/0500stringboot/0576springboot/blog.006.png)
+
+图4-2 平台功能结构图
+## 4.3 平台数据库设计
+对于校园便利平台而言，数据库中最核心的数据就是校园便利信息，并且有许多其他关联数据都储存于数据库中。随着时间推移，将发布大量信息于本平台中，届时数据库中也将蕴藏海量数据。一个优秀的数据库设计方案能在保证平台能够高效处理大量数据的同时保证平台的安全性。因此，在校园便利平台设计方案中将数据库的设计摆在重要位置，将数据库设计视为平台设计的重要内容。
+### 4.3.1 E-R模型设计
+在校园便利平台的数据库设计中，平台E-R模型的设计可以展示数据库中各种实体信息和他们之间的关系，将校园便利平台的E-R模型研究好后，数据库中数据表的建立也会比较容易。
+
+根据功能需求来对平台的e-r图来进行分解得到几种实体，以下为部分实体—关系模型。
+
+校园跑腿实体属性图如下。
+
+![](/images/0500stringboot/0576springboot/blog.007.png)
+
+图4-3校园跑腿实体属性图
+
+跑腿领单实体属性图如下：
+
+![](/images/0500stringboot/0576springboot/blog.008.png)
+
+图4-4跑腿领单实体属性图
+
+二手商品实体属性图如下：
+
+![](/images/0500stringboot/0576springboot/blog.009.png)
+
+图4-5二手商品实体属性图
+
+订单实体属性所示：
+
+![](/images/0500stringboot/0576springboot/blog.010.png)
+
+图4-6订单实体属性图
+### 4.3.2表设计
+Mysql将数据保存在不同的表中，极大地提高了数据调取灵活性。校园便利平台的具体表结构如以下表所示：
+
+表4-1：评价信息
+
+|字段名称|类型|长度|字段说明|主键|默认值|
+| :-: | :-: | :-: | :-: | :-: | :-: |
+|id|bigint||主键|主键||
+|addtime|timestamp||创建时间||CURRENT\_TIMESTAMP|
+|biaoti|varchar|200|标题|||
+|pingfen|varchar|200|评分|||
+|pingjia|longtext|4294967295|评价|||
+|zhanghao|varchar|200|账号|||
+|lingquzhanghao|varchar|200|领取账号|||
+|lingquren|varchar|200|领取人|||
+|lianxidianhua|varchar|200|联系电话|||
+|pingjiashijian|datetime||评价时间|||
+|crossuserid|bigint||跨表用户id|||
+|crossrefid|bigint||跨表主键id|||
+
+表4-2：校园跑腿
+
+|字段名称|类型|长度|字段说明|主键|默认值|
+| :-: | :-: | :-: | :-: | :-: | :-: |
+|id|bigint||主键|主键||
+|addtime|timestamp||创建时间||CURRENT\_TIMESTAMP|
+|biaoti|varchar|200|标题|||
+|tupian|longtext|4294967295|图片|||
+|quhuodidian|varchar|200|取货地点|||
+|shoujiandidian|varchar|200|收件地点|||
+|paotuifeiyong|int||跑腿费用|||
+|dingdanzhuangkuang|varchar|200|订单状况|||
+|zhanghao|varchar|200|账号|||
+|shouji|varchar|200|手机|||
+|paotuirenwu|longtext|4294967295|跑腿任务|||
+|feiyongshuoming|varchar|200|费用说明|||
+
+表4-3：跑腿领单
+
+|字段名称|类型|长度|字段说明|主键|默认值|
+| :-: | :-: | :-: | :-: | :-: | :-: |
+|id|bigint||主键|主键||
+|addtime|timestamp||创建时间||CURRENT\_TIMESTAMP|
+|biaoti|varchar|200|标题|||
+|paotuifeiyong|int||费用|||
+|dingdanzhuangtai|varchar|200|订单状态|||
+|shouji|varchar|200|手机|||
+|zhanghao|varchar|200|账号|||
+|lingquzhanghao|varchar|200|领取账号|||
+|lingquren|varchar|200|领取人|||
+|lianxidianhua|varchar|200|联系电话|||
+|lingqushijian|datetime||领取时间|||
+|yusongdashijian|datetime||预送达时间|||
+
+表4-4：订单
+
+|字段名称|类型|长度|字段说明|主键|默认值|
+| :-: | :-: | :-: | :-: | :-: | :-: |
+|id|bigint||主键|主键||
+|addtime|timestamp||创建时间||CURRENT\_TIMESTAMP|
+|orderid|varchar|200|订单编号|||
+|tablename|varchar|200|商品表名||ershoushangpin|
+|userid|bigint||用户id|||
+|goodid|bigint||商品id|||
+|goodname|varchar|200|商品名称|||
+|picture|longtext|4294967295|商品图片|||
+|buynumber|int||购买数量|||
+|price|float||价格||0|
+|discountprice|float||折扣价格||0|
+|total|float||总价格||0|
+|discounttotal|float||折扣总价格||0|
+|type|int||支付类型||1|
+|status|varchar|200|状态|||
+|address|varchar|200|地址|||
+|tel|varchar|200|电话|||
+|consignee|varchar|200|收货人|||
+|remark|varchar|200|备注|||
+|logistics|longtext|4294967295|物流|||
+
+表4-5：通知公告
+
+|字段名称|类型|长度|字段说明|主键|默认值|
+| :-: | :-: | :-: | :-: | :-: | :-: |
+|id|bigint||主键|主键||
+|addtime|timestamp||创建时间||CURRENT\_TIMESTAMP|
+|title|varchar|200|标题|||
+|introduction|longtext|4294967295|简介|||
+|picture|longtext|4294967295|图片|||
+|content|longtext|4294967295|内容|||
+
+表4-6：二手商品
+
+|字段名称|类型|长度|字段说明|主键|默认值|
+| :-: | :-: | :-: | :-: | :-: | :-: |
+|id|bigint||主键|主键||
+|addtime|timestamp||创建时间||CURRENT\_TIMESTAMP|
+|shangpinbianhao|varchar|200|商品编号|||
+|shangpinmingcheng|varchar|200|商品名称|||
+|shangpinleixing|varchar|200|商品类型|||
+|pinpai|varchar|200|品牌|||
+|guige|varchar|200|规格|||
+|yuanjia|float||原价|||
+|tupian|longtext|4294967295|图片|||
+|shangpinjieshao|longtext|4294967295|商品介绍|||
+|onelimittimes|int||单限|||
+|alllimittimes|int||库存|||
+|thumbsupnum|int||赞||0|
+|crazilynum|int||踩||0|
+|clicktime|datetime||最近点击时间|||
+|clicknum|int||点击次数||0|
+|price|float||价格|||
+
+表4-7：二手商品评论表
+
+|字段名称|类型|长度|字段说明|主键|默认值|
+| :-: | :-: | :-: | :-: | :-: | :-: |
+|id|bigint||主键|主键||
+|addtime|timestamp||创建时间||CURRENT\_TIMESTAMP|
+|refid|bigint||关联表id|||
+|userid|bigint||用户id|||
+|avatarurl|longtext|4294967295|头像|||
+|nickname|varchar|200|用户名|||
+|content|longtext|4294967295|评论内容|||
+|reply|longtext|4294967295|回复内容|||
+
+表4-8：完成订单
+
+|字段名称|类型|长度|字段说明|主键|默认值|
+| :-: | :-: | :-: | :-: | :-: | :-: |
+|id|bigint||主键|主键||
+|addtime|timestamp||创建时间||CURRENT\_TIMESTAMP|
+|biaoti|varchar|200|标题|||
+|paotuifeiyong|int||跑腿费用|||
+|zhanghao|varchar|200|账号|||
+|lingquzhanghao|varchar|200|领取账号|||
+|lingquren|varchar|200|领取人|||
+|lianxidianhua|varchar|200|联系电话|||
+|wanchengshijian|datetime||完成时间|||
+|ispay|varchar|200|是否支付||未支付|
+
+表4-9：配置文件
+
+|字段名称|类型|长度|字段说明|主键|默认值|
+| :-: | :-: | :-: | :-: | :-: | :-: |
+|id|bigint||主键|主键||
+|name|varchar|100|配置参数名称|||
+|value|varchar|100|配置参数值|||
+
+表4-10：用户表
+
+|字段名称|类型|长度|字段说明|主键|默认值|
+| :-: | :-: | :-: | :-: | :-: | :-: |
+|id|bigint||主键|主键||
+|username|varchar|100|用户名|||
+|password|varchar|100|密码|||
+|role|varchar|100|角色||管理员|
+|addtime|timestamp||新增时间||CURRENT\_TIMESTAMP|
+
+表4-11：购物车表
+
+|字段名称|类型|长度|字段说明|主键|默认值|
+| :-: | :-: | :-: | :-: | :-: | :-: |
+|id|bigint||主键|主键||
+|addtime|timestamp||创建时间||CURRENT\_TIMESTAMP|
+|tablename|varchar|200|商品表名||ershoushangpin|
+|userid|bigint||用户id|||
+|goodid|bigint||商品id|||
+|goodname|varchar|200|商品名称|||
+|picture|longtext|4294967295|图片|||
+|buynumber|int||购买数量|||
+|price|float||单价|||
+|discountprice|float||会员价|||
+
+表4-12：token表
+
+|字段名称|类型|长度|字段说明|主键|默认值|
+| :-: | :-: | :-: | :-: | :-: | :-: |
+|id|bigint||主键|主键||
+|userid|bigint||用户id|||
+|username|varchar|100|用户名|||
+|tablename|varchar|100|表名|||
+|role|varchar|100|角色|||
+|token|varchar|200|密码|||
+|addtime|timestamp||新增时间||CURRENT\_TIMESTAMP|
+|expiratedtime|timestamp||过期时间||CURRENT\_TIMESTAMP|
+
+表4-13：地址
+
+|字段名称|类型|长度|字段说明|主键|默认值|
+| :-: | :-: | :-: | :-: | :-: | :-: |
+|id|bigint||主键|主键||
+|addtime|timestamp||创建时间||CURRENT\_TIMESTAMP|
+|userid|bigint||用户id|||
+|address|varchar|200|地址|||
+|name|varchar|200|收货人|||
+|phone|varchar|200|电话|||
+|isdefault|varchar|200|是否默认地址[是/否]|||
+
+表4-14：收藏表
+
+|字段名称|类型|长度|字段说明|主键|默认值|
+| :-: | :-: | :-: | :-: | :-: | :-: |
+|id|bigint||主键|主键||
+|addtime|timestamp||创建时间||CURRENT\_TIMESTAMP|
+|userid|bigint||用户id|||
+|refid|bigint||商品id|||
+|tablename|varchar|200|表名|||
+|name|varchar|200|名称|||
+|picture|longtext|4294967295|图片|||
+|type|varchar|200|类型(1:收藏,21:赞,22:踩,31:竞拍参与,41:关注)||1|
+|inteltype|varchar|200|推荐类型|||
+|remark|varchar|200|备注|||
+
+表4-15：商品类型
+
+|字段名称|类型|长度|字段说明|主键|默认值|
+| :-: | :-: | :-: | :-: | :-: | :-: |
+|id|bigint||主键|主键||
+|addtime|timestamp||创建时间||CURRENT\_TIMESTAMP|
+|shangpinleixing|varchar|200|商品类型|||
+
+表4-16：用户
+
+|字段名称|类型|长度|字段说明|主键|默认值|
+| :-: | :-: | :-: | :-: | :-: | :-: |
+|id|bigint||主键|主键||
+|addtime|timestamp||创建时间||CURRENT\_TIMESTAMP|
+|zhanghao|varchar|200|账号|||
+|mima|varchar|200|密码|||
+|xingming|varchar|200|姓名|||
+|xingbie|varchar|200|性别|||
+|shouji|varchar|200|手机|||
+|touxiang|longtext|4294967295|头像|||
+|money|float||余额||0|
 
 
 
 
-![图片](/images/0576springbootimg_014.jpg)
-![图片](/images/0576springbootimg_015.jpg)
-![图片](/images/0576springbootimg_001.jpg)
-![图片](/images/0576springbootimg_017.jpg)
-![图片](/images/0576springbootimg_003.jpg)
-![图片](/images/0576springbootimg_002.jpg)
-![图片](/images/0576springbootimg_016.jpg)
-![图片](/images/0576springbootimg_012.jpg)
-![图片](/images/0576springbootimg_006.jpg)
-![图片](/images/0576springbootimg_007.jpg)
-![图片](/images/0576springbootimg_013.jpg)
-![图片](/images/0576springbootimg_005.jpg)
-![图片](/images/0576springbootimg_011.jpg)
-![图片](/images/0576springbootimg_010.jpg)
-![图片](/images/0576springbootimg_004.jpg)
-![图片](/images/0576springbootimg_009.jpg)
-![图片](/images/0576springbootimg_021.jpg)
-![图片](/images/0576springbootimg_020.jpg)
-![图片](/images/0576springbootimg_008.jpg)
-![图片](/images/0576springbootimg_022.jpg)
-![图片](/images/0576springbootimg_023.jpg)
-![图片](/images/0576springbootimg_018.jpg)
-![图片](/images/0576springbootimg_019.jpg)
 
-### 0576springboot校园便利平台_1jxhb--论文 项目图片
-![图片](/images/0576springbootimg_014.jpg)
-![图片](/images/0576springbootimg_015.jpg)
-![图片](/images/0576springbootimg_001.jpg)
-![图片](/images/0576springbootimg_017.jpg)
-![图片](/images/0576springbootimg_003.jpg)
-![图片](/images/0576springbootimg_002.jpg)
-![图片](/images/0576springbootimg_016.jpg)
-![图片](/images/0576springbootimg_012.jpg)
-![图片](/images/0576springbootimg_006.jpg)
-![图片](/images/0576springbootimg_007.jpg)
-![图片](/images/0576springbootimg_013.jpg)
-![图片](/images/0576springbootimg_005.jpg)
-![图片](/images/0576springbootimg_011.jpg)
-![图片](/images/0576springbootimg_010.jpg)
-![图片](/images/0576springbootimg_004.jpg)
-![图片](/images/0576springbootimg_009.jpg)
-![图片](/images/0576springbootimg_021.jpg)
-![图片](/images/0576springbootimg_020.jpg)
-![图片](/images/0576springbootimg_008.jpg)
-![图片](/images/0576springbootimg_022.jpg)
-![图片](/images/0576springbootimg_023.jpg)
-![图片](/images/0576springbootimg_018.jpg)
-![图片](/images/0576springbootimg_019.jpg)
+# 5系统实现
+## 5.1系统前台实现
+### 5.1.1系统首页功能
+当人们打开系统的网址后，首先看到的就是首页界面。在这里，人们能够看到校园便利平台的设计与实现的导航条，通过导航条导航进入各功能展示页面进行操作。系统首页界面如图5-1所示：
+
+![](/images/0500stringboot/0576springboot/blog.011.png)
+
+图5-1 系统首页界面
+
+二手商品：在二手商品页面的输入栏中输入商品名称、品牌和价格进行查询，可以查看到二手商品详细信息；并进行添加到购物车、立即购买、评论或收藏操作；二手商品页面如图5-2所示：
+
+![](/images/0500stringboot/0576springboot/blog.012.png)
+
+图5-2二手商品详细页面
+
+校园跑腿：在校园跑腿页面的输入栏中输入账号和选择订单状况进行查询，可以查看到校园跑腿详细信息；并进行领单、评论或收藏操作；校园跑腿页面如图5-3所示：
+
+![](/images/0500stringboot/0576springboot/blog.013.png)
+
+图5-3校园跑腿详细页面
+
+购物车：在购物车页面可以查看到商品名称、图片、价格、数量、总价等详细信息，并进行点击购买或删除操作；购物车页面如图5-4所示：
+
+![](/images/0500stringboot/0576springboot/blog.014.png)
+
+图5-4购物车详细页面
+
+个人中心：在个人中心页面可以对个人中心、我的订单、我的地址和我的收藏进行详细操作；
+
+我的订单：在我的订单页面可以对未支付、已支付、已发货、已完成、已退款和已取消订单进行详细操作；如图5-5所示：
+
+![](/images/0500stringboot/0576springboot/blog.015.png)
+
+图5-5我的订单界面
+### 5.1.2用户后台管理功能
+后台管理，用户注册登录进入系统首页，点击后台管理可以对个人中心、校园跑腿管理、跑腿领单管理、完成订单管理、评价信息管理等进行操作。管理员主页面如图5-6所示：
+
+![](/images/0500stringboot/0576springboot/blog.016.png)
+
+图5-6用户后台管理主界面
+
+跑腿领单管理。在跑腿领单页面输入账号、领取账号和选择订单状态进行查询跑腿领单列表，并根据需要对跑腿领单详细信息进行详情或完成登记操作；如图5-7所示：
+
+![](/images/0500stringboot/0576springboot/blog.017.png)
+
+图5-7跑腿领单管理界面
+
+## 5.2管理员功能实现
+管理员登录，在登录页面正确输入用户名和密码后，点击登录进入操作系统进行操作；如图5-8所示。
+
+![](/images/0500stringboot/0576springboot/blog.018.png)
+
+图5-8管理员登录界面
+
+管理员进入主页面，主要功能包括对个人中心、用户管理、商品类型管理、二手商品管理、校园跑腿管理、跑腿领单管理、完成订单管理、评价信息管理、系统管理、订单管理等进行操作。管理员主页面如图5-9所示：
+
+![](/images/0500stringboot/0576springboot/blog.019.png)
+
+图5-9管理员主界面
+
+管理员点击用户管理。在用户页面输入姓名和选择性别进行查询、新增或删除用户列表，并根据需要对用户详细信息进行详情、修改或删除操作；如图5-10所示：
+
+![](/images/0500stringboot/0576springboot/blog.020.png)
+
+图5-10用户管理界面
+
+管理员点击二手商品管理。在二手商品页面输入商品名称、品牌和价格进行查询、新增或删除二手商品列表，并根据需要对二手商品详细信息进行详情、修改、查看评论或删除操作；如图5-11所示：
+
+![](/images/0500stringboot/0576springboot/blog.021.png)
+
+图5-11二手商品管理界面
+
+管理员点击校园跑腿管理。在校园跑腿页面输入账号和选择订单状况进行查询、新增或删除校园跑腿列表，并根据需要对校园跑腿详细信息进行详情、领单、修改或删除操作；如图5-12所示：
+
+![](/images/0500stringboot/0576springboot/blog.022.png)
+
+图5-12校园跑腿管理界面
+
+管理员点击完成订单管理。在完成订单页面输入标题、账号和领取账号进行查询或删除完成订单列表，并根据需要对完成订单详细信息进行详情、评价、修改或删除操作；如图5-13所示：
+
+![](/images/0500stringboot/0576springboot/blog.023.png)
+
+图5-13完成订单管理界面
+
+管理员点击评价信息管理。在评价信息页面输入标题、账号和领取账号进行查询或删除评价信息列表，并根据需要对评价详细信息进行详情、修改或删除操作；如图5-14所示：
+
+![](/images/0500stringboot/0576springboot/blog.024.png)
+
+图5-14评价信息管理界面
+
+管理员点击订单管理。在已支付订单页面输入订单编号和商品名称进行查询、导出或删除已支付订单列表，并根据需要对已支付订单详细信息进行详情、发货或删除操作；还可以对已发货订单、已完成订单、已取消订单、已退款订单和未支付订单进行详细操作。如图5-15所示：
+
+![](/images/0500stringboot/0576springboot/blog.025.png)
+
+图5-15订单管理界面
+
+# 
+
+
 
 
 

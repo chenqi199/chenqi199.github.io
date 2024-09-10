@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer" />
+        <meta name="robots" content="noodp" />
+        <title>0755springboot新生宿舍管理系统 - chenqi blog</title><meta name="Description" content="Hugo theme - chenqi"><meta property="og:url" content="https://chenqi199.github.io/0755springboot%E6%96%B0%E7%94%9F%E5%AE%BF%E8%88%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/">
+  <meta property="og:site_name" content="chenqi blog">
+  <meta property="og:title" content="0755springboot新生宿舍管理系统">
+  <meta property="og:description" content="0755springboot新生宿舍管理系统 项目清单 包安装运行 github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第1章 绪论 1.1背景及意义 随着社会的快">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-06-21T18:31:05+08:00">
+    <meta property="article:modified_time" content="2024-06-21T18:31:05+08:00">
+    <meta property="article:tag" content="Springboot">
+    <meta property="article:tag" content="Java">
+    <meta property="article:tag" content="Vue">
+    <meta property="article:tag" content="论文">
+    <meta property="article:tag" content="项目">
+    <meta property="og:image" content="https://chenqi199.github.io/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chenqi199.github.io/logo.png">
+  <meta name="twitter:title" content="0755springboot新生宿舍管理系统">
+  <meta name="twitter:description" content="0755springboot新生宿舍管理系统 项目清单 包安装运行 github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第1章 绪论 1.1背景及意义 随着社会的快">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chenqi199.github.io/0755springboot%E6%96%B0%E7%94%9F%E5%AE%BF%E8%88%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" /><link rel="prev" href="https://chenqi199.github.io/0756springboot%E5%AD%A6%E7%94%9F%E6%AF%95%E4%B8%9A%E7%A6%BB%E6%A0%A1%E7%B3%BB%E7%BB%9F/" /><link rel="next" href="https://chenqi199.github.io/0760springboot%E5%87%86%E5%A6%88%E5%A6%88%E5%AD%95%E6%9C%9F%E4%BA%A4%E6%B5%81%E5%B9%B3%E5%8F%B0/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "0755springboot新生宿舍管理系统",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chenqi199.github.io\/0755springboot%E6%96%B0%E7%94%9F%E5%AE%BF%E8%88%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F\/"
+        },"image": ["https:\/\/chenqi199.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "springboot, java, vue, 论文, 项目","wordcount":  7279 ,
+        "url": "https:\/\/chenqi199.github.io\/0755springboot%E6%96%B0%E7%94%9F%E5%AE%BF%E8%88%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F\/","datePublished": "2024-06-21T18:31:05+08:00","dateModified": "2024-06-21T18:31:05+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/chenqi199.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "chenqi"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/0755springboot%E6%96%B0%E7%94%9F%E5%AE%BF%E8%88%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/0755springboot%E6%96%B0%E7%94%9F%E5%AE%BF%E8%88%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">0755springboot新生宿舍管理系统</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="chenqi199" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>chenqi</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-06-21">2024-06-21</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 7279 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 15 分钟&nbsp;<span id="/0755springboot%E6%96%B0%E7%94%9F%E5%AE%BF%E8%88%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" class="leancloud_visitors" data-flag-title="0755springboot新生宿舍管理系统">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">github 项目仓库</a> 开源仅有后端代码</a></li>
+        <li><a href="#点击播放视频-">点击播放视频 ▼</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#11背景及意义">1.1背景及意义</a></li>
+    <li><a href="#12-国内外研究概况">1.2 国内外研究概况</a></li>
+    <li><a href="#13-研究的内容">1.3 研究的内容</a></li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#21--bs架构">2.1  B/S架构</a></li>
+        <li><a href="#22--java技术介绍">2.2  Java技术介绍</a></li>
+        <li><a href="#-23-mysql数据库介绍"><code> </code>2.3 mysql数据库介绍</a></li>
+      </ul>
+    </li>
+    <li><a href="#24-springboot框架">2.4 Spring Boot框架</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#31-需求分析">3.1 需求分析</a></li>
+    <li><a href="#32-系统可行性分析">3.2 系统可行性分析</a>
+      <ul>
+        <li><a href="#321技术可行性技术背景">3.2.1技术可行性：技术背景</a></li>
+        <li><a href="#322经济可行性">3.2.2经济可行性</a></li>
+        <li><a href="#323操作可行性">3.2.3操作可行性：</a></li>
+      </ul>
+    </li>
+    <li><a href="#33-项目设计目标与原则">3.3 项目设计目标与原则</a></li>
+    <li><a href="#34系统流程分析">3.4系统流程分析</a>
+      <ul>
+        <li><a href="#341操作流程">3.4.1操作流程</a></li>
+        <li><a href="#342添加信息流程">3.4.2添加信息流程</a></li>
+        <li><a href="#343删除信息流程">3.4.3删除信息流程</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#41-系统体系结构">4.1 系统体系结构</a></li>
+    <li><a href="#42开发流程设计">4.2开发流程设计</a></li>
+    <li><a href="#43-数据库设计原则">4.3 数据库设计原则</a></li>
+    <li><a href="#44-数据表">4.4 数据表</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#51管理员功能模块">5.1管理员功能模块</a></li>
+    <li><a href="#52学生功能模块">5.2学生功能模块</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="0755springboot新生宿舍管理系统httpsgithubcomgraduationproject-springboot0755springboot"><a href="https://github.com/GraduationProject-springboot/0755springboot" target="_blank" rel="noopener noreffer ">0755springboot新生宿舍管理系统</a></h1>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        data-srcset="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 1.5x, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        title="picture" /></p>
+<h1 id="项目清单httpschenqi1990site-包安装运行"><a href="https://chenqi1990.site" target="_blank" rel="noopener noreffer ">项目清单</a> 包安装运行</h1>
+<h3 id="github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">github 项目仓库</a> 开源仅有后端代码</h3>
+<h3 id="点击播放视频-">点击播放视频 ▼</h3>
+<p><a href="https://www.bilibili.com/video/BV14HerezEwW?p=111" target="_blank" rel="noopener noreffer "><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.sstatic.net/Vp2cE.png"
+        data-srcset="https://i.sstatic.net/Vp2cE.png, https://i.sstatic.net/Vp2cE.png 1.5x, https://i.sstatic.net/Vp2cE.png 2x"
+        data-sizes="auto"
+        alt="https://i.sstatic.net/Vp2cE.png"
+        title="Watch the video" /></a></p>
+<h1 id="第1章-绪论">第1章 绪论</h1>
+<h2 id="11背景及意义">1.1背景及意义</h2>
+<p>随着社会的快速发展，计算机的影响是全面且深入的。人们生活水平的不断提高，日常生活中人们对新生宿舍管理系统方面的要求也在不断提高，新生宿舍的人数更是不断增加，使得新生宿舍管理系统的开发成为必需而且紧迫的事情。新生宿舍管理系统主要是借助计算机，通过对新生宿舍管理系统所需的信息管理，增加学生的选择，同时也方便对广大新生宿舍管理系统的及时查询、修改以及对新生宿舍管理系统的及时了解。新生宿舍管理系统对学生带来了更多的便利，该系统通过和数据库管理系统软件协作来满足学生的需求。计算机技术在现代管理中的应用，使计算机成为人们应用现代技术的重要工具。能够有效的解决获取信息便捷化、全面化的问题，提高效率。</p>
+<p>本新生宿舍管理系统主要牵扯到程序，数据库与计算机技术等。覆盖知识面大，可以大大的提高系统人员工作效率。</p>
+<h2 id="12-国内外研究概况">1.2 国内外研究概况</h2>
+<p>随着国内经济形势的不断发展，中国互联网进入了一个难得的高峰发展时期，这使得中外资本家纷纷转向互联网市场。然而，许多管理领域的不合理结构，人员不足以及管理需求的增加使得更多的人具备了互联网管理的意识。</p>
+<p>在当今高度发达的信息中，信息管理改革已成为一种更加广泛和全面的趋势。“新生宿舍管理系统”是基于Mysql数据库，在springboot框架程序设计的基础上实现的。为确保中国经济的持续发展，信息时代日益更新，更是蓬勃发展。同时，随着信息社会的快速发展，新生宿舍管理系统面临着越来越多的信息，因此很难获得他们对高效信息的需求，如何使用方便快捷的方式使查询者在广阔的新生宿舍管理系统信息中查询，存储，管理和共享信息方面有效，对我们的学习，工作和生活具有重要的现实意义。因此，国内外学术界对此进行了深入而广泛的研究，一个新的研究领域——新生宿舍管理系统诞生了。</p>
+<h2 id="13-研究的内容">1.3 研究的内容</h2>
+<p>目前许多人仍将传统的纸质工具作为信息管理的主要工具，而网络技术的应用只是起到辅助作用。在对网络工具的认知程度上，较为传统的office软件等仍是人们使用的主要工具，而相对全面且专业的新生宿舍管理系统的信息管理软件仍没有得到大多数人的了解或认可。本选题则旨在通过标签分类管理等方式，实现管理员：首页、个人中心、公告信息管理、院系管理、班级管理、学生管理、宿舍信息管理、宿舍安排管理、卫生检查管理、报修信息管理、报修处理管理、缴费信息管理，学生；首页、个人中心、公告信息管理、宿舍安排管理、卫生检查管理、报修信息管理、报修处理管理、缴费信息管理等功能。从而达到对新生宿舍管理系统信息的高效管理。</p>
+<ol start="2">
+<li>
+<h1 id="相关技术">相关技术</h1>
+</li>
+</ol>
+<h3 id="21--bs架构">2.1  B/S架构</h3>
+<p>B/S结构的特点也非常多，例如在很多浏览器中都可以做出信号请求。并且可以适当的减轻学生的工作量，通过对客户端安装或者是配置少量的运行软件就能够逐步减少学生的工作量，这些功能的操作主要是由服务器来进行控制的，由于该软件的技术不断成熟，最主要的特点就是与浏览器相互配合为软件开发带来了极大的便利，不仅能够减少开发成本，还能够不断加强系统的软件功能，层层相互独立和展现层是该B/S结构完成相互连接的主要特性。</p>
+<h3 id="22--java技术介绍">2.2  Java技术介绍</h3>
+<p>Java语言擅长开发互联网类应用和企业级应用，现在已经相当的成熟，而且也是目前使用最多的编程语言之一。Java语言具有很好的面向对象性，可以符合人的思维模式进行设计，封装是将对象的属性和方法尽可能地隐藏起来，使得外界并不知道是如何实现的，外界能通过接口进行访问，继承是指每个类都会有一个父类，所有的子类都有父类的方法，可以进行继承，但是只有final修饰的类不能被继承，通过继承可以使得代码得到重新利用，能够提高软件的开发效率，也是多态的前提。</p>
+<p>Java就像C语言、C#语言等，也是一种程序开发语言，而它的特点就是面向对象。作为一种程序开发与设计的语言，它有很多特性，主要特性就是面向对象、夸平台以及可以分布式运行。Java语言项目不但安全性高、稳定性强，而且可以并发运行。</p>
+<p>为了提高开发的速度及效率，必须做到代码的重复使用和简化程序的复杂度，要达到上述的要求java语言通过封装、继承与多态等方式实现，这样可以很大程度上达到信息的封装，提高代码复用率，减少冗余度，提高效率。它使得以往程序中大量存在的内存泄漏的问题得到了较好的缓解。所谓的内存泄漏就是程序向操作系统申请了一块存储空间，比如定义了一个变量，但是由于某种原因，这个变量一直没有使用，但是仍然占用着系统的内存空间，可能一两个这样的变量对程序和操作系统造不成什么大的影响，但是试想如果这样的变量定义的多了系统的内存空间就会一步步减少，从而造成机器的性能降低甚至宕机。但是在Java中有垃圾回收机制的存在，这种机制极大地避免了内存泄漏的出现，在Java虚拟机中，垃圾回收机制会对长时间没有引用变量指向的对象实施垃圾回收，简单的说就是将这个对象销毁，以避免内存泄漏的情况出现。</p>
+<h3 id="-23-mysql数据库介绍"><code> </code>2.3 mysql数据库介绍</h3>
+<p>MySQL是一款Relational Database Management System，直译过来的意思就是关系型数据库管理系统，MySQL有着它独特的特点，这些特点使他成为目前最流行的RDBMS之一，MySQL想比与其他数据库如ORACLE、DB2等，它属于一款体积小、速度快的数据库，重点是它符合本次毕业设计的真实租赁环境，拥有成本低，开发源码这些特点，这也是选择它的主要原因。</p>
+<p>本系统使用了MySQL数据库，建立了多张数据库表来存储租赁以及汽车租赁平台相关数据。系统中主要应用查询（select），修改（update），删除（delete）以及增加（insert）等语句来实现系统功能。</p>
+<h2 id="24-springboot框架">2.4 Spring Boot框架</h2>
+<p>Spring Boot是Pivotal团队的一个新框架，旨在简化新Spring应用程序的初始设置和开发。该框架使用特定的配置方法，无需开发人员定义样板配置。通过这种方式，Spring Boot旨在成为蓬勃发展的快速应用程序开发领域的领导者。
+Spring Boot特点：
+1、创建一个单独的Spring应用程序；
+2、嵌入式Tomcat，无需部署WAR文件；
+3、简化Maven配置；
+4、自动配置Spring；
+5、提供生产就绪功能，如指标，健康检查和外部配置；
+6、绝对没有代码生成和XML的配置要求；
+<code>  </code>安装步骤：
+<code>   </code>最基本的是，Spring Boot是一个可以被任何项目的构建系统使用的库集合。 为简单起见，该框架还提供了一个命令行界面，可用于运行和测试Boot应用程序。 可以从Spring存储库手动下载和安装框架的已发布版本，包括集成的CLI（命令行界面）。 更简单的方法是使用Groovy enVironment Manager（GVM），它负责处理Boot版本的安装和管理。 可以从GVM命令行GVM install springboot安装Boot及其CLI。 在OS X上安装Boot时可以使用Homebrew包管理器。要完成安装，首先使用brew tap pivotal / tap切换到pivotal存储库，然后执行brew install springboot命令。</p>
+<h1 id="第3章-系统分析">第3章 系统分析</h1>
+<h2 id="31-需求分析">3.1 需求分析</h2>
+<p>新生宿舍管理系统主要是为了提高工作人员的工作效率和更方便快捷的满足学生，更好存储所有数据信息及快速方便的检索功能，对系统的各个模块是通过许多今天的发达系统做出合理的分析来确定考虑学生的可操作性，遵循开发的系统优化的原则，经过全面的调查和研究。</p>
+<p>系统所要实现的功能分析，对于现在网络方便的管理，系统要实现学生可以直接在平台上进行查看所有数据信息，根据需求可以进行在线添加，删除或修改新生宿舍管理系统信息，这样既能节省时间，不用再像传统的方式耽误时间，真的很难去满足学生的各种需求。所以新生宿舍管理系统的开发不仅仅是能满足学生的需求，还能提高管理员的工作效率，减少原有不必要的工作量。</p>
+<h2 id="32-系统可行性分析">3.2 系统可行性分析</h2>
+<h3 id="321技术可行性技术背景">3.2.1技术可行性：技术背景</h3>
+<p>本企业网站在Windows操作系统中进行开发，并且目前PC机的性能已经可以胜任普通网站的web服务器。系统开发所使用的技术也都是自身所具有的，也是当下广泛应用的技术之一。</p>
+<p>系统的开发环境和配置都是可以自行安装的，系统使用springboot框架开发工具，使用比较成熟的Mysql数据库进行对系统后台的数据交互，根据技术语言对数据库，结合需求进行修改维护，可以使得网站运行更具有稳定性和安全性，从而完成实现网站的开发。</p>
+<p>硬件可行性分析</p>
+<p>系统管理及信息分析的设计对于所使用的计算机没有什么硬性的要求，计算机只要可以正常的使用进行代码的编写及页面设计就可行，主要是对于服务器有些要求，对于平台搭建完成要上传的服务器是有一定的要求的，服务器必须选择安全性比较高的，然后就是在打开网站必须顺畅，不能停顿太长时间；性价比高；安全性高。</p>
+<p>因此，我们从这个方面进行了可行性研究，可以看出系统的开发没有问题。</p>
+<h3 id="322经济可行性">3.2.2经济可行性</h3>
+<p>在新生宿舍管理系统开发之前所做的市场调研及其他的相关的管理系统，都是没有任何费用的，都是通过开发者自己的努力，所有的工作的都是自己亲力亲为，在碰到自己比较难以解决的问题，大多是通过同学和指导老师的帮助进行相关信息的解决，所以对于新生宿舍管理系统的开发在经济上是完全可行的，没有任何费用支出的。</p>
+<p>使用比较成熟的技术，系统是基于Java技术的开发，采用Mysql数据库。所以系统在开发人力、财力要求不高，具有经济可行性。</p>
+<h3 id="323操作可行性">3.2.3操作可行性：</h3>
+<p>可操作性主要是对新生宿舍管理系统设计完成后，学生的使用体验度，以及管理员可以通过系统随时管理相关的数据信息，并且对于管理员、学生二个权限角色，都可以简单明了的进入到自己的系统界面，通过界面导航菜单可以简单明了地操作功能模块，方便新生宿舍管理系统的操作需求和管理员管理数据信息，对于系统的操作，不需要专业人员都可以直接进行功能模块的操作管理，所以在系统的可操作性是完全可以的。本系统的操作使用的也是界面窗口进行登录，所以操作人员只要会简单的电脑操作就完全可以的。</p>
+<h2 id="33-项目设计目标与原则">3.3 项目设计目标与原则</h2>
+<p>1、关于新生宿舍管理系统的基本要求</p>
+<p>（1）功能要求：可以管理首页、个人中心、公告信息管理、院系管理、班级管理、学生管理、宿舍信息管理、宿舍安排管理、卫生检查管理、报修信息管理、报修处理管理、缴费信息管理等功能模块。</p>
+<p>（2）性能：在不同操作系统上均能无差错实现在不同类型的学生登入相应界面后能不出差错、方便地进行预期操作。</p>
+<p>（3）安全与保密要求：学生都必须通过注册、登录才能进入系统，并且学生的权限也需要根据学生的类型进行限定。</p>
+<p>（4）环境要求：支持多种平台，可在Windows系列、Vista系统等多种操作系统下使用。</p>
+<p>2、开发目标</p>
+<p>新生宿舍管理系统的主要开发目标如下：</p>
+<p>（1）实现管理系统信息关系的系统化、规范化和自动化；</p>
+<p>（2）减少维护人员的工作量以及实现学生对信息的控制和管理。</p>
+<p>（3）方便查询信息及管理信息等；</p>
+<p>（4）通过网络操作，改善处理问题的效率，提高操作人员利用率；</p>
+<p>（5）考虑到学生多样性特点，要求界面简单，操作简便。</p>
+<p>3、设计原则</p>
+<p>本新生宿舍管理系统采用Java技术，Mysql数据库开发，充分保证了系统稳定性、完整性。</p>
+<p>新生宿舍管理系统的设计与实现的设计思想如下：</p>
+<ol>
+<li>操作简单方便、系统界面安全良好、简单明了的页面布局、方便查询相关信息。</li>
+<li>即时可见：对新生宿舍管理系统信息的处理将立马在对应地点可以查询到，从而实现“即时发布、即时见效”的系统功能。</li>
+</ol>
+<h2 id="34系统流程分析">3.4系统流程分析</h2>
+<h3 id="341操作流程">3.4.1操作流程</h3>
+<p>系统登录流程图，如图所示：<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0755springboot/blog.001.png"
+        data-srcset="/images/0700stringboot/0755springboot/blog.001.png, /images/0700stringboot/0755springboot/blog.001.png 1.5x, /images/0700stringboot/0755springboot/blog.001.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0755springboot/blog.001.png"
+        title="/images/0700stringboot/0755springboot/blog.001.png" /></p>
+<p>图3-1登录流程图</p>
+<h3 id="342添加信息流程">3.4.2添加信息流程</h3>
+<p>添加信息流程图，如图所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0755springboot/blog.002.png"
+        data-srcset="/images/0700stringboot/0755springboot/blog.002.png, /images/0700stringboot/0755springboot/blog.002.png 1.5x, /images/0700stringboot/0755springboot/blog.002.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0755springboot/blog.002.png"
+        title="/images/0700stringboot/0755springboot/blog.002.png" /></p>
+<p>图3-2添加信息流程图</p>
+<h3 id="343删除信息流程">3.4.3删除信息流程</h3>
+<p>删除信息流程图，如图所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0755springboot/blog.003.png"
+        data-srcset="/images/0700stringboot/0755springboot/blog.003.png, /images/0700stringboot/0755springboot/blog.003.png 1.5x, /images/0700stringboot/0755springboot/blog.003.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0755springboot/blog.003.png"
+        title="/images/0700stringboot/0755springboot/blog.003.png" /></p>
+<p>图3-3删除信息流程图</p>
+<h1 id="第4章-系统设计">第4章 系统设计</h1>
+<h2 id="41-系统体系结构">4.1 系统体系结构</h2>
+<p>新生宿舍管理系统的结构图4-1所示：</p>
+<p>网</p>
+<p>络</p>
+<p>管理员</p>
+<p>服务器和程序</p>
+<p>学生</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0755springboot/blog.004.png"
+        data-srcset="/images/0700stringboot/0755springboot/blog.004.png, /images/0700stringboot/0755springboot/blog.004.png 1.5x, /images/0700stringboot/0755springboot/blog.004.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0755springboot/blog.004.png"
+        title="/images/0700stringboot/0755springboot/blog.004.png" /></p>
+<p>图4-1 系统结构</p>
+<p>登录系统结构图，如图4-2所示：</p>
+<p>新生宿舍管理系统登录界面</p>
+<p>用户登录</p>
+<p>密码正确</p>
+<p>管理员界面</p>
+<p>学生界面</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0755springboot/blog.005.png"
+        data-srcset="/images/0700stringboot/0755springboot/blog.005.png, /images/0700stringboot/0755springboot/blog.005.png 1.5x, /images/0700stringboot/0755springboot/blog.005.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0755springboot/blog.005.png"
+        title="/images/0700stringboot/0755springboot/blog.005.png" /></p>
+<p>图4-2 登录结构图</p>
+<p>新生宿舍管理系统结构图，如图4-3所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0755springboot/blog.006.png"
+        data-srcset="/images/0700stringboot/0755springboot/blog.006.png, /images/0700stringboot/0755springboot/blog.006.png 1.5x, /images/0700stringboot/0755springboot/blog.006.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0755springboot/blog.006.png"
+        title="/images/0700stringboot/0755springboot/blog.006.png" /></p>
+<p>图4-3 新生宿舍管理系统结构图</p>
+<h2 id="42开发流程设计">4.2开发流程设计</h2>
+<p>系统流程的分析是通过调查系统所涉及问题的识别、可行性、可操作性、系统分析处理能力等具体环节来调节、整理系统的设计方案以确保系统能达到理想的状态。这些操作都要从注册、登录处着眼进行一系列的流程测试保证数据库的完整，从而把控系统所涉及信息管理的安全、保证信息输入、输出正常转换。然后，通过实际操作完成流程图的绘制工作。</p>
+<p>新生宿舍管理系统的开发对管理模块和系统使用的数据库进行分析，编写代码，系统测试，如图4-4所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0755springboot/blog.007.png"
+        data-srcset="/images/0700stringboot/0755springboot/blog.007.png, /images/0700stringboot/0755springboot/blog.007.png 1.5x, /images/0700stringboot/0755springboot/blog.007.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0755springboot/blog.007.png"
+        title="/images/0700stringboot/0755springboot/blog.007.png" /></p>
+<p>图4-4开发系统流程图</p>
+<h2 id="43-数据库设计原则">4.3 数据库设计原则</h2>
+<p>学习编程，我们都知道数据库设计是基于需要设计的系统功能，我们需要建立一个数据库关系模型，用于存储数据信息，这样当我们在程序中时，就没有必要为程序页面添加数据，从而提高系统的效率。数据库存储了很多信息，可以说是信息管理系统的核心和基础，数据库还提供了添加、删除、修改和检查，使系统能够快速找到自己想要的信息，而不是在程序代码中找到。数据库中信息表的每个部分根据一定的关系精确地组合，排列和组合成数据表。</p>
+<p>通过新生宿舍管理系统的功能进行规划分成几个实体信息，实体信息将通过ER图进行说明，本系统的主要实体图如下：</p>
+<p>管理员信息属性图如图4-5所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0755springboot/blog.008.png"
+        data-srcset="/images/0700stringboot/0755springboot/blog.008.png, /images/0700stringboot/0755springboot/blog.008.png 1.5x, /images/0700stringboot/0755springboot/blog.008.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0755springboot/blog.008.png"
+        title="/images/0700stringboot/0755springboot/blog.008.png" /></p>
+<p>图4-5 管理员信息实体属性图</p>
+<p>学生信息实体属性图如图4-6所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0755springboot/blog.009.png"
+        data-srcset="/images/0700stringboot/0755springboot/blog.009.png, /images/0700stringboot/0755springboot/blog.009.png 1.5x, /images/0700stringboot/0755springboot/blog.009.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0755springboot/blog.009.png"
+        title="/images/0700stringboot/0755springboot/blog.009.png" /></p>
+<p><code>   </code>图4-6学生信息属性图</p>
+<p>宿舍安排信息实体属性图如图4-7所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0755springboot/blog.010.png"
+        data-srcset="/images/0700stringboot/0755springboot/blog.010.png, /images/0700stringboot/0755springboot/blog.010.png 1.5x, /images/0700stringboot/0755springboot/blog.010.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0755springboot/blog.010.png"
+        title="/images/0700stringboot/0755springboot/blog.010.png" /></p>
+<p><code>     </code>图4-7宿舍安排信息实体属性图</p>
+<p>卫生检查信息实体属性图如图4-8所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0755springboot/blog.011.png"
+        data-srcset="/images/0700stringboot/0755springboot/blog.011.png, /images/0700stringboot/0755springboot/blog.011.png 1.5x, /images/0700stringboot/0755springboot/blog.011.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0755springboot/blog.011.png"
+        title="/images/0700stringboot/0755springboot/blog.011.png" /></p>
+<p><code>   </code>图4-8卫生检查信息实体属性图</p>
+<h2 id="44-数据表">4.4 数据表</h2>
+<p>将数据库概念设计的E-R图转换为关系数据库。在关系数据库中，数据关系由数据表组成，但是表的结构表现在表的字段上。</p>
+<p>表4-1 allusers表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">约束</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center">NOT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">username</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center"><code> </code>default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">pwd</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center"><code> </code>default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">cx</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center"><code> </code>default NULL</td>
+</tr>
+</tbody>
+</table>
+<p>表4-2 baoxiuchuli表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">约束</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center">NOT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">baoxiushebei</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">leixing</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">baoxiuriqi</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">weixiufankui</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">weixiujindu</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">gengxinriqi</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">xuehao</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">xueshengxingming</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">banji</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">sushehao</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+</tbody>
+</table>
+<p>表4-3：baoxiuxinxi表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">约束</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center"><code> </code>int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center">NOT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">baoxiushebei</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">leixing</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">tupian</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">baoxiuneirong</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">baoxiuriqi</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">xuehao</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">xueshengxingming</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">banji</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">sushehao</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">shouji</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">sfsh</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">shhf</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+</tbody>
+</table>
+<p>表4-4：jiaofeixinxi表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">约束</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center"><code> </code>int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center">NOT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">xuehao</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">xueshengxingming</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">banji</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">sushehao</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">jiaofeimingcheng</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">jiaofeileixing</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">jiaofeijine</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">dengjiriqi</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+</tbody>
+</table>
+<h1 id="第5章-系统详细设计">第5章 系统详细设计</h1>
+<h2 id="51管理员功能模块">5.1管理员功能模块</h2>
+<p>管理员登录，通过填写用户名、密码、角色进行登录，如图5-1所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0755springboot/blog.012.png"
+        data-srcset="/images/0700stringboot/0755springboot/blog.012.png, /images/0700stringboot/0755springboot/blog.012.png 1.5x, /images/0700stringboot/0755springboot/blog.012.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0755springboot/blog.012.png"
+        title="/images/0700stringboot/0755springboot/blog.012.png" /></p>
+<p>图5-1管理员登录界面图</p>
+<p>管理员登录进入新生宿舍管理系统可以查看首页、个人中心、公告信息管理、院系管理、班级管理、学生管理、宿舍信息管理、宿舍安排管理、卫生检查管理、报修信息管理、报修处理管理、缴费信息管理等信息。</p>
+<p>公告信息管理，在公告信息管理页面中可以通过查看公告标题、图片、发布日期等信息进行详情、修改，如图5-2所示。还可以根据需要对院系管理进行详情，修改或删除等详细操作，如图5-3所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0755springboot/blog.013.png"
+        data-srcset="/images/0700stringboot/0755springboot/blog.013.png, /images/0700stringboot/0755springboot/blog.013.png 1.5x, /images/0700stringboot/0755springboot/blog.013.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0755springboot/blog.013.png"
+        title="/images/0700stringboot/0755springboot/blog.013.png" /></p>
+<p>图5-2公告信息管理界面图</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0755springboot/blog.014.png"
+        data-srcset="/images/0700stringboot/0755springboot/blog.014.png, /images/0700stringboot/0755springboot/blog.014.png 1.5x, /images/0700stringboot/0755springboot/blog.014.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0755springboot/blog.014.png"
+        title="/images/0700stringboot/0755springboot/blog.014.png" /></p>
+<p>图5-3院系管理面图</p>
+<p>班级管理，在班级管理页面中可以查看班级等信息，并可根据需要对班级管理进行详情、修改或删除等操作，如图5-4所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0755springboot/blog.015.png"
+        data-srcset="/images/0700stringboot/0755springboot/blog.015.png, /images/0700stringboot/0755springboot/blog.015.png 1.5x, /images/0700stringboot/0755springboot/blog.015.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0755springboot/blog.015.png"
+        title="/images/0700stringboot/0755springboot/blog.015.png" /></p>
+<p>图5-4班级管理界面图</p>
+<p>学生管理，在学生管理页面中可以查看学号、学生姓名、性别、头像、院系、班级、手机、邮箱、宿舍号等信息，并可根据需要对学生管理进行详情、修改或删除等详细操作，如图5-5所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0755springboot/blog.016.png"
+        data-srcset="/images/0700stringboot/0755springboot/blog.016.png, /images/0700stringboot/0755springboot/blog.016.png 1.5x, /images/0700stringboot/0755springboot/blog.016.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0755springboot/blog.016.png"
+        title="/images/0700stringboot/0755springboot/blog.016.png" /></p>
+<p>图5-5学生管理界面图</p>
+<p>卫生检查管理，在卫生检查管理页面中可以查看学号、学生姓名、班级、宿舍号、检查内容、是否整洁、是否违规、检查结果、检查日期等内容，并且根据需要对卫生检查管理进行详情，修改或删除等详细操作，如图5-6所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0755springboot/blog.017.png"
+        data-srcset="/images/0700stringboot/0755springboot/blog.017.png, /images/0700stringboot/0755springboot/blog.017.png 1.5x, /images/0700stringboot/0755springboot/blog.017.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0755springboot/blog.017.png"
+        title="/images/0700stringboot/0755springboot/blog.017.png" /></p>
+<p>图5-6卫生检查管理界面图</p>
+<p>缴费信息管理，在缴费信息管理页面中可以查看学号、学生姓名、班级、宿舍号、缴费名称、缴费类型、缴费金额、登记日期、是否支付等内容，并且根据需要对缴费信息管理进行详情、修改或删除等详细操作，如图5-7所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0755springboot/blog.018.png"
+        data-srcset="/images/0700stringboot/0755springboot/blog.018.png, /images/0700stringboot/0755springboot/blog.018.png 1.5x, /images/0700stringboot/0755springboot/blog.018.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0755springboot/blog.018.png"
+        title="/images/0700stringboot/0755springboot/blog.018.png" /></p>
+<p>图5-7缴费信息管理界面图</p>
+<p>报修信息管理，在报修信息管理页面中可以查看报修设备、类型、图片、报修内容、报修日期、学号、学生姓名、班级、宿舍号、手机、审核回复、审核状态、审核等内容，并且根据需要对报修信息管理进行详情、修改或删除等详细操作，如图5-8所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0755springboot/blog.019.png"
+        data-srcset="/images/0700stringboot/0755springboot/blog.019.png, /images/0700stringboot/0755springboot/blog.019.png 1.5x, /images/0700stringboot/0755springboot/blog.019.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0755springboot/blog.019.png"
+        title="/images/0700stringboot/0755springboot/blog.019.png" /></p>
+<p>图5-8报修信息管理界面图</p>
+<p>报修处理管理，在报修处理管理页面中可以查看报修设备、类型、报修日期、维修反馈、维修进度、更新日期、学号、学生姓名、班级、宿舍号等内容，并且根据需要对报修处理管理进行详情、修改或删除等详细操作，如图5-9所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0755springboot/blog.020.png"
+        data-srcset="/images/0700stringboot/0755springboot/blog.020.png, /images/0700stringboot/0755springboot/blog.020.png 1.5x, /images/0700stringboot/0755springboot/blog.020.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0755springboot/blog.020.png"
+        title="/images/0700stringboot/0755springboot/blog.020.png" /></p>
+<p>图5-9报修处理管理界面图</p>
+<h2 id="52学生功能模块">5.2学生功能模块</h2>
+<p>学生登录进入新生宿舍管理系统可以查看首页、个人中心、公告信息管理、宿舍安排管理、卫生检查管理、报修信息管理、报修处理管理、缴费信息管理等内容。</p>
+<p>公告信息管理，在公告信息管理页面中通过查看公告标题、图片、发布日期等信息还可以根据需要对公告信息管理进行修改，如图5-10所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0755springboot/blog.021.png"
+        data-srcset="/images/0700stringboot/0755springboot/blog.021.png, /images/0700stringboot/0755springboot/blog.021.png 1.5x, /images/0700stringboot/0755springboot/blog.021.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0755springboot/blog.021.png"
+        title="/images/0700stringboot/0755springboot/blog.021.png" /></p>
+<p>图5-10公告信息管理界面图</p>
+<p>宿舍安排管理，在宿舍安排管理页面中可以查看宿舍号、宿舍类型、图片、位置、可住人数、学号、学生姓名、班级、安排日期等信息内容，并且根据需要对宿舍安排管理进行详情或删除等其他详细操作，如图5-11所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0755springboot/blog.022.png"
+        data-srcset="/images/0700stringboot/0755springboot/blog.022.png, /images/0700stringboot/0755springboot/blog.022.png 1.5x, /images/0700stringboot/0755springboot/blog.022.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0755springboot/blog.022.png"
+        title="/images/0700stringboot/0755springboot/blog.022.png" /></p>
+<p>图5-11宿舍安排管理界面图</p>
+<p>卫生检查管理，在卫生检查管理页面中通过查看学号、学生姓名、班级、宿舍号、检查内容、是否整洁、是否违规、检查结果、检查日期等内容进行详情，如图5-12所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0755springboot/blog.023.png"
+        data-srcset="/images/0700stringboot/0755springboot/blog.023.png, /images/0700stringboot/0755springboot/blog.023.png 1.5x, /images/0700stringboot/0755springboot/blog.023.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0755springboot/blog.023.png"
+        title="/images/0700stringboot/0755springboot/blog.023.png" /></p>
+<p>图5-12卫生检查管理界面图</p>
+<p>缴费信息管理，在缴费信息管理页面中通过查看学号、学生姓名、班级、宿舍号、缴费名称、缴费类型、缴费金额、登记日期、是否支付等内容进行详情，如图5-13所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0755springboot/blog.024.png"
+        data-srcset="/images/0700stringboot/0755springboot/blog.024.png, /images/0700stringboot/0755springboot/blog.024.png 1.5x, /images/0700stringboot/0755springboot/blog.024.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0755springboot/blog.024.png"
+        title="/images/0700stringboot/0755springboot/blog.024.png" /></p>
+<p>图5-13缴费信息管理界面图</p>
+<p>报修处理管理，在报修处理管理页面中通过查看报修设备、类型、报修日期、维修反馈、维修进度、更新日期、学号、学生姓名、班级、宿舍号等内容进行详情，如图5-14所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0755springboot/blog.025.png"
+        data-srcset="/images/0700stringboot/0755springboot/blog.025.png, /images/0700stringboot/0755springboot/blog.025.png 1.5x, /images/0700stringboot/0755springboot/blog.025.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0755springboot/blog.025.png"
+        title="/images/0700stringboot/0755springboot/blog.025.png" /></p>
+<p>图5-14报修处理管理界面图</p>
+<h1 id="heading"></h1>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2024-06-21</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/0755springboot%E6%96%B0%E7%94%9F%E5%AE%BF%E8%88%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://chenqi199.github.io/0755springboot%E6%96%B0%E7%94%9F%E5%AE%BF%E8%88%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" data-title="0755springboot新生宿舍管理系统" data-hashtags="springboot,java,vue,论文,项目"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://chenqi199.github.io/0755springboot%E6%96%B0%E7%94%9F%E5%AE%BF%E8%88%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" data-hashtag="springboot"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://chenqi199.github.io/0755springboot%E6%96%B0%E7%94%9F%E5%AE%BF%E8%88%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" data-title="0755springboot新生宿舍管理系统"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://chenqi199.github.io/0755springboot%E6%96%B0%E7%94%9F%E5%AE%BF%E8%88%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" data-title="0755springboot新生宿舍管理系统"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://chenqi199.github.io/0755springboot%E6%96%B0%E7%94%9F%E5%AE%BF%E8%88%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" data-title="0755springboot新生宿舍管理系统" data-ralateuid="https://gitee.com/chen_q_i"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/springboot/">Springboot</a>,&nbsp;<a href="/tags/java/">Java</a>,&nbsp;<a href="/tags/vue/">Vue</a>,&nbsp;<a href="/tags/%E8%AE%BA%E6%96%87/">论文</a>,&nbsp;<a href="/tags/%E9%A1%B9%E7%9B%AE/">项目</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/0756springboot%E5%AD%A6%E7%94%9F%E6%AF%95%E4%B8%9A%E7%A6%BB%E6%A0%A1%E7%B3%BB%E7%BB%9F/" class="prev" rel="prev" title="0756springboot学生毕业离校系统"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>0756springboot学生毕业离校系统</a>
+            <a href="/0760springboot%E5%87%86%E5%A6%88%E5%A6%88%E5%AD%95%E6%9C%9F%E4%BA%A4%E6%B5%81%E5%B9%B3%E5%8F%B0/" class="next" rel="next" title="0760springboot准妈妈孕期交流平台">0760springboot准妈妈孕期交流平台<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.128.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="chenqi199" target="_blank">chenqi</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

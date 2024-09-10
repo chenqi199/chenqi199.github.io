@@ -1,0 +1,1614 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer" />
+        <meta name="robots" content="noodp" />
+        <title>0709springboot校园交友网站--论文 - chenqi blog</title><meta name="Description" content="Hugo theme - chenqi"><meta property="og:url" content="https://chenqi199.github.io/0709springboot%E6%A0%A1%E5%9B%AD%E4%BA%A4%E5%8F%8B%E7%BD%91%E7%AB%99--%E8%AE%BA%E6%96%87/">
+  <meta property="og:site_name" content="chenqi blog">
+  <meta property="og:title" content="0709springboot校园交友网站--论文">
+  <meta property="og:description" content="0709springboot校园交友网站–论文 项目清单 包安装运行 github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 系统概述 管理信息系统是计">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-06-05T18:31:05+08:00">
+    <meta property="article:modified_time" content="2024-06-05T18:31:05+08:00">
+    <meta property="article:tag" content="Springboot">
+    <meta property="article:tag" content="Java">
+    <meta property="article:tag" content="Vue">
+    <meta property="article:tag" content="论文">
+    <meta property="article:tag" content="项目">
+    <meta property="og:image" content="https://chenqi199.github.io/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chenqi199.github.io/logo.png">
+  <meta name="twitter:title" content="0709springboot校园交友网站--论文">
+  <meta name="twitter:description" content="0709springboot校园交友网站–论文 项目清单 包安装运行 github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 系统概述 管理信息系统是计">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chenqi199.github.io/0709springboot%E6%A0%A1%E5%9B%AD%E4%BA%A4%E5%8F%8B%E7%BD%91%E7%AB%99--%E8%AE%BA%E6%96%87/" /><link rel="prev" href="https://chenqi199.github.io/0704springboot%E6%95%B0%E7%A0%81%E8%AE%BA%E5%9D%9B%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0--%E8%AE%BA%E6%96%87/" /><link rel="next" href="https://chenqi199.github.io/0708springboot%E6%A0%A1%E5%8F%8B%E7%A4%BE%E4%BA%A4%E7%B3%BB%E7%BB%9F--%E8%AE%BA%E6%96%87/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "0709springboot校园交友网站--论文",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chenqi199.github.io\/0709springboot%E6%A0%A1%E5%9B%AD%E4%BA%A4%E5%8F%8B%E7%BD%91%E7%AB%99--%E8%AE%BA%E6%96%87\/"
+        },"image": ["https:\/\/chenqi199.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "springboot, java, vue, 论文, 项目","wordcount":  12225 ,
+        "url": "https:\/\/chenqi199.github.io\/0709springboot%E6%A0%A1%E5%9B%AD%E4%BA%A4%E5%8F%8B%E7%BD%91%E7%AB%99--%E8%AE%BA%E6%96%87\/","datePublished": "2024-06-05T18:31:05+08:00","dateModified": "2024-06-05T18:31:05+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/chenqi199.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "chenqi"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/0709springboot%E6%A0%A1%E5%9B%AD%E4%BA%A4%E5%8F%8B%E7%BD%91%E7%AB%99--%E8%AE%BA%E6%96%87/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/0709springboot%E6%A0%A1%E5%9B%AD%E4%BA%A4%E5%8F%8B%E7%BD%91%E7%AB%99--%E8%AE%BA%E6%96%87/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">0709springboot校园交友网站--论文</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="chenqi199" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>chenqi</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-06-05">2024-06-05</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 12225 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 25 分钟&nbsp;<span id="/0709springboot%E6%A0%A1%E5%9B%AD%E4%BA%A4%E5%8F%8B%E7%BD%91%E7%AB%99--%E8%AE%BA%E6%96%87/" class="leancloud_visitors" data-flag-title="0709springboot校园交友网站--论文">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">github 项目仓库</a> 开源仅有后端代码</a></li>
+        <li><a href="#点击播放视频-">点击播放视频 ▼</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#12-课题研究现状">1.2 课题研究现状</a></li>
+    <li><a href="#13课题背景及开展研究目的与意义">1.3课题背景及开展研究目的与意义</a>
+      <ul>
+        <li><a href="#131-课题背景">1.3.1 课题背景</a></li>
+        <li><a href="#132课题研究的目的和意义">1.3.2课题研究的目的和意义</a></li>
+      </ul>
+    </li>
+    <li><a href="#14-初步设计方法与实施方案">1.4 初步设计方法与实施方案</a></li>
+    <li><a href="#15-论文结构">1.5 论文结构</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#21-系统开发平台">2.1 系统开发平台</a></li>
+    <li><a href="#22-平台开发相关技术">2.2 平台开发相关技术</a>
+      <ul>
+        <li><a href="#221-java语言简介">2.2.1 Java语言简介</a></li>
+        <li><a href="#222-springboot框架">2.2.2 SpringBoot框架</a></li>
+        <li><a href="#223-bs结构简介">2.2.3 B/S结构简介</a></li>
+      </ul>
+    </li>
+    <li><a href="#23myeclipse环境配置">2.3MyEclipse环境配置</a></li>
+    <li><a href="#24-mysql简介">2.4 Mysql简介</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#31-系统设计的目标_toc261892046"><a href="#_Toc261892046">3.1 系统设计的目标</a></a></li>
+    <li><a href="#32-系统可行性分析">3.2 系统可行性分析</a>
+      <ul>
+        <li><a href="#321-经济可行性">3.2.1 经济可行性</a></li>
+        <li><a href="#322-技术可行性">3.2.2 技术可行性</a></li>
+        <li><a href="#323-操作可行性">3.2.3 操作可行性</a></li>
+        <li><a href="#324-运行可行性">3.2.4 运行可行性</a></li>
+        <li><a href="#325-时间可行性">3.2.5 时间可行性</a></li>
+      </ul>
+    </li>
+    <li><a href="#33-系统现状分析">3.3 系统现状分析</a></li>
+    <li><a href="#34-性能需求分析">3.4 性能需求分析</a></li>
+    <li><a href="#35功能需求分析">3.5功能需求分析</a></li>
+    <li><a href="#36系统设计规则与运行环境">3.6系统设计规则与运行环境</a></li>
+    <li><a href="#37系统流程分析">3.7系统流程分析</a>
+      <ul>
+        <li><a href="#371操作流程">3.7.1操作流程</a></li>
+        <li><a href="#372用户管理的流程">3.7.2用户管理的流程</a></li>
+        <li><a href="#373个人中心管理流程">3.7.3个人中心管理流程</a></li>
+        <li><a href="#374添加信息流程">3.7.4添加信息流程</a></li>
+        <li><a href="#375删除信息流程">3.7.5删除信息流程</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#41系统设计思想">4.1系统设计思想</a></li>
+    <li><a href="#42-系统设计主要功能">4.2 系统设计主要功能</a></li>
+    <li><a href="#43-数据库设计与实现">4.3 数据库设计与实现</a>
+      <ul>
+        <li><a href="#431-数据库设计规范">4.3.1 数据库设计规范</a></li>
+        <li><a href="#432-数据库概念结构设计">4.3.2 数据库概念结构设计</a></li>
+        <li><a href="#433-数据表">4.3.3 数据表</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#51系统功能模块">5.1系统功能模块</a></li>
+    <li><a href="#52后台功能模块">5.2后台功能模块</a>
+      <ul>
+        <li><a href="#521管理员功能模块">5.2.1管理员功能模块</a></li>
+        <li><a href="#522用户功能模块">5.2.2用户功能模块</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="0709springboot校园交友网站--论文httpsgithubcomgraduationproject-springboot0709springboot"><a href="https://github.com/GraduationProject-springboot/0709springboot" target="_blank" rel="noopener noreffer ">0709springboot校园交友网站&ndash;论文</a></h1>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        data-srcset="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 1.5x, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        title="picture" /></p>
+<h1 id="项目清单httpschenqi1990site-包安装运行"><a href="https://chenqi1990.site" target="_blank" rel="noopener noreffer ">项目清单</a> 包安装运行</h1>
+<h3 id="github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">github 项目仓库</a> 开源仅有后端代码</h3>
+<h3 id="点击播放视频-">点击播放视频 ▼</h3>
+<p><a href="https://www.bilibili.com/video/BV14HerezEwW?p=62" target="_blank" rel="noopener noreffer "><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.sstatic.net/Vp2cE.png"
+        data-srcset="https://i.sstatic.net/Vp2cE.png, https://i.sstatic.net/Vp2cE.png 1.5x, https://i.sstatic.net/Vp2cE.png 2x"
+        data-sizes="auto"
+        alt="https://i.sstatic.net/Vp2cE.png"
+        title="Watch the video" /></a></p>
+<h1 id="系统概述">系统概述</h1>
+<p>管理信息系统是计算机在信息管理领域的一种实用技术。通过运用管理科学、数学和计算机应用的原理及方法，在符合软件工程规范的原则下，形成一套完整的理论和方法体系。是一个以人、计算机和其他外部设备组成的可以进行信息的收集、传递、存储、加工、维护和更新的系统。</p>
+<p>校园交友网站是管理信息系统中的重要组成部分。校园交友网站是由计算机、应用程序和其他高科技部件组成，通过计算机网络将供应链上下游连接的动态互动系统。校园交友网站是校园交友信息化的核心，它具有很强的综合性，可以为各校友提供相关信息进行汇总以及反馈。计算机技术、网络技术、关系型数据库技术、条码技术、EDI 等技术的应用减少人工失误，提高了效率，加快了信息流转，校园交友管理发生了巨大的变化。</p>
+<p>校园交友网站是校园交友管理的系统，它主要包括对首页、个人中心、用户管理、线下活动管理、交友信息管理、活动报名管理、交流论坛、系统管理等功能进行管理。可使校园交友管理的运营成本降到最低，提高经济效率。</p>
+<h2 id="12-课题研究现状">1.2 课题研究现状</h2>
+<p>现今，越来越多的人乐于选择一项合适的管理方案，但是普通用户往往受到管理经验地限制，这时校园交友网站的崛起，大量校园交友管理进入人们生活，而校园交友网站无疑是交友管理的最好制度，在这样成功的管理模式背景下，不仅校园交友人数越来越多，校园交友信息也越来越多。但是随着校园交友信息的增多，校园交友的管理成为了一个难题。高效便捷地管理校园交友成为了转变管理模式，与时代兼容的当务之急。</p>
+<p>校园交友网站，为用户随时随地查看校园交友信息提供了便捷的方法，更重要的是大大的简化了管理员管理校园交友信息的方式方法，更提供了其他想要了解校园交友信息及运作情况以及挑选方便快捷的可靠渠道。相比于传统信息管理方法，这样的电子信息管理更为简洁方便，在校园交友维护信息反馈和处理校园交友意见方面也有得天独厚的优势。</p>
+<p>校园交友网站能做到的不仅是大大简化管理员的信息管理工作，在提高校园交友管理思路的同时还能缩减开支，更能在数字化的平面网络上将校园交友最好的一面展示给用户和潜在用户，而这个系统在带给校园交友网站全新用户信息管理统计和分类的同时，还成为日后校园交友管理制定路线的重要数据参考。过程永远比结果重要。毕业设计是大学生活中最为浓墨重彩的一笔，在这个过程中不仅学到更为全面的书本和实践知识，更让我感受到了浓浓的同窗之情及师生情。这个系统成为校园交友管理者最不可或缺的内容。尽管目前大部分已经将校园交友网站投入使用，但是人们对于系统要求也变得越来越高，大部分系统已经能完美处理各类信息，但是为了更好地契合校园交友路线，不同校园有不同的要求，个性化也是管理系统十分重要的一点，所以都希望自己能有一个个性化定制的管理系统，但这又涉及到成本控制问题，目前定制一个系统价值不菲，但是如果有这样一个可以根据需求自己制定页面和内容的校园交友网站就可以大大缩减开支，但是凭借目前自身技术恐怕难以实现，不过让系统二次设计却是有可能实现的。随着校园交友规模的不断扩大，用户信息共享也成一种趋势。校园交友网站的发展也证明了系统管理在不断发展进步，各种理念也越来越先进，对各方面的要求也变得越来越高，校园交友网站完全可以在进入页面时发布各类信息进行推荐交流。</p>
+<h2 id="13课题背景及开展研究目的与意义">1.3课题背景及开展研究目的与意义</h2>
+<h3 id="131-课题背景">1.3.1 课题背景</h3>
+<p>随着科学技术发展，电脑已成为人们生活中必不可少的生活办公工具，在这样的背景下，网络技术被应用到各个方面，为了提高办公生活效率，网络信息技术飞速发展。在这样的背景下人类社会进入了全新的信息化的时代。校园交友管理一直是信息管理的一大难题，校园交友人数多，此时寻找有效便捷的校园交友管理方法就是当务之急。而日趋成熟的计算机信息管理技术便成为解决这一难题的唯一之选。如今计算机信息管理技术来处理校园交友管理早已游刃有余，其实信息管理技术已经渗透到各个行业的信息控制管理当中，且有着举足轻重的地位。而随着现代化社会主义不断进步，普通用户生活水平有了大幅提高，很多方面都在网络上去实现，从而网络也就成为了最直接、即方便又快捷的接入口。</p>
+<p>使用校园交友网站相对传统校园交友管理方式具备很多优点：首先可以大幅提高校园交友检索，只需输入校园交友相关信息就能在数秒内反馈想要的结果；其次可存储大量的校园交友信息，同时校园交友安全性有更高的保障；相比纸质文件来管理校园交友，校园交友网站更节省空间人力资源。这些优点很大程度提高了管理效率并节约了成本。因此，校园交友网站对校园交友非常必要进行有效管理，不仅提高了校园交友管理效率，增加了用户信息安全性，方便校园交友信息及时反馈给管理员，增加了与管理员之间的互动交流，更能提高校园交友的体验强度。</p>
+<p>系统为了数据库结构的灵活性选择MySQL来设计，而java技术，B/S架构则保证了较高的平台适应性。本文主要介绍了系统开发背景，需要完成的功能与开发过程，说明系统设计重点与设计思想。</p>
+<h3 id="132课题研究的目的和意义">1.3.2课题研究的目的和意义</h3>
+<p>人们现在的生活方式因为网络的普及发生了巨大变化，由于网络管理在人们的视野中出现,人们对网络管理额外的关注。人们只要在有网络的地方足不出户查看到世界各地的各类。目前的挑战是系统界面的设计，要把用户的眼球吸引住，选则比较人性化的界面设计，要更直观的表现，让用户能更多的了解校园交友网站的作用和功效。</p>
+<p>本系统的主要意义在于，全力以赴为用户提供一个操作方便，界面简洁，信息直观的校园交友网站。</p>
+<h2 id="14-初步设计方法与实施方案">1.4 初步设计方法与实施方案</h2>
+<p>软件体系结构方案：由于本系统需要在不同设备上都能运行，而且电脑配置要求也要越低越好，为了实现这一要求，经过考虑B/S结构成为最佳之选。使用B/S结构的系统可以几乎在任何电脑上运行，只要浏览器可以正常工作就可以正常运行该系统，而且后期维护及二次修改较为容易，符合要求。</p>
+<p>操作系统方案：Windows10操作系统，该系统是目前微软公司推出的最新系统，目前大多数市面上的电脑都使用该系统，并且该系统功能完善，兼容性好。开发工具：选用My Eclipse。java开发技术。</p>
+<h2 id="15-论文结构">1.5 论文结构</h2>
+<p>(1)绪论</p>
+<p>主要对系统的概述，开发背景，意义和研究现状等进行描述，详细讲述了系统的用处。</p>
+<p>(2)系统开发技术的介绍</p>
+<p>分别对开发平台，java技术、MySQL和B/S等进行详细介绍。</p>
+<p>(3)系统分析</p>
+<p>本章主要是对系统可行性、系统性能、还有系统功能需求等进行分析。</p>
+<p>(4)系统设计</p>
+<p>对系统系统功能和数据库等进行详细讲解。</p>
+<p>(5)系统的实现</p>
+<p>主要对首页、个人中心、用户管理、线下活动管理、交友信息管理、活动报名管理、交流论坛、系统管理的实现。</p>
+<p>(6)系统的测试</p>
+<p>在系统编码实现后，就需要对系统进行检测，检测的方法有黑盒测试和白盒测试两种方式，本系统采用的是黑白盒测试方法对不同组的数据进行功能模块测试。</p>
+<p>(7)系统维护</p>
+<p>在论文中讲述了系统维护的重要性及维护方法。</p>
+<p><code> </code>(8)总结与展望</p>
+<p>在论文最后结束章节总结了开发这个系统和撰写论文时候自己的总结与展望、感想、包括致谢等。</p>
+<h1 id="2-系统开发技术与环境介绍">2 系统开发技术与环境介绍</h1>
+<p>此次管理系统的关键技术和架构由B/S结构、java和mysql数据库，是本系统的关键开发技术，对系统的整体、数据库、功能模块、系统页面以及系统程序等设计进行了详细的研究与规划。</p>
+<h2 id="21-系统开发平台">2.1 系统开发平台</h2>
+<p>在该校园交友网站中，Eclipse能给用户提供更多的方便，其特点一是方便学习，方便快捷；二是有非常大的信息储存量，主要功能是用在对数据库中查询和编程。其功能有比较灵活的数据应用，只需利用小部分代码就能实现非常强大的功能。因此，利用Eclipse 技术进行系统代码管理是该系统数据库的首选。</p>
+<h2 id="22-平台开发相关技术">2.2 平台开发相关技术</h2>
+<h3 id="221-java语言简介">2.2.1 Java语言简介</h3>
+<p>Java是由SUN公司推出，该公司于2010年被oracle公司收购。Java本是印度尼西亚的一个叫做爪洼岛的英文名称，也因此得来java是一杯正冒着热气咖啡的标识。Java语言在移动互联网的大背景下具备了显著的优势和广阔的前景，它是面向对象的，分布式的，动态的，具有平台无关性、安全性、健壮性。Java语言的基本语句语法和C++一样，但是它面向对象的技术更加彻底，因为Java要求将所有的内容都必须封装成类，把类作为程序的基本单位。由于不允许类外有变量、方法。 Java语言的分布式体现在数据分布和操作分布，它是面向网络的语言，可以处理TCP/IP协议，它也支持客户机/服务器的计算模式。Java语言的动态性是指类在运行时是动态安装的，使得Java可以动态的维护程序。Java不支持指针，对内存访问的所有操作都是通过对象实例化实现的，这样就避免了指针操作中易产生的错误，同时也预防了病毒对系统的破坏和威胁。</p>
+<p>Java语言的编程风格与C语言非常接近，它继承了C++面向对象技术的核心，它面世之后发展迅速，非常流行，对高级C语言形成了很大的冲击。业内人士称之为“一次编译、到处执行”。当然java也有缺点，在每次执行编译后，字节码都需要消耗一定的时间，在某些程度上降低了性能。但是这并不影响java成为此次设计语言的选择。Java语言简单易学，使用它的编程时间短，功能性强，开发者学习起来更简便、更快。Java的主要特性有以下几个：</p>
+<p>1.面向对象</p>
+<p>面向对象有四个特点：封装、继承、多态、抽象。抽象是指忽略一个问题中的次要部分，关注主要部分。多态是指对同一种消息做出的不同反应。继承是指在原有的父类方法基础上增加自己独有的方法，而不改变原来父类。</p>
+<p>2.平台无关性</p>
+<p>Java编译出来的是字节码，直接由虚拟机执行。在任何平台上，只要有Java虚拟机，Java代码都能运行。</p>
+<p>3.可靠性和安全性</p>
+<p>Java对内存的访问都必须通过对象的实例变量来实现，避免了指针中出现的错误。</p>
+<p>4.多线程</p>
+<p>Java提供了多线程功能，利用编程实现同一时间同时工作的功能。</p>
+<h3 id="222-springboot框架">2.2.2 SpringBoot框架</h3>
+<p>SpringBoot是一个全新开源的轻量级框架。基于Spring4.0设计，其不仅继承了Spring框架原来有的优秀特性，而且还通过简化配置文件来进一步简化了Spring应用的整个搭建以及开发过程。另外在原本的Spring中由于随着项目的扩大导入的jar包数量越来越大，随之出现了jar包版本之间的兼容性问题，而此时SpringBoot通过集成大量的框架使得依赖包的版本冲突，以及引用的不稳定性问题得到了很好的解决。</p>
+<p>SpringBoot可以看做是Spring的加强版本，但实质上都是Spring的相关技术，有了这些优秀的开源框架，程序员在开发过程中将事半功倍。</p>
+<h3 id="223-bs结构简介">2.2.3 B/S结构简介</h3>
+<p>随着软件系统的不断改进和升级，B/S结构产品更为方便的特征体现地十分明显。对于一个中等偏大的公司来说，如果系统管理员每天要在很多台电脑之间来回查看，不断奔走，那么效率和工作量就会变得很低，但是如果使用了B/S结构，那么管理员只要对服务器进行管理就够了。</p>
+<p>B/S结构最大的优点它不需要安装任何的软件，它所有的客户端就只是浏览器，所以只要有一台电脑并且可以上网就可以解决所有问题，客户端可以完全地不用管理员维护。无论使用系统的使用者是什么样的规模，也不管分支有多么的庞大，都不会对维护和升级的工作量造成影响，所有的维护和升级只需要操作服务器。随着B/S结构的不断发展，使用的人也不断增加，从而带动了AJAX技术的发展，和B/S结构一样，它也能在客户端上处理程序，这便缓解了服务器的负担，提高了交互性，而且实现了局部实时刷新。</p>
+<h2 id="23myeclipse环境配置">2.3MyEclipse环境配置</h2>
+<p>安装完MyEclipse后选择myeclipse“Window-&gt;Preferences”</p>
+<p>（1）配置myeclipse的jre为sun的jdk，不要用myeclipse的默认jdk：</p>
+<p>选择“java-&gt;Installed JREs”,勾中里面的“jdk1.7”.</p>
+<p>（2）配置编译的级别为6.0：</p>
+<p>选择“Compiler-&gt;Compiler compliance level”的值为“6.0”。</p>
+<p>（3）配置myeclipse的默认的文件编码格式为“UTF-8”：</p>
+<p><code>   </code>选择“General-&gt;Workspace”，选中“Text file encod”下面的“Other”，设置里面的值为“UTF-8”。</p>
+<p>（4）去掉myeclipse的JSP的验证：</p>
+<p>选择“MyEclipse-&gt;Validation”,将“Build”列的所有勾都给去掉,这样在编译时因为避免了jsp的验证，所以编译的速度会快很多.</p>
+<h2 id="24-mysql简介">2.4 Mysql简介</h2>
+<p>MySQL数据库使用的语言是SQL语言。MySQL在保存数据时是根据数据的类型和特征分开保存在不同的表中，这样当用户在需要调用的数据时，就不再需要花费大量时间去寻找数据了，只要找到对应的表，就可以找到需要的数据了。MySQL可以完美的实现对于数据库的基本操作。因为 MySQL 数据库的占用的内存少，运行快，成本低，源代码开放，可移植性强，所以越来越多的数据来源简单的项目的开发都会选择 MySQL作为数据库，而MySQL也变得越来越流行。</p>
+<p>MySQL 有很多特性，如可移植性，多线程，灵活性等，在很多操作系统中都可以运行。它可以实现在多个线程并发执行的技术；支持MyISAM、innoDB、MEMORY、ARCHIVE四种存储引擎，而且可以使用大型数据库，为用户提供许多使用数据库的工具，比如建模工具，管理工具等。在 WEB方面的应用MySQL是最好的。</p>
+<h1 id="3-系统需求分析">3 系统需求分析</h1>
+<p>本章节主要是对系统设计目标，系统功能需求，系统性能需求，开发环境等方面对系统进行了详细的论述分析。</p>
+<h2 id="31-系统设计的目标_toc261892046"><a href="#_Toc261892046" rel="">3.1 系统设计的目标</a></h2>
+<p>本系统主要是针对线下管理方式中管理不便与效率低的缺点，将电子商务和计算机技术结合起来，开发出管理便捷，效率高的校园交友网站。该系统操作简单方便，界面友好，容易管理和维护；而且对校园交友的管理具有较强的针对性，实用性和可操作性，可初步解决线下管理因各种因素限制，高成本等因素造成的一系列不便。</p>
+<h2 id="32-系统可行性分析">3.2 系统可行性分析</h2>
+<p>一个完整的系统，可行性分析是必须要有的，因为他关系到系统生存问题，对开发的意义进行分析，能否通过本系统来补充线下校园交友管理模式中的缺限，去解决其中的不足等，通过对本系统，不仅能使工作量不断地减少，还能使工作和管理的效率更加高。所以开发该系统能实现更大的意义和价值，系统完成后，能否达到预期效果就要通过可行性分析，分析之后，决定此系统是否开发。该校园交友网站的开发设计中，下面我们将从经济、技术、操作、运行、时间等方面来选择这个系统最终是否开发。</p>
+<h3 id="321-经济可行性">3.2.1 经济可行性</h3>
+<p>由于本系统是作为毕业设计系统，且系统本身存在一些技术层面的缺陷，并不能直接用于商业用途，只想要通过该系统的开发提高自身学术水平，不需要特定服务器等额外花费。所有创造及工作过程仅需在个人电脑上就能实现，使用到的软件大多为开源软件，所以经济成本并不高，可以轻易实现。</p>
+<h3 id="322-技术可行性">3.2.2 技术可行性</h3>
+<p>本系统开发选择java技术，java是一个完全面向对象的语言，java为开发者提供了丰富的类库，大大减少了使用windows编程的难度,减少开发人员在设计算法上的难度，作为java开发 Visual Studio更是一个必不可少的角色，它友好的界面，以及强大的功能，给程序开发人员带来了很多方便，加上环境简单，转移方便，无疑使此系统最佳的选择。所以后台设计选择使用 Mysql数据库主要用来的建立和维护信息。对于前台开发要求应具备功能完善、易于操作等优点，后台数据库的要求则是能够建立和维护数据信息的统一性和完整性。</p>
+<p>依据上述目标来分析本系统的硬件如下：</p>
+<p>奔腾3的处理器；</p>
+<p>内存是 2G；</p>
+<p>硬盘是50G；</p>
+<p>操作系统是Window 10；</p>
+<p>在软件方面的话，安装了Visul Studio 0 和 Mysql数据库开发工具。根据以上的软件与硬件要求，得到这个系统的技术是可行的。</p>
+<h3 id="323-操作可行性">3.2.3 操作可行性</h3>
+<p>现在随着科技的飞速发展，计算机早已经进入了人们的日常生活中，人们的工作环境也不像以前有那么多的要求，需要员工一定要到公司办公，有的工作在家也可以完成。这使得人们的工作效益有了很大的提高。操作的多样性也变高了。因此，管理的计算机化，智能化是社会发展而带来的必然趋势，各种智能的软件层出不穷，不同的软件能完成用户不同的需求，这不仅提高了工作效率还能完成一些用户特定的一些需求。本系统不仅界面简洁明了还采用可视化界面，用户只要用鼠标和键盘就可以完成对相关信息的修改，删除，添加等操作。因为这个系统的操作十分简单，方便上手，对于第一次使用系统的人，只需要很少的时间就可以上手操作。由此可见，本系统在操作上是可行的。</p>
+<h3 id="324-运行可行性">3.2.4 运行可行性</h3>
+<p>本系统作为以java作为开发语言的系统，而且选用B/S结构则决定了要操作本系统仅需要占用很小的资源，并没有过多地硬件配置要求，目前市面上只要能正常运行浏览器的个人电脑都可以正常运行使用该系统。</p>
+<p>经过总结，本系统在经济方面、技术方面、运行方面的条件都得以满足，为此系统的开发具备了可行性条件。</p>
+<h3 id="325-时间可行性">3.2.5 时间可行性</h3>
+<p>从时间上看，在大四的最后一个学期，在实习工作与完成毕设两件大事相交叉的时间里，结合之前学习的相关知识，并开发系统，时间上是有点紧，但是也不是完全没可能实现，通过这段时间的努力功能基本实现。</p>
+<h2 id="33-系统现状分析">3.3 系统现状分析</h2>
+<p>系统使用用户的数量直接决定了用户信息管理者的工作量，毫无疑问，管理者的工作量较大较繁琐。通过总结出系统当前对用户管理的工作状态得以下分析：</p>
+<p>统筹规划，如果系统在信息化管理中不够全面，缺少综合性、系统性、整体性，那不可避免的需要投入大量人力物力来规划整理信息。引入信息化管理方式无疑可以达到节省信息管理成本的目的不仅减少资源浪费还可以使校园交友信息变得井井有条，成为市场竞争中的一大优势。</p>
+<p>要循序渐进，做事不能心急，一步一个脚印，都不可能一步到位，就算信息管理系统也一样，要让系统发挥最大效率还是应该多调研，多听取用户和管理者的意见，并进行必要的统筹规划，有组织有目的地设计系统功能，团结各个部门发挥主观能动性。</p>
+<p>(1)信息安全措施不到位</p>
+<p>隐私权神圣不可侵犯，这是中华人民共和国宪法赋予我们的权利，人和人都不能侵犯我们的正当权益，而网络用户信息管理存在极大安全隐患，信息泄露的案列不在少数，加强信息安全措施是完善网络信息管理过程中不可避免的一环。</p>
+<p>(2)资源不能充分共享</p>
+<p>资源共享是网络的一大特点，没有共享就没有社交，网络也就失去了他应有的魅力，如果能够实现用户信息共享，无疑对于用户的发展存在不可或缺的帮助。</p>
+<p>(3)现有系统可扩展性不高</p>
+<p>如今科学技术发展飞速，随着而来的就是技术更新，那势必会给软件更新带来挑战，因此，系统必须具备良好的开放性和可扩充性，为了不落后于时代，这是必备特色之一。</p>
+<p>基于上述分析，校园交友网站应该切合实际，做到确实有效，集体表现为：一是系统能够整理并集合归类用户信息，防止用户信息混乱，难以整理；二是系统要安全稳定，不能泄露用户信息，造成隐私泄露，不仅伤害用户利益更是对经营者名誉的损毁；三是系统要具有良好的开放性，不仅要方便定期的维护维修，更要方便及时增加新功能，保证先进的时代契合性。经过详细的讨论论证，确定系统的总体要求。</p>
+<h2 id="34-性能需求分析">3.4 性能需求分析</h2>
+<p>对系统的性能，从（功能、运行、界面、安全）等方面进行，下面我们逐一进行分析；</p>
+<p>1.系统的功能是否完整进行分析：系统的功能，能对应设计出原始代码和算法，以表格同文字的形式进行详细介绍个人信息保证功能完整；</p>
+<p>2.系统的运行是否通畅进行分析：系统的每个功能都有编写数据的关系和应对的代码，通过需求分析和可行性分析进行分析和显示系统的物理数据，保证其进行通畅；</p>
+<p>3.系统的界面设计进行分析：对系统中的软件进行处理与分析的方式是由不同代码来进行的；从而使界面容易操作。</p>
+<p>4.系统的安全性进行分析：这样才可以每个角色的不同对应的信息也就不同，在登录系统务必使用自己的账号，密码登录，账号与密码错误自然就登录失败了。登录成功可以对自己的信息进行操作，不能对别人的账号的信息进行查看等操作，这样自然保证系统的安全性。</p>
+<h2 id="35功能需求分析">3.5功能需求分析</h2>
+<p>系统功能需求分析是通过软件开发者在参与市场调研，与校园交友管理者及用户交流后经过详细缜密的思考，再讨论研究后得出的初步系统开发所需实现功能。这是开发系统的开始，也是相当关键的一步，如果不在这个阶段制定系统所需模块，日后会带来不必要的麻烦。因此，必须严肃认真，全身心投入去做好这个步骤。</p>
+<p>本系统采用从上往下的步骤开发，基本功能如下：</p>
+<p>本课题要求实现一套校园交友网站，系统主要包括管理员和用户。</p>
+<p>(a) 管理员的功能主要有首页、个人中心、用户管理、线下活动管理、交友信息管理、活动报名管理、交流论坛、系统管理等。</p>
+<p>(b) 用户登录进入网站可以实现首页、线下活动、交友信息、交流论坛、公告信息、个人中心、后台管理等；在后台管理页面可以对首页、个人中心、交友信息管理、活动报名管理等功能进行详细操作。</p>
+<h2 id="36系统设计规则与运行环境">3.6系统设计规则与运行环境</h2>
+<p>软件系统的优劣很大程度上是由系统设计的完善与否决定的。世间万物都必须遵循生老病死的法则，这是大自然的规则不能违反，软件设计也一样需要遵循系统设计规则。因此，在设计过程中必须遵循系统设计规则。</p>
+<p>规则如下：</p>
+<p>简单性：为了扩大系统使用者的受众面，系统设计应该本着操作越简单约好的原则，这样不仅能提高系统的使用率更能够扩大系统使用面。。</p>
+<p>针对性：一个系统针对性越强，所能提供的功能必然越完善，用户体验肯定更好，所以应该明确指定系统针对性。</p>
+<p>实用性：实用永远是检验一个系统是否成功的唯一标准，使用的语言再高端，使用的结构再新颖但不能满足用户的要求那就是失败。</p>
+<p>运行环境：</p>
+<p>本系统是利用B/S结构来开发的，数据库在服务器上进行部署 Mysql即可，其他包括My Eclipse等常规开发程序。</p>
+<h2 id="37系统流程分析">3.7系统流程分析</h2>
+<p>下图是用户进入这个校园交友网站后，基本的操作流程。一进入首页便可以进行各种校园交友信息的浏览，用户可以根据自身的需求来进行相应的操作，但前提是必须是登录的用户，不然系统会提示需重新登录才可操作。用户也可通过公告的消息，了解实时的情况，这样有助于结合自身，更好的适应系统的需求，最后用户可以根据自己获得信息的满意程度来进行操作。</p>
+<h3 id="371操作流程">3.7.1操作流程</h3>
+<p>系统登录流程图，如图所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0709springboot/blog.007.png"
+        data-srcset="/images/0700stringboot/0709springboot/blog.007.png, /images/0700stringboot/0709springboot/blog.007.png 1.5x, /images/0700stringboot/0709springboot/blog.007.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0709springboot/blog.007.png"
+        title="/images/0700stringboot/0709springboot/blog.007.png" /></p>
+<p>图3-1登录流程图</p>
+<h3 id="372用户管理的流程">3.7.2用户管理的流程</h3>
+<p>用户管理流程图，如图所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0709springboot/blog.008.png"
+        data-srcset="/images/0700stringboot/0709springboot/blog.008.png, /images/0700stringboot/0709springboot/blog.008.png 1.5x, /images/0700stringboot/0709springboot/blog.008.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0709springboot/blog.008.png"
+        title="/images/0700stringboot/0709springboot/blog.008.png" /></p>
+<p>图3-2用户管理流程</p>
+<h3 id="373个人中心管理流程">3.7.3个人中心管理流程</h3>
+<p>个人中心流程图，如图所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0709springboot/blog.009.png"
+        data-srcset="/images/0700stringboot/0709springboot/blog.009.png, /images/0700stringboot/0709springboot/blog.009.png 1.5x, /images/0700stringboot/0709springboot/blog.009.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0709springboot/blog.009.png"
+        title="/images/0700stringboot/0709springboot/blog.009.png" /></p>
+<p>图3-3个人中心管理流程</p>
+<h3 id="374添加信息流程">3.7.4添加信息流程</h3>
+<p>添加信息流程图，如图所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0709springboot/blog.010.png"
+        data-srcset="/images/0700stringboot/0709springboot/blog.010.png, /images/0700stringboot/0709springboot/blog.010.png 1.5x, /images/0700stringboot/0709springboot/blog.010.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0709springboot/blog.010.png"
+        title="/images/0700stringboot/0709springboot/blog.010.png" /></p>
+<p>图3-4添加信息流程图</p>
+<h3 id="375删除信息流程">3.7.5删除信息流程</h3>
+<p>删除信息流程图，如图所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0709springboot/blog.011.png"
+        data-srcset="/images/0700stringboot/0709springboot/blog.011.png, /images/0700stringboot/0709springboot/blog.011.png 1.5x, /images/0700stringboot/0709springboot/blog.011.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0709springboot/blog.011.png"
+        title="/images/0700stringboot/0709springboot/blog.011.png" /></p>
+<p>图3-5删除信息流程图</p>
+<h1 id="4-系统整体设计">4 系统整体设计</h1>
+<h2 id="41系统设计思想">4.1系统设计思想</h2>
+<p>系统确定了各项需求，完成了系统的分析和数据库的设计，它就可以根据系统的特点决定系统的发展模式，才能实现代码。通过对系统的分析，这个系统是属于一个小项目，所完成的功能相对简单，就是对数据的基本操作。从而决定采用B/S开发模式。该模型的基本过程是：当用户访问系统的浏览器，或从用户向服务器发送请求时，通过接收请求，然后调用数据访问逻辑运算如比，将结果返回给将结果返回到用户通过浏览器。</p>
+<p>使用开发的模型时，我们要把一些常用的，可以重复使用了java技术。当用户浏览网页，很多网页上的信息是从数据库动态删除，这就要求网页必须有数据库操作的能力，如连接数据库和数据表，更新。一个系统包含多个相同的网页，实现数据库操作功能的、代码就需要在不一样的网页中重复的被使用，这样不仅降低了工作的效率，一般也会给维护带来较大的麻烦。为了弥补这一缺陷，功能代码应该在java中完整的数据库操作，可以使用在每一个页面上。</p>
+<h2 id="42-系统设计主要功能">4.2 系统设计主要功能</h2>
+<p>通过市场调研及咨询研究，了解了使用者及管理者的使用需求，于是制定了管理员和用户的功能模块。其功能结构图如下图4-1所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0709springboot/blog.012.png"
+        data-srcset="/images/0700stringboot/0709springboot/blog.012.png, /images/0700stringboot/0709springboot/blog.012.png 1.5x, /images/0700stringboot/0709springboot/blog.012.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0709springboot/blog.012.png"
+        title="/images/0700stringboot/0709springboot/blog.012.png" /></p>
+<p>图4-1系统功能结构图</p>
+<h2 id="43-数据库设计与实现">4.3 数据库设计与实现</h2>
+<p>在每一个系统中数据库有着非常重要的作用，数据库的设计得好将会增加系统的效率以及系统各逻辑功能的实现。所以数据库的设计我们要从系统的实际需要出发，才能使其更为完美的符合系统功能的实现。</p>
+<h3 id="431-数据库设计规范">4.3.1 数据库设计规范</h3>
+<p>数据可设计要遵循职责分离原则，即在设计时应该要考虑系统独立性，即每个系统之间互不干预不能混乱数据表和系统关系。</p>
+<p>数据库命名也要遵循一定规范，否则容易混淆，数据库字段名要尽量做到与表名类似，多使用小写英文字母和下划线来命名并尽量使用简单单词。</p>
+<h3 id="432-数据库概念结构设计">4.3.2 数据库概念结构设计</h3>
+<p>数据库的E-R图反映了实体、实体的属性和实体之间的联系。下面是各个实体以及实体的属性。</p>
+<p>\1. 公告信息实体图如图4-2所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0709springboot/blog.013.png"
+        data-srcset="/images/0700stringboot/0709springboot/blog.013.png, /images/0700stringboot/0709springboot/blog.013.png 1.5x, /images/0700stringboot/0709springboot/blog.013.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0709springboot/blog.013.png"
+        title="/images/0700stringboot/0709springboot/blog.013.png" /></p>
+<p>图4-2公告信息实体图</p>
+<p>\2. 交友信息实体图如图4-3所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0709springboot/blog.014.png"
+        data-srcset="/images/0700stringboot/0709springboot/blog.014.png, /images/0700stringboot/0709springboot/blog.014.png 1.5x, /images/0700stringboot/0709springboot/blog.014.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0709springboot/blog.014.png"
+        title="/images/0700stringboot/0709springboot/blog.014.png" /></p>
+<p>图4-3交友信息实体图</p>
+<p><code> </code>3. 活动报名实体图如图4-4所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0709springboot/blog.015.png"
+        data-srcset="/images/0700stringboot/0709springboot/blog.015.png, /images/0700stringboot/0709springboot/blog.015.png 1.5x, /images/0700stringboot/0709springboot/blog.015.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0709springboot/blog.015.png"
+        title="/images/0700stringboot/0709springboot/blog.015.png" /></p>
+<p>图4-4活动报名实体图</p>
+<h3 id="433-数据表">4.3.3 数据表</h3>
+<p>数据库概念结构设计后，可以数据库概念转化实际的数据模型，这是一种数据库的逻辑结构，就是将概念结构与支持数据库管理系统的模型相符合。系统中使用到的主要数据表的具体展示部分如下所示。</p>
+<p>表4-1：token表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名称</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">字段说明</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">主键</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">userid</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">用户id</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">username</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">用户名</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">tablename</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">表名</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">role</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">角色</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">token</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">密码</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">新增时间</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">CURRENT_TIMESTAMP</td>
+</tr>
+<tr>
+<td style="text-align:center">expiratedtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">过期时间</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">CURRENT_TIMESTAMP</td>
+</tr>
+</tbody>
+</table>
+<p>表4-2：收藏表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名称</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">字段说明</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">主键</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">CURRENT_TIMESTAMP</td>
+</tr>
+<tr>
+<td style="text-align:center">userid</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">用户id</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">refid</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">收藏id</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">tablename</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">表名</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">name</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">收藏名称</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">picture</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">收藏图片</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">type</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">类型(1:收藏,21:赞,22:踩)</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">inteltype</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">推荐类型</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>表4-3：公告信息</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名称</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">字段说明</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">主键</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">CURRENT_TIMESTAMP</td>
+</tr>
+<tr>
+<td style="text-align:center">title</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">标题</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">introduction</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">4294967295</td>
+<td style="text-align:center">简介</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">picture</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">图片</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">content</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">4294967295</td>
+<td style="text-align:center">内容</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>表4-4：交友信息</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名称</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">字段说明</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">主键</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">CURRENT_TIMESTAMP</td>
+</tr>
+<tr>
+<td style="text-align:center">zhanghao</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">账号</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">xingming</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">姓名</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">xingbie</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">性别</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">nianling</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">年龄</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">xingquaihao</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">4294967295</td>
+<td style="text-align:center">兴趣爱好</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">jiaoyoumude</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">4294967295</td>
+<td style="text-align:center">交友目的</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">gerenjianjie</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">4294967295</td>
+<td style="text-align:center">个人简介</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">jiaoyoutupian</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">交友图片</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">sfsh</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">是否审核</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">shhf</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">4294967295</td>
+<td style="text-align:center">审核回复</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">thumbsupnum</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">赞</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">crazilynum</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">踩</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">clicktime</td>
+<td style="text-align:center">datetime</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">最近点击时间</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">clicknum</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">点击次数</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">0</td>
+</tr>
+</tbody>
+</table>
+<p>表4-5：活动报名</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名称</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">字段说明</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">主键</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">CURRENT_TIMESTAMP</td>
+</tr>
+<tr>
+<td style="text-align:center">huodongmingcheng</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">活动名称</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">huodongleixing</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">活动类型</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">baomingshijian</td>
+<td style="text-align:center">datetime</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">报名时间</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">baomingshuoming</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">报名说明</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">zhanghao</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">账号</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">xingming</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">姓名</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">sfsh</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">是否审核</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">shhf</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">4294967295</td>
+<td style="text-align:center">审核回复</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>表4-6：交流论坛</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名称</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">字段说明</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">主键</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">CURRENT_TIMESTAMP</td>
+</tr>
+<tr>
+<td style="text-align:center">title</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">帖子标题</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">content</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">4294967295</td>
+<td style="text-align:center">帖子内容</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">parentid</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">父节点id</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">userid</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">用户id</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">username</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">用户名</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">isdone</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">状态</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>表4-7：线下活动评论表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名称</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">字段说明</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">主键</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">CURRENT_TIMESTAMP</td>
+</tr>
+<tr>
+<td style="text-align:center">refid</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">关联表id</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">userid</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">用户id</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">nickname</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">用户名</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">content</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">4294967295</td>
+<td style="text-align:center">评论内容</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">reply</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">4294967295</td>
+<td style="text-align:center">回复内容</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>表4-8：交友信息评论表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名称</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">字段说明</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">主键</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">CURRENT_TIMESTAMP</td>
+</tr>
+<tr>
+<td style="text-align:center">refid</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">关联表id</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">userid</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">用户id</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">nickname</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">用户名</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">content</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">4294967295</td>
+<td style="text-align:center">评论内容</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">reply</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">4294967295</td>
+<td style="text-align:center">回复内容</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>表4-9：用户</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名称</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">字段说明</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">主键</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">CURRENT_TIMESTAMP</td>
+</tr>
+<tr>
+<td style="text-align:center">zhanghao</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">账号</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">mima</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">密码</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">xingming</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">姓名</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">xingbie</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">性别</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">nianling</td>
+<td style="text-align:center">float</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">年龄</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">shouji</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">手机</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">touxiang</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">头像</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>表4-10：配置文件</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名称</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">字段说明</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">主键</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">name</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">配置参数名称</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">value</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">配置参数值</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>表4-11：线下活动</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名称</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">字段说明</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">主键</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">CURRENT_TIMESTAMP</td>
+</tr>
+<tr>
+<td style="text-align:center">huodongmingcheng</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">活动名称</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">huodongleixing</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">活动类型</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">huodongdidian</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">活动地点</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">huodongshijian</td>
+<td style="text-align:center">datetime</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">活动时间</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">huodongneirong</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">4294967295</td>
+<td style="text-align:center">活动内容</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">huodongtupian</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">活动图片</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>表4-12：用户表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名称</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">字段说明</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">主键</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">username</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">用户名</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">password</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">密码</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">role</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">角色</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">管理员</td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">新增时间</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">CURRENT_TIMESTAMP</td>
+</tr>
+</tbody>
+</table>
+<h1 id="5-系统实现">5 系统实现</h1>
+<h2 id="51系统功能模块">5.1系统功能模块</h2>
+<p>校园交友网站，在网站首页可以查看首页、线下活动、交友信息、交流论坛、公告信息、个人中心、后台管理等内容进行详细操作，如图5-1所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0709springboot/blog.016.png"
+        data-srcset="/images/0700stringboot/0709springboot/blog.016.png, /images/0700stringboot/0709springboot/blog.016.png 1.5x, /images/0700stringboot/0709springboot/blog.016.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0709springboot/blog.016.png"
+        title="/images/0700stringboot/0709springboot/blog.016.png" /></p>
+<p>图5-1网站首页界面图</p>
+<p>用户注册，在用户注册页面通过填写账号、密码、确认密码、姓名、年龄、手机等内容进行用户注册操作；如图5-2所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0709springboot/blog.017.png"
+        data-srcset="/images/0700stringboot/0709springboot/blog.017.png, /images/0700stringboot/0709springboot/blog.017.png 1.5x, /images/0700stringboot/0709springboot/blog.017.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0709springboot/blog.017.png"
+        title="/images/0700stringboot/0709springboot/blog.017.png" /></p>
+<p>图5-2用户注册界面图</p>
+<p>线下活动，在线下活动页面可以对活动名称、活动类型、活动地点、图片、活动时间、活动内容等内容进行报名，评论或收藏操作，如图5-3所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0709springboot/blog.018.png"
+        data-srcset="/images/0700stringboot/0709springboot/blog.018.png, /images/0700stringboot/0709springboot/blog.018.png 1.5x, /images/0700stringboot/0709springboot/blog.018.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0709springboot/blog.018.png"
+        title="/images/0700stringboot/0709springboot/blog.018.png" /></p>
+<p>图5-3线下活动界面图</p>
+<p>交友信息，在交友信息页面可以查看账号、姓名、性别、年龄、图片、兴趣爱好、交友目的、点击次数、个人简介等详细内容，并进行评论或收藏操作；如图5-4所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0709springboot/blog.019.png"
+        data-srcset="/images/0700stringboot/0709springboot/blog.019.png, /images/0700stringboot/0709springboot/blog.019.png 1.5x, /images/0700stringboot/0709springboot/blog.019.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0709springboot/blog.019.png"
+        title="/images/0700stringboot/0709springboot/blog.019.png" /></p>
+<p>图5-4交友信息界面图</p>
+<p>个人中心，在个人中心页面通过填写账号、密码、姓名、性别、年龄、手机、上传图片等内容进行更新信息操作，还可以对我的发布，我的收藏进行详细的操作；如图5-5所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0709springboot/blog.020.png"
+        data-srcset="/images/0700stringboot/0709springboot/blog.020.png, /images/0700stringboot/0709springboot/blog.020.png 1.5x, /images/0700stringboot/0709springboot/blog.020.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0709springboot/blog.020.png"
+        title="/images/0700stringboot/0709springboot/blog.020.png" /></p>
+<p>图5-5个人中心界面图</p>
+<h2 id="52后台功能模块">5.2后台功能模块</h2>
+<p>后台登录，用户通过输入用户名、密码，选择角色并点击登录进行系统登录操作，如图5-6所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0709springboot/blog.021.png"
+        data-srcset="/images/0700stringboot/0709springboot/blog.021.png, /images/0700stringboot/0709springboot/blog.021.png 1.5x, /images/0700stringboot/0709springboot/blog.021.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0709springboot/blog.021.png"
+        title="/images/0700stringboot/0709springboot/blog.021.png" /></p>
+<p>图5-6后台登录界面图</p>
+<h3 id="521管理员功能模块">5.2.1管理员功能模块</h3>
+<p>管理员登录系统后，可以对首页、个人中心、用户管理、线下活动管理、交友信息管理、活动报名管理、交流论坛、系统管理等功能进行相应操作，如图5-7所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0709springboot/blog.022.png"
+        data-srcset="/images/0700stringboot/0709springboot/blog.022.png, /images/0700stringboot/0709springboot/blog.022.png 1.5x, /images/0700stringboot/0709springboot/blog.022.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0709springboot/blog.022.png"
+        title="/images/0700stringboot/0709springboot/blog.022.png" /></p>
+<p>图5-7管理员功能界面图</p>
+<p>用户管理，在用户管理页面可以对索引、账号、姓名、性别、年龄、手机、头像等信息进行详情、修改或删除等操作，如图5-8所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0709springboot/blog.023.png"
+        data-srcset="/images/0700stringboot/0709springboot/blog.023.png, /images/0700stringboot/0709springboot/blog.023.png 1.5x, /images/0700stringboot/0709springboot/blog.023.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0709springboot/blog.023.png"
+        title="/images/0700stringboot/0709springboot/blog.023.png" /></p>
+<p>图5-8用户管理界面图</p>
+<p>线下活动管理，在线下活动管理页面可以对索引、活动名称、活动类型、活动地点、活动时间、活动图片等内容进行详情，修改，查看评论或删除操作，如图5-9所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0709springboot/blog.024.png"
+        data-srcset="/images/0700stringboot/0709springboot/blog.024.png, /images/0700stringboot/0709springboot/blog.024.png 1.5x, /images/0700stringboot/0709springboot/blog.024.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0709springboot/blog.024.png"
+        title="/images/0700stringboot/0709springboot/blog.024.png" /></p>
+<p>图5-9线下活动管理界面图</p>
+<p>交友信息管理，在交友信息管理页面可以对索引、账号、姓名、性别、年龄、交友图片、审核回复、审核状态、审核等内容进行详情，查看评论或删除操作，如图5-10所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0709springboot/blog.021.png"
+        data-srcset="/images/0700stringboot/0709springboot/blog.021.png, /images/0700stringboot/0709springboot/blog.021.png 1.5x, /images/0700stringboot/0709springboot/blog.021.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0709springboot/blog.021.png"
+        title="/images/0700stringboot/0709springboot/blog.021.png" /></p>
+<p>图5-10交友信息管理界面图</p>
+<p>活动报名管理，在活动报名管理页面可以对索引、活动名称、活动类型、报名时间、报名说明、账号、姓名、审核回复、审核状态、审核等内容进行详情或删除操作，如图5-11所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0709springboot/blog.025.png"
+        data-srcset="/images/0700stringboot/0709springboot/blog.025.png, /images/0700stringboot/0709springboot/blog.025.png 1.5x, /images/0700stringboot/0709springboot/blog.025.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0709springboot/blog.025.png"
+        title="/images/0700stringboot/0709springboot/blog.025.png" /></p>
+<p>图5-11活动报名管理界面图</p>
+<p>交流论坛，在交流论坛页面可以对索引、帖子标题、用户名、状态等内容进行详情，修改，查看评论或删除操作，如图5-12所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0709springboot/blog.026.png"
+        data-srcset="/images/0700stringboot/0709springboot/blog.026.png, /images/0700stringboot/0709springboot/blog.026.png 1.5x, /images/0700stringboot/0709springboot/blog.026.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0709springboot/blog.026.png"
+        title="/images/0700stringboot/0709springboot/blog.026.png" /></p>
+<p>图5-12交流论坛界面图</p>
+<p>系统管理，在公告信息页面可以对索引、标题、图片等内容进行详情、修改和删除等操作，还可以对轮播图管理进行详细的操作；如图5-13所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0709springboot/blog.027.png"
+        data-srcset="/images/0700stringboot/0709springboot/blog.027.png, /images/0700stringboot/0709springboot/blog.027.png 1.5x, /images/0700stringboot/0709springboot/blog.027.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0709springboot/blog.027.png"
+        title="/images/0700stringboot/0709springboot/blog.027.png" /></p>
+<p>图5-13系统管理界面图</p>
+<h3 id="522用户功能模块">5.2.2用户功能模块</h3>
+<p>用户登录进入系统，可以对首页、个人中心、交友信息管理、活动报名管理等功能进行相应操作，如图5-14所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0709springboot/blog.028.png"
+        data-srcset="/images/0700stringboot/0709springboot/blog.028.png, /images/0700stringboot/0709springboot/blog.028.png 1.5x, /images/0700stringboot/0709springboot/blog.028.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0709springboot/blog.028.png"
+        title="/images/0700stringboot/0709springboot/blog.028.png" /></p>
+<p>图5-14用户功能界面图</p>
+<p>交友信息管理，在交友信息管理页面可以对索引、账号、姓名、性别、年龄、交友图片、审核回复、审核状态等内容进行详情，修改，查看评论或删除操作，如图5-15所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0709springboot/blog.029.png"
+        data-srcset="/images/0700stringboot/0709springboot/blog.029.png, /images/0700stringboot/0709springboot/blog.029.png 1.5x, /images/0700stringboot/0709springboot/blog.029.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0709springboot/blog.029.png"
+        title="/images/0700stringboot/0709springboot/blog.029.png" /></p>
+<p>图5-15交友信息管理界面图</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2024-06-05</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/0709springboot%E6%A0%A1%E5%9B%AD%E4%BA%A4%E5%8F%8B%E7%BD%91%E7%AB%99--%E8%AE%BA%E6%96%87/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://chenqi199.github.io/0709springboot%E6%A0%A1%E5%9B%AD%E4%BA%A4%E5%8F%8B%E7%BD%91%E7%AB%99--%E8%AE%BA%E6%96%87/" data-title="0709springboot校园交友网站--论文" data-hashtags="springboot,java,vue,论文,项目"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://chenqi199.github.io/0709springboot%E6%A0%A1%E5%9B%AD%E4%BA%A4%E5%8F%8B%E7%BD%91%E7%AB%99--%E8%AE%BA%E6%96%87/" data-hashtag="springboot"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://chenqi199.github.io/0709springboot%E6%A0%A1%E5%9B%AD%E4%BA%A4%E5%8F%8B%E7%BD%91%E7%AB%99--%E8%AE%BA%E6%96%87/" data-title="0709springboot校园交友网站--论文"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://chenqi199.github.io/0709springboot%E6%A0%A1%E5%9B%AD%E4%BA%A4%E5%8F%8B%E7%BD%91%E7%AB%99--%E8%AE%BA%E6%96%87/" data-title="0709springboot校园交友网站--论文"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://chenqi199.github.io/0709springboot%E6%A0%A1%E5%9B%AD%E4%BA%A4%E5%8F%8B%E7%BD%91%E7%AB%99--%E8%AE%BA%E6%96%87/" data-title="0709springboot校园交友网站--论文" data-ralateuid="https://gitee.com/chen_q_i"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/springboot/">Springboot</a>,&nbsp;<a href="/tags/java/">Java</a>,&nbsp;<a href="/tags/vue/">Vue</a>,&nbsp;<a href="/tags/%E8%AE%BA%E6%96%87/">论文</a>,&nbsp;<a href="/tags/%E9%A1%B9%E7%9B%AE/">项目</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/0704springboot%E6%95%B0%E7%A0%81%E8%AE%BA%E5%9D%9B%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0--%E8%AE%BA%E6%96%87/" class="prev" rel="prev" title="0704springboot数码论坛系统设计与实现--论文"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>0704springboot数码论坛系统设计与实现--论文</a>
+            <a href="/0708springboot%E6%A0%A1%E5%8F%8B%E7%A4%BE%E4%BA%A4%E7%B3%BB%E7%BB%9F--%E8%AE%BA%E6%96%87/" class="next" rel="next" title="0708springboot校友社交系统--论文">0708springboot校友社交系统--论文<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.128.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="chenqi199" target="_blank">chenqi</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

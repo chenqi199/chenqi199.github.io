@@ -3,196 +3,22 @@
 
 # [0315springboot社团服务系统的设计与实现](https://github.com/GraduationProject-springboot/0315springboot)
 
-### 微信： chen_q123456  qq:462201886
-### github:chenqi199
+![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-### [所有项目](https://github.com/GraduationProject-springboot/allSpringbootProjects) 包安装运行
+# [项目清单](https://chenqi1990.site) 包安装运行
 
-### [所有项目列表excel 腾讯文档 项目清单](https://docs.qq.com/sheet/DSHRFSVZ5aEVYT3N3?tab=BB08J2) 包安装运行
-
-### [github](https://chenqi199.github.io)
-
-
-
-
-
-
-
-
-# 0315springboot社团服务系统的设计与实现
+### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://player.bilibili.com/player.html?isOutside=true&aid=BV1T1bpekEK7&bvid=BV1T1bpekEK7&cid=500001612672659&p=14)
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)]()
 
-### [所有项目](https://github.com/GraduationProject-springboot/allSpringbootProjects) 包安装运行
-
-
-
-
-
-
-
-
-
-
-
-
-本科毕业设计论文
-
-题目：基于spring boot的school+it社团服务系统的设计与实现
-
-  ------------------- ---------------------------------------------------
-        系 别：                          XX系（全称）
-
-        专 业：                            软件工程
-
-        班 级：                          软件工程15201
-
-      学生姓名：      
-
-      学生学号：      
-
-      指导教师：                          导师1 导师2
-  ------------------- ---------------------------------------------------
-
-202X年5月
-
-# 摘 要
-
-社会发展日新月异，用计算机应用实现数据管理功能已经算是很完善的了，但是随着移动互联网的到来，处理信息不再受制于地理位置的限制，处理信息及时高效，备受人们的喜爱。本次开发一套社团服务系统有管理员，学生，社团人员三个角色。管理员功能有个人中心，学生管理，社团人员管理，软件大全管理，网络报修管理，装机咨询管理，咨询回复管理，网络套餐管理，系统管理。社团人员可以修改个人信息，审核网络报修，查看和回复装机咨询。学生可以注册登录，查看和下载软件大全里面的软件信息，查看套餐和公告，在个人后台里面添加网络报修和装机咨询，还可以看到社团人员的咨询回复。社团服务系统服务端用Java开发，用Spring
-Boot框架开发的网站后台，数据库用到了MySQL数据库作为数据的存储。这样就让用户用着方便快捷，都通过同一个后台进行业务处理，而后台又可以根据并发量做好部署，用硬件和软件进行协作，满足于数据的交互式处理，让用户的数据存储更安全，得到数据更方便。
-
-**关键字：**社团服务系统；Spring Boot框架；Java；MySQL
-
-**Abstract**
-
-With the rapid development of society, the use of computer applications
-to realize data management functions is already very complete, but with
-the advent of the mobile Internet, the processing of information is no
-longer subject to geographical restrictions, and the processing of
-information is timely and efficient, which is much loved by people. This
-development of a community service system has three roles of
-administrators, students, and community members. The administrator
-functions include personal center, student management, community
-personnel management, software management, network repair management,
-installation consultation management, consultation reply management,
-network package management, and system management. Community members can
-modify personal information, review network repair requests, and view
-and reply to installation inquiries. Students can register and log in,
-view and download software information in the Software Encyclopedia,
-view packages and announcements, add online repairs and installation
-consultations in the personal background, and see the consultation
-responses of community members. The server side of the community service
-system is developed in Java, the backend of the website developed with
-the Spring Boot framework, and the database uses the MySQL database as
-the data storage. In this way, users can use it conveniently and
-quickly, and they all process business through the same background, and
-the background can be deployed according to the amount of concurrency,
-using hardware and software to cooperate, satisfying the interactive
-processing of data, and allowing users to store more data. Safe and easy
-to get data.
-
-**Key Words：**Community service system; Spring Boot framework; Java;
-MySQL
-
-#  
-
-[摘 要 I](#摘-要)[目 录 III](#section)
-
-[第1章 绪论 1](#第1章-绪论)
-
-[1.1 研究背景 1](#研究背景)
-
-[1.2 研究现状 1](#研究现状)
-
-[1.3 目的和意义 1](#目的和意义)
-
-[1.4 论文研究内容 2](#论文研究内容)
-
-[第2章 程序开发技术 3](#第2章-程序开发技术)
-
-[2.1 MySQL数据库 3](#mysql数据库)
-
-[2.2 Java语言 3](#java语言)
-
-[2.3 Spring Boot框架简介 4](#spring-boot框架简介)
-
-[第3章 系统分析 5](#第3章-系统分析)
-
-[3.1可行性分析 5](#可行性分析)
-
-[3.1.1技术可行性分析 5](#技术可行性分析)
-
-[3.1.2经济可行性分析 5](#经济可行性分析)
-
-[3.1.3操作可行性分析 6](#操作可行性分析)
-
-[3.2系统运行环境 6](#系统运行环境)
-
-[3.3系统流程分析 6](#系统流程分析)
-
-[第4章 系统设计 10](#系统设计的原则)
-
-[4.1 系统设计的原则 10](#__RefHeading___Toc14341)
-
-[4.2 功能结构设计 10](#功能结构设计)
-
-[4.3 数据库设计 11](#数据库设计)
-
-[4.3.1 数据库E-R图 11](#数据库e-r图)
-
-[4.3.2 数据库表结构 13](#数据库表结构)
-
-[第5章 系统实现 17](#第5章-系统实现)
-
-[5.1管理员功能实现 17](#管理员功能实现)
-
-[5.1.1 学生管理 17](#学生管理)
-
-[5.1.2 社团人员管理 17](#社团人员管理)
-
-[5.1.3 系统公告管理 18](#系统公告管理)
-
-[5.1.4 软件大全管理 19](#软件大全管理)
-
-[5.2 社团人员功能实现 19](#社团人员功能实现)
-
-[5.2.1 网络报修审核 19](#网络报修审核)
-
-[5.2.2 装机咨询回复 20](#装机咨询回复)
-
-[5.3 学生人员功能实现 21](#学生人员功能实现)
-
-[5.3.1 软件大全 21](#软件大全)
-
-[5.3.2 网络报修提交 21](#网络报修提交)
-
-[5.3.3 装机咨询提交 22](#装机咨询提交)
-
-[第6章 系统测试 24](#__RefHeading___Toc15288)
-
-[6.1系统测试方法 24](#系统测试方法)
-
-[6.2 系统测试分析 25](#系统测试分析)
-
-[结 论 26](#结-论)
-
-[致 谢 27](#致-谢)
-
-[参考文献 28](#参考文献)
 
 # 第1章 绪论
-
 ## 1.1 研究背景
-
 互联网时代不仅仅是通过各种各样的电脑进行网络连接的时代，也包含了移动终端连接互联网进行复杂处理的一些事情。传统的互联网时代一般泛指就是PC端，也就是电脑互联网时代，但是最近几十年，是移动互联网时代，是向下一步互联网时代过度的一个重要时代，下一个互联网时代叫物联网，而移动互联网就是一个风口，是当前社会的主流风向。目前移动互联网大行其道，人人都手中拿着智能机，手机手机，手不离机，如果开发一个用在手机上的程序软件，那是多么的符合潮流，符合管理者和客户的理想。本次就是开发社团服务系统有管理员，学生，社团人员三个角色。管理员功能有个人中心，学生管理，社团人员管理，软件大全管理，网络报修管理，装机咨询管理，咨询回复管理，网络套餐管理，系统管理。社团人员可以修改个人信息，审核网络报修，查看和回复装机咨询。学生可以注册登录，查看和下载软件大全里面的软件信息，查看套餐和公告，在个人后台里面添加网络报修和装机咨询，还可以看到社团人员的咨询回复。
-
 ## 1.2 研究现状
-
 当微软操作系统占领了多半江山，目前不分年龄和种族，使用频率最高，覆盖面积最广。使用人群使用的大多数都是微软系统。而微软又不遗余力的更新Windows版本，从微软对Windows的市场定位来讲，Windows的未来不仅仅是一个操作系统，而是让所有人都拥抱Windows，建立一个属于Windows的互联网生态圈。目前各大行业，各种类型的软件阵地转移到了Windows平台上，包含一些带商城的免费管理系统，或者一些带广告的免费应用，还有好多游戏之类的应用。尤其是经过疫情涌现的互联网办公，学校的互联网教学等，都不断的刷新人们对于互联网的认知。
-
 ## 1.3 目的和意义
-
 从经济成本考虑，手机的价格比较亲民，对于不是必须在电脑上办公的人员来讲，手机上如果能解决事情就更方便了。
 
 从使用便利角度上讲，用手机上的应用处理业务，不用考虑网线是否存在，不用考虑位置是否变化，依托无处不在的手机信号就可以在任何有信号的地方处理事务，这是多么的方便和使用，不限制时间，不限制地点，高山平原山谷都可以作为使用的地点而不影响使用的效果。
@@ -200,9 +26,7 @@ MySQL
 从操作角度上讲，手机的操作先天性的高于电脑的操作，因为电脑适合处理复杂的操作，而手机就是为了简化操作而生的，方便高效操作简单。
 
 此次开发这个社团服务系统，不仅仅满足用户的需要，也能跟上时代的发展风向，从技术的角度还是用户的角度上进行开发都是很有意义的。
-
 ## 1.4 论文研究内容
-
 论文设计的结构也是依照程序开发的流程进展的，也涉及到功能需求分析，功能设计与实现，程序测试等流程。
 
 绪论：讲解课题的背景与意义，展示论文结构。
@@ -216,11 +40,8 @@ MySQL
 系统实现：讲解程序功能与界面实现。
 
 系统测试：讲解程序的功能测试。
-
 # 第2章 程序开发技术
-
 ## 2.1 MySQL数据库
-
 为了更容易理解MySQL数据库，接下来就对其具备的主要特征进行描述。
 
 （1）首选MySQL数据库也是为了节省开发资金，因为网络上对MySQL的源码都已进行了公开展示，开发者根据程序开发需要可以进行下载，并做一些改动就可以使用在程序中，可以推动开发者开发此程序的开发进度。
@@ -232,84 +53,59 @@ MySQL
 （4）MySQL可以支持具有千万条数据记录的数据库，电脑操作系统在进行首次安装或者是重装时，可以根据需要选择安装32位或64位操作系统，这两种操作系统对表文件的支持力度不一样，32位的操作系统最多可以存放4GB的表文件，64位操作系统最多可以存放8TB的表文件。
 
 （5）MySQL数据库可以通过GPL协议进行个性化定制，需要开发者自己对数据库的源代码进行修改，以此开发出属于自己的MySQL。
-
 ## 2.2 Java语言
-
 程序开发语言有很多，但是截至目前，Java语言在IT领域内，仍然是最被认可，以及被广泛运用的编写语言之一，因此在选择此程序的编写语言上，果断选择这门编程语言进行程序开发。可以说经过了这么多年的发展，Java语言不仅在Web开发领域有了突出性贡献，而且在大数据开发领域以及Windows开发领域都得到了广泛运用。由于Java语言拥有较强的扩展性能，并且表现出的稳定性能，让其成为大型后端系统开发语言首选，现如今，Java语言也成为了一种常用的互联网平台的解决方案。
 
 作为一种源码在网络上开源的面向对象的程序开发Java语言，由它开发完成的程序是不可能直接运行在各大平台的，Java程序的运行，需要在操作平台上配置其运行的环境，包括数据库软件与Java程序开发软件等工具的安装与配置。在Win7，Win10或其它操作平台上配置Java程序运行环境，只要环境配置成功，Java程序都可以运行起来。
-
 ## 2.3 Spring Boot框架简介
-
-Spring
-Boot是由Pivotal团队提供的全新[框架](https://baike.baidu.com/item/框架/1212667)，其设计目的是用来[简化](https://baike.baidu.com/item/简化/3374416)新[Spring](https://baike.baidu.com/item/Spring/85061)应用的初始搭建以及开发过程。该框架使用了特定的方式来进行配置，从而使开发人员不再需要定义样板化的配置。通过这种方式，Spring
-Boot致力于在蓬勃发展的快速应用开发领域(rapid application
-development)成为领导者。
+Spring Boot是由Pivotal团队提供的全新[框架](https://baike.baidu.com/item/%E6%A1%86%E6%9E%B6/1212667)，其设计目的是用来[简化](https://baike.baidu.com/item/%E7%AE%80%E5%8C%96/3374416)新[Spring](https://baike.baidu.com/item/Spring/85061)应用的初始搭建以及开发过程。该框架使用了特定的方式来进行配置，从而使开发人员不再需要定义样板化的配置。通过这种方式，Spring Boot致力于在蓬勃发展的快速应用开发领域(rapid application development)成为领导者。
 
 SpringBoot可以与经典的Java开发工具一起使用或者作为命令行工具安装。无论如何，需要JavaSDK1.6或者更高版本，本项目用到的是JDK1.8版本。
-
 # 第3章 系统分析
-
 在进行系统分析之前，需要从网络上或者是图书馆的开发类书籍中收集大量的资料，因为这个环节也是帮助即将开发的程序软件制定一套最优的方案，一旦确定了程序软件需要具备的功能，就意味着接下来的工作和任务都是围绕着这个方案执行的，所以系统分析需要对程序功能反复进行思考和研究。
-
 ## 3.1可行性分析
-
 开发一款系统软件之前，用户都会思考这个软件程序值不值得去开发，把开发软件过程中可能涉及到的问题罗列出来，并一个个分析解决，以此来确定开发这款程序软件是否有必要，这样的分析方法也能帮助用户降低损失，不至于开发者开发进度进行到一半之后，突然遇到问题就放弃对软件的开发，到那时，资金损失，人力投入等方面就损耗太大了。
-
 ### 3.1.1技术可行性分析
-
 此次开发程序使用到的开发工具有：MySQL等工具，使用的开发语言是Java，选择的开发工具和开发语言都是在大学课堂接触并学习过，后期因为自己也比较感兴趣，所以也通过网络渠道，或借助图书馆的开发类书籍进行过软件开发知识的系统学习，让自己有了一定的知识积累，加上自己在校期间也独立开发过一些软件作品，也积累了一定的开发经验，所以这次毕设作品的制作在技术上无须担忧过多。
-
 ### 3.1.2经济可行性分析
-
 目前的信息时代，对信息的管理趋于高效化，便捷化，这也是计算机大力普及所带来的便利，此程序软件在设备选用上，依靠的是比较大众的电脑设备，对电脑的配置没有过多要求，一般学校的计算机机房的电脑都可以满足程序开发需求，另外，开发出此款程序，让信息处理变得高效率，其所带来的高效益是远超程序开发的低成本的，因此程序开发的资金投入是可以忽略不计的。
-
 ### 3.1.3操作可行性分析
-
 程序软件的操作界面是符合大众审美的需求，功能模块的布局也是类似于社会上同种类型的软件，因此使用者操作该软件可以无需培训就上手。加上现在计算机入驻各家各户，大部分人的计算机操作水平都比较高，这样的局面也表明开发出来的程序在操作性问题上也是不用担心的。
 
 综合上面的可行性论证，基本可以确定程序开发完全可行。
-
 ## 3.2系统运行环境
-
 程序经过编码可以实现对程序设计的功能。但是编码实现时需要一定的配置环境，包括了电脑上的硬件环境，也包括在电脑操作系统上安装的软件环境。
 
 硬件环境：一台可以正常使用并能够上网的笔记本或者是电脑，电脑内存最低要求4个G，电脑的中央处理器可以配置i5CPU。
 
 软件环境：运用的微软操作系统是比较稳定的win7旗舰版系统，采用比较熟练的360安全浏览器，并在此系统上通过浏览器下载安装好MySQL软件等。
-
 ## 3.3系统流程分析
-
 分析程序的流程，涉及到程序的整体操作流程，通过分析与设计，绘制的程序操作流程图见下图。此程序为了确保安全，会让使用者通过登录模块验证信息，符合要求的使用者才有权限操作程序。
 
-![](media/image1.png){width="5.758333333333334in"
-height="5.309027777777778in"}
+![](/images/0300stringboot/0315springboot/blog.001.png)
 
 图3-1 程序操作流程图
 
 程序处理数据会涉及到数据的录入环节，绘制的添加流程见下图。程序录入数据过程中，始终与数据库保持同步。
 
-![](media/image2.png){width="3.113888888888889in"
-height="4.322222222222222in"}
+![](/images/0300stringboot/0315springboot/blog.002.png)
 
 图3-2 信息添加流程图
 
 程序里面的数据也会出现错误，因此就有相应的修改数据的功能，绘制的程序修改流程见下图。此过程也是跟后台数据库进行数据同步显示。
 
-![](media/image3.png){width="3.1347222222222224in"
-height="4.436805555555556in"}
+![](/images/0300stringboot/0315springboot/blog.003.png)
 
 图3-3信息修改流程图
 
 程序数据存放于数据仓库，有时也会涉及到数据删除，此过程对应的流程图见下图。数据信息被删除之后，数据库里面也就没有了该数据信息了。
 
-![](media/image4.png){width="3.6347222222222224in"
-height="3.0409722222222224in"}
+![](/images/0300stringboot/0315springboot/blog.004.png)
 
 图3-4 信息删除流程图
 
+第4章 系统设计
 ## 4.1 系统设计的原则
-
 在系统设计过程中，也需要遵循相应的设计原则，这些设计原则可以帮助设计者在短时间内设计出符合设计规范的设计方案。设计原则主要有可靠性，安全性，可定制化，可扩展性，可维护性，可升级性以及客户体验等原则。下面就对这些原则进行简要阐述。
 
 可靠性：一个软件是否可靠决定了其是否被用户使用，设计不可靠的软件，用户很容易就遗弃；
@@ -325,535 +121,273 @@ height="3.0409722222222224in"}
 可升级性：程序软件的投入使用，会面临用户数量增多的情况，用户对软件的使用率也会提升，所以系统面临这种情况，仍然需要通过升级保持性能的合理，这样才能够适应市场；
 
 客户体验：设计出来的程序软件在界面上不能够太复杂，要遵循界面设计的原理设计出简单，方便操作的功能操作界面，让用户易于接受软件，并乐于使用软件提供的功能。
-
 ## 4.2 功能结构设计
-
 在管理员功能模块确定下来的基础上，对管理员各个功能进行设计，确定管理员功能的详细模块。绘制的管理员功能结构见下图。管理员功能有个人中心，用户管理，图书分类管理，图书信息管理，订单管理，系统管理。
 
-![](media/image5.wmf)
+![](/images/0300stringboot/0315springboot/blog.005.png)
 
 图4-2 管理员功能结构图
-
 ## 4.3 数据库设计
-
 与功能结构设计一样，数据库设计也是程序开发不可避免的设计环节，数据库设计最主要的目的就是帮助运行程序存储相应的数据信息。数据库设计包含的内容有数据表结构的设计，也包含了数据库E-R图的设计。
-
 ### 4.3.1 数据库E-R图
-
 在绘制E-R图之前，先要找出数据库的实体，明确各个实体具有的属性，比如用户信息这个实体，它具备的属性包括了用户的姓名属性，用户的密码属性，用户的创建时间属性等，所以明确了用户这个实体，以及用户实体具备的属性之后，就需要根据这些信息绘制用户实体对应的实体属性图了。绘制软件选用当下认可度高，使用范围广，操作便利的微软旗下的Visio工具。
 
 （1）管理员实体属性图通过Visio工具绘制，绘制结果展示如下：
 
-![](media/image6.wmf)
+![](/images/0300stringboot/0315springboot/blog.006.png)
 
 图4-4 管理员实体属性图
 
 （2）学生实体属性图通过Visio工具绘制，绘制结果展示如下：
 
-![](media/image7.wmf)
+![](/images/0300stringboot/0315springboot/blog.007.png)
 
 图4-5 学生实体属性图
 
 （3）系统公告实体属性图通过Visio工具绘制，绘制结果展示如下：
 
-![](media/image8.wmf)
+![](/images/0300stringboot/0315springboot/blog.008.png)
 
 图4-6 系统公告实体属性图
-
 ### 4.3.2 数据库表结构
-
-在进行这部分设计之前，需要明白和掌握数据类型以及各个数据类型的长度范围等知识，因为在一张具体的数据表中，为了方便理解，这里就举个简单的例子。比如用户信息表，这个表格的字段就是用户这个实体具备的属性，这时就需要对字段进行数据类型，以及字段长度的设置，也要设置一个主键来作为用户信息表的唯一标识。这些都是数据库表结构设计需要完成的内容。根据社团服务系统的功能设计以及数据库设计要求，展示该系统的数据表结构。
+在进行这部分设计之前，需要明白和掌握数据类型以及各个数据类型的长度范围等知识，因为在一张具体的数据表中，为了方便理解，这里就举个简单的例子。比如用户信息表，这个表格的字段就是用户这个实体具备的属性，这时就需要对字段进行数据类型，以及字段长度的设置，也要设置一个主键来作为用户信息表的唯一标识。这些都是数据库表结构设计需要完成的内容。根据社团服务系统的功能设计以及数据库设计要求，展示该系统的数据表结构。 
 
 1系统公告表
 
-  ------ ---------------- -------------------- ------------------- --------
-   序号        列名             数据类型              说明          允许空
-
-    1           Id                Int                  id             否
-
-    2        addtime              Date              创建时间          是
-
-    3         title              String               标题            是
-
-    4      introduction          String               简介            是
-
-    5        picture             String               图片            是
-
-    6        content             String               内容            是
-  ------ ---------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|addtime|Date|创建时间|是|
+|3|title|String|标题|是|
+|4|introduction|String|简介|是|
+|5|picture|String|图片|是|
+|6|content|String|内容|是|
 2网络套餐评论表
 
-  ------ ---------------- -------------------- ------------------- --------
-   序号        列名             数据类型              说明          允许空
-
-    1           Id                Int                  id             否
-
-    2        addtime              Date              创建时间          是
-
-    3         refid             Integer             关联表id          是
-
-    4         userid            Integer              用户id           是
-
-    5        nickname            String              用户名           是
-
-    6        content             String             评论内容          是
-
-    7         reply              String             回复内容          是
-  ------ ---------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|addtime|Date|创建时间|是|
+|3|refid|Integer|关联表id|是|
+|4|userid|Integer|用户id|是|
+|5|nickname|String|用户名|是|
+|6|content|String|评论内容|是|
+|7|reply|String|回复内容|是|
 3学生表
 
-  ------ ------------------ -------------------- ------------------- --------
-   序号         列名              数据类型              说明          允许空
-
-    1            Id                 Int                  id             否
-
-    2         addtime               Date              创建时间          是
-
-    3          xuehao              String               学号            是
-
-    4         xingming             String               姓名            是
-
-    5           mima               String               密码            是
-
-    6         xingbie              String               性别            是
-
-    7         zhuanye              String               专业            是
-
-    8     xueyuanmingcheng         String             学院名称          是
-
-    9         banjihao             String              班级号           是
-
-    10       shoujihao             String              手机号           是
-
-    11        sushehao             String              宿舍号           是
-  ------ ------------------ -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|addtime|Date|创建时间|是|
+|3|xuehao|String|学号|是|
+|4|xingming|String|姓名|是|
+|5|mima|String|密码|是|
+|6|xingbie|String|性别|是|
+|7|zhuanye|String|专业|是|
+|8|xueyuanmingcheng|String|学院名称|是|
+|9|banjihao|String|班级号|是|
+|10|shoujihao|String|手机号|是|
+|11|sushehao|String|宿舍号|是|
 4收藏表
 
-  ------ ---------------- -------------------- -------------------------- --------
-   序号        列名             数据类型                  说明             允许空
-
-    1           Id                Int                      id                否
-
-    2        addtime              Date                  创建时间             是
-
-    3         userid            Integer                  用户id              是
-
-    4         refid             Integer                  收藏id              是
-
-    5       tablename            String                   表名               是
-
-    6          name              String                 收藏名称             是
-
-    7        picture             String                 收藏图片             是
-
-    8          type              String         类型(1:收藏,21:赞,22:踩)     是
-
-    9       inteltype            String                 推荐类型             是
-  ------ ---------------- -------------------- -------------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|addtime|Date|创建时间|是|
+|3|userid|Integer|用户id|是|
+|4|refid|Integer|收藏id|是|
+|5|tablename|String|表名|是|
+|6|name|String|收藏名称|是|
+|7|picture|String|收藏图片|是|
+|8|type|String|类型(1:收藏,21:赞,22:踩)|是|
+|9|inteltype|String|推荐类型|是|
 5软件大全表
 
-  ------ ------------------- -------------------- ------------------- --------
-   序号         列名               数据类型              说明          允许空
-
-    1            Id                  Int                  id             否
-
-    2          addtime               Date              创建时间          是
-
-    3     ruanjianmingcheng         String             软件名称          是
-
-    4         fengmian              String               封面            是
-
-    5        ruanjianbao            String              软件包           是
-
-    6      ruanjianjianjie          String             软件简介          是
-
-    7       shiyongxitong           String             适用系统          是
-
-    8      ruanjianbanben           String             软件版本          是
-
-    9      gengxinshijian          datetime            更新时间          是
-
-    10     ruanjianlianjie          String             软件链接          是
-
-    11    ruanjianxiangqing         String             软件详情          是
-  ------ ------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|addtime|Date|创建时间|是|
+|3|ruanjianmingcheng|String|软件名称|是|
+|4|fengmian|String|封面|是|
+|5|ruanjianbao|String|软件包|是|
+|6|ruanjianjianjie|String|软件简介|是|
+|7|shiyongxitong|String|适用系统|是|
+|8|ruanjianbanben|String|软件版本|是|
+|9|gengxinshijian|datetime|更新时间|是|
+|10|ruanjianlianjie|String|软件链接|是|
+|11|ruanjianxiangqing|String|软件详情|是|
 6用户表
 
-  ------ ---------------- -------------------- ------------------- --------
-   序号        列名             数据类型              说明          允许空
-
-    1           Id                Int                  id             否
-
-    2        username            String              用户名           是
-
-    3        password            String               密码            是
-
-    4          role              String               角色            是
-
-    5        addtime              Date              新增时间          是
-  ------ ---------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|username|String|用户名|是|
+|3|password|String|密码|是|
+|4|role|String|角色|是|
+|5|addtime|Date|新增时间|是|
 7token表
 
-  ------ ---------------- -------------------- ------------------- --------
-   序号        列名             数据类型              说明          允许空
-
-    1           Id                Int                  id             否
-
-    2         userid            Integer              用户id           是
-
-    3        username            String              用户名           是
-
-    4       tablename            String               表名            是
-
-    5          role              String               角色            是
-
-    6         token              String               密码            是
-
-    7        addtime              Date              新增时间          是
-
-    8     expiratedtime           Date              过期时间          是
-  ------ ---------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|userid|Integer|用户id|是|
+|3|username|String|用户名|是|
+|4|tablename|String|表名|是|
+|5|role|String|角色|是|
+|6|token|String|密码|是|
+|7|addtime|Date|新增时间|是|
+|8|expiratedtime|Date|过期时间|是|
 8装机咨询表
 
-  ------ ---------------- -------------------- ------------------- --------
-   序号        列名             数据类型              说明          允许空
-
-    1           Id                Int                  id             否
-
-    2        addtime              Date              创建时间          是
-
-    3         xuehao             String               学号            是
-
-    4        xingming            String               姓名            是
-
-    5        zhuanye             String               专业            是
-
-    6      zixunshijian         datetime            咨询时间          是
-
-    7     zixunzhuangtai         String             咨询状态          是
-
-    8     zhuanyetezheng         String             专业特征          是
-
-    9     zhuangjixuqiu          String             装机需求          是
-
-    10    zhuangjiyusuan         String             装机预算          是
-  ------ ---------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|addtime|Date|创建时间|是|
+|3|xuehao|String|学号|是|
+|4|xingming|String|姓名|是|
+|5|zhuanye|String|专业|是|
+|6|zixunshijian|datetime|咨询时间|是|
+|7|zixunzhuangtai|String|咨询状态|是|
+|8|zhuanyetezheng|String|专业特征|是|
+|9|zhuangjixuqiu|String|装机需求|是|
+|10|zhuangjiyusuan|String|装机预算|是|
 9网络套餐表
 
-  ------ ----------------- -------------------- ------------------- --------
-   序号        列名              数据类型              说明          允许空
-
-    1           Id                 Int                  id             否
-
-    2         addtime              Date              创建时间          是
-
-    3     taocanmingcheng         String             套餐名称          是
-
-    4         feiyong             String               费用            是
-
-    5        fengmian             String               封面            是
-
-    6       fabushijian          datetime            发布时间          是
-
-    7      taocanjianjie          String             套餐简介          是
-
-    8     taocanxiangqing         String             套餐详情          是
-  ------ ----------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|addtime|Date|创建时间|是|
+|3|taocanmingcheng|String|套餐名称|是|
+|4|feiyong|String|费用|是|
+|5|fengmian|String|封面|是|
+|6|fabushijian|datetime|发布时间|是|
+|7|taocanjianjie|String|套餐简介|是|
+|8|taocanxiangqing|String|套餐详情|是|
 10咨询回复表
 
-  ------ ---------------- -------------------- ------------------- --------
-   序号        列名             数据类型              说明          允许空
-
-    1           Id                Int                  id             否
-
-    2        addtime              Date              创建时间          是
-
-    3         xuehao             String               学号            是
-
-    4        xingming            String               姓名            是
-
-    5        zhuanye             String               专业            是
-
-    6      zixunshijian          String             咨询时间          是
-
-    7      huifushijian         datetime            回复时间          是
-
-    8      peizhifangan          String             配置方案          是
-  ------ ---------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|addtime|Date|创建时间|是|
+|3|xuehao|String|学号|是|
+|4|xingming|String|姓名|是|
+|5|zhuanye|String|专业|是|
+|6|zixunshijian|String|咨询时间|是|
+|7|huifushijian|datetime|回复时间|是|
+|8|peizhifangan|String|配置方案|是|
 11软件大全评论表
 
-  ------ ---------------- -------------------- ------------------- --------
-   序号        列名             数据类型              说明          允许空
-
-    1           Id                Int                  id             否
-
-    2        addtime              Date              创建时间          是
-
-    3         refid             Integer             关联表id          是
-
-    4         userid            Integer              用户id           是
-
-    5        nickname            String              用户名           是
-
-    6        content             String             评论内容          是
-
-    7         reply              String             回复内容          是
-  ------ ---------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|addtime|Date|创建时间|是|
+|3|refid|Integer|关联表id|是|
+|4|userid|Integer|用户id|是|
+|5|nickname|String|用户名|是|
+|6|content|String|评论内容|是|
+|7|reply|String|回复内容|是|
 12社团人员表
 
-  ------ ---------------- -------------------- ------------------- --------
-   序号        列名             数据类型              说明          允许空
-
-    1           Id                Int                  id             否
-
-    2        addtime              Date              创建时间          是
-
-    3     gongzuobianhao         String             工作编号          是
-
-    4          mima              String               密码            是
-
-    5        xingming            String               姓名            是
-
-    6        xingbie             String               性别            是
-
-    7        touxiang            String               头像            是
-
-    8         shouji             String               手机            是
-
-    9        fuzequyu            String             负责区域          是
-  ------ ---------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|addtime|Date|创建时间|是|
+|3|gongzuobianhao|String|工作编号|是|
+|4|mima|String|密码|是|
+|5|xingming|String|姓名|是|
+|6|xingbie|String|性别|是|
+|7|touxiang|String|头像|是|
+|8|shouji|String|手机|是|
+|9|fuzequyu|String|负责区域|是|
 13网络报修表
 
-  ------ ----------------- -------------------- ------------------- --------
-   序号        列名              数据类型              说明          允许空
-
-    1           Id                 Int                  id             否
-
-    2         addtime              Date              创建时间          是
-
-    3         xuehao              String               学号            是
-
-    4        xingming             String               姓名            是
-
-    5        shoujihao            String              手机号           是
-
-    6       baoxiudizhi           String             报修地址          是
-
-    7      baoxiushijian         datetime            报修时间          是
-
-    8     guzhangshuoming         String             故障说明          是
-
-    9          sfsh               String             是否审核          是
-
-    10         shhf               String             审核回复          是
-  ------ ----------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|addtime|Date|创建时间|是|
+|3|xuehao|String|学号|是|
+|4|xingming|String|姓名|是|
+|5|shoujihao|String|手机号|是|
+|6|baoxiudizhi|String|报修地址|是|
+|7|baoxiushijian|datetime|报修时间|是|
+|8|guzhangshuoming|String|故障说明|是|
+|9|sfsh|String|是否审核|是|
+|10|shhf|String|审核回复|是|
 14配置文件表
 
-  ------ ---------------- -------------------- ------------------- --------
-   序号        列名             数据类型              说明          允许空
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|name|String|配置参数名称|是|
+|3|value|String|配置参数值|是|
 
-    1           Id                Int                  id             否
-
-    2          name              String           配置参数名称        是
-
-    3         value              String            配置参数值         是
-  ------ ---------------- -------------------- ------------------- --------
-
-# 第5章 系统实现 {#第5章-系统实现 .unnumbered}
-
+# 第5章 系统实现
 系统实现这个章节的内容主要还是展示系统的功能界面设计效果，在实现系统基本功能，比如修改，比如添加，比如删除等管理功能的同时，也显示出系统各个功能的界面实现效果，该部分内容一方面与前面提到的系统分析，系统设计的内容相呼应，另一方面也是一个实际成果的展示。
-
 ## 5.1管理员功能实现
-
 ### 5.1.1 学生管理
-
 管理员可以对学生信息进行添加，修改，删除，查询操作。
 
-![](media/image9.png){width="6.3in" height="3.4340277777777777in"}
+![](/images/0300stringboot/0315springboot/blog.009.png)
 
 图5-1 学生管理页面
-
 ### 5.1.2 社团人员管理
-
 管理员可以对社团人员信息进行添加，修改，删除，查询操作。
 
-![](media/image10.png){width="6.3in" height="3.4340277777777777in"}
+![](/images/0300stringboot/0315springboot/blog.010.png)
 
 图5-2 社团人员管理页面
-
 ### 5.1.3 系统公告管理
-
 管理员可以对系统公告信息进行添加，修改，删除，查询操作。
 
-![](media/image11.png){width="6.3in" height="3.4340277777777777in"}
+![](/images/0300stringboot/0315springboot/blog.011.png)
 
 图5-3 系统公告管理页面
-
 ### 5.1.4 软件大全管理
-
 管理员可以对软件大全信息进行添加，修改，删除，查询操作。
 
-![](media/image12.png){width="6.3in" height="3.4340277777777777in"}
+![](/images/0300stringboot/0315springboot/blog.012.png)
 
 图5-4 软件大全管理页面
-
 ## 5.2 社团人员功能实现
-
 ### 5.2.1 网络报修审核
-
 社团人员可以对学生提交的网络报修信息进行审核和查询操作。
 
-![](media/image13.png){width="6.3in" height="3.4340277777777777in"}
+![](/images/0300stringboot/0315springboot/blog.013.png)
 
 图5-5 网络报修页面
-
 ### 5.2.2 装机咨询回复
-
 社团人员可以对学生提交的装机咨询信息进行回复和查看。
 
-![](media/image14.png){width="6.3in" height="3.4340277777777777in"}
+![](/images/0300stringboot/0315springboot/blog.014.png)
 
 图5-6 装机咨询页面
-
 ## 5.3 学生人员功能实现
-
 ### 5.3.1 软件大全
-
 学生可以查看软件大全查询，可以收藏和评论软件大全。
 
-![](media/image15.png){width="6.3in" height="3.4340277777777777in"}
+![](/images/0300stringboot/0315springboot/blog.015.png)
 
 图5-7 软件大全页面
-
 ### 5.3.2 网络报修提交
-
 学生可以自己提交网络报修信息，可以对自己提交的网络报修信息进行添加，修改，删除，查询操作。
 
-![](media/image16.png){width="6.3in" height="3.4340277777777777in"}
+![](/images/0300stringboot/0315springboot/blog.016.png)
 
 图5-8 网络报修页面
-
 ### 5.3.3 装机咨询提交
-
 学生可以提交装机咨询信息。
 
-![](media/image17.png){width="6.3in" height="3.4340277777777777in"}
+![](/images/0300stringboot/0315springboot/blog.017.png)
 
 图5-9 装机咨询页面
 
-[]{#__RefHeading___Toc15288 .anchor}
-程序软件的开发阶段也包括了系统测试，这个部分就是程序质量评定的一个重要环节，如果说程序通过编码实现功能之后，不通过测试检查程序中出现的错误，那么程序一旦投入生活中运行使用时，就会产生许多大大小小的错误，这个时候去解决问题已经晚了，所以一个程序在被交付给使用者使用之前，开发者就需要使用多种测试方法反复进行测试，也是对程序的一个负责表现。程序进入系统测试阶段，在讲究策略进行测试时，也需要对时效性进行把控。当开发者测试完程序，并解决完测试期间程序产生的各种错误时，就需要程序的验收方来对程序进行验收测试，这也是程序测试的最后一个操作步骤。验收测试也是对程序的质量以及可交付性方面起到关键的作用。
-
-## 6.1系统测试方法
-
-程序软件进入到系统测试这一个环节时，也需要根据测试的方法进行规范化测试操作，测试方法以及使用顺序分别是：首先是单元测试，接着是集成测试和系统测试，最后才是验收测试，下面将描述系统测试方法。
-
-单元测试：这个部分需要涉及到程序的代码方面的知识，这个操作环节是程序的开发者进行的，当程序开发者通过代码编写程序的子功能模块时，就会进行单元级别的测试，通常这个环节的测试也会被称作是白盒测试。
-
-集成测试：这个步骤的前提是程序的所有功能模块都已完成开发，这个时候需要把程序所有的子功能模块集成到一起，形成一个完整的系统，此测试的主要目的就是检查这些功能模块集成在一起时的兼容性，也就是检测它们是否按照预期正常运行。
-
-系统测试：当程序测试进入到这个环节时，就意味着程序测试工作已经进行到一半了，这个部分的测试也有另外一个名字，称作是黑盒测试，主要用于测试系统的功能是否按照预期进行运行。
-
-验收测试：开发的程序已经通过了前面的单元测试，集成测试，以及系统测试环节时，就需要进行验收了，这个环节的操作用户就是程序面临的最终用户或者是客户。测试主要目的就是验证开发完成的程序是不是能够符合用户对其的期望，以及程序的所有功能是否符合用户的真正需求。
-
-## 6.2 系统测试分析
-
-社团服务系统在经历了一系列测试步骤之后，可以确定该系统可以交付给使用者进行使用了，在系统的功能主界面上可以清晰展示各个功能，并且各个功能的超链接也是正常跳转，能够实现用户要求的功能。在程序的稳定性，可靠性，验证逻辑以及操作流程方面跟需求文档很贴合。所以，开发完成的社团服务系统符合用户需求，它投入运行使用带给用户的便利是显而易见的。
-
-# 结 论
-
-社团服务系统的开发制作，从题目确定到成品完成，自己投入的精力与心血是非常多的。这也是我第一次使用Spring
-Boot框架语言，开发的这个比较简单的社团服务系统。
-
-社团服务系统开发过程中，自己之前觉得比较抽象的许多门课程，例如数据库原理，软件工程，动态网站开发等课程开始变得很清晰，只有自己独立开发程序，才会觉得这些开发类的课程在实践中具有的重要作用。为了让自己设计的作品能够顺利的完成，我把所学知识全部运用在程序的开发流程中，包括了程序的需求分析环节，程序的编码环节，程序的测试环节等，让程序软件在开发周期内完成制作，并能够保证程序质量达标，力求程序开发流程规范化，程序对应的配套文档标准化。
-
-独立开发程序期间，才会发现有许多知识都是现学现用得来的，毕竟大学期间所学知识比较有限，专业知识掌握得比较浅显，这也给自己制造了许多麻烦，比如程序开发期间遇到的中文乱码问题，程序对应数据库的数据安全问题，程序开发中框架的使用问题等，这些问题都需要随时去翻阅书籍，或通过百度浏览器等方式寻找解决办法，这也耽误了许多程序开发的宝贵时间，后期我也通过对周边同学的请教，以及指导老师的悉心指导，让我找到了程序开发的相关技巧，也积累了一定的知识量，慢慢地纠正了许多不该犯的错误。也推动了我的程序开发进程。
-
-社团服务系统现已完成了开发，除了基本功能可以符合用户需求外，在页面设计层面上没有融入更多的设计元素，需要从美学角度进行优化，另外在程序的代码层面，也有许多重合部分，需要进行整理归类，让代码变得更加的简洁。
-
-实践出真知，但是知识也是通过实践变得更加深刻，这次作品制作，让自己的专业知识水平与解决问题的能力得到了提高。也让自己更加明白活到老学到老的真正含义。
-
-# 致 谢
-
-大学几年下来，我不仅学到了计算机方面的专业知识，也学会了许多有关做人，有关做事的道理。在现在这个紧张而又重要的时刻，我要向我的大学老师们表示由衷的感谢，也需要向我的论文指导老师表达我最真挚的谢意。指导老师在我论文指导期间一直都是不厌其烦的进行指导，包括论文的题目选择，论文文章的结构，以及系统开发的功能设计等问题，都是指导老师的及时帮助，才让我有解决问题的信心与解决思路，正因为如此，我才可以在短时间内得到成长，并成功完成毕业设计的作品制作与论文编写。短短几个月时间，指导老师的无私的奉献精神，以及指导老师的爱岗敬业的教学态度，让我也开始重新认识所学的专业知识，并有信心将所学知识与现实问题相结合，并提供一个可靠有效的解决方案。大学校园是温暖而又美好的，大学同学的无私帮助与建议，也让我的论文写作有了更多的思路，在此，我对我的大学同学一并表示感谢。我的成长与宝贵的学习机会也离不开大学校园这个平台，感谢大学校园给了我更多学习的机会，让我结识到许多大学同学和优秀的校园老师，让我的大学生活变得如此丰富多彩！
-
-# 参考文献
-
-\[1\]刘湘煜.课堂考勤系统移动端的设计与实现\[J\].现代计算机,2019(15):87-92.
-
-\[2\]赵朋.基于HTML5的移动考勤App开发\[J\].科技创新导报,2019,16(09):4-5.
-
-\[3\]兰旭辉,熊家军,邓刚.基于MySQL的应用程序设计\[J\].计算机工程与设计,2018(03):442-443+468.
-
-\[4\]张伟丽,江春华,魏劲超.MySQL复制技术的研究及应用\[J\].计算机科学,2015,39(S3):168-170.
-
-\[5\]刘学芬,孙荣辛,夏鲁宁,李伟.面向MySQL的安全隐患检测方法研究\[J\].信息网络安全,2016(09):1-5.
-
-\[6\]孙志锋,徐镜春,厉小润.数据结构与数据库技术\[M\].浙江大学出版社,2016.
-
-\[7\]刘明清.Java语言的特点与C++语言的比较\[J\].信息技术与信息化,2018(11):151-153.
-
-\[8\]田智.基于计算机软件开发的JAVA编程语言分析\[J\].硅谷,2017,7(19):59+37.
-
-\[9\]孙磊,贾宝强,曾翠翠.浅议Java软件开发中几种误区\[J\].网络与信息,2018,26(07):52.
-
-\[10\]付博文.计算机软件开发的JAVA编程语言及其实际应用\[J\].南方农机,2018,49(23):158.
-
-\[11\]杨钊.浅析设计管理在APP开发中的应用\[J\].大众文艺,2019(20):103-104.
-
-\[12\]韩曙亮.基于安卓系统的App开发技术分析与研究\[J\].商讯,2019(23):5-6.
-
-\[13\]邱永中.Spring
-Boot框架平台的移动APP开发方法探讨\[J\].信息与电脑(理论版),2019(09):85-86.
-
-\[14\]王欣.基于用户体验式的APP开发方法\[J\].中国新技术新产品,2019(03):40-41.
-
-\[15\]田伟,曾琪,李玲香,李艳芳.一种实用的Spring
-Boot框架数据安全恢复方法\[J\].电脑编程技巧与维护,2020(02):112-114.
-
-\[16\]Fuad,Ammar,Erwin,Alva,Ipung,Heru Purnomo et al.Processing
-performance on Apache Pig,Apache Hive and MySQL cluster\[C\].//2014
-International conference on information,communication technology and
-system:ICTS 2014,24 September 2014,Surabaya,Indonesia.2018:297-302.
-
-\[17\]Narayanan Venkateswaran,Suvamoy Changder.Building a Pluggable
-Sharding Subsystem For MySQL\[C\].//22nd International conference on
-software engineering and data engineering:SEDE-2013,Los
-Angeles,California,USA,25-27 September 2013.2013:85-90.
-
-\[18\]Konstantins Gusarovs.An Analysis on Java Programming Language
-Decompiler Capabilities\[J\].Applied Computer Systems,2018,23(2).
 
 
-### 0315springboot社团服务系统的设计与实现 项目图片
-![图片](/images/0315springbootimg_014.jpg)
-![图片](/images/0315springbootimg_015.jpg)
-![图片](/images/0315springbootimg_001.jpg)
-![图片](/images/0315springbootimg_003.jpg)
-![图片](/images/0315springbootimg_002.jpg)
-![图片](/images/0315springbootimg_012.jpg)
-![图片](/images/0315springbootimg_006.jpg)
-![图片](/images/0315springbootimg_007.jpg)
-![图片](/images/0315springbootimg_013.jpg)
-![图片](/images/0315springbootimg_005.jpg)
-![图片](/images/0315springbootimg_011.jpg)
-![图片](/images/0315springbootimg_010.jpg)
-![图片](/images/0315springbootimg_004.jpg)
-![图片](/images/0315springbootimg_009.jpg)
-![图片](/images/0315springbootimg_008.jpg)
+
+
+
+
+
 
 
 

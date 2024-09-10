@@ -3,187 +3,28 @@
 
 # [0550springboot三国之家网站设计pf](https://github.com/GraduationProject-springboot/0550springboot)
 
-### 微信： chen_q123456  qq:462201886
-### github:chenqi199
+![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-### [所有项目](https://github.com/GraduationProject-springboot/allSpringbootProjects) 包安装运行
+# [项目清单](https://chenqi1990.site) 包安装运行
 
-### [所有项目列表excel 腾讯文档 项目清单](https://docs.qq.com/sheet/DSHRFSVZ5aEVYT3N3?tab=BB08J2) 包安装运行
-
-### [github](https://chenqi199.github.io)
-
-
-
-
-
-
-
-
-# 0550springboot三国之家网站设计pf
+### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://player.bilibili.com/player.html?isOutside=true&aid=BV1eMbYemE1U&bvid=BV1eMbYemE1U&cid=500001617130662&p=51)
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1eMbYemE1U?p=51)
 
-### [所有项目](https://github.com/GraduationProject-springboot/allSpringbootProjects) 包安装运行
 
-
-
-
-
-
-
-
-
-
-
-
-三国之家网站的设计与实现
-
-# **摘要**
-
-近年来，信息化管理行业的不断兴起，使得人们的日常生活越来越离不开计算机和互联网技术。首先，根据收集到的用户需求分析，对设计系统有一个初步的认识与了解，确定三国之家网站的总体功能模块。然后，详细设计系统的主要功能模块，通过数据库设计过程将相关的数据信息存储到数据库中，再通过使用关键的开发工具，如IDEA开发平台、AJAX技术等，编码设计相关的功能模块。接着，主要采用功能测试的方式对系统进行测试，找出系统在运行过程中存在的问题，以及解决问题的方法，不断地改进和完善系统的设计。最后，总结本文介绍的系统的设计和实现过程，并且针对于系统的开发提出未来的展望工作。本系统的研发具有重大的意义，在安全性方面，用户使用浏览器访问网站时，采用注册和密码等相关的保护措施，提高系统的可靠性，维护用户的个人信息和财产的安全。在方便性方面，促进了三国之家网站的信息化建设，极大的方便了相关的工作人员对三国之家网站信息进行管理。
-
-**关键词：**三国之家网站管理；Java语言；VUE；AJAX技术；系统测试
-
-# **Abstract**
-
-In recent years, the continuous rise of information management industry
-makes people\'s daily life more and more inseparable from computer and
-Internet technology. First of all, according to the collected user needs
-analysis, we have a preliminary understanding and understanding of the
-design system, and determine the overall function module of the hotel
-room management system. Then, the main functional modules of the system
-are designed in detail, and the relevant data information is stored in
-the database through the process of database design, and then the
-relevant functional modules of coding design are coded by using key
-development tools, such as IDEA development platform, JSP technology,
-etc. Then, the system is tested by functional testing to find out the
-problems existing in the operation of the system, as well as the methods
-to solve the problems, and to continuously improve and improve the
-design of the system. Finally, this paper summarizes the design and
-implementation process of the system, and puts forward the future
-prospect for the development of the system. The research and development
-of this system is of great significance. In terms of security, when
-users use browsers to visit websites, they adopt registration and
-password protection measures to improve the reliability of the system
-and maintain the security of users\' personal information and property.
-In terms of convenience, it promotes the information construction of
-hotel room management industry, and greatly facilitates the management
-of hotel room information by relevant staff.
-
-**Key words:** hotel room management; Java language; VUE model; JSP
-technology; System testing
-
-# **目 录**
-
-[摘要 [1](#摘要)](#摘要)
-
-[Abstract [1](#abstract)](#abstract)
-
-[目 录 [2](#目-录)](#目-录)
-
-[1绪论 [4](#绪论)](#绪论)
-
-[1.1研究背景与意义 [4](#研究背景与意义)](#研究背景与意义)
-
-[1.2国内外研究现状 [4](#国内外研究现状)](#国内外研究现状)
-
-[1.3研究内容 [5](#研究内容)](#研究内容)
-
-[1.4论文结构 [5](#论文结构)](#论文结构)
-
-[1.5本章小结 [5](#本章小结)](#本章小结)
-
-[2理论基础 [6](#理论基础)](#理论基础)
-
-[2.1 VUE框架 [6](#vue框架)](#vue框架)
-
-[2.2 IDEA开发环境 [6](#_Toc26217)](#_Toc26217)
-
-[2.3 MySQL数据库 [6](#mysql数据库)](#mysql数据库)
-
-[2.4 Java语言 [7](#java语言)](#java语言)
-
-[2.5本章小结 [7](#本章小结-1)](#本章小结-1)
-
-[3需求分析 [8](#需求分析)](#需求分析)
-
-[3.1功能需求分析 [8](#功能需求分析)](#功能需求分析)
-
-[3.2技术需求分析 [8](#技术需求分析)](#技术需求分析)
-
-[3.3数据需求分析 [8](#数据需求分析)](#数据需求分析)
-
-[3.4安全需求分析 [8](#安全需求分析)](#安全需求分析)
-
-[3.5可行性分析 [8](#可行性分析)](#可行性分析)
-
-[3.5.1经济可行性 [8](#经济可行性)](#经济可行性)
-
-[3.5.2技术可行性 [9](#技术可行性)](#技术可行性)
-
-[3.5.3操作可行性 [9](#操作可行性)](#操作可行性)
-
-[3.6本章小结 [9](#本章小结-2)](#本章小结-2)
-
-[4系统设计 [10](#系统设计)](#系统设计)
-
-[4.1系统功能设计 [10](#系统功能设计)](#系统功能设计)
-
-[4.2数据库设计 [10](#数据库设计)](#数据库设计)
-
-[4.2.1概念设计 [10](#概念设计)](#概念设计)
-
-[4.2.2逻辑设计 [11](#逻辑设计)](#逻辑设计)
-
-[4.3本章小结 [12](#本章小结-3)](#本章小结-3)
-
-[5系统实现 [13](#系统实现)](#系统实现)
-
-[5.1管理员功能模块实现 [13](#管理员功能模块实现)](#管理员功能模块实现)
-
-[5.1.1管理员登录 [13](#管理员登录)](#管理员登录)
-
-[5.1.2三国图文管理 [13](#三国图文管理)](#三国图文管理)
-
-[5.1.3公告管理 [13](#公告管理)](#公告管理)
-
-[5.1.4公告类型管理 [14](#公告类型管理)](#公告类型管理)
-
-[5.3系统测试 [14](#系统测试)](#系统测试)
-
-[5.3.1测试概述 [14](#测试概述)](#测试概述)
-
-[5.3.2测试结果 [14](#测试结果)](#测试结果)
-
-[5.3本章小结 [15](#本章小结-4)](#本章小结-4)
-
-[6总结与展望 [16](#总结与展望)](#总结与展望)
-
-[参考文献 [17](#参考文献)](#参考文献)
-
-[致谢 [18](#致谢)](#致谢)
-
-# **1绪论**
-
+# 绪论
 ## 1.1研究背景与意义
-
-信息化管理模式是将行业中的工作流程由人工服务，逐渐转换为使用计算机技术的信息化管理服务。这种管理模式发展迅速，使用起来非常简单容易，用户甚至不用掌握相关的专业知识，根据教程指导即可正常使用相关的系统，因而被越来越多的用户所使用。由于相关行业管理信息化，这就使得管理工作不在受到时间和区域的限制，随时随地即可完成相关的工作任务和结果^\[1\]^。就目前而言，管理信息化在现代社会中非常流行，使用比较广泛。早在20世纪70年代末，就出现了早期的电子商务，相关的公司企业使用计算机建立专用的内部网络，通过内部网络完成相应的采购、销售等活动，加快相关的企业之间的交易速度，提高了工作效率^\[2\]^。
+信息化管理模式是将行业中的工作流程由人工服务，逐渐转换为使用计算机技术的信息化管理服务。这种管理模式发展迅速，使用起来非常简单容易，用户甚至不用掌握相关的专业知识，根据教程指导即可正常使用相关的系统，因而被越来越多的用户所使用。由于相关行业管理信息化，这就使得管理工作不在受到时间和区域的限制，随时随地即可完成相关的工作任务和结果[1]。就目前而言，管理信息化在现代社会中非常流行，使用比较广泛。早在20世纪70年代末，就出现了早期的电子商务，相关的公司企业使用计算机建立专用的内部网络，通过内部网络完成相应的采购、销售等活动，加快相关的企业之间的交易速度，提高了工作效率[2]。
 
 当下，许多行业采用互联网技术将工作流程信息化、数字化，提高了相关人员的服务质量和效率，节约了相关行业的人力、财力、物力等资源，与此同时，人们获取外界的相关信息主要依赖于主流的信息化技术和工具。人们对生活的需求也在不断的发生着变化，为了应对用户的多样化需求，许多相关的第三产业应运而生，管理信息化也逐渐的流行起来，比如电子商务行业。本人通过查询大量学习资料，了解基本的开发系统的基本背景和关键任务，学习与掌握Java语言、web技术、AJAX技术、HTML语言等开发技术，设计系统功能模块，以及MySQL数据库的相关语法和工具，创建和存储数据表格，反映和关联表格之间相互存在的关系，由此对三国之家网站进行研发和实现。
+## 1.2国内外研究现状
+大概在20世纪90年代，我国才开始研发三国之家网站，与一些发达国家相比，系统研发起步比较晚。当时的计算机技术刚开始发展起来，国家经济力量比较薄弱，各地区的经济发展水平不平衡，再加上相关的网络应用技术不太先进，我国也使用了一段较长的时间对网络信息化管理进行探索[3]。近些年，因为国家非常重视和支持第三产业的发展，以及人们的日常生活需求越来越离不开信息管理技术的使用，所以我国的信息管理系统行业发展速度非常快，并且相关的体制法规也正在不断地被完善和改进。新时代背景下，根据人们的相关需求，不断地促进着相关产业的产生与发展，一系列电子产品、应用软件、信息管理系统等新时代的产物逐渐出现在人们的视野中，并且在近几年发展迅速，日渐趋于成熟[4]。
 
-## **1.2国内外研究现状**
-
-大概在20世纪90年代，我国才开始研发三国之家网站，与一些发达国家相比，系统研发起步比较晚。当时的计算机技术刚开始发展起来，国家经济力量比较薄弱，各地区的经济发展水平不平衡，再加上相关的网络应用技术不太先进，我国也使用了一段较长的时间对网络信息化管理进行探索^\[3\]^。近些年，因为国家非常重视和支持第三产业的发展，以及人们的日常生活需求越来越离不开信息管理技术的使用，所以我国的信息管理系统行业发展速度非常快，并且相关的体制法规也正在不断地被完善和改进。新时代背景下，根据人们的相关需求，不断地促进着相关产业的产生与发展，一系列电子产品、应用软件、信息管理系统等新时代的产物逐渐出现在人们的视野中，并且在近几年发展迅速，日渐趋于成熟^\[4\]^。
-
-与国内相比，国外三国之家网站领域发展较早。国外的计算机技术发展比较成熟，所以系统相关的设计也比较完善。19世纪60年代左右，国外就开始研发三国之家网站，并且不久之后，迅速将其投入市场进行使用。美国、英国等一些发达国家快速发展计算机技术，促进了三国之家网站管理行业信息化建设^\[5\]^。而后随着相关的技术不断地发展，覆盖面非常广泛，应用领域比较多，促进着三国之家网站等相关的信息管理系统不断地发展和完善，并且其所设计的系统功能结构也比较合理、全面。相对而言，国外系统的研发在相关领域上还是占据着较大的优势^\[6\]^。因此，我们需要吸收国外系统开发领域中的较好的技术精华，发展我国的信息化管理系统，使得其面向大众，能够更好的、更全面的服务于相关的工作人员。
-
-## **1.3研究内容**
-
+与国内相比，国外三国之家网站领域发展较早。国外的计算机技术发展比较成熟，所以系统相关的设计也比较完善。19世纪60年代左右，国外就开始研发三国之家网站，并且不久之后，迅速将其投入市场进行使用。美国、英国等一些发达国家快速发展计算机技术，促进了三国之家网站管理行业信息化建设[5]。而后随着相关的技术不断地发展，覆盖面非常广泛，应用领域比较多，促进着三国之家网站等相关的信息管理系统不断地发展和完善，并且其所设计的系统功能结构也比较合理、全面。相对而言，国外系统的研发在相关领域上还是占据着较大的优势[6]。因此，我们需要吸收国外系统开发领域中的较好的技术精华，发展我国的信息化管理系统，使得其面向大众，能够更好的、更全面的服务于相关的工作人员。
+## 1.3研究内容
 现今，互联网在我们的日常生活占据着日益重要的地位，我们也越来越离不开对移动设备、电脑等上网设备的使用。传统的三国之家网站模式主要依靠管理人员纯手工记录的相关信息，比较繁琐，不方便查找，也非常容易出现错误。如今，如果再通过手工记录三国图文，将大大不利于三国之家网站行业管理相关的三国之家网站信息，严重影响三国之家网站行业的发展。因此，本人结合传统的三国之家网站业务模式和先进的电子信息管理模式，使用Java语言编程设计功能模块，AJAX实现前台和后台之间的交互，MySQL数据库创建和存储数据表格，对三国之家网站进行设计和开发。本系统的设计有利于相关行业实现最大化的资源管理与共享，促进相关行业的信息交流、分工合作，提高相关工作人员的工作效率，最终实现整个三国之家网站行业服务的信息化管理。
-
-## **1.4论文结构**
-
+## 1.4论文结构
 本文围绕着三国之家网站的整个开发过程，展开了详细的描述和说明，设计和实现本系统的主要工作有：首先分析研究背景、研究状态，其次介绍设计系统时使用到的相关技术，然后通过系统分析确定系统的功能需求，接着通过编码工作详细设计和实现系统，最后再通过系统测试，找出系统存在的问题和解决问题的方法，不断地修改和完善系统。论文内容的组织结构设计如下。
 
 第一章绪论，通过介绍本系统的研究背景、研究现状等内容，帮助用户了解和认识本系统的发展过程。
@@ -199,786 +40,397 @@ technology; System testing
 第六章系统测试，主要使用功能测试的方式，测试系统的相关功能运行和使用的具体情况。
 
 第七章总结与展望，通过本文的各章节描述总结得出，基本上完成了系统的设计，展望未来将学习和使用更加先进的技术，提高系统的实用性，使得系统更好的服务于使用人员。
-
-## **1.5本章小结**
-
+## 1.5本章小结
 本章主要介绍了课题的研究背景与意义，研究现状，研究内容等内容，最后介绍了本论文的组织结构设计。信息化管理模式顺应了信息化时代的变化，本人以现在主流的管理模式为前提，根据使用者的相关需求，设计出一款符合大众需求的三国之家网站。
 
-# **2理论基础**
-
-## **2.1 VUE框架**
-
-[]{#_Toc26217 .anchor}Vue (读音 /vjuː/，类似于 view)
-是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue
-被设计为可以自底向上逐层应用。Vue
-的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。另一方面，当与[现代化的工具链](https://v2.cn.vuejs.org/v2/guide/single-file-components.html)以及各种[支持类库](https://github.com/vuejs/awesome-vue#libraries--plugins)结合使用时，Vue
-也完全能够为复杂的单页应用提供驱动。
-
-## **2.2 IDEA开发环境**
-
+#
+# 2理论基础
+## 2.1 VUE框架
+Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。另一方面，当与[现代化的工具链](https://v2.cn.vuejs.org/v2/guide/single-file-components.html)以及各种[支持类库](https://github.com/vuejs/awesome-vue#libraries--plugins)结合使用时，Vue 也完全能够为复杂的单页应用提供驱动。
+## 2.2 IDEA开发环境
 软件开发使用的编程语言有许多种，而每种编程语言需要通过与其相对应的开发平台进行编译和运行。IDEA平台都是目前比较常用的开发环境。IDEA平台是开源的，具有功能强大、可扩展性强等特点，可以应用于C/S模式软件的开发，但是它所占据的内存容量比较大，运行较慢，并且其并未提供Tomcat服务器，运行过程中需要将代码发布到Tomcat服务器中，测试使用的时间较长，故而不太适用于VUE软件的开发。
 
 IDEA平台是建立在IDEA平台的基础之上，增加了许多的应用插件，比如Tomcat插件、mail组件等。IDEA平台增加了Tomcat插件，代码编写完成或者更新完成时，程序员无需将代码发布到Tomcat服务器中，可以直接通过调试实现程序的运行。IDEA平台增加了Mail组件，该组件可以为本程序提供标准的邮件方法，便于开发人员完成与邮件功能相关的编译工作。IDEA平台占据的内存空间较小，同时其也具有较高的可扩展性，编程人员可以根据需要添加和使用相关的插件。可以支持主流的开源产品和相关的开发框架，被广泛运用到相关的移动系统、web应用系统等开发中。相比于IDEA平台，本系统比较适合使用IDEA平台进行编程和开发。
+## 2.3 MySQL数据库
+MySQL是一种小型的关系型数据库管理系统，因为其运行速度快，占用内存空间小，并且源代码也是开源的，运行和维护成本低，系统性能稳定，受到了许多开发人员的喜爱[9]。考虑到MySQL数据库开发成本低，功能齐全等因素，大多中小型网站选择使用MySQL数据库管理数据信息。
 
-## **2.3 MySQL数据库**
+SQL Server也是近几年使用较多的关系型数据库，其与MySQL数据库存在的不同之处主要有，在环境方面，SQL Server数据库比较适合于.NET环境，而MySQL数据库适用于几乎所有的语言；在成本方面，SQL Server数据库是商业化的，其运行多个数据库可许证，虽然有一个免费版，但是只能让你对关系型数据库管理系统有一定的认识与了解，熟悉相关的使用流程。如果要想使用SQL Server数据库的话，就需要支付相关费用，而MySQL数据库是开源的，其对于用户来说，使用是完全免费；在实际应用方面，SQL Server数据库和MySQL数据库均支持Java语言、PHP语言、C++语言等多种编程语言，但是MySQL数据库除了支持上述SQL Server数据库能支持的编程语言外，还支持Scheme、Eiffel等其他编程语言，故而MySQL数据库受欢迎程度比SQL Server数据库更高。
+## 2.4 Java语言
+Java语言是一种面向对象的编程语言，其主要具有继承、封装、多态等特征，从而提高编程工作效率，实现软件的设计和开发[10]。继承机制可以继承相关的类和方法，新的类可以在继承已经定义的类的相关特性基础上，扩展自己新的数据和功能，进而提高自身的能力。封装机制可以提高程序的安全性，其隐藏对象的相关属性和行为，对外只提供一个接口，用户直接通过访问相应的接口来实现自己需要的功能操作。多态机制可以描述对象的多样性，简单的来说就是引用相同的对象做不同的事务。Java语言具有安全高效的优点，并且其通过依靠Java虚拟机，可以实现跨平台操作[11]。Java语言比较容易学习和掌握，就目前软件开发所使用的开发类语言而言，Java语言比较受程序员喜爱，应用比较广泛。
 
-MySQL是一种小型的关系型数据库管理系统，因为其运行速度快，占用内存空间小，并且源代码也是开源的，运行和维护成本低，系统性能稳定，受到了许多开发人员的喜爱^\[9\]^。考虑到MySQL数据库开发成本低，功能齐全等因素，大多中小型网站选择使用MySQL数据库管理数据信息。
-
-SQL
-Server也是近几年使用较多的关系型数据库，其与MySQL数据库存在的不同之处主要有，在环境方面，SQL
-Server数据库比较适合于.NET环境，而MySQL数据库适用于几乎所有的语言；在成本方面，SQL
-Server数据库是商业化的，其运行多个数据库可许证，虽然有一个免费版，但是只能让你对关系型数据库管理系统有一定的认识与了解，熟悉相关的使用流程。如果要想使用SQL
-Server数据库的话，就需要支付相关费用，而MySQL数据库是开源的，其对于用户来说，使用是完全免费；在实际应用方面，SQL
-Server数据库和MySQL数据库均支持Java语言、PHP语言、C++语言等多种编程语言，但是MySQL数据库除了支持上述SQL
-Server数据库能支持的编程语言外，还支持Scheme、Eiffel等其他编程语言，故而MySQL数据库受欢迎程度比SQL
-Server数据库更高。
-
-## **2.4 Java语言**
-
-Java语言是一种面向对象的编程语言，其主要具有继承、封装、多态等特征，从而提高编程工作效率，实现软件的设计和开发^\[10\]^。继承机制可以继承相关的类和方法，新的类可以在继承已经定义的类的相关特性基础上，扩展自己新的数据和功能，进而提高自身的能力。封装机制可以提高程序的安全性，其隐藏对象的相关属性和行为，对外只提供一个接口，用户直接通过访问相应的接口来实现自己需要的功能操作。多态机制可以描述对象的多样性，简单的来说就是引用相同的对象做不同的事务。Java语言具有安全高效的优点，并且其通过依靠Java虚拟机，可以实现跨平台操作^\[11\]^。Java语言比较容易学习和掌握，就目前软件开发所使用的开发类语言而言，Java语言比较受程序员喜爱，应用比较广泛。
-
-## **2.5本章小结**
-
+## 2.5本章小结
 本章主要介绍了实现三国之家网站的相关理论基础以及开发工具。本系统采用VUE，使用Java语言、AJAX技术、MySQL数据库等工具，设计系统功能、页面布局、后台数据等。开发本系统所使用的相关技术操作简单、容易掌握，Java语言具有跨平台性，可以支持在不同的浏览器使用本系统，MySQL数据库是开源的，减少了本系统的开发成本。
-
-# **3需求分析**
-
-## **3.1功能需求分析**
-
+# 3需求分析
+## 3.1功能需求分析
 需求分析过程是系统能否成功投入市场，也能否被用户所接受和使用的非常关键的一个步骤。功能需求分析是通过设计系统功能来实现相关的业务事项，详细分析用户的实际需要，确定需要设计的相关业务事项，其是系统实现的关键，本系统存在的主要功能需求包括用户注册管理、用户信息管理、密码信息管理等。
-
-## **3.2技术需求分析**
-
+## 3.2技术需求分析
 本系统需要使用Java语言编码设计相关的功能模块，MySQL数据库创建和存储数据表格，AJAX实现前台和后台之间的交互，并且需要在IDEA开发环境中，编写相关的Java代码等系统程序文件，使用MySQL数据库存储数据信息，然后通过使用连接代码完成与MySQL数据库的搭建工作，再通过使用开发环境中的Tomcat插件，完成与Tomcat服务器的发布工作，最后通过与Tomcat服务器的交互行为可以实现代码调试工作。满足以上相关的技术需求，本系统才可以在浏览器上进行访问和使用。
-
-## **3.3数据需求分析**
-
+## 3.3数据需求分析
 在设计系统功能模块时，需要收集与系统有关的数据信息，并且对采集的数据信息进行组织和存储，分析系统功能设计，筛选有价值的数据，而后形成数据字典。其中，从庞大的数据信息中筛选出有价值的数据是比较耗时，也是非常重要的一步，主要依据信息的来源、信息的有效性、信息的扩充性、信息的真实性等内容筛选数据。数据需求分析阶段，为系统的开发工作做好进一步准备，便于更好的设计和完成系统。
-
-## **3.4安全需求分析**
-
+## 3.4安全需求分析
 安全需求分析是在系统使用过程中对性能的具体要求，对功能需求的一个补充内容，也是对功能需求的一个补充内容，主要包括响应需求、安全性需求、稳定性需求、可扩展性需求等内容。安全需求是在系统功能需求以外的其他必要的需求内容，其不论在系统设计过程，还是在系统投入市场过程，都起到了极其重要的作用。
-
-## **3.5可行性分析**
-
+## 3.5可行性分析
 ### 3.5.1经济可行性
-
 经济可行性是决定是否研发系统的关键性因素。我们主要通过比较实际的收益和成本的方法，来确定一个系统是否具有经济可行性。在使用系统的过程中，当获得的收益大于开发的成本时，说明此系统的研发在经济上是可行的。由于本系统的开发使用的技术基本上是开源的，获得技术上的支持是没有多少问题的，在软件实现方面所花费的成本是很低的，甚至不需要花费成本。研发系统的成本主要是来自调研、硬件和技术人员等方面。如果系统中需要存储的数据量不是很大，仅需要配置一台普通的服务器，即可满足相关需求。如果需要存储的数据量很大，则需要配置一台具有独立功能的服务器，比如管理数据库需要单独的数据库服务器，负责接入网站需要web服务器等等，但是一台服务器的价格是比较贵的。考虑到数据量和成本，我们使用小型集群服务器，这样既可以充分利用相关的资源，又可以让系统正常访问服务器。
-
 ### 3.5.2技术可行性
-
-Java语言具有跨平台性，本系统主要通过Java语言进行编码实现的，所以本系统可以支持在多个操作系统或者多个浏览器上运行和使用^\[14\]^。MySQL数据库是可以被免费使用的，并且MySQL数据库的日常运行和维护工作比较简单，这样有利于降低本系统的开发成本^\[15\]^。在学校期间，本人已经学习和掌握了Java语言、MySQL数据库、AJAX技术等相关的技术相关知识以及用法，因此在技术可行性方面，本系统是可以实现被设计与实现的。
-
+Java语言具有跨平台性，本系统主要通过Java语言进行编码实现的，所以本系统可以支持在多个操作系统或者多个浏览器上运行和使用[14]。MySQL数据库是可以被免费使用的，并且MySQL数据库的日常运行和维护工作比较简单，这样有利于降低本系统的开发成本[15]。在学校期间，本人已经学习和掌握了Java语言、MySQL数据库、AJAX技术等相关的技术相关知识以及用法，因此在技术可行性方面，本系统是可以实现被设计与实现的。
 ### 3.5.3操作可行性
-
 本系统所采用网络结构是VUE，对于开发人员来说，可以直接复用相关的代码，或者稍微对原代码进行修改，使得其满足于本系统的相关需求，如此便可大大节约了开发时间，在最优最短的时间内完成对系统的设计。对于用户来说，在传统的模式下，需要下载客户端才可使用系统。现在，在新型的模式下，使用本系统，就不需要下载，直接选择浏览器打开网址，即可访问和使用本系统。并且，用户可以根据自身的工作需要，选择相关的菜单按钮操作本系统。在系统的一些功能模块中，本人还添加了相关的使用提示信息，方便用户更好更快的了解和使用本系统。因此，本系统的设计和实现是具备操作可行性的。
-
-## **3.6本章小结**
-
+## 3.6本章小结
 需求分析在软件开发周期中是耗时最长的一个环节，系统的整个设计和实现过程主要依赖于需求分析报告。调查收集出不同用户对本系统的相关使用需求，由此设计相关的功能模块，从而期望实现用户满意度较高的实用型系统。本章主要从功能需求、技术需求、数据需求、安全需求、可行性分析等方面，对系统进行需求分析，确保设计出一款实用价值比较高的管理系统。
 
-# **4系统设计**
-
-## **4.1系统功能设计**
-
+#
+# 4系统设计
+## 4.1系统功能设计
 本系统主要通过使用Java语言编码设计系统功能，MySQL数据库管理数据，AJAX技术设计简洁的、友好的网址页面，然后在IDEA开发平台中，编写相关的Java代码文件，接着通过连接语言完成与数据库的搭建工作，再通过平台提供的Tomcat插件完成信息的交互，最后在浏览器中打开系统网址便可使用本系统。本系统的使用角色可以被分为用户和管理员，用户具有注册、查看信息、留言信息等功能，管理员具有修改用户信息，发布新闻等功能，系统总体功能设计图如图4-1所示。
 
-![结构设计图](media/image1.jpeg){width="5.7555555555555555in"
-height="2.417361111111111in"}
+![结构设计图](/images/0500stringboot/0550springboot/blog.002.jpeg)
 
 图4-1系统总体功能设计图
 
-## **4.2数据库设计**
-
+## 4.2数据库设计
 ### 4.2.1概念设计
+在数据库设计过程中，概念设计阶段是逻辑设计阶段得以实现的基础，也是根据用户参与情况确定对数据的处理要求，从而使得数据库设计成功的关键。概念设计的主要任务是将现实世界的所收集到的使用需求转化为抽象的信息世界结构的过程，能够真实的反映现实生活中实体与实体之间的联系，数据库的相关语法和代码比较容易理解和修改，方便相关人员将相关的数据信息存储到数据库中，并对其进行修改和使用[18]。
 
-在数据库设计过程中，概念设计阶段是逻辑设计阶段得以实现的基础，也是根据用户参与情况确定对数据的处理要求，从而使得数据库设计成功的关键。概念设计的主要任务是将现实世界的所收集到的使用需求转化为抽象的信息世界结构的过程，能够真实的反映现实生活中实体与实体之间的联系，数据库的相关语法和代码比较容易理解和修改，方便相关人员将相关的数据信息存储到数据库中，并对其进行修改和使用^\[18\]^。
-
-通过将现实世界中的实体、属性、联系等内容进行概念设计，建立比较抽象的概念数据模型，即E-R图。通过E-R图可将现实世界抽象到的概念设计转变成数据库的实体设计，并且能够明显的看见各个实体之间，数据的流动情况，具体较强的表达能力，更加方便于开发人员寻找与发现用户具体的需求^\[19\]^。因此，E-R的建立，在整个数据库的设计过程中，起着至关重要的作用。本系统主要的实体有管理员、用户、留言等。在E-R图中，矩形表示实体集，椭圆形表示属性，菱形表示联系。其中，联系的类型包括1:1（一对一）、1:n（一对多）、n:m（多对多）关系。
+通过将现实世界中的实体、属性、联系等内容进行概念设计，建立比较抽象的概念数据模型，即E-R图。通过E-R图可将现实世界抽象到的概念设计转变成数据库的实体设计，并且能够明显的看见各个实体之间，数据的流动情况，具体较强的表达能力，更加方便于开发人员寻找与发现用户具体的需求[19]。因此，E-R的建立，在整个数据库的设计过程中，起着至关重要的作用。本系统主要的实体有管理员、用户、留言等。在E-R图中，矩形表示实体集，椭圆形表示属性，菱形表示联系。其中，联系的类型包括1:1（一对一）、1:n（一对多）、n:m（多对多）关系。
 
 （1）下图是三国视频收藏实体和其具备的属性。
 
-![C:/Users/Administrator/Desktop/temp111\\9.6\\\_\_\_\_img\\三国视频收藏.jpg](media/image2.jpeg){width="3.75in"
-height="2.0833333333333335in"}\
+![C:/Users/Administrator/Desktop/temp111\9.6\\_\_\_\_img\三国视频收藏.jpg](/images/0500stringboot/0550springboot/blog.003.jpeg)
 三国视频收藏实体属性图
 
 （2）下图是三国图文留言实体和其具备的属性。
 
-![C:/Users/Administrator/Desktop/temp111\\9.6\\\_\_\_\_img\\三国图文留言.jpg](media/image3.jpeg){width="3.75in"
-height="2.0833333333333335in"}\
+![C:/Users/Administrator/Desktop/temp111\9.6\\_\_\_\_img\三国图文留言.jpg](/images/0500stringboot/0550springboot/blog.003.jpeg)
 三国图文留言实体属性图
 
 （3）下图是用户实体和其具备的属性。
 
-![C:/Users/Administrator/Desktop/temp111\\9.6\\\_\_\_\_img\\用户.jpg](media/image4.jpeg){width="5.555555555555555in"
-height="2.986111111111111in"}\
+![C:/Users/Administrator/Desktop/temp111\9.6\\_\_\_\_img\用户.jpg](/images/0500stringboot/0550springboot/blog.004.jpeg)
 用户实体属性图
 
 （4）下图是考试记录表实体和其具备的属性。
 
-![C:/Users/Administrator/Desktop/temp111\\9.6\\\_\_\_\_img\\考试记录表.jpg](media/image5.jpeg){width="3.75in"
-height="2.0833333333333335in"}\
+![C:/Users/Administrator/Desktop/temp111\9.6\\_\_\_\_img\考试记录表.jpg](/images/0500stringboot/0550springboot/blog.003.jpeg)
 考试记录表实体属性图
 
 （5）下图是答题详情表实体和其具备的属性。
 
-![C:/Users/Administrator/Desktop/temp111\\9.6\\\_\_\_\_img\\答题详情表.jpg](media/image6.jpeg){width="3.75in"
-height="2.0833333333333335in"}\
+![C:/Users/Administrator/Desktop/temp111\9.6\\_\_\_\_img\答题详情表.jpg](/images/0500stringboot/0550springboot/blog.003.jpeg)
 答题详情表实体属性图
 
 （6）下图是试卷选题实体和其具备的属性。
 
-![C:/Users/Administrator/Desktop/temp111\\9.6\\\_\_\_\_img\\试卷选题.jpg](media/image7.jpeg){width="2.9166666666666665in"
-height="1.5277777777777777in"}\
+![C:/Users/Administrator/Desktop/temp111\9.6\\_\_\_\_img\试卷选题.jpg](/images/0500stringboot/0550springboot/blog.005.jpeg)
 试卷选题实体属性图
 
 （7）下图是错题表实体和其具备的属性。
 
-![C:/Users/Administrator/Desktop/temp111\\9.6\\\_\_\_\_img\\错题表.jpg](media/image8.jpeg){width="3.75in"
-height="2.0833333333333335in"}\
+![C:/Users/Administrator/Desktop/temp111\9.6\\_\_\_\_img\错题表.jpg](/images/0500stringboot/0550springboot/blog.003.jpeg)
 错题表实体属性图
 
 （8）下图是三国资讯实体和其具备的属性。
 
-![C:/Users/Administrator/Desktop/temp111\\9.6\\\_\_\_\_img\\三国资讯.jpg](media/image9.jpeg){width="3.75in"
-height="2.0833333333333335in"}\
+![C:/Users/Administrator/Desktop/temp111\9.6\\_\_\_\_img\三国资讯.jpg](/images/0500stringboot/0550springboot/blog.003.jpeg)
 三国资讯实体属性图
 
 （9）下图是三国视频实体和其具备的属性。
 
-![C:/Users/Administrator/Desktop/temp111\\9.6\\\_\_\_\_img\\三国视频.jpg](media/image10.jpeg){width="5.555555555555555in"
-height="2.986111111111111in"}\
+![C:/Users/Administrator/Desktop/temp111\9.6\\_\_\_\_img\三国视频.jpg](/images/0500stringboot/0550springboot/blog.004.jpeg)
 三国视频实体属性图
 
 （10）下图是论坛实体和其具备的属性。
 
-![C:/Users/Administrator/Desktop/temp111\\9.6\\\_\_\_\_img\\论坛.jpg](media/image11.jpeg){width="5.555555555555555in"
-height="2.986111111111111in"}\
+![C:/Users/Administrator/Desktop/temp111\9.6\\_\_\_\_img\论坛.jpg](/images/0500stringboot/0550springboot/blog.004.jpeg)
 论坛实体属性图
 
 （11）下图是试卷实体和其具备的属性。
 
-![C:/Users/Administrator/Desktop/temp111\\9.6\\\_\_\_\_img\\试卷.jpg](media/image12.jpeg){width="5.555555555555555in"
-height="2.986111111111111in"}\
+![C:/Users/Administrator/Desktop/temp111\9.6\\_\_\_\_img\试卷.jpg](/images/0500stringboot/0550springboot/blog.004.jpeg)
 试卷实体属性图
 
 （12）下图是公告实体和其具备的属性。
 
-![C:/Users/Administrator/Desktop/temp111\\9.6\\\_\_\_\_img\\公告.jpg](media/image13.jpeg){width="3.75in"
-height="2.0833333333333335in"}\
+![C:/Users/Administrator/Desktop/temp111\9.6\\_\_\_\_img\公告.jpg](/images/0500stringboot/0550springboot/blog.003.jpeg)
 公告实体属性图
 
 （13）下图是三国图文收藏实体和其具备的属性。
 
-![C:/Users/Administrator/Desktop/temp111\\9.6\\\_\_\_\_img\\三国图文收藏.jpg](media/image14.jpeg){width="3.75in"
-height="2.0833333333333335in"}\
+![C:/Users/Administrator/Desktop/temp111\9.6\\_\_\_\_img\三国图文收藏.jpg](/images/0500stringboot/0550springboot/blog.003.jpeg)
 三国图文收藏实体属性图
 
 （14）下图是三国图文实体和其具备的属性。
 
-![C:/Users/Administrator/Desktop/temp111\\9.6\\\_\_\_\_img\\三国图文.jpg](media/image15.jpeg){width="5.555555555555555in"
-height="2.986111111111111in"}\
+![C:/Users/Administrator/Desktop/temp111\9.6\\_\_\_\_img\三国图文.jpg](/images/0500stringboot/0550springboot/blog.004.jpeg)
 三国图文实体属性图
 
 （15）下图是试题表实体和其具备的属性。
 
-![C:/Users/Administrator/Desktop/temp111\\9.6\\\_\_\_\_img\\试题表.jpg](media/image16.jpeg){width="5.555555555555555in"
-height="2.986111111111111in"}\
+![C:/Users/Administrator/Desktop/temp111\9.6\\_\_\_\_img\试题表.jpg](/images/0500stringboot/0550springboot/blog.004.jpeg)
 试题表实体属性图
 
 （16）下图是三国视频留言实体和其具备的属性。
 
-![C:/Users/Administrator/Desktop/temp111\\9.6\\\_\_\_\_img\\三国视频留言.jpg](media/image17.jpeg){width="3.75in"
-height="2.0833333333333335in"}\
+![C:/Users/Administrator/Desktop/temp111\9.6\\_\_\_\_img\三国视频留言.jpg](/images/0500stringboot/0550springboot/blog.003.jpeg)
 三国视频留言实体属性图
 
 ### 4.2.2逻辑设计
-
-本系统使用MySQL数据库管理与系统相关的数据信息。逻辑设计阶段是将上一个阶段中的概念数据模型，转换为方便数据库进行存储的关系模型，即基本表的形式，方便开发人员后期对数据模型进行优化和管理^\[20\]^。逻辑设计阶段是整个数据库设计设计的关键，与系统有关的信息将会在这一阶段中被存储在数据库中，当用户使用本系统进行相关的功能操作时，与之有关的数据信息所在的基本表会发生相应的更新变化。数据库的逻辑设计阶段主要任务是将与系统相关的数据信息，设计成为方便数据库存储和管理的基本表格的形式，具体内容如下。
+本系统使用MySQL数据库管理与系统相关的数据信息。逻辑设计阶段是将上一个阶段中的概念数据模型，转换为方便数据库进行存储的关系模型，即基本表的形式，方便开发人员后期对数据模型进行优化和管理[20]。逻辑设计阶段是整个数据库设计设计的关键，与系统有关的信息将会在这一阶段中被存储在数据库中，当用户使用本系统进行相关的功能操作时，与之有关的数据信息所在的基本表会发生相应的更新变化。数据库的逻辑设计阶段主要任务是将与系统相关的数据信息，设计成为方便数据库存储和管理的基本表格的形式，具体内容如下。
 
 表4.1字典表
 
-  ------ ---------------- -------------------- ------------------- --------
-   序号        列名             数据类型              说明          允许空
-
-    1           Id                Int                  id             否
-
-    2        dic_code            String               字段            是
-
-    3        dic_name            String              字段名           是
-
-    4       code_index          Integer               编码            是
-
-    5       index_name           String             编码名字          是
-
-    6        super_id           Integer             父字段id          是
-
-    7         beizhu             String               备注            是
-
-    8      create_time            Date              创建时间          是
-  ------ ---------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|dic\_code|String|字段|是|
+|3|dic\_name|String|字段名|是|
+|4|code\_index|Integer|编码|是|
+|5|index\_name|String|编码名字|是|
+|6|super\_id|Integer|父字段id|是|
+|7|beizhu|String|备注|是|
+|8|create\_time|Date|创建时间|是|
 表4.2试卷表
 
-  ------ ------------------- -------------------- ----------------------- --------
-   序号         列名               数据类型                说明            允许空
-
-    1            Id                  Int                    id               否
-
-    2      exampaper_name           String               试卷名称            是
-
-    3      exampaper_date          Integer            考试时长(分钟)         是
-
-    4     exampaper_myscore        Integer              试卷总分数           是
-
-    5        kemu_types            Integer                 科目              是
-
-    6      exampaper_types         Integer               试卷状态            是
-
-    7       zujuan_types           Integer               组卷方式            是
-
-    8     exampaper_delete         Integer         逻辑删除（1代表未删除     是
-                                                       2代表已删除）      
-
-    9        create_time             Date                创建时间            是
-  ------ ------------------- -------------------- ----------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|exampaper\_name|String|试卷名称|是|
+|3|exampaper\_date|Integer|考试时长(分钟)|是|
+|4|exampaper\_myscore|Integer|试卷总分数|是|
+|5|kemu\_types|Integer|科目|是|
+|6|exampaper\_types|Integer|试卷状态|是|
+|7|zujuan\_types|Integer|组卷方式|是|
+|8|exampaper\_delete|Integer|逻辑删除（1代表未删除 2代表已删除）|是|
+|9|create\_time|Date|创建时间|是|
 表4.3试卷选题表
 
-  ------ ----------------------- -------------------- ------------------- --------
-   序号           列名                 数据类型              说明          允许空
-
-    1              Id                    Int                  id             否
-
-    2         exampaper_id             Integer               试卷            是
-
-    3        examquestion_id           Integer               试题            是
-
-    4     exampapertopic_number        Integer             试题分数          是
-
-    5          create_time               Date              创建时间          是
-  ------ ----------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|exampaper\_id|Integer|试卷|是|
+|3|examquestion\_id|Integer|试题|是|
+|4|exampapertopic\_number|Integer|试题分数|是|
+|5|create\_time|Date|创建时间|是|
 表4.4试题表表
 
-  ------ ----------------------- -------------------- -------------------------- --------
-   序号           列名                 数据类型                  说明             允许空
-
-    1              Id                    Int                      id                否
-
-    2       examquestion_name           String                 试题名称             是
-
-    3          kemu_types              Integer                   科目               是
-
-    4     examquestion_options          String             选项，json字符串         是
-
-    5      examquestion_answer          String                 正确答案             是
-
-    6     examquestion_analysis         String                 答案解析             是
-
-    7      examquestion_types          Integer                 试题类型             是
-
-    8     examquestion_sequence        Integer         试题排序，值越大排越前面     是
-
-    9          create_time               Date                  创建时间             是
-  ------ ----------------------- -------------------- -------------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|examquestion\_name|String|试题名称|是|
+|3|kemu\_types|Integer|科目|是|
+|4|examquestion\_options|String|选项，json字符串|是|
+|5|examquestion\_answer|String|正确答案|是|
+|6|examquestion\_analysis|String|答案解析|是|
+|7|examquestion\_types|Integer|试题类型|是|
+|8|examquestion\_sequence|Integer|试题排序，值越大排越前面|是|
+|9|create\_time|Date|创建时间|是|
 表4.5考试记录表表
 
-  ------ ------------------------ -------------------- -------------------- --------
-   序号            列名                 数据类型               说明          允许空
-
-    1               Id                    Int                   id             否
-
-    2     examrecord_uuid_number         String              考试编号          是
-
-    3           yonghu_id               Integer              考试用户          是
-
-    4          exampaper_id             Integer         所属试卷id（外键）     是
-
-    5          total_score              Integer              所得总分          是
-
-    6          insert_time                Date               考试时间          是
-
-    7          create_time                Date               创建时间          是
-  ------ ------------------------ -------------------- -------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|examrecord\_uuid\_number|String|考试编号|是|
+|3|yonghu\_id|Integer|考试用户|是|
+|4|exampaper\_id|Integer|所属试卷id（外键）|是|
+|5|total\_score|Integer|所得总分|是|
+|6|insert\_time|Date|考试时间|是|
+|7|create\_time|Date|创建时间|是|
 表4.6答题详情表表
 
-  ------ --------------------------- -------------------- ------------------- --------
-   序号             列名                   数据类型              说明          允许空
-
-    1                Id                      Int                  id             否
-
-    2     examredetails_uuid_number         String             试卷编号          是
-
-    3             yonghu_id                Integer              用户id           是
-
-    4          examquestion_id             Integer          试题id（外键）       是
-
-    5      examredetails_myanswer           String             考生答案          是
-
-    6       examredetails_myscore          Integer             试题得分          是
-
-    7            create_time                 Date              创建时间          是
-  ------ --------------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|examredetails\_uuid\_number|String|试卷编号|是|
+|3|yonghu\_id|Integer|用户id|是|
+|4|examquestion\_id|Integer|试题id（外键）|是|
+|5|examredetails\_myanswer|String|考生答案|是|
+|6|examredetails\_myscore|Integer|试题得分|是|
+|7|create\_time|Date|创建时间|是|
 表4.7错题表表
 
-  ------ ------------------------ -------------------- ------------------- --------
-   序号            列名                 数据类型              说明          允许空
-
-    1               Id                    Int                  id             否
-
-    2           yonghu_id               Integer              用户id           是
-
-    3          exampaper_id             Integer           试卷（外键）        是
-
-    4        examquestion_id            Integer          试题id（外键）       是
-
-    5     examredetails_myanswer         String             考生作答          是
-
-    6          insert_time                Date              记录时间          是
-
-    7          create_time                Date              创建时间          是
-  ------ ------------------------ -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|yonghu\_id|Integer|用户id|是|
+|3|exampaper\_id|Integer|试卷（外键）|是|
+|4|examquestion\_id|Integer|试题id（外键）|是|
+|5|examredetails\_myanswer|String|考生作答|是|
+|6|insert\_time|Date|记录时间|是|
+|7|create\_time|Date|创建时间|是|
 表4.8论坛表
 
-  ------ ------------------- -------------------- ------------------- --------
-   序号         列名               数据类型              说明          允许空
-
-    1            Id                  Int                  id             否
-
-    2        forum_name             String             帖子标题          是
-
-    3         yonghu_id            Integer               用户            是
-
-    4         users_id             Integer              管理员           是
-
-    5       forum_content           String             发布内容          是
-
-    6         super_ids            Integer               父id            是
-
-    7        forum_types           Integer             帖子类型          是
-
-    8     forum_state_types        Integer             帖子状态          是
-
-    9        insert_time             Date              发帖时间          是
-
-    10       update_time             Date              修改时间          是
-
-    11       create_time             Date              创建时间          是
-  ------ ------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|forum\_name|String|帖子标题|是|
+|3|yonghu\_id|Integer|用户|是|
+|4|users\_id|Integer|管理员|是|
+|5|forum\_content|String|发布内容|是|
+|6|super\_ids|Integer|父id|是|
+|7|forum\_types|Integer|帖子类型|是|
+|8|forum\_state\_types|Integer|帖子状态|是|
+|9|insert\_time|Date|发帖时间|是|
+|10|update\_time|Date|修改时间|是|
+|11|create\_time|Date|创建时间|是|
 表4.9公告表
 
-  ------ ----------------- -------------------- ------------------- --------
-   序号        列名              数据类型              说明          允许空
-
-    1           Id                 Int                  id             否
-
-    2      gonggao_name           String             公告名称          是
-
-    3      gonggao_photo          String             公告图片          是
-
-    4      gonggao_types         Integer             公告类型          是
-
-    5       insert_time            Date            公告发布时间        是
-
-    6     gonggao_content         String             公告详情          是
-
-    7       create_time            Date              创建时间          是
-  ------ ----------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|gonggao\_name|String|公告名称|是|
+|3|gonggao\_photo|String|公告图片|是|
+|4|gonggao\_types|Integer|公告类型|是|
+|5|insert\_time|Date|公告发布时间|是|
+|6|gonggao\_content|String|公告详情|是|
+|7|create\_time|Date|创建时间|是|
 表4.10三国视频表
 
-  ------ -------------------- -------------------- ------------------- --------
-   序号          列名               数据类型              说明          允许空
-
-    1             Id                  Int                  id             否
-
-    2        shipin_name             String           三国视频名称        是
-
-    3     shipin_uuid_number         String           三国视频编号        是
-
-    4        shipin_photo            String           三国视频照片        是
-
-    5        shipin_video            String             三国视频          是
-
-    6        shipin_types           Integer           三国视频类型        是
-
-    7      shipin_clicknum          Integer           三国视频热度        是
-
-    8         zan_number            Integer                赞             是
-
-    9         cai_number            Integer                踩             是
-
-    10      shipin_content           String         三国视频详细介绍      是
-
-    11      shangxia_types          Integer             是否上架          是
-
-    12      shipin_delete           Integer             逻辑删除          是
-
-    13       insert_time              Date              录入时间          是
-
-    14       create_time              Date              创建时间          是
-  ------ -------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|shipin\_name|String|三国视频名称|是|
+|3|shipin\_uuid\_number|String|三国视频编号|是|
+|4|shipin\_photo|String|三国视频照片|是|
+|5|shipin\_video|String|三国视频|是|
+|6|shipin\_types|Integer|三国视频类型|是|
+|7|shipin\_clicknum|Integer|三国视频热度|是|
+|8|zan\_number|Integer|赞|是|
+|9|cai\_number|Integer|踩|是|
+|10|shipin\_content|String|三国视频详细介绍|是|
+|11|shangxia\_types|Integer|是否上架|是|
+|12|shipin\_delete|Integer|逻辑删除|是|
+|13|insert\_time|Date|录入时间|是|
+|14|create\_time|Date|创建时间|是|
 表4.11三国视频收藏表
 
-  ------ ------------------------- -------------------- ------------------- --------
-   序号            列名                  数据类型              说明          允许空
-
-    1               Id                     Int                  id             否
-
-    2            shipin_id               Integer             三国视频          是
-
-    3            yonghu_id               Integer               用户            是
-
-    4     shipin_collection_types        Integer               类型            是
-
-    5           insert_time                Date              收藏时间          是
-
-    6           create_time                Date              创建时间          是
-  ------ ------------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|shipin\_id|Integer|三国视频|是|
+|3|yonghu\_id|Integer|用户|是|
+|4|shipin\_collection\_types|Integer|类型|是|
+|5|insert\_time|Date|收藏时间|是|
+|6|create\_time|Date|创建时间|是|
 表4.12三国视频留言表
 
-  ------ -------------------- -------------------- ------------------- --------
-   序号          列名               数据类型              说明          允许空
-
-    1             Id                  Int                  id             否
-
-    2         shipin_id             Integer             三国视频          是
-
-    3         yonghu_id             Integer               用户            是
-
-    4     shipin_liuyan_text         String             留言内容          是
-
-    5        insert_time              Date              留言时间          是
-
-    6         reply_text             String             回复内容          是
-
-    7        update_time              Date              回复时间          是
-
-    8        create_time              Date              创建时间          是
-  ------ -------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|shipin\_id|Integer|三国视频|是|
+|3|yonghu\_id|Integer|用户|是|
+|4|shipin\_liuyan\_text|String|留言内容|是|
+|5|insert\_time|Date|留言时间|是|
+|6|reply\_text|String|回复内容|是|
+|7|update\_time|Date|回复时间|是|
+|8|create\_time|Date|创建时间|是|
 表4.13三国图文表
 
-  ------ ------------------- -------------------- ------------------- --------
-   序号         列名               数据类型              说明          允许空
-
-    1            Id                  Int                  id             否
-
-    2        tuwen_name             String           三国图文名称        是
-
-    3     tuwen_uuid_number         String           三国图文编号        是
-
-    4        tuwen_photo            String           三国图文照片        是
-
-    5        tuwen_types           Integer           三国图文类型        是
-
-    6      tuwen_clicknum          Integer           三国图文热度        是
-
-    7        zan_number            Integer                赞             是
-
-    8        cai_number            Integer                踩             是
-
-    9       tuwen_content           String         三国图文详细介绍      是
-
-    10     shangxia_types          Integer             是否上架          是
-
-    11      tuwen_delete           Integer             逻辑删除          是
-
-    12       insert_time             Date              录入时间          是
-
-    13       create_time             Date              创建时间          是
-  ------ ------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|tuwen\_name|String|三国图文名称|是|
+|3|tuwen\_uuid\_number|String|三国图文编号|是|
+|4|tuwen\_photo|String|三国图文照片|是|
+|5|tuwen\_types|Integer|三国图文类型|是|
+|6|tuwen\_clicknum|Integer|三国图文热度|是|
+|7|zan\_number|Integer|赞|是|
+|8|cai\_number|Integer|踩|是|
+|9|tuwen\_content|String|三国图文详细介绍|是|
+|10|shangxia\_types|Integer|是否上架|是|
+|11|tuwen\_delete|Integer|逻辑删除|是|
+|12|insert\_time|Date|录入时间|是|
+|13|create\_time|Date|创建时间|是|
 表4.14三国图文收藏表
 
-  ------ ------------------------ -------------------- ------------------- --------
-   序号            列名                 数据类型              说明          允许空
-
-    1               Id                    Int                  id             否
-
-    2            tuwen_id               Integer             三国图文          是
-
-    3           yonghu_id               Integer               用户            是
-
-    4     tuwen_collection_types        Integer               类型            是
-
-    5          insert_time                Date              收藏时间          是
-
-    6          create_time                Date              创建时间          是
-  ------ ------------------------ -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|tuwen\_id|Integer|三国图文|是|
+|3|yonghu\_id|Integer|用户|是|
+|4|tuwen\_collection\_types|Integer|类型|是|
+|5|insert\_time|Date|收藏时间|是|
+|6|create\_time|Date|创建时间|是|
 表4.15三国图文留言表
 
-  ------ ------------------- -------------------- ------------------- --------
-   序号         列名               数据类型              说明          允许空
-
-    1            Id                  Int                  id             否
-
-    2         tuwen_id             Integer             三国图文          是
-
-    3         yonghu_id            Integer               用户            是
-
-    4     tuwen_liuyan_text         String             留言内容          是
-
-    5        insert_time             Date              留言时间          是
-
-    6        reply_text             String             回复内容          是
-
-    7        update_time             Date              回复时间          是
-
-    8        create_time             Date              创建时间          是
-  ------ ------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|tuwen\_id|Integer|三国图文|是|
+|3|yonghu\_id|Integer|用户|是|
+|4|tuwen\_liuyan\_text|String|留言内容|是|
+|5|insert\_time|Date|留言时间|是|
+|6|reply\_text|String|回复内容|是|
+|7|update\_time|Date|回复时间|是|
+|8|create\_time|Date|创建时间|是|
 表4.16用户表
 
-  ------ ------------------ -------------------- ------------------- --------
-   序号         列名              数据类型              说明          允许空
-
-    1            Id                 Int                  id             否
-
-    2       yonghu_name            String             用户姓名          是
-
-    3       yonghu_phone           String            用户手机号         是
-
-    4     yonghu_id_number         String           用户身份证号        是
-
-    5       yonghu_photo           String             用户头像          是
-
-    6       yonghu_email           String             用户邮箱          是
-
-    7       create_time             Date              创建时间          是
-  ------ ------------------ -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|yonghu\_name|String|用户姓名|是|
+|3|yonghu\_phone|String|用户手机号|是|
+|4|yonghu\_id\_number|String|用户身份证号|是|
+|5|yonghu\_photo|String|用户头像|是|
+|6|yonghu\_email|String|用户邮箱|是|
+|7|create\_time|Date|创建时间|是|
 表4.17三国资讯表
 
-  ------ ---------------- -------------------- ------------------- --------
-   序号        列名             数据类型              说明          允许空
-
-    1           Id                Int                  id             否
-
-    2       zixun_name           String           三国资讯名称        是
-
-    3      zixun_photo           String           三国资讯图片        是
-
-    4      zixun_types          Integer           三国资讯类型        是
-
-    5      insert_time            Date          三国资讯发布时间      是
-
-    6     zixun_content          String           三国资讯详情        是
-
-    7      create_time            Date              创建时间          是
-  ------ ---------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|zixun\_name|String|三国资讯名称|是|
+|3|zixun\_photo|String|三国资讯图片|是|
+|4|zixun\_types|Integer|三国资讯类型|是|
+|5|insert\_time|Date|三国资讯发布时间|是|
+|6|zixun\_content|String|三国资讯详情|是|
+|7|create\_time|Date|创建时间|是|
 表4.18管理员表
 
-  ------ ---------------- -------------------- ------------------- --------
-   序号        列名             数据类型              说明          允许空
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|username|String|老师名|是|
+|3|password|String|密码|是|
+|4|role|String|角色|是|
+|5|addtime|Date|新增时间|是|
 
-    1           Id                Int                  id             否
 
-    2        username            String              老师名           是
-
-    3        password            String               密码            是
-
-    4          role              String               角色            是
-
-    5        addtime              Date              新增时间          是
-  ------ ---------------- -------------------- ------------------- --------
-
-## 
-
-## 
-
-## 
-
-## 
-
-## **4.3本章小结**
-
+##
+##
+##
+##
+## 4.3本章小结
 本章主要介绍了系统功能设计、数据库设计等内容。通过设计系统的总体功能框架，确定系统的功能设计主要包括三国图文等模块。数据库设计主要分为概念设计阶段和逻辑设计阶段，其中，概念设计是将现实世界中的数据转变为信息世界中的概念模型，逻辑设计是将概念设计中的概念模型转变成可以被数据库存储的数据表格。系统功能设计好坏是系统得以被编码实现的重要依据。数据库设计是否符合规范，是系统能够成功运行的基本保障，也是用户和系统实现交互处理的重要前提。
-
-# **5系统实现**
-
-## **5.1管理员功能模块实现**
-
+# 5系统实现
+## 5.1管理员功能模块实现
 ### 5.1.1管理员登录
-
 管理员可以选择任一浏览器打开网址，输入信息无误后，以管理员的身份行使相关的管理权限，管理员登录界面设计如图5-1所示。
 
-![](media/image18.png){width="5.763888888888889in"
-height="3.2284722222222224in"}
+![](/images/0500stringboot/0550springboot/blog.006.png)
 
 图5-1管理员登录界面
-
 ### 5.1.2三国图文管理
-
 管理员可以通过选择三国图文管理，管理相关的三国图文信息记录，比如进行查看三国图文信息标题，修改三国图文信息来源等操作，三国图文管理界面设计如图5-2所示。
 
-![](media/image19.png){width="5.763888888888889in"
-height="3.2284722222222224in"}
+![](/images/0500stringboot/0550springboot/blog.006.png)
 
 图5-2三国图文管理界面
 
 ### 5.1.3公告管理
-
 管理员可以通过选择公告管理，管理相关的公告信息记录，比如进行查看公告详情,删除错误的公告信息,发布公告等操作，公告管理界面如图5-3所示。
 
-![](media/image20.png){width="5.763888888888889in"
-height="3.2284722222222224in"}
+![](/images/0500stringboot/0550springboot/blog.006.png)
 
 图5-3 公告管理界面
-
 ### 5.1.4公告类型管理
-
 管理员可以通过选择公告类型管理，管理相关的公告类型信息，比如查看所有公告类型,删除无用公告类型,修改公告类型,添加公告类型等操作，公告类型管理界面设计如图5-4所示。
 
-![](media/image21.png){width="5.763888888888889in"
-height="3.2284722222222224in"}
+![](/images/0500stringboot/0550springboot/blog.006.png)
 
 图5-4公告类型管理界面
-
-## **5.3系统测试**
-
-### 5.3.1测试概述
-
-在系统将要投入使用前，需要进行的一个必不可少的工作环节就是系统测试。测试人员通过系统测试工作，验证在系统的使用过程中，界面环境是否整洁友好，用户账号信息是否安全可靠，性能方面是否稳定健壮，功能方面是否符合用户需要等。系统测试不仅需要找出系统运行中会出现的问题，还需要分析产生这些问题的原因，并且找到解决这些问题的方法^\[21\]^。
-
-系统测试主要分为黑盒测试和白盒测试^\[22\]^。黑盒测试即功能测试，其主要是站在使用者的角度对系统进行测试。在黑盒测试过程中，测试人员无需关注和了解系统内部的代码等内容，根据系统的程序接口，运行和检测系统功能。白盒测试即结构测试，其主要是站在程序员的角度对系统进行测试。与黑盒测试不同，白盒是一种基于代码的测试过程，测试人员需要了解系统内部的代码等内容，通过检测实际的系统程序状态、逻辑路径等情况与预期达到的结果是否一致，确认系统的设计内容是否符合规范。
-
-### 5.3.2测试结果
-
-测试环境是使用一台配置不高的电脑或者笔记本，配置Windows
-7或者更高版本的操作系统环境，在浏览器中输入本系统网址，如果能正常访问本系统的首页，说明本系统可以成功的进行测试。
-
-本系统主要使用功能测试的方法，测试系统功能效果。测试流程图如图6-1所示。
-
-![](media/image22.wmf)
-
-图6-1测试流程图
-
-## **5.3本章小结**
-
-本章通过展示系统相关的功能模块运行图，介绍系统主要功能模块的操作流程。系统使用者角色主要分为管理员和用户，管理员角色功能设计主要包括三国图文等模块。通过运行系统功能模块，展示操作界面，让用户更好的了解和使用本系统。最后，根据以上相关的系统测试内容显示，本系统的测试结果比较顺利，系统性能比较稳定，基本上没有出现问题。
-
-# **6总结与展望**
-
-本文从用户对三国之家网站的实际需求出发，设计本系统总体功能，然后结合使用Java语言、MySQL数据库、AJAX技术等相关技术，详细的编码实现本系统，最后通过功能测试，测试和完善系统功能。
-
-本系统是以VUE为主要框架，在IDEA开发环境中，首先使用Java语言设计系统功能，使用MySQL数据库存储数据信息，然后使用连接语言实现前端Java语言与后台MySQL数据库的交互，再通过平台提供的Tomcat插件，将系统发布到Tomcat服务器上，最后用户可以选择浏览器打开网址使用本系统。本系统使用性能稳定可靠，在功能设计上，基本上达到预期的设计目标，并且根据系统测试结果可以得知，本系统现在是可以正常的被投入使用。
-
-如今是信息化的社会，随着大数据技术、人工智能、深度学习等新一代科学技术力量的出现，大大加快了各行业信息化建设的进程。我们应该努力学习新一代科学技术以及相关知识，不断提高自己的专业能力水平，设计和实现出一款能够顺应时代变化的，功能强大的信息管理系统。
-
-由于本人的专业能力和时间有限，本系统可能存在一定的局限性，比如系统处理能力、用户信息安全等方面可能存在不足。本人将通过学习目前比较主流的计算机技术和新型科技知识，并且将其积极的应用到系统的设计过程中，增强系统的可维护性，提高系统安全性，提升系统的实用性，让系统更加人性化、智能化，在用户使用本系统时，使得系统能够更快的响应用户，更好的服务用户。
-
-# **参考文献**
-
-\[1\]曹文渊. JAVA语言在计算机软件开发中的应用\[J\]. 电子技术与软件工程,
-2019 (02): 53-54.
-
-\[2\]余杨奎. 基于Web开发技术实现PHP调用Java类研究\[J\]. 软件导刊,
-2018,17 (03): 121-123.
-
-\[3\]倪海顺. 计算机软件开发的Java编程语言应用探讨\[J\].
-信息与电脑(理论版), 2019(02): 60-61.
-
-\[4\]桂林斌. 基于Java EE的高校科研成果管理系统的设计与实现\[J\].
-电脑与电信, 2018(Z1): 24-27.
-
-\[5\]Planko J, Chappin M M H, Cramer J M, et al. Managing strategic
-system-building networks in emerging business fields: A case study of
-the Dutch smart grid sector\[J\]. Industrial Marketing Management. 2017.
-
-\[6\]周茜.
-基于spring+springMVC+Mybatis+VUE构建的电子商务系统的设计与实现\[J\].
-软件导刊. 2014, 10(1): 88\~91.
-
-\[7\]王剑南. Java面向对象VUE后台开发精粹\[M\]. 北京: 清华大学出版社,
-2010, 8(5): 11-13.
-
-\[8\]葛萌，黄素萍，欧阳宏基. 基于Spring MVC框架的Java Web应用\[J\].
-计算机与现代化, 2018 (08): 97-101.
-
-\[9\]杨雨成,任利峰.MySQL数据库性能优化技术研究\[J\].科技经济导刊, 2020,
-28(03): 32.
-
-\[10\]姚素红. 基于Java的Web应用系统开发模式\[J\].
-江苏工程职业技术学院学报, 2018, 18(01): 6-9.
-
-\[11\]王越. JAVA编程语言在计算机软件开发中的应用\[J\].
-电子技术与软件工程, 2019(01): 35.
-
-\[12\]冯燕奎, 赵德奎. JSP实用案例教程\[M\]. 北京: 清华大学出版社, 2013,
-22-30.
-
-\[13\]邱吉雨. 基于Java开发Web项目的核心技术\[J\]. 电子元器件与信息技术,
-2018 (07): 93-94+119.
-
-\[14\]黄文娟. 基于Java和MySQL的图书馆信息化管理系统设计\[J\].
-电子设计工程, 2019, 27(02): 20-24.
-
-\[15\]张继东. MySQL数据库基于JSP的访问技术\[J/OL\]. 电子技术与软件工程,
-2017, (15): 169(2017-08-03).
-
-\[16\]潘国荣.
-基于JSP+JavaBean+Servlet实现模式的增删改模块的设计与实现\[J\].信息通信,
-2017, (08):101-103.
-
-\[17\]陶智刚, 王明哲. 面向目标的系统的系统建模方法\[J\].
-系统工程与电子技术, 2013, 35(11): 2335-2341.
-
-\[14\]李荣国, 王见. MySQL数据库在自动测试系统中的应用\[J\], 计算机应用,
-2019 (31): 169-171.
-
-\[19\]王珊, 萨师煊. 数据库系统概论\[M\]. 北京: 高等教育出版社, 2012.
-
-\[20\]陆慧娟等. 数据库设计与应用开发实践\[M\]. 清华大学出版社. 2014.
-
-\[21\]王宜贵. 软件工程\[M\]. 北京: 机械工业出版社, 2010, 25-30.
-
-\[22\]Homès B. Fundamentals of Software Testing\[M\]. John Wiley & Sons,
-2013.
-
-
-
-# **致谢**
-
-经过很长时间的的努力，本人基本上完成了对三国之家网站的开发，本人的论文也是在所开发的系统为基础上得以撰写成功。在此，我要感谢所有帮助我的老师和同学们，使得我在毕业设计过程中，学习到了许多超出理论范畴的实践知识和经验，同时也提高了我的专业能力和水平。
-
-感谢我的学校，为我们提供一个师资力量雄厚的，书籍资源种类多的，学习氛围浓郁的大集合，使得我们可以学习到很多知识，同时也为我们提高运动场地，让我们在学习知识的同时，不忘积极锻炼身体，促进我们身心健康的发展。
-
-感谢我的指导老师，在论文选题、系统分析、系统设计、论文撰写等阶段给予我多方面的帮助和指导，正是因为老师的辛勤指导，使得我的系统才得以按期实现，论文才得以按期完成。
-
-感谢我的同学们，当我在设计系统的过程中，由于遇到问题而导致毕业设计进度停滞不前时，同学们积极的鼓励我，主动的帮助我分析问题，让我可以在较短时间内找到解决问题的方法，而后使得我能够成功的设计和实现系统。
-
-感谢我的家人，在我遇到困难和挫折时，一直在我身边，给予我迎难而上，奋勇向前的力量，让我有信心挑战困难，找到解决问题的方案，不断地提升自己的综合能力，踏踏实实的向着自己的理想前进。
-
-最后感谢我的祖国，为我提供一个和谐的社会环境，友好的校园环境，我将会更加努力的学习先进的知识，争取早日回报我的祖国，为祖国的综合发展，奉献出自己的一份力量。
+# 系
 
 
-### 0550springboot三国之家网站设计pf 项目图片
-![图片](/images/0550springbootimg_014.jpg)
-![图片](/images/0550springbootimg_015.jpg)
-![图片](/images/0550springbootimg_001.jpg)
-![图片](/images/0550springbootimg_003.jpg)
-![图片](/images/0550springbootimg_002.jpg)
-![图片](/images/0550springbootimg_012.jpg)
-![图片](/images/0550springbootimg_006.jpg)
-![图片](/images/0550springbootimg_007.jpg)
-![图片](/images/0550springbootimg_013.jpg)
-![图片](/images/0550springbootimg_005.jpg)
-![图片](/images/0550springbootimg_011.jpg)
-![图片](/images/0550springbootimg_010.jpg)
-![图片](/images/0550springbootimg_004.jpg)
-![图片](/images/0550springbootimg_009.jpg)
-![图片](/images/0550springbootimg_008.jpg)
 
 
 

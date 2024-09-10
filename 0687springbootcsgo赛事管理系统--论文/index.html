@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer" />
+        <meta name="robots" content="noodp" />
+        <title>0687springbootCSGO赛事管理系统--论文 - chenqi blog</title><meta name="Description" content="Hugo theme - chenqi"><meta property="og:url" content="https://chenqi199.github.io/0687springbootcsgo%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F--%E8%AE%BA%E6%96%87/">
+  <meta property="og:site_name" content="chenqi blog">
+  <meta property="og:title" content="0687springbootCSGO赛事管理系统--论文">
+  <meta property="og:description" content="0687springbootCSGO赛事管理系统–论文 项目清单 包安装运行 github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1.1开发背">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-05-29T18:31:05+08:00">
+    <meta property="article:modified_time" content="2024-05-29T18:31:05+08:00">
+    <meta property="article:tag" content="Springboot">
+    <meta property="article:tag" content="Java">
+    <meta property="article:tag" content="Vue">
+    <meta property="article:tag" content="论文">
+    <meta property="article:tag" content="项目">
+    <meta property="og:image" content="https://chenqi199.github.io/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chenqi199.github.io/logo.png">
+  <meta name="twitter:title" content="0687springbootCSGO赛事管理系统--论文">
+  <meta name="twitter:description" content="0687springbootCSGO赛事管理系统–论文 项目清单 包安装运行 github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1.1开发背">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chenqi199.github.io/0687springbootcsgo%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F--%E8%AE%BA%E6%96%87/" /><link rel="prev" href="https://chenqi199.github.io/0688springboot%E6%BC%AB%E7%94%BB%E7%BD%91%E7%AB%99--%E8%AE%BA%E6%96%87/" /><link rel="next" href="https://chenqi199.github.io/0686springboot%E5%9F%BA%E4%BA%8Espring-boot%E7%9A%84%E5%9C%A8%E7%BA%BF%E8%80%83%E8%AF%95%E7%B3%BB%E7%BB%9F--%E8%AE%BA%E6%96%87/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "0687springbootCSGO赛事管理系统--论文",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chenqi199.github.io\/0687springbootcsgo%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F--%E8%AE%BA%E6%96%87\/"
+        },"image": ["https:\/\/chenqi199.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "springboot, java, vue, 论文, 项目","wordcount":  7992 ,
+        "url": "https:\/\/chenqi199.github.io\/0687springbootcsgo%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F--%E8%AE%BA%E6%96%87\/","datePublished": "2024-05-29T18:31:05+08:00","dateModified": "2024-05-29T18:31:05+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/chenqi199.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "chenqi"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/0687springbootcsgo%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F--%E8%AE%BA%E6%96%87/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/0687springbootcsgo%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F--%E8%AE%BA%E6%96%87/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">0687springbootCSGO赛事管理系统--论文</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="chenqi199" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>chenqi</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-05-29">2024-05-29</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 7992 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 16 分钟&nbsp;<span id="/0687springbootcsgo%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F--%E8%AE%BA%E6%96%87/" class="leancloud_visitors" data-flag-title="0687springbootCSGO赛事管理系统--论文">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">github 项目仓库</a> 开源仅有后端代码</a></li>
+        <li><a href="#点击播放视频-">点击播放视频 ▼</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#11开发背景">1.1开发背景</a></li>
+    <li><a href="#12课题研究的目的和意义">1.2课题研究的目的和意义</a></li>
+    <li><a href="#13课题设计目标">1.3课题设计目标</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#21-java语言简介">2.1 Java语言简介</a></li>
+    <li><a href="#22-mysql数据库">2.2 MySql数据库</a></li>
+    <li><a href="#23-mysql环境配置">2.3 MySQL环境配置</a></li>
+    <li><a href="#24-bs结构">2.4 B/S结构</a></li>
+    <li><a href="#25springboot框架">2.5SpringBoot框架</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#31需求分析">3.1需求分析</a></li>
+    <li><a href="#32系统可行性分析">3.2系统可行性分析</a></li>
+    <li><a href="#33-系统现状分析">3.3 系统现状分析</a></li>
+    <li><a href="#34-性能需求分析">3.4 性能需求分析</a></li>
+    <li><a href="#35系统流程分析">3.5系统流程分析</a>
+      <ul>
+        <li><a href="#351操作流程">3.5.1操作流程</a></li>
+        <li><a href="#352添加信息流程">3.5.2添加信息流程</a></li>
+        <li><a href="#353删除信息流程">3.5.3删除信息流程</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#41系统结构">4.1系统结构</a></li>
+    <li><a href="#42数据库设计">4.2数据库设计</a>
+      <ul>
+        <li><a href="#421-数据库概念结构设计">4.2.1 数据库概念结构设计</a></li>
+        <li><a href="#422数据库逻辑结构设计">4.2.2数据库逻辑结构设计</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#51系统功能模块">5.1系统功能模块</a></li>
+    <li><a href="#52管理员功能模块">5.2管理员功能模块</a></li>
+    <li><a href="#53参赛战队功能模块">5.3参赛战队功能模块</a></li>
+    <li><a href="#54合作方功能模块">5.4合作方功能模块</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="0687springbootcsgo赛事管理系统--论文httpsgithubcomgraduationproject-springboot0687springboot"><a href="https://github.com/GraduationProject-springboot/0687springboot" target="_blank" rel="noopener noreffer ">0687springbootCSGO赛事管理系统&ndash;论文</a></h1>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        data-srcset="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 1.5x, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        title="picture" /></p>
+<h1 id="项目清单httpschenqi1990site-包安装运行"><a href="https://chenqi1990.site" target="_blank" rel="noopener noreffer ">项目清单</a> 包安装运行</h1>
+<h3 id="github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">github 项目仓库</a> 开源仅有后端代码</h3>
+<h3 id="点击播放视频-">点击播放视频 ▼</h3>
+<p><a href="https://www.bilibili.com/video/BV14HerezEwW?p=41" target="_blank" rel="noopener noreffer "><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.sstatic.net/Vp2cE.png"
+        data-srcset="https://i.sstatic.net/Vp2cE.png, https://i.sstatic.net/Vp2cE.png 1.5x, https://i.sstatic.net/Vp2cE.png 2x"
+        data-sizes="auto"
+        alt="https://i.sstatic.net/Vp2cE.png"
+        title="Watch the video" /></a></p>
+<h1 id="绪论">绪论</h1>
+<h2 id="11开发背景">1.1开发背景</h2>
+<p>传统的管理方式都在使用手工记录的方式进行记录，这种方式耗时，而且对于信息量比较大的情况想要快速查找某一信息非常慢，对于CSGO赛事的统计获取比较繁琐，随着网络技术的发展，采用电脑管理相关数据信息管理与数据查询等诸多环节已成为必然趋势；数据情况的透明化，提高了信息管理的透明度，提高管理效率。</p>
+<p>传统的CSGO赛事管理系统需要对各类信息及时的进行记录、规整、更新、收藏，这是对数据信息统计管理的极大消耗，在其进行过程中，还会出现因信息的重复传递，出现本可以避免的出错问题，例如：前后CSGO赛事信息不一致、种类纰漏以及备注不详细等等一系列问题。在信息告诉更替的时代，信息的准确性，经济可行性也无疑是众人关注的焦点。那么我们系统的目的性也就很明确。</p>
+<p>如今，随着社会的不断发展，计算机技术已经逐渐成熟和完善，并且已经融入到人们生活的方方面面之中，系统的各项管理都开始向信息化的方向扩展。计算机拥有查询迅速、储存量大、安全性好、可靠性高、节约人力，花费少等长处。这些长处使其能够对管理效率给予极大的提高。所以，用计算机来代替传统的人工方式来进行CSGO赛事管理已是大势所趋，CSGO赛事管理系统应运而生。</p>
+<p>在世界范围内，CSGO赛事管理系统已经得到了非常广泛的应用，范围变的越来越广，功能也在不断的完善，操作简便、节省人力、成本低廉，但工作的效率确一直不断的提高。为CSGO赛事行业管理全程提供自动化和全面的纪录，避免出错的概率，提高用户的满意程度。</p>
+<p>CSGO赛事管理系统的作用就是提供一个在线CSGO赛事管理的信息储存以及搜索的系统，用来协助对CSGO赛事信息进行统一管理。一个完善的CSGO赛事管理系统，可以对CSGO赛事进行精细化的管理。</p>
+<h2 id="12课题研究的目的和意义">1.2课题研究的目的和意义</h2>
+<p>人们现在的生活方式因为网络的普及发生了巨大变化，由于网络管理在人们的视野中出现，人们对网络管理额外的关注。人们只要在有网络的地方足不出户查看到世界各地的各类。目前的挑战是前台界面的设计，要把顾客的眼球吸引住，选则比较人性化的界面设计，要更直观的表现，让用户能更多的了解在CSGO赛事管理系统的信息。</p>
+<p>本系统的主要意义在于，全力以赴为用户提供一个操作方便，界面简洁，信息直观的CSGO赛事管理系统。使用该系统的用户，可以先浏览到最新上架的CSGO赛事信息，并可以注册成为本网站的用户。</p>
+<h2 id="13课题设计目标">1.3课题设计目标</h2>
+<p>针对CSGO赛事行业的管理现状，本CSGO赛事管理系统主要实现以下几个目标：</p>
+<p><code>    </code>1.系统界面简洁，操作简便。</p>
+<p><code>    </code>2.拥有精准，高效的查询功能。</p>
+<p><code>    </code>3.能使管理人员能够及时的获得精确的报表</p>
+<p><code>    </code>4.对数据内容的管理安全，稳定，易维护</p>
+<p><code>    </code>5.对信息全面跟踪，方便管理人员进行管理。</p>
+<p><code>    </code>6.提供客户登录和修改密码等服务，加强系统安全。</p>
+<p>7.提供用户管理和数据备份，确保信息的安全性和可靠性。</p>
+<h1 id="2开发技术介绍">2.开发技术介绍</h1>
+<h2 id="21-java语言简介">2.1 Java语言简介</h2>
+<p>Java是由SUN公司推出，该公司于2010年被oracle公司收购。Java本是印度尼西亚的一个叫做爪洼岛的英文名称，也因此得来java是一杯正冒着热气咖啡的标识。Java语言在移动互联网的大背景下具备了显著的优势和广阔的前景，它是面向对象的，分布式的，动态的，具有系统无关性、安全性、健壮性。Java语言的基本语句语法和C++一样，但是它面向对象的技术更加彻底，因为Java要求将所有的内容都必须封装成类，把类作为程序的基本单位。由于不允许类外有变量、方法。 Java语言的分布式体现在数据分布和操作分布，它是面向网络的语言，可以处理TCP/IP协议，它也支持客户机/服务器的计算模式。Java语言的动态性是指类在运行时是动态安装的，使得Java可以动态的维护程序。Java不支持指针，对内存访问的所有操作都是通过对象实例化实现的，这样就避免了指针操作中易产生的错误，同时也预防了病毒对系统的破坏和威胁。</p>
+<p>Java语言的编程风格与C语言非常接近，它继承了C++面向对象技术的核心，它面世之后发展迅速，非常流行，对高级C语言形成了很大的冲击。业内人士称之为“一次编译、到处执行”。当然java也有缺点，在每次执行编译后，字节码都需要消耗一定的时间，在某些程度上降低了性能。但是这并不影响java成为此次设计语言的选择。Java语言简单易学，使用它的编程时间短，功能性强，开发者学习起来更简便、更快。Java的主要特性有以下几个：</p>
+<p>1.面向对象</p>
+<p>面向对象有四个特点：封装、继承、多态、抽象。抽象是指忽略一个问题中的次要部分，关注主要部分。多态是指对同一种消息做出的不同反应。继承是指在原有的父类方法基础上增加自己独有的方法，而不改变原来父类。</p>
+<p>2.系统无关性</p>
+<p>Java编译出来的是字节码，直接由虚拟机执行。在任何系统上，只要有Java虚拟机，Java代码都能运行。</p>
+<p>3.可靠性和安全性</p>
+<p>Java对内存的访问都必须通过对象的实例变量来实现，避免了指针中出现的错误。</p>
+<p>4.多线程</p>
+<p>Java提供了多线程功能，利用编程实现同一时间同时工作的功能。</p>
+<h2 id="22-mysql数据库">2.2 MySql数据库</h2>
+<p>在软件项目，通过经营性数据的数据库，可以保证其安全，独立和数据一致，访问数据的系统来提供，所以有效减少时间程序员开发应用程序。</p>
+<p>MySQL可以支持多线程，可以方便使用系统的资源，提高运行的速度。并提供odbc、jdbc和tcp/ ip，以各种形式连接到MySQL; 功能方面表现欠缺，规模小，但对于这个系统就足够了。</p>
+<p>因为MySQL是源代码对外开放的，所以任何人都可以通过相应的方法下载，并根据个性化需求进行修改。由于MySQL的速度，可靠性和适应性，MySQL受到重视。</p>
+<p>MySQL虽然功能可能不是很强大，但由于其开源，广泛传播，导致很多人都意识到这个数据库。</p>
+<h2 id="23-mysql环境配置">2.3 MySQL环境配置</h2>
+<p>本系统的数据使用的是MySQL，所以要将MySQL安装到指定目录，如果下载的是非安装的MySQL压缩包，直接解压到指定目录就可以了。然后点击C:\Program Files\MySQL\bin\winMySQLadmin.exe这个文件其中C:\Program Files\MySQL是MySQL安装目录。输入winMySQLadmin的初始用户、密码（注：这不是MySQL里的用户、密码）随便填不必在意，确定之后右下角任务的启动栏会出现一个红绿灯的图标，红灯亮代表服务停止，绿灯亮代表服务正常，左击这个图标-&gt;winnt-&gt;install the service 安装此服务，再左击这个图标-&gt;winnt-&gt;start the service 启动MySQL服务。</p>
+<p>修改MySQL数据库的root密码。用cmd进入命令行模式输入如下命令:</p>
+<p>cd C:\Program Files\MySQL\bin</p>
+<p>MySQLadmin -u root -p password 123</p>
+<p>回车出现Enter password: ，这是要输入原密码. 刚安装时密码为空，所以直接回车，此时MySQL 中账号 root 的密码被改为 123 安装完毕。</p>
+<h2 id="24-bs结构">2.4 B/S结构</h2>
+<p>B/S的系统是通过能上网的电脑就可以使用，它最大的优点是不需要安装专门的软件，首先浏览器向服务器发出请求，然后服务器处理请求把信息再返回给浏览器。不需要再次对数据进行存取与计算数据，只要负责显示数据来降低要求，如果说客户端像个“瘦子”，而服务器会越来越“胖”。B/S体系结构与C/S体系结构相比，最大的不同是：B/S体系的应用软件使用网络浏览器作为与用户交互的系统，而C/S则需要开发专用的应用程序。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600stringboot/0687springboot/blog.010.png"
+        data-srcset="/images/0600stringboot/0687springboot/blog.010.png, /images/0600stringboot/0687springboot/blog.010.png 1.5x, /images/0600stringboot/0687springboot/blog.010.png 2x"
+        data-sizes="auto"
+        alt="/images/0600stringboot/0687springboot/blog.010.png"
+        title="2009318052962238" /></p>
+<p>图2-1 B/S结构图</p>
+<h2 id="25springboot框架">2.5SpringBoot框架</h2>
+<p>SpringBoot是一个全新开源的轻量级框架。基于Spring4.0设计，其不仅继承了Spring框架原来有的优秀特性，而且还通过简化配置文件来进一步简化了Spring应用的整个搭建以及开发过程。另外在原本的Spring中由于随着项目的扩大导入的jar包数量越来越大，随之出现了jar包版本之间的兼容性问题，而此时SpringBoot通过集成大量的框架使得依赖包的版本冲突，以及引用的不稳定性问题得到了很好的解决。</p>
+<p>SpringBoot可以看做是Spring的加强版本，但实质上都是Spring的相关技术，有了这些优秀的开源框架，程序员在开发过程中将事半功倍。</p>
+<h1 id="3系统分析">3.系统分析</h1>
+<h2 id="31需求分析">3.1需求分析</h2>
+<p>CSGO赛事管理系统的作用，可以提高CSGO赛事管理的工作人员的效率，协助他们对CSGO赛事信息进行统一管理，为管理者提供信息储存和查询搜索系统。一个良好的CSGO赛事管理系统可以实现对CSGO赛事信息的精细化管理：对在线CSGO赛事管理流程的全过程进行电子化操作，其主要作用是管理和控制CSGO赛事所有的信息，分析库存数据，使工作人员对CSGO赛事管理系统进行监管，根据系统所提供的相应信息，采取适当的措施，及时补救管理中的漏洞，提高在线CSGO赛事管理的工作效率，使得在线CSGO赛事管理变的更加系统和规范。</p>
+<h2 id="32系统可行性分析">3.2系统可行性分析</h2>
+<p>可行性分析是在进行初步调查之后，对系统开发的必要性和可行性的研究。针对本系统，主要从技术可行性，经济可行性，社会可行性，法律可行性等方面来论证，具体分析如下：</p>
+<p>技术可行性：当今社会人类的科技水平的不断发展，软件开发产业也在不断的壮大。目前，市面上流行的开发产品，已经能过满足不同行业的各种需要。</p>
+<p>经济可行性：在当今社会，计算机的性能已经有了很大的提升，价格也不断的下降。因此，并不需要对此程序投入过高的成本。并且，在程序投入使用之后，可以为管理人员带来极大的便捷，大大提高工作效率，减少人力浪费，避免许多不必要的工作和开支。</p>
+<p>社会可行性：管理者效率的增加，以及在管理过程中出现错误的可能性的大大减少，也是为了更好的发展铺平道路服务大众。这理应得到各界的一致认可。</p>
+<p>法律可行性：本系统绝不违反任何相关的法律法规。</p>
+<h2 id="33-系统现状分析">3.3 系统现状分析</h2>
+<p>系统使用用户的数量直接决定了用户信息管理者的工作量，毫无疑问，管理者的工作量较大较繁琐。通过总结出系统当前对用户管理的工作状态得以下分析：</p>
+<p>统筹规划，如果系统在信息化管理中不够全面，缺少综合性、系统性、整体性，那不可避免的需要投入大量人力物力来规划整理信息。引入信息化管理方式无疑可以达到节省信息管理成本的目的不仅减少资源浪费还可以使CSGO赛事信息变得井井有条，成为市场竞争中的一大优势。</p>
+<p>要循序渐进，做事不能心急，一步一个脚印，都不可能一步到位，就算信息管理系统也一样，要让系统发挥最大效率还是应该多调研，多听取用户和管理者的意见，并进行必要的统筹规划，有组织有目的地设计系统功能，团结各个部门发挥主观能动性。</p>
+<p>(1)信息安全措施不到位</p>
+<p>隐私权神圣不可侵犯，这是中华人民共和国宪法赋予我们的权利，任何人都不能侵犯我们的正当权益，而网络用户信息管理存在极大安全隐患，信息泄露的案列不在少数，加强信息安全措施是完善网络信息管理过程中不可避免的一环。</p>
+<p><code> </code>(2)资源不能充分共享</p>
+<p>资源共享是网络的一大特点，没有共享就没有社交，网络也就失去了他应有的魅力，如果能够实现用户信息共享，无疑对于用户的发展存在不可或缺的帮助。</p>
+<p>(3)现有系统可扩展性不高。</p>
+<p>如今科学技术发展飞速，随着而来的就是技术更新，那势必会给软件更新带来挑战，因此，系统必须具备良好的开放性和可扩充性，为了不落后于时代，这是必备特色之一。</p>
+<p>基于上述分析，在线CSGO赛事管理系统应该切合实际，做到确实有效，集体表现为：一是系统能够整理并集合归类用户信息，防止用户信息混乱，难以整理；二是系统要安全稳定，不能泄露用户信息，造成隐私泄露，不仅伤害用户利益更是对经营者名誉的损毁；三是系统要具有良好的开放性，不仅要方便定期的维护维修，更要方便及时增加新功能，保证先进的时代契合性。经过详细的讨论论证，确定系统的总体要求。</p>
+<h2 id="34-性能需求分析">3.4 性能需求分析</h2>
+<p>对系统的性能，从（功能、运行、界面、安全）等方面进行，下面我们逐一进行分析；</p>
+<p>\1. 系统的功能是否完整进行分析：系统的功能，能对应设计出原始代码和算法，以表格同文字的形式进行详细介绍个人信息保证功能完整；</p>
+<p>\2. 系统的运行是否通畅进行分析：系统的每个功能都有编写数据的关系和应对的代码，通过需求分析和可行性分析进行分析和显示系统的物理数据，保证其进行通畅；</p>
+<p>\3. 系统的界面设计进行分析：对系统中的软件进行处理与分析的方式是由不同代码来进行的；从而使界面容易操作。</p>
+<p>\4. 系统的安全性进行分析：这样才可以每个角色的不同对应的信息也就不同，在登录系统务必使用自己的账号，密码登录，账号与密码错误自然就登录失败了。登录成功可以对自己的信息进行操作，不能对别人的账号的信息进行查看等操作，这样自然保证系统的安全性。</p>
+<h2 id="35系统流程分析">3.5系统流程分析</h2>
+<h3 id="351操作流程">3.5.1操作流程</h3>
+<p>系统登录流程图，如图所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600stringboot/0687springboot/blog.011.png"
+        data-srcset="/images/0600stringboot/0687springboot/blog.011.png, /images/0600stringboot/0687springboot/blog.011.png 1.5x, /images/0600stringboot/0687springboot/blog.011.png 2x"
+        data-sizes="auto"
+        alt="/images/0600stringboot/0687springboot/blog.011.png"
+        title="/images/0600stringboot/0687springboot/blog.011.png" /></p>
+<p>图3-1登录流程图</p>
+<h3 id="352添加信息流程">3.5.2添加信息流程</h3>
+<p>添加信息流程图，如图所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600stringboot/0687springboot/blog.012.png"
+        data-srcset="/images/0600stringboot/0687springboot/blog.012.png, /images/0600stringboot/0687springboot/blog.012.png 1.5x, /images/0600stringboot/0687springboot/blog.012.png 2x"
+        data-sizes="auto"
+        alt="/images/0600stringboot/0687springboot/blog.012.png"
+        title="/images/0600stringboot/0687springboot/blog.012.png" /></p>
+<p>图3-2添加信息流程图</p>
+<h3 id="353删除信息流程">3.5.3删除信息流程</h3>
+<p>删除信息流程图，如图所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600stringboot/0687springboot/blog.013.png"
+        data-srcset="/images/0600stringboot/0687springboot/blog.013.png, /images/0600stringboot/0687springboot/blog.013.png 1.5x, /images/0600stringboot/0687springboot/blog.013.png 2x"
+        data-sizes="auto"
+        alt="/images/0600stringboot/0687springboot/blog.013.png"
+        title="/images/0600stringboot/0687springboot/blog.013.png" /></p>
+<p>图3-3删除信息流程图</p>
+<h1 id="4系统总体设计">4系统总体设计</h1>
+<h2 id="41系统结构">4.1系统结构</h2>
+<p>CSGO赛事管理系统，它是一个由人、电脑及其他组件构成的，一种能够收集、存储、加工、传送信息的系统。该系统可以帮助决策者找出当前急需解决的问题，然后将信息快速的反馈，使管理人员能够以最快的时间知道目前的现状，进行更进一步的计划。</p>
+<p>当前MIS系统结构目前存在两种较为流行的结构:C/S和B/S两种。</p>
+<p>C/S结构的系统：C/S结构就是客户机服务器结构，它可以法派任务到Client端和Server端来进行，充分利用两端硬件环境的优势，来降低系统的通讯的花费。客户端主要作用是处理人机交互，执行客户端应用程序，收集数据以及向服务器发送任务请求。服务器基本作用是执行后台程序，它主要对客户机的请求申请进行反馈，除此之外，它的作用还包括：数据库存储系统的共享管理、通讯管理、文件管理等等。</p>
+<p>B/S结构的系统：这种网络结构简化了客户端，并把系统功能实现的中心集中到服务器上，在这种模式中，只需要一个浏览器就可以了。这种结构将很多的工作交于WEB服务器，只通过浏览器请求WEB服务，随后根据请求返回信息。</p>
+<p>通常在只在企业网内部使用，采用C/S。而使用不仅限于内网的情况下使用B/S。考虑到本管理系统的一系列需求，所以，该系统开发使用B/S结构开发。其主要功能结构如下图所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600stringboot/0687springboot/blog.014.png"
+        data-srcset="/images/0600stringboot/0687springboot/blog.014.png, /images/0600stringboot/0687springboot/blog.014.png 1.5x, /images/0600stringboot/0687springboot/blog.014.png 2x"
+        data-sizes="auto"
+        alt="/images/0600stringboot/0687springboot/blog.014.png"
+        title="/images/0600stringboot/0687springboot/blog.014.png" /></p>
+<p>图4-1 系统总体功能结构图</p>
+<h2 id="42数据库设计">4.2数据库设计</h2>
+<p>数据库设计是指为系统提供最优化的数据库模式，使得应用程序能够有效的存储数据，满足用户的各类需求。</p>
+<h3 id="421-数据库概念结构设计">4.2.1 数据库概念结构设计</h3>
+<p>概念结构设计是根据用户需求形成的。用最常的E-R方法描述数据模型进行数据库的概念设计，首先设计局部的E-R模式，最后各局部ER模式综合成一个全局模式。然后再把概念模式转换成逻辑模式。将概念设计从设计过程中独立开来，设计复杂程度降低，不受特定DBMS的限制。</p>
+<p>1.所有实体和属性的定义如下所示。</p>
+<p>参赛战队管理属性图如下图4-2所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600stringboot/0687springboot/blog.015.png"
+        data-srcset="/images/0600stringboot/0687springboot/blog.015.png, /images/0600stringboot/0687springboot/blog.015.png 1.5x, /images/0600stringboot/0687springboot/blog.015.png 2x"
+        data-sizes="auto"
+        alt="/images/0600stringboot/0687springboot/blog.015.png"
+        title="/images/0600stringboot/0687springboot/blog.015.png" /></p>
+<p>图4-2参赛战队管理实体属性图</p>
+<p>赛事信息管理实体属性图，如图4-3所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600stringboot/0687springboot/blog.016.png"
+        data-srcset="/images/0600stringboot/0687springboot/blog.016.png, /images/0600stringboot/0687springboot/blog.016.png 1.5x, /images/0600stringboot/0687springboot/blog.016.png 2x"
+        data-sizes="auto"
+        alt="/images/0600stringboot/0687springboot/blog.016.png"
+        title="/images/0600stringboot/0687springboot/blog.016.png" />图4-3赛事信息管理实体属性图</p>
+<h3 id="422数据库逻辑结构设计">4.2.2数据库逻辑结构设计</h3>
+<p>根据E-R得出数据库包涵了以下几张数据表来实现了对数据库的存储、调用。以下分别列出数据表的每个字段名、数据类型、主外键及备注。</p>
+<p>表4-1：申请合作</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名称</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">字段说明</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">主键</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">CURRENT_TIMESTAMP</td>
+</tr>
+<tr>
+<td style="text-align:center">saishimingcheng</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">赛事名称</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">saishitubiao</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">赛事图标</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">jubandi</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">举办地</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">gongsizhanghao</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">公司账号</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">gongsimingcheng</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">公司名称</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">cehuashu</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">策划书</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">hetong</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">合同</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">sfsh</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">是否审核</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">shhf</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">4294967295</td>
+<td style="text-align:center">审核回复</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>表4-2：赛事信息</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名称</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">字段说明</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">主键</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">CURRENT_TIMESTAMP</td>
+</tr>
+<tr>
+<td style="text-align:center">saishimingcheng</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">赛事名称</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">saishitubiao</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">赛事图标</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">saishijieduan</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">赛事阶段</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">jubandi</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">举办地</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">kaishiriqi</td>
+<td style="text-align:center">date</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">开始日期</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">jieshuriqi</td>
+<td style="text-align:center">date</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">结束日期</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">baomingzhuangtai</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">报名状态</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">clicktime</td>
+<td style="text-align:center">datetime</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">最近点击时间</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>表4-3：赛事报名</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名称</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">字段说明</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">主键</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">CURRENT_TIMESTAMP</td>
+</tr>
+<tr>
+<td style="text-align:center">saishimingcheng</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">赛事名称</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">saishitubiao</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">赛事图标</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">jubandi</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">举办地</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">cansaizhanghao</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">参赛账号</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">zhanduimingcheng</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">战队名称</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">baomingriqi</td>
+<td style="text-align:center">date</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">报名日期</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">sfsh</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">是否审核</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">shhf</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">4294967295</td>
+<td style="text-align:center">审核回复</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>表4-4：赛事通知</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名称</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">字段说明</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">主键</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">CURRENT_TIMESTAMP</td>
+</tr>
+<tr>
+<td style="text-align:center">title</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">标题</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">introduction</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">4294967295</td>
+<td style="text-align:center">简介</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">picture</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">图片</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">content</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">4294967295</td>
+<td style="text-align:center">内容</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>表4-5：合作方</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名称</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">字段说明</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">主键</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">CURRENT_TIMESTAMP</td>
+</tr>
+<tr>
+<td style="text-align:center">gongsizhanghao</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">公司账号</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">mima</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">密码</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">gongsimingcheng</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">公司名称</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">yingyezhizhao</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">营业执照</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">fuzeren</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">负责人</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">shoujihaoma</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">手机号码</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">youxiang</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">邮箱</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">suoshuguojia</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">所属国家</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">sfsh</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">是否审核</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">shhf</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">4294967295</td>
+<td style="text-align:center">审核回复</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>表4-6：配置文件</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名称</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">字段说明</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">主键</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">name</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">配置参数名称</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">value</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">配置参数值</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>表4-7：参赛战队</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名称</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">字段说明</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">主键</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">CURRENT_TIMESTAMP</td>
+</tr>
+<tr>
+<td style="text-align:center">cansaizhanghao</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">参赛账号</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">mima</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">密码</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">zhanduimingcheng</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">战队名称</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">touxiang</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">头像</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">lianxifangshi</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">联系方式</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">youxiang</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">邮箱</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">suoshuguojia</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">所属国家</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>表4-8：用户表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名称</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">字段说明</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">主键</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">username</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">用户名</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">password</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">密码</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">role</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">角色</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">管理员</td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">新增时间</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">CURRENT_TIMESTAMP</td>
+</tr>
+</tbody>
+</table>
+<p>表4-9：token表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名称</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">字段说明</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">主键</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">userid</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">用户id</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">username</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">用户名</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">tablename</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">表名</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">role</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">角色</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">token</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">密码</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">新增时间</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">CURRENT_TIMESTAMP</td>
+</tr>
+<tr>
+<td style="text-align:center">expiratedtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">过期时间</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">CURRENT_TIMESTAMP</td>
+</tr>
+</tbody>
+</table>
+<h1 id="5-系统详细设计">5 系统详细设计</h1>
+<h2 id="51系统功能模块">5.1系统功能模块</h2>
+<p>CSGO赛事管理系统，在系统首页可以查看首页，赛事信息，赛事通知，个人中心，后台管理等内容，并进行详细操作；如图5-1所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600stringboot/0687springboot/blog.017.png"
+        data-srcset="/images/0600stringboot/0687springboot/blog.017.png, /images/0600stringboot/0687springboot/blog.017.png 1.5x, /images/0600stringboot/0687springboot/blog.017.png 2x"
+        data-sizes="auto"
+        alt="/images/0600stringboot/0687springboot/blog.017.png"
+        title="/images/0600stringboot/0687springboot/blog.017.png" /></p>
+<p>图5-1系统首页界面图</p>
+<p>赛事信息，在赛事信息页面可以查看赛事名称，赛事图标，举办地，开始日期，结束日期，报名状态等内容；如图5-2所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600stringboot/0687springboot/blog.018.png"
+        data-srcset="/images/0600stringboot/0687springboot/blog.018.png, /images/0600stringboot/0687springboot/blog.018.png 1.5x, /images/0600stringboot/0687springboot/blog.018.png 2x"
+        data-sizes="auto"
+        alt="/images/0600stringboot/0687springboot/blog.018.png"
+        title="/images/0600stringboot/0687springboot/blog.018.png" /></p>
+<p>图5-2赛事信息界面图</p>
+<p>赛事通知，在赛事通知页面通过填写标题信息，并进行搜索操作，如图5-3所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600stringboot/0687springboot/blog.019.png"
+        data-srcset="/images/0600stringboot/0687springboot/blog.019.png, /images/0600stringboot/0687springboot/blog.019.png 1.5x, /images/0600stringboot/0687springboot/blog.019.png 2x"
+        data-sizes="auto"
+        alt="/images/0600stringboot/0687springboot/blog.019.png"
+        title="/images/0600stringboot/0687springboot/blog.019.png" /></p>
+<p>图5-3赛事通知界面图</p>
+<p>参赛战队注册，在注册页面通过填写参赛账号，密码，确认密码，战队名称，联系方式，邮箱，所属国家等内容进行注册；如图5-4所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600stringboot/0687springboot/blog.020.png"
+        data-srcset="/images/0600stringboot/0687springboot/blog.020.png, /images/0600stringboot/0687springboot/blog.020.png 1.5x, /images/0600stringboot/0687springboot/blog.020.png 2x"
+        data-sizes="auto"
+        alt="/images/0600stringboot/0687springboot/blog.020.png"
+        title="/images/0600stringboot/0687springboot/blog.020.png" /></p>
+<p>图5-4个参赛战队注册界面图</p>
+<h2 id="52管理员功能模块">5.2管理员功能模块</h2>
+<p>管理员登录，管理员进入系统前在登录页面根据要求填写用户名和密码，选择角色等信息，点击登录进行登录操作，如图5-5所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600stringboot/0687springboot/blog.021.png"
+        data-srcset="/images/0600stringboot/0687springboot/blog.021.png, /images/0600stringboot/0687springboot/blog.021.png 1.5x, /images/0600stringboot/0687springboot/blog.021.png 2x"
+        data-sizes="auto"
+        alt="/images/0600stringboot/0687springboot/blog.021.png"
+        title="/images/0600stringboot/0687springboot/blog.021.png" /></p>
+<p>图5-5管理员登录界面图</p>
+<p>管理员登录系统后，可以对首页，个人中心，参赛战队管理，合作方管理，赛事信息管理，申请合作管理，赛事报名管理，系统管理等功能进行相应的操作管理，如图5-6所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600stringboot/0687springboot/blog.022.png"
+        data-srcset="/images/0600stringboot/0687springboot/blog.022.png, /images/0600stringboot/0687springboot/blog.022.png 1.5x, /images/0600stringboot/0687springboot/blog.022.png 2x"
+        data-sizes="auto"
+        alt="/images/0600stringboot/0687springboot/blog.022.png"
+        title="/images/0600stringboot/0687springboot/blog.022.png" /></p>
+<p>图5-6管理员功能界面图</p>
+<p>参赛战队管理，在参赛战队管理页面可以对索引，参赛账号，战队名称，头像，联系方式，邮箱，所属国家等内容进行修改和删除等操作，如图5-7所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600stringboot/0687springboot/blog.023.png"
+        data-srcset="/images/0600stringboot/0687springboot/blog.023.png, /images/0600stringboot/0687springboot/blog.023.png 1.5x, /images/0600stringboot/0687springboot/blog.023.png 2x"
+        data-sizes="auto"
+        alt="/images/0600stringboot/0687springboot/blog.023.png"
+        title="/images/0600stringboot/0687springboot/blog.023.png" /></p>
+<p>图5-7参赛战队管理界面图</p>
+<p>合作方管理，在合作方页面可以对索引，公司账号，公司名称，营业执照，负责人，手机号码，邮箱，所属国家，审核回复，审核状态，审核等内容进行详情，修改和删除等操作，如图5-8所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600stringboot/0687springboot/blog.024.png"
+        data-srcset="/images/0600stringboot/0687springboot/blog.024.png, /images/0600stringboot/0687springboot/blog.024.png 1.5x, /images/0600stringboot/0687springboot/blog.024.png 2x"
+        data-sizes="auto"
+        alt="/images/0600stringboot/0687springboot/blog.024.png"
+        title="/images/0600stringboot/0687springboot/blog.024.png" /></p>
+<p>图5-8合作方管理界面图</p>
+<p>赛事信息管理，在赛事信息管理页面可以对索引，赛事名称，赛事图标，赛事阶段，举办地，开始日期，结束日期，报名状态等内容进行详情，修改和删除等操作，如图5-9所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600stringboot/0687springboot/blog.025.png"
+        data-srcset="/images/0600stringboot/0687springboot/blog.025.png, /images/0600stringboot/0687springboot/blog.025.png 1.5x, /images/0600stringboot/0687springboot/blog.025.png 2x"
+        data-sizes="auto"
+        alt="/images/0600stringboot/0687springboot/blog.025.png"
+        title="/images/0600stringboot/0687springboot/blog.025.png" /></p>
+<p>图5-9赛事信息管理界面图</p>
+<p>申请合作管理，在申请合作页面可以对索引，赛事名称，赛事图标，举办地，公司账号，公司名称，策划书，合同，审核回复，审核状态，审核内容进行详情，修改和删除等操作；如图5-10所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600stringboot/0687springboot/blog.022.png"
+        data-srcset="/images/0600stringboot/0687springboot/blog.022.png, /images/0600stringboot/0687springboot/blog.022.png 1.5x, /images/0600stringboot/0687springboot/blog.022.png 2x"
+        data-sizes="auto"
+        alt="/images/0600stringboot/0687springboot/blog.022.png"
+        title="/images/0600stringboot/0687springboot/blog.022.png" /></p>
+<p>图5-10申请合作管理界面图</p>
+<p>赛事报名管理，在赛事报名页面可以对索引，赛事名称，赛事图标，举办地，赛事账号，战队名称，报名日期，审核回复，审核状态，审核等内容进行详情，修改和删除等操作；如图5-11所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600stringboot/0687springboot/blog.026.png"
+        data-srcset="/images/0600stringboot/0687springboot/blog.026.png, /images/0600stringboot/0687springboot/blog.026.png 1.5x, /images/0600stringboot/0687springboot/blog.026.png 2x"
+        data-sizes="auto"
+        alt="/images/0600stringboot/0687springboot/blog.026.png"
+        title="/images/0600stringboot/0687springboot/blog.026.png" /></p>
+<p>图5-11赛事报名管理界面图</p>
+<p>系统管理，在赛事通知页面可以对索引，标题，图片等内容进行详情，修改和删除等操作；还可以对轮播图管理进行详细操作；如图5-12所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600stringboot/0687springboot/blog.027.png"
+        data-srcset="/images/0600stringboot/0687springboot/blog.027.png, /images/0600stringboot/0687springboot/blog.027.png 1.5x, /images/0600stringboot/0687springboot/blog.027.png 2x"
+        data-sizes="auto"
+        alt="/images/0600stringboot/0687springboot/blog.027.png"
+        title="/images/0600stringboot/0687springboot/blog.027.png" /></p>
+<p>图5-12系统管理界面图</p>
+<h2 id="53参赛战队功能模块">5.3参赛战队功能模块</h2>
+<p>参赛战队登录系统后，可以对首页，个人中心，赛事信息管理，赛事报名管理等功能进行相应的操作管理，如图5-13所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600stringboot/0687springboot/blog.028.png"
+        data-srcset="/images/0600stringboot/0687springboot/blog.028.png, /images/0600stringboot/0687springboot/blog.028.png 1.5x, /images/0600stringboot/0687springboot/blog.028.png 2x"
+        data-sizes="auto"
+        alt="/images/0600stringboot/0687springboot/blog.028.png"
+        title="/images/0600stringboot/0687springboot/blog.028.png" /></p>
+<p>图5-13参赛战队功能界面图</p>
+<h2 id="54合作方功能模块">5.4合作方功能模块</h2>
+<p>合作方登录系统后，可以对首页，个人中心，赛事信息管理，申请合作管理等功能进行相应的操作管理，如图5-14所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600stringboot/0687springboot/blog.029.png"
+        data-srcset="/images/0600stringboot/0687springboot/blog.029.png, /images/0600stringboot/0687springboot/blog.029.png 1.5x, /images/0600stringboot/0687springboot/blog.029.png 2x"
+        data-sizes="auto"
+        alt="/images/0600stringboot/0687springboot/blog.029.png"
+        title="/images/0600stringboot/0687springboot/blog.029.png" /></p>
+<p>图5-14合作方功能界面图</p>
+<h1 id="heading"></h1>
+<h1 id="系统">系统</h1>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2024-05-29</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/0687springbootcsgo%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F--%E8%AE%BA%E6%96%87/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://chenqi199.github.io/0687springbootcsgo%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F--%E8%AE%BA%E6%96%87/" data-title="0687springbootCSGO赛事管理系统--论文" data-hashtags="springboot,java,vue,论文,项目"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://chenqi199.github.io/0687springbootcsgo%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F--%E8%AE%BA%E6%96%87/" data-hashtag="springboot"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://chenqi199.github.io/0687springbootcsgo%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F--%E8%AE%BA%E6%96%87/" data-title="0687springbootCSGO赛事管理系统--论文"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://chenqi199.github.io/0687springbootcsgo%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F--%E8%AE%BA%E6%96%87/" data-title="0687springbootCSGO赛事管理系统--论文"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://chenqi199.github.io/0687springbootcsgo%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F--%E8%AE%BA%E6%96%87/" data-title="0687springbootCSGO赛事管理系统--论文" data-ralateuid="https://gitee.com/chen_q_i"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/springboot/">Springboot</a>,&nbsp;<a href="/tags/java/">Java</a>,&nbsp;<a href="/tags/vue/">Vue</a>,&nbsp;<a href="/tags/%E8%AE%BA%E6%96%87/">论文</a>,&nbsp;<a href="/tags/%E9%A1%B9%E7%9B%AE/">项目</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/0688springboot%E6%BC%AB%E7%94%BB%E7%BD%91%E7%AB%99--%E8%AE%BA%E6%96%87/" class="prev" rel="prev" title="0688springboot漫画网站--论文"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>0688springboot漫画网站--论文</a>
+            <a href="/0686springboot%E5%9F%BA%E4%BA%8Espring-boot%E7%9A%84%E5%9C%A8%E7%BA%BF%E8%80%83%E8%AF%95%E7%B3%BB%E7%BB%9F--%E8%AE%BA%E6%96%87/" class="next" rel="next" title="0686springboot基于Spring Boot的在线考试系统--论文">0686springboot基于Spring Boot的在线考试系统--论文<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.128.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="chenqi199" target="_blank">chenqi</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

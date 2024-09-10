@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer" />
+        <meta name="robots" content="noodp" />
+        <title>0772springboot商务安全邮箱邮件收发 - chenqi blog</title><meta name="Description" content="Hugo theme - chenqi"><meta property="og:url" content="https://chenqi199.github.io/0772springboot%E5%95%86%E5%8A%A1%E5%AE%89%E5%85%A8%E9%82%AE%E7%AE%B1%E9%82%AE%E4%BB%B6%E6%94%B6%E5%8F%91/">
+  <meta property="og:site_name" content="chenqi blog">
+  <meta property="og:title" content="0772springboot商务安全邮箱邮件收发">
+  <meta property="og:description" content="0772springboot商务安全邮箱邮件收发 项目清单 包安装运行 github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 课题背景 随着计算机网络的发展，人与">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-06-26T18:31:05+08:00">
+    <meta property="article:modified_time" content="2024-06-26T18:31:05+08:00">
+    <meta property="article:tag" content="Springboot">
+    <meta property="article:tag" content="Java">
+    <meta property="article:tag" content="Vue">
+    <meta property="article:tag" content="论文">
+    <meta property="article:tag" content="项目">
+    <meta property="og:image" content="https://chenqi199.github.io/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chenqi199.github.io/logo.png">
+  <meta name="twitter:title" content="0772springboot商务安全邮箱邮件收发">
+  <meta name="twitter:description" content="0772springboot商务安全邮箱邮件收发 项目清单 包安装运行 github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 课题背景 随着计算机网络的发展，人与">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chenqi199.github.io/0772springboot%E5%95%86%E5%8A%A1%E5%AE%89%E5%85%A8%E9%82%AE%E7%AE%B1%E9%82%AE%E4%BB%B6%E6%94%B6%E5%8F%91/" /><link rel="prev" href="https://chenqi199.github.io/0767springboot%E8%80%83%E7%A0%94%E8%B5%84%E8%AE%AF%E5%B9%B3%E5%8F%B0/" /><link rel="next" href="https://chenqi199.github.io/0771springboot%E6%B1%BD%E8%BD%A6%E7%A7%9F%E8%B5%81%E7%B3%BB%E7%BB%9F/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "0772springboot商务安全邮箱邮件收发",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chenqi199.github.io\/0772springboot%E5%95%86%E5%8A%A1%E5%AE%89%E5%85%A8%E9%82%AE%E7%AE%B1%E9%82%AE%E4%BB%B6%E6%94%B6%E5%8F%91\/"
+        },"image": ["https:\/\/chenqi199.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "springboot, java, vue, 论文, 项目","wordcount":  2296 ,
+        "url": "https:\/\/chenqi199.github.io\/0772springboot%E5%95%86%E5%8A%A1%E5%AE%89%E5%85%A8%E9%82%AE%E7%AE%B1%E9%82%AE%E4%BB%B6%E6%94%B6%E5%8F%91\/","datePublished": "2024-06-26T18:31:05+08:00","dateModified": "2024-06-26T18:31:05+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/chenqi199.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "chenqi"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/0772springboot%E5%95%86%E5%8A%A1%E5%AE%89%E5%85%A8%E9%82%AE%E7%AE%B1%E9%82%AE%E4%BB%B6%E6%94%B6%E5%8F%91/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/0772springboot%E5%95%86%E5%8A%A1%E5%AE%89%E5%85%A8%E9%82%AE%E7%AE%B1%E9%82%AE%E4%BB%B6%E6%94%B6%E5%8F%91/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">0772springboot商务安全邮箱邮件收发</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="chenqi199" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>chenqi</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-06-26">2024-06-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 2296 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 5 分钟&nbsp;<span id="/0772springboot%E5%95%86%E5%8A%A1%E5%AE%89%E5%85%A8%E9%82%AE%E7%AE%B1%E9%82%AE%E4%BB%B6%E6%94%B6%E5%8F%91/" class="leancloud_visitors" data-flag-title="0772springboot商务安全邮箱邮件收发">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">github 项目仓库</a> 开源仅有后端代码</a></li>
+        <li><a href="#点击播放视频-">点击播放视频 ▼</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#12-研究现状">1.2 研究现状</a></li>
+    <li><a href="#13-研究内容">1.3 研究内容</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#21业务分析">2.1业务分析</a></li>
+    <li><a href="#a-业务分析是在系统开发之前对系统未来使用情况的分析主要通过用例图来描述用例图要涵盖各种用户-角色对于复杂或关键的业务还可通过业务-流程图或协作图做进一步描述画出用例图为体现复杂工程建设包含的用例数不少于10个并加上详细的文字说明-b-图形描述后进行分析总结这些业务有哪些特点本课题将针对这些特点来开发系统">（A. 业务分析是在系统开发之前，对系统未来使用情况的分析，主要通过用例图来描述，用例图要涵盖各种用户 角色；对于复杂或关键的业务，还可通过业务 流程图或协作图做进一步描述。画出用例图（为体现复杂工程，建设包含的用例数不少于10个），并加上详细的文字说明； B. 图形描述后，进行分析总结：这些业务有哪些特点？本课题将针对这些特点来开发系统）</a></li>
+    <li><a href="#22需求分析">2.2需求分析</a>
+      <ul>
+        <li><a href="#221功能分析">2.2.1功能分析</a></li>
+        <li><a href="#经过业务分析进一步分析归纳出系统有哪些功能点即功能点分析给出功能点列表">（经过业务分析，进一步分析归纳出系统有哪些功能点，即功能点分析，给出功能点列表）</a></li>
+        <li><a href="#222性能分析">2.2.2性能分析</a></li>
+        <li><a href="#分析本系统的业务特点归纳出对性能的要求比如响应时间吞吐量并发数等">（分析本系统的业务特点，归纳出对性能的要求，比如响应时间、吞吐量，并发数&hellip;，等）</a></li>
+        <li><a href="#223安全性分析可选">2.2.3安全性分析（可选）</a></li>
+        <li><a href="#分析本系统的业务特点归纳出对安全性的要求比如防信息串改网络攻击等">（分析本系统的业务特点，归纳出对安全性的要求，比如防信息串改、网络攻击&hellip;，等）</a></li>
+        <li><a href="#224开发环境分析">2.2.4开发环境分析</a></li>
+        <li><a href="#a分析本课题属于哪种业务场景为此选择哪些开发工具b说明系统运行对硬件和系统软件的要求都有哪些">（A.分析本课题属于哪种业务场景？为此选择哪些开发工具？B.说明系统运行对硬件和系统软件的要求都有哪些？）</a></li>
+      </ul>
+    </li>
+    <li><a href="#23可行性分析">2.3可行性分析</a></li>
+    <li><a href="#说明本系统的经济可行性及技术可行性">（说明本系统的经济可行性及技术可行性。）</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#31-功能模块设计">3.1 功能模块设计</a></li>
+    <li><a href="#根据业务分析和功能点分析设计系统功能模块给出功能模块图并进行详细文字说明">（根据业务分析和功能点分析，设计系统功能模块，给出功能模块图，并进行详细文字说明。）</a></li>
+    <li><a href="#32-架构设计">3.2 架构设计</a></li>
+    <li><a href="#a说明本课题的业务场景或功能模块有哪些特点因而采用哪种技术架构或改进了哪种技术架构或自行设计了哪种技术架构--b画出系统技术架构图并进行详细文字说明">（A.说明本课题的业务场景或功能模块有哪些特点，因而采用哪种技术架构，或改进了哪种技术架构、或自行设计了哪种技术架构？  B.画出系统技术架构图,并进行详细文字说明）</a></li>
+    <li><a href="#33-数据库设计">3.3 数据库设计</a></li>
+    <li><a href="#画出e-r图给出相关数据库表设计并进行详细文字说明">（画出E-R图，给出相关数据库表设计，并进行详细文字说明）</a></li>
+    <li><a href="#34-接口设计">3.4 接口设计</a></li>
+    <li><a href="#a本系统与用户的交互接口或界面设计-b本系统与本机系统的接口设计如日志设计等c系统各模块之间调用接口设计-d数据库接口设计如采用jdbc接口或mybatis等上述abcd可根据实际课题情况进行取舍">（A.本系统与用户的交互接口或界面设计； B.本系统与本机系统的接口设计，如日志设计等；C.系统各模块之间调用接口设计； D.数据库接口设计：如采用JDBC接口或MyBatis等。上述A、B、C、D可根据实际课题情况进行取舍）</a></li>
+    <li><a href="#35-安全性设计可选">3.5 安全性设计（可选）</a></li>
+    <li><a href="#如随机数字验证码图形验证码手机验证码email验证码防sql注入等">（如随机数字验证码、图形验证码、手机验证码、email验证码、防SQL注入等）</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#41-对象设计">4.1 对象设计</a></li>
+    <li><a href="#针对分析归纳出的主要对象画出一个类图为体现复杂工程建设包含的类不少于10个并给出详细文字说明">（针对分析归纳出的主要对象画出一个类图，为体现复杂工程，建设包含的类不少于10个，并给出详细文字说明）</a></li>
+    <li><a href="#42-交互设计">4.2 交互设计</a></li>
+    <li><a href="#类之间的交互用交互图或协作图来描述建议交互图或协作图数量不少于5个并给出详细文字说明">（类之间的交互用交互图或协作图来描述，建议交互图或协作图数量不少于5个，并给出详细文字说明）</a></li>
+    <li><a href="#43-流程设计">4.3 流程设计</a></li>
+    <li><a href="#针对主要的模块或对象画出程序流程图或状态图有15个以上矩形框或判断框的程序流程图至少需要有5个并给出详细文字说明">（针对主要的模块或对象，画出程序流程图或状态图，有15个以上矩形框或判断框的程序流程图至少需要有5个，并给出详细文字说明）</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#51编程规范">5.1编程规范</a></li>
+    <li><a href="#说明遵循了哪些编程规范如驼峰命名法适当的注释等">（说明遵循了哪些编程规范，如驼峰命名法、适当的注释等）</a></li>
+    <li><a href="#52-配置管理可选">5.2 配置管理（可选）</a></li>
+    <li><a href="#说明在系统实现过程中是否采用了配置版本等代码管理">（说明在系统实现过程中是否采用了配置、版本等代码管理？）</a></li>
+    <li><a href="#53-功能实现">5.3 功能实现</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="0772springboot商务安全邮箱邮件收发httpsgithubcomgraduationproject-springboot0772springboot"><a href="https://github.com/GraduationProject-springboot/0772springboot" target="_blank" rel="noopener noreffer ">0772springboot商务安全邮箱邮件收发</a></h1>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        data-srcset="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 1.5x, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        title="picture" /></p>
+<h1 id="项目清单httpschenqi1990site-包安装运行"><a href="https://chenqi1990.site" target="_blank" rel="noopener noreffer ">项目清单</a> 包安装运行</h1>
+<h3 id="github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">github 项目仓库</a> 开源仅有后端代码</h3>
+<h3 id="点击播放视频-">点击播放视频 ▼</h3>
+<p><a href="https://www.bilibili.com/video/BV14HerezEwW?p=127" target="_blank" rel="noopener noreffer "><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.sstatic.net/Vp2cE.png"
+        data-srcset="https://i.sstatic.net/Vp2cE.png, https://i.sstatic.net/Vp2cE.png 1.5x, https://i.sstatic.net/Vp2cE.png 2x"
+        data-sizes="auto"
+        alt="https://i.sstatic.net/Vp2cE.png"
+        title="Watch the video" /></a></p>
+<h1 id="课题背景">课题背景</h1>
+<p>随着计算机网络的发展，人与人之间信息传输的时间大为缩短。许多文件都是以电子邮件的形式来传送；通常使用过计算机的人，或多或少都会用到Email来传输信息。通过电子邮件，人们可以进行文字、图片、视频、声音、数据文件等的传递。随着Internet网和WWW网的广泛普及，电子邮件的使用迅速增多起来。电子邮件的使用不仅在数量上有突飞猛进的发展，其重要性日益增加。据IDC（国际文献资料中心）统计，目前全球电子邮箱总数已超过5亿。而据CNNIC（中国互联网络信息中心）的最新调查，中国网络用户拥有E-mail帐号的平均值为2.6个，用户平均每周收到电子邮件数为12.9封，发出电子邮件数为8.2封。这说明电子邮件已不只是电话的替代品，它可以而且已经在广泛地应用着。当然，电子邮件也为人们带来了不利的一面。由于其接收发送电子邮件很少受到限制，造成电脑病毒、大量的垃圾邮件盛行，甚至个人隐私及安全受到了严重的威胁。但是，电子邮件作为当今社会主要的信息传播载体，发展趋势不会因此而停止。</p>
+<h2 id="12-研究现状">1.2 研究现状</h2>
+<p>邮件系统的核心部分是数据库，包括元数据MD（meta data）和用户数据UD（userdata）部分。一般在系统结构上将MD和UD服务器置于局域网，从物理结构上断绝了与外部的直接联系。内网用户发送的认证请求，由接收服务器（如webserver 或POP3 server）代理，通过内网专有协议访问用户数据库，确保操作安全可靠。内外网分开的结构也同时减轻了网络流量负担。</p>
+<p>邮箱的用户模块应队对应相应的监护过程。若某一服务处理模块出现故障，与之通信的模块会自动停止数据传送，防止由于反复的连接尝试造成此服务模块的性能下降，保证系统其他模块的正常运作，不会因为故障服务模块产生连锁反应，这样可以正常的同步安全监护信息；同样若某服务程序模块因故障下线，由于模块具有服务监视功能，将会自动重起服务，并保存服务运行日志，方便管理员查阅，增强系统运行的可靠性。</p>
+<p>固定的通信端口是主机安全运行的隐患，不法分子向通信端口发送大量非法数据，致使服务瘫痪。所以，支持隐蔽重要的服务端口、及时修改端口号、设置端口访问限制、主要系统内部服务通信协议自行开发设计、设计邮件系统的核心进程由非超级用户权限运行等措施，是邮件系统确保安全的手段。</p>
+<h2 id="13-研究内容">1.3 研究内容</h2>
+<p>本课题研究的是安全商务邮箱，应用于一个局域网的商务集体，为了防止数据库的安全问题发生，取消了邮箱的注册功能，取而代之的是超级管理员，超级管理员拥有监护邮箱系统和增删用户的权限，本系统仅供商务内部使用，这样便于监视，同时为了防止外部的邮件攻击，采用了朴素贝叶斯安全算法，通过计算风险邮件的几率将垃圾邮件攻击置于服务器之外。</p>
+<h1 id="二系统分析">二、系统分析</h1>
+<h2 id="21业务分析">2.1业务分析</h2>
+<p>普通用户用例图</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0772springboot/blog.003.png"
+        data-srcset="/images/0700stringboot/0772springboot/blog.003.png, /images/0700stringboot/0772springboot/blog.003.png 1.5x, /images/0700stringboot/0772springboot/blog.003.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0772springboot/blog.003.png"
+        title="/images/0700stringboot/0772springboot/blog.003.png" /></p>
+<p>用户1用例图</p>
+<p><figure><a class="lightgallery" href="/images/0700stringboot/0772springboot/blog.004.jpeg" title="C:\Users\17977\Documents\Tencent Files\1648448894\Image\C2C{BC8B49A1-E14F-BF51-ECB1-474C97EE4BD8}.jpg" data-thumbnail="/images/0700stringboot/0772springboot/blog.004.jpeg" data-sub-html="<h2>C:\Users\17977\Documents\Tencent Files\1648448894\Image\C2C\{BC8B49A1-E14F-BF51-ECB1-474C97EE4BD8}.jpg</h2><p>C:\Users\17977\Documents\Tencent Files\1648448894\Image\C2C{BC8B49A1-E14F-BF51-ECB1-474C97EE4BD8}.jpg</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/0700stringboot/0772springboot/blog.004.jpeg"
+            data-srcset="/images/0700stringboot/0772springboot/blog.004.jpeg, /images/0700stringboot/0772springboot/blog.004.jpeg 1.5x, /images/0700stringboot/0772springboot/blog.004.jpeg 2x"
+            data-sizes="auto"
+            alt="/images/0700stringboot/0772springboot/blog.004.jpeg" />
+    </a><figcaption class="image-caption">C:\Users\17977\Documents\Tencent Files\1648448894\Image\C2C\{BC8B49A1-E14F-BF51-ECB1-474C97EE4BD8}.jpg</figcaption>
+    </figure></p>
+<p>管理员用例图</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0772springboot/blog.005.png"
+        data-srcset="/images/0700stringboot/0772springboot/blog.005.png, /images/0700stringboot/0772springboot/blog.005.png 1.5x, /images/0700stringboot/0772springboot/blog.005.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0772springboot/blog.005.png"
+        title="/images/0700stringboot/0772springboot/blog.005.png" /></p>
+<h2 id="a-业务分析是在系统开发之前对系统未来使用情况的分析主要通过用例图来描述用例图要涵盖各种用户-角色对于复杂或关键的业务还可通过业务-流程图或协作图做进一步描述画出用例图为体现复杂工程建设包含的用例数不少于10个并加上详细的文字说明-b-图形描述后进行分析总结这些业务有哪些特点本课题将针对这些特点来开发系统">（A. 业务分析是在系统开发之前，对系统未来使用情况的分析，主要通过用例图来描述，用例图要涵盖各种用户 角色；对于复杂或关键的业务，还可通过业务 流程图或协作图做进一步描述。画出用例图（为体现复杂工程，建设包含的用例数不少于10个），并加上详细的文字说明； B. 图形描述后，进行分析总结：这些业务有哪些特点？本课题将针对这些特点来开发系统）</h2>
+<h2 id="22需求分析">2.2需求分析</h2>
+<h3 id="221功能分析">2.2.1功能分析</h3>
+<h3 id="经过业务分析进一步分析归纳出系统有哪些功能点即功能点分析给出功能点列表">（经过业务分析，进一步分析归纳出系统有哪些功能点，即功能点分析，给出功能点列表）</h3>
+<h3 id="222性能分析">2.2.2性能分析</h3>
+<h3 id="分析本系统的业务特点归纳出对性能的要求比如响应时间吞吐量并发数等">（分析本系统的业务特点，归纳出对性能的要求，比如响应时间、吞吐量，并发数&hellip;，等）</h3>
+<h3 id="223安全性分析可选">2.2.3安全性分析（可选）</h3>
+<h3 id="分析本系统的业务特点归纳出对安全性的要求比如防信息串改网络攻击等">（分析本系统的业务特点，归纳出对安全性的要求，比如防信息串改、网络攻击&hellip;，等）</h3>
+<h3 id="224开发环境分析">2.2.4开发环境分析</h3>
+<h3 id="a分析本课题属于哪种业务场景为此选择哪些开发工具b说明系统运行对硬件和系统软件的要求都有哪些">（A.分析本课题属于哪种业务场景？为此选择哪些开发工具？B.说明系统运行对硬件和系统软件的要求都有哪些？）</h3>
+<h2 id="23可行性分析">2.3可行性分析</h2>
+<h2 id="说明本系统的经济可行性及技术可行性">（说明本系统的经济可行性及技术可行性。）</h2>
+<ol start="3">
+<li>
+<h1 id="系统总体设计">系统总体设计</h1>
+</li>
+</ol>
+<h2 id="31-功能模块设计">3.1 功能模块设计</h2>
+<h2 id="根据业务分析和功能点分析设计系统功能模块给出功能模块图并进行详细文字说明">（根据业务分析和功能点分析，设计系统功能模块，给出功能模块图，并进行详细文字说明。）</h2>
+<h2 id="32-架构设计">3.2 架构设计</h2>
+<h2 id="a说明本课题的业务场景或功能模块有哪些特点因而采用哪种技术架构或改进了哪种技术架构或自行设计了哪种技术架构--b画出系统技术架构图并进行详细文字说明">（A.说明本课题的业务场景或功能模块有哪些特点，因而采用哪种技术架构，或改进了哪种技术架构、或自行设计了哪种技术架构？  B.画出系统技术架构图,并进行详细文字说明）</h2>
+<h2 id="33-数据库设计">3.3 数据库设计</h2>
+<h2 id="画出e-r图给出相关数据库表设计并进行详细文字说明">（画出E-R图，给出相关数据库表设计，并进行详细文字说明）</h2>
+<h2 id="34-接口设计">3.4 接口设计</h2>
+<h2 id="a本系统与用户的交互接口或界面设计-b本系统与本机系统的接口设计如日志设计等c系统各模块之间调用接口设计-d数据库接口设计如采用jdbc接口或mybatis等上述abcd可根据实际课题情况进行取舍">（A.本系统与用户的交互接口或界面设计； B.本系统与本机系统的接口设计，如日志设计等；C.系统各模块之间调用接口设计； D.数据库接口设计：如采用JDBC接口或MyBatis等。上述A、B、C、D可根据实际课题情况进行取舍）</h2>
+<h2 id="35-安全性设计可选">3.5 安全性设计（可选）</h2>
+<h2 id="如随机数字验证码图形验证码手机验证码email验证码防sql注入等">（如随机数字验证码、图形验证码、手机验证码、email验证码、防SQL注入等）</h2>
+<h1 id="四系统详细设计">四、系统详细设计</h1>
+<h2 id="41-对象设计">4.1 对象设计</h2>
+<h2 id="针对分析归纳出的主要对象画出一个类图为体现复杂工程建设包含的类不少于10个并给出详细文字说明">（针对分析归纳出的主要对象画出一个类图，为体现复杂工程，建设包含的类不少于10个，并给出详细文字说明）</h2>
+<h2 id="42-交互设计">4.2 交互设计</h2>
+<h2 id="类之间的交互用交互图或协作图来描述建议交互图或协作图数量不少于5个并给出详细文字说明">（类之间的交互用交互图或协作图来描述，建议交互图或协作图数量不少于5个，并给出详细文字说明）</h2>
+<h2 id="43-流程设计">4.3 流程设计</h2>
+<h2 id="针对主要的模块或对象画出程序流程图或状态图有15个以上矩形框或判断框的程序流程图至少需要有5个并给出详细文字说明">（针对主要的模块或对象，画出程序流程图或状态图，有15个以上矩形框或判断框的程序流程图至少需要有5个，并给出详细文字说明）</h2>
+<ol start="5">
+<li>
+<h1 id="系统实现">系统实现</h1>
+</li>
+</ol>
+<h2 id="51编程规范">5.1编程规范</h2>
+<h2 id="说明遵循了哪些编程规范如驼峰命名法适当的注释等">（说明遵循了哪些编程规范，如驼峰命名法、适当的注释等）</h2>
+<h2 id="52-配置管理可选">5.2 配置管理（可选）</h2>
+<h2 id="说明在系统实现过程中是否采用了配置版本等代码管理">（说明在系统实现过程中是否采用了配置、版本等代码管理？）</h2>
+<h2 id="53-功能实现">5.3 功能实现</h2>
+<p>（给出主要模块的实现截图，及其关键代码在附录中的编号（正文部分不放代码，关键代码都放到附录中，并给其编号），并给出详细文字说明）</p>
+<h1 id="系统测">系统测</h1>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2024-06-26</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/0772springboot%E5%95%86%E5%8A%A1%E5%AE%89%E5%85%A8%E9%82%AE%E7%AE%B1%E9%82%AE%E4%BB%B6%E6%94%B6%E5%8F%91/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://chenqi199.github.io/0772springboot%E5%95%86%E5%8A%A1%E5%AE%89%E5%85%A8%E9%82%AE%E7%AE%B1%E9%82%AE%E4%BB%B6%E6%94%B6%E5%8F%91/" data-title="0772springboot商务安全邮箱邮件收发" data-hashtags="springboot,java,vue,论文,项目"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://chenqi199.github.io/0772springboot%E5%95%86%E5%8A%A1%E5%AE%89%E5%85%A8%E9%82%AE%E7%AE%B1%E9%82%AE%E4%BB%B6%E6%94%B6%E5%8F%91/" data-hashtag="springboot"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://chenqi199.github.io/0772springboot%E5%95%86%E5%8A%A1%E5%AE%89%E5%85%A8%E9%82%AE%E7%AE%B1%E9%82%AE%E4%BB%B6%E6%94%B6%E5%8F%91/" data-title="0772springboot商务安全邮箱邮件收发"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://chenqi199.github.io/0772springboot%E5%95%86%E5%8A%A1%E5%AE%89%E5%85%A8%E9%82%AE%E7%AE%B1%E9%82%AE%E4%BB%B6%E6%94%B6%E5%8F%91/" data-title="0772springboot商务安全邮箱邮件收发"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://chenqi199.github.io/0772springboot%E5%95%86%E5%8A%A1%E5%AE%89%E5%85%A8%E9%82%AE%E7%AE%B1%E9%82%AE%E4%BB%B6%E6%94%B6%E5%8F%91/" data-title="0772springboot商务安全邮箱邮件收发" data-ralateuid="https://gitee.com/chen_q_i"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/springboot/">Springboot</a>,&nbsp;<a href="/tags/java/">Java</a>,&nbsp;<a href="/tags/vue/">Vue</a>,&nbsp;<a href="/tags/%E8%AE%BA%E6%96%87/">论文</a>,&nbsp;<a href="/tags/%E9%A1%B9%E7%9B%AE/">项目</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/0767springboot%E8%80%83%E7%A0%94%E8%B5%84%E8%AE%AF%E5%B9%B3%E5%8F%B0/" class="prev" rel="prev" title="0767springboot考研资讯平台"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>0767springboot考研资讯平台</a>
+            <a href="/0771springboot%E6%B1%BD%E8%BD%A6%E7%A7%9F%E8%B5%81%E7%B3%BB%E7%BB%9F/" class="next" rel="next" title="0771springboot汽车租赁系统">0771springboot汽车租赁系统<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.128.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="chenqi199" target="_blank">chenqi</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

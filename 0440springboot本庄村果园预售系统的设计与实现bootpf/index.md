@@ -3,193 +3,26 @@
 
 # [0440springboot本庄村果园预售系统的设计与实现bootpf](https://github.com/GraduationProject-springboot/0440springboot)
 
-### 微信： chen_q123456  qq:462201886
-### github:chenqi199
+![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-### [所有项目](https://github.com/GraduationProject-springboot/allSpringbootProjects) 包安装运行
+# [项目清单](https://chenqi1990.site) 包安装运行
 
-### [所有项目列表excel 腾讯文档 项目清单](https://docs.qq.com/sheet/DSHRFSVZ5aEVYT3N3?tab=BB08J2) 包安装运行
-
-### [github](https://chenqi199.github.io)
-
-
-
-
-
-
-
-
-# 0440springboot本庄村果园预售系统的设计与实现bootpf
+### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://player.bilibili.com/player.html?isOutside=true&aid=BV1ULbQeREgz&bvid=BV1ULbQeREgz&cid=500001616874385&p=40)
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=40)
 
-### [所有项目](https://github.com/GraduationProject-springboot/allSpringbootProjects) 包安装运行
-
-
-
-
-
-
-
-
-
-
-
-
-**毕 业 设 计（论 文）**
-
-题目：[本庄村果园预售系统的设计与实现]{.underline}
-
-# 摘 要
-
-如今社会上各行各业，都喜欢用自己行业的专属软件工作，互联网发展到这个时候，人们已经发现离不开了互联网。新技术的产生，往往能解决一些老技术的弊端问题。因为传统本庄村果园预售系统信息管理难度大，容错率低，管理人员处理数据费工费时，所以专门为解决这个难题开发了一个本庄村果园预售系统管理系统，可以解决许多问题。
-
-本庄村果园预售系统管理系统按照操作主体分为管理员和用户。管理员的功能包括收货地址管理、字典管理、论坛管理、公告管理、果树管理、果树收藏管理、果树订单管理、果园管理、果园留言管理、果园预约管理、水果资讯管理、水果预售管理、水果收藏管理、水果预售订单管理、用户管理、管理员管理。用户的功能包括管理部门以及部门岗位信息，管理果园信息，果树信息，水果信息等。该系统采用了Mysql数据库，Java语言，Spring
-Boot框架等技术进行编程实现。
-
-本庄村果园预售系统管理系统可以提高本庄村果园预售系统信息管理问题的解决效率，优化本庄村果园预售系统信息处理流程，保证本庄村果园预售系统信息数据的安全，它是一个非常可靠，非常安全的应用程序。
-
-**关键词：**本庄村果园预售系统管理系统；Mysql数据库；Java语言
-
-[]{#__RefHeading___Toc1923 .anchor}
-
-Nowadays, all walks of life in society like to work with their own
-industry-specific software. At this point in the development of the
-Internet, people have found that they cannot do without the Internet.
-The emergence of new technologies can often solve the drawbacks of some
-old technologies. Because the traditional personnel information
-management is difficult, the fault tolerance rate is low, and the
-management personnel is labor-intensive and time-consuming to process
-data, a personnel management system has been specially developed to
-solve this problem, which can solve many problems.
-
-The personnel management system is divided into administrators and users
-according to the operating subjects. The functions of the administrator
-include managing employees, managing personnel information, including
-recruitment management, training management, reward and punishment
-management, salary management, etc., and can manage operators. User
-functions include managing department and department position
-information, managing recruitment information, training information,
-salary information, etc. The system uses Mysql database, Java language,
-Spring Boot framework and other technologies for programming.
-
-The personnel management system can improve the efficiency of solving
-personnel information management problems, optimize the personnel
-information processing process, and ensure the security of personnel
-information data. It is a very reliable and very safe application.
-
-**Key Words：**Personnel management system; Mysql database; Java
-language
-
-[]{#__RefHeading___Toc305 .anchor}
-
-[摘 要 I](#摘-要)
-
-[Abstract II](#__RefHeading___Toc1923)
-
-[目 录 III](#__RefHeading___Toc305)
-
-[第1章 绪论 1](#第1章-绪论)
-
-[1.1 课题背景 1](#课题背景)
-
-[1.2 课题意义 1](#课题意义)
-
-[1.3 研究内容 1](#研究内容)
-
-[第2章 开发环境与技术 3](#第2章-开发环境与技术)
-
-[2.1 Java语言 3](#java语言)
-
-[2.2 MYSQL数据库 3](#mysql数据库)
-
-[2.3 IDEA开发工具 4](#idea开发工具)
-
-[2.4 Spring Boot框架 4](#spring-boot框架)
-
-[第3章 系统分析 5](#第3章-系统分析)
-
-[3.1 可行性分析 5](#可行性分析)
-
-[3.1.1 技术可行性 5](#技术可行性)
-
-[3.1.2 经济可行性 5](#经济可行性)
-
-[3.1.3 操作可行性 5](#操作可行性)
-
-[3.2 系统流程 5](#系统流程)
-
-[3.2.1 操作流程 6](#操作流程)
-
-[3.2.2 登录流程 6](#登录流程)
-
-[3.2.3 删除信息流程 7](#删除信息流程)
-
-[3.2.4 添加信息流程 7](#添加信息流程)
-
-[3.3 性能需求 8](#性能需求)
-
-[3.4 功能需求 9](#功能需求)
-
-[4.1 系统设计思想 10](#系统设计思想)
-
-[4.2 功能结构设计 11](#功能结构设计)
-
-[4.3 数据库设计 11](#数据库设计)
-
-[4.3.1 数据库概念设计 11](#数据库概念设计)
-
-[4.3.2 数据库物理设计 17](#数据库物理设计)
-
-[第5章 系统实现 21](#__RefHeading___Toc19485)
-
-[5.1 管理员功能实现 21](#管理员功能实现)
-
-[5.1.1 果园管理 21](#果园管理)
-
-[5.1.2 水果管理 22](#水果管理)
-
-[5.1.3 果树管理 22](#果树管理)
-
-[5.1.4 公告管理 23](#公告管理)
-
-[5.2 用户功能实现 23](#用户功能实现)
-
-[5.2.1 果园 23](#果园)
-
-[5.2.2 果树管理 24](#果树管理-1)
-
-[5.2.3 水果管理 24](#水果管理-1)
-
-[第6章 系统测试 26](#__RefHeading___Toc13032)
-
-[6.1 功能测试 26](#功能测试)
-
-[6.1.1 登录功能测试 26](#登录功能测试)
-
-[6.2 系统测试结果 26](#系统测试结果)
-
-[结 论 28](#结-论)
-
-[致 谢 30](#__RefHeading___Toc13430)
 
 # 第1章 绪论
-
 ## 1.1 课题背景
-
 二十一世纪互联网的出现，改变了几千年以来人们的生活，不仅仅是生活物资的丰富，还有精神层次的丰富。在互联网诞生之前，地域位置往往是人们思想上不可跨域的鸿沟，信息的传播速度极慢，信息处理的速度和要求还是通过人们骑马或者是信鸽传递，这些信息传递都是不可控制的，中间很有可能丢失，信息的传递水平决定了人们生活的水平。如今大家都在使用互联网软件产品，从内部管理设置计算机管理，提高内部信息化的管理水准，从外部市场也可以用计算机获取相关数据进行处理，如今各行各业已经严重依赖于计算机了。
 
 本课题研究和开发本庄村果园预售系统管理系统，让安装在计算机上的该系统变成管理人员的小帮手，提高本庄村果园预售系统信息处理速度，规范本庄村果园预售系统信息处理流程，让管理人员的产出效益更高。
-
 ## 1.2 课题意义
-
 传统处理数据，必须是一张张纸，然后处理完毕又是统计在一张张纸上面，不断的重复处理，最终有个结果给最高层作为参考，这个模式在互联网没有出现之前，是一种常见的事情，信息管理的效率提不上去，人多不一定力量大，因为人多肯定更加消耗资源，并且因为人类需要休息，需要管理，思想会不统一，会偷懒，所以人们研究出专门帮助人们计算的机器，就是计算机的前身，到了互联网时代，人们发现完全可以让程序供应商提供解决方案，自己挑选自己合适的方案来提高自己的产出比。所以在日常工作和生活中会发现各种各样方便人们的工具。
 
 本课题研发的本庄村果园预售系统管理系统，就是提供本庄村果园预售系统信息处理的解决方案，它可以短时间处理完信息，并且这些信息都有专门的存储设备，而且数据的备份和迁移都可以设定为无人值守，从人力角度和信息处理角度以及信息安全角度，本庄村果园预售系统管理系统是完胜传统纸质操作的。
-
 ## 1.3 研究内容
-
 本文对本庄村果园预售系统管理系统的设计与实现分成六个章节来说明。
 
 第1章：研究本庄村果园预售系统管理系统的背景，以及开发本庄村果园预售系统管理系统的意义。
@@ -203,92 +36,56 @@ language
 第5章：实现本庄村果园预售系统管理系统的功能并进行功能界面展示。
 
 第6章：对系统测试进行阐述，以及对本系统部分功能进行检测。
-
 # 第2章 开发环境与技术
-
 本章节对开发本庄村果园预售系统管理系统需要搭建的开发环境，还有本庄村果园预售系统管理系统开发中使用的编程技术等进行阐述。
-
-## 2.1 Java语言 
-
+## 2.1 Java语言  
 Java语言是当今为止依然在编程语言行业具有生命力的常青树之一。Java语言最原始的诞生，不仅仅是创造者感觉C语言在编程上面很麻烦，如果只是专注于业务逻辑的处理，会导致忽略了各种指针以及垃圾回收这些操作，导致出现问题需要解决的时间往往大于正常编程处理业务逻辑的时间，这些是非常浪费时间的。Java语言的创造者就考虑到如何避免这个问题，把指针处理和垃圾处理全部自动化，虽然这会损失一些性能，但是计算机硬件在性能上的发展速度是很快的，这些性能是可以忽略考虑的。并且C语言是针对硬件开发的语言，虽然执行效率高，但是随着硬件的变化或者操作系统的变更，就需要重新编写程序，造成重复劳动，只有解决重复性劳动的语言才算符合生存规律的语言。Java语言的创造者就针对C语言的缺点专门开发了Java语言。让Java语言不管是在什么样的环境里都是可以运行，因为在Java语言运行外面套了一个壳，也就是虚拟机，只要是Java虚拟机能安装的电脑都可以运行Java的程序。
-
 ## 2.2 MYSQL数据库
-
-MySQL数据库是一种数据存放方面的专业软件，也是传统的行式数据模式，获取一些数据是先一行一行的获取，然后一行一行的显示，与列式数据库不同。行式数据库主要是处理最重要的数据逻辑部分，并且必须是有效数据，这样每一处的数据关联都是不可损坏，对数据安全要求比较严格还是用MySQL数据库比较好。列式数据库的发明仅仅是因为读取效率高，但是也就仅仅如此罢了。MySQL虽然比起Oracle或者SQL
-Server来讲，安装包只是几十兆甚至几百兆，有点小，但是功能并不会弱到哪里，严格遵循SQL标准语法。MySQL的数据存放形式从大向小的说是数据库最大，然后是表，每个表里面存放数据是有一定的规则的，数据存放是表格形式的，也就是说有横也有竖，横着的为行，一般表示一条数据，表与表之间还可以进行关联，进行分表操作，如果一条数据相关项目属性太多，那么可以把有效的相关联系做成关联，可以设定是否唯一。
-
+MySQL数据库是一种数据存放方面的专业软件，也是传统的行式数据模式，获取一些数据是先一行一行的获取，然后一行一行的显示，与列式数据库不同。行式数据库主要是处理最重要的数据逻辑部分，并且必须是有效数据，这样每一处的数据关联都是不可损坏，对数据安全要求比较严格还是用MySQL数据库比较好。列式数据库的发明仅仅是因为读取效率高，但是也就仅仅如此罢了。MySQL虽然比起Oracle或者SQL Server来讲，安装包只是几十兆甚至几百兆，有点小，但是功能并不会弱到哪里，严格遵循SQL标准语法。MySQL的数据存放形式从大向小的说是数据库最大，然后是表，每个表里面存放数据是有一定的规则的，数据存放是表格形式的，也就是说有横也有竖，横着的为行，一般表示一条数据，表与表之间还可以进行关联，进行分表操作，如果一条数据相关项目属性太多，那么可以把有效的相关联系做成关联，可以设定是否唯一。
 ## 2.3 IDEA开发工具
-
 IDEA是捷克共和国的Java程序员开发人员创造的一个开发软件，刚开始主要是对于用Eclipse软件他们用得不顺手，所以直接开发了这款软件。之所以不顺手原因在于没有代码提升功能，原因是Eclipse只是把代码提示作为一种插件形式的存在，如果有些程序开发人员不清楚代码提示插件可能会出问题，并且代码提示只是用来作为插件，所以功能上有所欠缺。IDEA不仅仅代码提示做的很好，在代码重构上面更上如虎添翼，程序开发人员可以选择一段代码然后IDEA就会对代码进行分解重构，有效的把代码弄得更够层次感，复用性更高，用着更简洁和方便，大大的减少了代码工作量，提升了代码开发效率。当然，IDEA对于使用者这么好，肯定也是有目的的，原因在于插件越多越友好，就需要花费大量的金钱来使用，所以说IDEA使用主要是看自己喜好。
-
 ## 2.4 Spring Boot框架
-
-Spring
-Boot是一种不需要代码生成的一种框架，并且可以不需要配置任何的XML文件就可以，因为Spring
-Boot里面自带了很多接口，只需要配置不同的接口就会自动的应用并且识别需要的依赖，在配置方面非常的方便，使用起来感觉像没有用到框架的感觉。Spring
-Boot有很多默认的配置文件，并且可以对默认的配置文件进行修改，可以设置为自动加载，可以对异常处理分为全局异常处理和默认异常处理。Spring
-Boot使用过程中就像是使用什么直接注册什么，所谓的注册也就是在对应的类和方法上面进行一个特殊的声明即可。
+Spring Boot是一种不需要代码生成的一种框架，并且可以不需要配置任何的XML文件就可以，因为Spring Boot里面自带了很多接口，只需要配置不同的接口就会自动的应用并且识别需要的依赖，在配置方面非常的方便，使用起来感觉像没有用到框架的感觉。Spring Boot有很多默认的配置文件，并且可以对默认的配置文件进行修改，可以设置为自动加载，可以对异常处理分为全局异常处理和默认异常处理。Spring Boot使用过程中就像是使用什么直接注册什么，所谓的注册也就是在对应的类和方法上面进行一个特殊的声明即可。
 
 # 第3章 系统分析
-
 本文作者在确定了研究的课题之后，从各大数字图书馆下载文献来阅读，并了解同类型的网站具备的大致功能，然后具体事务具体分析，得出本系统要研究的具体功能与性能。虽然分析系统这一阶段性工作主要是确定功能，但它却影响着后面系统开发环节的进展，系统分析这个环节是不能少的。
-
 ## 3.1 可行性分析
-
 从三个不同的角度来分析，确保开发成功的前提是有可行性分析，只有进行提前分析，符合程序开发流程才不至于开发过程的中断。
-
 ### 3.1.1 技术可行性
-
 在技术实现层次，分析了好几种技术实现方法，并且都有对应的成功案例，也有很多开源模块可以进行参考，所以从技术可行性分析来讲，实现本庄村果园预售系统管理系统是没有问题的。
-
 ### 3.1.2 经济可行性
-
 对于身为学生的开发者而言，在经济资源上面可用者很少，为了开发本庄村果园预售系统管理系统，通过开发软件对硬件的要求，发现自己的电脑是完全能用来开发的，并且学校机房的配置也可以达到要求。最重要的是选择的技术都可以在网上找到不花钱的教程以及资料，因为不花钱，所以经济方面是具有可行性的。
-
 ### 3.1.3 操作可行性
-
 本庄村果园预售系统管理系统的具体实现，本身参考人类的正常操作逻辑，把常用的操作习惯当做主要的导航实现，可以让使用者更快速的理解并且上手操作，实现符合逻辑的操作流程是操作可行性的具体体现。
 
 以上就是从不同的角度来分析，确保了本庄村果园预售系统管理系统的正常开展。
-
 ## 3.2 系统流程
-
 本庄村果园预售系统管理系统投入使用后，使用者如果能看到相应的流程操作图会提高程序的理解能力。
-
 ### 3.2.1 操作流程
-
 使用者在操作本庄村果园预售系统管理系统中，应该按照本系统提供的操作流程（图3.1即为本系统的操作流程图）进行操作，可以减少操作失误，从而节省进入本庄村果园预售系统管理系统的时间。
 
-![](media/image1.wmf)
+![](/images/0400stringboot/0440springboot/blog.001.png)
 
 图3.1 系统操作流程
-
 ### 3.2.2 登录流程
-
 本庄村果园预售系统管理系统通过登录功能（图3.2即为其登录的流程）引导使用者进入指定的功能操作区，也避免非本系统的用户享受本系统提供的服务以及查看本系统提供的信息，进而保证用户安全。
 
-![](media/image2.wmf)
+![](/images/0400stringboot/0440springboot/blog.002.png)
 
 图3.2 登录流程
-
 ### 3.2.3 删除信息流程
-
 本庄村果园预售系统管理系统在经过长期使用后，会产生很多的数据信息。为了腾出存储空间存放更多的数据，本系统数据库中存储的数据，一些没有参考价值的数据需要进行删除（图3.3即为删除信息的流程），删除数据过程中，为避免误删，使用者要根据系统的提示来决定是否删除数据。
 
-![](media/image3.wmf)
+![](/images/0400stringboot/0440springboot/blog.003.png)
 
 图3.3 删除信息流程
-
 ### 3.2.4 添加信息流程
-
 本庄村果园预售系统管理系统提供可视化的功能操作区，非常方便使用者进行数据操作，当使用者往系统中录入数据时（图3.4即为添加信息的流程），本系统也会进行数据合法性的判断，符合要求的数据才能够在数据库指定表中进行登记。
 
-![](media/image4.wmf)
+![](/images/0400stringboot/0440springboot/blog.004.png)
 
 图3.4 添加信息流程
-
 ## 3.3 性能需求
-
 需求分析少不了对项目用到的硬件设备进行分析，这样才符合正常的分析流程。只谈功能需求不谈性能需求，是一件很严重的事情，可能会导致一些不可控的问题出现。
 
 以下从这几个角度来分析系统性能。
@@ -306,17 +103,11 @@ Boot使用过程中就像是使用什么直接注册什么，所谓的注册也�
 (6)系统的稳定性：正常用户操作系统页面，必须是该提交提交，正常输入符合逻辑，不能随随便便的就出各种问题，导致用户操作疲惫，并且输入的数据和回显的数据符合用户的要求。如果正常操作都会出现问题，那设计就是不稳定的，这一点肯定不行。只要是与数据进行交互的系统，都必须稳定。系统稳定从开发部署角度上来分析，可以考虑数据的冗余备份功能，自动值守功能，机房数据同步，机房分开的功能，这些都可以让系统的稳定性得到提升。
 
 系统的性能需求需要对业务很熟练的情况下判断然后分析，再从系统性能需求来逐条实现，可以让设计的系统有使用价值。
-
 ## 3.4 功能需求
-
-本庄村果园预售系统管理系统根据使用权限的角度进行功能分析，并运用用例图来展示各个权限需要操作的功能。
-
-第4章 系统设计
+本庄村果园预售系统管理系统根据使用权限的角度进行功能分析，并运用用例图来展示各个权限需要操作的功能。第4章 系统设计
 
 用户对着浏览器操作，肯定会出现某些不可预料的问题，但是不代表着系统对于用户在浏览器上的操作不进行处理，所以说，要提前考虑可能会出现的问题。
-
 ## 4.1 系统设计思想
-
 系统设计，肯定要把设计的思想进行统一，只有统一的思想才能指导程序的开发，并且可以让众多的程序开发人员更快速的进入状态，提高开发速度。根据当前系统的既定需求，下面将进行本系统设计思想的阐述。
 
 (1)扩展性：开发任何一个系统的时候不可避免要考虑这个问题。软件版本的更迭是一种常识，任何一个软件都不会一次性开发就成永恒，软件是一个不断成长的东西。所以考虑问题的时候需要对当前问题进行数据上的扩大化，然后进行归纳整理，最终形成具有一定扩展性的程序。程序的可扩展性必然会影响开发进度，所以最终需要综合评估程序的可扩展程度，进而有的放矢，循序开发。
@@ -328,660 +119,344 @@ Boot使用过程中就像是使用什么直接注册什么，所谓的注册也�
 (4)先进性：程序设计的先进性是开发者进行考虑的，必须要在满足系统功能的前提下，必须要选择好当下最合适的技术。最合适的技术要从开发成本，使用成本以及维护成本里面综合分析，经过综合分析后要让技术实现最优解，保持先进的技术生产力。
 
 (5)维护性：程序开发之初就要考虑以后的维护问题。维护是在程序开发完毕，已经上线可以运作，进入生产试用过程和使用过程中才会发现需要维护的必要。要通过各方面降低维护成本，不是说维护的越少就代表程序开发的越完美，程序既然是人类进行设计制造的，肯定有很多不可避免的问题产生，那么如何维护好程序的正常运作也是一门很重要的学问。
-
 ## 4.2 功能结构设计
-
 图4.1即为设计的管理员功能结构，管理员权限操作的功能包括管理公告，管理本庄村果园预售系统信息，包括果园管理，果树管理，水果管理，水果管理等，可以管理果树。
 
-![](media/image5.jpeg){width="5.7555555555555555in"
-height="2.3020833333333335in"}
+![结构设计图](/images/0400stringboot/0440springboot/blog.005.jpeg "结构设计图")
 
 图4.1 管理员功能结构
-
 ## 4.3 数据库设计
-
 本庄村果园预售系统管理系统运行中产生的数据需要按照提前设置的存储规则进行保存，设计出一个符合项目的最优数据存储格式，因为它能减少用户的等待时间，还可以对系统的请求在最短时间内进行响应。所以，对数据库设计时，需要对功能需求进行详细的拆分，以及对业务状态的细分，然后设计具体的存储规则，保证数据库能正常运作，缩短数据处理时间，并在一定程度上降低数据冗余，节省存储空间。
-
 ### 4.3.1 数据库概念设计
-
-实体-联系图还有一个名称即E-R图，是Entity Relationship
-Diagram各英文单词首字母的缩写，它这种概念模型通常用于对现实世界进行描述。同时它还是一种能够直观表达数据中实体，联系，属性的有效手段。绘制E-R图能够选择的工具也有很多，但是Office
-Visio 这款软件在E-R图的绘制上一般都是作为首选工具，因为它是基于可视化处理，使用它创建E-R图非常简单。使用基本的E-R图构成元素，比如椭圆，菱形，矩形，还有实线段来表达对应的信息，椭圆代表属性，即实体的特征，矩形代表实体，即数据库中的一个具体数据表，菱形代表实体中相互关系，实线段主要是完成椭圆，矩形，菱形的连接。
+实体-联系图还有一个名称即E-R图，是Entity Relationship Diagram各英文单词首字母的缩写，它这种概念模型通常用于对现实世界进行描述。同时它还是一种能够直观表达数据中实体，联系，属性的有效手段。绘制E-R图能够选择的工具也有很多，但是Office Visio 这款软件在E-R图的绘制上一般都是作为首选工具，因为它是基于可视化处理，使用它创建E-R图非常简单。使用基本的E-R图构成元素，比如椭圆，菱形，矩形，还有实线段来表达对应的信息，椭圆代表属性，即实体的特征，矩形代表实体，即数据库中的一个具体数据表，菱形代表实体中相互关系，实线段主要是完成椭圆，矩形，菱形的连接。
 
 （1）下图是水果收藏实体和其具备的属性。
 
-![](media/image6.jpeg){width="3.75in" height="2.082638888888889in"}\
+![C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\水果收藏.jpg](/images/0400stringboot/0440springboot/blog.006.jpeg "C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\水果收藏.jpg")
 水果收藏实体属性图
 
 （2）下图是果园预约实体和其具备的属性。
 
-![](media/image7.jpeg){width="5.554861111111111in"
-height="2.9854166666666666in"}\
+![C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\果园预约.jpg](/images/0400stringboot/0440springboot/blog.007.jpeg "C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\果园预约.jpg")
 果园预约实体属性图
 
 （3）下图是用户实体和其具备的属性。
 
-![](media/image8.jpeg){width="5.554861111111111in"
-height="2.9854166666666666in"}\
+![C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\用户.jpg](/images/0400stringboot/0440springboot/blog.008.jpeg "C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\用户.jpg")
 用户实体属性图
 
 （4）下图是果树收藏实体和其具备的属性。
 
-![](media/image9.jpeg){width="3.75in" height="2.082638888888889in"}\
+![C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\果树收藏.jpg](/images/0400stringboot/0440springboot/blog.009.jpeg "C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\果树收藏.jpg")
 果树收藏实体属性图
 
 （5）下图是水果预售订单实体和其具备的属性。
 
-![](media/image10.jpeg){width="5.554861111111111in"
-height="2.986111111111111in"}\
+![C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\水果预售订单.jpg](/images/0400stringboot/0440springboot/blog.010.jpeg "C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\水果预售订单.jpg")
 水果预售订单实体属性图
 
 （6）下图是论坛实体和其具备的属性。
 
-![](media/image11.jpeg){width="5.554861111111111in"
-height="2.9854166666666666in"}\
+![C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\论坛.jpg](/images/0400stringboot/0440springboot/blog.011.jpeg "C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\论坛.jpg")
 论坛实体属性图
 
 （7）下图是公告实体和其具备的属性。
 
-![](media/image12.jpeg){width="3.75in" height="2.082638888888889in"}\
+![C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\公告.jpg](/images/0400stringboot/0440springboot/blog.012.jpeg "C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\公告.jpg")
 公告实体属性图
 
 （8）下图是水果资讯实体和其具备的属性。
 
-![](media/image13.jpeg){width="3.75in" height="2.082638888888889in"}\
+![C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\水果资讯.jpg](/images/0400stringboot/0440springboot/blog.013.jpeg "C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\水果资讯.jpg")
 水果资讯实体属性图
 
 （9）下图是水果预售实体和其具备的属性。
 
-![](media/image14.jpeg){width="5.554861111111111in"
-height="2.986111111111111in"}\
+![C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\水果预售.jpg](/images/0400stringboot/0440springboot/blog.014.jpeg "C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\水果预售.jpg")
 水果预售实体属性图
 
 （10）下图是果园留言实体和其具备的属性。
 
-![](media/image15.jpeg){width="3.75in" height="2.082638888888889in"}\
+![C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\果园留言.jpg](/images/0400stringboot/0440springboot/blog.015.jpeg "C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\果园留言.jpg")
 果园留言实体属性图
 
 （11）下图是果树实体和其具备的属性。
 
-![](media/image16.jpeg){width="5.554861111111111in"
-height="2.986111111111111in"}\
+![C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\果树.jpg](/images/0400stringboot/0440springboot/blog.016.jpeg "C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\果树.jpg")
 果树实体属性图
 
 （12）下图是果树订单实体和其具备的属性。
 
-![](media/image17.jpeg){width="5.555555555555555in"
-height="2.9854166666666666in"}\
+![C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\果树订单.jpg](/images/0400stringboot/0440springboot/blog.017.jpeg "C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\果树订单.jpg")
 果树订单实体属性图
 
 （13）下图是果园实体和其具备的属性。
 
-![](media/image18.jpeg){width="3.75in" height="2.082638888888889in"}\
+![C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\果园.jpg](/images/0400stringboot/0440springboot/blog.018.jpeg "C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\果园.jpg")
 果园实体属性图
 
 （14）下图是收货地址实体和其具备的属性。
 
-![](media/image19.jpeg){width="5.555555555555555in"
-height="2.9854166666666666in"}\
+![C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\收货地址.jpg](/images/0400stringboot/0440springboot/blog.019.jpeg "C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\收货地址.jpg")
 收货地址实体属性图
-
 ### 4.3.2 数据库物理设计
-
 本小节主要任务即是根据上述内容进行数据存储结构的设计，实体的属性就用来表示字段名称，不同的字段表示的数据类型以及取值都不相同，以及该表各个字段是否能够保持空等进行说明，设计完成一张数据表的结构之后，在保存时同样要命名，尽量选择英文名称进行命名并保存，还不容易导致系统出错。接下来就对设计的表进行简单说明。
 
 表4.1收货地址表
 
-  ------ ----------------- -------------------- ------------------- --------
-   序号        列名              数据类型              说明          允许空
-
-    1           Id                 Int                  id             否
-
-    2        yonghu_id           Integer             创建用户          是
-
-    3      address_name           String              收货人           是
-
-    4      address_phone          String               电话            是
-
-    5      address_dizhi          String               地址            是
-
-    6     isdefault_types        Integer           是否默认地址        是
-
-    7       insert_time            Date              添加时间          是
-
-    8       update_time            Date              修改时间          是
-
-    9       create_time            Date              创建时间          是
-  ------ ----------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|yonghu\_id|Integer|创建用户|是|
+|3|address\_name|String|收货人|是|
+|4|address\_phone|String|电话|是|
+|5|address\_dizhi|String|地址|是|
+|6|isdefault\_types|Integer|是否默认地址|是|
+|7|insert\_time|Date|添加时间|是|
+|8|update\_time|Date|修改时间|是|
+|9|create\_time|Date|创建时间|是|
 表4.2字典表
 
-  ------ ---------------- -------------------- ------------------- --------
-   序号        列名             数据类型              说明          允许空
-
-    1           Id                Int                  id             否
-
-    2        dic_code            String               字段            是
-
-    3        dic_name            String              字段名           是
-
-    4       code_index          Integer               编码            是
-
-    5       index_name           String             编码名字          是
-
-    6        super_id           Integer             父字段id          是
-
-    7         beizhu             String               备注            是
-
-    8      create_time            Date              创建时间          是
-  ------ ---------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|dic\_code|String|字段|是|
+|3|dic\_name|String|字段名|是|
+|4|code\_index|Integer|编码|是|
+|5|index\_name|String|编码名字|是|
+|6|super\_id|Integer|父字段id|是|
+|7|beizhu|String|备注|是|
+|8|create\_time|Date|创建时间|是|
 表4.3论坛表
 
-  ------ ------------------- -------------------- ------------------- --------
-   序号         列名               数据类型              说明          允许空
-
-    1            Id                  Int                  id             否
-
-    2        forum_name             String             帖子标题          是
-
-    3         yonghu_id            Integer               用户            是
-
-    4         users_id             Integer              管理员           是
-
-    5       forum_content           String             发布内容          是
-
-    6         super_ids            Integer               父id            是
-
-    7     forum_state_types        Integer             帖子状态          是
-
-    8        insert_time             Date              发帖时间          是
-
-    9        update_time             Date              修改时间          是
-
-    10       create_time             Date              创建时间          是
-  ------ ------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|forum\_name|String|帖子标题|是|
+|3|yonghu\_id|Integer|用户|是|
+|4|users\_id|Integer|管理员|是|
+|5|forum\_content|String|发布内容|是|
+|6|super\_ids|Integer|父id|是|
+|7|forum\_state\_types|Integer|帖子状态|是|
+|8|insert\_time|Date|发帖时间|是|
+|9|update\_time|Date|修改时间|是|
+|10|create\_time|Date|创建时间|是|
 表4.4公告表
 
-  ------ ----------------- -------------------- ------------------- --------
-   序号        列名              数据类型              说明          允许空
-
-    1           Id                 Int                  id             否
-
-    2      gonggao_name           String             公告名称          是
-
-    3      gonggao_photo          String             公告图片          是
-
-    4      gonggao_types         Integer             公告类型          是
-
-    5       insert_time            Date            公告发布时间        是
-
-    6     gonggao_content         String             公告详情          是
-
-    7       create_time            Date              创建时间          是
-  ------ ----------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|gonggao\_name|String|公告名称|是|
+|3|gonggao\_photo|String|公告图片|是|
+|4|gonggao\_types|Integer|公告类型|是|
+|5|insert\_time|Date|公告发布时间|是|
+|6|gonggao\_content|String|公告详情|是|
+|7|create\_time|Date|创建时间|是|
 表4.5果树表
 
-  ------ --------------------- -------------------- ------------------- --------
-   序号          列名                数据类型              说明          允许空
-
-    1             Id                   Int                  id             否
-
-    2         guoyuan_id             Integer               商家            是
-
-    3         guoshu_name             String             果树名称          是
-
-    4     guoshu_uuid_number          String             果树编号          是
-
-    5        guoshu_photo             String             果树照片          是
-
-    6       guoshu_address            String             果树地点          是
-
-    7      guoshu_new_money         BigDecimal         果树认养费用        是
-
-    8        guoshu_types            Integer             果树类型          是
-
-    9     guoshu_kucun_number        Integer             果树库存          是
-
-    10      guoshu_content            String             果树介绍          是
-
-    11       guoshu_delete           Integer             逻辑删除          是
-
-    12        insert_time              Date              录入时间          是
-
-    13        create_time              Date              创建时间          是
-  ------ --------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|guoyuan\_id|Integer|商家|是|
+|3|guoshu\_name|String|果树名称|是|
+|4|guoshu\_uuid\_number|String|果树编号|是|
+|5|guoshu\_photo|String|果树照片|是|
+|6|guoshu\_address|String|果树地点|是|
+|7|guoshu\_new\_money|BigDecimal|果树认养费用|是|
+|8|guoshu\_types|Integer|果树类型|是|
+|9|guoshu\_kucun\_number|Integer|果树库存|是|
+|10|guoshu\_content|String|果树介绍|是|
+|11|guoshu\_delete|Integer|逻辑删除|是|
+|12|insert\_time|Date|录入时间|是|
+|13|create\_time|Date|创建时间|是|
 表4.6果树收藏表
 
-  ------ ------------------------- -------------------- ------------------- --------
-   序号            列名                  数据类型              说明          允许空
-
-    1               Id                     Int                  id             否
-
-    2            guoshu_id               Integer               果树            是
-
-    3            yonghu_id               Integer               用户            是
-
-    4     guoshu_collection_types        Integer               类型            是
-
-    5           insert_time                Date              收藏时间          是
-
-    6           create_time                Date              创建时间          是
-  ------ ------------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|guoshu\_id|Integer|果树|是|
+|3|yonghu\_id|Integer|用户|是|
+|4|guoshu\_collection\_types|Integer|类型|是|
+|5|insert\_time|Date|收藏时间|是|
+|6|create\_time|Date|创建时间|是|
 表4.7果树订单表
 
-  ------ -------------------------- -------------------- ------------------- --------
-   序号             列名                  数据类型              说明          允许空
-
-    1                Id                     Int                  id             否
-
-    2     guoshu_order_uuid_number         String             订单编号          是
-
-    3            guoshu_id                Integer               果树            是
-
-    4            yonghu_id                Integer               用户            是
-
-    5            buy_number               Integer             购买数量          是
-
-    6     guoshu_order_true_price        BigDecimal           实付价格          是
-
-    7        guoshu_order_types           Integer             订单类型          是
-
-    8           insert_time                 Date            订单创建时间        是
-
-    9           create_time                 Date              创建时间          是
-  ------ -------------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|guoshu\_order\_uuid\_number|String|订单编号|是|
+|3|guoshu\_id|Integer|果树|是|
+|4|yonghu\_id|Integer|用户|是|
+|5|buy\_number|Integer|购买数量|是|
+|6|guoshu\_order\_true\_price|BigDecimal|实付价格|是|
+|7|guoshu\_order\_types|Integer|订单类型|是|
+|8|insert\_time|Date|订单创建时间|是|
+|9|create\_time|Date|创建时间|是|
 表4.8果园表
 
-  ------ ----------------- -------------------- ------------------- --------
-   序号        列名              数据类型              说明          允许空
-
-    1           Id                 Int                  id             否
-
-    2      guoyuan_name           String             果园名称          是
-
-    3      guoyuan_photo          String             果园照片          是
-
-    4      guoyuan_types         Integer             果园类型          是
-
-    5     guoyuan_address         String             果园地点          是
-
-    6     guoyuan_content         String             果园介绍          是
-
-    7     guoyuan_delete         Integer             逻辑删除          是
-
-    8       create_time            Date              创建时间          是
-  ------ ----------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|guoyuan\_name|String|果园名称|是|
+|3|guoyuan\_photo|String|果园照片|是|
+|4|guoyuan\_types|Integer|果园类型|是|
+|5|guoyuan\_address|String|果园地点|是|
+|6|guoyuan\_content|String|果园介绍|是|
+|7|guoyuan\_delete|Integer|逻辑删除|是|
+|8|create\_time|Date|创建时间|是|
 表4.9果园留言表
 
-  ------ --------------------- -------------------- ------------------- --------
-   序号          列名                数据类型              说明          允许空
-
-    1             Id                   Int                  id             否
-
-    2         guoyuan_id             Integer               商品            是
-
-    3          yonghu_id             Integer               用户            是
-
-    4     guoyuan_liuyan_text         String             留言内容          是
-
-    5         insert_time              Date              留言时间          是
-
-    6         reply_text              String             回复内容          是
-
-    7         update_time              Date              回复时间          是
-
-    8         create_time              Date              创建时间          是
-  ------ --------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|guoyuan\_id|Integer|商品|是|
+|3|yonghu\_id|Integer|用户|是|
+|4|guoyuan\_liuyan\_text|String|留言内容|是|
+|5|insert\_time|Date|留言时间|是|
+|6|reply\_text|String|回复内容|是|
+|7|update\_time|Date|回复时间|是|
+|8|create\_time|Date|创建时间|是|
 表4.10果园预约表
 
-  ------ --------------------------- -------------------- ------------------- --------
-   序号             列名                   数据类型              说明          允许空
-
-    1                Id                      Int                  id             否
-
-    2     guoyuan_yuyue_uuid_number         String             报名编号          是
-
-    3            guoyuan_id                Integer               果园            是
-
-    4             yonghu_id                Integer               用户            是
-
-    5        guoyuan_yuyue_text             String             报名理由          是
-
-    6     guoyuan_yuyue_yesno_types        Integer             报名状态          是
-
-    7     guoyuan_yuyue_yesno_text          String             审核回复          是
-
-    8     guoyuan_yuyue_shenhe_time          Date              审核时间          是
-
-    9        guoyuan_yuyue_time              Date              预约时间          是
-
-    10           insert_time                 Date            活动报名时间        是
-
-    11           create_time                 Date              创建时间          是
-  ------ --------------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|guoyuan\_yuyue\_uuid\_number|String|报名编号|是|
+|3|guoyuan\_id|Integer|果园|是|
+|4|yonghu\_id|Integer|用户|是|
+|5|guoyuan\_yuyue\_text|String|报名理由|是|
+|6|guoyuan\_yuyue\_yesno\_types|Integer|报名状态|是|
+|7|guoyuan\_yuyue\_yesno\_text|String|审核回复|是|
+|8|guoyuan\_yuyue\_shenhe\_time|Date|审核时间|是|
+|9|guoyuan\_yuyue\_time|Date|预约时间|是|
+|10|insert\_time|Date|活动报名时间|是|
+|11|create\_time|Date|创建时间|是|
 表4.11水果资讯表
 
-  ------ ---------------- -------------------- ------------------- --------
-   序号        列名             数据类型              说明          允许空
-
-    1           Id                Int                  id             否
-
-    2       news_name            String             水果名称          是
-
-    3       news_photo           String             水果图片          是
-
-    4       news_types          Integer             水果类型          是
-
-    5      insert_time            Date            水果发布时间        是
-
-    6      news_content          String             水果详情          是
-
-    7      create_time            Date              创建时间          是
-  ------ ---------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|news\_name|String|水果名称|是|
+|3|news\_photo|String|水果图片|是|
+|4|news\_types|Integer|水果类型|是|
+|5|insert\_time|Date|水果发布时间|是|
+|6|news\_content|String|水果详情|是|
+|7|create\_time|Date|创建时间|是|
 表4.12水果预售表
 
-  ------ ---------------------- -------------------- ------------------- --------
-   序号           列名                数据类型              说明          允许空
-
-    1              Id                   Int                  id             否
-
-    2          guoyuan_id             Integer               水果            是
-
-    3         shuiguo_name             String             水果名称          是
-
-    4     shuiguo_uuid_number          String             水果编号          是
-
-    5        shuiguo_photo             String             水果照片          是
-
-    6       shuiguo_address            String             水果地点          是
-
-    7      shuiguo_new_money         BigDecimal            预售价           是
-
-    8        shuiguo_types            Integer             水果类型          是
-
-    9     shuiguo_kucun_number        Integer             水果库存          是
-
-    10      shuiguo_content            String             水果介绍          是
-
-    11       shuiguo_delete           Integer             逻辑删除          是
-
-    12        insert_time               Date              录入时间          是
-
-    13        create_time               Date              创建时间          是
-  ------ ---------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|guoyuan\_id|Integer|水果|是|
+|3|shuiguo\_name|String|水果名称|是|
+|4|shuiguo\_uuid\_number|String|水果编号|是|
+|5|shuiguo\_photo|String|水果照片|是|
+|6|shuiguo\_address|String|水果地点|是|
+|7|shuiguo\_new\_money|BigDecimal|预售价|是|
+|8|shuiguo\_types|Integer|水果类型|是|
+|9|shuiguo\_kucun\_number|Integer|水果库存|是|
+|10|shuiguo\_content|String|水果介绍|是|
+|11|shuiguo\_delete|Integer|逻辑删除|是|
+|12|insert\_time|Date|录入时间|是|
+|13|create\_time|Date|创建时间|是|
 表4.13水果收藏表
 
-  ------ -------------------------- -------------------- ------------------- --------
-   序号             列名                  数据类型              说明          允许空
-
-    1                Id                     Int                  id             否
-
-    2            shuiguo_id               Integer               水果            是
-
-    3            yonghu_id                Integer               用户            是
-
-    4     shuiguo_collection_types        Integer               类型            是
-
-    5           insert_time                 Date              收藏时间          是
-
-    6           create_time                 Date              创建时间          是
-  ------ -------------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|shuiguo\_id|Integer|水果|是|
+|3|yonghu\_id|Integer|用户|是|
+|4|shuiguo\_collection\_types|Integer|类型|是|
+|5|insert\_time|Date|收藏时间|是|
+|6|create\_time|Date|创建时间|是|
 表4.14水果预售订单表
 
-  ------ ------------------------------ -------------------- ------------------- --------
-   序号               列名                    数据类型              说明          允许空
-
-    1                  Id                       Int                  id             否
-
-    2      shuiguo_order_uuid_number           String             订单编号          是
-
-    3              address_id                 Integer             收货地址          是
-
-    4              shuiguo_id                 Integer               水果            是
-
-    5              yonghu_id                  Integer               用户            是
-
-    6              buy_number                 Integer             购买数量          是
-
-    7       shuiguo_order_true_price         BigDecimal           实付价格          是
-
-    8      guoyuan_order_courier_name          String             快递公司          是
-
-    9     guoyuan_order_courier_number         String             快递单号          是
-
-    10        shuiguo_order_types             Integer             订单类型          是
-
-    11            insert_time                   Date            订单创建时间        是
-
-    12            create_time                   Date              创建时间          是
-  ------ ------------------------------ -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|shuiguo\_order\_uuid\_number|String|订单编号|是|
+|3|address\_id|Integer|收货地址|是|
+|4|shuiguo\_id|Integer|水果|是|
+|5|yonghu\_id|Integer|用户|是|
+|6|buy\_number|Integer|购买数量|是|
+|7|shuiguo\_order\_true\_price|BigDecimal|实付价格|是|
+|8|guoyuan\_order\_courier\_name|String|快递公司|是|
+|9|guoyuan\_order\_courier\_number|String|快递单号|是|
+|10|shuiguo\_order\_types|Integer|订单类型|是|
+|11|insert\_time|Date|订单创建时间|是|
+|12|create\_time|Date|创建时间|是|
 表4.15用户表
 
-  ------ ------------------ -------------------- ------------------- --------
-   序号         列名              数据类型              说明          允许空
-
-    1            Id                 Int                  id             否
-
-    2       yonghu_name            String             用户姓名          是
-
-    3       yonghu_phone           String            用户手机号         是
-
-    4     yonghu_id_number         String           用户身份证号        是
-
-    5       yonghu_photo           String             用户头像          是
-
-    6        new_money           BigDecimal             余额            是
-
-    7       yonghu_email           String             用户邮箱          是
-
-    8       create_time             Date              创建时间          是
-  ------ ------------------ -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|yonghu\_name|String|用户姓名|是|
+|3|yonghu\_phone|String|用户手机号|是|
+|4|yonghu\_id\_number|String|用户身份证号|是|
+|5|yonghu\_photo|String|用户头像|是|
+|6|new\_money|BigDecimal|余额|是|
+|7|yonghu\_email|String|用户邮箱|是|
+|8|create\_time|Date|创建时间|是|
 表4.16管理员表
 
-  ------ ---------------- -------------------- ------------------- --------
-   序号        列名             数据类型              说明          允许空
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|username|String|儿童名|是|
+|3|password|String|密码|是|
+|4|role|String|角色|是|
+|5|addtime|Date|新增时间|是|
 
-    1           Id                Int                  id             否
-
-    2        username            String              儿童名           是
-
-    3        password            String               密码            是
-
-    4          role              String               角色            是
-
-    5        addtime              Date              新增时间          是
-  ------ ---------------- -------------------- ------------------- --------
-
-[]{#__RefHeading___Toc19485 .anchor}
+第5章 系统实现
 
 编程人员在搭建的开发环境中，会让各种编程技术一起呈现出最终效果。本节就展示关键部分的页面效果。
-
 ## 5.1 管理员功能实现
-
 ### 5.1.1 果园管理
+图5.1 即为编码实现的果园管理界面，管理员在果园管理界面中可以对界面中显示，可以对果园信息的果园状态进行查看，可以添加新的果园信息等。
 
-图5.1
-即为编码实现的果园管理界面，管理员在果园管理界面中可以对界面中显示，可以对果园信息的果园状态进行查看，可以添加新的果园信息等。
-
-![](media/image20.png){width="5.759722222222222in"
-height="2.9069444444444446in"}
+![](/images/0400stringboot/0440springboot/blog.020.png)
 
 图5.1 果园管理界面
-
 ### 5.1.2 水果管理
+图5.2 即为编码实现的水果管理界面，管理员在水果管理界面中查看水果种类信息，水果描述信息，新增水果信息等。
 
-图5.2
-即为编码实现的水果管理界面，管理员在水果管理界面中查看水果种类信息，水果描述信息，新增水果信息等。
-
-![](media/image21.png){width="5.759722222222222in"
-height="2.9069444444444446in"}
+![](/images/0400stringboot/0440springboot/blog.021.png)
 
 图5.2 水果管理界面
-
 ### 5.1.3 果树管理
+图5.3 即为编码实现的果树管理界面，管理员在果树管理界面中新增果树，可以删除果树。
 
-图5.3
-即为编码实现的果树管理界面，管理员在果树管理界面中新增果树，可以删除果树。
-
-![](media/image22.png){width="5.759722222222222in"
-height="2.9069444444444446in"}
+![](/images/0400stringboot/0440springboot/blog.022.png)
 
 图5.3 果树管理界面
-
 ### 5.1.4 公告管理
+图5.4 即为编码实现的公告管理界面，管理员在公告管理界面查看公告的工作状态，可以对公告的数据进行导出，可以添加新公告的信息，可以编辑公告信息，删除公告信息。
 
-图5.4
-即为编码实现的公告管理界面，管理员在公告管理界面查看公告的工作状态，可以对公告的数据进行导出，可以添加新公告的信息，可以编辑公告信息，删除公告信息。
-
-![](media/image23.png){width="5.759722222222222in"
-height="2.9069444444444446in"}
+![](/images/0400stringboot/0440springboot/blog.023.png)
 
 图5.4 公告管理界面
-
 ## 5.2 用户功能实现
-
-### **5.2.1 果园**
-
+### 5.2.1 果园
 图5.5 即为编码实现的果园界面。
 
-![](media/image24.png){width="5.759722222222222in"
-height="2.9069444444444446in"}
+![](/images/0400stringboot/0440springboot/blog.024.png)
 
 图5.5 果园界面
-
 ### 5.2.2 果树管理
-
 图5.6 即为编码实现的果树管理界面。
 
-![](media/image25.png){width="5.759722222222222in"
-height="2.9069444444444446in"}
+![](/images/0400stringboot/0440springboot/blog.025.png)
 
 图5.6 果树管理界面
-
 ### 5.2.3 水果管理
-
 图5.7 即为编码实现的水果管理界面。
 
-![](media/image26.png){width="5.759722222222222in"
-height="2.9069444444444446in"}
+![](/images/0400stringboot/0440springboot/blog.026.png)
 
 图5.7 水果管理界面
-
-[]{#__RefHeading___Toc13032 .anchor}**6章**
-当系统测试环节开始的时候，也就说明对于系统的编码已经弄得大致通顺了，剩下来需要对一些模块和功能进行测试，这个环节就叫系统测试。在程序开发过程中，系统测试是整个开发过程不能缺少的。原因很简单，系统开发人员在面对各种需求需要对各个模块进行编码，开发人员编写过程中，对于程序的理解全部都在编码里面，一人计短，当一个人去做一些事情的时候，把自己的理解变成成果，有可能理解错误，这个在程序开发过程中很常见。程序开发人员在面对复杂的逻辑，没有想象中的多么清晰，开发过程就是面对着一堆代码，不断的变换数据类型，这些很容易实现程序开发人员的想法，但是如果是比较复杂的逻辑，很可能会出现各种问题，这是无法避免的。所以说，需要额外的人员进行系统测试编写，要站在用户使用的角度去发现问题，这样开发与测试的分离，有助于系统开发的强壮，让程序表达的更完美一些。之所以把系统测试安排到程序开发过程中的原因在于，当测试过程中发现的问题可以最快速度的反馈到程序开发人员手里，可以以最快的时间解决问题。所以必须在系统测试环节做好应该做好的事情，让程序开发从开始到结束都有一个完美的流程。
-
-## 6.1 功能测试
-
-本节主要选择一些功能进行具体测试描述，在相应的功能里面，根据不同的输入看看能否达到理想中的效果。以下会描述部分功能的测试过程和结果。
-
-### 6.1.1 登录功能测试
-
-登录是一个常规功能，虽然是常规功能，但是用处很大，可以拒绝非法用户访问，只有合法用户才可以访问对应的功能。
-
-表6.1 管理员登录功能测试表
-
-  ---------------- ------------------ -----------------------------------
-  管理员账号       管理员密码         结果
-
-  uuu              uuu                成功登录系统
-
-  yyy              uuu                登录失败
-
-  uuu              yyy                登录失败
-  ---------------- ------------------ -----------------------------------
-
-## 6.2 系统测试结果
-
-对本庄村果园预售系统管理系统进行了各种检测，包含功能检测和性能检测，操作性检测，兼容性检测，通过各方面检测结果来判定系统是符合设计目标，并且在扩展性或者是稳定性上面，也有很好的表现，能完全的满足用户需求。
-
-# 结 论
-
-由于本人学习的是计算机方面的专业，学习了一定的开发知识，因此，对于开发一款已经确定了课题的本庄村果园预售系统管理系统，从功能需求，功能模块划分，数据库的选择与设计，编程语言的确定，系统界面的布局和设计等知识，我都有个大致的思路。我运用已经具备的理论知识，加上后期从网络渠道获取的相关技术知识，能够在系统完成开发后期，编写相应的系统文档。
-
-本庄村果园预售系统管理系统制作期间，我也遇到过一些难题，模块拆分不够精细，以及数据表需要设计几张表，还有对于开发技术的深度理论学习还不充分等，不过我能够通过网络或者通过学院提供的图书馆寻求解决办法。比如在不知道具体功能的情况下，我从网上下载了很多的与本庄村果园预售系统管理系统相关的程序，分析了它们的功能之后，我再结合即将开发的本庄村果园预售系统管理系统进行综合分析，选取了适合本庄村果园预售系统管理系统的功能部分，再具体模块具体分析，设计专属项目功能。对于数据表的设计，先在图书馆学习，然后查看相似系统对于数据表的结构设计等知识，然后在本系统功能确定的情况下，结合本系统设计了配套的数据表，对于难度最大的开发技术部分，这是需要大量时间调试的，一般都是对基础数据的增加，更新，查询或修改方面的代码，然后把本系统能够运用的代码部分在简单更改后进行使用，又经过了简单的测试工作，最终呈现出一个完整的能够解决用户实际问题的本庄村果园预售系统管理系统。该系统唯一不足的就是代码方面还有很多重复的部分，不够精简，还有用户操作本系统，对于用户的误操作行为，本系统还不能及时反馈，这也是一大缺点。
-
-本庄村果园预售系统管理系统完成了，其相应的配套文档也需要进行编写，该文档主要描述本庄村果园预售系统管理系统是如何进行分析，设计以及实现的，让其他阅读本文档的人增加对该系统的了解，编写文档过程中，由于自己平时对于办公软件的操作不是很频繁，根据学院要求的文档排版格式进行编辑也花了很多时间，在不断学习排版技巧以及对本系统配套文档的反复修改之后，最终在学院规定的时间内进行了文档定稿。
-
-毕业项目各个工作进行到此，我也是收获颇丰，正因为自己努力学习知识，积极寻求解决办法，才让我能够提交一个完整的作品。制作毕业项目让我又得到了成长，不仅是专业知识的增加，也学到了解决问题的能力和方法。
-
-[]{#__RefHeading___Toc13430 .anchor}**致 谢**
-
-也许是大学校园在管理上比较开放，学习知识时不像高中时期那样一整天都在学习，而是一天当中抽出部分时间安排学习，其余的时间就可以自由安排，可以去社会上参加实践，可以在学校的图书馆阅读书籍，丰富自己的知识，也可以加入学校的社团进行个人能力的锻炼等等，加上学院的学生都来自全国各地，大家的风俗习惯都有些不一样，这样同学之间也有更多的话题进行畅聊。基于这些原因，我觉得我的性格也逐渐变得开朗起来，正因为如此，我很快乐的度过了大学四年时光。然而，我们都要面临毕业，同学间，师生间也将面临分离，我们都会离开学校，进入社会这样的大环境学习并生活。虽然很不舍，但这也是人生成长中必经的阶段！
-
-临走之际，对这几年的大学生活简单的进行了回想，发现自己学到的专业知识也增加了很多，在本专业上，自己也得到了一定的实操能力锻炼。这些成长都是我们的专业老师带来的，他们这几年辛苦教学，我们也从中获取了许多的专业知识，提高了个人的专业方面的能力，非常感谢他们。
-
-还有一位老师也需要在此特别感谢，即论文指导老师。可以说最后这一年，跟指导老师接触比较多，指导老师在本专业上，非常全能，在我进行本课题的任务期间，导师给予我全面的指导，也能根据我的不足之处推荐合适的书籍让我查看，让我的能力得以提升，继而可以从容面对开发期间遇到的困难。
-
-另外，我也要感谢我的寝室室友，还有我们班上的同学，从接到毕业项目任务之后，我们常常谈论各自课题进展的情况以及面临的问题，也经常互相鼓励对方要积极认真面对毕业项目，这种陪伴，让我在制作毕业项目期间并没有产生过多的焦虑，非常感谢他们。
-
-最后时刻，我也要对我的大学校园表达谢意，我的大学校园是一个非常美丽的地方，而我这几年，在这么优美的环境下学习知识，我已经感到非常幸福。希望在今后能看到我的校园在众多师生共同努力下变得强大，校园的环境也将变得更加美丽。
-
-# 参考文献
-
-1.  钟琨．新时期计算机软件开发技术的应用及发展趋［J］．网络安全和信息化，2022（02）：28－30．
-
-2.  谷苏港．基于Web的果蔬管理系统的实现［J］．福建电脑，2018，34（04）：121－122．
-
-3.  王睿，陈杨，王云鸾，薛钰霦．酒店管理系统的建设与研究［J］．工程建设与设计，2022（03）：202－205．
-
-4.  Cashless Canteen Management System\[J\]. International Journal of
-    Innovative Technology and Exploring Engineering,2020,9(7).
-
-5.  Miao Peng. University Canteen Supervision and Management System
-    Based on Wechat Applet\[J\]. International Journal of Frontiers in
-    Sociology,2021,3.0(11.0).
-
-6.  李刚．Spring Boot 2企业应用实战［M］．2018：电子工业出版社．
-
-7.  杨磊．基于B/S三层架构的实验室器材智能管理系统设计［J］．佳木斯大学学报（自然科学版），2020，38（03）：63－66．
-
-8.  李艳杰．MySQL数据库下存储过程的设计与应用［J］．信息技术与信息化，2021（01）：96－97．
-
-9.  张大治，邵勇，王欢．JSP实用教程［M］．北京：清华大学出版社，2014．
-
-10. 徐蓓蓓．基于B/S模式果蔬管理系统设计与开发［D］．合肥工业大学，2008．
-
-11. 朱克武．Ajax技术在就业网站用户信息管理中的应用［J］．电脑知识与技术，2021，17（33）：9－11．
-
-12. 江国文．基于MySQL的数据库架构设计与实现［J］．电子世界，2018（11）：200－201．
-
-13. 胡海．计算机软件深度开发和测试技术探讨［J］．电脑迷，2017（10）：38．
-
-14. 王彤．关于软件功能测试技术的几点思考［J］．信息与电脑（理论版），2019，31（17）：60－61．
-
-15. AbuSalim Samah W.G.,Ibrahim Rosziati,Wahab Jahari Abdul. Comparative
-    Analysis of Software Testing Techniques for Mobile
-    Applications\[J\]. Journal of Physics: Conference
-    Series,2021,1793(1).
+# 
 
 
-### 0440springboot本庄村果园预售系统的设计与实现bootpf 项目图片
-![图片](/images/0440springbootimg_001.jpg)
-![图片](/images/0440springbootimg_003.jpg)
-![图片](/images/0440springbootimg_002.jpg)
-![图片](/images/0440springbootimg_012.jpg)
-![图片](/images/0440springbootimg_006.jpg)
-![图片](/images/0440springbootimg_007.jpg)
-![图片](/images/0440springbootimg_005.jpg)
-![图片](/images/0440springbootimg_011.jpg)
-![图片](/images/0440springbootimg_010.jpg)
-![图片](/images/0440springbootimg_004.jpg)
-![图片](/images/0440springbootimg_009.jpg)
-![图片](/images/0440springbootimg_008.jpg)
 
 
 

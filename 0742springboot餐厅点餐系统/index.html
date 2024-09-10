@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer" />
+        <meta name="robots" content="noodp" />
+        <title>0742springboot餐厅点餐系统 - chenqi blog</title><meta name="Description" content="Hugo theme - chenqi"><meta property="og:url" content="https://chenqi199.github.io/0742springboot%E9%A4%90%E5%8E%85%E7%82%B9%E9%A4%90%E7%B3%BB%E7%BB%9F/">
+  <meta property="og:site_name" content="chenqi blog">
+  <meta property="og:title" content="0742springboot餐厅点餐系统">
+  <meta property="og:description" content="0742springboot餐厅点餐系统 项目清单 包安装运行 github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 系统概述 进过系统的分析后，就开始记性系统的">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-06-16T18:31:05+08:00">
+    <meta property="article:modified_time" content="2024-06-16T18:31:05+08:00">
+    <meta property="article:tag" content="Springboot">
+    <meta property="article:tag" content="Java">
+    <meta property="article:tag" content="Vue">
+    <meta property="article:tag" content="论文">
+    <meta property="article:tag" content="项目">
+    <meta property="og:image" content="https://chenqi199.github.io/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chenqi199.github.io/logo.png">
+  <meta name="twitter:title" content="0742springboot餐厅点餐系统">
+  <meta name="twitter:description" content="0742springboot餐厅点餐系统 项目清单 包安装运行 github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 系统概述 进过系统的分析后，就开始记性系统的">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chenqi199.github.io/0742springboot%E9%A4%90%E5%8E%85%E7%82%B9%E9%A4%90%E7%B3%BB%E7%BB%9F/" /><link rel="prev" href="https://chenqi199.github.io/0737springboot%E9%AB%98%E6%A0%A1%E5%85%9A%E5%8A%A1%E7%B3%BB%E7%BB%9F/" /><link rel="next" href="https://chenqi199.github.io/0741springboot%E6%AF%95%E4%B8%9A%E7%94%9F%E4%BF%A1%E6%81%AF%E6%8B%9B%E8%81%98%E5%B9%B3%E5%8F%B0/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "0742springboot餐厅点餐系统",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chenqi199.github.io\/0742springboot%E9%A4%90%E5%8E%85%E7%82%B9%E9%A4%90%E7%B3%BB%E7%BB%9F\/"
+        },"image": ["https:\/\/chenqi199.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "springboot, java, vue, 论文, 项目","wordcount":  3223 ,
+        "url": "https:\/\/chenqi199.github.io\/0742springboot%E9%A4%90%E5%8E%85%E7%82%B9%E9%A4%90%E7%B3%BB%E7%BB%9F\/","datePublished": "2024-06-16T18:31:05+08:00","dateModified": "2024-06-16T18:31:05+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/chenqi199.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "chenqi"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/0742springboot%E9%A4%90%E5%8E%85%E7%82%B9%E9%A4%90%E7%B3%BB%E7%BB%9F/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/0742springboot%E9%A4%90%E5%8E%85%E7%82%B9%E9%A4%90%E7%B3%BB%E7%BB%9F/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">0742springboot餐厅点餐系统</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="chenqi199" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>chenqi</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-06-16">2024-06-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 3223 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 7 分钟&nbsp;<span id="/0742springboot%E9%A4%90%E5%8E%85%E7%82%B9%E9%A4%90%E7%B3%BB%E7%BB%9F/" class="leancloud_visitors" data-flag-title="0742springboot餐厅点餐系统">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">github 项目仓库</a> 开源仅有后端代码</a></li>
+        <li><a href="#点击播放视频-">点击播放视频 ▼</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#42-系统结构设计">4.2 系统结构设计</a></li>
+    <li><a href="#43数据库设计">4.3数据库设计</a>
+      <ul>
+        <li><a href="#431-数据库设计原则">4.3.1 数据库设计原则</a></li>
+        <li><a href="#432-数据库实体">4.3.2 数据库实体</a></li>
+        <li><a href="#433-数据库表设计">4.3.3 数据库表设计</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#heading"></a></li>
+    <li><a href="#51前台首页功能模块">5.1前台首页功能模块</a></li>
+    <li><a href="#52管理员功能模块">5.2管理员功能模块</a></li>
+    <li><a href="#53食堂功能模块">5.3食堂功能模块</a></li>
+    <li><a href="#54用户功能模块">5.4用户功能模块</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="0742springboot餐厅点餐系统httpsgithubcomgraduationproject-springboot0742springboot"><a href="https://github.com/GraduationProject-springboot/0742springboot" target="_blank" rel="noopener noreffer ">0742springboot餐厅点餐系统</a></h1>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        data-srcset="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 1.5x, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        title="picture" /></p>
+<h1 id="项目清单httpschenqi1990site-包安装运行"><a href="https://chenqi1990.site" target="_blank" rel="noopener noreffer ">项目清单</a> 包安装运行</h1>
+<h3 id="github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">github 项目仓库</a> 开源仅有后端代码</h3>
+<h3 id="点击播放视频-">点击播放视频 ▼</h3>
+<p><a href="https://www.bilibili.com/video/BV14HerezEwW?p=98" target="_blank" rel="noopener noreffer "><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.sstatic.net/Vp2cE.png"
+        data-srcset="https://i.sstatic.net/Vp2cE.png, https://i.sstatic.net/Vp2cE.png 1.5x, https://i.sstatic.net/Vp2cE.png 2x"
+        data-sizes="auto"
+        alt="https://i.sstatic.net/Vp2cE.png"
+        title="Watch the video" /></a></p>
+<h1 id="系统概述">系统概述</h1>
+<p>进过系统的分析后，就开始记性系统的设计，系统设计包含总体设计和详细设计。总体设计只是一个大体的设计，经过了总体设计，我们能够划分出系统的一些东西，例如文件、文档、数据等。而且我们通过总体设计，大致可以划分出了程序的模块，以及功能。但是只是一个初步的分类，并没有真正的实现。</p>
+<p>整体设计，只是一个初步设计，而且，对于一个项目，我们可以进行多个整体设计，通过对比，包括性能的对比、成本的对比、效益的对比，来最终确定一个最优的设计方案，选择优秀的整体设计可以降低开发成本，增加公司效益，从这一点来讲，整体设计还是非常重要的。</p>
+<p>高校校园点餐系统工作原理图如图4-1所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0742springboot/blog.012.png"
+        data-srcset="/images/0700stringboot/0742springboot/blog.012.png, /images/0700stringboot/0742springboot/blog.012.png 1.5x, /images/0700stringboot/0742springboot/blog.012.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0742springboot/blog.012.png"
+        title="/images/0700stringboot/0742springboot/blog.012.png" /></p>
+<p>图4-1 系统工作原理图</p>
+<h2 id="42-系统结构设计">4.2 系统结构设计</h2>
+<p>系统架构图属于系统设计阶段，系统架构图只是这个阶段一个产物，系统的总体架构决定了整个系统的模式，是系统的基础。高校校园点餐系统的整体结构设计如图4-2所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0742springboot/blog.013.png"
+        data-srcset="/images/0700stringboot/0742springboot/blog.013.png, /images/0700stringboot/0742springboot/blog.013.png 1.5x, /images/0700stringboot/0742springboot/blog.013.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0742springboot/blog.013.png"
+        title="/images/0700stringboot/0742springboot/blog.013.png" /></p>
+<p>图4-2 系统结构图</p>
+<h2 id="43数据库设计">4.3数据库设计</h2>
+<p>数据库是计算机信息系统的基础。目前，电脑系统的关键与核心部分就是数据库。数据库开发的优劣对整个系统的质量和速度有着直接影响。</p>
+<h3 id="431-数据库设计原则">4.3.1 数据库设计原则</h3>
+<p>数据库的概念结构设计采用实体—联系（E-R）模型设计方法。E-R模型法的组成元素有：实体、属性、联系，E-R模型用E-R图表示，是提示用户工作环境中所涉及的事物，属性则是对实体特性的描述。在系统设计当中数据库起着决定性的因素。下面设计出这几个关键实体的实体—关系图。</p>
+<h3 id="432-数据库实体">4.3.2 数据库实体</h3>
+<p>数据模型中的实体（Entity），也称为实例，对应现实世界中可区别于其他对象的“事件”或“事物”。例如，学校中的每个学生，家里中的每个家具。</p>
+<p>本系统的E-R图如下图所示：</p>
+<p>1、用户信息实体图如图4-3所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0742springboot/blog.014.png"
+        data-srcset="/images/0700stringboot/0742springboot/blog.014.png, /images/0700stringboot/0742springboot/blog.014.png 1.5x, /images/0700stringboot/0742springboot/blog.014.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0742springboot/blog.014.png"
+        title="/images/0700stringboot/0742springboot/blog.014.png" /></p>
+<p>图4-3用户信息实体图</p>
+<p>2、食堂信息实体图如图4-4所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0742springboot/blog.015.png"
+        data-srcset="/images/0700stringboot/0742springboot/blog.015.png, /images/0700stringboot/0742springboot/blog.015.png 1.5x, /images/0700stringboot/0742springboot/blog.015.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0742springboot/blog.015.png"
+        title="/images/0700stringboot/0742springboot/blog.015.png" /></p>
+<p><code>   </code>图4-4食堂信息实体图</p>
+<p>3、留言板信息实体图如图4-5所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0742springboot/blog.016.png"
+        data-srcset="/images/0700stringboot/0742springboot/blog.016.png, /images/0700stringboot/0742springboot/blog.016.png 1.5x, /images/0700stringboot/0742springboot/blog.016.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0742springboot/blog.016.png"
+        title="/images/0700stringboot/0742springboot/blog.016.png" /></p>
+<p>图4-5留言板信息实体图</p>
+<p>#########</p>
+<h3 id="433-数据库表设计">4.3.3 数据库表设计</h3>
+<p>数据库的表信息属于设计的一部分，下面介绍数据库中的各个表的详细信息。</p>
+<p>表名：shitang</p>
+<p>功能：食堂表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名称</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">字段说明</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">主键</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">新增时间</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">CURRENT_TIMESTAMP</td>
+</tr>
+<tr>
+<td style="text-align:center">shitanghao</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">食堂号</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">mima</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">密码</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">shitangming</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">食堂名</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">guanliyuan</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">管理员</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">shitangzhaopian</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">食堂照片</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">weishengdengji</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">卫生等级</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">lianxidianhua</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">联系电话</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">shitangdizhi</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">食堂地址</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>表名：shitangcaidan</p>
+<p>功能：食堂菜单表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名称</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">字段说明</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">主键</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">CURRENT_TIMESTAMP</td>
+</tr>
+<tr>
+<td style="text-align:center">shitanghao</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">食堂号</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">shitangming</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">食堂名</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">caipin</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">菜品</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">caixi</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">菜系</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">tupian</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">图片</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">fenliang</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">分量</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">shicai</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">食材</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">shitangdizhi</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">食堂订单</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">xiangqing</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">详情</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>表名：xiaoxiliuyan</p>
+<p>功能：消息留言表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名称</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">字段说明</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">主键</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">CURRENT_TIMESTAMP</td>
+</tr>
+<tr>
+<td style="text-align:center">zhanghao</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">账号</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">xingming</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">姓名</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">jiaose</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">4294967295</td>
+<td style="text-align:center">角色</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">shitanghao</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">食堂号</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">shitangming</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">食堂名</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">dingdanhao</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">订单号</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">peisongfen</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">配送分</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">baozhuangfen</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">包装分</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">caipinfen</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">菜品分</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">shijian</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">时间</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">jianyi</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">建议</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">sfsh</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">是否审核</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">shhf</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">审核回复</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>表名：caixifenlei</p>
+<p>功能：菜系分类表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名称</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">字段说明</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">主键</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">CURRENT_TIMESTAMP</td>
+</tr>
+<tr>
+<td style="text-align:center">caixi</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">菜系</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>表名：yonghu</p>
+<p>功能：用户表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名称</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">字段说明</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">主键</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">新增时间</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">CURRENT_TIMESTAMP</td>
+</tr>
+<tr>
+<td style="text-align:center">zhanghao</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">账号</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">mima</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">密码</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">xingming</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">姓名</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">jiaose</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">角色</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">xingbie</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">性别</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">nianling</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">年龄</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">shouji</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">手机</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">youxiang</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">邮箱</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">zhaopian</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">照片</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="5统详细设计">5统详细设计</h1>
+<h2 id="heading"></h2>
+<h2 id="51前台首页功能模块">5.1前台首页功能模块</h2>
+<p>高校校园点餐系统，在系统首页可以查看首页、食堂菜单、新闻资讯、留言反馈、我的、跳转到后台、购物车等内容，如图5-1所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0742springboot/blog.017.png"
+        data-srcset="/images/0700stringboot/0742springboot/blog.017.png, /images/0700stringboot/0742springboot/blog.017.png 1.5x, /images/0700stringboot/0742springboot/blog.017.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0742springboot/blog.017.png"
+        title="/images/0700stringboot/0742springboot/blog.017.png" /></p>
+<p>图5-1前台首页功能界面图</p>
+<p>用户注册、用户登录，在用户注册页面可以填写账号、密码、姓名、角色、性别、年龄、手机、邮箱等信息进行用户注册、登录，如图5-2所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0742springboot/blog.018.png"
+        data-srcset="/images/0700stringboot/0742springboot/blog.018.png, /images/0700stringboot/0742springboot/blog.018.png 1.5x, /images/0700stringboot/0742springboot/blog.018.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0742springboot/blog.018.png"
+        title="/images/0700stringboot/0742springboot/blog.018.png" /></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0742springboot/blog.019.png"
+        data-srcset="/images/0700stringboot/0742springboot/blog.019.png, /images/0700stringboot/0742springboot/blog.019.png 1.5x, /images/0700stringboot/0742springboot/blog.019.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0742springboot/blog.019.png"
+        title="/images/0700stringboot/0742springboot/blog.019.png" /></p>
+<p>图5-2用户注册、登录界面图
+#########
+食堂菜单，在食堂菜单页面通过填写食堂号、食堂名、菜品、菜系、图片、分量、食材、食堂地址、详情、价格、座位总数等信息进行添加到购物车、立即预定、点我收藏等操作，如图5-3所示。在我的地址页面通过填写联系人、手机号码、默认地址、选择地址等信息进行添加或重置操作，如图5-4所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0742springboot/blog.020.png"
+        data-srcset="/images/0700stringboot/0742springboot/blog.020.png, /images/0700stringboot/0742springboot/blog.020.png 1.5x, /images/0700stringboot/0742springboot/blog.020.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0742springboot/blog.020.png"
+        title="/images/0700stringboot/0742springboot/blog.020.png" /></p>
+<p>图5-3食堂菜单界面图
+#########
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0742springboot/blog.021.png"
+        data-srcset="/images/0700stringboot/0742springboot/blog.021.png, /images/0700stringboot/0742springboot/blog.021.png 1.5x, /images/0700stringboot/0742springboot/blog.021.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0742springboot/blog.021.png"
+        title="/images/0700stringboot/0742springboot/blog.021.png" /></p>
+<p>图5-4我的地址界面图</p>
+<h2 id="52管理员功能模块">5.2管理员功能模块</h2>
+<p>管理员登录，通过填写输入用户名、密码进行登录，如图5-5所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0742springboot/blog.022.png"
+        data-srcset="/images/0700stringboot/0742springboot/blog.022.png, /images/0700stringboot/0742springboot/blog.022.png 1.5x, /images/0700stringboot/0742springboot/blog.022.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0742springboot/blog.022.png"
+        title="/images/0700stringboot/0742springboot/blog.022.png" /></p>
+<p>图5-5管理员登录界面图</p>
+<p>管理员登录进入高校校园点餐系统可以查看个人中心、用户管理、食堂管理、食堂菜单管理、菜系分类管理、消息留言管理、留言板管理、系统管理、订单管理等信息。</p>
+<p>用户管理，在用户管理页面中可以通过填写账号、密码、姓名、角色、性别、年龄、手机、邮箱、照片、余额等内容进行查看、修改、删除等操作，如图5-6所示。</p>
+<p>食堂管理，在食堂管理页面中可以查看食食堂号、密码、食堂名、管理员、食堂照片、卫生等级、联系电话、食堂地址、余额等信息，并可根据需要对已有食堂管理进行查看、修改、删除等操作，如图5-7所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0742springboot/blog.023.png"
+        data-srcset="/images/0700stringboot/0742springboot/blog.023.png, /images/0700stringboot/0742springboot/blog.023.png 1.5x, /images/0700stringboot/0742springboot/blog.023.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0742springboot/blog.023.png"
+        title="/images/0700stringboot/0742springboot/blog.023.png" /></p>
+<p>图5-6用户管理界面图</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0742springboot/blog.024.png"
+        data-srcset="/images/0700stringboot/0742springboot/blog.024.png, /images/0700stringboot/0742springboot/blog.024.png 1.5x, /images/0700stringboot/0742springboot/blog.024.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0742springboot/blog.024.png"
+        title="/images/0700stringboot/0742springboot/blog.024.png" /></p>
+<p>图5-7食堂管理界面图</p>
+<p>菜系分类管理，在菜系分类管理页面中可以查看菜系等信息，并可根据需要对已有菜系分类管理进行修改或删除等操作，如图5-8所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0742springboot/blog.025.png"
+        data-srcset="/images/0700stringboot/0742springboot/blog.025.png, /images/0700stringboot/0742springboot/blog.025.png 1.5x, /images/0700stringboot/0742springboot/blog.025.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0742springboot/blog.025.png"
+        title="/images/0700stringboot/0742springboot/blog.025.png" /></p>
+<p>图5-8菜系分类管理界面图</p>
+<p>消息留言管理，在消息留言管理页面中可以查看账号、姓名、角色、食堂号、食堂名、订单号、配送分、包装分、菜品分、时间、建议、是否审核、审核回复等信息，并可根据需要对已有消息留言管理进行审核、查看、修改或删除等详细操作，如图5-9所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0742springboot/blog.026.png"
+        data-srcset="/images/0700stringboot/0742springboot/blog.026.png, /images/0700stringboot/0742springboot/blog.026.png 1.5x, /images/0700stringboot/0742springboot/blog.026.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0742springboot/blog.026.png"
+        title="/images/0700stringboot/0742springboot/blog.026.png" /></p>
+<p>图5-9消息留言管理界面图</p>
+<p>留言板管理，在留言板管理页面中可以查看留言人id 、用户名、留言内容、回复内容等内容，并且根据需要对已有留言板管理进行查看、回复、修改或删除等详细操作，如图5-10所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0742springboot/blog.027.png"
+        data-srcset="/images/0700stringboot/0742springboot/blog.027.png, /images/0700stringboot/0742springboot/blog.027.png 1.5x, /images/0700stringboot/0742springboot/blog.027.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0742springboot/blog.027.png"
+        title="/images/0700stringboot/0742springboot/blog.027.png" /></p>
+<p>图5-10留言板管理界面图</p>
+<p>美食资讯管理，在美食资讯管理页面中可以查看标题、简介、图片、内容等内容，并且根据需要对已有美食资讯管理进行查看、修改或删除等详细操作，如图5-11所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0742springboot/blog.027.png"
+        data-srcset="/images/0700stringboot/0742springboot/blog.027.png, /images/0700stringboot/0742springboot/blog.027.png 1.5x, /images/0700stringboot/0742springboot/blog.027.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0742springboot/blog.027.png"
+        title="/images/0700stringboot/0742springboot/blog.027.png" /></p>
+<p>图5-11美食资讯管理界面图</p>
+<p>订单管理，在订单管理页面中可以查看订单编号、商品表名、用户ID、商品ID、商品名称、商品图片、购买数量、价格/积分、折扣价格、总价格/总积分、折扣总价格、</p>
+<p>支付类型、状态、地址等内容，并且根据需要对已有订单管理进行查看，修改或删除等详细操作，如图5-12所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0742springboot/blog.028.png"
+        data-srcset="/images/0700stringboot/0742springboot/blog.028.png, /images/0700stringboot/0742springboot/blog.028.png 1.5x, /images/0700stringboot/0742springboot/blog.028.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0742springboot/blog.028.png"
+        title="/images/0700stringboot/0742springboot/blog.028.png" /></p>
+<p>图5-12订单管理界面图</p>
+<h2 id="53食堂功能模块">5.3食堂功能模块</h2>
+<p>食堂登录进入高校校园点餐系统可以查看个人中心、食堂菜单管理、菜系分类管理、消息留言管理、订单管理等内容。</p>
+<p>食堂菜单管理，在食堂菜单管理页面中通过填写食堂号、食堂名、菜品、菜系、图片、分量、食材、食堂地址、详情、价格、座位总数、已选座位[用号隔开]等信息，还可以根据需要对食堂菜单管理进行查看、修改、删除等操作，如图5-13所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0742springboot/blog.029.png"
+        data-srcset="/images/0700stringboot/0742springboot/blog.029.png, /images/0700stringboot/0742springboot/blog.029.png 1.5x, /images/0700stringboot/0742springboot/blog.029.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0742springboot/blog.029.png"
+        title="/images/0700stringboot/0742springboot/blog.029.png" /></p>
+<p>图5-13食堂菜单管理界面图</p>
+<p>菜系分类管理，在菜系分类管理页面中可以填写菜系等信息，并且根据需要对已有菜系分类管理进行修改、删除等其他详细操作，如图5-14所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0742springboot/blog.030.png"
+        data-srcset="/images/0700stringboot/0742springboot/blog.030.png, /images/0700stringboot/0742springboot/blog.030.png 1.5x, /images/0700stringboot/0742springboot/blog.030.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0742springboot/blog.030.png"
+        title="/images/0700stringboot/0742springboot/blog.030.png" /></p>
+<p>图5-14菜系分类管理界面图
+#########
+订单管理，在订单管理页面中通过填写订单编号、商品表名、用户ID、商品ID、商品名称、商品图片、购买数量、价格/积分、折扣价格、总价格/总积分、折扣总价格、</p>
+<p>支付类型、状态、地址等内容进行查看、发货等操作，如图5-15所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0742springboot/blog.031.png"
+        data-srcset="/images/0700stringboot/0742springboot/blog.031.png, /images/0700stringboot/0742springboot/blog.031.png 1.5x, /images/0700stringboot/0742springboot/blog.031.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0742springboot/blog.031.png"
+        title="/images/0700stringboot/0742springboot/blog.031.png" /></p>
+<p>图5-15订单管理界面图
+#########</p>
+<h2 id="54用户功能模块">5.4用户功能模块</h2>
+<p>用户登录进入高校校园点餐系统可以查看个人中心、消息留言管理、我的收藏管理、订单管理等内容。</p>
+<p>消息留言管理，在消息留言管理页面中通过填写账号、姓名、角色、食堂号、食堂名、订单号、配送分、包装分、菜品分、时间、建议、是否审核、审核回复等信息，还可以根据需要对消息留言管理进行查看、修改、删除等操作，如图5-16所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0742springboot/blog.032.png"
+        data-srcset="/images/0700stringboot/0742springboot/blog.032.png, /images/0700stringboot/0742springboot/blog.032.png 1.5x, /images/0700stringboot/0742springboot/blog.032.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0742springboot/blog.032.png"
+        title="/images/0700stringboot/0742springboot/blog.032.png" /></p>
+<p>图5-16消息留言管理界面图</p>
+<p>订单管理，在订单管理页面中可以查看订单编号、商品表名、用户ID、商品ID、商品名称、商品图片、购买数量、价格/积分、折扣价格、总价格/总积分、折扣总价格、</p>
+<p>支付类型、状态、地址等信息，并且根据需要对已有订单管理进行查看等其他详细操作，如图5-17所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0742springboot/blog.021.png"
+        data-srcset="/images/0700stringboot/0742springboot/blog.021.png, /images/0700stringboot/0742springboot/blog.021.png 1.5x, /images/0700stringboot/0742springboot/blog.021.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0742springboot/blog.021.png"
+        title="/images/0700stringboot/0742springboot/blog.021.png" /></p>
+<p>图5-17订单管理界面图
+#########</p>
+<p>#########</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2024-06-16</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/0742springboot%E9%A4%90%E5%8E%85%E7%82%B9%E9%A4%90%E7%B3%BB%E7%BB%9F/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://chenqi199.github.io/0742springboot%E9%A4%90%E5%8E%85%E7%82%B9%E9%A4%90%E7%B3%BB%E7%BB%9F/" data-title="0742springboot餐厅点餐系统" data-hashtags="springboot,java,vue,论文,项目"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://chenqi199.github.io/0742springboot%E9%A4%90%E5%8E%85%E7%82%B9%E9%A4%90%E7%B3%BB%E7%BB%9F/" data-hashtag="springboot"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://chenqi199.github.io/0742springboot%E9%A4%90%E5%8E%85%E7%82%B9%E9%A4%90%E7%B3%BB%E7%BB%9F/" data-title="0742springboot餐厅点餐系统"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://chenqi199.github.io/0742springboot%E9%A4%90%E5%8E%85%E7%82%B9%E9%A4%90%E7%B3%BB%E7%BB%9F/" data-title="0742springboot餐厅点餐系统"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://chenqi199.github.io/0742springboot%E9%A4%90%E5%8E%85%E7%82%B9%E9%A4%90%E7%B3%BB%E7%BB%9F/" data-title="0742springboot餐厅点餐系统" data-ralateuid="https://gitee.com/chen_q_i"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/springboot/">Springboot</a>,&nbsp;<a href="/tags/java/">Java</a>,&nbsp;<a href="/tags/vue/">Vue</a>,&nbsp;<a href="/tags/%E8%AE%BA%E6%96%87/">论文</a>,&nbsp;<a href="/tags/%E9%A1%B9%E7%9B%AE/">项目</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/0737springboot%E9%AB%98%E6%A0%A1%E5%85%9A%E5%8A%A1%E7%B3%BB%E7%BB%9F/" class="prev" rel="prev" title="0737springboot高校党务系统"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>0737springboot高校党务系统</a>
+            <a href="/0741springboot%E6%AF%95%E4%B8%9A%E7%94%9F%E4%BF%A1%E6%81%AF%E6%8B%9B%E8%81%98%E5%B9%B3%E5%8F%B0/" class="next" rel="next" title="0741springboot毕业生信息招聘平台">0741springboot毕业生信息招聘平台<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.128.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="chenqi199" target="_blank">chenqi</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

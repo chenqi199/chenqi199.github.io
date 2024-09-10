@@ -3,170 +3,22 @@
 
 # [0461springboot学生心理压力咨询评判pf](https://github.com/GraduationProject-springboot/0461springboot)
 
-### 微信： chen_q123456  qq:462201886
-### github:chenqi199
+![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-### [所有项目](https://github.com/GraduationProject-springboot/allSpringbootProjects) 包安装运行
+# [项目清单](https://chenqi1990.site) 包安装运行
 
-### [所有项目列表excel 腾讯文档 项目清单](https://docs.qq.com/sheet/DSHRFSVZ5aEVYT3N3?tab=BB08J2) 包安装运行
-
-### [github](https://chenqi199.github.io)
-
-
-
-
-
-
-
-
-# 0461springboot学生心理压力咨询评判pf
+### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://player.bilibili.com/player.html?isOutside=true&aid=BV1ULbQeREgz&bvid=BV1ULbQeREgz&cid=500001616877494&p=61)
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=61)
 
-### [所有项目](https://github.com/GraduationProject-springboot/allSpringbootProjects) 包安装运行
-
-
-
-
-
-
-
-
-
-
-
-
-**毕 业 设 计（论 文）**
-
-**学生心理压力咨询评判设计与实现**
-
-**摘 要**
-
-传统办法管理信息首先需要花费的时间比较多，其次数据出错率比较高，而且对错误的数据进行更改也比较困难，最后，检索数据费事费力。因此，在计算机上安装学生心理压力咨询评判软件来发挥其高效地信息处理的作用，可以规范信息管理流程，让管理工作可以系统化和程序化，同时，学生心理压力咨询评判的有效运用可以帮助管理人员准确快速地处理信息。
-
-学生心理压力咨询评判在对开发工具的选择上也很慎重，为了便于开发实现，选择的开发工具为Eclipse，选择的数据库工具为Mysql。以此搭建开发环境实现学生心理压力咨询评判的功能。其中管理员管理用户，新闻公告。
-
-学生心理压力咨询评判是一款运用软件开发技术设计实现的应用系统，在信息处理上可以达到快速的目的，不管是针对数据添加，数据维护和统计，以及数据查询等处理要求，学生心理压力咨询评判都可以轻松应对。
-
-**关键词**：学生心理压力咨询评判；SpringBoot框架，系统分析，数据库设计
-
-**Abstract**
-
-The traditional method of managing public transportation information
-first takes more time, and secondly, the data error rate is relatively
-high, and it is more difficult to modify the wrong data, and finally, it
-is laborious and laborious to retrieve the data. Therefore, installing
-the public transportation query website software on the computer to play
-its role in efficient information processing can standardize the public
-transportation information management process, so that the management
-work can be systematized and programmed. At the same time, the effective
-use of the public transportation query website can help managers
-accurately Process information quickly.
-
-The public transportation query website is also very cautious in the
-selection of development tools. In order to facilitate the development
-and realization, the selected development tool is Eclipse, and the
-selected database tool is Mysql. In this way, the development
-environment is built to realize the functions of the public transport
-query website. Among them, the administrator manages users, drivers,
-news announcements, manages vehicles, stations, and trip information in
-the route management module, and responds to users\' suggested messages
-in the message suggestion management module. Users inquire about the
-site, inquire about transfer information, post message suggestions, and
-check news announcements.
-
-The bus query website is an application system designed and implemented
-using software development technology. It can achieve rapid information
-processing. Whether it is for data addition, data maintenance and
-statistics, and data query processing requirements, the bus query
-website can easily response.
-
-**Key Words：**Public transport query website; bus number information;
-suggestion to leave a message; query site
-
-[第1章 绪论 1](#第1章-绪论)
-
-[1.1选题动因 1](#选题动因)
-
-[1.2目的和意义 1](#目的和意义)
-
-[1.3论文结构安排 2](#论文结构安排)
-
-[第2章 开发环境与技术 3](#第2章-开发环境与技术)
-
-[2.1 MYSQL数据库 3](#mysql数据库)
-
-[2.2 Tomcat 介绍 3](#tomcat-介绍)
-
-[2.3 vue技术 4](#vue技术)
-
-[2.4 SpringBoot框架 5](#springboot框架)
-
-[第3章 系统分析 5](#第3章-系统分析)
-
-[3.1可行性分析 5](#可行性分析)
-
-[3.1.1操作可行性分析 5](#操作可行性分析)
-
-[3.1.2经济可行性分析 6](#经济可行性分析)
-
-[3.1.3技术可行性分析 6](#技术可行性分析)
-
-[3.2系统流程分析 6](#系统流程分析)
-
-[3.3系统性能分析 8](#系统性能分析)
-
-[第4章 系统设计 9](#第4章-系统设计)
-
-[4.1界面设计原则 9](#界面设计原则)
-
-[4.2功能结构设计 10](#功能结构设计)
-
-[4.3数据库设计 10](#数据库设计)
-
-[4.3.2 数据库物理设计 11](#数据库物理设计)
-
-[第5章 系统实现 14](#第5章-系统实现)
-
-[5.1用户信息管理 14](#用户信息管理)
-
-[5.2 咨询师管理 15](#咨询师管理)
-
-[5.3心理评测题目管理 16](#心理评测题目管理)
-
-[5.1公告信息管理 17](#公告信息管理)
-
-[第6章 系统测试 19](#__RefHeading___Toc17681)
-
-[6.1 系统测试方法 19](#系统测试方法)
-
-[6.2 功能测试 19](#功能测试)
-
-[6.2.1 登录功能测试 20](#登录功能测试)
-
-[6.3 测试结果分析 20](#测试结果分析)
-
-[结 论 21](#结-论)
-
-[参考文献 23](#参考文献)
-
-[致 谢 24](#致-谢)
-
-#   {#section .unnumbered}
 
 # 第1章 绪论
-
 ## 1.1选题动因
-
 当前的网络技术，软件技术等都具备成熟的理论基础，市场上也出现各种技术开发的软件，这些软件都被用于各个领域，包括生活和工作的领域。随着电脑和笔记本的广泛运用，以及各种计算机硬件的完善和升级，市面上的电脑和笔记本的性能都得到提升，可以支持的软件也逐渐增多，因此，在计算机上安装软件来发挥其高效地信息处理的作用，则很受人们的青睐。对于学生心理压力咨询评判信息来讲，通过手工形式处理，在面对庞大的信息数量时，就显得不适宜了，首先需要花费的时间比较多，其次数据出错率比较高，而且对错误的数据进行更改也比较困难，最后，检索数据费事费力。因此，为了解决上述问题，有必要建立学生心理压力咨询评判，来规范学生心理压力咨询评判信息管理流程，让管理工作可以系统化和程序化，同时，学生心理压力咨询评判的有效运用可以帮助管理人员准确快速地处理信息。
-
 ## 1.2目的和意义
-
 学生心理压力咨询评判可以对学生心理压力咨询评判信息进行集中管理，可以真正避免传统管理的缺陷。学生心理压力咨询评判是一款运用软件开发技术设计实现的应用系统，在信息处理上可以达到快速的目的，不管是针对数据添加，数据维护和统计，以及数据查询等处理要求，学生心理压力咨询评判都可以轻松应对。所以，学生心理压力咨询评判的运用是让学生心理压力咨询评判信息管理升级的最好方式。它可以实现信息处理的便利化要求，还可以规范信息处理的流程，让事务处理成为管理人员手中的一件简单事，而不是之前手工处理时的困难事。尽管学生心理压力咨询评判具备较完善的功能，但是也需要管理人员利用闲暇时间提升自身素质以及个人能力，在操作学生心理压力咨询评判时可以最大化运用学生心理压力咨询评判提供的功能，让系统在满足高效率处理数据的同时，也能始终稳定运行，还可以确保数据的可靠性与数据处理的质量。
-
 ## 1.3论文结构安排
-
 本文总共分为6个章节，每个章节都对本系统描述了不同的内容。接下来就对本文的研究内容进行阐述。
 
 第1章：这个章节是论文的绪论部分。从选题的背景和意义的角度阐述即将开发的系统。
@@ -181,79 +33,50 @@ suggestion to leave a message; query site
 
 第6章：这个章节是系统测试部分。从测试系统功能，系统测试方法的角度阐述系统。
 
+
 # 第2章 开发环境与技术
-
 开发学生心理压力咨询评判需要搭建编程的环境，也需要通过调查，对各个相关技术进行分析，选取适合本系统开发的技术与工具。
-
 ## 2.1 MYSQL数据库
-
 题目确定了是一个应用程序之后，就开始按部就班的进行设计与分析。本课题是需要数据库作为数据管理工具以及数据载体，从程序功能分析到数据分析，选择合适的关系型数据库是当下所选择的重要环节。关系型数据库可选择余地不多，本身甲骨文公司的两个，微软的两个，IBM的一个，也就是这五个了，功能和差异都不影响数据库的选择，因为这些数据库都能实现应用程序功能所需的，那么只能从其他的方面来综合考虑哪种数据库更合适。作为开发使用的电脑硬件上来讲，还是大一的时候买的，当初并没有太多的钱买好一点的电脑，只是作为学习用的，所以经过这么几年的使用，电脑老化了，性能下降也比较厉害，还有好多需要用的学习资料，本身面临毕业，选择学校机房也不是一个长久的打算，选择一个数据库适合自己的老旧笔记本电脑作为学习开发当前的应用，是最重要的。综合考虑的结果就是选用MySQL数据库作为应用数据库，因为MySQL数据库体积小，占用内存小，不影响电脑上其他用的软件运行，并且不需要因为安装维护MySQL数据库而重装系统，最终选择的数据库就是MySQL数据库。
-
 ## 2.2 Tomcat 介绍
-
 刚开始学习Java语言的时候，是不知道还有Tomcat这些东西的，各种语法各种输出在控制台进行输出结果，当Java网站开发的时候就不可避免的学习到了Tomcat服务器。Tomcat准确的来讲不算是服务器，可以说是vue引擎或者一个容器，这些都是学术上或者原理上都比较贴切的，但是实际工作中Tomcat就是作为一个web服务器来用的，因为可以实现网站的发布和运行。因为工作原理的原因，Tomcat一般作为中小型企业和并发量并不突出的一种轻量级的服务器存在的，比如某些行业的应用系统，本身客户端就不多，需要的连接也不多，一般都用Tomcat的。Tomcat里面可以配置多个网站，配置文件后缀是config的文档，类似于XML的结构，比较清晰明了。每当Java发布新的版本的时候，Tomcat也会为了匹配Java的版本进行升级，目前Tomcat版本已经到版本10了。Tomcat标识是一只有点发黄的小猫咪，当Tomcat配置成功一般测试的时候能看到这个小猫咪就算是成功的，才能进行下一步的配置。Tomcat服务器在Java网站开发中还是挺合适的。
-
 ## 2.3 vue技术
-
 vue技术可以让初学者尽快上手进行编写动态网站，不需要变成高级的Java编程人员才可以书写代码，从学习的效率还有编写的效率上都有很大的提升。让着重于网页开发者与着重于后台逻辑开发进行分离合作开发变成了一种可能，降低了学习成本，不需要考虑程序运行解释编译阶段的话，vue网页本身就可以理解成一个普通的Servlet。vue结构上面，主要分为两个方面，一个是专属的vue引擎，通俗的讲就是可以实现vue编译后运行解释的一个东西，另一个就是web服务器。vue运行编译需要vue引擎和web服务器进行配合以及相互协作，当然他们的分工也是很明确的，这样才可以真正的运行起来。vue容器和引擎有Tomcat，这个Tomcat其实也还有Apache静态解释代码的部分，虽然看起来运行效果差不多，但是其实是两个截然不同的工具，在文件系统里目录也是不一样的，当然如果有特殊需求也是可以进行特殊的配置的，配置上面还是比较灵活的。虽然Tomcat部署了网站之后就可以运行网页让客户访问，但是Tomcat也只是vue引擎而非web服务器。比如JRUN和Resin都算是vue引擎，而web服务器的职责比较单一，就是处理客户端请求还有返回给客户显示请求处理后的数据而已。vue引擎则可以运行纯HTML编写的网站，也可以运行vue编写的动态网站，在效率上也只是比单纯的web服务器而已，但是从纯web服务器无法运行动态网站上来讲，vue引擎在功能上还是强大了很多，提升一点点效率反而算不了什么，对于必须实现的功能这些要素上，选择了vue技术。
-
 ## 2.4 SpringBoot框架
-
-java一直被人诟病的一点就是臃肿、麻烦。当我们还在辛苦的搭建项目时，可能Python程序员已经把功能写好了，究其原因注意是两点：复杂的配置，项目各种配置其实是开发时的损耗，
-因为在思考 Spring
-特性配置和解决业务问题之间需要进行思维切换，所以写配置挤占了写应用程序逻辑的时间。一个是混乱的依赖管理。项目的依赖管理也是件吃力不讨好的事情。决定项目里要用哪些库就已经够让人头痛的了，你还要知道这些库的哪个版本和其他库不会有冲突，这难题实在太棘手。并且，依赖管理也是一种损耗，添加依赖不是写应用程序代码。一旦选错了依赖的版本，随之而来的不兼容问题毫无疑问会是生产力杀手。而SpringBoot让这一切成为过去！Spring
-Boot
-简化了基于Spring的应用开发，只需要"run"就能创建一个独立的、生产级别的Spring应用。Spring
-Boot为Spring平台及第三方库提供开箱即用的设置（提供默认设置，存放默认配置的包就是启动器），这样我们就可以简单的开始。多数Spring
-Boot应用只需要很少的Spring配置。我们可以使用SpringBoot创建java应用，并使用java
---jar 启动它，就能得到一个生产级别的web工程。
-
+java一直被人诟病的一点就是臃肿、麻烦。当我们还在辛苦的搭建项目时，可能Python程序员已经把功能写好了，究其原因注意是两点：复杂的配置，项目各种配置其实是开发时的损耗， 因为在思考 Spring 特性配置和解决业务问题之间需要进行思维切换，所以写配置挤占了写应用程序逻辑的时间。一个是混乱的依赖管理。项目的依赖管理也是件吃力不讨好的事情。决定项目里要用哪些库就已经够让人头痛的了，你还要知道这些库的哪个版本和其他库不会有冲突，这难题实在太棘手。并且，依赖管理也是一种损耗，添加依赖不是写应用程序代码。一旦选错了依赖的版本，随之而来的不兼容问题毫无疑问会是生产力杀手。而SpringBoot让这一切成为过去！Spring Boot 简化了基于Spring的应用开发，只需要“run”就能创建一个独立的、生产级别的Spring应用。Spring Boot为Spring平台及第三方库提供开箱即用的设置（提供默认设置，存放默认配置的包就是启动器），这样我们就可以简单的开始。多数Spring Boot应用只需要很少的Spring配置。我们可以使用SpringBoot创建java应用，并使用java –jar 启动它，就能得到一个生产级别的web工程。
 # 第3章 系统分析
-
 用户的需求以及与本系统相似的在市场上存在的其它系统可以作为系统分析中参考的资料，分析人员可以根据这些信息确定出本系统具备的功能，分析出本系统具备的性能等内容。
-
 ## 3.1可行性分析
-
 尽管系统是根据用户的要求进行制作，但是在确定制作前，有必要分析其可行性。
-
 ### 3.1.1操作可行性分析
-
 开发本系统需要用到的工具，本人都比较熟悉，因此可以使用这些工具，完整开发学生心理压力咨询评判。此外，学生心理压力咨询评判在功能上，基本都是完成信息的处理，涵盖了添加，修改，删除等，而且操作者面对的都是各个功能操作界面，并不是编码后台，所以一般的使用者都可以通过操作界面轻松完成信息的加工处理。因此，本系统操作可行。
-
 ### 3.1.2经济可行性分析
-
 开发本系统，并没有投入资金购买开发工具。因为使用的开发工具都是事先在百度上下载安装在本人电脑上的，随着软件开发技术的成熟，系统功能实现的编码也都模块化，很容易通过各大软件开发类网站获取，并通过小部分代码改动，运用到本系统中，这些都不需要资金投入，同时，本系统开发的结构选用B/S，成本可以忽略不计。
-
 ### 3.1.3技术可行性分析
-
 本系统需要的软件包括Eclipse，Tomcat，Mysql等，这些工具都接触并使用过，至于JAVA，B/S，vue，Html等技术，图书馆都有对应的书籍可以参考学习，加上平时课堂上学习的编程小项目对这些技术都有讲解，另外，本人也从课程设计作业中锻炼了编程能力。所以在技术上，可以完成学生心理压力咨询评判的编程开发。
 
 通过上面的分析，已经确定了本系统在经济上的可行，本系统在技术上的可行，本系统在操作上的可行。由此，可以得出在目前的条件下，对于学生心理压力咨询评判的设计与实现是可以进行下去的。
-
 ## 3.2系统流程分析
-
 本系统在处理数据时，其内部的操作逻辑也需要使用相应的工具进行展示。
 
 在本系统的数据录入页面，对于操作者提供的每条数据都有相应的检验规则，比如数据信息不能有非法字符，或者本来应该是汉字的数据，不能用字母代替，还有对数据内容的长度等进行规范，这样的可以确保数据准确性的检验规则，在编码时，就提前编写好了。数据添加的流程见下图。如果数据已经保存进入数据库，则说明操作者提供的数据内容和格式都是符合要求的。
 
-![](media/image1.wmf)
+![](/images/0400stringboot/0461springboot/blog.001.png)
 
 图3.1 添加信息流程图
 
 很多时候，面对系统中的大量数据，难免会发现一些错误，因此需要及时纠正错误，本系统也提供数据后期的修改功能，其流程见下图。但是更新的数据也需要通过数据有效性检验。能够最终写入数据库则说明修改的数据是符合要求的。
 
-![](media/image2.wmf)
+![](/images/0400stringboot/0461springboot/blog.002.png)
 
 图3.2 修改信息流程图
 
 面对数据库里面大量数据，在系统的前台，要想快速获取需要的信息，就需要使用查询功能。其流程见下图。该功能需要操作者提前输入关键词，当系统的后台数据库保存了与关键词匹配的数据时，就会及时显示出来，整个过程耗时很短。
 
-![](media/image3.wmf)
+![](/images/0400stringboot/0461springboot/blog.003.png)
 
 图3.3 查询信息流程图
-
 ## 3.3系统性能分析
-
 分析学生心理压力咨询评判对于性能的需求主要还是从下面的5个角度来分析，它们分别是系统的实用性，系统的适应性，系统的易操作性，系统的安全性和系统的易维护性。
 
 性能需求一：系统的实用性，本系统主要是让管理人员集中处理相关信息，可以提供方便快捷的信息添加，信息编辑等操作。在提高信息管理人员的工作效率的同时，也可以降低管理成本，并大大减少管理人员日常繁琐的工作量。
@@ -265,13 +88,9 @@ Boot应用只需要很少的Spring配置。我们可以使用SpringBoot创建jav
 性能需求四：系统的安全性，本系统在数据保存与管理上安全系数要达标，在设计与编码阶段，通过对用户进行权限分配，把系统的功能依照不同用户的角色进行分配，在首次进入系统时，通过编写安全验证的代码模块，引导不同用户进入不同的操作界面。还可以对用户基础信息包括登录的账号密码等进行加密保存，可以利用当下常用的技术成熟的MD5加密技术实现。
 
 性能需求五：系统的易维护性，本系统在后期运行中，会根据使用者的操作，产生许多数据信息，为了便于维护，就要求这些数据可以通过工具从数据库中导出来，对于一些阶段性数据，可以进行批量删除，以此达到轻负荷处理数据的目标，让本系统可以变得更加轻盈。
-
 # 第4章 系统设计
-
 市面上设计比较好的系统都有一个共同特征，就是主题鲜明突出。通过对页面简洁清晰的布局，让页面的内容，包括文字语言，或者视频图片等元素可以清晰表达出系统的主题。让来访用户无需花费过多精力和时间找寻需要的内容。
-
 ## 4.1界面设计原则
-
 一般来说，大部分用户使用系统，有些是想从系统中获取需要的信息，有些则是使用系统提供的服务。所以，为了改善用户体验，提高系统的使用率，在对系统界面设计时，需要按照下面的原则进行。
 
 第一点，对用户进行分析，了解用户使用系统的目的，以及使用系统的方式，考虑大部分用户的阅读习惯，设计Z字形或F型结构可以方便用户获取信息。
@@ -283,589 +102,304 @@ Boot应用只需要很少的Spring配置。我们可以使用SpringBoot创建jav
 第四点：设计的界面要保证传达的内容清晰准确。要避免在同一个页面设计非常多的内容，另外可以准确对系统内容进行分类，把页面中用户视觉集中的位置，用来显示重要信息。
 
 作为初学者，并没有那么多的设计经验，但是可以运用上面提到的界面设计原则设计出比较好的系统，可以让用户产生良好的使用体验。
-
 ## 4.2功能结构设计
-
 为了让系统的编码可以顺利进行，特意对本系统功能进行细分设计，设计的系统功能结构见下图。
 
-![](media/image4.jpeg){width="5.7555555555555555in"
-height="2.4166666666666665in"}
+![结构设计图](/images/0400stringboot/0461springboot/blog.004.jpeg "结构设计图")
 
 图4.1 系统功能结构图
-
 ## 4.3数据库设计
-
 一般来说，对用户进行调查，了解其需求，主要还是完成功能上的分析设计，殊不知，设计功能时，也要展示对数据库的设计。数据库服务于程序，它可以按照设定的规则对程序的数据进行保存，因此，也可以说数据库就是程序相关数据的集合。为了保证程序的高质量，数据库提供的数据存储服务也需要快速响应，同时数据信息也要安全合法可靠，所以设计一个数据库这样的任务也需要高度重视，并花时间和精力去努力完成。毕竟这影响到后期程序的开发和使用。试想而知，假设设计一个不好的数据库，遇到的问题将会有：第一，面对信息处理，会有着繁琐的业务逻辑，延长事务处理时间。第二：程序编码期间，将会产生更多的代码去完成数据处理的功能，产生大量的数据冗余，而且也不方便注释代码，还会占用更多的存储空间。综上所述，设计出合理的数据库是多么的重要。
 
 （1）下图是心理健康留言实体和其具备的属性。
 
-![](media/image5.jpeg){width="3.75in" height="2.082638888888889in"}\
+![C:/Users/Administrator/Desktop/temp111\1\img\心理健康留言.jpg](/images/0400stringboot/0461springboot/blog.005.jpeg "C:/Users/Administrator/Desktop/temp111\1\img\心理健康留言.jpg")
 心理健康留言实体属性图
 
 （2）下图是用户实体和其具备的属性。
 
-![](media/image6.jpeg){width="5.554861111111111in"
-height="2.9854166666666666in"}\
+![C:/Users/Administrator/Desktop/temp111\1\img\用户.jpg](/images/0400stringboot/0461springboot/blog.006.jpeg "C:/Users/Administrator/Desktop/temp111\1\img\用户.jpg")
 用户实体属性图
 
 （3）下图是咨询师实体和其具备的属性。
 
-![](media/image7.jpeg){width="5.554861111111111in"
-height="2.986111111111111in"}\
+![C:/Users/Administrator/Desktop/temp111\1\img\咨询师.jpg](/images/0400stringboot/0461springboot/blog.007.jpeg "C:/Users/Administrator/Desktop/temp111\1\img\咨询师.jpg")
 咨询师实体属性图
 
 （4）下图是考试记录表实体和其具备的属性。
 
-![](media/image8.jpeg){width="3.75in" height="2.082638888888889in"}\
+![C:/Users/Administrator/Desktop/temp111\1\img\考试记录表.jpg](/images/0400stringboot/0461springboot/blog.008.jpeg "C:/Users/Administrator/Desktop/temp111\1\img\考试记录表.jpg")
 考试记录表实体属性图
 
 （5）下图是答题详情表实体和其具备的属性。
 
-![](media/image9.jpeg){width="3.75in" height="2.082638888888889in"}\
+![C:/Users/Administrator/Desktop/temp111\1\img\答题详情表.jpg](/images/0400stringboot/0461springboot/blog.009.jpeg "C:/Users/Administrator/Desktop/temp111\1\img\答题详情表.jpg")
 答题详情表实体属性图
 
 （6）下图是通知公告实体和其具备的属性。
 
-![](media/image10.jpeg){width="3.75in" height="2.082638888888889in"}\
+![C:/Users/Administrator/Desktop/temp111\1\img\通知公告.jpg](/images/0400stringboot/0461springboot/blog.010.jpeg "C:/Users/Administrator/Desktop/temp111\1\img\通知公告.jpg")
 通知公告实体属性图
 
 （7）下图是字典表实体和其具备的属性。
 
-![](media/image11.jpeg){width="3.75in" height="2.082638888888889in"}\
+![C:/Users/Administrator/Desktop/temp111\1\img\字典表.jpg](/images/0400stringboot/0461springboot/blog.011.jpeg "C:/Users/Administrator/Desktop/temp111\1\img\字典表.jpg")
 字典表实体属性图
 
 （8）下图是试卷选题实体和其具备的属性。
 
-![](media/image12.jpeg){width="2.9166666666666665in"
-height="1.5270833333333333in"}\
+![C:/Users/Administrator/Desktop/temp111\1\img\试卷选题.jpg](/images/0400stringboot/0461springboot/blog.012.jpeg "C:/Users/Administrator/Desktop/temp111\1\img\试卷选题.jpg")
 试卷选题实体属性图
 
 （9）下图是心理健康实体和其具备的属性。
 
-![](media/image13.jpeg){width="5.554861111111111in"
-height="2.9854166666666666in"}\
+![C:/Users/Administrator/Desktop/temp111\1\img\心理健康.jpg](/images/0400stringboot/0461springboot/blog.013.jpeg "C:/Users/Administrator/Desktop/temp111\1\img\心理健康.jpg")
 心理健康实体属性图
 
 （10）下图是咨询师预约实体和其具备的属性。
 
-![](media/image14.jpeg){width="3.75in" height="2.082638888888889in"}\
+![C:/Users/Administrator/Desktop/temp111\1\img\咨询师预约.jpg](/images/0400stringboot/0461springboot/blog.014.jpeg "C:/Users/Administrator/Desktop/temp111\1\img\咨询师预约.jpg")
 咨询师预约实体属性图
 
 （11）下图是试卷表实体和其具备的属性。
 
-![](media/image15.jpeg){width="3.75in" height="2.082638888888889in"}\
+![C:/Users/Administrator/Desktop/temp111\1\img\试卷表.jpg](/images/0400stringboot/0461springboot/blog.015.jpeg "C:/Users/Administrator/Desktop/temp111\1\img\试卷表.jpg")
 试卷表实体属性图
 
 （12）下图是心理健康收藏实体和其具备的属性。
 
-![](media/image16.jpeg){width="3.75in" height="2.082638888888889in"}\
+![C:/Users/Administrator/Desktop/temp111\1\img\心理健康收藏.jpg](/images/0400stringboot/0461springboot/blog.016.jpeg "C:/Users/Administrator/Desktop/temp111\1\img\心理健康收藏.jpg")
 心理健康收藏实体属性图
 
 （13）下图是试题表实体和其具备的属性。
 
-![](media/image17.jpeg){width="3.75in" height="2.082638888888889in"}\
+![C:/Users/Administrator/Desktop/temp111\1\img\试题表.jpg](/images/0400stringboot/0461springboot/blog.017.jpeg "C:/Users/Administrator/Desktop/temp111\1\img\试题表.jpg")
 试题表实体属性图
 
 （14）下图是心理咨询实体和其具备的属性。
 
-![](media/image18.jpeg){width="5.554861111111111in"
-height="2.9854166666666666in"}\
+![C:/Users/Administrator/Desktop/temp111\1\img\心理咨询.jpg](/images/0400stringboot/0461springboot/blog.018.jpeg "C:/Users/Administrator/Desktop/temp111\1\img\心理咨询.jpg")
 心理咨询实体属性图
 
 ### 4.3.2 数据库物理设计
-
 作为程序后台的支持，本数据库也需要设计数据存储的结构。而数据存储结构的设计就包括了数据表结构的设计和创建。数据表结构包括了字段，数据类型，还有字段的取值范围等信息。而E-R模型中的实体就是一张表，实体的特征就可以作为该表中的字段，根据本程序信息存储要求，设计每个字段需要的类型，还有该字段的取值范围等。每当设计完成一张数据表，就需要及时保存在数据库里面，并对该设计的数据表准确命名，要求设置的数据表的名称尽量不要是中文，而且要方便记忆。因为在程序编码阶段，通过SQL语句可以把程序里面的数据写入在各个数据表里面，而这个环节需要使用到数据表的名称。如果数据表名称是中文的话，可能会乱码并影响程序运行。下面就以表格形式展示设计的结果。
 
 表4.1字典表表
 
-  ------ ---------------- -------------------- ------------------- --------
-   序号        列名             数据类型              说明          允许空
-
-    1           Id                Int                  id             否
-
-    2        dic_code            String               字段            是
-
-    3        dic_name            String              字段名           是
-
-    4       code_index          Integer               编码            是
-
-    5       index_name           String             编码名字          是
-
-    6        super_id           Integer             父字段id          是
-
-    7         beizhu             String               备注            是
-
-    8      create_time            Date              创建时间          是
-  ------ ---------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|dic\_code|String|字段|是|
+|3|dic\_name|String|字段名|是|
+|4|code\_index|Integer|编码|是|
+|5|index\_name|String|编码名字|是|
+|6|super\_id|Integer|父字段id|是|
+|7|beizhu|String|备注|是|
+|8|create\_time|Date|创建时间|是|
 表4.2试卷表表
 
-  ------ ------------------- -------------------- ----------------------- --------
-   序号         列名               数据类型                说明            允许空
-
-    1            Id                  Int                    id               否
-
-    2      exampaper_name           String               试卷名称            是
-
-    3      exampaper_date          Integer            考试时长(分钟)         是
-
-    4     exampaper_myscore        Integer              试卷总分数           是
-
-    5      exampaper_types         Integer               试卷状态            是
-
-    6       zujuan_types           Integer               组卷方式            是
-
-    7     exampaper_delete         Integer         逻辑删除（1代表未删除     是
-                                                       2代表已删除）      
-
-    8        create_time             Date                创建时间            是
-  ------ ------------------- -------------------- ----------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|exampaper\_name|String|试卷名称|是|
+|3|exampaper\_date|Integer|考试时长(分钟)|是|
+|4|exampaper\_myscore|Integer|试卷总分数|是|
+|5|exampaper\_types|Integer|试卷状态|是|
+|6|zujuan\_types|Integer|组卷方式|是|
+|7|exampaper\_delete|Integer|逻辑删除（1代表未删除 2代表已删除）|是|
+|8|create\_time|Date|创建时间|是|
 表4.3试卷选题表
 
-  ------ ----------------------- -------------------- ------------------- --------
-   序号           列名                 数据类型              说明          允许空
-
-    1              Id                    Int                  id             否
-
-    2         exampaper_id             Integer               试卷            是
-
-    3        examquestion_id           Integer               试题            是
-
-    4     exampapertopic_number        Integer             试题分数          是
-
-    5          create_time               Date              创建时间          是
-  ------ ----------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|exampaper\_id|Integer|试卷|是|
+|3|examquestion\_id|Integer|试题|是|
+|4|exampapertopic\_number|Integer|试题分数|是|
+|5|create\_time|Date|创建时间|是|
 表4.4试题表表
 
-  ------ ----------------------- -------------------- -------------------------- --------
-   序号           列名                 数据类型                  说明             允许空
-
-    1              Id                    Int                      id                否
-
-    2       examquestion_name           String                 试题名称             是
-
-    3     examquestion_options          String             选项，json字符串         是
-
-    4      examquestion_answer          String                 正确答案             是
-
-    5     examquestion_analysis         String                 答案解析             是
-
-    6      examquestion_types          Integer                 试题类型             是
-
-    7     examquestion_sequence        Integer         试题排序，值越大排越前面     是
-
-    8          create_time               Date                  创建时间             是
-  ------ ----------------------- -------------------- -------------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|examquestion\_name|String|试题名称|是|
+|3|examquestion\_options|String|选项，json字符串|是|
+|4|examquestion\_answer|String|正确答案|是|
+|5|examquestion\_analysis|String|答案解析|是|
+|6|examquestion\_types|Integer|试题类型|是|
+|7|examquestion\_sequence|Integer|试题排序，值越大排越前面|是|
+|8|create\_time|Date|创建时间|是|
 表4.5考试记录表表
 
-  ------ ------------------------ -------------------- -------------------- --------
-   序号            列名                 数据类型               说明          允许空
-
-    1               Id                    Int                   id             否
-
-    2     examrecord_uuid_number         String              考试编号          是
-
-    3           yonghu_id               Integer              考试学生          是
-
-    4          exampaper_id             Integer         所属试卷id（外键）     是
-
-    5          total_score              Integer              所得总分          是
-
-    6          insert_time                Date               考试时间          是
-
-    7          create_time                Date               创建时间          是
-  ------ ------------------------ -------------------- -------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|examrecord\_uuid\_number|String|考试编号|是|
+|3|yonghu\_id|Integer|考试学生|是|
+|4|exampaper\_id|Integer|所属试卷id（外键）|是|
+|5|total\_score|Integer|所得总分|是|
+|6|insert\_time|Date|考试时间|是|
+|7|create\_time|Date|创建时间|是|
 表4.6答题详情表表
 
-  ------ --------------------------- -------------------- ------------------- --------
-   序号             列名                   数据类型              说明          允许空
-
-    1                Id                      Int                  id             否
-
-    2     examredetails_uuid_number         String             试卷编号          是
-
-    3             yonghu_id                Integer              学生id           是
-
-    4          examquestion_id             Integer          试题id（外键）       是
-
-    5      examredetails_myanswer           String             考生答案          是
-
-    6       examredetails_myscore          Integer             试题得分          是
-
-    7            create_time                 Date              创建时间          是
-  ------ --------------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|examredetails\_uuid\_number|String|试卷编号|是|
+|3|yonghu\_id|Integer|学生id|是|
+|4|examquestion\_id|Integer|试题id（外键）|是|
+|5|examredetails\_myanswer|String|考生答案|是|
+|6|examredetails\_myscore|Integer|试题得分|是|
+|7|create\_time|Date|创建时间|是|
 表4.7通知公告表
 
-  ------ ---------------- -------------------- ------------------- --------
-   序号        列名             数据类型              说明          允许空
-
-    1           Id                Int                  id             否
-
-    2       news_name            String             公告标题          是
-
-    3       news_types          Integer           心理评测题目        是
-
-    4       news_photo           String             公告图片          是
-
-    5      insert_time            Date              添加时间          是
-
-    6      news_content          String             公告详情          是
-
-    7      create_time            Date              创建时间          是
-  ------ ---------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|news\_name|String|公告标题|是|
+|3|news\_types|Integer|心理评测题目|是|
+|4|news\_photo|String|公告图片|是|
+|5|insert\_time|Date|添加时间|是|
+|6|news\_content|String|公告详情|是|
+|7|create\_time|Date|创建时间|是|
 表4.8心理健康表
 
-  ------ ----------------------- -------------------- ------------------- --------
-   序号           列名                 数据类型              说明          允许空
-
-    1              Id                    Int                  id             否
-
-    2      xinlijiankang_name           String           心理健康标题        是
-
-    3      xinlijiankang_photo          String           心理健康照片        是
-
-    4      xinlijiankang_video          String           心理健康视频        是
-
-    5      xinlijiankang_types         Integer           心理健康类型        是
-
-    6          zan_number              Integer                赞             是
-
-    7          cai_number              Integer                踩             是
-
-    8     xinlijiankang_delete         Integer             逻辑删除          是
-
-    9     xinlijiankang_content         String           心理健康详情        是
-
-    10         create_time               Date              创建时间          是
-  ------ ----------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|xinlijiankang\_name|String|心理健康标题|是|
+|3|xinlijiankang\_photo|String|心理健康照片|是|
+|4|xinlijiankang\_video|String|心理健康视频|是|
+|5|xinlijiankang\_types|Integer|心理健康类型|是|
+|6|zan\_number|Integer|赞|是|
+|7|cai\_number|Integer|踩|是|
+|8|xinlijiankang\_delete|Integer|逻辑删除|是|
+|9|xinlijiankang\_content|String|心理健康详情|是|
+|10|create\_time|Date|创建时间|是|
 表4.9心理健康收藏表
 
-  ------ -------------------------------- -------------------- ------------------- --------
-   序号                列名                     数据类型              说明          允许空
-
-    1                   Id                        Int                  id             否
-
-    2            xinlijiankang_id               Integer             心理健康          是
-
-    3               yonghu_id                   Integer               用户            是
-
-    4     xinlijiankang_collection_types        Integer               类型            是
-
-    5              insert_time                    Date              收藏时间          是
-
-    6              create_time                    Date              创建时间          是
-  ------ -------------------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|xinlijiankang\_id|Integer|心理健康|是|
+|3|yonghu\_id|Integer|用户|是|
+|4|xinlijiankang\_collection\_types|Integer|类型|是|
+|5|insert\_time|Date|收藏时间|是|
+|6|create\_time|Date|创建时间|是|
 表4.10心理健康留言表
 
-  ------ --------------------------- -------------------- ------------------- --------
-   序号             列名                   数据类型              说明          允许空
-
-    1                Id                      Int                  id             否
-
-    2         xinlijiankang_id             Integer             心理健康          是
-
-    3             yonghu_id                Integer               用户            是
-
-    4     xinlijiankang_liuyan_text         String             留言内容          是
-
-    5            insert_time                 Date              留言时间          是
-
-    6            reply_text                 String             回复内容          是
-
-    7            update_time                 Date              回复时间          是
-
-    8            create_time                 Date              创建时间          是
-  ------ --------------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|xinlijiankang\_id|Integer|心理健康|是|
+|3|yonghu\_id|Integer|用户|是|
+|4|xinlijiankang\_liuyan\_text|String|留言内容|是|
+|5|insert\_time|Date|留言时间|是|
+|6|reply\_text|String|回复内容|是|
+|7|update\_time|Date|回复时间|是|
+|8|create\_time|Date|创建时间|是|
 表4.11用户表
 
-  ------ ------------------ -------------------- ------------------- --------
-   序号         列名              数据类型              说明          允许空
-
-    1            Id                 Int                  id             否
-
-    2       yonghu_name            String             用户姓名          是
-
-    3       yonghu_photo           String             用户头像          是
-
-    4     yonghu_id_number         String             身份证号          是
-
-    5       yonghu_phone           String             联系方式          是
-
-    6       yonghu_email           String             电子邮箱          是
-
-    7      yonghu_delete          Integer             逻辑删除          是
-
-    8       create_time             Date              创建时间          是
-  ------ ------------------ -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|yonghu\_name|String|用户姓名|是|
+|3|yonghu\_photo|String|用户头像|是|
+|4|yonghu\_id\_number|String|身份证号|是|
+|5|yonghu\_phone|String|联系方式|是|
+|6|yonghu\_email|String|电子邮箱|是|
+|7|yonghu\_delete|Integer|逻辑删除|是|
+|8|create\_time|Date|创建时间|是|
 表4.12咨询师表
 
-  ------ --------------------- -------------------- ------------------- --------
-   序号          列名                数据类型              说明          允许空
-
-    1             Id                   Int                  id             否
-
-    2       zhixunshi_name            String            咨询师姓名         是
-
-    3       zhixunshi_photo           String            咨询师头像         是
-
-    4     zhixunshi_id_number         String             身份证号          是
-
-    5       zhixunshi_phone           String             联系方式          是
-
-    6       zhixunshi_email           String             电子邮箱          是
-
-    7      zhixunshi_congye           String             从业时长          是
-
-    8     zhixunshi_shanchang         String               擅长            是
-
-    9      zhixunshi_content          String             个人简介          是
-
-    10     zhixunshi_delete          Integer             逻辑删除          是
-
-    11        create_time              Date              创建时间          是
-  ------ --------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|zhixunshi\_name|String|咨询师姓名|是|
+|3|zhixunshi\_photo|String|咨询师头像|是|
+|4|zhixunshi\_id\_number|String|身份证号|是|
+|5|zhixunshi\_phone|String|联系方式|是|
+|6|zhixunshi\_email|String|电子邮箱|是|
+|7|zhixunshi\_congye|String|从业时长|是|
+|8|zhixunshi\_shanchang|String|擅长|是|
+|9|zhixunshi\_content|String|个人简介|是|
+|10|zhixunshi\_delete|Integer|逻辑删除|是|
+|11|create\_time|Date|创建时间|是|
 表4.13心理咨询表
 
-  ------ --------------------------- -------------------- ------------------- --------
-   序号             列名                   数据类型              说明          允许空
-
-    1                Id                      Int                  id             否
-
-    2             yonghu_id                Integer              提问人           是
-
-    3           zhixunshi_id               Integer              回答人           是
-
-    4     zhixunshi_chat_issue_text         String               问题            是
-
-    5            issue_time                  Date              问题时间          是
-
-    6     zhixunshi_chat_reply_text         String               回复            是
-
-    7            reply_time                  Date              回复时间          是
-
-    8          zhuangtai_types             Integer               状态            是
-
-    9       zhixunshi_chat_types           Integer             数据类型          是
-
-    10           insert_time                 Date              提问时间          是
-
-    11           create_time                 Date              创建时间          是
-  ------ --------------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|yonghu\_id|Integer|提问人|是|
+|3|zhixunshi\_id|Integer|回答人|是|
+|4|zhixunshi\_chat\_issue\_text|String|问题|是|
+|5|issue\_time|Date|问题时间|是|
+|6|zhixunshi\_chat\_reply\_text|String|回复|是|
+|7|reply\_time|Date|回复时间|是|
+|8|zhuangtai\_types|Integer|状态|是|
+|9|zhixunshi\_chat\_types|Integer|数据类型|是|
+|10|insert\_time|Date|提问时间|是|
+|11|create\_time|Date|创建时间|是|
 表4.14咨询师预约表
 
-  ------ ---------------------- -------------------- ------------------- --------
-   序号           列名                数据类型              说明          允许空
-
-    1              Id                   Int                  id             否
-
-    2         zhixunshi_id            Integer              咨询师           是
-
-    3     zhixunshi_yuyue_time          Date              预约时间          是
-
-    4     zhixunshi_yuyue_text         String               备注            是
-
-    5         insert_time               Date              添加时间          是
-
-    6         create_time               Date              创建时间          是
-  ------ ---------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|zhixunshi\_id|Integer|咨询师|是|
+|3|zhixunshi\_yuyue\_time|Date|预约时间|是|
+|4|zhixunshi\_yuyue\_text|String|备注|是|
+|5|insert\_time|Date|添加时间|是|
+|6|create\_time|Date|创建时间|是|
 表4.15管理员表
 
-  ------ ---------------- -------------------- ------------------- --------
-   序号        列名             数据类型              说明          允许空
-
-    1           Id                Int                  id             否
-
-    2        username            String              用户名           是
-
-    3        password            String               密码            是
-
-    4          role              String               角色            是
-
-    5        addtime              Date              新增时间          是
-  ------ ---------------- -------------------- ------------------- --------
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|username|String|用户名|是|
+|3|password|String|密码|是|
+|4|role|String|角色|是|
+|5|addtime|Date|新增时间|是|
 
 # 第5章 系统实现
-
 这个环节需要使用前面的设计方案，包括对系统模块的设计，还有对程序后台的数据支持的数据库的设计等。不过这部分内容还是强调系统编码人员的开发能力，要把前面设计的内容通过编码的形式以一个完整的，可以运行的系统呈现出来。
 
 功能模块的实现
-
 ### 5.1用户信息管理
-
 如图5.1显示的就是用户信息管理页面，此页面提供给管理员的功能有：用户信息的查询管理，可以删除用户信息、修改用户信息、新增用户信息，
 
 还进行了对用户名称的模糊查询的条件
 
-![](media/image19.png){width="5.7652777777777775in"
-height="2.3993055555555554in"}
+![](/images/0400stringboot/0461springboot/blog.019.png)
 
 图5.1 用户信息管理页面
-
 ### 5.2 咨询师管理
+如图5.2显示的就是咨询师管理页面，此页面提供给管理员的功能有：查看已发布的咨询师数据，修改咨询师，咨询师作废，即可删除，还进行了对咨询师名称的模糊查询 咨询师信息的类型查询等等一些条件。
 
-如图5.2显示的就是咨询师管理页面，此页面提供给管理员的功能有：查看已发布的咨询师数据，修改咨询师，咨询师作废，即可删除，还进行了对咨询师名称的模糊查询
-咨询师信息的类型查询等等一些条件。
+![](/images/0400stringboot/0461springboot/blog.020.png)
 
-![](media/image20.png){width="5.758333333333334in"
-height="2.495138888888889in"}
 
 图5.2 咨询师管理页面
-
 ### 5.3心理评测题目管理
-
 如图5.3显示的就是心理评测题目管理页面，此页面提供给管理员的功能有：根据心理评测题目进行条件查询，还可以对心理评测题目进行新增、修改、查询操作等等。
 
-![](media/image21.png){width="5.759027777777778in" height="3.0625in"}
+![](/images/0400stringboot/0461springboot/blog.021.png)
 
 图5.3 心理评测题目管理页面
-
 ### 5.1公告信息管理
-
 如图5.4显示的就是公告信息管理页面，此页面提供给管理员的功能有：根据公告信息进行新增、修改、查询操作等等。
 
-![](media/image22.png){width="5.759027777777778in"
-height="2.4506944444444443in"}
+![](/images/0400stringboot/0461springboot/blog.022.png)
+
 
 图5.4 公告信息管理页面
 
-[]{#__RefHeading___Toc17681 .anchor}**第6章**
-尽管系统在编码过程中，程序的编制人员也会对编程的功能模块进行逐个测试，但还是避免不了已经组合完成的系统整体没有错误。很多时候，面对功能繁多，逻辑复杂的系统时，系统的测试就需要不同人来测试，并设计一些故障来检验系统的应对能力，以及发现很多系统内部的潜在问题。并通过寻求解决办法去完善系统，确保系统质量。
-
-## 6.1 系统测试方法
-
-根据系统的测试流程，划分的系统测试方法有单元测试，集成测试，系统测试，验收测试。接下来就开始描述这些内容。
-
-单元测试：这个测试环节在编码中用得最多，主要是编程人员进行的，通常对编码实现的各个子模块当成一个单元完成测试，主要基于代码的层面去发现问题，所以它也是白盒测试中的一种。
-
-集成测试：这个环节进行的前提是，已经把系统的各个子模块进行了组合，然后把组合的完整系统进行测试，检验组成目标系统的各个子模块是否具备兼容性，还有目标系统是否根据预期目标正常运行。
-
-系统测试：这个环节用到了黑盒测试，主要是检验系统的功能。并确定目标系统的各个功能是否运行正常。
-
-验收测试：这个环节需要用户参与，让用户在系统操作界面上通过对不同数据的输入，检测系统的输出结果，以此检验目标系统与用户需求之间存在的差异程度。存在的差异越小，就代表着越符合用户的期望。
-
-## 6.2 功能测试
-
-学生心理压力咨询评判的目标用户最终面向的是系统的功能，所以检验本系统的功能也是一项重要任务，只有该系统的功能都能保证正常使用，才会吸引更多的用户来使用。
-
-### 6.2.1 登录功能测试
-
-本系统在编码时，提前在登录模块编写了安全验证规则，通过判断访问者提供的数据，引导符合要求的用户进入指定页面。测试表如下。错误的数据输入，在本系统中会得到及时的反馈提示。
-
-表6.1 登录功能测试表
-
-+-----------+--------------+----------------+---------------+---------+
-| 功能      | 录入的数据   | 预期结果       | 实际结果      | 结论    |
-+-----------+--------------+----------------+---------------+---------+
-| 管        | 用户名：空   | 提             | 提示          | 通      |
-| 理员登录  |              | 示请填写用户名 | 请填写用户名  | 过测试  |
-|           | 密码：空     |                |               |         |
-+-----------+--------------+----------------+---------------+---------+
-| 管        | 用户名       | 提示请填写密码 | 提            | 通      |
-| 理员登录  | ：guanliyuan |                | 示请填写密码  | 过测试  |
-|           |              |                |               |         |
-|           | 密码：空     |                |               |         |
-+-----------+--------------+----------------+---------------+---------+
-| 管        | 用户名       | 提示用         | 提示用户      | 通      |
-| 理员登录  | ：guanliyuan | 户名密码不匹配 | 名密码不匹配  | 过测试  |
-|           |              |                |               |         |
-|           | 密码：gly    |                |               |         |
-+-----------+--------------+----------------+---------------+---------+
-| 管        | 用户名       | 提示           | 提示登录      | 通      |
-| 理员登录  | ：guanliyuan | 登录成功，并跳 | 成功，并跳转  | 过测试  |
-|           |              | 转到功能操作区 | 到功能操作区  |         |
-|           | 密码         |                |               |         |
-|           | ：guanliyuan |                |               |         |
-+-----------+--------------+----------------+---------------+---------+
-
-## 6.3 测试结果分析
-
-通过测试，可以发现学生心理压力咨询评判具备完善的功能，同时具备易操作性和易维护性的特点，在系统安全性上也有比较健全的数据保护机制。至此，学生心理压力咨询评判可以投入使用。
-
-# 结 论
-
-之前在课本上学习过软件开发的知识，包括开发流程的了解，开发技术的学习，还有如何进行系统需求分析与设计，老师也选取了比较有代表性的管理系统在课堂上进行讲解，并在课后布置作业让我们练习，期间老师也让我们也对系统实现与测试进行了了解。所以面对本次学生心理压力咨询评判的开发制作，我的脑海里还是有比较清晰的思路。在系统制作中，以及配套文档的编写中，我都是按照软件开发流程一步步开展我的工作。
-
-从系统的角度讲，学生心理压力咨询评判制作中，它的难点在于功能的确定，对系统结构的设计，还有设计性能优良的数据库，以及采用成熟的技术实现系统功能等，这些是我面临的困难。针对这些难点，我采取了一定的措施。在不知道系统的功能时，我在网上寻找了很多相似系统，并把这些系统的大致功能进行了记载，把对本系统有用的功能部分进行了采用，另外，我也从网上获取了大量关于系统设计方面的知识，包括系统模块划分，设计原则，数据库表的设计与创建等知识，也从软件开发类博客中，获取了程序编码的技术知识，包括数据增删改代码模块的编写与使用。在本系统编码完成其对应功能后，我对系统的所有功能进行了耐心的测试，最后发现我开发的系统是合格的，可以进行验收。因为本系统除了具备简洁美观的界面外，在功能上可以满足使用者对于数据操作的需求，并且本系统的功能与系统分析设计的功能保持高度一致，而且系统运行稳定，面对用户的误操作，也建立了报错反馈机制，系统的质量可靠。唯一不足的就是系统数据表的设计在字段考虑上并不全面，为字段匹配的数据类型也不精确，还有系统代码部分，有很多地方还没有进行注释，代码编写不够简洁等。
-
-从文档的角度来讲，在完成学生心理压力咨询评判制作后，对其制作过程需要进行描述，包括如何进行的需求分析，如何完成系统的设计，以及实现的系统功能的运行效果等都要进行描述。这期间我也花费了将近一个月时间来完成，为了达到学院要求的文档排版标准，我也多次在导师建议下，学习办公软件的使用，还有排版技巧。功夫不负有心人，我编写的文档在面临多次编写修改后终于完成了。
-
-总而言之，制作毕设虽然经历了很多环节，但是认真对待这个事情，我们将会在各个环节获取很多知识，也会在各个环节的实际操作中，锻炼我们的实践能力。通过本项目制作，我开始明白，很多知识并不只是来源于书本，来源于老师课堂上讲解的知识，也需要来源于各大学习网站以及生活实践等。至此，我还是会继续努力，保持新知识的主动学习习惯。
-
-# 参考文献
-
-1.  卢鸿,朱隆尹.学生心理压力咨询评判查询系统优化设计及应用\[J\].南昌大学学报(理科版),2016,36(04):402-404.
-
-    \[2\]高岳,张腾.基于基站定位的学生心理压力咨询评判查询系统设计\[J\].无线互联科技,2015(03):32-35.
-
-\[3\]钱佳加,唐海江,夏莎莎,姚宇杰,张祥杰.学生心理压力咨询评判查询系统的设计与实现\[J\].现代商业,2015(17):67-68.
-
-\[4\]邓林.MySQL存储过程调试技巧\[J\].四川职业技术学院学报,2017,27(04):157-159.
-
-\[5\]张继东.MySQL数据库的权限及其安全缺陷\[J\].信息与电脑(理论版),2017(08):165-166.
-
-\[6\]邹青松.计算机软件Java编程特点及其技术运用\[J\].黑龙江科学,2020,11(06):62-63.
-
-\[7\]王丽,刘佳,杨俊叶.Java的数据库应用框架的研究设计与探讨\[J\].数字通信世界,2020(04):63.
-
-\[8\]李燕安.基于Java的Web开发技术的探讨\[J\].中国新通信,2020,22(08):73.
-
-\[9\]蒋治学.vue技术及其在动态网页开发中的应用分析\[J\].浙江水利水电学院学报,2020,32(02):75-77.
-
-\[10\]康牧.vue动态网站开发实用教程\[M\].清华大学出版社,2015.
-
-\[11\]薛茹.基于SpringBoot框架的Web系统研究与应用\[J\].计算机产品与流通,2018(07):30.
-
-\[12\]邱丹萍.Web开发中SpringBoot框架的分析\[J\].电脑知识与技术,2020,16(17):81-82.
-
-\[13\]王建国.数据库设计在网站开发中的应用\[J\].山东农业工程学院学报,2017,34(04):158-159+164.
-
-\[14\]张知青.基于关系数据库的查询方法及优化技术分析\[J\].煤炭技术,2015,31(05):218-220.
-
-\[15\]杨堃.计算机软件的运行与维护方法\[J\].中国高新区,2018(04):179.
-
-\[16\]李晓琳.安全技术在计算机软件开发中的价值和应用\[J\].信息与电脑(理论版),2020,32(18):88-89.
-
-\[17\]Benymol Jose, Sajimon Abraham. Performance analysis of NoSQL and
-relational databases with MongoDB and MySQL. 2020, 24(Pt 3):2036-2043.
-
-\[18\]Dragos-Paul Pop, Adam Altar. Designing an MVC Model for Rapid Web
-Application Development\[J\]. Procedia Engineering, 2017.
-
-# 致 谢
-
-虽然项目制作已经完成，但是回想近段时间所经历的事情，内心还是感触良多。自从进入校园后，我对知识的学习就没有那么刻苦了，也不会想着去主动学习，日常课程虽然不缺席，但是对待课后作业也是比较马虎。但是这次毕业设计，却真正唤醒了我。让我开始努力去做一件事。
-
-说到毕业设计，心中比较敬重和感恩的人是导师，导师让我明白，知识不足可以通过后期学习进行弥补，他让我看到了希望，虽然我一直怀疑自己不可能独自完成系统开发，但是在得到导师的帮助后，我做了很多改变自己看法的事情。我竟然可以一步步根据开发流程，完成系统的制作，真的很开心，同时也对导师表示感谢！
-
-还有一群最容易被忽视的人们，就是我身边的同学。他们无论是在课堂上还是在课下，始终陪伴着我。也就是无论学习还是生活，我的身边都有他们，所以大家互相帮助是在所难免的，但是因为这样的陪伴，也充实了我的校园生活。要毕业了，我想说，谢谢你们，我的同学们！
-
-那些给我们上课的老师们也是值得感恩的，他们也是我校园生活中不可缺少的一部分，而且也是教会我知识，让我明白许多生活的道理的老师们，他们一直像蜜蜂一样辛勤的工作，不厌其烦的教授一批又一批校园学子。所以他们值得我们尊敬和感谢！
-
-大学校园的环境是最美的，我也很庆幸来到这里上学，感谢我的学校，愿我的母校越来越好！
 
 
-### 0461springboot学生心理压力咨询评判pf 项目图片
-![图片](/images/0461springbootimg_001.jpg)
-![图片](/images/0461springbootimg_003.jpg)
-![图片](/images/0461springbootimg_002.jpg)
-![图片](/images/0461springbootimg_006.jpg)
-![图片](/images/0461springbootimg_007.jpg)
-![图片](/images/0461springbootimg_005.jpg)
-![图片](/images/0461springbootimg_004.jpg)
-![图片](/images/0461springbootimg_008.jpg)
+
+
+# 
+
+
 
 
 

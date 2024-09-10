@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer" />
+        <meta name="robots" content="noodp" />
+        <title>0778springboot校园闲置物品交易网站 - chenqi blog</title><meta name="Description" content="Hugo theme - chenqi"><meta property="og:url" content="https://chenqi199.github.io/0778springboot%E6%A0%A1%E5%9B%AD%E9%97%B2%E7%BD%AE%E7%89%A9%E5%93%81%E4%BA%A4%E6%98%93%E7%BD%91%E7%AB%99/">
+  <meta property="og:site_name" content="chenqi blog">
+  <meta property="og:title" content="0778springboot校园闲置物品交易网站">
+  <meta property="og:description" content="0778springboot校园闲置物品交易网站 项目清单 包安装运行 github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第1章 绪论 1.1课题背景 计算机的普">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-06-28T18:31:06+08:00">
+    <meta property="article:modified_time" content="2024-06-28T18:31:06+08:00">
+    <meta property="article:tag" content="Springboot">
+    <meta property="article:tag" content="Java">
+    <meta property="article:tag" content="Vue">
+    <meta property="article:tag" content="论文">
+    <meta property="article:tag" content="项目">
+    <meta property="og:image" content="https://chenqi199.github.io/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chenqi199.github.io/logo.png">
+  <meta name="twitter:title" content="0778springboot校园闲置物品交易网站">
+  <meta name="twitter:description" content="0778springboot校园闲置物品交易网站 项目清单 包安装运行 github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第1章 绪论 1.1课题背景 计算机的普">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chenqi199.github.io/0778springboot%E6%A0%A1%E5%9B%AD%E9%97%B2%E7%BD%AE%E7%89%A9%E5%93%81%E4%BA%A4%E6%98%93%E7%BD%91%E7%AB%99/" /><link rel="prev" href="https://chenqi199.github.io/0776springboot%E5%A4%96%E5%8D%96%E7%82%B9%E9%A4%90%E7%B3%BB%E7%BB%9F/" /><link rel="next" href="https://chenqi199.github.io/0781springboot%E5%BF%83%E7%81%B5%E6%B2%BB%E6%84%88%E4%BA%A4%E6%B5%81%E5%B9%B3%E5%8F%B0/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "0778springboot校园闲置物品交易网站",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chenqi199.github.io\/0778springboot%E6%A0%A1%E5%9B%AD%E9%97%B2%E7%BD%AE%E7%89%A9%E5%93%81%E4%BA%A4%E6%98%93%E7%BD%91%E7%AB%99\/"
+        },"image": ["https:\/\/chenqi199.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "springboot, java, vue, 论文, 项目","wordcount":  7594 ,
+        "url": "https:\/\/chenqi199.github.io\/0778springboot%E6%A0%A1%E5%9B%AD%E9%97%B2%E7%BD%AE%E7%89%A9%E5%93%81%E4%BA%A4%E6%98%93%E7%BD%91%E7%AB%99\/","datePublished": "2024-06-28T18:31:06+08:00","dateModified": "2024-06-28T18:31:06+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/chenqi199.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "chenqi"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/0778springboot%E6%A0%A1%E5%9B%AD%E9%97%B2%E7%BD%AE%E7%89%A9%E5%93%81%E4%BA%A4%E6%98%93%E7%BD%91%E7%AB%99/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/0778springboot%E6%A0%A1%E5%9B%AD%E9%97%B2%E7%BD%AE%E7%89%A9%E5%93%81%E4%BA%A4%E6%98%93%E7%BD%91%E7%AB%99/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">0778springboot校园闲置物品交易网站</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="chenqi199" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>chenqi</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-06-28">2024-06-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 7594 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 16 分钟&nbsp;<span id="/0778springboot%E6%A0%A1%E5%9B%AD%E9%97%B2%E7%BD%AE%E7%89%A9%E5%93%81%E4%BA%A4%E6%98%93%E7%BD%91%E7%AB%99/" class="leancloud_visitors" data-flag-title="0778springboot校园闲置物品交易网站">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">github 项目仓库</a> 开源仅有后端代码</a></li>
+        <li><a href="#点击播放视频-">点击播放视频 ▼</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#11课题背景">1.1课题背景</a></li>
+    <li><a href="#12研究意义">1.2研究意义</a></li>
+    <li><a href="#13研究内容">1.3研究内容</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#21相关技术">2.1相关技术</a></li>
+    <li><a href="#22-java技术">2.2 JAVA技术</a></li>
+    <li><a href="#23-mysql数据库">2.3 MySQL数据库</a></li>
+    <li><a href="#在web应用技术中-mysql数据库支持不同的操作系统平台虽然在不同平台下的安装和配置都不相同但是差别也不是很大mysql在windows平台下两种安装方式二进制版和免安装版安装完mysql数据库之后需要启动服务进程相应的用户就可以连接数据库用户可通过命令行或者图形界面工具登录数据库">在WEB应用技术中， Mysql数据库支持不同的操作系统平台，虽然在不同平台下的安装和配置都不相同，但是差别也不是很大，Mysql在Windows平台下两种安装方式，二进制版和免安装版。安装完Mysql数据库之后，需要启动服务进程，相应的用户就可以连接数据库，用户可通过命令行或者图形界面工具登录数据库。</a></li>
+    <li><a href="#24-tomcat介绍">2.4 Tomcat介绍</a></li>
+    <li><a href="#25-springboot框架">2.5 SpringBoot框架</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#31需求分析概述">3.1需求分析概述</a></li>
+    <li><a href="#32可行性分析">3.2可行性分析</a>
+      <ul>
+        <li><a href="#321经济可行性">3.2.1经济可行性</a></li>
+        <li><a href="#322技术可行性">3.2.2技术可行性</a></li>
+      </ul>
+    </li>
+    <li><a href="#33系统功能设计">3.3系统功能设计</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#41系统结构设计">4.1系统结构设计</a></li>
+    <li><a href="#42数据库设计">4.2数据库设计</a>
+      <ul>
+        <li><a href="#421实体er图">4.2.1实体ER图</a></li>
+        <li><a href="#422数据表">4.2.2数据表</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#51管理员功能模块">5.1管理员功能模块</a></li>
+    <li><a href="#52前台首页功能模块">5.2前台首页功能模块</a></li>
+    <li><a href="#53用户功能模块">5.3用户功能模块</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="0778springboot校园闲置物品交易网站httpsgithubcomgraduationproject-springboot0778springboot"><a href="https://github.com/GraduationProject-springboot/0778springboot" target="_blank" rel="noopener noreffer ">0778springboot校园闲置物品交易网站</a></h1>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        data-srcset="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 1.5x, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        title="picture" /></p>
+<h1 id="项目清单httpschenqi1990site-包安装运行"><a href="https://chenqi1990.site" target="_blank" rel="noopener noreffer ">项目清单</a> 包安装运行</h1>
+<h3 id="github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">github 项目仓库</a> 开源仅有后端代码</h3>
+<h3 id="点击播放视频-">点击播放视频 ▼</h3>
+<p><a href="https://www.bilibili.com/video/BV14HerezEwW?p=133" target="_blank" rel="noopener noreffer "><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.sstatic.net/Vp2cE.png"
+        data-srcset="https://i.sstatic.net/Vp2cE.png, https://i.sstatic.net/Vp2cE.png 1.5x, https://i.sstatic.net/Vp2cE.png 2x"
+        data-sizes="auto"
+        alt="https://i.sstatic.net/Vp2cE.png"
+        title="Watch the video" /></a></p>
+<h1 id="第1章-绪论">第1章 绪论</h1>
+<h2 id="11课题背景">1.1课题背景</h2>
+<p>计算机的普及和互联网时代的到来使信息的发布和传播更加方便快捷。用户可以通过计算机上的浏览器访问多个应用系统，从中获取一些可以满足用户需求的管理系统。网站系统有时更像是一个大型“展示平台”，用户可以选择所需的信息进入系统查看首页、商品信息、商品资讯、个人中心、后台管理、购物车。</p>
+<p>系统所要实现的功能分析，对于现在网络方便的管理，据数据调查显示，相比过去增长较快，用户通过网上登录的方式已经形成了一种依赖，不管需要什么信息内容，直接上网查找，参考比较大，对校园闲置物品交易网站的类型和特点的内容信息有了详细的了解，让用户更有针对性的选择。这也给用户带来非常大的方便，用户可以不用像传统的方式进行查看信息，这样不仅耽误自己的时间，而且比对过程比较单一，所以校园闲置物品交易网站的开发不仅仅是能满足用户的需求，还能提高管理员的工作效率，减少原有不必要的工作量。</p>
+<h2 id="12研究意义">1.2研究意义</h2>
+<p>越来越多的互联网爱好者开始在互联网上满足他们的基本需求，同时逐渐进入各个用户的生活起居。互联网具有许多优点，例如便利性，速度，高效率和低成本。因此，类似于校园闲置物品交易网站，满足用户工作繁忙的需求，不仅是方便用户随时查看信息的途径，而且还能提高管理效率。</p>
+<p>本文首先以校园闲置物品交易网站过程的基本问题作为研究对象。在开发系统之前，我们对现有状况进行了详细的调查和分析。最后，我们利用计算机技术开发了一套完整合适的校园闲置物品交易网站 。该系统的实现主要优势是：该系统主要采用计算机技术开发，它方便快捷；系统可以通过管理员界面查看系统所涉及的校园闲置物品交易网站所有信息管理。</p>
+<p>校园闲置物品交易网站软件是一款方便、快捷、实用的信息服务查询软件。随着智能网络在全球市场的不断普及以及各种智能平台的使用，作为中国主流智能的技术开发系统，自然需要这样的软件来满足更多用户的需求和体验。系统的开发与用户的日常需求相关，如通过管理系统获取到信息详细情况，了解最新资讯信息等。</p>
+<p>虽然目前已有很多基于Spring Boot框架平台的校园闲置物品交易网站相关的平台系统，但尚未出现更详细的功能显示和信息查询。经过分析，用户的第一眼往往是看到一个软件的外观，一个漂亮的界面将吸引用户下一次点击和理解。为了让用户通过无意识的点击尝试进入每个界面和每个按钮，用户可以进一步了解软件的质量，因此良好的软件界面将是吸引用户注意力的第一步。因此，对于每个软件界面设计工作来说，一个应用程序是占据非常重要的一部分，在高端大气中吸引用户界面，满足用户体验将进一步完成整个应用程序的各项功能，良好的用户体验度将继续使用并经常打开并使用此软件。</p>
+<h2 id="13研究内容">1.3研究内容</h2>
+<p>本校园闲置物品交易网站，使用的是比较成熟的Java技术和比较完善的MySQL数据库，将网络校园闲置物品交易网站信息管理系统可以更安全、技术性更强的满足网站所有信息的管理。</p>
+<p>校园闲置物品交易网站主要实现了管理员模块、用户模块二大部分。通过本校园闲置物品交易网站可以提高管理人员的工作效率，减少出错率，对于数据存储及查找有了更方便的操作。</p>
+<p>详细内容介绍，将在以下五章中详细阐述：</p>
+<p>第一章、绪论，介绍了研究课题选择的背景及意义、研究现状，简要介绍了本文的章节内容。</p>
+<p>第二章、引入技术知识，通过引入关键技术进行开发，向系统中涉及直观表达的技术知识。</p>
+<p>第三章、重点分析了系统的分析，从系统强大的供需市场出发，对系统开发的可行性，系统流程以及系统性能和功能进行了探讨。</p>
+<p>第四章、介绍了系统的详细设计方案，包括系统结构设计和数据库设计。</p>
+<p>第五章、系统设计的实现，通过对系统功能设计的详细说明，论证了系统的结构。</p>
+<p>第六章、系统的整体测试，评判系统是否可以上线运行。
+第4章 系统分析</p>
+<h1 id="第2章-技术介绍">第2章 技术介绍</h1>
+<h2 id="21相关技术">2.1相关技术</h2>
+<p>校园闲置物品交易网站是在Java + MySQL开发环境的基础上开发的。Java是一种服务器端脚本语言，易于学习，实用且面向用户。全球超过35％的Java驱动的互联网站点使用Java。MySQL是一个数据库管理系统，因为它的体积小但速度快，成本低，或者开源受到中小型网站的青睐。因此，Java + MySQL作为一个成熟的开发环境，可以满足校园闲置物品交易网站设计和开发所需的稳定性，安全性和可扩展性要求。</p>
+<h2 id="22-java技术">2.2 JAVA技术</h2>
+<p>JAVA语言是目前软件市场上应用最广泛的语言开发程序。可以在多种平台上运用的，兼容性比较强，适应市面上大多数操作系统，不会出现乱码的现像，其扩展性和维护性都更好，具有分析问题和解决问题的能力，是面向过程的程序设计方便我们编写的代码更强壮。</p>
+<p>JAVA相对其它语言来说，比较简单，编译起来更方便一些，安全可靠性高。不完全统计，现在全世界大约有2000多万人在使用它，JAVA既可以镶嵌使用又可以独力的使用。JAVA大致可以分成两个部分，一种部分是JAVA负责的编译，另一种是JAVA负责的运行。JAVA和C++语言很相像，但JAVA在编程时是一种以对象为导向的方式来进行编译的，使得编出来的软件可以单机使用，也可以在互联网上使用，检查出错更为方便。JAVA分布式、体系结构中立的特点也使得其存储更快，编议更简单。面向对象包括四个特点，一是封装，就是说在定义类的时候可以实现一定的功能和属性。二是抽象，属于类的一种，可以把一个具有共同属性的类封装在一个抽象里，便于简单编议。三是继承，顾名思义就是带有前者的特性。还有一个就是多态的特点，可以多种一起运用，表现了它可扩展性好。</p>
+<h2 id="23-mysql数据库">2.3 MySQL数据库</h2>
+<p>数据库是系统开发过程中不可或缺的一部分。 在WEB应用方面，MySQL AB开发了一个具有很大优势的MySQL关系数据库管理系统。 MySQL可以将数据存储在不同的表中，这非常灵活，并且还可以提高系统在实际应用中的速度。 数据库访问最常用于标准SQL语言，MySQL用于SQL语言，因此它具有高度兼容性。数据库的操作是必不可少的，包括对数据库表的增加、删除、修改、查询等功能。现如今，数据库可以分为关系型数据库和非关系型数据库，Mysql属于关系性数据库，Mysql数据库是一款小型的关系型数据库，它以其自身特点：体积小、速度快、成本低等，Mysql数据库是目前最受欢迎的开源数据库。</p>
+<h2 id="在web应用技术中-mysql数据库支持不同的操作系统平台虽然在不同平台下的安装和配置都不相同但是差别也不是很大mysql在windows平台下两种安装方式二进制版和免安装版安装完mysql数据库之后需要启动服务进程相应的用户就可以连接数据库用户可通过命令行或者图形界面工具登录数据库">在WEB应用技术中， Mysql数据库支持不同的操作系统平台，虽然在不同平台下的安装和配置都不相同，但是差别也不是很大，Mysql在Windows平台下两种安装方式，二进制版和免安装版。安装完Mysql数据库之后，需要启动服务进程，相应的用户就可以连接数据库，用户可通过命令行或者图形界面工具登录数据库。</h2>
+<h2 id="24-tomcat介绍">2.4 Tomcat介绍</h2>
+<p>Tomcat 虽然是Apache的扩展，但是它们都是可以独立运行的，二者是不互相干扰的。当配置正确的时候，Apache服务器为HTML页面的运行提供技术支持，Tomcat 的任务则是运行Servle和Java 页面。Tomca也具有一定的HTML页面处理功能。Tomcat属于一种轻型的服务器，所以说在中小企业中并不具有普适性。但是当程序员需要开发或调试Java 程序时，则通常会将该服务器作为首选。对于一个仅具有计算机基础知识的人来说，计算机系统具有一个好的Apache服务器，可以很好的对HTML 页面进行访问。Tomcat是非常受欢迎的服务器，因为它具有较好的扩展性，而且在运行的时候不需要太多的系统资源，拥有程序员所需要的收发邮件功能，还能够支持负载平衡，该程序能够不断的更新，程序员能够根据自己的需要增加新的功能。</p>
+<h2 id="25-springboot框架">2.5 SpringBoot框架</h2>
+<p>Spring Boot是Pivotal团队的一个新框架，旨在简化新Spring应用程序的初始设置和开发。该框架使用特定的配置方法，无需开发人员定义样板配置。通过这种方式，Spring Boot旨在成为蓬勃发展的快速应用程序开发领域的领导者。
+Spring Boot特点：
+1、创建一个单独的Spring应用程序；
+2、嵌入式Tomcat，无需部署WAR文件；
+3、简化Maven配置；
+4、自动配置Spring；
+5、提供生产就绪功能，如指标，健康检查和外部配置；
+6、绝对没有代码生成和XML的配置要求；
+<code>  </code>安装步骤：
+<code>   </code>最基本的是，Spring Boot是一个可以被任何项目的构建系统使用的库集合。 为简单起见，该框架还提供了一个命令行界面，可用于运行和测试Boot应用程序。 可以从Spring存储库手动下载和安装框架的已发布版本，包括集成的CLI（命令行界面）。 更简单的方法是使用Groovy enVironment Manager（GVM），它负责处理Boot版本的安装和管理。 可以从GVM命令行GVM install springboot安装Boot及其CLI。 在OS X上安装Boot时可以使用Homebrew包管理器。要完成安装，首先使用brew tap pivotal / tap切换到pivotal存储库，然后执行brew install springboot命令。</p>
+<h1 id="第3章-需求分析">第3章 需求分析</h1>
+<h2 id="31需求分析概述">3.1需求分析概述</h2>
+<p>任何一个项目在开发研究前，都需要对研发系统本身的需求做一个认真的分析，市场的调研是不可忽视的，从实际场景中确定使用人员的功能需求，从而明确目标，对整个系统的开发有一个更加准确的定位，在这个章节，需要对系统的性能分析，业务流程分析，和数据等进行分析，校园闲置物品交易网站的整体界面简单，功能完善。</p>
+<p>需求的可行性是分析和讨论发达的系统能达到什么样的要求。开发的系统平台是否符合之前的要求。只有在预先评估系统的开发中，才能在系统开发和实施之前完成需求。如果您不具备开发一个功能不合格的系统的可行性，那就是开发失败。开发系统是否有用，可以完成之前讨论过的需求，以下分析了校园闲置物品交易网站的实际需求。</p>
+<p>系统设计需要从用户和管理员的实际需求开始，以了解他们需要实施哪些功能以及他们可以包括哪些管理工作。</p>
+<p>考虑到校园闲置物品交易网站设计的特点，应满足几个要求：</p>
+<p>（1）它可以通过网络开展校园闲置物品交易网站信息管理工作，促进对校园闲置物品交易网站的统一管理。</p>
+<p>（2）学习方法变得更加多样化，管理更加标准化;</p>
+<p>（3）它提供了一个免费的渠道，以确保数据的实时有效沟通。</p>
+<h2 id="32可行性分析">3.2可行性分析</h2>
+<p>可行性分析目的是根据所开发系统的用户需求，明确研究方向和目标，通过可行性分析确定系统的框架和功能模块。</p>
+<p>可行性分析是对任何管理系统的需求、技术和经济的分析。其中最重要的技术方面的可行性，技术可行性是分析软件开发技术的应用开发系统是可行的。其次，分析软件系统的需求，分析软件需求能否满足预先设计的功能需求。最后讨论了系统的操作可行性和经济可行性。</p>
+<h3 id="321经济可行性">3.2.1经济可行性</h3>
+<p>在开发任何软件系统之前，它将考虑其后来的经济可行性，即开发和设计软件所需的成本及其在以后运行中可带来的经济效益是否可以匹配，以及软件是否能带来经济效益给用户。在本交互式用户管理软件的设计中，本文的主要目的是为用户提供一个新的校园闲置物品交易网站，这在经济上是完全可行的。</p>
+<h3 id="322技术可行性">3.2.2技术可行性</h3>
+<p>系统比较重要的一个分析就是技术可行分析，没有好的技术，再好的设计也是达不到系统的要求，并且对于技术的设计，使用的技术，如何更好的利用技术将所要实现的功能模块进行详细的分析，需要对技术进行详细的了解及自己的所学知识的一个综合使用。技术可行性主要取决于系统设计和开发中使用的各种硬件设施和软件设置，是否可以更好的结合，发挥他们的优势避开他们的弊端进行完美结合，确保技术的安全使用及正常的操作。</p>
+<p>校园闲置物品交易网站主要是基于Java技术开发，到目前为止Java技术的发展已经非常成熟。同时，它也受到许多开发人员的青睐。而且，在技术层面，Windows平台决定可以完成开发校园闲置物品交易网站的任务。因此，系统开发在技术上是可行的。</p>
+<h2 id="33系统功能设计">3.3系统功能设计</h2>
+<p>软件的用户界面是最直接接触的对象，包括是否允许用户使用简单方便，请求的响应时间，主图像的整体质量，整体布局的质量。</p>
+<p>校园闲置物品交易网站的设计基于现有的网络平台，可以实现用户管理及数据信息管理，方便管理员对后台进行管理有详细的了解及统计分析，随时查看信息状态。 </p>
+<p>系统功能设计是在系统开发和设计思想的总体任务的基础上完成的。该系统的主要任务是实现校园闲置物品交易网站管理，使用户可以通过指令完成整个校园闲置物品交易网站的操作。</p>
+<p>从上面的描述中可以基本可以实现软件的功能：</p>
+<p>1、开发实现校园闲置物品交易网站的整个系统程序； </p>
+<p>2、管理员；首页、个人中心、用户管理、商品类型管理、商品信息管理、系统管理、订单管理等。</p>
+<p>3、用户：首页、个人中心、商品信息管理、我的收藏管理、订单管理。</p>
+<p>4、前台首页：首页、商品信息、商品资讯、个人中心、后台管理、购物车等相应操作；</p>
+<p>5、基础数据管理：实现系统基本信息的添加、修改及删除等操作，并且根据需求进行交流信息的查看及回复相应操作。</p>
+<h1 id="第4章-系统设计">第4章 系统设计</h1>
+<h2 id="41系统结构设计">4.1系统结构设计</h2>
+<p>校园闲置物品交易网站的设计主要是为了满足用户的实际需求。 因此，它需要通过Internet实现，因此它必须具备硬件和软件基础。该平台最终可以通过科学技术和各种方式达到支持智能化的信息管理的目的。因此，它必须具备网络校园闲置物品交易网站管理所需的环境和各种资料，并保证实现开放性，模块性和实用性三个原则。</p>
+<p>校园闲置物品交易网站，主要包括管理员、用户二个权限角色，对于用户角色不同，所使用的功能模块相应不同。</p>
+<p>本校园闲置物品交易网站结构，如下图4-1所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0778springboot/blog.003.png"
+        data-srcset="/images/0700stringboot/0778springboot/blog.003.png, /images/0700stringboot/0778springboot/blog.003.png 1.5x, /images/0700stringboot/0778springboot/blog.003.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0778springboot/blog.003.png"
+        title="/images/0700stringboot/0778springboot/blog.003.png" /></p>
+<p><code>     </code>图4-1 校园闲置物品交易网站结构功能图</p>
+<h2 id="42数据库设计">4.2数据库设计</h2>
+<p>数据库是信息系统的基础和核心。数据库设计的好坏直接影响到信息系统开发的成败。创建数据库表首先确定实体的属性和实体之间的关系。根据关系创建一个数据表。</p>
+<h3 id="421实体er图">4.2.1实体ER图</h3>
+<p>数据库是整个软件编程中最重要的一个步骤，对于数据库问题主要是判定数据库的数量和结构公式的创建。校园闲置物品交易网站使用的是Mysql进行对数据库进行管理，进行保证数据的安全性、稳定性等。</p>
+<p>概念模型的设计是为了抽象真实世界的信息，并对信息世界进行建模。它是数据库设计的强大工具。数据库概念模型设计可以通过E-R图描述现实世界的概念模型。系统的E-R图显示了系统中实体之间的链接。而且Mysql数据库是自我保护能力比较强的数据库，下图主要是对数据库实体的E-R图：</p>
+<p>管理员信息实体属性图如图4-2所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0778springboot/blog.004.png"
+        data-srcset="/images/0700stringboot/0778springboot/blog.004.png, /images/0700stringboot/0778springboot/blog.004.png 1.5x, /images/0700stringboot/0778springboot/blog.004.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0778springboot/blog.004.png"
+        title="/images/0700stringboot/0778springboot/blog.004.png" /></p>
+<p>图4-2管理员信息实体属性图</p>
+<p>用户信息实体属性图如图4-3所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0778springboot/blog.005.png"
+        data-srcset="/images/0700stringboot/0778springboot/blog.005.png, /images/0700stringboot/0778springboot/blog.005.png 1.5x, /images/0700stringboot/0778springboot/blog.005.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0778springboot/blog.005.png"
+        title="/images/0700stringboot/0778springboot/blog.005.png" /></p>
+<p>图4-3用户信息实体属性图</p>
+<p>商品资讯信息实体属性图如图4-4所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0778springboot/blog.006.png"
+        data-srcset="/images/0700stringboot/0778springboot/blog.006.png, /images/0700stringboot/0778springboot/blog.006.png 1.5x, /images/0700stringboot/0778springboot/blog.006.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0778springboot/blog.006.png"
+        title="/images/0700stringboot/0778springboot/blog.006.png" /></p>
+<p>图4-4商品资讯信息实体属性图</p>
+<p>订单信息实体属性图如图4-5所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0778springboot/blog.007.png"
+        data-srcset="/images/0700stringboot/0778springboot/blog.007.png, /images/0700stringboot/0778springboot/blog.007.png 1.5x, /images/0700stringboot/0778springboot/blog.007.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0778springboot/blog.007.png"
+        title="/images/0700stringboot/0778springboot/blog.007.png" /></p>
+<p>图4-5订单信息实体属性图</p>
+<h3 id="422数据表">4.2.2数据表</h3>
+<p>每个数据库的应用它们都是和区分开的，当运行到一定的程序当中，它就会与自己相关的协议与用户进行通讯。那么这个系统就会对使这些数据进行连接。当我们选择哪个桥段的时候，接下来就会简单的叙述这个数据库是如何来创建的。当点击完成按钮的时候就会自动在对话框内弹出数据源的名称，在进行点击下一步即可，直接在输入相对应的身份验证和登录密码。</p>
+<p>根据系统功能设计的要求和功能模块的划分，校园闲置物品交易网站的设计与实现一共涉及到四个数据表。下面就介绍一下各别主要数据库表的设计结构及其功能建立数据库表：</p>
+<p>表4-1：allusers表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">约束</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">id</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center">PRIMARY KEY</td>
+</tr>
+<tr>
+<td style="text-align:left">username</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:left">pwd</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:left">cx</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:left">表4-2：shangpinxinxi表</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">约束</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center">PRIMARY KEY</td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">shangpinleixing</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">shangpinmingcheng</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">shangpintupian</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">shangpinxiangqing</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">表4-3：yonghu表</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">约束</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">ID</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center">PRIMARY KEY</td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">yonghuming</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">mima</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">xingming</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">xingbie</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">shouji</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">youxiang</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">255</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">zhaopian</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">255</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">表4-4：shangpinleixing表</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">约束</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center">PRIMARY KEY</td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">leixing</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+</tbody>
+</table>
+<h1 id="第5章-系统实现">第5章 系统实现</h1>
+<p>管理员、用户登录功能是系统中一个非常重要的功能模块。这个函数模块需要做的第一件事是设计系统的安全性。不能说任何打开登录界面的人都可以进入系统。我们想控制管理。用户的账号和密码，只有拥有权限的用户才能通过这个登录界面进入系统管理界面，这是非常重要的。用户想要登录和使用系统首先进入登录账户和登录密码，然后我们使用程序来检索，检索数据库中的账户信息一致输入账号密码，如果输入账号信息让用户登录时，如果它不存在，给一个提示,非法登陆，所以这个功能模块是非常重要的。</p>
+<h2 id="51管理员功能模块">5.1管理员功能模块</h2>
+<p>管理员通过点击后台管理，进入页面可以输入用户名、密码、角色进行登录相对应操作，如图5-1所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0778springboot/blog.008.png"
+        data-srcset="/images/0700stringboot/0778springboot/blog.008.png, /images/0700stringboot/0778springboot/blog.008.png 1.5x, /images/0700stringboot/0778springboot/blog.008.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0778springboot/blog.008.png"
+        title="/images/0700stringboot/0778springboot/blog.008.png" /></p>
+<p>图5-1管理员登录界面</p>
+<p>管理员通过点击后台管理，进入页面可以查看首页、个人中心、用户管理、商品类型管理、商品信息管理、系统管理、订单管理等功能模块，进行相对应操作，如图5-2所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0778springboot/blog.009.png"
+        data-srcset="/images/0700stringboot/0778springboot/blog.009.png, /images/0700stringboot/0778springboot/blog.009.png 1.5x, /images/0700stringboot/0778springboot/blog.009.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0778springboot/blog.009.png"
+        title="/images/0700stringboot/0778springboot/blog.009.png" /></p>
+<p>图5-2管理员功能界面</p>
+<p>个人信息：通过个人信息可以填写用户名等并进行详情、删除、修改操作如图5-3所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0778springboot/blog.010.png"
+        data-srcset="/images/0700stringboot/0778springboot/blog.010.png, /images/0700stringboot/0778springboot/blog.010.png 1.5x, /images/0700stringboot/0778springboot/blog.010.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0778springboot/blog.010.png"
+        title="/images/0700stringboot/0778springboot/blog.010.png" /></p>
+<p>图5-3个人信息界面</p>
+<p>用户管理：管理员通过列表可以获取用户名、密码、姓名、性别、手机、邮箱、照片等信息，并进行详情、删除、修改操作，如图5-4所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0778springboot/blog.011.png"
+        data-srcset="/images/0700stringboot/0778springboot/blog.011.png, /images/0700stringboot/0778springboot/blog.011.png 1.5x, /images/0700stringboot/0778springboot/blog.011.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0778springboot/blog.011.png"
+        title="/images/0700stringboot/0778springboot/blog.011.png" /></p>
+<p>图5-4用户管理界面</p>
+<p>商品类型管理：通过商品类型管理可以获取类型等信息并进行详情、删除、修改操作如图5-5所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0778springboot/blog.012.png"
+        data-srcset="/images/0700stringboot/0778springboot/blog.012.png, /images/0700stringboot/0778springboot/blog.012.png 1.5x, /images/0700stringboot/0778springboot/blog.012.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0778springboot/blog.012.png"
+        title="/images/0700stringboot/0778springboot/blog.012.png" /></p>
+<p>图5-5商品类型管理界面</p>
+<p>商品信息管理：管理员通过列表可以获取商品类型、商品名称、商品图片、价格等信息，并进行详情、删除、修改操作，如图5-6所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0778springboot/blog.013.png"
+        data-srcset="/images/0700stringboot/0778springboot/blog.013.png, /images/0700stringboot/0778springboot/blog.013.png 1.5x, /images/0700stringboot/0778springboot/blog.013.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0778springboot/blog.013.png"
+        title="/images/0700stringboot/0778springboot/blog.013.png" /></p>
+<p>图5-6商品信息管理界面</p>
+<p>轮播图；该页面为轮播图管理界面。管理员可以在此页面进行首页轮播图的管理，通过新建操作可在轮播图中加入新的图片，还可以对以上传的图片进行修改操作，以及图片的删除操作如图5-7所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0778springboot/blog.014.png"
+        data-srcset="/images/0700stringboot/0778springboot/blog.014.png, /images/0700stringboot/0778springboot/blog.014.png 1.5x, /images/0700stringboot/0778springboot/blog.014.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0778springboot/blog.014.png"
+        title="/images/0700stringboot/0778springboot/blog.014.png" /></p>
+<p>图5-7轮播图管理界面</p>
+<p>订单管理：管理员通过列表可以获取订单编号、商品名称、商品图片、购买数量、价格/积分、折扣价格、总价格/总积分、折扣总价格、支付类型、状态、地址等信息，并进行详情、删除、修改操作如图5-8所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0778springboot/blog.015.png"
+        data-srcset="/images/0700stringboot/0778springboot/blog.015.png, /images/0700stringboot/0778springboot/blog.015.png 1.5x, /images/0700stringboot/0778springboot/blog.015.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0778springboot/blog.015.png"
+        title="/images/0700stringboot/0778springboot/blog.015.png" /></p>
+<p>图5-8订单管理界面</p>
+<h2 id="52前台首页功能模块">5.2前台首页功能模块</h2>
+<p>校园闲置物品交易网站 ，在系统首页可以查看首页、商品信息、商品资讯、个人中心、后台管理、购物车等内容，如图5-9所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0778springboot/blog.016.png"
+        data-srcset="/images/0700stringboot/0778springboot/blog.016.png, /images/0700stringboot/0778springboot/blog.016.png 1.5x, /images/0700stringboot/0778springboot/blog.016.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0778springboot/blog.016.png"
+        title="/images/0700stringboot/0778springboot/blog.016.png" /></p>
+<p>图5-9系统功能界面图</p>
+<p><code>    </code>登录、用户注册，在用户注册页面可以填写用户名、密码、姓名、手机、邮箱等信息进行注册、登录，如图5-10所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0778springboot/blog.017.png"
+        data-srcset="/images/0700stringboot/0778springboot/blog.017.png, /images/0700stringboot/0778springboot/blog.017.png 1.5x, /images/0700stringboot/0778springboot/blog.017.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0778springboot/blog.017.png"
+        title="/images/0700stringboot/0778springboot/blog.017.png" /></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0778springboot/blog.018.png"
+        data-srcset="/images/0700stringboot/0778springboot/blog.018.png, /images/0700stringboot/0778springboot/blog.018.png 1.5x, /images/0700stringboot/0778springboot/blog.018.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0778springboot/blog.018.png"
+        title="/images/0700stringboot/0778springboot/blog.018.png" /></p>
+<p>图5-10登录、用户注册界面图</p>
+<p>商品信息，在商品信息页面通过填写商品类型、商品名称、商品图片、价格等信息进行添加到购物车、立即购买，如图5-11所示。在收货地址页面通过填写联系人、手机号码、地址、默认等信息进行添加到新地址操作，如图5-12所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0778springboot/blog.019.png"
+        data-srcset="/images/0700stringboot/0778springboot/blog.019.png, /images/0700stringboot/0778springboot/blog.019.png 1.5x, /images/0700stringboot/0778springboot/blog.019.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0778springboot/blog.019.png"
+        title="/images/0700stringboot/0778springboot/blog.019.png" /></p>
+<p>图5-11商品信息界面图</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0778springboot/blog.020.png"
+        data-srcset="/images/0700stringboot/0778springboot/blog.020.png, /images/0700stringboot/0778springboot/blog.020.png 1.5x, /images/0700stringboot/0778springboot/blog.020.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0778springboot/blog.020.png"
+        title="/images/0700stringboot/0778springboot/blog.020.png" /></p>
+<p>图5-12收货地址界面图</p>
+<h2 id="53用户功能模块">5.3用户功能模块</h2>
+<p>校园闲置物品交易网站，在校园闲置物品交易网站页面可以查看首页、个人中心、商品信息管理、我的收藏管理、订单管理等信息，进行相对应操作，如图5-13所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700stringboot/0778springboot/blog.021.png"
+        data-srcset="/images/0700stringboot/0778springboot/blog.021.png, /images/0700stringboot/0778springboot/blog.021.png 1.5x, /images/0700stringboot/0778springboot/blog.021.png 2x"
+        data-sizes="auto"
+        alt="/images/0700stringboot/0778springboot/blog.021.png"
+        title="/images/0700stringboot/0778springboot/blog.021.png" /></p>
+<p>图5-13用户功能界面</p>
+<p>第6章 系统测试</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2024-06-28</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/0778springboot%E6%A0%A1%E5%9B%AD%E9%97%B2%E7%BD%AE%E7%89%A9%E5%93%81%E4%BA%A4%E6%98%93%E7%BD%91%E7%AB%99/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://chenqi199.github.io/0778springboot%E6%A0%A1%E5%9B%AD%E9%97%B2%E7%BD%AE%E7%89%A9%E5%93%81%E4%BA%A4%E6%98%93%E7%BD%91%E7%AB%99/" data-title="0778springboot校园闲置物品交易网站" data-hashtags="springboot,java,vue,论文,项目"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://chenqi199.github.io/0778springboot%E6%A0%A1%E5%9B%AD%E9%97%B2%E7%BD%AE%E7%89%A9%E5%93%81%E4%BA%A4%E6%98%93%E7%BD%91%E7%AB%99/" data-hashtag="springboot"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://chenqi199.github.io/0778springboot%E6%A0%A1%E5%9B%AD%E9%97%B2%E7%BD%AE%E7%89%A9%E5%93%81%E4%BA%A4%E6%98%93%E7%BD%91%E7%AB%99/" data-title="0778springboot校园闲置物品交易网站"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://chenqi199.github.io/0778springboot%E6%A0%A1%E5%9B%AD%E9%97%B2%E7%BD%AE%E7%89%A9%E5%93%81%E4%BA%A4%E6%98%93%E7%BD%91%E7%AB%99/" data-title="0778springboot校园闲置物品交易网站"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://chenqi199.github.io/0778springboot%E6%A0%A1%E5%9B%AD%E9%97%B2%E7%BD%AE%E7%89%A9%E5%93%81%E4%BA%A4%E6%98%93%E7%BD%91%E7%AB%99/" data-title="0778springboot校园闲置物品交易网站" data-ralateuid="https://gitee.com/chen_q_i"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/springboot/">Springboot</a>,&nbsp;<a href="/tags/java/">Java</a>,&nbsp;<a href="/tags/vue/">Vue</a>,&nbsp;<a href="/tags/%E8%AE%BA%E6%96%87/">论文</a>,&nbsp;<a href="/tags/%E9%A1%B9%E7%9B%AE/">项目</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/0776springboot%E5%A4%96%E5%8D%96%E7%82%B9%E9%A4%90%E7%B3%BB%E7%BB%9F/" class="prev" rel="prev" title="0776springboot外卖点餐系统"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>0776springboot外卖点餐系统</a>
+            <a href="/0781springboot%E5%BF%83%E7%81%B5%E6%B2%BB%E6%84%88%E4%BA%A4%E6%B5%81%E5%B9%B3%E5%8F%B0/" class="next" rel="next" title="0781springboot心灵治愈交流平台">0781springboot心灵治愈交流平台<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.128.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="chenqi199" target="_blank">chenqi</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

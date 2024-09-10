@@ -3,56 +3,566 @@
 
 # [0580springboot汽车租赁管理系统_1ma2x--论文](https://github.com/GraduationProject-springboot/0580springboot)
 
-### 微信： chen_q123456  qq:462201886
-### github:chenqi199
+![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-### [所有项目](https://github.com/GraduationProject-springboot/allSpringbootProjects) 包安装运行
+# [项目清单](https://chenqi1990.site) 包安装运行
 
-### [所有项目列表excel 腾讯文档 项目清单](https://docs.qq.com/sheet/DSHRFSVZ5aEVYT3N3?tab=BB08J2) 包安装运行
+### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
-### [github](https://chenqi199.github.io)
-
-
+### 点击播放视频 ▼
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1eMbYemE1U?p=78)
 
 
+# 绪论
+对于当今社会的人们来说，汽车租赁管理系统是必不可少的，随着经济和技术的不断发展，计算机已经深入到各个领域。汽车租赁管理系统将人们的时间需求与计算机技术结合起来，架起一座桥梁，使汽车租赁管理更加方便快捷。汽车租赁管理系统主要为人们提供系统化、个性化、专业化的服务，以提高人们的愉悦感。
+## 1.1 研究背景	
+[网络发展的越来越迅速，它深刻的影响着每一个人生活的各个方面。](http://r.paperok.com/report/a55da2ee-27ad-44d0-b22b-5c305f1c1842/html/result-699608764.html)每一种新型事务的兴起都是为了使人们的生活更加方便。[汽车租赁管理系统是一种低成本、更加高效的电子商务方式，它已慢慢的成为一种全新的管理模式。](http://r.paperok.com/report/a55da2ee-27ad-44d0-b22b-5c305f1c1842/html/result-699608776.html)人们不再满足于在互联网上浏览、发布信息和人与人之间的聊天，而是希望互联网能为人们的生活带来更多便利。伴[随着网络的崛起，汽车租赁管理开始变得越来越普遍。](http://r.paperok.com/report/a55da2ee-27ad-44d0-b22b-5c305f1c1842/html/result-699608788.html)
+### 1.1.1国内研究现状
+在现实生活中，根据传统做法，有些人选择通过电话或短信进行交流。这种方法比较单一，在有些方面效率不高，需要大量人力和财力，[已经接近淘汰。](http://r.paperok.com/report/a55da2ee-27ad-44d0-b22b-5c305f1c1842/html/result-699608982.html)另一种方法是使用系统，但有些系统对计算机和用户的要求很高，使用起来非常复杂，无法快速锁定他们满意的信息。用户也将束手无策。目前，市场上很少有类似的系统能够真正满足用户的需求，帮助用户完成各项事务。
+### 1.1.2国外研究现状
+在当今社会，由于国外经济的高度发达，对于服务于人们生活的汽车租赁管理系统，国外花费了大量的人力、物力和财力来开发这类系统。[所以，国外的这种系统较为发达。](http://r.paperok.com/report/a55da2ee-27ad-44d0-b22b-5c305f1c1842/html/result-699609053.html)另一个重要原因是，国外更开放，更容易接受新事物，对他们享受的服务更挑剔，因此，汽车租赁管理系统一开始可以被更多的人接受，更多的人提出更多的要求，使汽车租赁管理系统更加完善。经过多年的发展，该系统具有很高的艺术性，非常规范和完整。
+
+
+## 1.2 研究的目的和意义
+### 1.2.1研究目的
+互联网发展的越来越快了，在当下社会节点，人们也开始越来越喜爱汽车租赁管理。通过互联网可以对图片、描述、动画等方式全面加强产品宣传，极大地满足汽车租赁管理在现代管理中的要求。如果想实现简单快捷方便的汽车租赁管理，即时生效，无需重新打印。这时仅仅需要在背景中单击鼠标，它将立刻更新点击处一整行的所有内容。汽车租赁管理系统使用了B/S模式，并且不需要安装第三方插件，他们甚至能直接在手机上随机随地实现汽车租赁管理，还能实现更加准确的提供汽车租赁管理信息。现社会无论各行各业都应尽量[摒弃传递错误信息，尤其是口头传输信息。](http://r.paperok.com/report/a55da2ee-27ad-44d0-b22b-5c305f1c1842/html/result-699609179.html)而网络却并不会像电话那样一次只能传输一次，效率低下还间连不断，每当处于高峰时段，用网络来处理信息也就会更加的容易。我们甚至可以通过宣传让更多的潜在用户知道。[不需要发送传单来节省宣传和人力成本。](http://r.paperok.com/report/a55da2ee-27ad-44d0-b22b-5c305f1c1842/html/result-699609210.html)汽车租赁管理的方式得到了更好的改进。从而提高了整体业务量。
+
+这样做的目的是节省时间，提高工作效率，享受当今社会最便捷、最周到的服务。
+### 1.2.2研究意义
+线上汽车租赁后台管理系统提供了良好的发展空间，随着人们生活质量的提高，人们对服务质量的要求越来越严格。[人们希望拥有更好的汽车租赁管理体验。](http://r.paperok.com/report/a55da2ee-27ad-44d0-b22b-5c305f1c1842/html/result-699609311.html)而且，汽车租赁管理服务有着使用常规电话交流比不了的便捷高效简单等优势。汽车租赁管理系统就是为广大劳动人民提供这样一个方便的系统，以满足人们的需求。
+## 1.3 论文的内容和结构
+本文一共把内容主要分为六个大部分，采用传统面向对象的方法进行划分并描述和分析每个部分的需求：
+
+第一章是前言部分，该部分主要是拓展了方案的背景，对此系统的意义做了思考，对价值做了评估。
+
+第二章是概述系统的相关技术，详细的介绍了系统所使用的相关语言和开发结构。
+
+第三章是对系统的需求进行分析，对可行性需求，功能需求和流程等做相关分析。
+
+第四章主要对程序的功能做分析，并描述了数据库等相关内容的设计。
+
+第五章主要是将汽车租赁管理系统划分成后台管理界面和前台页面，以及各部分相关功能页面。
+
+第六章主要是进行系统功能测试。 
+
+
+# 2系统相关技术概述
+## 2.1 Java技术简介
+Java是一种面向对象的静态式编程语言。Java编程语言具有多线程和对象定向的特点。其特点是根据方案的属性将方案分为几个不同的模块，这些模块是封闭的和多样化的，在申请过程中具有很强的独立性。Java语言在计算机软件开发过程中的运用可以达到交互操作的目的，通过各种形式的交换，可以有效地处理所需的数据，从而确保计算机软件开发的可控性和可见性。开发Java语言时，保留了网络接口，Java保留的缺省网络接口可以与web应用程序编程所依赖的类别库相匹配。为了使Java开发的应用程序更加稳定和强健，Java会自动收集程序中的垃圾，并处理程序中存在的异常。Java语言是日常开发过程中广泛使用的通用基本语言。其中Java语言课程库、句子、语法规则和关键字经常用于计算机软件的开发和编程。
+
+面向对象编程是Java语言最显着的特点。它具有原始接口和补充接口以及继承，不仅可以实现相同类型的单个继承，而且还支持接口之间的多个继承，从而实现类、接口和接口之间以及类和接口之间的有效通信。Java的面向对象特性主要包括三个方面:继承、多态性和封装。封装是Java的核心，可以封装所有数据操作。多态性是指由面向对象行为派生的相关行为。继承作为特殊编程模式有两种类型:父类和子类，这两种类型的属性具有相同的功能和特性。对于父类的属性特性，子类可以实现继承和优化。
+## 2.2 SpringBoot框架
+Spring Boot是由Pivotal的开发团队在2013年开发的一个免费、轻量级、开源的系统框架。SpringBoot的主要设计思想是约定大于配置，因此SpringBoot在设计时几乎达到零配置。SpringBoot集成了业界的开源框架。
+
+SpringBoot是一个非常强大的后台框架，因为SpringBoot的开发基本上不需要写配置文件，所以利用SpringBoot来构建网站的后台环境，在SpringBoot的YML配置文件中写项目启动端口，项目就可以启动了。项目的Java和静态文件由SpringBoot管理。
+## 2.3 MySQL数据库技术简介
+[MySQL是一种轻量级、高效率的数据库。](http://r.paperok.com/report/a55da2ee-27ad-44d0-b22b-5c305f1c1842/html/result-699609754.html)它有各种字段、主键、外键等特性。大多数个人或者企业在进行软件开发时必需用到的数据库。因为[其极强的可移植性而广泛应用于众多系统服务中。](http://r.paperok.com/report/a55da2ee-27ad-44d0-b22b-5c305f1c1842/html/result-699609766.html)MySQL使用的SQL语言是访问数据库最常用的标准化语言[4]。
+
+## 2.4 B/S结构
+浏览器/服务器(B/S)是一种比它的前身更简单的体系结构。它使用Web服务器来完成数据的传输和通信。只要把浏览器作为客户端下载下来，你就可以简化你的工作，所以你不必担心安装软件的问题。
+
+
+# 3系统需求分析
+## 3.1需求分析概述
+汽车租赁管理系统主要是为了提高用户的工作效率，满足用户对更方便、更快、更好地存储所有信息和数据检索功能的要求。通过对多个管理系统的合理分析，确定了汽车租赁管理系统的各个模块。考虑到用户的可操作性，经过深入调查研究，遵循系统优化和开发的原则。
+
+为了实现当前网络的分析功能和便利性，汽车租赁管理系统使管理员，用户和普通管理员能够在系统上直接查看他们需要的数据信息，不仅可以节省管理时间，还可以改变传统的管理模式。如果管理员，用户和普通管理员想要交换信息，他们需要满足双方交换信息的需要。由于时间有限，很难亲自会面和沟通，因此很难满足管理员，用户和普通管理员的需求。因此，迫切需要开发一个汽车租赁管理系统，以满足管理员，用户和普通管理员的需求，提高用户的使用率。汽车租赁管理系统必须更快、更有效地向管理员，用户和普通管理员提供信息。为汽车租赁管理系统建立更好的沟通系统，提高管理员，用户和普通管理员信息交流的服务效率。该系统可以满足大多数用户提出的问题，用户可以根据自己的需要获得相应的服务，为汽车租赁管理系统提供了一条快捷的途径。
+
+## 3.2可行性分析
+汽车租赁管理系统研发出来可以为广大人民群众解决汽车租赁管理的问题，大大降低人民时间成本，不需要将无谓的时间浪费在道路上，并且汽车租赁管理可以更大化的将信息展露在人们的眼前供其选择。它是一款多用户使用的系统，比较符合业务逻辑，是通过互联网解决复杂和单调问题的典型案例。
+### 3.2.1技术可行性
+技术可行性是分析系统都需要用到哪些技术知识，语法是否规范标准，代码量多大，是否具有可移植性，在 MVC 在这种设计模式下能够真正的实现数据层和表示层的分离[6]，以及前端页面是否可以做到美观实用，是否吸引眼球。网站是否足够稳定，后端管理页面是否足够方便管理，数据库的构建是否可以符合系统要求，是否需要搭建集群等等。
+### 3.2.2经济可行性
+通过结合以上对系统的技术和可行性分析来判断对系统经济状况的预算是否大于系统开发资金的比例。因此，通过分析系统的业务模式和开发者模式，不会浪费大量资金，系统的使用价值大于资本价值[7]。
+### 3.2.3运营可行性
+可操作性是指将系统开发所涉及到的所有功能全都实现，代码收尾工作完成后对用户消费水平，系统的业务能力是否与用户消费水平所对等，是否可以满足大部分消费者的需求，页面是否美观，能否让用户满意，代码显示是否为轻量级，操作和功能是否简单便捷，是否同时适用。系统能否同时应用于windows、linux等操作系统，这取决于系统的可移植性。JAVA 编程语言的适应性非常强，基本上能够较好的适应目前市场环境中所流行的各个系统[8]。也就是说JAVA的可移植性很强，那么系统的价值越高，可行性也就越强。
+### 3.2.4法律可行性
+该[汽车租赁管理系统是面向大众开源化和不收取任何费用的。](http://r.paperok.com/report/a55da2ee-27ad-44d0-b22b-5c305f1c1842/html/result-699610030.html)它的主要目的是帮助人们解决汽车租赁管理问题。完全符合法律可行性要求，系统内部权限划分不会导致内部用户泄露系统机密。对于用户信息，系统有保护措施，用户密码在数据库中加密，并有严格的自我控制和商品价格解释。
+## 3.3系统用例分析
+### 3.3.1 管理员用例图
+汽车租赁管理系统的最大权限用户是管理员，通过管理员菜单中的个人中心、用户管理、普通管理员管理、汽车类别管理、汽车信息管理、租车订单管理、取消订单管理、还车信息管理、汽车资讯管理、汽车论坛、留言板管理、系统管理等选项来对系统后台信息进行管理。管理员用例如图3-1所示。
+
+![](/images/0500stringboot/0580springboot/blog.004.png)
+
+图3-1管理员用例图
+
+### 3.3.2 用户用例图
+用户进入系统可以对个人中心、租车订单管理、取消订单管理、还车信息管理进行管理。用户用例如图3-2所示。
+
+![](/images/0500stringboot/0580springboot/blog.005.png)
+
+图3-2用户用例图
+### 3.3.3 普通管理员用例图
+普通管理员进入系统可以对个人中心、汽车信息管理、租车订单管理、取消订单管理、还车信息管理、汽车资讯管理进行管理。普通管理员用例如图3-3所示。
+
+![](/images/0500stringboot/0580springboot/blog.006.png)
+
+图3-3普通管理员用例图
+
+## 3.4系统其他需求分析
+### 3.4.1性能要求
+在开发了一个功能较为良好系统之后，首要考虑的就是它的性能要求，比如当用户使用它进行点击或提交功能时，它会产生多久的延迟，系统响应速度快不快，如果短时间同时有较多用户访问网站是否会产生系统崩溃，是否采用高并发接口，另外，存储功能进行中的代码量是否满足算法和数据结构，以及是否占用较大内存等：
+
+（1）系统应具备快速的反映时间，对于并发特征得到解决[10]。
+
+（2）系统对用户密码是否进行了加密并进行大量安全处理。
+
+（3）系统代码量是否简洁，不会占用计算机太多内存。
+### 3.4.2安全要求
+对于安全要求要进行可靠性分析，可靠性分析有利于可实现安全性、可靠 性设计与系统功能设计在数据源上的统一[11]。就本系统的安全性能而言，数据的账户和密码需要以明文形式显示，并严格加密。更改密码、修改个人数据、添加信息需要相应权限。
+### 3.4.3作业环境要求
+（1）系统：Windows系统足够，兼容性强
+
+（2）Web服务器：内置tomcat，无需安装、运行和使用
+
+（3）[数据库服务器：MySQL 5.](http://r.paperok.com/report/a55da2ee-27ad-44d0-b22b-5c305f1c1842/html/result-699610528.html)5及以上，图形界面为SQLYG
+
+（4）浏览器：谷歌或Firefox开发者浏览器
+
+（5）JDK1.8及以上，内置插件maven等。
+## 3.5系统流程分析
+（1）个人信息流程图	
+
+商家在成功进入系统以后，可以获得姓名，性别，邮箱，手机等个人信息。获得[个人信息的流程见图3-4所示。](http://r.paperok.com/report/a55da2ee-27ad-44d0-b22b-5c305f1c1842/html/result-699611494.html)
+
+![](/images/0500stringboot/0580springboot/blog.007.png)
+
+图3-4个人信息流程图流程图
+
+商家进行登录操作的流程图如图3-5。
+
+![](/images/0500stringboot/0580springboot/blog.008.png)
+
+图3-5登录界面流程图
+
+商家进行注册操作的流程图如图3-6。
+
+![](/images/0500stringboot/0580springboot/blog.009.png)
+
+图3-6 用户注册流程图
+
+## 3.6本章概述
+本章主要介绍汽车租赁管理系统的使用案例和系统的相关可行性要求。我已经从技术、经济、法律和运营四个方面确认了该系统可以在线运行。
+
+
+# 4 系统设计
+## 4.1系统结构图
+汽车租赁管理系统分为三个部分，即管理员管理，用户管理和普通管理员管理。该系统是根据用户的实际需求开发的，贴近生活。从管理员处获得的指定账号和密码可用于进入系统和使用相关的系统应用程序。管理员拥有最大的权限，其次是用户和普通管理员。管理员一般负责整个系统的运行维护和总体协调。
+
+系统结构如图4-1所示。
+
+![](/images/0500stringboot/0580springboot/blog.010.png)
+
+图4-1系统结构图
+## 4.2数据库设计
+所有的网站设计但凡有数据都离不开数据库，数据库是所有项目想实现如数据获取，数据传输等功能的基石。只有合理化的数据库设计才能满足商业化的要求，数据库的主键外键连接方式特别的重要，尽量避免多对多的复杂性，字段名合理规范，且通俗易懂等，字段应根据业务进行设定，不允许操作多字段而对系统产生占用多余的内存[12]。
+### 4.2.1数据库设计原则
+设计原则自然就是要符合范式的要求，多表之间的关系要合理，[理应符合系统的实际情况。](http://r.paperok.com/report/a55da2ee-27ad-44d0-b22b-5c305f1c1842/html/result-699611592.html)
+### 4.2.2数据库的概念设计
+概念设计是将整体分为在地面上表达出来的单个个体。E-R图形象的连接了实体模型和概念模型。因此，E-R图需要根据数据库表和表字段进行合理设计，表达的概念知识点用图形描述，可以直观地让相应人员清楚，并分解整个E-R图[13]。[我们通常表达不清晰没有概念的东西。]( t )但是[通过E-R之间的联系，E-R模型法是对这种模糊概念的事务最简单、最常用的设计方法。](http://r.paperok.com/report/a55da2ee-27ad-44d0-b22b-5c305f1c1842/html/result-699611640.html) 
+
+(1) 汽车信息实体属性图如下图4-2所示。
+
+![](/images/0500stringboot/0580springboot/blog.011.png)
+
+图4-2汽车信息实体属性图
+
+(2) 汽车资讯实体属性图如下图4-3所示。
+
+![](/images/0500stringboot/0580springboot/blog.012.png)
+
+图4-3汽车资讯实体属性图
+
+(3) 用户实体属性图如下图4-4所示。
+
+![](/images/0500stringboot/0580springboot/blog.013.png)
+
+图4-4用户实体属性图
+
+(4) 普通管理员实体属性图如下图4-5所示。
+
+![](/images/0500stringboot/0580springboot/blog.014.png)
+
+图4-5普通管理员实体属性图
+
+(5) 还车信息实体属性图如下图4-6所示。
+
+![](/images/0500stringboot/0580springboot/blog.015.png)
+
+图4-6还车信息实体属性图
+
+### 4.2.3数据库表设计
+数据库表的设计通常是根据业务逻辑设置的。数据库模型在数据库中设计，并根据模型创建数据库表[14]。
+
+表4-1：关于我们
+
+|字段名称|类型|长度|字段说明|主键|默认值|
+| :-: | :-: | :-: | :-: | :-: | :-: |
+|id|bigint||主键|主键||
+|addtime|timestamp||创建时间||CURRENT\_TIMESTAMP|
+|title|varchar|200|标题|||
+|subtitle|varchar|200|副标题|||
+|content|longtext|4294967295|内容|||
+|picture1|longtext|4294967295|图片1|||
+|picture2|longtext|4294967295|图片2|||
+|picture3|longtext|4294967295|图片3|||
+
+表4-2：取消订单
+
+|字段名称|类型|长度|字段说明|主键|默认值|
+| :-: | :-: | :-: | :-: | :-: | :-: |
+|id|bigint||主键|主键||
+|addtime|timestamp||创建时间||CURRENT\_TIMESTAMP|
+|dingdanbianhao|varchar|200|订单编号|||
+|chepaihao|varchar|200|车牌号|||
+|cheliangpinpai|varchar|200|车辆品牌|||
+|qicheleibie|varchar|200|汽车类别|||
+|jiage|float||价格|||
+|zuqi|int||租期|||
+|zongjia|float||总价|||
+|quxiaoriqi|date||取消日期|||
+|quxiaoyuanyin|longtext|4294967295|取消原因|||
+|zhanghao|varchar|200|账号|||
+|xingming|varchar|200|姓名|||
+|shouji|varchar|200|手机|||
+|shenfenzheng|varchar|200|身份证|||
+|guanlizhanghao|varchar|200|管理账号|||
+|guanlixingming|varchar|200|管理姓名|||
+|crossuserid|bigint||跨表用户id|||
+|crossrefid|bigint||跨表主键id|||
+|sfsh|varchar|200|是否审核||待审核|
+|shhf|longtext|4294967295|审核回复|||
+|ispay|varchar|200|是否支付||未支付|
+
+表4-3：汽车资讯
+
+|字段名称|类型|长度|字段说明|主键|默认值|
+| :-: | :-: | :-: | :-: | :-: | :-: |
+|id|bigint||主键|主键||
+|addtime|timestamp||创建时间||CURRENT\_TIMESTAMP|
+|biaoti|varchar|200|标题|||
+|jianjie|longtext|4294967295|简介|||
+|fabushijian|date||发布时间|||
+|neirong|longtext|4294967295|内容|||
+|faburen|varchar|200|发布人|||
+|fengmian|longtext|4294967295|封面|||
+|clicktime|datetime||最近点击时间|||
+|clicknum|int||点击次数||0|
+|userid|bigint||用户id|||
+
+表4-4：汽车信息
+
+|字段名称|类型|长度|字段说明|主键|默认值|
+| :-: | :-: | :-: | :-: | :-: | :-: |
+|id|bigint||主键|主键||
+|addtime|timestamp||创建时间||CURRENT\_TIMESTAMP|
+|chepaihao|varchar|200|车牌号|||
+|cheliangxinghao|varchar|200|车辆型号|||
+|qicheleibie|varchar|200|汽车类别|||
+|cheliangpinpai|varchar|200|车辆品牌|||
+|jiage|float||价格|||
+|yanse|varchar|200|颜色|||
+|zhuangtai|varchar|200|状态|||
+|huandangfangshi|varchar|200|换挡方式|||
+|cheliangzhaopian|longtext|4294967295|车辆照片|||
+|zuoweishu|int||座位数|||
+|qichepailiang|varchar|200|汽车排量|||
+|qichejiage|float||汽车价格|||
+|chuchangnianfen|varchar|200|出厂年份|||
+|dengjiriqi|date||登记日期|||
+|qichejianjie|longtext|4294967295|汽车简介|||
+|guanlizhanghao|varchar|200|管理账号|||
+|guanlixingming|varchar|200|管理姓名|||
+|clicktime|datetime||最近点击时间|||
+|clicknum|int||点击次数||0|
+
+表4-5：汽车类别
+
+|字段名称|类型|长度|字段说明|主键|默认值|
+| :-: | :-: | :-: | :-: | :-: | :-: |
+|id|bigint||主键|主键||
+|addtime|timestamp||创建时间||CURRENT\_TIMESTAMP|
+|qicheleibie|varchar|200|汽车类别|||
+
+表4-6：普通管理员
+
+|字段名称|类型|长度|字段说明|主键|默认值|
+| :-: | :-: | :-: | :-: | :-: | :-: |
+|id|bigint||主键|主键||
+|addtime|timestamp||创建时间||CURRENT\_TIMESTAMP|
+|guanlizhanghao|varchar|200|管理账号|||
+|mima|varchar|200|密码|||
+|guanlixingming|varchar|200|管理姓名|||
+|xingbie|varchar|200|性别|||
+|nianling|varchar|200|年龄|||
+|lianxidianhua|varchar|200|联系电话|||
+|touxiang|longtext|4294967295|头像|||
+
+表4-7：公告信息
+
+|字段名称|类型|长度|字段说明|主键|默认值|
+| :-: | :-: | :-: | :-: | :-: | :-: |
+|id|bigint||主键|主键||
+|addtime|timestamp||创建时间||CURRENT\_TIMESTAMP|
+|title|varchar|200|标题|||
+|introduction|longtext|4294967295|简介|||
+|picture|longtext|4294967295|图片|||
+|content|longtext|4294967295|内容|||
+
+表4-8：留言板
+
+|字段名称|类型|长度|字段说明|主键|默认值|
+| :-: | :-: | :-: | :-: | :-: | :-: |
+|id|bigint||主键|主键||
+|addtime|timestamp||创建时间||CURRENT\_TIMESTAMP|
+|userid|bigint||留言人id|||
+|username|varchar|200|用户名|||
+|avatarurl|longtext|4294967295|头像|||
+|content|longtext|4294967295|留言内容|||
+|cpicture|longtext|4294967295|留言图片|||
+|reply|longtext|4294967295|回复内容|||
+|rpicture|longtext|4294967295|回复图片|||
+
+表4-9：还车信息
+
+|字段名称|类型|长度|字段说明|主键|默认值|
+| :-: | :-: | :-: | :-: | :-: | :-: |
+|id|bigint||主键|主键||
+|addtime|timestamp||创建时间||CURRENT\_TIMESTAMP|
+|dingdanbianhao|varchar|200|订单编号|||
+|chepaihao|varchar|200|车牌号|||
+|cheliangpinpai|varchar|200|车辆品牌|||
+|qicheleibie|varchar|200|汽车类别|||
+|haicheriqi|date||还车日期|||
+|haichebeizhu|longtext|4294967295|还车备注|||
+|zhanghao|varchar|200|账号|||
+|xingming|varchar|200|姓名|||
+|shouji|varchar|200|手机|||
+|shenfenzheng|varchar|200|身份证|||
+|guanlizhanghao|varchar|200|管理账号|||
+|guanlixingming|varchar|200|管理姓名|||
+|crossuserid|bigint||跨表用户id|||
+|crossrefid|bigint||跨表主键id|||
+|sfsh|varchar|200|是否审核||待审核|
+|shhf|longtext|4294967295|审核回复|||
+
+表4-10：租车订单
+
+|字段名称|类型|长度|字段说明|主键|默认值|
+| :-: | :-: | :-: | :-: | :-: | :-: |
+|id|bigint||主键|主键||
+|addtime|timestamp||创建时间||CURRENT\_TIMESTAMP|
+|dingdanbianhao|varchar|200|订单编号|||
+|chepaihao|varchar|200|车牌号|||
+|cheliangpinpai|varchar|200|车辆品牌|||
+|qicheleibie|varchar|200|汽车类别|||
+|jiage|float||价格|||
+|zuqi|int||租期|||
+|zongjia|float||总价|||
+|chuzuriqi|date||出租日期|||
+|beizhu|longtext|4294967295|备注|||
+|zhanghao|varchar|200|账号|||
+|xingming|varchar|200|姓名|||
+|shouji|varchar|200|手机|||
+|shenfenzheng|varchar|200|身份证|||
+|guanlizhanghao|varchar|200|管理账号|||
+|guanlixingming|varchar|200|管理姓名|||
+|sfsh|varchar|200|是否审核||待审核|
+|shhf|longtext|4294967295|审核回复|||
+|ispay|varchar|200|是否支付||未支付|
+
+表4-11：token表
+
+|字段名称|类型|长度|字段说明|主键|默认值|
+| :-: | :-: | :-: | :-: | :-: | :-: |
+|id|bigint||主键|主键||
+|userid|bigint||用户id|||
+|username|varchar|100|用户名|||
+|tablename|varchar|100|表名|||
+|role|varchar|100|角色|||
+|token|varchar|200|密码|||
+|addtime|timestamp||新增时间||CURRENT\_TIMESTAMP|
+|expiratedtime|timestamp||过期时间||CURRENT\_TIMESTAMP|
+
+表4-12：汽车论坛
+
+|字段名称|类型|长度|字段说明|主键|默认值|
+| :-: | :-: | :-: | :-: | :-: | :-: |
+|id|bigint||主键|主键||
+|addtime|timestamp||创建时间||CURRENT\_TIMESTAMP|
+|title|varchar|200|帖子标题|||
+|content|longtext|4294967295|帖子内容|||
+|parentid|bigint||父节点id|||
+|userid|bigint||用户id|||
+|username|varchar|200|用户名|||
+|avatarurl|longtext|4294967295|头像|||
+|isdone|varchar|200|状态|||
+
+表4-13：配置文件
+
+|字段名称|类型|长度|字段说明|主键|默认值|
+| :-: | :-: | :-: | :-: | :-: | :-: |
+|id|bigint||主键|主键||
+|name|varchar|100|配置参数名称|||
+|value|varchar|100|配置参数值|||
+
+表4-14：用户表
+
+|字段名称|类型|长度|字段说明|主键|默认值|
+| :-: | :-: | :-: | :-: | :-: | :-: |
+|id|bigint||主键|主键||
+|username|varchar|100|用户名|||
+|password|varchar|100|密码|||
+|role|varchar|100|角色||管理员|
+|addtime|timestamp||新增时间||CURRENT\_TIMESTAMP|
+
+表4-15：收藏表
+
+|字段名称|类型|长度|字段说明|主键|默认值|
+| :-: | :-: | :-: | :-: | :-: | :-: |
+|id|bigint||主键|主键||
+|addtime|timestamp||创建时间||CURRENT\_TIMESTAMP|
+|userid|bigint||用户id|||
+|refid|bigint||商品id|||
+|tablename|varchar|200|表名|||
+|name|varchar|200|名称|||
+|picture|longtext|4294967295|图片|||
+|type|varchar|200|类型(1:收藏,21:赞,22:踩,31:竞拍参与,41:关注)||1|
+|inteltype|varchar|200|推荐类型|||
+|remark|varchar|200|备注|||
+
+表4-16：用户
+
+|字段名称|类型|长度|字段说明|主键|默认值|
+| :-: | :-: | :-: | :-: | :-: | :-: |
+|id|bigint||主键|主键||
+|addtime|timestamp||创建时间||CURRENT\_TIMESTAMP|
+|zhanghao|varchar|200|账号|||
+|mima|varchar|200|密码|||
+|xingming|varchar|200|姓名|||
+|nianling|int||年龄|||
+|xingbie|varchar|200|性别|||
+|shenfenzheng|varchar|200|身份证|||
+|shouji|varchar|200|手机|||
+|touxiang|longtext|4294967295|头像|||
 
 
 
 
-![图片](/images/0580springbootimg_014.jpg)
-![图片](/images/0580springbootimg_015.jpg)
-![图片](/images/0580springbootimg_001.jpg)
-![图片](/images/0580springbootimg_003.jpg)
-![图片](/images/0580springbootimg_002.jpg)
-![图片](/images/0580springbootimg_016.jpg)
-![图片](/images/0580springbootimg_012.jpg)
-![图片](/images/0580springbootimg_006.jpg)
-![图片](/images/0580springbootimg_007.jpg)
-![图片](/images/0580springbootimg_013.jpg)
-![图片](/images/0580springbootimg_005.jpg)
-![图片](/images/0580springbootimg_011.jpg)
-![图片](/images/0580springbootimg_010.jpg)
-![图片](/images/0580springbootimg_004.jpg)
-![图片](/images/0580springbootimg_009.jpg)
-![图片](/images/0580springbootimg_008.jpg)
 
-### 0580springboot汽车租赁管理系统_1ma2x--论文 项目图片
-![图片](/images/0580springbootimg_014.jpg)
-![图片](/images/0580springbootimg_015.jpg)
-![图片](/images/0580springbootimg_001.jpg)
-![图片](/images/0580springbootimg_003.jpg)
-![图片](/images/0580springbootimg_002.jpg)
-![图片](/images/0580springbootimg_016.jpg)
-![图片](/images/0580springbootimg_012.jpg)
-![图片](/images/0580springbootimg_006.jpg)
-![图片](/images/0580springbootimg_007.jpg)
-![图片](/images/0580springbootimg_013.jpg)
-![图片](/images/0580springbootimg_005.jpg)
-![图片](/images/0580springbootimg_011.jpg)
-![图片](/images/0580springbootimg_010.jpg)
-![图片](/images/0580springbootimg_004.jpg)
-![图片](/images/0580springbootimg_009.jpg)
-![图片](/images/0580springbootimg_008.jpg)
+
+
+# 5系统的实现
+## 5.1系统功能实现
+当人们打开系统的网址后，首先看到的就是首页界面。在这里，人们能够看到汽车租赁管理系统的导航条，通过导航条导航进入各功能展示页面进行操作。系统首页界面如图5-1所示：
+
+![](/images/0500stringboot/0580springboot/blog.016.png)
+
+图5-1 系统首页界面
+
+用户注册：在系统首页点击右上角的登录/注册按钮，进入登录注册界面，单击注册进行用户注册操作，用户注册界面如图5-2所示：
+
+![](/images/0500stringboot/0580springboot/blog.017.png)
+
+图5-2 用户注册界面
+
+汽车信息：在汽车信息页面的输入栏中输入车牌号、选择汽车类别、车辆品牌和选择状态进行查询，可以查看到汽车信息，并进行租赁汽车或收藏等操作，页面如图5-3所示：
+
+![](/images/0500stringboot/0580springboot/blog.018.png)
+
+图5-3汽车信息详情页面
+
+
+个人中心：在个人中心页面可以更新个人详细信息，并在我的发布和我的收藏页面对信息进行详细操作；如图5-4所示：
+
+![](/images/0500stringboot/0580springboot/blog.019.png)
+
+图5-4 个人中心界面
+
+## 5.2后台模块实现
+后台登录，在登录页面选择登录角色，再正确输入用户名和密码后，进入操作系统进行操作；如图5-5所示。                               
+
+![](/images/0500stringboot/0580springboot/blog.020.png)
+
+图5-5 后台登录界面
+### 5.2.1管理员模块实现
+管理员进入主页面，主要功能包括对系统首页、个人中心、用户管理、普通管理员管理、汽车类别管理、汽车信息管理、租车订单管理、取消订单管理、还车信息管理、汽车资讯管理、汽车论坛、留言板管理、系统管理等进行操作。管理员主界面如图5-6所示：
+
+![](/images/0500stringboot/0580springboot/blog.021.png)
+
+图5-6 管理员主界面
+
+管理员点击用户管理。进入用户页面输入账号和姓名可以查询，新增或删除用户列表，并根据需要对用户信息进行查看详情，修改或删除操作。如图5-7所示：
+
+![](/images/0500stringboot/0580springboot/blog.022.png)
+
+图5-7用户管理界面
+
+管理员点击普通管理员管理。进入普通管理员页面输入管理账号和管理姓名可以查询，新增或删除普通管理员列表，并根据需要对普通管理员信息进行查看详情，修改或删除操作。如图5-8所示：
+
+![](/images/0500stringboot/0580springboot/blog.023.png)
+
+图5-8普通管理员管理界面
+
+管理员点击汽车信息管理。进入汽车信息页面输入车牌号、选择汽车类别、车辆品牌和选择状态可以查询或删除汽车信息列表，并根据需要对汽车信息进行查看详情、修改或删除操作。如图5-9所示：
+
+![](/images/0500stringboot/0580springboot/blog.024.png)
+
+图5-9汽车信息管理界面
+
+管理员点击取消订单管理。进入取消订单页面输入车牌号、车辆品牌、汽车类别、姓名和选择是否通过可以查询或删除取消订单列表，并根据需要对取消订单信息进行查看详情或删除操作。如图5-10所示：
+
+![](/images/0500stringboot/0580springboot/blog.025.png)
+
+图5-10取消订单管理界面
+
+管理员点击还车信息管理。进入还车信息页面输入车牌号、车辆品牌、汽车类别、姓名和选择是否通过可以查询或删除还车信息列表，并根据需要对还车信息进行查看详情或删除操作。如图5-11所示：
+
+![](/images/0500stringboot/0580springboot/blog.026.png)
+
+图5-11还车信息管理界面
+
+管理员点击留言板管理。进入留言板管理页面输入用户名可以查询或删除留言板列表，并根据需要对留言板进行查看详情，修改，回复或删除操作。如图5-12所示：
+
+![](/images/0500stringboot/0580springboot/blog.027.png)
+
+图5-12留言板管理界面
+
+管理员点击汽车资讯管理。进入汽车资讯页面输入标题、简介和发布人进行查询，新增或删除汽车资讯列表。并根据需要对汽车资讯进行查看详情，修改或删除等操作。如图5-13所示：
+
+![](/images/0500stringboot/0580springboot/blog.028.png)
+
+图5-13汽车资讯管理界面
+
+管理员点击系统管理，进入关于我们页面输入标题可以查询关于我们列表，并根据需要对关于我们进行查看详情或修改操作；还可以对轮播图管理，系统简介和公告信息进行详细操作。如图5-14所示：
+
+![](/images/0500stringboot/0580springboot/blog.029.png)
+
+图5-14系统管理界面
+
+### 5.2.2用户模块实现
+用户进入主页面，主要功能包括对系统首页、个人中心、租车订单管理、取消订单管理、还车信息管理等进行操作。用户主界面如图5-15所示：
+
+![](/images/0500stringboot/0580springboot/blog.030.png)
+
+图5-15 用户主界面
+
+用户点击租车订单管理。进入租车订单页面输入车牌号、车辆品牌、汽车类别、姓名和选择是否通过可以查询或删除租车订单列表，并根据需要对租车订单进行查看详情，归还汽车，取消订单或删除操作。如图5-16所示：
+
+![](/images/0500stringboot/0580springboot/blog.031.png)
+
+图5-16租车订单管理界面
+### 5.2.3普通管理员模块实现
+普通管理员进入主页面，主要功能包括对系统首页、个人中心、汽车信息管理、租车订单管理、取消订单管理、还车信息管理、汽车资讯管理等进行操作。普通管理员主界面如图5-17所示：
+
+![](/images/0500stringboot/0580springboot/blog.032.png)
+
+图5-17普通管理员主界面
+
+
+#
+
+
 
 
 

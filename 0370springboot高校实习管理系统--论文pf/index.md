@@ -3,187 +3,26 @@
 
 # [0370springboot高校实习管理系统--论文pf](https://github.com/GraduationProject-springboot/0370springboot)
 
-### 微信： chen_q123456  qq:462201886
-### github:chenqi199
+![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-### [所有项目](https://github.com/GraduationProject-springboot/allSpringbootProjects) 包安装运行
+# [项目清单](https://chenqi1990.site) 包安装运行
 
-### [所有项目列表excel 腾讯文档 项目清单](https://docs.qq.com/sheet/DSHRFSVZ5aEVYT3N3?tab=BB08J2) 包安装运行
-
-### [github](https://chenqi199.github.io)
-
-
-
-
-
-
-
-
-# 0370springboot高校实习管理系统--论文pf
+### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://player.bilibili.com/player.html?isOutside=true&aid=BV1T1bpekEK7&bvid=BV1T1bpekEK7&cid=500001616847968&p=43)
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1T1bpekEK7?p=43)
 
-### [所有项目](https://github.com/GraduationProject-springboot/allSpringbootProjects) 包安装运行
-
-
-
-
-
-
-
-
-
-
-
-
-**毕 业 设 计（论 文）**
-
-题目：[高校实习管理系统的设计与实现]{.underline}
-
-# 摘 要
-
-如今社会上各行各业，都喜欢用自己行业的专属软件工作，互联网发展到这个时候，人们已经发现离不开了互联网。新技术的产生，往往能解决一些老技术的弊端问题。因为传统高校实习管理系统信息管理难度大，容错率低，管理人员处理数据费工费时，所以专门为解决这个难题开发了一个高校实习管理系统管理系统，可以解决许多问题。
-
-高校实习管理系统管理系统按照操作主体分为管理员和用户。管理员的功能包括班级管理、字典管理、公告管理、公司管理、简历管理、老师管理、实习评分管理、实习情况管理、简历投递管理、用户管理、院系管理、职位招聘管理、实习作业管理、作业提交管理、管理员管理。用户的功能等。该系统采用了Mysql数据库，Java语言，Spring
-Boot框架等技术进行编程实现。
-
-高校实习管理系统管理系统可以提高高校实习管理系统信息管理问题的解决效率，优化高校实习管理系统信息处理流程，保证高校实习管理系统信息数据的安全，它是一个非常可靠，非常安全的应用程序。
-
-**关键词：**高校实习管理系统管理系统；职位招聘,简历Mysql数据库；Java语言
-
-[]{#__RefHeading___Toc16988 .anchor}
-
-Nowadays, all walks of life in society like to work with their own
-industry-specific software. At this point in the development of the
-Internet, people have found that they cannot do without the Internet.
-The emergence of new technologies can often solve the drawbacks of some
-old technologies. Because the traditional personnel information
-management is difficult, the fault tolerance rate is low, and the
-management personnel is labor-intensive and time-consuming to process
-data, a personnel management system has been specially developed to
-solve this problem, which can solve many problems.
-
-The personnel management system is divided into administrators and users
-according to the operating subjects. The functions of the administrator
-include managing employees, managing personnel information, including
-recruitment management, training management, reward and punishment
-management, salary management, etc., and can manage operators. User
-functions include managing department and department position
-information, managing recruitment information, training information,
-salary information, etc. The system uses Mysql database, Java language,
-Spring Boot framework and other technologies for programming.
-
-The personnel management system can improve the efficiency of solving
-personnel information management problems, optimize the personnel
-information processing process, and ensure the security of personnel
-information data. It is a very reliable and very safe application.
-
-**Key Words：**Personnel management system; Mysql database; Java
-language
-
-[]{#__RefHeading___Toc5081 .anchor}
-
-[摘 要 I](#摘-要)
-
-[Abstract II](#__RefHeading___Toc16988)
-
-[目 录 III](#__RefHeading___Toc5081)
-
-[第1章 绪论 1](#第1章-绪论)
-
-[1.1 课题背景 1](#课题背景)
-
-[1.2 课题意义 1](#课题意义)
-
-[1.3 研究内容 1](#研究内容)
-
-[第2章 开发环境与技术 3](#第2章-开发环境与技术)
-
-[2.1 Java语言 3](#__RefHeading___Toc2446)
-
-[2.2 MYSQL数据库 3](#__RefHeading___Toc1311)
-
-[2.3 IDEA开发工具 4](#__RefHeading___Toc24988)
-
-[2.4 Spring Boot框架 4](#__RefHeading___Toc11146)
-
-[第3章 系统分析 5](#第3章-系统分析)
-
-[3.1 可行性分析 5](#可行性分析)
-
-[3.1.1 技术可行性 5](#技术可行性)
-
-[3.1.2 经济可行性 5](#经济可行性)
-
-[3.1.3 操作可行性 5](#操作可行性)
-
-[3.2 系统流程 5](#系统流程)
-
-[3.2.1 操作流程 6](#操作流程)
-
-[3.2.2 登录流程 6](#登录流程)
-
-[3.2.3 删除信息流程 7](#删除信息流程)
-
-[3.2.4 新增信息流程 7](#新增信息流程)
-
-[3.3 性能需求 8](#性能需求)
-
-[3.4 功能需求 9](#__RefHeading___Toc19302)
-
-[第4章 系统设计 10](#第4章-系统设计)
-
-[4.1 系统设计思想 10](#系统设计模式)
-
-[4.2 功能结构设计 11](#功能结构设计)
-
-[4.3 数据库设计 11](#数据库设计)
-
-[4.3.1 数据库概念设计 11](#数据库概念设计)
-
-[4.3.2 数据库物理设计 16](#数据库物理设计)
-
-[第5章 系统实现 20](#__RefHeading___Toc21871)
-
-[5.1 管理员功能实现 20](#管理员功能实现)
-
-[5.1.1 职位招聘管理 20](#职位招聘管理)
-
-[5.1.2 简历管理 21](#简历管理)
-
-[5.1.3 公告管理 21](#公告管理)
-
-[5.1.4 公告类型管理 21](#公告类型管理)
-
-[第6章 系统测试 23](#章-6.1软件测试)
-
-[6.1 功能测试 23](#__RefHeading___Toc7398)
-
-[6.1.1 登录功能测试 23](#__RefHeading___Toc10515)
-
-[6.2 系统测试结果 23](#__RefHeading___Toc18046)
-
-[结 论 25](#结-论)
-
-[致 谢 26](#__RefHeading___Toc695)
 
 # 第1章 绪论
-
 ## 1.1 课题背景
-
 二十一世纪互联网的出现，改变了几千年以来人们的生活，不仅仅是生活物资的丰富，还有精神层次的丰富。在互联网诞生之前，地域位置往往是人们思想上不可跨域的鸿沟，信息的传播速度极慢，信息处理的速度和要求还是通过人们骑马或者是信鸽传递，这些信息传递都是不可控制的，中间很有可能丢失，信息的传递水平决定了人们生活的水平。如今大家都在使用互联网软件产品，从内部管理设置计算机管理，提高内部信息化的管理水准，从外部市场也可以用计算机获取相关数据进行处理，如今各行各业已经严重依赖于计算机了。
 
 本课题研究和开发高校实习管理系统管理系统，让安装在计算机上的该系统变成管理人员的小帮手，提高高校实习管理系统信息处理速度，规范高校实习管理系统信息处理流程，让管理人员的产出效益更高。
-
 ## 1.2 课题意义
-
 传统处理数据，必须是一张张纸，然后处理完毕又是统计在一张张纸上面，不断的重复处理，最终有个结果给最高层作为参考，这个模式在互联网没有出现之前，是一种常见的事情，信息管理的效率提不上去，人多不一定力量大，因为人多肯定更加消耗资源，并且因为人类需要休息，需要管理，思想会不统一，会偷懒，所以人们研究出专门帮助人们计算的机器，就是计算机的前身，到了互联网时代，人们发现完全可以让程序供应商提供解决方案，自己挑选自己合适的方案来提高自己的产出比。所以在日常工作和生活中会发现各种各样方便人们的工具。
 
 本课题研发的高校实习管理系统管理系统，就是提供高校实习管理系统信息处理的解决方案，它可以短时间处理完信息，并且这些信息都有专门的存储设备，而且数据的备份和迁移都可以设定为无人值守，从人力角度和信息处理角度以及信息安全角度，高校实习管理系统管理系统是完胜传统纸质操作的。
-
 ## 1.3 研究内容
-
 本文对高校实习管理系统管理系统的设计与实现分成六个章节来说明。
 
 第1章：研究高校实习管理系统管理系统的背景，以及开发高校实习管理系统管理系统的意义。
@@ -197,124 +36,80 @@ language
 第5章：实现高校实习管理系统管理系统的功能并进行功能界面展示。
 
 第6章：对系统测试进行阐述，以及对本系统部分功能进行检测。
-
 # 第2章 开发环境与技术
-
 本章节对开发高校实习管理系统管理系统需要搭建的开发环境，还有高校实习管理系统管理系统开发中使用的编程技术等进行阐述。
 
-**2.1 MySQL数据库**
+2.1 MySQL数据库
 
-MySQL是一种具有安全系数、安全系数、混合开发性、高效化等特征的轻量关联数据库智能管理系统。MySQL由C语言和C++语言构成，由于C语言和CC++语言混合开发的，因此MySQL源码是生命期的。MySQL提供多种多样数据种类，常见的数据种类包含\[34\]。伴随着数据库技术发展，MySQL逐步形成数据库管理方法的重要工具之一。它不仅能提供简单实用的操作作用，还能实现复杂多变的数据检索方法和查询记录导出方式。因为MySQL具有较好的兼容模式和扩展性，因而广泛应用于各行各业。
+MySQL是一种具有安全系数、安全系数、混合开发性、高效化等特征的轻量关联数据库智能管理系统。MySQL由C语言和C++语言构成，由于C语言和CC++语言混合开发的，因此MySQL源码是生命期的。MySQL提供多种多样数据种类，常见的数据种类包含[34]。伴随着数据库技术发展，MySQL逐步形成数据库管理方法的重要工具之一。它不仅能提供简单实用的操作作用，还能实现复杂多变的数据检索方法和查询记录导出方式。因为MySQL具有较好的兼容模式和扩展性，因而广泛应用于各行各业。
 
-MySQL在WEB行业越来越受单位和个人开发者的亲睐。大部分大中小型网址都采用MySQL数据库，它不仅可以提供简单高效的数据浏览作用，还会对数据进行相应的剖析解决。因为Linux电脑操作系统和MySQL数据库全是开源系统免费体验，能够为公司节约许多费用，让很多企业使用Linux
-MySQL做为网址数据库，体型小，启动速度快，也不会影响网址性能，导致用户体验感极差。
+MySQL在WEB行业越来越受单位和个人开发者的亲睐。大部分大中小型网址都采用MySQL数据库，它不仅可以提供简单高效的数据浏览作用，还会对数据进行相应的剖析解决。因为Linux电脑操作系统和MySQL数据库全是开源系统免费体验，能够为公司节约许多费用，让很多企业使用Linux   MySQL做为网址数据库，体型小，启动速度快，也不会影响网址性能，导致用户体验感极差。
 
-MySQL数据库能够支持各种各样操作系统的运作，包含AIX、HP-UX、OS/2
-Wrap、Solaris、Mac
-OS、Linux和Windows等。性能好，使用便捷。因而，MySQL数据库已成为当下数据库行业最流行产品之一。MySQL数据库系统使用面向对象设计方式，客户至上开展编程设计。是利用面向对象观念来达到各项功能。它不仅能管理方法大中型数据表或关系数据库，还可以把这种复杂且庞大信息系统集成到一个简单的中小型数据库系统内。现阶段，中国很多公司早已运用了这一尖端技术。但是由于该操作系统是根据远程服务器/服务器结构的（C/S），因而，存在一些缺陷：最先，系统软件不可以提供完备的数据访问接口，客户只能依靠浏览器浏览所需要的数据；次之，系统软件并没有统一的标准，不同类型的客户端难以实现数据分享；第三，系统软件没有很好的权限管理体制。
-
+MySQL数据库能够支持各种各样操作系统的运作，包含AIX、HP-UX、OS/2 Wrap、Solaris、Mac OS、Linux和Windows等。性能好，使用便捷。因而，MySQL数据库已成为当下数据库行业最流行产品之一。MySQL数据库系统使用面向对象设计方式，客户至上开展编程设计。是利用面向对象观念来达到各项功能。它不仅能管理方法大中型数据表或关系数据库，还可以把这种复杂且庞大信息系统集成到一个简单的中小型数据库系统内。现阶段，中国很多公司早已运用了这一尖端技术。但是由于该操作系统是根据远程服务器/服务器结构的（C/S），因而，存在一些缺陷：最先，系统软件不可以提供完备的数据访问接口，客户只能依靠浏览器浏览所需要的数据；次之，系统软件并没有统一的标准，不同类型的客户端难以实现数据分享；第三，系统软件没有很好的权限管理体制。
 ## 2.2 Java语言技术
-
-Java语言已经存在了25年有余。通过这些年的发展趋势，it行业在市场占有率上仍然占据一半，仍然受到了很多程序员的工作钟爱。许多从业者都是在学习培训。近年来随着从业者的提高，Java语言的位置并没减少，算得上是常青藤。Java语言学习培训比较简单，自然，它是对于C前辈们的
-而言的，C
-语言非常强劲。Java取消了许多特点，如go这种描述，也取消了主文件，让所有文件夹全是类，类是二维数组以及各种对象，也使Java处理一些对象的引入和回收利用，让开发者只需建立对象，应用对象，编写代码逻辑，不需要留意性能，让各种各样文件存储给Java自己解决，你能花很多时间科学研究应用软件相互关系，使研发更为集中化，如同跑车驾驶员一样，只要了解各种汽车的性能，实际操作，不需要科学研究如何生产车轮子，使软件开发更为详尽。
-
+Java语言已经存在了25年有余。通过这些年的发展趋势，it行业在市场占有率上仍然占据一半，仍然受到了很多程序员的工作钟爱。许多从业者都是在学习培训。近年来随着从业者的提高，Java语言的位置并没减少，算得上是常青藤。Java语言学习培训比较简单，自然，它是对于C前辈们的  而言的，C  语言非常强劲。Java取消了许多特点，如go这种描述，也取消了主文件，让所有文件夹全是类，类是二维数组以及各种对象，也使Java处理一些对象的引入和回收利用，让开发者只需建立对象，应用对象，编写代码逻辑，不需要留意性能，让各种各样文件存储给Java自己解决，你能花很多时间科学研究应用软件相互关系，使研发更为集中化，如同跑车驾驶员一样，只要了解各种汽车的性能，实际操作，不需要科学研究如何生产车轮子，使软件开发更为详尽。
 ## 2.3 Spring Boot框架
+Spring Boot框架是一个SpringMVC架构的快速轻量快速框架，能够帮助开发人员迅速搭建靠谱高效率的应用程序。依据自动部署和协议书，改善了Spring的研究过程，使开发人员可以更加专注于领域模型。
 
-Spring
-Boot框架是一个SpringMVC架构的快速轻量快速框架，能够帮助开发人员迅速搭建靠谱高效率的应用程序。依据自动部署和协议书，改善了Spring的研究过程，使开发人员可以更加专注于领域模型。
+Spring Boot有许多特性，当中最主要的是它提供了内置Tomcat、Jetty、Undertow等Web网络服务器能够轻松搭建Web应用程序。除此之外，它也提供自动部署、无需撰写XML文件等功能。这种功能使开发人员能够迅速建立和布署应用程序，而无需解决繁杂的环境变量和其它繁琐复杂每日任务。
 
-Spring
-Boot有许多特性，当中最主要的是它提供了内置Tomcat、Jetty、Undertow等Web网络服务器能够轻松搭建Web应用程序。除此之外，它也提供自动部署、无需撰写XML文件等功能。这种功能使开发人员能够迅速建立和布署应用程序，而无需解决繁杂的环境变量和其它繁琐复杂每日任务。
-
-开发系统时，Spring
-Boot能够帮助开发人员完成模块化设计和松耦合的代码结构，从而更好地日常维护拓展应用程序。除此之外，它也提供了很多常见的库和部件，如Spring
-Data、Spring
-Security等，能够轻松集成化这种部件，完成数据库操作、验证、受权等功能。
-
+开发系统时，Spring Boot能够帮助开发人员完成模块化设计和松耦合的代码结构，从而更好地日常维护拓展应用程序。除此之外，它也提供了很多常见的库和部件，如Spring Data、Spring Security等，能够轻松集成化这种部件，完成数据库操作、验证、受权等功能。
 ## 2.4 其他技术使用
-
 spring-jdbc联接：
 
 这是一个专业生产制造Connection对象工厂类，大部分全部用以建立数据库联接框架都是会完成这一插口，Springjdbc包就实现了这一插口，实现类是DriverManagerdasource、现阶段的项目是由DataSource的getconection方式获得配备MYSQL5.7数据库连接信息。
 
 提交Fileupload文件：
 
-项目中应用Fileupload完成文件提交，通常是Fileupload前面提交文件提交请求，请求形式为POST：\<form
-action=\"uploadServlet\" method=\"post\"
-\....=\"\"\>请求编码方式：等候文件提交，启用Fileitem的isformField()方式，判断出表格域到底还是不是表格域，文件提交到后台管理，应用Fileupload接受文件信息，并把文件解决包存储在硬盘和库中。
+项目中应用Fileupload完成文件提交，通常是Fileupload前面提交文件提交请求，请求形式为POST：<form action="uploadServlet" method="post" ....="">请求编码方式：等候文件提交，启用Fileitem的isformField()方式，判断出表格域到底还是不是表格域，文件提交到后台管理，应用Fileupload接受文件信息，并把文件解决包存储在硬盘和库中。
 
 Alibaba驱动：
 
-比照各大网站Alibaba.Druid是JAVA语言中比较好的数据库连接池。Druid可提供强有力的拓展和监控功能。该项目应用Alibababa.Druid开展数据库系统连接，Druid
-0.1.18
-以后，全部版本号都分享到maven中央仓库，在项目pome中.在xml里加入dependency就可以使用。
+比照各大网站Alibaba.Druid是JAVA语言中比较好的数据库连接池。Druid可提供强有力的拓展和监控功能。该项目应用Alibababa.Druid开展数据库系统连接，Druid 0.1.18 以后，全部版本号都分享到maven中央仓库，在项目pome中.在xml里加入dependency就可以使用。
 
 log4j日志：
 
-高校实习管理系统，其全世界错误处理和日志信息纪录，应用log4j开展日志日常维护管理与查询，其核心优势是错误处理：在logback中，应用软件里的出现异常不被应用软件认知，特性提升，关键或没有废弃物体制，log4j在很多情况下，可采取设计的一套无废弃物体制，防止经常日志搜集所引起的jvm
-gc。操作方法很简单，在pom中.新增log4j有关jarxml就可以。
+高校实习管理系统，其全世界错误处理和日志信息纪录，应用log4j开展日志日常维护管理与查询，其核心优势是错误处理：在logback中，应用软件里的出现异常不被应用软件认知，特性提升，关键或没有废弃物体制，log4j在很多情况下，可采取设计的一套无废弃物体制，防止经常日志搜集所引起的jvm gc。操作方法很简单，在pom中.新增log4j有关jarxml就可以。
 
 # 第3章 系统分析
-
 本文作者在确定了研究的课题之后，从各大数字图书馆下载文献来阅读，并了解同类型的网站具备的大致功能，然后具体事务具体分析，得出本系统要研究的具体功能与性能。虽然分析系统这一阶段性工作主要是确定功能，但它却影响着后面系统开发环节的进展，系统分析这个环节是不能少的。
-
 ## 3.1 可行性分析
-
 从三个不同的角度来分析，确保开发成功的前提是有可行性分析，只有进行提前分析，符合程序开发流程才不至于开发过程的中断。
-
 ### 3.1.1 技术可行性
-
 在技术实现层次，分析了好几种技术实现方法，并且都有对应的成功案例，也有很多开源模块可以进行参考，所以从技术可行性分析来讲，实现高校实习管理系统管理系统是没有问题的。
-
 ### 3.1.2 经济可行性
-
 对于身为学生的开发者而言，在经济资源上面可用者很少，为了开发高校实习管理系统管理系统，通过开发软件对硬件的要求，发现自己的电脑是完全能用来开发的，并且学校机房的配置也可以达到要求。最重要的是选择的技术都可以在网上找到不花钱的教程以及资料，因为不花钱，所以经济方面是具有可行性的。
-
 ### 3.1.3 操作可行性
-
 高校实习管理系统管理系统的具体实现，本身参考人类的正常操作逻辑，把常用的操作习惯当做主要的导航实现，可以让使用者更快速的理解并且上手操作，实现符合逻辑的操作流程是操作可行性的具体体现。
 
 以上就是从不同的角度来分析，确保了高校实习管理系统管理系统的正常开展。
-
 ## 3.2 系统流程
-
 高校实习管理系统管理系统投入使用后，使用者如果能看到相应的流程操作图会提高程序的理解能力。
-
 ### 3.2.1 操作流程
-
 使用者在操作高校实习管理系统管理系统中，应该按照本系统提供的操作流程（图3.1即为本系统的操作流程图）进行操作，可以减少操作失误，从而节省进入高校实习管理系统管理系统的时间。
 
-![](media/image1.wmf)
+![](/images/0300stringboot/0370springboot/blog.001.png)
 
 图3.1 系统操作流程
-
 ### 3.2.2 登录流程
-
 高校实习管理系统管理系统通过登录功能（图3.2即为其登录的流程）引导使用者进入指定的功能操作区，也避免非本系统的用户享受本系统提供的服务以及查看本系统提供的信息，进而保证用户安全。
 
-![](media/image2.wmf)
+![](/images/0300stringboot/0370springboot/blog.002.png)
 
 图3.2 登录流程
-
 ### 3.2.3 删除信息流程
-
 高校实习管理系统管理系统在经过长期使用后，会产生很多的数据信息。为了腾出存储空间存放更多的数据，本系统数据库中存储的数据，一些没有参考价值的数据需要进行删除（图3.3即为删除信息的流程），删除数据过程中，为避免误删，使用者要根据系统的提示来决定是否删除数据。
 
-![](media/image3.wmf)
+![](/images/0300stringboot/0370springboot/blog.003.png)
 
 图3.3 删除信息流程
-
 ### 3.2.4 新增信息流程
-
 高校实习管理系统管理系统提供可视化的功能操作区，非常方便使用者进行数据操作，当使用者往系统中录入数据时（图3.4即为新增信息的流程），本系统也会进行数据合法性的判断，符合要求的数据才能够在数据库指定表中进行登记。
 
-![](media/image4.wmf)
+![](/images/0300stringboot/0370springboot/blog.004.png)
 
 图3.4 新增信息流程
-
 ## 3.3 性能需求
-
 分析高校实习管理系统对于性能的需求主要还是从下面的5个角度来分析，它们分别是系统的实用性，系统的适应性，系统的易操作性，系统的安全性和系统的易维护性。
 
 性能需求一：系统的实用性，本系统主要是让管理人员集中处理相关信息，可以提供方便快捷的信息添加，信息编辑等操作。在提高信息管理人员的工作效率的同时，也可以降低管理成本，并大大减少管理人员日常繁琐的工作量。
@@ -326,632 +121,301 @@ gc。操作方法很简单，在pom中.新增log4j有关jarxml就可以。
 性能需求四：系统的安全性，本系统在数据保存与管理上安全系数要达标，在设计与编码阶段，通过对用户进行权限分配，把系统的功能依照不同用户的角色进行分配，在首次进入系统时，通过编写安全验证的代码模块，引导不同用户进入不同的操作界面。还可以对用户基础信息包括登录的账号密码等进行加密保存，可以利用当下常用的技术成熟的MD5加密技术实现。
 
 性能需求五：系统的易维护性，本系统在后期运行中，会根据使用者的操作，产生许多数据信息，为了便于维护，就要求这些数据可以通过工具从数据库中导出来，对于一些阶段性数据，可以进行批量删除，以此达到轻负荷处理数据的目标，让本系统可以变得更加轻盈。
-
 # 第4章 系统设计
-
 用户对着浏览器操作，肯定会出现某些不可预料的问题，但是不代表着系统对于用户在浏览器上的操作不进行处理，所以说，要提前考虑可能会出现的问题。
-
 ## 4.1 系统设计模式
-
-高校实习管理系统选用B/S架构模式，即网页页面和网站架构设计的开发方式。这类系统构造可以理解为正确的
-C/S
-系统构造的改变与推广能够进行信息分布式存储，减少资源成本，提升订制系统性能。在这种设计下，极少有事务处理在前进行，绝大多数重要事务管理的思路需要在服务端完成。
+高校实习管理系统选用B/S架构模式，即网页页面和网站架构设计的开发方式。这类系统构造可以理解为正确的 C/S 系统构造的改变与推广能够进行信息分布式存储，减少资源成本，提升订制系统性能。在这种设计下，极少有事务处理在前进行，绝大多数重要事务管理的思路需要在服务端完成。
 
 系统的性能层为表明给用户页面，用以表明与理解用户的数据，回到用户所提供的数据，递交给系统解决方法，同时提供用户与系统之间的沟通控制面板；系统通讯层承担为性能层给予后面数据，并把性能层和系统后台管理间的通信连接下去。HTTP/HTTPS协议书采用，系统控制层主要是针对从HTTP规定中获得信息，获得基本参数。并把它发放给不一样的处理方式服务(service层)，并把service层处理后的数据回到前边(本系统运用JSON数据)；系统业务逻辑层的主要作用是挑选用户的键入信息，进行特定业务逻辑和数据访问；系统数据访问层主要是针对操作过程数据，为业务逻辑层或控制层给予数据服务；系统数据库是系统存放数据的地区。进行独特业务需要数据可用，务必纪录信息才能达到工作流程。
-
 ## 4.2 功能结构设计
-
 图4.1即为设计的管理员功能结构，管理员权限操作的功能包括管理公告，管理高校实习管理系统信息，包括职位招聘管理，培训管理，简历管理，薪资管理等，可以管理公告。
 
-![](media/image5.jpeg){width="5.7555555555555555in"
-height="2.3020833333333335in"}
+![结构设计图](/images/0300stringboot/0370springboot/blog.005.jpeg "结构设计图")
 
 图4.1 管理员功能结构
-
 ## 4.3 数据库设计
-
 高校实习管理系统管理系统运行中产生的数据需要按照提前设置的存储规则进行保存，设计出一个符合项目的最优数据存储格式，因为它能减少用户的等待时间，还可以对系统的请求在最短时间内进行响应。所以，对数据库设计时，需要对功能需求进行详细的拆分，以及对业务状态的细分，然后设计具体的存储规则，保证数据库能正常运作，缩短数据处理时间，并在一定程度上降低数据冗余，节省存储空间。
-
 ### 4.3.1 数据库概念设计
-
-实体-联系图还有一个名称即E-R图，是Entity Relationship
-Diagram各英文单词首字母的缩写，它这种概念模型通常用于对现实世界进行描述。同时它还是一种能够直观表达数据中实体，联系，属性的有效手段。绘制E-R图能够选择的工具也有很多，但是Office
-Visio 这款软件在E-R图的绘制上一般都是作为首选工具，因为它是基于可视化处理，使用它创建E-R图非常简单。使用基本的E-R图构成元素，比如椭圆，菱形，矩形，还有实线段来表达对应的信息，椭圆代表属性，即实体的特征，矩形代表实体，即数据库中的一个具体数据表，菱形代表实体中相互关系，实线段主要是完成椭圆，矩形，菱形的连接。
+实体-联系图还有一个名称即E-R图，是Entity Relationship Diagram各英文单词首字母的缩写，它这种概念模型通常用于对现实世界进行描述。同时它还是一种能够直观表达数据中实体，联系，属性的有效手段。绘制E-R图能够选择的工具也有很多，但是Office Visio 这款软件在E-R图的绘制上一般都是作为首选工具，因为它是基于可视化处理，使用它创建E-R图非常简单。使用基本的E-R图构成元素，比如椭圆，菱形，矩形，还有实线段来表达对应的信息，椭圆代表属性，即实体的特征，矩形代表实体，即数据库中的一个具体数据表，菱形代表实体中相互关系，实线段主要是完成椭圆，矩形，菱形的连接。
 
 （1）下图是用户实体和其具备的属性。
 
-![](media/image6.jpeg){width="5.554861111111111in"
-height="2.986111111111111in"}\
+![C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\用户.jpg](/images/0300stringboot/0370springboot/blog.006.jpeg "C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\用户.jpg")
 用户实体属性图
 
 （2）下图是公司实体和其具备的属性。
 
-![](media/image7.jpeg){width="5.554861111111111in"
-height="2.9854166666666666in"}\
+![C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\公司.jpg](/images/0300stringboot/0370springboot/blog.007.jpeg "C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\公司.jpg")
 公司实体属性图
 
 （3）下图是老师实体和其具备的属性。
 
-![](media/image8.jpeg){width="5.554861111111111in"
-height="2.9854166666666666in"}\
+![C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\老师.jpg](/images/0300stringboot/0370springboot/blog.008.jpeg "C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\老师.jpg")
 老师实体属性图
 
 （4）下图是简历实体和其具备的属性。
 
-![](media/image9.jpeg){width="5.554861111111111in"
-height="2.986111111111111in"}\
+![C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\简历.jpg](/images/0300stringboot/0370springboot/blog.009.jpeg "C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\简历.jpg")
 简历实体属性图
 
 （5）下图是简历投递实体和其具备的属性。
 
-![](media/image10.jpeg){width="3.75in" height="2.082638888888889in"}\
+![C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\简历投递.jpg](/images/0300stringboot/0370springboot/blog.010.jpeg "C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\简历投递.jpg")
 简历投递实体属性图
 
 （6）下图是院系实体和其具备的属性。
 
-![](media/image11.jpeg){width="3.75in" height="2.082638888888889in"}\
+![C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\院系.jpg](/images/0300stringboot/0370springboot/blog.011.jpeg "C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\院系.jpg")
 院系实体属性图
 
 （7）下图是班级实体和其具备的属性。
 
-![](media/image12.jpeg){width="3.75in" height="2.082638888888889in"}\
+![C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\班级.jpg](/images/0300stringboot/0370springboot/blog.012.jpeg "C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\班级.jpg")
 班级实体属性图
 
 （8）下图是公告实体和其具备的属性。
 
-![](media/image13.jpeg){width="3.75in" height="2.082638888888889in"}\
+![C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\公告.jpg](/images/0300stringboot/0370springboot/blog.013.jpeg "C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\公告.jpg")
 公告实体属性图
 
 （9）下图是实习作业实体和其具备的属性。
 
-![](media/image14.jpeg){width="5.554861111111111in"
-height="2.9854166666666666in"}\
+![C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\实习作业.jpg](/images/0300stringboot/0370springboot/blog.014.jpeg "C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\实习作业.jpg")
 实习作业实体属性图
 
 （10）下图是职位招聘实体和其具备的属性。
 
-![](media/image15.jpeg){width="5.554861111111111in"
-height="2.986111111111111in"}\
+![C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\职位招聘.jpg](/images/0300stringboot/0370springboot/blog.015.jpeg "C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\职位招聘.jpg")
 职位招聘实体属性图
 
 （11）下图是作业提交实体和其具备的属性。
 
-![](media/image16.jpeg){width="5.554861111111111in"
-height="2.9854166666666666in"}\
+![C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\作业提交.jpg](/images/0300stringboot/0370springboot/blog.016.jpeg "C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\作业提交.jpg")
 作业提交实体属性图
 
 （12）下图是实习评分实体和其具备的属性。
 
-![](media/image17.jpeg){width="3.75in" height="2.082638888888889in"}\
+![C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\实习评分.jpg](/images/0300stringboot/0370springboot/blog.017.jpeg "C:/Users/Administrator/Desktop/temp111\1\\_\_\_\_img\实习评分.jpg")
 实习评分实体属性图
-
 ### 4.3.2 数据库物理设计
-
 本小节主要任务即是根据上述内容进行数据存储结构的设计，实体的属性就用来表示字段名称，不同的字段表示的数据类型以及取值都不相同，以及该表各个字段是否能够保持空等进行说明，设计完成一张数据表的结构之后，在保存时同样要命名，尽量选择英文名称进行命名并保存，还不容易导致系统出错。接下来就对设计的表进行简单说明。
 
 表4.1班级表
 
-  ------ ------------------- -------------------- ------------------- --------
-   序号         列名               数据类型              说明          允许空
-
-    1            Id                  Int                  id             否
-
-    2     banji_uuid_number         String             班级编号          是
-
-    3        banji_name             String             班级名称          是
-
-    4       banji_address           String             班级位置          是
-
-    5       banji_content           String             班级备注          是
-
-    6        insert_time             Date              录入时间          是
-
-    7        create_time             Date              创建时间          是
-  ------ ------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|banji\_uuid\_number|String|班级编号|是|
+|3|banji\_name|String|班级名称|是|
+|4|banji\_address|String|班级位置|是|
+|5|banji\_content|String|班级备注|是|
+|6|insert\_time|Date|录入时间|是|
+|7|create\_time|Date|创建时间|是|
 表4.2字典表
 
-  ------ ---------------- -------------------- ------------------- --------
-   序号        列名             数据类型              说明          允许空
-
-    1           Id                Int                  id             否
-
-    2        dic_code            String               字段            是
-
-    3        dic_name            String              字段名           是
-
-    4       code_index          Integer               编码            是
-
-    5       index_name           String             编码名字          是
-
-    6        super_id           Integer             父字段id          是
-
-    7         beizhu             String               备注            是
-
-    8      create_time            Date              创建时间          是
-  ------ ---------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|dic\_code|String|字段|是|
+|3|dic\_name|String|字段名|是|
+|4|code\_index|Integer|编码|是|
+|5|index\_name|String|编码名字|是|
+|6|super\_id|Integer|父字段id|是|
+|7|beizhu|String|备注|是|
+|8|create\_time|Date|创建时间|是|
 表4.3公告表
 
-  ------ ----------------- -------------------- ------------------- --------
-   序号        列名              数据类型              说明          允许空
-
-    1           Id                 Int                  id             否
-
-    2      gonggao_name           String             公告名称          是
-
-    3      gonggao_photo          String             公告图片          是
-
-    4      gonggao_types         Integer             公告类型          是
-
-    5       insert_time            Date              发布时间          是
-
-    6     gonggao_content         String             公告详情          是
-
-    7       create_time            Date              创建时间          是
-  ------ ----------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|gonggao\_name|String|公告名称|是|
+|3|gonggao\_photo|String|公告图片|是|
+|4|gonggao\_types|Integer|公告类型|是|
+|5|insert\_time|Date|发布时间|是|
+|6|gonggao\_content|String|公告详情|是|
+|7|create\_time|Date|创建时间|是|
 表4.4公司表
 
-  ------ ---------------- -------------------- ------------------- --------
-   序号        列名             数据类型              说明          允许空
-
-    1           Id                Int                  id             否
-
-    2      gongsi_name           String             公司名称          是
-
-    3      gongsi_types         Integer             公司类型          是
-
-    4      gongsi_phone          String             联系方式          是
-
-    5      gongsi_email          String               邮箱            是
-
-    6      gongsi_photo          String             公司封面          是
-
-    7     gongsi_content         String             公司简介          是
-
-    8     gongsi_delete         Integer             逻辑删除          是
-
-    9      create_time            Date              创建时间          是
-  ------ ---------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|gongsi\_name|String|公司名称|是|
+|3|gongsi\_types|Integer|公司类型|是|
+|4|gongsi\_phone|String|联系方式|是|
+|5|gongsi\_email|String|邮箱|是|
+|6|gongsi\_photo|String|公司封面|是|
+|7|gongsi\_content|String|公司简介|是|
+|8|gongsi\_delete|Integer|逻辑删除|是|
+|9|create\_time|Date|创建时间|是|
 表4.5简历表
 
-  ------ -------------------- -------------------- ------------------- --------
-   序号          列名               数据类型              说明          允许空
-
-    1             Id                  Int                  id             否
-
-    2         yonghu_id             Integer               用户            是
-
-    3     jianli_uuid_number         String           简历唯一编号        是
-
-    4        jianli_name             String             简历标题          是
-
-    5      jianli_xingming           String               姓名            是
-
-    6        jianli_types           Integer             求职意向          是
-
-    7        jianli_xinzi            String             期望工资          是
-
-    8        jianli_xueli            String               学历            是
-
-    9       jianli_jingli            String             工作经历          是
-
-    10        sex_types             Integer               性别            是
-
-    11       jianli_file             String             简历文件          是
-
-    12       jianli_phone            String              手机号           是
-
-    13       jianli_photo            String               照片            是
-
-    14      jianli_address           String               位置            是
-
-    15       jiaoyu_text             String             教育经历          是
-
-    16        shixi_text             String          实习或工作经历       是
-
-    17        geren_text             String             个人介绍          是
-
-    18       create_time              Date              创建时间          是
-  ------ -------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|yonghu\_id|Integer|用户|是|
+|3|jianli\_uuid\_number|String|简历唯一编号|是|
+|4|jianli\_name|String|简历标题|是|
+|5|jianli\_xingming|String|姓名|是|
+|6|jianli\_types|Integer|求职意向|是|
+|7|jianli\_xinzi|String|期望工资|是|
+|8|jianli\_xueli|String|学历|是|
+|9|jianli\_jingli|String|工作经历|是|
+|10|sex\_types|Integer|性别|是|
+|11|jianli\_file|String|简历文件|是|
+|12|jianli\_phone|String|手机号|是|
+|13|jianli\_photo|String|照片|是|
+|14|jianli\_address|String|位置|是|
+|15|jiaoyu\_text|String|教育经历|是|
+|16|shixi\_text|String|实习或工作经历|是|
+|17|geren\_text|String|个人介绍|是|
+|18|create\_time|Date|创建时间|是|
 表4.6老师表
 
-  ------ ------------------ -------------------- ------------------- --------
-   序号         列名              数据类型              说明          允许空
-
-    1            Id                 Int                  id             否
-
-    2       laoshi_name            String             老师姓名          是
-
-    3       laoshi_phone           String            老师手机号         是
-
-    4     laoshi_id_number         String           老师身份证号        是
-
-    5       laoshi_photo           String             老师头像          是
-
-    6       laoshi_email           String             电子邮箱          是
-
-    7       create_time             Date              创建时间          是
-  ------ ------------------ -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|laoshi\_name|String|老师姓名|是|
+|3|laoshi\_phone|String|老师手机号|是|
+|4|laoshi\_id\_number|String|老师身份证号|是|
+|5|laoshi\_photo|String|老师头像|是|
+|6|laoshi\_email|String|电子邮箱|是|
+|7|create\_time|Date|创建时间|是|
 表4.7实习评分表
 
-  ------ ----------------- -------------------- ------------------- --------
-   序号        列名              数据类型              说明          允许空
-
-    1           Id                 Int                  id             否
-
-    2        gongsi_id           Integer               公司            是
-
-    3        yonghu_id           Integer               用户            是
-
-    4     pingfen_pingfen       BigDecimal             评分            是
-
-    5      pingfen_text           String             评价内容          是
-
-    6       insert_time            Date              评价时间          是
-
-    7       create_time            Date              创建时间          是
-  ------ ----------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|gongsi\_id|Integer|公司|是|
+|3|yonghu\_id|Integer|用户|是|
+|4|pingfen\_pingfen|BigDecimal|评分|是|
+|5|pingfen\_text|String|评价内容|是|
+|6|insert\_time|Date|评价时间|是|
+|7|create\_time|Date|创建时间|是|
 表4.8简历投递表
 
-  ------ --------------------- -------------------- ------------------- --------
-   序号          列名                数据类型              说明          允许空
-
-    1             Id                   Int                  id             否
-
-    2          jianli_id             Integer               简历            是
-
-    3         zhaopin_id             Integer               招聘            是
-
-    4     mianshi_yesno_types        Integer             投递状态          是
-
-    5     mianshi_yesno_text          String             投递回复          是
-
-    6         insert_time              Date              投递时间          是
-
-    7         create_time              Date              创建时间          是
-  ------ --------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|jianli\_id|Integer|简历|是|
+|3|zhaopin\_id|Integer|招聘|是|
+|4|mianshi\_yesno\_types|Integer|投递状态|是|
+|5|mianshi\_yesno\_text|String|投递回复|是|
+|6|insert\_time|Date|投递时间|是|
+|7|create\_time|Date|创建时间|是|
 表4.9用户表
 
-  ------ ------------------ -------------------- ------------------- --------
-   序号         列名              数据类型              说明          允许空
-
-    1            Id                 Int                  id             否
-
-    2        yuanxi_id            Integer               院系            是
-
-    3         banji_id            Integer               班级            是
-
-    4       yonghu_name            String             用户姓名          是
-
-    5       yonghu_phone           String            用户手机号         是
-
-    6     yonghu_id_number         String           用户身份证号        是
-
-    7       yonghu_photo           String             用户头像          是
-
-    8       yonghu_email           String             电子邮箱          是
-
-    9       create_time             Date              创建时间          是
-  ------ ------------------ -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|yuanxi\_id|Integer|院系|是|
+|3|banji\_id|Integer|班级|是|
+|4|yonghu\_name|String|用户姓名|是|
+|5|yonghu\_phone|String|用户手机号|是|
+|6|yonghu\_id\_number|String|用户身份证号|是|
+|7|yonghu\_photo|String|用户头像|是|
+|8|yonghu\_email|String|电子邮箱|是|
+|9|create\_time|Date|创建时间|是|
 表4.10院系表
 
-  ------ -------------------- -------------------- ------------------- --------
-   序号          列名               数据类型              说明          允许空
-
-    1             Id                  Int                  id             否
-
-    2     yuanxi_uuid_number         String             院系编号          是
-
-    3        yuanxi_name             String             院系名称          是
-
-    4       yuanxi_address           String             院系位置          是
-
-    5       yuanxi_content           String             院系备注          是
-
-    6        insert_time              Date              录入时间          是
-
-    7        create_time              Date              创建时间          是
-  ------ -------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|yuanxi\_uuid\_number|String|院系编号|是|
+|3|yuanxi\_name|String|院系名称|是|
+|4|yuanxi\_address|String|院系位置|是|
+|5|yuanxi\_content|String|院系备注|是|
+|6|insert\_time|Date|录入时间|是|
+|7|create\_time|Date|创建时间|是|
 表4.11职位招聘表
 
-  ------ ----------------------- -------------------- ------------------- --------
-   序号           列名                 数据类型              说明          允许空
-
-    1              Id                    Int                  id             否
-
-    2           gongsi_id              Integer               公司            是
-
-    3         zhaopin_name              String           招聘信息名称        是
-
-    4         zhaopin_photo             String           招聘信息照片        是
-
-    5         zhaopin_daiyu             String             薪资待遇          是
-
-    6        zhaopin_address            String             上班地点          是
-
-    7        lianxiren_name             String              联系人           是
-
-    8         zhaopin_phone             String             招聘电话          是
-
-    9          zan_number              Integer                赞             是
-
-    10         cai_number              Integer                踩             是
-
-    11        zhaopin_types            Integer             招聘岗位          是
-
-    12        leixing_types            Integer             招聘类型          是
-
-    13    zhaopin_renshu_number        Integer             招聘人数          是
-
-    14       zhaopin_content            String           招聘信息详情        是
-
-    15         create_time               Date              创建时间          是
-  ------ ----------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|gongsi\_id|Integer|公司|是|
+|3|zhaopin\_name|String|招聘信息名称|是|
+|4|zhaopin\_photo|String|招聘信息照片|是|
+|5|zhaopin\_daiyu|String|薪资待遇|是|
+|6|zhaopin\_address|String|上班地点|是|
+|7|lianxiren\_name|String|联系人|是|
+|8|zhaopin\_phone|String|招聘电话|是|
+|9|zan\_number|Integer|赞|是|
+|10|cai\_number|Integer|踩|是|
+|11|zhaopin\_types|Integer|招聘岗位|是|
+|12|leixing\_types|Integer|招聘类型|是|
+|13|zhaopin\_renshu\_number|Integer|招聘人数|是|
+|14|zhaopin\_content|String|招聘信息详情|是|
+|15|create\_time|Date|创建时间|是|
 表4.12实习作业表
 
-  ------ ------------------- -------------------- ------------------- --------
-   序号         列名               数据类型              说明          允许空
-
-    1            Id                  Int                  id             否
-
-    2         laoshi_id            Integer               老师            是
-
-    3        zuoye_name             String             作业名称          是
-
-    4     zuoye_uuid_number         String             作业编号          是
-
-    5        zuoye_photo            String             作业封面          是
-
-    6        zuoye_types           Integer             作业类型          是
-
-    7        zuoye_file             String             作业下载          是
-
-    8       zuoye_content           String             作业介绍          是
-
-    9       zuoye_delete           Integer             逻辑删除          是
-
-    10       insert_time             Date              录入时间          是
-
-    11       create_time             Date              创建时间          是
-  ------ ------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|laoshi\_id|Integer|老师|是|
+|3|zuoye\_name|String|作业名称|是|
+|4|zuoye\_uuid\_number|String|作业编号|是|
+|5|zuoye\_photo|String|作业封面|是|
+|6|zuoye\_types|Integer|作业类型|是|
+|7|zuoye\_file|String|作业下载|是|
+|8|zuoye\_content|String|作业介绍|是|
+|9|zuoye\_delete|Integer|逻辑删除|是|
+|10|insert\_time|Date|录入时间|是|
+|11|create\_time|Date|创建时间|是|
 表4.13作业提交表
 
-  ------ -------------------------- -------------------- ------------------- --------
-   序号             列名                  数据类型              说明          允许空
-
-    1                Id                     Int                  id             否
-
-    2     zuoye_tijiao_uuid_number         String           报名唯一编号        是
-
-    3             zuoye_id                Integer               作业            是
-
-    4            laoshi_id                Integer               老师            是
-
-    5            yonghu_id                Integer               用户            是
-
-    6        zuoye_tijiao_text             String               内容            是
-
-    7      zuoye_shangchuan_file           String             作业上传          是
-
-    8     zuoye_tijiao_yesno_types        Integer             提交状态          是
-
-    9        zuoye_tijiao_pigai           Integer             批改分数          是
-
-    10          insert_time                 Date            作业提交时间        是
-
-    11          create_time                 Date              创建时间          是
-  ------ -------------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|zuoye\_tijiao\_uuid\_number|String|报名唯一编号|是|
+|3|zuoye\_id|Integer|作业|是|
+|4|laoshi\_id|Integer|老师|是|
+|5|yonghu\_id|Integer|用户|是|
+|6|zuoye\_tijiao\_text|String|内容|是|
+|7|zuoye\_shangchuan\_file|String|作业上传|是|
+|8|zuoye\_tijiao\_yesno\_types|Integer|提交状态|是|
+|9|zuoye\_tijiao\_pigai|Integer|批改分数|是|
+|10|insert\_time|Date|作业提交时间|是|
+|11|create\_time|Date|创建时间|是|
 表4.14管理员表
 
-  ------ ---------------- -------------------- ------------------- --------
-   序号        列名             数据类型              说明          允许空
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|username|String|儿童名|是|
+|3|password|String|密码|是|
+|4|role|String|角色|是|
+|5|addtime|Date|新增时间|是|
 
-    1           Id                Int                  id             否
-
-    2        username            String              儿童名           是
-
-    3        password            String               密码            是
-
-    4          role              String               角色            是
-
-    5        addtime              Date              新增时间          是
-  ------ ---------------- -------------------- ------------------- --------
-
-[]{#__RefHeading___Toc21871 .anchor}
+第5章 系统实现
 
 编程人员在搭建的开发环境中，会让各种编程技术一起呈现出最终效果。本节就展示关键部分的页面效果。
-
 ## 5.1 管理员功能实现
-
 ### 5.1.1 职位招聘管理
+图5.1 即为编码实现的职位招聘管理界面，管理员在职位招聘管理界面中可以对界面中显示，可以对职位招聘信息的职位招聘状态进行查看，可以新增新的职位招聘信息等。
 
-图5.1
-即为编码实现的职位招聘管理界面，管理员在职位招聘管理界面中可以对界面中显示，可以对职位招聘信息的职位招聘状态进行查看，可以新增新的职位招聘信息等。
-
-![](media/image18.png){width="5.759722222222222in"
-height="2.9069444444444446in"}
+![](/images/0300stringboot/0370springboot/blog.018.png)
 
 图5.1 职位招聘管理界面
-
 ### 5.1.2 简历管理
+图5.2 即为编码实现的简历管理界面，管理员在简历管理界面中查看简历种类信息，简历描述信息，新增简历信息等。
 
-图5.2
-即为编码实现的简历管理界面，管理员在简历管理界面中查看简历种类信息，简历描述信息，新增简历信息等。
-
-![](media/image19.png){width="5.759722222222222in"
-height="2.9069444444444446in"}
+![](/images/0300stringboot/0370springboot/blog.019.png)
 
 图5.2 简历管理界面
-
 ### 5.1.3 公告管理
+图5.3 即为编码实现的公告管理界面，管理员在公告管理界面中新增公告，可以删除公告。
 
-图5.3
-即为编码实现的公告管理界面，管理员在公告管理界面中新增公告，可以删除公告。
-
-![](media/image20.png){width="5.759722222222222in"
-height="2.9069444444444446in"}
+![](/images/0300stringboot/0370springboot/blog.020.png)
 
 图5.3 公告管理界面
-
 ### 5.1.4 公告类型管理
+图5.4 即为编码实现的公告类型管理界面，管理员在公告类型管理界面查看公告的工作状态，可以对公告的数据进行导出，可以新增新公告的信息，可以编辑公告信息，删除公告信息。
 
-图5.4
-即为编码实现的公告类型管理界面，管理员在公告类型管理界面查看公告的工作状态，可以对公告的数据进行导出，可以新增新公告的信息，可以编辑公告信息，删除公告信息。
-
-![](media/image21.png){width="5.759722222222222in"
-height="2.9069444444444446in"}
+![](/images/0300stringboot/0370springboot/blog.021.png)
 
 图5.4 公告类型管理界面
-
-### **6章 6.1软件测试**
-
-软件测试包含软件办公环境、软件开发需求和软件源代码具体内容。软件测试还包含五个要素：软件质量、技术性、职工、流程及互联网资源。软件测试总体目标包含测试覆盖率信息和测试高效化信息。
-
-控制模块测试：本一部分务必涉及到程序编码理论知识，由程序开发员工进行。当程序开发工作人员依据代码开发程序的程序模块时，控制模块级测试。一般来说，这类联接测试又被称为黑盒子测试。
-
-系统测试：当程序测试进入这个连接时，这就意味着程序测试已经完成了一半。这一部分测试还有另一个名字，称之为黑盒子测试，主要运用于测试系统软件是不是按期望运作。
-
-### **6.2测试环境**
-
-高校实习管理系统测试所选择的测试网站是IDEA服务平台自然环境。测试时，用户必须开启MySQL数据库系统开展数据文件的额外操控，再打开IDEA，创建文件夹打开网页，将高校实习管理系统程序导入到IDEA平台上，再将文档部署到Tomcat网络服务器中，最终操作流程。这时，用户能够电脑操作系统中的每一个作用。查询程序流程是否满足用户的需求。
-
-### **6.3测试测试用例** 
-
-用户登陆测试信息包含名字以及登陆密码。用户登陆测试全过程见表6.1所显示:
-
-表6.1 用户登录测试表
-
-  -------------- ---------------------------------- ------------------------ -------------- --------------
-  测试目的       操作流程                           测试用例                 预测结果       测试结果
-
-  用户登录       填写用户名密码，点击首页登录按钮   错误填写用户名还有密码   登录失败       提示错误信息
-
-                                                    正确填写用户名和密码     登录成功       登录成功
-  -------------- ---------------------------------- ------------------------ -------------- --------------
-
-表6.2新增高校实习信息测试表
-
-  ------------------ -------------------------------------------------------- ---------------------- ------------------------ --------------------------
-  测试项目           操作流程                                                 测试用例               预测结果                 测试结果
-
-  新增高校实习信息   管理员登陆后点击新增高校实习信息按钮，新增高校实习信息   高校实习信息为空       新增失败，弹出提示按钮   新增失败，提示请填写内容
-
-                                                                              合规填写高校实习信息   新增成功                 新增成功
-  ------------------ -------------------------------------------------------- ---------------------- ------------------------ --------------------------
-
-表6.3新增简历信息测试表
-
-  -------------- ------------------------------------------------ ------------------ ------------------------ --------------------------
-  测试项目       操作流程                                         测试用例           预测结果                 测试结果
-
-  新增简历信息   管理员登陆后点击新增简历信息按钮，新增简历信息   简历信息为空       新增失败，弹出提示按钮   新增失败，提示请填写内容
-
-                                                                  合规填写简历信息   新增成功                 新增成功
-  -------------- ------------------------------------------------ ------------------ ------------------------ --------------------------
-
-### **6.4测试结果**
-
-经检测，从高校实习管理系统作用的角度看，此系统的每一个作用在符合用户规定的情形下可以保持正常运转。从高校实习管理系统特性的角度看，系统软件可以保持24钟头连续操作，应对用户的操作失误个人行为，提早设定不正确信息反馈。除此之外，系统软件界面风格考虑到了用户的读书习惯，能让用户在短期内得到所需要的具体内容。总而言之，此系统能够投入生产，协助用户解决问题，更好地发挥实用价值。
-
-# 结 论
-
-由于本人学习的是计算机方面的专业，学习了一定的开发知识，因此，对于开发一款已经确定了课题的高校实习管理系统管理系统，从功能需求，功能模块划分，数据库的选择与设计，编程语言的确定，系统界面的布局和设计等知识，我都有个大致的思路。我运用已经具备的理论知识，加上后期从网络渠道获取的相关技术知识，能够在系统完成开发后期，编写相应的系统文档。
-
-高校实习管理系统管理系统制作期间，我也遇到过一些难题，模块拆分不够精细，以及数据表需要设计几张表，还有对于开发技术的深度理论学习还不充分等，不过我能够通过网络或者通过学院提供的图书馆寻求解决办法。比如在不知道具体功能的情况下，我从网上下载了很多的与高校实习管理系统管理系统相关的程序，分析了它们的功能之后，我再结合即将开发的高校实习管理系统管理系统进行综合分析，选取了适合高校实习管理系统管理系统的功能部分，再具体模块具体分析，设计专属项目功能。对于数据表的设计，先在图书馆学习，然后查看相似系统对于数据表的结构设计等知识，然后在本系统功能确定的情况下，结合本系统设计了配套的数据表，对于难度最大的开发技术部分，这是需要大量时间调试的，一般都是对基础数据的增加，更新，查询或修改方面的代码，然后把本系统能够运用的代码部分在简单更改后进行使用，又经过了简单的测试工作，最终呈现出一个完整的能够解决用户实际问题的高校实习管理系统管理系统。该系统唯一不足的就是代码方面还有很多重复的部分，不够精简，还有用户操作本系统，对于用户的误操作行为，本系统还不能及时反馈，这也是一大缺点。
-
-高校实习管理系统管理系统完成了，其相应的配套文档也需要进行编写，该文档主要描述高校实习管理系统管理系统是如何进行分析，设计以及实现的，让其他阅读本文档的人增加对该系统的了解，编写文档过程中，由于自己平时对于办公软件的操作不是很频繁，根据学院要求的文档排版格式进行编辑也花了很多时间，在不断学习排版技巧以及对本系统配套文档的反复修改之后，最终在学院规定的时间内进行了文档定稿。
-
-毕业项目各个工作进行到此，我也是收获颇丰，正因为自己努力学习知识，积极寻求解决办法，才让我能够提交一个完整的作品。制作毕业项目让我又得到了成长，不仅是专业知识的增加，也学到了解决问题的能力和方法。
-
-[]{#__RefHeading___Toc695 .anchor}**致 谢**
-
-也许是大学校园在管理上比较开放，学习知识时不像高中时期那样一整天都在学习，而是一天当中抽出部分时间安排学习，其余的时间就可以自由安排，可以去社会上参加实践，可以在学校的图书馆阅读书籍，丰富自己的知识，也可以加入学校的社团进行个人能力的锻炼等等，加上学院的学生都来自全国各地，大家的风俗习惯都有些不一样，这样同学之间也有更多的话题进行畅聊。基于这些原因，我觉得我的性格也逐渐变得开朗起来，正因为如此，我很快乐的度过了大学四年时光。然而，我们都要面临毕业，同学间，师生间也将面临分离，我们都会离开学校，进入社会这样的大环境学习并生活。虽然很不舍，但这也是人生成长中必经的阶段！
-
-临走之际，对这几年的大学生活简单的进行了回想，发现自己学到的专业知识也增加了很多，在本专业上，自己也得到了一定的实操能力锻炼。这些成长都是我们的专业老师带来的，他们这几年辛苦教学，我们也从中获取了许多的专业知识，提高了个人的专业方面的能力，非常感谢他们。
-
-还有一位老师也需要在此特别感谢，即论文指导老师。可以说最后这一年，跟指导老师接触比较多，指导老师在本专业上，非常全能，在我进行本课题的任务期间，导师给予我全面的指导，也能根据我的不足之处推荐合适的书籍让我查看，让我的能力得以提升，继而可以从容面对开发期间遇到的困难。
-
-另外，我也要感谢我的寝室室友，还有我们班上的同学，从接到毕业项目任务之后，我们常常谈论各自课题进展的情况以及面临的问题，也经常互相鼓励对方要积极认真面对毕业项目，这种陪伴，让我在制作毕业项目期间并没有产生过多的焦虑，非常感谢他们。
-
-最后时刻，我也要对我的大学校园表达谢意，我的大学校园是一个非常美丽的地方，而我这几年，在这么优美的环境下学习知识，我已经感到非常幸福。希望在今后能看到我的校园在众多师生共同努力下变得强大，校园的环境也将变得更加美丽。
-
-# 参考文献
-
-\[1\]李德华.基于SpringBoot技术的高校实习管理系统的研究\[J\].信息与电脑(理论版),2019,31(17):51-53.
-
-\[2\]屈敬华,王晓孟.高校实习管理系统的设计与实现\[J\].计算机时代,2019(01):43-45.
-
-\[3\]张振超,吴杰,陈序蓬.浅谈Java中MySQL数据库的连接与操作\[J\].信息记录材料,2020,21(02):144-145.
-
-\[4\]郑智方,魏恺乐,李彬,谢易壮.MySQL得到广泛使用的原因以及它的嵌入应用\[J\].科技风,2020(05):114.
-
-\[5\]赵秀芹,刘杨青,李瑞祥.MySQL数据库使用技巧三例\[J\].网络安全和信息化,2019(08):90-91.
-
-\[6\]余涛.计算机软件开发中Java编程语言的应用研究\[J\].信息记录材料,2020,21(01):113-115.
-
-\[7\]岳青玲.Java面向对象编程的三大特性\[J\].电子技术与软件工程,2019(24):239-240.
-
-\[8\]耿学.关于Java
-中中文乱码问题的探讨\[J\].现代信息科技,2020,4(01):74-75+78.
-
-\[9\]张彦芳.Java
-项目开发中的中文乱码问题与对策\[J\].电脑知识与技术,2020,16(09):96-97.
-
-\[10\]韩思凡.小程序开发中与H T
-ML的基础应用\[J\].科学技术创新,2020(14):71-72.
-
-\[11\]赵晓丹.网页开发中技术分析\[J\].南方农机,2019,50(20):247-248.
-
-\[12\]薛茹.基于SpringBoot框架实习系统研究与应用\[J\].计算机产品与流通,2018(07):30.
-
-\[13\]邱丹萍.微信小程序开发中SpringBoot框架的分析\[J\].电脑知识与技术,2020,16(17):81-82.
-
-\[14\]仲崇文.关于计算机软件开发中常见问题的研究\[J\].通讯世界,2020,27(07):89-90.
-
-\[15\]吴雨渲,严张凌.基于微服务架构的高校实习管理系统的设计与实现\[J\].信息与电脑(理论版),2020,32(15):97-99.
-
-\[16\]李欢,李云红,张震宇.基于React+Webpack的"健康资讯"App开发\[J\].西安工程大学学报,2018,32(04):455-460..
-
-\[17\]李霞,许叶,黄中校.运动健康类APP发展现状调查及分析\[J\].体育科技,2017,38(02):32-33.
-
-\[18\]王婷,陆克中,黄孝,王雪飞,疏志斌.基于微信小程序的高校实习管理系统设计\[J\].信息与电脑(理论版),2022,34(10):155-158.
-
-\[19\]Raffi Khatchadourian.Automated refactoring of legacy Java software
-to enumerated types\[J\].Automated Software Engineering,2017,24(4).
-
-\[20\]Ben White.Marx and Chayanov at the margins:understanding agrarian
-change in Java\[J\].The Journal of Peasant Studies,2018,45(5-6).
+# 
 
 
-### 0370springboot高校实习管理系统--论文pf 项目图片
-![图片](/images/0370springbootimg_014.jpg)
-![图片](/images/0370springbootimg_015.jpg)
-![图片](/images/0370springbootimg_001.jpg)
-![图片](/images/0370springbootimg_003.jpg)
-![图片](/images/0370springbootimg_002.jpg)
-![图片](/images/0370springbootimg_016.jpg)
-![图片](/images/0370springbootimg_012.jpg)
-![图片](/images/0370springbootimg_006.jpg)
-![图片](/images/0370springbootimg_007.jpg)
-![图片](/images/0370springbootimg_013.jpg)
-![图片](/images/0370springbootimg_005.jpg)
-![图片](/images/0370springbootimg_011.jpg)
-![图片](/images/0370springbootimg_010.jpg)
-![图片](/images/0370springbootimg_004.jpg)
-![图片](/images/0370springbootimg_009.jpg)
-![图片](/images/0370springbootimg_008.jpg)
 
 
 

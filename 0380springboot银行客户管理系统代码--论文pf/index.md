@@ -3,272 +3,72 @@
 
 # [0380springboot银行客户管理系统代码--论文pf](https://github.com/GraduationProject-springboot/0380springboot)
 
-### 微信： chen_q123456  qq:462201886
-### github:chenqi199
+![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-### [所有项目](https://github.com/GraduationProject-springboot/allSpringbootProjects) 包安装运行
+# [项目清单](https://chenqi1990.site) 包安装运行
 
-### [所有项目列表excel 腾讯文档 项目清单](https://docs.qq.com/sheet/DSHRFSVZ5aEVYT3N3?tab=BB08J2) 包安装运行
-
-### [github](https://chenqi199.github.io)
-
-
-
-
-
-
-
-
-# 0380springboot银行客户管理系统代码--论文pf
+### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://player.bilibili.com/player.html?isOutside=true&aid=BV1T1bpekEK7&bvid=BV1T1bpekEK7&cid=500001616849143&p=52)
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1T1bpekEK7?p=52)
 
-### [所有项目](https://github.com/GraduationProject-springboot/allSpringbootProjects) 包安装运行
 
-
-
-
-
-
-
-
-
-
-
-
-**毕 业 设 计（论 文）**
-
-题目：[银行管理系统]{.underline}
-
-**摘 要**
-
-伴随着信息技术与互联网技术的不断发展，人们进到了一个新的信息化时代，传统管理技术性没法高效率、容易地管理信息内容。为了实现时代的发展必须，提升管理高效率，各种各样管理管理体系应时而生，各个领域陆续进到信息内容管理时期。银行管理系统的实现是信息内容时代浪潮时代的产物之一。
-
-一切系统都要遵循系统设计的最基本全过程，系统也是如此。它还要通过市场调查、需求分析报告、汇总设计、详尽设计、编号和测试，根据Java语言表达设计，完成银行管理系统。该系统根据B/S，即所谓的电脑浏览器/网络服务器方式，运用Java技术性，挑选MySQL作为后台系统。系统主要包含对客服聊天管理、字典表管理、公告信息管理、金融工具管理、金融工具收藏管理、金融工具银行卡管理、借款管理、理财产品管理、理财产品收藏管理、理财产品银行卡管理、理财银行卡信息管理、银行卡管理、存款管理、银行卡记录管理、取款管理、转账管理、用户管理、员工管理等功能模块。
-
-文中重点介绍了银行管理的专业技术发展背景和发展状况，随后遵照软件传统式研发流程，最先挑选适用思维和语言软件开发平台，依据需求分析报告模块和设计数据库结构，再根据系统功能模块的设计制作系统功能模块图、流程表和E-R图。随后设计架构以及编写代码，并实现系统能模块。最终基本完成系统检测和功能测试。结果显示，该系统能够实现所需要的作用，工作状态没有明显缺陷。
-
-**关键词**：银行管理系统；银行卡信息；MySQL；Java技术
-
-**Abstract**
-
-With the continuous development of information technology and internet
-technology, people have entered a new era of informatization.
-Traditional management techniques cannot efficiently and easily manage
-information content. In order to achieve the development of the times
-and improve management efficiency, various management systems have
-emerged, and various fields have gradually entered the era of
-information content management. The implementation of bank management
-systems is one of the products of the information content era.
-
-All systems must follow the most basic entire process of system design,
-and the same applies to systems. It also needs to complete the bank
-management system through market research, demand analysis reports,
-summary design, detailed design, numbering, and testing, expressed in
-Java language. The system uses Java technology and selects MySQL as the
-backend system based on B/S, the so-called computer browser/network
-server method. The system mainly includes customer service chat
-management, dictionary table management, announcement information
-management, financial tool management, financial tool collection
-management, financial tool bank card management, loan management, wealth
-management product management, wealth management product collection
-management, wealth management product bank card management, wealth
-management bank card information management, bank card management,
-deposit management, bank card record management, withdrawal management,
-transfer management, user management Functional modules such as employee
-management.
-
-The article focuses on the development background and status of
-professional technology in bank management. Following the traditional
-software development process, the suitable thinking and language
-software development platform was first selected, and based on the
-requirement analysis report module and database structure design, the
-system functional module diagram, flowchart, and E-R diagram were
-created according to the design of the system functional module.
-Subsequently, design the architecture and write code, and implement the
-system\'s functional modules. Finally, the system inspection and
-functional testing were basically completed. The results show that the
-system is able to achieve the required function and has no obvious
-defects in its working state.
-
-**Key Words：**Bank management system; Bank card information; MySQL；
-Java technology
-
-# 
-
-[目 录 III](#section)
-
-[1 绪论 1](#绪论)
-
-[1.1 研究背景 1](#研究背景)
-
-[1.2目的和意义 1](#目的和意义)
-
-[1.3 研究方案 2](#研究方案)
-
-[2 相关技术 3](#相关技术)
-
-[2.1 MySQL数据库 3](#__RefHeading___Toc10847)
-
-[2.2 Java语言技术 3](#java语言技术)
-
-[2.3 Spring Boot框架 4](#spring-boot框架)
-
-[2.4 其他技术使用 4](#其他技术使用)
-
-[3 系统分析 6](#系统分析)
-
-[3.1.1 技术可行性分析 6](#技术可行性分析)
-
-[3.1.2 经济可行性分析 6](#经济可行性分析)
-
-[3.1.3 运行可行性分析 6](#运行可行性分析)
-
-[3.2系统性能分析 6](#系统性能分析)
-
-[3.3系统流程分析 7](#系统流程分析)
-
-[3.3.1系统登录流程 8](#系统登录流程)
-
-[3.3.2信息添加流程 9](#信息添加流程)
-
-[3.3.3信息删除流程 9](#信息删除流程)
-
-[3.4 功能用例描述 9](#功能用例描述)
-
-[4 系统设计 13](#系统设计)
-
-[4.1系统整体设计 13](#系统整体设计)
-
-[4.3数据库设计 14](#数据库设计)
-
-[4.3.1数据库E-R图设计 14](#数据库e-r图设计)
-
-[4.3.2 数据库表结构设计 21](#数据库表结构设计)
-
-[5 系统实现 28](#系统实现)
-
-[5.1管理员登录模块 28](#管理员登录模块)
-
-[5.2 银行卡管理模块 28](#银行卡管理模块)
-
-[5.3 公告信息管理模块 29](#公告信息管理模块)
-
-[5.4公告类型管理模块 29](#公告类型管理模块)
-
-[5.5 理财产品管理 30](#理财产品管理)
-
-[5.6 产品类型管理 31](#产品类型管理)
-
-[6系统测试 32](#测试目的)
-
-[6.1测试目的 32](#__RefHeading___Toc24007)
-
-[6.2测试环境 32](#测试环境)
-
-[6.3测试用例 32](#测试用例)
-
-[6.4测试结果 33](#测试结果)
-
-[结 论 35](#结-论)
-
-[参考文献 37](#参考文献)
-
-[致 谢 39](#致-谢)
-
-# 1 绪论
-
+# 绪论
 ## 1.1 研究背景
-
 伴随着科技的进步，电子计算机已经成为人们日常生活不可或缺的办公工具。在这样的背景下，互联网技术被用于各个领域。为了能提高日常生活高效率，互联网信息技术性蓬勃发展。在这样的背景下，人类社会发展进到了一个新的信息时期。银行管理方法一直是信息管理方法的一大难题。银行管理人员流动性大，信息量多。这时，探寻合理方便快捷的银行管理方案是重中之重。而日益完善的电子计算机信息管理方法已经成为解决这一问题的唯一选择。现如今，电子计算机信息管理方法早已非常容易解决银行管理信息。实际上，信息管理方法早已渗入各行各业的信息全面管理中，并发挥了主导作用。随着现在社会主义社会的不断发展，平凡人的生活水准有了很大提高，互联网完成了许多方面，使互联网变成最直观、最简单、最便捷的接入口。
 
-与传统银行管理方案对比，应用银行管理系统具备很多特点：最先，可以有效地提高银行管理信息查找，仅需键入有关信息即可在几秒内意见反馈预期成果；次之，能够存放大量银行管理管理信息，确保银行管理管理信息安全性；与纸质文件对比，银行管理系统节约了更多的空间和人力资源管理。这种优势大大的提高了效率降低成本。因而，必须开发设计银行管理系统，高效管理银行管理信息，不但提高银行管理效益，提高客户信息安全性，便捷及时与管理人员意见反馈信息，提升与管理人员之间的互动，提高银行管理的感受抗压强度。
-
+` `与传统银行管理方案对比，应用银行管理系统具备很多特点：最先，可以有效地提高银行管理信息查找，仅需键入有关信息即可在几秒内意见反馈预期成果；次之，能够存放大量银行管理管理信息，确保银行管理管理信息安全性；与纸质文件对比，银行管理系统节约了更多的空间和人力资源管理。这种优势大大的提高了效率降低成本。因而，必须开发设计银行管理系统，高效管理银行管理信息，不但提高银行管理效益，提高客户信息安全性，便捷及时与管理人员意见反馈信息，提升与管理人员之间的互动，提高银行管理的感受抗压强度。
 ## 1.2目的和意义
-
 现如今，有很多人想要选择适合自己的管理制度，但一般用户通常遭受管理心得限制。这时，伴随着银行管理模式的崛起，大量系统进入我们的生活。银行管理模式可谓是信息管理方法的绝佳管理体系。在这样的取得成功管理模式环境下，银行管理信息愈来愈多。但是随着银行管理的增加，监管已经成为一个难点。银行管理的安全高效管理方法已经成为变化管理机制、与时俱进重中之重。
 
 银行管理系统不但可以大大简化管理人员的信息管理方面，同时提升银行管理理念也能够减少花费，还能够在数字平面网络上给用户展现银行管理最好的一面，系统给银行管理管理方法统计和归类，也成为未来银行管理理念的核心数据参照。这一过程永远比结论更为重要。毕业设计论文是学校生活里最多姿多彩的一笔。在这过程中，我不仅明白了更专业的书籍和实践技能，还体会到了同学们和全校师生深情厚谊。该系统已经成为银行管理主管最不可或缺的具体内容。尽管大部分银行管理系统早已交付使用，但是人们对系统要求也越来越高，大部分系统可以完美处理各种信息，但是为了充分满足银行管理理念，不一样客户有着不同的规定，人性化都是管理系统十分重要的一点，希望有个性定制管理系统，但是这牵涉到成本管理难题，现阶段，订制系统颇有价值，若是有这样一个银行管理系统，可以根据实际情况制订自身页面与内容，能够大幅度降低成本费。但是，由于现在自已的技术性，难以实现，但是很有可能完成系统的二次设计。伴随着银行管理经营规模的不断扩大，客户信息分享也成为一种发展趋势。伴随着银行管理经营规模的不断扩大，客户信息分享也成为一种发展趋势。银行管理系统的高速发展也印证了系统管理方法的不断进步和成长，各种各样定义愈来愈优秀，各个方面提出了更高的要求。系统还可以在进入首页时公布各种各样信息开展强烈推荐与交流。
-
 ## 1.3 研究方案
-
 软件系统结构计划方案：因为系统务必在不同设备上运行，计算机服务器配置要求越小越好。要实现这一要求，B/S结构已经成为最好的选择。运用B/S结构的系统基本可以在大多数计算机中运行。只需计算机电脑浏览器可以正常运行，系统就能正常的运行，维护费用和二次修改比较容易符合要求。
 
 操作过程系统方案:Windows10操作过程系统是微软发布最新发布的系统。目前市面上绝大部分计算机都使用这种系统，功能齐全，兼容模式好。开发工具:挑选IDEA。Java语言研发设计。
-
 # 2 相关技术
+2.1 MySQL数据库
 
-[]{#__RefHeading___Toc10847 .anchor}**2.1 MySQL数据库**
+MySQL是一种具有安全系数、安全系数、混合开发性、高效化等特征的轻量关联数据库智能管理系统。MySQL由C语言和C++语言构成，由于C语言和C++语言是混合开发的，因此MySQL源码是生命期的。MySQL提供多种多样数据种类，常见的数据种类包含[34]。伴随着数据库技术发展，MySQL逐步形成数据库管理方法的重要工具之一。它不仅能提供简单实用的操作作用，还能实现复杂多变的数据检索方法和查询记录导出方式。因为MySQL具有较好的兼容模式和扩展性，因而广泛应用于各行各业。
 
-MySQL是一种具有安全系数、安全系数、混合开发性、高效化等特征的轻量关联数据库智能管理系统。MySQL由C语言和C++语言构成，由于C语言和C++语言是混合开发的，因此MySQL源码是生命期的。MySQL提供多种多样数据种类，常见的数据种类包含\[34\]。伴随着数据库技术发展，MySQL逐步形成数据库管理方法的重要工具之一。它不仅能提供简单实用的操作作用，还能实现复杂多变的数据检索方法和查询记录导出方式。因为MySQL具有较好的兼容模式和扩展性，因而广泛应用于各行各业。
+MySQL在WEB行业越来越受单位和个人开发者的亲睐。大部分大中小型网址都采用MySQL数据库，它不仅可以提供简单高效的数据浏览作用，还会对数据进行相应的分析解决。因为Linux电脑操作系统和MySQL数据库全是开源系统免费体验，能够为公司节约许多费用，让很多企业使用Linux   MySQL做为网址数据库，体型小，启动速度快，也不会影响网址性能，导致用户体验感极差。
 
-MySQL在WEB行业越来越受单位和个人开发者的亲睐。大部分大中小型网址都采用MySQL数据库，它不仅可以提供简单高效的数据浏览作用，还会对数据进行相应的分析解决。因为Linux电脑操作系统和MySQL数据库全是开源系统免费体验，能够为公司节约许多费用，让很多企业使用Linux
-MySQL做为网址数据库，体型小，启动速度快，也不会影响网址性能，导致用户体验感极差。
-
-MySQL数据库能够支持各种各样操作系统的运作，包含AIX、HP-UX、OS/2
-Wrap、Solaris、Mac
-OS、Linux和Windows等。性能好，使用便捷。因而，MySQL数据库已成为当下数据库行业最流行商品之一。MySQL数据库系统使用面向对象设计方式，客户至上开展编程设计。是利用面向对象观念来达到各项功能。它不仅能管理方法大中型数据表或关系数据库，还可以把这种复杂且庞大信息系统集成到一个简单的中小型数据库系统内。现阶段，中国很多公司早已运用了这一尖端技术。
-
+MySQL数据库能够支持各种各样操作系统的运作，包含AIX、HP-UX、OS/2 Wrap、Solaris、Mac OS、Linux和Windows等。性能好，使用便捷。因而，MySQL数据库已成为当下数据库行业最流行商品之一。MySQL数据库系统使用面向对象设计方式，客户至上开展编程设计。是利用面向对象观念来达到各项功能。它不仅能管理方法大中型数据表或关系数据库，还可以把这种复杂且庞大信息系统集成到一个简单的中小型数据库系统内。现阶段，中国很多公司早已运用了这一尖端技术。
 ## 2.2 Java语言技术
-
-Java语言已经存在了25年有余。通过这些年的发展趋势，it行业在市场占有率上仍然占据一半，仍然受到了很多程序员的工作钟爱。许多从业者都是在学习培训。近年来随着从业者的提高，Java语言的位置并没减少，算得上是常青藤。Java语言学习培训比较简单，自然，它是对于C前辈们的
-而言的，C
-语言非常强劲。Java取消了许多特点，如go这种描述，也取消了主文件，让所有文件夹全是类，类是二维数组以及各种对象，也使Java处理一些对象的引入和回收利用，让开发者只需建立对象，应用对象，编写代码逻辑，不需要留意性能，让各种各样文件存储给Java自己解决，你能花很多时间科学研究应用软件相互关系，使研发更为集中化，如同跑车驾驶员一样，只要了解各种汽车的性能，实际操作，不需要科学研究如何生产车轮子，使软件开发更为详尽。
-
+Java语言已经存在了25年有余。通过这些年的发展趋势，it行业在市场占有率上仍然占据一半，仍然受到了很多程序员的工作钟爱。许多从业者都是在学习培训。近年来随着从业者的提高，Java语言的位置并没减少，算得上是常青藤。Java语言学习培训比较简单，自然，它是对于C前辈们的  而言的，C  语言非常强劲。Java取消了许多特点，如go这种描述，也取消了主文件，让所有文件夹全是类，类是二维数组以及各种对象，也使Java处理一些对象的引入和回收利用，让开发者只需建立对象，应用对象，编写代码逻辑，不需要留意性能，让各种各样文件存储给Java自己解决，你能花很多时间科学研究应用软件相互关系，使研发更为集中化，如同跑车驾驶员一样，只要了解各种汽车的性能，实际操作，不需要科学研究如何生产车轮子，使软件开发更为详尽。
 ## 2.3 Spring Boot框架
+Spring Boot框架是一个SpringMVC架构的快速轻量快速框架，能够帮助开发人员迅速搭建靠谱高效率的应用程序。依据自动部署和协议书，改善了Spring的研究过程，使开发人员可以更加专注于领域模型。
 
-Spring
-Boot框架是一个SpringMVC架构的快速轻量快速框架，能够帮助开发人员迅速搭建靠谱高效率的应用程序。依据自动部署和协议书，改善了Spring的研究过程，使开发人员可以更加专注于领域模型。
+Spring Boot有许多特性，当中最主要的是它提供了内置Tomcat、Jetty、Undertow等Web网络服务器能够轻松搭建Web应用程序。除此之外，它也提供自动部署、无需撰写XML文件等功能。这种功能使开发人员能够迅速建立和布署应用程序，而无需解决繁杂的环境变量和其它繁琐复杂每日任务。
 
-Spring
-Boot有许多特性，当中最主要的是它提供了内置Tomcat、Jetty、Undertow等Web网络服务器能够轻松搭建Web应用程序。除此之外，它也提供自动部署、无需撰写XML文件等功能。这种功能使开发人员能够迅速建立和布署应用程序，而无需解决繁杂的环境变量和其它繁琐复杂每日任务。
-
-开发系统时，Spring
-Boot能够帮助开发人员完成模块化设计和松耦合的代码结构，从而更好地日常维护拓展应用程序。除此之外，它也提供了很多常见的库和部件，如Spring
-Data、Spring
-Security等，能够轻松集成化这种部件，完成数据库操作、验证、受权等功能。
+开发系统时，Spring Boot能够帮助开发人员完成模块化设计和松耦合的代码结构，从而更好地日常维护拓展应用程序。除此之外，它也提供了很多常见的库和部件，如Spring Data、Spring Security等，能够轻松集成化这种部件，完成数据库操作、验证、受权等功能。
 
 ## 2.4 其他技术使用
-
 Spring-jdbc联接：
 
 这是一个专业生产制造Connection对象工厂类，大部分全部用以建立数据库联接框架都是会完成这一插口，Springjdbc包就实现了这一插口，实现类是DriverManagerdasource、现阶段的项目是由DataSource的getconection方式获得配备MYSQL5.7数据库连接信息。
 
 提交Fileupload文件：
 
-项目中应用Fileupload完成文件提交，通常是Fileupload前面提交文件提交请求，请求形式为POST：\<form
-action=\"uploadServlet\" method=\"post\"
-\....=\"\"\>请求编码方式：等候文件提交，启用Fileitem的isformField()方式，判断出表格域到底还是不是表格域，文件提交到后台管理，应用Fileupload接受文件信息，并把文件解决包存储在硬盘和库中。
+项目中应用Fileupload完成文件提交，通常是Fileupload前面提交文件提交请求，请求形式为POST：<form action="uploadServlet" method="post" ....="">请求编码方式：等候文件提交，启用Fileitem的isformField()方式，判断出表格域到底还是不是表格域，文件提交到后台管理，应用Fileupload接受文件信息，并把文件解决包存储在硬盘和库中。
 
 Alibaba驱动：
 
-比照各大网站Alibaba.Druid是JAVA语言中比较好的数据库连接池。Druid可提供强有力的拓展和监控功能。该项目应用Alibababa.Druid开展数据库系统连接，Druid
-0.1.18
-以后，全部版本号都分享到maven中央仓库，在项目pome中.在xml里加入dependency就可以使用。
+比照各大网站Alibaba.Druid是JAVA语言中比较好的数据库连接池。Druid可提供强有力的拓展和监控功能。该项目应用Alibababa.Druid开展数据库系统连接，Druid 0.1.18 以后，全部版本号都分享到maven中央仓库，在项目pome中.在xml里加入dependency就可以使用。
 
 log4j日志：
 
-银行管理系统错误处理和日志信息纪录，应用log4j开展日志日常维护管理与查询，其核心优势是错误处理：在logback中，应用软件里的出现异常不被应用软件认知，特性提升，关键或没有废弃物体制，log4j在很多情况下，可采取设计的一套无废弃物体制，防止经常日志搜集所引起的jvm
-gc。操作方法很简单，在pom中.新增log4j有关jarxml就可以。
+银行管理系统错误处理和日志信息纪录，应用log4j开展日志日常维护管理与查询，其核心优势是错误处理：在logback中，应用软件里的出现异常不被应用软件认知，特性提升，关键或没有废弃物体制，log4j在很多情况下，可采取设计的一套无废弃物体制，防止经常日志搜集所引起的jvm gc。操作方法很简单，在pom中.新增log4j有关jarxml就可以。
+
 
 # 3 系统分析
-
 ### 3.1.1 技术可行性分析
-
-研发设计程序流程选择面向对象设计、功能齐全、简单实用的Java编程设计核心理念。MySQL数据库存储数据。IDEA工具作为编程软件，Windows
-10计算机操作系统作为应用系统，以及数据库可视化工具等技术职称。一般来说，该程序流程的开发能够从技术上开展是可行的。
-
+研发设计程序流程选择面向对象设计、功能齐全、简单实用的Java编程设计核心理念。MySQL数据库存储数据。IDEA工具作为编程软件，Windows 10计算机操作系统作为应用系统，以及数据库可视化工具等技术职称。一般来说，该程序流程的开发能够从技术上开展是可行的。
 ### 3.1.2 经济可行性分析
-
 开发的程序并不是向着商业程序方向设计与开发的，反而是做为一个新的毕业论文新项目开发的。它主要运用于检测小朋友们在院校所学的知识，并锻练用戶使用网络、书籍和其他方式自学能力。因而，程序软件的开发不容易涉及到边际收益，也不会为软件的选择付钱。你可以在开发软件的官网上下载所需要的软件，并依据所需要的安装方法将应用安装到你的电脑里。一般来说，开发这一程序并没有社会经济发展花费。
-
 ### 3.1.3 运行可行性分析
-
 由于程序软件就是针对大部分一般操作用户，考虑到他的知识与文化水准，尤其开发了一个可操作度高的程序软件，能够轻而易举地让用户应用，数据可视化操作页面。一般来说，从用户操作程序的角度看，这一程序其实并不难操作。只需用户开启程序，就能避免专职人员学习培训开展程序作用操作。
-
 ## 3.2系统性能分析
-
 需求分析报告包含根据用户实际需求制订功能和定制系统的性能需求分析报告。因而，在一般数据分析系统时，一方面要数据分析系统的作用，另一方面要知道全面的性能。终究，性能更加好的全面的设计设计和开发能够保证系统质量以及可靠性。
 
 下面，从易学易用性、系统时间特性、系统稳定性等多个方面系统性能展开分析表明。
@@ -284,1055 +84,528 @@ gc。操作方法很简单，在pom中.新增log4j有关jarxml就可以。
 （5）易学易用性：除开作用应该考虑用户要求外，人机交互设计还要考虑到用户的用户习惯，包含界面风格、页面色彩选择与色彩搭配。尝试让用户接受简单学习后单独实际操作系统。
 
 (6)系统稳定性:针对新手来说，容易出现一个问题，那便是产品设计开发的系统，由于人工操作失误奔溃，有的还会造成电脑崩溃。这种情况也说明了容错机制能力低系统不靠谱。
-
 ## 3.3系统流程分析
-
 管理员假如要操作系统提供的功能，那么管理员就要在系统的登录界面，填写管理员登录的账号信息，填写相应的密码信息，管理员需要保证这两者能够验证身份的账号以及密码信息的正确性，这样管理员就可以通过登录界面进入系统后台操作界面。图3.1就是开发的程序软件银行管理系统它的操作流程图。
 
-![](media/image1.wmf)
+![](/images/0300stringboot/0380springboot/blog.001.png)
 
 图3.1 系统操作流程图
-
 ### 3.3.1系统登录流程
-
 银行管理系统登录流程如下图。
 
-![](media/image2.wmf)
+![](/images/0300stringboot/0380springboot/blog.002.png)
 
 图3.2　系统登录流程图
-
 ### 3.3.2信息添加流程
-
 用户添加信息流程如下图。
 
-![](media/image3.wmf)
+![](/images/0300stringboot/0380springboot/blog.003.png)
 
 图3.3 添加信息流程图
-
 ### 3.3.3信息删除流程
-
 信息删除流程如下图所示。
 
-![](media/image4.wmf)
+![](/images/0300stringboot/0380springboot/blog.004.png)
 
 图3.4 信息删除流程图
-
 ## 3.4 功能用例描述
-
 通过对银行管理系统的用户及管理员的用例分析，将本系统的主要用例描述如下：
 
 表 3.6 银行管理系统用户查看客户信息用例描述
 
-+----------------+-----------------------------------------------------+
-| 名称           | 银行管理系统用户查看客户信息                        |
-+----------------+-----------------------------------------------------+
-| 说明           | 银行管理系统用户查看客户信息                        |
-+----------------+-----------------------------------------------------+
-| 参与者         | 银行管理系统用户                                    |
-+----------------+-----------------------------------------------------+
-| 先决条件       | 系统正常运行，且用户已经登陆银行管理系统            |
-+----------------+-----------------------------------------------------+
-| 输入信息       | 商品名称或商品编号                                  |
-+----------------+-----------------------------------------------------+
-| 结果           | 显示商品详情                                        |
-+----------------+-----------------------------------------------------+
-| 过程           | 1.  用户在查找输入框输入客户名称                    |
-|                |                                                     |
-|                |     2\. 点击搜索按钮                                |
-|                |                                                     |
-|                | 3\. 系统显示出符合条件的客户的简要信息              |
-|                |                                                     |
-|                | 4\. 用户点击商品图片进行浏览客户详情                |
-+----------------+-----------------------------------------------------+
+|名称|银行管理系统用户查看客户信息|
+| - | - |
+|说明|银行管理系统用户查看客户信息|
+|参与者|银行管理系统用户|
+|先决条件|系统正常运行，且用户已经登陆银行管理系统|
+|输入信息|商品名称或商品编号|
+|结果|显示商品详情|
+|过程|<p>1. 用户在查找输入框输入客户名称</p><p>2. 点击搜索按钮</p><p>3. 系统显示出符合条件的客户的简要信息</p><p>4. 用户点击商品图片进行浏览客户详情</p>|
 
 表3.7 银行管理系统用户登录用例描述
 
-+----------------+-----------------------------------------------------+
-| 名称           | 银行管理系统用户登录                                |
-+----------------+-----------------------------------------------------+
-| 说明           | 银行管理系统用户输入自己的账号和密码进行登录        |
-+----------------+-----------------------------------------------------+
-| 参与者         | 银行管理系统用户                                    |
-+----------------+-----------------------------------------------------+
-| 先决条件       | 系统正常运行                                        |
-+----------------+-----------------------------------------------------+
-| 输入信息       | 账号和密码                                          |
-+----------------+-----------------------------------------------------+
-| 结果           | 跳转系统首页                                        |
-+----------------+-----------------------------------------------------+
-| 后置条件       | 如果用户登                                          |
-|                | 录成功，则该用户可以查看个人中心和添加购物车等操作  |
-+----------------+-----------------------------------------------------+
-| 过程           | 1\. 用户进入登录界面                                |
-|                |                                                     |
-|                | 2\. 用户输入自己的账号和密码                        |
-|                |                                                     |
-|                | 3\. 用户提交输入的信息                              |
-|                |                                                     |
-|                | 4\. 系统对用户输入的账号和密码进行校验              |
-+----------------+-----------------------------------------------------+
+|名称|银行管理系统用户登录|
+| - | - |
+|说明|银行管理系统用户输入自己的账号和密码进行登录|
+|参与者|银行管理系统用户|
+|先决条件|系统正常运行|
+|输入信息|账号和密码|
+|结果|跳转系统首页|
+|后置条件|如果用户登录成功，则该用户可以查看个人中心和添加购物车等操作|
+|过程|<p>1. 用户进入登录界面</p><p>2. 用户输入自己的账号和密码</p><p>3. 用户提交输入的信息</p><p>4. 系统对用户输入的账号和密码进行校验</p>|
 
 表3.8 银行管理系统用户修改个人信息用例描述
 
-+----------------+-----------------------------------------------------+
-| 名称           | 银行管理系统用户修改个人信息                        |
-+----------------+-----------------------------------------------------+
-| 说明           | 银行管理系统用户修改个人信息                        |
-+----------------+-----------------------------------------------------+
-| 参与者         | 银行管理系统用户                                    |
-+----------------+-----------------------------------------------------+
-| 先决条件       | 系统正常运行，且用户已经登陆银行管理系统            |
-+----------------+-----------------------------------------------------+
-| 输入信息       | 无                                                  |
-+----------------+-----------------------------------------------------+
-| 结果           | 弹出修改成功或失败                                  |
-+----------------+-----------------------------------------------------+
-| 过程           | 1\. 用户点击个人中心                                |
-|                |                                                     |
-|                | 2\. 在对应的输入框输入要修改的内容                  |
-|                |                                                     |
-|                | 3\. 点击更新信息                                    |
-+----------------+-----------------------------------------------------+
+|名称|银行管理系统用户修改个人信息|
+| - | - |
+|说明|银行管理系统用户修改个人信息|
+|参与者|银行管理系统用户|
+|先决条件|系统正常运行，且用户已经登陆银行管理系统|
+|输入信息|无|
+|结果|弹出修改成功或失败|
+|过程|<p>1. 用户点击个人中心</p><p>2. 在对应的输入框输入要修改的内容</p><p>3. 点击更新信息</p>|
 
 表3.9 银行管理系统金融工具管理用例描述
 
-+----------------+-----------------------------------------------------+
-| 名称           | 银行管理系统金融工具管理                            |
-+----------------+-----------------------------------------------------+
-| 说明           | 银行管理系统用户对金融工具进行添加修改和删除查看等  |
-+----------------+-----------------------------------------------------+
-| 参与者         | 银行管理系统用户                                    |
-+----------------+-----------------------------------------------------+
-| 先决条件       | 系统正常运行，且用户已经登陆银行管理系统            |
-+----------------+-----------------------------------------------------+
-| 输入信息       | 无                                                  |
-+----------------+-----------------------------------------------------+
-| 过程           | 1\. 用户点击金融工具                                |
-|                |                                                     |
-|                | 2\. 可以对金融工具进行相关的维护和搜索              |
-+----------------+-----------------------------------------------------+
+|名称|银行管理系统金融工具管理|
+| - | - |
+|说明|银行管理系统用户对金融工具进行添加修改和删除查看等|
+|参与者|银行管理系统用户|
+|先决条件|系统正常运行，且用户已经登陆银行管理系统|
+|输入信息|无|
+|过程|<p>1. 用户点击金融工具</p><p>2. 可以对金融工具进行相关的维护和搜索</p>|
 
 表 3.10 银行管理系统理财产品用例描述
 
-+----------------+-----------------------------------------------------+
-| 名称           | 银行管理系统管理员管理理财产品信息                  |
-+----------------+-----------------------------------------------------+
-| 说明           | 银                                                  |
-|                | 行管理系统管理员查看、增加、删除、修改理财产品信息  |
-+----------------+-----------------------------------------------------+
-| 参与者         | 银行管理系统管理员                                  |
-+----------------+-----------------------------------------------------+
-| 先决条件       | 系统正常运行，且管理员已经登陆银行管理系统          |
-+----------------+-----------------------------------------------------+
-| 输入信息       | 无                                                  |
-+----------------+-----------------------------------------------------+
-| 结果           | 管理员查看、增加、删除、修改理财产品信息            |
-+----------------+-----------------------------------------------------+
-| 过程           | 管理员点击理财产品列表                              |
-|                |                                                     |
-|                | 可以对理财产品信息进行相关的维护和搜索              |
-+----------------+-----------------------------------------------------+
+|名称|银行管理系统管理员管理理财产品信息|
+| - | - |
+|说明|银行管理系统管理员查看、增加、删除、修改理财产品信息|
+|参与者|银行管理系统管理员|
+|先决条件|系统正常运行，且管理员已经登陆银行管理系统|
+|输入信息|无|
+|结果|管理员查看、增加、删除、修改理财产品信息|
+|过程|<p>管理员点击理财产品列表</p><p>可以对理财产品信息进行相关的维护和搜索</p>|
 
 表 3.11 银行管理系统管理员系统公告管理用例描述
 
-+----------------+-----------------------------------------------------+
-| 名称           | 银行管理系统管理员系统公告管理                      |
-+----------------+-----------------------------------------------------+
-| 说明           | 银行管理系统管理员查看、增加、删除、修改系统公告    |
-+----------------+-----------------------------------------------------+
-| 参与者         | 银行管理系统管理员                                  |
-+----------------+-----------------------------------------------------+
-| 先决条件       | 系统正常运行，且管理员已经登陆银行管理系统          |
-+----------------+-----------------------------------------------------+
-| 输入信息       | 无                                                  |
-+----------------+-----------------------------------------------------+
-| 结果           | 管理员查看、增加、删除、修改系统公告                |
-+----------------+-----------------------------------------------------+
-| 过程           | 1.  管理员点击系统公告管理                          |
-|                |                                                     |
-|                | 2.  管理员对系统公告进行增加、删除和修改            |
-+----------------+-----------------------------------------------------+
+|名称|银行管理系统管理员系统公告管理|
+| - | - |
+|说明|银行管理系统管理员查看、增加、删除、修改系统公告|
+|参与者|银行管理系统管理员|
+|先决条件|系统正常运行，且管理员已经登陆银行管理系统|
+|输入信息|无|
+|结果|管理员查看、增加、删除、修改系统公告|
+|过程|<p>1. 管理员点击系统公告管理</p><p>2. 管理员对系统公告进行增加、删除和修改</p>|
+
 
 # 4 系统设计
-
 ## 4.1系统整体设计
-
-银行管理系统选用B/S架构模式，即网页页面和网站架构设计的开发方式。这类系统构造可以理解为对
-C/S
-系统构造的改变与推广能够进行信息分布式处理，减少资源成本，提升订制系统的性能。在这种设计下，极少有事务处理在前进行，绝大多数重要事务管理的思路需要在服务端完成。
+银行管理系统选用B/S架构模式，即网页页面和网站架构设计的开发方式。这类系统构造可以理解为对 C/S 系统构造的改变与推广能够进行信息分布式处理，减少资源成本，提升订制系统的性能。在这种设计下，极少有事务处理在前进行，绝大多数重要事务管理的思路需要在服务端完成。
 
 系统的性能层为表明给用户页面，用以表明与理解用户信息，回到用户所提供的信息，交到系统解决方法，给予用户与系统之间的沟通控制面板；系统通讯层承担为性能层提供以下数据信息，并把性能层与系统环境间的通信连接下去，系统的控制层主要从事从HTTP要求中获得信息，获取主要参数，并把它发放给不一样的处理方法服务项目(Service层)，将Service层处理过的数据返回到前面(本系统应用JSON数据)；系统业务逻辑层的主要作用是识别解决用户的键入信息，完成具体业务逻辑和数据浏览；系统数据浏览层主要从事实际操作数据，为业务逻辑层或控制层给予数据服务项目；系统数据库是系统存放数据的区域，完成特殊业务需要数据适用，必须纪录信息才能达到业务流程，系统底层支撑工具采用JavaJDK、SpringMVC、MySQL等技术来进行支持。系统整体架构设计如图所示。
 
-![](media/image5.png){width="5.760416666666667in"
-height="3.220833333333333in"}
+![](/images/0300stringboot/0380springboot/blog.005.png)
 
 图4.1 系统整体功能结构图
 
 ## 4.3数据库设计
-
 ### 4.3.1数据库E-R图设计
-
 开发一个系统也需要提前设计数据库。这里的数据库是相关数据的集合，存储在一起的这些数据也是按照一定的组织方式进行的。目前，数据库能够服务于多种应用程序，则是源于它存储方式最佳，具备数据冗余率低的优势。虽然数据库为程序提供信息存储服务，但它与程序之间也可以保持较高的独立性。总而言之，数据库经历了很长一段时间的发展，从最初的不为人知，到现在的人尽皆知，其相关技术也越发成熟，同时也拥有着坚实的理论基础。
 
 （1）下图是用户实体和其具备的属性。
 
-![](media/image6.jpeg){width="5.554861111111111in"
-height="2.986111111111111in"}
+![C:/Users/Administrator/Desktop/temp111\4.2\\_\_\_\_img\用户.jpg](/images/0300stringboot/0380springboot/blog.006.jpeg "C:/Users/Administrator/Desktop/temp111\4.2\\_\_\_\_img\用户.jpg")
 
 用户实体属性图
 
 （2）下图是取款实体和其具备的属性。
 
-![](media/image7.jpeg){width="3.75in" height="2.082638888888889in"}
+![C:/Users/Administrator/Desktop/temp111\4.2\\_\_\_\_img\取款.jpg](/images/0300stringboot/0380springboot/blog.007.jpeg "C:/Users/Administrator/Desktop/temp111\4.2\\_\_\_\_img\取款.jpg")
 
 取款实体属性图
 
 （3）下图是公告信息实体和其具备的属性。
 
-![](media/image8.jpeg){width="3.75in" height="2.082638888888889in"}
+![C:/Users/Administrator/Desktop/temp111\4.2\\_\_\_\_img\公告信息.jpg](/images/0300stringboot/0380springboot/blog.008.jpeg "C:/Users/Administrator/Desktop/temp111\4.2\\_\_\_\_img\公告信息.jpg")
 
 公告信息实体属性图
 
 （4）下图是字典表实体和其具备的属性。
 
-![](media/image9.jpeg){width="3.75in" height="2.082638888888889in"}
+![C:/Users/Administrator/Desktop/temp111\4.2\\_\_\_\_img\字典表.jpg](/images/0300stringboot/0380springboot/blog.009.jpeg "C:/Users/Administrator/Desktop/temp111\4.2\\_\_\_\_img\字典表.jpg")
 
 字典表实体属性图
 
 （5）下图是员工实体和其具备的属性。
 
-![](media/image10.jpeg){width="5.554861111111111in"
-height="2.986111111111111in"}
+![C:/Users/Administrator/Desktop/temp111\4.2\\_\_\_\_img\员工.jpg](/images/0300stringboot/0380springboot/blog.010.jpeg "C:/Users/Administrator/Desktop/temp111\4.2\\_\_\_\_img\员工.jpg")
 
 员工实体属性图
 
 （6）下图是金融工具收藏实体和其具备的属性。
 
-![](media/image11.jpeg){width="3.75in" height="2.082638888888889in"}
+![C:/Users/Administrator/Desktop/temp111\4.2\\_\_\_\_img\金融工具收藏.jpg](/images/0300stringboot/0380springboot/blog.011.jpeg "C:/Users/Administrator/Desktop/temp111\4.2\\_\_\_\_img\金融工具收藏.jpg")
 
 金融工具收藏实体属性图
 
 （7）下图是银行卡实体和其具备的属性。
 
-![](media/image12.jpeg){width="5.554861111111111in"
-height="2.986111111111111in"}
+![C:/Users/Administrator/Desktop/temp111\4.2\\_\_\_\_img\银行卡.jpg](/images/0300stringboot/0380springboot/blog.012.jpeg "C:/Users/Administrator/Desktop/temp111\4.2\\_\_\_\_img\银行卡.jpg")
 
 银行卡实体属性图
 
 （8）下图是转账实体和其具备的属性。
 
-![](media/image13.jpeg){width="5.555555555555555in"
-height="2.9854166666666666in"}
+![C:/Users/Administrator/Desktop/temp111\4.2\\_\_\_\_img\转账.jpg](/images/0300stringboot/0380springboot/blog.013.jpeg "C:/Users/Administrator/Desktop/temp111\4.2\\_\_\_\_img\转账.jpg")
 
 转账实体属性图
 
 （9）下图是理财产品收藏实体和其具备的属性。
 
-![](media/image14.jpeg){width="3.75in" height="2.082638888888889in"}
+![C:/Users/Administrator/Desktop/temp111\4.2\\_\_\_\_img\理财产品收藏.jpg](/images/0300stringboot/0380springboot/blog.014.jpeg "C:/Users/Administrator/Desktop/temp111\4.2\\_\_\_\_img\理财产品收藏.jpg")
 
 理财产品收藏实体属性图
 
 （10）下图是存款实体和其具备的属性。
 
-![](media/image15.jpeg){width="3.75in" height="2.082638888888889in"}
+![C:/Users/Administrator/Desktop/temp111\4.2\\_\_\_\_img\存款.jpg](/images/0300stringboot/0380springboot/blog.015.jpeg "C:/Users/Administrator/Desktop/temp111\4.2\\_\_\_\_img\存款.jpg")
 
 存款实体属性图
 
 （11）下图是理财产品实体和其具备的属性。
 
-![](media/image16.jpeg){width="5.554861111111111in"
-height="2.986111111111111in"}
+![C:/Users/Administrator/Desktop/temp111\4.2\\_\_\_\_img\理财产品.jpg](/images/0300stringboot/0380springboot/blog.016.jpeg "C:/Users/Administrator/Desktop/temp111\4.2\\_\_\_\_img\理财产品.jpg")
 
 理财产品实体属性图
 
 （12）下图是理财产品银行卡实体和其具备的属性。
 
-![](media/image17.jpeg){width="3.75in" height="2.082638888888889in"}
+![C:/Users/Administrator/Desktop/temp111\4.2\\_\_\_\_img\理财产品评价.jpg](/images/0300stringboot/0380springboot/blog.017.jpeg "C:/Users/Administrator/Desktop/temp111\4.2\\_\_\_\_img\理财产品评价.jpg")
 
 理财产品银行卡实体属性图
 
 （13）下图是理财银行卡信息实体和其具备的属性。
 
-![](media/image18.jpeg){width="5.554861111111111in"
-height="2.986111111111111in"}
+![C:/Users/Administrator/Desktop/temp111\4.2\\_\_\_\_img\理财产品订单.jpg](/images/0300stringboot/0380springboot/blog.018.jpeg "C:/Users/Administrator/Desktop/temp111\4.2\\_\_\_\_img\理财产品订单.jpg")
 
 理财银行卡信息实体属性图
 
 （14）下图是客服聊天实体和其具备的属性。
 
-![](media/image19.jpeg){width="5.555555555555555in"
-height="2.9854166666666666in"}
+![C:/Users/Administrator/Desktop/temp111\4.2\\_\_\_\_img\客服聊天.jpg](/images/0300stringboot/0380springboot/blog.019.jpeg "C:/Users/Administrator/Desktop/temp111\4.2\\_\_\_\_img\客服聊天.jpg")
 
 客服聊天实体属性图
 
 （15）下图是银行卡记录实体和其具备的属性。
 
-![](media/image20.jpeg){width="3.75in" height="2.082638888888889in"}
+![C:/Users/Administrator/Desktop/temp111\4.2\\_\_\_\_img\银行卡记录.jpg](/images/0300stringboot/0380springboot/blog.020.jpeg "C:/Users/Administrator/Desktop/temp111\4.2\\_\_\_\_img\银行卡记录.jpg")
 
 银行卡记录实体属性图
 
 （16）下图是金融工具银行卡实体和其具备的属性。
 
-![](media/image21.jpeg){width="3.75in" height="2.082638888888889in"}
+![C:/Users/Administrator/Desktop/temp111\4.2\\_\_\_\_img\金融工具评价.jpg](/images/0300stringboot/0380springboot/blog.021.jpeg "C:/Users/Administrator/Desktop/temp111\4.2\\_\_\_\_img\金融工具评价.jpg")
 
 金融工具银行卡实体属性图
 
 （17）下图是借款实体和其具备的属性。
 
-![](media/image22.jpeg){width="5.554861111111111in"
-height="2.986111111111111in"}
+![C:/Users/Administrator/Desktop/temp111\4.2\\_\_\_\_img\借款.jpg](/images/0300stringboot/0380springboot/blog.022.jpeg "C:/Users/Administrator/Desktop/temp111\4.2\\_\_\_\_img\借款.jpg")
 
 借款实体属性图
 
 （18）下图是金融工具实体和其具备的属性。
 
-![](media/image23.jpeg){width="5.554861111111111in"
-height="2.986111111111111in"}
+![C:/Users/Administrator/Desktop/temp111\4.2\\_\_\_\_img\金融工具.jpg](/images/0300stringboot/0380springboot/blog.023.jpeg "C:/Users/Administrator/Desktop/temp111\4.2\\_\_\_\_img\金融工具.jpg")
 
 金融工具实体属性图
 
-### 4.3.2 数据库表结构设计
 
+### 4.3.2 数据库表结构设计
 数据库里面的数据表存放的就是各种数据记录，我们在进行系统增删改查操作时，其实也是在对应数据表里面进行的增删改查操作，一个好的数据库能够缩短信息处理时间，所以说数据库的设计工作不容小觑，数据库里面设置哪些表，表里面的字段设计以及字段类型和字段长度等信息都要考虑周到才行，比如时间这个字段，它的数据类型就不能是int型，不然在系统操作中就会弹出输入数据格式不符合要求的报错提示。下面简单介绍银行管理系统的一些数据表。
 
 表4.1客服聊天表
 
-  ------ ----------------- -------------------- ------------------- --------
-   序号        列名              数据类型              说明          允许空
-
-    1           Id                 Int                  id             否
-
-    2        yonghu_id           Integer             提问用户          是
-
-    3       chat_issue            String               问题            是
-
-    4       issue_time             Date              问题时间          是
-
-    5       chat_reply            String               回复            是
-
-    6       reply_time             Date              回复时间          是
-
-    7     zhuangtai_types        Integer               状态            是
-
-    8       chat_types           Integer             数据类型          是
-
-    9       insert_time            Date              创建时间          是
-  ------ ----------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|yonghu\_id|Integer|提问用户|是|
+|3|chat\_issue|String|问题|是|
+|4|issue\_time|Date|问题时间|是|
+|5|chat\_reply|String|回复|是|
+|6|reply\_time|Date|回复时间|是|
+|7|zhuangtai\_types|Integer|状态|是|
+|8|chat\_types|Integer|数据类型|是|
+|9|insert\_time|Date|创建时间|是|
 表4.2字典表表
 
-  ------ ---------------- -------------------- ------------------- --------
-   序号        列名             数据类型              说明          允许空
-
-    1           Id                Int                  id             否
-
-    2        dic_code            String               字段            是
-
-    3        dic_name            String              字段名           是
-
-    4       code_index          Integer               编码            是
-
-    5       index_name           String             编码名字          是
-
-    6        super_id           Integer             父字段id          是
-
-    7         beizhu             String               备注            是
-
-    8      create_time            Date              创建时间          是
-  ------ ---------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|dic\_code|String|字段|是|
+|3|dic\_name|String|字段名|是|
+|4|code\_index|Integer|编码|是|
+|5|index\_name|String|编码名字|是|
+|6|super\_id|Integer|父字段id|是|
+|7|beizhu|String|备注|是|
+|8|create\_time|Date|创建时间|是|
 表4.3公告信息表
 
-  ------ ----------------- -------------------- ------------------- --------
-   序号        列名              数据类型              说明          允许空
-
-    1           Id                 Int                  id             否
-
-    2      gonggao_name           String             公告名称          是
-
-    3      gonggao_photo          String             公告图片          是
-
-    4      gonggao_types         Integer             公告类型          是
-
-    5       insert_time            Date              发布时间          是
-
-    6     gonggao_content         String             公告详情          是
-
-    7       create_time            Date              创建时间          是
-  ------ ----------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|gonggao\_name|String|公告名称|是|
+|3|gonggao\_photo|String|公告图片|是|
+|4|gonggao\_types|Integer|公告类型|是|
+|5|insert\_time|Date|发布时间|是|
+|6|gonggao\_content|String|公告详情|是|
+|7|create\_time|Date|创建时间|是|
 表4.4金融工具表
 
-  ------ --------------------------- -------------------- ------------------- --------
-   序号             列名                   数据类型              说明          允许空
-
-    1                Id                      Int                  id             否
-
-    2        jinronggongju_name             String             产品名称          是
-
-    3     jinronggongju_uuid_number         String           金融工具编号        是
-
-    4        jinronggongju_photo            String             产品照片          是
-
-    5            zan_number                Integer                赞             是
-
-    6            cai_number                Integer                踩             是
-
-    7        jinronggongju_types           Integer             产品类型          是
-
-    8          huankuan_number             Integer             还款天数          是
-
-    9        jinronggongju_lilv           BigDecimal             利率            是
-
-    10     jinronggongju_clicknum          Integer           金融工具热度        是
-
-    11      jinronggongju_content           String             产品介绍          是
-
-    12         shangxia_types              Integer             是否上架          是
-
-    13      jinronggongju_delete           Integer             逻辑删除          是
-
-    14           insert_time                 Date              录入时间          是
-
-    15           create_time                 Date              创建时间          是
-  ------ --------------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|jinronggongju\_name|String|产品名称|是|
+|3|jinronggongju\_uuid\_number|String|金融工具编号|是|
+|4|jinronggongju\_photo|String|产品照片|是|
+|5|zan\_number|Integer|赞|是|
+|6|cai\_number|Integer|踩|是|
+|7|jinronggongju\_types|Integer|产品类型|是|
+|8|huankuan\_number|Integer|还款天数|是|
+|9|jinronggongju\_lilv|BigDecimal|利率|是|
+|10|jinronggongju\_clicknum|Integer|金融工具热度|是|
+|11|jinronggongju\_content|String|产品介绍|是|
+|12|shangxia\_types|Integer|是否上架|是|
+|13|jinronggongju\_delete|Integer|逻辑删除|是|
+|14|insert\_time|Date|录入时间|是|
+|15|create\_time|Date|创建时间|是|
 表4.5金融工具收藏表
 
-  ------ -------------------------------- -------------------- ------------------- --------
-   序号                列名                     数据类型              说明          允许空
-
-    1                   Id                        Int                  id             否
-
-    2            jinronggongju_id               Integer             金融工具          是
-
-    3               yonghu_id                   Integer               用户            是
-
-    4     jinronggongju_collection_types        Integer               类型            是
-
-    5              insert_time                    Date              收藏时间          是
-
-    6              create_time                    Date              创建时间          是
-  ------ -------------------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|jinronggongju\_id|Integer|金融工具|是|
+|3|yonghu\_id|Integer|用户|是|
+|4|jinronggongju\_collection\_types|Integer|类型|是|
+|5|insert\_time|Date|收藏时间|是|
+|6|create\_time|Date|创建时间|是|
 表4.6金融工具银行卡表
 
-  ------ -------------------------------- -------------------- ------------------- --------
-   序号                列名                     数据类型              说明          允许空
-
-    1                   Id                        Int                  id             否
-
-    2            jinronggongju_id               Integer             金融工具          是
-
-    3               yonghu_id                   Integer               用户            是
-
-    4     jinronggongju_commentback_text         String            银行卡内容         是
-
-    5              insert_time                    Date             银行卡时间         是
-
-    6               reply_text                   String             回复内容          是
-
-    7              update_time                    Date              回复时间          是
-
-    8              create_time                    Date              创建时间          是
-  ------ -------------------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|jinronggongju\_id|Integer|金融工具|是|
+|3|yonghu\_id|Integer|用户|是|
+|4|jinronggongju\_commentback\_text|String|银行卡内容|是|
+|5|insert\_time|Date|银行卡时间|是|
+|6|reply\_text|String|回复内容|是|
+|7|update\_time|Date|回复时间|是|
+|8|create\_time|Date|创建时间|是|
 表4.7借款表
 
-  ------ ----------------------------------- -------------------- ------------------- --------
-   序号                 列名                       数据类型              说明          允许空
-
-    1                    Id                          Int                  id             否
-
-    2      jinronggongju_order_uuid_number          String             订单编号          是
-
-    3             jinronggongju_id                 Integer             金融工具          是
-
-    4                 yonghu_id                    Integer               用户            是
-
-    5               yinhangka_id                   Integer              银行卡           是
-
-    6      jinronggongju_order_jiekuanjine        BigDecimal           借款金额          是
-
-    7     jinronggongju_order_huankuanjine        BigDecimal           还款金额          是
-
-    8            zuiwanhuankuan_time                 Date            最晚还款日期        是
-
-    9         jinronggongju_order_types            Integer             订单类型          是
-
-    10    jinronggongju_order_payment_types        Integer             支付类型          是
-
-    11     jinronggongju_order_yesno_types         Integer             审核状态          是
-
-    12     jinronggongju_order_yesno_text           String             审核意见          是
-
-    13     jinronggongju_order_shenhe_time           Date              审核时间          是
-
-    14               insert_time                     Date            订单创建时间        是
-
-    15               create_time                     Date              创建时间          是
-  ------ ----------------------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|jinronggongju\_order\_uuid\_number|String|订单编号|是|
+|3|jinronggongju\_id|Integer|金融工具|是|
+|4|yonghu\_id|Integer|用户|是|
+|5|yinhangka\_id|Integer|银行卡|是|
+|6|jinronggongju\_order\_jiekuanjine|BigDecimal|借款金额|是|
+|7|jinronggongju\_order\_huankuanjine|BigDecimal|还款金额|是|
+|8|zuiwanhuankuan\_time|Date|最晚还款日期|是|
+|9|jinronggongju\_order\_types|Integer|订单类型|是|
+|10|jinronggongju\_order\_payment\_types|Integer|支付类型|是|
+|11|jinronggongju\_order\_yesno\_types|Integer|审核状态|是|
+|12|jinronggongju\_order\_yesno\_text|String|审核意见|是|
+|13|jinronggongju\_order\_shenhe\_time|Date|审核时间|是|
+|14|insert\_time|Date|订单创建时间|是|
+|15|create\_time|Date|创建时间|是|
 表4.8理财产品表
 
-  ------ ----------------------------- -------------------- ------------------- --------
-   序号              列名                    数据类型              说明          允许空
-
-    1                 Id                       Int                  id             否
-
-    2          licaichanpin_name              String           理财产品名称        是
-
-    3      licaichanpin_uuid_number           String           理财产品编号        是
-
-    4         licaichanpin_photo              String           理财产品照片        是
-
-    5             zan_number                 Integer                赞             是
-
-    6             cai_number                 Integer                踩             是
-
-    7         licaichanpin_types             Integer             投资类型          是
-
-    8             fashou_time                  Date              发售时间          是
-
-    9       licaichanpin_nianshouyi           String              年收益           是
-
-    10    licaichanpin_fengxian_types        Integer             风险等级          是
-
-    11     licaichanpin_kucun_number         Integer             剩余份数          是
-
-    12      licaichanpin_old_money          BigDecimal            原价/份          是
-
-    13      licaichanpin_new_money          BigDecimal            现价/份          是
-
-    14       licaichanpin_clicknum           Integer           理财产品热度        是
-
-    15       licaichanpin_content             String           理财产品介绍        是
-
-    16          shangxia_types               Integer             是否上架          是
-
-    17        licaichanpin_delete            Integer             逻辑删除          是
-
-    18            insert_time                  Date              录入时间          是
-
-    19            create_time                  Date              创建时间          是
-  ------ ----------------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|licaichanpin\_name|String|理财产品名称|是|
+|3|licaichanpin\_uuid\_number|String|理财产品编号|是|
+|4|licaichanpin\_photo|String|理财产品照片|是|
+|5|zan\_number|Integer|赞|是|
+|6|cai\_number|Integer|踩|是|
+|7|licaichanpin\_types|Integer|投资类型|是|
+|8|fashou\_time|Date|发售时间|是|
+|9|licaichanpin\_nianshouyi|String|年收益|是|
+|10|licaichanpin\_fengxian\_types|Integer|风险等级|是|
+|11|licaichanpin\_kucun\_number|Integer|剩余份数|是|
+|12|licaichanpin\_old\_money|BigDecimal|原价/份|是|
+|13|licaichanpin\_new\_money|BigDecimal|现价/份|是|
+|14|licaichanpin\_clicknum|Integer|理财产品热度|是|
+|15|licaichanpin\_content|String|理财产品介绍|是|
+|16|shangxia\_types|Integer|是否上架|是|
+|17|licaichanpin\_delete|Integer|逻辑删除|是|
+|18|insert\_time|Date|录入时间|是|
+|19|create\_time|Date|创建时间|是|
 表4.9理财产品收藏表
 
-  ------ ------------------------------- -------------------- ------------------- --------
-   序号               列名                     数据类型              说明          允许空
-
-    1                  Id                        Int                  id             否
-
-    2            licaichanpin_id               Integer             理财产品          是
-
-    3               yonghu_id                  Integer               用户            是
-
-    4     licaichanpin_collection_types        Integer               类型            是
-
-    5              insert_time                   Date              收藏时间          是
-
-    6              create_time                   Date              创建时间          是
-  ------ ------------------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|licaichanpin\_id|Integer|理财产品|是|
+|3|yonghu\_id|Integer|用户|是|
+|4|licaichanpin\_collection\_types|Integer|类型|是|
+|5|insert\_time|Date|收藏时间|是|
+|6|create\_time|Date|创建时间|是|
 表4.10理财产品银行卡表
 
-  ------ ------------------------------- -------------------- ------------------- --------
-   序号               列名                     数据类型              说明          允许空
-
-    1                  Id                        Int                  id             否
-
-    2            licaichanpin_id               Integer             理财产品          是
-
-    3               yonghu_id                  Integer               用户            是
-
-    4     licaichanpin_commentback_text         String            银行卡内容         是
-
-    5              insert_time                   Date             银行卡时间         是
-
-    6              reply_text                   String             回复内容          是
-
-    7              update_time                   Date              回复时间          是
-
-    8              create_time                   Date              创建时间          是
-  ------ ------------------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|licaichanpin\_id|Integer|理财产品|是|
+|3|yonghu\_id|Integer|用户|是|
+|4|licaichanpin\_commentback\_text|String|银行卡内容|是|
+|5|insert\_time|Date|银行卡时间|是|
+|6|reply\_text|String|回复内容|是|
+|7|update\_time|Date|回复时间|是|
+|8|create\_time|Date|创建时间|是|
 表4.11理财银行卡信息表
 
-  ------ ---------------------------------- -------------------- ------------------- --------
-   序号                 列名                      数据类型              说明          允许空
-
-    1                    Id                         Int                  id             否
-
-    2      licaichanpin_order_uuid_number          String             订单编号          是
-
-    3             licaichanpin_id                 Integer             理财产品          是
-
-    4                yonghu_id                    Integer               用户            是
-
-    5               yinhangka_id                  Integer              银行卡           是
-
-    6                buy_number                   Integer             购买份数          是
-
-    7      licaichanpin_order_true_price         BigDecimal           实付价格          是
-
-    8         licaichanpin_order_types            Integer             订单类型          是
-
-    9      licaichanpin_order_yesno_types         Integer             审核状态          是
-
-    10     licaichanpin_order_yesno_text           String             审核意见          是
-
-    11     licaichanpin_order_shenhe_time           Date              审核时间          是
-
-    12    licaichanpin_order_payment_types        Integer             支付类型          是
-
-    13              insert_time                     Date            订单创建时间        是
-
-    14              create_time                     Date              创建时间          是
-  ------ ---------------------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|licaichanpin\_order\_uuid\_number|String|订单编号|是|
+|3|licaichanpin\_id|Integer|理财产品|是|
+|4|yonghu\_id|Integer|用户|是|
+|5|yinhangka\_id|Integer|银行卡|是|
+|6|buy\_number|Integer|购买份数|是|
+|7|licaichanpin\_order\_true\_price|BigDecimal|实付价格|是|
+|8|licaichanpin\_order\_types|Integer|订单类型|是|
+|9|licaichanpin\_order\_yesno\_types|Integer|审核状态|是|
+|10|licaichanpin\_order\_yesno\_text|String|审核意见|是|
+|11|licaichanpin\_order\_shenhe\_time|Date|审核时间|是|
+|12|licaichanpin\_order\_payment\_types|Integer|支付类型|是|
+|13|insert\_time|Date|订单创建时间|是|
+|14|create\_time|Date|创建时间|是|
 表4.12银行卡表
 
-  ------ ----------------------- -------------------- ------------------- --------
-   序号           列名                 数据类型              说明          允许空
-
-    1              Id                    Int                  id             否
-
-    2           yonghu_id              Integer               用户            是
-
-    3     yinhangka_uuid_number         String            银行卡卡号         是
-
-    4        yinhangka_photo            String            银行卡照片         是
-
-    5       yinhangka_kaikadi           String              开卡地           是
-
-    6         yinhang_types            Integer               银行            是
-
-    7        yinhangka_types           Integer            银行卡类型         是
-
-    8          insert_time               Date              开卡日期          是
-
-    9       yinhangka_address           String               编码            是
-
-    10       yinhangka_money          BigDecimal             余额            是
-
-    11      yinhangka_content           String             卡片备注          是
-
-    12         create_time               Date              创建时间          是
-  ------ ----------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|yonghu\_id|Integer|用户|是|
+|3|yinhangka\_uuid\_number|String|银行卡卡号|是|
+|4|yinhangka\_photo|String|银行卡照片|是|
+|5|yinhangka\_kaikadi|String|开卡地|是|
+|6|yinhang\_types|Integer|银行|是|
+|7|yinhangka\_types|Integer|银行卡类型|是|
+|8|insert\_time|Date|开卡日期|是|
+|9|yinhangka\_address|String|编码|是|
+|10|yinhangka\_money|BigDecimal|余额|是|
+|11|yinhangka\_content|String|卡片备注|是|
+|12|create\_time|Date|创建时间|是|
 表4.13存款表
 
-  ------ ------------------------------- -------------------- ------------------- --------
-   序号               列名                     数据类型              说明          允许空
-
-    1                  Id                        Int                  id             否
-
-    2             yinhangka_id                 Integer              银行卡           是
-
-    3     yinhangka_cunkuan_uuid_number         String             存款编号          是
-
-    4        yinhangka_cunkuan_jine           BigDecimal           存款金额          是
-
-    5       yinhangka_cunkuan_content           String             存款备注          是
-
-    6              insert_time                   Date              存款时间          是
-
-    7              create_time                   Date              创建时间          是
-  ------ ------------------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|yinhangka\_id|Integer|银行卡|是|
+|3|yinhangka\_cunkuan\_uuid\_number|String|存款编号|是|
+|4|yinhangka\_cunkuan\_jine|BigDecimal|存款金额|是|
+|5|yinhangka\_cunkuan\_content|String|存款备注|是|
+|6|insert\_time|Date|存款时间|是|
+|7|create\_time|Date|创建时间|是|
 表4.14银行卡记录表
 
-  ------ ---------------------------- -------------------- ------------------- --------
-   序号              列名                   数据类型              说明          允许空
-
-    1                 Id                      Int                  id             否
-
-    2            yinhangka_id               Integer              银行卡           是
-
-    3     yinhangka_jilu_uuid_number         String             记录卡号          是
-
-    4        yinhangka_jilu_types           Integer          银行卡记录类型       是
-
-    5        yinhangka_jilu_jine           BigDecimal           记录金额          是
-
-    6       yinhangka_jilu_content           String               详情            是
-
-    7            insert_time                  Date              记录时间          是
-
-    8            create_time                  Date              创建时间          是
-  ------ ---------------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|yinhangka\_id|Integer|银行卡|是|
+|3|yinhangka\_jilu\_uuid\_number|String|记录卡号|是|
+|4|yinhangka\_jilu\_types|Integer|银行卡记录类型|是|
+|5|yinhangka\_jilu\_jine|BigDecimal|记录金额|是|
+|6|yinhangka\_jilu\_content|String|详情|是|
+|7|insert\_time|Date|记录时间|是|
+|8|create\_time|Date|创建时间|是|
 表4.15取款表
 
-  ------ ------------------------------ -------------------- ------------------- --------
-   序号               列名                    数据类型              说明          允许空
-
-    1                  Id                       Int                  id             否
-
-    2             yinhangka_id                Integer              银行卡           是
-
-    3     yinhangka_qukuan_uuid_number         String             取款编号          是
-
-    4        yinhangka_qukuan_jine           BigDecimal           取款金额          是
-
-    5       yinhangka_qukuan_content           String             取款备注          是
-
-    6             insert_time                   Date              取款时间          是
-
-    7             create_time                   Date              创建时间          是
-  ------ ------------------------------ -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|yinhangka\_id|Integer|银行卡|是|
+|3|yinhangka\_qukuan\_uuid\_number|String|取款编号|是|
+|4|yinhangka\_qukuan\_jine|BigDecimal|取款金额|是|
+|5|yinhangka\_qukuan\_content|String|取款备注|是|
+|6|insert\_time|Date|取款时间|是|
+|7|create\_time|Date|创建时间|是|
 表4.16转账表
 
-  ------ ------------------------------------ -------------------- ------------------- --------
-   序号                  列名                       数据类型              说明          允许空
-
-    1                     Id                          Int                  id             否
-
-    2                yinhangka_id                   Integer              银行卡           是
-
-    3      yinhangka_zhuanzhang_uuid_number          String             转账编号          是
-
-    4         yinhangka_zhuanzhang_jine            BigDecimal           转账金额          是
-
-    5               yinhang_types                   Integer               银行            是
-
-    6     yinhangka_zhuanzhang_jieshou_kahao         String             接收卡号          是
-
-    7        yinhangka_zhuanzhang_content            String             转账备注          是
-
-    8                insert_time                      Date              转账时间          是
-
-    9                create_time                      Date              创建时间          是
-  ------ ------------------------------------ -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|yinhangka\_id|Integer|银行卡|是|
+|3|yinhangka\_zhuanzhang\_uuid\_number|String|转账编号|是|
+|4|yinhangka\_zhuanzhang\_jine|BigDecimal|转账金额|是|
+|5|yinhang\_types|Integer|银行|是|
+|6|yinhangka\_zhuanzhang\_jieshou\_kahao|String|接收卡号|是|
+|7|yinhangka\_zhuanzhang\_content|String|转账备注|是|
+|8|insert\_time|Date|转账时间|是|
+|9|create\_time|Date|创建时间|是|
 表4.17用户表
 
-  ------ ---------------------- -------------------- ------------------- --------
-   序号           列名                数据类型              说明          允许空
-
-    1              Id                   Int                  id             否
-
-    2      yonghu_uuid_number          String             用户编号          是
-
-    3         yonghu_name              String             用户姓名          是
-
-    4         yonghu_phone             String            用户手机号         是
-
-    5       yonghu_id_number           String           用户身份证号        是
-
-    6         yonghu_photo             String             用户头像          是
-
-    7         yonghu_email             String             用户邮箱          是
-
-    8     zhengxindengji_types        Integer             征信等级          是
-
-    9        jinyong_types            Integer             账户状态          是
-
-    10        create_time               Date              创建时间          是
-  ------ ---------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|yonghu\_uuid\_number|String|用户编号|是|
+|3|yonghu\_name|String|用户姓名|是|
+|4|yonghu\_phone|String|用户手机号|是|
+|5|yonghu\_id\_number|String|用户身份证号|是|
+|6|yonghu\_photo|String|用户头像|是|
+|7|yonghu\_email|String|用户邮箱|是|
+|8|zhengxindengji\_types|Integer|征信等级|是|
+|9|jinyong\_types|Integer|账户状态|是|
+|10|create\_time|Date|创建时间|是|
 表4.18员工表
 
-  ------ ---------------------- -------------------- ------------------- --------
-   序号           列名                数据类型              说明          允许空
-
-    1              Id                   Int                  id             否
-
-    2     yuangong_uuid_number         String               工号            是
-
-    3        yuangong_name             String             员工姓名          是
-
-    4        yuangong_phone            String            员工手机号         是
-
-    5      yuangong_id_number          String           员工身份证号        是
-
-    6        yuangong_photo            String             员工头像          是
-
-    7        yuangong_email            String             员工邮箱          是
-
-    8        jinyong_types            Integer             账户状态          是
-
-    9         create_time               Date              创建时间          是
-  ------ ---------------------- -------------------- ------------------- --------
-
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|yuangong\_uuid\_number|String|工号|是|
+|3|yuangong\_name|String|员工姓名|是|
+|4|yuangong\_phone|String|员工手机号|是|
+|5|yuangong\_id\_number|String|员工身份证号|是|
+|6|yuangong\_photo|String|员工头像|是|
+|7|yuangong\_email|String|员工邮箱|是|
+|8|jinyong\_types|Integer|账户状态|是|
+|9|create\_time|Date|创建时间|是|
 表4.19管理员表
 
-  ------ ---------------- -------------------- ------------------- --------
-   序号        列名             数据类型              说明          允许空
-
-    1           Id                Int                  id             否
-
-    2        username            String              员工名           是
-
-    3        password            String               密码            是
-
-    4          role              String               角色            是
-
-    5        addtime              Date              新增时间          是
-  ------ ---------------- -------------------- ------------------- --------
+|序号|列名|数据类型|说明|允许空|
+| :-: | :-: | :-: | :-: | :-: |
+|1|Id|Int|id|否|
+|2|username|String|员工名|是|
+|3|password|String|密码|是|
+|4|role|String|角色|是|
+|5|addtime|Date|新增时间|是|
 
 # 5 系统实现
-
 ## 5.1管理员登录模块
-
 系统登录功能是程序必不可少的功能，在登录页面必填的数据有两项，一项就是账号，另一项数据就是密码，当管理员正确填写并提交这二者数据之后，管理员就可以进入系统后台功能操作区。下图就是管理员登录页面。
 
-![](media/image24.png){width="5.763888888888889in"
-height="3.2284722222222224in"}
+![](/images/0300stringboot/0380springboot/blog.024.png)
 
 图5.1 管理员登录页面
-
 ## 5.2 银行卡管理模块
-
 点击进入银行卡列表，管理员可以进行查看列表、模糊搜索以及相关维护等操作。
 
-![](media/image25.png){width="5.763888888888889in"
-height="3.2284722222222224in"}
+![](/images/0300stringboot/0380springboot/blog.025.png)
 
-图5.2 银行卡管理页面
-
+图5.2  银行卡管理页面
 ## 5.3 公告信息管理模块
-
 用户进入系统可以查看公告和模糊搜索公告信息、也可以进行公告维护操作，下图就是公告信息管理页面。
 
-![](media/image26.png){width="5.763888888888889in"
-height="3.2284722222222224in"}
+![](/images/0300stringboot/0380springboot/blog.026.png)
 
 图5.3 公告信息管理页面
-
 ## 5.4公告类型管理模块
-
 下图就是公告类型管理页面。
 
-![](media/image27.png){width="5.763888888888889in"
-height="3.2284722222222224in"}
+![](/images/0300stringboot/0380springboot/blog.027.png)
 
 图5.4 公告类型列表页面
 
 ## 5.5 理财产品管理
-
 如图5.5显示的就是理财产品管理页面，管理员可以进行查看列表、模糊搜索以及相关维护等操作。
 
-![](media/image28.png){width="5.763888888888889in"
-height="3.2284722222222224in"}
+![](/images/0300stringboot/0380springboot/blog.028.png)
 
 图5.5理财产品管理页面
-
 ## 5.6 产品类型管理
-
 如图5.6显示的就是产品类型管理页面，此页面提供给管理员的功能有：新增产品类型,修改产品类型,删除产品类型。
 
-![](media/image29.png){width="5.763888888888889in"
-height="3.2284722222222224in"}
+![](/images/0300stringboot/0380springboot/blog.029.png)
 
 图5.6 产品类型管理页面
 
-### 6.1测试目的
 
-系统提供功能测试功能主要运用于测试系统软件研发的功能是不是有误，功能自身的设计原理正确与否合理，系统软件开发设计存不存在隐藏经营风险难题，在客户的具体开发与适用场景和测试阶段，给消费者真实运用反馈和觉得意见反馈测试结果，为项目风险评估和功能测试提供一定的信息。目前，自修室管理与民宿系统主要分测试系统软件前客户端应用和后台管理员运用。目前，后台管理系统软件主要分测试系统软件前端应用与后台管理员的使用。前端目的是为了测试系统软件客户怎么注册、账号登录、订单管理和民宿页面的自动跳转等。后边管理员的主要功能是测试每一个控制模块数据信息日常维护功能。
+# 系统
 
-### 6.2测试环境
 
-我们这个银行管理系统的功能测试方法采用和的黑盒测试方法，黑盒测试是系统测试的一般方法，用来测试我们这个银行管理系统是否符合需求基本的要求、逻辑是否通常、功能设计是否合规。系统测试环境如下图表6.1所展示。
-
-表6.1 系统测试环境
-
-  ---------- ---------- --------------- -------------------------------------
-   测试环境   软件环境     操作系统               Windows 10家庭版
-
-                           系统类型       64 位操作系统, 基于 x64 的处理器
-
-                            浏览器                  Google浏览器
-
-                            数据库                    MySQL5.7
-
-              硬件环境       设备                 Windows台式电脑机
-
-                             内存                      16.00G
-
-                             硬盘                       2550G
-
-                            处理器         Intel(R) Core(TM) i5-8300H CPU
-  ---------- ---------- --------------- -------------------------------------
-
-### 6.3测试用例  {#测试用例 .unnumbered}
-
-系统完成之后对系统进行了一些主要功能的测试、主要包含金融工具信息、金融工具信息以及公告信息的测试。只有测试通过的程序模块才可以进行系统软件浏览。下面是系统的一些主要功能测试:
-
-表6.1 用户登录测试表
-
-  ----------- ---------------------------------- -------------------- -----------------------
-  测试目的    操作流程                           测试用例             测试结果
-
-  用户登录    填写用户名密码，点击首页登录按钮   错误填写用户名密码   提示错误信息
-
-                                                 正确填写用户和密码   登录成功
-  ----------- ---------------------------------- -------------------- -----------------------
-
-表6.2新增金融工具信息测试表
-
-  ------------------ ------------------------------------------------ ---------------------- --------------------------
-  测试项目           操作流程                                         测试用例               测试结果
-
-  新增金融工具信息   管理员登陆后点击新增物资按钮，新增金融工具信息   金融工具信息为空       新增失败，提示请填写内容
-
-                                                                      合规填写金融工具信息   新增成功
-  ------------------ ------------------------------------------------ ---------------------- --------------------------
-
-表6.3新增银行卡信息测试表
-
-  ---------------- ---------------------------------------------------- -------------------- --------------------------
-  测试项目         操作流程                                             测试用例             测试结果
-
-  新增银行卡信息   管理员登陆后点击新增银行卡信息按钮，新增银行卡信息   银行卡信息为空       新增失败，提示请填写内容
-
-                                                                        合规填写银行卡信息   新增成功
-  ---------------- ---------------------------------------------------- -------------------- --------------------------
-
-表6.4新增转账测试表
-
-  ----------- ---------------------------------------- --------------- --------------------------
-  测试项目    操作流程                                 测试用例        测试结果
-
-  新增转账    管理员登陆后点击新增转账按钮，新增转账   转账为空        新增失败，提示请填写内容
-
-                                                       合规填写转账    新增成功
-  ----------- ---------------------------------------- --------------- --------------------------
-
-### 6.4测试结果
-
-通过大量测试优化调节改善，银行管理系统依然能保证系统市场需求的正常的运行，基本上特性无错误，能更好地满足软件开发技术和客户的需求。在设备总体运行测试环节中，系统软件功能设计较为简单，在功能测试之中遇到了一些错误，如客户空指针异常，MySQL数据库版本不一致，也会导致sql语句无法正常运行，管理员用户名设定，环境分辨不太好，键入错误账户密码信息或可登陆。这类错误正常情况下不可以产生。在回到代码检查的时候，发觉管理人员信息和数据库的DAO代码存有错误，代码和数据库本身没有树立良好的联接。通过这次测试，我能更为当心代码和数据库的操作，正常情况下不容易出现这种错误。
-
-# 结 论
-
-本课题研究研究方向为以实现银行管理系统。通过数据搜索、技术途径、功能设计、模块化设计、概念模型设计、界面设计方案、作用编号、系统测试等阶段性工作，我顺利完成了银行管理系统，供总体目标用户应用。
-
-银行管理系统选用Java思维和语言MySQL数据库系统开展设计开发。与大部分相近系统对比，主要特点如下所展示：
-
-（1）银行管理系统的功效彻底依据目标消费群体的应用必须展开分析、设计与编号，并通过实施过程中的最终测试阶段，最终决定它的功能基本完成，能够在日常生活中发挥出信息内容管理的意义。
-
-（2）银行管理系统的界面设计方案比较简单，具备简易直观地特性，而且每个程序模块都是有独立的界面表明，用户点一下不一样的功效会有对应的界面，每一个界面撞色搭配更统一，界面空间布局合理，界面上所使用的各种图片都要经过Photoshop等图片编辑工具装饰，因而，当用户访问系统的每个界面时，能够一目了然地发现系统标注的所有信息。
-
-（3）银行管理系统使用和实际操作十分方便，由于系统能够避免大部分用户的操作失误状况，因此用户能够在短时间内寻找所需要的作用及使用，能节省处理时间，系统也改善了操作流程，删掉了一些繁琐复杂操作流程，与此同时，该系统也将一些基础功能放到每个界面的醒目地域，大大改善了用户实际操作银行管理系统的功效。
-
-因为缺乏系统项目经验，银行管理系统也存在一些缺点，详细如下：
-
-（1）在文件存储层面，定制的数据分析表不科学，好几个表格中纪录同一数据信息，导致内存空间的消耗和系统响应速度的延迟时间。
-
-（2）针对系统编码，有许多编码并没有注解，针对开发者，系统后面更新与维护将耗费大量时长，提升系统更新与维护难度，很多编码应用同样的函数公式，该函数公式在每一个编码文档中再次撰写，不另行启用，使系统松垮，它也耗费了很多的内存空间。
-
-因而，不久的将来，我就必须花时间来完善银行管理系统。针对以上数据库系统里的缓存溢出难题，我计划学习培训数据库连接池里的技术性，以提升缓存溢出状况。针对编号文件占用内存空间过严重的问题，我计划应用函数调用作用，将同样的函数公式写上编号文档上，让所有需要用到该函数编号文件进行函数调用，为了节约内存空间，使系统更加轻。
-
-# 参考文献
-
-\[1\]彭婷.基于SSM框架的银行管理系统的设计与实现\[J\].信息与电脑(理论版),2022,34(08):137-139.
-
-\[2\]生世龙,王志涛,赵志民.银行管理系统设计与实现\[J\].现代信息科技,2021,5(24):8-11+15.
-
-\[3\]王艺翔,熊巍.银行管理系统\[J\].现代信息科技,2021,5(16):22-25.
-
-\[4\]崔晓雯. A银行管理系统改进研究\[D\].大连理工大学,2021.
-
-\[5\]Sittrop Danny,Crosthwaite Cheryl. Minimising Risk---The Application
-of Kotter's Change Management Model on Customer Relationship Management
-Systems: A Case Study\[J\]. Journal of Risk and Financial
-Management,2021,14(10).
-
-\[6\]Infusing customer insights into your business: A look at customer
-relationship management systems (CRMs), customer dataList platforms
-(CDPs), and dataList management platforms (DMPs) (By James
-Bayhack)\[J\]. M2 Presswire,2021.
-
-\[7\]何鹏,陈斌.
-燃气地理信息系统(GIS)与银行管理系统(CRM)数据共享方案\[C\]//.2020年燃气安全交流研讨会论文集、调研报告.\[出版者不详\],2020:409-412.
-
-\[8\]张洋,庞德明.
-银行管理系统的搭建及其应用\[C\]//.2008通信理论与技术新进展------第十三届全国青年通信学术会议论文集（上）,2008:611-615.
-
-\[9\]冀全朋,申超.基于JavaEE的银行管理系统设计与实现\[J\].哈尔滨师范大学自然科学学报,2021,37(03):71-78.
-
-\[10\]张兴华.CRM客户信息管理系统的设计与实现\[J\].山西电子技术,2021(03):59-61.
-
-\[11\]周佳蓓. 湖南柿竹园公司银行管理系统改进研究\[D\].湖南大学,2021.
-
-\[12\]刘磊.
-J公司基于社会化银行管理系统（SCRM）的获客策略研究\[D\].对外经济贸易大学,2021.
-
-\[13\]赵忞斐.
-新疆电信新一代银行管理系统建设项目管理研究\[D\].南京邮电大学,2019.
-
-\[14\]琚会婧.
-数据挖掘技术在客户关系管理（CRM）中的应用研究\[D\].华北理工大学,2019.
-
-\[15\]聂佚名.山东省胸科医院体检管理系统的设计与实现\[D\].济南:山东大学,2020.
-
-\[16\]孙宇.
-基于Web的农业银行客户管理信息系统的设计与实现\[D\].长春工业大学,2019.
-
-\[17\]唐瑞.基于数字技术的银行客户关系管理\[J\].农业发展与金融,2020(08):40-42.
-
-\[18\]俞凯兰.小微企业银行管理系统研究与设计\[J\].软件工程,2020,23(07):46-48+45.
-
-\[19\]De Pablos Heredero Carmen,Gallego Gomez Cristina,Montes Botella
-Luis José. The Impact of Customer Relationship Management Systems on
-Dynamic Capabilities at Firms: An Application to the Banking
-Industry\[J\]. Journal of Global Information Management
-(JGIM),2021,29(1).
-
-\[20\]Cardiovascular Diseases and Conditions; Investigators at New York
-City Department of Health and Mental Hygiene Discuss Findings in
-Cardiovascular Diseases and Conditions (Using a Customer Relationship
-Management System To Manage a Quality Improvement Intervention)\[J\].
-Computer Technology Journal,2020.
-
-\[21\]Yahia Baashar,Hitham Alhussian,Ahmed Patel,Gamal Alkawsi,Ahmed
-Ibrahim Alzahrani,Osama Alfarraj,Gasim Hayder. Customer relationship
-management systems (CRMS) in the healthcare environment: A systematic
-literature review\[J\]. Computer Standards &
-Interfaces,2020,71(prepublish)..
-
-# 致 谢
-
-大学期间所学到的知识，在最后的项目制作时刻都得到了充分运用，也许，这就是学院检验各个学生对于所学知识的掌握情况的一种方式吧，当然，对于本次毕业项目的制作，除了运用书本上的理论知识外，还需要进行额外扩充，这就要求各个学生养成自学的习惯，另外，项目制作期间难免会遇到困难，这也是一个学习的机会，通过对困难的分析，然后向身边的同学，老师，导师等寻求帮助，或者通过上网查找解决办法来解决遇到的困难，这样也能提高学生对于问题分析与解决的能力，所以说设计制作毕业项目，一定要认真对待，这也是提升自己综合实力的一种方式。
-
-对于本人设计的系统能够顺利提交，不仅仅是自己的努力，也是源于导师的耐心指导。所以，对于我的项目指导老师，我是十分感谢他的，在我因为功能需求而苦恼时，是导师给予我安慰，并鼓励我不要灰心，才让我平复心情，继续进行项目制作的工作。在我因为编码实现系统功能期间遇到的技术问题而不知所措时，也是导师为我能够解决编码的技术问题指明了方向。所以，我的指导老师对我如期完成的本项目付出了很多心血，我非常感激他。
-
-还有一些人也值得我去感谢，其中就包括教授过我知识的所有老师，也许就是他们教授我们专业知识，让我们对本专业的知识进行一点点积累，才能在今天的毕设项目中进行运用，所以他们也是功不可没。
-
-另外，我还需要感谢舍友，以及班上的同学，还有我的亲人，感谢舍友一路以来从选题，功能设计，功能实现等阶段性任务中提供的各种帮助，感谢班上的同学的一路陪伴，感谢亲人的理解与支持！
-
-最后，我要感谢母校提供的各种学习场所，让我这四年能够安心学习知识，在这里，希望母校越来越好！
-
-
-### 0380springboot银行客户管理系统代码--论文pf 项目图片
-![图片](/images/0380springbootimg_014.jpg)
-![图片](/images/0380springbootimg_015.jpg)
-![图片](/images/0380springbootimg_001.jpg)
-![图片](/images/0380springbootimg_017.jpg)
-![图片](/images/0380springbootimg_003.jpg)
-![图片](/images/0380springbootimg_002.jpg)
-![图片](/images/0380springbootimg_016.jpg)
-![图片](/images/0380springbootimg_012.jpg)
-![图片](/images/0380springbootimg_006.jpg)
-![图片](/images/0380springbootimg_007.jpg)
-![图片](/images/0380springbootimg_013.jpg)
-![图片](/images/0380springbootimg_005.jpg)
-![图片](/images/0380springbootimg_011.jpg)
-![图片](/images/0380springbootimg_010.jpg)
-![图片](/images/0380springbootimg_004.jpg)
-![图片](/images/0380springbootimg_009.jpg)
-![图片](/images/0380springbootimg_021.jpg)
-![图片](/images/0380springbootimg_020.jpg)
-![图片](/images/0380springbootimg_008.jpg)
-![图片](/images/0380springbootimg_022.jpg)
-![图片](/images/0380springbootimg_023.jpg)
-![图片](/images/0380springbootimg_026.jpg)
-![图片](/images/0380springbootimg_024.jpg)
-![图片](/images/0380springbootimg_018.jpg)
-![图片](/images/0380springbootimg_019.jpg)
-![图片](/images/0380springbootimg_025.jpg)
 
 
 
