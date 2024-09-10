@@ -1,170 +1,29 @@
 # 0002springboot图书个性化推荐系统的设计与实现
 
 
-# 0002springboot图书个性化推荐系统的设计与实现
+# [0002springboot图书个性化推荐系统的设计与实现](https://github.com/GraduationProject-springboot/0002springboot)
 
-### 微信： chen_q123456  qq:462201886
-### github:chenqi199 gitee :chen_q_i
+![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-### [所有项目](https://github.com/GraduationProject-springboot/allSpringbootProjects) 包安装运行
+# [项目清单](https://chenqi1990.site) 包安装运行
 
-### [所有项目列表excel 腾讯文档 项目清单](https://docs.qq.com/sheet/DSHRFSVZ5aEVYT3N3?tab=BB08J2) 包安装运行
+### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
-### [github](https://chenqi199.github.io)
 
-### [gitee](https://gitee.com/chen_q_i)
 
-### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://player.bilibili.com/player.html?isOutside=true&aid=BV16ia6epENY&bvid=BV16ia6epENY&cid=500001610566283&p=3)
 
-
-
-### 0002springboot图书个性化推荐系统的设计与实现 部分论文
-```
-
-本科毕业设计
-图书个性化推荐系统 
-院    系： 
-
-姓    名：xxx
-
-学    号：xxxxxxxxxx
-
-专    业： 
-
-年    级：xxxx级
-
-指导教师： 
-
-职    称：
-
-完成日期：xxxx年xx月
-摘 要
-
-本论文主要论述了如何使用JAVA语言开发一个图书个性化推荐系统，本系统将严格按照软件开发流程进行各个阶段的工作，采用B/S架构，面向对象编程思想进行项目开发。在引言中，作者将论述图书个性化推荐系统的当前背景以及系统开发的目的，后续章节将严格按照软件开发流程，对系统进行各个阶段分析设计。
-
-图书个性化推荐系统的主要使用者分为管理员和学生，实现功能包括管理员：首页、个人中心、学生管理、图书分类管理、图书信息管理、图书预约管理、退换图书管理、管理员管理、留言板管理、系统管理，学生：首页、个人中心、图书预约管理、退换图书管理、我的收藏管理，前台首页；首页、图书信息、好书推荐、留言反馈、个人中心、后台管理等功能。由于本系统的功能模块设计比较全面，所以使得整个图书个性化推荐系统信息管理的过程得以实现。
-
-本系统的使用可以实现本图书个性化推荐系统管理的信息化，可以方便管理员进行更加方便快捷的管理，可以提高管理人员的工作效率。
-关键词：图书个性化推荐系统 JAVA语言；MYSQL数据库；Spring Boot框架 
-Abstract
-This paper mainly discusses how to use java language to develop a personalized book recommendation system. The system will work in all stages in strict accordance with the software development process, using B / S architecture and object-oriented programming ideas for project development. In the introduction, the author will discuss the current background of the book personalized recommendation system and the purpose of the system development. The following chapters will analyze and design the system in each stage in strict accordance with the software development process.
-
-The main users of personalized book recommendation system are administrators and students. The functions include administrators: home page, personal center, student management, book classification management, book information management, book reservation management, book return management, administrator management, message board management, system management, students: home page, personal center, book reservation management, book return management My collection management, front page; front page, book information, good book recommendation, message feedback, personal center, background management and other functions. Because the function module design of this system is more comprehensive, the whole process of information management of personalized book recommendation system can be realized.
-
-The use of this system can realize the information management of the book personalized recommendation system, which can facilitate the administrator to manage more conveniently and quickly, and improve the work efficiency of the management personnel.
-
-Key words: Book personalized recommendation system, Java language, MySQL database, spring boot framework
-目  录
-	摘 要	I
-
-	1 绪论	1
-
-	1.1研究背景	1
-
-	1.2研究现状	1
-
-	1.3研究内容	2
-
-	2 系统关键技术	3
-
-	2.1 Spring Boot框架	3
-
-	2.2 JAVA技术	3
-
-	2.3 MYSQL数据库	4
-
-	2.4 B/S结构	4
-
-	3 系统分析	5
-
-	3.1 可行性分析	5
-
-	3.1.1 技术可行性	5
-
-	3.1.2经济可行性	5
-
-	3.1.3操作可行性	5
-
-	3.2 系统性能分析	5
-
-	3.3 系统功能分析	6
-
-	3.4系统流程分析	7
-
-	3.4.1登录流程	7
-
-	3.4.2注册流程	8
-
-	3.4.3添加信息流程	8
-
-	3.4.4删除信息流程	9
-
-	4　系统设计	10
-
-	4.1系统概要设计	10
-
-	4.2系统结构设计	10
-
-	4.3系统顺序图设计	11
-
-	4.3.1登录模块顺序图	11
-
-	4.3.2添加信息模块顺序图	11
-
-	4.4数据库设计	12
-
-	4.4.1数据库E-R图设计	12
-
-	4.4.2数据库表设计	13
-
-	第5章 系统详细设计	17
-
-	5.1前台首页功能模块	17
-
-	5.2管理员功能模块	18
-
-	5.3学生功能模块	21
-
-	6 系统测试	24
-
-	6.1 测试定义	24
-
-	6.2 测试目的	24
-
-	6.3测试方案	25
-
-	（1）模块测试	25
-
-	（2）集成测试：	25
-
-	（3）验收测试：	25
-
-	6.4系统分析	27
-
-	7 结论	28
-
-	参考文献	29
-
-	谢辞	30
-1 绪论
-
-1.1研究背景
-
- 随着网络不断的普及发展，图书个性化推荐系统依靠网络技术的支持得到了快速的发展，首先要从学生的实际需求出发，通过了解学生的需求开发出具有针对性的首页、图书信息、好书推荐、留言反馈、个人中心、后台管理功能，利用目前网络给学生带来的方便快捷这一特点对系统进行调整，设计的系统让学生的使用起来更加方便，本系统的主要目的就是给学生带来快捷与高效、安全，学生只要在家中就可以进行操作。同时随着电子商务的发展网上图书个性化推荐系统已经受到广大学生的关注。
+# 绪论
+## 1.1研究背景
+` `随着网络不断的普及发展，图书个性化推荐系统依靠网络技术的支持得到了快速的发展，首先要从学生的实际需求出发，通过了解学生的需求开发出具有针对性的首页、图书信息、好书推荐、留言反馈、个人中心、后台管理功能，利用目前网络给学生带来的方便快捷这一特点对系统进行调整，设计的系统让学生的使用起来更加方便，本系统的主要目的就是给学生带来快捷与高效、安全，学生只要在家中就可以进行操作。同时随着电子商务的发展网上图书个性化推荐系统已经受到广大学生的关注。
 
 互联网发展至今，已经解决了很多我们解决不了的难题，使得我们工作更加便捷，提高了我们的工作效率。目前各行各业都在运用网络信息管理程序，不同的学生也都接触到信息管理，特别是在各大网络行业广泛的应运起来。通过对当前网络环境发展的分析与总结，开发图书个性化推荐系统可以改变以往的图书个性化推荐系统方式，改变传统线下图书个性化推荐系统的状态，由于学生的不断增多，使用传统的线下图书个性化推荐系统模式已经远远不能满足于学生需求了，而且越来越多的学校也在开通线上进行图书个性化推荐系统，所以开发一个图书个性化推荐系统可以解决学生不利于线下图书个性化推荐系统的问题，同时管理员可以利用网络对图书信息进行管理，这样才能提高工作效率，保证系统安全正常的运行。
-
-1.2研究现状
-
+## 1.2研究现状
 在国外他们的信息技术的发展是我国的许多倍，从1946年诞生在美国的世界上第一台计算机开始，国外的信息技术就一直在飞速地发展，一些计算机应用软件也纷纷出现，软件技术也一直在不断完善和更新。软件行业早已遍布各个地方。
 
 在国内，我国信息技术发展起步比较晚，后期慢慢的不断地进行优化和改革，才让我们的信息技术上升到新的阶段。在现在软件开发的技术经过大量研究和生活实践基本能够达到独立开发系统应用的水平，生活中的各个行业也把软件操作替换成传统的记录模式。软件行业正是现在比较热门的行业。
 
 社会主义进入新时代，经济实力越来越强。我们也变得越来越忙碌、对生活的要求也变得更加严格，对快速和方便的服务的需求也在逐渐增加，所以网上图书个性化推荐系统的开发给学生带来了足够的便利，学生通过系统来满足生活中的需求，因此，由于信息的增加，信息处理系统也随之增加，通过网络来满足现代学生需求。此次开发设计主要是实现图书个性化推荐系统 ，结合java技术以及MYSQL数据库进行设计，弥补目前在线图书个性化推荐系统中的不足，来开发出一款即方便又实用的图书个性化推荐系统 ，并且设计的程序具有界面整洁、功能强大等特性，从全局来说，图书个性化推荐系统的设计解决了信息零散，该系统实现，可以投入到真实环境中，这样不仅能解决以上提及的问题，让信息管理更准则。
-
-1.3研究内容
-
+## 1.3研究内容
 该图书个性化推荐系统的开发和设计根据学生的实际情况出发，对系统的需求进行了详细的分析，然后进行系统的整体设计，最后通过测试使得系统设计的更加完整，可以实现系统中所有的功能，在开始编写论文之前亲自到图书馆借阅Spring Boot书籍，MYSQL数据库书籍等编程书籍，然后针对开发的图书个性化推荐系统 ，去网上查找了很多别人做好的系统，参照他们的设计结果，来对自己的系统进行更加详细的系统的设计，将系统中所有的功能结果一一列举出来，然后进行需求分析，最后对所有的功能模块进行编码，最后完成系统的整体测试，实现系统的正常运行。
 
 这次编写的论文包含了6个部分的内容，具体内容如下：
@@ -180,10 +39,9 @@ Key words: Book personalized recommendation system, Java language, MySQL databas
 第五部分系统实现：进行系统主要功能模块的界面展示。
 
 第六部分系统测试：测试系统的每一个功能是否能够正常运行，是否可以满足学生的需求。
-2 系统关键技术
 
-	2.1 Spring Boot框架
-
+# 2 系统关键技术
+## 2.1 Spring Boot框架
 Spring Boot是Pivotal团队的一个新框架，旨在简化新Spring应用程序的初始设置和开发。该框架使用特定的配置方法，无需开发人员定义样板配置。通过这种方式，Spring Boot旨在成为蓬勃发展的快速应用程序开发领域的领导者。
 Spring Boot特点：
 1、创建一个单独的Spring应用程序；
@@ -192,24 +50,336 @@ Spring Boot特点：
 4、自动配置Spring；
 5、提供生产就绪功能，如指标，健康检查和外部配置；
 6、绝对没有代码生成和XML的配置要求；
-  安装步骤：
-   最基本的是，Spring Boo
+`  `安装步骤：
+`   `最基本的是，Spring Boot是一个可以被任何项目的构建系统使用的库集合。 为简单起见，该框架还提供了一个命令行界面，可用于运行和测试Boot应用程序。 可以从Spring存储库手动下载和安装框架的已发布版本，包括集成的CLI（命令行界面）。 更简单的方法是使用Groovy enVironment Manager（GVM），它负责处理Boot版本的安装和管理。 可以从GVM命令行GVM install springboot安装Boot及其CLI。 在OS X上安装Boot时可以使用Homebrew包管理器。要完成安装，首先使用brew tap pivotal / tap切换到pivotal存储库，然后执行brew install springboot命令。
 
-```
-### 0002springboot图书个性化推荐系统的设计与实现 项目图片
-![图片](/images/0002springbootimg_001.jpg)
-![图片](/images/0002springbootimg_003.jpg)
-![图片](/images/0002springbootimg_002.jpg)
-![图片](/images/0002springbootimg_012.jpg)
-![图片](/images/0002springbootimg_006.jpg)
-![图片](/images/0002springbootimg_007.jpg)
-![图片](/images/0002springbootimg_013.jpg)
-![图片](/images/0002springbootimg_005.jpg)
-![图片](/images/0002springbootimg_011.jpg)
-![图片](/images/0002springbootimg_010.jpg)
-![图片](/images/0002springbootimg_004.jpg)
-![图片](/images/0002springbootimg_009.jpg)
-![图片](/images/0002springbootimg_008.jpg)
+## 2.2 JAVA技术
+JAVA语言是目前软件市场上应用最广泛的语言开发程序。可以在多种平台上运用的，兼容性比较强，适应市面上大多数操作系统，不会出现乱码的现像，其扩展性和维护性都更好，具有分析问题和解决问题的能力，是面向过程的程序设计方便我们编写的代码更强壮。
+
+JAVA相对其它语言来说，比较简单，编译起来更方便一些，安全可靠性高。不完全统计，现在全世界大约有2000多万人在使用它，JAVA既可以镶嵌使用又可以独力的使用。JAVA大致可以分成两个部分，一种部分是JAVA负责的编译，另一种是JAVA负责的运行。JAVA和C++语言很相像，但JAVA在编程时是一种以对象为导向的方式来进行编译的，使得编出来的软件可以单机使用，也可以在互联网上使用，检查出错更为方便。JAVA分布式、体系结构中立的特点也使得其存储更快，编议更简单。面向对象包括四个特点，一是封装，就是说在定义类的时候可以实现一定的功能和属性。二是抽象，属于类的一种，可以把一个具有共同属性的类封装在一个抽象里，便于简单编议。三是继承，顾名思义就是带有前者的特性。还有一个就是多态的特点，可以多种一起运用，表现了它可扩展性好。
+## 2.3 MYSQL数据库
+网站的开发必须配套相应数据库，数据库具有一定的组织结构，能够存放和管理数据信息，在以前数据库的功能仅仅是数据保存和管理操作，但是时代的变迁和发展，现在的数据库演变成了数据处理的方式，数据库从最开始的简单存放数据表格信息到现在的能够存放成千上万数据的大型数据库，期间还是经历了许多的改革。
+
+本次开发的图书个性化推荐系统 使用的数据库是MYSQL数据库，该数据库运行速度快，安全性能也很高，而且对使用的平台没有任何的限制，所以被广泛应运到系统的开发中。MySQL是一个开源和多线程的关系管理数据库系统，MySQL是开放源代码的数据库，具有跨平台性，虽然功能未必强大，导致很多人都了解这个数据库的基本应用，在数据库中，总共建立了10几个表，这里面每个表都是相对应的，都各自有各自的联系，数据库意义重大，如果没有数据库的链接，就没办法运行程序，这显然可以看见数据库与程序的重要性，是紧密相连接的。
+## 2.4 B/S结构
+B/S（浏览器/服务器）结构是目前主流的网络化的结构模式，它能够把系统核心功能集中在服务器上面，可以帮助系统开发人员简化操作，便于维护和使用。只需要学生在学生端安装360浏览器、谷歌浏览器、QQ浏览器等当前大众浏览器，在电脑里面安装sqlserver、mysql数据库等数据库。安装好的浏览器与服务器端的数据库进行信息数据的交互。很多专门软件能够做到的事情，采用B/S结构模式也能实现，它能够结合Web浏览器技术，ActiveX技术以及多种脚本语言等技术。帮助程序开发者节约了不少开发成本。目前B/S结构成为程序开发主流结构，它最好的地方就是没有地点限制还不用专门安装软件，笔记本或者电脑能够上网就能访问系统。系统使用B/S进行开发在后期系统维护上面就会很省事，不用什么问题都在服务器上面操作，简单的学生端处理就解决部分问题，开发出来的程序跟学生交互性上面也会增强，还可以实时刷新浏览器进行程序局部的数据信息更新。
+
+![](/images/0000stringboot/0002springboot/blog.001.png)
+
+图2-1 B/S模式三层结构图
+
+# 3 系统分析
+## 3.1 可行性分析
+在系统开发之初要进行系统可行分析，这样做的目的就是使用最小成本解决最大问题，一旦程序开发满足学生需要，带来的好处也是很多的。下面我们将从技术上、操作上、经济上等方面来考虑这个系统到底值不值得开发。
+### 3.1.1 技术可行性
+本图书个性化推荐系统采用Spring Boot框架、JAVA编程语言和MYSQL数据库进行开发设计，作为计算机专业学生，在学校期间就接触到许多关于编程方面的知识，当然也包括各种编程软件，对他们的了解度也比较熟悉，所以技术开发上面还是有一定把握。
+### 3.1.2经济可行性
+我在设计该系统的时候主要是从节约成本出发，然后进行具体的系统的设计，在系统的设计过程中由于采用的所有工具以及技术支持全部都是免费的，因此不需要有任何的成本就可以进行该系统的设计。所用到的所有资源都是免费的，只要有网络就可以进行下载使用，不需要支付相应的费用，因此该项目在经济方面是完全可以实行的。
+### 3.1.3操作可行性
+本人自己就是学生，程序开发经验不足，在界面设计上面不会设计太复杂，要讲究简单好看，操作上要方便，不能让学生觉得不流畅。学生一旦进入操作界面，界面上就会有相应提示，跟着操作提示就可以找到对应的功能操作模块，对于学生来说免培训就能使用。
+
+从上面几个部分的可行性分析得出，这次开发的图书个性化推荐系统在开发上面没有什么大问题，值得开发。
+## 3.2 系统性能分析
+（1）系统响应效率：页面响应时问应该在3秒以内，最长不能超过4秒，并支持至少10000人同时在线所有系统。
+
+（2）界面简洁清晰：系统界面要求简单明了，容易操作，符合学生操作习惯。
+
+（3）储存性高：因为图书个性化推荐系统中有很多的信息需要存储，因此对于系统的存储量有很大的要求，需要有一个强大的数据库的支持才能确保所有的信息都能安全稳定的进行存储。
+
+（4）易学性：该系统在操作上必须简单好上手，没有很多复杂的操作，只需要简单的进行学习就能操作该系统。
+
+（5）稳定性需求：开发的图书个性化推荐系统 要求运行稳定，运行过程中无界面不清楚、字体模糊等现象。
+## 3.3 系统功能分析
+本图书个性化推荐系统主要包括二大功能模块，即学生功能模块和管理员功能模块。
+
+（1）管理员模块：系统中的核心用户是管理员，管理员登录后，通过管理员功能来管理后台系统。主要功能有：首页、个人中心、学生管理、图书分类管理、图书信息管理、图书预约管理、退换图书管理、管理员管理、留言板管理、系统管理等功能。管理员用例图如图3-1所示。
+
+![](/images/0000stringboot/0002springboot/blog.002.png)
+
+图3-1　管理员用例图
+
+（2）学生：首页、个人中心、图书预约管理、退换图书管理、我的收藏管理等功能，学生用例图如图3-2所示。
+
+![](/images/0000stringboot/0002springboot/blog.003.png)
+
+图3-2 学生用例图
+
+（3）前台首页：首页、图书信息、好书推荐、留言反馈、个人中心、后台管理等功能，前台首页用例图如图3-3所示。
+
+![](/images/0000stringboot/0002springboot/blog.004.png)
+
+`   `图3-3 前台首页用例图
+## 3.4系统流程分析
+### 3.4.1登录流程
+登录模块主要满足管理员以及学生的权限登录，学生登录流程图如图3-4所示。
+
+![](/images/0000stringboot/0002springboot/blog.005.png)
+
+图3-4 登录流程图
+### 3.4.2注册流程
+未有账号的学生可进入注册界面进行注册操作，学生注册流程图如图3-5所示。
+
+![](/images/0000stringboot/0002springboot/blog.005.png)
+
+图3-5 注册流程图
+### 3.4.3添加信息流程
+学生在添加信息时，信息编号自动生成，系统会对添加的信息进行验证，验证通过则添加至数据库，添加信息成功，反之添加失败。添加信息流程如图3-6所示。
+
+![](/images/0000stringboot/0002springboot/blog.006.png)
+
+图3-6 添加信息流程图
+### 3.4.4删除信息流程
+学生可选择要删除的信息进行信息删除操作，在删除信息时系统提示是否确定删除信息，是则删除信息成功，系统数据库将信息进行删除。删除信息流程图如图3-7所示。
+
+![](/images/0000stringboot/0002springboot/blog.007.png)
+
+图3-7 删除信息流程图
+
+# 4　系统设计
+## 4.1系统概要设计
+本图书个性化推荐系统选择B/S结构(Browser/Server,浏览器/服务器结构)和基于Web服务两种模式。适合在互联网上进行操作，只要学生能连网，任何时间、任何地点都可以进行系统的操作使用。系统工作原理图如图4-1所示：
+
+![](/images/0000stringboot/0002springboot/blog.008.png)
+
+图4-1 系统工作原理图
+## 4.2系统结构设计
+整个系统是由多个功能模块组合而成的，要将所有的功能模块都一一列举出来，然后进行逐个的功能设计，使得每一个模块都有相对应的功能设计，然后进行系统整体的设计。
+
+本图书个性化推荐系统结构图如图4-2所示。
+
+![](/images/0000stringboot/0002springboot/blog.009.png)
+
+图4-2 系统功能结构图
+## 4.3系统顺序图设计
+### 4.3.1登录模块顺序图
+登录模块主要满足了管理员以及学生的权限登录，登录模块顺序图如图4-3所示。
+
+![](/images/0000stringboot/0002springboot/blog.010.png)
+
+图4-3 登录顺序图
+### 4.3.2添加信息模块顺序图
+管理员以及学生登录后均可进行添加信息操作，添加信息模块顺序图如图4-4所示。
+
+![](/images/0000stringboot/0002springboot/blog.011.png)
+
+图4-4 添加信息顺序图
+## 4.4数据库设计
+一个好的数据库可以关系到程序开发的优劣，数据库设计离不开表结构的设计，还有表与表之间的联系，以及系统开发需要设计的数据表内容等信息。在进行数据库设计期间，要结合实际情况来对数据库进行针对性的开发设计。
+### 4.4.1数据库E-R图设计
+本图书个性化推荐系统采用的是MYSQL数据库，数据存储快，因为图书个性化推荐系统 ，主要的就是对信息的管理，信息内容比较多，这就需要好好的设计一个好的数据库，分类要清楚，不能添加信息的时候，造成信息太过混乱，设计好的数据库首先就需要先把各个实体之间的关系表达明确，系统的E-R图如下图所示：
+
+1、学生信息实体图如图4-5所示：
+######### ![](/images/0000stringboot/0002springboot/blog.012.png)
+图4-5 学生信息实体图
+
+2、图书信息实体图如图4-6所示：
+
+![](/images/0000stringboot/0002springboot/blog.013.png)
+
+图4-6 图书信息实体图
+
+3、图书预约信息实体图如图4-7所示：
+
+![](/images/0000stringboot/0002springboot/blog.014.png)
+
+图4-7 图书预约信息实体图
+### 4.4.2数据库表设计
+将数据库概念设计的E-R图转换为关系数据库。在关系数据库中，数据关系由数据表组成，但是表的结构表现在表的字段上。
+
+表1：tuihuantushu表
+
+|列名|数据类型|长度|约束|
+| - | - | - | - |
+|id|bigint|200|NOT NULL|
+|addtime|varchar|200|NULL DEFAULT |
+|tushubianhao|tinyint|200|NULL DEFAULT |
+|tushumingcheng|varchar|200|NOT NULL|
+|zuozhe|varchar|200|NOT NULL|
+|chubanshe|varchar|200|NOT NULL|
+|shuliang|varchar|200|NOT NULL|
+|xuehao|varchar|200|NOT NULL|
+|tuihuanleixing|varchar|200|NOT NULL|
+|tuihuanyuanyin|varchar|200|NOT NULL|
+|riqi|varchar|200|NOT NULL|
+|sfsh|varchar|200|NOT NULL|
+|shhf|varchar|200|NOT NULL|
+
+表2：tushuxinxi表
+
+|列名|数据类型|长度|约束|
+| - | - | - | - |
+|id|int|200|NOT NULL|
+|addtime|varchar|200|NOT NULL|
+|tushubianhao|varchar|200|NOT NULL|
+|tushumingcheng|varchar|200|NOT NULL|
+|tushuleibie|varchar|200|NOT NULL|
+|tupian|varchar|200|NOT NULL|
+|zuozhe|varchar|200|NOT NULL|
+|chubanshe|varchar|200|NOT NULL|
+|shuliang|varchar|200|NOT NULL|
+|xiangqing|varchar|200|NOT NULL|
+
+表3：tushuyuyue表
+
+|列名|数据类型|长度|约束|
+| - | - | - | - |
+|id|varchar|200|NOT NULL|
+|addtime|varchar|200|NOT NULL|
+|tushubianhao|varchar|200|NOT NULL|
+|tushumingcheng|varchar|200|NOT NULL|
+|tushuleibie|varchar|200|NOT NULL|
+|zuozhe|varchar|200|NOT NULL|
+|chubanshe|varchar|200|NOT NULL|
+|shuliang|varchar|200|NOT NULL|
+|xuehao|varchar|200|NOT NULL|
+|xueshengxingming|varchar|200|NOT NULL|
+|lianxidianhua|varchar|200|NOT NULL|
+|shenqingriqi|varchar|200|NOT NULL|
+|sfsh|varchar|200|NOT NULL|
+|shhf|varchar|200|NOT NULL|
+
+表4：xuesheng表
+
+|列名|数据类型|长度|约束|
+| - | - | - | - |
+|id|varchar|200|NOT NULL|
+|addtime|varchar|200|NOT NULL|
+|xuehao|varchar|200|NOT NULL|
+|mima|varchar|200|NOT NULL|
+|xueshengxingming|varchar|200|NOT NULL|
+|xingbie|varchar|200|NOT NULL|
+|chushengriqi|varchar|200|NOT NULL|
+|lianxidianhua|varchar|200|NOT NULL|
+|banji|varchar|200|NOT NULL|
+表5：tushufenlei表
+
+|列名|数据类型|长度|约束|
+| - | - | - | - |
+|id|varchar|200|NOT NULL|
+|addtime|varchar|200|NOT NULL|
+|tushuleibie|varchar|200|NOT NULL|
+
+第5章 系统详细设计
+
+5.1前台首页功能模块
+
+图书个性化推荐系统，在前台首页可以查看首页、图书信息、好书推荐、留言反馈、个人中心、后台管理等内容，如图5-1所示。
+
+![](/images/0000stringboot/0002springboot/blog.015.png)
+
+图5-1首页功能界面图
+
+
+
+`    `学生注册、登录，在学生注册页面可以填写学号、密码、学生姓名、性别、出生日期、联系电话、班级等信息进行注册、登录，如图5-2所示。
+
+![](/images/0000stringboot/0002springboot/blog.016.png)
+
+![](/images/0000stringboot/0002springboot/blog.017.png)
+
+图5-2学生注册、登录界面图
+
+图书信息，在图书信息页面通过查看图书编号、图书名称、图书类别、图片、作者、出版社、版次、数量、点击次数等信息进行预约、立即提交或点我收藏操作，如图5-3所示。在个人中心页面通过填写学号、密码、学生姓名、性别、出生日期、联系电话、班级等信息进行更新信息、退出登录操作，如图5-4所示。
+
+![](/images/0000stringboot/0002springboot/blog.018.png)
+
+图5-3图书信息界面图
+
+![](/images/0000stringboot/0002springboot/blog.019.png)
+
+图5-4个人中心界面图
+
+5.2管理员功能模块
+
+管理员登录，通过填写输入用户名、密码、角色进行登录，如图5-5所示。
+
+![](/images/0000stringboot/0002springboot/blog.020.png)
+
+图5-5管理员登录界面图
+
+管理员登录进入图书个性化推荐系统可以查看首页、个人中心、学生管理、图书分类管理、图书信息管理、图书预约管理、退换图书管理、管理员管理、留言板管理、系统管理等信息。
+
+学生管理，在学生管理页面中可以通过查看学号、密码、学生姓名、性别、出生日期、联系电话、班级等内容进行修改、删除等操作，如图5-6所示。还可以根据需要对图书分类管理进行修改或删除等详细操作，如图5-7所示。
+
+![](/images/0000stringboot/0002springboot/blog.021.png)
+
+图5-6学生管理界面图
+
+![](/images/0000stringboot/0002springboot/blog.022.png)
+
+图5-7图书分类管理界面图
+
+图书信息管理，在图书信息管理页面中可以查看图书编号、图书名称、图书类别、图片、作者、出版社、版次、数量等信息，并可根据需要对已有图书信息管理进行详情、预约、查看评论、修改或删除等操作，如图5-8所示。
+
+![](/images/0000stringboot/0002springboot/blog.023.png)
+
+图5-8图书信息管理界面图
+
+图书预约管理，在图书预约管理页面中可以查看图书编号、图书名称、图书类别、作者、出版社、版次、数量、学号、学生姓名、联系电话、申请日期、审核回复、审核状态、审核等信息，并可根据需要对已有图书预约管理进行详情、退换、修改或删除等详细操作，如图5-9所示。
+
+![](/images/0000stringboot/0002springboot/blog.024.png)
+
+图5-9图书预约管理界面图
+
+退换图书管理，在退换图书管理页面中可以查看图书编号、图书名称、作者、出版社、版次、数量、学号、退换类型、退换原因、日期、审核回复、审核状态、审核等内容，并且根据需要对已有退换图书管理进行详情，修改或删除等详细操作，如图5-10所示。
+
+![](/images/0000stringboot/0002springboot/blog.025.png)
+
+图5-10退换图书管理界面图
+
+管理员管理，在管理员管理页面中可以查看用户名、密码、角色等内容，并且根据需要对已有管理员管理进行详情，修改或删除等详细操作，如图5-11所示。
+
+![](/images/0000stringboot/0002springboot/blog.026.png)
+
+图5-11管理员管理界面图
+
+
+留言板管理，在留言板管理页面中可以查看用户名、留言内容、回复内容等信息，并且根据需要对已有留言板管理进行详情，修改、回复或删除等详细操作，如图5-12所示。
+
+![](/images/0000stringboot/0002springboot/blog.020.png)
+
+图5-12留言板管理界面图
+
+好书推荐，在好书推荐页面中可以查看标题、简介、图片等信息，并且根据需要对已有好书推荐进行详情，修改或删除等详细操作，如图5-13所示。
+
+![](/images/0000stringboot/0002springboot/blog.027.png)
+
+图5-13好书推荐界面图
+
+
+
+
+5.3学生功能模块
+
+学生登录进入图书个性化推荐系统可以查看首页、个人中心、图书预约管理、退换图书管理、我的收藏管理等内容。
+
+个人信息，在个人信息页面中通过填写学号、密码、学生姓名、性别、出生日期、联系电话、班级等信息，还可以根据需要对个人信息进行修改等操作、如图5-14所示。
+
+![](/images/0000stringboot/0002springboot/blog.028.png)
+
+图5-14个人信息界面图
+
+图书预约管理，在图书预约管理页面中可以查看图书编号、图书名称、图书类别、作者、出版社、版次、数量、学号、学生姓名、联系电话、申请日期、审核回复、审核状态等信息内容，并且根据需要对已有图书预约管理进行详情、退换或删除等其他详细操作，如图5-15所示。
+
+![](/images/0000stringboot/0002springboot/blog.029.png)
+
+图5-15图书预约管理界面图
+
+退换图书管理，在退换图书管理页面中通过查看图书编号、图书名称、作者、出版社、版次、数量、学号、退换类型、退换原因、日期、审核回复、审核状态等内容进行详情、修改、删除等操作，如图5-16所示。
+
+![](/images/0000stringboot/0002springboot/blog.030.png)
+
+图5-16退换图书管理界面图
+
+我的收藏管理，在我的收藏管理页面中可以查看收藏名称、收藏图片等内容，并且根据需要对已有我的收藏管理进行详情、删除等详细操作，如图5-17所示。
+
+![](/images/0000stringboot/0002springboot/blog.031.png)
+
+图5-17我的收藏管理界面图
+
+# 
+
+
 
 
 

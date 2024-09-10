@@ -1,150 +1,485 @@
 # 0043springboot美容院管理系统
 
 
-# 0043springboot美容院管理系统
+# [0043springboot美容院管理系统](https://github.com/GraduationProject-springboot/0043springboot)
 
-### 微信： chen_q123456  qq:462201886
-### github:chenqi199 gitee :chen_q_i
+![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-### [所有项目](https://github.com/GraduationProject-springboot/allSpringbootProjects) 包安装运行
+# [项目清单](https://chenqi1990.site) 包安装运行
 
-### [所有项目列表excel 腾讯文档 项目清单](https://docs.qq.com/sheet/DSHRFSVZ5aEVYT3N3?tab=BB08J2) 包安装运行
-
-### [github](https://chenqi199.github.io)
-
-### [gitee](https://gitee.com/chen_q_i)
-
-### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://player.bilibili.com/player.html?isOutside=true&aid=BV16ia6epENY&bvid=BV16ia6epENY&cid=500001610572823&p=44)
+### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 
 
-### 0043springboot美容院管理系统 部分论文
-```
 
-﻿
-     
- 本科毕业设计论文
-题目：美容院管理系统设计与实现
-系    别：
-XX系（全称）
-专    业：
-软件工程
-班    级：
-软件工程15201
-学生姓名：
-
-学生学号：
-
-指导教师：
-导师1        导师2
-2021年5月
-摘  要
-
-如今的信息时代，对信息的共享性，信息的流通性有着较高要求，因此传统管理方式就不适合。为了让美容院信息的管理模式进行升级，也为了更好的维护美容院信息，美容院管理系统的开发运用就显得很有必要。并且通过开发美容院管理系统，不仅可以让所学的SpringBoot框架得到实际运用，也可以掌握MySQL的使用方法，对自身编程能力也有一个检验和提升的过程。尤其是通过实践，可以对系统的开发流程加深印象，无论是前期的分析与设计，还是后期的编码测试等环节，都可以有一个深刻的了解。
-美容院管理系统根据调研，确定其实现的功能主要包括美容用品管理，美容项目管理，美容部位管理，销量信息管理，订单管理，美容项目预约信息管理等功能。
-借助于美容院管理系统这样的工具，让信息系统化，流程化，规范化是最终的发展结果，让其遵循实际操作流程的情况下，对美容院信息实施规范化处理，让美容院信息通过电子的方式进行保存，无论是管理人员检索美容院信息，维护美容院信息都可以便利化操作，真正缩短信息处理时间，节省人力和信息管理的成本。
-
-关键字：美容院管理系统，SpringBoot框架，MySQL
-
-Abstract
-
-In today's information age, there are high requirements for information sharing and information circulation, so traditional management methods are not suitable. In order to upgrade the management model of beauty salon information, and to better maintain the information of the beauty salon, the development and application of the beauty salon management system is very necessary. And through the development of a beauty salon management system, not only can the SpringBoot framework learned be used in practice, but also the use of MySQL can be mastered, and there is a process of testing and improving its own programming ability. Especially through practice, you can deepen the impression of the development process of the system, whether it is the analysis and design in the early stage, or the coding test in the later stage, you can have a deep understanding.
-According to the research, the beauty salon management system determines that the functions it realizes mainly include beauty supplies management, beauty project management, beauty parts management, sales information management, order management, beauty project appointment information management and other functions.
-With the help of tools such as the beauty salon management system, the information system, process, and standardization is the final development result. When it follows the actual operation process, the information of the beauty salon is standardized, and the information of the beauty salon is electronically processed. The way to save, whether it is the management personnel to retrieve and maintain the beauty salon information, it can facilitate the operation, truly shorten the information processing time, and save the cost of manpower and information management.
-
-Key Words：Beauty salon management system, SpringBoot framework, MySQL
-  
-第一章 绪论	1
-1.1 选题背景	1
-1.2 选题意义	1
-1.3 研究内容	2
-第二章 开发环境	3
-2.1 SpringBoot框架	3
-2.2 JSP技术	3
-2.3 MYSQL数据库	4
-第三章 系统分析	5
-3.1可行性分析	5
-3.1.1技术可行性	5
-3.1.2操作可行性	5
-3.1.3经济可行性	5
-3.2系统流程分析	6
-3.3系统性能分析	9
-3.3.1数据完整性	9
-3.3.2系统可扩展性	10
-3.3.3系统安全性	10
-3.4系统功能分析	10
-第四章 系统设计	15
-4.1 系统设计思想	15
-4.2功能结构设计	16
-4.3数据库设计	20
-4.3.1 数据库E-R图	20
-4.3.2 数据库表结构	23
-第五章 系统实现	29
-5.1管理员功能实现	29
-5.1.1 美容部位管理	29
-5.1.2 销量信息统计	29
-5.1.3 已支付订单	30
-5.2技师功能实现	31
-5.2.1 统计美容用品库存	31
-5.2.2 预约信息管理	32
-5.3 前台功能实现	33
-5.3.1 普通用户管理	33
-5.3.2 会员管理	34
-5.4 普通用户功能实现	34
-5.4.1 美容用品	34
-5.4.2 购物车	35
-5.4.3 我的订单	35
-5.5 会员功能实现	36
-5.5.1 美容项目	36
-5.5.2 预约信息管理	37
-第六章 系统测试	38
-6.1系统测试的特点	38
-6.2 系统功能测试	38
-6.2.1 用户登录测试	38
-6.2.2 美容用品查询功能测试	39
-6.3 系统测试结果	39
-结  论	40
-致  谢	41
-参考文献	42
-
-第一章 绪论
-1.1 选题背景
+# 第一章 绪论
+## 1.1 选题背景
 如今的信息时代，对信息的共享性，信息的流通性有着较高要求，尽管身边每时每刻都在产生大量信息，这些信息也都会在短时间内得到处理，并迅速传播。因为很多时候，管理层决策需要大量信息作为参考依据，也有些时候，各大企业或学校也需要使用工具宣传自身的文化理念等等，所以信息能够得到迅速传播并带给人们一定的参考价值，充分发挥信息本身的作用是很有必要的，而这些恰恰是传统模式所不能相比的。因此，借助工具让信息系统化，流程化，规范化是最终的发展结果，而这个工具则是计算机软件。本次设计实现的计算机软件美容院管理系统，让其遵循实际操作流程的情况下，对美容院信息实施规范化处理，让美容院信息通过电子的方式进行保存，无论是管理人员检索美容院信息，维护美容院信息都可以便利化操作，真正缩短信息处理时间，节省人力和信息管理的成本。
-1.2 选题意义
+## 1.2 选题意义
 为了让美容院信息的管理模式进行升级，也为了更好的维护美容院信息，美容院管理系统的开发运用就显得很有必要，因为它不仅可以让美容院信息的管理人员统一完成信息管理，而且还会在保证美容院信息处于安全状态的情况下，让美容院信息的处理流程缩短，让信息的管理工作量减少，让美容院信息的录入和后期维护缩短时间，以及节省管理美容院信息需要投入的精力与资金。由于美容院管理系统运用的技术比较成熟，所以它本身就具备了稳定的性能，连续24小时运行都毫无压力。而且还可以保证数据处理的质量。另外，美容院管理系统为了满足易用性的用户需求，特意在页面的设计上合理布局各元素，让重要内容和导航功能在关键区域展示，让操作系统的用户可以毫不费力的完成系统的操作。总的说来，美容院管理系统实现了信息资源的共享，让信息可以以更好的方式进行传播，让管理员的管理水平得到提升的同时，也让美容院信息计算机化。
-1.3 研究内容
+## 1.3 研究内容
 根据美容院管理系统设计与实现的流程来对整个系统进行说明。本文将从下述6个部分介绍系统。
-第一部分：介绍选题的动因，包括介绍课题背景和意义等。
-第二部分：介绍本系统选用的开发手段，包括编程语言，后台支持的数据库，开发类技术等。
-第三部分：介绍系统的分析内容，包括投资决策必须的可行性研究，用户对功能的要求，系统运行的性能要求等知识。
-第四部分：介绍系统的设计。包括对系统功能结构的设计，数据表结构设计等。
-第五部分：介绍系统的实现。包括各模块实现的具体运行效果。
-第六部分：介绍系统测试。包括检查系统功能，测试知识点的介绍等。
-第二章 开发环境
-对美容院管理系统进行开发，需要了解开发技术的理论与实际运用，对开发工具，尤其是数据库的使用方法需要进行掌握。
-2.1 SpringBoot框架
-SpringBoot框架的诞生是出于需要优化Spring框架的前提下，Spring框架随着时间的发展，变得越来越强大，逐渐由一种框架变成一种平台的趋势，并且平台化也越来越臃肿，如果还是用Spring原有框架来进行网站的开发，网站内容也多一点，配置出错的机率以及配置的麻烦程度呈几何数据的增长，不利于Spring平台的发展。SpringBoot是集成式的框架，避免了很多框架在一起使用时候的互相冲突，是一站式框架解决的重要组成部分。
-2.2 JSP技术
-JSP开发技术，是Java开发网站必须要学习的一门技术。JSP不能单单说是一种语言，是Java语言诞生的公司为动态网页技术制定的一个网页技术标准。学习JSP技术之前肯定是要学习Java语言和一些HTML语言，并且要对Servlet容器进行学习，这些都属于架构上面的学习，在学校学习了基础的语言之后，再去理解架构也不过是用熟悉的Java语言重新造句而已，让学习更加容易，学习的难度也就大幅度的降低了。JSP编程过程中，可以在HTML代码中插入Java的相关代码，只需要用标签标记即可。JSP主要是用于实现用户界面方面的部分，前端开发人员只需要结合HTML的代码对页面进行布局之后，嵌入JSP操作，JSP可以获取数据库相关数据，通过Java的列表遍历方法就可以使JSP编译之后，浏览器显示的数据界面是动态化的，每次操作都可以让页面布局不乱而数据进行合理的更改显示。选择JSP技术进行网页应用程序的开发会达到很高的效率。
-2.3 MYSQL数据库
-MYSQL数据库起源于瑞典，但是经营不善被数据库行业老大甲骨文公司给收购了，收购了之后本以为只是为了发展Oracle数据库，然后MySQL数据库就会被雪藏，但是没想到
 
-```
-### 0043springboot美容院管理系统 项目图片
-![图片](/images/0043springbootimg_001.jpg)
-![图片](/images/0043springbootimg_003.jpg)
-![图片](/images/0043springbootimg_002.jpg)
-![图片](/images/0043springbootimg_012.jpg)
-![图片](/images/0043springbootimg_006.jpg)
-![图片](/images/0043springbootimg_007.jpg)
-![图片](/images/0043springbootimg_013.jpg)
-![图片](/images/0043springbootimg_005.jpg)
-![图片](/images/0043springbootimg_011.jpg)
-![图片](/images/0043springbootimg_010.jpg)
-![图片](/images/0043springbootimg_004.jpg)
-![图片](/images/0043springbootimg_009.jpg)
-![图片](/images/0043springbootimg_008.jpg)
+第一部分：介绍选题的动因，包括介绍课题背景和意义等。
+
+第二部分：介绍本系统选用的开发手段，包括编程语言，后台支持的数据库，开发类技术等。
+
+第三部分：介绍系统的分析内容，包括投资决策必须的可行性研究，用户对功能的要求，系统运行的性能要求等知识。
+
+第四部分：介绍系统的设计。包括对系统功能结构的设计，数据表结构设计等。
+
+第五部分：介绍系统的实现。包括各模块实现的具体运行效果。
+
+第六部分：介绍系统测试。包括检查系统功能，测试知识点的介绍等。
+# 第二章 开发环境
+对美容院管理系统进行开发，需要了解开发技术的理论与实际运用，对开发工具，尤其是数据库的使用方法需要进行掌握。
+## 2.1 SpringBoot框架
+SpringBoot框架的诞生是出于需要优化Spring框架的前提下，Spring框架随着时间的发展，变得越来越强大，逐渐由一种框架变成一种平台的趋势，并且平台化也越来越臃肿，如果还是用Spring原有框架来进行网站的开发，网站内容也多一点，配置出错的机率以及配置的麻烦程度呈几何数据的增长，不利于Spring平台的发展。SpringBoot是集成式的框架，避免了很多框架在一起使用时候的互相冲突，是一站式框架解决的重要组成部分。
+## 2.2 JSP技术
+JSP开发技术，是Java开发网站必须要学习的一门技术。JSP不能单单说是一种语言，是Java语言诞生的公司为动态网页技术制定的一个网页技术标准。学习JSP技术之前肯定是要学习Java语言和一些HTML语言，并且要对Servlet容器进行学习，这些都属于架构上面的学习，在学校学习了基础的语言之后，再去理解架构也不过是用熟悉的Java语言重新造句而已，让学习更加容易，学习的难度也就大幅度的降低了。JSP编程过程中，可以在HTML代码中插入Java的相关代码，只需要用标签标记即可。JSP主要是用于实现用户界面方面的部分，前端开发人员只需要结合HTML的代码对页面进行布局之后，嵌入JSP操作，JSP可以获取数据库相关数据，通过Java的列表遍历方法就可以使JSP编译之后，浏览器显示的数据界面是动态化的，每次操作都可以让页面布局不乱而数据进行合理的更改显示。选择JSP技术进行网页应用程序的开发会达到很高的效率。
+## 2.3 MYSQL数据库
+MYSQL数据库起源于瑞典，但是经营不善被数据库行业老大甲骨文公司给收购了，收购了之后本以为只是为了发展Oracle数据库，然后MySQL数据库就会被雪藏，但是没想到甲骨文公司收购后对MySQL数据库进行了支持，并且让之前Oracle占据不了的中小型市场让MySQL占用，完全实现了甲骨文公司的利润增长，不管是从大型数据库还是中小型数据库，都有了自己的产品，并且可以对两种数据库的优势尽量的发挥，取长补短，MySQL数据库反而发展的越来越好。
+
+最新版本的MYSQL数据库配备上了管理工具，因为甲骨文公司属于老牌的数据库厂商，对数据库的客户端工具自然有其他下线厂商进行研发配套，这些旁枝末节的事情并没有投入很大的精力，造成的结果就是程序开发人员还是习惯使用传统的Navicat for MySQL或者SQLyog这些MySQL数据库管理工具，大部分数据库开发调试人员还是习惯于视窗情况下看到相关数据。不管是越来越强的MySQL数据库还是市面上广泛流传的各种MySQL数据库客户端，MySQL数据库能实现本课题的开发，那么选择MySQL作为数据库是没有问题的。
+
+# 第三章 系统分析
+提前通过各种渠道，比如图书馆，电脑上的网站等渠道获取跟本系统有关联的资料，同时设计调查问卷，让系统的使用者参与调查，了解其对系统的需求，然后进行系统的分析，确定本系统的开发可行性，确定本系统的功能等内容。
+## 3.1可行性分析
+这部分内容主要从开发的角度和运行使用的角度等层面研究系统，确定是否投资系统，为进一步开展工作提供理论依据。
+### 3.1.1技术可行性
+本系统采用的技术和开发类语言都具备丰厚的理论基础，同时这些开发技术和开发语言在市面上都得到了广泛运用，很多功能实现的源码都以模块化的方式通过网络进行了公开，所以本系统可以参考这些代码实现功能。因此，系统开发技术可行。
+### 3.1.2操作可行性
+美容院管理系统根据用户阅读习惯对系统内容进行排版布局，把系统页面中的关键位置用来设置导航条，可以方便用户第一时间找到需要的内容，同时，页面中也会设置一些提示，用于帮助用户操作系统，因此，系统操作可行。
+### 3.1.3经济可行性
+本系统需要在硬件设备上配置开发环境，就可以开展系统的开发工作。由于本系统并不是商业化程序，所以本人学习用的笔记本，或机房电脑都符合要求。对于开发环境的配置问题，可以通过网络直接下载安装，期间并不收取费用。因此，系统经济可行。
+
+以上就是从技术，操作，经济的层面研究系统，最终确定系统可以开展。
+
+## 3.2系统流程分析
+要访问美容院管理系统，需要符合要求的身份，证明访问者身份的信息就是在登录界面需要填写的信息，其中有用户名，有密码。在登录界面，系统后台也有专门编写的安全验证机制，只有信息匹配的访问者才有资格进入系统。具体流程见下图。如果访问者提供的信息在数据库中没有记录，就表明该访问者没有权限，也就无法享受系统提供的服务。
+
+![](/images/0000stringboot/0043springboot/blog.001.png)
+
+图3-1 操作流程图
+
+在美容院管理系统里面，任何填充的数据都要经过合法性验证，具体流程见下图。只有符合条件的数据才可以保存。
+
+![](/images/0000stringboot/0043springboot/blog.002.png)
+
+图3-2 添加信息流程图
+
+经过时间的改变，系统里面的很多数据也需要更新，更新时，同样需要检查更新的数据是否合法，具体流程见下图。只有判断符合要求的数据最终才可以保存。
+
+![](/images/0000stringboot/0043springboot/blog.003.png)
+
+图3-3 修改信息流程图
+
+为了避免操作者大意误删数据，任何需要删除的数据，都需要反复确认，具体流程见下图。删除的数据将不会在页面中显示。
+
+![](/images/0000stringboot/0043springboot/blog.004.png)
+
+图3-4 删除信息流程图
+## 3.3系统性能分析
+用户使用系统，一是为了阅读需要的信息；二是为了享受系统提供的服务。因此一个质量较好的系统就更容易让用户频繁使用。而能够反馈系统的质量的信息就是系统的性能。常见的能够表示系统性能的指标有安全性，系统可扩展性，数据完整性等。接下来就对这些指标进行介绍。
+### 3.3.1数据完整性
+只要是系统中的数据，其长期保存在数据库里面，就要求其具备可靠性。这样才能发挥出数据具备的参考价值。一般来说，为了保证数据信息是准确的，并且可靠的，在数据处理上，包括录入数据，编辑数据等，都要求数据信息是完整登记的。同时，系统中的数据其自身需要具备完整性外，也要求数据之间产生的关系也要具备完整性。另外，在数据库中填充信息时，同样的信息应该以同样的方式出现在不同的表中。对于数据进行完整性定义，也是方便后期对数据的使用和查看。
+### 3.3.2系统可扩展性
+站在当前用户需求的角度考虑问题具有一定的局限性，由此设计的系统也一样。为了保护开发系统的财产，同时也为了让系统长远立足市场，系统开发人员就需要充分预留系统的空间，让系统在未来的日子里可以扩充功能，并进行更新和升级。这就是系统具备可扩展性的表现。
+### 3.3.3系统安全性
+系统在投入使用中，用户与系统的交互会产生数据，比如插入数据，编辑数据等操作都会产生数据。而作为系统的后台支持的数据库，主要任务就是保存这些数据。为了不让数据信息被窃取或者泄露，也是为了对系统的安全性进行保证，所以市面上也出现了很多的加密技术，其中MD5单向加密技术在系统中运用得最多。其原因有三点：
+
+第一点，面对任意两段明文，在经过MD5加密处理后，它们的密文不一样；
+
+第二点，面对任意一段明文，进行MD5加密处理后，其密文不变；
+
+第三点，破解MD5加密的数据非常困难；
+
+目前，关于MD5加密技术的代码已经可以从网站上下载，可以直接将模块化的代码在系统中直接引用。一般来说，用户注册的数据还有管理员登录系统使用的数据都是很重要的资源，所以这部分数据常常会经过加密处理，这样也就消除了系统安全上的隐患。
+## 3.4系统功能分析
+这部分内容在系统分析环节比较重要，它直接关系本系统开发的进展。无论是设计，还是实现，都是在本系统调研的功能的基础上进行。
+
+为了直观显示系统的功能，运用用例图这样的工具显示分析的结果。分析的管理员功能如下。管理员管理美容用品，美容项目，美容部位，管理技师预约，管理订单，统计美容用品销量。
+
+![](/images/0000stringboot/0043springboot/blog.005.png)
+
+图3-5 管理员用例图
+
+为了直观显示系统的功能，运用用例图这样的工具显示分析的结果。分析的技师功能如下。技师统计美容用品库存，管理美容项目，审核会员预约信息。
+
+![](/images/0000stringboot/0043springboot/blog.006.png)
+
+图3-6 技师用例图
+
+为了直观显示系统的功能，运用用例图这样的工具显示分析的结果。分析的前台功能如下。前台负责普通用户与会员的管理，审核会员预约信息。
+
+![](/images/0000stringboot/0043springboot/blog.007.png)
+
+图3-7 前台用例图
+
+为了直观显示系统的功能，运用用例图这样的工具显示分析的结果。分析的普通用户功能如下。普通用户购买美容用品，管理购买订单，管理收货地址。
+
+![](/images/0000stringboot/0043springboot/blog.008.png)
+
+图3-8 普通用户用例图
+
+为了直观显示系统的功能，运用用例图这样的工具显示分析的结果。分析的会员功能如下。会员购买美容用品，预约美容项目，管理预约信息以及购买订单。
+
+![](/images/0000stringboot/0043springboot/blog.009.png)
+
+图3-9 会员用例图
+
+# 第四章 系统设计
+设计一个系统不单单是设计系统的页面，可以说系统设计其本质是一个结合了众多设计过程的比较复杂的系统工程。一般来说，在完成系统设计时，需要了解和掌握很多设计的知识，有界面布局技术的知识，页面采用的字体和颜色的运用，还有页面空白的规范使用等，如何将这些元素进行组合，让页面可以直观表达信息内容的同时，也能维持页面整体的美观。
+## 4.1 系统设计思想
+系统开发必然需要统一设计思想。根据这个设计思想指导系统的开发，可以加快系统开发进程。根据目前用户对美容院管理系统的需求，确定下述原则即为本系统的设计思想。
+
+（1）实用性：本系统依照用户需求设计功能，遵循用户使用方便的原则，把用户在实际工作中的各个操作细节也充分考虑进来，让使用者在没有系统操作说明书的情况下，也能很容易的完成系统的操作。
+
+（2）先进性：为了让本系统具备高性能，设计时，需要把目前的各种成熟技术加以考虑，比如软件开发技术也要考虑进去，比如计算机技术也需要进行考虑。对于系统结构的选择，本系统将毫不犹豫的选择成熟先进的B/S结构，方便开发的同时，对于后期的维护也提供了便利。
+
+（3）高安全性：设计本系统时，对于一些系统的关键数据要严加看管，比如管理员本人的账号和密码，一定要加密保存在数据库里面。除此以外，也需要充分使用安全措施对用户的共享资源进行保护。
+
+（4）可维护性：设计时，要提前考虑本系统的可维护性，因为一个便于维护的系统在后期产生的维护成本将会大大降低。维护一般包括软硬件的维护还有对于网络的维护等。
+
+（5）可扩展性：重新开发一个新系统相比在原有系统上升级，会花费大量的资金和精力，由此，一个好的系统必定具备良好的可扩展性。在用户需求变动的情况下，可以通过系统的更新和升级来持续满足用户需求，这样的系统就具备了可扩展性。
+## 4.2功能结构设计
+这部分内容使用结构图这样的工具，显示设计结果，设计的管理员功能见下图。管理员管理美容用品，美容项目，美容部位，管理技师预约，管理订单，统计美容用品销量。
+
+![](/images/0000stringboot/0043springboot/blog.010.png)
+
+图4-1 管理员功能结构图
+
+这部分内容使用结构图这样的工具，显示设计结果，设计的技师功能见下图。技师统计美容用品库存，管理美容项目，审核会员预约信息。
+
+![](/images/0000stringboot/0043springboot/blog.011.png)
+
+图4-2 技师功能结构图
+
+这部分内容使用结构图这样的工具，显示设计结果，设计的前台功能见下图。前台负责普通用户与会员的管理，审核会员预约信息。
+
+![](/images/0000stringboot/0043springboot/blog.012.png)
+
+图4-3 前台功能结构图
+
+这部分内容使用结构图这样的工具，显示设计结果，设计的普通用户功能见下图。普通用户购买美容用品，管理购买订单，管理收货地址。
+
+![](/images/0000stringboot/0043springboot/blog.013.png)
+
+图4-4 普通用户功能结构图
+
+这部分内容使用结构图这样的工具，显示设计结果，设计的会员功能见下图。会员购买美容用品，预约美容项目，管理预约信息以及购买订单。
+
+![](/images/0000stringboot/0043springboot/blog.014.png)
+
+图4-5 会员功能结构图
+## 4.3数据库设计
+现如今，关系数据库已经广泛占据了市场。其具有坚实的理论基础，并且它可以很好的支持SQL这样的查询语言。所以，大部分程序的后台数据库几乎都是关系数据库。它们被用于长期对程序数据进行保存，采用的方式就是正确使用SQL语句在数据库中完成数据的插入，修改，删除等操作。
+### 4.3.1 数据库E-R图
+系统设计的内容不仅仅是对功能进行模块设计，它也包括了对数据库进行设计。功能设计这部分内容已经完成了，接下来进行的数据库设计也要根据规定的流程进行。
+
+数据库设计这部分内容也需要参照用户的需求来完成。同时为了方便展示数据库中存在的各种关系，需要使用到E-R图，并运用E-R图中常见的符号来表示用户需求中的数据内容。所以，在建立E-R模型前，需要把用户需求的数据信息进行拆分并分析，并确定实体，实体特征，还有它们之间的关联，然后选择某个绘制E-R模型的工具比如Visio,亿图，Navicat等，用规定的符号去表示这些数据。这些常用的符号分别是矩形，菱形，椭圆，它们表示的内容分别是实体，关系，属性。
+
+（1）设计的美容项目实体，还有其属性见下图。
+
+![](/images/0000stringboot/0043springboot/blog.015.png)
+
+图4-3 美容项目实体属性图
+
+（2）设计的会员实体，还有其属性见下图。
+
+![](/images/0000stringboot/0043springboot/blog.016.png)
+
+图4-4 会员实体属性图
+
+（3）设计的美容用品实体，还有其属性见下图。
+
+![](/images/0000stringboot/0043springboot/blog.017.png)
+
+图4-5 美容用品实体属性图
+
+4. 设计的管理员实体，还有其属性见下图。
+
+![](/images/0000stringboot/0043springboot/blog.018.png)
+
+图4-6 管理员实体属性图
+
+（5）设计上述实体间关系见下图。
+
+![](/images/0000stringboot/0043springboot/blog.019.png)
+
+图4-7 实体间关系E-R图
+### 4.3.2 数据库表结构
+很多时候，在进行数据表的存储结构的设计时，都会遇到一些困扰，比如每张数据表如何命名，如何设计每张数据表里面的字段，如何为各个字段进行命名，以及如何设置字段的取值范围等信息。很多初学者，在进行表结构设计时，无论是对表进行命名，还是对字段进行命名，都是采用中文的方式，导致在编码阶段，在对数据进行操作时，总是报错，影响编码人员的开发速度，而且一旦数据表结构建立之后，后期进行修改也比较麻烦。因为设计数据表的结构，就意味着程序中需要长期保存的数据都是根据这样的结构进行保存的，在后面的使用中，无论是程序数据往数据表中写入，还是需要编辑或删除数据，都是按照这个规则进行。如此说来，设计数据库也是非常重要的任务，它关系到后面程序的开发，也关系到程序的运行使用。
+
+通常在设计数据表结构时，会把前面设计的E-R图进行表结构的转化。把实体用来代表数据表，把其属性，也就是椭圆形代表的内容用来表示数据表中的字段，然后根据程序对于数据的存储要求，设计字段的类型和长度。比如用户的年龄可以用int（整数型），设置其长度为4或者6等。总之，数据表结构一旦建立，就可以往里面填充数据了。
+
+表4.1 地址信息表
+
+|字段|类型|空|默认|注释|
+| :-: | :-: | :-: | :-: | :-: |
+|id (主键)|bigint(20)|否||主键|
+|addtime|timestamp|否|CURRENT\_TIMESTAMP|创建时间|
+|userid|bigint(20)|否||用户id|
+|address|varchar(200)|否||地址|
+|name|varchar(200)|否||收货人|
+|phone|varchar(200)|否||电话|
+|isdefault|varchar(200)|否||是否默认地址[是/否]|
+表4.2 购物车信息表
+
+|字段|类型|空|默认|注释|
+| :-: | :-: | :-: | :-: | :-: |
+|id (主键)|bigint(20)|否||主键|
+|addtime|timestamp|否|CURRENT\_TIMESTAMP|创建时间|
+|tablename|varchar(200)|是|meirongyongpin|商品表名|
+|userid|bigint(20)|否||用户id|
+|goodid|bigint(20)|否||商品id|
+|goodname|varchar(200)|是|NULL|商品名称|
+|picture|varchar(200)|是|NULL|图片|
+|buynumber|int(11)|否||购买数量|
+|price|float|是|NULL|单价|
+|discountprice|float|是|NULL|会员价|
+表4.3 会员信息表
+
+|字段|类型|空|默认|注释|
+| :-: | :-: | :-: | :-: | :-: |
+|id (主键)|bigint(20)|否||主键|
+|addtime|timestamp|否|CURRENT\_TIMESTAMP|创建时间|
+|huiyuanzhanghao|varchar(200)|否||会员账号|
+|mima|varchar(200)|否||密码|
+|huiyuanxingming|varchar(200)|否||会员姓名|
+|xingbie|varchar(200)|是|NULL|性别|
+|nianling|int(11)|是|NULL|年龄|
+|shouji|varchar(200)|是|NULL|手机|
+|shenfenzheng|varchar(200)|是|NULL|身份证|
+|touxiang|varchar(200)|是|NULL|头像|
+|money|float|是|0|余额|
+表4.4 技师信息表
+
+|字段|类型|空|默认|注释|
+| :-: | :-: | :-: | :-: | :-: |
+|id (主键)|bigint(20)|否||主键|
+|addtime|timestamp|否|CURRENT\_TIMESTAMP|创建时间|
+|jishigonghao|varchar(200)|否||技师工号|
+|mima|varchar(200)|否||密码|
+|jishixingming|varchar(200)|否||技师姓名|
+|xingbie|varchar(200)|是|NULL|性别|
+|nianling|int(11)|是|NULL|年龄|
+|lianxidianhua|varchar(200)|是|NULL|联系电话|
+|shenfenzheng|varchar(200)|是|NULL|身份证|
+|zhaopian|varchar(200)|是|NULL|照片|
+|money|float|是|0|余额|
+表4.5 美容部位信息表
+
+|字段|类型|空|默认|注释|
+| :-: | :-: | :-: | :-: | :-: |
+|id (主键)|bigint(20)|否||主键|
+|addtime|timestamp|否|CURRENT\_TIMESTAMP|创建时间|
+|meirongbuwei|varchar(200)|是|NULL|美容部位|
+表4.6 美容项目信息表
+
+|字段|类型|空|默认|注释|
+| :-: | :-: | :-: | :-: | :-: |
+|id (主键)|bigint(20)|否||主键|
+|addtime|timestamp|否|CURRENT\_TIMESTAMP|创建时间|
+|xiangmumingcheng|varchar(200)|是|NULL|项目名称|
+|xiangmutupian|varchar(200)|是|NULL|项目图片|
+|meirongbuwei|varchar(200)|是|NULL|美容部位|
+|shiyongnianling|varchar(200)|是|NULL|适用年龄|
+|xiangqing|longtext|是|NULL|详情|
+|kaishishijian|date|是|NULL|开始时间|
+|jishigonghao|varchar(200)|是|NULL|技师工号|
+|jishixingming|varchar(200)|是|NULL|技师姓名|
+|lianxidianhua|varchar(200)|是|NULL|联系电话|
+表4.7 美容用品信息表
+
+|字段|类型|空|默认|注释|
+| :-: | :-: | :-: | :-: | :-: |
+|id (主键)|bigint(20)|否||主键|
+|addtime|timestamp|否|CURRENT\_TIMESTAMP|创建时间|
+|meirongpinming|varchar(200)|是|NULL|美容品名|
+|tupian|varchar(200)|是|NULL|图片|
+|leixing|varchar(200)|是|NULL|类型|
+|kucun|int(11)|是|NULL|库存|
+|shiyongfangfa|longtext|是|NULL|使用方法|
+|shiyongnianling|varchar(200)|是|NULL|适用年龄|
+|meirongbuwei|varchar(200)|是|NULL|美容部位|
+|meironggongxiao|longtext|是|NULL|美容功效|
+|price|float|否||价格|
+表4.8 订单信息表
+
+|字段|类型|空|默认|注释|
+| :-: | :-: | :-: | :-: | :-: |
+|id (主键)|bigint(20)|否||主键|
+|addtime|timestamp|否|CURRENT\_TIMESTAMP|创建时间|
+|orderid|varchar(200)|否||订单编号|
+|tablename|varchar(200)|是|meirongyongpin|商品表名|
+|userid|bigint(20)|否||用户id|
+|goodid|bigint(20)|否||商品id|
+|goodname|varchar(200)|是|NULL|商品名称|
+|picture|varchar(200)|是|NULL|商品图片|
+|buynumber|int(11)|否||购买数量|
+|price|float|否|0|价格/积分|
+|discountprice|float|是|0|折扣价格|
+|total|float|否|0|总价格/总积分|
+|discounttotal|float|是|0|折扣总价格|
+|type|int(11)|是|1|支付类型|
+|status|varchar(200)|是|NULL|状态|
+|address|varchar(200)|是|NULL|地址|
+|tel|varchar(200)|是|NULL|电话|
+|consignee|varchar(200)|是|NULL|收货人|
+表4.9 普通用户信息表
+
+|字段|类型|空|默认|注释|
+| :-: | :-: | :-: | :-: | :-: |
+|id (主键)|bigint(20)|否||主键|
+|addtime|timestamp|否|CURRENT\_TIMESTAMP|创建时间|
+|zhanghao|varchar(200)|否||账号|
+|mima|varchar(200)|否||密码|
+|xingming|varchar(200)|否||姓名|
+|xingbie|varchar(200)|是|NULL|性别|
+|nianling|int(11)|是|NULL|年龄|
+|shouji|varchar(200)|是|NULL|手机|
+|shenfenzheng|varchar(200)|是|NULL|身份证|
+|zhaopian|varchar(200)|是|NULL|照片|
+|money|float|是|0|余额|
+表4.10 前台信息表
+
+|字段|类型|空|默认|注释|
+| :-: | :-: | :-: | :-: | :-: |
+|id (主键)|bigint(20)|否||主键|
+|addtime|timestamp|否|CURRENT\_TIMESTAMP|创建时间|
+|qiantaizhanghao|varchar(200)|否||前台账号|
+|mima|varchar(200)|否||密码|
+|qiantaixingming|varchar(200)|否||前台姓名|
+|xingbie|varchar(200)|是|NULL|性别|
+|nianling|int(11)|是|NULL|年龄|
+|shouji|varchar(200)|是|NULL|手机|
+|zhaopian|varchar(200)|是|NULL|照片|
+|money|float|是|0|余额|
+表4.11 管理员信息表
+
+|字段|类型|空|默认|注释|
+| :-: | :-: | :-: | :-: | :-: |
+|id (主键)|bigint(20)|否||主键|
+|username|varchar(100)|否||用户名|
+|password|varchar(100)|否||密码|
+|role|varchar(100)|是|管理员|角色|
+|addtime|timestamp|否|CURRENT\_TIMESTAMP|新增时间|
+表4.12 销量信息表
+
+|字段|类型|空|默认|注释|
+| :-: | :-: | :-: | :-: | :-: |
+|id (主键)|bigint(20)|否||主键|
+|addtime|timestamp|否|CURRENT\_TIMESTAMP|创建时间|
+|meirongpinming|varchar(200)|是|NULL|美容品名|
+|xiaoshoushizhang|varchar(200)|是|NULL|销售时长|
+|xiaoshouliang|int(11)|是|NULL|销售量|
+|leixing|varchar(200)|是|NULL|类型|
+|zhaopian|varchar(200)|是|NULL|照片|
+表4.13 预约信息表
+
+|字段|类型|空|默认|注释|
+| :-: | :-: | :-: | :-: | :-: |
+|id (主键)|bigint(20)|否||主键|
+|addtime|timestamp|否|CURRENT\_TIMESTAMP|创建时间|
+|xiangmumingcheng|varchar(200)|是|NULL|项目名称|
+|huiyuanzhanghao|varchar(200)|是|NULL|会员账号|
+|huiyuanxingming|varchar(200)|是|NULL|会员姓名|
+|shouji|varchar(200)|是|NULL|手机|
+|zhaopian|varchar(200)|是|NULL|照片|
+|yuyueshijian|datetime|是|NULL|预约时间|
+|yuyuexiangqing|varchar(200)|是|NULL|预约详情|
+|zhidingjishi|varchar(200)|是|NULL|指定技师|
+|sfsh|varchar(200)|是|否|是否审核|
+|shhf|longtext|是|NULL|审核回复|
+|userid|bigint(20)|是|NULL|用户id|
+
+
+# 第五章 系统实现
+前面做的所有工作，都是为了给系统实现做准备。在系统实现期间，需要根据设计方案执行，通过运用编码技术实现一个可以处理事务的系统。
+## 5.1管理员功能实现
+### 5.1.1 美容部位管理
+实现管理员权限的美容部位管理功能，其运行效果见下图。管理员修改美容部位信息，删除美容部位信息，新增美容部位信息。
+
+![](/images/0000stringboot/0043springboot/blog.020.png)
+
+图5-1 美容部位管理页面
+### 5.1.2 销量信息统计
+实现管理员权限的销量信息统计功能，其运行效果见下图。管理员通过销量统计报表查看各种美容用品的销量信息。
+
+![](/images/0000stringboot/0043springboot/blog.021.png)
+
+图5-2 销量信息统计页面
+### 5.1.3 已支付订单
+实现管理员权限的已支付订单功能，其运行效果见下图。管理员查看已支付订单信息，查看下单人提供的收货地址，然后进行订单发货。
+
+![](/images/0000stringboot/0043springboot/blog.022.png)
+
+图5-3 已支付订单页面
+## 5.2技师功能实现
+### 5.2.1 统计美容用品库存
+实现技师权限的统计美容用品库存功能，其运行效果见下图。技师可以通过统计报表查看各种美容用品对应的现有库存量。
+
+![](/images/0000stringboot/0043springboot/blog.023.png)
+
+图5-4 统计美容用品库存页面
+### 5.2.2 预约信息管理
+实现技师权限的预约信息管理功能，其运行效果见下图。会员预约技师提供的美容项目，技师则需要进行查看和审核。
+
+![](/images/0000stringboot/0043springboot/blog.024.png)
+
+图5-5 预约信息管理页面
+## 5.3 前台功能实现
+### 5.3.1 普通用户管理
+实现前台权限的普通用户管理功能，其运行效果见下图。普通用户的基本信息也能让前台进行增删改查管理。
+
+![](/images/0000stringboot/0043springboot/blog.025.png)
+
+图5-6 普通用户管理页面
+### 5.3.2 会员管理
+实现前台权限的会员管理功能，其运行效果见下图。会员的基本信息可以让前台进行修改，也能让前台进行查询或删除。
+
+![](/images/0000stringboot/0043springboot/blog.026.png)
+
+图5-7 会员管理页面
+## 5.4 普通用户功能实现
+### 5.4.1 美容用品
+实现普通用户权限的美容用品功能，其运行效果见下图。普通用户查看美容用品，在本页面购买美容用品，或把美容用品添加购物车。
+
+![](/images/0000stringboot/0043springboot/blog.027.png)
+
+图5-8 美容用品页面
+### 5.4.2 购物车
+实现普通用户权限的购物车功能，其运行效果见下图。普通用户在本模块购买美容用品，需要提供收货地址，然后选择支付方式支付订单。
+
+![](/images/0000stringboot/0043springboot/blog.028.png)
+
+图5-9 购物车页面
+### 5.4.3 我的订单
+实现普通用户权限的我的订单功能，其运行效果见下图。普通用户在本模块查看不同状态的订单，已支付订单在未发货前也能退款。
+
+![](/images/0000stringboot/0043springboot/blog.029.png)
+
+图5-10 我的订单页面
+## 5.5 会员功能实现
+### 5.5.1 美容项目
+实现会员权限的美容项目功能，其运行效果见下图。会员查看美容项目介绍，预约美容项目。
+
+![](/images/0000stringboot/0043springboot/blog.030.png)
+
+图5-11 美容项目页面
+### 5.5.2 预约信息管理
+实现会员权限的预约信息管理功能，其运行效果见下图。会员提交了美容项目预约信息之后，需要到自己的后台查看预约项目审核情况。
+
+![](/images/0000stringboot/0043springboot/blog.031.png)
+
+图5-12 预约信息管理页面
+
+
+
+
+
+
 
 
 

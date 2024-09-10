@@ -1,181 +1,26 @@
 # 0038springboot基于Web足球青训俱乐部管理后台系统开发
 
 
-# 0038springboot基于Web足球青训俱乐部管理后台系统开发
+# [0038springboot基于Web足球青训俱乐部管理后台系统开发](https://github.com/GraduationProject-springboot/0038springboot)
 
-### 微信： chen_q123456  qq:462201886
-### github:chenqi199 gitee :chen_q_i
+![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-### [所有项目](https://github.com/GraduationProject-springboot/allSpringbootProjects) 包安装运行
+# [项目清单](https://chenqi1990.site) 包安装运行
 
-### [所有项目列表excel 腾讯文档 项目清单](https://docs.qq.com/sheet/DSHRFSVZ5aEVYT3N3?tab=BB08J2) 包安装运行
+### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
-### [github](https://chenqi199.github.io)
 
-### [gitee](https://gitee.com/chen_q_i)
 
-### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://player.bilibili.com/player.html?isOutside=true&aid=BV16ia6epENY&bvid=BV16ia6epENY&cid=500001610572213&p=39)
 
+# 绪论
 
-
-### 0038springboot基于Web足球青训俱乐部管理后台系统开发 部分论文
-```
-
-毕业设计(论文)
-基于Web的足球青训俱乐部管理后台系统的设计与开发
-学生姓名
-
-   XXX                        
-学    号
-
-   XXXXXXXX          
-分院名称
-
-   XXXXXXXX          
-专业班级
-
-   XXXXX            
-指导教师
-
-   XXXX                
-填写日期
-
-   XXXX年XX月        
-摘 要
-随着社会经济的快速发展，人们对足球俱乐部的需求日益增加，加快了足球健身俱乐部的发展，足球俱乐部管理工作日益繁忙，传统的管理方式已经无法满足足球俱乐部管理需求，因此，为了提高足球俱乐部管理效率，足球俱乐部管理后台系统应运而生。
-
-本文重点阐述了足球青训俱乐部管理后台系统的开发过程，以实际运用为开发背景，基于Spring Boot框架，运用了Java技术和MYSQL数据库进行开发设计，充分保证系统的安全性和稳定性。本系统界面良好，操作简单方便，通过系统概述、系统分析、系统设计、数据库设计、系统测试这几个部分，详细的说明了系统的开发过程，最后并对整个开发过程进行了总结，实现了俱乐部相关信息管理的重要功能。
-
-本系统经过测试，运行效果稳定，操作方便、快捷，是一个功能全面、实用性好、安全性高，并具有良好的可扩展性、可维护性的足球青训俱乐部管理后台系统。
-关键字：俱乐部管理；Spring Boot框架；Java技术；MYSQL数据库
-Abstract
-With the rapid development of social economy, people’s demand for football clubs is increasing, and the development of football fitness clubs has been accelerated. The management of football clubs has become increasingly busy. Traditional management methods have been unable to meet the management needs of football clubs. Therefore, in order to improve football clubs Management efficiency, football club management background system came into being.
-
-This article focuses on the development process of the football youth training club management back-end system, with actual application as the development background, based on the Spring Boot framework, using Java technology and MYSQL database for development and design, to fully ensure the security and stability of the system. The system has a good interface, simple and convenient operation. Through the system overview, system analysis, system design, database design, system testing, the development process of the system is explained in detail. Finally, the whole development process is summarized and realized Important function of club related information management.
-
-This system has been tested and has stable operation effect, convenient and fast operation. It is a full-featured, practical, safe, and scalable and maintainable football youth club management back-end system.
-Key words：Club management; Spring Boot framework; Java technology; MYSQL database 
-目 录
-
-	摘 要	I
-
-	Abstract	II
-
-	1 绪论	1
-
-	1.1研究背景	1
-
-	1.2设计原则	1
-
-	1.3论文主要内容	1
-
-	2 相关技术简介	3
-
-	2.1 Java技术	3
-
-	2.2 B/S结构	3
-
-	2.3 MYSQL数据库	4
-
-	2.4 Spring Boot框架	4
-
-	3 系统分析	5
-
-	3.1 可行性分析	5
-
-	3.1.1 技术可行性	5
-
-	3.1.2 经济可行性	5
-
-	3.1.3 操作可行性	5
-
-	3.1.4 时间可行性	5
-
-	3.2 系统性能分析	6
-
-	3.3 系统功能分析	6
-
-	3.4 系统流程分析	7
-
-	3.4.1注册流程	7
-
-	3.4.2登录流程	8
-
-	4 系统设计	9
-
-	4.1 系统架构设计	9
-
-	4.2 系统结构设计	9
-
-	4.3 数据库设计	10
-
-	4.3.1数据库E-R图设计	10
-
-	4.3.2数据库表设计	13
-
-	5 系统实现	17
-
-	5.1 学员功能模块的实现	17
-
-	5.1.1学员注册界面	17
-
-	5.1.2学员登录界面	18
-
-	5.1.3商品详情界面	18
-
-	5.1.4课程安排详情界面	19
-
-	5.1.5上课签到界面	19
-
-	5.1.6个人中心界面	20
-
-	5.1.7我的订单界面	20
-
-	5.2管理员功能模块的实现	20
-
-	5.2.1管理员登录界面	20
-
-	5.2.2公告信息管理界面	21
-
-	5.2.3学员管理界面	21
-
-	5.2.4商品信息管理界面	22
-
-	5.2.5课程安排管理界面	22
-
-	5.3教练功能模块的实现	23
-
-	5.3.1课程安排界面	23
-
-	5.3.2课程签到管理界面	23
-
-	6 系统测试	25
-
-	6.1 测试定义	25
-
-	6.2 性能测试	25
-
-	6.3 测试原理	25
-
-	6.4 测试分析	26
-
-	总结	27
-
-	参考文献	28
-
-	致谢	29
-1 绪论
-1.1研究背景
-
+## 1.1研究背景
 随着科技的发展，计算机的应用，人们的生活方方面面都和互联网密不可分。计算机的普及使得人们的生活更加方便快捷，网络也遍及到我们生活的每个角落，二十一世纪信息化时代的到来，随着社会科技的不断发展，人们的生活方方面面进入了信息化时代。
 
 我国社会经济的快速发展，人们步入小康生活，生活水平不断的提高，人们开始参加各种俱乐部来丰富生活，在众多俱乐部中，足球俱乐部受到了很大一部分人的喜爱，这促使足球俱乐部规模发展越来越大，面对大量的课程信息、教练信息以及商品信息等，对足球俱乐部管理人员来说，却带来了巨大的工作量，数据繁多，存在管理体系漏洞。因此，开发一套合适的足球俱乐部管理后台系统势在必行。
 
 在互联网的迅速发展下，局域网的普及，为建立足球青训俱乐部管理系统的设计与实现提供了基础条件。足球青训俱乐部管理系统与传统的俱乐部管理方式相比，有着无法比拟的优点，网络共享、传播速度快的特点，学员可以随时随地进行商品购买、课程签到等，同时管理任员通过计算机对系统信息进行全面管理，大大提高管理的效率。
-
-1.2设计原则
-
+## 1.2设计原则
 在开始开发项目之前，必须要先考虑项目的实用性、科学性，以及该项目是否能够真正让用户受益并尽可能的发挥项目的作用。因此，在开发前，通过以下几条原则对项目进行判断：
 
 （1）可行性原则。项目需要保证经济可行性和技术可行性，这包括了项目在浏览端、服务端等方面上的经济和技术上是可以达成的。
@@ -187,9 +32,7 @@ Key words：Club management; Spring Boot framework; Java technology; MYSQL datab
 （4）系统工程原则。为了确保项目的整体性，在项目调查、项目分析、项目设计、项目开发的过程中，都需遵从项目工程的方法和步骤逐步进行。
 
 （5）统一规划、分期实施、逐步完善原则。项目开发的过程中，要按照规划、分期实施，特别是要注意在项目开发过程中要有条理，从点到面，一步步完善，不要贪图进度，要循环渐进的对项目进行开发。
-
-1.3论文主要内容
-
+## 1.3论文主要内容
 （1）绪论：文章第一个部分从程序开发背景和设计原则进行多方面阐述
 
 （2）开发技术介绍：简单介绍程序开发需要的技术，有语言技术、数据库技术，系统结构介绍，能够对程序开发技术有个大概了解
@@ -201,9 +44,13 @@ Key words：Club management; Spring Boot framework; Java technology; MYSQL datab
 （5）系统实现：程序编码完成阶段，看看系统具有什么样的功能，做出来的系统界面效果图，每个版块部分功能操作的详细实现，都用界面的形式表示，更加明白和了解系统功能
 
 （6）系统测试：程序做出来都要经过多方面的内容测试，本次系统开发测试原理以文字形式阐述，程序最终通过测试，可以给用户投入使用，本程序质量还是有一定保障，后期维护也便捷
-2 相关技术简介
-2.1 Java技术
 
+
+#
+28
+# 2 相关技术简介
+
+## 2.1 Java技术
 Java是一门伟大的纯面向对象的编程语言和编程语言。同时，它还是Java语言从嵌入式开发到企业级开发的平台。Java凭借其一次编译，任何地方执行的优点，使得盛行的web应用程序有大量的Java编译，很好地支持网络发展跨平台开发所需的功能，成为服务器端主要流行的语言。Java EE至今仍然是企业发展最重要的服务器平台[6]。
 
 鉴于Java语言是一种引用，它可以自动地收集浪费，编程人员不必担心面向对象的内存特性的管理，它具有一系列类别和类型的支持、多个接口和接口的继承，以及一种实现的机制关于类和接口之间的。
@@ -211,28 +58,343 @@ Java是一门伟大的纯面向对象的编程语言和编程语言。同时，�
 此外，Java语言支持Internet上的应用程序开发，Java的接口是Java net，它提供了一个类库，用于编程Web应用程序，可以是一种强大的异常处理机制和自动垃圾收集机制[7]。
 
 编程语言Java的一个目标是适应动态环境。Java程序要求，可以动态加载执行环境或网络，它也有助于软件升级。而且，能进行运行时间的实现，对运行时间类型的控制。
-
-2.2 B/S结构
-
+## 2.2 B/S结构
 目前软件项目的开发存在两种架构模式，就是B/S模式和C/S模式，C/S模式就是较早流行的客户端和服务端模式，要使用新版应用需要暂停使用更新升级，就好比现在手机上的各种APP应用。而这次课题项目使用的是基于B/S,就是浏览器/服务端而开发的web项目。应用的更新都在服务端上进行，而且项目维护方便，不需要安装，只需要有浏览器和网络就可以了，越来越多的web项目被开发出来，也得到用户的认可。
 
-B/S架构这种只需要用户在浏览器上运行不需要再下载客户
+B/S架构这种只需要用户在浏览器上运行不需要再下载客户端的模式，使用浏览器就可以实现和下载客户端的一样复杂的功能。给管理系统的用户带来了很大的方便，节约了大量的成本。现在B/S架构已经在Web开发上被广泛运用，它的基础内容也在不断的完善更新。
 
-```
-### 0038springboot基于Web足球青训俱乐部管理后台系统开发 项目图片
-![图片](/images/0038springbootimg_001.jpg)
-![图片](/images/0038springbootimg_003.jpg)
-![图片](/images/0038springbootimg_002.jpg)
-![图片](/images/0038springbootimg_012.jpg)
-![图片](/images/0038springbootimg_006.jpg)
-![图片](/images/0038springbootimg_007.jpg)
-![图片](/images/0038springbootimg_013.jpg)
-![图片](/images/0038springbootimg_005.jpg)
-![图片](/images/0038springbootimg_011.jpg)
-![图片](/images/0038springbootimg_010.jpg)
-![图片](/images/0038springbootimg_004.jpg)
-![图片](/images/0038springbootimg_009.jpg)
-![图片](/images/0038springbootimg_008.jpg)
+![](/images/0000stringboot/0038springboot/blog.001.png)
+
+图2-1  B/S模式三层结构图
+## 2.3 MYSQL数据库
+本次开发的系统后台采用MySQL数据库来存放数据，MySQL实质是RDBMS（关系型数据库管理系统），源代码开放性比较高，数据库管理的语言采用SQL（结构化查询语言）进行数据管理[14]，下面我们就简单介绍SQL语句的一些常用用法。通常我们要创建一个数据库时就会使用“CREATE DATABASE ”命令开头，使用某个数据库时就会以“use+数据库名称”命令，如果想要查看数据库里面数据表就会使用到“SHOW TABLES”命令，当然我们在操作数据表内容时也会使用到某些命令，比如删除就用“drop”，清空就用“delete from”，更新数据就用“update”，需要加入数据的话可以用“insert into ”等命令，这些就是SQL查询语句的惯用语法。这次采用mysql数据库还是源于它备受关注的实用性和可靠性，它里面的大部分功能一般的系统都还用不完，况且mysql小巧但它功能比较齐全，是一般系统软件的开发首选。MySQL开放的源代码通过360安全浏览器可以快速下载下来，程序员可以对这些免费的代码根据自身需求进行个性化定制操作。为了我们能够更好地使用MySQL，平时我们需要多加维护，有空的时候还是多多查看一些二进制日志、错误日志、常规查询日志等日志，它们能够帮助我们进行性能分析以及DBA检查，除了这个还需要注意每间隔一定时间就要更新缓冲区和缓存，这样能够降低碎片，利用OPTIMIZETABLE命令让数据表进行重新组织，还能节省许多空间避免空间浪费。
+## 2.4 Spring Boot框架
+Spring Boot是一个简化程序设置的拥有开箱即用的框架，它主要的优点是根据程序员不同的设置而生成不同的代码配置文件，这样开发人员就不用每个项目都配置相同的文件，从而减低了开发人员对于传统配置文件的时间，提高了开发效率。它内嵌Tomcat服务器，简化了Maven的配置，自动配置Spring，通过这样的框架，开发人员就不用头疼各种配置文件，可以减少时间，同时提高了代码的整体性，使开发人员工作效率大大提高。
+
+#
+# 3 系统分析
+
+## 3.1 可行性分析
+可行性分析是该平台系统进行投入开发的基础第一步，必须对其进行可行性分析才能够降低不必要的需要从而使资源合理利用，更具有性价比和降低成本，同时也是系统平台的成功的未雨绸缪的一步。
+### 3.1.1 技术可行性
+技术可行性一是考虑客观的技术可行性，二是考虑实际的技术可行性。从客观上、简单地说，现已经出现了类似的系统，因此客观上的可行性是满足的。从现有的实际情况上来看，该系统使用的是JAVA开发语言、MYSQL都是容易获得的，同时计算机的硬件性能也满足开发软件的需求；且在本科课程中都有进行相关软件的学习和开发。综上所述，该系统具有技术可行性。
+### 3.1.2 经济可行性
+这次我打算开发的系统，源代码我已经在网上找好了，利用360安全浏览器就可以下载，不需要收费，加上我自己上学期间已经配置好的一台笔记本电脑就能进行开发，目前我已经在准备在自己电脑上安装开发平台和mysql数据库等开发软件。这些软件也是自己在网上下载的，不用花钱，这样看来开发基于Web的足球青训俱乐部管理后台系统经济上不需要太多支出，开发出来的系统能提高足球俱乐部管理效率，所以开发这样的软件很有必要。
+### 3.1.3 操作可行性
+在设计之初，我在网上参考了许多相关系统的界面布局设计，发现该系统界面展示比较简单，功能罗列齐全，操作流程简单明了，系统用户不用担心不会操作，系统各个功能模块都会有相应的提示，一看就明白，实在不知道的话，稍微指点就能上手，上手速度很快，时间不会耽误太多。
+### 3.1.4 时间可行性
+这次毕业设计学校预留的时间比较充分，从去年10月到今年5月几乎都是毕业设计制作阶段，从完成程序设计、编码、测试，到完成程序配套的论文，时间上面还有剩余，这点上是完全没有压力。
+
+经过上面的分析，此次开发的系统从经济上、从技术上、从操作上、从时间上考虑都能过关。说明自己要开发的基于Web的足球青训俱乐部管理后台系统可行性是完全可行，操作简单，时间、金钱上面毫无压力，该系统开发是完全可行。
+## 3.2 系统性能分析
+从性能方面本基于Web的足球青训俱乐部管理后台系统必须能够进行正常高速的运行，在开发过程中必须要保证系统绝对的安全性和实效性。
+
+（1）安全性：对于任意一个系统来说，必须有独立的密码进行系统的管理，学员、教练和管理员权限划分明确。管理员才能查看系统后台数据，外人不可随意查看。
+
+（2）可扩展性：每个项目不可能一次就能完善，因此该项目也预留了功能和数据的接口，以便于解决该项目在后期开发中可能发生的业务或功能的变化，为该项目提供更加快速的新增或更改功能。
+
+（3）数据完整性：本基于Web的足球青训俱乐部管理后台系统数据设计全部完整，部分采用自动生成，信息的所有录入都是需要后台进行添加，信息空不可以进行录入到系统。数据之间要联系起来，不能出错。
+
+（4）数据存储性
+
+该项目采用了目前主流的MySQL数据库，在安全系数和稳定性有了拥有了很高的保证。
+## 3.3 系统功能分析
+本基于Web的足球青训俱乐部管理后台系统主要满足3种类型用户的需求，这3种类型用户分别为学员、教练和管理员，他们分别实现的功能如下。
+
+学员进入系统前台可查看系统信息，包括首页、公告信息、商品信息以及课程安排等，学员要想实现加入购物车、购买商品等操作，必须登录系统，未有账号的学员可进行注册操作，注册登录后主要功能模块包括购物车、上课签到、个人中心、我的订单、我的地址。
+
+学员用例图如图3-1所示。
+
+![](/images/0000stringboot/0038springboot/blog.002.png)
+
+图3-1 学员用例图
+
+管理员可登录系统后对系统进行全面管理，管理员登陆后主要功能模块包括个人中心、学员管理、教练管理、公告信息管理、商品信息管理、课程安排管理、课程签到管理、统计中心管理、系统管理以及订单管理。
+
+管理员用例图如图3-2所示。
+
+![](/images/0000stringboot/0038springboot/blog.003.png)
+
+图3-2 管理员用例图
+
+教练注册登录后主要功能模块包括个人中心、公告信息管理、商品信息管理、课程安排管理以及课程签到管理。
+
+教练用例图如图3-2所示。
+
+![](/images/0000stringboot/0038springboot/blog.004.png)
+
+图3-3 教练用例图
+## 3.4 系统流程分析
+### 3.4.1注册流程
+未有账号的学员和教练均可进行注册操作，学员注册流程图如图3-4所示。
+
+![](/images/0000stringboot/0038springboot/blog.005.png)
+
+图3-4注册流程图
+### 3.4.2登录流程
+学员、教练和管理员均可进行登录操作，用户登录流程图如图3-5所示。
+
+![](/images/0000stringboot/0038springboot/blog.006.png)
+
+图3-5 登录流程图
+#
+# 4 系统设计
+
+## 4.1 系统架构设计
+B/S系统架构是本系统开发采用的结构模式，使用B/S模式开发程序以及程序后期维护层面需要的经济成本是很低的，用户能够承担得起。使用这样的模式开发，用户使用起来舒心愉悦，不会觉得别扭，操作很容易就熟练了。而且方便管理。采用B/S体系结构开发的应用软件仅仅需要在客户端安装谷歌浏览器或者其他浏览器就可以操作，对于维护和升级操作则在服务器端就能完成，不用在客户端进行操作，这样就节省了许多开销，B/S模式能够保证软件应用的跨平台性和通用性，采用它开发软件是最佳选择。B/S模式示意图如图4-1所示。
+
+![](/images/0000stringboot/0038springboot/blog.007.png)
+
+图4-1 B/S模式示意图
+## 4.2 系统结构设计
+系统结构设计是整个系统设计中重要的一部分，在结构设计过程中，首先对系统进行需求分析，然后进行系统初步设计，将系统功能模块细化，具体分析每一个功能模块具体应该首先哪些功能，最后将各个模块进行整合，实现系统结构的最终设计。
+
+本基于Web的足球青训俱乐部管理后台系统由学员功能模块、教练功能模块和管理员功能模块三大部分构成，系统的结构图如图4-2所示。
+
+![](/images/0000stringboot/0038springboot/blog.008.png)
+
+图4-2系统结构图
+## 4.3 数据库设计
+### 4.3.1数据库E-R图设计
+数据库在系统中扮演这很重要的角色，在这次设计的程序中我运用的是Mysql数据库。Sql语句是访问数据库的最常用的标准化语言。使用数据库，可以使整个系统的数据更加的整洁、明了。数据库在整个系统中，就是这个系统的基础。一个好的数据库设计，更有利于后期的维护，功能的扩建。如果数据库的设计出现问题，那么将是非常麻烦的事情。
+
+每张数据表都有其字段信息，如何直观的看出一张表的结构和数据间的关系，可以通过E-R图进行查看。E-R图灵活的表达了数据中实体和属性间的关系，使得数据关系更简单明了。每个系统数据库都需要提前进行设计规划，使整体数据库更统一规范化，也体现出开发人员的专业性。本基于Web的足球青训俱乐部管理后台系统的E-R图如下图所示：
+
+（1）课程安排信息实体E- R图，如图4-5所示：
+
+![](/images/0000stringboot/0038springboot/blog.009.png)
+
+图4-5 课程安排信息实体图
+
+（2）教练信息实体E- R图，如图4-6所示：
+
+![](/images/0000stringboot/0038springboot/blog.010.png)
+
+图4-6 教练信息实体图
+
+（3）订单实体E- R图，如图4-7所示：
+
+![](/images/0000stringboot/0038springboot/blog.011.png)
+
+图4-7  订单实体图
+
+（4）管理员实体E- R图，如图4-8所示：
+
+![](/images/0000stringboot/0038springboot/blog.012.png)
+
+图4-8  管理员实体图
+
+（5）学员实体E- R图，如图4-9所示：
+
+![](/images/0000stringboot/0038springboot/blog.013.png)
+
+图4-9  学员实体图
+
+（6）商品实体E- R图，如图4-10所示：
+
+![](/images/0000stringboot/0038springboot/blog.014.png)
+
+图4-10  商品实体图
+### 4.3.2数据库表设计
+本基于Web的足球青训俱乐部管理后台系统需要数据库，采用的是MYSQL这一数据库管理系统，各个数据库表的设计结果如下：
+
+表4-1  kechenganpai课程安排信息表
+
+|列名|说明|类型 ( 长度 )|备注|
+| :-: | :-: | :-: | :-: |
+|id|编号|bigint(20)|不允许空，主键|
+|addtime|`		`创建时间|timestamp|允许空|
+|xueyuanzhanghao|学员账号|varchar(200)|允许空|
+|xueyuanxingming|学员姓名|varchar(200)|允许空|
+|jiaoliangonghao|教练工号|varchar(200)|允许空|
+|jiaolianxingming|教练姓名|varchar(200)|允许空|
+|kechengbianhao|课程编号|varchar(200)|允许空|
+|kechengming|课程名|varchar(200)|允许空|
+|fengmian|封面|varchar(200)|允许空|
+|shangkeshijian|上课时间|datetime|允许空|
+|shangkedidian|上课地点|varchar(200)|允许空|
+|xiangqing|详情|longtext|允许空|
+|userid|用户编号|bigint(20)|允许空|
+
+表4-2  jiaolian教练信息表
+
+|列名|说明|类型 ( 长度 )|备注|
+| :-: | :-: | :-: | :-: |
+|id|编号|bigint(20)|不允许空，主键|
+|addtime|添加时间|timestamp|允许空|
+|jiaoliangonghao`|教练工号|varchar(200)|允许空|
+|mima|密码|varchar(200)|允许空|
+|jiaolianxingming|教练姓名|varchar(200)|允许空|
+|touxiang|头像|varchar(200)|允许空|
+|nianling|年龄|varchar(200)|允许空|
+|xingbie|性别|varchar(200)|允许空|
+|shenfenzheng|身份证|varchar(200)|允许空|
+|lianxidianhua|联系电话|varchar(200)|允许空|
+|gongzuojingyan|工作经验|longtext|允许空|
+|money`|余额|float|允许空|
+
+表4-3  orders订单信息表
+
+|列名|说明|类型 ( 长度 )|备注|
+| :-: | :-: | :-: | :-: |
+|id|编号|bigint(20)|不允许空，主键|
+|addtime|添加时间|timestamp|允许空|
+|orderid|订单编号|varchar(200)|允许空|
+|tablename|商品表名|varchar(200)|允许空|
+|userid|用户编号|bigint(20)|允许空|
+|goodid|商品编号|bigint(20)|允许空|
+|goodname|商品名称|varchar(200)|允许空|
+|picture|商品图片|varchar(200)|允许空|
+|buynumber|购买数量|int(11)|允许空|
+|price|价格|float|允许空|
+|discountprice|折扣价格|float|允许空|
+|total|总价格|float|允许空|
+|discounttotal|折扣总价格|float|允许空|
+|type|支付类型|int(11)|允许空|
+|status|状态|varchar(200)|允许空|
+|address|地址|varchar(200)|允许空|
+|tel|电话|varchar(200)|允许空|
+|consignee|收货人|varchar(200)|允许空|
+
+表4-4  users管理员信息表
+
+|列名|说明|类型 ( 长度 )|备注|
+| :-: | :-: | :-: | :-: |
+|id|编号|bigint(20)|不允许空，主键|
+|username|用户名|varchar(100)|允许空|
+|password|密码|varchar(100)|允许空|
+|role|角色|varchar(100)|允许空|
+|addtime|添加时间|timestamp|允许空|
+
+表4-5  xueyuan学员信息表
+
+|列名|说明|类型 ( 长度 )|备注|
+| :-: | :-: | :-: | :-: |
+|id|编号|bigint(20)|不允许空，主键|
+|addtime|添加时间|timestamp|允许空|
+|xueyuanzhanghao|学员账号|varchar(200)|允许空|
+|`mima`|密码|varchar(200)|允许空|
+|xueyuanxingming`|学员姓名|bigint(20)|允许空|
+|xingbie|性别|bigint(20)|允许空|
+|shoujihao`|手机号|varchar(200)|允许空|
+|chushengnianyue|出生年月|date|允许空|
+|touxiang|头像|varchar(200)|允许空|
+|jiatingzhuzhi|家庭住址|varchar(200)|允许空|
+|money|余额|float|允许空|
+
+表4-6  shangpinxinxi商品信息表
+
+|列名|说明|类型 ( 长度 )|备注|
+| :-: | :-: | :-: | :-: |
+|id|编号|bigint(20)|不允许空，主键|
+|addtime|添加时间|timestamp|允许空|
+|shangpinID|商品编号|varchar(200)|允许空|
+|shangpinmingcheng|商品名称|varchar(200)|允许空|
+|`leixing|类型|varchar(200)|允许空|
+|tupian|图片|varchar(200)|允许空|
+|shangpinxiangqing|商品详情|varchar(200)|允许空|
+|price|价格|float|允许空|
+#
+# 5 系统实现
+
+## 5.1 学员功能模块的实现
+学员进入本系统可查看系统信息，系统前台主界面展示如图5-1所示。
+
+![](/images/0000stringboot/0038springboot/blog.015.png)
+
+图5-1系统主界面图
+### 5.1.1学员注册界面
+未有账号的学员可进入注册界面进行注册操作，学员注册界面展示如图5-2所示。
+
+![](/images/0000stringboot/0038springboot/blog.016.png)
+
+图5-2学员注册界面图
+### 5.1.2学员登录界面
+学员要想进行商品购买操作，必须登录系统，学员登录界面展示如图5-3所示。
+
+![](/images/0000stringboot/0038springboot/blog.017.png)
+
+图5-3学员登录界面图
+### 5.1.3商品详情界面
+学员在商品详情界面可查看商品详细信息，登录后可加入购物车或者立即购买操作，商品详情界面展示如图5-4所示。
+
+![](/images/0000stringboot/0038springboot/blog.018.png)
+
+图5-4 商品详情界面图
+### 5.1.4课程安排详情界面
+学员可选择课程安排查看详情信息，登录后可进行上课签到操作，课程安排详情界面展示如图5-5所示。
+
+![](/images/0000stringboot/0038springboot/blog.019.png)
+
+图5-5 课程安排详情界面图
+### 5.1.5上课签到界面
+学员登录后可进行上课签到操作，上课签到界面展示如图5-6所示。
+
+![](/images/0000stringboot/0038springboot/blog.020.png)
+
+图5-6  上课签到界面图
+### 5.1.6个人中心界面
+学员登录后可对个人信息进行管理，个人中心界面展示如图5-7所示。
+
+![](/images/0000stringboot/0038springboot/blog.021.png)
+
+图5-7  个人中心界面图
+### 5.1.7我的订单界面
+学员可进入我的订单界面查看个人已有订单信息，其界面展示如图5-8所示。
+
+![](/images/0000stringboot/0038springboot/blog.022.png)
+
+图5-8  我的订单界面图
+## 5.2管理员功能模块的实现
+### 5.2.1管理员登录界面
+管理员要想进入系统后台对系统进行管理操作，必须进行登录系统，管理员登录界面展示如图5-9所示。
+
+![](/images/0000stringboot/0038springboot/blog.023.png)
+
+图5-9管理员管理界面图
+### 5.2.2公告信息管理界面
+管理员可增删改查公告信息，公告信息管理界面展示如图5-10所示。
+
+![](/images/0000stringboot/0038springboot/blog.024.png)
+
+图5-10  公告信息管理界面图
+### 5.2.3学员管理界面
+管理员可查看、添加、修改和删除学员信息，学员管理界面展示如图5-11所示。
+
+![](/images/0000stringboot/0038springboot/blog.025.png)
+
+图5-11  学员管理界面图
+### 5.2.4商品信息管理界面
+管理员可增删改查商品信息，商品信息管理界面展示如图5-12所示。
+
+![](/images/0000stringboot/0038springboot/blog.026.png)
+
+图5-12  商品信息管理界面图
+### 5.2.5课程安排管理界面
+管理员可添加、修改和删除课程安排信息，课程安排管理界面展示如图5-13所示。
+
+![](/images/0000stringboot/0038springboot/blog.027.png)
+
+图5-13  课程安排管理界面图
+## 5.3教练功能模块的实现
+### 5.3.1课程安排界面
+教练登录后可查看课程安排信息，课程安排界面展示如图5-14所示。
+
+![](/images/0000stringboot/0038springboot/blog.028.png)
+
+图5-14 课程安排界面图
+### 5.3.2课程签到管理界面
+教练可查看学员课程签到信息，并可对其进行审核操作，课程签到管理界面展示如图5-15所示。
+
+![](/images/0000stringboot/0038springboot/blog.029.png)
+
+图5-15 课程签到管理界面图
+
+
+#
+# 
+
+
 
 
 

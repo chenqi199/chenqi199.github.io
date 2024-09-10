@@ -1,124 +1,353 @@
 # 0065springboot人事系统
 
 
-# 0065springboot人事系统
+# [0065springboot人事系统](https://github.com/GraduationProject-springboot/0065springboot)
 
-### 微信： chen_q123456  qq:462201886
-### github:chenqi199 gitee :chen_q_i
+![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-### [所有项目](https://github.com/GraduationProject-springboot/allSpringbootProjects) 包安装运行
+# [项目清单](https://chenqi1990.site) 包安装运行
 
-### [所有项目列表excel 腾讯文档 项目清单](https://docs.qq.com/sheet/DSHRFSVZ5aEVYT3N3?tab=BB08J2) 包安装运行
-
-### [github](https://chenqi199.github.io)
-
-### [gitee](https://gitee.com/chen_q_i)
-
-### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://player.bilibili.com/player.html?isOutside=true&aid=BV16ia6epENY&bvid=BV16ia6epENY&cid=500001610575748&p=66)
+### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 
 
-### 0065springboot人事系统 部分论文
-```
 
-﻿基于vue的人事系统
-摘要
-随着信息技术在管理上越来越深入而广泛的应用，作为学校以及一些培训机构，都在用信息化战术来部署线上学习以及线上考试，可以与线下的考试有机的结合在一起，实现基于vue的人事系统在技术上已成熟。本文介绍了基于vue的人事系统的开发全过程。通过分析企业对于基于vue的人事系统的需求，创建了一个计算机管理基于vue的人事系统的方案。文章介绍了基于vue的人事系统的系统分析部分，包括可行性分析等，系统设计部分主要介绍了系统功能设计和数据库设计。
-本基于vue的人事系统有管理员和员工两个角色。管理员功能有个人中心，部门信息管理，员工信息管理，考勤信息管理，上班记录管理，下班记录管理，加班记录管理，员工薪酬管理等。员工功能有个人中心，考勤信息管理，上班记录管理，下班记录管理，加班记录管理，员工薪酬管理等。因而具有一定的实用性。
-本站是一个B/S模式系统，前端采用vue框架，后端采用Java的SSM框架作为开发技术，MYSQL数据库设计开发，充分保证系统的稳定性。系统具有界面清晰、操作简单，功能齐全的特点，使得基于vue的人事系统管理工作系统化、规范化。
-
-关键词：基于vue的人事系统；SSM框架；MYSQL数据库；VUE框架
-Abstract
-With the deepening and extensive application of information technology in management, schools and some training institutions are using information tactics to deploy online learning and online examinations, which can be organically combined with offline examinations. The realization of the Vue-based personnel system is technically mature. This article introduces the entire development process of the Vue-based personnel system. By analyzing the needs of the enterprise for the Vue-based personnel system, a solution for computer management of the Vue-based personnel system was created. The article introduces the system analysis part of the Vue-based personnel system, including feasibility analysis, etc. The system design part mainly introduces the system function design and database design.
-This Vue-based personnel system has two roles: administrator and employee. Administrator functions include personal center, department information management, employee information management, attendance information management, work record management, off work record management, overtime record management, employee salary management, etc. Employee functions include personal center, attendance information management, work record management, off work record management, overtime record management, employee salary management, etc. So it has a certain practicability.
-This site is a B/S model system, the front end adopts the vue framework, the back end adopts the Java SSM framework as the development technology, and the MYSQL database is designed and developed to fully ensure the stability of the system. The system has the characteristics of clear interface, simple operation and complete functions, which makes the Vue-based personnel system management systematized and standardized.
-Keywords: Personnel system based on vue; SSM framework; MYSQL database; VUE framework
-目录
-1系统概述	1
-1.1 研究背景	1
-1.2研究目的	1
-1.3系统设计思想	1
-2相关技术	3
-2.1 MYSQL数据库	3
-2.2 B/S结构	3
-2.3 SSM框架简介	4
-2.4 VUE简介	6
-3系统分析	6
-3.1可行性分析	6
-3.1.1技术可行性	6
-3.1.2经济可行性	7
-3.1.3操作可行性	7
-3.2系统性能分析	7
-3.2.1 系统安全性	7
-3.2.2 数据完整性	7
-3.3系统界面分析	7
-3.4系统流程和逻辑	9
-4系统概要设计	10
-4.1概述	10
-4.2系统结构	11
-4.3.数据库设计	12
-4.3.1数据库实体	12
-4.3.2数据库设计表	14
-5系统详细实现	16
-5.1 管理员模块的实现	16
-5.1.1 员工信息管理	16
-5.1.2 考勤信息管理	17
-5.2 员工模块的实现	17
-5.2.1 考勤信息管理	17
-5.2.2 下班记录管理	18
-6系统测试	18
-6.1概念和意义	18
-6.2特性	19
-6.3重要性	19
-6.4测试方法	20
-6.5 功能测试	20
-6.6可用性测试	21
-6.7性能测试	21
-6.8测试分析	21
-6.9测试结果分析	22
-结论	22
-致谢语	23
-参考文献	23
-
-1系统概述
+# 系统概述
 1.1 研究背景
-如今互联网高速发展，网络遍布全球，通过互联网发布的消息能快而方便的传播到世界每个角落，并且互联网上能传播的信息也很广，比如文字、图片、声音、视频等。从而，这种种好处使得互联网成了信息传播的主要途径，社会上各种各样的信息都想尽办法通过互联网进行传播，互联网对社会产生的影响越来越大。
-随着计算机技术的发展以及计算机网络的逐渐普及，互联网成为人们查找信息的重要场所，二十一世纪是信息的时代，所以信息的交换和信息流通显得特别重要。因此，开发合适的基于vue的人事系统成为企业必然要走的一步棋。开发合适的基于vue的人事系统，可以方便管理人员对基于vue的人事系统的管理，提高信息管理工作效率及查询效率，有利于更好的为用户提供服务。
-1.2研究目的
-随着互联网技术的快速发展，网络时代的到来，网络信息也将会改变当今社会。各行各业在日常企业经营管理等方面也在慢慢的向规范化和网络化趋势汇合。基于vue的人事系统的信息化程度体现在将互联网与信息技术应用于经营与管理，以现代化工具代替传统手工作业。无疑，使用网络信息化管理使信息管理更先进、更高效、更科学，信息交流更迅速。
-企业文化如果还用之前的只有线下进行黑板报形式的去实行，已经很落伍了，这样会导致了效率低下。而且，时间一长的话，积累下来的数据信息不容易保存，对于查询、更新还有维护会带来不少问题。对于数据交接也存在很大的隐患。如果采用电子化的存储方式就会带来很大的改善，而且给用户的查询带来了很大便利，因此设计一个基于vue的人事系统刻不容缓，能够提高企业在信息技术方面的展示水平。
-1.3系统设计思想
-一个成功的网站应明确建设网站的目的，确定网站的功能，确定网站规模、投入费用，进行必要的市场分析等。只有详细的策划，才能避免在网站建设中出现的很多问题，使网站建设能顺利进行。同时，一个大型的计算机网站系统，必须有一个正确的设计指导思想，通过合理选择数据结构、网络结构、操作系统以及开发环境，构成一个完善的网络体系结构，才能充分发挥计算机信息管理的优势。根据现实生活中网民的实际需求，本系统的设计按照下述原则进行。
-    1. 有效性：实际上这里的有效性包括两个方面的意思：有用性和可用性。有用性是指站点潜在的能满足用户需求的功能，而可用性是指能够通过站点的操作实现特定的目标。可以看出一个站点如果不能恰当运行或设计得非常槽糕就不是一个好站点。可用站点的效益应该非常高，并易于学习，在实现用户目标时令人满意而不出错。
-    2. 高可靠性：一个实用的网站同时必须是可靠的，本设计通过合理而先进的网络设计以及软、硬件的优化选型，可保证网站的可靠性与容错性。
-    3. 高安全性：在设计中，将充分利用网络软、硬件提供的各种安全措施，既可以保证用户共享资源，充分考虑系统及数据资源的容灾、备份、恢复的要求。为系统提供强大的数据库备份工具。可以保证关键数据的安全性。操作权限级，设置不同的角色确保每一步的操作权限，可以由管理员进行设置。
-    4. 先进性：采用目前国际上最先进的开发技术，使用JSP开发技术，MYSQL作为网站后台数据库。采用这些技术降低了以后的系统运营成本，提高了系统的稳定性和易维护性。
-    5. 采用标准技术：本网站的所有设计遵循国际上现行的标准进行，以提高系统的开放性。
-    6. 外观和技术平衡：系统采用Web风格的界面设计，界面友好、美观，使用方便，易学易用。网站设计的关键问题是外观和技术的平衡。外现不好的网站令人厌烦，站点可以运行很好，但却不能带动用户积极性，相反，如果外观非常有表现力，但技术有限，用户则会感到非常失望。在外观与技术之间需要确定一个清晰而连续的关系，即外观与站点的意图相关，对不同类型的网站处理方法不同。
-2相关技术
-2.1 MYSQL数据库
-MySQL是一个真正的多用户、多线程SQL数据库服务器。 是基于SQL的客户/服务器模式的关系数据库管理系统，它的有点有有功能强大、使用简单、管理方便、安全可靠性高、运行速度快、多线程、跨平台性、完全网络化、稳定性等，非常适用于Web站点或者其他应用软件的数据库后端的开发工作。此外，用户可利用许多语言编写访问MySQL数据库的程序。作为开放源代码运动的产物之一，MySQL关系数据库管理系统越来越受到人们的青睐，应用范围也越来越广。速度和易用性使MySQL特别适用于Web站点或应用软件的数据库后端的开发工作。
-MYSQL数据库具有以下特点：
-1、C和C ++中使用和测试，以确保源代码的编译器的便携性和灵活性。
-2、支持多种操作系统AIX的，FreeBSD下，HP-UX，Linux和Mac OS中，Novell公司的Netware，OpenBSD系统，OS/2裹时，Solaris，Windows等。
-3、提供了用于不同的编程语言的API。编程语言，如C,, C ++，Python和Java的
 
-```
-### 0065springboot人事系统 项目图片
-![图片](/images/0065springbootimg_001.jpg)
-![图片](/images/0065springbootimg_003.jpg)
-![图片](/images/0065springbootimg_002.jpg)
-![图片](/images/0065springbootimg_012.jpg)
-![图片](/images/0065springbootimg_006.jpg)
-![图片](/images/0065springbootimg_007.jpg)
-![图片](/images/0065springbootimg_013.jpg)
-![图片](/images/0065springbootimg_005.jpg)
-![图片](/images/0065springbootimg_011.jpg)
-![图片](/images/0065springbootimg_010.jpg)
-![图片](/images/0065springbootimg_004.jpg)
-![图片](/images/0065springbootimg_009.jpg)
-![图片](/images/0065springbootimg_008.jpg)
+如今互联网高速发展，网络遍布全球，通过互联网发布的消息能快而方便的传播到世界每个角落，并且互联网上能传播的信息也很广，比如文字、图片、声音、视频等。从而，这种种好处使得互联网成了信息传播的主要途径，社会上各种各样的信息都想尽办法通过互联网进行传播，互联网对社会产生的影响越来越大。
+
+随着计算机技术的发展以及计算机网络的逐渐普及，互联网成为人们查找信息的重要场所，二十一世纪是信息的时代，所以信息的交换和信息流通显得特别重要。因此，开发合适的基于vue的人事系统成为企业必然要走的一步棋。开发合适的基于vue的人事系统，可以方便管理人员对基于vue的人事系统的管理，提高信息管理工作效率及查询效率，有利于更好的为用户提供服务。
+
+1.2研究目的
+
+随着互联网技术的快速发展，网络时代的到来，网络信息也将会改变当今社会。各行各业在日常企业经营管理等方面也在慢慢的向规范化和网络化趋势汇合。基于vue的人事系统的信息化程度体现在将互联网与信息技术应用于经营与管理，以现代化工具代替传统手工作业。无疑，使用网络信息化管理使信息管理更先进、更高效、更科学，信息交流更迅速。
+
+企业文化如果还用之前的只有线下进行黑板报形式的去实行，已经很落伍了，这样会导致了效率低下。而且，时间一长的话，积累下来的数据信息不容易保存，对于查询、更新还有维护会带来不少问题。对于数据交接也存在很大的隐患。如果采用电子化的存储方式就会带来很大的改善，而且给用户的查询带来了很大便利，因此设计一个基于vue的人事系统刻不容缓，能够提高企业在信息技术方面的展示水平。
+## 1.3系统设计思想
+一个成功的网站应明确建设网站的目的，确定网站的功能，确定网站规模、投入费用，进行必要的市场分析等。只有详细的策划，才能避免在网站建设中出现的很多问题，使网站建设能顺利进行。同时，一个大型的计算机网站系统，必须有一个正确的设计指导思想，通过合理选择数据结构、网络结构、操作系统以及开发环境，构成一个完善的网络体系结构，才能充分发挥计算机信息管理的优势。根据现实生活中网民的实际需求，本系统的设计按照下述原则进行。
+
+1. 有效性：实际上这里的有效性包括两个方面的意思：有用性和可用性。有用性是指站点潜在的能满足用户需求的功能，而可用性是指能够通过站点的操作实现特定的目标。可以看出一个站点如果不能恰当运行或设计得非常槽糕就不是一个好站点。可用站点的效益应该非常高，并易于学习，在实现用户目标时令人满意而不出错。
+1. 高可靠性：一个实用的网站同时必须是可靠的，本设计通过合理而先进的网络设计以及软、硬件的优化选型，可保证网站的可靠性与容错性。
+1. 高安全性：在设计中，将充分利用网络软、硬件提供的各种安全措施，既可以保证用户共享资源，充分考虑系统及数据资源的容灾、备份、恢复的要求。为系统提供强大的数据库备份工具。可以保证关键数据的安全性。操作权限级，设置不同的角色确保每一步的操作权限，可以由管理员进行设置。
+1. 先进性：采用目前国际上最先进的开发技术，使用JSP开发技术，MYSQL作为网站后台数据库。采用这些技术降低了以后的系统运营成本，提高了系统的稳定性和易维护性。
+1. 采用标准技术：本网站的所有设计遵循国际上现行的标准进行，以提高系统的开放性。
+1. 外观和技术平衡：系统采用Web风格的界面设计，界面友好、美观，使用方便，易学易用。网站设计的关键问题是外观和技术的平衡。外现不好的网站令人厌烦，站点可以运行很好，但却不能带动用户积极性，相反，如果外观非常有表现力，但技术有限，用户则会感到非常失望。在外观与技术之间需要确定一个清晰而连续的关系，即外观与站点的意图相关，对不同类型的网站处理方法不同。
+
+
+
+# 2相关技术
+## 2.1 MYSQL数据库
+MySQL是一个真正的多用户、多线程SQL数据库服务器。 是基于SQL的客户/服务器模式的关系数据库管理系统，它的有点有有功能强大、使用简单、管理方便、安全可靠性高、运行速度快、多线程、跨平台性、完全网络化、稳定性等，非常适用于Web站点或者其他应用软件的数据库后端的开发工作。此外，用户可利用许多语言编写访问MySQL数据库的程序。作为开放源代码运动的产物之一，MySQL关系数据库管理系统越来越受到人们的青睐，应用范围也越来越广。速度和易用性使MySQL特别适用于Web站点或应用软件的数据库后端的开发工作。
+
+MYSQL数据库具有以下特点：
+
+1、C和C ++中使用和测试，以确保源代码的编译器的便携性和灵活性。
+
+2、支持多种操作系统AIX的，FreeBSD下，HP-UX，Linux和Mac OS中，Novell公司的Netware，OpenBSD系统，OS/2裹时，Solaris，Windows等。
+
+3、提供了用于不同的编程语言的API。编程语言，如C,, C ++，Python和Java的，的Perl，PHP，埃菲尔铁塔，Ruby和Tcl的。
+
+4、以及使用的CPU资源来支持多线程。
+
+5、算法优化查询SQL，切实提高搜索速度。
+
+6、网络上的客户端和服务器可以用来编程任何独立的编程环境，也有中国，GB2312，BIG5，日文写作，一般基金，用于支持多国语言，并且可以嵌入在数据表和其他软件shift\_jis访问柱可以用作的名称。
+
+7、TCP / IP，ODBC和JDBC数据库，并提供连接到其他。
+
+8、管理工具的管理，控制和优化数据库的操作。
+
+9、可以数以千万计的记录在一个大的数据库。
+## 2.2 B/S结构
+B/S架构是一种基于互联网系统的软件系统开发架构，是现如今在软件系统开发中采用非常大量的一种软件系统结构。现如今B/S架构已经被大量使用，打破了C/S结构的结构，给基于网络结构的软件系统提供了良好的支持。B/S架构伴随着计算机网络技术发展而逐步的发展和更新。伴随着互联网的进一步发展，就要求大多数的管理系统要求不仅仅可以在一台电脑上使用，同时可以在接入互联网的其他电脑也可以使用对系统进行操作和使用。在这样的背景下基于B/S架构的软件系统设计方法得到了越来越大量的使用，基础部分也在不断的更新。
+
+B/S架构是利用操作系统中的浏览器来进行使用的，不是一种窗体软件系统，不需要在使用系统的电脑上进行安装。B/S架构的运行方式是在远程的服务器上把开发的软件系统部署在远程的服务器上，在部署好软件系统之后就可以实现在任何接入互联网的电脑上访问部署好的软件系统。B/S架构给使用管理系统的用户带来极大的便利。
+
+在三层体系结构的B/S（Browser/Server，浏览器/服务器结构）系统中，用户可以通过浏览器向分布在网络上的众多服务器发出请求。B/S系统极大地简化了客户机的工作量，客户机上只需要安装、配置少量的客户端运行软件即可，服务器将担负大量的工作，对数据库的访问以及应用程序的执行都将由服务器来完成。
+
+B/S架构的不断成熟，主要使用WWW浏览器技术，结合多种浏览器脚本语言，用通用浏览器需要实现原本复杂的专有软件来实现的强大功能，并节约了开发成本，是一种新的软件架构。B/S系统包括：表示逻辑层，控制逻辑层，数据展现层，三层是相对独立又相互关联。
+## 2.3 SSM框架简介
+SSM框架，是Spring+Spring MVC+MyBatis的缩写，这个是继SSH之后，目前比较主流的Java EE企业级框架，适用于搭建各种大型的企业级应用系统。
+
+1.Spring简介
+
+Spring是一个开源框架，Spring是于2003年兴起的一个轻量级的Java开发框架，由Rod Johnson在其著作Expert One-On-One J2EE Development and Design中阐述的部分理念和原型衍生而来。它是为了解决企业应用开发的复杂性而创建的。Spring使用基本的JavaBean来完成以前只可能由EJB完成的事情。然而，Spring的用途不仅限于服务器端的开发。从简单性、可测试性和松耦合的角度而言，任何Java应用都可以从Spring中受益。简单来说，Spring是一个轻量级的控制反转（IoC）和面向切面（AOP）的容器框架。
+
+A.控制反转（IOC）是什么呢？
+
+IOC:控制反转也叫依赖注入。利用了工厂模式将对象交给容器管理，你只需要在spring配置文件总配置相应的bean，以及设置相关的属性，让spring容器来生成类的实例对象以及管理对象。在spring容器启动的时候，spring会把你在配置文件中配置的bean都初始化好，然后在你需要调用的时候，就把它已经初始化好的那些bean分配给你需要调用这些bean的类（假设这个类名是A），分配的方法就是调用A的setter方法来注入，而不需要你在A里面new这些bean了。
+
+B.面向切面(AOP)又是什么呢？
+
+首先，需要说明的一点，AOP只是Spring的特性，它就像OOP一样是一种编程思想，并不是某一种技术,AOP可以说是对OOP的补充和完善。OOP引入封装、继承和多态性等概念来建立一种对象层次结构，用以模拟公共行为的一个集合。当我们需要为分散的对象引入公共行为的时候，OOP则显得无能为力。也就是说，OOP允许你定义从上到下的关系，但并不适合定义从左到右的关系。例如日志功能。日志代码往往水平地散布在所有对象层次中，而与它所散布到的对象的核心功能毫无关系。在OOP设计中，它导致了大量代码的重复，而不利于各个模块的重用。将程序中的交叉业务逻辑（比如安全，日志，事务等），封装成一个切面，然后注入到目标对象（具体业务逻辑）中去。
+
+实现AOP的技术，主要分为两大类：一是采用动态代理技术，利用截取消息的方式，对该消息进行装饰，以取代原有对象行为的执行；二是采用静态织入的方式，引入特定的语法创建“方面”，从而使得编译器可以在编译期间织入有关“方面”的代码。
+
+2.Spring MVC简介
+
+Spring MVC属于Spring Framework的后续产品，已经融合在Spring Web Flow里面，它原生支持的Spring特性，让开发变得非常简单规范。Spring MVC分离了控制器、模型对象、分派器以及处理程序对象的角色，这种分离让它们更容易进行定制。
+
+3.MyBatis简介
+
+MyBatis本是apache的一个开源项目iBatis,2010年这个项目由apache software foundation迁移到了google code，并且改名为MyBatis。MyBatis是一个基于Java的持久层框架。iBATIS提供的持久层框架包括SQL Maps和Data Access Objects（DAO）MyBatis消除了几乎所有的JDBC代码和参数的手工设置以及结果集的检索。MyBatis使用简单的XML或注解用于配置和原始映射，将接口和Java的POJOs（Plain Old Java Objects，普通的Java对象）映射成数据库中的记录。可以这么理解，MyBatis是一个用来帮你管理数据增删改查的框架。
+## 2.4 VUE简介
+Vue.js（读音 /vjuː/, 类似于 view） 是一套构建用户界面的渐进式框架。
+
+Vue 只关注视图层， 采用自底向上增量开发的设计。
+
+Vue 的目标是通过尽可能简单的 API 实现响应的数据绑定和组合的视图组件。
+
+
+
+# 3系统分析
+## 3.1可行性分析
+通过对本基于vue的人事系统实行的目的初步调查和分析，提出可行性方案并对其一一进行论证。我们在这里主要从技术可行性、经济可行性、操作可行性等方面进行分析。
+### 3.1.1技术可行性
+本基于vue的人事系统采用JAVA作为开发语言，SSM框架，是基于WEB平台的B/S架构系统。
+
+（1）Java提供了稳定的性能、优秀的升级性、更快速的开发、更简便的管理、全新的语言以及服务。整个系统帮用户做了大部分不重要的琐碎的工作。
+
+（2）基于B/S模式的系统的开发已发展日趋成熟。
+
+（3）众所周知，Java是面向对象的开发语言。程序开发员可以在Eclipse平台上面方便的使用一些已知的解决方案。    
+
+因此，基于vue的人事系统在开发技术上具有很高可行性，且开发人员掌握了一定的开发技术，所以此系统的开发技术具有可行性。
+### 3.1.2经济可行性
+本基于vue的人事系统采用的软件都是开源的，这样能够削减很多的精力和资源，降低开发成本。同时对计算机的配置要求也极低，即使是淘汰下来的计算机也能够满足需要，因此，本系统在经济上是完全具有可行性的，所以在经济上是十分可行的。
+### 3.1.3操作可行性
+本基于vue的人事系统的界面简单易操作，用户只要平时有在用过电脑，都能进行访问和操作。本系统具有易操作、易管理、交互性好的特点，在操作上是非常简单的，因此在操作上具有很高的可行性。
+
+综上所述，此系统开发目标已明确，在技术、经济和操作方面都具有很高的可行性，并且投入少、功能完善、管理方便，因此系统的开发是完全可行的。
+## 3.2系统性能分析
+### 3.2.1 系统安全性
+此基于vue的人事系统要严格控制管理权限，具体要求如下：
+
+（1）要想对基于vue的人事系统进行管理，首先要依靠用户名和密码在系统中登陆，无权限的用户不可以通过任何方式登录系统和对系统的任何信息和数据进行查看，这样可以保证系统的安全可靠性和准确性。
+
+（2）在具体实现中对不同的权限进行设定，不同权限的用户在系统中登陆后，不可以越级操作。
+### 3.2.2 数据完整性
+（1）所有记录信息要保持全面，信息记录内容不可以是空。
+
+（2）各种数据间相互联系要保持正确。
+
+（3）相同数据在不同记录中要保持一致。
+
+3.3系统界面分析
+
+目前，界面设计已经成为对软件质量进行评价的一条关键指标，一个好的用户界面可以使用户使用系统的信心和兴趣增加，从而使工作效率提高，JSP技术是将JAVA语言作为脚本语言的，JSP网页给整个服务器端的JAVA库单元提供了一个接口用来服务HTTP的应用程序。创建动态页面比较方便。客户界面是指软件系统与用户交互的接口，往往涵盖输出、输入、人机对话的界面格式等。
+
+1.输出设计
+
+输出是由电脑对输入的基本信息进行解决，生成高质量的有效信息，并使之具有一定的格式，提供给管理者使用，这是输出设计的主要责任和目标。
+
+系统开发的过程与实施过程相反，并不是从输入设计到输出设计，而是从输出设计到输入设计。这是由于输出表格与使用者直接相联系，设计的目的应当是确保使用者可以很方便的使用输出表格，并且可以将各部门的有用信息及时的反映出来。输出设计的准绳是既要整体琢磨不同管理层的所有需要，又要简洁，不要提供给用户不需要的信息。
+
+2.输入设计
+
+输入数据的收集和录入是比较麻烦的，需要非常多的人力和一定设备，而且经常出错。一旦输入系统的数据不正确，那么处理后的输出就会扩大这些错误，因此输入的数据的准确性对整个系统的性能起着决定性意义。
+
+输入设计有以下几点原则：
+
+1）输入量应尽量保持在能够满足处理要求的最低限度。输入量越少，错误率就会越少，数据的准备时间也越少。
+
+2）应尽可能的使输入的准备以及输入的过程进行时比较方便，这样使错误的发生率降低。
+
+3）应尽量早检查输入数据（尽量接近原数据发生点）,以便使错误更正比较及时。
+
+4）输入数据尽早地记录成其处理所需的形式，以防止数据由一种介质转移到另一种介质时需要转录而可能发生的错误。
+## 3.4系统流程和逻辑
+![](/images/0000stringboot/0065springboot/blog.001.png)
+
+图3-3登录流程图
+
+![](/images/0000stringboot/0065springboot/blog.002.png)
+
+图3-4修改密码流程图
+
+# 4系统概要设计
+## 4.1概述
+本系统采用B/S结构(Browser/Server,浏览器/服务器结构)和基于Web服务两种模式，是一个适用于Internet环境下的模型结构。只要用户能连上Internet,便可以在任何时间、任何地点使用。系统工作原理图如图4-1所示：
+
+![](/images/0000stringboot/0065springboot/blog.003.png)
+
+图4-1系统工作原理图
+## 4.2系统结构
+本系统是基于B/S架构的网站系统，设计的管理员功能结构图如下图所示：
+
+![](/images/0000stringboot/0065springboot/blog.004.png)
+
+图4-2管理员功能结构图
+
+本系统是基于B/S架构的网站系统，设计的员工功能结构图如下图所示：
+
+![](/images/0000stringboot/0065springboot/blog.005.png)
+
+图4-3 员工功能结构图
+
+## 4.3.数据库设计
+### 4.3.1数据库实体
+概念设计的目标是设计出反映某个组织部门信息需求的数据库系统概念模式，数据库系统的概念模式独立于数据库系统的逻辑结构、独立于数据库管理系统（DBMS）、独立于计算机系统。
+
+概念模式的设计方法是在需求分析的基础上，用概念数据模型（例如E-R模型）表示数据及数据之间的相互联系，设计出反映用户信息需求和处理需求的数据库系统概念模式。概念设计的目标是准确描述应用领域的信息模式，支持用户的各种应用，这样既容易转换为数据库系统逻辑模式，又容易为用户理解。数据库系统概念模式是面向现实世界的数据模型，不能直接用于数据库系统的实现。在此阶段，用户可以参与和评价数据库系统的设计，从而有利于保证数据库系统的设计与用户的需求相吻合。在概念模式的设计中，E-R模型法是最常见的设计方法。本系统的E-R图如下图所示：
+
+（1）加班记录信息的实体属性图如图4.5所示：
+
+![](/images/0000stringboot/0065springboot/blog.006.png)
+
+图4.5加班记录信息实体属性图
+
+（2）考勤信息实体属性图如图4.6所示：
+
+![](/images/0000stringboot/0065springboot/blog.007.png)
+
+图4.6考勤信息实体属性图
+
+（3）部门信息实体属性图如图4.7所示：
+
+![](/images/0000stringboot/0065springboot/blog.008.png)
+
+图4.7部门信息实体属性图
+
+### 4.3.2数据库设计表
+基于vue的人事系统需要后台数据库，下面介绍数据库中的各个表的详细信息：
+
+表4.1 部门信息
+
+|字段|类型|空|默认|注释|
+| :-: | :-: | :-: | :-: | :-: |
+|id (主键)|bigint(20)|否||主键|
+|addtime|timestamp|否|CURRENT\_TIMESTAMP|创建时间|
+|bumen|varchar(200)|否||部门|
+|xiangqing|longtext|是|NULL|详情|
+表4.2 加班记录
+
+|字段|类型|空|默认|注释|
+| :-: | :-: | :-: | :-: | :-: |
+|id (主键)|bigint(20)|否||主键|
+|addtime|timestamp|否|CURRENT\_TIMESTAMP|创建时间|
+|yuangongzhanghao|varchar(200)|否||员工账号|
+|mima|varchar(200)|是|NULL|密码|
+|xingming|varchar(200)|是|NULL|姓名|
+|bumen|varchar(200)|是|NULL|部门|
+|jiaban|varchar(200)|是|NULL|加班|
+|shijian|datetime|是|NULL|时间|
+|beizhu|varchar(200)|是|NULL|备注|
+表4.3 考勤信息
+
+|字段|类型|空|默认|注释|
+| :-: | :-: | :-: | :-: | :-: |
+|id (主键)|bigint(20)|否||主键|
+|addtime|timestamp|否|CURRENT\_TIMESTAMP|创建时间|
+|kaoqin|varchar(200)|是|NULL|考勤|
+|shijian|datetime|是|NULL|时间|
+|beizhu|varchar(200)|是|NULL|备注|
+表4.4 上班记录
+
+|字段|类型|空|默认|注释|
+| :-: | :-: | :-: | :-: | :-: |
+|id (主键)|bigint(20)|否||主键|
+|addtime|timestamp|否|CURRENT\_TIMESTAMP|创建时间|
+|yuangongzhanghao|varchar(200)|是|NULL|员工账号|
+|mima|varchar(200)|是|NULL|密码|
+|xingming|varchar(200)|是|NULL|姓名|
+|bumen|varchar(200)|是|NULL|部门|
+|shangban|varchar(200)|是|NULL|上班|
+|shijian|datetime|是|NULL|时间|
+|beizhu|varchar(200)|是|NULL|备注|
+表4.5 用户表
+
+|字段|类型|空|默认|注释|
+| :-: | :-: | :-: | :-: | :-: |
+|id (主键)|bigint(20)|否||主键|
+|username|varchar(100)|否||用户名|
+|password|varchar(100)|否||密码|
+|role|varchar(100)|是|管理员|角色|
+|addtime|timestamp|否|CURRENT\_TIMESTAMP|新增时间|
+表4.6 下班记录
+
+|字段|类型|空|默认|注释|
+| :-: | :-: | :-: | :-: | :-: |
+|id (主键)|bigint(20)|否||主键|
+|addtime|timestamp|否|CURRENT\_TIMESTAMP|创建时间|
+|yuangongzhanghao|varchar(200)|否||员工账号|
+|mima|varchar(200)|是|NULL|密码|
+|xingming|varchar(200)|是|NULL|姓名|
+|bumen|varchar(200)|是|NULL|部门|
+|xiaban|varchar(200)|是|NULL|下班|
+|shijian|datetime|是|NULL|时间|
+|beizhu|varchar(200)|是|NULL|备注|
+表4.7 员工薪酬
+
+|字段|类型|空|默认|注释|
+| :-: | :-: | :-: | :-: | :-: |
+|id (主键)|bigint(20)|否||主键|
+|addtime|timestamp|否|CURRENT\_TIMESTAMP|创建时间|
+|yuangongzhanghao|varchar(200)|否||员工账号|
+|xingming|varchar(200)|否||姓名|
+|bumen|varchar(200)|否||部门|
+|jibengongzi|int(11)|是|NULL|基本工资|
+|quanqinjiang|int(11)|是|NULL|全勤奖|
+|ticheng|float|是|NULL|提成|
+|jiabangongzi|float|是|NULL|加班工资|
+|qingjia|float|是|NULL|请假|
+|chidao|float|是|NULL|迟到|
+|xinchou|float|是|NULL|薪酬|
+|xinchounianyue|varchar(200)|是|NULL|薪酬年月|
+|beizhu|varchar(200)|是|NULL|备注|
+|ispay|varchar(200)|是|未支付|是否支付|
+表4.8 员工信息
+
+|字段|类型|空|默认|注释|
+| :-: | :-: | :-: | :-: | :-: |
+|id (主键)|bigint(20)|否||主键|
+|addtime|timestamp|否|CURRENT\_TIMESTAMP|创建时间|
+|yuangongzhanghao|varchar(200)|否||员工账号|
+|mima|varchar(200)|否||密码|
+|xingming|varchar(200)|否||姓名|
+|bumen|varchar(200)|是|NULL|部门|
+|xingbie|varchar(200)|是|NULL|性别|
+|shouji|varchar(200)|否||手机|
+|jiatingzhuzhi|varchar(200)|是|NULL|家庭住址|
+|zhaopian|varchar(200)|是|NULL|照片|
+|sfsh|varchar(200)|是|否|是否审核|
+|shhf|longtext|是|NULL|审核回复|
+![打开新的 phpMyAdmin 窗口](blog.009.png "打开新的 phpMyAdmin 窗口")
+
+
+# 5系统详细实现
+## 5.1 管理员模块的实现
+### 5.1.1 员工信息管理
+基于vue的人事系统的系统管理员可以管理员工信息，可以对员工信息添加修改删除操作。具体界面的展示如图5.1所示。
+
+![](/images/0000stringboot/0065springboot/blog.010.png)
+
+图5.1 员工信息管理界面
+### 5.1.2 考勤信息管理
+系统管理员可以考勤信息进行添加，修改，删除操作。具体界面如图5.2所示。
+
+![](/images/0000stringboot/0065springboot/blog.011.png)
+
+图5.2 考勤信息管理界面
+## 5.2 员工模块的实现
+### 5.2.1 考勤信息管理
+员工可以对考勤信息进行添加，修改删除操作。界面如下图所示：
+
+![](/images/0000stringboot/0065springboot/blog.012.png)
+
+图5.3 考勤信息管理界面
+
+### 5.2.2 下班记录管理
+员工登录后，可以对查看自己的下班记录。界面如下图所示：
+
+![](/images/0000stringboot/0065springboot/blog.013.png)
+
+图5.4 下班记录界面
+
+
+
+
+
 
 
 

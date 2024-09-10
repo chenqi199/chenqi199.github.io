@@ -1,197 +1,29 @@
 # 0005springboot网上订餐系统
 
 
-# 0005springboot网上订餐系统
+# [0005springboot网上订餐系统](https://github.com/GraduationProject-springboot/0005springboot)
 
-### 微信： chen_q123456  qq:462201886
-### github:chenqi199 gitee :chen_q_i
+![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-### [所有项目](https://github.com/GraduationProject-springboot/allSpringbootProjects) 包安装运行
+# [项目清单](https://chenqi1990.site) 包安装运行
 
-### [所有项目列表excel 腾讯文档 项目清单](https://docs.qq.com/sheet/DSHRFSVZ5aEVYT3N3?tab=BB08J2) 包安装运行
+### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
-### [github](https://chenqi199.github.io)
 
-### [gitee](https://gitee.com/chen_q_i)
 
-### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://player.bilibili.com/player.html?isOutside=true&aid=BV16ia6epENY&bvid=BV16ia6epENY&cid=500001610566670&p=6)
 
-
-
-### 0005springboot网上订餐系统 部分论文
-```
-
-毕 业 论 文
-论文题目          网上订餐系统         
-学    院                              
-
-		专    业                               
-
-		班    级                               
-
-学    号                               
-
-学生姓名                               
-
-指导教师（签名）      ×××     
-
-完成时间     2021    年   4     月
-  
-摘 要
-
-随着我国经济的飞速发展，人们的生活速度明显加快，在餐厅吃饭排队的情况到处可见，近年来由于新兴IT行业的空前发展，它与传统餐饮行业也进行了新旧的结合，很多餐饮商户开始通过网络建设订餐系统，通过专门的网上订餐系统，一方面节省了用户订餐的时间，给用户带来方便，另一方面给商户带来了新的销售模式，同时也使订餐的管理规范化，系统化，给人们的生活带来了很大的便利。
-
-本文重点阐述了网上订餐系统的开发过程，以实际运用为开发背景，基于Spring Boot框架，运用了JSP技术和MYSQL作为系统数据库进行开发，充分保证系统的安全性和稳定性。本系统界面良好，操作简单方便，通过系统概述、系统分析、系统设计、数据库设计、系统测试这几个部分，详细的说明了系统的开发过程，最后并对整个开发过程进行了总结，实现了用户通过网络进行订餐的重要功能。
-
-本基于Spring Boot的网上订餐系统运行效果稳定，操作方便、快捷，界面友好，是一个功能全面、实用性好、安全性高，并具有良好的可扩展性、可维护性的订餐平台。
-关键词：网上订餐，JSP技术，数据库，Spring Boot框架
-Abstract
-
-With the rapid development of our country’s economy, people’s life speed has been significantly accelerated, and the situation of queuing at restaurants can be seen everywhere. In recent years, due to the unprecedented development of the emerging IT industry, it has also combined the old and new with the traditional catering industry, and many catering merchants have started Building a meal ordering system through the Internet and a dedicated online meal ordering system, on the one hand, it saves the time for users to order meals and brings convenience to users. On the other hand, it brings new sales models to merchants, and at the same time standardizes the management of ordering. It has brought great convenience to people’s lives.
-
-This article focuses on the development process of the online meal ordering system, with actual application as the development background, based on the Spring Boot framework, using JSP technology and MYSQL as the system database for development, and fully ensuring the security and stability of the system. The system has a good interface, simple and convenient operation. Through the system overview, system analysis, system design, database design, system testing, the development process of the system is explained in detail. Finally, the whole development process is summarized and realized An important function for users to order meals through the Internet.
-
-The Spring Boot-based online meal ordering system has stable operation effect, convenient and fast operation, and friendly interface. It is a full-featured, practical, safe, and scalable and maintainable meal ordering platform.
-Key words: Online ordering, JSP technology, database, Spring Boot framework 
-
-目 录
-
-	摘 要	I
-
-	Abstract	II
-
-	目 录	III
-
-	1 绪论	1
-
-	1.1 研究背景	1
-
-	1.2 研究现状	1
-
-	1.3 研究内容	1
-
-	2 系统关键技术	3
-
-	2.1JSP技术	3
-
-	2.2 JAVA技术	3
-
-	2.3 B/S结构	3
-
-	2.4 MYSQL数据库	4
-
-	3 系统分析	5
-
-	3.1 可行性分析	5
-
-	3.1.1 技术可行性	5
-
-	3.1.2 操作可行性	5
-
-	3.1.3 经济可行性	5
-
-	3.1.4 时间可行性	5
-
-	3.2系统性能分析	5
-
-	3.3系统功能分析	6
-
-	3.3.1用户功能分析	6
-
-	3.3.2管理员功能分析	6
-
-	3.4 系统结构分析	7
-
-	3.4.1逻辑结构	7
-
-	3.4.2物理结构	7
-
-	3.5 系统流程分析	8
-
-	3.5.1注册流程	8
-
-	3.5.2登录流程	8
-
-	4 系统设计	10
-
-	4.1系统结构设计	10
-
-	4.2系统顺序图设计	10
-
-	4.2.1登录模块顺序图	10
-
-	4.2.2添加信息模块顺序图	11
-
-	4.3 数据库设计	11
-
-	4.3.1 数据库E-R图设计	11
-
-	4.3.2 数据库表设计	14
-
-	5 系统的实现	16
-
-	5.1 用户功能模块的实现	16
-
-	5.1.1用户注册界面	16
-
-	5.1.2用户登录界面	17
-
-	5.1.3菜品详情界面	18
-
-	5.1.4下单订餐界面	18
-
-	5.1.5订单信息界面	18
-
-	5.1.6订单配送界面	19
-
-	5.2 管理员功能模块的实现	19
-
-	5.2.1管理员登录界面	19
-
-	5.2.2会员管理界面	20
-
-	5.2.3菜品信息管理界面	20
-
-	5.2.4菜品分类管理界面	21
-
-	5.2.5订单信息管理界面	22
-
-	5.2.6订单配送管理界面	22
-
-	6 系统测试	23
-
-	6.1测试定义	23
-
-	6.2测试方案	23
-
-	6.3测试方式	24
-
-	6.4测试结论	24
-
-	7 总结	25
-
-	参考文献	26
-
-	致  谢	27
-1 绪论
-
-1.1 研究背景
-
+# 绪论
+## 1.1 研究背景
 随着互联网技术的快速发展，网络时代的到来，网络信息也将会改变当今社会。各行各业在日常企业经营管理等方面也在慢慢的向规范化和网络化趋势汇合[13]。电子商务必将成为未来商务的主流，因此对于餐饮行业来说，建立一个网上订餐系统是必不可少的一种销售模式；由于现在人们的生活节奏越来越快，就餐时间过于集中，为了实现用户通过计算机平台进行订餐的功能[1]，开发了本网上订餐系统。
 
 近几年随着互联网的飞速发展，我国的电子商务也得到了较快的发展，人们的生活方式也随之改变。人们在快节奏的生活中寻找快捷的生活方式，其中电子商务技术为人们提供了更加便利的购物方式[4]。人们网上购物不受时间地点的限制，同时商户实现通过网络平台来进行商品的销售，不仅客户群体，而且还可以为商户进行宣传，能大大的增加营业额。为了满足大量网友网上进行订餐的需求，跟随电子商务发展的步伐，建设一个网上订餐系统为广大用户服务，实现快速订餐功能。
-
-1.2 研究现状  
-
+## 1.2 研究现状  
 在国外他们的信息技术的发展是我国的许多倍，从1946年诞生在美国的世界上第一台计算机开始，国外的信息技术就一直在飞速地发展，一些计算机应用软件也纷纷出现，软件技术也一直在不断完善和更新。软件行业早已遍布各个地方。
 
 在国内，我国信息技术发展起步比较晚，后期慢慢的不断地进行优化和改革，才让我们的信息技术上升到新的阶段。在现在软件开发的技术经过大量研究和生活实践基本能够达到独立开发系统应用的水平，生活中的各个行业也把软件操作替换成传统的记录模式。软件行业正是现在比较热门的行业。
 
 信息数字化的节奏已经在逐步影响生活中的人们，人们也逐渐感受到信息化说到信息不得不感叹现在人们的各种信息都在迅速流通，信息资源利用充分。信息背后的软件支持也得到广大范围的宣传和使用。软件开发团队愈来愈专业，开发技术愈来愈成熟。有了软件的存在，信息处理效率得到大幅度提升，帮助信息处理者省去了大部分时间。对于订餐方面来讲，传统的实体店进行订餐的方式，已经无法满足用户的需求，因此需要我们利用软件技术开发本网上订餐系统来进行快速实现网络订餐的功能，这个网站提供给用户一个快速订餐的平台，相信这款软件的出现会真正提高用户订餐的效率。
-
-1.3 研究内容
-
+## 1.3 研究内容
 根据基于Spring Boot的网上订餐系统编写的论文主要阐述了基于Spring Boot的网上订餐系统的开发过程中使用的技术，系统开发前进行的需求分析，根据需求文档进行系统设计，最后才是系统功能实现以及测试几个部分，在开始编写论文之前亲自到图书馆借阅JSP书籍，MYSQL数据库书籍等编程书籍，然后针对开发的基于Spring Boot的网上订餐系统，去网上查找了很多别人做好的系统，根据他们的功能设计进行自己的系统的系统功能结构设计，出具需求报告，根据形成的需求报告完成系统各个功能模块设计，最后才是进行程序编码，系统完成后才能进行测试和最后的验收工作，程序开发流程大致如此。
 
 这次编写的论文包含了7个部分的内容，具体内容如下：
@@ -209,32 +41,329 @@ Key words: Online ordering, JSP technology, database, Spring Boot framework
 第六部分系统测试：检验程序是否达到预期目标
 
 第七部分总结：进行最后的总结工作
-2 系统关键技术
 
-2.1JSP技术
+#
+# 2 系统关键技术
+## 2.1JSP技术
+JSP(Java脚本页面)是Sun和许多参与建立的公司所提倡的动态web技术。将Java程序添加到传统的web页面HTML文件(\*)。htm,\*。Html) [1]。
 
-JSP(Java脚本页面)是Sun和许多参与建立的公司所提倡的动态web技术。将J
+JSP这种能够独立使用的编程语言可以嵌入在html语言里面运行，正因为JSP参照了许多编程语言的特性，使得JSP在web的脚本技术当中也占有一定的重要位置，对于刚入门编程行业的初学者来讲，jsp这种编程语言不仅容易学习，而且还具备许多高级的特性。在程序的开发过程中，使用jsp也不失为一种正确的选择，像表单数据的收集操作以及字符串信息的处理方面等等，jsp都能很轻松地解决，帮助程序开发者省下许多时间，JSP 新版本的发布，标志着一个全新的JSP时代的到来，它最大的特点就是引入了面向对象的全部机制，并保留了向下的兼容性[4]。综上所述，使用JSP，可以自由的选择操作系统、Web服务器以及合适的数据库管理系统。同时，设计开发时，有两种选择，一种是面向过程，另一种是面向对象，或者也可以两种都使用，可以称为混和方式设计。
 
-```
-### 0005springboot网上订餐系统 项目图片
-![图片](/images/0005springbootimg_014.jpg)
-![图片](/images/0005springbootimg_015.jpg)
-![图片](/images/0005springbootimg_001.jpg)
-![图片](/images/0005springbootimg_017.jpg)
-![图片](/images/0005springbootimg_003.jpg)
-![图片](/images/0005springbootimg_002.jpg)
-![图片](/images/0005springbootimg_016.jpg)
-![图片](/images/0005springbootimg_012.jpg)
-![图片](/images/0005springbootimg_006.jpg)
-![图片](/images/0005springbootimg_007.jpg)
-![图片](/images/0005springbootimg_013.jpg)
-![图片](/images/0005springbootimg_005.jpg)
-![图片](/images/0005springbootimg_011.jpg)
-![图片](/images/0005springbootimg_010.jpg)
-![图片](/images/0005springbootimg_004.jpg)
-![图片](/images/0005springbootimg_009.jpg)
-![图片](/images/0005springbootimg_008.jpg)
-![图片](/images/0005springbootimg_018.jpg)
+JSP的优点:编写一次，始终运行。还有jsp可以延展可以缩短的强大优势，还有就是支持多种开发语言并且兼容性好，适用于很多平台顺利运行[12]。
+## 2.2 JAVA技术
+Java是面向对象进行编程的一门语言，基础语法和C语言、C++都差不多，Java删除了C++里面的多指针、继承、自动的强制类型转换等，Java的JVM还可以自动进行垃圾回收，减少了程序员的后顾之忧。最重要的一点是Java语言是支持跨平台的，这使Java语言的使用更加广泛。
+
+JDK（Java Development Kit）是Java语言的软件开发工具包。Java开发中JDK是最重要的核心，JDK里面有JRE，包括client和server端的。环境变量需要配置好。[4]
+
+JRE（JAVA Runtime Environment）是支持Java程序运行的标准环境，JRE里面只有client运行环境，会自动的添加PATH 。
+## 2.3 B/S结构
+随着互联网和浏览器的发展，B/S的开发架构逐渐取代了C/S架构，B/S的开发架构是一种浏览器和服务器的模式，它将应用程序的大部分功能都放在服务器端，客户机端只需要安装浏览器（Browser），通过Web Server对服务器端安装的数据库进行数据读取和存储[3]。其B/S架构图如下图所示：
+
+![](/images/0000stringboot/0005springboot/blog.001.png)
+
+图2-1 B/S模式架构图
+
+B/S最大的优点就是没有地点限制还不用专门安装软件，笔记本或者电脑能够上网就能访问系统。系统使用B/S进行开发在后期系统维护上面就会很省事，不用什么问题都在服务器上面操作，简单的客户端处理就解决部分问题，开发出来的程序跟用户交互性上面也会增强，还可以实时刷新浏览器进行程序局部的数据信息更新。基于C/S架构的系统只可以被使用在本地电脑上，不能通过计算机网络来进行使用和操作，在使用地理位置等方面都没有B/S架构使用方便。
+## 2.4 MYSQL数据库
+MySQL 是关系型数据库管理系统的代表， 因为MySQL是其免费开源的，而且MySQL的功能已经足够用对于学习和中小型企业来讲，所以开发中小型网站都会选择MySQL作为网站的数据库。[15]
+
+MySQL具有开放性，它是一种关系型数据库管理系统，并且它的源代码可以被大众所熟知[3]。由于MySQL是开放源代码的，因此，只要经过授权就可以在自己需求的基础上对其进行修改。MySQL因为其固有的特点而备受关注，它具有很强的适应性，并且十分可靠，查询速度快。MySQL安装起来非常方便，且数据存储量大，不需要事务化处理。Sql语言拥有很多的方法，在项目中编写sql语句时使用起来是非常方便的，不会像其他语言那样需要编写更多的语句。正因为MySQL使用sql语言进行数据库管理，所以它收到了大多数程序员的热爱。
+
+# 3 系统分析
+## 3.1 可行性分析
+通过对本网上订餐系统实行的目的初步调查和分析，提出可行性方案并对其一一进行论证。我们在这里主要从技术可行性、操作可行性、经济可行性和时间可行性四方面进行分析。
+### 3.1.1 技术可行性
+本基于Spring Boot的网上订餐系统采用JSP和MYSQL数据库进行开发设计，作为计算机专业学生，在学校期间就接触到许多关于编程方面的知识，当然也包括各种编程软件，对他们的了解度也比较系统，所以技术开发上面还是有一定把握。
+### 3.1.2 操作可行性
+操作可行性也就是系统的可用性，系统使用起来必须具备简单的操作导航和界面，不能有太复杂的操作和使用流程。本网上订餐系统的界面简单易操作，用户只要平时有在用过电脑，都能进行访问和操作。系统具有易操作、易管理、交互性好的特点，在操作上是非常简单的。所以系统在操作上具有很高的可行性。
+### 3.1.3 经济可行性
+在开发程序时用到的开发软件和数据库，还有界面设计的photoshop软件等在百度上面就可以直接下载，然后根据各种安装视频进行安装，这些资源都是免费的，程序编码阶段使用的源代码在百度上面可以轻松获得，在有网络的环境下就能下载下来，不需要支付任何费用，经济成本很低。
+### 3.1.4 时间可行性
+从2020年11月份我们在学校就没有课程了，同学们大部分选择找工作实习了，我也是在其中。一边找工作的同时，一边忙着完成毕业设计工作。对于我本人来讲，目前的情况是白天我要上班参加实习工作，只有晚上我才有时间完成论文编写工作。论文答辩是在2021年5月份左右，将近半年时间来完成毕业设计，时间上还是很充分。
+
+从上面几个部分的可行性分析得出，这次开发的基于Spring Boot的网上订餐系统在开发上面没有什么大问题，值得开发。
+## 3.2系统性能分析
+（1）系统的存储性：因为是网上订餐系统，所以就会在数据库要求上比较严格，信息录入的比较多，而且丰富复杂， 这就需要一个强大的数据库来存放更多的数据和保证数据的时时性。
+
+（2）系统的易学性：系统设计的应该简单易学的，设计的各种功能应该简单操作，不需要努力学习培训，缩短用户熟悉系统的进程。
+
+（3）系统的数据要求：数据应该录入准确，需要更新时，数据应该可以及时的修改，数据还应该有独立保存，不能删除数据的时候会连带着把还需要的数据都删除掉。
+
+（4）系统稳定性：开发的网上订餐系统要求运行稳定，运行过程中无界面不清楚、字体模糊等现象。
+
+（5）系统可靠性：系统不可以有病毒类代码，必须有拦截器，验证方法，对里面信息的保护措施，这样才让人用的放心。
+## 3.3系统功能分析
+本基于Spring Boot的网上订餐系统主要分管理员和用户两大功能模块，下面将详细介绍管理员和用户分别实现的功能。
+### 3.3.1用户功能分析
+用户进入本系统可查看系统信息，包括首页、菜品信息等，用户要想实现下单订餐操作，必须登录系统，未有账号的用户可进行注册，注册登录后主要功能模块包括个人中心、订单信息管理以及订单配送管理，用户用例图如图3-1所示。
+
+![](/images/0000stringboot/0005springboot/blog.002.png)
+
+图3-1 用户用例图
+### 3.3.2管理员功能分析
+管理员登录后可对系统进行全面管理，管理员主要实现的功能模块包括个人中心、会员管理、菜品分类管理、菜品信息管理、订单信息管理、订单配送管理、管理员管理以及系统管理，管理员用例图如图3-3所示。
+
+![](/images/0000stringboot/0005springboot/blog.003.png)
+
+图3-2 管理员用例图
+## 3.4 系统结构分析
+### 3.4.1逻辑结构
+基于Spring Boot的网上订餐系统的特点就是利用Browser/Server（B/S）结构，为用户提供了一个网络订餐的平台，让用户只要上网就可以实现订餐的操作。
+
+本系统的网络应用原理示意图如图3-3所示：
+
+![](/images/0000stringboot/0005springboot/blog.004.png)
+
+图3-3系统的网络应用原理示意图
+### 3.4.2物理结构
+系统实现的物理结构如图3-4所示：
+
+![](/images/0000stringboot/0005springboot/blog.005.png)
+
+图3-4 系统实现的物理结构图
+## 3.5 系统流程分析
+### 3.5.1注册流程
+未有账号的用户可进行注册操作，用户注册流程图如图3-5所示。
+
+![](/images/0000stringboot/0005springboot/blog.006.png)
+
+图3-5注册信息流程图
+### 3.5.2登录流程
+登录模块主要满足了管理员和用户的权限登录，用户登录流程图如图3-6所示。
+
+![](/images/0000stringboot/0005springboot/blog.007.png)
+
+图3-6 登录流程图
+
+
+#
+# 4 系统设计
+## 4.1系统结构设计
+系统的设计和划分是系统的核心研究问题，以确定整体结构和功能模块。该系统的结构化设计的思想，是自顶向下的方式将系统分成若干个子系统，以及反过来的子系统分成模块，其被划分成子模块，层划分各计算机可执行模块可迄今用作一个单独的程序。
+
+本基于Spring Boot的网上订餐系统主要管理员模块以及用户模块两大部分，系统结构图如图4-1所示。
+
+![](/images/0000stringboot/0005springboot/blog.008.png)
+
+图4-1系统功能模块图
+## 4.2系统顺序图设计
+### 4.2.1登录模块顺序图
+登录模块主要满足了管理员和用户的权限登录，登录模块顺序图如图4-2所示。
+
+![](/images/0000stringboot/0005springboot/blog.009.png)
+
+图4-2登录顺序图
+### 4.2.2添加信息模块顺序图
+管理员登录后可进行添加信息操作，添加信息模块顺序图如图4-3所示。
+
+![](/images/0000stringboot/0005springboot/blog.010.png)
+
+图4-3 添加信息顺序图
+## 4.3 数据库设计
+### 4.3.1 数据库E-R图设计
+E-R图是一种描述显示数据类型间的关系的数据描述方法，E-R图可以完整地映射出现实模型的关系。E-R图中的三个最为重要的元素就是实体、属性、关系。E-R图即由这三点组成。
+
+实体：E-R图中数据的实体，用矩形表示上面为实体名，下面为实体属性，实体包含主外键等关系。
+
+属性：E-R图中的属性，是指实体的属性，实体由多条属性所构成，属性拥有自己的数据类型，数据大小。属性的优劣决定了E-R图中实体的健全性、完整性。
+
+关系：E-R图中的关系是指实体之间的关系，用菱形来表示实体间的关系，这些菱形关系的联系上有着一对多或多对多的数据联系，这些构成了E-R图的关系，E-R图的关系紧密连接了实体，使实体间的关联性更加的显著、易懂。本基于Spring Boot的网上订餐系统的E-R图如下所示：
+
+（1）管理员信息实体属性E-R图如图4-4所示：
+
+![](/images/0000stringboot/0005springboot/blog.011.png)
+
+图4-4管理员信息实体E-R图
+
+（2）菜品分类信息实体属性E-R图如图4-5所示：
+
+![](/images/0000stringboot/0005springboot/blog.012.png)
+
+图4-5 菜品分类信息实体属性E-R图
+
+（3）菜品信息实体属性E-R图如图4-6所示：
+
+![](/images/0000stringboot/0005springboot/blog.013.png)
+
+图4-6 菜品信息实体属性E-R图
+
+（4）订单信息实体属性E-R图如图4-7所示：
+
+![](/images/0000stringboot/0005springboot/blog.014.png)
+
+图4-7 订单信息实体属性E-R图
+
+（5）会员信息实体属性E-R图如图4-8所示：
+
+![](/images/0000stringboot/0005springboot/blog.015.png)
+
+图4-8  会员信息实体属性E-R图
+### 4.3.2 数据库表设计
+本基于Spring Boot的网上订餐系统采用了MYSQL数据库管理系统，主要数据库表详细信息如下：
+
+表4-1  users管理员信息表
+
+|字段名|数据类型|是否允许空|字段含义|
+| :-: | :-: | :-: | :-: |
+|`id`|bigint(20)|NOT NULL|编号|
+|username|varchar(100)|NULL|用户名|
+|password|varchar(100)|NULL|密码|
+|role|varchar(100)|NULL|角色|
+|`addtime|timestamp|NULL|新增时间|
+
+表4-2  caipinfenlei菜品分类信息表
+
+|字段名|数据类型|是否允许空|字段含义|
+| :-: | :-: | :-: | :-: |
+|`id`|bigint(20)|NOT NULL|编号|
+|addtime|timestamp|NULL|创建时间|
+|`caipinfenlei|varchar(200)|NULL|菜品分类|
+
+表4-3  caipinxinxi菜品信息表
+
+|字段名|数据类型|是否允许空|字段含义|
+| :-: | :-: | :-: | :-: |
+|`id`|bigint(20)|NOT NULL|编号|
+|addtime|timestamp|NULL|创建时间|
+|caipinmingcheng|varchar(200)|NULL|菜品名称|
+|tupian`|varchar(200)|NULL|图片|
+|caipinfenlei|varchar(200)|NULL|菜品分类|
+|tuijianzhishu|varchar(200)|NULL|推荐指数|
+|jiage|varchar(200)|NULL|价格|
+|kouwei|varchar(200)|NULL|口味|
+|shicai|varchar(200)|NULL|食材|
+|caipinxiangqing|longtext|NULL|菜品详情|
+|clicktime|datetime|NULL|最近点击时间|
+|`clicknum|int(11)|NULL|点击次数|
+
+表4-4  dingdanxinxi订单信息表
+
+|字段名|数据类型|是否允许空|字段含义|
+| :-: | :-: | :-: | :-: |
+|`id`|bigint(20)|NOT NULL|编号|
+|addtime|timestamp|NULL|创建时间|
+|`dingdanbianhao|varchar(200)|NULL|订单编号|
+|caipinmingcheng|varchar(200)|NULL|菜品名称|
+|caipinfenlei|varchar(200)|NULL|菜品分类|
+|`jiage|varchar(200)|NULL|价格|
+|`shuliang|varchar(200)|NULL|数量|
+|zongjine|float|NULL|总金额|
+|xiadanshijian`|datetime|NULL|下单时间|
+|beizhu|varchar(200)|NULL|备注|
+|`huiyuanzhanghao|varchar(200)|NULL|会员账号|
+|huiyuanxingming|varchar(200)|NULL|会员姓名|
+|shoujihaoma|varchar(200)|NULL|手机号码|
+|dizhi|varchar(200)|NULL|地址|
+|huiyuanzhekou|varchar(200)|NULL|会员折扣|
+|ispay|varchar(200)|NULL|是否支付|
+
+表4-5  huiyuan会员信息表
+
+|字段名|数据类型|是否允许空|字段含义|
+| :-: | :-: | :-: | :-: |
+|`id`|bigint(20)|NOT NULL|编号|
+|addtime|timestamp|NULL|创建时间|
+|`huiyuanzhanghao|varchar(200)|NULL|会员账号|
+|mima|varchar(200)|NULL|密码|
+|huiyuanxingming|varchar(200)|NULL|会员姓名|
+|touxiang|varchar(200)|NULL|头像|
+|xingbie|varchar(200)|NULL|性别|
+|nianling|varchar(200)|NULL|年龄|
+|shoujihaoma|varchar(200)|NULL|手机号码|
+|dizhi|varchar(200)|NULL|地址|
+|huiyuandengji|varchar(200)|NULL|会员等级|
+|huiyuanzhekou|varchar(200)|NULL|会员折扣|
+
+
+#
+# 5 系统的实现
+## 5.1 用户功能模块的实现
+用户进入本系统可查看系统信息，包括网站首页、菜品信息等，系统主界面展示如图5-3所示。
+
+![](/images/0000stringboot/0005springboot/blog.016.png)
+
+图5-1系统登录界面
+### 5.1.1用户注册界面
+未有账号的用户可进入注册界面进行注册操作，用户注册界面展示如图5-2所示。
+
+![](/images/0000stringboot/0005springboot/blog.017.png)
+
+图5-2用户注册界面
+### 5.1.2用户登录界面
+用户在登录界面可输入用户名和密码，点击登录按钮进行登录系统，用户登录界面展示如图5-3所示。
+
+![](/images/0000stringboot/0005springboot/blog.018.png)
+
+图5-3 用户登录界面
+### 5.1.3菜品详情界面
+用户可选择菜品查看菜品详情信息，登录后可进行下单操作，菜品详情界面展示如图5-4所示。
+
+![](/images/0000stringboot/0005springboot/blog.019.png)
+
+图 5-4  菜品详情界面
+### 5.1.4下单订餐界面
+用户登录后可选择菜品进行下单订餐操作，下单订餐界面展示如图5-5所示。
+
+![](/images/0000stringboot/0005springboot/blog.020.png)
+
+图5-5 下单订餐界面
+### 5.1.5订单信息界面
+用户对个人订单可进行查看、支付等，订单信息界面展示如图5-6所示。
+
+![](/images/0000stringboot/0005springboot/blog.021.png)
+
+图5-6 订单信息界面
+### 5.1.6订单配送界面
+用户能够查看个人订单配送信息，订单配送界面展示如图5-7所示。
+
+![](/images/0000stringboot/0005springboot/blog.022.png)
+
+图5-7 订单配送界面
+## 5.2 管理员功能模块的实现
+### 5.2.1管理员登录界面
+管理员要想进入后台对系统进行管理操作，必须登录系统后台，管理员登录界面展示如图5-8所示。
+
+![](/images/0000stringboot/0005springboot/blog.023.png)
+
+图5-8  管理员登录界面
+### 5.2.2会员管理界面
+管理员可查看、添加、修改和删除会员信息，会员管理界面展示如图5-9所示。
+
+![](/images/0000stringboot/0005springboot/blog.024.png)
+
+图5-9 会员管理界面
+### 5.2.3菜品信息管理界面
+管理员可添加、修改和删除菜品信息，菜品信息管理界面展示如图5-10所示，添加菜品信息界面展示如图5-11所示。
+
+![](/images/0000stringboot/0005springboot/blog.025.png)
+
+图5-10菜品信息管理界面
+
+![](/images/0000stringboot/0005springboot/blog.026.png)
+
+图5-11添加菜品信息界面
+### 5.2.4菜品分类管理界面
+管理员能够增删改查菜品分类信息，菜品分类管理界面展示如图5-12所示。
+
+![](/images/0000stringboot/0005springboot/blog.027.png)
+
+图5-12 菜品分类管理界面
+### 5.2.5订单信息管理界面
+管理员可进入订单信息管理界面查看所有订单信息，并可对其进行安排配送、修改和删除操作，订单信息管理界面展示如图5-13所示。
+
+![](/images/0000stringboot/0005springboot/blog.028.png)
+
+图5-13订单信息管理界面
+### 5.2.6订单配送管理界面
+管理员可增删改查订单配送信息，订单配送管理界面展示如图5-14所示。
+
+![](/images/0000stringboot/0005springboot/blog.029.png)
+
+图5-14 订单配送管理界面
+#
+# 
+
+
 
 
 
