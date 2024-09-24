@@ -1,17 +1,16 @@
 # 0194springboot文理医院预约挂号系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0194springboot文理医院预约挂号系统](https://github.com/GraduationProject-springboot/0194springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1ECs?p=92)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
 ## 1.1研究背景与意义
@@ -124,7 +123,7 @@ Java语言具有跨平台性，本系统主要通过Java语言进行编码实现
 
 职位删除
 
-![](/images/0100stringboot/0194springboot/blog.002.png)
+![](/images/0100wxapp//blog.002.png)
 
 图4-1系统总体功能设计图
 
@@ -138,32 +137,32 @@ Java语言具有跨平台性，本系统主要通过Java语言进行编码实现
 
 （1）下图是论坛实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\wenlixueyuanyuyueguahao\论坛.jpg](/images/0100stringboot/0194springboot/blog.003.jpeg)
+![C:\Users\Administrator\Desktop\img\wenlixueyuanyuyueguahao\论坛.jpg](/images/0100wxapp//blog.003.jpeg)
 图4.1 论坛实体属性图
 
 （2）下图是专家挂号订单实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\wenlixueyuanyuyueguahao\专家挂号订单.jpg](/images/0100stringboot/0194springboot/blog.003.jpeg)
+![C:\Users\Administrator\Desktop\img\wenlixueyuanyuyueguahao\专家挂号订单.jpg](/images/0100wxapp//blog.003.jpeg)
 图4.2 专家挂号订单实体属性图
 
 （3）下图是单页数据实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\wenlixueyuanyuyueguahao\单页数据.jpg](/images/0100stringboot/0194springboot/blog.004.jpeg)
+![C:\Users\Administrator\Desktop\img\wenlixueyuanyuyueguahao\单页数据.jpg](/images/0100wxapp//blog.004.jpeg)
 图4.3 单页数据实体属性图
 
 （4）下图是专家实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\wenlixueyuanyuyueguahao\专家.jpg](/images/0100stringboot/0194springboot/blog.003.jpeg)
+![C:\Users\Administrator\Desktop\img\wenlixueyuanyuyueguahao\专家.jpg](/images/0100wxapp//blog.003.jpeg)
 图4.4 专家实体属性图
 
 （5）下图是会员 show2 photoShow实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\wenlixueyuanyuyueguahao\会员 show2 photoShow.jpg](/images/0100stringboot/0194springboot/blog.003.jpeg)
+![C:\Users\Administrator\Desktop\img\wenlixueyuanyuyueguahao\会员 show2 photoShow.jpg](/images/0100wxapp//blog.003.jpeg)
 图4.5 会员 show2 photoShow实体属性图
 
 （6）下图是专家留言实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\wenlixueyuanyuyueguahao\专家留言.jpg](/images/0100stringboot/0194springboot/blog.005.jpeg)
+![C:\Users\Administrator\Desktop\img\wenlixueyuanyuyueguahao\专家留言.jpg](/images/0100wxapp//blog.005.jpeg)
 图4.6 专家留言实体属性图
 
 ### 4.2.2逻辑设计
@@ -285,26 +284,26 @@ Java语言具有跨平台性，本系统主要通过Java语言进行编码实现
 ### 5.1.1管理员登录
 管理员可以选择任一浏览器打开网址，输入信息无误后，以管理员的身份行使相关的管理权限，管理员登录界面设计如图5-1所示。
 
-![](/images/0100stringboot/0194springboot/blog.006.png)
+![](/images/0100wxapp//blog.006.png)
 
 图5-1管理员登录界面
 ### 5.1.2专家管理
 管理员可以通过选择专家管理，管理相关的专家信息记录，比如进行查看专家信息标题，修改专家信息来源等操作，专家管理界面设计如图5-2所示。
 
-![](/images/0100stringboot/0194springboot/blog.007.png)
+![](/images/0100wxapp//blog.007.png)
 
 图5-2专家管理界面
 
 ### 5.1.3职位管理
 管理员可以通过选择职位管理，管理相关的职位信息记录，比如进行查看职位详情,删除错误的职位信息,发布职位等操作，职位管理界面如图5-3所示。
 
-![](/images/0100stringboot/0194springboot/blog.008.png)
+![](/images/0100wxapp//blog.008.png)
 
 图5-3 职位管理界面
 ### 5.1.4科室类型管理
 管理员可以通过选择科室类型管理，管理相关的科室类型信息，比如查看所有科室类型,删除无用科室类型,修改科室类型,添加科室类型等操作，科室类型管理界面设计如图5-4所示。
 
-![](/images/0100stringboot/0194springboot/blog.009.png)
+![](/images/0100wxapp//blog.009.png)
 
 图5-4科室类型管理界面
 # 系

@@ -1,17 +1,16 @@
 # 0193springboot医药管理系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0193springboot医药管理系统](https://github.com/GraduationProject-springboot/0193springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1ECs?p=91)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
 ## 1.1 选题背景
@@ -75,13 +74,13 @@ Vue框架的开发者是一个中国人，区别于其他框架的最核心的�
 ## 3.3 系统流程分析
 系统设计不是胡乱的设计，必须符合软件设计思想，具体的流程参考下图。系统设计的前期就是做各种分析，功能的设计，数据库的设计等，等一切都设计好了，逻辑上没有问题，符合设计流程和设计规范，才可以继续编码环节，编码只是实现设计的一个环节而已。
 
-![](/images/0100stringboot/0193springboot/blog.001.png)
+![](/images/0100wxapp//blog.001.png)
 
 图3.1系统开发流程图
 
 当需要用户登录的时候，肯定是要验证的，只有验证通过的用户才可以进行下一步操作，用户登录成功代表着用户模块的功能对登录用户进行了开放。流程就是如下面的图所示。
 
-![](/images/0100stringboot/0193springboot/blog.002.png)
+![](/images/0100wxapp//blog.002.png)
 
 图3.3 登录流程图
 ## 3.4 系统功能分析
@@ -91,13 +90,13 @@ Vue框架的开发者是一个中国人，区别于其他框架的最核心的�
 
 管理员对于医药管理系统操作的功能包括增删改查药品，供应商，员工信息，管理药品进货和销售信息，管理供应商信用等级和药品类型信息等。其用例图如图3.4所示：
 
-![](/images/0100stringboot/0193springboot/blog.003.png)
+![](/images/0100wxapp//blog.003.png)
 
 图3.4 管理员用例图
 
 员工对于医药管理系统操作的功能包括查看供应商信息，查询药品，新增药品进货，新增药品销售，查询药品进货和销售信息。其用例图如图3.5所示：
 
-![](/images/0100stringboot/0193springboot/blog.004.png)
+![](/images/0100wxapp//blog.004.png)
 
 图3.5 员工用例图
 # 4 系统设计
@@ -117,13 +116,13 @@ Vue框架的开发者是一个中国人，区别于其他框架的最核心的�
 ## 4.2 功能模块设计
 对管理员具体功能的设计结果将以图4.1所示的管理员功能结构图来进行体现。管理员对于医药管理系统操作的功能包括增删改查药品，供应商，员工信息，管理药品进货和销售信息，管理供应商信用等级和药品类型信息等。
 
-![](/images/0100stringboot/0193springboot/blog.005.png)
+![](/images/0100wxapp//blog.005.png)
 
 图4.1 管理员功能结构图
 
 对员工具体功能的设计结果将以图4.2所示的员工功能结构图来进行体现。员工对于医药管理系统操作的功能包括查看供应商信息，查询药品，新增药品进货，新增药品销售，查询药品进货和销售信息。
 
-![](/images/0100stringboot/0193springboot/blog.006.png)
+![](/images/0100wxapp//blog.006.png)
 
 图4.2 员工功能结构图
 ## 4.3 数据库设计
@@ -133,31 +132,31 @@ Vue框架的开发者是一个中国人，区别于其他框架的最核心的�
 
 （1）进货包括的属性有药品，进货数量，进货时间等。其属性图如下。
 
-![](/images/0100stringboot/0193springboot/blog.007.png)
+![](/images/0100wxapp//blog.007.png)
 
 图4.4 进货实体属性图
 
 （2）销售包括的属性有药品，销售数量，销售时间等。其属性图如下。
 
-![](/images/0100stringboot/0193springboot/blog.008.png)
+![](/images/0100wxapp//blog.008.png)
 
 图4.5 销售实体属性图
 
 （3）员工包括的属性有账户，密码，姓名等。其属性图如下。
 
-![](/images/0100stringboot/0193springboot/blog.009.png)
+![](/images/0100wxapp//blog.009.png)
 
 图4.6 员工实体属性图
 
 （4）药品包括的属性有药品名称，药品进价，药品照片等。其属性图如下。
 
-![](/images/0100stringboot/0193springboot/blog.010.png)
+![](/images/0100wxapp//blog.010.png)
 
 图4.7 药品实体属性图
 
 （5）设计的各实体间关系E-R图如下。
 
-![](/images/0100stringboot/0193springboot/blog.011.png)
+![](/images/0100wxapp//blog.011.png)
 
 图4.8 实体间关系E-R图
 ### 4.3.2 数据库表结构
@@ -249,50 +248,50 @@ Vue框架的开发者是一个中国人，区别于其他框架的最核心的�
 ### 5.1.1 药品管理
 该功能主要用于实现对药品基本信息的管理，药品管理界面的运行效果见图5.1。在此界面，管理员需要对药品所治疾病，药品功效，药品库存，药品照片，供应商名称等信息进行添加，如果发现有登记错误的药品信息，管理员则可以使用修改功能及时更正，对于需要删除的药品信息则可以使用删除功能及时删除。同时，管理员也能对药品库存进行管理，包括增加药品库存，减少药品库存等操作。
 
-![](/images/0100stringboot/0193springboot/blog.012.png)
+![](/images/0100wxapp//blog.012.png)
 
 图5.1 药品管理界面
 ### 5.1.2 员工管理
 该功能主要用于实现对员工基本信息的管理，员工管理界面的运行效果见图5.2。在此界面，员工的姓名，性别，员工的手机号码等信息都可以让管理员添加以及修改，同时，对于需要删除的员工信息，管理员也能及时删除。
 
-![](/images/0100stringboot/0193springboot/blog.013.png)
+![](/images/0100wxapp//blog.013.png)
 
 图5.2 员工管理界面
 ### 5.1.3 供应商管理
 该功能主要用于实现对供应商基本信息的管理，供应商管理界面的运行效果见图5.3。在此界面，管理员对供应商的信用等级，供应商名称，还有供应商的类型进行添加，当供应商信息比较多时，就需要管理员使用查询功能对供应商信息进行查询，查询前只需要在查询框中编辑供应商名称即可查询。
 
-![](/images/0100stringboot/0193springboot/blog.014.png)
+![](/images/0100wxapp//blog.014.png)
 
 图5.3 供应商管理界面
 ### 5.1.4 销售管理
 销售管理界面的运行效果见图5.4。在此界面，管理员查看销售药品的员工信息以及销售的药品信息，可以更改药品销售数据，可以使用销售编号实现对销售药品的查询。
 
-![](/images/0100stringboot/0193springboot/blog.015.png)
+![](/images/0100wxapp//blog.015.png)
 
 图5.4 销售管理界面
 ### 5.1.5 销售药品统计报表
 销售药品统计报表界面的运行效果见图5.5。在此界面，管理员查看各种药品的销售数量信息，同时管理员可以下载销售药品统计报表，可以把销售药品统计报表在柱状图与折线图之间进行切换。
 
-![](/images/0100stringboot/0193springboot/blog.016.png)
+![](/images/0100wxapp//blog.016.png)
 
 图5.5 销售药品统计报表界面
 ## 5.2 员工功能实现
 ### 5.2.1 进货管理
 进货管理界面的运行效果见图5.6。在此界面，员工对药品进货详情进行查看，包括进货数量，进货时间等信息，员工也有权限新增药品进货信息，可以对药品的进货信息通过进货编号，药品编号等查询条件进行查询。
 
-![](/images/0100stringboot/0193springboot/blog.017.png)
+![](/images/0100wxapp//blog.017.png)
 
 图5.6 进货管理界面
 ### 5.2.2 销售管理
 销售管理界面的运行效果见图5.7。在此界面，员工对药品销售的详情进行查看，包括销售药品名称，销售编号，销售数量等信息，员工也有权限新增药品销售信息，可以对药品销售信息通过销售编号，药品功效，所致疾病等查询条件进行查询。
 
-![](/images/0100stringboot/0193springboot/blog.018.png)
+![](/images/0100wxapp//blog.018.png)
 
 图5.7 销售管理界面
 ### 5.2.3 药品查看
 药品查看界面的运行效果见图5.8。在此界面，员工查看药品库存，查看药品进价，药品售价，药品功效等信息。员工查询药品可以根据药品功效，所治疾病等字段进行查询。
 
-![](/images/0100stringboot/0193springboot/blog.019.png)
+![](/images/0100wxapp//blog.019.png)
 
 图5.8 药品查看界面
 

@@ -1,17 +1,16 @@
 # 0195springboot高校教师科研管理系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0195springboot高校教师科研管理系统](https://github.com/GraduationProject-springboot/0195springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1ECs?p=93)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 绪论
 ## 1.1 研究背景
@@ -82,25 +81,25 @@ Spring Boot可以与经典的Java开发工具一起使用或者作为命令行�
 ## 3.3系统流程分析
 分析程序的流程，涉及到程序的整体操作流程，通过分析与设计，绘制的程序操作流程图见下图。此程序为了确保安全，会让使用者通过登录模块验证信息，符合要求的使用者才有权限操作程序。
 
-![](/images/0100stringboot/0195springboot/blog.001.png)
+![](/images/0100wxapp//blog.001.png)
 
 图3-1 程序操作流程图
 
 程序处理数据会涉及到数据的录入环节，绘制的添加流程见下图。程序录入数据过程中，始终与数据库保持同步。
 
-![](/images/0100stringboot/0195springboot/blog.002.png)
+![](/images/0100wxapp//blog.002.png)
 
 图3-2 信息添加流程图
 
 程序里面的数据也会出现错误，因此就有相应的修改数据的功能，绘制的程序修改流程见下图。此过程也是跟后台数据库进行数据同步显示。
 
-![](/images/0100stringboot/0195springboot/blog.003.png)
+![](/images/0100wxapp//blog.003.png)
 
 图3-3信息修改流程图
 
 程序数据存放于数据仓库，有时也会涉及到数据删除，此过程对应的流程图见下图。数据信息被删除之后，数据库里面也就没有了该数据信息了。
 
-![](/images/0100stringboot/0195springboot/blog.004.png)
+![](/images/0100wxapp//blog.004.png)
 
 图3-4 信息删除流程图
 
@@ -124,7 +123,7 @@ Spring Boot可以与经典的Java开发工具一起使用或者作为命令行�
 ## 4.2 功能结构设计
 在管理员功能模块确定下来的基础上，对管理员各个功能进行设计，确定管理员功能的详细模块。绘制的管理员功能结构见下图。管理员可以管理所有，包含个人中心，用户管理，医生管理，公告信息管理，咨询信息管理，诊断记录管理，测试模板管理，试题管理，系统管理，考试管理等。
 
-![](/images/0100stringboot/0195springboot/blog.005.png)
+![](/images/0100wxapp//blog.005.png)
 
 图4-2 管理员功能结构图
 ## 4.3 数据库设计
@@ -134,19 +133,19 @@ Spring Boot可以与经典的Java开发工具一起使用或者作为命令行�
 
 （1）管理员实体属性图通过Visio工具绘制，绘制结果展示如下：
 
-![](/images/0100stringboot/0195springboot/blog.006.png)
+![](/images/0100wxapp//blog.006.png)
 
 图4-4 管理员实体属性图
 
 （2）教师实体属性图通过Visio工具绘制，绘制结果展示如下：
 
-![](/images/0100stringboot/0195springboot/blog.007.png)
+![](/images/0100wxapp//blog.007.png)
 
 图4-5 教师实体属性图
 
 （3）学院信息实体属性图通过Visio工具绘制，绘制结果展示如下：
 
-![](/images/0100stringboot/0195springboot/blog.008.png)
+![](/images/0100wxapp//blog.008.png)
 
 图4-6 学院信息实体属性图
 ### 4.3.2 数据库表结构
@@ -377,51 +376,51 @@ Spring Boot可以与经典的Java开发工具一起使用或者作为命令行�
 ### 5.1.1 教师管理
 管理员可以对教师信息进行添加，修改，删除，查询操作。
 
-![](/images/0100stringboot/0195springboot/blog.009.png)
+![](/images/0100wxapp//blog.009.png)
 
 图5-1 教师管理页面
 ### 5.1.2 学院管理
 管理员可以对学院信息信息进行添加，修改，删除，查询操作。
 
-![](/images/0100stringboot/0195springboot/blog.010.png)
+![](/images/0100wxapp//blog.010.png)
 
 图5-2 学院信息管理页面
 ## 5.2 教师功能实现
 ### 5.2.1 科研课题管理
 教师可以对科研课题进行添加，修改，删除，查询操作。
 
-![](/images/0100stringboot/0195springboot/blog.011.png)
+![](/images/0100wxapp//blog.011.png)
 
 图5-3 科研课题管理页面
 ### 5.2.2 软件著作权管理
 教师可以对软件著作权进行添加，修改，删除操作。
 
-![](/images/0100stringboot/0195springboot/blog.012.png)
+![](/images/0100wxapp//blog.012.png)
 
 图5-4 软件著作权管理页面
 ### 5.2.3 论文信息管理
 教师可以对论文信息进行添加，修改，删除，查询操作。
 
-![](/images/0100stringboot/0195springboot/blog.013.png)
+![](/images/0100wxapp//blog.013.png)
 
 图5-5 论文信息管理页面
 ### 5.2.4 科研成果管理
 教师可以对科研成果信息进行添加，修改，删除，查询操作。
 
-![](/images/0100stringboot/0195springboot/blog.014.png)
+![](/images/0100wxapp//blog.014.png)
 
 图5-6 科研成果管理页面
 ## 5.3 学院功能实现
 ### 5.3.1 科研课题审核
 院校可以对教师提交的科研课题信息进行审核操作。
 
-![](/images/0100stringboot/0195springboot/blog.015.png)
+![](/images/0100wxapp//blog.015.png)
 
 图5-7 科研课题审核页面
 ### 5.3.2 科研成果审核
 院校可以对教师提交的科研成果进行审核操作。
 
-![](/images/0100stringboot/0195springboot/blog.016.png)
+![](/images/0100wxapp//blog.016.png)
 
 图5-8 科研成果审核页面
 

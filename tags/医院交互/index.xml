@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>医院交互 - 标签 - chenqi blog</title>
+        <link>https://chenqi199.github.io/tags/%E5%8C%BB%E9%99%A2%E4%BA%A4%E4%BA%92/</link>
+        <description>医院交互 - 标签 - chenqi blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>chen_q_i@163.com (chenqi)</managingEditor>
+            <webMaster>chen_q_i@163.com (chenqi)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 19 Apr 2024 10:32:57 &#43;0800</lastBuildDate><atom:link href="https://chenqi199.github.io/tags/%E5%8C%BB%E9%99%A2%E4%BA%A4%E4%BA%92/" rel="self" type="application/rss+xml" /><item>
+    <title>ssm525医院交互系统&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm525%E5%8C%BB%E9%99%A2%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F-vue/</link>
+    <pubDate>Fri, 19 Apr 2024 10:32:57 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm525%E5%8C%BB%E9%99%A2%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm525医院交互系统+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1.1研究背景与意义 1.1.1研究背]]></description>
+</item>
+</channel>
+</rss>

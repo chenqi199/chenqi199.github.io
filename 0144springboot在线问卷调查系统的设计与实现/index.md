@@ -1,17 +1,16 @@
 # 0144springboot在线问卷调查系统的设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0144springboot在线问卷调查系统的设计与实现](https://github.com/GraduationProject-springboot/0144springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1ECs?p=43)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 绪论
 ## 1.1 课题背景
@@ -64,25 +63,25 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 3.2.1 操作流程
 使用者在操作在线问卷调查系统中，应该按照本系统提供的操作流程（图3.1即为本系统的操作流程图）进行操作，这样可以减少使用者操作中出现的错误，从而节省进入在线问卷调查系统的时间。
 
-![](/images/0100stringboot/0144springboot/blog.001.png)
+![](/images/0100wxapp//blog.001.png)
 
 图3.1 系统操作流程
 ### 3.2.2 登录流程
 在线问卷调查系统通过登录功能（图3.2即为其登录的流程）引导使用者进入指定的功能操作区，也避免非本系统的用户享受本系统提供的服务以及查看本系统提供的信息，从而保障本系统用户的安全使用。
 
-![](/images/0100stringboot/0144springboot/blog.002.png)
+![](/images/0100wxapp//blog.002.png)
 
 图3.2 登录流程
 ### 3.2.3 删除信息流程
 在线问卷调查系统在经过长期使用后，会产生很多的数据信息。为了腾出存储空间存放更多的数据，本系统数据库中存储的数据，一些没有参考价值的数据需要进行删除（图3.3即为删除信息的流程），删除数据过程中，为避免误删，使用者要根据系统的提示来决定是否删除数据。
 
-![](/images/0100stringboot/0144springboot/blog.003.png)
+![](/images/0100wxapp//blog.003.png)
 
 图3.3 删除信息流程
 ### 3.2.4 添加信息流程
 在线问卷调查系统提供可视化的功能操作区，非常方便使用者进行数据操作，当使用者往系统中录入数据时（图3.4即为添加信息的流程），本系统也会进行数据合法性的判断，符合要求的数据才能够在数据库指定表中进行登记。
 
-![](/images/0100stringboot/0144springboot/blog.004.png)
+![](/images/0100wxapp//blog.004.png)
 
 图3.4 添加信息流程
 ## 3.3 性能需求
@@ -102,13 +101,13 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 图3.5即为管理员用例图，管理员权限操作的功能包括对注册用户信息的管理，对问卷，题目，问卷调查，新闻资讯等信息的管理。
 
-![](/images/0100stringboot/0144springboot/blog.005.png)
+![](/images/0100wxapp//blog.005.png)
 
 图3.5 管理员用例图
 
 图3.6即为用户用例图，用户权限操作的功能包括参与问卷调查，查看新闻，查看问卷调查记录。
 
-![](/images/0100stringboot/0144springboot/blog.006.png)
+![](/images/0100wxapp//blog.006.png)
 
 图3.6 用户用例图
 # 第4章 系统设计
@@ -116,13 +115,13 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ## 4.1 功能结构设计
 图4.1即为设计的管理员功能结构，管理员权限操作的功能包括对注册用户信息的管理，对问卷，题目，问卷调查，新闻资讯等信息的管理。
 
-![](/images/0100stringboot/0144springboot/blog.007.png)
+![](/images/0100wxapp//blog.007.png)
 
 图4.1 管理员功能结构
 
 图4.2即为设计的用户功能结构，用户权限操作的功能包括参与问卷调查，查看新闻，查看问卷调查记录。
 
-![](/images/0100stringboot/0144springboot/blog.008.png)
+![](/images/0100wxapp//blog.008.png)
 
 图4.2 用户功能结构
 ## 4.2 数据库设计
@@ -132,31 +131,31 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 （1）图4.4即为题目这个实体所拥有的属性值。
 
-![](/images/0100stringboot/0144springboot/blog.009.png)
+![](/images/0100wxapp//blog.009.png)
 
 图4.4 题目实体属性图
 
 （2）图4.5即为用户这个实体所拥有的属性值。
 
-![](/images/0100stringboot/0144springboot/blog.010.png)
+![](/images/0100wxapp//blog.010.png)
 
 图4.5 用户实体属性图
 
 （3）图4.6即为问卷这个实体所拥有的属性值。
 
-![](/images/0100stringboot/0144springboot/blog.011.png)
+![](/images/0100wxapp//blog.011.png)
 
 图4.6 问卷实体属性图
 
 4. 图4.7即为问卷调查记录这个实体所拥有的属性值。
 
-![](/images/0100stringboot/0144springboot/blog.012.png)
+![](/images/0100wxapp//blog.012.png)
 
 图4.7 问卷调查记录实体属性图
 
 4. 图4.8即为上面介绍的实体中存在的联系。
 
-![](/images/0100stringboot/0144springboot/blog.013.png)
+![](/images/0100wxapp//blog.013.png)
 
 图4.8 实体间关系E-R图
 ### 4.2.2 数据库物理设计
@@ -243,7 +242,7 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 5.1.1 问卷管理
 图5.1 即为编码实现的问卷管理界面，管理员在该界面中可以对已有问卷进行启用或禁用，可以新增问卷，编辑更改已有问卷的资料，包括问卷名称，结束语等信息，可以删除需要删除的问卷，可以根据问卷名称，问卷的状态来获取需要的问卷信息。
 
-![](/images/0100stringboot/0144springboot/blog.014.png)
+![](/images/0100wxapp//blog.014.png)
 
 图5.1 问卷管理界面
 
@@ -330,7 +329,7 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 5.1.2 问卷调查管理
 图5.2 即为编码实现的问卷调查管理界面，管理员在该界面中对用户提交的问卷调查信息进行查看，管理员可以直接查看每条问卷调查的调查详情信息，同时可以删除问卷调查信息。
 
-![](/images/0100stringboot/0144springboot/blog.015.png)
+![](/images/0100wxapp//blog.015.png)
 
 图5.2 问卷调查管理界面
 
@@ -505,7 +504,7 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 5.1.3 题目管理
 图5.3 即为编码实现的题目管理界面，管理员在该界面中可以导出题目，可以新增题目，可以对指定的题目信息进行修改，删除，同时可以查看用户对各个题目选项的统计信息，该统计信息是以饼图进行展示。
 
-![](/images/0100stringboot/0144springboot/blog.016.png)
+![](/images/0100wxapp//blog.016.png)
 
 图5.3 题目管理界面
 
@@ -613,7 +612,7 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 5.1.4 用户管理
 图5.4 即为编码实现的用户管理界面，管理员在该界面中为用户重置密码，修改用户基本信息，新增用户，删除需要删除的用户信息。
 
-![](/images/0100stringboot/0144springboot/blog.017.png)
+![](/images/0100wxapp//blog.017.png)
 
 图5.4 用户管理界面
 
@@ -691,7 +690,7 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 5.1.5 新闻资讯管理
 图5.5 即为编码实现的新闻资讯管理界面，管理员在该界面中负责发布新闻资讯，更改新闻资讯的部分信息，删除需要删除的新闻资讯信息。
 
-![](/images/0100stringboot/0144springboot/blog.018.png)
+![](/images/0100wxapp//blog.018.png)
 
 图5.5 新闻资讯管理界面
 
@@ -747,7 +746,7 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 5.2.1 问卷列表
 图5.6 即为编码实现的问卷列表界面，用户在该界面中选择问卷并参与问卷调查。
 
-![](/images/0100stringboot/0144springboot/blog.019.png)
+![](/images/0100wxapp//blog.019.png)
 
 图5.6 问卷列表界面
 
@@ -852,7 +851,7 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 5.2.2 问卷调查
 图5.7 即为编码实现的问卷调查界面，用户在该界面中主要根据问卷调查题目信息进行选项答题，答题结束可以选择界面顶端的结束问卷调查按钮离开问卷调查界面。
 
-![](/images/0100stringboot/0144springboot/blog.020.png)
+![](/images/0100wxapp//blog.020.png)
 
 图5.7 问卷调查界面
 
@@ -920,7 +919,7 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 5.2.3 新闻资讯
 图5.8 即为编码实现的新闻资讯界面，用户在该界面中浏览新闻资讯，在界面右上角的搜索框中编辑新闻标题可以获取匹配的新闻资讯信息。
 
-![](/images/0100stringboot/0144springboot/blog.021.png)
+![](/images/0100wxapp//blog.021.png)
 
 图5.8 新闻资讯界面
 
@@ -965,7 +964,7 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 5.2.4 问卷调查记录
 图5.9 即为编码实现的问卷调查记录界面，用户在该界面中可以对参与问卷调查的记录信息进行查看。
 
-![](/images/0100stringboot/0144springboot/blog.022.png)
+![](/images/0100wxapp//blog.022.png)
 
 图5.9 问卷调查记录界面
 

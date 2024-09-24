@@ -1,17 +1,16 @@
 # 0200springboot论坛系统设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0200springboot论坛系统设计与实现](https://github.com/GraduationProject-springboot/0200springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1EbH?p=1)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第一章 绪论
 ## 1.1 研究背景
@@ -66,19 +65,19 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ## 3.2系统流程分析
 本项目在处理数据方面，必须规定其流程，要让每个步骤都要符合设定预期。注册的结果可以说只有两种结果，一个是成功，一个是失败，成功就会把注册时候输入的数据写入到数据库表里存储，如果失败则提示提示失败，并且不写入数据库。因为两种结果，所以要对数据的合法性进行判断，而数据的合法性需要对每条信息进行判断，主要对哪条信息判断，这些都要有流程。
 
-![](/images/0200stringboot/0200springboot/blog.001.png)
+![](/images/0200wxapp//blog.001.png)
 
 图3.1用户注册流程图
 
 登录是所有系统必不可少的功能之一。虽然不起眼，但是却是一件不可缺少的事情，登录的作用主要代表着当前操作用户是某人，当然，登录的时候是需要输入账号和密码的，都正确才可以登录，登录的时候会对输入的信息进行判断的。
 
-![](/images/0200stringboot/0200springboot/blog.002.png)
+![](/images/0200wxapp//blog.002.png)
 
 图3.2 用户登录流程图
 
 数据的添加是一件比较严肃的事情，必须判断正确与否，不然随意的添加可能会导致数据库设定与实际数据输入要求不一致，导致数据丢失的问题，所以必须根据数据设定要求，在输入数据的时候就进行判断输入信息是否合法。
 
-![](/images/0200stringboot/0200springboot/blog.003.png)
+![](/images/0200wxapp//blog.003.png)
 
 图3.3 信息添加流程图
 ## 3.3 系统性能分析
@@ -101,7 +100,7 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 管理员管理论坛，主要是对论坛帖子增删改查以及对论坛帖子回复进行查看，对版主和用户进行管理，管理新闻等。对管理员的功能进行分析之后，将使用图3.4的管理员用例图来描述管理员的功能。
 
-![](/images/0200stringboot/0200springboot/blog.004.png)
+![](/images/0200wxapp//blog.004.png)
 
 图3.4 管理员用例图
 
@@ -109,7 +108,7 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 版主可以发布帖子，可以查询论坛帖子，可以对论坛帖子回复进行查看，可以回复帖子，可以删除帖子，可以查看新闻，更改个人信息等。对版主的功能进行分析之后，将使用图3.5的版主用例图来描述版主的功能。
 
-![](/images/0200stringboot/0200springboot/blog.005.png)
+![](/images/0200wxapp//blog.005.png)
 
 图3.5 版主用例图
 
@@ -117,7 +116,7 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 用户在前台查看新闻，在留言版对发布的留言和管理员的回复进行查看，在论坛模块发帖，评论帖子，查看帖子。对用户的功能进行分析之后，将使用图3.6的用户用例图来描述用户的功能。
 
-![](/images/0200stringboot/0200springboot/blog.006.png)
+![](/images/0200wxapp//blog.006.png)
 
 图3.6 用户用例图
 # 第四章 系统设计
@@ -135,19 +134,19 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ## 4.2功能模块设计
 本小节运用功能结构图来描述管理员具备的详细的功能，对管理员的功能结构图绘制结果如图4.1所示。管理员管理论坛，主要是对论坛帖子增删改查以及对论坛帖子回复进行查看，对版主和用户进行管理，管理新闻等。
 
-![](/images/0200stringboot/0200springboot/blog.007.png)
+![](/images/0200wxapp//blog.007.png)
 
 图4.1 管理员功能结构图
 
 本小节运用功能结构图来描述版主具备的详细的功能，对版主的功能结构图绘制结果如图4.2所示。版主可以发布帖子，可以查询论坛帖子，可以对论坛帖子回复进行查看，可以回复帖子，可以删除帖子，可以查看新闻，更改个人信息等。
 
-![](/images/0200stringboot/0200springboot/blog.008.png)
+![](/images/0200wxapp//blog.008.png)
 
 图4.2 版主功能结构图
 
 本小节运用功能结构图来描述用户具备的详细的功能，对用户的功能结构图绘制结果如图4.3所示。用户在前台查看新闻，在留言版对发布的留言和管理员的回复进行查看，在论坛模块发帖，评论帖子，查看帖子。
 
-![](/images/0200stringboot/0200springboot/blog.009.png)
+![](/images/0200wxapp//blog.009.png)
 
 图4.3 用户功能结构图
 ## 4.3数据库设计
@@ -157,31 +156,31 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 （1）图4.4即为论坛这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0200springboot/blog.010.png)
+![](/images/0200wxapp//blog.010.png)
 
 图4.4 论坛实体属性图
 
 （2）图4.5即为用户这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0200springboot/blog.011.png)
+![](/images/0200wxapp//blog.011.png)
 
 图4.5 用户实体属性图
 
 （3）图4.6即为留言这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0200springboot/blog.012.png)
+![](/images/0200wxapp//blog.012.png)
 
 图4.6 留言实体属性图
 
 4. 图4.7即为管理员这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0200springboot/blog.013.png)
+![](/images/0200wxapp//blog.013.png)
 
 图4.7 管理员实体属性图
 
 （5）图4.8即为上面介绍的实体中存在的联系。
 
-![](/images/0200stringboot/0200springboot/blog.014.png)
+![](/images/0200wxapp//blog.014.png)
 
 图4.8 实体间关系E-R图
 ### 4.3.2 数据库表结构
@@ -275,57 +274,57 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 5.1.1 版主管理
 管理员点击导航栏的版主管理链接就进入版主管理界面。版主管理界面如图5.1所示。本功能允许管理员对版主的基本资料进行修改，添加，查询，删除。
 
-![](/images/0200stringboot/0200springboot/blog.015.png)
+![](/images/0200wxapp//blog.015.png)
 
 图5.1 版主管理界面
 ### 5.1.2 用户管理
 管理员点击导航栏的用户管理链接就进入用户管理界面。用户管理界面如图5.2所示。本功能允许管理员对用户基础资料进行修改，查询，添加，删除。
 
-![](/images/0200stringboot/0200springboot/blog.016.png)
+![](/images/0200wxapp//blog.016.png)
 
 图5.2 用户管理界面
 ### 5.1.3 留言版管理
 管理员点击导航栏的留言版管理链接就进入留言版管理界面。留言版管理界面如图5.3所示。本功能允许管理员查看用户留言，通过用户姓名或留言标题查询留言，回复留言内容，删除留言等。
 
-![](/images/0200stringboot/0200springboot/blog.017.png)
+![](/images/0200wxapp//blog.017.png)
 
 图5.3 留言版管理界面
 ## 5.2 版主功能实现
 ### 5.2.1 论坛管理
 版主点击导航栏的论坛管理链接就进入论坛管理界面。论坛管理界面如图5.4所示。版主新增论坛帖子，论坛帖子有发帖时间，帖子标题，身份，姓名，手机号，帖子类型等信息，发布帖子之后，版主可以对论坛帖子的回复随时进行查看。
 
-![](/images/0200stringboot/0200springboot/blog.018.png)
+![](/images/0200wxapp//blog.018.png)
 
 图5.4 论坛管理界面
 ### 5.2.2 新闻信息查看
 版主点击导航栏的新闻信息查看链接就进入新闻信息查看界面。新闻信息查看界面如图5.5所示。本功能允许版主查询新闻，对新闻内容，包括新闻标题在内的新闻信息进行查看。
 
-![](/images/0200stringboot/0200springboot/blog.019.png)
+![](/images/0200wxapp//blog.019.png)
 
 图5.5 新闻信息查看界面
 ### 5.2.3 个人信息
 版主点击导航栏的个人信息链接就进入个人信息界面。个人信息界面如图5.6所示。本功能允许版主对个人信息，主要是联系方式，头像等进行更改。
 
-![](/images/0200stringboot/0200springboot/blog.020.png)
+![](/images/0200wxapp//blog.020.png)
 
 图5.6 个人信息界面
 ## 5.3 用户功能实现
 ### 5.3.1 留言版
 用户点击导航栏的留言版链接就进入留言版界面。留言版界面如图5.7所示。本功能允许用户与管理员交流，主要是需要用户先发布留言，管理员针对留言内容进行回复。
 
-![](/images/0200stringboot/0200springboot/blog.021.png)
+![](/images/0200wxapp//blog.021.png)
 
 图5.7 留言版界面
 ### 5.3.2 在线论坛
 用户点击导航栏的在线论坛链接就进入在线论坛界面。在线论坛界面如图5.8所示。本功能允许用户根据帖子类型筛选帖子，用户对本界面显示的所有帖子都能查看和评论，用户也能在本界面发布帖子。
 
-![](/images/0200stringboot/0200springboot/blog.022.png)
+![](/images/0200wxapp//blog.022.png)
 
 图5.8 在线论坛界面
 ### 5.3.3 新闻信息
 用户点击导航栏的新闻信息链接就进入新闻信息界面。新闻信息界面如图5.9所示。本功能允许用户查询新闻，对新闻具体内容进行查看。
 
-![](/images/0200stringboot/0200springboot/blog.023.png)
+![](/images/0200wxapp//blog.023.png)
 
 图5.9 新闻信息界面
 

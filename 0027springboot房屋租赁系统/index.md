@@ -1,17 +1,16 @@
 # 0027springboot房屋租赁系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0027springboot房屋租赁系统](https://github.com/GraduationProject-springboot/0027springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV16ia6epENY?p=28)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
 ## 1.1 研究背景
@@ -62,7 +61,7 @@ Java可以是高级语言，在c++语言的基础上，取其精华去其糟粕�
 ## 2.2 B/S结构
 B/S（浏览器/服务器）结构是目前主流的网络化的结构模式，它能够把系统核心功能集中在服务器上面，可以帮助系统开发人员简化操作，便于维护和使用。只需要用户在客户端安装360浏览器、谷歌浏览器、QQ浏览器等当前大众浏览器，在电脑里面安装sqlserver、mysql数据库等数据库。安装好的浏览器与服务器端的数据库进行信息数据的交互。很多专门软件能够做到的事情，采用B/S结构模式也能实现，它能够结合Web浏览器技术，ActiveX技术以及多种脚本语言等技术。帮助程序开发者节约了不少开发成本。目前B/S结构成为程序开发主流结构，它最好的地方就是没有地点限制还不用专门安装软件，笔记本或者电脑能够上网就能访问系统。系统使用B/S进行开发在后期系统维护上面就会很省事，不用什么问题都在服务器上面操作，简单的客户端处理就解决部分问题，开发出来的程序跟用户交互性上面也会增强，还可以实时刷新浏览器进行程序局部的数据信息更新。
 
-![](/images/0000stringboot/0027springboot/blog.001.png)
+![](/images/0000wxapp//blog.001.png)
 
 图2-1  B/S模式三层结构图
 ## 2.3 SQL数据库
@@ -101,26 +100,26 @@ Mysql是当今最为热门的数据库之一，它是用于WEB应用程序的最
 ### 3.3.1租客功能分析
 租客进入本系统可查看系统信息，包括网站首页、公告信息以及房屋信息，注册登录主要功能模块包括个人中心、看房申请管理、租赁合同管理、收租信息管理、报修信息管理，租客用例图如图3-1所示。
 
-![](/images/0000stringboot/0027springboot/blog.002.png)
+![](/images/0000wxapp//blog.002.png)
 
 图3-1 租客用例图
 ### 3.3.2管理员功能分析
 管理员可登录系统后台，登录后可对系统进行全面管理，包括个人中心、公告信息管理、租客管理、户主管理、房屋信息管理、看房申请管理、租赁合同管理、收租信息管理、报修信息管理、收租统计管理以及维修数据管理，管理员用例图如图3-2所示。
 
-![](/images/0000stringboot/0027springboot/blog.003.png)
+![](/images/0000wxapp//blog.003.png)
 
 图3-2 管理员用例图
 ## 3.4 系统流程分析
 ### 3.4.1 注册登录流程
 未有账号的租客可进行注册操作，注册后可通过注册账号密码进行登录系统，注册登录流程图如图3-3所示。
 
-![](/images/0000stringboot/0027springboot/blog.004.png)
+![](/images/0000wxapp//blog.004.png)
 
 图3-3 租客注册登录流程图
 ### 3.4.2添加信息流程
 管理员和租客登录后均可进行添加信息操作，添加信息流程如图3-4所示。
 
-![](/images/0000stringboot/0027springboot/blog.005.png)
+![](/images/0000wxapp//blog.005.png)
 
 图3-4 添加信息流程图
 #
@@ -128,7 +127,7 @@ Mysql是当今最为热门的数据库之一，它是用于WEB应用程序的最
 ## 4.1 系统概要设计
 房屋租赁系统并没有使用C/S结构，而是基于网络浏览器的方式去访问服务器，进而获取需要的数据信息，这种依靠浏览器进行数据访问的模式就是现在用得比较广泛的适用于广域网并且没有网速限制要求的B/S结构，图4-1就是开发出来的程序工作原理图。
 
-![](/images/0000stringboot/0027springboot/blog.006.png)
+![](/images/0000wxapp//blog.006.png)
 
 图4-1系统工作原理图
 ## 4.2 系统结构设计
@@ -136,7 +135,7 @@ Mysql是当今最为热门的数据库之一，它是用于WEB应用程序的最
 
 本基于Spring Boot的房屋租赁系统的功能结构设计如图4-2所示。
 
-![](/images/0000stringboot/0027springboot/blog.007.png)
+![](/images/0000wxapp//blog.007.png)
 
 图4-2 系统结构图
 ## 4.3 系统顺序图设计
@@ -144,7 +143,7 @@ Mysql是当今最为热门的数据库之一，它是用于WEB应用程序的最
 
 用户在登录时，首先进入系统登录窗口，用户需要输入用户名和密码，点击登录按钮进行登录操作，系统会以用户名和密码为参数在数据库中进行登录信息的验证，验证成功则登录成功，进入用户主界面。登录模块顺序图如图4-3所示。
 
-![](/images/0000stringboot/0027springboot/blog.008.png)
+![](/images/0000wxapp//blog.008.png)
 
 图4-3 登录顺序图
 
@@ -152,7 +151,7 @@ Mysql是当今最为热门的数据库之一，它是用于WEB应用程序的最
 
 未有账号的用户可进入注册界面进行注册操作，在注册界面输入注册信息，点击提交按钮，系统首先判断用户名是否存在，存在则提示重新输入，不存在则验证注册信息是否正确，正确则在数据库中添加注册数据，提示注册成功。用户注册模块顺序图如图4-4所示。
 
-![](/images/0000stringboot/0027springboot/blog.009.png)
+![](/images/0000wxapp//blog.009.png)
 
 图4-4 注册顺序图
 ## 4.4 数据库设计
@@ -164,31 +163,31 @@ E-R图是一种描述显示数据类型间的关系的数据描述方法，E-R�
 
 （1）报修信息实体属性E-R图如图4-5所示：
 
-![](/images/0000stringboot/0027springboot/blog.010.png)
+![](/images/0000wxapp//blog.010.png)
 
 图4-5 报修信息实体E-R图
 
 （2）房屋信息实体属性E-R图如图4-6所示：
 
-![](/images/0000stringboot/0027springboot/blog.011.png)
+![](/images/0000wxapp//blog.011.png)
 
 图4-6 房屋信息实体属性E-R图
 
 （3）租客信息实体属性E-R图如图4-7所示：
 
-![](/images/0000stringboot/0027springboot/blog.012.png)
+![](/images/0000wxapp//blog.012.png)
 
 图4-7 租客信息实体属性E-R图
 
 （4）管理员信息实体属性E-R图如图4-8所示：
 
-![](/images/0000stringboot/0027springboot/blog.013.png)
+![](/images/0000wxapp//blog.013.png)
 
 图4-8  管理员信息实体属性E-R图
 
 （5）看房申请信息实体属性E-R图如图4-9所示：
 
-![](/images/0000stringboot/0027springboot/blog.014.png)
+![](/images/0000wxapp//blog.014.png)
 
 图4-9  看房申请信息实体属性E-R图
 ### 4.4.2 数据库表设计
@@ -289,86 +288,86 @@ E-R图是一种描述显示数据类型间的关系的数据描述方法，E-R�
 ### 5.1.1 系统主界面
 租客进入本系统可查看系统信息，包括首页公告信息以及房屋信息等，系统主界面展示如图5-1所示：
 
-![](/images/0000stringboot/0027springboot/blog.015.png)
+![](/images/0000wxapp//blog.015.png)
 
 图5-1 系统主界面图
 ### 5.1.2 租客注册界面
 未有账号的租客可进入注册界面进行注册操作，租客注册界面展示如图5-2所示：
 
-![](/images/0000stringboot/0027springboot/blog.016.png)
+![](/images/0000wxapp//blog.016.png)
 
 图5-2 租客注册界面图
 ### 5.1.3 租客登录界面
 租客在登录界面可输入登录信息进行登录系统，租客登录界面展示如图5-3所示：
 
-![](/images/0000stringboot/0027springboot/blog.017.png)
+![](/images/0000wxapp//blog.017.png)
 
 图5-3 租客登录界面图
 ### 5.1.4 房屋详情界面
 租客可选择房屋查看房屋详情信息，登录可进行看房申请操作，房屋详情界面展示如图5-4所示：
 
-![](/images/0000stringboot/0027springboot/blog.018.png)
+![](/images/0000wxapp//blog.018.png)
 
 图5-4 房屋详情界面图
 ### 5.1.5 看房申请界面
 租客登录后可选择房屋进行看房申请，看房申请界面展示如图5-5所示。
 
-![](/images/0000stringboot/0027springboot/blog.019.png)
+![](/images/0000wxapp//blog.019.png)
 
 图5-5  看房申请界面图
 ### 5.1.6 租赁合同界面
 租客登录后还可查看租赁合同信息，租赁合同界面展示如图5-6所示。
 
-![](/images/0000stringboot/0027springboot/blog.020.png)
+![](/images/0000wxapp//blog.020.png)
 
 图5-6  租赁合同界面图
 ### 5.1.7 收租信息界面
 租客可进入收租信息界面查看收租信息，收租信息界面展示如图5-7所示。
 
-![](/images/0000stringboot/0027springboot/blog.021.png)
+![](/images/0000wxapp//blog.021.png)
 
 图5-7 收租信息界面图
 ## 5.2 管理员功能模块的实现
 ### 5.2.1 管理员登录界面
 管理员要想进入系统后台对系统进行管理操作，必须登录系统后台，管理员登录界面展示如图5-8所示。
 
-![](/images/0000stringboot/0027springboot/blog.022.png)
+![](/images/0000wxapp//blog.022.png)
 
 图5-8 管理员登录界面图
 ### 5.2.2 租客管理界面
 管理员可查看、修改和删除租客信息，租客管理界面展示如图5-9所示。
 
-![](/images/0000stringboot/0027springboot/blog.023.png)
+![](/images/0000wxapp//blog.023.png)
 
 图5-9租客管理界面图
 ### 5.2.3 户主管理界面
 管理员在户主管理界面可查看已有户主信息，对已有户主信息管理员可进行编辑和删除操作，同时管理员也可添加户主信息，户主管理界面展示如图5-10所示。
 
-![](/images/0000stringboot/0027springboot/blog.024.png)
+![](/images/0000wxapp//blog.024.png)
 
 图5-10  户主管理界面图
 ### 5.2.4 房屋信息管理界面
 管理员可增删改查房屋信息，房屋信息管理界面展示如图5-11所示。
 
-![](/images/0000stringboot/0027springboot/blog.025.png)
+![](/images/0000wxapp//blog.025.png)
 
 图5-11 房屋信息管理界面图
 ### 5.2.5 看房申请管理界面
 管理员可查看用户看房申请信息，并可对其进行审核操作，看房申请管理界面展示如图5-12所示。
 
-![](/images/0000stringboot/0027springboot/blog.026.png)
+![](/images/0000wxapp//blog.026.png)
 
 图5-12 看房申请管理界面图
 ### 5.2.6 租赁合同管理界面
 管理员可增删改查租赁合同信息，租赁合同管理界面展示如图5-13所示。
 
-![](/images/0000stringboot/0027springboot/blog.027.png)
+![](/images/0000wxapp//blog.027.png)
 
 图5-13 租赁合同管理界面图
 ### 5.2.7 收租信息管理界面
 管理员能够添加、修改和删除收租信息，收租信息管理界面展示如图5-14所示。
 
-![](/images/0000stringboot/0027springboot/blog.028.png)
+![](/images/0000wxapp//blog.028.png)
 
 图5-14 收租信息管理界面图
 

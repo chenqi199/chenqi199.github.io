@@ -1,17 +1,16 @@
 # 0287springboot老年人体检管理系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0287springboot老年人体检管理系统](https://github.com/GraduationProject-springboot/0287springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1EbH?p=53)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 绪论
 ## 1.1 课题背景
@@ -73,25 +72,25 @@ SpringBoot应用系统开发模板的基本架构设计从前端到后台进行�
 ### 3.2.1 操作流程
 进入本系统需要访问者提供验证信息。验证合格的访问者才能获取访问资格。其具体的操作流程见下图。访问者根据登录界面设置的信息项如实填写，待信息通过验证后，访问者可以进入指定的页面享受本系统提供的服务和阅读本系统的相关信息。
 
-![](/images/0200stringboot/0287springboot/blog.001.png)
+![](/images/0200wxapp//blog.001.png)
 
 图3.1 操作流程图
 ### 3.2.2 登录流程
 本系统的登录模块，其内部的流程见下图。主要对访问本系统的人员提供的验证信息进行逐个判断，系统面对录入错误的信息会给出提示，比如，提示账号不对，或提示密码不匹配等提示信息。总之，在登录页面填写的所有信息都符合要求，访问者就登录成功了。
 
-![](/images/0200stringboot/0287springboot/blog.002.png)
+![](/images/0200wxapp//blog.002.png)
 
 图3.2 登录流程图
 ### 3.2.3 删除信息流程
 本系统在经常性的使用后，会产生很多失去价值的信息，因此就需要及时清理数据，腾出系统的空间。对这些数据进行清理时，其对应的流程见下图。先选中要清理的数据，通过反复确认需要清理的数据，避免操作人员误删。已经删除的数据就不会出现在系统里面。
 
-![](/images/0200stringboot/0287springboot/blog.003.png)
+![](/images/0200wxapp//blog.003.png)
 
 图3.3 删除信息流程图
 ### 3.2.4 添加信息流程
 本系统主要用于显示信息，提供服务，其中，数据添加功能就是其中的服务之一，具体流程见下图。让操作者在信息添加的页面录入数据，待这些数据被提交检验合格后，就会在系统指定页面显示出来。
 
-![](/images/0200stringboot/0287springboot/blog.004.png)
+![](/images/0200wxapp//blog.004.png)
 
 图3.4 添加信息流程图
 ## 3.3 性能需求
@@ -169,7 +168,7 @@ SpringBoot应用系统开发模板的基本架构设计从前端到后台进行�
 
 
 体检预约管理
-## ![](/images/0200stringboot/0287springboot/blog.005.png)
+## ![](/images/0200wxapp//blog.005.png)
 4.3 数据库设计
 
 开发一个系统也需要提前设计数据库。这里的数据库是相关数据的集合，存储在一起的这些数据也是按照一定的组织方式进行的。目前，数据库能够服务于多种应用程序，则是源于它存储方式最佳，具备数据冗余率低的优势。虽然数据库为程序提供信息存储服务，但它与程序之间也可以保持较高的独立性。总而言之，数据库经历了很长一段时间的发展，从最初的不为人知，到现在的人尽皆知，其相关技术也越发成熟，同时也拥有着坚实的理论基础。
@@ -180,57 +179,57 @@ SpringBoot应用系统开发模板的基本架构设计从前端到后台进行�
 
 （1）下图是用户实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\laonianrentijian\用户.jpg](/images/0200stringboot/0287springboot/blog.006.jpeg "C:\Users\Administrator\Desktop\img\laonianrentijian\用户.jpg")
+![C:\Users\Administrator\Desktop\img\laonianrentijian\用户.jpg](/images/0200wxapp//blog.006.jpeg "C:\Users\Administrator\Desktop\img\laonianrentijian\用户.jpg")
 图4.1 用户实体属性图
 
 （2）下图是字典表实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\laonianrentijian\字典表.jpg](/images/0200stringboot/0287springboot/blog.007.jpeg "C:\Users\Administrator\Desktop\img\laonianrentijian\字典表.jpg")
+![C:\Users\Administrator\Desktop\img\laonianrentijian\字典表.jpg](/images/0200wxapp//blog.007.jpeg "C:\Users\Administrator\Desktop\img\laonianrentijian\字典表.jpg")
 图4.2 字典表实体属性图
 
 （3）下图是疾病预防实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\laonianrentijian\疾病预防.jpg](/images/0200stringboot/0287springboot/blog.008.jpeg "C:\Users\Administrator\Desktop\img\laonianrentijian\疾病预防.jpg")
+![C:\Users\Administrator\Desktop\img\laonianrentijian\疾病预防.jpg](/images/0200wxapp//blog.008.jpeg "C:\Users\Administrator\Desktop\img\laonianrentijian\疾病预防.jpg")
 图4.3 疾病预防实体属性图
 
 （4）下图是体检项目实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\laonianrentijian\体检项目.jpg](/images/0200stringboot/0287springboot/blog.009.jpeg "C:\Users\Administrator\Desktop\img\laonianrentijian\体检项目.jpg")
+![C:\Users\Administrator\Desktop\img\laonianrentijian\体检项目.jpg](/images/0200wxapp//blog.009.jpeg "C:\Users\Administrator\Desktop\img\laonianrentijian\体检项目.jpg")
 图4.4 体检项目实体属性图
 
 （5）下图是体检提醒实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\laonianrentijian\体检提醒.jpg](/images/0200stringboot/0287springboot/blog.010.jpeg "C:\Users\Administrator\Desktop\img\laonianrentijian\体检提醒.jpg")
+![C:\Users\Administrator\Desktop\img\laonianrentijian\体检提醒.jpg](/images/0200wxapp//blog.010.jpeg "C:\Users\Administrator\Desktop\img\laonianrentijian\体检提醒.jpg")
 图4.5 体检提醒实体属性图
 
 （6）下图是论坛实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\laonianrentijian\论坛.jpg](/images/0200stringboot/0287springboot/blog.011.jpeg "C:\Users\Administrator\Desktop\img\laonianrentijian\论坛.jpg")
+![C:\Users\Administrator\Desktop\img\laonianrentijian\论坛.jpg](/images/0200wxapp//blog.011.jpeg "C:\Users\Administrator\Desktop\img\laonianrentijian\论坛.jpg")
 图4.6 论坛实体属性图
 
 （7）下图是在线咨询实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\laonianrentijian\在线咨询.jpg](/images/0200stringboot/0287springboot/blog.012.jpeg "C:\Users\Administrator\Desktop\img\laonianrentijian\在线咨询.jpg")
+![C:\Users\Administrator\Desktop\img\laonianrentijian\在线咨询.jpg](/images/0200wxapp//blog.012.jpeg "C:\Users\Administrator\Desktop\img\laonianrentijian\在线咨询.jpg")
 图4.7 在线咨询实体属性图
 
 （8）下图是单页数据实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\laonianrentijian\单页数据.jpg](/images/0200stringboot/0287springboot/blog.013.jpeg "C:\Users\Administrator\Desktop\img\laonianrentijian\单页数据.jpg")
+![C:\Users\Administrator\Desktop\img\laonianrentijian\单页数据.jpg](/images/0200wxapp//blog.013.jpeg "C:\Users\Administrator\Desktop\img\laonianrentijian\单页数据.jpg")
 图4.8 单页数据实体属性图
 
 （9）下图是健康常识实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\laonianrentijian\健康常识.jpg](/images/0200stringboot/0287springboot/blog.014.jpeg "C:\Users\Administrator\Desktop\img\laonianrentijian\健康常识.jpg")
+![C:\Users\Administrator\Desktop\img\laonianrentijian\健康常识.jpg](/images/0200wxapp//blog.014.jpeg "C:\Users\Administrator\Desktop\img\laonianrentijian\健康常识.jpg")
 图4.9 健康常识实体属性图
 
 （10）下图是用户表实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\laonianrentijian\用户表.jpg](/images/0200stringboot/0287springboot/blog.015.jpeg "C:\Users\Administrator\Desktop\img\laonianrentijian\用户表.jpg")
+![C:\Users\Administrator\Desktop\img\laonianrentijian\用户表.jpg](/images/0200wxapp//blog.015.jpeg "C:\Users\Administrator\Desktop\img\laonianrentijian\用户表.jpg")
 图4.10 用户表实体属性图
 
 （11）下图是体检项目预约实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\laonianrentijian\体检项目预约.jpg](/images/0200stringboot/0287springboot/blog.016.jpeg "C:\Users\Administrator\Desktop\img\laonianrentijian\体检项目预约.jpg")
+![C:\Users\Administrator\Desktop\img\laonianrentijian\体检项目预约.jpg](/images/0200wxapp//blog.016.jpeg "C:\Users\Administrator\Desktop\img\laonianrentijian\体检项目预约.jpg")
 图4.11 体检项目预约实体属性图
 ### 4.3.2 数据库物理设计
 本数据库是关系型数据库，因此对二维表的结构设计也比较关键。毕竟二维表格模型就是关系型数据库中的关系模型。而一些常用的关系模型中的概念也需要了解，才可以对关系模型进行设计。下面就简单介绍关系，元组，属性，域，关键字等常用概念的含义。
@@ -382,35 +381,35 @@ SpringBoot应用系统开发模板的基本架构设计从前端到后台进行�
 
 还进行了对用户名称的模糊查询的条件
 
-![](/images/0200stringboot/0287springboot/blog.017.png)
+![](/images/0200wxapp//blog.017.png)
 
-![](/images/0200stringboot/0287springboot/blog.018.png)
+![](/images/0200wxapp//blog.018.png)
 
 图5.1 用户信息管理页面
 ### 5.2 体检项目管理
 如图5.2显示的就是体检项目管理页面，此页面提供给管理员的功能有：查看已发布的体检项目数据，修改体检项目，体检项目作废，即可删除，还进行了对体检项目名称的模糊查询 体检项目信息的类型查询等等一些条件。
 
-![](/images/0200stringboot/0287springboot/blog.019.png)
+![](/images/0200wxapp//blog.019.png)
 
-![](/images/0200stringboot/0287springboot/blog.020.png)
+![](/images/0200wxapp//blog.020.png)
 
 
 图5.2 体检项目管理页面
 ### 5.3项目类型管理
 如图5.3显示的就是项目类型管理页面，此页面提供给管理员的功能有：根据项目类型进行条件查询，还可以对项目类型进行新增、修改、查询操作等等。
 
-![](/images/0200stringboot/0287springboot/blog.021.png)
+![](/images/0200wxapp//blog.021.png)
 
-![](/images/0200stringboot/0287springboot/blog.022.png)
+![](/images/0200wxapp//blog.022.png)
 
 
 图5.3 项目类型管理页面
 ### 5.1健康常识管理
 如图5.4显示的就是健康常识管理页面，此页面提供给管理员的功能有：根据健康常识进行新增、修改、查询操作等等。
 
-![](/images/0200stringboot/0287springboot/blog.023.png)
+![](/images/0200wxapp//blog.023.png)
 
-![](/images/0200stringboot/0287springboot/blog.024.png)
+![](/images/0200wxapp//blog.024.png)
 
 
 图5.4 健康常识管理页面

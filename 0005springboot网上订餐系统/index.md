@@ -1,17 +1,16 @@
 # 0005springboot网上订餐系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0005springboot网上订餐系统](https://github.com/GraduationProject-springboot/0005springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV16ia6epENY?p=6)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
 ## 1.1 研究背景
@@ -60,7 +59,7 @@ JRE（JAVA Runtime Environment）是支持Java程序运行的标准环境，JRE�
 ## 2.3 B/S结构
 随着互联网和浏览器的发展，B/S的开发架构逐渐取代了C/S架构，B/S的开发架构是一种浏览器和服务器的模式，它将应用程序的大部分功能都放在服务器端，客户机端只需要安装浏览器（Browser），通过Web Server对服务器端安装的数据库进行数据读取和存储[3]。其B/S架构图如下图所示：
 
-![](/images/0000stringboot/0005springboot/blog.001.png)
+![](/images/0000wxapp//blog.001.png)
 
 图2-1 B/S模式架构图
 
@@ -98,13 +97,13 @@ MySQL具有开放性，它是一种关系型数据库管理系统，并且它的
 ### 3.3.1用户功能分析
 用户进入本系统可查看系统信息，包括首页、菜品信息等，用户要想实现下单订餐操作，必须登录系统，未有账号的用户可进行注册，注册登录后主要功能模块包括个人中心、订单信息管理以及订单配送管理，用户用例图如图3-1所示。
 
-![](/images/0000stringboot/0005springboot/blog.002.png)
+![](/images/0000wxapp//blog.002.png)
 
 图3-1 用户用例图
 ### 3.3.2管理员功能分析
 管理员登录后可对系统进行全面管理，管理员主要实现的功能模块包括个人中心、会员管理、菜品分类管理、菜品信息管理、订单信息管理、订单配送管理、管理员管理以及系统管理，管理员用例图如图3-3所示。
 
-![](/images/0000stringboot/0005springboot/blog.003.png)
+![](/images/0000wxapp//blog.003.png)
 
 图3-2 管理员用例图
 ## 3.4 系统结构分析
@@ -113,26 +112,26 @@ MySQL具有开放性，它是一种关系型数据库管理系统，并且它的
 
 本系统的网络应用原理示意图如图3-3所示：
 
-![](/images/0000stringboot/0005springboot/blog.004.png)
+![](/images/0000wxapp//blog.004.png)
 
 图3-3系统的网络应用原理示意图
 ### 3.4.2物理结构
 系统实现的物理结构如图3-4所示：
 
-![](/images/0000stringboot/0005springboot/blog.005.png)
+![](/images/0000wxapp//blog.005.png)
 
 图3-4 系统实现的物理结构图
 ## 3.5 系统流程分析
 ### 3.5.1注册流程
 未有账号的用户可进行注册操作，用户注册流程图如图3-5所示。
 
-![](/images/0000stringboot/0005springboot/blog.006.png)
+![](/images/0000wxapp//blog.006.png)
 
 图3-5注册信息流程图
 ### 3.5.2登录流程
 登录模块主要满足了管理员和用户的权限登录，用户登录流程图如图3-6所示。
 
-![](/images/0000stringboot/0005springboot/blog.007.png)
+![](/images/0000wxapp//blog.007.png)
 
 图3-6 登录流程图
 
@@ -144,20 +143,20 @@ MySQL具有开放性，它是一种关系型数据库管理系统，并且它的
 
 本基于Spring Boot的网上订餐系统主要管理员模块以及用户模块两大部分，系统结构图如图4-1所示。
 
-![](/images/0000stringboot/0005springboot/blog.008.png)
+![](/images/0000wxapp//blog.008.png)
 
 图4-1系统功能模块图
 ## 4.2系统顺序图设计
 ### 4.2.1登录模块顺序图
 登录模块主要满足了管理员和用户的权限登录，登录模块顺序图如图4-2所示。
 
-![](/images/0000stringboot/0005springboot/blog.009.png)
+![](/images/0000wxapp//blog.009.png)
 
 图4-2登录顺序图
 ### 4.2.2添加信息模块顺序图
 管理员登录后可进行添加信息操作，添加信息模块顺序图如图4-3所示。
 
-![](/images/0000stringboot/0005springboot/blog.010.png)
+![](/images/0000wxapp//blog.010.png)
 
 图4-3 添加信息顺序图
 ## 4.3 数据库设计
@@ -172,31 +171,31 @@ E-R图是一种描述显示数据类型间的关系的数据描述方法，E-R�
 
 （1）管理员信息实体属性E-R图如图4-4所示：
 
-![](/images/0000stringboot/0005springboot/blog.011.png)
+![](/images/0000wxapp//blog.011.png)
 
 图4-4管理员信息实体E-R图
 
 （2）菜品分类信息实体属性E-R图如图4-5所示：
 
-![](/images/0000stringboot/0005springboot/blog.012.png)
+![](/images/0000wxapp//blog.012.png)
 
 图4-5 菜品分类信息实体属性E-R图
 
 （3）菜品信息实体属性E-R图如图4-6所示：
 
-![](/images/0000stringboot/0005springboot/blog.013.png)
+![](/images/0000wxapp//blog.013.png)
 
 图4-6 菜品信息实体属性E-R图
 
 （4）订单信息实体属性E-R图如图4-7所示：
 
-![](/images/0000stringboot/0005springboot/blog.014.png)
+![](/images/0000wxapp//blog.014.png)
 
 图4-7 订单信息实体属性E-R图
 
 （5）会员信息实体属性E-R图如图4-8所示：
 
-![](/images/0000stringboot/0005springboot/blog.015.png)
+![](/images/0000wxapp//blog.015.png)
 
 图4-8  会员信息实体属性E-R图
 ### 4.3.2 数据库表设计
@@ -281,84 +280,84 @@ E-R图是一种描述显示数据类型间的关系的数据描述方法，E-R�
 ## 5.1 用户功能模块的实现
 用户进入本系统可查看系统信息，包括网站首页、菜品信息等，系统主界面展示如图5-3所示。
 
-![](/images/0000stringboot/0005springboot/blog.016.png)
+![](/images/0000wxapp//blog.016.png)
 
 图5-1系统登录界面
 ### 5.1.1用户注册界面
 未有账号的用户可进入注册界面进行注册操作，用户注册界面展示如图5-2所示。
 
-![](/images/0000stringboot/0005springboot/blog.017.png)
+![](/images/0000wxapp//blog.017.png)
 
 图5-2用户注册界面
 ### 5.1.2用户登录界面
 用户在登录界面可输入用户名和密码，点击登录按钮进行登录系统，用户登录界面展示如图5-3所示。
 
-![](/images/0000stringboot/0005springboot/blog.018.png)
+![](/images/0000wxapp//blog.018.png)
 
 图5-3 用户登录界面
 ### 5.1.3菜品详情界面
 用户可选择菜品查看菜品详情信息，登录后可进行下单操作，菜品详情界面展示如图5-4所示。
 
-![](/images/0000stringboot/0005springboot/blog.019.png)
+![](/images/0000wxapp//blog.019.png)
 
 图 5-4  菜品详情界面
 ### 5.1.4下单订餐界面
 用户登录后可选择菜品进行下单订餐操作，下单订餐界面展示如图5-5所示。
 
-![](/images/0000stringboot/0005springboot/blog.020.png)
+![](/images/0000wxapp//blog.020.png)
 
 图5-5 下单订餐界面
 ### 5.1.5订单信息界面
 用户对个人订单可进行查看、支付等，订单信息界面展示如图5-6所示。
 
-![](/images/0000stringboot/0005springboot/blog.021.png)
+![](/images/0000wxapp//blog.021.png)
 
 图5-6 订单信息界面
 ### 5.1.6订单配送界面
 用户能够查看个人订单配送信息，订单配送界面展示如图5-7所示。
 
-![](/images/0000stringboot/0005springboot/blog.022.png)
+![](/images/0000wxapp//blog.022.png)
 
 图5-7 订单配送界面
 ## 5.2 管理员功能模块的实现
 ### 5.2.1管理员登录界面
 管理员要想进入后台对系统进行管理操作，必须登录系统后台，管理员登录界面展示如图5-8所示。
 
-![](/images/0000stringboot/0005springboot/blog.023.png)
+![](/images/0000wxapp//blog.023.png)
 
 图5-8  管理员登录界面
 ### 5.2.2会员管理界面
 管理员可查看、添加、修改和删除会员信息，会员管理界面展示如图5-9所示。
 
-![](/images/0000stringboot/0005springboot/blog.024.png)
+![](/images/0000wxapp//blog.024.png)
 
 图5-9 会员管理界面
 ### 5.2.3菜品信息管理界面
 管理员可添加、修改和删除菜品信息，菜品信息管理界面展示如图5-10所示，添加菜品信息界面展示如图5-11所示。
 
-![](/images/0000stringboot/0005springboot/blog.025.png)
+![](/images/0000wxapp//blog.025.png)
 
 图5-10菜品信息管理界面
 
-![](/images/0000stringboot/0005springboot/blog.026.png)
+![](/images/0000wxapp//blog.026.png)
 
 图5-11添加菜品信息界面
 ### 5.2.4菜品分类管理界面
 管理员能够增删改查菜品分类信息，菜品分类管理界面展示如图5-12所示。
 
-![](/images/0000stringboot/0005springboot/blog.027.png)
+![](/images/0000wxapp//blog.027.png)
 
 图5-12 菜品分类管理界面
 ### 5.2.5订单信息管理界面
 管理员可进入订单信息管理界面查看所有订单信息，并可对其进行安排配送、修改和删除操作，订单信息管理界面展示如图5-13所示。
 
-![](/images/0000stringboot/0005springboot/blog.028.png)
+![](/images/0000wxapp//blog.028.png)
 
 图5-13订单信息管理界面
 ### 5.2.6订单配送管理界面
 管理员可增删改查订单配送信息，订单配送管理界面展示如图5-14所示。
 
-![](/images/0000stringboot/0005springboot/blog.029.png)
+![](/images/0000wxapp//blog.029.png)
 
 图5-14 订单配送管理界面
 #

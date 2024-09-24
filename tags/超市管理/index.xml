@@ -1,0 +1,48 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>超市管理 - 标签 - chenqi blog</title>
+        <link>https://chenqi199.github.io/tags/%E8%B6%85%E5%B8%82%E7%AE%A1%E7%90%86/</link>
+        <description>超市管理 - 标签 - chenqi blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>chen_q_i@163.com (chenqi)</managingEditor>
+            <webMaster>chen_q_i@163.com (chenqi)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 22 Jun 2024 11:23:25 &#43;0800</lastBuildDate><atom:link href="https://chenqi199.github.io/tags/%E8%B6%85%E5%B8%82%E7%AE%A1%E7%90%86/" rel="self" type="application/rss+xml" /><item>
+    <title>0718springboot生鲜超市管理的设计与实现</title>
+    <link>https://chenqi199.github.io/0718springboot%E7%94%9F%E9%B2%9C%E8%B6%85%E5%B8%82%E7%AE%A1%E7%90%86%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/</link>
+    <pubDate>Sat, 22 Jun 2024 11:23:25 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/0718springboot%E7%94%9F%E9%B2%9C%E8%B6%85%E5%B8%82%E7%AE%A1%E7%90%86%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site 0718springboot生鲜超市管理的设计与实现 github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 内容整理中]]></description>
+</item>
+<item>
+    <title>ssm681基于Java的超市管理系统&#43;jsp</title>
+    <link>https://chenqi199.github.io/ssm681%E5%9F%BA%E4%BA%8Ejava%E7%9A%84%E8%B6%85%E5%B8%82%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-jsp/</link>
+    <pubDate>Mon, 10 Jun 2024 10:33:01 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm681%E5%9F%BA%E4%BA%8Ejava%E7%9A%84%E8%B6%85%E5%B8%82%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-jsp/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm681基于Java的超市管理系统+jsp github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1.1 研究背景 当前社会各行]]></description>
+</item>
+<item>
+    <title>0313springboot基于java无人超市管理系统</title>
+    <link>https://chenqi199.github.io/0313springboot%E5%9F%BA%E4%BA%8Ejava%E6%97%A0%E4%BA%BA%E8%B6%85%E5%B8%82%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/</link>
+    <pubDate>Thu, 08 Feb 2024 11:23:22 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/0313springboot%E5%9F%BA%E4%BA%8Ejava%E6%97%A0%E4%BA%BA%E8%B6%85%E5%B8%82%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site 0313springboot基于java无人超市管理系统 github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1.1 研究背景 当]]></description>
+</item>
+<item>
+    <title>0313springboot基于java无人超市管理系统</title>
+    <link>https://chenqi199.github.io/0313springboot%E5%9F%BA%E4%BA%8Ejava%E6%97%A0%E4%BA%BA%E8%B6%85%E5%B8%82%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/</link>
+    <pubDate>Thu, 08 Feb 2024 11:22:10 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/0313springboot%E5%9F%BA%E4%BA%8Ejava%E6%97%A0%E4%BA%BA%E8%B6%85%E5%B8%82%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site 0313springboot基于java无人超市管理系统 github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1.1 研究背景 当]]></description>
+</item>
+<item>
+    <title>ssm195基于java的小型超市管理系统&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm195%E5%9F%BA%E4%BA%8Ejava%E7%9A%84%E5%B0%8F%E5%9E%8B%E8%B6%85%E5%B8%82%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/</link>
+    <pubDate>Sun, 31 Dec 2023 10:32:49 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm195%E5%9F%BA%E4%BA%8Ejava%E7%9A%84%E5%B0%8F%E5%9E%8B%E8%B6%85%E5%B8%82%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm195基于java的小型超市管理系统+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1.1 研究背景 现在大家]]></description>
+</item>
+</channel>
+</rss>

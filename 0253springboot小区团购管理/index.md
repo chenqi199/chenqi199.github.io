@@ -1,17 +1,16 @@
 # 0253springboot小区团购管理
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0253springboot小区团购管理](https://github.com/GraduationProject-springboot/0253springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1EbH?p=21)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 绪论
 ## 1.1选题动因
@@ -69,19 +68,19 @@ MyBatis框架摒弃了Hibernate框架的配置臃肿方面，有时候Hibernate�
 
 在本系统的数据录入页面，对于操作者提供的每条数据都有相应的检验规则，比如数据信息不能有非法字符，或者本来应该是汉字的数据，不能用字母代替，还有对数据内容的长度等进行规范，这样的可以确保数据准确性的检验规则，在编码时，就提前编写好了。数据添加的流程见下图。如果数据已经保存进入数据库，则说明操作者提供的数据内容和格式都是符合要求的。
 
-![](/images/0200stringboot/0253springboot/blog.001.png)
+![](/images/0200wxapp//blog.001.png)
 
 图3.1 添加信息流程图
 
 很多时候，面对系统中的大量数据，难免会发现一些错误，因此需要及时纠正错误，本系统也提供数据后期的修改功能，其流程见下图。但是更新的数据也需要通过数据有效性检验。能够最终写入数据库则说明修改的数据是符合要求的。
 
-![](/images/0200stringboot/0253springboot/blog.002.png)
+![](/images/0200wxapp//blog.002.png)
 
 图3.2 修改信息流程图
 
 面对数据库里面大量数据，在系统的前台，要想快速获取需要的信息，就需要使用查询功能。其流程见下图。该功能需要操作者提前输入关键词，当系统的后台数据库保存了与关键词匹配的数据时，就会及时显示出来，整个过程耗时很短。
 
-![](/images/0200stringboot/0253springboot/blog.003.png)
+![](/images/0200wxapp//blog.003.png)
 
 图3.3 查询信息流程图
 ## 3.3系统性能分析
@@ -166,7 +165,7 @@ MyBatis框架摒弃了Hibernate框架的配置臃肿方面，有时候Hibernate�
 
 商品订单管理
 
-![](/images/0200stringboot/0253springboot/blog.004.png)
+![](/images/0200wxapp//blog.004.png)
 
 图4.1 系统功能结构图
 ## 4.3数据库设计
@@ -318,25 +317,25 @@ MyBatis框架摒弃了Hibernate框架的配置臃肿方面，有时候Hibernate�
 
 还进行了对用户名称的模糊查询的条件
 
-![](/images/0200stringboot/0253springboot/blog.005.png)
+![](/images/0200wxapp//blog.005.png)
 
 图5.1 用户信息管理页面
 ### 5.2 商品信息管理
 如图5.2显示的就是商品信息管理页面，此页面提供给管理员的功能有：查看已发布的商品信息数据，修改商品信息，商品信息作废，即可删除，还进行了对商品信息名称的模糊查询 商品信息信息的类型查询等等一些条件。
 
-![](/images/0200stringboot/0253springboot/blog.006.png)
+![](/images/0200wxapp//blog.006.png)
 
 图5.2 商品信息管理页面
 ### 5.3商品类型管理
 如图5.3显示的就是商品类型管理页面，此页面提供给管理员的功能有：根据商品类型进行条件查询，还可以对商品类型进行新增、修改、查询操作等等。
 
-![](/images/0200stringboot/0253springboot/blog.007.png)
+![](/images/0200wxapp//blog.007.png)
 
 图5.3 商品类型管理页面
 ### 5.1公告信息管理
 如图5.4显示的就是公告信息管理页面，此页面提供给管理员的功能有：根据公告信息进行新增、修改、查询操作等等。
 
-![](/images/0200stringboot/0253springboot/blog.008.png)
+![](/images/0200wxapp//blog.008.png)
 
 图5.4 公告信息管理页面
 

@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer" />
+        <meta name="robots" content="noodp" />
+        <title>ssm715基于java 的病房管理系统&#43;vue - chenqi blog</title><meta name="Description" content="Hugo theme - chenqi"><meta property="og:url" content="https://chenqi199.github.io/ssm715%E5%9F%BA%E4%BA%8Ejava-%E7%9A%84%E7%97%85%E6%88%BF%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/">
+  <meta property="og:site_name" content="chenqi blog">
+  <meta property="og:title" content="ssm715基于java 的病房管理系统&#43;vue">
+  <meta property="og:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm715基于java 的病房管理系统&#43;vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第1章 绪论 1.1 选题动因 到现在">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-06-21T10:33:02+08:00">
+    <meta property="article:modified_time" content="2024-06-21T10:33:02+08:00">
+    <meta property="article:tag" content="Ssmjava">
+    <meta property="article:tag" content="病房管理">
+    <meta property="article:tag" content="管理系统">
+    <meta property="og:image" content="https://chenqi199.github.io/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chenqi199.github.io/logo.png">
+  <meta name="twitter:title" content="ssm715基于java 的病房管理系统&#43;vue">
+  <meta name="twitter:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm715基于java 的病房管理系统&#43;vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第1章 绪论 1.1 选题动因 到现在">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chenqi199.github.io/ssm715%E5%9F%BA%E4%BA%8Ejava-%E7%9A%84%E7%97%85%E6%88%BF%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" /><link rel="prev" href="https://chenqi199.github.io/0710springboot%E6%A0%A1%E5%9B%AD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" /><link rel="next" href="https://chenqi199.github.io/ssm714%E5%AE%9E%E9%AA%8C%E5%AE%A4%E9%A2%84%E7%BA%A6%E7%AE%A1%E7%90%86-vue/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "ssm715基于java 的病房管理系统+vue",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chenqi199.github.io\/ssm715%E5%9F%BA%E4%BA%8Ejava-%E7%9A%84%E7%97%85%E6%88%BF%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue\/"
+        },"image": ["https:\/\/chenqi199.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "ssmjava, 病房管理, 管理系统","wordcount":  8534 ,
+        "url": "https:\/\/chenqi199.github.io\/ssm715%E5%9F%BA%E4%BA%8Ejava-%E7%9A%84%E7%97%85%E6%88%BF%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue\/","datePublished": "2024-06-21T10:33:02+08:00","dateModified": "2024-06-21T10:33:02+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/chenqi199.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "chenqi"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/ssm715%E5%9F%BA%E4%BA%8Ejava-%E7%9A%84%E7%97%85%E6%88%BF%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/ssm715%E5%9F%BA%E4%BA%8Ejava-%E7%9A%84%E7%97%85%E6%88%BF%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">ssm715基于java 的病房管理系统+vue</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="chenqi199" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>chenqi</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-06-21">2024-06-21</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 8534 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 18 分钟&nbsp;<span id="/ssm715%E5%9F%BA%E4%BA%8Ejava-%E7%9A%84%E7%97%85%E6%88%BF%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" class="leancloud_visitors" data-flag-title="ssm715基于java 的病房管理系统&#43;vue">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">github 项目仓库</a> 开源仅有后端代码</a></li>
+        <li><a href="#点击播放视频-">点击播放视频 ▼</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#11-选题动因">1.1 选题动因</a></li>
+    <li><a href="#12-目的和意义">1.2 目的和意义</a></li>
+    <li><a href="#13-论文结构安排">1.3 论文结构安排</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#21-tomcat-简介">2.1 Tomcat 简介</a></li>
+    <li><a href="#22-eclipse简介">2.2 Eclipse简介</a></li>
+    <li><a href="#23-navicat简介">2.3 Navicat简介</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#31-可行性分析">3.1 可行性分析</a>
+      <ul>
+        <li><a href="#311-经济可行性">3.1.1 经济可行性</a></li>
+        <li><a href="#312-技术可行性">3.1.2 技术可行性</a></li>
+        <li><a href="#313-操作可行性">3.1.3 操作可行性</a></li>
+      </ul>
+    </li>
+    <li><a href="#32-系统流程分析">3.2 系统流程分析</a></li>
+    <li><a href="#33-系统性能分析">3.3 系统性能分析</a></li>
+    <li><a href="#34-系统功能分析">3.4 系统功能分析</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#41-布局设计原则">4.1 布局设计原则</a></li>
+    <li><a href="#42-功能结构设计">4.2 功能结构设计</a></li>
+    <li><a href="#43-数据库设计">4.3 数据库设计</a>
+      <ul>
+        <li><a href="#431-数据库e-r图设计">4.3.1 数据库E-R图设计</a></li>
+        <li><a href="#432-数据库表结构设计">4.3.2 数据库表结构设计</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#51-管理员功能实现">5.1 管理员功能实现</a>
+      <ul>
+        <li><a href="#511-患者管理">5.1.1 患者管理</a></li>
+        <li><a href="#512-病床管理">5.1.2 病床管理</a></li>
+        <li><a href="#513-病床使用管理">5.1.3 病床使用管理</a></li>
+      </ul>
+    </li>
+    <li><a href="#52-医生功能实现">5.2 医生功能实现</a>
+      <ul>
+        <li><a href="#521-病例管理">5.2.1 病例管理</a></li>
+        <li><a href="#522-开方管理">5.2.2 开方管理</a></li>
+        <li><a href="#523-药品管理">5.2.3 药品管理</a></li>
+      </ul>
+    </li>
+    <li><a href="#53-医护人员功能实现">5.3 医护人员功能实现</a>
+      <ul>
+        <li><a href="#531-病床使用查看">5.3.1 病床使用查看</a></li>
+        <li><a href="#532-病例查看">5.3.2 病例查看</a></li>
+        <li><a href="#533-开方查看">5.3.3 开方查看</a></li>
+      </ul>
+    </li>
+    <li><a href="#54-患者功能实现">5.4 患者功能实现</a>
+      <ul>
+        <li><a href="#541-病例查看">5.4.1 病例查看</a></li>
+        <li><a href="#542-开方查看">5.4.2 开方查看</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="项目清单-包安装运行httpchenqi1990site-官网地址-httpchenqi1990site"><a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">项目清单 包安装运行</a> 官网地址 <a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">http://chenqi1990.site</a></h1>
+<h1 id="ssm715基于java-的病房管理系统vuehttpsgithubcomgraduationproject-springboot"><a href="https://github.com/GraduationProject-springboot/" target="_blank" rel="noopener noreffer ">ssm715基于java 的病房管理系统+vue</a></h1>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        data-srcset="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 1.5x, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        title="picture" /></p>
+<h3 id="github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">github 项目仓库</a> 开源仅有后端代码</h3>
+<h3 id="点击播放视频-">点击播放视频 ▼</h3>
+<p><a href="https://www.bilibili.com/video/BV1Tm8QeZE4a?p=112" target="_blank" rel="noopener noreffer "><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.sstatic.net/Vp2cE.png"
+        data-srcset="https://i.sstatic.net/Vp2cE.png, https://i.sstatic.net/Vp2cE.png 1.5x, https://i.sstatic.net/Vp2cE.png 2x"
+        data-sizes="auto"
+        alt="https://i.sstatic.net/Vp2cE.png"
+        title="Watch the video" /></a></p>
+<h1 id="第1章-绪论">第1章 绪论</h1>
+<h2 id="11-选题动因">1.1 选题动因</h2>
+<p>到现在为止，互联网已经进入了千家万户，最普通的平民百姓也有属于自己的智能设备，计算机各种技术的储备也是相当的丰富，并且实现也是没有难度，各行各业，包括一些个人，也积极拥抱互联网时代的到来，也可以说是互联网时代的到来把人们都给包在互联网之中。从刚开始的政府办公，国家企业的开头使用，到如今的老百姓都能用上，别说那些普通企业了。计算机就是有这样的魅力，互联网被称为浪潮不是浪得虚名的。采用计算机技术，开发一些软件，实现软件所在的目的，这是一个常理，这个基础的常理缩短了地域之间的联系，提高了地域竞争水准，减低了人力成本和数据存储成本。本课题研究的病房管理系统，也是采用了计算机技术，该系统能够提高病房信息数据的检索速度，使用起来非常的方便。</p>
+<h2 id="12-目的和意义">1.2 目的和意义</h2>
+<p>在病房管理系统实际操作中，使用者会发现使用起来相当的方便，并且对数据的管理者来讲，也能及时的获得自己想要的数据，对整个数据的所有者能提供强大的帮助，病房管理系统从操作者的角度出发，不管是在数据的接收以及传递，以及处理结果，都有一个很明显的要求，对有效数据的处理，并且形成集合，并且对有效数据集合进行固定化处理，可以得到更有效的数据，有了病房管理系统，让管理层不至于把大量的人力和财力资源消耗在数据处理整合方面，完全可以让不知疲倦的计算机来进行，不仅投入减低，并且产出也不少。互联网时代就是如此，顺之者昌，响应互联网时代，不至于说可以乘风破浪，起码可以降低直接淘汰出局的几率。病房管理系统的出现是顺应时代的。</p>
+<h2 id="13-论文结构安排">1.3 论文结构安排</h2>
+<p>病房管理系统的论文结构将从6个章节进行阐述。具体结构安排如下：</p>
+<p>第1章：本章节对本课题的选题动因，本课题的研究目的和意义进行说明。</p>
+<p>第2章：本章节对本课题需要运用的环境和技术进行说明。</p>
+<p>第3章：本章节对本课题性能，功能进行分析，对系统开发的经济，技术等条件是否可行进行说明。</p>
+<p>第4章：本章节对本课题具体的功能进行设计，同时也对系统的数据库进行E-R图设计以及数据表设计。</p>
+<p>第5章：本章节对实现的功能的运行效果图进行展示，同时对系统的功能进行说明。</p>
+<p>第6章：本章节对系统功能上的测试进行说明，对测试的结果进行分析。</p>
+<h1 id="第2章-开发环境与技术">第2章 开发环境与技术</h1>
+<p>病房管理系统需要提前对功能进行调查分析，并且根据分析结果进行技术上的辩证，可以选择更合理的开发技术以及开发工具。</p>
+<h2 id="21-tomcat-简介">2.1 Tomcat 简介</h2>
+<p>只要学习Java Web项目就不得不学习Tomcat。Tomcat是一种免费的开源的一种Java Web项目的容器，完美继承了 Apache服务器的特性，并且里面添加可以自动化运行的Java Web组件，让Java Web项目可以完全的运行到Tomcat里面。对于特大型项目来讲，直接用Tomcat会造成启动变慢，处理有限等，所以对项目进行了前后端分离技术，但是对于需要称不上特大型的项目来讲，普通的大中型项目用Tomcat作为Java Web项目的运行容器是完全够资格的。最重要的是Tomcat完全跟着Java EE，每一次Java EE的升级，Tomcat都会有着对应的版本出现，版本更新速度是非常快的。更新速度快，代表着有技术方面的支持，值得用户使用的，让用户更加信赖Tomcat产品。</p>
+<h2 id="22-eclipse简介">2.2 Eclipse简介</h2>
+<p>Eclipse这款开发工具最最重要的特点就是免费，不管是用来开发任何的东西，哪怕用来教学或者是生产，只要是能带了商业价值的生产都可以免费使用，这一点对于IDEA或者MyEclipse来讲，是非常的具有前瞻性的。免费的也许有很多不足，但是就是因为免费，所以很多人愿意贡献自己的力量，让这款免费的工具可以拥有更多的插件，用起来更加的舒心。可以这么说，Eclipse就是Java语言开发行业的鼻祖，只要是学过Java的人，对Eclipse没有不熟悉的。Eclipse操作起来非常的方便，可以不用安装，直接解压了就可以使用，并且可以在不同的操作系统上面都可以安装到对应的版本。Eclipse是真的不要钱，免费，下载就能用，这么多年以来长期占领着Java开发市场的半壁江山。Eclipse可以在官网上进行捐款，捐款可以支持Eclipse进一步发展，也可以不捐款直接使用，一切随心，不会强求。Eclipse真的是一款良心Java生产工具。</p>
+<h2 id="23-navicat简介">2.3 Navicat简介</h2>
+<p>Navicat是一款管理数据库的软件。众所周知，所有的数据库只是以特定的存放格式进行存放的，访问也需要特定的接口以及语句进行访问。如果访问数据库都用各种命令，不仅仅是开发效率上会大大的降低，并且看起来也不舒服，对于某些数据或者数据库来讲这样并不友好，如何对数据库进行友好的访问到现在为止，不同的数据库厂商都推出了适合自己数据库的管理工具，但是有一点就是，数据库厂商推出之后，只要能用就行，并没有符合人体工程学，所有的数据库厂商推出的数据库管理工具都是免费的，所以并没有对于数据库管理工具进行过多的优化，用起来相当的不友好，并且各个数据库工具是不能通用的，这一点数据库厂商肯定不会去做匹配其他数据库的管理工具，所以Navicat就应运而生，可以采用Navicat管理各种各样的数据库，可以同时访问各种数据库并且通过不同的连接进行访问，还可以访问不同电脑的数据库，页面操作简单，美观大方，用起来很好用，并且占用电脑资源很小，很适合作为替代其他数据库厂商推出的数据库管理工具使用。</p>
+<h1 id="第3章-系统分析">第3章 系统分析</h1>
+<p>通过对系统的功能进行具体分析，可以参考已经发表过的具有参考价值的文章作为对比，这样能把功能分析的很透彻，并且也会因为功能的分析而对性能也有大致的了解，并且可以预测性能，实现性能分析的结果。</p>
+<h2 id="31-可行性分析">3.1 可行性分析</h2>
+<p>系统的设计必须符合正常逻辑，所以设计之处，也需要从其他方面来论证其可行性。</p>
+<h3 id="311-经济可行性">3.1.1 经济可行性</h3>
+<p>开发病房管理系统，存在经济上面的支持，必须经济上的支持才可以有序进行，比如是否需要额外购买开发工具，购买开发电脑，或者从开发技术上是否是免费开源，达到的效果上面是否支出与收入不匹配，这些都需要进行分析。由于开发本系统，开发技术开源且稳定，电脑用正在使用的电脑就能满足，不需要太多的经济支出就可以达到目的，经济可行性通过。</p>
+<h3 id="312-技术可行性">3.1.2 技术可行性</h3>
+<p>病房管理系统软件主要用到的一些工具，而这些工具正好在学校就使用过，并且网上有很多免费的并且符合的开发工具，技术方面也学过，并且有图书馆的资源和网络资源可以充分利用。所以在技术角度上面来分析是可以的。</p>
+<h3 id="313-操作可行性">3.1.3 操作可行性</h3>
+<p>操作方面分为开发过程，实现过程，项目具体操作流程。这些因为都学过，并且有其他的项目流程作为参考。总体实现一般就是用户的登录相关，权限分配，基础数据的变更体现。让不同的角色有不同的操作界面，符合正确角色定位，使用者在操作上面并不会感觉到很突兀，影响操作流程。所以操作方面是可以的。</p>
+<p>通过以上不同角度的分析，最后论证分析了可行性是没有问题的，完全可以进行后续步骤。</p>
+<h2 id="32-系统流程分析">3.2 系统流程分析</h2>
+<p>操作逻辑是一个可以用画图工具展示的，因为数据在录入过程中的不可见，只能看到返回结果，所以把流程画成图可以更好的理解其中的顺序。</p>
+<p>在系统的各项操作中，其他的录入环节，会对操作者具体操作的每条信息都会提出验证要求，比如不能为空，只能是汉字，以及其他的要求等，这些都在前端需要编写清楚，达到友好提示的目的，有效的帮助操作人员理解操作。具体数据的流程如下面的图所示。当操作员输入信息后，点击提交后台就会接收操作员提交的信息，并且提前编写好的逻辑会继续验证，如果数据合格就存入到数据库里并且返回成功提示，这样一个录入环节就达到了设计要求。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm715/blog.001.png"
+        data-srcset="/images/0700ssm/ssm715/blog.001.png, /images/0700ssm/ssm715/blog.001.png 1.5x, /images/0700ssm/ssm715/blog.001.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm715/blog.001.png"
+        title="/images/0700ssm/ssm715/blog.001.png" /></p>
+<p>图3.1 添加信息流程图</p>
+<p>有时候录入的一些数据可能需要修改，修改就是纠正之前的操作，所以修改数据必须是先把想要修改的数据从数据库里获取出来，然后在这个之上进行修改，修改数据也有相应的操作流程。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm715/blog.002.png"
+        data-srcset="/images/0700ssm/ssm715/blog.002.png, /images/0700ssm/ssm715/blog.002.png 1.5x, /images/0700ssm/ssm715/blog.002.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm715/blog.002.png"
+        title="/images/0700ssm/ssm715/blog.002.png" /></p>
+<p>图3.2 修改信息流程图</p>
+<p>数据的查询是在任何程序上都是一个常规的操作，面对的数据量不一样，想要获取想要的数据时间也不一样，都是尽快的获取自己想要的结果，所以数据查询就需要有个查询条件作为查询关键词，这样可以更好的获取符合关键词的数据。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm715/blog.003.png"
+        data-srcset="/images/0700ssm/ssm715/blog.003.png, /images/0700ssm/ssm715/blog.003.png 1.5x, /images/0700ssm/ssm715/blog.003.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm715/blog.003.png"
+        title="/images/0700ssm/ssm715/blog.003.png" /></p>
+<p>图3.3 查询信息流程图</p>
+<h2 id="33-系统性能分析">3.3 系统性能分析</h2>
+<p>关于病房管理系统从性能需求方面来分析，主要从五个角度分析。五个角度分别从设计的实用性，设计的操作性，设计的安全性，设计的适应性和维护性这五个角度来进行分析。</p>
+<p>首先分析第一点，设计的实用性。本设计的目的就是让管理员可以综合的处理各种基础信息，并且有相应的权限来进行操作，达到数据同步，集中管理的目的，并且可以让用户处理用户相关信息，符合设计的既定目标，达到使用效果。</p>
+<p>其次分析第二点，设计的操作性。开发出来的系统必须有操作性，如果操作起来丢三落四，出现各种不符合流程的操作，那么就是不符合设计规则的，设计的操作性必须符合人体工程学使用原则，从上到下，从左到右，让操作起来更加的有逻辑性，不需要不符合逻辑的页面数据体验和操作流程，让设计的操作性体现出来，看到操作界面就会有相应的下一步理解。</p>
+<p>再次是安全性，虽然从任何角度来讲，安全性应该放到第一位，但是有些时候安全性是在数据量大并且数据重要的前提下才会对数据的安全性来进行设计，正常的软件使用过程只要数据设计合理，并且目标单一，让黑客不屑于或者付出不成正比的情况下，安全性自然可以稍微降低一点，毕竟面对的使用群体决定了安全性的强度。本设计主要是从毕业设计的角度出发，增加一点数据校验的安全性就行，没必要设置硬件防火墙之类的资源，所以安全性上面也是符合的。</p>
+<p>再次是适应性。适应性主要是面对各种平台的操作系统，目前本设计的开发可以使用本人电脑进行开发，服务器可以架设到任何地方，并且有对应的服务器软件版本。而用户方面只需要能上网，有最新版本的浏览器进行支持即可，所以适应性是相当不错的。</p>
+<p>最后是分析维护性。这一点只需要维护服务端代码即可，每次服务端代码维护都可以先把服务器停止，然后在开发电脑上进行测试，最后测试无误再在服务器上进行部署，维护性并不会增加多少成本。</p>
+<h2 id="34-系统功能分析">3.4 系统功能分析</h2>
+<p>当设计人员通过参考各种文献以及其他类似项目的调研后，就会对项目具体的功能进行分析，这样有的放矢可以更快的设计程序的功能。</p>
+<p>病房管理系统的操作者有管理员，分析的管理员功能将使用用例图进行展示。图3.4展示了管理员用例图。管理员对开方类型，药品类型，职位等基础数据进行管理，对病床，病床使用，患者，医护人员，药品，开方等信息进行管理。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm715/blog.004.png"
+        data-srcset="/images/0700ssm/ssm715/blog.004.png, /images/0700ssm/ssm715/blog.004.png 1.5x, /images/0700ssm/ssm715/blog.004.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm715/blog.004.png"
+        title="/images/0700ssm/ssm715/blog.004.png" /></p>
+<p>图3.4 管理员用例图</p>
+<p>病房管理系统的操作者有医生，分析的医生的功能将使用用例图进行展示。图3.5展示了医生用例图。医生增删改查病例，开方，药品信息，查看病床信息以及病床使用信息。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm715/blog.005.png"
+        data-srcset="/images/0700ssm/ssm715/blog.005.png, /images/0700ssm/ssm715/blog.005.png 1.5x, /images/0700ssm/ssm715/blog.005.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm715/blog.005.png"
+        title="/images/0700ssm/ssm715/blog.005.png" /></p>
+<p>图3.5 医生用例图</p>
+<p>病房管理系统的操作者有医护人员，分析的医护人员的功能将使用用例图进行展示。图3.6展示了医护人员用例图。医护人员主要是查看患者，病例，开方信息以及药品信息，查看病床信息以及病床使用信息。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm715/blog.006.png"
+        data-srcset="/images/0700ssm/ssm715/blog.006.png, /images/0700ssm/ssm715/blog.006.png 1.5x, /images/0700ssm/ssm715/blog.006.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm715/blog.006.png"
+        title="/images/0700ssm/ssm715/blog.006.png" /></p>
+<p>图3.6 医护人员用例图</p>
+<p>病房管理系统的操作者有患者，分析的患者的功能将使用用例图进行展示。图3.7展示了患者用例图。患者查看病例，查看开方信息，查看病床使用信息。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm715/blog.007.png"
+        data-srcset="/images/0700ssm/ssm715/blog.007.png, /images/0700ssm/ssm715/blog.007.png 1.5x, /images/0700ssm/ssm715/blog.007.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm715/blog.007.png"
+        title="/images/0700ssm/ssm715/blog.007.png" /></p>
+<p>图3.7 患者用例图</p>
+<h1 id="第4章-系统设计">第4章 系统设计</h1>
+<p>在系统设计环境，业务的处理逻辑和数据的设计逻辑虽然是重中之重，但是这些都是用户看不见摸不着的，用户也只是能看到部署好的项目运行起来的结果，所以用户对界面布局以及界面功能比较看重。所以说，如今只要是开发网站不仅仅是需要懂一点页面设计就行，也需要懂得UI设计的人群。传统的网页设计其实就是换几个颜色，放几张图片，然后来充实操作页面，让操作页面不至于太单调，但是互联网发展至今，开发也越来越精细化，用户越来越挑剔，还用凑合方式来进行程序开发，已经是属于落后的状态了。</p>
+<h2 id="41-布局设计原则">4.1 布局设计原则</h2>
+<p>布局不是传统的把页面分分类，输入和显示页面，调整调整间距这些笼统的说法了，布局设计也是有一定的原则的。</p>
+<p>首先，布局一定要清晰合理。布局的清晰不是说图片清晰或者文字清晰，而是说用户在使用过程中，看到导航的布局，就能明白所有功能模块都可以在导航里寻找，打开一个页面，就能知道重要与不重要的资料，必须与不必须的填写，甚至是输入的格式是什么规格，都可以让用户使用的时候一目了然。因为界面是有限的，所以说布局是相当重要的一点设计原则。</p>
+<p>其次，布局的体现要符合大众审美，比如说导航，尽量都是网页的上方或者左侧。如果把导航放到网页下方或者右方，这些代码都是可以实现，但是不符合正常人的思维定向。现代人的读写习惯都是从上而下，从左到右的阅读方式，人们身体和心灵已经习惯了这种方式，如果布局到其他方向首先用户会感到新颖，但是却不会买账，因为操作几遍后就会不习惯。</p>
+<p>最后，布局也要考虑这个软件是用来做什么的，常用这个软件的人员的年龄划分，性别划分，以及职业划分。划分了使用人群，就可以对背景进行调色填充，如果是长时间用电脑的人群尽量设计的有护眼功能，不至于看一会眼睛就受不了，尽量要区分长时间使用和短时间使用的背景，这一点很重要。</p>
+<p>综上所述，系统设计需要考虑方方面面，布局设计也是需要精细化考虑，系统设计需要考虑太多，但是实现却不能弄得操作上太复杂，系统设计尽量的要满足用户需要，提高用户满意度。</p>
+<h2 id="42-功能结构设计">4.2 功能结构设计</h2>
+<p>在基于系统功能分析的基础之上，开始对系统的详细功能进行设计，最终将使用结构图的形式对设计的结果进行展示。</p>
+<p>管理员具备的详细功能将参照最终的设计结果，即图4.1所示的管理员功能结构图。其中管理员对开方类型，药品类型，职位等基础数据进行管理，对病床，病床使用，患者，医护人员，药品，开方等信息进行管理。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm715/blog.008.png"
+        data-srcset="/images/0700ssm/ssm715/blog.008.png, /images/0700ssm/ssm715/blog.008.png 1.5x, /images/0700ssm/ssm715/blog.008.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm715/blog.008.png"
+        title="/images/0700ssm/ssm715/blog.008.png" /></p>
+<p>图4.1 管理员功能结构图</p>
+<p>医生具备的详细功能将参照最终的设计结果，即图4.2所示的医生功能结构图。其中医生增删改查病例，开方，药品信息，查看病床信息以及病床使用信息。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm715/blog.009.png"
+        data-srcset="/images/0700ssm/ssm715/blog.009.png, /images/0700ssm/ssm715/blog.009.png 1.5x, /images/0700ssm/ssm715/blog.009.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm715/blog.009.png"
+        title="/images/0700ssm/ssm715/blog.009.png" /></p>
+<p>图4.2 医生功能结构图</p>
+<p>医护人员具备的详细功能将参照最终的设计结果，即图4.3所示的医护人员功能结构图。其中医护人员主要是查看患者，病例，开方信息以及药品信息，查看病床信息以及病床使用信息。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm715/blog.010.png"
+        data-srcset="/images/0700ssm/ssm715/blog.010.png, /images/0700ssm/ssm715/blog.010.png 1.5x, /images/0700ssm/ssm715/blog.010.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm715/blog.010.png"
+        title="/images/0700ssm/ssm715/blog.010.png" /></p>
+<p>图4.3 医护人员功能结构图</p>
+<p>患者具备的详细功能将参照最终的设计结果，即图4.4所示的患者功能结构图。其中患者查看病例，查看开方信息，查看病床使用信息。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm715/blog.011.png"
+        data-srcset="/images/0700ssm/ssm715/blog.011.png, /images/0700ssm/ssm715/blog.011.png 1.5x, /images/0700ssm/ssm715/blog.011.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm715/blog.011.png"
+        title="/images/0700ssm/ssm715/blog.011.png" /></p>
+<p>图4.4 患者功能结构图</p>
+<h2 id="43-数据库设计">4.3 数据库设计</h2>
+<p>数据库的选用方面肯定要选一个市场反应比较好，性价比比较高的数据库，不能凭空想象数据库，要结合程序设计的需求来选择对应的数据库。目前来讲，市面上常用的关系型数据库足够达到需求。</p>
+<h3 id="431-数据库e-r图设计">4.3.1 数据库E-R图设计</h3>
+<p>想好更好的设计出数据库使用效果，那么就要对数据的存放格式以及存放关系作出调查和梳理，所以通过分析E-R图之间的数据实体关系是最好不过的。而设计数据库E-R图是有下面几点好处：</p>
+<p>第一点：数据的冗余是一件很恐怖的事情，所以要对有些数据进行冗余筛选；</p>
+<p>第二点：防止内存溢出，数据量太大，需要提前做好预测并且设定好规则；</p>
+<p>第三点：数据库一定要完整，非完整数据也只是数据垃圾而已，没有任何作用；</p>
+<p>第四点：提高数据检索性能；</p>
+<p>这节主要是描述对系统的E-R模型的设计，数据存储格式的判断，实现的方法，用户的需要，这些都要统一，不能想当然。并且各个模型中间的关系尤其要突出。</p>
+<p>（1）把患者具备的属性通过属性图进行展示，绘制的属性图见图4.4。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm715/blog.012.png"
+        data-srcset="/images/0700ssm/ssm715/blog.012.png, /images/0700ssm/ssm715/blog.012.png 1.5x, /images/0700ssm/ssm715/blog.012.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm715/blog.012.png"
+        title="/images/0700ssm/ssm715/blog.012.png" /></p>
+<p>图4.4 患者实体属性图</p>
+<p>（2）把开方具备的属性通过属性图进行展示，绘制的属性图见图4.5。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm715/blog.013.png"
+        data-srcset="/images/0700ssm/ssm715/blog.013.png, /images/0700ssm/ssm715/blog.013.png 1.5x, /images/0700ssm/ssm715/blog.013.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm715/blog.013.png"
+        title="/images/0700ssm/ssm715/blog.013.png" /></p>
+<p>图4.5 开方实体属性图</p>
+<p>（3）把医生具备的属性通过属性图进行展示，绘制的属性图见图4.6。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm715/blog.014.png"
+        data-srcset="/images/0700ssm/ssm715/blog.014.png, /images/0700ssm/ssm715/blog.014.png 1.5x, /images/0700ssm/ssm715/blog.014.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm715/blog.014.png"
+        title="/images/0700ssm/ssm715/blog.014.png" /></p>
+<p>图4.6 医生实体属性图</p>
+<p>（4）把病例具备的属性通过属性图进行展示，绘制的属性图见图4.7。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm715/blog.015.png"
+        data-srcset="/images/0700ssm/ssm715/blog.015.png, /images/0700ssm/ssm715/blog.015.png 1.5x, /images/0700ssm/ssm715/blog.015.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm715/blog.015.png"
+        title="/images/0700ssm/ssm715/blog.015.png" /></p>
+<p>图4.7 病例实体属性图</p>
+<p>（5）上述实体间关系见图4.8。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm715/blog.016.png"
+        data-srcset="/images/0700ssm/ssm715/blog.016.png, /images/0700ssm/ssm715/blog.016.png 1.5x, /images/0700ssm/ssm715/blog.016.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm715/blog.016.png"
+        title="/images/0700ssm/ssm715/blog.016.png" /></p>
+<p>图4.8 实体间关系E-R图</p>
+<h3 id="432-数据库表结构设计">4.3.2 数据库表结构设计</h3>
+<p>数据库设计必须符合规范，那就是三大范式，这样能确保数据的合理：</p>
+<p>第一范式：保证表之间的字段关系不存在混淆的描述，必须描述准确，并且单一，不能分解；</p>
+<p>第二范式：在上述的满足条件上，主键的设计必须要在固定的列上，不能忽前忽后；</p>
+<p>第三范式：继续满足上个条件，保证每个字段都可以根据主键获取到，并且在一个数据表里体现。</p>
+<p>所以说，三个范式是一脉相承的，不是说零碎的，从第一个范式上就会发现，第一个永远是基础，后面的设定就是后者的实现必须在前面范式的基础之上的要求，这些设计可以最大化的减少数据冗余，提高数据库运行效率。</p>
+<p>表4.1 病床表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段</th>
+<th style="text-align:center">注释</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id (主键)</td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">int(11)</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">bingchuang_uuid_number</td>
+<td style="text-align:center">病床编号</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">fangjian_name</td>
+<td style="text-align:center">房间名</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">fangjian_address</td>
+<td style="text-align:center">房间位置</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">chuanghao</td>
+<td style="text-align:center">床号</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">shifoushiyong_types</td>
+<td style="text-align:center">是否使用</td>
+<td style="text-align:center">int(11)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">insert_time</td>
+<td style="text-align:center">记录时间</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.2 病床使用表</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段</th>
+<th style="text-align:center">注释</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id (主键)</td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">int(11)</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">huanzhe_id</td>
+<td style="text-align:center">患者</td>
+<td style="text-align:center">int(11)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">bingchuang_id</td>
+<td style="text-align:center">病床</td>
+<td style="text-align:center">int(11)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">bingli_uuid_number</td>
+<td style="text-align:center">病房使用唯一编号</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">ruzhu_time</td>
+<td style="text-align:center">入住时间</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">likai_time</td>
+<td style="text-align:center">离开时间</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">zhuangtai_types</td>
+<td style="text-align:center">状态</td>
+<td style="text-align:center">int(11)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">insert_time</td>
+<td style="text-align:center">记录时间</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.3 病例表</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段</th>
+<th style="text-align:center">注释</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id (主键)</td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">int(11)</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">huanzhe_id</td>
+<td style="text-align:center">患者</td>
+<td style="text-align:center">int(11)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">bingli_uuid_number</td>
+<td style="text-align:center">病例编号</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">zhuyuan_time</td>
+<td style="text-align:center">住院时间</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">yichuan_text</td>
+<td style="text-align:center">遗传史</td>
+<td style="text-align:center">text</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">zhusu_text</td>
+<td style="text-align:center">患者主诉</td>
+<td style="text-align:center">text</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">zhenduan_text</td>
+<td style="text-align:center">诊断结果</td>
+<td style="text-align:center">text</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">insert_time</td>
+<td style="text-align:center">记录时间</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.4 患者表</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段</th>
+<th style="text-align:center">注释</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id (主键)</td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">int(11)</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">username</td>
+<td style="text-align:center">账户</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">password</td>
+<td style="text-align:center">密码</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">huanzhe_name</td>
+<td style="text-align:center">患者姓名</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">huanzhe_phone</td>
+<td style="text-align:center">患者手机号</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">huanzhe_id_number</td>
+<td style="text-align:center">患者身份证号</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">huanzhe_photo</td>
+<td style="text-align:center">患者照片</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">sex_types</td>
+<td style="text-align:center">性别</td>
+<td style="text-align:center">int(11)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">age</td>
+<td style="text-align:center">年龄</td>
+<td style="text-align:center">int(11)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">huanzhe_email</td>
+<td style="text-align:center">电子邮箱</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">hunyin_types</td>
+<td style="text-align:center">婚姻</td>
+<td style="text-align:center">int(11)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">xian_address</td>
+<td style="text-align:center">现住址</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">huji_address</td>
+<td style="text-align:center">户籍地址</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.5 开方表</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段</th>
+<th style="text-align:center">注释</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id (主键)</td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">int(11)</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">huanzhe_id</td>
+<td style="text-align:center">患者</td>
+<td style="text-align:center">int(11)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">kaifang_uuid_number</td>
+<td style="text-align:center">开方编号</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">kaifang_name</td>
+<td style="text-align:center">药方名称</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">kaifang_types</td>
+<td style="text-align:center">开方类型</td>
+<td style="text-align:center">int(11)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">kaifang_content</td>
+<td style="text-align:center">开方内容</td>
+<td style="text-align:center">text</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">insert_time</td>
+<td style="text-align:center">开方时间</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.6 管理员表</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段</th>
+<th style="text-align:center">注释</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id (主键)</td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">bigint(20)</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">username</td>
+<td style="text-align:center">用户名</td>
+<td style="text-align:center">varchar(100)</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">password</td>
+<td style="text-align:center">密码</td>
+<td style="text-align:center">varchar(100)</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">role</td>
+<td style="text-align:center">角色</td>
+<td style="text-align:center">varchar(100)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">新增时间</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.7 药品表</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段</th>
+<th style="text-align:center">注释</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id (主键)</td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">int(11)</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">yaopin_uuid_number</td>
+<td style="text-align:center">药品编号</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">yaopin_name</td>
+<td style="text-align:center">药品名称</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">yaopin_photo</td>
+<td style="text-align:center">药品照片</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">yaopin_types</td>
+<td style="text-align:center">药品类型</td>
+<td style="text-align:center">int(11)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">yaopin_kucun_number</td>
+<td style="text-align:center">库存数量</td>
+<td style="text-align:center">int(11)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">yaopin_content</td>
+<td style="text-align:center">药品详细介绍</td>
+<td style="text-align:center">text</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.8 医护人员表</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段</th>
+<th style="text-align:center">注释</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id (主键)</td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">int(11)</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">username</td>
+<td style="text-align:center">账户</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">password</td>
+<td style="text-align:center">密码</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">yihurenyuan_name</td>
+<td style="text-align:center">医护人员姓名</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">yihurenyuan_phone</td>
+<td style="text-align:center">医护人员手机号</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">yihurenyuan_id_number</td>
+<td style="text-align:center">医护人员身份证号</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">yihurenyuan_photo</td>
+<td style="text-align:center">医护人员头像</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">sex_types</td>
+<td style="text-align:center">性别</td>
+<td style="text-align:center">int(11)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">yihurenyuan_email</td>
+<td style="text-align:center">电子邮箱</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">yihurenyuan_zhiwei_types</td>
+<td style="text-align:center">医护职位</td>
+<td style="text-align:center">int(11)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.9 医生表</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段</th>
+<th style="text-align:center">注释</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id (主键)</td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">int(11)</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">username</td>
+<td style="text-align:center">账户</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">password</td>
+<td style="text-align:center">密码</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">yisheng_name</td>
+<td style="text-align:center">医生姓名</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">yisheng_phone</td>
+<td style="text-align:center">医生手机号</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">yisheng_id_number</td>
+<td style="text-align:center">医生身份证号</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">yisheng_photo</td>
+<td style="text-align:center">医生头像</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">sex_types</td>
+<td style="text-align:center">性别</td>
+<td style="text-align:center">int(11)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">yisheng_email</td>
+<td style="text-align:center">电子邮箱</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">keshi_types</td>
+<td style="text-align:center">科室</td>
+<td style="text-align:center">int(11)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">zhiwei_types</td>
+<td style="text-align:center">职位</td>
+<td style="text-align:center">int(11)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">yisheng_shanchang</td>
+<td style="text-align:center">擅长</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">yisheng_rongyu</td>
+<td style="text-align:center">所获荣誉</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center">是</td>
+</tr>
+</tbody>
+</table>
+<p><figure><a class="lightgallery" href="blog.017.png" title="打开新的 phpMyAdmin 窗口" data-thumbnail="blog.017.png" data-sub-html="<h2>打开新的 phpMyAdmin 窗口</h2><p>打开新的 phpMyAdmin 窗口</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="blog.017.png"
+            data-srcset="blog.017.png, blog.017.png 1.5x, blog.017.png 2x"
+            data-sizes="auto"
+            alt="blog.017.png" />
+    </a><figcaption class="image-caption">打开新的 phpMyAdmin 窗口</figcaption>
+    </figure></p>
+<h1 id="第5章-系统实现">第5章 系统实现</h1>
+<p>下面主要是对系统实现的功能进行描述，一般在系统实现阶段只算是一个粗略的功能实现，可能符合开发人员的设计预期，但是对于具体使用者来讲还是需要其他人进行发现的，所以这个环节是很有必要进行描述的。</p>
+<h2 id="51-管理员功能实现">5.1 管理员功能实现</h2>
+<h3 id="511-患者管理">5.1.1 患者管理</h3>
+<p>实现患者管理功能，其界面运行的效果图见图5.1。患者信息有现住址，户籍地址，婚姻，患者照片，性别等信息，管理员可以修改有错误数据的患者信息，以及使用删除功能删除需要删除的患者信息等。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm715/blog.018.png"
+        data-srcset="/images/0700ssm/ssm715/blog.018.png, /images/0700ssm/ssm715/blog.018.png 1.5x, /images/0700ssm/ssm715/blog.018.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm715/blog.018.png"
+        title="/images/0700ssm/ssm715/blog.018.png" /></p>
+<p>图5.1 患者管理界面</p>
+<h3 id="512-病床管理">5.1.2 病床管理</h3>
+<p>实现病床管理功能，其界面运行的效果图见图5.2。病床信息有房间名，房间位置，床号，是否使用等信息，管理员修改有错误数据的病床信息，使用删除功能删除需要删除的病床信息，或者使用床号，房间名实现对病床信息的查询。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm715/blog.019.png"
+        data-srcset="/images/0700ssm/ssm715/blog.019.png, /images/0700ssm/ssm715/blog.019.png 1.5x, /images/0700ssm/ssm715/blog.019.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm715/blog.019.png"
+        title="/images/0700ssm/ssm715/blog.019.png" /></p>
+<p>图5.2 病床管理界面</p>
+<h3 id="513-病床使用管理">5.1.3 病床使用管理</h3>
+<p>实现病床使用管理功能，其界面运行的效果图见图5.3。病床使用信息也需要管理员登记，其中包括病床编号，患者手机号，患者入住时间，状态等信息，病床使用信息有错误，管理员需要修改，对于需要清理的病床使用信息，管理员使用删除功能即可删除。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm715/blog.020.png"
+        data-srcset="/images/0700ssm/ssm715/blog.020.png, /images/0700ssm/ssm715/blog.020.png 1.5x, /images/0700ssm/ssm715/blog.020.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm715/blog.020.png"
+        title="/images/0700ssm/ssm715/blog.020.png" /></p>
+<p>图5.3 病床使用管理界面</p>
+<h2 id="52-医生功能实现">5.2 医生功能实现</h2>
+<h3 id="521-病例管理">5.2.1 病例管理</h3>
+<p>实现病例管理功能，其界面运行的效果图见图5.4。医生为患者看病之后，为患者添加病例信息，包括患者主诉，诊断结果，住院时间等信息，医生也能修改登记错误的病例信息，以及通过病例编号实现对患者病例的查询。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm715/blog.021.png"
+        data-srcset="/images/0700ssm/ssm715/blog.021.png, /images/0700ssm/ssm715/blog.021.png 1.5x, /images/0700ssm/ssm715/blog.021.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm715/blog.021.png"
+        title="/images/0700ssm/ssm715/blog.021.png" /></p>
+<p>图5.4 病例管理界面</p>
+<h3 id="522-开方管理">5.2.2 开方管理</h3>
+<p>实现开方管理功能，其界面运行的效果图见图5.5。医生针对患者病情的诊断结果开具处方，其中包括药方类型，开发类型，开方时间等信息，以及医生对开方信息进行修改，查询等。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm715/blog.022.png"
+        data-srcset="/images/0700ssm/ssm715/blog.022.png, /images/0700ssm/ssm715/blog.022.png 1.5x, /images/0700ssm/ssm715/blog.022.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm715/blog.022.png"
+        title="/images/0700ssm/ssm715/blog.022.png" /></p>
+<p>图5.5 开方管理界面</p>
+<h3 id="523-药品管理">5.2.3 药品管理</h3>
+<p>实现药品管理功能，其界面运行的效果图见图5.6。在该界面，医生负责添加药品，修改添加错误的药品信息，删除需要删除的药品信息，以及管理药品的库存，主要管理方式是增加药品的库存，或对药品库存进行减少等操作。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm715/blog.023.png"
+        data-srcset="/images/0700ssm/ssm715/blog.023.png, /images/0700ssm/ssm715/blog.023.png 1.5x, /images/0700ssm/ssm715/blog.023.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm715/blog.023.png"
+        title="/images/0700ssm/ssm715/blog.023.png" /></p>
+<p>图5.6 药品管理界面</p>
+<h2 id="53-医护人员功能实现">5.3 医护人员功能实现</h2>
+<h3 id="531-病床使用查看">5.3.1 病床使用查看</h3>
+<p>实现病床使用查看功能，其界面运行的效果图见图5.7。医护人员查询病床使用信息，查询前，可以提供患者姓名，病床编号，状态等查询条件来查询病床使用信息。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm715/blog.024.png"
+        data-srcset="/images/0700ssm/ssm715/blog.024.png, /images/0700ssm/ssm715/blog.024.png 1.5x, /images/0700ssm/ssm715/blog.024.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm715/blog.024.png"
+        title="/images/0700ssm/ssm715/blog.024.png" /></p>
+<p>图5.7 病床使用查看界面</p>
+<h3 id="532-病例查看">5.3.2 病例查看</h3>
+<p>实现病例查看功能，其界面运行的效果图见图5.8。医护人员查询患者病例，查看病例的诊断结果，住院时间，患者主诉信息等。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm715/blog.025.png"
+        data-srcset="/images/0700ssm/ssm715/blog.025.png, /images/0700ssm/ssm715/blog.025.png 1.5x, /images/0700ssm/ssm715/blog.025.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm715/blog.025.png"
+        title="/images/0700ssm/ssm715/blog.025.png" /></p>
+<p>图5.8 病例查看界面</p>
+<h3 id="533-开方查看">5.3.3 开方查看</h3>
+<p>实现开方查看功能，其界面运行的效果图见图5.9。医护人员查询医生为患者开具的药方，以及对开方的药方名称，开方时间等信息进行查看。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm715/blog.026.png"
+        data-srcset="/images/0700ssm/ssm715/blog.026.png, /images/0700ssm/ssm715/blog.026.png 1.5x, /images/0700ssm/ssm715/blog.026.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm715/blog.026.png"
+        title="/images/0700ssm/ssm715/blog.026.png" /></p>
+<p>图5.9 开方查看界面</p>
+<h2 id="54-患者功能实现">5.4 患者功能实现</h2>
+<h3 id="541-病例查看">5.4.1 病例查看</h3>
+<p>实现病例查看功能，其界面运行的效果图见图5.10。患者查询病例，查看诊断结果等详细信息。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm715/blog.027.png"
+        data-srcset="/images/0700ssm/ssm715/blog.027.png, /images/0700ssm/ssm715/blog.027.png 1.5x, /images/0700ssm/ssm715/blog.027.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm715/blog.027.png"
+        title="/images/0700ssm/ssm715/blog.027.png" /></p>
+<p>图5.10 病例查看界面</p>
+<h3 id="542-开方查看">5.4.2 开方查看</h3>
+<p>实现开方查看功能，其界面运行的效果图见图5.11。患者查询开方，查看药方名称，开方编号，开方类型等信息。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm715/blog.028.png"
+        data-srcset="/images/0700ssm/ssm715/blog.028.png, /images/0700ssm/ssm715/blog.028.png 1.5x, /images/0700ssm/ssm715/blog.028.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm715/blog.028.png"
+        title="/images/0700ssm/ssm715/blog.028.png" /></p>
+<p>图5.11 开方查看界面</p>
+<h1 id="heading"></h1>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2024-06-21</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/ssm715%E5%9F%BA%E4%BA%8Ejava-%E7%9A%84%E7%97%85%E6%88%BF%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://chenqi199.github.io/ssm715%E5%9F%BA%E4%BA%8Ejava-%E7%9A%84%E7%97%85%E6%88%BF%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" data-title="ssm715基于java 的病房管理系统&#43;vue" data-hashtags="ssmjava,病房管理,管理系统"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://chenqi199.github.io/ssm715%E5%9F%BA%E4%BA%8Ejava-%E7%9A%84%E7%97%85%E6%88%BF%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" data-hashtag="ssmjava"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://chenqi199.github.io/ssm715%E5%9F%BA%E4%BA%8Ejava-%E7%9A%84%E7%97%85%E6%88%BF%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" data-title="ssm715基于java 的病房管理系统&#43;vue"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://chenqi199.github.io/ssm715%E5%9F%BA%E4%BA%8Ejava-%E7%9A%84%E7%97%85%E6%88%BF%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" data-title="ssm715基于java 的病房管理系统&#43;vue"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://chenqi199.github.io/ssm715%E5%9F%BA%E4%BA%8Ejava-%E7%9A%84%E7%97%85%E6%88%BF%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" data-title="ssm715基于java 的病房管理系统&#43;vue" data-ralateuid="https://gitee.com/chen_q_i"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ssmjava/">Ssmjava</a>,&nbsp;<a href="/tags/%E7%97%85%E6%88%BF%E7%AE%A1%E7%90%86/">病房管理</a>,&nbsp;<a href="/tags/%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/">管理系统</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/0710springboot%E6%A0%A1%E5%9B%AD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" class="prev" rel="prev" title="0710springboot校园医疗保险管理系统"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>0710springboot校园医疗保险管理系统</a>
+            <a href="/ssm714%E5%AE%9E%E9%AA%8C%E5%AE%A4%E9%A2%84%E7%BA%A6%E7%AE%A1%E7%90%86-vue/" class="next" rel="next" title="ssm714实验室预约管理&#43;vue">ssm714实验室预约管理+vue<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.128.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="chenqi199" target="_blank">chenqi</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

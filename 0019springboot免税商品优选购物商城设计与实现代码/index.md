@@ -1,17 +1,16 @@
 # 0019springboot免税商品优选购物商城设计与实现代码
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0019springboot免税商品优选购物商城设计与实现代码](https://github.com/GraduationProject-springboot/0019springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV16ia6epENY?p=20)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 课题开发的背景
 从古至今，通过书本获取知识信息的方式完全被互联网络信息化，但是免税商品优选购物商城，对于购物商城工作来说，仍然是一项非常重要的工作。尤其是免税商品优选购物商城，传统人工记录模式已不符合当前社会发展和信息管理工作需求。对于仓储信息管理，传统的方式都是通过纸质进行对商品的查看、订单信息。随着社会的发展，科技的进步互联网技术变得越来越普及，网络交流的生活方式已经逐渐的受到了广大人民群众的喜爱，越来越多的网络爱好者开始在网络上满足自己的衣食住行及自己的工作学习，同时也渐渐的步入到了各个用户。网络有许多的优点，比如方便、快捷、效率高并且成本低，你可以足不出户就可以获取到自己所需的资产信息。因此，类似购物商城的管理系统满足了足不出户以及工作繁忙的客户的需求，目前，建立网络管理系统，本购物商城的开发是采用Java技术为基础，以Mysql为数据库进行开发的。
@@ -106,19 +105,19 @@ Mysql的语言是非结构化的，用户可以在数据上进行工作，并且
 ### 3.4.1操作流程
 管理员想进入系统，首先进入系统登录界面，通过正确的用户名、密码，用户名和密码输入完成后，系统会检查登录信息，信息正确，然后输入相应的功能界面，提示信息错误，登录失败。系统操作流程如图3-1所示。
 
-![](/images/0000stringboot/0019springboot/blog.001.png)
+![](/images/0000wxapp//blog.001.png)
 
 图3-1操作流程图
 ### 3.4.2添加信息流程
 添加信息，编号系统使用自动编号模式，没有用户填写，管理员添加信息输入信息，系统将自动确认的信息和数据，验证的成功是有效的信息添加到数据库，信息无效，重新输入信息。添加信息流程如图3-2所示。
 
-![](/images/0000stringboot/0019springboot/blog.002.png)
+![](/images/0000wxapp//blog.002.png)
 
 图3-2添加信息流程图
 ### 3.4.3删除信息流程
 管理员选择要删除的信息并单击Delete按钮，系统提示是否删除信息。如果用户想要删除信息，系统将删除信息。系统数据库删除信息。删除信息流程图如图3-3所示。
 
-![](/images/0000stringboot/0019springboot/blog.003.png)
+![](/images/0000wxapp//blog.003.png)
 
 图3-3删除信息流程图
 
@@ -130,7 +129,7 @@ Mysql的语言是非结构化的，用户可以在数据上进行工作，并且
 
 用户拥有最高管理权限。通过以上需求分析的调查与研究，将系统的功能定义如下图4-1所示。
 
-![](/images/0000stringboot/0019springboot/blog.004.png)
+![](/images/0000wxapp//blog.004.png)
 
 图4-1 系统管理员体功能结构图
 
@@ -145,25 +144,25 @@ Mysql的语言是非结构化的，用户可以在数据上进行工作，并且
 
 （1）用户E-R图
 
-![](/images/0000stringboot/0019springboot/blog.005.png)
+![](/images/0000wxapp//blog.005.png)
 
 图4-2管理员E-R图
 
 （2）商品类别E-R图
 
-![](/images/0000stringboot/0019springboot/blog.006.png)
+![](/images/0000wxapp//blog.006.png)
 
 图4-3仓库资产类别E-R图
 
 （3）商品信息E-R图
 
-![](/images/0000stringboot/0019springboot/blog.007.png)
+![](/images/0000wxapp//blog.007.png)
 
 图4-4 商品信息E-R图
 
 （4）订单信息E-R图
 
-![](/images/0000stringboot/0019springboot/blog.008.png)
+![](/images/0000wxapp//blog.008.png)
 
 图4-5 订单信息E-R图
 ### 4.2.2 数据库逻辑设计
@@ -268,7 +267,7 @@ Mysql的语言是非结构化的，用户可以在数据上进行工作，并且
 ## 5.1登录界面
 登录窗口，用户通过登录窗口可以进行登录,进行输入用户名、密码等信息，进行登录操作，如图5-1所示。
 
-![](/images/0000stringboot/0019springboot/blog.009.png)
+![](/images/0000wxapp//blog.009.png)
 
 图5-1登录界面
 ## 5.2管理员功能模块
@@ -276,19 +275,19 @@ Mysql的语言是非结构化的，用户可以在数据上进行工作，并且
 
 用户管理：通过列表可以获取账号、用户名、姓名、性别、头像、联系电话、照片、地址等信息，进行查看详情、修改或删除操作，如图5-2所示。
 
-![](/images/0000stringboot/0019springboot/blog.010.png)
+![](/images/0000wxapp//blog.010.png)
 
 图5-2用户管理界面
 
 商家管理：通过列表可以获取商家的详细信息内容，进行查看详情或删除操作，如图5-3所示。
 
-![](/images/0000stringboot/0019springboot/blog.011.png)
+![](/images/0000wxapp//blog.011.png)
 
 图5-3商家管理界面
 
 订单管理：通过列表可以获取订单编号、商品名称、商品图片、购买数量、价格、总价格、支付类型、状态、地址等信息，进行查看详情或发货、删除操作，如图5-4所示。
 
-![](/images/0000stringboot/0019springboot/blog.012.png)
+![](/images/0000wxapp//blog.012.png)
 
 图5-4订单管理界面图
 
@@ -297,77 +296,77 @@ Mysql的语言是非结构化的，用户可以在数据上进行工作，并且
 ## 5.3商家功能模块
 商家通过点击后台管理进入后台系统可以进行查看个人中心、商品信息管理、商品分类管理、在线客服管理、订单管理等功能模块，进行相对应操作，通过点击个人信息页面可以进行查看员工的基本信息，进行查看或修改操作，如图5-5所示。
 
-![](/images/0000stringboot/0019springboot/blog.013.png)
+![](/images/0000wxapp//blog.013.png)
 
 图5-5商家信息界面
 
 商品信息管理：通过列表可以获取商品名称、商品类型、规格、图片、商家账号、商家姓名、价格等信息内容，进行查看详情、在线客服、查看评论、新增或删除操作，如图5-6所示。
 
-![](/images/0000stringboot/0019springboot/blog.014.png)
+![](/images/0000wxapp//blog.014.png)
 
 图5-6商品信息管理界面
 
 在线客服管理：通过列表可以获取客服编号、内容、账号、姓名、商家账号、商家姓名、客服回复等信息，进行查看详情、修改、删除操作，如图5-7所示。
 
-![](/images/0000stringboot/0019springboot/blog.015.png)
+![](/images/0000wxapp//blog.015.png)
 
 图5-7在线客服管理界面
 
 我的收藏管理：通过列表可以获取收藏名称、收藏图片等信息，进行查看详情、修改或删除操作，如图5-8所示。
 
-![](/images/0000stringboot/0019springboot/blog.016.png)
+![](/images/0000wxapp//blog.016.png)
 
 图5-8我的收藏管理界面
 
 订单管理：通过列表可以获取订单编号、商品名称、商品图片、购买数量、价格、总价格、支付类型、状态、地址等信息，进行查看详情或删除操作，如图5-9所示。
 
-![](/images/0000stringboot/0019springboot/blog.017.png)
+![](/images/0000wxapp//blog.017.png)
 
 图5-9订单管理界面
 
 ## 5.2用户前台功能模块
 用户通过家免税商品优选购物商城系统，可以进行查看首页、商品信息、商城快讯、个人中心、后台管理、购物车等功能，可以进行相对应的操作，如图5-10所示。
 
-![](/images/0000stringboot/0019springboot/blog.018.png)
+![](/images/0000wxapp//blog.018.png)
 
 图5-10首页系统界面
 
 商品信息详情：通过页面可以进行查看商品名称、商品价格、商品类型、规格、商家账号、商家账号、商家姓名、点击次数等信息，进行添加到购物车或立即购买、点我收藏，如图5-11所示。
 
-![](/images/0000stringboot/0019springboot/blog.019.png)
+![](/images/0000wxapp//blog.019.png)
 
 图5-11商品信息界面
 
 个人中心：通过页面可以进行查看获取个人中心、我的订单、我的地址、我的收藏四个子模块，个人中心：通过页面可以进行查看个人信息或进行更新个人信息，进行提交保存操作，如图5-12所示。我的订单：通过列表可以获取订单编号、商品、价格、数量、总价、地址等信息，进行查看我的订单或进行退款操作，如图5-13所示。我的地址：通过页面可以进行查看联系人、手机号码、选择地址等信息，进行查看或修改、删除操作，并通过输入添加新地址进行添加操作，如图5-14所示。
 
-![](/images/0000stringboot/0019springboot/blog.020.png)
+![](/images/0000wxapp//blog.020.png)
 
 图5-12个人信息界面
 
-![](/images/0000stringboot/0019springboot/blog.021.png)
+![](/images/0000wxapp//blog.021.png)
 
 图5-13我的订单界面
 
-![](/images/0000stringboot/0019springboot/blog.022.png)
+![](/images/0000wxapp//blog.022.png)
 
 图5-14我的地址界面图
 
 ## 5.3用户后台功能模块
 用户通过点击后台管理进入后台系统可以进行查看个人中心、商品信息管理、在线客服管理、我的收藏管理、订单管理等功能模块，进行相对应操作，如图5-15所示。
 
-![](/images/0000stringboot/0019springboot/blog.023.png)
+![](/images/0000wxapp//blog.023.png)
 
 图5-15用户后台系统界面
 
 在线客服管理：通过列表可以获取客服编号、内容、账号、姓名、商家账号、商家姓名、客服回复等信息，进行查看详情操作，如图5-16所示。
 
-![](/images/0000stringboot/0019springboot/blog.024.png)
+![](/images/0000wxapp//blog.024.png)
 
 图5-16在线客服管理界面
 
 商品信息管理：通过列表可以获取商品名称、商品类型、规格、图片、商家账号、商家姓名、价格等信息内容，进行查看详情、在线客服、查看评论、新增或删除操作，如图5-17所示。
 
-![](/images/0000stringboot/0019springboot/blog.025.png)
+![](/images/0000wxapp//blog.025.png)
 
 图5-17商品信息管理界面
 

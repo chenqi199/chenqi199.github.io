@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer" />
+        <meta name="robots" content="noodp" />
+        <title>ssm696基于SpringMVC网上选课系统的设计与实现&#43;jsp - chenqi blog</title><meta name="Description" content="Hugo theme - chenqi"><meta property="og:url" content="https://chenqi199.github.io/ssm696%E5%9F%BA%E4%BA%8Espringmvc%E7%BD%91%E4%B8%8A%E9%80%89%E8%AF%BE%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/">
+  <meta property="og:site_name" content="chenqi blog">
+  <meta property="og:title" content="ssm696基于SpringMVC网上选课系统的设计与实现&#43;jsp">
+  <meta property="og:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm696基于SpringMVC网上选课系统的设计与实现&#43;jsp github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 研究背">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-06-15T10:33:01+08:00">
+    <meta property="article:modified_time" content="2024-06-15T10:33:01+08:00">
+    <meta property="article:tag" content="Ssm网上">
+    <meta property="article:tag" content="网上选课">
+    <meta property="article:tag" content="选课系统">
+    <meta property="article:tag" content="系统设计">
+    <meta property="article:tag" content="设计实现">
+    <meta property="og:image" content="https://chenqi199.github.io/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chenqi199.github.io/logo.png">
+  <meta name="twitter:title" content="ssm696基于SpringMVC网上选课系统的设计与实现&#43;jsp">
+  <meta name="twitter:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm696基于SpringMVC网上选课系统的设计与实现&#43;jsp github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 研究背">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chenqi199.github.io/ssm696%E5%9F%BA%E4%BA%8Espringmvc%E7%BD%91%E4%B8%8A%E9%80%89%E8%AF%BE%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" /><link rel="prev" href="https://chenqi199.github.io/ssm697%E5%9F%BA%E4%BA%8Eweb%E5%8A%9E%E4%BA%8B%E5%A4%A7%E5%8E%85%E6%94%BF%E5%8A%A1%E9%A2%84%E7%BA%A6%E7%B3%BB%E7%BB%9F-vue/" /><link rel="next" href="https://chenqi199.github.io/ssm695%E5%9F%BA%E4%BA%8Ejava%E7%9A%84%E8%87%AA%E5%8A%A9%E5%8C%BB%E7%96%97%E6%9C%8D%E5%8A%A1%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "ssm696基于SpringMVC网上选课系统的设计与实现+jsp",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chenqi199.github.io\/ssm696%E5%9F%BA%E4%BA%8Espringmvc%E7%BD%91%E4%B8%8A%E9%80%89%E8%AF%BE%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp\/"
+        },"image": ["https:\/\/chenqi199.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "ssm网上, 网上选课, 选课系统, 系统设计, 设计实现","wordcount":  7134 ,
+        "url": "https:\/\/chenqi199.github.io\/ssm696%E5%9F%BA%E4%BA%8Espringmvc%E7%BD%91%E4%B8%8A%E9%80%89%E8%AF%BE%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp\/","datePublished": "2024-06-15T10:33:01+08:00","dateModified": "2024-06-15T10:33:01+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/chenqi199.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "chenqi"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/ssm696%E5%9F%BA%E4%BA%8Espringmvc%E7%BD%91%E4%B8%8A%E9%80%89%E8%AF%BE%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/ssm696%E5%9F%BA%E4%BA%8Espringmvc%E7%BD%91%E4%B8%8A%E9%80%89%E8%AF%BE%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">ssm696基于SpringMVC网上选课系统的设计与实现+jsp</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="chenqi199" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>chenqi</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-06-15">2024-06-15</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 7134 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 15 分钟&nbsp;<span id="/ssm696%E5%9F%BA%E4%BA%8Espringmvc%E7%BD%91%E4%B8%8A%E9%80%89%E8%AF%BE%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" class="leancloud_visitors" data-flag-title="ssm696基于SpringMVC网上选课系统的设计与实现&#43;jsp">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">github 项目仓库</a> 开源仅有后端代码</a></li>
+        <li><a href="#点击播放视频-">点击播放视频 ▼</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#12课题研究现状">1.2课题研究现状</a></li>
+    <li><a href="#13课题开发的目的和意义">1.3课题开发的目的和意义</a></li>
+    <li><a href="#14课题开发内容">1.4课题开发内容</a></li>
+    <li><a href="#15论文结构安排">1.5论文结构安排</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#21系统开发使用的关键技术">2.1系统开发使用的关键技术</a></li>
+    <li><a href="#22-vue技术介绍">2.2 Vue技术介绍</a></li>
+    <li><a href="#23-idea介绍">2.3 Idea介绍</a></li>
+    <li><a href="#24-mysql数据库介绍">2.4 MySQL数据库介绍</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#31系统需求分析">3.1系统需求分析</a></li>
+    <li><a href="#32系统可行性分析">3.2系统可行性分析</a>
+      <ul>
+        <li><a href="#322经济可行性">3.2.2经济可行性</a></li>
+        <li><a href="#323运行可行性分析">3.2.3运行可行性分析</a></li>
+        <li><a href="#324法律可行性">3.2.4法律可行性</a></li>
+      </ul>
+    </li>
+    <li><a href="#33系统功能分析">3.3系统功能分析</a></li>
+    <li><a href="#34系统性能分析">3.4系统性能分析</a></li>
+    <li><a href="#35业务流程分析">3.5业务流程分析</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#41系统功能结构设计">4.1系统功能结构设计</a></li>
+    <li><a href="#42系统数据库设计">4.2系统数据库设计</a>
+      <ul>
+        <li><a href="#421数据库er图设计">4.2.1数据库ER图设计</a></li>
+        <li><a href="#422数据库表设计">4.2.2数据库表设计</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#51管理员功能界面的实现">5.1管理员功能界面的实现</a>
+      <ul>
+        <li><a href="#511用户登录界面的实现">5.1.1用户登录界面的实现</a></li>
+        <li><a href="#512个人中心管理功能的实现界面">5.1.2个人中心管理功能的实现界面</a></li>
+        <li><a href="#513课程信息管理功能的实现界面">5.1.3课程信息管理功能的实现界面</a></li>
+        <li><a href="#514老师信息管理功能的实现界面">5.1.4老师信息管理功能的实现界面</a></li>
+        <li><a href="#515班级管理功能的实现界面">5.1.5班级管理功能的实现界面</a></li>
+        <li><a href="#516学生信息管理功能的实现界面">5.1.6学生信息管理功能的实现界面</a></li>
+        <li><a href="#517成绩管理功能的实现界面">5.1.7成绩管理功能的实现界面</a></li>
+        <li><a href="#518教学计划管理功能的实现界面">5.1.8教学计划管理功能的实现界面</a></li>
+        <li><a href="#519学生选课管理功能的实现界面">5.1.9学生选课管理功能的实现界面</a></li>
+        <li><a href="#5110教室管理功能的实现界面">5.1.10教室管理功能的实现界面</a></li>
+        <li><a href="#5111院系管理功能的实现界面">5.1.11院系管理功能的实现界面</a></li>
+      </ul>
+    </li>
+    <li><a href="#52学生功能的界面详细实现">5.2学生功能的界面详细实现</a>
+      <ul>
+        <li><a href="#521个人资料管理功能的实现界面">5.2.1个人资料管理功能的实现界面</a></li>
+        <li><a href="#522在线选课功能的实现界面">5.2.2在线选课功能的实现界面</a></li>
+        <li><a href="#523成绩查询功能的实现界面">5.2.3成绩查询功能的实现界面</a></li>
+        <li><a href="#524选课管理功能的实现界面">5.2.4选课管理功能的实现界面</a></li>
+        <li><a href="#525教学资源管理功能的实现界面">5.2.5教学资源管理功能的实现界面</a></li>
+      </ul>
+    </li>
+    <li><a href="#53老师功能的详细实现界面">5.3老师功能的详细实现界面</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="项目清单-包安装运行httpchenqi1990site-官网地址-httpchenqi1990site"><a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">项目清单 包安装运行</a> 官网地址 <a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">http://chenqi1990.site</a></h1>
+<h1 id="ssm696基于springmvc网上选课系统的设计与实现jsphttpsgithubcomgraduationproject-springboot"><a href="https://github.com/GraduationProject-springboot/" target="_blank" rel="noopener noreffer ">ssm696基于SpringMVC网上选课系统的设计与实现+jsp</a></h1>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        data-srcset="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 1.5x, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        title="picture" /></p>
+<h3 id="github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">github 项目仓库</a> 开源仅有后端代码</h3>
+<h3 id="点击播放视频-">点击播放视频 ▼</h3>
+<p><a href="https://www.bilibili.com/video/BV1Tm8QeZE4a?p=94" target="_blank" rel="noopener noreffer "><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.sstatic.net/Vp2cE.png"
+        data-srcset="https://i.sstatic.net/Vp2cE.png, https://i.sstatic.net/Vp2cE.png 1.5x, https://i.sstatic.net/Vp2cE.png 2x"
+        data-sizes="auto"
+        alt="https://i.sstatic.net/Vp2cE.png"
+        title="Watch the video" /></a></p>
+<h1 id="研究背景和来源">研究背景和来源</h1>
+<p>目前的管理类系统已各种各样，涉及到生活中的每一个部分。购物类、网站类、信息统计类、办公类、官网类等非常丰富。我国各类系统的发展已非常成熟，这些系统依靠网络和计算机技术不断完善发展为人们带来更好的生活体验。而管理类的系统更是多种多样，像比如出名的库存管理系统、人事管理系统等拥有的客户群体都非常大。</p>
+<p>受我国教育理念的影响，每个家庭都非常注重学生的学习，学生学习的课程影响到今后所要从事的行业。我国人口众多，竞争压力也越来越大，随着国民经济水平的提升，越来越多的家庭都认识到专业的重要性。我国的教育水平还处在基础阶段，学生获得知识的主要途径是通过老师在学校里传授，这种方式就造成学生在选择课程时非常谨慎，但目前学生想要了解不同课程的详细内容只能通过老师讲述或者网上自己搜索辨别。老师讲述通常不详细，自己网上辨别不确定性大，学生选课后老师的整理工作也非常复杂，老师想要为学生打分也需要手动整理、发布。</p>
+<h2 id="12课题研究现状">1.2课题研究现状</h2>
+<p>目前学生选课的主要途径还是通过传统方式，也就是采用在学校由老师在教室传达学生选课后上报的方式，这种方式对课程少、学生少的学校来说非常适合，但对课程种类多、学生多来说非常困难。对今后老师成绩的发布也需要大量时间的配合，信息不够及时，这种方法已非常落后。</p>
+<p>我国线上学生信息管理系统发展已形成一定的规模，在众多管理系统里主要针对的是学生的各种资料管理。也会涉及到学生的选课和学生的成绩管理，但都不够专业，不能实现更深层次的功能，满足不了用户的需求。</p>
+<h2 id="13课题开发的目的和意义">1.3课题开发的目的和意义</h2>
+<p>本系统的实现目的在于帮助学生的选课。和相关的管理系统相比，本系统针对性更强，向使用用户展示最为详细的课程信息帮助学生了解课程并进行在线选课。本系统为免费的选课系统，为学校的学生选课提供辅助。本系统的核心在于内容，以丰富的课程种类取胜，去繁留简，使本系统的用户更容易抓住重点，找到核心内容，减少用户烦躁心理。本系统的实现拥有更大的意义：</p>
+<ol>
+<li>本系统功能简单、针对性强，使系统用户更为直观，操作也更为简单，只要有上网经验的用户都可以轻松掌握；</li>
+<li>本系统采用多种课程种类，学生可以根据自己的喜好选择更适合自己的课程进行学习；</li>
+<li>本系统中的课程信息都是由管理员发布，可以做到及时、精准；</li>
+<li>本系统中设有成绩管理功能，老师可以根据学生的表现随时给学生打分，学生也可以随时查询成绩。</li>
+</ol>
+<h2 id="14课题开发内容">1.4课题开发内容</h2>
+<p>本基于SpringMVC网上选课系统采用管理员、老师、学生界面进行设计。老师的账号和密码必须由管理员分配，管理员的账号和密码可由系统开发者在数据库中设置，学生的账号和密码可以由注册获得。管理员的主要功能为学生资料、老师资料的添加、修改，班级信息的添加和查询、课程信息的详细解释和添加还可以查询学生的选课成绩以及管理教学资源、教学计划等。老师的功能为个人资料管理和自己负责学生的成绩设置，并管理教学资源，设置教学计划。学生的主要功能为浏览课程和在线选课以及查询课程成绩、教学资源。</p>
+<h2 id="15论文结构安排">1.5论文结构安排</h2>
+<p>本篇论文分为摘要、目录、绪论、系统开发关键技术介绍、系统分析、系统设计和系统实现、系统测试、总结、致谢、参考文献。本篇论文的核心集中在系统设计和系统实现部分。绪论部分为基础调研，在系统分析中阐述系统的需求分析、可行性分析和数据流程图、用例图等。</p>
+<h1 id="第2章-系统开发关键技术介绍">第2章 系统开发关键技术介绍</h1>
+<h2 id="21系统开发使用的关键技术">2.1系统开发使用的关键技术</h2>
+<p>本系统在开发中选择B/S框架进行设计，语言采用JAVA，数据库采用MySQL，并在设计中加入Vue技术，本系统的运行环境为Idea。</p>
+<h2 id="22-vue技术介绍">2.2 Vue技术介绍</h2>
+<p>Vue是一个用来开发前台界面的JAVA框架技术，体积非常的小，所以运行效率非常的高，可以直接通过虚拟设定的 DOM进行各种JAVA计算，因为操作过程中相当于是一个预处理，所以并没有真实的DOM，也可以称作为一个虚拟的DOM。Vue还可以进行双向的数据绑定，这样操作起来更加的简单，使用户可以不用管DOM对象，直接去操作业务逻辑就可以了，可以应用的场景非常的多，而且开发成本也非常的低。目前的市场后已经有很多成熟稳定的框架组件，可以直接拿来使用，对于初学者来说非常的方便。</p>
+<h2 id="23-idea介绍">2.3 Idea介绍</h2>
+<p>Idea是公认的最好用JAVA开发工具之一，常见最多的都是用来跟Eclipse进行比较，Eclipse可以说是最简单的，但是在兼容方面，代码设计方面明显不足。而Idea就是在Eclipse基础上进行了整合升级，更加智能。Idea最大的创新就是有智能代码助手，可以实现代码提示，还能进行代码重构，代码审查，非常适合新手的使用。Idea的宗旨就是实现智能编码，使编码更加的简单，所以在Idea上有很多其他软件所没有的特色功能，比如进行智能选取，不需要开发者在手动操作，还有各种丰富的导航模式可供选择，可以直接导入就能使用，不需要开发者在重新建立，还有历史记录功能，在误删误操作的情况下，通过这个功能就可以直接恢复。而且Idea相比Eclipse调试也更简单，通过Eclipse调试的时候需要选定表达式，否则就没办法查看它的值，而通过Idea则不需要进行任何操作，Idea会自动理解你所需要的表达式，然后给你建议参考值。而且在编码方面更加智能，会自动跳出需要的变量和参数，然后建议你最优选择。所以说相比Eclipse来说，用Idea开发更加的简单方便，更适合新用户的开发使用。</p>
+<h2 id="24-mysql数据库介绍">2.4 MySQL数据库介绍</h2>
+<p>数据库主要就是用来存储和管理系统数据的，按照数据结构来进行组织和存储的，数据库都有自己独立的接口来进行创建，访问，管理等，也可以直接用文件的形式进行数据存储，但是读写速度比较慢，效率不高，所以一般都是采用专门的数据库软件来进行数据库存储和管理，这样可以更加科学有效的实现数据的存储，也更加的安全。而MySQL就是一个关系型数据库管理系统，可以把各种不同的数据库存储到不同的表结构中 ，这样可以提高查找效率。</p>
+<h1 id="第3章-系统分析">第3章 系统分析</h1>
+<h2 id="31系统需求分析">3.1系统需求分析</h2>
+<p><code>    </code>目前学校组织学生选课时都选择由学校先安排不同课程的授课老师，再由各班的班主任在教室给学生传达，讲述课程的简单内容和所负责的老师等信息，然后由学生选择后上报给老师，老师整理好信息后再上报给学校，学校再给负责的授课老师传达学生资料。这种方式步骤多，一旦中间有一步出错会给学生的选择造成问题，而且学生想要了解更详细的课程内容非常不容易。而本基于SpringMVC网上选课系统提供课程详情，由学生自己了解，然后进行选择，选择后可由老师负责管理，老师也可以利用本系统设置教学计划，利用本系统也可以帮助老师发布成绩，本基于SpringMVC网上选课系统前景非常好。</p>
+<h2 id="32系统可行性分析">3.2系统可行性分析</h2>
+<p>可行性分析主要是先进行初步调查，然后从各个方面进行系统可行性研究，比如系统需要做什么，采用什么技术，进行各种分析研究，然后得到一个可行性的方案。然后在对方案进行各个功能模块的设计，进行系统设计分析，研究系统设计可行性。所以要从多方面进行考虑，而本文主要从技术上，经济上，操作上，法律上进行研究分析。</p>
+<p>3.2.1技术可行性</p>
+<p>随着技术的快速发展，各种软件开发技术也在不停的更新，不断的发展，大家都在选择适合自己水平的，能达到开发需求的软件技术和开发环境。所以根据我的开发需求，然后决定开发本系统采用JAVA语言SpringMVC框架来完成，开发出来的系统可以满足功能需求，而且操作界面美观，符合目前的审美，最重要的是开发相对简单，可以自动生成所需要的框架结构。前端框架采用Vue，数据库MySQL，体积更小，存储速度快，可以满足本次开发的需求。</p>
+<h3 id="322经济可行性">3.2.2经济可行性</h3>
+<p>经济可行性分析主要是对前期投资进行分析，对系统维护费用分析，对开发完成后取得的经济收益进行分析。因为本系统完全是自己开发的，作为毕业设计用途的，只需要基础的设施就行，需要电脑硬件，开发软件等，不需要额外的投入，完全满足开发需求。而系统开发完成后可以方便用户使用，还能带来一定的经济效益，所以开发本系统在经济上是可行的。</p>
+<h3 id="323运行可行性分析">3.2.3运行可行性分析</h3>
+<p>开发本系统过程中已经充分考虑了使用者的感受，界面美观，而且有功能导航栏，方便用户很好的掌握，而且还有各种提示符，哪怕对计算机操作不熟练的也能使用本系统。所以综合考虑，本系统在运行方面是可行的。</p>
+<h3 id="324法律可行性">3.2.4法律可行性</h3>
+<p>开发本系统过程中参阅的相关资料都是在学校图书馆参阅的，均为正规渠道，而且开发均是本人独立开发的，均是自己的知识储备，全是自己原创的，不存在知识产权，所以才法律上是可行的。</p>
+<h2 id="33系统功能分析">3.3系统功能分析</h2>
+<p>本系统采用功能针对性强、文字描述精确的方式进行设计。本基于SpringMVC网上选课系统是关于课程管理的系统，在设计功能时只取用最基础的功能，目的是提供最精准的服务。本系统包括老师、管理员和学生三部分。</p>
+<p>学生可以浏览课程在线选课和查看课程的成绩以及查看自己所选择的所有课程，还可以查看学校的教学资源等。管理员可以管理班级信息、计划类型信息、课程性质、教学计划信息、成绩信息、学生的选课信息以及管理学生信息、教室信息、老师信息、院系信息等。老师可以管理教学计划、学生选课和教学资源信息等。</p>
+<p>管理员用例图如下图3.1所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.001.png"
+        data-srcset="/images/0600ssm/ssm696/blog.001.png, /images/0600ssm/ssm696/blog.001.png 1.5x, /images/0600ssm/ssm696/blog.001.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.001.png"
+        title="/images/0600ssm/ssm696/blog.001.png" /></p>
+<p>图3.1管理员用例图</p>
+<p>学生用例图如下图3.2所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.002.png"
+        data-srcset="/images/0600ssm/ssm696/blog.002.png, /images/0600ssm/ssm696/blog.002.png 1.5x, /images/0600ssm/ssm696/blog.002.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.002.png"
+        title="/images/0600ssm/ssm696/blog.002.png" /></p>
+<p>图3.2学生用例图</p>
+<p>老师用例图如下图3.3所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.003.png"
+        data-srcset="/images/0600ssm/ssm696/blog.003.png, /images/0600ssm/ssm696/blog.003.png 1.5x, /images/0600ssm/ssm696/blog.003.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.003.png"
+        title="/images/0600ssm/ssm696/blog.003.png" /></p>
+<p>图3.3老师用例图</p>
+<h2 id="34系统性能分析">3.4系统性能分析</h2>
+<p>系统性能方面包括系统的框架、系统的开发理念、系统的开发界面原则、系统开发标准、系统开发流程、系统开发安全性、系统运行稳定性等。具体性能分析如下：</p>
+<ol>
+<li>本系统是面向所有人群而开发的管理平台，所以采用的框架模式为B/s，B/s模式是借助浏览器进行系统访问的平台，所有信息可以共享；</li>
+<li>系统在设计中采用结构化方式，首先将功能分为大的方面，再由大方面分为小方面，最后分为小细节再整合成完整的系统；</li>
+<li>系统在界面设计时采用Vue技术，可以使界面更丰富，元素更多；</li>
+<li>系统的操作流程采用简单的思路，使使用用户可以快速掌握本系统；</li>
+<li>系统的运行速度要快，所有操作可以快速反映；</li>
+<li>在系统开发时要注意系统的资源占用，以最少占用为标准进行设计；</li>
+<li>采用发展的眼光看待问题，把系统的生命周期延长到最大；</li>
+<li>调查所有使用用户的需求尽可能的满足。</li>
+</ol>
+<h2 id="35业务流程分析">3.5业务流程分析</h2>
+<p><code>    </code>业务流程涉及到系统的每个部分，调查系统在运行中数据会流动的每个环节，以用户登录开始到学生选课进行业务流程分析。确保所有信息的流入、流出以及数据的完整性和处理问题的方法。本系统的流程为学生首先进行登录，登录后可以浏览课程信息，在课程详情里可以选课和查看所有已选择的课程以及课程的成绩。管理员负责添加课程信息和班级信息、管理用户信息等。老师负责管理学生的成绩和教学计划的制定。系统中的所有数据都需要管理员审核。本系统的业务流程图如下图3.4所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.004.png"
+        data-srcset="/images/0600ssm/ssm696/blog.004.png, /images/0600ssm/ssm696/blog.004.png 1.5x, /images/0600ssm/ssm696/blog.004.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.004.png"
+        title="/images/0600ssm/ssm696/blog.004.png" />图3.4系统业务流程图</p>
+<h1 id="第4章-系统设计">第4章 系统设计</h1>
+<h2 id="41系统功能结构设计">4.1系统功能结构设计</h2>
+<p><code>   </code>本系统的功能界面设计为三个，学生中心界面和管理员中心界面、老师中心界面。根据不同用户的不同需求分开设计功能。学生中心界面的功能为个人资料、选课功能、成绩功能、教学资源功能等，管理员中心界面的功能为系统用户、课程、班级、系统信息等，老师中心界面的功能为选课成绩、个人资料等。本系统的功能结构图如下图4.1所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.005.png"
+        data-srcset="/images/0600ssm/ssm696/blog.005.png, /images/0600ssm/ssm696/blog.005.png 1.5x, /images/0600ssm/ssm696/blog.005.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.005.png"
+        title="/images/0600ssm/ssm696/blog.005.png" />     图4.1系统功能结构图</p>
+<h2 id="42系统数据库设计">4.2系统数据库设计</h2>
+<p>数据库就是数据的存储仓库，按照计算机的格式进行数据存入。为了使数据库具有独立性，防止因为系统崩溃而数据有损的问题在数据库建立时都采用单独的数据库。数据库具有共享性和单独性，在系统运行时会自动和相对应的数据进行通讯连接。本基于SpringMVC网上选课系统采用MySQL数据库设计，身份验证为Root，密码为123456。</p>
+<h3 id="421数据库er图设计">4.2.1数据库ER图设计</h3>
+<p>根据分析所得本系统中主要的数据为管理员、学生、课程信息、成绩信息、班级信息等。所以本节针对这些数据画出数据ER图。</p>
+<p>（1）管理员实体的属性为用户名和密码。管理员实体ER图如下图4.2所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.006.png"
+        data-srcset="/images/0600ssm/ssm696/blog.006.png, /images/0600ssm/ssm696/blog.006.png 1.5x, /images/0600ssm/ssm696/blog.006.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.006.png"
+        title="/images/0600ssm/ssm696/blog.006.png" /></p>
+<p>图4.2管理员实体ER图</p>
+<p>（2）学生实体的属性为编号、姓名、班级、专业等。学生实体ER图如下图4.3所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.007.png"
+        data-srcset="/images/0600ssm/ssm696/blog.007.png, /images/0600ssm/ssm696/blog.007.png 1.5x, /images/0600ssm/ssm696/blog.007.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.007.png"
+        title="/images/0600ssm/ssm696/blog.007.png" /></p>
+<p>图4.3学生实体ER图</p>
+<p>（3）老师信息实体的属性包括姓名、编号、职称等。老师信息实体ER图如下图4.4所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.008.png"
+        data-srcset="/images/0600ssm/ssm696/blog.008.png, /images/0600ssm/ssm696/blog.008.png 1.5x, /images/0600ssm/ssm696/blog.008.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.008.png"
+        title="/images/0600ssm/ssm696/blog.008.png" /></p>
+<p>图4.4老师信息实体ER图</p>
+<p>（4）课程实体的属性包括编号、名称、负责老师、分数。课程实体的ER图如下图4.5所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.009.png"
+        data-srcset="/images/0600ssm/ssm696/blog.009.png, /images/0600ssm/ssm696/blog.009.png 1.5x, /images/0600ssm/ssm696/blog.009.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.009.png"
+        title="/images/0600ssm/ssm696/blog.009.png" /></p>
+<p>图4.5课程实体ER图</p>
+<p>（5）类别信息实体的属性包括编号和名称。类别信息实体ER图如下图4.6所示：</p>
+<p><code>　</code><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.010.png"
+        data-srcset="/images/0600ssm/ssm696/blog.010.png, /images/0600ssm/ssm696/blog.010.png 1.5x, /images/0600ssm/ssm696/blog.010.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.010.png"
+        title="/images/0600ssm/ssm696/blog.010.png" /></p>
+<p>图4.6分类信息实体的ER图</p>
+<p>（6）班级信息包括标题、编号等。班级ER图如下图4.7所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.011.png"
+        data-srcset="/images/0600ssm/ssm696/blog.011.png, /images/0600ssm/ssm696/blog.011.png 1.5x, /images/0600ssm/ssm696/blog.011.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.011.png"
+        title="/images/0600ssm/ssm696/blog.011.png" /></p>
+<p>图4.7班级信息ER图</p>
+<p>（7）成绩信息包括课程编号、课程名称等。成绩ER图如下图4.8所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.012.png"
+        data-srcset="/images/0600ssm/ssm696/blog.012.png, /images/0600ssm/ssm696/blog.012.png 1.5x, /images/0600ssm/ssm696/blog.012.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.012.png"
+        title="/images/0600ssm/ssm696/blog.012.png" /></p>
+<p>图4.8成绩信息ER图</p>
+<p>（8）本系统的关系ER图如下图4.9所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.013.png"
+        data-srcset="/images/0600ssm/ssm696/blog.013.png, /images/0600ssm/ssm696/blog.013.png 1.5x, /images/0600ssm/ssm696/blog.013.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.013.png"
+        title="/images/0600ssm/ssm696/blog.013.png" /></p>
+<p>图4.9系统关系ER图</p>
+<h3 id="422数据库表设计">4.2.2数据库表设计</h3>
+<p>本系统针对学校的在线选课而设计，所以本系统的数据库表围绕课程而建立。本系统的数据库表包括课程信息表、选课信息表、管理员信息表等。本系统的数据库表结构如下图4.1－4.11所示：</p>
+<p>表4.1 chengji</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.014.png"
+        data-srcset="/images/0600ssm/ssm696/blog.014.png, /images/0600ssm/ssm696/blog.014.png 1.5x, /images/0600ssm/ssm696/blog.014.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.014.png"
+        title="/images/0600ssm/ssm696/blog.014.png" /></p>
+<p>表4.2 config</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.015.png"
+        data-srcset="/images/0600ssm/ssm696/blog.015.png, /images/0600ssm/ssm696/blog.015.png 1.5x, /images/0600ssm/ssm696/blog.015.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.015.png"
+        title="/images/0600ssm/ssm696/blog.015.png" /></p>
+<p>表4.3 dictionary</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.016.png"
+        data-srcset="/images/0600ssm/ssm696/blog.016.png, /images/0600ssm/ssm696/blog.016.png 1.5x, /images/0600ssm/ssm696/blog.016.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.016.png"
+        title="/images/0600ssm/ssm696/blog.016.png" /></p>
+<p>表4.4 jiaoshi</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.017.png"
+        data-srcset="/images/0600ssm/ssm696/blog.017.png, /images/0600ssm/ssm696/blog.017.png 1.5x, /images/0600ssm/ssm696/blog.017.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.017.png"
+        title="/images/0600ssm/ssm696/blog.017.png" /></p>
+<p>表4.5 jiaoxuejihua</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.018.png"
+        data-srcset="/images/0600ssm/ssm696/blog.018.png, /images/0600ssm/ssm696/blog.018.png 1.5x, /images/0600ssm/ssm696/blog.018.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.018.png"
+        title="/images/0600ssm/ssm696/blog.018.png" /></p>
+<p>表4.6 kecheng</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.019.png"
+        data-srcset="/images/0600ssm/ssm696/blog.019.png, /images/0600ssm/ssm696/blog.019.png 1.5x, /images/0600ssm/ssm696/blog.019.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.019.png"
+        title="/images/0600ssm/ssm696/blog.019.png" /></p>
+<p>表4.7 laoshi</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.020.png"
+        data-srcset="/images/0600ssm/ssm696/blog.020.png, /images/0600ssm/ssm696/blog.020.png 1.5x, /images/0600ssm/ssm696/blog.020.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.020.png"
+        title="/images/0600ssm/ssm696/blog.020.png" /></p>
+<p>表4.8 token</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.021.png"
+        data-srcset="/images/0600ssm/ssm696/blog.021.png, /images/0600ssm/ssm696/blog.021.png 1.5x, /images/0600ssm/ssm696/blog.021.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.021.png"
+        title="/images/0600ssm/ssm696/blog.021.png" /></p>
+<p>表4.9 users</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.022.png"
+        data-srcset="/images/0600ssm/ssm696/blog.022.png, /images/0600ssm/ssm696/blog.022.png 1.5x, /images/0600ssm/ssm696/blog.022.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.022.png"
+        title="/images/0600ssm/ssm696/blog.022.png" /></p>
+<p>表4.10 xuanke</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.023.png"
+        data-srcset="/images/0600ssm/ssm696/blog.023.png, /images/0600ssm/ssm696/blog.023.png 1.5x, /images/0600ssm/ssm696/blog.023.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.023.png"
+        title="/images/0600ssm/ssm696/blog.023.png" /></p>
+<p>表4.11 xuesheng</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.024.png"
+        data-srcset="/images/0600ssm/ssm696/blog.024.png, /images/0600ssm/ssm696/blog.024.png 1.5x, /images/0600ssm/ssm696/blog.024.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.024.png"
+        title="/images/0600ssm/ssm696/blog.024.png" /></p>
+<h1 id="第5章-系统实现">第5章 系统实现</h1>
+<h2 id="51管理员功能界面的实现">5.1管理员功能界面的实现</h2>
+<p>管理员是系统里的最高权限，负责系统里的所有信息的管理、审核。包括学生信息、课程信息、成绩信息等。</p>
+<h3 id="511用户登录界面的实现">5.1.1用户登录界面的实现</h3>
+<p><code>   </code>本功能设计的目的是帮助系统检验身份，保证系统的安全。在用户登录功能界面里的元素包括按钮、列表框、文字、图片等。用户输入框、密码输入框、权限列表框都居中展示。用户登录界面的实现界面如下图5.1所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.025.png"
+        data-srcset="/images/0600ssm/ssm696/blog.025.png, /images/0600ssm/ssm696/blog.025.png 1.5x, /images/0600ssm/ssm696/blog.025.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.025.png"
+        title="/images/0600ssm/ssm696/blog.025.png" /></p>
+<p>图5.1用户登录界面的实现效果</p>
+<h3 id="512个人中心管理功能的实现界面">5.1.2个人中心管理功能的实现界面</h3>
+<p>在个人中心管理功能里，管理员可以设置新的管理员，可以查询已有的管理员和修改当前登录的登录密码。设置多个管理员可以让更多的工作人员参与进来。修改个人信息功能的实现界面如下图5.2所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.026.png"
+        data-srcset="/images/0600ssm/ssm696/blog.026.png, /images/0600ssm/ssm696/blog.026.png 1.5x, /images/0600ssm/ssm696/blog.026.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.026.png"
+        title="/images/0600ssm/ssm696/blog.026.png" /></p>
+<p>图5.2修改个人信息功能的实现界面</p>
+<p>修改密码的实现界面如下图5.3所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.027.png"
+        data-srcset="/images/0600ssm/ssm696/blog.027.png, /images/0600ssm/ssm696/blog.027.png 1.5x, /images/0600ssm/ssm696/blog.027.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.027.png"
+        title="/images/0600ssm/ssm696/blog.027.png" /></p>
+<p>图5.3修改密码的实现界面</p>
+<h3 id="513课程信息管理功能的实现界面">5.1.3课程信息管理功能的实现界面</h3>
+<p>管理员登录后在课程信息管理功能里可以发布新的课程和删除不使用的课程以及修改错误的课程，管理员查询课程信息的实现界面如下图5.4所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.028.png"
+        data-srcset="/images/0600ssm/ssm696/blog.028.png, /images/0600ssm/ssm696/blog.028.png 1.5x, /images/0600ssm/ssm696/blog.028.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.028.png"
+        title="/images/0600ssm/ssm696/blog.028.png" /></p>
+<p>图5.4管理员查询课程信息的功能实现界面</p>
+<h3 id="514老师信息管理功能的实现界面">5.1.4老师信息管理功能的实现界面</h3>
+<p>管理员在本功能里可以添加老师资料，可以为老师分配账号和密码，帮助老师使用本系统，当老师辞职后管理员可以及时的删除老师信息防止系统内容的外泄。管理员查询老师信息功能的实现界面如下图5.5所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.029.png"
+        data-srcset="/images/0600ssm/ssm696/blog.029.png, /images/0600ssm/ssm696/blog.029.png 1.5x, /images/0600ssm/ssm696/blog.029.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.029.png"
+        title="/images/0600ssm/ssm696/blog.029.png" /></p>
+<p>图5.5管理员查询老师信息功能的实现界面</p>
+<h3 id="515班级管理功能的实现界面">5.1.5班级管理功能的实现界面</h3>
+<p>班级管理功能里可以看到班级的编号和标题，点击添加班级信息可以进入添加界面里实现班级的更新。管理员查询班级信息功能的实现界面如下图5.6所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.030.png"
+        data-srcset="/images/0600ssm/ssm696/blog.030.png, /images/0600ssm/ssm696/blog.030.png 1.5x, /images/0600ssm/ssm696/blog.030.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.030.png"
+        title="/images/0600ssm/ssm696/blog.030.png" /></p>
+<p>图5.6管理员查询班级信息功能的实现界面</p>
+<h3 id="516学生信息管理功能的实现界面">5.1.6学生信息管理功能的实现界面</h3>
+<p>管理员可以添加学生信息和查询学生信息，学生信息添加后，学生可以自己修改自己的资料。管理员查询学生信息功能的实现界面如下图5.7所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.031.png"
+        data-srcset="/images/0600ssm/ssm696/blog.031.png, /images/0600ssm/ssm696/blog.031.png 1.5x, /images/0600ssm/ssm696/blog.031.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.031.png"
+        title="/images/0600ssm/ssm696/blog.031.png" /></p>
+<p>图5.7管理员查询学生信息功能的实现界面</p>
+<h3 id="517成绩管理功能的实现界面">5.1.7成绩管理功能的实现界面</h3>
+<p>管理员也可以对学生的成绩进行修改和删除以此来审核老师给发布的学生成绩。管理员查询成绩信息功能的实现界面如下图5.8所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.032.png"
+        data-srcset="/images/0600ssm/ssm696/blog.032.png, /images/0600ssm/ssm696/blog.032.png 1.5x, /images/0600ssm/ssm696/blog.032.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.032.png"
+        title="/images/0600ssm/ssm696/blog.032.png" /></p>
+<p>图5.8管理员查询成绩信息功能的实现界面</p>
+<h3 id="518教学计划管理功能的实现界面">5.1.8教学计划管理功能的实现界面</h3>
+<p><code>    </code>管理员可以查询老师制定的教学计划，并可以进行修改和添加、删除。管理员查询教学计划功能的实现界面如下图5.9所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.033.png"
+        data-srcset="/images/0600ssm/ssm696/blog.033.png, /images/0600ssm/ssm696/blog.033.png 1.5x, /images/0600ssm/ssm696/blog.033.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.033.png"
+        title="/images/0600ssm/ssm696/blog.033.png" /></p>
+<p>图5.9管理员查询教学计划信息的实现界面</p>
+<h3 id="519学生选课管理功能的实现界面">5.1.9学生选课管理功能的实现界面</h3>
+<p><code>    </code>管理员也可以查询学生的选课详情并进行修改和删除、查询。学生选课功能的实现界面如下图5.10所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.034.png"
+        data-srcset="/images/0600ssm/ssm696/blog.034.png, /images/0600ssm/ssm696/blog.034.png 1.5x, /images/0600ssm/ssm696/blog.034.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.034.png"
+        title="/images/0600ssm/ssm696/blog.034.png" /></p>
+<p>图5.10管理员查询学生选课信息的实现界面</p>
+<h3 id="5110教室管理功能的实现界面">5.1.10教室管理功能的实现界面</h3>
+<p>本功能属于教学资源管理的一部分，管理员可以设置教室和修改教室、删除教室。教室管理功能的实现界面如下图5.11所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.035.png"
+        data-srcset="/images/0600ssm/ssm696/blog.035.png, /images/0600ssm/ssm696/blog.035.png 1.5x, /images/0600ssm/ssm696/blog.035.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.035.png"
+        title="/images/0600ssm/ssm696/blog.035.png" /></p>
+<p>图5.11管理员查询教室信息的实现界面</p>
+<h3 id="5111院系管理功能的实现界面">5.1.11院系管理功能的实现界面</h3>
+<p><code>    </code>本功能同样属于教学资源功能的一部分。管理员可以更新院系信息。实现界面如下图5.12所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.036.png"
+        data-srcset="/images/0600ssm/ssm696/blog.036.png, /images/0600ssm/ssm696/blog.036.png 1.5x, /images/0600ssm/ssm696/blog.036.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.036.png"
+        title="/images/0600ssm/ssm696/blog.036.png" /></p>
+<p>图5.12院系信息的实现界面</p>
+<h2 id="52学生功能的界面详细实现">5.2学生功能的界面详细实现</h2>
+<h3 id="521个人资料管理功能的实现界面">5.2.1个人资料管理功能的实现界面</h3>
+<p>学生可以修改自己的个人资料使其保证正确性。学生修改个人资料管理功能的实现界面如下图5.13所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.037.png"
+        data-srcset="/images/0600ssm/ssm696/blog.037.png, /images/0600ssm/ssm696/blog.037.png 1.5x, /images/0600ssm/ssm696/blog.037.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.037.png"
+        title="/images/0600ssm/ssm696/blog.037.png" /></p>
+<p>图5.13学生修改个人资料管理功能的实现界面</p>
+<h3 id="522在线选课功能的实现界面">5.2.2在线选课功能的实现界面</h3>
+<p>在本功能里，学生可以查询课程信息，可以看到课程的所负责老师和学分等信息，然后可以进行选择。选课管理功能的实现界面如下图5.14所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.038.png"
+        data-srcset="/images/0600ssm/ssm696/blog.038.png, /images/0600ssm/ssm696/blog.038.png 1.5x, /images/0600ssm/ssm696/blog.038.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.038.png"
+        title="/images/0600ssm/ssm696/blog.038.png" /></p>
+<p>图5.14选课管理功能的实现界面</p>
+<h3 id="523成绩查询功能的实现界面">5.2.3成绩查询功能的实现界面</h3>
+<p>学生可以查询课程的成绩。成绩查询功能的实现界面如下图5.15所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.039.png"
+        data-srcset="/images/0600ssm/ssm696/blog.039.png, /images/0600ssm/ssm696/blog.039.png 1.5x, /images/0600ssm/ssm696/blog.039.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.039.png"
+        title="/images/0600ssm/ssm696/blog.039.png" /></p>
+<p>图5.15学生查询成绩的功能实现界面</p>
+<h3 id="524选课管理功能的实现界面">5.2.4选课管理功能的实现界面</h3>
+<p><code>    </code>学生选课后可以查看自己选择的所有课程。实现界面如下图5.16所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.040.png"
+        data-srcset="/images/0600ssm/ssm696/blog.040.png, /images/0600ssm/ssm696/blog.040.png 1.5x, /images/0600ssm/ssm696/blog.040.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.040.png"
+        title="/images/0600ssm/ssm696/blog.040.png" /></p>
+<p>图5.16选课管理功能的实现界面</p>
+<h3 id="525教学资源管理功能的实现界面">5.2.5教学资源管理功能的实现界面</h3>
+<p><code>    </code>学生可以查看教室信息、老师信息和院系信息。实现界面如下图5.17所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.041.png"
+        data-srcset="/images/0600ssm/ssm696/blog.041.png, /images/0600ssm/ssm696/blog.041.png 1.5x, /images/0600ssm/ssm696/blog.041.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.041.png"
+        title="/images/0600ssm/ssm696/blog.041.png" /></p>
+<p>图5.17教学资料管理功能的实现界面</p>
+<h2 id="53老师功能的详细实现界面">5.3老师功能的详细实现界面</h2>
+<p>老师的主要功能为为学生打分，可以根据课程名称、类型、学号、姓名、班级进行学生成绩的查询，并且可以发布教学计划。老师功能的实现界面如下图5.18所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm696/blog.042.png"
+        data-srcset="/images/0600ssm/ssm696/blog.042.png, /images/0600ssm/ssm696/blog.042.png 1.5x, /images/0600ssm/ssm696/blog.042.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm696/blog.042.png"
+        title="/images/0600ssm/ssm696/blog.042.png" /></p>
+<p>图5.18老师角色功能的实现界面</p>
+<p>第6章 系统测试</p>
+<h1 id="系统测试">系统测试</h1>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2024-06-15</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/ssm696%E5%9F%BA%E4%BA%8Espringmvc%E7%BD%91%E4%B8%8A%E9%80%89%E8%AF%BE%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://chenqi199.github.io/ssm696%E5%9F%BA%E4%BA%8Espringmvc%E7%BD%91%E4%B8%8A%E9%80%89%E8%AF%BE%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" data-title="ssm696基于SpringMVC网上选课系统的设计与实现&#43;jsp" data-hashtags="ssm网上,网上选课,选课系统,系统设计,设计实现"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://chenqi199.github.io/ssm696%E5%9F%BA%E4%BA%8Espringmvc%E7%BD%91%E4%B8%8A%E9%80%89%E8%AF%BE%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" data-hashtag="ssm网上"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://chenqi199.github.io/ssm696%E5%9F%BA%E4%BA%8Espringmvc%E7%BD%91%E4%B8%8A%E9%80%89%E8%AF%BE%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" data-title="ssm696基于SpringMVC网上选课系统的设计与实现&#43;jsp"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://chenqi199.github.io/ssm696%E5%9F%BA%E4%BA%8Espringmvc%E7%BD%91%E4%B8%8A%E9%80%89%E8%AF%BE%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" data-title="ssm696基于SpringMVC网上选课系统的设计与实现&#43;jsp"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://chenqi199.github.io/ssm696%E5%9F%BA%E4%BA%8Espringmvc%E7%BD%91%E4%B8%8A%E9%80%89%E8%AF%BE%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" data-title="ssm696基于SpringMVC网上选课系统的设计与实现&#43;jsp" data-ralateuid="https://gitee.com/chen_q_i"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ssm%E7%BD%91%E4%B8%8A/">Ssm网上</a>,&nbsp;<a href="/tags/%E7%BD%91%E4%B8%8A%E9%80%89%E8%AF%BE/">网上选课</a>,&nbsp;<a href="/tags/%E9%80%89%E8%AF%BE%E7%B3%BB%E7%BB%9F/">选课系统</a>,&nbsp;<a href="/tags/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/">系统设计</a>,&nbsp;<a href="/tags/%E8%AE%BE%E8%AE%A1%E5%AE%9E%E7%8E%B0/">设计实现</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/ssm697%E5%9F%BA%E4%BA%8Eweb%E5%8A%9E%E4%BA%8B%E5%A4%A7%E5%8E%85%E6%94%BF%E5%8A%A1%E9%A2%84%E7%BA%A6%E7%B3%BB%E7%BB%9F-vue/" class="prev" rel="prev" title="ssm697基于web办事大厅政务预约系统&#43;vue"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>ssm697基于web办事大厅政务预约系统+vue</a>
+            <a href="/ssm695%E5%9F%BA%E4%BA%8Ejava%E7%9A%84%E8%87%AA%E5%8A%A9%E5%8C%BB%E7%96%97%E6%9C%8D%E5%8A%A1%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" class="next" rel="next" title="ssm695基于java的自助医疗服务系统的设计与实现&#43;jsp">ssm695基于java的自助医疗服务系统的设计与实现+jsp<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.128.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="chenqi199" target="_blank">chenqi</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

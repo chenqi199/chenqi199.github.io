@@ -1,17 +1,16 @@
 # 0693springboot大学生租房系统--论文
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0693springboot大学生租房系统--论文](https://github.com/GraduationProject-springboot/0693springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
-
-# [项目清单](https://chenqi1990.site) 包安装运行
 
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
 [![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV14HerezEwW?p=46)
-
 
 # 课题背景
 信息管理技术发展现状，近些年来，计算机操作技术不断发展，现如今的信息管理技术早已淘汰掉了最初的人工模式，而转向了电子信息模式，计算机在信息管理方面的作用越来越大。通过使用计算机进行信息控制，不仅可以提高工作效率，同时也在很大程度上的提高了信息安全性。尤其是面对一些比较复杂的信息要求时，计算机能够充分发挥它的优越性。众所周知，使用计算机进行信息管理与信息管理系统的开发密切相关，所以系统的开发也成了人们热衷的领域，是我们进行系统管理的前提。为了解决大学生租房目前存在的部分问题，特使用信息管理技术进行研讨，希望可以解决一些基本的现状问题。

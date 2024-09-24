@@ -1,17 +1,16 @@
 # 0127springboot中小企业人事管理系统代码
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0127springboot中小企业人事管理系统代码](https://github.com/GraduationProject-springboot/0127springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1ECs?p=27)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 绪论
 ## 1.1背景及意义
@@ -115,19 +114,19 @@ Spring Boot特点：
 
 ## 3.4系统流程分析
 ### 3.4.1操作流程
-系统登录流程图，如图所示：![](/images/0100stringboot/0127springboot/blog.001.png)
+系统登录流程图，如图所示：![](/images/0100wxapp//blog.001.png)
 
 图3-1登录流程图
 ### 3.4.2添加信息流程
 添加信息流程图，如图所示：
 
-![](/images/0100stringboot/0127springboot/blog.002.png) 
+![](/images/0100wxapp//blog.002.png) 
 
 图3-2添加信息流程图
 ### 3.4.3删除信息流程
 删除信息流程图，如图所示：
 
-![](/images/0100stringboot/0127springboot/blog.003.png)
+![](/images/0100wxapp//blog.003.png)
 
 图3-3删除信息流程图
 
@@ -147,7 +146,7 @@ Spring Boot特点：
 
 员工
 
-![](/images/0100stringboot/0127springboot/blog.004.png)
+![](/images/0100wxapp//blog.004.png)
 
 图4-1 系统结构
 
@@ -163,13 +162,13 @@ Spring Boot特点：
 
 员工界面
 
-![](/images/0100stringboot/0127springboot/blog.005.png)
+![](/images/0100wxapp//blog.005.png)
 
 图4-2 登录结构图
 
 中小企业人事管理系统结构图，如图4-3所示。
 
-![](/images/0100stringboot/0127springboot/blog.006.png)
+![](/images/0100wxapp//blog.006.png)
 
 图4-3 中小企业人事管理系统结构图
 ## 4.2开发流程设计
@@ -177,7 +176,7 @@ Spring Boot特点：
 
 中小企业人事管理系统的开发对管理模块和系统使用的数据库进行分析，编写代码，系统测试，如图4-4所示。
 
-![](/images/0100stringboot/0127springboot/blog.007.png)
+![](/images/0100wxapp//blog.007.png)
 
 图4-4开发系统流程图
 ## 4.3 数据库设计原则
@@ -187,25 +186,25 @@ Spring Boot特点：
 
 管理员信息属性图如图4-5所示。
 
-![](/images/0100stringboot/0127springboot/blog.008.png)
+![](/images/0100wxapp//blog.008.png)
 
 图4-5 管理员信息实体属性图
 
 员工信息实体属性图如图4-6所示。
 
-![](/images/0100stringboot/0127springboot/blog.009.png)
+![](/images/0100wxapp//blog.009.png)
 
 图4-6员工信息属性图
 
 培训信息实体属性图如图4-7所示。
 
-![](/images/0100stringboot/0127springboot/blog.010.png)
+![](/images/0100wxapp//blog.010.png)
 
 图4-7培训信息实体属性图
 
 考勤信息实体属性图如图4-8所示。
 
-![](/images/0100stringboot/0127springboot/blog.011.png)
+![](/images/0100wxapp//blog.011.png)
 
 图4-8考勤信息实体属性图
 ## 4.4 数据表
@@ -292,7 +291,7 @@ Spring Boot特点：
 ## 5.1管理员功能模块
 管理员登录，通过登录页面填写用户名、密码、角色进行登录，如图5-1所示。
 
-![](/images/0100stringboot/0127springboot/blog.012.png)
+![](/images/0100wxapp//blog.012.png)
 
 图5-1管理员登录界面图
 
@@ -300,29 +299,29 @@ Spring Boot特点：
 
 员工管理，在员工管理页面中可以通过查看工号、姓名、性别、头像、部门、职位、电话等信息进行详情、修改，如图5-2所示。还可以根据需要对部门信息管理进行详情，修改或删除等详细操作，如图5-3所示。
 
-![](/images/0100stringboot/0127springboot/blog.013.png)
+![](/images/0100wxapp//blog.013.png)
 
 图5-2员工管理界面图
 
-![](/images/0100stringboot/0127springboot/blog.014.png)
+![](/images/0100wxapp//blog.014.png)
 
 图5-3部门信息管理界面图
 
 职位信息管理，在职位信息管理页面中可以查看职位等信息，并可根据需要对职位信息管理进行修改或删除等操作，如图5-4所示。
 
-![](/images/0100stringboot/0127springboot/blog.015.png)
+![](/images/0100wxapp//blog.015.png)
 
 图5-4职位信息管理界面图
 
 福利信息管理，在福利信息管理页面中可以查看名称、发布日期等信息，并可根据需要对福利信息管理进行详情、修改或删除等详细操作，如图5-5所示。
 
-![](/images/0100stringboot/0127springboot/blog.016.png)
+![](/images/0100wxapp//blog.016.png)
 
 图5-5福利信息管理界面图
 
 培训信息管理，在培训信息管理页面中可以查看培训项目、工号、姓名、部门、培训时间、培训地点、发布日期等信息，并可根据需要对培训信息管理进行详情、修改或删除等详细操作，如图5-6所示。
 
-![](/images/0100stringboot/0127springboot/blog.017.png)
+![](/images/0100wxapp//blog.017.png)
 
 图5-6培训信息管理界面图
 
@@ -330,13 +329,13 @@ Spring Boot特点：
 
 任务信息管理，在任务信息管理页面中可以查看标题、工号、姓名、部门、发布日期等信息，并可根据需要对任务信息管理进行详情、修改或删除等详细操作，如图5-7所示。
 
-![](/images/0100stringboot/0127springboot/blog.018.png)
+![](/images/0100wxapp//blog.018.png)
 
 图5-7任务信息管理界面图
 
 工资信息管理，在工资信息管理页面中可以查看名称、工号、姓名、部门、职位、基本工资、加班工资、福利、社保、扣费、实发工资、日期等信息，并可根据需要对工资信息管理进行详情、修改或删除等详细操作，如图5-8所示。
 
-![](/images/0100stringboot/0127springboot/blog.019.png)
+![](/images/0100wxapp//blog.019.png)
 
 图5-8工资信息管理界面图
 
@@ -345,7 +344,7 @@ Spring Boot特点：
 
 考勤信息管理，在考勤信息管理页面中可以查看名称、考勤日期、工号、姓名、部门、职位、考勤状况等信息，并可根据需要对考勤信息管理进行详情、修改或删除等详细操作，如图5-9所示。
 
-![](/images/0100stringboot/0127springboot/blog.020.png)
+![](/images/0100wxapp//blog.020.png)
 
 图5-9考勤信息管理界面图
 
@@ -362,38 +361,38 @@ Spring Boot特点：
 
 个人信息，在个人信息页面中通过查看工号、姓名、性别、头像、部门、职位、电话等信息还可以根据需要对个人信息进行查看修改，如图5-10所示。
 
-![](/images/0100stringboot/0127springboot/blog.021.png)
+![](/images/0100wxapp//blog.021.png)
 
 图5-10个人信息界面图
 
 福利信息管理，在福利信息管理页面中可以查看名称、发布日期等信息内容，并且根据需要对福利信息管理进行查看详情操作，如图5-11所示。
 
-![](/images/0100stringboot/0127springboot/blog.022.png)
+![](/images/0100wxapp//blog.022.png)
 
 图5-11福利信息管理界面图
 
 培训信息管理，在培训信息管理页面中可以查看培训项目、工号、姓名、部门、培训时间、培训地点、发布日期等信息内容，并且根据需要对培训信息管理进行查看详情操作，如图5-12所示。
 
-![](/images/0100stringboot/0127springboot/blog.023.png)
+![](/images/0100wxapp//blog.023.png)
 
 图5-12培训信息管理界面图
 
 任务信息管理，在任务信息管理页面中可以查看标题、工号、姓名、部门、发布日期等信息内容，并且根据需要对任务信息管理进行查看详情操作，如图5-13所示。
 
-![](/images/0100stringboot/0127springboot/blog.024.png)
+![](/images/0100wxapp//blog.024.png)
 
 图5-13任务信息管理界面图
 
 工资信息管理，在工资信息管理页面中可以查看名称、工号、姓名、部门、职位、基本工资、加班工资、福利、社保、扣费、实发工资、日期等信息内容，并且根据需要对工资信息管理进行查看详情操作，如图5-14所示。
 
-![](/images/0100stringboot/0127springboot/blog.025.png)
+![](/images/0100wxapp//blog.025.png)
 
 图5-14工资信息管理界面图
 
 
 考勤信息管理，在考勤信息管理页面中可以查看名称、考勤日期、工号、姓名、部门、职位、考勤状况等信息内容，并且根据需要对考勤信息管理进行查看详情操作，如图5-15所示。
 
-![](/images/0100stringboot/0127springboot/blog.026.png)
+![](/images/0100wxapp//blog.026.png)
 
 图5-15考勤信息管理界面图
 

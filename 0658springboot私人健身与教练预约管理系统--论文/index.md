@@ -1,17 +1,16 @@
 # 0658springboot私人健身与教练预约管理系统--论文
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0658springboot私人健身与教练预约管理系统--论文](https://github.com/GraduationProject-springboot/0658springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV14HerezEwW?p=15)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第一章 概述
 ## 1.1研究背景
@@ -90,7 +89,7 @@ Mysqladmin -u root -p password 123
 ### 2.2.4 B/S架构
 B/S结构是目前使用最多的结构模式，它可以使得系统的开发更加的简单，好操作，而且还可以对其进行维护。使用该结构时只需要在计算机中安装数据库，和一些很常用的浏览器就可以了。浏览器就会与数据库进行信息的连接，可以实现很多的功能，B/S结构是可以直接进行使用的，而且B/S结构在使用中极大的减少了工作的维护。基于B/S的软件，所有的数据库之间都是相互独立的，因此是非常安全的。因为基于B/S结构可以清楚的看到系统正在处理的业务，并且能够及时的让管理人员做出决策，这样就可以避免企业的损失。B/S结构的基本特点是集中式的管理模式，用户使用系统生成数据后，这些数据就可以存储到系统的数据库中，方便日后能够用到，这样就可以满足人们的所有的需求。
 
-![](/images/0600stringboot/0658springboot/blog.010.png)
+![](/images/0600wxapp//blog.010.png)
 
 图2-1  B/S模式三层结构图
 ### 2.2.5 Springboot框架
@@ -150,7 +149,7 @@ SpringBoot可以看做是Spring的加强版本，但实质上都是Spring的相�
 ## 4.1功能结构
 为了更好的去理清本系统整体思路，对该系统以结构图的形式表达出来，设计实现该私人健身与教练预约管理系统的功能结构图如下所示：
 
-![](/images/0600stringboot/0658springboot/blog.011.png)
+![](/images/0600wxapp//blog.011.png)
 
 图4-1 系统总体结构图
 
@@ -160,13 +159,13 @@ ER图是由实体及其关系构成的图，通过E/R图可以清楚地描述系
 
 (1) 用户注册E/R图如下所示：
 
-![](/images/0600stringboot/0658springboot/blog.012.png)
+![](/images/0600wxapp//blog.012.png)
 
 图4-2用户注册E/R图
 
 ` `(2) 健身项目E/R图如下所示：
 
-![](/images/0600stringboot/0658springboot/blog.013.png)
+![](/images/0600wxapp//blog.013.png)
 
 图4-3健身项目E/R图
 ### 4.2.2数据库表
@@ -366,86 +365,86 @@ ER图是由实体及其关系构成的图，通过E/R图可以清楚地描述系
 ## 5.1系统功能模块
 私人健身与教练预约管理系统，在系统首页可以查看首页，健身项目，教练信息，健身资讯，个人中心，后台管理等内容，并进行详细操作；如图5-1所示。
 
-![](/images/0600stringboot/0658springboot/blog.014.png)
+![](/images/0600wxapp//blog.014.png)
 
 图5-1系统首页界面图
 
 用户注册，在用户注册页面通过填写账号，密码，确认密码，姓名，手机，地址等信息进行注册操作，如图5-2所示。
 
-![](/images/0600stringboot/0658springboot/blog.015.png)
+![](/images/0600wxapp//blog.015.png)
 
 图5-2用户注册界面图
 
 健身项目，在健身项目页面可以查看项目名称，项目类型，健身效果，点击次数等内容，并进行收藏操作，如图5-3所示。
 
-![](/images/0600stringboot/0658springboot/blog.016.png)
+![](/images/0600wxapp//blog.016.png)
 
 图5-3健身项目界面图
 
 ` `个人中心，在个人中心页面通过填写账号，密码，姓名，性别，手机，地址，图片等内容进行更新信息操作，还可以进行我的收藏操作；如图5-4所示。
 
-![](/images/0600stringboot/0658springboot/blog.017.png)
+![](/images/0600wxapp//blog.017.png)
 
 图5-4个人中心界面图	
 ## 5.2后台功能模块
 后台登录，用户进入系统前在登录页面根据要求填写用户名和密码，选择角色等信息，点击登录进行登录操作，如图5-5所示。
 
-![](/images/0600stringboot/0658springboot/blog.018.png)
+![](/images/0600wxapp//blog.018.png)
 
 图5-5后台登录界面图
 ### 5.2.1管理员功能
 管理员登录系统后，可以对首页，个人中心，用户管理，教练管理，健身项目管理，项目分类，教练信息管理，教练预约管理，系统管理等功能进行相应的操作，如图5-6所示。
 
-![](/images/0600stringboot/0658springboot/blog.019.png)
+![](/images/0600wxapp//blog.019.png)
 
 图5-6管理员功能界面图
 
 用户管理，在用户管理页面可以对索引，账号，姓名，性别，手机，地址，图片等内容进行详情，修改和删除等操作，如图5-7所示。
 
-![](/images/0600stringboot/0658springboot/blog.020.png)
+![](/images/0600wxapp//blog.020.png)
 
 图5-7用户管理界面图
 
 教练管理，在教练管理页面可以对索引，教练编号，教练姓名，性别，年龄，教练等级，联系电话等信息进行详情，修改和删除等操作，如图5-8所示。
 
-![](/images/0600stringboot/0658springboot/blog.021.png)
+![](/images/0600wxapp//blog.021.png)
 
 图5-8教练管理界面图
 
 健身项目管理，在健身项目管理页面可以对索引，项目名称，项目类型，健身视频，项目图片等内容进行详情，修改，查看评论和删除等操作，如图5-9所示。
 
-![](/images/0600stringboot/0658springboot/blog.022.png)
+![](/images/0600wxapp//blog.022.png)
 
 图5-9健身项目管理界面图
 
 教练信息管理，在教练信息管理页面可以对索引，教练编号，教练姓名，性别，年龄，教练等级，联系电话，预约状态，教练图片等内容进行详情，查看评论和删除等操作；如图5-10所示。
 
-![](/images/0600stringboot/0658springboot/blog.023.png)
+![](/images/0600wxapp//blog.023.png)
 
 图5-10教练信息管理界面图
 
 教练预约管理，在教练预约管理页面可以对索引，教练编号，教练姓名，预约时间，预约说明，账号，姓名，手机，审核回复，审核状态等内容进行详情，删除操作；如图5-11所示。
 
-![](/images/0600stringboot/0658springboot/blog.024.png)
+![](/images/0600wxapp//blog.024.png)
 
 图5-11教练预约管理界面图
 
 ### 5.2.2用户功能
 用户登录进入系统可以对首页，个人中心，教练预约管理等功能进行相应操作，如图5-12所示。
 
-![](/images/0600stringboot/0658springboot/blog.025.png)
+![](/images/0600wxapp//blog.025.png)
 
 图5-12用户功能界面图
 ### 5.2.3教练功能
 教练登录进入系统可以对首页，个人中心，教练信息管理，教练预约管理等功能进行相应操作，如图5-13所示。
 
-![](/images/0600stringboot/0658springboot/blog.026.png)
+![](/images/0600wxapp//blog.026.png)
 
 图5-13教练功能界面图
 
 教练信息管理，在教练信息管理页面可以对索引，教练编号，教练姓名，性别，年龄，教练等级，联系电话，预约状态，教练图片等内容进行详情，查看评论和删除等操作；如图5-14所示。
 
-![](/images/0600stringboot/0658springboot/blog.027.png)
+![](/images/0600wxapp//blog.027.png)
 
 图5-14教练信息管理界面图
 

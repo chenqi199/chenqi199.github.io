@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>溯源系统 - 标签 - chenqi blog</title>
+        <link>https://chenqi199.github.io/tags/%E6%BA%AF%E6%BA%90%E7%B3%BB%E7%BB%9F/</link>
+        <description>溯源系统 - 标签 - chenqi blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>chen_q_i@163.com (chenqi)</managingEditor>
+            <webMaster>chen_q_i@163.com (chenqi)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 06 Feb 2024 10:32:52 &#43;0800</lastBuildDate><atom:link href="https://chenqi199.github.io/tags/%E6%BA%AF%E6%BA%90%E7%B3%BB%E7%BB%9F/" rel="self" type="application/rss+xml" /><item>
+    <title>ssm305食用菌菌棒溯源系统的开发与设计&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm305%E9%A3%9F%E7%94%A8%E8%8F%8C%E8%8F%8C%E6%A3%92%E6%BA%AF%E6%BA%90%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E4%B8%8E%E8%AE%BE%E8%AE%A1-vue/</link>
+    <pubDate>Tue, 06 Feb 2024 10:32:52 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm305%E9%A3%9F%E7%94%A8%E8%8F%8C%E8%8F%8C%E6%A3%92%E6%BA%AF%E6%BA%90%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E4%B8%8E%E8%AE%BE%E8%AE%A1-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm305食用菌菌棒溯源系统的开发与设计+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 系统概述 1.1 研究背景 如今]]></description>
+</item>
+</channel>
+</rss>

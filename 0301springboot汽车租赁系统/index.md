@@ -1,17 +1,16 @@
 # 0301springboot汽车租赁系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0301springboot汽车租赁系统](https://github.com/GraduationProject-springboot/0301springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)]()
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
 ## 1.1研究背景与意义
@@ -124,7 +123,7 @@ Java语言具有跨平台性，本系统主要通过Java语言进行编码实现
 
 公告删除
 
-![](/images/0300stringboot/0301springboot/blog.002.png)
+![](/images/0300wxapp//blog.002.png)
 
 图4-1系统总体功能设计图
 
@@ -138,47 +137,47 @@ Java语言具有跨平台性，本系统主要通过Java语言进行编码实现
 
 （1）下图是用户实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\qichezulinwangzhan\用户.jpg](/images/0300stringboot/0301springboot/blog.003.jpeg)
+![C:\Users\Administrator\Desktop\img\qichezulinwangzhan\用户.jpg](/images/0300wxapp//blog.003.jpeg)
 图4.1 用户实体属性图
 
 （2）下图是汽车租赁评价实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\qichezulinwangzhan\汽车租赁评价.jpg](/images/0300stringboot/0301springboot/blog.004.jpeg)
+![C:\Users\Administrator\Desktop\img\qichezulinwangzhan\汽车租赁评价.jpg](/images/0300wxapp//blog.004.jpeg)
 图4.2 汽车租赁评价实体属性图
 
 （3）下图是汽车租赁订单实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\qichezulinwangzhan\汽车租赁订单.jpg](/images/0300stringboot/0301springboot/blog.003.jpeg)
+![C:\Users\Administrator\Desktop\img\qichezulinwangzhan\汽车租赁订单.jpg](/images/0300wxapp//blog.003.jpeg)
 图4.3 汽车租赁订单实体属性图
 
 （4）下图是客服聊天实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\qichezulinwangzhan\客服聊天.jpg](/images/0300stringboot/0301springboot/blog.003.jpeg)
+![C:\Users\Administrator\Desktop\img\qichezulinwangzhan\客服聊天.jpg](/images/0300wxapp//blog.003.jpeg)
 图4.4 客服聊天实体属性图
 
 （5）下图是汽车租赁收藏实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\qichezulinwangzhan\汽车租赁收藏.jpg](/images/0300stringboot/0301springboot/blog.004.jpeg)
+![C:\Users\Administrator\Desktop\img\qichezulinwangzhan\汽车租赁收藏.jpg](/images/0300wxapp//blog.004.jpeg)
 图4.5 汽车租赁收藏实体属性图
 
 （6）下图是留言板实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\qichezulinwangzhan\留言板.jpg](/images/0300stringboot/0301springboot/blog.004.jpeg)
+![C:\Users\Administrator\Desktop\img\qichezulinwangzhan\留言板.jpg](/images/0300wxapp//blog.004.jpeg)
 图4.6 留言板实体属性图
 
 （7）下图是汽车租赁实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\qichezulinwangzhan\汽车租赁.jpg](/images/0300stringboot/0301springboot/blog.003.jpeg)
+![C:\Users\Administrator\Desktop\img\qichezulinwangzhan\汽车租赁.jpg](/images/0300wxapp//blog.003.jpeg)
 图4.7 汽车租赁实体属性图
 
 （8）下图是公告实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\qichezulinwangzhan\公告.jpg](/images/0300stringboot/0301springboot/blog.004.jpeg)
+![C:\Users\Administrator\Desktop\img\qichezulinwangzhan\公告.jpg](/images/0300wxapp//blog.004.jpeg)
 图4.8 公告实体属性图
 
 （9）下图是单页数据实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\qichezulinwangzhan\单页数据.jpg](/images/0300stringboot/0301springboot/blog.005.jpeg)
+![C:\Users\Administrator\Desktop\img\qichezulinwangzhan\单页数据.jpg](/images/0300wxapp//blog.005.jpeg)
 图4.9 单页数据实体属性图
 ### 4.2.2逻辑设计
 本系统使用MySQL数据库管理与系统相关的数据信息。逻辑设计阶段是将上一个阶段中的概念数据模型，转换为方便数据库进行存储的关系模型，即基本表的形式，方便开发人员后期对数据模型进行优化和管理[20]。逻辑设计阶段是整个数据库设计设计的关键，与系统有关的信息将会在这一阶段中被存储在数据库中，当用户使用本系统进行相关的功能操作时，与之有关的数据信息所在的基本表会发生相应的更新变化。数据库的逻辑设计阶段主要任务是将与系统相关的数据信息，设计成为方便数据库存储和管理的基本表格的形式，具体内容如下。
@@ -329,26 +328,26 @@ Java语言具有跨平台性，本系统主要通过Java语言进行编码实现
 ### 5.1.1管理员登录
 管理员可以选择任一浏览器打开网址，输入信息无误后，以管理员的身份行使相关的管理权限，管理员登录界面设计如图5-1所示。
 
-![](/images/0300stringboot/0301springboot/blog.006.png)
+![](/images/0300wxapp//blog.006.png)
 
 图5-1管理员登录界面
 ### 5.1.2汽车租赁管理
 管理员可以通过选择汽车租赁管理，管理相关的汽车租赁信息记录，比如进行查看汽车租赁信息标题，修改汽车租赁信息来源等操作，汽车租赁管理界面设计如图5-2所示。
 
-![](/images/0300stringboot/0301springboot/blog.007.png)
+![](/images/0300wxapp//blog.007.png)
 
 图5-2汽车租赁管理界面
 
 ### 5.1.3公告管理
 管理员可以通过选择公告管理，管理相关的公告信息记录，比如进行查看公告详情,删除错误的公告信息,发布公告等操作，公告管理界面如图5-3所示。
 
-![](/images/0300stringboot/0301springboot/blog.008.png)
+![](/images/0300wxapp//blog.008.png)
 
 图5-3 公告管理界面
 ### 5.1.4公告类型管理
 管理员可以通过选择公告类型管理，管理相关的公告类型信息，比如查看所有公告类型,删除无用公告类型,修改公告类型,添加公告类型等操作，公告类型管理界面设计如图5-4所示。
 
-![](/images/0300stringboot/0301springboot/blog.009.png)
+![](/images/0300wxapp//blog.009.png)
 
 图5-4公告类型管理界面
 # 系

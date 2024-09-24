@@ -1,17 +1,16 @@
 # 0254springboot基于spring boot的疫情信息管理系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0254springboot基于spring boot的疫情信息管理系统](https://github.com/GraduationProject-springboot/0254springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1EbH?p=22)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
 ## 1.1研究背景与意义
@@ -124,7 +123,7 @@ Java语言具有跨平台性，本系统主要通过Java语言进行编码实现
 
 公告删除
 
-![](/images/0200stringboot/0254springboot/blog.002.png)
+![](/images/0200wxapp//blog.002.png)
 
 图4-1系统总体功能设计图
 
@@ -298,26 +297,26 @@ Java语言具有跨平台性，本系统主要通过Java语言进行编码实现
 ### 5.1.1管理员登录
 管理员可以选择任一浏览器打开网址，输入信息无误后，以管理员的身份行使相关的管理权限，管理员登录界面设计如图5-1所示。
 
-![](/images/0200stringboot/0254springboot/blog.003.png)
+![](/images/0200wxapp//blog.003.png)
 
 图5-1管理员登录界面
 ### 5.1.2疫情信息管理
 管理员可以通过选择疫情信息管理，管理相关的疫情信息信息记录，比如进行查看疫情信息信息标题，修改疫情信息信息来源等操作，疫情信息管理界面设计如图5-2所示。
 
-![](/images/0200stringboot/0254springboot/blog.004.png)
+![](/images/0200wxapp//blog.004.png)
 
 图5-2疫情信息管理界面
 
 ### 5.1.3公告管理
 管理员可以通过选择公告管理，管理相关的公告信息记录，比如进行查看公告详情,删除错误的公告信息,发布公告等操作，公告管理界面如图5-3所示。
 
-![](/images/0200stringboot/0254springboot/blog.005.png)
+![](/images/0200wxapp//blog.005.png)
 
 图5-3 公告管理界面
 ### 5.1.4公告类型管理
 管理员可以通过选择公告类型管理，管理相关的公告类型信息，比如查看所有公告类型,删除无用公告类型,修改公告类型,添加公告类型等操作，公告类型管理界面设计如图5-4所示。
 
-![](/images/0200stringboot/0254springboot/blog.006.png)
+![](/images/0200wxapp//blog.006.png)
 
 图5-4公告类型管理界面
 # 系

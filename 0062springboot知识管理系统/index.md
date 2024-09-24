@@ -1,17 +1,16 @@
 # 0062springboot知识管理系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0062springboot知识管理系统](https://github.com/GraduationProject-springboot/0062springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV16ia6epENY?p=63)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 系统概述
 1.1 研究背景
@@ -129,11 +128,11 @@ Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进
 
 4）输入数据尽早地记录成其处理所需的形式，以防止数据由一种介质转移到另一种介质时需要转录而可能发生的错误。
 ## 3.4系统流程和逻辑
-![](/images/0000stringboot/0062springboot/blog.001.png)
+![](/images/0000wxapp//blog.001.png)
 
 图3-3登录流程图
 
-![](/images/0000stringboot/0062springboot/blog.002.png)
+![](/images/0000wxapp//blog.002.png)
 
 图3-4修改密码流程图
 
@@ -141,19 +140,19 @@ Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进
 ## 4.1概述
 本系统采用B/S结构(Browser/Server,浏览器/服务器结构)和基于Web服务两种模式，是一个适用于Internet环境下的模型结构。只要用户能连上Internet,便可以在任何时间、任何地点使用。系统工作原理图如图4-1所示：
 
-![](/images/0000stringboot/0062springboot/blog.003.png)
+![](/images/0000wxapp//blog.003.png)
 
 图4-1系统工作原理图
 ## 4.2系统结构
 本系统是基于B/S架构的网站系统，设计的管理员功能结构图如下图所示：
 
-![](/images/0000stringboot/0062springboot/blog.004.png)
+![](/images/0000wxapp//blog.004.png)
 
 图4-2管理员功能结构图
 
 本系统是基于B/S架构的网站系统，设计的用户功能结构图如下图所示：
 
-![](/images/0000stringboot/0062springboot/blog.005.png)
+![](/images/0000wxapp//blog.005.png)
 
 图4-3 用户功能结构图
 
@@ -165,19 +164,19 @@ Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进
 
 （1）用户信息的实体属性图如下：
 
-![](/images/0000stringboot/0062springboot/blog.006.png)
+![](/images/0000wxapp//blog.006.png)
 
 图4.12  用户信息实体属性图
 
 （2）文章实体属性图如图4.13所示：
 
-![](/images/0000stringboot/0062springboot/blog.007.png)
+![](/images/0000wxapp//blog.007.png)
 
 图4.13  文章实体属性图
 
 （3）管理员实体属性图如图4.14所示：
 
-![](/images/0000stringboot/0062springboot/blog.008.png)
+![](/images/0000wxapp//blog.008.png)
 
 图4.14 管理员实体属性图
 ### 4.3.2数据库设计表
@@ -335,19 +334,19 @@ Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进
 ### 5.1.1 用户管理
 知识管理系统的管理员可以对用户新增，修改，删除，查询操作。具体界面的展示如图5.1所示。
 
-![](/images/0000stringboot/0062springboot/blog.010.png)
+![](/images/0000wxapp//blog.010.png)
 
 图5.1 用户管理管理界面
 ### 5.1.2 文章分类
 管理员登录可以在文章分类新增，修改，删除，查询资料分类。具体界面如图5.2所示。
 
-![](/images/0000stringboot/0062springboot/blog.011.png)
+![](/images/0000wxapp//blog.011.png)
 
 图5.3 文章分类界面
 ### 5.2.1 资料分类
 管理员登录后可以对资料分类信息新增，修改，删除以及查询操作。界面如下图所示：
 
-![](/images/0000stringboot/0062springboot/blog.012.png)
+![](/images/0000wxapp//blog.012.png)
 
 图5.4 资料分类界面
 
@@ -355,19 +354,19 @@ Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进
 ### 5.2.2 文章信息
 用户可以在首页查看文章信息，也可以对文章信息进行收藏操作。界面如下图所示：
 
-![](/images/0000stringboot/0062springboot/blog.013.png)
+![](/images/0000wxapp//blog.013.png)
 
 图5.5 文章信息界面
 ### 5.3.1 论坛交流
 用户可以在论坛交流里面发布信息和查看信息，发布信息需要提前登录才可以操作。界面如下图所示：
 
-![](/images/0000stringboot/0062springboot/blog.014.png)
+![](/images/0000wxapp//blog.014.png)
 
 图5.6 论坛交流界面
 ### 5.3.2 资料下载
 用户登录后在后台管理可以对资料进行添加修改删除操作，并可以查看下载信息和评论信息。界面如下图所示：
 
-![](/images/0000stringboot/0062springboot/blog.015.png)
+![](/images/0000wxapp//blog.015.png)
 
 图5.7 资料下载界面
 

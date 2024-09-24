@@ -1,17 +1,16 @@
 # 0159springboot社区智慧养老监护管理平台设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0159springboot社区智慧养老监护管理平台设计与实现](https://github.com/GraduationProject-springboot/0159springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1ECs?p=57)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 绪论
 ## 1.1 课题背景
@@ -64,25 +63,25 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 3.2.1 操作流程
 使用者在操作社区智慧养老监护管理平台中，应该按照本系统提供的操作流程（图3.1即为本系统的操作流程图）进行操作，这样可以减少使用者操作中出现的错误，从而节省进入社区智慧养老监护管理平台的时间。
 
-![](/images/0100stringboot/0159springboot/blog.001.png)
+![](/images/0100wxapp//blog.001.png)
 
 图3.1 系统操作流程
 ### 3.2.2 登录流程
 社区智慧养老监护管理平台通过登录功能（图3.2即为其登录的流程）引导使用者进入指定的功能操作区，也避免非本系统的用户享受本系统提供的服务以及查看本系统提供的信息，从而保障本系统用户的安全使用。
 
-![](/images/0100stringboot/0159springboot/blog.002.png)
+![](/images/0100wxapp//blog.002.png)
 
 图3.2 登录流程
 ### 3.2.3 删除信息流程
 社区智慧养老监护管理平台在经过长期使用后，会产生很多的数据信息。为了腾出存储空间存放更多的数据，本系统数据库中存储的数据，一些没有参考价值的数据需要进行删除（图3.3即为删除信息的流程），删除数据过程中，为避免误删，使用者要根据系统的提示来决定是否删除数据。
 
-![](/images/0100stringboot/0159springboot/blog.003.png)
+![](/images/0100wxapp//blog.003.png)
 
 图3.3 删除信息流程
 ### 3.2.4 添加信息流程
 社区智慧养老监护管理平台提供可视化的功能操作区，非常方便使用者进行数据操作，当使用者往系统中录入数据时（图3.4即为添加信息的流程），本系统也会进行数据合法性的判断，符合要求的数据才能够在数据库指定表中进行登记。
 
-![](/images/0100stringboot/0159springboot/blog.004.png)
+![](/images/0100wxapp//blog.004.png)
 
 图3.4 添加信息流程
 ## 3.3 性能需求
@@ -102,31 +101,31 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 图3.5即为管理员用例图，管理员权限操作的功能包括对后勤人员，体检员，护工，老人，房间信息，房间入住信息，反馈信息以及留言等信息的管理。
 
-![](/images/0100stringboot/0159springboot/blog.005.png)
+![](/images/0100wxapp//blog.005.png)
 
 图3.5 管理员用例图
 
 图3.6即为后勤人员用例图，后勤人员权限操作的功能包括查看房间，查看房间入住的老人，查看反馈信息，查看物资申请信息等。
 
-![](/images/0100stringboot/0159springboot/blog.006.png)
+![](/images/0100wxapp//blog.006.png)
 
 图3.6 后勤人员用例图
 
 图3.7即为护工用例图，护工权限操作的功能包括查看老人信息，查看反馈信息，查看留言信息，查看公告等。
 
-![](/images/0100stringboot/0159springboot/blog.007.png)
+![](/images/0100wxapp//blog.007.png)
 
 图3.7 护工用例图
 
 图3.8即为体检员用例图，体检员权限操作的功能包括查看物资申请信息，查看老人信息，查看房间入住信息等。
 
-![](/images/0100stringboot/0159springboot/blog.008.png)
+![](/images/0100wxapp//blog.008.png)
 
 图3.8 体检员用例图
 
 图3.9即为用户用例图，用户权限操作的功能包括管理留言，管理反馈信息，管理物资申请信息，查看老人信息等。
 
-![](/images/0100stringboot/0159springboot/blog.009.png)
+![](/images/0100wxapp//blog.009.png)
 
 图3.9 用户用例图
 
@@ -135,31 +134,31 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ## 4.1 功能结构设计
 图4.1即为设计的管理员功能结构，管理员权限操作的功能包括对后勤人员，体检员，护工，老人，房间信息，房间入住信息，反馈信息以及留言等信息的管理。
 
-![](/images/0100stringboot/0159springboot/blog.010.png)
+![](/images/0100wxapp//blog.010.png)
 
 图4.1 管理员功能结构
 
 图4.2即为设计的后勤人员功能结构，后勤人员权限操作的功能包括查看房间，查看房间入住的老人，查看反馈信息，查看物资申请信息等。
 
-![](/images/0100stringboot/0159springboot/blog.011.png)
+![](/images/0100wxapp//blog.011.png)
 
 图4.2 后勤人员功能结构
 
 图4.3即为设计的护工功能结构，护工权限操作的功能包括查看老人信息，查看反馈信息，查看留言信息，查看公告等。
 
-![](/images/0100stringboot/0159springboot/blog.012.png)
+![](/images/0100wxapp//blog.012.png)
 
 图4.3 护工功能结构
 
 图4.4即为设计的体检员功能结构，体检员权限操作的功能包括查看物资申请信息，查看老人信息，查看房间入住信息等。
 
-![](/images/0100stringboot/0159springboot/blog.013.png)
+![](/images/0100wxapp//blog.013.png)
 
 图4.4 体检员功能结构
 
 图4.5即为设计的用户功能结构，用户权限操作的功能包括管理留言，管理反馈信息，管理物资申请信息，查看老人信息等。
 
-![](/images/0100stringboot/0159springboot/blog.014.png)
+![](/images/0100wxapp//blog.014.png)
 
 图4.5 用户功能结构
 ## 4.2 数据库设计
@@ -169,31 +168,31 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 （1）图4.4即为管理员这个实体所拥有的属性值。
 
-![](/images/0100stringboot/0159springboot/blog.015.png)
+![](/images/0100wxapp//blog.015.png)
 
 图4.4 管理员实体属性图
 
 （2）图4.5即为反馈信息这个实体所拥有的属性值。
 
-![](/images/0100stringboot/0159springboot/blog.016.png)
+![](/images/0100wxapp//blog.016.png)
 
 图4.5 反馈信息实体属性图
 
 （3）图4.6即为用户这个实体所拥有的属性值。
 
-![](/images/0100stringboot/0159springboot/blog.017.png)
+![](/images/0100wxapp//blog.017.png)
 
 图4.6 用户实体属性图
 
 4. 图4.7即为留言这个实体所拥有的属性值。
 
-![](/images/0100stringboot/0159springboot/blog.018.png)
+![](/images/0100wxapp//blog.018.png)
 
 图4.7 留言实体属性图
 
 4. 图4.8即为上面介绍的实体中存在的联系。
 
-![](/images/0100stringboot/0159springboot/blog.019.png)
+![](/images/0100wxapp//blog.019.png)
 
 图4.8 实体间关系E-R图
 ### 4.2.2 数据库物理设计
@@ -350,71 +349,71 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 5.1.1 房间信息管理
 图5.1 即为编码实现的房间信息管理界面，管理员在该界面中具备新增,删除，查询，编辑房间信息的权限。
 
-![](/images/0100stringboot/0159springboot/blog.020.png)
+![](/images/0100wxapp//blog.020.png)
 
 图5.1 房间信息管理界面
 ### 5.1.2 房间入住管理
 图5.2 即为编码实现的房间入住管理界面，管理员在该界面中为老人入住房间的信息进行新增，查询，编辑，删除等。
 
-![](/images/0100stringboot/0159springboot/blog.021.png)
+![](/images/0100wxapp//blog.021.png)
 
 图5.2 房间入住管理界面
 ### 5.1.3 老人信息管理
 图5.3 即为编码实现的老人信息管理界面，管理员在该界面中对老人的信息进行新增，包括老人身体状态，老人年纪等信息，可以修改老人信息，查询老人信息等。
 
-![](/images/0100stringboot/0159springboot/blog.022.png)
+![](/images/0100wxapp//blog.022.png)
 
 图5.3 老人信息管理界面
 ## 5.2 后勤人员功能实现
 ### 5.2.1 反馈信息查看
 图5.4 即为编码实现的反馈信息查看界面，后勤人员在该界面中查询用户的反馈信息，查看反馈信息等。
 
-![](/images/0100stringboot/0159springboot/blog.023.png)
+![](/images/0100wxapp//blog.023.png)
 
 图5.4 反馈信息查看界面
 ### 5.2.2 物资申请查看
 图5.5 即为编码实现的物资申请查看界面，后勤人员在该界面中对物资申请信息进行查询，查看。物资申请信息是用户提交的信息。
 
-![](/images/0100stringboot/0159springboot/blog.024.png)
+![](/images/0100wxapp//blog.024.png)
 
 图5.5 物资申请查看界面
 ## 5.3 护工功能实现
 ### 5.3.1 房间入住查看
 图5.6 即为编码实现的房间入住查看界面，护工在该界面中负责查询和查看入住房间的老人信息。
 
-![](/images/0100stringboot/0159springboot/blog.025.png)
+![](/images/0100wxapp//blog.025.png)
 
 图5.6 房间入住查看界面
 ### 5.3.2 留言查看
 图5.7 即为编码实现的留言查看界面，护工在该界面中查看用户的留言内容。查询用户的留言。
 
-![](/images/0100stringboot/0159springboot/blog.026.png)
+![](/images/0100wxapp//blog.026.png)
 
 图5.7 留言查看界面
 ## 5.4 体检员功能实现
 ### 5.4.1 老人信息查看
 图5.8 即为编码实现的老人信息查看界面，体检员在该界面中查询老人信息，对老人信息进行查看，包括老人身体状态，是否有疾病等。
 
-![](/images/0100stringboot/0159springboot/blog.027.png)
+![](/images/0100wxapp//blog.027.png)
 
 图5.8 老人信息查看界面
 ### 5.4.2 公告查看
 图5.9 即为编码实现的公告查看界面，体检员在该界面中查询公告，查看公告，公告是管理员发布的信息。
 
-![](/images/0100stringboot/0159springboot/blog.028.png)
+![](/images/0100wxapp//blog.028.png)
 
 图5.9 公告查看界面
 ## 5.5 用户功能实现
 ### 5.5.1 留言管理
 图5.10 即为编码实现的留言管理界面，用户在该界面中新增留言，对发布的留言信息的相关管理员回复信息进行查看。
 
-![](/images/0100stringboot/0159springboot/blog.029.png)
+![](/images/0100wxapp//blog.029.png)
 
 图5.10 留言管理界面
 ### 5.5.2 物资申请管理
 图5.11 即为编码实现的物资申请管理界面，用户在该界面中新增物资申请信息，对发布的物资申请信息进行查询，更改，删除等。
 
-![](/images/0100stringboot/0159springboot/blog.030.png)
+![](/images/0100wxapp//blog.030.png)
 
 图5.11 物资申请管理界面
 

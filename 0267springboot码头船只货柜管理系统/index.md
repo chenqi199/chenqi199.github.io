@@ -1,17 +1,16 @@
 # 0267springboot码头船只货柜管理系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0267springboot码头船只货柜管理系统](https://github.com/GraduationProject-springboot/0267springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1EbH?p=34)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
 
@@ -90,7 +89,7 @@ Spring Boot框架是一个成熟的框架，MySQL数据库是一个成熟的数�
 
 管理员登录：管理员需要对码头船只货柜管理系统进行登录；
 
-![](/images/0200stringboot/0267springboot/blog.002.png)
+![](/images/0200wxapp//blog.002.png)
 
 图3.5 管理员用例图
 
@@ -108,7 +107,7 @@ Spring Boot框架是一个成熟的框架，MySQL数据库是一个成熟的数�
 
 注册登录：用户需要注册码头船只货柜管理系统，注册后才可以登录码头船只货柜管理系统；
 
-![](/images/0200stringboot/0267springboot/blog.003.png)
+![](/images/0200wxapp//blog.003.png)
 
 图3.6 用户用例图
 # 4 系统设计
@@ -116,7 +115,7 @@ Spring Boot框架是一个成熟的框架，MySQL数据库是一个成熟的数�
 ## 4.1 功能结构设计
 图4.1即为设计的系统功能结构，系统分为管理员和用户两个操作权限，管理员权限操作的功能包括管理用户，管理船只，管理路线，管理货柜，管理新闻等。用户权限操作的功能包括查看船只，查看新闻，查看路线以及货柜信息等。
 
-![](/images/0200stringboot/0267springboot/blog.004.png)图4.1 系统功能结构
+![](/images/0200wxapp//blog.004.png)图4.1 系统功能结构
 
 
 ## 4.2 数据库设计
@@ -126,29 +125,29 @@ Spring Boot框架是一个成熟的框架，MySQL数据库是一个成熟的数�
 
 ` `（1）图4.4即为货柜这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0267springboot/blog.005.png)
+![](/images/0200wxapp//blog.005.png)
 
 图4.4 货柜实体属性图
 
 （2）图4.5即为用户这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0267springboot/blog.006.png)
+![](/images/0200wxapp//blog.006.png)
 
 图4.5 用户实体属性图
 
 （3）图4.6即为船只这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0267springboot/blog.007.png)
+![](/images/0200wxapp//blog.007.png)
 
 图4.6 船只实体属性图
 
 4. 图4.7即为管理员这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0267springboot/blog.008.png)
+![](/images/0200wxapp//blog.008.png)
 
 图4.7 管理员实体属性图
 ### 4.2.2 主要实体关系图
-![](/images/0200stringboot/0267springboot/blog.009.png)
+![](/images/0200wxapp//blog.009.png)
 
 图4.8 实体间关系E-R图
 ### 4.2.3 主要数据库表的设计
@@ -231,50 +230,50 @@ Spring Boot框架是一个成熟的框架，MySQL数据库是一个成熟的数�
 ### 5.1.1 船只信息管理
 图5.1 即为编码实现的船只信息管理界面，管理员在该界面中新增船只信息，船只信息包括船只材质，船只型号等信息，管理员可以对船只信息进行查询，更改等操作。
 
-![](/images/0200stringboot/0267springboot/blog.010.png)
+![](/images/0200wxapp//blog.010.png)
 
 图5.1 船只信息管理界面
 ### 5.1.2 货柜信息管理
 图5.2 即为编码实现的货柜信息管理界面，管理员在该界面中对货柜信息进行新增，货柜信息包括货柜类型，货柜型号等信息，在本界面，管理员可以更改货柜信息，查询货柜信息等。
 
-![](/images/0200stringboot/0267springboot/blog.011.png)
+![](/images/0200wxapp//blog.011.png)
 
 图5.2 货柜信息管理界面
 ### 5.1.3 路线信息管理
 图5.3 即为编码实现的路线信息管理界面，管理员在该界面中具备对路线信息新增，查询，编辑，删除等操作权限。
 
-![](/images/0200stringboot/0267springboot/blog.012.png)
+![](/images/0200wxapp//blog.012.png)
 
 图5.3 路线信息管理界面
 ### 5.1.4 新闻管理
 图5.4 即为编码实现的新闻管理界面，管理员在该界面中具备发布新闻，编辑新闻，查询新闻等权限。
 
-![](/images/0200stringboot/0267springboot/blog.013.png)
+![](/images/0200wxapp//blog.013.png)
 
 图5.4 新闻管理界面
 ### 5.1.5 用户管理
 图5.5 即为编码实现的用户管理界面，管理员在该界面中为用户的账号重置密码，更改用户资料，查询用户等。
 
-![](/images/0200stringboot/0267springboot/blog.014.png)
+![](/images/0200wxapp//blog.014.png)
 
 图5.5 用户管理界面
 ## 5.2 用户功能实现
 ### 5.2.1 船只信息
 图5.6 即为编码实现的船只信息界面，用户在该界面中查询船只，查看船只信息。
 
-![](/images/0200stringboot/0267springboot/blog.015.png)
+![](/images/0200wxapp//blog.015.png)
 
 图5.6 船只信息界面
 ### 5.2.2 新闻信息
 图5.7 即为编码实现的新闻信息界面，用户在该界面中查询并查看新闻信息。
 
-![](/images/0200stringboot/0267springboot/blog.016.png)
+![](/images/0200wxapp//blog.016.png)
 
 图5.7 新闻信息界面
 ### 5.2.3 更改个人信息
 图5.8 即为编码实现的更改个人信息界面，用户在该界面中对个人信息进行查看，对登记错误的个人信息进行更改，也包括更改个人照片，更改手机号等信息。
 
-![](/images/0200stringboot/0267springboot/blog.017.png)
+![](/images/0200wxapp//blog.017.png)
 
 图5.8 更改个人信息界面
 

@@ -1,17 +1,16 @@
 # 0221springboot学生网上选课系统的设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0221springboot学生网上选课系统的设计与实现](https://github.com/GraduationProject-springboot/0221springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)]()
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 绪论
 ## 1.1 课题背景
@@ -64,25 +63,25 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 3.2.1 操作流程
 使用者在操作学生网上选课系统中，应该按照本系统提供的操作流程（图3.1即为本系统的操作流程图）进行操作，可以减少操作失误，从而节省进入学生网上选课系统的时间。
 
-![](/images/0200stringboot/0221springboot/blog.001.png)
+![](/images/0200wxapp//blog.001.png)
 
 图3.1 系统操作流程
 ### 3.2.2 登录流程
 学生网上选课系统通过登录功能（图3.2即为其登录的流程）引导使用者进入指定的功能操作区，也避免非本系统的用户享受本系统提供的服务以及查看本系统提供的信息，进而保证用户安全。
 
-![](/images/0200stringboot/0221springboot/blog.002.png)
+![](/images/0200wxapp//blog.002.png)
 
 图3.2 登录流程
 ### 3.2.3 删除信息流程
 学生网上选课系统在经过长期使用后，会产生很多的数据信息。为了腾出存储空间存放更多的数据，本系统数据库中存储的数据，一些没有参考价值的数据需要进行删除（图3.3即为删除信息的流程），删除数据过程中，为避免误删，使用者要根据系统的提示来决定是否删除数据。
 
-![](/images/0200stringboot/0221springboot/blog.003.png)
+![](/images/0200wxapp//blog.003.png)
 
 图3.3 删除信息流程
 ### 3.2.4 添加信息流程
 学生网上选课系统提供可视化的功能操作区，非常方便使用者进行数据操作，当使用者往系统中录入数据时（图3.4即为添加信息的流程），本系统也会进行数据合法性的判断，符合要求的数据才能够在数据库指定表中进行登记。
 
-![](/images/0200stringboot/0221springboot/blog.004.png)
+![](/images/0200wxapp//blog.004.png)
 
 图3.4 添加信息流程
 ## 3.3 性能需求
@@ -108,19 +107,19 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 图3.5即为管理员用例图，管理员权限操作的功能包括管理教学资源，管理课程，管理教学计划，管理选课，管理成绩，管理基础数据，其中基础数据管理包括班级管理，计划类型管理，课程性质管理，院系管理等子功能模块。
 
-![](/images/0200stringboot/0221springboot/blog.005.png)
+![](/images/0200wxapp//blog.005.png)
 
 图3.5 管理员用例图
 
 图3.6即为老师用例图，老师权限操作的功能包括查看教室，管理课程，管理选课，管理成绩等。
 
-![](/images/0200stringboot/0221springboot/blog.006.png)
+![](/images/0200wxapp//blog.006.png)
 
 图3.6 老师用例图
 
 图3.7即为学生用例图，学生权限操作的功能包括查看教室，查看课程并选择需要学习的课程，查看成绩等。
 
-![](/images/0200stringboot/0221springboot/blog.007.png)
+![](/images/0200wxapp//blog.007.png)
 
 图3.7 学生用例图
 # 第4章 系统设计
@@ -140,19 +139,19 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ## 4.2 功能结构设计
 图4.1即为设计的管理员功能结构，管理员权限操作的功能包括管理教学资源，管理课程，管理教学计划，管理选课，管理成绩，管理基础数据，其中基础数据管理包括班级管理，计划类型管理，课程性质管理，院系管理等子功能模块。
 
-![](/images/0200stringboot/0221springboot/blog.008.png)
+![](/images/0200wxapp//blog.008.png)
 
 图4.1 管理员功能结构
 
 图4.2即为设计的老师功能结构，老师权限操作的功能包括查看教室，管理课程，管理选课，管理成绩等。
 
-![](/images/0200stringboot/0221springboot/blog.009.png)
+![](/images/0200wxapp//blog.009.png)
 
 图4.2 老师功能结构
 
 图4.3即为设计的学生功能结构，学生权限操作的功能包括查看教室，查看课程并选择需要学习的课程，查看成绩等。
 
-![](/images/0200stringboot/0221springboot/blog.010.png)
+![](/images/0200wxapp//blog.010.png)
 
 图4.3 学生功能结构
 ## 4.3 数据库设计
@@ -162,31 +161,31 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 （1）图4.4即为老师这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0221springboot/blog.011.png)
+![](/images/0200wxapp//blog.011.png)
 
 图4.4 老师实体属性图
 
 （2）图4.5即为课程这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0221springboot/blog.012.png)
+![](/images/0200wxapp//blog.012.png)
 
 图4.5 课程实体属性图
 
 （3）图4.6即为学生这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0221springboot/blog.013.png)
+![](/images/0200wxapp//blog.013.png)
 
 图4.6 学生实体属性图
 
 4. 图4.7即为成绩这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0221springboot/blog.014.png)
+![](/images/0200wxapp//blog.014.png)
 
 图4.7 成绩实体属性图
 
 4. 图4.8即为上面介绍的实体中存在的联系。
 
-![](/images/0200stringboot/0221springboot/blog.015.png)
+![](/images/0200wxapp//blog.015.png)
 
 图4.8 实体间关系E-R图
 ### 4.3.2 数据库物理设计
@@ -303,57 +302,57 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 5.1.1 教室管理
 图5.1 即为编码实现的教室管理界面，教室信息包括教室名称，教室位置，教室编号等信息，管理可以使用修改功能对登记有误的教室信息进行修改，可以删除需要删除的教室信息等。
 
-![](/images/0200stringboot/0221springboot/blog.016.png)
+![](/images/0200wxapp//blog.016.png)
 
 图5.1 教室管理界面
 ### 5.1.2 课程管理
 图5.2 即为编码实现的课程管理界面，课程信息包括课程名称，课程性质，课程学分，总学时，考核方式等信息，管理可以使用修改功能对登记有误的课程信息进行修改，可以删除需要删除的课程信息等。
 
-![](/images/0200stringboot/0221springboot/blog.017.png)
+![](/images/0200wxapp//blog.017.png)
 
 图5.2 课程管理界面
 ### 5.1.3 老师管理
 图5.3 即为编码实现的老师管理界面，老师信息包括擅长，性别，姓名，老师头像等信息，管理员可以删除需要删除的老师信息，可以查询老师，重置老师账号的密码等。
 
-![](/images/0200stringboot/0221springboot/blog.018.png)
+![](/images/0200wxapp//blog.018.png)
 
 图5.3 老师管理界面
 ## 5.2 老师功能实现
 ### 5.2.1 教学计划管理
 图5.4 即为编码实现的教学计划管理界面，教学计划信息包括教学计划名称，教学计划类型，教学计划编号，课程名称等信息，老师可以查询教学计划信息，可以新增教学计划信息，可以删除需要删除的教学计划信息等。
 
-![](/images/0200stringboot/0221springboot/blog.019.png)
+![](/images/0200wxapp//blog.019.png)
 
 图5.4 教学计划管理界面
 ### 5.2.2 选课管理
 图5.5 即为编码实现的选课管理界面，选课信息包括学生手机号，学生头像，学生姓名，课程名称，课程编号等信息，老师通过课程名称，学生姓名或选课编号都能查询学生选课信息，也能对学生选课详情进行查看。
 
-![](/images/0200stringboot/0221springboot/blog.020.png)
+![](/images/0200wxapp//blog.020.png)
 
 图5.5 选课管理界面
 ### 5.2.3 成绩管理
 图5.6 即为编码实现的成绩管理界面，老师对学生所选课程录入成绩，可以修改成绩得分，成绩类型以及成绩详情等信息，可以删除需要删除的成绩信息等。
 
-![](/images/0200stringboot/0221springboot/blog.021.png)
+![](/images/0200wxapp//blog.021.png)
 
 图5.6 成绩管理界面
 ## 5.3 学生功能实现
 ### 5.3.1 课程管理
 图5.7 即为编码实现的课程管理界面，学生查看课程考核方式，查看最大选课人数，选课截止时间，课程代码等信息，学生点击信息显示栏右侧的选课按钮即可选择对应课程。
 
-![](/images/0200stringboot/0221springboot/blog.022.png)
+![](/images/0200wxapp//blog.022.png)
 
 图5.7 课程管理界面
 ### 5.3.2 选课查看
 图5.8 即为编码实现的选课查看界面，学生完成选课之后，在选课查看界面对已选课程的详细进行查看。
 
-![](/images/0200stringboot/0221springboot/blog.023.png)
+![](/images/0200wxapp//blog.023.png)
 
 图5.8 选课查看界面
 ### 5.3.3 成绩查看
 图5.9 即为编码实现的成绩查看界面，学生查看选课课程的成绩得分信息，成绩类型信息，课程名称信息等。
 
-![](/images/0200stringboot/0221springboot/blog.024.png)
+![](/images/0200wxapp//blog.024.png)
 
 图5.9 成绩查看界面
 # 

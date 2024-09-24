@@ -1,17 +1,16 @@
 # 0128springboot学生选课系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0128springboot学生选课系统](https://github.com/GraduationProject-springboot/0128springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)]()
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 绪论
 ## 1.1 课题背景
@@ -71,25 +70,25 @@ SpringBoot的最大优点是继承了Spring框架的人气和底层设计财富�
 ### 3.2.1 操作流程
 进入本系统需要访问者提供验证信息。验证合格的访问者才能获取访问资格。其具体的操作流程见下图。访问者根据登录界面设置的信息项如实填写，待信息通过验证后，访问者可以进入指定的页面享受本系统提供的服务和阅读本系统的相关信息。
 
-![](/images/0100stringboot/0128springboot/blog.001.png)
+![](/images/0100wxapp//blog.001.png)
 
 图3.1 操作流程图
 ### 3.2.2 登录流程
 本系统的登录模块，其内部的流程见下图。主要对访问本系统的人员提供的验证信息进行逐个判断，系统面对录入错误的信息会给出提示，比如，提示账号不对，或提示密码不匹配等提示信息。总之，在登录页面填写的所有信息都符合要求，访问者就登录成功了。
 
-![](/images/0100stringboot/0128springboot/blog.002.png)
+![](/images/0100wxapp//blog.002.png)
 
 图3.2 登录流程图
 ### 3.2.3 删除信息流程
 本系统在经常性的使用后，会产生很多失去价值的信息，因此就需要及时清理数据，腾出系统的空间。对这些数据进行清理时，其对应的流程见下图。先选中要清理的数据，通过反复确认需要清理的数据，避免操作人员误删。已经删除的数据就不会出现在系统里面。
 
-![](/images/0100stringboot/0128springboot/blog.003.png)
+![](/images/0100wxapp//blog.003.png)
 
 图3.3 删除信息流程图
 ### 3.2.4 添加信息流程
 本系统主要用于显示信息，提供服务，其中，数据添加功能就是其中的服务之一，具体流程见下图。让操作者在信息添加的页面录入数据，待这些数据被提交检验合格后，就会在系统指定页面显示出来。
 
-![](/images/0100stringboot/0128springboot/blog.004.png)
+![](/images/0100wxapp//blog.004.png)
 
 图3.4 添加信息流程图
 ## 3.3 性能需求
@@ -107,19 +106,19 @@ SpringBoot的最大优点是继承了Spring框架的人气和底层设计财富�
 
 学生选课系统经过分析，确定了其需要设置管理员的角色，其操作的功能通过用例图展示（见下图）。管理员管理专业，教师，学生，课程，查看学生选课以及学生成绩信息。
 
-![](/images/0100stringboot/0128springboot/blog.005.png)
+![](/images/0100wxapp//blog.005.png)
 
 图3.5 管理员用例图
 
 学生选课系统经过分析，确定了其需要设置教师的角色，其操作的功能通过用例图展示（见下图）。教师查询学生，查询课程，审核学生选课信息，为学生学习的课程进行成绩打分。
 
-![](/images/0100stringboot/0128springboot/blog.006.png)
+![](/images/0100wxapp//blog.006.png)
 
 图3.6 教师用例图
 
 学生选课系统经过分析，确定了其需要设置学生的角色，其操作的功能通过用例图展示（见下图）。学生参与课程选课，查询选课信息，查询已选课程的成绩信息。
 
-![](/images/0100stringboot/0128springboot/blog.007.png)
+![](/images/0100wxapp//blog.007.png)
 
 图3.7 学生用例图
 
@@ -136,19 +135,19 @@ SpringBoot的最大优点是继承了Spring框架的人气和底层设计财富�
 ## 4.2 功能结构设计
 在前面分析的管理员功能的基础上，进行接下来的设计工作，最终展示设计的管理员结构图（见下图）。管理员管理专业，教师，学生，课程，查看学生选课以及学生成绩信息。
 
-![](/images/0100stringboot/0128springboot/blog.008.png)
+![](/images/0100wxapp//blog.008.png)
 
 图4.1 管理员功能结构图
 
 在前面分析的教师功能的基础上，进行接下来的设计工作，最终展示设计的教师结构图（见下图）。教师查询学生，查询课程，审核学生选课信息，为学生学习的课程进行成绩打分。
 
-![](/images/0100stringboot/0128springboot/blog.009.png)
+![](/images/0100wxapp//blog.009.png)
 
 图4.2 教师功能结构图
 
 在前面分析的学生功能的基础上，进行接下来的设计工作，最终展示设计的学生结构图（见下图）。学生参与课程选课，查询选课信息，查询已选课程的成绩信息。
 
-![](/images/0100stringboot/0128springboot/blog.010.png)
+![](/images/0100wxapp//blog.010.png)
 
 图4.3 学生功能结构图
 ## 4.3 数据库设计
@@ -158,31 +157,31 @@ SpringBoot的最大优点是继承了Spring框架的人气和底层设计财富�
 
 （1）下图是课程实体和其具备的属性。
 
-![](/images/0100stringboot/0128springboot/blog.011.png)
+![](/images/0100wxapp//blog.011.png)
 
 图4.4 课程实体属性图
 
 （2）下图是教师实体和其具备的属性。
 
-![](/images/0100stringboot/0128springboot/blog.012.png)
+![](/images/0100wxapp//blog.012.png)
 
 图4.5 教师实体属性图
 
 （3）下图是学生实体和其具备的属性。
 
-![](/images/0100stringboot/0128springboot/blog.013.png)
+![](/images/0100wxapp//blog.013.png)
 
 图4.6 学生实体属性图
 
 4. 下图是成绩实体和其具备的属性。
 
-![](/images/0100stringboot/0128springboot/blog.014.png)
+![](/images/0100wxapp//blog.014.png)
 
 图4.7 成绩实体属性图
 
 4. 下图为上述各实体间相互之间的关系。
 
-![](/images/0100stringboot/0128springboot/blog.015.png)
+![](/images/0100wxapp//blog.015.png)
 
 图4.8 实体间关系E-R图
 ### 4.3.2 数据库物理设计
@@ -300,57 +299,57 @@ SpringBoot的最大优点是继承了Spring框架的人气和底层设计财富�
 ### 5.1.1 教师管理
 管理员进入指定功能操作区之后可以管理教师。其页面见下图。教师的资料需要管理员负责管理，包括修改，新增，删除等操作。
 
-![](/images/0100stringboot/0128springboot/blog.017.png)
+![](/images/0100wxapp//blog.017.png)
 
 图5.1 教师管理页面
 ### 5.1.2 学生管理
 管理员进入指定功能操作区之后可以管理学生信息。其页面见下图。学生是本系统的一个角色，其相关信息需要管理员添加，修改，删除等。
 
-![](/images/0100stringboot/0128springboot/blog.018.png)
+![](/images/0100wxapp//blog.018.png)
 
 图5.2 学生管理页面
 ### 5.1.3 专业信息管理
 管理员进入指定功能操作区之后可以管理专业信息。其页面见下图。管理员在本页面修改专业名称，删除指定的专业信息，管理员提交专业名称可以查询专业信息。
 
-![](/images/0100stringboot/0128springboot/blog.019.png)
+![](/images/0100wxapp//blog.019.png)
 
 图5.3 专业信息管理页面
 ## 5.2 教师功能实现
 ### 5.2.1 课程查询
 教师进入指定功能操作区之后可以查询课程。其页面见下图。课程信息是管理员负责增删改查，教师只需要查询课程，查看课程详情。
 
-![](/images/0100stringboot/0128springboot/blog.020.png)
+![](/images/0100wxapp//blog.020.png)
 
 图5.4 课程查询页面
 ### 5.2.2 学生选课管理
 教师进入指定功能操作区之后可以管理学生选课信息。其页面见下图。学生参与课程选课，教师负责审核，并在课程学习结束之后，为学生学习的课程进行打分。
 
-![](/images/0100stringboot/0128springboot/blog.021.png)
+![](/images/0100wxapp//blog.021.png)
 
 图5.5 学生选课管理页面
 ### 5.2.3 学生成绩管理
 教师进入指定功能操作区之后可以管理学生成绩信息。其页面见下图。教师修改学生成绩的分数等信息，可以删除学生成绩信息。
 
-![](/images/0100stringboot/0128springboot/blog.022.png)
+![](/images/0100wxapp//blog.022.png)
 
 图5.6 学生成绩管理页面
 ## 5.3 学生功能实现
 ### 5.3.1 课程信息管理
 学生进入指定功能操作区之后可以管理课程信息。其页面见下图。学生查看课程的学分，开课时间与结束时间，课程名称等信息，学生点击课程信息右侧的学生选课按钮，可以选择该课程。
 
-![](/images/0100stringboot/0128springboot/blog.023.png)
+![](/images/0100wxapp//blog.023.png)
 
 图5.7 课程信息管理页面
 ### 5.3.2 学生选课查询
 学生进入指定功能操作区之后可以查询学生选课信息。其页面见下图。学生提供教师姓名，或者是提供课程名称可以查询学生选择的课程信息，查询出来的选课信息可以显示学生已选的课程的审核情况。
 
-![](/images/0100stringboot/0128springboot/blog.024.png)
+![](/images/0100wxapp//blog.024.png)
 
 图5.8 学生选课查询页面
 ### 5.3.3 学生成绩查询
 学生进入指定功能操作区之后可以查询学生成绩。其页面见下图。学生查询已选课程的成绩信息，查看成绩详情，包括分数，是否合格，教师姓名等信息。
 
-![](/images/0100stringboot/0128springboot/blog.025.png)
+![](/images/0100wxapp//blog.025.png)
 
 图5.9 学生成绩查询页面
 

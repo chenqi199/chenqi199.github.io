@@ -1,17 +1,16 @@
 # 0645springboot班级综合测评管理系统--论文
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0645springboot班级综合测评管理系统--论文](https://github.com/GraduationProject-springboot/0645springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV14HerezEwW?p=2)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
 ## 1.1课题研究的背景
@@ -53,7 +52,7 @@ Java是由Sun公司推出的一门跨平台的面向对象的程序设计语言�
 ## 2.2B/S架构
 B/S的系统是通过能上网的电脑就可以使用，它最大的优点是不需要安装专门的软件，首先浏览器向服务器发出请求，然后服务器处理请求把信息再返回给浏览器。不需要再次对数据进行存取与计算数据，只要负责显示数据来降低要求，如果说客户端像个“瘦子”，而服务器会越来越“胖”。B/S体系结构与C/S体系结构相比，最大的不同是：B/S体系的应用软件使用网络浏览器作为与用户交互的平台，而C/S则需要开发专用的应用程序。
 
-![2009318052962238](/images/0600stringboot/0645springboot/blog.008.png)
+![2009318052962238](/images/0600wxapp//blog.008.png)
 
 图2-1 B/S结构图
 ## 2.3 MySQL介绍
@@ -121,15 +120,15 @@ SpinrgBoot的主要优点有：
 ## 3.3系统流程的分析
 由于不同的系统实际使用用户角色的不同，他们的业务分析也会变得有所不一样，为了论述方便接下来都将以用户功能权限下的系统业务流程来分析，如下图所展示:
 ### 3.3.1用户管理的流程
-![](/images/0600stringboot/0645springboot/blog.009.png)
+![](/images/0600wxapp//blog.009.png)
 
 图3-1 用户管理流程
 ### 3.3.2个人中心管理流程
-![](/images/0600stringboot/0645springboot/blog.010.png)
+![](/images/0600wxapp//blog.010.png)
 
 图3-2 个人中心管理流程
 ### 3.3.3登录流程
-![](/images/0600stringboot/0645springboot/blog.011.png)
+![](/images/0600wxapp//blog.011.png)
 
 图3-3 登录流程
 
@@ -162,7 +161,7 @@ SpinrgBoot的主要优点有：
 
 本系统的设计是基于 B/S架构的三层体系结构，也就是浏览器和服务器结构。计算机技术发展的速度非常快，以前的设计结构都以C/S的模式为主，也就是客户端和服务端模式。但随着网页技术的发展，越来越多的用户习惯于使用浏览器。现在的网页技术可以在浏览器中实现非常漂亮的效果，以前的单一低调的客户端页面已经无法满足用户的需求。在B/S这种结构下，技术人员可以很轻松的设计出用户所需要的工作界面，页面代码通过浏览器进行解析展示，在浏览器中不做过多的事务逻辑的处理。主要的事务逻辑放在服务端进行处理。这样用户的电脑就不会承载过多的东西，只需要浏览器展示即可。对于开发人员也很方便进行系统的维护和升级。开发人员只需要在服务端进行系统的维护就可以了。使用Java这样的跨平台性非常好的语言，这样的开发模式更加的方便，高效。本系统合理的进行了模块划分和组合，因此由于各个模块之间基本上是相互独立的，所以每个模块都可以独立的被解释、执行、调试和修改，让繁琐的系统设计工作简单化。系统总体设计图如下图4-1所示：
 
-![](/images/0600stringboot/0645springboot/blog.013.png)
+![](/images/0600wxapp//blog.013.png)
 
 图4-1系统总体设计图
 ## 4.2数据库设计
@@ -175,19 +174,19 @@ SpinrgBoot的主要优点有：
 
 学生管理实体图如图4-2所示：
 
-![](/images/0600stringboot/0645springboot/blog.014.png)
+![](/images/0600wxapp//blog.014.png)
 
 图4-2学生管理实体图
 
 教师管理实体图如图4-3所示：
 
-![](/images/0600stringboot/0645springboot/blog.015.png)
+![](/images/0600wxapp//blog.015.png)
 
 图4-3教师管理实体图
 
 综合测评管理实体图如图4-4所示：
 
-![](/images/0600stringboot/0645springboot/blog.016.png)
+![](/images/0600wxapp//blog.016.png)
 
 图4-4综合测评管理实体图
 ### 4.2.2物理模型设计
@@ -282,7 +281,7 @@ SpinrgBoot的主要优点有：
 ## 5.1 管理员功能模块
 管理员输入账号和密码，选择登录角色进行登录，管理员登录界面如图5-1所示：
 
-![](/images/0600stringboot/0645springboot/blog.017.png)
+![](/images/0600wxapp//blog.017.png)
 
 
 
@@ -298,7 +297,7 @@ SpinrgBoot的主要优点有：
 
 管理员功能：管理员登录系统后，能对首页、个人中心、学生管理、教师管理、班级管理、综合测评管理进行操作。管理员功能如下图所示：
 
-![](/images/0600stringboot/0645springboot/blog.018.png)
+![](/images/0600wxapp//blog.018.png)
 
 
 
@@ -309,69 +308,69 @@ SpinrgBoot的主要优点有：
 
 学生管理：在学生管理页面，可以对索引、学号、学生姓名、性别、班级、学生手机、班级、教师工号等内容进行详情、修改和删除等操作，如图5-3所示：
 
-![](/images/0600stringboot/0645springboot/blog.019.png)
+![](/images/0600wxapp//blog.019.png)
 
 图5-3学生管理界面
 
 教师管理：在教师管理页面，可以对索引、教师工号、教师姓名、性别、照片、教师电话等内容进行详情、修改和删除等操作，如图5-4所示：
 
-![](/images/0600stringboot/0645springboot/blog.020.png)
+![](/images/0600wxapp//blog.020.png)
 
 图5-4教师管理界面
 
 班级管理：在班级管理页面，可以对索引、班级等内容进行修改和删除等操作，如图5-5所示：
 
-![](/images/0600stringboot/0645springboot/blog.021.png)
+![](/images/0600wxapp//blog.021.png)
 
 图5-5班级管理界面
 
 综合测评管理：在综合测评管理页面，可以对索引、学号、学生姓名、教师工号、教师姓名、班级、德育、智育、体育、综合成绩、录入时间等内容进行详情，修改和删除等操作，如图5-6所示：
 
-![](/images/0600stringboot/0645springboot/blog.022.png)
+![](/images/0600wxapp//blog.022.png)
 
 图5-6综合测评管理界面
 
 ## 5.2学生功能模块
 学生功能：学生登录到班级综合测评管理系统后，可以对首页、个人中心、综合测评管理等进行操作，如图5-7所示：
 
-![](/images/0600stringboot/0645springboot/blog.023.png)
+![](/images/0600wxapp//blog.023.png)
 
 图5-7学生功能界面
 
 个人中心：学生可以将学号、学生姓名、性别、头像、学生手机、班级、教师工号等个人信息进行修改，还能修改密码，如图5-8所示：
 
-![](/images/0600stringboot/0645springboot/blog.024.png)
+![](/images/0600wxapp//blog.024.png)
 
 图5-8个人中心界面
 
 综合测评管理：在综合测评管理页面，可以对索引、学号、学生姓名、教师工号、教师姓名、班级、德育、智育、体育、综合成绩、录入时间等内容进行详情操作，如图5-9所示：
 
-![](/images/0600stringboot/0645springboot/blog.025.png)
+![](/images/0600wxapp//blog.025.png)
 
 图5-9综合测评管理界面
 
 ## 5.3教师功能模块
 教师功能：教师登录到班级综合测评管理系统后，可以对首页、个人中心、学生管理、综合测评管理等进行操作，如图5-10所示：
 
-![](/images/0600stringboot/0645springboot/blog.026.png)
+![](/images/0600wxapp//blog.026.png)
 
 图5-10教师功能界面
 
 个人中心：教师可以将教师工号、教师姓名、性别、照片、教师电话等个人信息进行修改，还能修改密码，如图5-11所示：
 
-![](/images/0600stringboot/0645springboot/blog.027.png)
+![](/images/0600wxapp//blog.027.png)
 
 图5-11个人中心界面
 
 学生管理：在学生管理页面，可以查看对索引、学号、学生姓名、性别、头像、学生手机、班级、教师工号等内容进行详细和综合测评等操作，如图5-12所示：
 
-![](/images/0600stringboot/0645springboot/blog.028.png)
+![](/images/0600wxapp//blog.028.png)
 
 图5-12学生管理界面
 
 综合测评管理：在综合测评管理页面，可以对索引、学号、学生姓名、教师工号、教师姓名、班级、德育、智育、体育、综合成绩、录入时间等内容进行详情、修改和删除等操作，如图5-13所示：
 
-![](/images/0600stringboot/0645springboot/blog.029.png)
+![](/images/0600wxapp//blog.029.png)
 
 图5-13综合测评管理界面
 

@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>网页开发 - 标签 - chenqi blog</title>
+        <link>https://chenqi199.github.io/tags/%E7%BD%91%E9%A1%B5%E5%BC%80%E5%8F%91/</link>
+        <description>网页开发 - 标签 - chenqi blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>chen_q_i@163.com (chenqi)</managingEditor>
+            <webMaster>chen_q_i@163.com (chenqi)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 26 Apr 2024 10:32:57 &#43;0800</lastBuildDate><atom:link href="https://chenqi199.github.io/tags/%E7%BD%91%E9%A1%B5%E5%BC%80%E5%8F%91/" rel="self" type="application/rss+xml" /><item>
+    <title>ssm546旅游网页开发与设计&#43;jsp</title>
+    <link>https://chenqi199.github.io/ssm546%E6%97%85%E6%B8%B8%E7%BD%91%E9%A1%B5%E5%BC%80%E5%8F%91%E4%B8%8E%E8%AE%BE%E8%AE%A1-jsp/</link>
+    <pubDate>Fri, 26 Apr 2024 10:32:57 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm546%E6%97%85%E6%B8%B8%E7%BD%91%E9%A1%B5%E5%BC%80%E5%8F%91%E4%B8%8E%E8%AE%BE%E8%AE%A1-jsp/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm546旅游网页开发与设计+jsp github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第1章 绪论 1.1 研究背景 互联网概念的产]]></description>
+</item>
+</channel>
+</rss>

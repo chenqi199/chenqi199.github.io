@@ -1,17 +1,16 @@
 # 0066springboot中小型医院网站
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0066springboot中小型医院网站](https://github.com/GraduationProject-springboot/0066springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV16ia6epENY?p=67)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
 ## 1.1研究背景
@@ -64,7 +63,7 @@ Java是一种非常常用的编程语言，在全球编程语言排行版上总�
 
 相对于C/S模式，B/S模式是对C/S模式应用的扩展，B/S模式不用对不同的计算机安装不同应用程序，还有安全性的要求及对模式上手难度都比前者更好。B/S模式可以让客户机的压力大大减轻，工作的负荷被合理的分配了。
 
-![](/images/0000stringboot/0066springboot/blog.001.png)
+![](/images/0000wxapp//blog.001.png)
 
 图2-1  B/S模式三层结构图
 ## 2.3 MYSQL数据库
@@ -105,7 +104,7 @@ Spring Boot是一个简化程序设置的拥有开箱即用的框架，它主要
 
 医师注册登录后主要功能模块包括个人中心、预约挂号管理、体检报告管理、医师开药管理以及用户取药管理。医师用例图如图3-1所示。
 
-![](/images/0000stringboot/0066springboot/blog.002.png)
+![](/images/0000wxapp//blog.002.png)
 
 图3-1 医师用例图
 
@@ -113,7 +112,7 @@ Spring Boot是一个简化程序设置的拥有开箱即用的框架，它主要
 
 管理员可登录系统后台对系统进行全面管理操作，管理员主要实现等功能模块包括个人中心、用户管理、医师管理、关于我们管理、科室类型管理、门诊信息管理、药库信息管理、缴费清单管理、药品类型管理以及系统管理。管理员实现了对系统信息的添加、修改和删除的功能。管理员用例图如图3-2所示。
 
-![](/images/0000stringboot/0066springboot/blog.003.png)
+![](/images/0000wxapp//blog.003.png)
 
 图3-2 管理员用例图
 
@@ -121,7 +120,7 @@ Spring Boot是一个简化程序设置的拥有开箱即用的框架，它主要
 
 用户在系统前台可查看系统信息，包括首页、门诊信息、药库信息、系统公告等，用户要想实现选择门诊预约挂号功能，就必须登录系统，没有账号的用户可首先进行注册操作，注册登录后主要功能模块包括个人中心、预约挂号管理、体检报告管理、医师开药管理、用户取药管理、缴费清单管理。用户用例图如图3-3所示。
 
-![](/images/0000stringboot/0066springboot/blog.004.png)
+![](/images/0000wxapp//blog.004.png)
 
 图3-3 用户用例图
 ## 3.4 系统结构分析
@@ -130,26 +129,26 @@ Spring Boot是一个简化程序设置的拥有开箱即用的框架，它主要
 
 本系统的网络应用原理示意图如图3-4所示：
 
-![](/images/0000stringboot/0066springboot/blog.005.png)
+![](/images/0000wxapp//blog.005.png)
 
 图3-4系统的网络应用原理示意图
 ### 3.4.2物理结构
 系统实现的物理结构如图3-5所示：
 
-![](/images/0000stringboot/0066springboot/blog.006.png)
+![](/images/0000wxapp//blog.006.png)
 
 图3-5 系统实现的物理结构图
 ## 3.5 系统流程分析
 ### 3.5.1注册流程
 未有账号的用户可进行注册操作，用户注册流程图如图3-6所示。
 
-![](/images/0000stringboot/0066springboot/blog.007.png)
+![](/images/0000wxapp//blog.007.png)
 
 图3-6 注册流程图
 ### 3.5.2登录流程
 登录模块主要满足了管理员、医师和用户的权限登录，用户登录流程图如图3-7所示。
 
-![](/images/0000stringboot/0066springboot/blog.008.png)
+![](/images/0000wxapp//blog.008.png)
 
 图3-7 登录流程图
 #
@@ -157,13 +156,13 @@ Spring Boot是一个简化程序设置的拥有开箱即用的框架，它主要
 ## 4.1 系统概要设计
 本中小型医院网站采用B/S结构(Browser/Server,浏览器/服务器结构)和JAVA技术，MYSQL数据库存储数据，是一个适用于Internet环境下的模型结构。只要用户能连上Internet,便可以在任何时间、任何地点使用。系统工作原理图如图4-1所示：
 
-![](/images/0000stringboot/0066springboot/blog.009.png)
+![](/images/0000wxapp//blog.009.png)
 
 图4-1 系统工作原理图
 ## 4.2 系统结构设计
 在结构设计过程中，首先对系统进行需求分析，然后进行系统初步设计，将系统功能模块细化，具体分析每一个功能模块具体应该首先哪些功能，最后将各个模块进行整合，实现系统结构的最终设计。本基于Spring Boot的中小型医院网站主要实现了用户功能模块、医师功能模块和管理员功能模块三大部分，系统的功能结构设计如图4-2所示。
 
-![](/images/0000stringboot/0066springboot/blog.010.png)
+![](/images/0000wxapp//blog.010.png)
 
 图4-2系统结构图
 ## 4.3 数据库设计
@@ -178,37 +177,37 @@ E-R图是一种描述显示数据类型间的关系的数据描述方法，E-R�
 
 1、缴费清单信息实体E-R图如图4-3所示
 
-![](/images/0000stringboot/0066springboot/blog.011.png)
+![](/images/0000wxapp//blog.011.png)
 
 图4-3 缴费清单实体E-R图
 
 2、预约挂号信息实体E-R图如图4-4所示
 
-![](/images/0000stringboot/0066springboot/blog.012.png)
+![](/images/0000wxapp//blog.012.png)
 
 图4-4  预约挂号信息实体E-R图
 
 3、医师信息实体E-R图如图4-5所示
 
-![](/images/0000stringboot/0066springboot/blog.013.png)
+![](/images/0000wxapp//blog.013.png)
 
 图4-5 医师信息实体E-R图
 
 4、管理员信息实体E-R图如图4-6所示
 
-![](/images/0000stringboot/0066springboot/blog.014.png)
+![](/images/0000wxapp//blog.014.png)
 
 图4-6 管理员信息实体E-R图
 
 5、用户信息实体E-R图如图4-7所示
 
-![](/images/0000stringboot/0066springboot/blog.015.png)
+![](/images/0000wxapp//blog.015.png)
 
 图4-7 用户信息实体E-R图
 
 5、门诊信息实体E-R图如图4-8所示
 
-![](/images/0000stringboot/0066springboot/blog.016.png)
+![](/images/0000wxapp//blog.016.png)
 
 图4-8 门诊信息实体E-R图
 ### 4.3.2数据库表设计
@@ -308,93 +307,93 @@ E-R图是一种描述显示数据类型间的关系的数据描述方法，E-R�
 ## 5.1 用户功能模块的实现
 用户进入本系统可查看系统信息，包括首页、门诊信息、药库信息以及系统公告信息等，系统前台主界面展示如图5-1所示。
 
-![](/images/0000stringboot/0066springboot/blog.017.png)
+![](/images/0000wxapp//blog.017.png)
 
 图5-1系统前台主界面图
 ### 5.1.1用户登录界面
 用户要想实现预约挂号功能，必须登录系统，在登录界面输入正确的登录账号和密码点击登录按钮进行登录，系统会对用户输入的登录信息进行验证，信息正确则登录成功，反之登录失败，用户登录界面展示如图5-2所示。
 
-![](/images/0000stringboot/0066springboot/blog.018.png)
+![](/images/0000wxapp//blog.018.png)
 
 图5-2 用户登录界面图
 ### 5.1.2用户注册界面
 没有账号的用户可进行注册操作，用户注册界面展示如图5-3所示。
 
-![](/images/0000stringboot/0066springboot/blog.019.png)
+![](/images/0000wxapp//blog.019.png)
 
 图5-3 用户注册界面图
 ### 5.1.3门诊信息详情界面
 用户可选择门诊查看详情信息，登录后可进行预约挂号操作，门诊信息详情界面展示如图5-4所示。
 
-![](/images/0000stringboot/0066springboot/blog.020.png)
+![](/images/0000wxapp//blog.020.png)
 
 图5-4 门诊信息详情界面图
 ### 5.1.4预约挂号界面
 用户在预约挂号时需要填写相关数据，预约挂号界面展示如图5-5所示。
 
-![](/images/0000stringboot/0066springboot/blog.021.png)
+![](/images/0000wxapp//blog.021.png)
 
 图5-5  预约挂号界面图
 ### 5.1.5药品详情界面
 用户可选择药品查看详情信息，登录后可进行取药操作，药品详情展示如图5-6所示。
 
-![](/images/0000stringboot/0066springboot/blog.022.png)
+![](/images/0000wxapp//blog.022.png)
 
 图5-6  药品详情界面图
 ### 5.1.6体检报告界面
 用户可查看个人体检报告信息，体检报告界面展示如图5-7所示。
 
-![](/images/0000stringboot/0066springboot/blog.023.png)
+![](/images/0000wxapp//blog.023.png)
 
 图5-7 体检报告界面图
 ## 5.2 管理员功能模块的实现
 ### 5.2.1管理员登录界面
 管理员要想进入系统后台对系统进行管理操作，必须登录系统后台，管理员登录界面展示如图5-8所示。
 
-![](/images/0000stringboot/0066springboot/blog.024.png)
+![](/images/0000wxapp//blog.024.png)
 
 图5-8 管理员登录界面图
 ### 5.2.2用户管理界面
 管理员可增删改查用户信息，用户管理界面展示如图5-9所示。
 
-![](/images/0000stringboot/0066springboot/blog.025.png)
+![](/images/0000wxapp//blog.025.png)
 
 图5-9 用户管理界面图
 ### 5.2.3医师管理界面
 管理员可查看医师信息，并可对其进行修改和删除操作，同时也可添加医师信息，医师管理界面展示如图5-10所示。
 
-![](/images/0000stringboot/0066springboot/blog.026.png)
+![](/images/0000wxapp//blog.026.png)
 
 图5-10 医师管理界面图
 ### 5.2.4科室类型管理界面
 管理员可增删改查科室类型信息，科室类型管理界面展示如图5-11所示。
 
-![](/images/0000stringboot/0066springboot/blog.027.png)
+![](/images/0000wxapp//blog.027.png)
 
 图5-11 科室类型管理界面图
 ### 5.2.5门诊信息管理界面
 管理员可查看所有门诊信息，并可对其进行修改和删除操作，也可添加门诊信息，门诊信息管理界面展示如图5-12所示。
 
-![](/images/0000stringboot/0066springboot/blog.028.png)
+![](/images/0000wxapp//blog.028.png)
 
 图5-12 门诊信息管理界面图
 ### 5.2.6药库信息管理界面
 管理员能够增删改查药库信息，药库信息管理界面展示如图5-13所示。
 
-![](/images/0000stringboot/0066springboot/blog.029.png)
+![](/images/0000wxapp//blog.029.png)
 
 图5-13  药库信息管理界面图
 ## 5.3 医师功能模块的实现
 ### 5.3.1预约挂号管理界面
 医师登录后可查看用户预约挂号信息，并可对其进审核和查看结果操作，预约挂号管理界面展示如图5-14所示。
 
-![](/images/0000stringboot/0066springboot/blog.030.png)
+![](/images/0000wxapp//blog.030.png)
 
 图5-14 预约挂号管理界面图
 ### 5.3.2体检报告管理界面
 医师可增删改查体检报告信息，并可进行添加药方信息，体检报告管理界面展示如图5-15所示。
 
-![](/images/0000stringboot/0066springboot/blog.031.png)
+![](/images/0000wxapp//blog.031.png)
 
 图5-15 体检报告管理界面图
 

@@ -1,17 +1,16 @@
 # 0292springboot学生用品采购系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0292springboot学生用品采购系统](https://github.com/GraduationProject-springboot/0292springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1EbH?p=58)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 绪论
 ## 1.1选题动因
@@ -61,19 +60,19 @@ java一直被人诟病的一点就是臃肿、麻烦。当我们还在辛苦的�
 
 在本系统的数据录入页面，对于操作者提供的每条数据都有相应的检验规则，比如数据信息不能有非法字符，或者本来应该是汉字的数据，不能用字母代替，还有对数据内容的长度等进行规范，这样的可以确保数据准确性的检验规则，在编码时，就提前编写好了。数据添加的流程见下图。如果数据已经保存进入数据库，则说明操作者提供的数据内容和格式都是符合要求的。
 
-![](/images/0200stringboot/0292springboot/blog.001.png)
+![](/images/0200wxapp//blog.001.png)
 
 图3.1 添加信息流程图
 
 很多时候，面对系统中的大量数据，难免会发现一些错误，因此需要及时纠正错误，本系统也提供数据后期的修改功能，其流程见下图。但是更新的数据也需要通过数据有效性检验。能够最终写入数据库则说明修改的数据是符合要求的。
 
-![](/images/0200stringboot/0292springboot/blog.002.png)
+![](/images/0200wxapp//blog.002.png)
 
 图3.2 修改信息流程图
 
 面对数据库里面大量数据，在系统的前台，要想快速获取需要的信息，就需要使用查询功能。其流程见下图。该功能需要操作者提前输入关键词，当系统的后台数据库保存了与关键词匹配的数据时，就会及时显示出来，整个过程耗时很短。
 
-![](/images/0200stringboot/0292springboot/blog.003.png)
+![](/images/0200wxapp//blog.003.png)
 
 图3.3 查询信息流程图
 ## 3.3系统性能分析
@@ -158,7 +157,7 @@ java一直被人诟病的一点就是臃肿、麻烦。当我们还在辛苦的�
 
 资讯类型管理
 
-![](/images/0200stringboot/0292springboot/blog.004.png)
+![](/images/0200wxapp//blog.004.png)
 
 图4.1 系统功能结构图
 
@@ -172,47 +171,47 @@ java一直被人诟病的一点就是臃肿、麻烦。当我们还在辛苦的�
 
 （1）下图是商品实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\xueshengyongpincaigou\商品.jpg](/images/0200stringboot/0292springboot/blog.005.jpeg "C:\Users\Administrator\Desktop\img\xueshengyongpincaigou\商品.jpg")
+![C:\Users\Administrator\Desktop\img\xueshengyongpincaigou\商品.jpg](/images/0200wxapp//blog.005.jpeg "C:\Users\Administrator\Desktop\img\xueshengyongpincaigou\商品.jpg")
 图4.1 商品实体属性图
 
 （2）下图是用户实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\xueshengyongpincaigou\用户.jpg](/images/0200stringboot/0292springboot/blog.006.jpeg "C:\Users\Administrator\Desktop\img\xueshengyongpincaigou\用户.jpg")
+![C:\Users\Administrator\Desktop\img\xueshengyongpincaigou\用户.jpg](/images/0200wxapp//blog.006.jpeg "C:\Users\Administrator\Desktop\img\xueshengyongpincaigou\用户.jpg")
 图4.2 用户实体属性图
 
 （3）下图是商品资讯实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\xueshengyongpincaigou\商品资讯.jpg](/images/0200stringboot/0292springboot/blog.007.jpeg "C:\Users\Administrator\Desktop\img\xueshengyongpincaigou\商品资讯.jpg")
+![C:\Users\Administrator\Desktop\img\xueshengyongpincaigou\商品资讯.jpg](/images/0200wxapp//blog.007.jpeg "C:\Users\Administrator\Desktop\img\xueshengyongpincaigou\商品资讯.jpg")
 图4.3 商品资讯实体属性图
 
 （4）下图是购物车实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\xueshengyongpincaigou\购物车.jpg](/images/0200stringboot/0292springboot/blog.008.jpeg "C:\Users\Administrator\Desktop\img\xueshengyongpincaigou\购物车.jpg")
+![C:\Users\Administrator\Desktop\img\xueshengyongpincaigou\购物车.jpg](/images/0200wxapp//blog.008.jpeg "C:\Users\Administrator\Desktop\img\xueshengyongpincaigou\购物车.jpg")
 图4.4 购物车实体属性图
 
 （5）下图是商品收藏实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\xueshengyongpincaigou\商品收藏.jpg](/images/0200stringboot/0292springboot/blog.009.jpeg "C:\Users\Administrator\Desktop\img\xueshengyongpincaigou\商品收藏.jpg")
+![C:\Users\Administrator\Desktop\img\xueshengyongpincaigou\商品收藏.jpg](/images/0200wxapp//blog.009.jpeg "C:\Users\Administrator\Desktop\img\xueshengyongpincaigou\商品收藏.jpg")
 图4.5 商品收藏实体属性图
 
 （6）下图是商品评价实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\xueshengyongpincaigou\商品评价.jpg](/images/0200stringboot/0292springboot/blog.010.jpeg "C:\Users\Administrator\Desktop\img\xueshengyongpincaigou\商品评价.jpg")
+![C:\Users\Administrator\Desktop\img\xueshengyongpincaigou\商品评价.jpg](/images/0200wxapp//blog.010.jpeg "C:\Users\Administrator\Desktop\img\xueshengyongpincaigou\商品评价.jpg")
 图4.6 商品评价实体属性图
 
 （7）下图是商品订单实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\xueshengyongpincaigou\商品订单.jpg](/images/0200stringboot/0292springboot/blog.011.jpeg "C:\Users\Administrator\Desktop\img\xueshengyongpincaigou\商品订单.jpg")
+![C:\Users\Administrator\Desktop\img\xueshengyongpincaigou\商品订单.jpg](/images/0200wxapp//blog.011.jpeg "C:\Users\Administrator\Desktop\img\xueshengyongpincaigou\商品订单.jpg")
 图4.7 商品订单实体属性图
 
 （8）下图是用户表实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\xueshengyongpincaigou\用户表.jpg](/images/0200stringboot/0292springboot/blog.012.jpeg "C:\Users\Administrator\Desktop\img\xueshengyongpincaigou\用户表.jpg")
+![C:\Users\Administrator\Desktop\img\xueshengyongpincaigou\用户表.jpg](/images/0200wxapp//blog.012.jpeg "C:\Users\Administrator\Desktop\img\xueshengyongpincaigou\用户表.jpg")
 图4.8 用户表实体属性图
 
 （9）下图是收货地址实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\xueshengyongpincaigou\收货地址.jpg](/images/0200stringboot/0292springboot/blog.013.jpeg "C:\Users\Administrator\Desktop\img\xueshengyongpincaigou\收货地址.jpg")
+![C:\Users\Administrator\Desktop\img\xueshengyongpincaigou\收货地址.jpg](/images/0200wxapp//blog.013.jpeg "C:\Users\Administrator\Desktop\img\xueshengyongpincaigou\收货地址.jpg")
 图4.9 收货地址实体属性图
 ### 4.3.2 数据库物理设计
 作为程序后台的支持，本数据库也需要设计数据存储的结构。而数据存储结构的设计就包括了数据表结构的设计和创建。数据表结构包括了字段，数据类型，还有字段的取值范围等信息。而E-R模型中的实体就是一张表，实体的特征就可以作为该表中的字段，根据本程序信息存储要求，设计每个字段需要的类型，还有该字段的取值范围等。每当设计完成一张数据表，就需要及时保存在数据库里面，并对该设计的数据表准确命名，要求设置的数据表的名称尽量不要是中文，而且要方便记忆。因为在程序编码阶段，通过SQL语句可以把程序里面的数据写入在各个数据表里面，而这个环节需要使用到数据表的名称。如果数据表名称是中文的话，可能会乱码并影响程序运行。下面就以表格形式展示设计的结果。
@@ -350,13 +349,13 @@ java一直被人诟病的一点就是臃肿、麻烦。当我们还在辛苦的�
 
 还进行了对用户名称的模糊查询的条件
 
-![](/images/0200stringboot/0292springboot/blog.014.png)
+![](/images/0200wxapp//blog.014.png)
 
 图5.1 用户信息管理页面
 ### 5.2 商品信息管理
 如图5.2显示的就是商品信息管理页面，此页面提供给管理员的功能有：查看已发布的商品信息数据，修改商品信息，商品信息作废，即可删除，还进行了对商品信息名称的模糊查询 商品信息信息的类型查询等等一些条件。
 
-![](/images/0200stringboot/0292springboot/blog.015.png)
+![](/images/0200wxapp//blog.015.png)
 
 
 
@@ -364,14 +363,14 @@ java一直被人诟病的一点就是臃肿、麻烦。当我们还在辛苦的�
 ### 5.3资讯类型管理
 如图5.3显示的就是资讯类型管理页面，此页面提供给管理员的功能有：根据资讯类型进行条件查询，还可以对资讯类型行新增、修改、查询操作等等。
 
-![](/images/0200stringboot/0292springboot/blog.016.png)
+![](/images/0200wxapp//blog.016.png)
 
 
 图5.3 资讯类型管理页面
 ### 5.1商品资讯管理
 如图5.4显示的就是商品资讯管理页面，此页面提供给管理员的功能有：根据商品资讯进行新增、修改、查询操作等等。
 
-![](/images/0200stringboot/0292springboot/blog.017.png)
+![](/images/0200wxapp//blog.017.png)
 
 
 图5.4 商品资讯管理页面

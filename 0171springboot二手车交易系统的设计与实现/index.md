@@ -1,17 +1,16 @@
 # 0171springboot二手车交易系统的设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0171springboot二手车交易系统的设计与实现](https://github.com/GraduationProject-springboot/0171springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1ECs?p=69)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 绪论
 ## 1.1 课题背景
@@ -64,25 +63,25 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 3.2.1 操作流程
 使用者在操作二手车交易系统中，应该按照本系统提供的操作流程（图3.1即为本系统的操作流程图）进行操作，可以减少操作失误，从而节省进入二手车交易系统的时间。
 
-![](/images/0100stringboot/0171springboot/blog.001.png)
+![](/images/0100wxapp//blog.001.png)
 
 图3.1 系统操作流程
 ### 3.2.2 登录流程
 二手车交易系统通过登录功能（图3.2即为其登录的流程）引导使用者进入指定的功能操作区，也避免非本系统的用户享受本系统提供的服务以及查看本系统提供的信息，进而保证用户安全。
 
-![](/images/0100stringboot/0171springboot/blog.002.png)
+![](/images/0100wxapp//blog.002.png)
 
 图3.2 登录流程
 ### 3.2.3 删除信息流程
 二手车交易系统在经过长期使用后，会产生很多的数据信息。为了腾出存储空间存放更多的数据，本系统数据库中存储的数据，一些没有参考价值的数据需要进行删除（图3.3即为删除信息的流程），删除数据过程中，为避免误删，使用者要根据系统的提示来决定是否删除数据。
 
-![](/images/0100stringboot/0171springboot/blog.003.png)
+![](/images/0100wxapp//blog.003.png)
 
 图3.3 删除信息流程
 ### 3.2.4 添加信息流程
 二手车交易系统提供可视化的功能操作区，非常方便使用者进行数据操作，当使用者往系统中录入数据时（图3.4即为添加信息的流程），本系统也会进行数据合法性的判断，符合要求的数据才能够在数据库指定表中进行登记。
 
-![](/images/0100stringboot/0171springboot/blog.004.png)
+![](/images/0100wxapp//blog.004.png)
 
 图3.4 添加信息流程
 ## 3.3 性能需求
@@ -108,19 +107,19 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 图3.5即为管理员用例图，管理员权限操作的功能包括增删改查商家，用户，公告，管理论坛信息，管理汽车和汽车留言以及汽车收藏信息等。
 
-![](/images/0100stringboot/0171springboot/blog.005.png)
+![](/images/0100wxapp//blog.005.png)
 
 图3.5 管理员用例图
 
 图3.6即为商家用例图，商家权限操作的功能包括新增汽车，上架汽车，下架汽车，回复汽车留言，管理汽车收藏，管理论坛信息。
 
-![](/images/0100stringboot/0171springboot/blog.006.png)
+![](/images/0100wxapp//blog.006.png)
 
 图3.6 商家用例图
 
 图3.7即为用户用例图，用户权限操作的功能包括收藏汽车，发布关于汽车的留言，查看汽车的介绍信息，通过论坛进行信息讨论与交流，查看公告等。
 
-![](/images/0100stringboot/0171springboot/blog.007.png)
+![](/images/0100wxapp//blog.007.png)
 
 图3.7 用户用例图
 # 第4章 系统设计
@@ -140,19 +139,19 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ## 4.2 功能结构设计
 图4.1即为设计的管理员功能结构，管理员权限操作的功能包括增删改查商家，用户，公告，管理论坛信息，管理汽车和汽车留言以及汽车收藏信息等。
 
-![](/images/0100stringboot/0171springboot/blog.008.png)
+![](/images/0100wxapp//blog.008.png)
 
 图4.1 管理员功能结构
 
 图4.2即为设计的商家功能结构，商家权限操作的功能包括新增汽车，上架汽车，下架汽车，回复汽车留言，管理汽车收藏，管理论坛信息。
 
-![](/images/0100stringboot/0171springboot/blog.009.png)
+![](/images/0100wxapp//blog.009.png)
 
 图4.2 商家功能结构
 
 图4.3即为设计的用户功能结构，用户权限操作的功能包括收藏汽车，发布关于汽车的留言，查看汽车的介绍信息，通过论坛进行信息讨论与交流，查看公告等。
 
-![](/images/0100stringboot/0171springboot/blog.010.png)
+![](/images/0100wxapp//blog.010.png)
 
 图4.3 用户功能结构
 ## 4.3 数据库设计
@@ -162,31 +161,31 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 （1）图4.4即为汽车留言这个实体所拥有的属性值。
 
-![](/images/0100stringboot/0171springboot/blog.011.png)
+![](/images/0100wxapp//blog.011.png)
 
 图4.4 汽车留言实体属性图
 
 （2）图4.5即为汽车这个实体所拥有的属性值。
 
-![](/images/0100stringboot/0171springboot/blog.012.png)
+![](/images/0100wxapp//blog.012.png)
 
 图4.5 汽车实体属性图
 
 （3）图4.6即为商家这个实体所拥有的属性值。
 
-![](/images/0100stringboot/0171springboot/blog.013.png)
+![](/images/0100wxapp//blog.013.png)
 
 图4.6 商家实体属性图
 
 4. 图4.7即为用户这个实体所拥有的属性值。
 
-![](/images/0100stringboot/0171springboot/blog.014.png)
+![](/images/0100wxapp//blog.014.png)
 
 图4.7 用户实体属性图
 
 4. 图4.8即为上面介绍的实体中存在的联系。
 
-![](/images/0100stringboot/0171springboot/blog.015.png)
+![](/images/0100wxapp//blog.015.png)
 
 图4.8 实体间关系E-R图
 ### 4.3.2 数据库物理设计
@@ -304,57 +303,57 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 5.1.1 商家管理
 图5.1 即为编码实现的商家管理界面，商家信息包括联系方式，邮箱，商家名称等信息。管理可以使用修改功能对登记有误的商家信息进行修改，可以删除需要删除的商家信息等。
 
-![](/images/0100stringboot/0171springboot/blog.017.png)
+![](/images/0100wxapp//blog.017.png)
 
 图5.1 商家管理界面
 ### 5.1.2 公告信息管理
 图5.2 即为编码实现的公告信息管理界面，公告信息包括公告内容，图片等信息。管理可以使用修改功能对登记有误的公告信息进行修改，可以删除需要删除的公告信息等。
 
-![](/images/0100stringboot/0171springboot/blog.018.png)
+![](/images/0100wxapp//blog.018.png)
 
 图5.2 公告信息管理界面
 ### 5.1.3 论坛管理
 图5.3 即为编码实现的论坛管理界面，论坛信息包括帖子标题，内容，发帖时间等信息，管理员可以删除需要删除的帖子信息，可以查看帖子的回复信息，可以修改帖子等。
 
-![](/images/0100stringboot/0171springboot/blog.019.png)
+![](/images/0100wxapp//blog.019.png)
 
 图5.3 论坛管理界面
 ## 5.2 商家功能实现
 ### 5.2.1 汽车管理
 图5.4 即为编码实现的汽车管理界面，汽车信息包括价格，汽车照片等信息，商家可以新增汽车信息，可以下架汽车，上架汽车以及删除需要删除的汽车信息等。
 
-![](/images/0100stringboot/0171springboot/blog.020.png)
+![](/images/0100wxapp//blog.020.png)
 
 图5.4 汽车管理界面
 ### 5.2.2 汽车留言管理
 图5.5 即为编码实现的汽车留言管理界面，汽车留言内容是用户发布的信息，而汽车的回复内容是商家的回复信息。
 
-![](/images/0100stringboot/0171springboot/blog.021.png)
+![](/images/0100wxapp//blog.021.png)
 
 图5.5 汽车留言管理界面
 ### 5.2.3 论坛管理
 图5.6 即为编码实现的论坛管理界面，商家也能通过论坛管理功能新增帖子，跟踪发布的帖子，比如随时查看帖子的评论，以及查看帖子的详情等。
 
-![](/images/0100stringboot/0171springboot/blog.022.png)
+![](/images/0100wxapp//blog.022.png)
 
 图5.6 论坛管理界面
 ## 5.3 用户功能实现
 ### 5.3.1 汽车信息
 图5.7 即为编码实现的汽车信息界面，用户查看汽车信息界面右侧区域展示的系统推荐的汽车信息，用户可以通过汽车介绍的查看来了解汽车，用户可以对汽车点赞或踩，也能在汽车信息界面下方的留言区域发布汽车的留言。
 
-![](/images/0100stringboot/0171springboot/blog.023.png)
+![](/images/0100wxapp//blog.023.png)
 
 图5.7 汽车信息界面
 ### 5.3.2 在线论坛
 图5.8 即为编码实现的在线论坛界面，用户通过在线论坛发布帖子，查看所有的帖子内容，以及用户把自己查看帖子的个人看法通过评论帖子的功能进行发布。
 
-![](/images/0100stringboot/0171springboot/blog.024.png)
+![](/images/0100wxapp//blog.024.png)
 
 图5.8 在线论坛界面
 ### 5.3.3 公告信息
 图5.9 即为编码实现的公告信息界面，用户在查询框中编辑公告标题即可实现对公告信息的查询，用户可以查看公告信息界面展示的任意一条公告信息。
 
-![](/images/0100stringboot/0171springboot/blog.025.png)
+![](/images/0100wxapp//blog.025.png)
 
 图5.9 公告信息界面
 # 

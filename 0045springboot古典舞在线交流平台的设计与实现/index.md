@@ -1,17 +1,16 @@
 # 0045springboot古典舞在线交流平台的设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0045springboot古典舞在线交流平台的设计与实现](https://github.com/GraduationProject-springboot/0045springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV16ia6epENY?p=46)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第一章 绪论
 ## 1.1研究背景
@@ -97,19 +96,19 @@ Spring Boot是一个简化程序设置的拥有开箱即用的框架，它主要
 ### 3.3.1注册流程
 未有账号的用户可进行注册操作，用户注册流程图如图3.1所示。
 
-![](/images/0000stringboot/0045springboot/blog.001.png)
+![](/images/0000wxapp//blog.001.png)
 
 图3.1注册流程图
 ### 3.3.2登录流程
 登录模块主要满足了管理员和用户的权限登录，用户登录流程图如图3.2所示。
 
-![](/images/0000stringboot/0045springboot/blog.002.png)
+![](/images/0000wxapp//blog.002.png)
 
 图3.2 登录流程图
 ### 3.4.3发帖流程
 用户发帖前提必须是登录后才能进行，发帖内容不能为空，且合法才能进行提交发表成功。详见图3.3所示。
 
-![](/images/0000stringboot/0045springboot/blog.003.png)
+![](/images/0000wxapp//blog.003.png)
 
 图3.3 发帖流程图
 ## 3.4系统功能分析
@@ -117,13 +116,13 @@ Spring Boot是一个简化程序设置的拥有开箱即用的框架，它主要
 ### 3.4.1用户功能分析
 用户在系统前台可查看系统信息，包括首页、服务、课程、视频、论坛交流、舞蹈资讯等，用户要想实现发帖、服饰购买等操作，必须登录系统，没有账号的用户可进行注册操作，注册登录后主要功能模块包括个人中心、我的订单、我的地址、服饰管理、课程管理、视频管理、论坛交流管理以及我的收藏管理。用户用例图如图3.4所示。
 
-![](/images/0000stringboot/0045springboot/blog.004.png)
+![](/images/0000wxapp//blog.004.png)
 
 图3.4 用户用例图
 ### 3.4.2管理员功能分析
 管理员可登录系统后台对系统进行全面管理操作，管理员主要功能模块包括个人中心、会员用户管理、服饰管理、课程管理、视频管理、论坛交流管理、服务类型管理、视频分类管理、课程类型管理、系统管理以及订单管理。 管理员用例图如图3.5所示。
 
-![](/images/0000stringboot/0045springboot/blog.005.png)
+![](/images/0000wxapp//blog.005.png)
 
 图3.5 管理员用例图
 
@@ -131,13 +130,13 @@ Spring Boot是一个简化程序设置的拥有开箱即用的框架，它主要
 ## 4.1系统概要设计
 本古典舞在线交流平台采用B/S结构来开发，这种结构是在互联网兴起后出现的，是一个适用于互联网环境下的模型结构，用户只要能上网通过浏览器就可以在任何时间、任何地点的使用。系统工作原理图如图4-1所示：
 
-![](/images/0000stringboot/0045springboot/blog.006.png)
+![](/images/0000wxapp//blog.006.png)
 
 图4.1 系统工作原理图
 ## 4.2 系统结构设计
 系统整体设计是一个将一个庞大的任务细分为多个小的任务的过程，这些小的任务分段完成后，组合在一起形成一个完整的任务。本古典舞在线交流平台主要包括用户功能模块和管理员功能模块，系统功能模块图如图4.2所示。
 
-![](/images/0000stringboot/0045springboot/blog.007.png)
+![](/images/0000wxapp//blog.007.png)
 
 图4.2 系统功能模块图
 ## 4.3 数据库设计
@@ -152,31 +151,31 @@ E-R图是一种描述显示数据类型间的关系的数据描述方法，E-R�
 
 （1）论坛交流信息实体E-R图如图4.3所示：
 
-![](/images/0000stringboot/0045springboot/blog.008.png)
+![](/images/0000wxapp//blog.008.png)
 
 图4.3  论坛交流信息实体属性图
 
 （2）管理员信息实体E-R图如图4.4所示：
 
-![](/images/0000stringboot/0045springboot/blog.009.png)
+![](/images/0000wxapp//blog.009.png)
 
 图4.4  管理员信息实体属性图
 
 （3）订单信息实体E-R图如图4.5所示：
 
-![](/images/0000stringboot/0045springboot/blog.010.png)
+![](/images/0000wxapp//blog.010.png)
 
 图4.5 订单信息实体属性图
 
 （4）服饰信息实体E-R图如图4.6所示：
 
-![](/images/0000stringboot/0045springboot/blog.011.png)
+![](/images/0000wxapp//blog.011.png)
 
 图4.6  服饰信息实体属性图
 
 （5）用户信息实体E-R图如图4.7所示：
 
-![](/images/0000stringboot/0045springboot/blog.012.png)
+![](/images/0000wxapp//blog.012.png)
 
 图4.7用户信息实体属性图
 ### 4.3.2数据库表设计
@@ -266,62 +265,62 @@ E-R图是一种描述显示数据类型间的关系的数据描述方法，E-R�
 ### 5.1.1系统主界面
 用户进入本系统可查看系统信息，主要包括首页，服饰，课程，视频以及论坛交流等，系统主界面展示如图5.1所示。
 
-![](/images/0000stringboot/0045springboot/blog.013.png)
+![](/images/0000wxapp//blog.013.png)
 
 图5.1系统主界面
 ### 5.1.2用户注册界面
 没有账号的用户可进入注册界面进行注册操作，用户注册界面展示如图5.2所示。
 
-![](/images/0000stringboot/0045springboot/blog.014.png)
+![](/images/0000wxapp//blog.014.png)
 
 图5.2  用户注册界面
 ### 5.1.3论坛交流界面
 用户在论坛交流界面可查看已有交流信息，并可选择查看详情，论坛交流界面展示如图5.3所示。
 
-![](/images/0000stringboot/0045springboot/blog.015.png)
+![](/images/0000wxapp//blog.015.png)
 
 图5.3 论坛交流界面
 ### 5.1.4课程详情界面
 用户可选择课程查看详情信息，登录后可进行加入购物车或者购买操作，课程详情界面展示如图5.4所示。
 
-![](/images/0000stringboot/0045springboot/blog.016.png)
+![](/images/0000wxapp//blog.016.png)
 
 图5.4  课程详情界面
 ### 5.1.5购物车界面
 用户在购物车界面可查看购物车商品，并可修改数量、删除或者提交订单等，购物车界面展示如图5.5所示。
 
-![](/images/0000stringboot/0045springboot/blog.017.png)
+![](/images/0000wxapp//blog.017.png)
 
 图5.5 购物车界面
 ### 5.1.6我的订单界面
 用户可查看个人订单信息，我的订单界面展示如图5.6所示。
 
-![](/images/0000stringboot/0045springboot/blog.018.png)
+![](/images/0000wxapp//blog.018.png)
 
 图5.6 我的订单界面
 ## 5.2 管理员功能模块的实现
 ### 5.2.1管理员登录界面
 管理员要想进入系统后台对系统进行管理操作，必须登录系统后台，管理员登录界面展示如图5.7所示。
 
-![](/images/0000stringboot/0045springboot/blog.019.png)
+![](/images/0000wxapp//blog.019.png)
 
 图5.7  管理员登录界面
 ### 5.2.2会员用户管理界面
 管理员可增删改查会员用户信息，会员用户管理界面展示如图5.8所示。
 
-![](/images/0000stringboot/0045springboot/blog.020.png)
+![](/images/0000wxapp//blog.020.png)
 
 图5.8  会员用户管理界面
 ### 5.2.3服饰管理界面
 管理员可增删改查服饰信息，服饰管理界面展示如图5.9所示。
 
-![](/images/0000stringboot/0045springboot/blog.021.png)
+![](/images/0000wxapp//blog.021.png)
 
 图5.9 服饰管理界面
 ### 5.2.4课程管理界面
 管理员可增删改查课程信息，课程管理界面展示如图5.10所示。
 
-![](/images/0000stringboot/0045springboot/blog.022.png)
+![](/images/0000wxapp//blog.022.png)
 
 图5.10  课程管理界面
 # 

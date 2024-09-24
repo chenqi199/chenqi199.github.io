@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>通知通告 - 标签 - chenqi blog</title>
+        <link>https://chenqi199.github.io/tags/%E9%80%9A%E7%9F%A5%E9%80%9A%E5%91%8A/</link>
+        <description>通知通告 - 标签 - chenqi blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>chen_q_i@163.com (chenqi)</managingEditor>
+            <webMaster>chen_q_i@163.com (chenqi)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 24 Mar 2024 10:32:55 &#43;0800</lastBuildDate><atom:link href="https://chenqi199.github.io/tags/%E9%80%9A%E7%9F%A5%E9%80%9A%E5%91%8A/" rel="self" type="application/rss+xml" /><item>
+    <title>ssm446基于BS的社区疫情通知通告系统的设计与实现&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm446%E5%9F%BA%E4%BA%8Ebs%E7%9A%84%E7%A4%BE%E5%8C%BA%E7%96%AB%E6%83%85%E9%80%9A%E7%9F%A5%E9%80%9A%E5%91%8A%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/</link>
+    <pubDate>Sun, 24 Mar 2024 10:32:55 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm446%E5%9F%BA%E4%BA%8Ebs%E7%9A%84%E7%A4%BE%E5%8C%BA%E7%96%AB%E6%83%85%E9%80%9A%E7%9F%A5%E9%80%9A%E5%91%8A%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm446基于BS的社区疫情通知通告系统的设计与实现+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 课题背景及]]></description>
+</item>
+</channel>
+</rss>

@@ -1,17 +1,16 @@
 # 0288springboot房地产销售管理系统的设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0288springboot房地产销售管理系统的设计与实现](https://github.com/GraduationProject-springboot/0288springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1EbH?p=54)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 研究背景与现状
 时代的进步使人们的生活实现了部分自动化，由最初的全手动办公已转向手动+自动相结合的方式。比如各种办公系统、智能电子电器的出现，都为人们生活的享受提供帮助。采用新型的自动化方式可以减少手动的办公时间，增加正确率从而增加人们的幸福指数。时代进步中计算机技术的发展尤为突出，渗透进生活的方方面面，各种App、	网站、管理系统、小程序迅速占领市场。
@@ -76,25 +75,25 @@ Vue技术是新一代的用来创建动态页面的技术。Vue技术通过服�
 ## 2.5系统功能分析
 系统的功能分析决定了系统的功能设计，完整详细的系统功能分析可以使系统的开发事半功倍。本系统的功能围绕客户、销售经理、管理员三种权限设计。根据不同权限的不同需求设计出更符合用户要求的功能。本系统中销售经理主要负责发布分享新的房产，审核用户的预约信息和进行房产购置处理等，客户可以对需要的房产进行预约、购置等。管理员负责网站里所有信息的审核管理。本基于JAVA的房地产销售管理系统管理员的用例图如下图2-1所示：
 
-![](/images/0200stringboot/0288springboot/blog.001.png)
+![](/images/0200wxapp//blog.001.png)
 
 图2-1管理员用例图
 
 客户可以管理个人资料、查询房产、在线预约和购置、打分等，客户的个人资料是由用户注册时产生，客户的预约内容由客户在预约看房时产生，客户打分内容由客户发布分数操作时产生。客户用例图如下图2-2所示：
 
-![](/images/0200stringboot/0288springboot/blog.002.png)
+![](/images/0200wxapp//blog.002.png)
 
 图2-2客户用例图
 
 销售经理可以审核预约看房、管理房产信息、论坛管理、购置房产管理以及客户打分管理、公告信息管理等。销售经理用例图如下图2-3所示：
 
-![](/images/0200stringboot/0288springboot/blog.003.png)
+![](/images/0200wxapp//blog.003.png)
 
 图2-3销售经理用例图
 ## 2.6系统操作流程分析
 `　　`信息从如何产生到反馈结果的过程可以称为信息的流程。分析好系统的操作流程才可以使系统正确运行不会出现Bug。本系统的流程为管理员先进行登录，登录后管理注册用户的账号、密码等信息，更新房产，管理用户的预约和购置等，客户可以查询房产、预约看房、购置房产等。销售经理可以审核用户的预约看房，管理客户的购置房产等。系统里展示的房产数据都是由管理员、销售经理负责。本基于JAVA的房地产销售管理系统的操作流程如下图2-5所示：
 
-![](/images/0200stringboot/0288springboot/blog.004.png) 　　　　　　　　　　　　　图2-5基于JAVA的房地产销售管理系统操作流程图
+![](/images/0200wxapp//blog.004.png) 　　　　　　　　　　　　　图2-5基于JAVA的房地产销售管理系统操作流程图
 
 
 
@@ -107,7 +106,7 @@ Vue技术是新一代的用来创建动态页面的技术。Vue技术通过服�
 ## 3.1系统功能结构设计
 系统的功能结构是采用树形图来绘制功能设计。根据分析所得，本系统的功能设计为管理员、客户、销售经理三部分。管理员为房产管理、预约看房管理、论坛管理、购置房产管理、客户打分管理、公告信息管理、客户管理、销售经理管理等，客户的功能为查询房产，在线预约、购置房产、管理个人信息、打分信息等。客户可以注册进行登录。销售经理为审核客户的预约、管理购置房产信息、客户打分信息等。本基于JAVA的房地产销售管理系统的功能结构设计图如下图3-1所示：  
 
-![](/images/0200stringboot/0288springboot/blog.005.png)
+![](/images/0200wxapp//blog.005.png)
 
 图3-1基于JAVA的房地产销售管理系统功能结构图
 ## 3.2数据库设计
@@ -121,25 +120,25 @@ Vue技术是新一代的用来创建动态页面的技术。Vue技术通过服�
 
 1. 管理员的ER图中的属性有账号、密码、权限。管理员ER图如下图3-2所示：
 
-![](/images/0200stringboot/0288springboot/blog.006.png)
+![](/images/0200wxapp//blog.006.png)
 
 图3-2管理员ER图
 
 1. 客户的ER图里的属性有性别、姓名、编号等，客户的ER图如下图3-3所示：
 
-![](/images/0200stringboot/0288springboot/blog.007.png)
+![](/images/0200wxapp//blog.007.png)
 
 图3-3客户ER图
 
 1. 房产的ER图里的属性有房产编号、面积、户型图、价格等，房产的ER图如下图3-4所示：
 
-![](/images/0200stringboot/0288springboot/blog.008.png)
+![](/images/0200wxapp//blog.008.png)
 
 图3-4房产ER图
 
 (4)预约的ER图里的属性有预约人、编号、预约时间、房产等，预约ER图如下图3-5所示：
 
-![](/images/0200stringboot/0288springboot/blog.009.png)
+![](/images/0200wxapp//blog.009.png)
 
 图3-5预约ER图
 ### 3.2.2数据库表设计
@@ -151,13 +150,13 @@ Vue技术是新一代的用来创建动态页面的技术。Vue技术通过服�
 
 表3-1 config
 
-![](/images/0200stringboot/0288springboot/blog.010.png)
+![](/images/0200wxapp//blog.010.png)
 
 ||
 | :- |
 表3-2 dictionary
 
-![](/images/0200stringboot/0288springboot/blog.011.png)
+![](/images/0200wxapp//blog.011.png)
 
 
 
@@ -166,64 +165,64 @@ Vue技术是新一代的用来创建动态页面的技术。Vue技术通过服�
 
 表3-3 fangchan
 
-![](/images/0200stringboot/0288springboot/blog.012.png)
+![](/images/0200wxapp//blog.012.png)
 
 ||
 | :- |
 表3-4 fangchan\_collection
 
-![](/images/0200stringboot/0288springboot/blog.013.png)
+![](/images/0200wxapp//blog.013.png)
 
 ||
 | :- |
 表3-5 fangchan\_yuyue
 
-![](/images/0200stringboot/0288springboot/blog.014.png)
+![](/images/0200wxapp//blog.014.png)
 
 ||
 | :- |
 表3-6 forum
 
-![](/images/0200stringboot/0288springboot/blog.015.png)
+![](/images/0200wxapp//blog.015.png)
 
 ||
 | :- |
 表3-7 gouzhifangcan
 
-![](/images/0200stringboot/0288springboot/blog.016.png)
+![](/images/0200wxapp//blog.016.png)
 
 ||
 | :- |
 表3-8 kehudafen
 
-![](/images/0200stringboot/0288springboot/blog.017.png)
+![](/images/0200wxapp//blog.017.png)
 
 表3-9 news
 
-![](/images/0200stringboot/0288springboot/blog.018.png)
+![](/images/0200wxapp//blog.018.png)
 
 表3-10 token
 
-![](/images/0200stringboot/0288springboot/blog.019.png)
+![](/images/0200wxapp//blog.019.png)
 
 ||
 | :- |
 表3-11 users
 
-![](/images/0200stringboot/0288springboot/blog.020.png)
+![](/images/0200wxapp//blog.020.png)
 
 ||
 | :- |
 表3-12 yonghu
 
-![](/images/0200stringboot/0288springboot/blog.021.png)
+![](/images/0200wxapp//blog.021.png)
 
 ||
 | :- |
 
 表3-13 yuangong
 
-![](/images/0200stringboot/0288springboot/blog.022.png)
+![](/images/0200wxapp//blog.022.png)
 
 ||
 | :- |
@@ -249,105 +248,105 @@ Vue技术是新一代的用来创建动态页面的技术。Vue技术通过服�
 ## 4.1用户登录功能的详细实现
 用户登录界面起到验证身份的作用，本界面采用风景图片背景进行设计。在用户登录界面里设置了程序的名称和用户、密码、客户注册的文本框。在文本框下是登录按钮。用户在信息输入完成后可以使用登录按钮进行相对应的操作，还加入了登录安全的简单文字提醒。用户登录功能的实现界面如下图4-1所示：
 
-![](/images/0200stringboot/0288springboot/blog.023.png)
+![](/images/0200wxapp//blog.023.png)
 
 图4-1用户登录实现界面
 ## 4.2管理员权限的功能实现
 ### 4.2.1客户信息管理功能的详细实现
 管理员负责客户信息的录入和管理，客户的地址、联系方式等都可以由管理员在此功能里看到。管理员查询客户信息的功能实现如下图4-2所示：
 
-![](/images/0200stringboot/0288springboot/blog.024.png)
+![](/images/0200wxapp//blog.024.png)
 
 图4-2管理员查询客户信息的实现界面
 ### 4.2.2房产管理功能的详细实现
 管理员可以对房产的信息进行管理、审核。本功能可以实现房产的定时更新和审核管理。管理员查询房产信息的实现界面如下图4-3所示：
 
-![](/images/0200stringboot/0288springboot/blog.025.png)
+![](/images/0200wxapp//blog.025.png)
 
 图4-3管理员查询房产信息的实现界面
 ### 4.2.3预约看房功能的详细实现
 `    `本功能包括查询已有的所有预约看房信息和删除预约看房信息。预约看房查询功能的实现详情如下图4-4所示：
 
-![](/images/0200stringboot/0288springboot/blog.026.png)
+![](/images/0200wxapp//blog.026.png)
 
 图4-4预约看房查询功能的实现界面
 ### 4.2.4论坛管理功能的详细实现
 管理员可以查询论坛和审核管理客户发布的帖子。论坛管理功能的实现界面如下图4-5所示：
 
-![](/images/0200stringboot/0288springboot/blog.027.png)
+![](/images/0200wxapp//blog.027.png)
 
 图4-5论坛管理功能的实现界面
 ### 4.2.5购置房产管理功能的详细实现
 管理员可以管理客户的购置房产信息，也可以查询和删除购置房产内容。购置房产管理功能的实现界面如下图4-6所示：
 
-![](/images/0200stringboot/0288springboot/blog.028.png)
+![](/images/0200wxapp//blog.028.png)
 
 图4-6购置房产管理功能的实现界面
 ### 4.2.6个人中心管理功能的详细实现
 管理员可以对个人的资料进行修改和管理，管理员还可以在本功能里修改密码。管理员查询个人资料的实现界面如下图4-7所示：
 
-![](/images/0200stringboot/0288springboot/blog.029.png)
+![](/images/0200wxapp//blog.029.png)
 
 图4-7个人中心管理功能的实现界面
 ### 4.2.7客户打分管理功能的实现界面
 管理员可以查询客户的打分详情，并进行查询等操作。客户打分管理功能的实现界面如下图4-8所示：
 
-![](/images/0200stringboot/0288springboot/blog.030.png)
+![](/images/0200wxapp//blog.030.png)
 
 图4-8客户打分管理功能的实现界面
 ### 4.2.8基础数据管理功能的实现界面
 管理员可以管理房产户型和公告类型。实现界面如下图4-9所示：
 
-![](/images/0200stringboot/0288springboot/blog.031.png)
+![](/images/0200wxapp//blog.031.png)
 
 图4-9基础数据管理功能的实现界面
 ### 4.2.9轮播图管理功能的实现界面
 可以设置轮播图。实现界面如下图4-10所示：
 
-![](/images/0200stringboot/0288springboot/blog.032.png)
+![](/images/0200wxapp//blog.032.png)
 
 图4-10轮播图管理功能的实现界面
 ## 4.3客户权限的功能详细实现
 ### 4.3.1个人中心管理功能的详细界面实现
 当客户登录进系统后可以修改自己的资料，可以使自己信息的保持正确性。客户修改个人资料的实现界面如下图4-11所示：
 
-![](/images/0200stringboot/0288springboot/blog.033.png)
+![](/images/0200wxapp//blog.033.png)
 
 图4-11修改个人资料功能的运行界面
 ### 4.3.2房产查询功能的详细实现
 用户可以根据房产名称搜索相对应的房产，用户查询房产的界面实现如下图4-12所示：
 
-![](/images/0200stringboot/0288springboot/blog.034.png)
+![](/images/0200wxapp//blog.034.png)
 
 图4-12房产查询功能的运行界面
 ### 4.3.3预约看房功能的详细实现
 在本功能里客户可以查看自己预约的所有房产信息。预约看房功能的实现界面如下图4-13所示：
 
-![](/images/0200stringboot/0288springboot/blog.035.png)
+![](/images/0200wxapp//blog.035.png)
 
 图4-13预约看房功能的运行界面
 ### 4.3.4论坛管理功能的详细实现
 客户可以发布帖子和查看帖子的回复信息。论坛管理功能的实现界面如下图4-14所示：
 
-![](/images/0200stringboot/0288springboot/blog.036.png)
+![](/images/0200wxapp//blog.036.png)
 
 图4-14论坛管理功能的实现界面
 ### 4.3.5购置房产管理功能的详细实现
 客户可以在线购置房产，也可以查询自己的详细购置内容。购置房产管理功能的实现界面如下图4-15所示：
 
-![](/images/0200stringboot/0288springboot/blog.037.png)
+![](/images/0200wxapp//blog.037.png)
 
 图4-15购置房产管理功能的实现界面
 ### 4.3.6客户打分功能的详细实现
 完成销售后，客户可以进行打分。客户打分的实现界面如下图4-16所示：
 
-![](/images/0200stringboot/0288springboot/blog.038.png)
+![](/images/0200wxapp//blog.038.png)
 
 图4-16客户打分功能的运行界面
 ## 4.4销售经理权限功能的实现
 `　　`销售经理的功能和管理员的类似，功能包括房产信息管理、预约看房管理、论坛管理、公告管理、购置房产管理、客户打分管理。销售经理权限的功能实现界面如下图4-17所示：
 
-![](/images/0200stringboot/0288springboot/blog.039.png)
+![](/images/0200wxapp//blog.039.png)
 
 图4.17销售经理权限功能的实现界面
 

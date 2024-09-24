@@ -1,17 +1,16 @@
 # 0321springboot疫情期间高校人员管理
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0321springboot疫情期间高校人员管理](https://github.com/GraduationProject-springboot/0321springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)]()
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
 ## 1.1 选题背景
@@ -75,13 +74,13 @@ Vue框架的开发者是一个中国人，区别于其他框架的最核心的�
 ## 3.3 系统流程分析
 系统设计不是胡乱的设计，必须符合软件设计思想，具体的流程参考下图。系统设计的前期就是做各种分析，功能的设计，数据库的设计等，等一切都设计好了，逻辑上没有问题，符合设计流程和设计规范，才可以继续编码环节，编码只是实现设计的一个环节而已。
 
-![](/images/0300stringboot/0321springboot/blog.005.png)
+![](/images/0300wxapp//blog.005.png)
 
 图3.1系统开发流程图
 
 当需要用户登录的时候，肯定是要验证的，只有验证通过的用户才可以进行下一步操作，用户登录成功代表着用户模块的功能对登录用户进行了开放。流程就是如下面的图所示。
 
-![](/images/0300stringboot/0321springboot/blog.006.png)
+![](/images/0300wxapp//blog.006.png)
 
 图3.3 登录流程图
 ## 3.4 系统功能分析
@@ -91,25 +90,25 @@ Vue框架的开发者是一个中国人，区别于其他框架的最核心的�
 
 管理员对于疫情期间高校人员管理系统操作的功能包括操作人员管理，教师和学生的返校申请管理，教师和学生的居家，请假，打卡等信息的管理。其用例图如图3.4所示：
 
-![](/images/0300stringboot/0321springboot/blog.007.png)
+![](/images/0300wxapp//blog.007.png)
 
 图3.4 管理员用例图
 
 操作人员对于疫情期间高校人员管理系统操作的功能包括管理学生和教师信息，管理留言，管理学生和教师的请假信息，返校申请信息，居家信息，打卡信息等。其用例图如图3.5所示：
 
-![](/images/0300stringboot/0321springboot/blog.008.png)
+![](/images/0300wxapp//blog.008.png)
 
 图3.5 操作人员用例图
 
 教师对于疫情期间高校人员管理系统操作的功能包括管理居家信息，打卡信息，请假信息以及返校申请信息。其用例图如图3.6所示：
 
-![](/images/0300stringboot/0321springboot/blog.009.png)
+![](/images/0300wxapp//blog.009.png)
 
 图3.6 教师用例图
 
 学生对于疫情期间高校人员管理系统操作的功能包括管理打卡信息，请假信息，居家信息，返校申请信息等。其用例图如图3.7所示：
 
-![](/images/0300stringboot/0321springboot/blog.010.png)
+![](/images/0300wxapp//blog.010.png)
 
 图3.7 学生用例图
 
@@ -130,25 +129,25 @@ Vue框架的开发者是一个中国人，区别于其他框架的最核心的�
 ## 4.2 功能模块设计
 管理员功能模块：管理员对于疫情期间高校人员管理系统操作的功能包括操作人员管理，教师和学生的返校申请管理，教师和学生的居家，请假，打卡等信息的管理。如图4.1所示。
 
-![](/images/0300stringboot/0321springboot/blog.011.png)
+![](/images/0300wxapp//blog.011.png)
 
 图4.1 管理员功能结构图
 
 操作人员功能模块：操作人员对于疫情期间高校人员管理系统操作的功能包括管理学生和教师信息，管理留言，管理学生和教师的请假信息，返校申请信息，居家信息，打卡信息等。如图4.2所示。
 
-![](/images/0300stringboot/0321springboot/blog.012.png)
+![](/images/0300wxapp//blog.012.png)
 
 图4.2 操作人员功能结构图
 
 教师功能模块：教师对于疫情期间高校人员管理系统操作的功能包括管理居家信息，打卡信息，请假信息以及返校申请信息。如图4.3所示。
 
-![](/images/0300stringboot/0321springboot/blog.013.png)
+![](/images/0300wxapp//blog.013.png)
 
 图4.3 教师功能结构图
 
 学生功能模块：学生对于疫情期间高校人员管理系统操作的功能包括管理打卡信息，请假信息，居家信息，返校申请信息等。如图4.4所示。
 
-![](/images/0300stringboot/0321springboot/blog.014.png)
+![](/images/0300wxapp//blog.014.png)
 
 图4.4 学生功能结构图
 ## 4.3 数据库设计
@@ -158,31 +157,31 @@ Vue框架的开发者是一个中国人，区别于其他框架的最核心的�
 
 （1）教师居家信息包括的属性有居家地点，是否隔离等。其属性图如下。
 
-![](/images/0300stringboot/0321springboot/blog.015.png)
+![](/images/0300wxapp//blog.015.png)
 
 图4.4 教师居家信息实体属性图
 
 （2）学生请假信息包括的属性有请假原因，申请日期等。其属性图如下。
 
-![](/images/0300stringboot/0321springboot/blog.016.png)
+![](/images/0300wxapp//blog.016.png)
 
 图4.5 学生请假信息实体属性图
 
 （3）学生打卡信息包括的属性有打卡地点，打卡日期等。其属性图如下。
 
-![](/images/0300stringboot/0321springboot/blog.017.png)
+![](/images/0300wxapp//blog.017.png)
 
 图4.6 学生打卡信息实体属性图
 
 （4）管理员包括的属性有用户名，密码等。其属性图如下。
 
-![](/images/0300stringboot/0321springboot/blog.018.png)
+![](/images/0300wxapp//blog.018.png)
 
 图4.7 管理员实体属性图
 
 （5）设计的各实体间关系E-R图如下。
 
-![](/images/0300stringboot/0321springboot/blog.019.png)
+![](/images/0300wxapp//blog.019.png)
 
 图4.8 实体间关系E-R图
 ### 4.3.2 数据库表结构
@@ -371,76 +370,76 @@ Vue框架的开发者是一个中国人，区别于其他框架的最核心的�
 ### 5.1.1 操作人员管理
 该功能主要用于实现对操作人员基本信息的管理，操作人员管理界面的运行效果见图5.1。在此界面，管理员根据操作人员电话查询操作人员，可以修改，删除操作人员资料。
 
-![](/images/0300stringboot/0321springboot/blog.020.png)
+![](/images/0300wxapp//blog.020.png)
 
 图5.1 操作人员管理界面
 ### 5.1.2 疫情资讯管理
 该功能主要用于实现对疫情资讯基本信息的管理，疫情资讯管理界面的运行效果见图5.2。在此界面，管理员对疫情资讯的信息进行修改，查询，删除，新增。
 
-![](/images/0300stringboot/0321springboot/blog.020.png)
+![](/images/0300wxapp//blog.020.png)
 
 图5.2 疫情资讯管理界面
 ### 5.1.3 教师返校申请管理
 该功能主要用于实现对教师返校申请信息的管理，教师返校申请管理界面的运行效果见图5.3。在此界面，管理员审核教师返校申请，提供教师身份证号可以查询教师返校申请信息。
 
-![](/images/0300stringboot/0321springboot/blog.020.png)
+![](/images/0300wxapp//blog.020.png)
 
 图5.3 教师返校申请管理界面
 ## 5.2 操作人员功能实现
 ### 5.2.1 教师居家信息管理
 该功能主要用于实现对教师居家基本信息的管理，教师居家信息管理界面的运行效果见图5.4。在此界面，操作人员在此界面负责对教师居家信息进行查看，更改，删除等操作。
 
-![](/images/0300stringboot/0321springboot/blog.020.png)
+![](/images/0300wxapp//blog.020.png)
 
 图5.4 教师居家信息管理界面
 ### 5.2.2 留言板管理
 该功能主要用于实现对留言基本信息的管理，留言板管理界面的运行效果见图5.5。在此界面，操作人员回复学生留言，查询学生留言，删除学生留言。
 
-![](/images/0300stringboot/0321springboot/blog.020.png)
+![](/images/0300wxapp//blog.020.png)
 
 图5.5 留言板管理界面
 ### 5.2.3 学生请假信息管理
 该功能主要用于实现对学生请假基本信息的管理，学生请假信息管理界面的运行效果见图5.6。在此界面，操作人员审核，修改，删除学生请假信息。
 
-![](/images/0300stringboot/0321springboot/blog.020.png)
+![](/images/0300wxapp//blog.020.png)
 
 图5.6 学生请假信息管理界面
 ## 5.3 教师功能实现
 ### 5.3.1 教师打卡信息管理
 该功能主要用于实现对教师打卡基本信息的管理，教师打卡信息管理界面的运行效果见图5.7。在此界面，教师负责新增打卡信息，查询或删除打卡信息。
 
-![](/images/0300stringboot/0321springboot/blog.020.png)
+![](/images/0300wxapp//blog.020.png)
 
 图5.7 教师打卡信息管理界面
 ### 5.3.2 教师居家信息管理
 该功能主要用于实现对教师居家基本信息的管理，教师居家信息管理界面的运行效果见图5.8。在此界面，教师新增居家信息，查询或删除居家信息。
 
-![](/images/0300stringboot/0321springboot/blog.020.png)
+![](/images/0300wxapp//blog.020.png)
 
 图5.8 教师居家信息管理界面
 ### 5.3.3 教师返校申请管理
 教师返校申请管理界面的运行效果见图5.9。在此界面，教师负责新增返校申请信息，查询或删除返校申请信息。
 
-![](/images/0300stringboot/0321springboot/blog.020.png)
+![](/images/0300wxapp//blog.020.png)
 
 图5.9 教师返校申请管理界面
 ## 5.4 学生功能实现
 ### 5.4.1 学生居家信息管理
 学生居家信息管理界面的运行效果见图5.10。在此界面，学生新增居家信息，可以查询，删除居家信息。
 
-![](/images/0300stringboot/0321springboot/blog.020.png)
+![](/images/0300wxapp//blog.020.png)
 
 图5.10 学生居家信息管理界面
 ### 5.4.2 学生打卡信息管理
 学生打卡信息管理界面的运行效果见图5.11。在此界面，学生新增打卡信息，对打卡信息进行删除，查询等。
 
-![](/images/0300stringboot/0321springboot/blog.020.png)
+![](/images/0300wxapp//blog.020.png)
 
 图5.11 学生打卡信息管理界面
 ### 5.4.3 学生请假信息管理
 学生请假信息管理界面的运行效果见图5.12。在此界面，学生新增请假信息，可以删除，查询请假信息。
 
-![](/images/0300stringboot/0321springboot/blog.020.png)
+![](/images/0300wxapp//blog.020.png)
 
 图5.12 学生请假信息管理界面
 

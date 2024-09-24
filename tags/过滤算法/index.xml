@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>过滤算法 - 标签 - chenqi blog</title>
+        <link>https://chenqi199.github.io/tags/%E8%BF%87%E6%BB%A4%E7%AE%97%E6%B3%95/</link>
+        <description>过滤算法 - 标签 - chenqi blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>chen_q_i@163.com (chenqi)</managingEditor>
+            <webMaster>chen_q_i@163.com (chenqi)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 14 Jun 2024 11:23:24 &#43;0800</lastBuildDate><atom:link href="https://chenqi199.github.io/tags/%E8%BF%87%E6%BB%A4%E7%AE%97%E6%B3%95/" rel="self" type="application/rss+xml" /><item>
+    <title>0692springboot基于协同过滤算法商品推荐系统</title>
+    <link>https://chenqi199.github.io/0692springboot%E5%9F%BA%E4%BA%8E%E5%8D%8F%E5%90%8C%E8%BF%87%E6%BB%A4%E7%AE%97%E6%B3%95%E5%95%86%E5%93%81%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/</link>
+    <pubDate>Fri, 14 Jun 2024 11:23:24 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/0692springboot%E5%9F%BA%E4%BA%8E%E5%8D%8F%E5%90%8C%E8%BF%87%E6%BB%A4%E7%AE%97%E6%B3%95%E5%95%86%E5%93%81%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site 0692springboot基于协同过滤算法商品推荐系统 github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 内容整理中]]></description>
+</item>
+</channel>
+</rss>

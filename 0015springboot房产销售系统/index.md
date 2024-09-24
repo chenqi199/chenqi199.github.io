@@ -1,17 +1,16 @@
 # 0015springboot房产销售系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0015springboot房产销售系统](https://github.com/GraduationProject-springboot/0015springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV16ia6epENY?p=16)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第一章 绪 论
 1.1背景及意义
@@ -103,13 +102,13 @@ Spring Boot特点：
 ### 3.4.1管理员用例
 管理员登录后可进行首页、个人中心、用户管理、销售经理管理、房源信息管理、房源类型管理、房子户型管理、交易订单管理、预约看房管理、评价管理、我的收藏管理、系统管理，管理员的用例如图3-1所示。
 
-![](/images/0000stringboot/0015springboot/blog.002.png)
+![](/images/0000wxapp//blog.002.png)
 
 图3-1 管理员用例图
 ### 3.4.2用户用例
 用户注册登录后可进行首页、个人中心、房源信息管理、交易订单管理、预约看房管理、评价管理、我的收藏管理，用户用例如图3-2所示。
 
-![](/images/0000stringboot/0015springboot/blog.003.png)
+![](/images/0000wxapp//blog.003.png)
 
 图3-2 用户用例图
 
@@ -117,19 +116,19 @@ Spring Boot特点：
 ### 3.5.1添加信息流程
 添加信息,编号系统使用自动编号模式,不要用户填写,用户添加信息输入信息,系统将自动确认的信息和数据,验证的成功是有效的信息添加到数据库,信息无效,重新输入信息。添加信息流程如图3-3所示。
 
-![](/images/0000stringboot/0015springboot/blog.004.png)
+![](/images/0000wxapp//blog.004.png)
 
 图3-3 添加信息流程图
 ### 3.5.2操作流程
 用户想进入系统，首先进入系统登录界面，通过正确的用户名、密码，选择登录类型登录，系统会检查登录信息，信息正确，然后输入相应的功能界面，提示信息错误，登录失败。系统操作流程如图3-4所示。
 
-![](/images/0000stringboot/0015springboot/blog.005.png)
+![](/images/0000wxapp//blog.005.png)
 
 图3-4操作流程图
 ### 3.5.3删除信息流程
 用户选择要删除的信息并单击Delete按钮。系统提示是否删除信息。如果用户想要删除信息，系统将删除信息。系统数据库删除信息。删除信息流程图如图3-5所示。
 
-![](/images/0000stringboot/0015springboot/blog.006.png)
+![](/images/0000wxapp//blog.006.png)
 
 图3-5 删除信息流程图
 
@@ -150,7 +149,7 @@ Spring Boot特点：
 
 用  户
 
-![](/images/0000stringboot/0015springboot/blog.007.png)
+![](/images/0000wxapp//blog.007.png)
 
 图4-1  系统结构
 
@@ -172,13 +171,13 @@ Y
 
 用户界面
 
-![](/images/0000stringboot/0015springboot/blog.008.png)
+![](/images/0000wxapp//blog.008.png)
 
 图4-2 登录结构图
 
 这些功能可以充分满足房产销售系统的需求。此系统功能较为全面如下图系统功能结构如图4-3所示。
 
-![](/images/0000stringboot/0015springboot/blog.009.png)
+![](/images/0000wxapp//blog.009.png)
 
 图4-3系统功能结构图
 
@@ -187,19 +186,19 @@ Y
 
 房产销售系统的数据流程：
 
-![](/images/0000stringboot/0015springboot/blog.010.png)
+![](/images/0000wxapp//blog.010.png)
 
 图4-4  系统数据流程图
 
 用户管理实体E-R图，如图4.5所示。
 
-![](/images/0000stringboot/0015springboot/blog.011.png)
+![](/images/0000wxapp//blog.011.png)
 
 `    `图4.5用户管理E-R图
 
 评价管理E-R图，如图4.6所示。
 
-![](/images/0000stringboot/0015springboot/blog.012.png)
+![](/images/0000wxapp//blog.012.png)
 
 `    `图4.6评价管理E-R图
 
@@ -342,13 +341,13 @@ Y
 ## 5.1用户功能模块
 用户点击进入到系统操作界面，可以对首页、个人中心、房源信息管理、交易订单管理、预约看房管理、评价管理、我的收藏管理等功能模块，个人信息：通过列表可以获取账号、姓名、性别、手机、邮箱、照片、备注并进行修改操作，如图5-1所示。
 
-![](/images/0000stringboot/0015springboot/blog.013.png)
+![](/images/0000wxapp//blog.013.png)
 
 图5-1个人信息界面图
 
 房源信息管理：通过列表可以获取房源名称、房源类型、房源户型、房源图片、所在区域、房源位置、房源面积、每米价格、总计、发布时间、销售账号、销售姓名、销售手机等信息，进行详情、购房、预约、查看评论等操作，如图5-2所示。
 
-![](/images/0000stringboot/0015springboot/blog.014.png)
+![](/images/0000wxapp//blog.014.png)
 
 图5-2房源信息管理界面图
 
@@ -356,7 +355,7 @@ Y
 
 交易订单管理：通过列表可以获取账号、姓名、订单编号、房源名称、房源类型、房源户型、房源图片、总计、销售账号、销售姓名、交易时间、备注、是否支付等信息，进行详情、评价、删除等操作，如图5-3所示。
 
-![](/images/0000stringboot/0015springboot/blog.015.png)
+![](/images/0000wxapp//blog.015.png)
 
 图5-3交易订单管理界面图
 
@@ -364,7 +363,7 @@ Y
 
 预约看房管理：通过列表可以获取账号、姓名、手机、房源名称、房源类型、房源户型、房源图片、预约时间、销售账号、销售姓名、销售手机、审核回复、审核状态等信息，进行详情、删除操作，如图5-4所示。
 
-![](/images/0000stringboot/0015springboot/blog.016.png)
+![](/images/0000wxapp//blog.016.png)
 
 图5-4预约看房管理界面图
 
@@ -376,12 +375,12 @@ Y
 
 用户管理：通过列表可以获取账号、姓名、性别、手机、邮箱、照片、备注等内容，可以进行详情、修改或删除等操作，如图5-6所示。
 
-![](/images/0000stringboot/0015springboot/blog.017.png)
+![](/images/0000wxapp//blog.017.png)
 
 图5-5管理员登录界面图
 
 
-![](/images/0000stringboot/0015springboot/blog.018.png)
+![](/images/0000wxapp//blog.018.png)
 
 图5-6用户管理界面图
 
@@ -389,45 +388,45 @@ Y
 销售经理管理：通过列表可以获取销售账号、销售姓名、性别、头像、身份证、销售手机、年龄等信息，进行详情、删除或修改等操作，如图5-7所示。
 
 
-![](/images/0000stringboot/0015springboot/blog.019.png)
+![](/images/0000wxapp//blog.019.png)
 
 图5-7销售经理管理界面图
 
 房源信息管理：通过列表可以获取房源名称、房源类型、房源户型、房源图片、所在区域、房源位置、房源面积、每米价格、总计、发布时间、销售账号、销售姓名、销售手机等信息，进行详情、修改、查看评论、删除等操作，如图5-8所示。
 
-![](/images/0000stringboot/0015springboot/blog.020.png)
+![](/images/0000wxapp//blog.020.png)
 
 图5-8房源信息管理界面图 
 
 房源类型管理：通过列表可以获取房源类型等信息，进行修改或删除操作，如图5-9所示。
 
-![](/images/0000stringboot/0015springboot/blog.021.png)
+![](/images/0000wxapp//blog.021.png)
 
 图5-9房源类型管理界面图
 
 房子户型管理：通过列表可以获取房子户型等信息，进行修改或删除操作，如图5-10所示。
 
-![](/images/0000stringboot/0015springboot/blog.022.png)
+![](/images/0000wxapp//blog.022.png)
 
 图5-10房子户型管理界面图
 
 交易订单管理：通过列表可以获取账号、姓名、订单编号、房源名称、房源类型、房源户型、房源图片、总计、销售账号、销售姓名、交易时间、备注、是否支付等信息，进行详情、修改或删除操作，如图5-11所示。
 
-![](/images/0000stringboot/0015springboot/blog.023.png)
+![](/images/0000wxapp//blog.023.png)
 
 图5-11交易订单管理界面图
 
 ## 5.3销售经理功能模块
 销售经理点击进入到系统操作界面，可以对首页、个人中心、房源信息管理、交易订单管理、预约看房管理、评价管理等功能模块，房源信息管理：通过列表可以获取房源名称、房源类型、房源户型、房源图片、所在区域、房源位置、房源面积、每米价格、总计、发布时间、销售账号、销售姓名、销售手机等信息并进行详情、修改、查看评论删除等操作，如图5-12所示。
 
-![](/images/0000stringboot/0015springboot/blog.024.png)
+![](/images/0000wxapp//blog.024.png)
 
 图5-12房源信息管理界面图
 
 
 预约看房管理：通过列表可以获取账号、姓名、手机、房源名称、房源类型、房源户型、房源图片、预约时间、销售账号、销售姓名、销售手机、审核回复、审核状态等信息，进行详情、修改、删除操作，如图5-13所示。
 
-![](/images/0000stringboot/0015springboot/blog.025.png)
+![](/images/0000wxapp//blog.025.png)
 
 图5-13预约看房管理界面图
 
@@ -435,7 +434,7 @@ Y
 ## 5.4前台首页功能模块
 房产销售系统，在前台首页可以查看首页、房源信息、个人中心、后台管理等内容，如图5-14所示。
 
-![](/images/0000stringboot/0015springboot/blog.026.png)
+![](/images/0000wxapp//blog.026.png)
 
 图5-14前台首页功能界面图
 
@@ -443,13 +442,13 @@ Y
 
 `    `房源信息，在房源信息页面通过填写房源名称、房源类型、房源户型、房源图片、所在区域、房源位置、房源面积、每米价格、总计、发布时间、销售账号、销售姓名、销售手机等信息进行购房、预约及点我收藏等操作，如图5-15所示。
 
-![](/images/0000stringboot/0015springboot/blog.027.png)
+![](/images/0000wxapp//blog.027.png)
 
 图5-15房源信息界面图
 #########
 个人中心，在个人中心页面通过填写账号、密码、姓名、性别、手机、邮箱、照片、备注等信息进行更新信息等操作，如图5-16所示。
 
-![](/images/0000stringboot/0015springboot/blog.028.png)
+![](/images/0000wxapp//blog.028.png)
 
 图5-16个人中心界面图
 #########

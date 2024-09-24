@@ -1,17 +1,16 @@
 # 0024springboot基于SpringBoot网上超市的设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0024springboot基于SpringBoot网上超市的设计与实现](https://github.com/GraduationProject-springboot/0024springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV16ia6epENY?p=25)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
 ## 1.1 选题背景
@@ -70,19 +69,19 @@ SpringBoot的最大优点是继承了Spring框架的人气和底层设计财富�
 ## 3.3 系统流程分析
 软件开发设计的思想始终贯穿本系统，其开发流程见下图。前期需要进行功能分析，功能设计，还有对系统后台支持数据库的设计，利用编码技术对设计的系统进行实现，然后检测和完善。
 
-![](/images/0000stringboot/0024springboot/blog.001.png)
+![](/images/0000wxapp//blog.001.png)
 
 图3.1系统开发流程图
 
 访问者之所以可以访问网上超市系统，主要是其数据库有该访问者的记录信息，这个记录是通过注册进行写入的数据。注册流程见下图。每当访问者进行网上超市系统注册时，其登记的每条记录都会在系统后台进行逐个判断。这个判断规则是提前设置的。一旦该访问者的登记信息在数据库中保存，即代表该访问者成为网上超市系统中的一份子。
 
-![](/images/0000stringboot/0024springboot/blog.002.png)
+![](/images/0000wxapp//blog.002.png)
 
 图3.2 注册流程图
 
 访问者操作系统，前提是需要验证身份，而登录功能的设置就是把本系统的用户引导进入后台操作区，把不是本系统的用户拒之门外。其流程见下图。
 
-![](/images/0000stringboot/0024springboot/blog.003.png)
+![](/images/0000wxapp//blog.003.png)
 
 图3.3 登录流程图
 ## 3.4系统功能分析
@@ -90,13 +89,13 @@ SpringBoot的最大优点是继承了Spring框架的人气和底层设计财富�
 
 网上超市系统设置了管理员权限，其用例图见下图。管理员根据订单状态管理不同的订单信息，管理商品和用户，审核和统计商品评价信息。
 
-![](/images/0000stringboot/0024springboot/blog.004.png)
+![](/images/0000wxapp//blog.004.png)
 
 图3.4 管理员用例图
 
 网上超市系统设置了用户权限，其用例图见下图。用户购买商品时需要选择收货地址，然后提交订单进行支付，可以根据订单所处的状态管理不同订单。
 
-![](/images/0000stringboot/0024springboot/blog.005.png)
+![](/images/0000wxapp//blog.005.png)
 
 图3.5 用户用例图
 
@@ -121,13 +120,13 @@ SpringBoot的最大优点是继承了Spring框架的人气和底层设计财富�
 
 设计的管理员的详细功能见下图，管理员根据订单状态管理不同的订单信息，管理商品和用户，审核和统计商品评价信息。
 
-![](/images/0000stringboot/0024springboot/blog.006.png)
+![](/images/0000wxapp//blog.006.png)
 
 图4.1 管理员功能结构图
 
 设计的用户的详细功能见下图，用户购买商品时需要选择收货地址，然后提交订单进行支付，可以根据订单所处的状态管理不同订单。
 
-![](/images/0000stringboot/0024springboot/blog.007.png)图4.2 用户功能结构图
+![](/images/0000wxapp//blog.007.png)图4.2 用户功能结构图
 ## 4.3数据库设计
 相比非关系型数据库来说，目前市场上使用率比较高，并且易于维护的数据库，当数关系型数据库了。这个数据库主要是基于关系模型的方式来对数据信息进行组织。也就是常见的二维表模型。可以说二维表和二维表之间的相互联系就构成了关系型数据库。
 ### 4.3.1数据库E-R图
@@ -145,31 +144,31 @@ SpringBoot的最大优点是继承了Spring框架的人气和底层设计财富�
 
 （1）设计的订单实体，其具备的属性见下图。
 
-![](/images/0000stringboot/0024springboot/blog.008.png)
+![](/images/0000wxapp//blog.008.png)
 
 图4.4 订单实体属性图
 
 （2）设计的用户实体，其具备的属性见下图。
 
-![](/images/0000stringboot/0024springboot/blog.009.png)
+![](/images/0000wxapp//blog.009.png)
 
 图4.5 用户实体属性图
 
 （3）设计的商品实体，其具备的属性见下图。
 
-![](/images/0000stringboot/0024springboot/blog.010.png)
+![](/images/0000wxapp//blog.010.png)
 
 图4.6 商品实体属性图
 
 （4）设计的商品分类实体，其具备的属性见下图。
 
-![](/images/0000stringboot/0024springboot/blog.011.png)
+![](/images/0000wxapp//blog.011.png)
 
 图4.7 商品分类实体属性图
 
 （5）设计的各实体间关系见下图。
 
-![](/images/0000stringboot/0024springboot/blog.012.png)
+![](/images/0000wxapp//blog.012.png)
 
 图4.8 实体间关系E-R图
 ### 4.3.2 数据库表结构
@@ -283,50 +282,50 @@ SpringBoot的最大优点是继承了Spring框架的人气和底层设计财富�
 ### 5.1.1 商品信息管理
 管理员权限中的商品信息管理，其运行效果见下图。管理员查询商品需要提交商品名称才行，管理员点击查看评论，可以查看该商品对应的用户评论信息。
 
-![](/images/0000stringboot/0024springboot/blog.013.png)
+![](/images/0000wxapp//blog.013.png)
 
 图5.1 商品信息管理页面
 ### 5.1.2 用户管理
 管理员权限中的用户管理，其运行效果见下图。管理员提交用户名获取用户资料，修改有异常情况的用户信息。点击详情可以对用户资料进行更为详细的查看。
 
-![](/images/0000stringboot/0024springboot/blog.014.png)
+![](/images/0000wxapp//blog.014.png)
 
 图5.2 用户管理页面
 ### 5.1.3 商品评价管理
 管理员权限中的商品评价管理功能，其运行效果见下图。用户评价商品，需要得到管理员审核才可以显示。同时管理员点击统计报表可以统计商品评价信息。
 
-![](/images/0000stringboot/0024springboot/blog.015.png)
+![](/images/0000wxapp//blog.015.png)
 
 图5.3 商品评价管理页面
 ### 5.1.4 已支付订单
 管理员权限中的已支付订单，其运行效果见下图。管理员查看已支付订单，然后逐个进行订单发货。
 
-![](/images/0000stringboot/0024springboot/blog.016.png)
+![](/images/0000wxapp//blog.016.png)
 
 图5.4 已支付订单页面
 ## 5.2 用户功能实现
 ### 5.2.1 商品信息
 用户权限中的商品信息，其运行效果见下图。用户收藏喜欢的商品，可以立即购买商品，或评价商品，也能把商品添加到购物车。
 
-![](/images/0000stringboot/0024springboot/blog.017.png)
+![](/images/0000wxapp//blog.017.png)
 
 图5.5 商品信息页面
 ### 5.2.2 购物车
 用户权限中的购物车，其运行效果见下图。购物车的商品允许直接下单，也允许删除购物车商品。
 
-![](/images/0000stringboot/0024springboot/blog.018.png)
+![](/images/0000wxapp//blog.018.png)
 
 图5.6 购物车页面
 ### 5.2.3 确认下单
 用户权限中的确认下单，其运行效果见下图。确认下单之前，需要选择地址，也需要查看支付金额信息。
 
-![](/images/0000stringboot/0024springboot/blog.019.png)
+![](/images/0000wxapp//blog.019.png)
 
 图5.7 确认下单页面
 ### 5.2.4 已支付订单
 用户权限中的已支付订单，其运行效果见下图。用户已经支付了订单，如果后悔购买商品的话，还可以申请退款。
 
-![](/images/0000stringboot/0024springboot/blog.020.png)
+![](/images/0000wxapp//blog.020.png)
 
 图5.8 已支付订单页面
 

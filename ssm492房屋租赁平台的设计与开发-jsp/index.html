@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer" />
+        <meta name="robots" content="noodp" />
+        <title>ssm492房屋租赁平台的设计与开发&#43;jsp - chenqi blog</title><meta name="Description" content="Hugo theme - chenqi"><meta property="og:url" content="https://chenqi199.github.io/ssm492%E6%88%BF%E5%B1%8B%E7%A7%9F%E8%B5%81%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91-jsp/">
+  <meta property="og:site_name" content="chenqi blog">
+  <meta property="og:title" content="ssm492房屋租赁平台的设计与开发&#43;jsp">
+  <meta property="og:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm492房屋租赁平台的设计与开发&#43;jsp github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1.1课题开发背景 现在已">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-04-08T10:32:56+08:00">
+    <meta property="article:modified_time" content="2024-04-08T10:32:56+08:00">
+    <meta property="article:tag" content="Ssm房屋">
+    <meta property="article:tag" content="租赁平台">
+    <meta property="article:tag" content="房屋租赁">
+    <meta property="article:tag" content="平台设计">
+    <meta property="article:tag" content="设计开发">
+    <meta property="og:image" content="https://chenqi199.github.io/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chenqi199.github.io/logo.png">
+  <meta name="twitter:title" content="ssm492房屋租赁平台的设计与开发&#43;jsp">
+  <meta name="twitter:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm492房屋租赁平台的设计与开发&#43;jsp github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1.1课题开发背景 现在已">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chenqi199.github.io/ssm492%E6%88%BF%E5%B1%8B%E7%A7%9F%E8%B5%81%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91-jsp/" /><link rel="prev" href="https://chenqi199.github.io/ssm493%E5%AE%B6%E5%85%B7%E9%94%80%E5%94%AE%E5%BA%93%E5%AD%98%E7%AE%A1%E7%90%86%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" /><link rel="next" href="https://chenqi199.github.io/ssm491%E4%BA%8C%E6%89%8B%E8%BD%A6%E4%BA%A4%E6%98%93%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1-jsp/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "ssm492房屋租赁平台的设计与开发+jsp",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chenqi199.github.io\/ssm492%E6%88%BF%E5%B1%8B%E7%A7%9F%E8%B5%81%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91-jsp\/"
+        },"image": ["https:\/\/chenqi199.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "ssm房屋, 租赁平台, 房屋租赁, 平台设计, 设计开发","wordcount":  7003 ,
+        "url": "https:\/\/chenqi199.github.io\/ssm492%E6%88%BF%E5%B1%8B%E7%A7%9F%E8%B5%81%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91-jsp\/","datePublished": "2024-04-08T10:32:56+08:00","dateModified": "2024-04-08T10:32:56+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/chenqi199.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "chenqi"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/ssm492%E6%88%BF%E5%B1%8B%E7%A7%9F%E8%B5%81%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91-jsp/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/ssm492%E6%88%BF%E5%B1%8B%E7%A7%9F%E8%B5%81%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91-jsp/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">ssm492房屋租赁平台的设计与开发+jsp</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="chenqi199" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>chenqi</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-04-08">2024-04-08</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 7003 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 14 分钟&nbsp;<span id="/ssm492%E6%88%BF%E5%B1%8B%E7%A7%9F%E8%B5%81%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91-jsp/" class="leancloud_visitors" data-flag-title="ssm492房屋租赁平台的设计与开发&#43;jsp">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">github 项目仓库</a> 开源仅有后端代码</a></li>
+        <li><a href="#点击播放视频-">点击播放视频 ▼</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#11课题开发背景">1.1课题开发背景</a></li>
+    <li><a href="#12课题开发现状">1.2课题开发现状</a></li>
+    <li><a href="#13课题开发内容">1.3课题开发内容</a></li>
+    <li><a href="#14课题开发的目的和意义">1.4课题开发的目的和意义</a></li>
+    <li><a href="#15论文结构安排">1.5论文结构安排</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#21系统开发所使用的相关技术和环境概述">2.1系统开发所使用的相关技术和环境概述</a></li>
+    <li><a href="#22-ssm框架介绍">2.2 SSM框架介绍</a></li>
+    <li><a href="#23-mysql数据库介绍">2.3 Mysql数据库介绍</a></li>
+    <li><a href="#24-web技术介绍">2.4 Web技术介绍</a></li>
+    <li><a href="#25-idea软件介绍">2.5 Idea软件介绍</a></li>
+    <li><a href="#26-java语言介绍">2.6 Java语言介绍</a></li>
+    <li><a href="#27jsp技术介绍">2.7Jsp技术介绍</a></li>
+    <li><a href="#28-bs结构介绍">2.8 B/S结构介绍</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#31系统需求分析">3.1系统需求分析</a></li>
+    <li><a href="#32系统可行性分析">3.2系统可行性分析</a>
+      <ul>
+        <li><a href="#321技术可行性分析">3.2.1技术可行性分析</a></li>
+        <li><a href="#322经济可行性分析">3.2.2经济可行性分析</a></li>
+        <li><a href="#323操作可行性分析">3.2.3操作可行性分析</a></li>
+      </ul>
+    </li>
+    <li><a href="#33系统性能分析">3.3系统性能分析</a></li>
+    <li><a href="#34-系统功能分析">3.4 系统功能分析</a></li>
+    <li><a href="#35系统用例图">3.5系统用例图</a></li>
+    <li><a href="#36系统操作流程分析">3.6系统操作流程分析</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#41系统功能结构设计">4.1系统功能结构设计</a></li>
+    <li><a href="#42数据库设计">4.2数据库设计</a>
+      <ul>
+        <li><a href="#421数据库er图设计">4.2.1数据库ER图设计</a></li>
+        <li><a href="#422数据库表设计">4.2.2数据库表设计</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#51前台界面的实现">5.1前台界面的实现</a></li>
+    <li><a href="#52出租房信息功能的实现界面">5.2出租房信息功能的实现界面</a></li>
+    <li><a href="#53系统推荐功能的实现界面">5.3系统推荐功能的实现界面</a></li>
+    <li><a href="#54房屋详情功能的实现界面">5.4房屋详情功能的实现界面</a></li>
+    <li><a href="#55预约看房功能的实现界面">5.5预约看房功能的实现界面</a></li>
+    <li><a href="#56房屋收藏界面的实现界面">5.6房屋收藏界面的实现界面</a></li>
+    <li><a href="#57我的功能的实现界面">5.7我的功能的实现界面</a></li>
+    <li><a href="#58房屋订单管理功能的实现界面">5.8房屋订单管理功能的实现界面</a></li>
+    <li><a href="#59管理员个人中心管理功能的实现界面">5.9管理员个人中心管理功能的实现界面</a></li>
+    <li><a href="#510管理员出租房管理功能的实现界面">5.10管理员出租房管理功能的实现界面</a></li>
+    <li><a href="#511基础数据管理功能的实现界面">5.11基础数据管理功能的实现界面</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="项目清单-包安装运行httpchenqi1990site-官网地址-httpchenqi1990site"><a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">项目清单 包安装运行</a> 官网地址 <a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">http://chenqi1990.site</a></h1>
+<h1 id="ssm492房屋租赁平台的设计与开发jsphttpsgithubcomgraduationproject-springboot"><a href="https://github.com/GraduationProject-springboot/" target="_blank" rel="noopener noreffer ">ssm492房屋租赁平台的设计与开发+jsp</a></h1>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        data-srcset="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 1.5x, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        title="picture" /></p>
+<h3 id="github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">github 项目仓库</a> 开源仅有后端代码</h3>
+<h3 id="点击播放视频-">点击播放视频 ▼</h3>
+<p><a href="https://www.bilibili.com/video/BV1t58veLEnL?p=90" target="_blank" rel="noopener noreffer "><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.sstatic.net/Vp2cE.png"
+        data-srcset="https://i.sstatic.net/Vp2cE.png, https://i.sstatic.net/Vp2cE.png 1.5x, https://i.sstatic.net/Vp2cE.png 2x"
+        data-sizes="auto"
+        alt="https://i.sstatic.net/Vp2cE.png"
+        title="Watch the video" /></a></p>
+<h1 id="绪论">绪论</h1>
+<h2 id="11课题开发背景">1.1课题开发背景</h2>
+<p>现在已处于信息、网络飞速发展的阶段，在生活中都离不开网络的帮助。网络不仅可以提供休闲娱乐，也可以提供办公辅助。比如工作中的信息传递、工作汇报等都离不开网络。特别是在疫情期间，为了保证大家的安全，健康码、行程码都需要网络的协助，在核酸检测时也可以通过网络进行检测结果的发布。可见，网络的重要性。</p>
+<p>目前，计算机技术也快速发展，利用计算机开发的各种网站、应用软件、管理系统都给人们的工作带来了帮助。对于需要租赁房屋的用户来说，大多还是去中介公司找专业人员帮助，这种方式需要额外的中介费用，对刚出门的人来说是不小的开支，而自己联系房东需要大量的时间，对于想要快速找到房屋的人来说非常不适合。</p>
+<h2 id="12课题开发现状">1.2课题开发现状</h2>
+<p><code>    </code>现在房屋出租方也使用了线上的租赁系统，这种租赁系统有两种，一种是针对中介使用的办公系统，由租房者提供信息，工作人员查询信息后带看房、签订合同等。还有一种是租房者参与，租房者可以在网上查询房屋信息并预订，到现场后再决定是否租赁。但现在的房屋租赁网站普及率低，原因在于网站操作流程复杂，信息不及时，网站经常出现BUG，使租房者在预订时出错。所以这种租赁网站并不受欢迎，并不能帮助租房者实现线上房屋的预订。</p>
+<h2 id="13课题开发内容">1.3课题开发内容</h2>
+<p>本房屋租赁平台操作简单，采用傻瓜式的操作方法进行设计，在前台展示最及时、准确的房屋信息，帮助用户了解房屋详情。用户可以了解房屋的评价、房屋的费用等，选择合适的房屋进行线上预订看房，并可以查询订单信息，有问题也可以在线提问，管理员负责房屋信息的更新，管理订单信息、房屋留言信息，用户信息、时间段信息等。本系统可以帮助用户足不出户了解房屋信息，解决自己需要租赁房屋的问题。</p>
+<h2 id="14课题开发的目的和意义">1.4课题开发的目的和意义</h2>
+<p>本系统的实现可以帮助用户租赁房屋，帮助管理员减轻工作压力，为双方提供更为轻松的办公方式。使用本系统管理员可以快速的整理房屋订单信息，以便用户可以顺利入住。本系统采用SSM框架，适应时代的发展，将订单信息和房屋信息实现信息化，使信息的传递更快速、准确，本系统的设计非常有意义。</p>
+<h2 id="15论文结构安排">1.5论文结构安排</h2>
+<p><code>    </code>本论文的结构为课题资料调研阶段、课题使用技术、环境选择阶段、课题全面分析阶段、课题功能、数据库设计阶段和系统实现阶段以及最后的系统测试阶段。系统测试完成后加入系统总结、致谢、参考文献。</p>
+<ol>
+<li>
+<h1 id="系统开发所使用的相关技术和环境">系统开发所使用的相关技术和环境</h1>
+</li>
+</ol>
+<h2 id="21系统开发所使用的相关技术和环境概述">2.1系统开发所使用的相关技术和环境概述</h2>
+<p>本系统在开发中使用的关键技术为Java语言，Mysql数据库，SSM框架，Web技术，运行软件为Idea。</p>
+<h2 id="22-ssm框架介绍">2.2 SSM框架介绍</h2>
+<p>SSM框架主要分为Spring和Mybatis两个开源的框架然后进行整合到一起的。一般是用来进行Web框架结构的开发。Spring就好比是一个项目中的工厂，集合了所有需要的Bean配置文件，当开发过程中需要特定的一些参数时候，可以直接进行调用进行实体类的构造，所以我们一般称Spring是一个项目中的粘合剂，起到非常大的作用。而核心作用是控制反转也就是loc，工作原理就是不需要开发者去单独建立不同的对象，而是让框架帮你去完成，非常的省事方便。配置的整个文件都是在Spring里进行的，然后对于不同的业务流程模式会有不同的控制器去执行，在设计过程中我们可以将具体的流程进行一些抽象性的归纳整理，这样可以重复利用一些流程模式，这样可以提高代码的使用率，使程序架构更加的精简，处理速度更快。而Springmvc在整个项目中起到一个承上启下的作用，就是当用户进行访问请求时，会先进行拦截然后通过HandlerMapping去相应的匹配所需要的Controller，然后执行操作。而框架中的Mybatiss是把jdbc进行一个封装，这样就可以让数据库底层架构变的更加的透明，这些控件架构全是围绕特定的实例展开运行的，通过配置好的文件可以和各种实体类文件进行关联，在对配置好的各个数据库进行语句映射。把页面收到的各种请求直接传给控制器，通过业务层的处理逻辑在转给持久层，最后与数据库进行交互，然后把得到的结果在返回给业务层，在传给控制器最终以可视化的图形进行数据显示，这就是一个完整的处理逻辑。</p>
+<h2 id="23-mysql数据库介绍">2.3 Mysql数据库介绍</h2>
+<p>Mysql数据库是一个非常灵活精巧的数据库管理系统，功能非常的强大，而且有丰富的各种编程接口，非常适合和apache和tomcat结合使用。普通应用在一些中小型的网站开发中，处理速度非常的快，而且体积很小，所以开发成本非常的低，所以非常的受青睐。Mysql是一个开放的多线程的数据库服务器，可以支持所有的系统而且很好的兼容。Mysql存储量非常的大，可以同时处理上千万条数据信息，而且采用的是标准的sql语句形式，而且是支持个性化定制的，可以根据自己的需求进行开发。</p>
+<h2 id="24-web技术介绍">2.4 Web技术介绍</h2>
+<p>前几年的Web应用还是用的静态页面技术，用Html写的，然后放进服务器上，通过http协议进行Web服务访问，随着科技的快速发展，用户的需求越来越高，传统的静态页面已经完全不能满足用户的需求，需要根据用户不同的需求进行动态的页面信息展示。Web程序通常就是指通过浏览器进行访问的技术，通过Web的这些应用服务可以直接让用户进行访问，一个完整的Web应用程序是由不同的技术组成的，比如html、css、Vue、js等，通过这些技术进行一些结合然后生成的动态网页技术。而在一个Web服务项目中，一般分为服务器端和客户端，客户端就是通过浏览器连接网络进行服务器的访问，采用Http协议通过服务器插件进行业务处理，如果客户端用户访问的是静态的信息资源那么请求会直接进行反馈给服务器，然后直接调取相应内容执行到浏览器。如果用户访问的是动态内容信息，会把请求资源先传给WEB Container，然后连接到数据库，从数据库中调取用户所需要的数据然后传给客户端浏览器进行执行显示。</p>
+<h2 id="25-idea软件介绍">2.5 Idea软件介绍</h2>
+<p>Idea有很多优点，比如不需要单独下载Tomcat软件，软件本身自带的就有这个服务器，而且还能多运行的服务进行实时的监控，如果文件被修改了，可以及时的记录，方便用户查看。有时候在启动Idea的时候经常会遇见启动失败的情况，一般造成情况的原因是收到了电脑系统防火墙的拦截了，或者就是默认的8080端口被Tomcat端口占用了，这种情况只需要改下端口就可以了，还有一种情况就是电脑上没有安装VC9库，直接根据系统提示安装上就可以了，一般都可以轻松的解决。Eclipse支持各种版本的操作系统，比如win7，win10系统都可以很好的兼容，而且还支持各种不同的Java版本，而且运行速度是非常的快，非常适合微信小程序环境的开发使用。</p>
+<h2 id="26-java语言介绍">2.6 Java语言介绍</h2>
+<p>Java语言是一种开源的脚本语言，他主要是通过c语言和java语言进行衍生出来的，吸取了他们的优点，使用起来更加的方便，更加方便用户学习使用，他是一种结合了其他语言而自创的一种新语法，可以更加方便快捷的执行代码，效率比之前生成的Html标签要高很多的，而且还可以执行在其他系统上进行编译后的代码，可以进行代码加密和代码自动优化，使代码执行速度更快。也可以理解为是一种预文本处理的语言，也是一种内嵌式语言，可以迁入到Html文本里一起使用，编码风格和C语言非常的相似，也是一种常用的编程语言。</p>
+<h2 id="27jsp技术介绍">2.7Jsp技术介绍</h2>
+<p><code>   </code>Jsp技术是一种动态的网页设计技术，可以结合静态的Html技术使用。通过响应客户端生成动态页面进行展示，Jsp技术通常是做为Java语言的脚本语言使用。Jsp技术可以实现Java项目的静态镶嵌，然后以静态为模板进行动态生成。Jsp技术中引用了XML的标签，可以调用内部的功能，还可以创建新的Jsp的标签库，创建后就可以像使用Html、XML一样的使用，非常简单。</p>
+<h2 id="28-bs结构介绍">2.8 B/S结构介绍</h2>
+<p>B/S模式最大的特点就是可以直接通过网络进行系统的访问，对于用户端来说只需要一个浏览器就可以，通过B/S模式开发的系统可以用户提供实时的在线服务，当后台数据进行更新，前台会实时进行更新，保障了数据同步，效率非常的高，非常适合电子商务网站的开发。B/S架构是从C/S架构上发展来的，传统的C/S架构是采用的客户端的形式，由于以前的互联网没有现在这么发达，所以大多的办公软件都是在局域网内使用的，可以不需要互联网就能运行，前提是计算机硬件有一定的要求，必须电脑上安装上客户端软件，才能使用，而且后期的维护也比较麻烦，需要每个设备都进行维护。而B/S架构是直接把数据信息都存储到了服务器里，然后用户端不需要安装任何的编程软件，只需要浏览器就可以直接进行访问，而且维护非常的简单方便，对用户没有任何的影响，而且交互性更好，所以更适合电子商务网站的开发和使用。</p>
+<h1 id="第3章-系统分析">第3章 系统分析</h1>
+<h2 id="31系统需求分析">3.1系统需求分析</h2>
+<p>互联网已经应用到了各种场景当中，为了提高工作效率，现在各行各业都开始引用了互联网的管理模式，都开始先智能化转变，科技的应用水平也反映了企业的水平，如果还是采用传统的管理方式，将会减缓企业的发展，从而降低竞争力，只有跟上时代的潮流，才能满足不同的用户需求，与时俱进才能获得更好的进步。</p>
+<h2 id="32系统可行性分析">3.2系统可行性分析</h2>
+<h3 id="321技术可行性分析">3.2.1技术可行性分析</h3>
+<p>硬件上，目前的计算机、手机配置都是非常的高，而且都已经普及了，都能满足开发需求。软件上因为本系统采用的是SSM框架，框架结构非常清晰，很多组件系统都能自动生成，非常的简单方便，数据库采用Mysql数据库，安全稳定，各项开发技术都非常的成熟，所以从硬件和软件方面分析，本系统在技术上都是可行的。</p>
+<h3 id="322经济可行性分析">3.2.2经济可行性分析</h3>
+<p>本系统所用到的开发软件都是免费的，而且开发本系统后期维护非常的简单，不需要过多的投入，只要保证基本的信息维护就行了。</p>
+<h3 id="323操作可行性分析">3.2.3操作可行性分析</h3>
+<p>因为开发本系统是采用的面向对象的模式，所以每个界面都是可视化的操作界面，直接通过系统访问就可以看到系统的各个功能，而且点击所有按钮都可以马上响应，如果填写了错误的信息还会有相应的错误提示，非常方便看懂，使用起来是非常的方便。</p>
+<h2 id="33系统性能分析">3.3系统性能分析</h2>
+<p>很多行业现在都采用了计算机信息化管理，都通过网络来拓展自己的业务，不光可以提高管理的效率，而且还可以减少人工方面的投入，其次还可以通过网络进行企业的宣传。而本系统主要是针对房屋租赁进行开发的，用户可以直接通过网站进行房屋预订看房，非常的方便，管理员可以直接通过后台端就收到了预订信息，更加方便管理，所以说是非常适合的。因为本系统不单是针对企业内部管理使用，还额外添加了用户，所以在设计的时候就要多方面的进行考虑：
+<code>    </code>（1） 首先在界面设计方面，要符合大众审美，考虑大多人的感受，而且使用起来非常的简单方便，要有各种功能操作提示，哪怕对计算机操作不熟练，也可以完成订票操作。
+<code>    </code>（2）为了保障系统的流畅运行，还要考虑到代码的编写，一定要精简，避免重复的代码，保证处理速度快，有更好的用户体验。
+<code>    </code>（3）要有一定的安全机制，保证用户信息不能泄漏。
+<code>    </code>（4）采用B/S模式进行开发，可以直接通过系统进行系统访问，更加的方便，但是需要用到网络才可以，所以要考虑到网络的稳定性。</p>
+<h2 id="34-系统功能分析">3.4 系统功能分析</h2>
+<p>本系统的功能包括前台和后台两方面，前台的功能为房屋信息、用户登录窗口、后台管理员登录窗口等，后台的功能为用户管理、房屋留言管理、出租房信息管理、房屋订单信息管理等。在前台的主要操作人员为注册用户，可以预订看房和在线评价、收藏等，在后台的主要操作人员为管理员，负责用户信息和前台信息的管理。</p>
+<h2 id="35系统用例图">3.5系统用例图</h2>
+<p>本系统的角色为管理员和用户，管理员的用例为用户管理、出租房管理、轮播图管理、出租房留言管理、出租房订单管理、基础数据管理等。管理员用例图如下图3.1所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm492/blog.001.png"
+        data-srcset="/images/0400ssm/ssm492/blog.001.png, /images/0400ssm/ssm492/blog.001.png 1.5x, /images/0400ssm/ssm492/blog.001.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm492/blog.001.png"
+        title="/images/0400ssm/ssm492/blog.001.png" /></p>
+<p>图3.1管理员用例图</p>
+<p>用户的用例为个人资料管理和出租房浏览、出租房预订、订单管理等。用户用例图如下图3.2所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm492/blog.002.png"
+        data-srcset="/images/0400ssm/ssm492/blog.002.png, /images/0400ssm/ssm492/blog.002.png 1.5x, /images/0400ssm/ssm492/blog.002.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm492/blog.002.png"
+        title="/images/0400ssm/ssm492/blog.002.png" /></p>
+<p>图3.2用户用例图</p>
+<h2 id="36系统操作流程分析">3.6系统操作流程分析</h2>
+<p><code>    </code>本系统的操作流程为用户在前台浏览房屋信息后进行房屋的预约看房，可以浏览房屋的评价，预订成功后可以管理订单信息。管理员负责房屋的添加和管理并可以安排用户的房屋看房。本系统的操作流程如下图3.3所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm492/blog.003.png"
+        data-srcset="/images/0400ssm/ssm492/blog.003.png, /images/0400ssm/ssm492/blog.003.png 1.5x, /images/0400ssm/ssm492/blog.003.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm492/blog.003.png"
+        title="/images/0400ssm/ssm492/blog.003.png" /></p>
+<p>图3.3系统操作流程图</p>
+<h1 id="第4章-系统设计">第4章 系统设计</h1>
+<h2 id="41系统功能结构设计">4.1系统功能结构设计</h2>
+<p>本系统采用前台用户操作，后台管理员操作的方式进行设计，本系统的主要功能为出租房浏览、出租房预订、出租房收藏、出租房留言等。用户可以管理订单信息、管理员负责出租房信息的发布和用户订单管理等。本系统的功能结构图如下图4.1所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm492/blog.004.png"
+        data-srcset="/images/0400ssm/ssm492/blog.004.png, /images/0400ssm/ssm492/blog.004.png 1.5x, /images/0400ssm/ssm492/blog.004.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm492/blog.004.png"
+        title="/images/0400ssm/ssm492/blog.004.png" /></p>
+<p>图4.1系统功能结构图</p>
+<h2 id="42数据库设计">4.2数据库设计</h2>
+<p>数据库作为一个系统中的数据存储，是非常重要的一部分，必须保障了数据库的安全，系统才能足够的完善，所以数据库的设计也是非常重要的。数据库的设计是一个系统最直观的一个表现，必须切合实际要符合用户的需求，而且不能只是停留在Demp阶段，要进行数据库的详细设计，比如数据库表，数据库字段，各个字段的主键，外键，还有数据之间的模块交互和数据中转，表与表之间的联系等，因为数据库绝对不是存储数据这么简单，还要有一个完整的数据处理流程。所以在设计的过程中一定想好怎么去运用这些数据字段，然后怎么建立表与表之间的联系，怎么进行体现，这都是数据库设计阶段需要考虑的问题。为了保证数据库的处理速度和响应时间，还要进行一定的优化，要避免有多余的字段信息，减少不必要的表，尽量用最少的表，最少的表关系去建立存储量大的数据，这样才能有更好的数据查询性能。</p>
+<h3 id="421数据库er图设计">4.2.1数据库ER图设计</h3>
+<p>ER图是对数据库设计的初级阶段，ER图展示了实体和实体的属性，根据系统功能结构图分析出本系统的实体，本系统的实体为用户信息、管理员信息、房屋信息、预订信息、留言信息等。</p>
+<p>（1）用户为本系统的主要使用人员，用户的属性包括姓名、年龄、性别等。用户ER图如下图4.2所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm492/blog.005.png"
+        data-srcset="/images/0400ssm/ssm492/blog.005.png, /images/0400ssm/ssm492/blog.005.png 1.5x, /images/0400ssm/ssm492/blog.005.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm492/blog.005.png"
+        title="/images/0400ssm/ssm492/blog.005.png" /></p>
+<p>图4.2用户信息ER图</p>
+<p>（2）房屋信息为管理员管理的核心数据，房屋信息可以帮助用户预订需要的房屋。房屋信息ER图如下图4.3所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm492/blog.006.png"
+        data-srcset="/images/0400ssm/ssm492/blog.006.png, /images/0400ssm/ssm492/blog.006.png 1.5x, /images/0400ssm/ssm492/blog.006.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm492/blog.006.png"
+        title="/images/0400ssm/ssm492/blog.006.png" /></p>
+<p>图4.3房屋信息ER图</p>
+<p>（3）管理员本系统中的管理人员，属于系统的工作人员，可以管理本系统里的所有信息。管理员信息ER图如下图4.4所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm492/blog.007.png"
+        data-srcset="/images/0400ssm/ssm492/blog.007.png, /images/0400ssm/ssm492/blog.007.png 1.5x, /images/0400ssm/ssm492/blog.007.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm492/blog.007.png"
+        title="/images/0400ssm/ssm492/blog.007.png" /></p>
+<p>图4.4管理员信息ER图</p>
+<p>（4）预订信息为用户预订房屋后产生的，管理员可以安排用户的看房，预订信息的ER图如下图4.5所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm492/blog.008.png"
+        data-srcset="/images/0400ssm/ssm492/blog.008.png, /images/0400ssm/ssm492/blog.008.png 1.5x, /images/0400ssm/ssm492/blog.008.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm492/blog.008.png"
+        title="/images/0400ssm/ssm492/blog.008.png" /></p>
+<p>图4.5预订信息ER图</p>
+<p>（5）留言信息的负责人员为用户，用户可以发布留言内容，留言信息的ER图如下图4.6所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm492/blog.009.png"
+        data-srcset="/images/0400ssm/ssm492/blog.009.png, /images/0400ssm/ssm492/blog.009.png 1.5x, /images/0400ssm/ssm492/blog.009.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm492/blog.009.png"
+        title="/images/0400ssm/ssm492/blog.009.png" /></p>
+<p>图4.6留言信息ER图</p>
+<p>（6）本系统的实体关系ER图如下图4.7所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm492/blog.010.png"
+        data-srcset="/images/0400ssm/ssm492/blog.010.png, /images/0400ssm/ssm492/blog.010.png 1.5x, /images/0400ssm/ssm492/blog.010.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm492/blog.010.png"
+        title="/images/0400ssm/ssm492/blog.010.png" />                         图4.7系统实体关系ER图</p>
+<h3 id="422数据库表设计">4.2.2数据库表设计</h3>
+<p><code>     </code>数据库表就是采用表格的形式记录数据，数据包括字段类型、长度、主外键等信息。根据上节的数据库ER图设计的本系统的数据库表为房屋信息表、订单信息表、留言信息表、用户信息表等。本系统的数据库表如下表4.1-4.9所示：</p>
+<p>表4.1 chuzufang</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm492/blog.011.png"
+        data-srcset="/images/0400ssm/ssm492/blog.011.png, /images/0400ssm/ssm492/blog.011.png 1.5x, /images/0400ssm/ssm492/blog.011.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm492/blog.011.png"
+        title="/images/0400ssm/ssm492/blog.011.png" /></p>
+<p>表4.2 chuzufang_collection</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm492/blog.012.png"
+        data-srcset="/images/0400ssm/ssm492/blog.012.png, /images/0400ssm/ssm492/blog.012.png 1.5x, /images/0400ssm/ssm492/blog.012.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm492/blog.012.png"
+        title="/images/0400ssm/ssm492/blog.012.png" /></p>
+<p>表4.3 chuzufang_liuyan</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm492/blog.013.png"
+        data-srcset="/images/0400ssm/ssm492/blog.013.png, /images/0400ssm/ssm492/blog.013.png 1.5x, /images/0400ssm/ssm492/blog.013.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm492/blog.013.png"
+        title="/images/0400ssm/ssm492/blog.013.png" /></p>
+<p>表4.4 chuzufang_order</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm492/blog.014.png"
+        data-srcset="/images/0400ssm/ssm492/blog.014.png, /images/0400ssm/ssm492/blog.014.png 1.5x, /images/0400ssm/ssm492/blog.014.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm492/blog.014.png"
+        title="/images/0400ssm/ssm492/blog.014.png" /></p>
+<p>表4.5 config</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm492/blog.015.png"
+        data-srcset="/images/0400ssm/ssm492/blog.015.png, /images/0400ssm/ssm492/blog.015.png 1.5x, /images/0400ssm/ssm492/blog.015.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm492/blog.015.png"
+        title="/images/0400ssm/ssm492/blog.015.png" /></p>
+<p>表4.6 dictionary</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm492/blog.016.png"
+        data-srcset="/images/0400ssm/ssm492/blog.016.png, /images/0400ssm/ssm492/blog.016.png 1.5x, /images/0400ssm/ssm492/blog.016.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm492/blog.016.png"
+        title="/images/0400ssm/ssm492/blog.016.png" /></p>
+<p>表4.7 token</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm492/blog.017.png"
+        data-srcset="/images/0400ssm/ssm492/blog.017.png, /images/0400ssm/ssm492/blog.017.png 1.5x, /images/0400ssm/ssm492/blog.017.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm492/blog.017.png"
+        title="/images/0400ssm/ssm492/blog.017.png" /></p>
+<p>表4.8 users</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm492/blog.018.png"
+        data-srcset="/images/0400ssm/ssm492/blog.018.png, /images/0400ssm/ssm492/blog.018.png 1.5x, /images/0400ssm/ssm492/blog.018.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm492/blog.018.png"
+        title="/images/0400ssm/ssm492/blog.018.png" /></p>
+<p>表4.9 yonghu</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm492/blog.019.png"
+        data-srcset="/images/0400ssm/ssm492/blog.019.png, /images/0400ssm/ssm492/blog.019.png 1.5x, /images/0400ssm/ssm492/blog.019.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm492/blog.019.png"
+        title="/images/0400ssm/ssm492/blog.019.png" /></p>
+<h1 id="第5章-系统实现">第5章 系统实现</h1>
+<h2 id="51前台界面的实现">5.1前台界面的实现</h2>
+<p>在前台界面里的主要使用人员为用户，游客可以通过注册成为用户，在前台里展示的主要信息为出租房信息。前台界面的实现效果如下图5.1所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm492/blog.020.png"
+        data-srcset="/images/0400ssm/ssm492/blog.020.png, /images/0400ssm/ssm492/blog.020.png 1.5x, /images/0400ssm/ssm492/blog.020.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm492/blog.020.png"
+        title="/images/0400ssm/ssm492/blog.020.png" /></p>
+<p>图5.1前台界面的实现效果</p>
+<h2 id="52出租房信息功能的实现界面">5.2出租房信息功能的实现界面</h2>
+<p>用户登录后可以浏览所有的出租房。出租房可以直接看到图片和价格，方便用户对比。出租房信息功能的实现界面如下图5.2所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm492/blog.021.png"
+        data-srcset="/images/0400ssm/ssm492/blog.021.png, /images/0400ssm/ssm492/blog.021.png 1.5x, /images/0400ssm/ssm492/blog.021.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm492/blog.021.png"
+        title="/images/0400ssm/ssm492/blog.021.png" /></p>
+<p>图5.2出租房信息功能的实现界面</p>
+<h2 id="53系统推荐功能的实现界面">5.3系统推荐功能的实现界面</h2>
+<p><code>    </code>点击系统推荐功能，可以推荐所有的房屋，用户在房屋详情里可以查看房屋的评价、房屋的价格以及房屋的图片、电话等信息。系统推荐功能的实现界面如下图5.3所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm492/blog.022.png"
+        data-srcset="/images/0400ssm/ssm492/blog.022.png, /images/0400ssm/ssm492/blog.022.png 1.5x, /images/0400ssm/ssm492/blog.022.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm492/blog.022.png"
+        title="/images/0400ssm/ssm492/blog.022.png" /></p>
+<p>图5.3系统推荐功能的实现界面</p>
+<h2 id="54房屋详情功能的实现界面">5.4房屋详情功能的实现界面</h2>
+<p>在房屋详情界面里可以发表留言和预订看房。房屋详情功能的实现界面如下图5.4所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm492/blog.023.png"
+        data-srcset="/images/0400ssm/ssm492/blog.023.png, /images/0400ssm/ssm492/blog.023.png 1.5x, /images/0400ssm/ssm492/blog.023.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm492/blog.023.png"
+        title="/images/0400ssm/ssm492/blog.023.png" /></p>
+<p>图5.4房屋详情功能的实现界面</p>
+<h2 id="55预约看房功能的实现界面">5.5预约看房功能的实现界面</h2>
+<p>用户选择喜欢的房屋后可以预约实地看房，预约看房功能的实现界面如下图5.5所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm492/blog.024.png"
+        data-srcset="/images/0400ssm/ssm492/blog.024.png, /images/0400ssm/ssm492/blog.024.png 1.5x, /images/0400ssm/ssm492/blog.024.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm492/blog.024.png"
+        title="/images/0400ssm/ssm492/blog.024.png" /></p>
+<p>图5.5预约看房功能的实现界面</p>
+<h2 id="56房屋收藏界面的实现界面">5.6房屋收藏界面的实现界面</h2>
+<p><code>    </code>在房屋详情界面里可以看到收藏房屋，点击收藏按钮就可以快速收藏房屋。房屋收藏功能的实现界面如下图5.6所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm492/blog.025.png"
+        data-srcset="/images/0400ssm/ssm492/blog.025.png, /images/0400ssm/ssm492/blog.025.png 1.5x, /images/0400ssm/ssm492/blog.025.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm492/blog.025.png"
+        title="/images/0400ssm/ssm492/blog.025.png" /></p>
+<p>图5.6房屋收藏界面的实现界面</p>
+<h2 id="57我的功能的实现界面">5.7我的功能的实现界面</h2>
+<p><code>   </code>在我的功能界面里用户可以管理自己收藏的房屋信息和订单信息以及修改个人资料。我的功能的实现界面如下图5.7所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm492/blog.026.png"
+        data-srcset="/images/0400ssm/ssm492/blog.026.png, /images/0400ssm/ssm492/blog.026.png 1.5x, /images/0400ssm/ssm492/blog.026.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm492/blog.026.png"
+        title="/images/0400ssm/ssm492/blog.026.png" /></p>
+<p>图5.7我的功能的实现界面</p>
+<h2 id="58房屋订单管理功能的实现界面">5.8房屋订单管理功能的实现界面</h2>
+<p><code>   </code>用户预订看房后可以管理订单信息，并查看审核结果。房屋订单管理功能的实现界面如下图5.8所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm492/blog.027.png"
+        data-srcset="/images/0400ssm/ssm492/blog.027.png, /images/0400ssm/ssm492/blog.027.png 1.5x, /images/0400ssm/ssm492/blog.027.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm492/blog.027.png"
+        title="/images/0400ssm/ssm492/blog.027.png" /></p>
+<p>图5.8房屋订单管理功能的实现界面</p>
+<h2 id="59管理员个人中心管理功能的实现界面">5.9管理员个人中心管理功能的实现界面</h2>
+<p>管理员可以修改个人资料和密码。管理员个人中心管理功能的实现界面如下图5.9所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm492/blog.028.png"
+        data-srcset="/images/0400ssm/ssm492/blog.028.png, /images/0400ssm/ssm492/blog.028.png 1.5x, /images/0400ssm/ssm492/blog.028.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm492/blog.028.png"
+        title="/images/0400ssm/ssm492/blog.028.png" /></p>
+<p>图5.9管理员个人中心管理功能的实现界面</p>
+<h2 id="510管理员出租房管理功能的实现界面">5.10管理员出租房管理功能的实现界面</h2>
+<p>管理员可以上新出租房、审核出租房的订单信息和查看房屋的留言、收藏等信息。管理员出租房管理功能的实现界面如下图5.10所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm492/blog.029.png"
+        data-srcset="/images/0400ssm/ssm492/blog.029.png, /images/0400ssm/ssm492/blog.029.png 1.5x, /images/0400ssm/ssm492/blog.029.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm492/blog.029.png"
+        title="/images/0400ssm/ssm492/blog.029.png" /></p>
+<p>图5.10管理员出租房管理功能的实现界面</p>
+<h2 id="511基础数据管理功能的实现界面">5.11基础数据管理功能的实现界面</h2>
+<p>本功能由管理员负责，可以管理出租房的类型和时间段信息。基础数据管理功能的实现界面如下图5.11所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm492/blog.030.png"
+        data-srcset="/images/0400ssm/ssm492/blog.030.png, /images/0400ssm/ssm492/blog.030.png 1.5x, /images/0400ssm/ssm492/blog.030.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm492/blog.030.png"
+        title="/images/0400ssm/ssm492/blog.030.png" /></p>
+<p>图5.11基础数据管理功能的实现界面</p>
+<h1 id="heading"></h1>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2024-04-08</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/ssm492%E6%88%BF%E5%B1%8B%E7%A7%9F%E8%B5%81%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91-jsp/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://chenqi199.github.io/ssm492%E6%88%BF%E5%B1%8B%E7%A7%9F%E8%B5%81%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91-jsp/" data-title="ssm492房屋租赁平台的设计与开发&#43;jsp" data-hashtags="ssm房屋,租赁平台,房屋租赁,平台设计,设计开发"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://chenqi199.github.io/ssm492%E6%88%BF%E5%B1%8B%E7%A7%9F%E8%B5%81%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91-jsp/" data-hashtag="ssm房屋"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://chenqi199.github.io/ssm492%E6%88%BF%E5%B1%8B%E7%A7%9F%E8%B5%81%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91-jsp/" data-title="ssm492房屋租赁平台的设计与开发&#43;jsp"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://chenqi199.github.io/ssm492%E6%88%BF%E5%B1%8B%E7%A7%9F%E8%B5%81%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91-jsp/" data-title="ssm492房屋租赁平台的设计与开发&#43;jsp"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://chenqi199.github.io/ssm492%E6%88%BF%E5%B1%8B%E7%A7%9F%E8%B5%81%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91-jsp/" data-title="ssm492房屋租赁平台的设计与开发&#43;jsp" data-ralateuid="https://gitee.com/chen_q_i"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ssm%E6%88%BF%E5%B1%8B/">Ssm房屋</a>,&nbsp;<a href="/tags/%E7%A7%9F%E8%B5%81%E5%B9%B3%E5%8F%B0/">租赁平台</a>,&nbsp;<a href="/tags/%E6%88%BF%E5%B1%8B%E7%A7%9F%E8%B5%81/">房屋租赁</a>,&nbsp;<a href="/tags/%E5%B9%B3%E5%8F%B0%E8%AE%BE%E8%AE%A1/">平台设计</a>,&nbsp;<a href="/tags/%E8%AE%BE%E8%AE%A1%E5%BC%80%E5%8F%91/">设计开发</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/ssm493%E5%AE%B6%E5%85%B7%E9%94%80%E5%94%AE%E5%BA%93%E5%AD%98%E7%AE%A1%E7%90%86%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" class="prev" rel="prev" title="ssm493家具销售库存管理信息系统的设计与实现&#43;jsp"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>ssm493家具销售库存管理信息系统的设计与实现+jsp</a>
+            <a href="/ssm491%E4%BA%8C%E6%89%8B%E8%BD%A6%E4%BA%A4%E6%98%93%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1-jsp/" class="next" rel="next" title="ssm491二手车交易平台的设计&#43;jsp">ssm491二手车交易平台的设计+jsp<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.128.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="chenqi199" target="_blank">chenqi</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

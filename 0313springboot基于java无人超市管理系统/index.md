@@ -1,17 +1,16 @@
 # 0313springboot基于java无人超市管理系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0313springboot基于java无人超市管理系统](https://github.com/GraduationProject-springboot/0313springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)]()
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
 ## 1.1 研究背景
@@ -36,13 +35,13 @@
 ## 2.1 B/S结构介绍  
 在早期，一些使用HTML语言编写的文件，再集合一些其它资源文件就可以组成一个最简单的Web程序，了解了Web程序也需要了解Web站点，它们之间的关系就是一个或者多个Web程序可以放在Internet上的一个Web站点（Web服务器）中进行使用。可以说Web应用程序的开发也带动了B/S这种网络结构模式的兴起。B是Brower（浏览器）的首字母，S是Server（服务器）的首字母，两个首字母进行组合就成了网络结构模式的简称B/S。由于这种结构模式通过安装在客户端的浏览器进行服务器的访问，可以把程序的核心功能安排在服务器中进行处理，给程序的开发，后期使用和维护省去了许多工作。图2.2展示的就是使用这种架构开发的程序的工作原理。
 
-![](/images/0300stringboot/0313springboot/blog.001.png)
+![](/images/0300wxapp//blog.001.png)
 
 图2.2 B/S架构的工作原理图
 ## 2.2 MySQL数据库介绍
 开发的程序面向用户的只是程序的功能界面，让用户操作程序界面的各个功能，那么很多人就会问，用户使用程序功能生成的数据信息放在哪里的？这个就需要涉及到数据库的知识了，一般来说，程序开发通常就会对常用数据存储工具的特点进行分析比对，比如MySQL数据库的特点与优势，Access数据库的特点与优势，Sqlserver数据库的特点与优势等，最终看哪个数据库与需要开发的程序比较匹配，也符合程序功能运行需要的数据存储要求，比如，需要开发商业级别的程序，存储的数据对数据库要求较高，可以选用Oracle，如果只是比较简单的程序，对数据存储没有过多要求，可以选用微软旗下的Access，当开发程序要求数据库占用空间小，并能满足程序数据存储要求时，就可以考虑Oracle公司从瑞典MySQL AB公司在很早之前就收购过一个关系型数据库，它是现在的MySQL数据库。在数据库工具里面它是最受认可的其中一个应用软件。需要说明的信息就是，本程序的开发就运用到了此数据库。它将程序数据通过使用不同的数据表格进行保存，在增加了程序数据的存储速度的时候，也提高了数据库的灵活性。 图2.3展示的就是MySQL的架构图。
 
-![](/images/0300stringboot/0313springboot/blog.002.png)
+![](/images/0300wxapp//blog.002.png)
 
 图2.3 MySQL数据库架构图
 ## 2.3 Spring Boot框架介绍
@@ -77,25 +76,25 @@ SpringBoot可以与经典的Java开发工具一起使用或者作为命令行工
 ### 3.3.1 操作流程分析
 程序上交给用户进行使用时，需要提供程序的操作流程图（如图3.1所示），这样便于用户容易理解程序的具体工作步骤，现如今程序的操作流程都有一个大致的标准，即先通过登录页面提交登录数据，通过程序验证正确之后，用户才能在程序功能操作区页面操作对应的功能。
 
-![](/images/0300stringboot/0313springboot/blog.003.png)
+![](/images/0300wxapp//blog.003.png)
 
 图3.1 程序操作流程图
 ### 3.3.2 登录流程分析
 在这个部分，需要对程序的登录功能模块的运行流程（如图3.2所示），进行单独说明。程序设置登录模块也是为了安全起见，让用户使用放心，登录模块主要就是让用户提交登录信息，程序进行数据验证，验证通过的用户才能够成功登录程序。
 
-![](/images/0300stringboot/0313springboot/blog.004.png)
+![](/images/0300wxapp//blog.004.png)
 
 图3.2 程序登录流程图
 ### 3.3.3 信息添加流程分析
 程序的添加功能就是提供给操作者录入信息的功能，不管是涉及到用户信息添加，还是其它功能模块涉及到的信息添加，程序的信息添加流程（如图3.3所示）都是一致的。程序都是先对操作者录入的数据进行判定，这个判定规则是一段提前编写完成的程序代码，当程序判定数据符合要求时，才会把操作者录入的数据登记在数据表里面，比如添加的用户信息，就会把新添加的用户信息写入用户信息的数据表文件里面。
 
-![](/images/0300stringboot/0313springboot/blog.005.png)
+![](/images/0300wxapp//blog.005.png)
 
 图3.3 信息添加流程图
 ### 3.3.4 信息删除流程分析
 当从程序里面删除某种无效数据时，遵循程序的信息删除流程（如图3.4所示），先要选中操作者需要删除的数据，程序为了预防操作者误删信息，也会进行提示，当操作者真正确定要删选中的信息时，该信息就会从数据库中被永久删除。
 
-![](/images/0300stringboot/0313springboot/blog.006.png)
+![](/images/0300wxapp//blog.006.png)
 
 图3.4 信息删除流程图
 
@@ -104,13 +103,13 @@ SpringBoot可以与经典的Java开发工具一起使用或者作为命令行工
 ## 4.1 系统概要设计
 本次拟开发的系统为了节约开发成本，也为了后期在维护和升级上的便利性，打算通过浏览器来实现系统功能界面的展示，让程序软件的主要事务集中在后台的服务器端处理，前端部分只用处理少量的事务逻辑。下面使用一张图（如图4.1所示）来说明程序的工作原理。
 
-![](/images/0300stringboot/0313springboot/blog.007.png)
+![](/images/0300wxapp//blog.007.png)
 
 图4.1 程序工作的原理图
 ## 4.2 系统功能结构设计
 在分析并得出使用者对程序的功能要求时，就可以进行程序设计了。如图4.2展示的就是管理员功能结构图。
 
-![](/images/0300stringboot/0313springboot/blog.008.png)
+![](/images/0300wxapp//blog.008.png)
 
 图4.2 管理员功能结构图
 ## 4.3 数据库设计
@@ -120,19 +119,19 @@ SpringBoot可以与经典的Java开发工具一起使用或者作为命令行工
 
 （1）管理员实体属性图见图4.4。
 
-![](/images/0300stringboot/0313springboot/blog.009.png)
+![](/images/0300wxapp//blog.009.png)
 
 图4.4 管理员实体属性图
 
 （2）用户实体属性图见图4.5。
 
-![](/images/0300stringboot/0313springboot/blog.010.png)
+![](/images/0300wxapp//blog.010.png)
 
 图4.5 用户实体属性图
 
 （3）商品类型实体属性图见图4.6。
 
-![](/images/0300stringboot/0313springboot/blog.011.png)
+![](/images/0300wxapp//blog.011.png)
 
 图4.6 商品类型实体属性图
 ### 4.3.2 数据库表结构设计
@@ -269,109 +268,109 @@ SpringBoot可以与经典的Java开发工具一起使用或者作为命令行工
 ### 5.1.1 管理员登录
 管理员需要输入管理员账号和密码并且选择管理员角色都正确才能登录成功。
 
-![](/images/0300stringboot/0313springboot/blog.012.png)
+![](/images/0300wxapp//blog.012.png)
 
 图5.1 管理员登录页面
 ### 5.1.2 管理员修改密码
 管理员点击个人中心，修改密码，需要输入正确的原密码，并且新密码和确认密码要一致，都输入正确了才可以点击确定。
 
-![](/images/0300stringboot/0313springboot/blog.013.png)
+![](/images/0300wxapp//blog.013.png)
 
 图5.2 管理员修改密码页面
 ### 5.1.3 管理员修改个人信息
 管理员修改个人信息只能修改用户名，修改成功后退出再登录就需要输入新的用户名了。
 
-![](/images/0300stringboot/0313springboot/blog.014.png)
+![](/images/0300wxapp//blog.014.png)
 
 图5.3 管理员修改个人信息页面
 ### 5.1.4 管理员管理
 管理员管理可以对管理员账号进行添加，修改，删除，查询操作，还可以查看详情。
 
-![](/images/0300stringboot/0313springboot/blog.015.png)
+![](/images/0300wxapp//blog.015.png)
 
 图5.4 管理员管理页面
 ### 5.1.5 商品类型名称管理
 管理员可以对商品类型名称进行添加，修改，删除，查询操作，还可以查看详情。
 
-![](/images/0300stringboot/0313springboot/blog.016.png)
+![](/images/0300wxapp//blog.016.png)
 
 图5.5 商品类型名称页面
 ### 5.1.6 支付类型管理
 管理员可以对支付类型进行添加，修改，删除，查询操作，还可以查看详情。
 
-![](/images/0300stringboot/0313springboot/blog.017.png)
+![](/images/0300wxapp//blog.017.png)
 
 图5.6 支付类型页面
 ### 5.1.7 公告类型管理
 管理员可以对公告类型进行添加，修改，删除，查询操作，还可以查看详情。
 
-![](/images/0300stringboot/0313springboot/blog.018.png)
+![](/images/0300wxapp//blog.018.png)
 
 图5.7 公告类型页面
 ### 5.1.8 商品信息管理
 管理员可以对商品信息进行添加，修改，删除，查询操作，还可以查看详情。
 
-![](/images/0300stringboot/0313springboot/blog.019.png)
+![](/images/0300wxapp//blog.019.png)
 
 图5.8 商品信息页面
 ### 5.1.9 入库操作
 管理员可以在出入库管理里面操作入库操作，入库需要填写出入库订单名称，还可以选项商品，更改商品数量，进行提交。
 
-![](/images/0300stringboot/0313springboot/blog.020.png)
+![](/images/0300wxapp//blog.020.png)
 
 图5.9 入库页面
 ### 5.1.10 出库操作
 管理员可以在出入库管理里面操作出库操作，出库需要填写出出库订单名称，还可以选项商品，更改商品数量，进行提交。
 
-![](/images/0300stringboot/0313springboot/blog.021.png)
+![](/images/0300wxapp//blog.021.png)
 
 图5.10 出库页面
 ### 5.1.11 出入库管理
 管理员可以在出入库管理里面查看到自己操作过的出入库信息，还可以查看列表详情和删除操作，还可以查询，可以根据出入库名称查询出入库信息。
 
-![](/images/0300stringboot/0313springboot/blog.022.png)
+![](/images/0300wxapp//blog.022.png)
 
 图5.11 出入库管理页面
 ### 5.1.12 出入库详情管理
 管理员可以在出入库详情管理里面搜索出入库详情信息也可以对出入库详情进行删除操作。
 
-![](/images/0300stringboot/0313springboot/blog.023.png)
+![](/images/0300wxapp//blog.023.png)
 
 图5.11 出入库详情管理页面
 ### 5.1.13 出入库详情删除
 管理员可以删除出入库详情信息，点击删除会先提示确定要删除吗？
 
-![](/images/0300stringboot/0313springboot/blog.024.png)
+![](/images/0300wxapp//blog.024.png)
 
 图5.13 出入库详情删除页面
 ### 5.1.14 出入库详情删除
 管理员可以删除出入库详情信息，点击删除会先提示确定要删除吗？
 
-![](/images/0300stringboot/0313springboot/blog.025.png)
+![](/images/0300wxapp//blog.025.png)
 
 图5.14 出入库详情删除页面
 ### 5.1.15 购买管理
 管理员可以通过购买流水号进行查询，也可以对任何一条购买信息进行查看列表详情，列表详情会显示商品的单价，名称和数量以及总价。
 
-![](/images/0300stringboot/0313springboot/blog.026.png)
+![](/images/0300wxapp//blog.026.png)
 
 图5.15 购买管理页面
 ### 5.1.16 购买详情管理
 管理员可以通过商品名称，商品类型，购买流水号和支付类型查询购买详情。
 
-![](/images/0300stringboot/0313springboot/blog.027.png)
+![](/images/0300wxapp//blog.027.png)
 
 图5.16 购买详情管理页面
 ### 5.1.17 公告信息管理
 管理员可以对公告信息进行添加，修改，删除，查询操作。
 
-![](/images/0300stringboot/0313springboot/blog.028.png)
+![](/images/0300wxapp//blog.028.png)
 
 图5.17 公告信息管理页面
 ### 5.1.18 用户信息管理
 管理员可以对用户信息进行添加，修改，删除，查询操作。
 
-![](/images/0300stringboot/0313springboot/blog.029.png)
+![](/images/0300wxapp//blog.029.png)
 
 图5.18 用户信息管理页面
 
@@ -383,43 +382,43 @@ SpringBoot可以与经典的Java开发工具一起使用或者作为命令行工
 ### 5.2.1 用户注册
 用户需要注册才可以登录，用户注册需要输账号，密码，手机号，姓名，邮箱等信息。
 
-![](/images/0300stringboot/0313springboot/blog.030.png)
+![](/images/0300wxapp//blog.030.png)
 
 图5.19 用户注册页面
 ### 5.2.2 用户登录
 用户登录需要输入正确的账号密码，也要选择用户身份，都匹配了才可以登录。
 
-![](/images/0300stringboot/0313springboot/blog.031.png)
+![](/images/0300wxapp//blog.031.png)
 
 图5.20 用户登录页面
 ### 5.2.3 商品管理
 用户可以搜索和查看商品信息，这些商品信息都是管理员发布的。
 
-![](/images/0300stringboot/0313springboot/blog.032.png)
+![](/images/0300wxapp//blog.032.png)
 
 图5.21 商品管理页面
 ### 5.2.4 购买管理
 用户可以通过购买流水号查自己的购买信息，也可以通过支付类型查询。
 
-![](/images/0300stringboot/0313springboot/blog.033.png)
+![](/images/0300wxapp//blog.033.png)
 
 图5.22 购买管理页面
 ### 5.2.5 收银
 用户可以自助收银，选择收银类型，选择商品和数量，就可以提交。
 
-![](/images/0300stringboot/0313springboot/blog.034.png)
+![](/images/0300wxapp//blog.034.png)
 
 图5.23 收银页面
 ### 5.2.6 购买详情
 用户可以通过搜索商品名称，类型，流水号，支付类型查询到自己的购买详情。
 
-![](/images/0300stringboot/0313springboot/blog.035.png)
+![](/images/0300wxapp//blog.035.png)
 
 图5.24 购买详情页面
 ### 5.2.7 公告信息
 用户可以通过搜索公告标题和公告类型查询公告信息。
 
-![](/images/0300stringboot/0313springboot/blog.036.png)
+![](/images/0300wxapp//blog.036.png)
 
 图5.25 公告信息页面
 

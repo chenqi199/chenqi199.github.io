@@ -8,27 +8,28 @@
         <title>0178springboot流浪宠物管理系统的设计与实现 - chenqi blog</title><meta name="Description" content="Hugo theme - chenqi"><meta property="og:url" content="https://chenqi199.github.io/0178springboot%E6%B5%81%E6%B5%AA%E5%AE%A0%E7%89%A9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/">
   <meta property="og:site_name" content="chenqi blog">
   <meta property="og:title" content="0178springboot流浪宠物管理系统的设计与实现">
-  <meta property="og:description" content="0178springboot流浪宠物管理系统的设计与实现 项目清单 包安装运行 github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1.1研究背景与意义 1">
+  <meta property="og:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site 0178springboot流浪宠物管理系统的设计与实现 github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1.1研究背">
   <meta property="og:locale" content="zh_CN">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2023-12-11T18:19:01+08:00">
-    <meta property="article:modified_time" content="2023-12-11T18:19:01+08:00">
-    <meta property="article:tag" content="Springboot">
-    <meta property="article:tag" content="Java">
-    <meta property="article:tag" content="Vue">
-    <meta property="article:tag" content="论文">
-    <meta property="article:tag" content="项目">
+    <meta property="article:published_time" content="2023-12-25T11:22:08+08:00">
+    <meta property="article:modified_time" content="2023-12-25T11:22:08+08:00">
+    <meta property="article:tag" content="Springboot流浪">
+    <meta property="article:tag" content="流浪宠物">
+    <meta property="article:tag" content="宠物管理">
+    <meta property="article:tag" content="系统设计">
+    <meta property="article:tag" content="设计实现">
+    <meta property="article:tag" content="管理系统">
     <meta property="og:image" content="https://chenqi199.github.io/logo.png">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://chenqi199.github.io/logo.png">
   <meta name="twitter:title" content="0178springboot流浪宠物管理系统的设计与实现">
-  <meta name="twitter:description" content="0178springboot流浪宠物管理系统的设计与实现 项目清单 包安装运行 github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1.1研究背景与意义 1">
+  <meta name="twitter:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site 0178springboot流浪宠物管理系统的设计与实现 github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1.1研究背">
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chenqi199.github.io/0178springboot%E6%B5%81%E6%B5%AA%E5%AE%A0%E7%89%A9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" /><link rel="prev" href="https://chenqi199.github.io/0173springboot%E7%96%BE%E7%97%85%E9%98%B2%E6%8E%A7%E7%BB%BC%E5%90%88%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" /><link rel="next" href="https://chenqi199.github.io/0177springboot%E6%99%BA%E8%83%BD%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0%E7%B3%BB%E7%BB%9F/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chenqi199.github.io/0178springboot%E6%B5%81%E6%B5%AA%E5%AE%A0%E7%89%A9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" /><link rel="prev" href="https://chenqi199.github.io/ssm176%E7%94%9F%E6%B4%BB%E7%BC%B4%E8%B4%B9%E7%B3%BB%E7%BB%9F%E5%8F%8A%E7%9B%B8%E5%85%B3%E5%AE%89%E5%85%A8%E6%8A%80%E6%9C%AF%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" /><link rel="next" href="https://chenqi199.github.io/0177springboot%E6%99%BA%E8%83%BD%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0%E7%B3%BB%E7%BB%9F/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
     {
@@ -39,8 +40,8 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/chenqi199.github.io\/0178springboot%E6%B5%81%E6%B5%AA%E5%AE%A0%E7%89%A9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0\/"
-        },"image": ["https:\/\/chenqi199.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "springboot, java, vue, 论文, 项目","wordcount":  11024 ,
-        "url": "https:\/\/chenqi199.github.io\/0178springboot%E6%B5%81%E6%B5%AA%E5%AE%A0%E7%89%A9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0\/","datePublished": "2023-12-11T18:19:01+08:00","dateModified": "2023-12-11T18:19:01+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        },"image": ["https:\/\/chenqi199.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "springboot流浪, 流浪宠物, 宠物管理, 系统设计, 设计实现, 管理系统","wordcount":  11029 ,
+        "url": "https:\/\/chenqi199.github.io\/0178springboot%E6%B5%81%E6%B5%AA%E5%AE%A0%E7%89%A9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0\/","datePublished": "2023-12-25T11:22:08+08:00","dateModified": "2023-12-25T11:22:08+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/chenqi199.github.io\/images\/avatar.png"},"author": {
                 "@type": "Person",
@@ -119,7 +120,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">0178springboot流浪宠物管理系统的设计与实现</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="chenqi199" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>chenqi</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-12-11">2023-12-11</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 11024 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-12-25">2023-12-25</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 11029 字&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 23 分钟&nbsp;<span id="/0178springboot%E6%B5%81%E6%B5%AA%E5%AE%A0%E7%89%A9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" class="leancloud_visitors" data-flag-title="0178springboot流浪宠物管理系统的设计与实现">
                         <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
@@ -201,7 +202,8 @@
     <li><a href="#510轮播图管理">5.10轮播图管理</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h1 id="0178springboot流浪宠物管理系统的设计与实现httpsgithubcomgraduationproject-springboot0178springboot"><a href="https://github.com/GraduationProject-springboot/0178springboot" target="_blank" rel="noopener noreffer ">0178springboot流浪宠物管理系统的设计与实现</a></h1>
+            </div><div class="content" id="content"><h1 id="项目清单-包安装运行httpchenqi1990site-官网地址-httpchenqi1990site"><a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">项目清单 包安装运行</a> 官网地址 <a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">http://chenqi1990.site</a></h1>
+<h1 id="0178springboot流浪宠物管理系统的设计与实现httpsgithubcomgraduationproject-springboot0178springboot"><a href="https://github.com/GraduationProject-springboot/0178springboot" target="_blank" rel="noopener noreffer ">0178springboot流浪宠物管理系统的设计与实现</a></h1>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -210,10 +212,9 @@
         data-sizes="auto"
         alt="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
         title="picture" /></p>
-<h1 id="项目清单httpschenqi1990site-包安装运行"><a href="https://chenqi1990.site" target="_blank" rel="noopener noreffer ">项目清单</a> 包安装运行</h1>
 <h3 id="github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">github 项目仓库</a> 开源仅有后端代码</h3>
 <h3 id="点击播放视频-">点击播放视频 ▼</h3>
-<p><a href="https://www.bilibili.com/video/BV1jqaLe1ECs?p=76" target="_blank" rel="noopener noreffer "><img
+<p><a href="https://www.bilibili.com/video/BV1ULbQeREgz?p=1" target="_blank" rel="noopener noreffer "><img
         class="lazyload"
         src="/svg/loading.min.svg"
         data-src="https://i.sstatic.net/Vp2cE.png"
@@ -318,11 +319,11 @@
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="/images/0100stringboot/0178springboot/blog.004.png"
-        data-srcset="/images/0100stringboot/0178springboot/blog.004.png, /images/0100stringboot/0178springboot/blog.004.png 1.5x, /images/0100stringboot/0178springboot/blog.004.png 2x"
+        data-src="/images/0100wxapp//blog.004.png"
+        data-srcset="/images/0100wxapp//blog.004.png, /images/0100wxapp//blog.004.png 1.5x, /images/0100wxapp//blog.004.png 2x"
         data-sizes="auto"
-        alt="/images/0100stringboot/0178springboot/blog.004.png"
-        title="/images/0100stringboot/0178springboot/blog.004.png" /></p>
+        alt="/images/0100wxapp//blog.004.png"
+        title="/images/0100wxapp//blog.004.png" /></p>
 <p>图4-1系统的总体功能设计</p>
 <h2 id="42数据库设计">4.2数据库设计</h2>
 <h3 id="421概念设计">4.2.1概念设计</h3>
@@ -330,128 +331,128 @@
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="/images/0100stringboot/0178springboot/blog.005.png"
-        data-srcset="/images/0100stringboot/0178springboot/blog.005.png, /images/0100stringboot/0178springboot/blog.005.png 1.5x, /images/0100stringboot/0178springboot/blog.005.png 2x"
+        data-src="/images/0100wxapp//blog.005.png"
+        data-srcset="/images/0100wxapp//blog.005.png, /images/0100wxapp//blog.005.png 1.5x, /images/0100wxapp//blog.005.png 2x"
         data-sizes="auto"
-        alt="/images/0100stringboot/0178springboot/blog.005.png"
-        title="/images/0100stringboot/0178springboot/blog.005.png" /></p>
+        alt="/images/0100wxapp//blog.005.png"
+        title="/images/0100wxapp//blog.005.png" /></p>
 <p>图4-2管理员信息E-R图</p>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="/images/0100stringboot/0178springboot/blog.006.png"
-        data-srcset="/images/0100stringboot/0178springboot/blog.006.png, /images/0100stringboot/0178springboot/blog.006.png 1.5x, /images/0100stringboot/0178springboot/blog.006.png 2x"
+        data-src="/images/0100wxapp//blog.006.png"
+        data-srcset="/images/0100wxapp//blog.006.png, /images/0100wxapp//blog.006.png 1.5x, /images/0100wxapp//blog.006.png 2x"
         data-sizes="auto"
-        alt="/images/0100stringboot/0178springboot/blog.006.png"
-        title="/images/0100stringboot/0178springboot/blog.006.png" /></p>
+        alt="/images/0100wxapp//blog.006.png"
+        title="/images/0100wxapp//blog.006.png" /></p>
 <p>图4-3用户信息E-R图</p>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="/images/0100stringboot/0178springboot/blog.007.png"
-        data-srcset="/images/0100stringboot/0178springboot/blog.007.png, /images/0100stringboot/0178springboot/blog.007.png 1.5x, /images/0100stringboot/0178springboot/blog.007.png 2x"
+        data-src="/images/0100wxapp//blog.007.png"
+        data-srcset="/images/0100wxapp//blog.007.png, /images/0100wxapp//blog.007.png 1.5x, /images/0100wxapp//blog.007.png 2x"
         data-sizes="auto"
-        alt="/images/0100stringboot/0178springboot/blog.007.png"
-        title="/images/0100stringboot/0178springboot/blog.007.png" /></p>
+        alt="/images/0100wxapp//blog.007.png"
+        title="/images/0100wxapp//blog.007.png" /></p>
 <p>图4-4字典信息E-R图</p>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="/images/0100stringboot/0178springboot/blog.008.png"
-        data-srcset="/images/0100stringboot/0178springboot/blog.008.png, /images/0100stringboot/0178springboot/blog.008.png 1.5x, /images/0100stringboot/0178springboot/blog.008.png 2x"
+        data-src="/images/0100wxapp//blog.008.png"
+        data-srcset="/images/0100wxapp//blog.008.png, /images/0100wxapp//blog.008.png 1.5x, /images/0100wxapp//blog.008.png 2x"
         data-sizes="auto"
-        alt="/images/0100stringboot/0178springboot/blog.008.png"
-        title="/images/0100stringboot/0178springboot/blog.008.png" /></p>
+        alt="/images/0100wxapp//blog.008.png"
+        title="/images/0100wxapp//blog.008.png" /></p>
 <p>图4-5商品信息E-R图</p>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="/images/0100stringboot/0178springboot/blog.009.png"
-        data-srcset="/images/0100stringboot/0178springboot/blog.009.png, /images/0100stringboot/0178springboot/blog.009.png 1.5x, /images/0100stringboot/0178springboot/blog.009.png 2x"
+        data-src="/images/0100wxapp//blog.009.png"
+        data-srcset="/images/0100wxapp//blog.009.png, /images/0100wxapp//blog.009.png 1.5x, /images/0100wxapp//blog.009.png 2x"
         data-sizes="auto"
-        alt="/images/0100stringboot/0178springboot/blog.009.png"
-        title="/images/0100stringboot/0178springboot/blog.009.png" /></p>
+        alt="/images/0100wxapp//blog.009.png"
+        title="/images/0100wxapp//blog.009.png" /></p>
 <p>图4-6商品订单信息E-R图</p>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="/images/0100stringboot/0178springboot/blog.010.png"
-        data-srcset="/images/0100stringboot/0178springboot/blog.010.png, /images/0100stringboot/0178springboot/blog.010.png 1.5x, /images/0100stringboot/0178springboot/blog.010.png 2x"
+        data-src="/images/0100wxapp//blog.010.png"
+        data-srcset="/images/0100wxapp//blog.010.png, /images/0100wxapp//blog.010.png 1.5x, /images/0100wxapp//blog.010.png 2x"
         data-sizes="auto"
-        alt="/images/0100stringboot/0178springboot/blog.010.png"
-        title="/images/0100stringboot/0178springboot/blog.010.png" /></p>
+        alt="/images/0100wxapp//blog.010.png"
+        title="/images/0100wxapp//blog.010.png" /></p>
 <p>图4-7商品评价信息E-R图</p>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="/images/0100stringboot/0178springboot/blog.011.png"
-        data-srcset="/images/0100stringboot/0178springboot/blog.011.png, /images/0100stringboot/0178springboot/blog.011.png 1.5x, /images/0100stringboot/0178springboot/blog.011.png 2x"
+        data-src="/images/0100wxapp//blog.011.png"
+        data-srcset="/images/0100wxapp//blog.011.png, /images/0100wxapp//blog.011.png 1.5x, /images/0100wxapp//blog.011.png 2x"
         data-sizes="auto"
-        alt="/images/0100stringboot/0178springboot/blog.011.png"
-        title="/images/0100stringboot/0178springboot/blog.011.png" /></p>
+        alt="/images/0100wxapp//blog.011.png"
+        title="/images/0100wxapp//blog.011.png" /></p>
 <p>图4-8流浪宠物信息E-R图</p>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="/images/0100stringboot/0178springboot/blog.012.png"
-        data-srcset="/images/0100stringboot/0178springboot/blog.012.png, /images/0100stringboot/0178springboot/blog.012.png 1.5x, /images/0100stringboot/0178springboot/blog.012.png 2x"
+        data-src="/images/0100wxapp//blog.012.png"
+        data-srcset="/images/0100wxapp//blog.012.png, /images/0100wxapp//blog.012.png 1.5x, /images/0100wxapp//blog.012.png 2x"
         data-sizes="auto"
-        alt="/images/0100stringboot/0178springboot/blog.012.png"
-        title="/images/0100stringboot/0178springboot/blog.012.png" /></p>
+        alt="/images/0100wxapp//blog.012.png"
+        title="/images/0100wxapp//blog.012.png" /></p>
 <p>图4-9流浪宠物领养信息E-R图</p>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="/images/0100stringboot/0178springboot/blog.013.png"
-        data-srcset="/images/0100stringboot/0178springboot/blog.013.png, /images/0100stringboot/0178springboot/blog.013.png 1.5x, /images/0100stringboot/0178springboot/blog.013.png 2x"
+        data-src="/images/0100wxapp//blog.013.png"
+        data-srcset="/images/0100wxapp//blog.013.png, /images/0100wxapp//blog.013.png 1.5x, /images/0100wxapp//blog.013.png 2x"
         data-sizes="auto"
-        alt="/images/0100stringboot/0178springboot/blog.013.png"
-        title="/images/0100stringboot/0178springboot/blog.013.png" /></p>
+        alt="/images/0100wxapp//blog.013.png"
+        title="/images/0100wxapp//blog.013.png" /></p>
 <p>图4-10流浪动物救助信息E-R图</p>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="/images/0100stringboot/0178springboot/blog.014.png"
-        data-srcset="/images/0100stringboot/0178springboot/blog.014.png, /images/0100stringboot/0178springboot/blog.014.png 1.5x, /images/0100stringboot/0178springboot/blog.014.png 2x"
+        data-src="/images/0100wxapp//blog.014.png"
+        data-srcset="/images/0100wxapp//blog.014.png, /images/0100wxapp//blog.014.png 1.5x, /images/0100wxapp//blog.014.png 2x"
         data-sizes="auto"
-        alt="/images/0100stringboot/0178springboot/blog.014.png"
-        title="/images/0100stringboot/0178springboot/blog.014.png" /></p>
+        alt="/images/0100wxapp//blog.014.png"
+        title="/images/0100wxapp//blog.014.png" /></p>
 <p>图4-11流浪动物救助留言信息E-R图</p>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="/images/0100stringboot/0178springboot/blog.015.png"
-        data-srcset="/images/0100stringboot/0178springboot/blog.015.png, /images/0100stringboot/0178springboot/blog.015.png 1.5x, /images/0100stringboot/0178springboot/blog.015.png 2x"
+        data-src="/images/0100wxapp//blog.015.png"
+        data-srcset="/images/0100wxapp//blog.015.png, /images/0100wxapp//blog.015.png 1.5x, /images/0100wxapp//blog.015.png 2x"
         data-sizes="auto"
-        alt="/images/0100stringboot/0178springboot/blog.015.png"
-        title="/images/0100stringboot/0178springboot/blog.015.png" /></p>
+        alt="/images/0100wxapp//blog.015.png"
+        title="/images/0100wxapp//blog.015.png" /></p>
 <p>图4-12流浪动物救助收藏信息E-R图</p>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="/images/0100stringboot/0178springboot/blog.016.png"
-        data-srcset="/images/0100stringboot/0178springboot/blog.016.png, /images/0100stringboot/0178springboot/blog.016.png 1.5x, /images/0100stringboot/0178springboot/blog.016.png 2x"
+        data-src="/images/0100wxapp//blog.016.png"
+        data-srcset="/images/0100wxapp//blog.016.png, /images/0100wxapp//blog.016.png 1.5x, /images/0100wxapp//blog.016.png 2x"
         data-sizes="auto"
-        alt="/images/0100stringboot/0178springboot/blog.016.png"
-        title="/images/0100stringboot/0178springboot/blog.016.png" /></p>
+        alt="/images/0100wxapp//blog.016.png"
+        title="/images/0100wxapp//blog.016.png" /></p>
 <p>图4-13购物车信息E-R图</p>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="/images/0100stringboot/0178springboot/blog.017.png"
-        data-srcset="/images/0100stringboot/0178springboot/blog.017.png, /images/0100stringboot/0178springboot/blog.017.png 1.5x, /images/0100stringboot/0178springboot/blog.017.png 2x"
+        data-src="/images/0100wxapp//blog.017.png"
+        data-srcset="/images/0100wxapp//blog.017.png, /images/0100wxapp//blog.017.png 1.5x, /images/0100wxapp//blog.017.png 2x"
         data-sizes="auto"
-        alt="/images/0100stringboot/0178springboot/blog.017.png"
-        title="/images/0100stringboot/0178springboot/blog.017.png" /></p>
+        alt="/images/0100wxapp//blog.017.png"
+        title="/images/0100wxapp//blog.017.png" /></p>
 <p>图4-14公告信息E-R图</p>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="/images/0100stringboot/0178springboot/blog.018.png"
-        data-srcset="/images/0100stringboot/0178springboot/blog.018.png, /images/0100stringboot/0178springboot/blog.018.png 1.5x, /images/0100stringboot/0178springboot/blog.018.png 2x"
+        data-src="/images/0100wxapp//blog.018.png"
+        data-srcset="/images/0100wxapp//blog.018.png, /images/0100wxapp//blog.018.png 1.5x, /images/0100wxapp//blog.018.png 2x"
         data-sizes="auto"
-        alt="/images/0100stringboot/0178springboot/blog.018.png"
-        title="/images/0100stringboot/0178springboot/blog.018.png" /></p>
+        alt="/images/0100wxapp//blog.018.png"
+        title="/images/0100wxapp//blog.018.png" /></p>
 <p>图4-15系统总体E-R图</p>
 <h3 id="422逻辑设计">4.2.2逻辑设计</h3>
 <p>逻辑设计阶段主要的工作是将概念设计中的E-R图，转换成方便系统进行存储和管理的二维表格形式[14]。这一阶段也可以被称为数据库的详细设计，其直接关系到系统功能模块的正常运行、数据信息的正常更新等。在设计过程中，需要充分考虑数据库的规范性和合理性，使得能够满足系统的功能和性能需求。本系统相关的数据表格设计内容如下所示。</p>
@@ -1379,199 +1380,199 @@
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="/images/0100stringboot/0178springboot/blog.019.png"
-        data-srcset="/images/0100stringboot/0178springboot/blog.019.png, /images/0100stringboot/0178springboot/blog.019.png 1.5x, /images/0100stringboot/0178springboot/blog.019.png 2x"
+        data-src="/images/0100wxapp//blog.019.png"
+        data-srcset="/images/0100wxapp//blog.019.png, /images/0100wxapp//blog.019.png 1.5x, /images/0100wxapp//blog.019.png 2x"
         data-sizes="auto"
-        alt="/images/0100stringboot/0178springboot/blog.019.png"
-        title="/images/0100stringboot/0178springboot/blog.019.png" /></p>
+        alt="/images/0100wxapp//blog.019.png"
+        title="/images/0100wxapp//blog.019.png" /></p>
 <p>图5-1修改密码界面</p>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="/images/0100stringboot/0178springboot/blog.020.png"
-        data-srcset="/images/0100stringboot/0178springboot/blog.020.png, /images/0100stringboot/0178springboot/blog.020.png 1.5x, /images/0100stringboot/0178springboot/blog.020.png 2x"
+        data-src="/images/0100wxapp//blog.020.png"
+        data-srcset="/images/0100wxapp//blog.020.png, /images/0100wxapp//blog.020.png 1.5x, /images/0100wxapp//blog.020.png 2x"
         data-sizes="auto"
-        alt="/images/0100stringboot/0178springboot/blog.020.png"
-        title="/images/0100stringboot/0178springboot/blog.020.png" /></p>
+        alt="/images/0100wxapp//blog.020.png"
+        title="/images/0100wxapp//blog.020.png" /></p>
 <p>图5-2个人信息界面</p>
 <h2 id="52管理员管理">5.2管理员管理</h2>
 <p>通过设计的管理员管理功能模块，管理用户可以对相关的管理员用户信息进行管理，比如管理用户可以查看管理员用户密码信息，更新用户名，删除已经注销的管理员用户信息记录等，管理员管理界面设计如图5-3所示。</p>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="/images/0100stringboot/0178springboot/blog.021.png"
-        data-srcset="/images/0100stringboot/0178springboot/blog.021.png, /images/0100stringboot/0178springboot/blog.021.png 1.5x, /images/0100stringboot/0178springboot/blog.021.png 2x"
+        data-src="/images/0100wxapp//blog.021.png"
+        data-srcset="/images/0100wxapp//blog.021.png, /images/0100wxapp//blog.021.png 1.5x, /images/0100wxapp//blog.021.png 2x"
         data-sizes="auto"
-        alt="/images/0100stringboot/0178springboot/blog.021.png"
-        title="/images/0100stringboot/0178springboot/blog.021.png" /></p>
+        alt="/images/0100wxapp//blog.021.png"
+        title="/images/0100wxapp//blog.021.png" /></p>
 <p>图5-3管理员管理界面</p>
 <h2 id="53流浪宠物管理">5.3流浪宠物管理</h2>
 <p>通过设计的流浪宠物管理功能模块，管理用户可以对相关的流浪宠物信息进行管理，比如管理用户可以添加新的流浪宠物信息记录，更新宠物名称，删除失效的流浪宠物信息记录等，流浪宠物管理界面设计如图5-4所示。</p>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="/images/0100stringboot/0178springboot/blog.022.png"
-        data-srcset="/images/0100stringboot/0178springboot/blog.022.png, /images/0100stringboot/0178springboot/blog.022.png 1.5x, /images/0100stringboot/0178springboot/blog.022.png 2x"
+        data-src="/images/0100wxapp//blog.022.png"
+        data-srcset="/images/0100wxapp//blog.022.png, /images/0100wxapp//blog.022.png 1.5x, /images/0100wxapp//blog.022.png 2x"
         data-sizes="auto"
-        alt="/images/0100stringboot/0178springboot/blog.022.png"
-        title="/images/0100stringboot/0178springboot/blog.022.png" /></p>
+        alt="/images/0100wxapp//blog.022.png"
+        title="/images/0100wxapp//blog.022.png" /></p>
 <p>图5-4流浪宠物管理界面</p>
 <h2 id="54流浪宠物领养管理">5.4流浪宠物领养管理</h2>
 <p>通过设计的流浪宠物领养管理功能模块，管理用户可以对相关的流浪宠物领养信息进行管理，比如管理用户可以添加新的流浪宠物领养信息记录，更新流浪宠物领养用户姓名，删除失效的流浪宠物领养信息记录等，流浪宠物领养管理界面设计如图5-5所示。</p>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="/images/0100stringboot/0178springboot/blog.023.png"
-        data-srcset="/images/0100stringboot/0178springboot/blog.023.png, /images/0100stringboot/0178springboot/blog.023.png 1.5x, /images/0100stringboot/0178springboot/blog.023.png 2x"
+        data-src="/images/0100wxapp//blog.023.png"
+        data-srcset="/images/0100wxapp//blog.023.png, /images/0100wxapp//blog.023.png 1.5x, /images/0100wxapp//blog.023.png 2x"
         data-sizes="auto"
-        alt="/images/0100stringboot/0178springboot/blog.023.png"
-        title="/images/0100stringboot/0178springboot/blog.023.png" /></p>
+        alt="/images/0100wxapp//blog.023.png"
+        title="/images/0100wxapp//blog.023.png" /></p>
 <p>图5-5流浪宠物领养管理界面</p>
 <h2 id="55商品管理">5.5商品管理</h2>
 <p>通过设计的商品管理功能模块，管理用户可以对相关的商品、商品评价、商品订单信息进行管理，比如管理用户可以添加新的商品、商品评价、商品订单信息记录，更新商品姓名、评价内容、地址信息，删除失效的商品、商品评价、商品订单信息记录等，商品管理界面设计如图5-6所示，商品评论管理界面设计如图5-7所示，商品订单管理界面设计如图5-8所示。</p>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="/images/0100stringboot/0178springboot/blog.024.png"
-        data-srcset="/images/0100stringboot/0178springboot/blog.024.png, /images/0100stringboot/0178springboot/blog.024.png 1.5x, /images/0100stringboot/0178springboot/blog.024.png 2x"
+        data-src="/images/0100wxapp//blog.024.png"
+        data-srcset="/images/0100wxapp//blog.024.png, /images/0100wxapp//blog.024.png 1.5x, /images/0100wxapp//blog.024.png 2x"
         data-sizes="auto"
-        alt="/images/0100stringboot/0178springboot/blog.024.png"
-        title="/images/0100stringboot/0178springboot/blog.024.png" /></p>
+        alt="/images/0100wxapp//blog.024.png"
+        title="/images/0100wxapp//blog.024.png" /></p>
 <p>图5-6商品管理界面</p>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="/images/0100stringboot/0178springboot/blog.025.png"
-        data-srcset="/images/0100stringboot/0178springboot/blog.025.png, /images/0100stringboot/0178springboot/blog.025.png 1.5x, /images/0100stringboot/0178springboot/blog.025.png 2x"
+        data-src="/images/0100wxapp//blog.025.png"
+        data-srcset="/images/0100wxapp//blog.025.png, /images/0100wxapp//blog.025.png 1.5x, /images/0100wxapp//blog.025.png 2x"
         data-sizes="auto"
-        alt="/images/0100stringboot/0178springboot/blog.025.png"
-        title="/images/0100stringboot/0178springboot/blog.025.png" /></p>
+        alt="/images/0100wxapp//blog.025.png"
+        title="/images/0100wxapp//blog.025.png" /></p>
 <p>图5-7商品评价管理界面</p>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="/images/0100stringboot/0178springboot/blog.026.png"
-        data-srcset="/images/0100stringboot/0178springboot/blog.026.png, /images/0100stringboot/0178springboot/blog.026.png 1.5x, /images/0100stringboot/0178springboot/blog.026.png 2x"
+        data-src="/images/0100wxapp//blog.026.png"
+        data-srcset="/images/0100wxapp//blog.026.png, /images/0100wxapp//blog.026.png 1.5x, /images/0100wxapp//blog.026.png 2x"
         data-sizes="auto"
-        alt="/images/0100stringboot/0178springboot/blog.026.png"
-        title="/images/0100stringboot/0178springboot/blog.026.png" /></p>
+        alt="/images/0100wxapp//blog.026.png"
+        title="/images/0100wxapp//blog.026.png" /></p>
 <p>图5-8商品订单管理界面</p>
 <h2 id="56基础数据管理">5.6基础数据管理</h2>
 <p>通过设计的基础数据管理功能模块，管理用户可以对相关的宠物类型、商品类型、公告类型信息进行管理，比如管理用户可以添加新的宠物类型、商品类型、公告类型信息记录，更新宠物类型、商品类型、公告类型名称信息，删除失效的宠物类型、商品类型、公告类型信息记录等，宠物类型管理界面设计如图5-9所示，商品类型管理界面设计如图5-10所示，公告类型管理界面设计如图5-11所示。</p>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="/images/0100stringboot/0178springboot/blog.027.png"
-        data-srcset="/images/0100stringboot/0178springboot/blog.027.png, /images/0100stringboot/0178springboot/blog.027.png 1.5x, /images/0100stringboot/0178springboot/blog.027.png 2x"
+        data-src="/images/0100wxapp//blog.027.png"
+        data-srcset="/images/0100wxapp//blog.027.png, /images/0100wxapp//blog.027.png 1.5x, /images/0100wxapp//blog.027.png 2x"
         data-sizes="auto"
-        alt="/images/0100stringboot/0178springboot/blog.027.png"
-        title="/images/0100stringboot/0178springboot/blog.027.png" /></p>
+        alt="/images/0100wxapp//blog.027.png"
+        title="/images/0100wxapp//blog.027.png" /></p>
 <p>图5-9宠物类型管理界面</p>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="/images/0100stringboot/0178springboot/blog.028.png"
-        data-srcset="/images/0100stringboot/0178springboot/blog.028.png, /images/0100stringboot/0178springboot/blog.028.png 1.5x, /images/0100stringboot/0178springboot/blog.028.png 2x"
+        data-src="/images/0100wxapp//blog.028.png"
+        data-srcset="/images/0100wxapp//blog.028.png, /images/0100wxapp//blog.028.png 1.5x, /images/0100wxapp//blog.028.png 2x"
         data-sizes="auto"
-        alt="/images/0100stringboot/0178springboot/blog.028.png"
-        title="/images/0100stringboot/0178springboot/blog.028.png" /></p>
+        alt="/images/0100wxapp//blog.028.png"
+        title="/images/0100wxapp//blog.028.png" /></p>
 <p>图5-10商品类型管理界面</p>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="/images/0100stringboot/0178springboot/blog.029.png"
-        data-srcset="/images/0100stringboot/0178springboot/blog.029.png, /images/0100stringboot/0178springboot/blog.029.png 1.5x, /images/0100stringboot/0178springboot/blog.029.png 2x"
+        data-src="/images/0100wxapp//blog.029.png"
+        data-srcset="/images/0100wxapp//blog.029.png, /images/0100wxapp//blog.029.png 1.5x, /images/0100wxapp//blog.029.png 2x"
         data-sizes="auto"
-        alt="/images/0100stringboot/0178springboot/blog.029.png"
-        title="/images/0100stringboot/0178springboot/blog.029.png" /></p>
+        alt="/images/0100wxapp//blog.029.png"
+        title="/images/0100wxapp//blog.029.png" /></p>
 <p>图5-11公告类型管理界面</p>
 <h2 id="57流浪动物救助管理">5.7流浪动物救助管理</h2>
 <p>通过设计的流浪动物救助管理功能模块，管理用户可以对相关的流浪动物救助、流浪动物救助留言、流浪动物救助收藏信息进行管理，比如管理用户可以添加新的流浪动物救助、流浪动物救助留言、流浪动物救助收藏信息记录，更新救助标题、留言内容、收藏时间信息，删除失效的流浪动物救助、流浪动物救助留言、流浪动物救助收藏信息记录等，流浪动物救助管理界面设计如图5-12所示，流浪动物救助留言管理界面设计如图5-13所示，流浪动物救助收藏管理界面设计如图5-14所示。</p>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="/images/0100stringboot/0178springboot/blog.030.png"
-        data-srcset="/images/0100stringboot/0178springboot/blog.030.png, /images/0100stringboot/0178springboot/blog.030.png 1.5x, /images/0100stringboot/0178springboot/blog.030.png 2x"
+        data-src="/images/0100wxapp//blog.030.png"
+        data-srcset="/images/0100wxapp//blog.030.png, /images/0100wxapp//blog.030.png 1.5x, /images/0100wxapp//blog.030.png 2x"
         data-sizes="auto"
-        alt="/images/0100stringboot/0178springboot/blog.030.png"
-        title="/images/0100stringboot/0178springboot/blog.030.png" /></p>
+        alt="/images/0100wxapp//blog.030.png"
+        title="/images/0100wxapp//blog.030.png" /></p>
 <p>图5-12流浪动物救助管理界面</p>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="/images/0100stringboot/0178springboot/blog.031.png"
-        data-srcset="/images/0100stringboot/0178springboot/blog.031.png, /images/0100stringboot/0178springboot/blog.031.png 1.5x, /images/0100stringboot/0178springboot/blog.031.png 2x"
+        data-src="/images/0100wxapp//blog.031.png"
+        data-srcset="/images/0100wxapp//blog.031.png, /images/0100wxapp//blog.031.png 1.5x, /images/0100wxapp//blog.031.png 2x"
         data-sizes="auto"
-        alt="/images/0100stringboot/0178springboot/blog.031.png"
-        title="/images/0100stringboot/0178springboot/blog.031.png" /></p>
+        alt="/images/0100wxapp//blog.031.png"
+        title="/images/0100wxapp//blog.031.png" /></p>
 <p>图5-13流浪动物救助留言管理界面</p>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="/images/0100stringboot/0178springboot/blog.032.png"
-        data-srcset="/images/0100stringboot/0178springboot/blog.032.png, /images/0100stringboot/0178springboot/blog.032.png 1.5x, /images/0100stringboot/0178springboot/blog.032.png 2x"
+        data-src="/images/0100wxapp//blog.032.png"
+        data-srcset="/images/0100wxapp//blog.032.png, /images/0100wxapp//blog.032.png 1.5x, /images/0100wxapp//blog.032.png 2x"
         data-sizes="auto"
-        alt="/images/0100stringboot/0178springboot/blog.032.png"
-        title="/images/0100stringboot/0178springboot/blog.032.png" /></p>
+        alt="/images/0100wxapp//blog.032.png"
+        title="/images/0100wxapp//blog.032.png" /></p>
 <p>图5-14流浪动物救助收藏管理界面</p>
 <h2 id="58公告信息管理">5.8公告信息管理</h2>
 <p>通过设计的公告信息管理功能模块，管理用户可以对相关的公告信息进行管理，比如管理用户可以查看详细的公告内容信息，删除失效的公告信息记录等，公告信息管理界面设计如图5-15所示。</p>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="/images/0100stringboot/0178springboot/blog.033.png"
-        data-srcset="/images/0100stringboot/0178springboot/blog.033.png, /images/0100stringboot/0178springboot/blog.033.png 1.5x, /images/0100stringboot/0178springboot/blog.033.png 2x"
+        data-src="/images/0100wxapp//blog.033.png"
+        data-srcset="/images/0100wxapp//blog.033.png, /images/0100wxapp//blog.033.png 1.5x, /images/0100wxapp//blog.033.png 2x"
         data-sizes="auto"
-        alt="/images/0100stringboot/0178springboot/blog.033.png"
-        title="/images/0100stringboot/0178springboot/blog.033.png" /></p>
+        alt="/images/0100wxapp//blog.033.png"
+        title="/images/0100wxapp//blog.033.png" /></p>
 <p>图5-15新闻公告管理界面</p>
 <h2 id="59用户管理">5.9用户管理</h2>
 <p>通过设计的用户管理功能模块，管理用户可以对相关的用户信息进行管理，比如管理用户可以查看用户头像信息，更新用户手机号码，删除已经注销的用户信息记录等，用户管理界面设计如图5-16所示。</p>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="/images/0100stringboot/0178springboot/blog.034.png"
-        data-srcset="/images/0100stringboot/0178springboot/blog.034.png, /images/0100stringboot/0178springboot/blog.034.png 1.5x, /images/0100stringboot/0178springboot/blog.034.png 2x"
+        data-src="/images/0100wxapp//blog.034.png"
+        data-srcset="/images/0100wxapp//blog.034.png, /images/0100wxapp//blog.034.png 1.5x, /images/0100wxapp//blog.034.png 2x"
         data-sizes="auto"
-        alt="/images/0100stringboot/0178springboot/blog.034.png"
-        title="/images/0100stringboot/0178springboot/blog.034.png" /></p>
+        alt="/images/0100wxapp//blog.034.png"
+        title="/images/0100wxapp//blog.034.png" /></p>
 <p>图5-16用户管理界面</p>
 <h2 id="510轮播图管理">5.10轮播图管理</h2>
 <p>通过设计的轮播图管理功能模块，管理用户可以对相关的轮播图信息进行管理，比如管理用户可以查看轮播图信息，删除失效的轮播图信息记录等，轮播图管理界面设计如图5-17所示。</p>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="/images/0100stringboot/0178springboot/blog.035.png"
-        data-srcset="/images/0100stringboot/0178springboot/blog.035.png, /images/0100stringboot/0178springboot/blog.035.png 1.5x, /images/0100stringboot/0178springboot/blog.035.png 2x"
+        data-src="/images/0100wxapp//blog.035.png"
+        data-srcset="/images/0100wxapp//blog.035.png, /images/0100wxapp//blog.035.png 1.5x, /images/0100wxapp//blog.035.png 2x"
         data-sizes="auto"
-        alt="/images/0100stringboot/0178springboot/blog.035.png"
-        title="/images/0100stringboot/0178springboot/blog.035.png" /></p>
+        alt="/images/0100wxapp//blog.035.png"
+        title="/images/0100wxapp//blog.035.png" /></p>
 <p>图5-17轮播图管理界面</p>
 <h1 id="系">系</h1>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2023-12-11</span>
+                <span>更新于 2023-12-25</span>
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"><span>
                             <a class="link-to-markdown" href="/0178springboot%E6%B5%81%E6%B5%AA%E5%AE%A0%E7%89%A9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/index.md" target="_blank">阅读原始文档</a>
                         </span></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://chenqi199.github.io/0178springboot%E6%B5%81%E6%B5%AA%E5%AE%A0%E7%89%A9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" data-title="0178springboot流浪宠物管理系统的设计与实现" data-hashtags="springboot,java,vue,论文,项目"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://chenqi199.github.io/0178springboot%E6%B5%81%E6%B5%AA%E5%AE%A0%E7%89%A9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" data-hashtag="springboot"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://chenqi199.github.io/0178springboot%E6%B5%81%E6%B5%AA%E5%AE%A0%E7%89%A9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" data-title="0178springboot流浪宠物管理系统的设计与实现"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://chenqi199.github.io/0178springboot%E6%B5%81%E6%B5%AA%E5%AE%A0%E7%89%A9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" data-title="0178springboot流浪宠物管理系统的设计与实现"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://chenqi199.github.io/0178springboot%E6%B5%81%E6%B5%AA%E5%AE%A0%E7%89%A9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" data-title="0178springboot流浪宠物管理系统的设计与实现" data-ralateuid="https://gitee.com/chen_q_i"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://chenqi199.github.io/0178springboot%E6%B5%81%E6%B5%AA%E5%AE%A0%E7%89%A9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" data-title="0178springboot流浪宠物管理系统的设计与实现" data-hashtags="springboot流浪,流浪宠物,宠物管理,系统设计,设计实现,管理系统"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://chenqi199.github.io/0178springboot%E6%B5%81%E6%B5%AA%E5%AE%A0%E7%89%A9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" data-hashtag="springboot流浪"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://chenqi199.github.io/0178springboot%E6%B5%81%E6%B5%AA%E5%AE%A0%E7%89%A9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" data-title="0178springboot流浪宠物管理系统的设计与实现"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://chenqi199.github.io/0178springboot%E6%B5%81%E6%B5%AA%E5%AE%A0%E7%89%A9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" data-title="0178springboot流浪宠物管理系统的设计与实现"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://chenqi199.github.io/0178springboot%E6%B5%81%E6%B5%AA%E5%AE%A0%E7%89%A9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" data-title="0178springboot流浪宠物管理系统的设计与实现" data-ralateuid="https://gitee.com/chen_q_i"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/springboot/">Springboot</a>,&nbsp;<a href="/tags/java/">Java</a>,&nbsp;<a href="/tags/vue/">Vue</a>,&nbsp;<a href="/tags/%E8%AE%BA%E6%96%87/">论文</a>,&nbsp;<a href="/tags/%E9%A1%B9%E7%9B%AE/">项目</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/springboot%E6%B5%81%E6%B5%AA/">Springboot流浪</a>,&nbsp;<a href="/tags/%E6%B5%81%E6%B5%AA%E5%AE%A0%E7%89%A9/">流浪宠物</a>,&nbsp;<a href="/tags/%E5%AE%A0%E7%89%A9%E7%AE%A1%E7%90%86/">宠物管理</a>,&nbsp;<a href="/tags/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/">系统设计</a>,&nbsp;<a href="/tags/%E8%AE%BE%E8%AE%A1%E5%AE%9E%E7%8E%B0/">设计实现</a>,&nbsp;<a href="/tags/%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/">管理系统</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/0173springboot%E7%96%BE%E7%97%85%E9%98%B2%E6%8E%A7%E7%BB%BC%E5%90%88%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" class="prev" rel="prev" title="0173springboot疾病防控综合系统的设计与实现"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>0173springboot疾病防控综合系统的设计与实现</a>
+    <div class="post-nav"><a href="/ssm176%E7%94%9F%E6%B4%BB%E7%BC%B4%E8%B4%B9%E7%B3%BB%E7%BB%9F%E5%8F%8A%E7%9B%B8%E5%85%B3%E5%AE%89%E5%85%A8%E6%8A%80%E6%9C%AF%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" class="prev" rel="prev" title="ssm176生活缴费系统及相关安全技术的设计与实现&#43;jsp"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>ssm176生活缴费系统及相关安全技术的设计与实现+jsp</a>
             <a href="/0177springboot%E6%99%BA%E8%83%BD%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0%E7%B3%BB%E7%BB%9F/" class="next" rel="next" title="0177springboot智能学习平台系统">0177springboot智能学习平台系统<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>

@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer" />
+        <meta name="robots" content="noodp" />
+        <title>ssm714实验室预约管理&#43;vue - chenqi blog</title><meta name="Description" content="Hugo theme - chenqi"><meta property="og:url" content="https://chenqi199.github.io/ssm714%E5%AE%9E%E9%AA%8C%E5%AE%A4%E9%A2%84%E7%BA%A6%E7%AE%A1%E7%90%86-vue/">
+  <meta property="og:site_name" content="chenqi blog">
+  <meta property="og:title" content="ssm714实验室预约管理&#43;vue">
+  <meta property="og:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm714实验室预约管理&#43;vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 课题背景 随着计算机技术的发展以及计">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-06-21T10:33:02+08:00">
+    <meta property="article:modified_time" content="2024-06-21T10:33:02+08:00">
+    <meta property="article:tag" content="Ssm实验室">
+    <meta property="article:tag" content="实验室预约">
+    <meta property="article:tag" content="预约管理">
+    <meta property="og:image" content="https://chenqi199.github.io/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chenqi199.github.io/logo.png">
+  <meta name="twitter:title" content="ssm714实验室预约管理&#43;vue">
+  <meta name="twitter:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm714实验室预约管理&#43;vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 课题背景 随着计算机技术的发展以及计">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chenqi199.github.io/ssm714%E5%AE%9E%E9%AA%8C%E5%AE%A4%E9%A2%84%E7%BA%A6%E7%AE%A1%E7%90%86-vue/" /><link rel="prev" href="https://chenqi199.github.io/ssm715%E5%9F%BA%E4%BA%8Ejava-%E7%9A%84%E7%97%85%E6%88%BF%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" /><link rel="next" href="https://chenqi199.github.io/ssm713%E6%A0%A1%E5%9B%AD%E4%BD%93%E8%82%B2%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "ssm714实验室预约管理+vue",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chenqi199.github.io\/ssm714%E5%AE%9E%E9%AA%8C%E5%AE%A4%E9%A2%84%E7%BA%A6%E7%AE%A1%E7%90%86-vue\/"
+        },"image": ["https:\/\/chenqi199.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "ssm实验室, 实验室预约, 预约管理","wordcount":  8026 ,
+        "url": "https:\/\/chenqi199.github.io\/ssm714%E5%AE%9E%E9%AA%8C%E5%AE%A4%E9%A2%84%E7%BA%A6%E7%AE%A1%E7%90%86-vue\/","datePublished": "2024-06-21T10:33:02+08:00","dateModified": "2024-06-21T10:33:02+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/chenqi199.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "chenqi"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/ssm714%E5%AE%9E%E9%AA%8C%E5%AE%A4%E9%A2%84%E7%BA%A6%E7%AE%A1%E7%90%86-vue/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/ssm714%E5%AE%9E%E9%AA%8C%E5%AE%A4%E9%A2%84%E7%BA%A6%E7%AE%A1%E7%90%86-vue/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">ssm714实验室预约管理+vue</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="chenqi199" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>chenqi</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-06-21">2024-06-21</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 8026 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 17 分钟&nbsp;<span id="/ssm714%E5%AE%9E%E9%AA%8C%E5%AE%A4%E9%A2%84%E7%BA%A6%E7%AE%A1%E7%90%86-vue/" class="leancloud_visitors" data-flag-title="ssm714实验室预约管理&#43;vue">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">github 项目仓库</a> 开源仅有后端代码</a></li>
+        <li><a href="#点击播放视频-">点击播放视频 ▼</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#课题背景">课题背景</a></li>
+    <li><a href="#研究现状">研究现状</a></li>
+    <li><a href="#研究内容">研究内容</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#vue技术">vue技术</a></li>
+    <li><a href="#java技术">JAVA技术</a></li>
+    <li><a href="#mysql数据库">MYSQL数据库</a></li>
+    <li><a href="#bs结构">B/S结构</a></li>
+    <li><a href="#ssm框架技术">SSM框架技术</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#可行性分析">可行性分析</a>
+      <ul>
+        <li><a href="#技术可行性">技术可行性</a></li>
+        <li><a href="#操作可行性">操作可行性</a></li>
+        <li><a href="#经济可行性">经济可行性</a></li>
+        <li><a href="#法律可行性">法律可行性</a></li>
+      </ul>
+    </li>
+    <li><a href="#系统性能分析">系统性能分析</a></li>
+    <li><a href="#系统功能分析">系统功能分析</a>
+      <ul>
+        <li><a href="#角色需求">角色需求</a></li>
+        <li><a href="#功能需求">功能需求</a></li>
+      </ul>
+    </li>
+    <li><a href="#系统流程分析">系统流程分析</a>
+      <ul>
+        <li><a href="#注册流程">注册流程</a></li>
+        <li><a href="#登录流程">登录流程</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#系统概要设计">系统概要设计</a></li>
+    <li><a href="#系统结构设计">系统结构设计</a>
+      <ul>
+        <li><a href="#数据库表设计">数据库表设计</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#功能模块的实现">功能模块的实现</a>
+      <ul>
+        <li><a href="#51学生信息管理">5.1学生信息管理</a></li>
+        <li><a href="#52-教师信息管理">5.2 教师信息管理</a></li>
+        <li><a href="#53实验室管理">5.3实验室管理</a></li>
+        <li><a href="#51公告信息管理">5.1公告信息管理</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="项目清单-包安装运行httpchenqi1990site-官网地址-httpchenqi1990site"><a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">项目清单 包安装运行</a> 官网地址 <a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">http://chenqi1990.site</a></h1>
+<h1 id="ssm714实验室预约管理vuehttpsgithubcomgraduationproject-springboot"><a href="https://github.com/GraduationProject-springboot/" target="_blank" rel="noopener noreffer ">ssm714实验室预约管理+vue</a></h1>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        data-srcset="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 1.5x, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        title="picture" /></p>
+<h3 id="github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">github 项目仓库</a> 开源仅有后端代码</h3>
+<h3 id="点击播放视频-">点击播放视频 ▼</h3>
+<p><a href="https://www.bilibili.com/video/BV1Tm8QeZE4a?p=111" target="_blank" rel="noopener noreffer "><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.sstatic.net/Vp2cE.png"
+        data-srcset="https://i.sstatic.net/Vp2cE.png, https://i.sstatic.net/Vp2cE.png 1.5x, https://i.sstatic.net/Vp2cE.png 2x"
+        data-sizes="auto"
+        alt="https://i.sstatic.net/Vp2cE.png"
+        title="Watch the video" /></a></p>
+<h1 id="绪论">绪论</h1>
+<ol>
+<li>
+<h2 id="课题背景">课题背景</h2>
+</li>
+</ol>
+<p>随着计算机技术的发展以及计算机网络的逐渐普及，互联网成为人们查找信息的重要场所，二十一世纪是信息的时代，所以信息的管理显得特别重要。因此，使用计算机来管理实验室预约管理系统的相关信息成为必然。开发合适的实验室预约管理系统，可以方便管理人员对实验室预约管理信息的管理，提高信息管理工作效率及查询效率，有利于更好的为人们服务。</p>
+<p>随着互联网技术的快速发展，网络时代的到来，网络信息也将会改变当今社会。各行各业在日常企业经营管理等方面也在慢慢的向规范化和网络化趋势汇合。实验室预约管理的信息化程度体现在将互联网与信息技术应用于经营与管理，以现代化工具代替传统手工作业。无疑，使用网络信息化管理使信息管理更先进、更高效、更科学，信息交流更迅速。</p>
+<p>对于之前实验室预约管理信息的管理，大部分都是使用传统的人工方式去管理，这样导致了管理效率低下、出错频率高。而且，时间一长的话，积累下来的数据信息不容易保存，对于查询、更新还有维护会带来不少问题。对于数据交接也存在很大的隐患。如果采用电子化的存储方式就会带来很大的改善，而且给用户的查询带来了很大便利，因此设计一个实验室预约管理系统刻不容缓，能够提高信息的管理水平。</p>
+<ol>
+<li>
+<h2 id="研究现状">研究现状</h2>
+</li>
+</ol>
+<p>国外信息技术的发展步伐一直没有停止，源源不断的计算机应用软件被研发出来，并且软件技术也在不断迭代，目前世界各国的软件行业都已新兴了起来[3-5]。</p>
+<p>与国外相比，我国信息技术的发展相对晚一些，不过后面，经过我们的不断追赶，我国的信息技术已经有了很大的进步，我国对现有的软件开发技术进行了细致的专研，目前我国已经能够独立的开发系统，并且也已经将这些软件系统应用于人们的生活中和各行各业中，目前，软件行业是我国非常受欢迎的行业[6-9]。</p>
+<p>信息数字化使人们的各种信息能够快速传播，使人们的各种信息能够得到充分利用，同时，也大大宣传了信息数字化背后的软件系统[10-12]。软件开发团队的能力越来越强，开发技术功能越来越强大，软件系统大大提高了信息处理的效率，节省了处理者的处理时间。在阅读实验室方面，人们阅读纸质版的实验室，现在已经显得有些过时[13-14]。利用目前的软件开发技术开发出一款实验室预约管理能够大大的满足人们的阅读需求，人们通过该实验室预约管理能够快速查找、在线阅读自己喜欢的实验室，并且也大大提高了人们阅读的效率。</p>
+<ol>
+<li>
+<h2 id="研究内容">研究内容</h2>
+</li>
+</ol>
+<p>一个成功的网站应明确建设网站的目的，确定网站的功能，确定网站规模、投入费用，进行必要的市场分析等。只有详细的策划，才能避免在网站建设中出现的很多问题，使网站建设能顺利进行。同时，一个大型的计算机网站系统，必须有一个正确的设计指导思想，通过合理选择数据结构、网络结构、操作系统以及开发环境，构成一个完善的网络体系结构，才能充分发挥计算机信息管理的优势。根据现实生活中网民的实际需求，本系统的设计按照下述原则进行。</p>
+<ol>
+<li>有效性：实际上这里的有效性包括两个方面的意思：有用性和可用性。有用性是指站点潜在的能满足用户需求的功能，而可用性是指能够通过站点的操作实现特定的目标。可以看出一个站点如果不能恰当运行或设计得非常槽糕就不是一个好站点。可用站点的效益应该非常高，并易于学习，在实现用户目标时令人满意而不出错。</li>
+<li>高可靠性：一个实用的网站同时必须是可靠的，本设计通过合理而先进的网络设计以及软、硬件的优化选型，可保证网站的可靠性与容错性。</li>
+<li>高安全性：在设计中，将充分利用网络软、硬件提供的各种安全措施，既可以保证用户共享资源，充分考虑系统及数据资源的容灾、备份、恢复的要求。为系统提供强大的数据库备份工具。可以保证关键数据的安全性。操作权限级，设置不同的角色确保每一步的操作权限，可以由管理员进行设置。</li>
+<li>先进性：采用目前国际上最先进的开发技术，使用JSP开发技术，MYSQL作为网站后台数据库。采用这些技术降低了以后的系统运营成本，提高了系统的稳定性和易维护性。</li>
+<li>采用标准技术：本网站的所有设计遵循国际上现行的标准进行，以提高系统的开放性。</li>
+</ol>
+<p>外观和技术平衡：系统采用Web风格的界面设计，界面友好、美观，使用方便，易学易用。网站设计的关键问题是外观和技术的平衡。外现不好的网站令人厌烦，站点可以运行很好，但却不能带动用户积极性，相反，如果外观非常有表现力，但技术有限，用户则会感到非常失望。在外观与技术之间需要确定一个清晰而连续的关系，即外观与站点的意图相关，对不同类型的网站处理方法不同。</p>
+<ol>
+<li>
+<h1 id="系统开发环境">系统开发环境</h1>
+<ol>
+<li>
+<h2 id="vue技术">vue技术</h2>
+</li>
+</ol>
+</li>
+</ol>
+<p>Vue (读音 /vjuː/，类似于 view) 是一套用于构建<a href="https://baike.baidu.com/item/%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2/6582461" target="_blank" rel="noopener noreffer ">用户界面</a>的渐进式<a href="https://baike.baidu.com/item/JavaScript/321142" target="_blank" rel="noopener noreffer ">JavaScript</a>框架。 [5]  与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。另一方面，当与现代化的工具链以及各种支持<a href="https://baike.baidu.com/item/%E7%B1%BB%E5%BA%93/3351433" target="_blank" rel="noopener noreffer ">类库</a>结合使用时，Vue 也完全能够为复杂的单页应用（<a href="https://baike.baidu.com/item/SPA/17536313" target="_blank" rel="noopener noreffer ">SPA</a>）提供驱动</p>
+<p>Vue.js目前最火的的一个前端框架，三大主流前端框架之一。</p>
+<p>Vue.js是一套构建用户界面的框架（一套完整的解决方案，对项目侵入性大，中途     	需要跟换框架则需要重构整个项目），只关注视图层，易上手，有配套的第三方类库。提高开发效率，帮助减少不必要的dom操作；双向数据绑定，通过框架提供的指	令，前端只需要关注业务逻辑，不再关心dom如何渲染。</p>
+<ol>
+<li>
+<h2 id="java技术">JAVA技术</h2>
+</li>
+</ol>
+<p>Java编程语言具有跨平台、分布式、可移植等多种特性，很多平台Java都能运行，世界各地都能够运行Java编写的程序。1995年，开发出了JAVA编程语言。JAVA编程语言具有多种特性，例如：简单、安全、可移植、鲁棒性（Robust）、编写能效高、线程多等。在互联网飞速发展的时代，Java编程语言应用也越来越普遍[19]。它的特点具有：</p>
+<p>一、面向对象：JAVA适用于分布式环境，JAVA能够完全面向对象，包括对象的设计及联系；</p>
+<p>二、分布式：JAVA工作的同时，带动其他计算节点工作，只要有网络，就可以访问其他对象；</p>
+<p>三、健壮性：JAVA能够自动处理垃圾和异常，并且机制类型强；</p>
+<p>四、安全性：当指针和内存被删除时，非法的内存就可以避免。</p>
+<ol>
+<li>
+<h2 id="mysql数据库">MYSQL数据库</h2>
+</li>
+</ol>
+<p>数据库在每个网站的开发中都是必不可少的，过去数据库只具有数据的保存和管理功能，但随着后来的不断更新和迭代，目前的数据库不仅能够进行数据的处理，而且还能够储存不计其数的数据[20]。</p>
+<p>该实验室预约管理所使用的就是MYSQL数据库，当初是微软公司开发出的MYSQL数据库。MYSQL数据库总共建立了十几个相对应的表，它们之间独立联系，数据库和程序是密不可分的[21]。</p>
+<p>MYSQL数据库的特点包括：能够应用于多种操作系统中；查询SQL时优化了算法，搜索速度提高的不少；还可以进行数据库的管理、控制、优化等操作；一个数据库可以记录不计其数的数据。</p>
+<ol>
+<li>
+<h2 id="bs结构">B/S结构</h2>
+</li>
+</ol>
+<p>当前比较流行的网络化结构模式是B/S（浏览器/服务器）结构，它能够在服务器上面集中系统的所有核心功能，使系统开发人员的工作变得简单，并且开发出的系统也更容易使用和后期维护。用于比较熟悉的浏览器有360浏览器、谷歌浏览器、QQ浏览器等，用于比较熟悉的数据库有sqlserver、mysql数据库等，上边这些数据库和浏览器都可以安装在客户端上。B/S结构没有什么限制，并且还不需要专门的安装软件，只要笔记本、电脑有网络就能够访问系统。采用B/S结构开发的程序，比较好维护，只需要在客户端就可处理，不需要非得在服务器上处理，并且跟用户的交互性比较好，刷新浏览器就可进行数据信息的实时更新[22]。B/S架构如图2-1所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm714/blog.001.png"
+        data-srcset="/images/0700ssm/ssm714/blog.001.png, /images/0700ssm/ssm714/blog.001.png 1.5x, /images/0700ssm/ssm714/blog.001.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm714/blog.001.png"
+        title="/images/0700ssm/ssm714/blog.001.png" /></p>
+<p>图2-1 B/S模式架构图</p>
+<ol>
+<li>
+<h2 id="ssm框架技术">SSM框架技术</h2>
+</li>
+</ol>
+<p>该实验室预约管理是基于Spring、SpringMVC、Mybatis框架开发出来的。</p>
+<p>2004年，Spring 框架才第一次亮相，后面也进行了很多次的更新。Spring框架包括SpringCore、Spring AOP、Spring ORM、Spring DAO、Spring Web Flow、Spring Context和Spring Web MVC等七个模块，企业应用程序就是通过这七个模块气筒不同的平台来进行开发的，Spring Web MVC中的各个元素之间形成了松散耦合[23-25]。</p>
+<ol>
+<li>
+<h1 id="系统分析">系统分析</h1>
+<ol>
+<li>
+<h2 id="可行性分析">可行性分析</h2>
+</li>
+</ol>
+</li>
+</ol>
+<p>开发者在进行开发系统之前，都需要进行可行性分析，保证该系统能够被成功开发出来。</p>
+<ol>
+<li>
+<h3 id="技术可行性">技术可行性</h3>
+</li>
+</ol>
+<p>开发该实验室预约管理所采用的技术是vue和MYSQL数据库。计算机专业的学生在学校期间已经比较系统的学习了很多编程方面的知识，同时也接触了很多编程软件，所以在技术开发方面还是比较有信心的。</p>
+<ol>
+<li>
+<h3 id="操作可行性">操作可行性</h3>
+</li>
+</ol>
+<p>该实验室预约管理的界面简洁清楚，操作简单，用户一看就会操作。操作界面上每一步都有提示，用户只要按照提示进行操作就可以了。该实验室预约管理具有操作可行性。</p>
+<ol>
+<li>
+<h3 id="经济可行性">经济可行性</h3>
+</li>
+</ol>
+<p>我现在还是一名学生，还没有一份稳定的经济收入，所以我会将开发程序的成本控制在自己所能接受的范围内。我所使用的开发软件、数据库还有设计界面用的photoshop软件都是在网上免费下载的，另外程序编写阶段所用到的源代码也是在网上免费得到的，现在在网上能下载很多有用的、免费的东西，所以开发该系统基本不花钱，具有经济可行性。</p>
+<ol>
+<li>
+<h3 id="法律可行性">法律可行性</h3>
+</li>
+</ol>
+<p><code> </code>我是通过图书馆、百度文库、百度网页等获得的开发该实验室预约管理所需要用到的资料和软件，都是采用的合法渠道，另外源代码和论文内容都是我自己一字一字写出来的，没有抄袭别人的，具有法律可行性。</p>
+<p>通过上述的技术可行性、操作可行性、经济可行性以及法律可行性分析，可以看出，该实验室预约管理完全可以进行顺利开发。</p>
+<ol>
+<li>
+<h2 id="系统性能分析">系统性能分析</h2>
+</li>
+<li>存储性：该实验室预约管理的数据库功能比较强大，能够录入很多纷繁复杂的信息，且能够保证数据的实时性；</li>
+</ol>
+<p>二、易学性：该实验室预约管理使用起来非常简单，用户一看就会，不需要进行专门的培训，非常好上手，使用个一两次就能够熟练操作；</p>
+<p>三、数据要求：录入的数据准确可靠，能够及时进行更新，可以独立保存，删除一些不需要的数据；</p>
+<p>四、稳定性：该实验室预约管理能够稳定的运行，界面清晰明了；</p>
+<p>五、可靠性：该实验室预约管理安装有拦截器，可以对病毒等进行拦截，并且还对信息进行了保护措施，用户可以放心使用。</p>
+<ol>
+<li>
+<h2 id="系统功能分析">系统功能分析</h2>
+<ol>
+<li>
+<h3 id="角色需求">角色需求</h3>
+</li>
+</ol>
+</li>
+</ol>
+<p>该实验室预约管理主要为管理员和用户两类用户角色提供需求，管理员在后台可以对系统进行全面管理，用户在前台可以进行查看系统信息，注册登录，查询实验室，评论，下载实验室等操作。</p>
+<p>用户静态结构如图3-1所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm714/blog.002.png"
+        data-srcset="/images/0700ssm/ssm714/blog.002.png, /images/0700ssm/ssm714/blog.002.png 1.5x, /images/0700ssm/ssm714/blog.002.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm714/blog.002.png"
+        title="/images/0700ssm/ssm714/blog.002.png" /></p>
+<p>图3-1  用户静态结构图</p>
+<ol>
+<li>
+<h3 id="功能需求">功能需求</h3>
+</li>
+</ol>
+<p>该实验室预约管理具有完善的功能，界面一目了然，用户一看就会操作，管理员功能模块和用户功能模块是该系统的两大主要功能模块，其功能需求具体如下：</p>
+<p>管理员的功能需求：</p>
+<p>管理员在后台可以全面管理系统，管理员的功能主要包括学生管理、实验室管理、实验室申请管理和课程管理，排课管理等。</p>
+<p>管理员功能：</p>
+<p>1）实验室基本信息管理：①.实验室管理员依据实验室基本情况对实验设备名称、数量等进行管理；②.可使用实验室管理</p>
+<p>2）学期管理（可使用时间设置）：系统管理员应该根据学院的实际情况以及实验室情况设置学期以决定实验室的开放时间和实验课结束时间（第几学期、第几周、星期几、第几节）。</p>
+<p>3）教师实验室预约申请管理：管理员对教师的实验室课程申请进行审核</p>
+<p>4)教师学生信息管理。</p>
+<p>5)可使用实验室管理。</p>
+<ol start="6">
+<li>统计</li>
+</ol>
+<p>教师功能：</p>
+<p>1）实验室课程申请：①.教师可以申请实验室以安排实验课程（不能申请已被申请的实验室和正在使用的实验室）；②.申请提交后在管理员审核前可以修改申请，则管理员之后审核的是已修改的申请;③.申请取消排课。</p>
+<p>2）修改已有的实验室课程信息：教师可以选择修改某一次实验课程信息（上课时间、实验室）或从该次后全部修改。</p>
+<p>3)个人信息管理。</p>
+<p>学生端功能：</p>
+<p>1）查看实验课程表。</p>
+<p>2)个人信息管理。</p>
+<ol>
+<li>
+<h2 id="系统流程分析">系统流程分析</h2>
+<ol>
+<li>
+<h3 id="注册流程">注册流程</h3>
+</li>
+</ol>
+</li>
+</ol>
+<p>用户注册之后才可以登录系统，用户注册流程如图3-2所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm714/blog.003.png"
+        data-srcset="/images/0700ssm/ssm714/blog.003.png, /images/0700ssm/ssm714/blog.003.png 1.5x, /images/0700ssm/ssm714/blog.003.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm714/blog.003.png"
+        title="/images/0700ssm/ssm714/blog.003.png" /></p>
+<p>图3-2  注册流程图</p>
+<ol>
+<li>
+<h3 id="登录流程">登录流程</h3>
+</li>
+</ol>
+<p>用户需要登录系统之后，才可以进行实验室评论、实验室下载等操作。而管理员也只有登录系统之后，可以对系统各个方面的内容进行管理，不受任何限制。用户登录流程如图3-3所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm714/blog.004.png"
+        data-srcset="/images/0700ssm/ssm714/blog.004.png, /images/0700ssm/ssm714/blog.004.png 1.5x, /images/0700ssm/ssm714/blog.004.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm714/blog.004.png"
+        title="/images/0700ssm/ssm714/blog.004.png" /></p>
+<p>图3-3  登录流程图</p>
+<ol>
+<li>
+<h1 id="系统设计">系统设计</h1>
+<ol>
+<li>
+<h2 id="系统概要设计">系统概要设计</h2>
+</li>
+</ol>
+</li>
+</ol>
+<p>本文通过B/S结构(Browser/Server,浏览器/服务器结构)开发的该实验室预约管理，B/S结构的优点很多，例如：开发容易、强的共享性、便于维护等，只要有网络，用户可以随时随地进行使用。</p>
+<p>系统工作原理如图4-1所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm714/blog.005.png"
+        data-srcset="/images/0700ssm/ssm714/blog.005.png, /images/0700ssm/ssm714/blog.005.png 1.5x, /images/0700ssm/ssm714/blog.005.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm714/blog.005.png"
+        title="/images/0700ssm/ssm714/blog.005.png" /></p>
+<p>图4-1 系统工作原理图</p>
+<ol>
+<li>
+<h2 id="系统结构设计">系统结构设计</h2>
+</li>
+</ol>
+<p>系统结构设计就像一个树状结构一样，一个树干有很多分支，大任务相当于树干，小任务相当于树枝，只有需求分析信息弄清楚之后，才能保证每个小任务都能实现目标，对初步设计好的系统再进行不断优化，最终得到一个具体现实的系统结构。</p>
+<p>管理员功能模块和用户功能模块是该实验室预约管理的两大部分，系统结构如图4-2所示。</p>
+<p>实验室预约管理</p>
+<p>学生信息管理</p>
+<p>公告信息管理</p>
+<p>实验室管理</p>
+<p>实验设备管理</p>
+<p>教师信息管理</p>
+<p>学生信息修改</p>
+<p>学生信息新增</p>
+<p>教师信息添加</p>
+<p>教师信息删除</p>
+<p>教师信息修改</p>
+<p>实验设备添加</p>
+<p>实验设备修改</p>
+<p>实验设备删除</p>
+<p>公告信息添加</p>
+<p>公告信息删改</p>
+<p>公告信息删除</p>
+<p>实验室添加</p>
+<p>实验室修改</p>
+<p>实验室删除</p>
+<p>课程信息管理</p>
+<p>课程信息修改</p>
+<p>课程信息删除</p>
+<p>课程信息添加</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm714/blog.006.png"
+        data-srcset="/images/0700ssm/ssm714/blog.006.png, /images/0700ssm/ssm714/blog.006.png 1.5x, /images/0700ssm/ssm714/blog.006.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm714/blog.006.png"
+        title="/images/0700ssm/ssm714/blog.006.png" /></p>
+<p>图4-2 系统结构图</p>
+<p>4.3 数据库设计</p>
+<p>开发一个系统也需要提前设计数据库。这里的数据库是相关数据的集合，存储在一起的这些数据也是按照一定的组织方式进行的。目前，数据库能够服务于多种应用程序，则是源于它存储方式最佳，具备数据冗余率低的优势。虽然数据库为程序提供信息存储服务，但它与程序之间也可以保持较高的独立性。总而言之，数据库经历了很长一段时间的发展，从最初的不为人知，到现在的人尽皆知，其相关技术也越发成熟，同时也拥有着坚实的理论基础。</p>
+<p>4.3.1 数据库概念设计</p>
+<p>这部分内容需要借助数据库关系图来完成，也需要使用专门绘制数据库关系图的工具，比如Visio工具就可以设计E-R图（数据库关系图）。设计数据库，也需要按照设计的流程进行，首先还是要根据需求完成实体的确定，分析实体具有的特征，还有对实体间的关联关系进行确定。最后才是使用E-R模型的表示方法，绘制本系统的E-R图。不管是使用亿图软件，还是Visio工具，对于E-R模型的表示符号都一样，通常矩形代表实体，实体间存在的关系用菱形符号表示，实体的属性也就是实体的特征用符号椭圆表示。最后使用直线将矩形，菱形和椭圆等符号连接起来。接下来就开始对本系统的E-R图进行绘制。</p>
+<p>（1）下图是学生实体和其具备的属性。</p>
+<p><figure><a class="lightgallery" href="/images/0700ssm/ssm714/blog.007.jpeg" title="C:\Users\Administrator\Desktop\img\shiyanshipaike\学生.jpg" data-thumbnail="/images/0700ssm/ssm714/blog.007.jpeg" data-sub-html="<h2>C:\Users\Administrator\Desktop\img\shiyanshipaike\学生.jpg</h2><p>C:\Users\Administrator\Desktop\img\shiyanshipaike\学生.jpg</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/0700ssm/ssm714/blog.007.jpeg"
+            data-srcset="/images/0700ssm/ssm714/blog.007.jpeg, /images/0700ssm/ssm714/blog.007.jpeg 1.5x, /images/0700ssm/ssm714/blog.007.jpeg 2x"
+            data-sizes="auto"
+            alt="/images/0700ssm/ssm714/blog.007.jpeg" />
+    </a><figcaption class="image-caption">C:\Users\Administrator\Desktop\img\shiyanshipaike\学生.jpg</figcaption>
+    </figure>
+图4.1 学生实体属性图</p>
+<p>（2）下图是教师实体和其具备的属性。</p>
+<p><figure><a class="lightgallery" href="/images/0700ssm/ssm714/blog.008.jpeg" title="C:\Users\Administrator\Desktop\img\shiyanshipaike\教师.jpg" data-thumbnail="/images/0700ssm/ssm714/blog.008.jpeg" data-sub-html="<h2>C:\Users\Administrator\Desktop\img\shiyanshipaike\教师.jpg</h2><p>C:\Users\Administrator\Desktop\img\shiyanshipaike\教师.jpg</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/0700ssm/ssm714/blog.008.jpeg"
+            data-srcset="/images/0700ssm/ssm714/blog.008.jpeg, /images/0700ssm/ssm714/blog.008.jpeg 1.5x, /images/0700ssm/ssm714/blog.008.jpeg 2x"
+            data-sizes="auto"
+            alt="/images/0700ssm/ssm714/blog.008.jpeg" />
+    </a><figcaption class="image-caption">C:\Users\Administrator\Desktop\img\shiyanshipaike\教师.jpg</figcaption>
+    </figure>
+图4.2 教师实体属性图</p>
+<p>（3）下图是公告实体和其具备的属性。</p>
+<p><figure><a class="lightgallery" href="/images/0700ssm/ssm714/blog.009.jpeg" title="C:\Users\Administrator\Desktop\img\shiyanshipaike\公告.jpg" data-thumbnail="/images/0700ssm/ssm714/blog.009.jpeg" data-sub-html="<h2>C:\Users\Administrator\Desktop\img\shiyanshipaike\公告.jpg</h2><p>C:\Users\Administrator\Desktop\img\shiyanshipaike\公告.jpg</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/0700ssm/ssm714/blog.009.jpeg"
+            data-srcset="/images/0700ssm/ssm714/blog.009.jpeg, /images/0700ssm/ssm714/blog.009.jpeg 1.5x, /images/0700ssm/ssm714/blog.009.jpeg 2x"
+            data-sizes="auto"
+            alt="/images/0700ssm/ssm714/blog.009.jpeg" />
+    </a><figcaption class="image-caption">C:\Users\Administrator\Desktop\img\shiyanshipaike\公告.jpg</figcaption>
+    </figure>
+图4.3 公告实体属性图</p>
+<p>（4）下图是实验室信息实体和其具备的属性。</p>
+<p><figure><a class="lightgallery" href="/images/0700ssm/ssm714/blog.010.jpeg" title="C:\Users\Administrator\Desktop\img\shiyanshipaike\实验室信息.jpg" data-thumbnail="/images/0700ssm/ssm714/blog.010.jpeg" data-sub-html="<h2>C:\Users\Administrator\Desktop\img\shiyanshipaike\实验室信息.jpg</h2><p>C:\Users\Administrator\Desktop\img\shiyanshipaike\实验室信息.jpg</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/0700ssm/ssm714/blog.010.jpeg"
+            data-srcset="/images/0700ssm/ssm714/blog.010.jpeg, /images/0700ssm/ssm714/blog.010.jpeg 1.5x, /images/0700ssm/ssm714/blog.010.jpeg 2x"
+            data-sizes="auto"
+            alt="/images/0700ssm/ssm714/blog.010.jpeg" />
+    </a><figcaption class="image-caption">C:\Users\Administrator\Desktop\img\shiyanshipaike\实验室信息.jpg</figcaption>
+    </figure>
+图4.4 实验室信息实体属性图</p>
+<p>（5）下图是字典表实体和其具备的属性。</p>
+<p><figure><a class="lightgallery" href="/images/0700ssm/ssm714/blog.011.jpeg" title="C:\Users\Administrator\Desktop\img\shiyanshipaike\字典表.jpg" data-thumbnail="/images/0700ssm/ssm714/blog.011.jpeg" data-sub-html="<h2>C:\Users\Administrator\Desktop\img\shiyanshipaike\字典表.jpg</h2><p>C:\Users\Administrator\Desktop\img\shiyanshipaike\字典表.jpg</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/0700ssm/ssm714/blog.011.jpeg"
+            data-srcset="/images/0700ssm/ssm714/blog.011.jpeg, /images/0700ssm/ssm714/blog.011.jpeg 1.5x, /images/0700ssm/ssm714/blog.011.jpeg 2x"
+            data-sizes="auto"
+            alt="/images/0700ssm/ssm714/blog.011.jpeg" />
+    </a><figcaption class="image-caption">C:\Users\Administrator\Desktop\img\shiyanshipaike\字典表.jpg</figcaption>
+    </figure>
+图4.5 字典表实体属性图</p>
+<p>（6）下图是课程信息实体和其具备的属性。</p>
+<p><figure><a class="lightgallery" href="/images/0700ssm/ssm714/blog.012.jpeg" title="C:\Users\Administrator\Desktop\img\shiyanshipaike\课程信息.jpg" data-thumbnail="/images/0700ssm/ssm714/blog.012.jpeg" data-sub-html="<h2>C:\Users\Administrator\Desktop\img\shiyanshipaike\课程信息.jpg</h2><p>C:\Users\Administrator\Desktop\img\shiyanshipaike\课程信息.jpg</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/0700ssm/ssm714/blog.012.jpeg"
+            data-srcset="/images/0700ssm/ssm714/blog.012.jpeg, /images/0700ssm/ssm714/blog.012.jpeg 1.5x, /images/0700ssm/ssm714/blog.012.jpeg 2x"
+            data-sizes="auto"
+            alt="/images/0700ssm/ssm714/blog.012.jpeg" />
+    </a><figcaption class="image-caption">C:\Users\Administrator\Desktop\img\shiyanshipaike\课程信息.jpg</figcaption>
+    </figure>
+图4.6 课程信息实体属性图</p>
+<p>（7）下图是实验设备实体和其具备的属性。</p>
+<p><figure><a class="lightgallery" href="/images/0700ssm/ssm714/blog.013.jpeg" title="C:\Users\Administrator\Desktop\img\shiyanshipaike\实验设备.jpg" data-thumbnail="/images/0700ssm/ssm714/blog.013.jpeg" data-sub-html="<h2>C:\Users\Administrator\Desktop\img\shiyanshipaike\实验设备.jpg</h2><p>C:\Users\Administrator\Desktop\img\shiyanshipaike\实验设备.jpg</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/0700ssm/ssm714/blog.013.jpeg"
+            data-srcset="/images/0700ssm/ssm714/blog.013.jpeg, /images/0700ssm/ssm714/blog.013.jpeg 1.5x, /images/0700ssm/ssm714/blog.013.jpeg 2x"
+            data-sizes="auto"
+            alt="/images/0700ssm/ssm714/blog.013.jpeg" />
+    </a><figcaption class="image-caption">C:\Users\Administrator\Desktop\img\shiyanshipaike\实验设备.jpg</figcaption>
+    </figure>
+图4.7 实验设备实体属性图</p>
+<p>（8）下图是用户表实体和其具备的属性。</p>
+<p><figure><a class="lightgallery" href="/images/0700ssm/ssm714/blog.014.jpeg" title="C:\Users\Administrator\Desktop\img\shiyanshipaike\用户表.jpg" data-thumbnail="/images/0700ssm/ssm714/blog.014.jpeg" data-sub-html="<h2>C:\Users\Administrator\Desktop\img\shiyanshipaike\用户表.jpg</h2><p>C:\Users\Administrator\Desktop\img\shiyanshipaike\用户表.jpg</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/0700ssm/ssm714/blog.014.jpeg"
+            data-srcset="/images/0700ssm/ssm714/blog.014.jpeg, /images/0700ssm/ssm714/blog.014.jpeg 1.5x, /images/0700ssm/ssm714/blog.014.jpeg 2x"
+            data-sizes="auto"
+            alt="/images/0700ssm/ssm714/blog.014.jpeg" />
+    </a><figcaption class="image-caption">C:\Users\Administrator\Desktop\img\shiyanshipaike\用户表.jpg</figcaption>
+    </figure>
+图4.8 用户表实体属性图</p>
+<p>（9）下图是实验室申请实体和其具备的属性。</p>
+<p><figure><a class="lightgallery" href="/images/0700ssm/ssm714/blog.015.jpeg" title="C:\Users\Administrator\Desktop\img\shiyanshipaike\实验室申请.jpg" data-thumbnail="/images/0700ssm/ssm714/blog.015.jpeg" data-sub-html="<h2>C:\Users\Administrator\Desktop\img\shiyanshipaike\实验室申请.jpg</h2><p>C:\Users\Administrator\Desktop\img\shiyanshipaike\实验室申请.jpg</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/0700ssm/ssm714/blog.015.jpeg"
+            data-srcset="/images/0700ssm/ssm714/blog.015.jpeg, /images/0700ssm/ssm714/blog.015.jpeg 1.5x, /images/0700ssm/ssm714/blog.015.jpeg 2x"
+            data-sizes="auto"
+            alt="/images/0700ssm/ssm714/blog.015.jpeg" />
+    </a><figcaption class="image-caption">C:\Users\Administrator\Desktop\img\shiyanshipaike\实验室申请.jpg</figcaption>
+    </figure>
+图4.9 实验室申请实体属性图</p>
+<p>（10）下图是排课取消申请实体和其具备的属性。</p>
+<p><figure><a class="lightgallery" href="/images/0700ssm/ssm714/blog.016.jpeg" title="C:\Users\Administrator\Desktop\img\shiyanshipaike\排课取消申请.jpg" data-thumbnail="/images/0700ssm/ssm714/blog.016.jpeg" data-sub-html="<h2>C:\Users\Administrator\Desktop\img\shiyanshipaike\排课取消申请.jpg</h2><p>C:\Users\Administrator\Desktop\img\shiyanshipaike\排课取消申请.jpg</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/0700ssm/ssm714/blog.016.jpeg"
+            data-srcset="/images/0700ssm/ssm714/blog.016.jpeg, /images/0700ssm/ssm714/blog.016.jpeg 1.5x, /images/0700ssm/ssm714/blog.016.jpeg 2x"
+            data-sizes="auto"
+            alt="/images/0700ssm/ssm714/blog.016.jpeg" />
+    </a><figcaption class="image-caption">C:\Users\Administrator\Desktop\img\shiyanshipaike\排课取消申请.jpg</figcaption>
+    </figure>
+图4.10 排课取消申请实体属性图</p>
+<ol>
+<li>
+<h3 id="数据库表设计">数据库表设计</h3>
+</li>
+</ol>
+<p>采用MYSQL数据库对该实验室预约管理的数据进行存储，数据库中所包括的各个数据库表的详细信息如下所示：</p>
+<p>表4.1字典表表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">dic_code</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">字段</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">dic_name</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">字段名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">code_index</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">编码</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">index_name</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">编码名字</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">super_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">父字段id</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">beizhu</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">备注</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.2教师表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">jiaoshi_uuid_number</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">工号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">jiaoshi_name</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">教师姓名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">jiaoshi_photo</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">头像</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">jiaoshi_phone</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">联系方式</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">jiaoshi_email</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">邮箱</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">jiaoshi_delete</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">假删</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.3课程信息表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">shiyanshishenqing_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">实验室</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">kecheng_name</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">课程名称</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">kecheng_photo</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">课程图片</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">shangke_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">上课时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">xiake_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">结束时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">kecheng_types</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">课程类型</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">banji_types</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">班级</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">xueqi_types</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">学期</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">xingqi_types</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">星期</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td style="text-align:center">jieke_types</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">第几节</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">12</td>
+<td style="text-align:center">jiaoshi_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">教师</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">13</td>
+<td style="text-align:center">kecheng_yesno_types</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">课程审核</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">14</td>
+<td style="text-align:center">kecheng_yesno_text</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">审核原因</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">15</td>
+<td style="text-align:center">kecheng_content</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">课程详情</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">16</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.4公告表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">news_name</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">公告标题</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">news_types</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">公告类型</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">news_photo</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">公告图片</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">insert_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">公告时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">news_content</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">公告详情</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.5排课取消申请表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">jiaoshi_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">教师</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">kecheng_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">课程</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">paiekequxiao_yesno_types</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">排课取消审核</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">paiekequxiao_yesno_text</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">审核原因</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">kecheng_content</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">课程详情</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.6实验设备表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">shiyanshebei_name</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">设备名称</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">shiyanshebei_photo</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">设备图片</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">shiyanshebei_types</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">设备类型</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">shiyanshebei_number</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">设备数量</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">shiyanshi_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">实验室</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">shiyanshebei_content</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">设备详情</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.7实验室信息表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">shiyanshi_name</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">实验室名称</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">shiyanshi_photo</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">实验室图片</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">shiyanshi_types</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">实验室类型</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">status_types</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">实验室状态</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">shiyanshi_content</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">实验室详情</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.8实验室申请表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">shiyanshi_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">实验室</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">jiaoshi_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">教师</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">shiyanshishenqing_yesno_types</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">审核结果</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">shiyanshishenqing_yesno_text</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">审核原因</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.9学生表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">yonghu_uuid_number</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">学号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">yonghu_name</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">学生姓名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">yonghu_photo</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">头像</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">banji_types</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">班级</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">yonghu_phone</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">联系方式</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">yonghu_id_number</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">学生身份证号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">yonghu_email</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">邮箱</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">yonghu_delete</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">假删</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.10用户表表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">username</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">用户名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">password</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">密码</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">role</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">角色</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">新增时间</td>
+<td style="text-align:center">是</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>
+<h1 id="系统的实现">系统的实现</h1>
+<ol>
+<li>
+<h2 id="功能模块的实现">功能模块的实现</h2>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="51学生信息管理">5.1学生信息管理</h3>
+<p>如图5.1显示的就是学生信息管理页面，此页面提供给管理员的功能有：学生信息的查询管理，可以删除学生信息、修改学生信息、新增学生信息，</p>
+<p>还进行了对用户名称的模糊查询的条件</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm714/blog.017.png"
+        data-srcset="/images/0700ssm/ssm714/blog.017.png, /images/0700ssm/ssm714/blog.017.png 1.5x, /images/0700ssm/ssm714/blog.017.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm714/blog.017.png"
+        title="/images/0700ssm/ssm714/blog.017.png" /></p>
+<p>图5.1 学生信息管理页面</p>
+<h3 id="52-教师信息管理">5.2 教师信息管理</h3>
+<p>如图5.2显示的就是教师信息管理页面，此页面提供给管理员的功能有：查看已发布的教师信息数据，修改教师信息，教师信息作废，即可删除，还进行了对教师信息名称的模糊查询 教师信息信息的类型查询等等一些条件。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm714/blog.018.png"
+        data-srcset="/images/0700ssm/ssm714/blog.018.png, /images/0700ssm/ssm714/blog.018.png 1.5x, /images/0700ssm/ssm714/blog.018.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm714/blog.018.png"
+        title="/images/0700ssm/ssm714/blog.018.png" /></p>
+<p>图5.2 教师信息管理页面</p>
+<h3 id="53实验室管理">5.3实验室管理</h3>
+<p>如图5.3显示的就是实验室管理页面，此页面提供给管理员的功能有：根据实验室进行条件查询，还可以对实验室进行新增、修改、查询操作等等。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm714/blog.019.png"
+        data-srcset="/images/0700ssm/ssm714/blog.019.png, /images/0700ssm/ssm714/blog.019.png 1.5x, /images/0700ssm/ssm714/blog.019.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm714/blog.019.png"
+        title="/images/0700ssm/ssm714/blog.019.png" /></p>
+<p>图5.3 实验室管理页面</p>
+<h3 id="51公告信息管理">5.1公告信息管理</h3>
+<p>如图5.4显示的就是公告信息管理页面，此页面提供给管理员的功能有：根据公告信息进行新增、修改、查询操作等等。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm714/blog.020.png"
+        data-srcset="/images/0700ssm/ssm714/blog.020.png, /images/0700ssm/ssm714/blog.020.png 1.5x, /images/0700ssm/ssm714/blog.020.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm714/blog.020.png"
+        title="/images/0700ssm/ssm714/blog.020.png" /></p>
+<p>图5.4 公告信息管理页面</p>
+<ol>
+<li></li>
+</ol>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2024-06-21</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/ssm714%E5%AE%9E%E9%AA%8C%E5%AE%A4%E9%A2%84%E7%BA%A6%E7%AE%A1%E7%90%86-vue/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://chenqi199.github.io/ssm714%E5%AE%9E%E9%AA%8C%E5%AE%A4%E9%A2%84%E7%BA%A6%E7%AE%A1%E7%90%86-vue/" data-title="ssm714实验室预约管理&#43;vue" data-hashtags="ssm实验室,实验室预约,预约管理"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://chenqi199.github.io/ssm714%E5%AE%9E%E9%AA%8C%E5%AE%A4%E9%A2%84%E7%BA%A6%E7%AE%A1%E7%90%86-vue/" data-hashtag="ssm实验室"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://chenqi199.github.io/ssm714%E5%AE%9E%E9%AA%8C%E5%AE%A4%E9%A2%84%E7%BA%A6%E7%AE%A1%E7%90%86-vue/" data-title="ssm714实验室预约管理&#43;vue"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://chenqi199.github.io/ssm714%E5%AE%9E%E9%AA%8C%E5%AE%A4%E9%A2%84%E7%BA%A6%E7%AE%A1%E7%90%86-vue/" data-title="ssm714实验室预约管理&#43;vue"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://chenqi199.github.io/ssm714%E5%AE%9E%E9%AA%8C%E5%AE%A4%E9%A2%84%E7%BA%A6%E7%AE%A1%E7%90%86-vue/" data-title="ssm714实验室预约管理&#43;vue" data-ralateuid="https://gitee.com/chen_q_i"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ssm%E5%AE%9E%E9%AA%8C%E5%AE%A4/">Ssm实验室</a>,&nbsp;<a href="/tags/%E5%AE%9E%E9%AA%8C%E5%AE%A4%E9%A2%84%E7%BA%A6/">实验室预约</a>,&nbsp;<a href="/tags/%E9%A2%84%E7%BA%A6%E7%AE%A1%E7%90%86/">预约管理</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/ssm715%E5%9F%BA%E4%BA%8Ejava-%E7%9A%84%E7%97%85%E6%88%BF%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" class="prev" rel="prev" title="ssm715基于java 的病房管理系统&#43;vue"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>ssm715基于java 的病房管理系统+vue</a>
+            <a href="/ssm713%E6%A0%A1%E5%9B%AD%E4%BD%93%E8%82%B2%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" class="next" rel="next" title="ssm713校园体育赛事管理系统的设计与实现&#43;vue">ssm713校园体育赛事管理系统的设计与实现+vue<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.128.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="chenqi199" target="_blank">chenqi</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

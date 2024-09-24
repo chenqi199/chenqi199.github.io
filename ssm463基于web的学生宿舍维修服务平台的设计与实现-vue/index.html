@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer" />
+        <meta name="robots" content="noodp" />
+        <title>ssm463基于Web的学生宿舍维修服务平台的设计与实现&#43;vue - chenqi blog</title><meta name="Description" content="Hugo theme - chenqi"><meta property="og:url" content="https://chenqi199.github.io/ssm463%E5%9F%BA%E4%BA%8Eweb%E7%9A%84%E5%AD%A6%E7%94%9F%E5%AE%BF%E8%88%8D%E7%BB%B4%E4%BF%AE%E6%9C%8D%E5%8A%A1%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/">
+  <meta property="og:site_name" content="chenqi blog">
+  <meta property="og:title" content="ssm463基于Web的学生宿舍维修服务平台的设计与实现&#43;vue">
+  <meta property="og:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm463基于Web的学生宿舍维修服务平台的设计与实现&#43;vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第1章 绪">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-03-29T10:32:55+08:00">
+    <meta property="article:modified_time" content="2024-03-29T10:32:55+08:00">
+    <meta property="article:tag" content="Ssm学生">
+    <meta property="article:tag" content="宿舍维修">
+    <meta property="article:tag" content="平台设计">
+    <meta property="article:tag" content="学生宿舍">
+    <meta property="article:tag" content="服务平台">
+    <meta property="article:tag" content="维修服务">
+    <meta property="og:image" content="https://chenqi199.github.io/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chenqi199.github.io/logo.png">
+  <meta name="twitter:title" content="ssm463基于Web的学生宿舍维修服务平台的设计与实现&#43;vue">
+  <meta name="twitter:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm463基于Web的学生宿舍维修服务平台的设计与实现&#43;vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第1章 绪">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chenqi199.github.io/ssm463%E5%9F%BA%E4%BA%8Eweb%E7%9A%84%E5%AD%A6%E7%94%9F%E5%AE%BF%E8%88%8D%E7%BB%B4%E4%BF%AE%E6%9C%8D%E5%8A%A1%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" /><link rel="prev" href="https://chenqi199.github.io/ssm458%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%AE%A1%E7%90%86%E4%B8%8E%E6%8E%92%E8%AF%BE%E7%B3%BB%E7%BB%9F-vue/" /><link rel="next" href="https://chenqi199.github.io/ssm462%E7%BD%91%E7%BB%9C%E7%B1%BB%E8%AF%BE%E7%A8%8B%E6%80%9D%E6%94%BF%E5%AD%A6%E4%B9%A0%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "ssm463基于Web的学生宿舍维修服务平台的设计与实现+vue",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chenqi199.github.io\/ssm463%E5%9F%BA%E4%BA%8Eweb%E7%9A%84%E5%AD%A6%E7%94%9F%E5%AE%BF%E8%88%8D%E7%BB%B4%E4%BF%AE%E6%9C%8D%E5%8A%A1%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue\/"
+        },"image": ["https:\/\/chenqi199.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "ssm学生, 宿舍维修, 平台设计, 学生宿舍, 服务平台, 维修服务","wordcount":  7405 ,
+        "url": "https:\/\/chenqi199.github.io\/ssm463%E5%9F%BA%E4%BA%8Eweb%E7%9A%84%E5%AD%A6%E7%94%9F%E5%AE%BF%E8%88%8D%E7%BB%B4%E4%BF%AE%E6%9C%8D%E5%8A%A1%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue\/","datePublished": "2024-03-29T10:32:55+08:00","dateModified": "2024-03-29T10:32:55+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/chenqi199.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "chenqi"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/ssm463%E5%9F%BA%E4%BA%8Eweb%E7%9A%84%E5%AD%A6%E7%94%9F%E5%AE%BF%E8%88%8D%E7%BB%B4%E4%BF%AE%E6%9C%8D%E5%8A%A1%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/ssm463%E5%9F%BA%E4%BA%8Eweb%E7%9A%84%E5%AD%A6%E7%94%9F%E5%AE%BF%E8%88%8D%E7%BB%B4%E4%BF%AE%E6%9C%8D%E5%8A%A1%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">ssm463基于Web的学生宿舍维修服务平台的设计与实现+vue</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="chenqi199" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>chenqi</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-03-29">2024-03-29</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 7405 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 15 分钟&nbsp;<span id="/ssm463%E5%9F%BA%E4%BA%8Eweb%E7%9A%84%E5%AD%A6%E7%94%9F%E5%AE%BF%E8%88%8D%E7%BB%B4%E4%BF%AE%E6%9C%8D%E5%8A%A1%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" class="leancloud_visitors" data-flag-title="ssm463基于Web的学生宿舍维修服务平台的设计与实现&#43;vue">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">github 项目仓库</a> 开源仅有后端代码</a></li>
+        <li><a href="#点击播放视频-">点击播放视频 ▼</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#11-课题研究背景">1.1 课题研究背景</a></li>
+    <li><a href="#12课题研究现状">1.2课题研究现状</a></li>
+    <li><a href="#13课题实现目的和意义">1.3课题实现目的和意义</a></li>
+    <li><a href="#14课题实现内容">1.4课题实现内容</a></li>
+    <li><a href="#15论文结构安排">1.5论文结构安排</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#21uml建模语言介绍">2.1UML建模语言介绍</a></li>
+    <li><a href="#22-html语言介绍">2.2 Html语言介绍</a></li>
+    <li><a href="#23mysql数据库的介绍">2.3Mysql数据库的介绍</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#31系统需求分析">3.1系统需求分析</a></li>
+    <li><a href="#32系统可行性分析">3.2系统可行性分析</a>
+      <ul>
+        <li><a href="#321技术可行性">3.2.1技术可行性</a></li>
+        <li><a href="#322经济可行性">3.2.2经济可行性</a></li>
+        <li><a href="#323法律可行性">3.2.3法律可行性</a></li>
+        <li><a href="#324操作可行性">3.2.4操作可行性</a></li>
+      </ul>
+    </li>
+    <li><a href="#33系统性能分析">3.3系统性能分析</a></li>
+    <li><a href="#34系统功能分析">3.4系统功能分析</a></li>
+    <li><a href="#35系统流程分析">3.5系统流程分析</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#41系统目标">4.1系统目标</a></li>
+    <li><a href="#42系统功能设计">4.2系统功能设计</a></li>
+    <li><a href="#43数据库设计">4.3数据库设计</a>
+      <ul>
+        <li><a href="#431数据库概念模型">4.3.1数据库概念模型</a></li>
+        <li><a href="#432数据库表设计">4.3.2数据库表设计</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#51-java与mysql数据库连接">5.1 JAVA与Mysql数据库连接</a></li>
+    <li><a href="#52学生身份界面的功能实现">5.2学生身份界面的功能实现</a>
+      <ul>
+        <li><a href="#521用户登录功能的实现界面">5.2.1用户登录功能的实现界面</a></li>
+        <li><a href="#522-首页功能的实现界面">5.2.2 首页功能的实现界面</a></li>
+        <li><a href="#523个人资料管理功能的实现界面">5.2.3个人资料管理功能的实现界面</a></li>
+        <li><a href="#524故障上报功能的实现界面">5.2.4故障上报功能的实现界面</a></li>
+        <li><a href="#525新闻信息功能的实现界面">5.2.5新闻信息功能的实现界面</a></li>
+        <li><a href="#images0400ssmssm463blog029png"><img src="/images/0400ssm/ssm463/blog.029.png" alt=""></a></li>
+      </ul>
+    </li>
+    <li><a href="#53系统后台管理员功能实现">5.3系统后台管理员功能实现</a>
+      <ul>
+        <li><a href="#531学生管理功能的实现界面">5.3.1学生管理功能的实现界面</a></li>
+        <li><a href="#532维修员管理功能的实现界面">5.3.2维修员管理功能的实现界面</a></li>
+        <li><a href="#533故障上报管理功能的实现">5.3.3故障上报管理功能的实现</a></li>
+        <li><a href="#534管理员管理功能的实现界面">5.3.4管理员管理功能的实现界面</a></li>
+        <li><a href="#535基础数据管理功能的实现界面">5.3.5基础数据管理功能的实现界面</a></li>
+        <li><a href="#536新闻信息管理功能的实现界面">5.3.6新闻信息管理功能的实现界面</a></li>
+      </ul>
+    </li>
+    <li><a href="#54维修员功能的实现">5.4维修员功能的实现</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="项目清单-包安装运行httpchenqi1990site-官网地址-httpchenqi1990site"><a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">项目清单 包安装运行</a> 官网地址 <a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">http://chenqi1990.site</a></h1>
+<h1 id="ssm463基于web的学生宿舍维修服务平台的设计与实现vuehttpsgithubcomgraduationproject-springboot"><a href="https://github.com/GraduationProject-springboot/" target="_blank" rel="noopener noreffer ">ssm463基于Web的学生宿舍维修服务平台的设计与实现+vue</a></h1>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        data-srcset="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 1.5x, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        title="picture" /></p>
+<h3 id="github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">github 项目仓库</a> 开源仅有后端代码</h3>
+<h3 id="点击播放视频-">点击播放视频 ▼</h3>
+<p><a href="https://www.bilibili.com/video/BV1t58veLEnL?p=61" target="_blank" rel="noopener noreffer "><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.sstatic.net/Vp2cE.png"
+        data-srcset="https://i.sstatic.net/Vp2cE.png, https://i.sstatic.net/Vp2cE.png 1.5x, https://i.sstatic.net/Vp2cE.png 2x"
+        data-sizes="auto"
+        alt="https://i.sstatic.net/Vp2cE.png"
+        title="Watch the video" /></a></p>
+<h1 id="第1章-绪论">第1章 绪论</h1>
+<h2 id="11-课题研究背景">1.1 课题研究背景</h2>
+<p>现在各行各业都开始采用计算机办公软件来进行协助工作，这样可以更好的提高工作效率，减轻办公人员的工作压力，通过计算机信息化管理，可以使信息长期保存，修改和查找起来更加的方便，对于信息资料的核对也更加的精准。虽然现在学校的宿舍维修管理已具规模，已形成流程化管理，但学校存储的宿舍维修量是非常大的，而且信息种类也是非常的多，如果还是传统的人工管理方式进行管理，那么首先对于宿舍维修的查找和安排管理就是一个很大的挑战，但是如果借助于计算机管理软件的出现，可以把学校的宿舍维修全部录入系统里，可以更精准的进行管理，对于故障上报和维修管理是非常方便的，比如直接输入故障编号就可以快速查找到该故障在什么位置。其次还额外加入了学生、维修员权限，学生可以直接通过登录系统就查询故障上报信息并进行故障上报，有问题可以及时沟通，这样就避免了更多问题的发生，同样可以更好的节省时间。维修员可以进行维修后信息的提交。所以说不管是针对学校的管理人员还是对于学生来说，都是非常具有开发价值的。</p>
+<h2 id="12课题研究现状">1.2课题研究现状</h2>
+<p>在我们国内使用最多的管理系统系列有金盘软件、汇文软件，在国外代表软件有ExLibris和Aleph500。随着人们要求的深入，学生宿舍维修服务平台加入了新的理念，更好的整合了代表管理系统的特点和加入自身特点。现代使用的学生宿舍维修管理平台可以实现信息的快速查找，方便用户寻找需要的信息，并且可以实现线上新闻发布，宿舍的故障上报信息实现信息化管理，防止纠纷的发生。但经过研究，现在的学生宿舍维修管理平台还存在一些问题，比如由于部门不同、负责工作内容不同的原因，很多的数据都是隔离保存的，不能实现共享，这就造成在工作中需要多个部门奔跑；再有现有的学生宿舍维修管理平台功能不完整不能实现宿舍维修的整体业务管理，不能实现宿舍维修管理的整个流程。想要解决这些问题就需要采用先进的理念进行设计，并且深入了解宿舍维修管理的工作内容，采用开放的思路进行设计，最后还需要吸取用户的建议。</p>
+<h2 id="13课题实现目的和意义">1.3课题实现目的和意义</h2>
+<p>宿舍维修内存储的信息是非常多的，首先对于维修的安排来说就是非常的耗时耗力，对于管理人员来说也是一个非常大的挑战，其次宿舍的故障的数据也是非常的繁杂，而且频次也是非常的高，通过建设的数字化基于Web的学生宿舍维修服务平台解决这个难题，全部把故障上报信息存储到计算机里，实现智能化管理，可以更好的提高工作人员的工作效率。</p>
+<p>优质的基于Web的学生宿舍维修服务平台不仅可以单纯的满足学校的日常工作需求，还可以满足学生的需求。可以降低学校工作人员的工作压力，提高效率，最重要的是可以实现学生参与，把工作人员的部分工作分担给学生，使工作人员的工作安排更加合理。本系统可以实现故障报修、维修管理的流程化、信息化，使必要信息实现共享。综合来说本系统可以减少工作人员的工作内容，充分体现网络的作用，实现网络资源的利用从而提高学校的档次和使学校的宿舍维修管理工作安排更合理，并且实现服务的多样化、人性化。</p>
+<h2 id="14课题实现内容">1.4课题实现内容</h2>
+<p>本系统包括管理员和维修员、学生三部分。学生的内容包括个人资料管理、故障上报管理以及浏览新闻。学生通过登录后可以在线报修。管理员负责新闻信息管理、故障上报信息管理、学生信息管理，维修员可以查询故障上报信息并完成维修。</p>
+<h2 id="15论文结构安排">1.5论文结构安排</h2>
+<p>本篇论文按照系统开发的生命周期进行撰写，详细描述了本系统从调研、分析、设计、实现、测试的过程。本论文从课题开发的背景、现状、目的意义开始，介绍了本课题开发的重要性；然后介绍了本课题开发所使用的相关技术和环境等；接着阐述本课题的分析，包括对课题的需求性、可行性、性能方面、功能方面的分析，紧接着设计了系统的功能和建立了系统的数据库，然后进行系统的实现和系统的测试。所以，本篇论文的结构安排为：</p>
+<ol>
+<li>绪论，本章包含课题开发背景、现状、目的和意义以及内容；</li>
+<li>系统实现的相关技术和环境，对JAVA语言和Mysql数据库进行描述，并对其它相关技术、环境进行描述；</li>
+<li>系统分析，针对系统需求分析、系统经济可行性、操作可行性、技术可行性分析，还包括系统的功能、性能、流程进行分析。本章包括各类流程图；</li>
+<li>总体设计，描述系统的功能结构和画出系统的功能结构图，描述数据库的设计和画出数据库ER图、数据库表；</li>
+<li>系统实现，描述系统的主要功能和进行实现界面的展示；</li>
+<li>系统测试，介绍测试的目的、意义、步骤等，着重描述系统的功能测试用例和进行测试总结；</li>
+</ol>
+<p>总结</p>
+<p>致谢</p>
+<p>参考文献</p>
+<h1 id="第2章-系统实现的相关技术和环境">第2章 系统实现的相关技术和环境</h1>
+<h2 id="21uml建模语言介绍">2.1UML建模语言介绍</h2>
+<p>UML建模语言是一个面向对象开发的标准化建模语言，目前作为一个统一的标注在执行，之前各种建模语言都是相互独立的，而通过UML把他们全部联系了起来，这样可以使技术灵活度很大的提高，减少了不必要的差异化。通过UML建模语言可以很大程度的扩宽系统的适用范围。建模语言的作用就是系统开发前期阶段进行可视化演练，先建立好一个动态的模型，这样就可以清晰的展示出来自己要做的系统大致是个什么类型，更能直观的通过图形化进行信息展示。UML建模工具包含很多图形，比如用例图，类图，时序图等各种图形，通过这些图形可以建立各种类之间的联系。UML的开发过程中首先是先对对象进行分析研究，然后进行文档化分析，然后在对面向对象的思想进行细化，然后设计建立设计模型，最后觉得就是通过之前建立的各种模型进行编程，UML已经是形成了一个行业内的工业标准，所以在面对UML的时候不要有任何负担，而且一种辅助工具，对于系统开发阶段是有很大益处的。而通过UML我们接触最多的就是用例图了，用例图主要就是描述出来你打算做什么系统，从而实现什么功能，然后通过用例加权限角色的形式用图形展现出来，而用例部分一般都是用一个椭圆的形状来表示，角色部分用一个人的符号表示，通过箭头的形式把他们进行联系起来。而类图主要就是用一个三层表格图来进行展示，里面内容包含类的名字，类的属性，还有类实现所需要的方法，而把这些类之间存在三种关系，就是关联，泛华和依赖。关联是通过一条实线表示，某个类里的属性引用到另个实体类里，这样就形成一种关联关系，而关联关系也分为两种不同的关系，就是聚合和组合，聚合是通过一个空心菱形框来表示，他的最大特性就是当A的实体部分，也可以当B的实体部分，而组合关系恰恰相反，当作为A的实体后就不能在作为B的实体部分了，组合关系一般是采用实心的菱形框表示，以此来进行他们之间的区别。泛华关系是用空心的三角形来标注，可以看成一种对接口的关联关系。依赖关系是如果建立的一个类进行了改动，那么跟他有关联的其他类都会进行相应的改动，会通过类信息进行发送给其他的类，作为另一个类的数据存储部分，然后进行参数变动。</p>
+<h2 id="22-html语言介绍">2.2 Html语言介绍</h2>
+<p>Html是一种超文本标记语言，经过技术的不断发展，现在已经是html5版本了，html可以结合各种编程语言使用，比如像jsp ，Java等都可以嵌入使用，html的工作原理就是当用户进行信息访问时候，可以借助于浏览器把html代码进行可视化展示，然后显示在浏览器上，所以html主要是网页界面中使用，可以通过div+css等设计界面样式等。因为html是一个静态的网页技术，所以现在一般都不是单独使用，都要结合javascript脚本语言形成动态技术，这样才能实现跟用户的交互，才能满足现代化的需求。</p>
+<h2 id="23mysql数据库的介绍">2.3Mysql数据库的介绍</h2>
+<p>数据库分为很多种，一般有网状型数据库，层次型数据库，关系型数据库和面向对象数据库，而我们经常使用的就都是面向对象的数据库，比如像Mysql ，sql server或者Oracleog。这些数据库可以说是大同小异，采用的都是标准的sql语句格式，可以应用于各种关系型数据库。开发本系统我选用Mysql数据库作为存储方式，因为Mysql数据库体积更小，对硬件要求不高，最重要的还是免费的，直接就可以下载使用。Mysql分为服务端和学生端两部分，可以直接通过学生端Navicat工具进行数据库的管理，数据可以直接进行可视化图形展示，操作起来非常的方便，简单易学，所以非常适合一些中小系统的开发和使用。</p>
+<h1 id="第3章-系统分析">第3章 系统分析</h1>
+<h2 id="31系统需求分析">3.1系统需求分析</h2>
+<p>宿舍维修管理是保证学生住宿环境的重要手段，现在学校在管理宿舍维修时通常使用传统方式。传统宿舍维修管理的方式多为手动或者手动加入管理系统，这类管理系统功能单一，需要管理员操作，学生无法参与。这就需要管理员长期站在电脑前，工作效率低下。而本系统可以解放管理员，想要查询维修详情的学生可以自主操作，减少排队，更加满足用户的需求。所以本系统的开发非常需要。</p>
+<h2 id="32系统可行性分析">3.2系统可行性分析</h2>
+<h3 id="321技术可行性">3.2.1技术可行性</h3>
+<p>本系统对硬件和软件方面的要求都不高，目前市场上常见的计算机硬件设备都可以满足开发本系统的需求，而且操作系统win7，win10都可以，也有很好的兼容性，通过Java语言，结合Html等生成动态网页技术，来实现本系统需要的所有功能。Mysql数据库作为系统的数据存储，安全性有足够的保障，而且有好的管理效率，可以直接对数据进行结构化关系化管理，所以开发本系统所采用的所有技术都是可行的。</p>
+<h3 id="322经济可行性">3.2.2经济可行性</h3>
+<p>经过前期的考察调研后，本人认为开发本系统不需要有什么大的支出费用，开发本系统只需要有个计算机就可以，而开发过程中所用到的编程软件和画图软件，还有数据库都是直接从官网就行免费下载的，都属于开源的软件，可以免费使用，而且本系统采用的是Mysql数据库，可以直接自己电脑进行维护更新，不需要额外的维护费用，所以在经济上也是可行的。</p>
+<h3 id="323法律可行性">3.2.3法律可行性</h3>
+<p>本系统的主题内容是积极向上的，而且开发成功以后还能对社会带来很好经济效益，对社会是有用的，开发本系统的过程中所编写的代码全部是由自己原创的，知识由老师上课所教授的，没有抄袭和借鉴任何别人的系统，所以也不存在侵权行为，所以开发本系统在法律方面也是可行的。</p>
+<h3 id="324操作可行性">3.2.4操作可行性</h3>
+<p>开发的时候已经考虑到了，本系统要面向所有的人群，不管是懂计算机操作的，还是不懂的，所以采用的界面设计，简单美观，每个功能按钮都有文字提示，任何人都可以轻松掌握，熟练使用。而且采用的是B/S架构模式，可以直接借助浏览器运行，用户不需要额外安装各种繁琐的软件，直接就能在网页里进行访问，非常的方便，所以本系统在操作上也是可行的。</p>
+<h2 id="33系统性能分析">3.3系统性能分析</h2>
+<p>性能分析同样重要，系统的性能质量关系着系统的生命周期和受欢迎程度。对于系统的性能分析主要从以下几点来研究：</p>
+<ol>
+<li>在系统开发的过程中要用长远的目光看待问题，不能只看当下而减少工作量，考虑系统在未来可能遇到的工作强度，在现阶段尽量提高系统的处理事务的能力和进行信息处理的响应时间；</li>
+<li>系统要做到开放性，在设计数据库时要充分考虑到用户信息查询的多样性和变化性，需要对查询条件不断的进行升级、优化。加入简单的扩展配置，使后期系统在升级中可以通过扩展配置进行补充；</li>
+<li>在系统开发中尽可能使用熟悉的语法并进行简单标记、注释，方便今后系统的修改和完善，减少后期修改系统时熟悉的时间；</li>
+<li>除此之外要注意系统中数据的完整性、准确性和一致性，数据要实现必要的共享和独立。</li>
+</ol>
+<h2 id="34系统功能分析">3.4系统功能分析</h2>
+<p>本系统的界面分为学生界面和管理员后台界面、维修员界面。维修员界面、管理员界面和学生后台界面需要符合身份的用户通过登录验证后才可以使用。学生可以查询故障上报信息并进行故障上报，可以浏览新闻信息。维修员可以进行故障的维修，管理员负责审核故障上报信息和发布新闻信息以及管理维修员、学生的资料。</p>
+<p>学生用例图如下图3.1所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm463/blog.001.png"
+        data-srcset="/images/0400ssm/ssm463/blog.001.png, /images/0400ssm/ssm463/blog.001.png 1.5x, /images/0400ssm/ssm463/blog.001.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm463/blog.001.png"
+        title="/images/0400ssm/ssm463/blog.001.png" /></p>
+<p>图3.1学生用例图</p>
+<p>管理员用例图如下图3.2所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm463/blog.002.png"
+        data-srcset="/images/0400ssm/ssm463/blog.002.png, /images/0400ssm/ssm463/blog.002.png 1.5x, /images/0400ssm/ssm463/blog.002.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm463/blog.002.png"
+        title="/images/0400ssm/ssm463/blog.002.png" /></p>
+<p>图3.2管理员用例图</p>
+<p><code>	</code>维修员用例图如下图3.3所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm463/blog.003.png"
+        data-srcset="/images/0400ssm/ssm463/blog.003.png, /images/0400ssm/ssm463/blog.003.png 1.5x, /images/0400ssm/ssm463/blog.003.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm463/blog.003.png"
+        title="/images/0400ssm/ssm463/blog.003.png" /></p>
+<p>图3.3维修员用例图</p>
+<h2 id="35系统流程分析">3.5系统流程分析</h2>
+<p><code>　　</code>本系统所有的功能使用都基于用户登录后，用户登录时数据流会从登录界面流向用户信息表中，然后数据库进行验证，如果可以找到用户输入的数据则界面就会跳转到登录成功界面，用户就可以在系统里进行操作。操作的数据会流向对应的数据库表中，完成用户的指令，最后将数据流入界面展示给用户。本系统的1层流程图如下图3.4所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm463/blog.004.png"
+        data-srcset="/images/0400ssm/ssm463/blog.004.png, /images/0400ssm/ssm463/blog.004.png 1.5x, /images/0400ssm/ssm463/blog.004.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm463/blog.004.png"
+        title="/images/0400ssm/ssm463/blog.004.png" />图3.4系统流程1层图</p>
+<p>对系统中信息的流动进行抽象就可以得到数据流程图。数据流程图表达了信息的逻辑模型，用来开发人员和用户进行交流。本系统的流程2层图如下图3.5所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm463/blog.005.png"
+        data-srcset="/images/0400ssm/ssm463/blog.005.png, /images/0400ssm/ssm463/blog.005.png 1.5x, /images/0400ssm/ssm463/blog.005.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm463/blog.005.png"
+        title="/images/0400ssm/ssm463/blog.005.png" /></p>
+<p>图3.5系统流程2层图</p>
+<p>对管理员的功能进行分析，得出管理员的信息流动，管理员可以管理故障上报信息、新闻信息、学生信息和维修员信息等。管理员的流程3层图如下图3.6所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm463/blog.006.png"
+        data-srcset="/images/0400ssm/ssm463/blog.006.png, /images/0400ssm/ssm463/blog.006.png 1.5x, /images/0400ssm/ssm463/blog.006.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm463/blog.006.png"
+        title="/images/0400ssm/ssm463/blog.006.png" />　　　　　　　　　　　　图3.6管理员数据流程3层图</p>
+<p>对学生的功能进行分析，得出学生的信息流动。学生可以管理个人信息和进行故障上报等。学生的数据流程3层图如下图3.7所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm463/blog.007.png"
+        data-srcset="/images/0400ssm/ssm463/blog.007.png, /images/0400ssm/ssm463/blog.007.png 1.5x, /images/0400ssm/ssm463/blog.007.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm463/blog.007.png"
+        title="/images/0400ssm/ssm463/blog.007.png" /></p>
+<p>图3.7学生数据流程3层图</p>
+<h1 id="heading"></h1>
+<h1 id="第4章-总体设计">第4章 总体设计</h1>
+<h2 id="41系统目标">4.1系统目标</h2>
+<p>本系统旨在达到宿舍维修管理、新闻管理、学生管理、维修员管理、故障上报管理等为一体，为学生和管理员、维修员提供服务。使管理员、维修员更加轻松的进行工作，使学生更加快速的进行信息查询和故障上报。本系统的设计界面丰富，各个模块和按钮明确展示，使所有使用者都可以一目了然，达到人机交互、功能齐全、可扩展的目的。</p>
+<h2 id="42系统功能设计">4.2系统功能设计</h2>
+<p>根据第三章的功能分析设计出本系统的功能为学生管理、故障上报管理、基础数据管理、教师管理、新闻管理等。本系统的权限分为学生和管理员、维修员三种。界面分为管理员界面和学生界面、维修员界面。本系统的功能结构图如下图4.1所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm463/blog.008.png"
+        data-srcset="/images/0400ssm/ssm463/blog.008.png, /images/0400ssm/ssm463/blog.008.png 1.5x, /images/0400ssm/ssm463/blog.008.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm463/blog.008.png"
+        title="/images/0400ssm/ssm463/blog.008.png" /></p>
+<p>图4.1系统功能结构图</p>
+<h2 id="43数据库设计">4.3数据库设计</h2>
+<h3 id="431数据库概念模型">4.3.1数据库概念模型</h3>
+<p>数据库概念模型表达了数据实体和数据实体的关系等信息，在数据库的概念模型中记录了每个数据库表的字段，通过数据库概念模型可以轻松设计数据库。对系统中的数据信息进行抽象并建模可以完成数据库的概念模型，而数据库的概念模型用ER图来表达。</p>
+<p>本系统的主要数据为管理员、学生、故障上报、新闻信息、维修员等。管理员ER图如下图4.2所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm463/blog.009.png"
+        data-srcset="/images/0400ssm/ssm463/blog.009.png, /images/0400ssm/ssm463/blog.009.png 1.5x, /images/0400ssm/ssm463/blog.009.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm463/blog.009.png"
+        title="/images/0400ssm/ssm463/blog.009.png" /></p>
+<p>图4.2管理员ER图</p>
+<p>学生数据由管理员和个人管理。学生数据ER图如下图4.3所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm463/blog.010.png"
+        data-srcset="/images/0400ssm/ssm463/blog.010.png, /images/0400ssm/ssm463/blog.010.png 1.5x, /images/0400ssm/ssm463/blog.010.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm463/blog.010.png"
+        title="/images/0400ssm/ssm463/blog.010.png" /></p>
+<p>图4.3学生ER图</p>
+<p>故障上报数据由学生发出，维修员维修、管理员审核，故障上报数据ER图如下图4.4所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm463/blog.011.png"
+        data-srcset="/images/0400ssm/ssm463/blog.011.png, /images/0400ssm/ssm463/blog.011.png 1.5x, /images/0400ssm/ssm463/blog.011.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm463/blog.011.png"
+        title="/images/0400ssm/ssm463/blog.011.png" /></p>
+<p>图4.4故障上报ER图</p>
+<p>新闻数据由管理员管理，学生和维修员浏览。新闻数据ER图如下图4.5所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm463/blog.012.png"
+        data-srcset="/images/0400ssm/ssm463/blog.012.png, /images/0400ssm/ssm463/blog.012.png 1.5x, /images/0400ssm/ssm463/blog.012.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm463/blog.012.png"
+        title="/images/0400ssm/ssm463/blog.012.png" /></p>
+<p>图4.5新闻ER图</p>
+<p>类型信息由管理员管理，类型信息ER图如下图4.6所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm463/blog.013.png"
+        data-srcset="/images/0400ssm/ssm463/blog.013.png, /images/0400ssm/ssm463/blog.013.png 1.5x, /images/0400ssm/ssm463/blog.013.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm463/blog.013.png"
+        title="/images/0400ssm/ssm463/blog.013.png" /></p>
+<p>图4.6类型信息ER图</p>
+<p>系统关系ER图如下图4.7所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm463/blog.014.png"
+        data-srcset="/images/0400ssm/ssm463/blog.014.png, /images/0400ssm/ssm463/blog.014.png 1.5x, /images/0400ssm/ssm463/blog.014.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm463/blog.014.png"
+        title="/images/0400ssm/ssm463/blog.014.png" /></p>
+<p><code>　</code>图4.7系统关系ER图</p>
+<h3 id="432数据库表设计">4.3.2数据库表设计</h3>
+<p>按照高内聚、低耦合的原则，并考虑到系统后期的扩展问题设计出本系统的数据库表。本系统的数据库表为管理员信息表，学生信息表、故障上报信息表、维修员信息表、新闻信息表等。本基于Web的学生宿舍维修服务平台的数据库表结构如下表4.1-4.9所示：</p>
+<p>表4.1 config</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm463/blog.015.png"
+        data-srcset="/images/0400ssm/ssm463/blog.015.png, /images/0400ssm/ssm463/blog.015.png 1.5x, /images/0400ssm/ssm463/blog.015.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm463/blog.015.png"
+        title="/images/0400ssm/ssm463/blog.015.png" /></p>
+<p>表4.2 dictionary</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm463/blog.016.png"
+        data-srcset="/images/0400ssm/ssm463/blog.016.png, /images/0400ssm/ssm463/blog.016.png 1.5x, /images/0400ssm/ssm463/blog.016.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm463/blog.016.png"
+        title="/images/0400ssm/ssm463/blog.016.png" /></p>
+<p>表4.3 forum</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm463/blog.017.png"
+        data-srcset="/images/0400ssm/ssm463/blog.017.png, /images/0400ssm/ssm463/blog.017.png 1.5x, /images/0400ssm/ssm463/blog.017.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm463/blog.017.png"
+        title="/images/0400ssm/ssm463/blog.017.png" /></p>
+<p>表4.4 guzhangshangbao</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm463/blog.018.png"
+        data-srcset="/images/0400ssm/ssm463/blog.018.png, /images/0400ssm/ssm463/blog.018.png 1.5x, /images/0400ssm/ssm463/blog.018.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm463/blog.018.png"
+        title="/images/0400ssm/ssm463/blog.018.png" /></p>
+<p>表4.5 news</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm463/blog.019.png"
+        data-srcset="/images/0400ssm/ssm463/blog.019.png, /images/0400ssm/ssm463/blog.019.png 1.5x, /images/0400ssm/ssm463/blog.019.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm463/blog.019.png"
+        title="/images/0400ssm/ssm463/blog.019.png" /></p>
+<p>表4.6 token</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm463/blog.020.png"
+        data-srcset="/images/0400ssm/ssm463/blog.020.png, /images/0400ssm/ssm463/blog.020.png 1.5x, /images/0400ssm/ssm463/blog.020.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm463/blog.020.png"
+        title="/images/0400ssm/ssm463/blog.020.png" /></p>
+<p>表4.7 users</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm463/blog.021.png"
+        data-srcset="/images/0400ssm/ssm463/blog.021.png, /images/0400ssm/ssm463/blog.021.png 1.5x, /images/0400ssm/ssm463/blog.021.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm463/blog.021.png"
+        title="/images/0400ssm/ssm463/blog.021.png" /></p>
+<p>表4.8 weixiuyuan</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm463/blog.022.png"
+        data-srcset="/images/0400ssm/ssm463/blog.022.png, /images/0400ssm/ssm463/blog.022.png 1.5x, /images/0400ssm/ssm463/blog.022.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm463/blog.022.png"
+        title="/images/0400ssm/ssm463/blog.022.png" /></p>
+<p>表4.9 xuesheng</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm463/blog.023.png"
+        data-srcset="/images/0400ssm/ssm463/blog.023.png, /images/0400ssm/ssm463/blog.023.png 1.5x, /images/0400ssm/ssm463/blog.023.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm463/blog.023.png"
+        title="/images/0400ssm/ssm463/blog.023.png" /></p>
+<h1 id="第5章-系统实现">第5章 系统实现</h1>
+<h2 id="51-java与mysql数据库连接">5.1 JAVA与Mysql数据库连接</h2>
+<p>数据库建立好后需要和系统连接才可以使系统运行。本系统采用Mysql数据库，在连接时需要设置数据库的服务器名和密码。数据库连接的原理如下图5.1所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm463/blog.024.png"
+        data-srcset="/images/0400ssm/ssm463/blog.024.png, /images/0400ssm/ssm463/blog.024.png 1.5x, /images/0400ssm/ssm463/blog.024.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm463/blog.024.png"
+        title="/images/0400ssm/ssm463/blog.024.png" /></p>
+<p>图5.1 JAVA连接数据库原理</p>
+<h2 id="52学生身份界面的功能实现">5.2学生身份界面的功能实现</h2>
+<h3 id="521用户登录功能的实现界面">5.2.1用户登录功能的实现界面</h3>
+<p><code>　　</code>登录功能是识别身份的唯一途径，本系统中的用户为学生、管理员、维修员。用户在登录时输入的信息需要流入数据库中进行对比。如管理员输入admin admin，数据库则需要对比管理员信息表中是否有admin admin的数据。存在该条数据才可以登录成功，不存在该条数据时会提示错误。用户登录界面的设计效果如下图5.2所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm463/blog.025.png"
+        data-srcset="/images/0400ssm/ssm463/blog.025.png, /images/0400ssm/ssm463/blog.025.png 1.5x, /images/0400ssm/ssm463/blog.025.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm463/blog.025.png"
+        title="/images/0400ssm/ssm463/blog.025.png" /></p>
+<p>图5.2系统用户的登录运行界面</p>
+<h3 id="522-首页功能的实现界面">5.2.2 首页功能的实现界面</h3>
+<p>首页是给人的第一印象，一个好的首页才可以吸引用户。在首页里包括导航栏、相关文字等信息。首页功能的实现界面如下图5.3所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm463/blog.026.png"
+        data-srcset="/images/0400ssm/ssm463/blog.026.png, /images/0400ssm/ssm463/blog.026.png 1.5x, /images/0400ssm/ssm463/blog.026.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm463/blog.026.png"
+        title="/images/0400ssm/ssm463/blog.026.png" /></p>
+<p>图5.3首页展示的效果界面</p>
+<h3 id="523个人资料管理功能的实现界面">5.2.3个人资料管理功能的实现界面</h3>
+<p>学生登录后可以管理自己的资料，学生的资料由注册时设置，后期学生可以自己修改个人资料。学生修改个人资料功能的实现界面如下图5.4所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm463/blog.027.png"
+        data-srcset="/images/0400ssm/ssm463/blog.027.png, /images/0400ssm/ssm463/blog.027.png 1.5x, /images/0400ssm/ssm463/blog.027.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm463/blog.027.png"
+        title="/images/0400ssm/ssm463/blog.027.png" /></p>
+<p>图5.4学生修改个人资料功能的运行界面</p>
+<h3 id="524故障上报功能的实现界面">5.2.4故障上报功能的实现界面</h3>
+<p>学生可以查询故障上报详情并可以新增故障上报，还可以输入关键字搜索故障上报详情。故障上报查询功能的实现界面如下图5.5所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm463/blog.028.png"
+        data-srcset="/images/0400ssm/ssm463/blog.028.png, /images/0400ssm/ssm463/blog.028.png 1.5x, /images/0400ssm/ssm463/blog.028.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm463/blog.028.png"
+        title="/images/0400ssm/ssm463/blog.028.png" /></p>
+<p>图5.5故障上报查询功能的实现界面</p>
+<h3 id="525新闻信息功能的实现界面">5.2.5新闻信息功能的实现界面</h3>
+<p>学生可以查询新闻信息。新闻信息浏览功能的实现界面如下图5.6所示：</p>
+<h3 id="images0400ssmssm463blog029png"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm463/blog.029.png"
+        data-srcset="/images/0400ssm/ssm463/blog.029.png, /images/0400ssm/ssm463/blog.029.png 1.5x, /images/0400ssm/ssm463/blog.029.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm463/blog.029.png"
+        title="/images/0400ssm/ssm463/blog.029.png" /></h3>
+<p>图5.6查询新闻信息功能的实现界面</p>
+<h2 id="53系统后台管理员功能实现">5.3系统后台管理员功能实现</h2>
+<h3 id="531学生管理功能的实现界面">5.3.1学生管理功能的实现界面</h3>
+<p><code>　　</code>本功能包括学生用户信息查询、学生用户信息添加和学生用户信息的管理。本功能的设计目的是登记学生信息，方便学生可以使用本系统。查询学生信息功能的实现界面如下图5.7所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm463/blog.030.png"
+        data-srcset="/images/0400ssm/ssm463/blog.030.png, /images/0400ssm/ssm463/blog.030.png 1.5x, /images/0400ssm/ssm463/blog.030.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm463/blog.030.png"
+        title="/images/0400ssm/ssm463/blog.030.png" /></p>
+<p>图5.7查询学生信息功能界面的实现</p>
+<h3 id="532维修员管理功能的实现界面">5.3.2维修员管理功能的实现界面</h3>
+<p>本功能包括对维修员的添加、删除、修改、查询。添加维修员时填写维修员详情就可以完成，查询维修员时填写查询条件即可以查询出来相对应的维修员。查询维修员信息功能的实现界面如下图5.8所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm463/blog.031.png"
+        data-srcset="/images/0400ssm/ssm463/blog.031.png, /images/0400ssm/ssm463/blog.031.png 1.5x, /images/0400ssm/ssm463/blog.031.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm463/blog.031.png"
+        title="/images/0400ssm/ssm463/blog.031.png" /></p>
+<p>图5.8查询维修员信息功能的实现界面</p>
+<h3 id="533故障上报管理功能的实现">5.3.3故障上报管理功能的实现</h3>
+<p><code>　</code>管理员可以审核故障上报信息并查看维修情况。查询故障上报信息功能的实现界面如下图5.9所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm463/blog.032.png"
+        data-srcset="/images/0400ssm/ssm463/blog.032.png, /images/0400ssm/ssm463/blog.032.png 1.5x, /images/0400ssm/ssm463/blog.032.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm463/blog.032.png"
+        title="/images/0400ssm/ssm463/blog.032.png" /></p>
+<p>图5.9查询故障上报信息功能的实现界面</p>
+<h3 id="534管理员管理功能的实现界面">5.3.4管理员管理功能的实现界面</h3>
+<p><code>　　</code>管理员可以审核管理员的信息和添加管理员。管理员查询管理员信息的实现界面如下图5.10所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm463/blog.033.png"
+        data-srcset="/images/0400ssm/ssm463/blog.033.png, /images/0400ssm/ssm463/blog.033.png 1.5x, /images/0400ssm/ssm463/blog.033.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm463/blog.033.png"
+        title="/images/0400ssm/ssm463/blog.033.png" /></p>
+<p>图5.10管理员查询管理员信息功能的实现界面</p>
+<h3 id="535基础数据管理功能的实现界面">5.3.5基础数据管理功能的实现界面</h3>
+<p><code>    </code>基础数据包括故障类型、所在区域类型和新闻类型。管理员可以针对这些信息进行添加和查询、修改。基础数据管理功能的实现界面如下图5.11所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm463/blog.034.png"
+        data-srcset="/images/0400ssm/ssm463/blog.034.png, /images/0400ssm/ssm463/blog.034.png 1.5x, /images/0400ssm/ssm463/blog.034.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm463/blog.034.png"
+        title="/images/0400ssm/ssm463/blog.034.png" /></p>
+<p>图5.11查询基础数据管理功能的实现界面</p>
+<h3 id="536新闻信息管理功能的实现界面">5.3.6新闻信息管理功能的实现界面</h3>
+<p><code>    </code>管理员负责新闻信息的发布和删除，管理员查询新闻信息的实现界面如下图5.12所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm463/blog.035.png"
+        data-srcset="/images/0400ssm/ssm463/blog.035.png, /images/0400ssm/ssm463/blog.035.png 1.5x, /images/0400ssm/ssm463/blog.035.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm463/blog.035.png"
+        title="/images/0400ssm/ssm463/blog.035.png" /></p>
+<p>图5.12管理员查询新闻信息的实现界面</p>
+<h2 id="54维修员功能的实现">5.4维修员功能的实现</h2>
+<p>维修员可以管理个人信息和进行维修以及浏览新闻。维修员功能的实现界面如下图5.13所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0400ssm/ssm463/blog.036.png"
+        data-srcset="/images/0400ssm/ssm463/blog.036.png, /images/0400ssm/ssm463/blog.036.png 1.5x, /images/0400ssm/ssm463/blog.036.png 2x"
+        data-sizes="auto"
+        alt="/images/0400ssm/ssm463/blog.036.png"
+        title="/images/0400ssm/ssm463/blog.036.png" /></p>
+<p>图5.13维修员的功能实现界面</p>
+<h1 id="heading-1"></h1>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2024-03-29</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/ssm463%E5%9F%BA%E4%BA%8Eweb%E7%9A%84%E5%AD%A6%E7%94%9F%E5%AE%BF%E8%88%8D%E7%BB%B4%E4%BF%AE%E6%9C%8D%E5%8A%A1%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://chenqi199.github.io/ssm463%E5%9F%BA%E4%BA%8Eweb%E7%9A%84%E5%AD%A6%E7%94%9F%E5%AE%BF%E8%88%8D%E7%BB%B4%E4%BF%AE%E6%9C%8D%E5%8A%A1%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" data-title="ssm463基于Web的学生宿舍维修服务平台的设计与实现&#43;vue" data-hashtags="ssm学生,宿舍维修,平台设计,学生宿舍,服务平台,维修服务"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://chenqi199.github.io/ssm463%E5%9F%BA%E4%BA%8Eweb%E7%9A%84%E5%AD%A6%E7%94%9F%E5%AE%BF%E8%88%8D%E7%BB%B4%E4%BF%AE%E6%9C%8D%E5%8A%A1%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" data-hashtag="ssm学生"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://chenqi199.github.io/ssm463%E5%9F%BA%E4%BA%8Eweb%E7%9A%84%E5%AD%A6%E7%94%9F%E5%AE%BF%E8%88%8D%E7%BB%B4%E4%BF%AE%E6%9C%8D%E5%8A%A1%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" data-title="ssm463基于Web的学生宿舍维修服务平台的设计与实现&#43;vue"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://chenqi199.github.io/ssm463%E5%9F%BA%E4%BA%8Eweb%E7%9A%84%E5%AD%A6%E7%94%9F%E5%AE%BF%E8%88%8D%E7%BB%B4%E4%BF%AE%E6%9C%8D%E5%8A%A1%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" data-title="ssm463基于Web的学生宿舍维修服务平台的设计与实现&#43;vue"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://chenqi199.github.io/ssm463%E5%9F%BA%E4%BA%8Eweb%E7%9A%84%E5%AD%A6%E7%94%9F%E5%AE%BF%E8%88%8D%E7%BB%B4%E4%BF%AE%E6%9C%8D%E5%8A%A1%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" data-title="ssm463基于Web的学生宿舍维修服务平台的设计与实现&#43;vue" data-ralateuid="https://gitee.com/chen_q_i"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ssm%E5%AD%A6%E7%94%9F/">Ssm学生</a>,&nbsp;<a href="/tags/%E5%AE%BF%E8%88%8D%E7%BB%B4%E4%BF%AE/">宿舍维修</a>,&nbsp;<a href="/tags/%E5%B9%B3%E5%8F%B0%E8%AE%BE%E8%AE%A1/">平台设计</a>,&nbsp;<a href="/tags/%E5%AD%A6%E7%94%9F%E5%AE%BF%E8%88%8D/">学生宿舍</a>,&nbsp;<a href="/tags/%E6%9C%8D%E5%8A%A1%E5%B9%B3%E5%8F%B0/">服务平台</a>,&nbsp;<a href="/tags/%E7%BB%B4%E4%BF%AE%E6%9C%8D%E5%8A%A1/">维修服务</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/ssm458%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%AE%A1%E7%90%86%E4%B8%8E%E6%8E%92%E8%AF%BE%E7%B3%BB%E7%BB%9F-vue/" class="prev" rel="prev" title="ssm458实验室管理与排课系统&#43;vue"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>ssm458实验室管理与排课系统+vue</a>
+            <a href="/ssm462%E7%BD%91%E7%BB%9C%E7%B1%BB%E8%AF%BE%E7%A8%8B%E6%80%9D%E6%94%BF%E5%AD%A6%E4%B9%A0%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" class="next" rel="next" title="ssm462网络类课程思政学习系统的设计与实现&#43;vue">ssm462网络类课程思政学习系统的设计与实现+vue<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.128.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="chenqi199" target="_blank">chenqi</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

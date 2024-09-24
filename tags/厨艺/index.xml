@@ -1,0 +1,24 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>厨艺 - 标签 - chenqi blog</title>
+        <link>https://chenqi199.github.io/tags/%E5%8E%A8%E8%89%BA/</link>
+        <description>厨艺 - 标签 - chenqi blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>chen_q_i@163.com (chenqi)</managingEditor>
+            <webMaster>chen_q_i@163.com (chenqi)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 27 Nov 2023 11:23:17 &#43;0800</lastBuildDate><atom:link href="https://chenqi199.github.io/tags/%E5%8E%A8%E8%89%BA/" rel="self" type="application/rss+xml" /><item>
+    <title>0092springboot厨艺交流平台的设计与实现代码</title>
+    <link>https://chenqi199.github.io/0092springboot%E5%8E%A8%E8%89%BA%E4%BA%A4%E6%B5%81%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81/</link>
+    <pubDate>Mon, 27 Nov 2023 11:23:17 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/0092springboot%E5%8E%A8%E8%89%BA%E4%BA%A4%E6%B5%81%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site 0092springboot厨艺交流平台的设计与实现代码 github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1.1 研究背景 现]]></description>
+</item>
+<item>
+    <title>0092springboot厨艺交流平台的设计与实现代码</title>
+    <link>https://chenqi199.github.io/0092springboot%E5%8E%A8%E8%89%BA%E4%BA%A4%E6%B5%81%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81/</link>
+    <pubDate>Mon, 27 Nov 2023 11:22:07 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/0092springboot%E5%8E%A8%E8%89%BA%E4%BA%A4%E6%B5%81%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site 0092springboot厨艺交流平台的设计与实现代码 github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1.1 研究背景 现]]></description>
+</item>
+</channel>
+</rss>

@@ -1,17 +1,16 @@
 # 0709springboot校园交友网站--论文
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0709springboot校园交友网站--论文](https://github.com/GraduationProject-springboot/0709springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
-
-# [项目清单](https://chenqi1990.site) 包安装运行
 
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
 [![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV14HerezEwW?p=62)
-
 
 # 系统概述
 管理信息系统是计算机在信息管理领域的一种实用技术。通过运用管理科学、数学和计算机应用的原理及方法，在符合软件工程规范的原则下，形成一套完整的理论和方法体系。是一个以人、计算机和其他外部设备组成的可以进行信息的收集、传递、存储、加工、维护和更新的系统。

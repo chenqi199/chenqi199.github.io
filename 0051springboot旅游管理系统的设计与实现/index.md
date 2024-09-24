@@ -1,17 +1,16 @@
 # 0051springboot旅游管理系统的设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0051springboot旅游管理系统的设计与实现](https://github.com/GraduationProject-springboot/0051springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV16ia6epENY?p=52)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第一章 绪论
 ## 1.1 研究现状
@@ -113,7 +112,7 @@ Spring Boot的特点
 
 管理员是这两类用户中权限最高的，管理员登录后可对系统进行全面管理，确保系统正常稳定运行，管理员主要功能包括个人中心、用户管理、景点信息管理、订票信息管理、用户评价管理以及系统管理。管理员用例图如图3.1所示。
 
-![](/images/0000stringboot/0051springboot/blog.001.png)
+![](/images/0000wxapp//blog.001.png)
 
 图3.1 管理员用例图
 
@@ -121,28 +120,28 @@ Spring Boot的特点
 
 用户进入系统可查看系统信息，包括网站首页、景点信息、景点资讯等，注册登录后主要功能模块包括订票、个人中心、订票信息管理以及用户评价管理。用户用例图如图3.2所示。
 
-![](/images/0000stringboot/0051springboot/blog.002.png)
+![](/images/0000wxapp//blog.002.png)
 
 图3.2 用户用例图
 ## 3.4系统流程分析
 ### 3.4.1注册流程
 未有账号的用户可进行注册操作，用户注册流程图如图3.3所示。
 
-![](/images/0000stringboot/0051springboot/blog.003.png)
+![](/images/0000wxapp//blog.003.png)
 
 图3.3注册流程图
 ### 3.4.2 登录流程
 登录模块主要满足了管理员和用户的权限登录，用户登录流程图如图3.4所示。
 
-![](/images/0000stringboot/0051springboot/blog.004.png)
+![](/images/0000wxapp//blog.004.png)
 
 图3.4 登录流程图
 ## 3.5系统架构分析
 基于Bootstrap的常州地方旅游管理系统的结构我们采用B/S架构来实现。采用B/S程序架构首要条件是我们要把常州地方旅游管理系统的数据库和程序放到远程服务器上，只需要在一个服务器上对程序和数据库进行配置，就可以在任何联通这台服务器的电脑上使用架设好的系统。这样的结构打破了时间和地域的限制，用户在使用常州地方旅游管理系统的时候变得非常方便。下图就非常明白的展现了基于Bootstrap的常州地方旅游管理系统的网络系统结构。
 
-![](/images/0000stringboot/0051springboot/blog.005.png)
+![](/images/0000wxapp//blog.005.png)
 
-![](/images/0000stringboot/0051springboot/blog.006.png)
+![](/images/0000wxapp//blog.006.png)
 
 图3.5 基于Bootstrap的常州地方旅游管理系统架构设计图 
 
@@ -154,7 +153,7 @@ Spring Boot的特点
 
 本基于Bootstrap的常州地方旅游管理系统主要实现了用户功能模块和管理员功能模块两大部分，系统结构图如图4-1所示。
 
-![](/images/0000stringboot/0051springboot/blog.007.png)
+![](/images/0000wxapp//blog.007.png)
 
 图4.1 系统功能结构图
 ## 4.2系统顺序图设计
@@ -162,7 +161,7 @@ Spring Boot的特点
 
 登录模块主要满足了管理员和用户的权限登录，登录模块的顺序图如图4.2所示。
 
-![](/images/0000stringboot/0051springboot/blog.008.png)
+![](/images/0000wxapp//blog.008.png)
 
 图4.2用户登录顺序图
 
@@ -170,7 +169,7 @@ Spring Boot的特点
 
 管理员和用户登录后均可进行信息的添加操作，添加信息顺序图如图4.3所示
 
-![](/images/0000stringboot/0051springboot/blog.009.png)
+![](/images/0000wxapp//blog.009.png)
 
 图4.3添加信息顺序图
 ## 4.3数据库设计
@@ -186,31 +185,31 @@ E-R图是一种描述显示数据类型间的关系的数据描述方法，E-R�
 
 1.管理员信息实体属性图如图4.4所示：
 
-![](/images/0000stringboot/0051springboot/blog.010.png)
+![](/images/0000wxapp//blog.010.png)
 
 图4.4  管理员信息实体属性图
 
 2.景点信息信息实体属性图如图4.5所示：
 
-![](/images/0000stringboot/0051springboot/blog.011.png)
+![](/images/0000wxapp//blog.011.png)
 
 图4.5 景点信息信息实体属性图
 
 3.景点资讯信息实体属性图如图4.6所示：
 
-![](/images/0000stringboot/0051springboot/blog.012.png)
+![](/images/0000wxapp//blog.012.png)
 
 图4.6 景点资讯信息实体属性图
 
 4.用户信息实体属性图如图4.7所示：
 
-![](/images/0000stringboot/0051springboot/blog.013.png)
+![](/images/0000wxapp//blog.013.png)
 
 图4.7  用户信息实体属性图
 
 5.订票信息实体属性图如图4.8所示：
 
-![](/images/0000stringboot/0051springboot/blog.014.png)
+![](/images/0000wxapp//blog.014.png)
 
 图4.8  订票信息实体属性图
 ### 4.3.2 数据库表设计
@@ -290,71 +289,71 @@ E-R图是一种描述显示数据类型间的关系的数据描述方法，E-R�
 ## 5.1登录模块的实现
 用户要想进入本系统，必须通过正确的用户名和密码，选择登录类型进行登录操作，在登录时系统会以用户名、密码和登录类型为参数进行登录信息的验证，信息正确则登录进入对应用户功能界面可进行功能处理，反之登录失败，系统登录界面展示如图5.1所示。
 
-![](/images/0000stringboot/0051springboot/blog.015.png)
+![](/images/0000wxapp//blog.015.png)
 
 图5.1  系统登录界面
 ## 5.2管理员功能模块的实现
 ### 5.2.1景点信息管理界面
 管理员可添加、修改和删除景点信息信息，景点信息管理界面展示如图5.2所示，添加景点信息信息界面展示如图5.3所示。
 
-![](/images/0000stringboot/0051springboot/blog.016.png)
+![](/images/0000wxapp//blog.016.png)
 
 图5.2 景点信息管理界面
 
-![](/images/0000stringboot/0051springboot/blog.017.png)
+![](/images/0000wxapp//blog.017.png)
 
 图5.3  添加景点信息信息界面
 ### 5.2.2订票信息管理界面
 管理员可查看所有订票信息，并可的前进行修改和删除操作，订票信息管理界面展示如图5.4所示。
 
-![](/images/0000stringboot/0051springboot/blog.018.png)
+![](/images/0000wxapp//blog.018.png)
 
 图5.4  订票信息管理界面
 ### 5.2.3用户评价管理界面
 管理员可查看用户评价信息，并可对其进行审核、修改和删除操作，用户评价管理界面展示如图5.5所示。
 
-![](/images/0000stringboot/0051springboot/blog.019.png)
+![](/images/0000wxapp//blog.019.png)
 
 图5.5  用户评价管理界面
 ### 5.2.4用户管理界面
 管理员可查看、添加、修改和删除用户信息，用户管理界面展示如图5.6所示。
 
-![](/images/0000stringboot/0051springboot/blog.020.png)
+![](/images/0000wxapp//blog.020.png)
 
 图5.6  用户管理界面
 ### 5.2.5景点资讯界面
 管理员可增删改查景点资讯信息，景点资讯界面展示如图5.7所示。
 
-![](/images/0000stringboot/0051springboot/blog.021.png)
+![](/images/0000wxapp//blog.021.png)
 
 图5.7 景点资讯界面
 ## 5.3用户功能模块的实现
 ### 5.3.1系统主界面
 用户进入本系统可查看系统信息，包括网站首页、景点信息以及景点资讯等，系统主界面展示如图5.8所示。
 
-![](/images/0000stringboot/0051springboot/blog.022.png)
+![](/images/0000wxapp//blog.022.png)
 
 图5.8 系统主界面
 ### 5.3.2用户注册界面
 未有账号的用户可进入注册界面进行注册操作，用户注册界面展示如图5.9所示。
 
-![](/images/0000stringboot/0051springboot/blog.023.png)
+![](/images/0000wxapp//blog.023.png)
 
 图5.9 用户注册界面
 ### 5.3.3景点信息详情界面
 用户可选择景点信息查看景点信息详情信息，登录后可进行订票操作，景点信息详情界面展示如图5.10所示。
 
-![](/images/0000stringboot/0051springboot/blog.024.png)
+![](/images/0000wxapp//blog.024.png)
 
 图5.10景点信息详情界面
 ### 5.3.4订票信息界面
 用户可查看个人订票信息，并可选择进行支付或者评价操作，订票信息界面展示如图5.11所示，评价界面展示如图5.13所示。
 
-![](/images/0000stringboot/0051springboot/blog.025.png)
+![](/images/0000wxapp//blog.025.png)
 
 图5.11订票信息界面
 
-![](/images/0000stringboot/0051springboot/blog.026.png)
+![](/images/0000wxapp//blog.026.png)
 
 图5.12 评价界面
 

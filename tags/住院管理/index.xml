@@ -1,0 +1,32 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>住院管理 - 标签 - chenqi blog</title>
+        <link>https://chenqi199.github.io/tags/%E4%BD%8F%E9%99%A2%E7%AE%A1%E7%90%86/</link>
+        <description>住院管理 - 标签 - chenqi blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>chen_q_i@163.com (chenqi)</managingEditor>
+            <webMaster>chen_q_i@163.com (chenqi)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 24 Jun 2024 10:33:02 &#43;0800</lastBuildDate><atom:link href="https://chenqi199.github.io/tags/%E4%BD%8F%E9%99%A2%E7%AE%A1%E7%90%86/" rel="self" type="application/rss+xml" /><item>
+    <title>ssm723基于Java web的住院管理系统&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm723%E5%9F%BA%E4%BA%8Ejava-web%E7%9A%84%E4%BD%8F%E9%99%A2%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/</link>
+    <pubDate>Mon, 24 Jun 2024 10:33:02 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm723%E5%9F%BA%E4%BA%8Ejava-web%E7%9A%84%E4%BD%8F%E9%99%A2%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm723基于Java web的住院管理系统+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 课题背景 身处网络]]></description>
+</item>
+<item>
+    <title>ssm188基于java的医院住院管理系统的设计与实现&#43;jsp</title>
+    <link>https://chenqi199.github.io/ssm188%E5%9F%BA%E4%BA%8Ejava%E7%9A%84%E5%8C%BB%E9%99%A2%E4%BD%8F%E9%99%A2%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/</link>
+    <pubDate>Fri, 29 Dec 2023 10:32:49 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm188%E5%9F%BA%E4%BA%8Ejava%E7%9A%84%E5%8C%BB%E9%99%A2%E4%BD%8F%E9%99%A2%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm188基于java的医院住院管理系统的设计与实现+jsp github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第1章 绪论]]></description>
+</item>
+<item>
+    <title>ssm012医院住院管理系统&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm012%E5%8C%BB%E9%99%A2%E4%BD%8F%E9%99%A2%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/</link>
+    <pubDate>Mon, 30 Oct 2023 22:29:51 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm012%E5%8C%BB%E9%99%A2%E4%BD%8F%E9%99%A2%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm012医院住院管理系统+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第1章 绪论 1.1背景及意义 随着社会的]]></description>
+</item>
+</channel>
+</rss>

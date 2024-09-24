@@ -1,17 +1,16 @@
 # 0201springboot善筹网（众筹）前后台实现设计
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0201springboot善筹网（众筹）前后台实现设计](https://github.com/GraduationProject-springboot/0201springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)]()
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 绪论
 ## 1.1 研究背景
@@ -73,25 +72,25 @@
 ## 3.3系统流程分析
 分析程序的流程，涉及到程序的整体操作流程，通过分析与设计，绘制的程序操作流程图见下图。此程序为了确保安全，会让使用者通过登录模块验证信息，符合要求的使用者才有权限操作程序。
 
-![](/images/0200stringboot/0201springboot/blog.001.png)
+![](/images/0200wxapp//blog.001.png)
 
 图3-1 程序操作流程图
 
 程序处理数据会涉及到数据的录入环节，绘制的添加流程见下图。程序录入数据过程中，始终与数据库保持同步。
 
-![](/images/0200stringboot/0201springboot/blog.002.png)
+![](/images/0200wxapp//blog.002.png)
 
 图3-2 信息添加流程图
 
 程序里面的数据也会出现错误，因此就有相应的修改数据的功能，绘制的程序修改流程见下图。此过程也是跟后台数据库进行数据同步显示。
 
-![](/images/0200stringboot/0201springboot/blog.003.png)
+![](/images/0200wxapp//blog.003.png)
 
 图3-3信息修改流程图
 
 程序数据存放于数据仓库，有时也会涉及到数据删除，此过程对应的流程图见下图。数据信息被删除之后，数据库里面也就没有了该数据信息了。
 
-![](/images/0200stringboot/0201springboot/blog.004.png)
+![](/images/0200wxapp//blog.004.png)
 
 图3-4 信息删除流程图
 
@@ -116,7 +115,7 @@
 ## 4.2 系统结构设计
 在系统结构设计上，经综合考虑还是选择比C/S更省资金的B/S结构模式，现如今浏览器已经实现了普及，并在技术上逐渐完善和成熟，它在节约软件开发成本的基础上，还能实现原本用专业软件操作才能实现的强大功能。总之，B/S结构是当下全新的，认可度高的系统构造技术。系统结构设计图通过绘制，效果展示如下：
 
-![](/images/0200stringboot/0201springboot/blog.005.png)
+![](/images/0200wxapp//blog.005.png)
 
 图4-1 系统结构设计图
 ## 4.3功能结构设计
@@ -175,7 +174,7 @@
 吸商品修改
 
 删商品删除
-![](/images/0200stringboot/0201springboot/blog.006.png)
+![](/images/0200wxapp//blog.006.png)
 
 图4.3 管理员功能结构图
 
@@ -189,42 +188,42 @@
 
 （1）下图是商品实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shanchouwang\商品.jpg](/images/0200stringboot/0201springboot/blog.007.jpeg "C:\Users\Administrator\Desktop\img\shanchouwang\商品.jpg")
+![C:\Users\Administrator\Desktop\img\shanchouwang\商品.jpg](/images/0200wxapp//blog.007.jpeg "C:\Users\Administrator\Desktop\img\shanchouwang\商品.jpg")
 图4.1 商品实体属性图
 
 （2）下图是用户实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shanchouwang\用户.jpg](/images/0200stringboot/0201springboot/blog.008.jpeg "C:\Users\Administrator\Desktop\img\shanchouwang\用户.jpg")
+![C:\Users\Administrator\Desktop\img\shanchouwang\用户.jpg](/images/0200wxapp//blog.008.jpeg "C:\Users\Administrator\Desktop\img\shanchouwang\用户.jpg")
 图4.2 用户实体属性图
 
 （3）下图是商品留言实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shanchouwang\商品留言.jpg](/images/0200stringboot/0201springboot/blog.009.jpeg "C:\Users\Administrator\Desktop\img\shanchouwang\商品留言.jpg")
+![C:\Users\Administrator\Desktop\img\shanchouwang\商品留言.jpg](/images/0200wxapp//blog.009.jpeg "C:\Users\Administrator\Desktop\img\shanchouwang\商品留言.jpg")
 图4.3 商品留言实体属性图
 
 （4）下图是参与的众筹实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shanchouwang\参与的众筹.jpg](/images/0200stringboot/0201springboot/blog.010.jpeg "C:\Users\Administrator\Desktop\img\shanchouwang\参与的众筹.jpg")
+![C:\Users\Administrator\Desktop\img\shanchouwang\参与的众筹.jpg](/images/0200wxapp//blog.010.jpeg "C:\Users\Administrator\Desktop\img\shanchouwang\参与的众筹.jpg")
 图4.4 参与的众筹实体属性图
 
 （5）下图是众筹实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shanchouwang\众筹.jpg](/images/0200stringboot/0201springboot/blog.011.jpeg "C:\Users\Administrator\Desktop\img\shanchouwang\众筹.jpg")
+![C:\Users\Administrator\Desktop\img\shanchouwang\众筹.jpg](/images/0200wxapp//blog.011.jpeg "C:\Users\Administrator\Desktop\img\shanchouwang\众筹.jpg")
 图4.5 众筹实体属性图
 
 （6）下图是商品收藏实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shanchouwang\商品收藏.jpg](/images/0200stringboot/0201springboot/blog.012.jpeg "C:\Users\Administrator\Desktop\img\shanchouwang\商品收藏.jpg")
+![C:\Users\Administrator\Desktop\img\shanchouwang\商品收藏.jpg](/images/0200wxapp//blog.012.jpeg "C:\Users\Administrator\Desktop\img\shanchouwang\商品收藏.jpg")
 图4.6 商品收藏实体属性图
 
 （7）下图是众筹收藏实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shanchouwang\众筹收藏.jpg](/images/0200stringboot/0201springboot/blog.013.jpeg "C:\Users\Administrator\Desktop\img\shanchouwang\众筹收藏.jpg")
+![C:\Users\Administrator\Desktop\img\shanchouwang\众筹收藏.jpg](/images/0200wxapp//blog.013.jpeg "C:\Users\Administrator\Desktop\img\shanchouwang\众筹收藏.jpg")
 图4.7 众筹收藏实体属性图
 
 （8）下图是众筹留言实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shanchouwang\众筹留言.jpg](/images/0200stringboot/0201springboot/blog.014.jpeg "C:\Users\Administrator\Desktop\img\shanchouwang\众筹留言.jpg")
+![C:\Users\Administrator\Desktop\img\shanchouwang\众筹留言.jpg](/images/0200wxapp//blog.014.jpeg "C:\Users\Administrator\Desktop\img\shanchouwang\众筹留言.jpg")
 图4.8 众筹留言实体属性图
 
 ### 4.4.2 数据库表结构
@@ -358,19 +357,19 @@
 ### 5.1.1 众筹管理
 此页面让管理员管理众筹的数据，众筹管理页面见下图。此页面主要实现众筹的增加、修改、删除、查看的功能。
 
-![](/images/0200stringboot/0201springboot/blog.015.png)
+![](/images/0200wxapp//blog.015.png)
 
 图5-1 众筹管理页面
 ### 5.1.2 商品信息管理
 商品信息管理页面提供的功能操作有：新增商品，修改商品，删除商品操作。下图就是商品信息管理页面。
 
-![](/images/0200stringboot/0201springboot/blog.016.png)
+![](/images/0200wxapp//blog.016.png)
 
 图5.3 商品信息管理页面
 ### 5.1.3商品类型管理
 商品类型管理页面显示所有商品类型，在此页面既可以让管理员添加新的商品信息类型，也能对已有的商品类型信息执行编辑更新，失效的商品类型信息也能让管理员快速删除。下图就是商品类型管理页面。
 
-![](/images/0200stringboot/0201springboot/blog.017.png)
+![](/images/0200wxapp//blog.017.png)
 
 图5.4 商品类型列表页面
 

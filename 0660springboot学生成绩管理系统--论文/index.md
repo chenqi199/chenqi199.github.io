@@ -1,17 +1,16 @@
 # 0660springboot学生成绩管理系统--论文
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0660springboot学生成绩管理系统--论文](https://github.com/GraduationProject-springboot/0660springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV14HerezEwW?p=17)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
 ## 1.1 课题背景
@@ -52,7 +51,7 @@ Java是由Sun公司推出的一门跨平台的面向对象的程序设计语言�
 ## 2.2 B/S模式
 B/S结构是目前使用最多的结构模式，它可以使得系统的开发更加的简单，好操作，而且还可以对其进行维护。使用该结构时只需要在计算机中安装数据库，和一些很常用的浏览器就可以了。浏览器就会与数据库进行信息的连接，可以实现很多的功能，B/S结构是可以直接进行使用的，而且B/S结构在使用中极大的减少了工作的维护。基于B/S的软件，所有的数据库之间都是相互独立的，因此是非常安全的。因为基于B/S结构可以清楚的看到系统正在处理的业务，并且能够及时的让管理人员做出决策，这样就可以避免企业的损失。B/S结构的基本特点是集中式的管理模式，用户使用系统生成数据后，这些数据就可以存储到系统的数据库中，方便日后能够用到，这样就可以满足人们的所有的需求。
 
-![](/images/0600stringboot/0660springboot/blog.007.png)
+![](/images/0600wxapp//blog.007.png)
 
 图2-1  B/S模式三层结构图
 
@@ -130,19 +129,19 @@ SpringBoot可以看做是Spring的加强版本，但实质上都是Spring的相�
 
 （1）管理员用例图如下所示：
 
-![](/images/0600stringboot/0660springboot/blog.008.png)
+![](/images/0600wxapp//blog.008.png)
 
 图3-1管理员用例图
 
 （2）学生用例图如下所示：
 
-![](/images/0600stringboot/0660springboot/blog.009.png)
+![](/images/0600wxapp//blog.009.png)
 
 图3-2学生用例图
 
 （3）教师用例图如下所示：
 
-![](/images/0600stringboot/0660springboot/blog.010.png)
+![](/images/0600wxapp//blog.010.png)
 
 图3-3教师用例图
 
@@ -164,19 +163,19 @@ SpringBoot可以看做是Spring的加强版本，但实质上都是Spring的相�
 ### 3.5.1操作流程
 系统登录流程图，如图所示：
 
-![](/images/0600stringboot/0660springboot/blog.011.png)
+![](/images/0600wxapp//blog.011.png)
 
 图3-4登录流程图
 ### 3.5.2添加信息流程
 添加信息流程图，如图所示：
 
-![](/images/0600stringboot/0660springboot/blog.012.png)
+![](/images/0600wxapp//blog.012.png)
 
 图3-5添加信息流程图
 ### 3.5.3删除信息流程
 删除信息流程图，如图所示：
 
-![](/images/0600stringboot/0660springboot/blog.013.png)
+![](/images/0600wxapp//blog.013.png)
 
 图3-5删除信息流程图
 
@@ -186,7 +185,7 @@ SpringBoot可以看做是Spring的加强版本，但实质上都是Spring的相�
 ## 4.1 系统设计主要功能
 通过市场调研及咨询研究，了解了使用者及管理者的使用需求，于是制定了管理员、学生和教师等模块。其功能结构图如下图4-1所示：
 
-![](/images/0600stringboot/0660springboot/blog.014.png)
+![](/images/0600wxapp//blog.014.png)
 
 图4-1系统功能结构图
 ## 4.2 数据库设计
@@ -197,19 +196,19 @@ SpringBoot可以看做是Spring的加强版本，但实质上都是Spring的相�
 ### 4.2.2 E-R图
 综合成绩管理E-R图，如图4-2所示：
 
-![](/images/0600stringboot/0660springboot/blog.015.png)
+![](/images/0600wxapp//blog.015.png)
 
 ` `图4-2综合成绩管理E-R图
 
 学生信息E-R图，如图4-3所示：
 
-![](/images/0600stringboot/0660springboot/blog.016.png)
+![](/images/0600wxapp//blog.016.png)
 
 图4-3学生信息E-R图
 
 教师信息E-R图如图4-4所示。
 
-![](/images/0600stringboot/0660springboot/blog.017.png)
+![](/images/0600wxapp//blog.017.png)
 
 图4-4教师信息E-R图
 
@@ -307,32 +306,32 @@ SpringBoot可以看做是Spring的加强版本，但实质上都是Spring的相�
 # 5 系统实现
 登录，管理员、学生和教师通过输入用户名，密码，选择角色信息，点击登录进入系统操作进行操作，如图5-1所示。
 
-![](/images/0600stringboot/0660springboot/blog.018.png)
+![](/images/0600wxapp//blog.018.png)
 
 图5-1登录界面图
 
 ## 5.1管理员功能模块
 管理员登录进入学生成绩管理系统可以查看首页、个人中心、学生管理、教师管理、班级管理、综合成绩管理等内容进行详细操作，如图5-6所示。
 
-![](/images/0600stringboot/0660springboot/blog.019.png)
+![](/images/0600wxapp//blog.019.png)
 
 图5-2管理员功能界面图
 
 学生管理，在学生管理页面可以对索引、学号、头像、学生姓名、性别、手机号码、邮箱、班级等内容进行详情，修改或删除等操作，如图5-2所示。
 
-![](/images/0600stringboot/0660springboot/blog.020.png)
+![](/images/0600wxapp//blog.020.png)
 
 图5-2学生管理界面图
 
 教师管理，在教师管理页面可以对索引、教师工号、头像、教师姓名、性别、手机号码、邮箱、职务等内容进行详情，修改或删除等操作，如图5-3所示。
 
-![](/images/0600stringboot/0660springboot/blog.021.png)
+![](/images/0600wxapp//blog.021.png)
 
 图5-3教师管理界面图
 
 综合成绩管理，在综合成绩管理页面可以对索引、学号、学生姓名、班级、学业成绩、德育成绩、体育素质、智育素质、总分、学年、登记时间、教师工号、教师姓名等内容进行详情，修改或删除等操作，如图5-4所示。
 
-![](/images/0600stringboot/0660springboot/blog.022.png)
+![](/images/0600wxapp//blog.022.png)
 
 图5-4综合成绩管理界面图
 
@@ -340,33 +339,33 @@ SpringBoot可以看做是Spring的加强版本，但实质上都是Spring的相�
 ## 5.2学生功能模块
 学生登录进入学生成绩管理系统可以查看首页、个人中心、综合成绩管理等内容进行详细操作，如图5-5所示。
 
-![](/images/0600stringboot/0660springboot/blog.023.png)
+![](/images/0600wxapp//blog.023.png)
 
 图5-5学生功能界面图
 
 个人中心，在个人信息页面通过填写学号、头像、学生姓名、性别、手机号码、邮箱、班级等内容进行个人信息修改操作，如图5-6所示。
 
-![](/images/0600stringboot/0660springboot/blog.024.png)
+![](/images/0600wxapp//blog.024.png)
 
 图5-6个人中心界面图
 
 ## 5.3教师功能模块
 教师登录进入学生成绩管理系统可以查看首页、个人中心、综合成绩管理等内容进行详细操作，如图5-7所示。
 
-![](/images/0600stringboot/0660springboot/blog.025.png)
+![](/images/0600wxapp//blog.025.png)
 
 图5-7教师功能界面图
 
 
 个人中心，在个人信息页面通过填写教师工号、头像、教师姓名、性别、手机号码、邮箱、职务等内容进行个人信息修改操作，如图5-8所示。
 
-![](/images/0600stringboot/0660springboot/blog.026.png)
+![](/images/0600wxapp//blog.026.png)
 
 图5-8个人中心界面图
 
 综合成绩管理，在综合成绩管理页面可以对索引、学号、学生姓名、班级、学业成绩、德育成绩、体育素质、智育素质、总分、学年、登记时间、教师工号、教师姓名等内容进行详情，修改或删除等操作，如图5-9所示。
 
-![](/images/0600stringboot/0660springboot/blog.027.png)
+![](/images/0600wxapp//blog.027.png)
 
 图5-9综合成绩管理界面图
 

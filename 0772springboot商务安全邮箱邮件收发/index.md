@@ -1,17 +1,16 @@
 # 0772springboot商务安全邮箱邮件收发
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0772springboot商务安全邮箱邮件收发](https://github.com/GraduationProject-springboot/0772springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
-
-# [项目清单](https://chenqi1990.site) 包安装运行
 
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
 [![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV14HerezEwW?p=127)
-
 
 # 课题背景
 随着计算机网络的发展，人与人之间信息传输的时间大为缩短。许多文件都是以电子邮件的形式来传送；通常使用过计算机的人，或多或少都会用到Email来传输信息。通过电子邮件，人们可以进行文字、图片、视频、声音、数据文件等的传递。随着Internet网和WWW网的广泛普及，电子邮件的使用迅速增多起来。电子邮件的使用不仅在数量上有突飞猛进的发展，其重要性日益增加。据IDC（国际文献资料中心）统计，目前全球电子邮箱总数已超过5亿。而据CNNIC（中国互联网络信息中心）的最新调查，中国网络用户拥有E-mail帐号的平均值为2.6个，用户平均每周收到电子邮件数为12.9封，发出电子邮件数为8.2封。这说明电子邮件已不只是电话的替代品，它可以而且已经在广泛地应用着。当然，电子邮件也为人们带来了不利的一面。由于其接收发送电子邮件很少受到限制，造成电脑病毒、大量的垃圾邮件盛行，甚至个人隐私及安全受到了严重的威胁。但是，电子邮件作为当今社会主要的信息传播载体，发展趋势不会因此而停止。

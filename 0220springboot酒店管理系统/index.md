@@ -1,17 +1,16 @@
 # 0220springboot酒店管理系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0220springboot酒店管理系统](https://github.com/GraduationProject-springboot/0220springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)]()
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 课题背景与问题来源
 计算机类的管理系统可以帮助人们的工作管理以及生活管理，目前各种管理系统已布满人们的整个生活。计算机类的管理系统还需要网络的支持，近年来，网络发展非常成熟，网速可以达到5G。无论街边小贩还是高档商场都布置了无线网络，网络可以实现信息接收、传递。管理系统和网络相辅相成，减少了工作量，实现了信息的自动化管理。但现在，还有很多事务采用传统的人工手段进行办公管理，有些行业离不开传统方式，比如对于重要事务还需要面对面商讨，所以现在企业中大部分采用传统方式+新型方式的办公手段。
@@ -74,25 +73,25 @@ B/S架构是通过www浏览器来实现用户访问，是从c/s架构上进行�
 ## 3.5系统操作流程分析　
 一个受欢迎的系统必然有一个好的系统操作流程，简单、友好的操作流程才可以使用户更快速的满足自己的要求。系统的操作流程正确系统的数据才可以被正确调用。从数据的来源到去处进行分析形成数据的闭环。本系统的操作流程为游客注册为用户，用户浏览客房信息完成预定，管理员发布客房和审核用户的预定，用户浏览客房预定结果。员工也可以管理预定信息和安排用户的入住。本系统的操作流程图如下图3.1所示：
 
-![](/images/0200stringboot/0220springboot/blog.001.png)图3.1系统操作流程图
+![](/images/0200wxapp//blog.001.png)图3.1系统操作流程图
 ## 3.6角色用例分析
 本系统设计的角色为管理员和用户、员工，根据系统功能分析总结角色的用例。
 
 （1）管理员可以管理个人中心信息、公告信息、酒店简介信息、客房类型信息、用户信息、客房信息、入住安排等。管理员的用例图如下图3.2所示：
 
-![](/images/0200stringboot/0220springboot/blog.002.png)
+![](/images/0200wxapp//blog.002.png)
 
 图3.2管理员用例图
 
 （2）用户可以查询客房信息、公告信息、客房类型信息、预定客房和管理预定信息、个人资料信息等。用户用例图如下图3.3所示：
 
-![](/images/0200stringboot/0220springboot/blog.003.png)
+![](/images/0200wxapp//blog.003.png)
 
 图3.3用户用例图
 
 （3）员工可以管理酒店客房和客房预定以及安排用户的入住。员工用例图如下图3.4所示：
 
-![](/images/0200stringboot/0220springboot/blog.004.png)
+![](/images/0200wxapp//blog.004.png)
 
 图3.4员工用例图
 
@@ -106,7 +105,7 @@ B/S架构是通过www浏览器来实现用户访问，是从c/s架构上进行�
 ## 4.1系统功能结构设计
 功能结构为系统功能的展示，一般采用树形图进行系统功能的结构描述。第一层为系统的名称，第二层为划分的功能界面，第三层为功能界面里的详细功能。本系统的功能结构图第一层为酒店管理系统，第二层为前台、用户、管理员、员工，第三层为相对应的具体功能。本系统的功能结构图如下图4.1所示：
 
-![](/images/0200stringboot/0220springboot/blog.005.png)　　
+![](/images/0200wxapp//blog.005.png)　　
 
 图4.1系统功能结构图
 ## 4.2数据库设计
@@ -120,31 +119,31 @@ B/S架构是通过www浏览器来实现用户访问，是从c/s架构上进行�
 
 1. 用户需要游客注册后才可以形成，用户信息的ER图如下图4.2所示：
 
-![](/images/0200stringboot/0220springboot/blog.006.png)
+![](/images/0200wxapp//blog.006.png)
 
 图4.2用户信息ER图
 
 (2) 管理员为系统开发者设置的。管理员信息ER图如下图4.3所示：
 
-![](/images/0200stringboot/0220springboot/blog.007.png)
+![](/images/0200wxapp//blog.007.png)
 
 图4.3管理员信息ER图
 
 （3）客房信息需要管理员添加后才会展示。客房信息ER图如下图4.4所示：
 
-![](/images/0200stringboot/0220springboot/blog.008.png)
+![](/images/0200wxapp//blog.008.png)
 
 图4.4客房信息ER图
 
 （4）预定信息为用户预定客房后展示的。预定信息ER图如下图4.5所示：
 
-![](/images/0200stringboot/0220springboot/blog.009.png)
+![](/images/0200wxapp//blog.009.png)
 
 图4.5预定信息ER图
 
 （5）系统关系ER图如下图4.6所示：
 
-![](/images/0200stringboot/0220springboot/blog.010.png)
+![](/images/0200wxapp//blog.010.png)
 
 图4.6系统关系ER图
 ### 4.2.2数据库表设计
@@ -152,7 +151,7 @@ B/S架构是通过www浏览器来实现用户访问，是从c/s架构上进行�
 
 表4.1 config
 
-![](/images/0200stringboot/0220springboot/blog.011.png)
+![](/images/0200wxapp//blog.011.png)
 
 
 
@@ -160,59 +159,59 @@ B/S架构是通过www浏览器来实现用户访问，是从c/s架构上进行�
 
 表4.2 discussjiudianjianjie
 
-![](/images/0200stringboot/0220springboot/blog.012.png)
+![](/images/0200wxapp//blog.012.png)
 
 表4.3 discussjiudiankefang
 
-![](/images/0200stringboot/0220springboot/blog.013.png)
+![](/images/0200wxapp//blog.013.png)
 
 表4.4 jiudianjianjie
 
-![](/images/0200stringboot/0220springboot/blog.014.png)
+![](/images/0200wxapp//blog.014.png)
 
 
 表4.5 jiudiankefang
 
-![](/images/0200stringboot/0220springboot/blog.015.png)
+![](/images/0200wxapp//blog.015.png)
 
 表4.6 kefangleixing
 
-![](/images/0200stringboot/0220springboot/blog.016.png)
+![](/images/0200wxapp//blog.016.png)
 
 表4.7 kefangyuding
 
-![](/images/0200stringboot/0220springboot/blog.017.png)
+![](/images/0200wxapp//blog.017.png)
 
 表4.8 news
 
-![](/images/0200stringboot/0220springboot/blog.018.png)
+![](/images/0200wxapp//blog.018.png)
 
 表4.9 ruzhuanpai
 
-![](/images/0200stringboot/0220springboot/blog.019.png)
+![](/images/0200wxapp//blog.019.png)
 
 表4.10 storeup
 
-![](/images/0200stringboot/0220springboot/blog.020.png)
+![](/images/0200wxapp//blog.020.png)
 
 表4.11 token
 
-![](/images/0200stringboot/0220springboot/blog.021.png)
+![](/images/0200wxapp//blog.021.png)
 
 表4.12 users
 
-![](/images/0200stringboot/0220springboot/blog.022.png)
+![](/images/0200wxapp//blog.022.png)
 
 表4.13 yonghu
 
-![](/images/0200stringboot/0220springboot/blog.023.png)
+![](/images/0200wxapp//blog.023.png)
 
 
 
 
 表4.14 yuangong
 
-![](/images/0200stringboot/0220springboot/blog.024.png)
+![](/images/0200wxapp//blog.024.png)
 
 
 
@@ -234,61 +233,61 @@ B/S架构是通过www浏览器来实现用户访问，是从c/s架构上进行�
 ## 5.1前台功能模块的界面实现
 系统在运行后进入的第一个页面就是前台首页，前台里的信息可以让任意身份的人员浏览。没有登录的游客也可以使用搜索功能进行信息的搜索。在前台里展示公告信息、客房信息、酒店简介信息以及用户中心功能，后台管理功能、用户登录功能等。前台功能界面实现如下图5.1所示：
 
-![](/images/0200stringboot/0220springboot/blog.025.png)
+![](/images/0200wxapp//blog.025.png)
 
 图5.1系统前台功能模块的实现界面
 ### 5.1.1客房信息功能模块的界面实现
 `    `点击客房信息功能后可以进入客房界面，客房界面里展示了查询框，客房信息列表。在查询框里按要求填写关键字点击查询就可以展现相对应的客房信息。客房信息功能的实现界面如下图5.2所示：
 
-![](/images/0200stringboot/0220springboot/blog.026.png)
+![](/images/0200wxapp//blog.026.png)
 
 图5.2客房信息界面的实现效果
 ### 5.1.2客房详情界面实现
 本界面是用户点击具体的客房后跳转进入的界面，在客房详情界面里，用户可以预定。客房详情信息的实现界面如下图5.3所示：
 
-![](/images/0200stringboot/0220springboot/blog.027.png)
+![](/images/0200wxapp//blog.027.png)
 
 图5.3客房详情界面
 ### 5.1.3用户登录功能的界面实现
 此功能设置在前台的上方，游客通过登录后可以成为用户，在登录时需要选择权限并输入用户名和密码。在此功能里输入的每一种信息都会自动判断，在用户登录时需要三种信息都核对正确才可以登录成功。用户登录功能的实现界面如下图5.4所示：
 
-![](/images/0200stringboot/0220springboot/blog.028.png)
+![](/images/0200wxapp//blog.028.png)
 
 图5.4用户登录功能的实现界面
 ### 5.1.4客房预定功能模块的界面实现
 用户登录成功后可以预定客房，客房预定功能的实现界面如下图5.5所示：
 
-![](/images/0200stringboot/0220springboot/blog.029.png)
+![](/images/0200wxapp//blog.029.png)
 
 图5.5用户预定客房的实现界面
 ### 5.1.5酒店简介功能的界面实现
 用户通过此功能可以了解酒店信息，酒店简介信息的设计运行界面如下图5.6所示：
 
-![](/images/0200stringboot/0220springboot/blog.030.png)
+![](/images/0200wxapp//blog.030.png)
 
 图5.6酒店简介信息展现界面
 ### 5.1.6在线评价功能的实现
 用户可以评价酒店客房。用户在线评价的实现界面如下图5.7所示：
 
-![](/images/0200stringboot/0220springboot/blog.031.png)
+![](/images/0200wxapp//blog.031.png)
 
 图5.7用户在线评价功能的实现界面
 ### 5.1.7用户中心功能的实现
 在用户中心里可以修改个人资料和查询客房预定的申请结果以及管理入住安排。用户中心的实现界面如下图5.8所示：
 
-![](/images/0200stringboot/0220springboot/blog.032.png)
+![](/images/0200wxapp//blog.032.png)
 
 图5.8用户中心功能的实现界面
 ## 5.2后台管理员角色的功能界面实现
 管理员在后台里可以更新前台的信息，如公告信息、客房分类信息、客房信息，还可以管理用户信息、审核客房预定信息和安排用户的入住，进行酒店简介设置等。后台管理员角色的功能实现界面如下图5.9所示：
 
-![](/images/0200stringboot/0220springboot/blog.033.png)
+![](/images/0200wxapp//blog.033.png)
 
 图5.9后台管理员的功能实现界面
 ## 5.3员工角色功能的实现界面
 员工可以管理个人资料和酒店客房预定信息以及对用户安排入住。员工角色功能的实现界面如下图5.10所示：
 
-![](/images/0200stringboot/0220springboot/blog.034.png)
+![](/images/0200wxapp//blog.034.png)
 
 图5.10员工角色功能的实现界面
 

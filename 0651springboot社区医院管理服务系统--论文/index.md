@@ -1,17 +1,16 @@
 # 0651springboot社区医院管理服务系统--论文
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0651springboot社区医院管理服务系统--论文](https://github.com/GraduationProject-springboot/0651springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV14HerezEwW?p=8)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 课题背景与意义
 在Internet高速发展的今天，计算机的应用几乎完全覆盖我们生活的各个领域，互联网在经济，生活等方面有着举足轻重的地位，成为人们资源共享，信息快速传递的重要渠道。在中国，网上管理的兴起也同时飞速发展着。为了适应现代人类强烈的时间观念，对于社区医院管理服务传统管理方式的缺点，互联网的出现打破了这种局限性，给了广大用户更大的选择空间，促进了社区医院管理服务系统，有效的避免了社区医院管理服务缭乱的局面，方便用户。本网站中，管理员可以以最方便的形式，在最短的时间内查找最多的社区医院管理服务信息。因此，系统无疑给人们的生活带来了极大的方便，网络的应用让时间和距离不再是局限。
@@ -49,7 +48,7 @@ Java是由SUN公司推出，该公司于2010年被oracle公司收购。Java本�
 ## 2.2 B/S架构
 B/S的系统是通过能上网的电脑就可以使用，它最大的优点是不需要安装专门的软件，首先浏览器向服务器发出请求，然后服务器处理请求把信息再返回给浏览器。不需要再次对数据进行存取与计算数据，只要负责显示数据来降低要求，如果说客户端像个“瘦子”，而服务器会越来越“胖”。B/S体系结构与C/S体系结构相比，最大的不同是：B/S体系的应用软件使用网络浏览器作为与用户交互的平台，而C/S则需要开发专用的应用程序。
 
-![2009318052962238](/images/0600stringboot/0651springboot/blog.007.png)
+![2009318052962238](/images/0600wxapp//blog.007.png)
 
 图2-1 B/S结构图
 
@@ -97,7 +96,7 @@ SpringBoot可以看做是Spring的加强版本，但实质上都是Spring的相�
 
 系统功能结构图是系统设计阶段，系统功能结构图只是这个阶段一个基础，整个系统的架构决定了系统的整体模式，是系统的根据。社区医院管理服务系统的整个设计结构如图3-1所示。
 
-![](/images/0600stringboot/0651springboot/blog.008.png)
+![](/images/0600wxapp//blog.008.png)
 
 图3-1系统功能结构图
 ## 3.2可行性研究
@@ -117,7 +116,7 @@ SpringBoot可以看做是Spring的加强版本，但实质上都是Spring的相�
 ## 3.4系统用例图
 系统用例图如下图3-2所示：
 
-![](/images/0600stringboot/0651springboot/blog.009.png)
+![](/images/0600wxapp//blog.009.png)
 
 图3-2 系统业务用例图
 
@@ -135,13 +134,13 @@ SpringBoot可以看做是Spring的加强版本，但实质上都是Spring的相�
 
 用户注册实体图如图4-1所示：
 
-![](/images/0600stringboot/0651springboot/blog.010.png)
+![](/images/0600wxapp//blog.010.png)
 
 图4-1用户注册实体图
 
 医生实体图如图4-2所示：
 
-![](/images/0600stringboot/0651springboot/blog.011.png)
+![](/images/0600wxapp//blog.011.png)
 
 图4-2医生实体图
 
@@ -339,7 +338,7 @@ SpringBoot可以看做是Spring的加强版本，但实质上都是Spring的相�
 ### 4.2.2系统流程图
 下图是用户进入这个社区医院管理服务系统后，基本的操作流程。一进入首页便可以进行各种社区医院管理服务信息的浏览，包括社区医院管理服务信息等，用户可以根据自身的需求来找适合自己的社区医院管理服务，如果有合适的社区医院管理服务信息时，就能进行相应的操作，但前提是必须是登录的用户，不然系统会提示需重新登录才可操作。用户也可通过公告的消息，了解实时的情况，这样有助于结合自身，更好的适应社区医院管理服务的管理需求，最后用户可以根据自己获得信息的满意程度来进行操作。
 
-![](/images/0600stringboot/0651springboot/blog.012.png)
+![](/images/0600wxapp//blog.012.png)
 
 图4-3系统操作流程图
 
@@ -348,129 +347,129 @@ SpringBoot可以看做是Spring的加强版本，但实质上都是Spring的相�
 ## 5.1系统功能模块
 社区医院管理服务系统，在系统首页可以查看首页、医生、公告资讯、个人中心、后台管理等内容进行详细操作，如图5-1所示。
 
-![](/images/0600stringboot/0651springboot/blog.013.png)
+![](/images/0600wxapp//blog.013.png)
 
 图5-1系统首页界面图
 
 用户注册，在用户注册页面通过填写用户账号、密码、确认密码、用户姓名、用户电话、年龄等信息完成用户注册，如图5-2所示。
 
-![](/images/0600stringboot/0651springboot/blog.014.png)
+![](/images/0600wxapp//blog.014.png)
 
 图5-2用户注册界面图
 
 医生，在医生页面中可以查看医生账号、医生姓名、性别、医生电话、科室、职称等内容进行简介等详细操作，如图5-3所示。
 
-![](/images/0600stringboot/0651springboot/blog.015.png)
+![](/images/0600wxapp//blog.015.png)
 
 图5-3医生界面图
 
 
 个人中心，在个人中心页面通过填写个人中心，用户账号、密码、用户姓名、性别、用户电话、年龄、图片等内容进行更新信息等操作，如图5-4所示。
 
-![](/images/0600stringboot/0651springboot/blog.016.png)
+![](/images/0600wxapp//blog.016.png)
 
 图5-4个人中心界面图
 ## 5.2管理员功能模块
 管理员登录，在系统页面中通过填写用户名、密码等信息，选择角色进行登录，就可以使用了，如图5-5所示。
 
-![](/images/0600stringboot/0651springboot/blog.017.jpeg)
+![](/images/0600wxapp//blog.017.jpeg)
 
 图5-5管理员登录界面图
 
 管理员登录系统后，可以对首页、个人中心、用户管理、医生管理、预约医生管理、就诊信息管理、诊疗方案管理、病历信息管理、健康档案管理、费用信息管理、系统管理等内容，进行详细的操作，如图5-6所示。
 
-![](/images/0600stringboot/0651springboot/blog.018.png)
+![](/images/0600wxapp//blog.018.png)
 
 图5-6管理员功能界面图
 
 用户管理，在用户管理页面中可以对索引、用户账号、 用户姓名、性别、用户电话、年龄、头像等内容进行详情、修改或删除等操作，如图5-7所示。
 
-![](/images/0600stringboot/0651springboot/blog.019.png)
+![](/images/0600wxapp//blog.019.png)
 
 图5-7用户管理界面图
 
 医生管理，在医生管理页面可以对索引、医生账号、医生姓名、性别、医生电话、头像、科室、职称等内容进行详情、修改或删除等操作，如图5-8所示。
 
-![](/images/0600stringboot/0651springboot/blog.020.png)
+![](/images/0600wxapp//blog.020.png)
 
 图5-8医生管理界面图
 
 预约医生管理，在预约医生管理页面可以对索引、预约编号、医生账号、医生姓名、预约时间、科室、用户账号、用户姓名、审核回复、审核状态等内容进行详情、修改或删除等操作，如图5-9所示。
 
-![](/images/0600stringboot/0651springboot/blog.021.png)
+![](/images/0600wxapp//blog.021.png)
 
 图5-9预约医生管理界面图
 
 就诊信息管理，在就诊信息管理页面可以对索引、用户账号、用户姓名、医生账号、医生姓名、药物过敏史、就诊日期等内容进行修改或删除等操作，如图5-10所示。
 
-![](/images/0600stringboot/0651springboot/blog.022.png)
+![](/images/0600wxapp//blog.022.png)
 
 图5-10就诊信息管理界面图
 
 诊疗方案管理，在小区宣传管理页面可以对索引、诊疗编号、用户账号、用户姓名、医生账号、医生姓名、登记时间等内容进行修改或删除等操作，如图5-11所示。
 
-![](/images/0600stringboot/0651springboot/blog.023.png)
+![](/images/0600wxapp//blog.023.png)
 
 图5-11诊疗方案管理界面图
 
 病历信息管理，在病历信息管理页面可以对索引、病历编号、医生账号、医生姓名、用户账号、用户姓名、登记时间等内容进行详情、修改或删除等操作，如图5-12所示。
 
-![](/images/0600stringboot/0651springboot/blog.024.png)
+![](/images/0600wxapp//blog.024.png)
 
 图5-12病历信息管理界面图
 
 健康档案管理，在健康档案管理页面可以对索引、用户账号、用户姓名、性别、年龄、用户电话、头像、药物过敏、重大病史、家族病史、登记时间、医生账号、医生姓名等内容进行详情、修改或删除等操作，如图5-13所示。
 
-![](/images/0600stringboot/0651springboot/blog.025.png)
+![](/images/0600wxapp//blog.025.png)
 
 图5-13健康档案管理界面图
 
 费用信息管理，在费用信息管理页面可以对索引、收费编号、用户账号、用户姓名、医疗费用、医保折算、支付费用、登记时间、医生账号、医生姓名、是否支付等内容进行详情、修改或删除等操作，如图5-14所示。
 
-![](/images/0600stringboot/0651springboot/blog.026.png)
+![](/images/0600wxapp//blog.026.png)
 
 图5-14费用信息管理界面图
 
 系统管理，在公告资讯页面中可以对索引、标题、图片等内容进行详情、修改或删除等操作，并可以根据轮播图管理进行相应的操作，如图5-15所示。
 
-![](/images/0600stringboot/0651springboot/blog.027.png)
+![](/images/0600wxapp//blog.027.png)
 
 图5-15系统管理界面图
 
 ## 5.3用户功能模块
 用户登录进入系统，可以对首页、个人中心、预约医生管理、就诊信息管理、诊疗方案管理、病历信息管理、健康档案管理、费用信息管理等功能模块进行相应操作，如图5-16所示。
 
-![](/images/0600stringboot/0651springboot/blog.028.png)
+![](/images/0600wxapp//blog.028.png)
 
 图5-16用户功能界面图
 
 病历信息管理，在病历信息管理页面中可以对索引、病历编号、医生账号、医生姓名、用户账号、用户姓名、登记时间等内容进行详情等操作，如图5-17所示。
 
-![](/images/0600stringboot/0651springboot/blog.029.png)
+![](/images/0600wxapp//blog.029.png)
 
 图5-17病历信息管理界面图
 
 健康档案管理，在健康档案管理页面中对索引、用户账号、用户姓名、性别、年龄、用户电话、头像、药物过敏、重大病史、家族病史、登记时间、医生账号、医生姓名等内容进行详情等操作，如图5-18所示。
 
-![](/images/0600stringboot/0651springboot/blog.030.png)
+![](/images/0600wxapp//blog.030.png)
 
 图5-18健康档案管理界面图
 ## 5.4医生功能模块
 医生登录进入社区医院管理服务系统，可以对首页、个人中心、医生管理、预约医生管理、就诊信息管理、诊疗方案管理、病历信息管理、健康档案管理、费用信息管理等功能进行相应操作，如图5-19所示。
 
-![](/images/0600stringboot/0651springboot/blog.031.png)
+![](/images/0600wxapp//blog.031.png)
 
 图5-19医生功能界面图
 
 医生管理，在医生管理页面可以对索引、医生账号、医生姓名、性别、医生电话、头像、科室、职称等内容进行详情、修改或删除等操作，如图5-20所示。
 
-![](/images/0600stringboot/0651springboot/blog.032.png)
+![](/images/0600wxapp//blog.032.png)
 
 图5-20医生管理界面图
 
 预约医生管理，在预约医生管理页面中可以对索引、预约编号、医生账号、医生姓名、预约时间、科室、用户账号、用户姓名、审核回复、审核状态、审核等内容进行详情、就诊、修改或删除等操作，如图5-21所示。
 
-![](/images/0600stringboot/0651springboot/blog.033.png)
+![](/images/0600wxapp//blog.033.png)
 
 图5-21预约医生管理界面图
 

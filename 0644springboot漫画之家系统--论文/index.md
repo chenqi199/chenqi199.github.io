@@ -1,17 +1,16 @@
 # 0644springboot“漫画之家”系统--论文
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0644springboot“漫画之家”系统--论文](https://github.com/GraduationProject-springboot/0644springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV14HerezEwW?p=1)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
 ## 1.1课题背景
@@ -155,13 +154,13 @@ SpringBoot可以看做是Spring的加强版本，但实质上都是Spring的相�
 
 （1）管理员用例图如下所示：
 
-![](/images/0600stringboot/0644springboot/blog.007.png)
+![](/images/0600wxapp//blog.007.png)
 
 图3-1管理员用例图
 
 （2）用户用例图如下所示：
 
-![](/images/0600stringboot/0644springboot/blog.008.png)
+![](/images/0600wxapp//blog.008.png)
 
 图3-2用户用例图
 ## 3.4系统设计规则与运行环境
@@ -182,19 +181,19 @@ SpringBoot可以看做是Spring的加强版本，但实质上都是Spring的相�
 ### 3.5.1操作流程
 系统登录流程图，如图所示：
 
-![](/images/0600stringboot/0644springboot/blog.009.png)
+![](/images/0600wxapp//blog.009.png)
 
 图3-3登录流程图
 ### 3.5.2添加信息流程
 添加信息流程图，如图所示：
 
-![](/images/0600stringboot/0644springboot/blog.010.png)
+![](/images/0600wxapp//blog.010.png)
 
 图3-4添加信息流程图
 ### 3.5.3删除信息流程
 删除信息流程图，如图所示：
 
-![](/images/0600stringboot/0644springboot/blog.011.png)
+![](/images/0600wxapp//blog.011.png)
 
 图3-5删除信息流程图
 
@@ -204,7 +203,7 @@ SpringBoot可以看做是Spring的加强版本，但实质上都是Spring的相�
 ## 4.1系统设计主要功能
 通过市场调研及咨询研究，了解了用户及管理者的使用需求，于是制定了管理员和用户等模块。功能结构图如下所示：
 
-![](/images/0600stringboot/0644springboot/blog.012.png)
+![](/images/0600wxapp//blog.012.png)
 
 图4-1系统功能结构图
 ## 4.2数据库设计
@@ -215,13 +214,13 @@ SpringBoot可以看做是Spring的加强版本，但实质上都是Spring的相�
 ### 4.2.2 E/R图
 用户注册E/R图，如下所示：
 
-![](/images/0600stringboot/0644springboot/blog.013.png)
+![](/images/0600wxapp//blog.013.png)
 
 ` `图4-2用户注册E/R图
 
 漫画信息E/R图，如下所示：
 
-![](/images/0600stringboot/0644springboot/blog.014.png)
+![](/images/0600wxapp//blog.014.png)
 
 图4-3漫画信息E/R图
 ### 4.2.3数据表
@@ -549,99 +548,99 @@ SpringBoot可以看做是Spring的加强版本，但实质上都是Spring的相�
 ## 5.1系统功能模块
 “漫画之家”系统 ，在系统首页可以查看首页，漫画，同人插画，漫画活动，商品，论坛，新闻资讯，留言板，个人中心，后台管理，购物车，在线客服等内容，并进行详细操作；如图5-1所示。
 
-![](/images/0600stringboot/0644springboot/blog.015.png)
+![](/images/0600wxapp//blog.015.png)
 
 图5-1系统首页界面图
 
 用户注册，在用户注册页面通过填写用户账号，姓名，密码，确认密码，联系方式等信息进行注册操作，如图5-2所示。
 
-![](/images/0600stringboot/0644springboot/blog.016.png)
+![](/images/0600wxapp//blog.016.png)
 
 图5-2用户注册界面图
 
 漫画，在漫画页面可以查看漫画名称，漫画类型，分类，时间等内容，并可以进行赞一下，踩一下，点我收藏等操作，如图5-3所示。
 
-![](/images/0600stringboot/0644springboot/blog.017.png)
+![](/images/0600wxapp//blog.017.png)
 
 图5-3漫画界面图
 
 个人中心，在个人中心页面通过填写用户账号，用户姓名，密码，性别，联系方式，图片，余额等内容进行更新信息，还可以根据需要对我的发布，我的订单，我的地址，我的收藏进行相对应操作，如图5-4所示。
 
-![](/images/0600stringboot/0644springboot/blog.018.png)
+![](/images/0600wxapp//blog.018.png)
 
 图5-4个人中心界面图
 
 ## 5.2后台模块
 系统登录，通过填写注册时输入的用户名、密码、选择角色等信息进行登录操作，如图5-5所示。
 
-![](/images/0600stringboot/0644springboot/blog.019.png)
+![](/images/0600wxapp//blog.019.png)
 
 图5-5系统登录界面图
 
 ### 5.2.1管理员功能模块
 管理员登录进入系统可以查看首页，个人中心，用户管理，漫画管理，同人插画管理，漫画活动管理，商品管理，论坛管理，我的收藏管理，留言板管理，系统管理，订单管理等功能，并进行详细操作，如图5-6所示。
 
-![](/images/0600stringboot/0644springboot/blog.020.png)
+![](/images/0600wxapp//blog.020.png)
 
 图5-6管理员功能界面图
 
 用户管理；在用户管理页面中可以查看索引，用户账号，用户姓名，性别，联系方式，头像等内容，并进行详情，修改和删除等操作；如图5-7所示。
 
-![](/images/0600stringboot/0644springboot/blog.021.png)
+![](/images/0600wxapp//blog.021.png)
 
 图5-7用户管理界面图
 
 漫画管理；在漫画管理页面中可以查看索引，漫画名称，漫画类型，分类，图片等内容，并进行详情，修改，查看评论和删除操作；如图5-8所示。
 
-![](/images/0600stringboot/0644springboot/blog.022.png)
+![](/images/0600wxapp//blog.022.png)
 
 图5-8漫画管理界面图
 
 同人插画管理；在同人插画管理页面中可以查看索引，名称，图片，发布时间等内容，并进行详情，修改，查看评论和删除操作；如图5-9所示。
 
-![](/images/0600stringboot/0644springboot/blog.023.png)
+![](/images/0600wxapp//blog.023.png)
 
 图5-9同人插画管理界面图
 
 漫画活动管理；在漫画活动管理页面中可以查看 索引，标题，封面，发布时间等内容，并进行详情，修改，查看评论和删除操作；如图5-10所示。
 
-![](/images/0600stringboot/0644springboot/blog.024.png)
+![](/images/0600wxapp//blog.024.png)
 
 图5-10漫画活动管理界面图
 
 论坛管理；在论坛管理页面中可以查看索引，帖子标题，用户名，状态等内容，并进行详情，修改，查看评论和删除操作；如图5-11所示。
 
-![](/images/0600stringboot/0644springboot/blog.025.png)
+![](/images/0600wxapp//blog.025.png)
 
 图5-11论坛管理界面图
 
 订单管理；在已支付订单页面中可以查看索引，订单编号，商品名称，商品图片，购买数量，价格/积分，折扣价格，总价格/总积分，折扣总价格，支付类型，状态，地址，电话，收货人，下单时间等内容，并进行详情，发货，删除等操作；还可对已完成订单、已发货订单、未支付订单、已取消订单、已退款订单进行相对应操作；如图5-12所示。
 
-![](/images/0600stringboot/0644springboot/blog.026.png)
+![](/images/0600wxapp//blog.026.png)
 
 图5-12订单管理界面图
 ### 5.2.2用户功能模块
 用户登录进入系统可以查看首页，个人中心，漫画管理，同人插画管理，漫画活动管理，商品管理，我的收藏管理等功能，并根据需要进行详细操作，如图5-13所示。
 
-![](/images/0600stringboot/0644springboot/blog.027.png)
+![](/images/0600wxapp//blog.027.png)
 
 图5-13用户功能界面图
 
 同人插画管理；在同人插画管理页面中可以查看索引，名称，图片，发布时间等内容，并进行详情，查看评论等操作；如图5-14所示。
 
-![](/images/0600stringboot/0644springboot/blog.028.png)
+![](/images/0600wxapp//blog.028.png)
 
 图5-14同人插画管理界面图
 
 商品管理；在商品管理页面中可以查看索引，商品编号，商品名称，图片，数量，发布时间，价格等内容，并进行详情，查看评论操作；如图5-15所示。
 
-![](/images/0600stringboot/0644springboot/blog.029.png)
+![](/images/0600wxapp//blog.029.png)
 
 图5-15商品管理界面图
 
 我的收藏管理；在我的收藏管理页面中可以查看索引，收藏名称，收藏图片，推荐类型等内容，并进行详情，修改和删除操作；如图5-16所示。
 
-![](/images/0600stringboot/0644springboot/blog.030.png)
+![](/images/0600wxapp//blog.030.png)
 
 图5-16我的收藏管理界面图
 

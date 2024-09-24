@@ -1,17 +1,16 @@
 # 0175springboot基于Spring Boot的装饰工程管理系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0175springboot基于Spring Boot的装饰工程管理系统](https://github.com/GraduationProject-springboot/0175springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1ECs?p=73)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 绪论
 ## 1.1 课题背景
@@ -64,25 +63,25 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 3.2.1 操作流程
 使用者在操作装饰工程管理系统——项目立项子系统中，应该按照本系统提供的操作流程（图3.1即为本系统的操作流程图）进行操作，可以减少操作失误，从而节省进入装饰工程管理系统——项目立项子系统的时间。
 
-![](/images/0100stringboot/0175springboot/blog.001.png)
+![](/images/0100wxapp//blog.001.png)
 
 图3.1 系统操作流程
 ### 3.2.2 登录流程
 装饰工程管理系统——项目立项子系统通过登录功能（图3.2即为其登录的流程）引导使用者进入指定的功能操作区，也避免非本系统的用户享受本系统提供的服务以及查看本系统提供的信息，进而保证用户安全。
 
-![](/images/0100stringboot/0175springboot/blog.002.png)
+![](/images/0100wxapp//blog.002.png)
 
 图3.2 登录流程
 ### 3.2.3 删除信息流程
 装饰工程管理系统——项目立项子系统在经过长期使用后，会产生很多的数据信息。为了腾出存储空间存放更多的数据，本系统数据库中存储的数据，一些没有参考价值的数据需要进行删除（图3.3即为删除信息的流程），删除数据过程中，为避免误删，使用者要根据系统的提示来决定是否删除数据。
 
-![](/images/0100stringboot/0175springboot/blog.003.png)
+![](/images/0100wxapp//blog.003.png)
 
 图3.3 删除信息流程
 ### 3.2.4 添加信息流程
 装饰工程管理系统——项目立项子系统提供可视化的功能操作区，非常方便使用者进行数据操作，当使用者往系统中录入数据时（图3.4即为添加信息的流程），本系统也会进行数据合法性的判断，符合要求的数据才能够在数据库指定表中进行登记。
 
-![](/images/0100stringboot/0175springboot/blog.004.png)
+![](/images/0100wxapp//blog.004.png)
 
 图3.4 添加信息流程
 ## 3.3 性能需求
@@ -108,19 +107,19 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 图3.5即为管理员用例图，管理员权限操作的功能包括管理合同信息，管理合同报价，管理立项项目，管理预算报价，管理装修进度，管理员工，管理客户等信息。
 
-![](/images/0100stringboot/0175springboot/blog.005.png)
+![](/images/0100wxapp//blog.005.png)
 
 图3.5 管理员用例图
 
 图3.6即为员工用例图，员工权限操作的功能包括对合同信息，合同报价信息，立项项目信息，预算报价信息，装饰材料总计划信息，装修进度信息等进行新增并管理。
 
-![](/images/0100stringboot/0175springboot/blog.006.png)
+![](/images/0100wxapp//blog.006.png)
 
 图3.6 员工用例图
 
 图3.7即为客户用例图，客户权限操作的功能包括查看合同报价，查看合同信息，查看立项项目，查看预算报价，查看装修进度，查看公告信息等。
 
-![](/images/0100stringboot/0175springboot/blog.007.png)
+![](/images/0100wxapp//blog.007.png)
 
 图3.7 客户用例图
 # 第4章 系统设计
@@ -128,19 +127,19 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ## 4.1 功能结构设计
 图4.1即为设计的管理员功能结构，管理员权限操作的功能包括管理合同信息，管理合同报价，管理立项项目，管理预算报价，管理装修进度，管理员工，管理客户等信息。
 
-![](/images/0100stringboot/0175springboot/blog.008.png)
+![](/images/0100wxapp//blog.008.png)
 
 图4.1 管理员功能结构
 
 图4.2即为设计的员工功能结构，员工权限操作的功能包括对合同信息，合同报价信息，立项项目信息，预算报价信息，装饰材料总计划信息，装修进度信息等进行新增并管理。
 
-![](/images/0100stringboot/0175springboot/blog.009.png)
+![](/images/0100wxapp//blog.009.png)
 
 图4.2 员工功能结构
 
 图4.3即为设计的客户功能结构，客户权限操作的功能包括查看合同报价，查看合同信息，查看立项项目，查看预算报价，查看装修进度，查看公告信息等。
 
-![](/images/0100stringboot/0175springboot/blog.010.png)
+![](/images/0100wxapp//blog.010.png)
 
 图4.3 客户功能结构
 ## 4.2 数据库设计
@@ -150,37 +149,37 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 （1）图4.4即为客户这个实体所拥有的属性值。
 
-![](/images/0100stringboot/0175springboot/blog.011.png)
+![](/images/0100wxapp//blog.011.png)
 
 图4.4 客户实体属性图
 
 （2）图4.5即为立项项目这个实体所拥有的属性值。
 
-![](/images/0100stringboot/0175springboot/blog.012.png)
+![](/images/0100wxapp//blog.012.png)
 
 图4.5 立项项目实体属性图
 
 （3）图4.6即为员工这个实体所拥有的属性值。
 
-![](/images/0100stringboot/0175springboot/blog.013.png)
+![](/images/0100wxapp//blog.013.png)
 
 图4.6 员工实体属性图
 
 4. 图4.7即为装修进度这个实体所拥有的属性值。
 
-![](/images/0100stringboot/0175springboot/blog.014.png)
+![](/images/0100wxapp//blog.014.png)
 
 图4.7 装修进度实体属性图
 
 4. 图4.8即为管理员这个实体所拥有的属性值。
 
-![](/images/0100stringboot/0175springboot/blog.015.png)
+![](/images/0100wxapp//blog.015.png)
 
 图4.8 管理员实体属性图
 
 4. 图4.9即为上面介绍的实体中存在的联系。
 
-![](/images/0100stringboot/0175springboot/blog.016.png)
+![](/images/0100wxapp//blog.016.png)
 
 图4.9 实体间关系E-R图
 ### 4.2.2 数据库物理设计
@@ -314,63 +313,63 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 5.1.1 立项项目管理
 图5.1 即为编码实现的立项项目管理界面，立项项目信息包括项目名称，项目文件，项目类型等信息，管理员审核立项项目信息，下载立项项目文件，查询立项项目信息等。
 
-![](/images/0100stringboot/0175springboot/blog.018.png)
+![](/images/0100wxapp//blog.018.png)
 
 图5.1 立项项目管理界面
 ### 5.1.2 合同报价管理
 图5.2 即为编码实现的合同报价管理界面，合同报价信息包括合同详情，报价金额，合同标题等信息，管理员可以修改合同报价信息，删除需要删除的合同报价信息等。
 
-![](/images/0100stringboot/0175springboot/blog.019.png)
+![](/images/0100wxapp//blog.019.png)
 
 图5.2 合同报价管理界面
 ### 5.1.3 装饰材料总计划管理
 图5.3 即为编码实现的装饰材料总计划管理界面，装饰材料总计划信息包括材料名称，材料价格，材料采购数量，材料详情等信息，管理员可以修改装饰材料总计划信息，可以查询装饰材料总计划信息，可以删除装饰材料总计划信息等。
 
-![](/images/0100stringboot/0175springboot/blog.020.png)
+![](/images/0100wxapp//blog.020.png)
 
 图5.3 装饰材料总计划管理界面
 ### 5.1.4 客户管理
 图5.4 即为编码实现的客户管理界面，客户信息包括联系方式，姓名，性别等信息，管理员可以删除需要删除的客户信息，可以查询客户等。
 
-![](/images/0100stringboot/0175springboot/blog.021.png)
+![](/images/0100wxapp//blog.021.png)
 
 图5.4 客户管理界面
 ## 5.2 员工功能实现
 ### 5.2.1 新增立项项目
 图5.5 即为编码实现的新增立项项目界面，员工在新增立项项目界面中登记立项项目信息，主要包括客户姓名，联系方式，项目类型，项目文件等信息，登记完成立项项目信息之后，直接提交。
 
-![](/images/0100stringboot/0175springboot/blog.022.png)
+![](/images/0100wxapp//blog.022.png)
 
 图5.5 新增立项项目界面
 ### 5.2.2 预算报价管理
 图5.6 即为编码实现的预算报价管理界面，员工可以新增预算报价信息，可以查看预算报价详细信息。
 
-![](/images/0100stringboot/0175springboot/blog.023.png)
+![](/images/0100wxapp//blog.023.png)
 
 图5.6 预算报价管理界面
 ### 5.2.3 合同信息管理
 图5.7 即为编码实现的合同信息管理界面，员工新增项目合同信息，下载项目文件，下载合同文件，查看合同详细信息等。
 
-![](/images/0100stringboot/0175springboot/blog.024.png)
+![](/images/0100wxapp//blog.024.png)
 
 图5.7 合同信息管理界面
 ## 5.3 客户功能实现
 ### 5.3.1 装修进度查看
 图5.8 即为编码实现的装修进度查看界面，客户自己在装修进度查看界面查看装修进度图片，装修进度详情信息，可以通过装修进度标题查询装修进度信息，也能根据项目名称查询装修进度信息等。
 
-![](/images/0100stringboot/0175springboot/blog.025.png)
+![](/images/0100wxapp//blog.025.png)
 
 图5.8 装修进度查看界面
 ### 5.3.2 合同报价查看
 图5.9 即为编码实现的合同报价查看界面，客户查看合同报价金额，查看合同详情，下载合同文件。
 
-![](/images/0100stringboot/0175springboot/blog.026.png)
+![](/images/0100wxapp//blog.026.png)
 
 图5.9 合同报价查看界面
 ### 5.3.3 装饰材料总计划查看
 图5.10 即为编码实现的装饰材料总计划查看界面，客户查看材料价格，材料图片，采购数量，材料详情，材料名称等信息，可以查看装饰材料总计划详情信息，同时可以根据材料名称或项目名称来查询装饰材料总计划信息等。
 
-![](/images/0100stringboot/0175springboot/blog.027.png)
+![](/images/0100wxapp//blog.027.png)
 
 图5.10 装饰材料总计划查看界面
 

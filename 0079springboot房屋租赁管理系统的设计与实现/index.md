@@ -1,17 +1,16 @@
 # 0079springboot房屋租赁管理系统的设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0079springboot房屋租赁管理系统的设计与实现](https://github.com/GraduationProject-springboot/0079springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV16ia6epENY?p=80)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 绪论
 ## 1.1 课题背景
@@ -71,25 +70,25 @@ SpringBoot的最大优点是继承了Spring框架的人气和底层设计财富�
 ### 3.2.1 操作流程
 进入本系统需要访问者提供验证信息。验证合格的访问者才能获取访问资格。其具体的操作流程见下图。访问者根据登录界面设置的信息项如实填写，待信息通过验证后，访问者可以进入指定的页面享受本系统提供的服务和阅读本系统的相关信息。
 
-![](/images/0000stringboot/0079springboot/blog.001.png)
+![](/images/0000wxapp//blog.001.png)
 
 图3.1 操作流程图
 ### 3.2.2 登录流程
 本系统的登录模块，其内部的流程见下图。主要对访问本系统的人员提供的验证信息进行逐个判断，系统面对录入错误的信息会给出提示，比如，提示账号不对，或提示密码不匹配等提示信息。总之，在登录页面填写的所有信息都符合要求，访问者就登录成功了。
 
-![](/images/0000stringboot/0079springboot/blog.002.png)
+![](/images/0000wxapp//blog.002.png)
 
 图3.2 登录流程图
 ### 3.2.3 删除信息流程
 本系统在经常性的使用后，会产生很多失去价值的信息，因此就需要及时清理数据，腾出系统的空间。对这些数据进行清理时，其对应的流程见下图。先选中要清理的数据，通过反复确认需要清理的数据，避免操作人员误删。已经删除的数据就不会出现在系统里面。
 
-![](/images/0000stringboot/0079springboot/blog.003.png)
+![](/images/0000wxapp//blog.003.png)
 
 图3.3 删除信息流程图
 ### 3.2.4 添加信息流程
 本系统主要用于显示信息，提供服务，其中，数据添加功能就是其中的服务之一，具体流程见下图。让操作者在信息添加的页面录入数据，待这些数据被提交检验合格后，就会在系统指定页面显示出来。
 
-![](/images/0000stringboot/0079springboot/blog.004.png)
+![](/images/0000wxapp//blog.004.png)
 
 图3.4 添加信息流程图
 ## 3.3 性能需求
@@ -107,19 +106,19 @@ SpringBoot的最大优点是继承了Spring框架的人气和底层设计财富�
 
 房屋租赁管理系统经过分析，确定了其需要设置管理员的角色，其操作的功能通过用例图展示（见下图）。管理员管理屋主和用户，管理房屋，租房订单，保洁，安保，房屋租赁公告等信息。
 
-![](/images/0000stringboot/0079springboot/blog.005.png)
+![](/images/0000wxapp//blog.005.png)
 
 图3.5 管理员用例图
 
 房屋租赁管理系统经过分析，确定了其需要设置屋主的角色，其操作的功能通过用例图展示（见下图）。屋主管理房屋，审核租用订单，预约保洁和安保。
 
-![](/images/0000stringboot/0079springboot/blog.006.png)
+![](/images/0000wxapp//blog.006.png)
 
 图3.6 屋主用例图
 
 房屋租赁管理系统经过分析，确定了其需要设置用户的角色，其操作的功能通过用例图展示（见下图）。用户收藏房屋，租用房屋，支付租房订单。
 
-![](/images/0000stringboot/0079springboot/blog.007.png)
+![](/images/0000wxapp//blog.007.png)
 
 图3.7 用户用例图
 
@@ -136,19 +135,19 @@ SpringBoot的最大优点是继承了Spring框架的人气和底层设计财富�
 ## 4.2 功能结构设计
 在前面分析的管理员功能的基础上，进行接下来的设计工作，最终展示设计的管理员结构图（见下图）。管理员管理屋主和用户，管理房屋，租房订单，保洁，安保，房屋租赁公告等信息。
 
-![](/images/0000stringboot/0079springboot/blog.008.png)
+![](/images/0000wxapp//blog.008.png)
 
 图4.1 管理员功能结构图
 
 在前面分析的屋主功能的基础上，进行接下来的设计工作，最终展示设计的屋主结构图（见下图）。屋主管理房屋，审核租用订单，预约保洁和安保。
 
-![](/images/0000stringboot/0079springboot/blog.009.png)
+![](/images/0000wxapp//blog.009.png)
 
 图4.2 屋主功能结构图
 
 在前面分析的用户功能的基础上，进行接下来的设计工作，最终展示设计的用户结构图（见下图）。用户收藏房屋，租用房屋，支付租房订单。
 
-![](/images/0000stringboot/0079springboot/blog.010.png)
+![](/images/0000wxapp//blog.010.png)
 
 图4.3 用户功能结构图
 ## 4.3 数据库设计
@@ -158,31 +157,31 @@ SpringBoot的最大优点是继承了Spring框架的人气和底层设计财富�
 
 （1）下图是房屋实体和其具备的属性。
 
-![](/images/0000stringboot/0079springboot/blog.011.png)
+![](/images/0000wxapp//blog.011.png)
 
 图4.4 房屋实体属性图
 
 （2）下图是屋主实体和其具备的属性。
 
-![](/images/0000stringboot/0079springboot/blog.012.png)
+![](/images/0000wxapp//blog.012.png)
 
 图4.5 屋主实体属性图
 
 （3）下图是用户实体和其具备的属性。
 
-![](/images/0000stringboot/0079springboot/blog.013.png)
+![](/images/0000wxapp//blog.013.png)
 
 图4.6 用户实体属性图
 
 4. 下图是管理员实体和其具备的属性。
 
-![](/images/0000stringboot/0079springboot/blog.014.png)
+![](/images/0000wxapp//blog.014.png)
 
 图4.7 管理员实体属性图
 
 4. 下图为上述各实体间相互之间的关系。
 
-![](/images/0000stringboot/0079springboot/blog.015.png)
+![](/images/0000wxapp//blog.015.png)
 
 图4.8 实体间关系E-R图
 ### 4.3.2 数据库物理设计
@@ -414,57 +413,57 @@ SpringBoot的最大优点是继承了Spring框架的人气和底层设计财富�
 ### 5.1.1 屋主管理
 管理员进入指定功能操作区之后可以管理屋主。其页面见下图。屋主的资料需要管理员负责管理，包括修改，新增，删除等操作。
 
-![](/images/0000stringboot/0079springboot/blog.016.png)
+![](/images/0000wxapp//blog.016.png)
 
 图5.1 屋主管理页面
 ### 5.1.2 房屋信息管理
 管理员进入指定功能操作区之后可以管理房屋信息。其页面见下图。管理员查看房屋对应的用户评论，可以增删改查房屋信息。
 
-![](/images/0000stringboot/0079springboot/blog.017.png)
+![](/images/0000wxapp//blog.017.png)
 
 图5.2 房屋信息管理页面
 ### 5.1.3 房屋租赁公告
 管理员进入指定功能操作区之后可以管理房屋租赁公告信息。其页面见下图。管理员发布房屋租赁公告信息，对本页面显示的房屋租赁公告进行修改，查询，删除。
 
-![](/images/0000stringboot/0079springboot/blog.018.png)
+![](/images/0000wxapp//blog.018.png)
 
 图5.3 房屋租赁公告页面
 ## 5.2 屋主功能实现
 ### 5.2.1 租用订单管理
 屋主进入指定功能操作区之后可以管理租用订单。其页面见下图。屋主查看租用订单是否支付，审核用户租用房屋的订单。
 
-![](/images/0000stringboot/0079springboot/blog.019.png)
+![](/images/0000wxapp//blog.019.png)
 
 图5.4 租用订单管理页面
 ### 5.2.2 房屋信息管理
 屋主进入指定功能操作区之后可以管理房屋信息。其页面见下图。屋主可以对自己的房屋预约保洁或安保。可以查看房屋对应的用户评论，可以修改房屋信息。
 
-![](/images/0000stringboot/0079springboot/blog.020.png)
+![](/images/0000wxapp//blog.020.png)
 
 图5.5 房屋信息管理页面
 ### 5.2.3 保洁管理
 屋主进入指定功能操作区之后可以管理保洁信息。其页面见下图。屋主在当前页面可以取消保洁，可以查看预约的保洁信息是否通过管理员审核。
 
-![](/images/0000stringboot/0079springboot/blog.021.png)
+![](/images/0000wxapp//blog.021.png)
 
 图5.6 保洁管理页面
 ## 5.3 用户功能实现
 ### 5.3.1 房屋信息
 用户进入指定功能操作区之后可以查看房屋信息。其页面见下图。用户在本页面可以收藏房屋，评论房屋，租用房屋。
 
-![](/images/0000stringboot/0079springboot/blog.022.png)
+![](/images/0000wxapp//blog.022.png)
 
 图5.7 房屋信息页面
 ### 5.3.2 租用订单管理
 用户进入指定功能操作区之后可以管理租用订单。其页面见下图。用户在当前页面支付租用房屋的订单，可以取消订单，可以查看租用订单是否通过屋主的审核。
 
-![](/images/0000stringboot/0079springboot/blog.023.png)
+![](/images/0000wxapp//blog.023.png)
 
 图5.8 租用订单管理页面
 ### 5.3.3 取消订单管理
 用户进入指定功能操作区之后可以管理取消的订单。其页面见下图。用户查看已经取消的房屋租用订单，可以删除已取消的房屋租用订单。
 
-![](/images/0000stringboot/0079springboot/blog.024.png)
+![](/images/0000wxapp//blog.024.png)
 
 图5.9 取消订单管理页面
 

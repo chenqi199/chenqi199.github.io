@@ -1,17 +1,16 @@
 # 0138springboot华强北商城二手手机管理系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0138springboot华强北商城二手手机管理系统](https://github.com/GraduationProject-springboot/0138springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1ECs?p=37)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 研究背景
 自计算机发展以来给人们的生活带来了改变。第一代计算机为1946年美国设计，最开始用于复杂的科学计算，占地面积、开机时间要求都非常高，经过数十几的改变计算机技术才发展到今天。现如今已是电子时代、数据时代，所有的生活都离不开计算机和网络。工作中有各类办公软件、APP，娱乐中有各类游戏软件、视频软件等都为生活带来了便捷，特别是我国的手机支付功能更是领先世界。科技推动了时代的发展。现在人们购物大多数已从传统的实体购物转换到线上购物。线上购物拥有更大的优点，商品种类全、价格优惠、售后有保障。由于传统实体购物需要亲力亲为，商品单一，价格不透明已渐渐在线上购物的打压下难以发展。
@@ -130,31 +129,31 @@ Springboot框架是一种SSM框架，属于一种简单的网页框架。在工�
 ## 2.6用例图
 `   `根据功能分析得出，本系统的主要使用角色为管理员和注册用户、商家。注册用户可以查看新闻、浏览商品、购买商品以及管理购物车、订单等。管理员可以管理系统信息、注册用户、商品信息以及新闻、订单信息、商品评价、分类信息等。商家可以管理商品信息和商品订单。系统用例图如下图2-1所示：
 
-`　　`![](/images/0100stringboot/0138springboot/blog.001.png)
+`　　`![](/images/0100wxapp//blog.001.png)
 
 `   `图2-1基于Springboot的华强北商城二手手机管理系统用例图
 ## 2.7系统业务流程
 业务流程可以按照用户使用本系统的步骤进行设计。本系统中注册用户的流程为查看新闻、浏览商品、购买商品、加入购物车、管理订单、对商品评价等。管理员的流程为管理新闻、用户的订单、用户的注册资讯、管理商品等。商家可以管理商品和商品订单等。基于Springboot的华强北商城二手手机管理系统的业务流程如下图2-2所示：
 
-![](/images/0100stringboot/0138springboot/blog.002.png)
+![](/images/0100wxapp//blog.002.png)
 
 `    `图2-2基于Springboot的华强北商城二手手机管理系统业务流程图
 
 （1）用户注册是游客成为注册用户的必经之路，在注册时需要输入信息、判断信息。用户注册的流程图如下图2-3所示：
 
-![](/images/0100stringboot/0138springboot/blog.003.png)
+![](/images/0100wxapp//blog.003.png)
 
 图2-3用户注册的流程图
 
 （2）用户评价时需要判断是否为登录状态，然后判断评价的内容是否合法，用户评价功能可以实现用户也商家之间的沟通。用户评价流程图如下图2-4所示：
 
-![](/images/0100stringboot/0138springboot/blog.004.png)
+![](/images/0100wxapp//blog.004.png)
 
 图2-4用户评价流程图
 
 （3）购买商品的过程需要多种数据的配合，购买商品的流程属于本系统的核心。首页确定登录，然后浏览商品，加购物车，购买，结算等。商品购买流程如下图2-5所示：
 
-![](/images/0100stringboot/0138springboot/blog.005.png)
+![](/images/0100wxapp//blog.005.png)
 
 图2-5商品购买流程图
 
@@ -177,7 +176,7 @@ Springboot框架是一种SSM框架，属于一种简单的网页框架。在工�
 ## 3.4系统功能结构
 系统的功能结构是系统实现的框架，本系统的主要结构为管理员和用户、商家。管理员的功能为个人中心管理、新闻管理、商品管理、订单管理、轮播图管理等。用户的功能为在线注册与登录、新闻浏览、商品信息浏览、我的购物车管理、我的订单管理、收藏管理和商品评价等。商家可以管理商品信息和商品的订单以及个人资料。本基于Springboot的华强北商城二手手机管理系统功能结构图如下图3-1所示：
 
-![](/images/0100stringboot/0138springboot/blog.006.png)
+![](/images/0100wxapp//blog.006.png)
 
 `     `图3-1基于Springboot的华强北商城二手手机管理系统功能结构图
 ## 3.5系统的界面设计
@@ -202,43 +201,43 @@ Springboot框架是一种SSM框架，属于一种简单的网页框架。在工�
 
 1. 管理员ER图包括的属性有管理员的编号、用户名和密码。管理员ER图如下图3-2所示：
 
-![](/images/0100stringboot/0138springboot/blog.007.png)
+![](/images/0100wxapp//blog.007.png)
 
 图3-2管理员实体的ER图
 
 1. 商品信息包含的属性为商品的详细描述，有商品编号、商品名称等。商品信息ER图如下图3-3所示：
 
-![](/images/0100stringboot/0138springboot/blog.008.png)
+![](/images/0100wxapp//blog.008.png)
 
 图3-3商品信息实体ER图
 
 （3）注册用户信息的属性包括用户的个人资料，有姓名、性别、电话等。注册用户信息实体ER图如下图3-4所示：
 
-![](/images/0100stringboot/0138springboot/blog.009.png)
+![](/images/0100wxapp//blog.009.png)
 
 图3-4注册用户实体ER图
 
 （4）订单实体的属性有订单时间、订单编号、订单人等。订单实体ER图如下图3-5所示：
 
-![](/images/0100stringboot/0138springboot/blog.010.png)
+![](/images/0100wxapp//blog.010.png)
 
 图3-5订单信息实体ER图
 
 （5）评价信息实体的属性有评价人、评价内容、评价时间等。评价信息实体的ER图如下图3-6所示：
 
-![](/images/0100stringboot/0138springboot/blog.011.png)
+![](/images/0100wxapp//blog.011.png)
 
 图3-6评价信息实体ER图
 
 （6）新闻实体的属性有标题、内容、发布时间。新闻实体ER图如下图3-7所示：
 
-![](/images/0100stringboot/0138springboot/blog.012.png)
+![](/images/0100wxapp//blog.012.png)
 
 图3-7新闻实体ER图
 
 （7）本基于Springboot的华强北商城二手手机管理系统的整体实体关系图如下图3-8所示：
 
-![](/images/0100stringboot/0138springboot/blog.013.png)
+![](/images/0100wxapp//blog.013.png)
 
 图3-8系统关系ER图
 ### 3.6.2数据库表设计
@@ -258,21 +257,21 @@ Springboot框架是一种SSM框架，属于一种简单的网页框架。在工�
 
 表3-1 address
 
-![](/images/0100stringboot/0138springboot/blog.014.png)
+![](/images/0100wxapp//blog.014.png)
 
 表3-2 cart
 
-![](/images/0100stringboot/0138springboot/blog.015.png)
+![](/images/0100wxapp//blog.015.png)
 
 表3-3 config
 
-![](/images/0100stringboot/0138springboot/blog.016.png)
+![](/images/0100wxapp//blog.016.png)
 
 ||
 | :- |
 表3-4 dictionary
 
-![](/images/0100stringboot/0138springboot/blog.017.png)
+![](/images/0100wxapp//blog.017.png)
 
 ||
 | :- |
@@ -285,43 +284,43 @@ Springboot框架是一种SSM框架，属于一种简单的网页框架。在工�
 
 表3-5 news
 
-![](/images/0100stringboot/0138springboot/blog.018.png)
+![](/images/0100wxapp//blog.018.png)
 
 ||
 | :- |
 表3-6 shangjia
 
-![](/images/0100stringboot/0138springboot/blog.019.png)
+![](/images/0100wxapp//blog.019.png)
 
 ||
 | :- |
 表3-7 shangpin
 
-![](/images/0100stringboot/0138springboot/blog.020.png)
+![](/images/0100wxapp//blog.020.png)
 
 ||
 | :- |
 表3-8 shangpin\_collection
 
-![](/images/0100stringboot/0138springboot/blog.021.png)
+![](/images/0100wxapp//blog.021.png)
 
 表3-9 shangpin\_order
 
-![](/images/0100stringboot/0138springboot/blog.022.png)
+![](/images/0100wxapp//blog.022.png)
 
 ||
 | :- |
 表3-10 token
 
-![](/images/0100stringboot/0138springboot/blog.023.png)
+![](/images/0100wxapp//blog.023.png)
 
 表3-11 users
 
-![](/images/0100stringboot/0138springboot/blog.024.png)
+![](/images/0100wxapp//blog.024.png)
 
 表3-12 yonghu
 
-![](/images/0100stringboot/0138springboot/blog.025.png)
+![](/images/0100wxapp//blog.025.png)
 
 ||
 | :- |
@@ -332,93 +331,93 @@ Springboot框架是一种SSM框架，属于一种简单的网页框架。在工�
 ## 4.1用户注册功能的界面实现
 `   `用户注册功能设计的目的是实现用户的操作。系统中想要进行操作就需要先成为注册用户，游客只能浏览信息。用户注册功能界面中设置了用户的资料字段，本界面的数据和用户信息表相连，当游客在本界面里注册成功，所填写的资料会保存到用户信息表中。用户注册功能的运行界面如下图4-1所示：
 
-![](/images/0100stringboot/0138springboot/blog.026.png)
+![](/images/0100wxapp//blog.026.png)
 
 图4-1用户注册功能的运行界面
 ## 4.2登录功能的界面实现
 用户注册成功后，需要登录。登录界面设计的目的是保证当前的使用角色等级。管理员、商家同样需要登录后才可以进行操作。用户登录和管理员、商家登录的界面分为两个，在登录时只需要填写用户账号和密码就可以实现。用户登录的运行界面如下图4-2所示：
 
-![](/images/0100stringboot/0138springboot/blog.027.png)
+![](/images/0100wxapp//blog.027.png)
 
 图4-2用户登录的运行界面
 
 管理员、商家登录的界面中包含的元素有系统题目、输入框、登录按钮，同时设计了商家注册、用户注册功能。管理员登录的条件是需要账号、密码、身份。管理员、商家登录的运行界面如下图4-3所示：  
 
-![](/images/0100stringboot/0138springboot/blog.028.png)
+![](/images/0100wxapp//blog.028.png)
 
 图4-3管理员、商家登录运行界面
 ## 4.3管理员功能的设计实现
 ### 4.3.1用户管理功能的实现界面
 用户注册后的资料管理员可以在注册用户管理功能里看到，本功能设计的目的是审核注册用户的资料，当发现不当的使用用户可以删除其账号。当删除注册用户信息后相对应的用户信息表里的信息也会随着删除掉。注册用户管理功能的运行界面如下图4-4所示：
 
-![](/images/0100stringboot/0138springboot/blog.029.png)
+![](/images/0100wxapp//blog.029.png)
 
 图4-4用户管理功能的运行界面
 ### 4.3.2 用户中心管理功能的实现界面
 `   `用户中心管理的内容包括管理管理员账号和修改密码。本系统中可以拥有多个管理员。用户中心管理功能的运行界面如下图4-5所示：
 
-![](/images/0100stringboot/0138springboot/blog.030.png)
+![](/images/0100wxapp//blog.030.png)
 
 图4-5用户中心管理功能的运行界面
 ### 4.3.3新闻信息管理功能的实现界面
 `    `用户浏览的新闻都是由管理员在此功能里进行维护添加的，同样当管理员添加、编辑新闻后，数据库表中的版块表也会发生改变。添加新闻信息功能的运行界面如下图4-6所示：
 
-![](/images/0100stringboot/0138springboot/blog.031.png)
+![](/images/0100wxapp//blog.031.png)
 
 图4-6添加新闻信息功能的运行界面
 
 新闻信息管理功能还查询新闻。查询新闻的运行界面如下图4-7所示：
 
-![](/images/0100stringboot/0138springboot/blog.032.png)
+![](/images/0100wxapp//blog.032.png)
 
 图4-7查询新闻的运行界面
 ### 4.3.4 商品收藏管理功能的实现界面
 `    `管理员可以查询收藏信息和管理收藏信息。查询商品收藏功能的运行界面如下图4-8所示：
 
-![](/images/0100stringboot/0138springboot/blog.033.png)
+![](/images/0100wxapp//blog.033.png)
 
 图4.8查询商品收藏运行界面
 ### 4.3.5 订单管理功能的实现界面
 用户下订单后，管理员都可以在本功能里收到。当审核订单无误后可以进行下一步操作。订单管理功能的运行界面如下图4-9所示：
 
-![](/images/0100stringboot/0138springboot/blog.034.png)
+![](/images/0100wxapp//blog.034.png)
 
 图4-9订单管理功能的运行界面
 ### 4.3.6 商品信息管理功能的界面实现
 `   `商品信息由管理员进行审核，可以查询商品的评价。查询商品信息的运行界面如下图4-10所示：
 
-![](/images/0100stringboot/0138springboot/blog.035.png)
+![](/images/0100wxapp//blog.035.png)
 
 图4-10查询商品信息功能的运行界面
 ## 4.4用户角色功能的界面实现
 ### 4.4.1商品浏览功能的界面实现
 `   `在前台可以浏览所有分类的商品。商品详情中主要展示商品的图片、价格、标题。商品信息浏览功能的运行界面如下图4-11所示：
 
-![](/images/0100stringboot/0138springboot/blog.036.png)
+![](/images/0100wxapp//blog.036.png)
 
 图4-11浏览商品运行界面
 ### 4.4.2提交订单功能的实现界面
 `    `选择商品点击购买可以跳转到提交订单界面，在本界面里需要填写购买数量和收货地址。提交订单功能的运行界面如下图4-12所示：
 
-![](/images/0100stringboot/0138springboot/blog.037.png)
+![](/images/0100wxapp//blog.037.png)
 
 图4-12用户提交订单的运行界面
 ### 4.4.3购物车管理中心功能的实现界面
 用户也可以把商品加入到购物车。购物车管理功能的运行界面如下图4-13所示：
 
-![](/images/0100stringboot/0138springboot/blog.038.png)
+![](/images/0100wxapp//blog.038.png)
 
 图4-13购物车管理功能的运行界面
 ### 4.4.4订单管理中心功能的实现界面
 `   `用户在自己的个人中心里可以管理订单并进行退货操作。订单管理功能的实现界面如下图4-14所示：
 
-![](/images/0100stringboot/0138springboot/blog.039.png)
+![](/images/0100wxapp//blog.039.png)
 
 图4-14订单管理功能运行效果
 ## 4.5商家角色功能的实现界面
 商家的主要功能为发布商品和管理商品订单，商家角色功能的实现界面如下图4-15所示：
 
-![](/images/0100stringboot/0138springboot/blog.040.png)
+![](/images/0100wxapp//blog.040.png)
 
 图4-15商家角色的功能实现界面
 

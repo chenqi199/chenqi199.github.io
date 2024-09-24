@@ -1,17 +1,16 @@
 # 0031springboot阿博图书馆管理系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0031springboot阿博图书馆管理系统](https://github.com/GraduationProject-springboot/0031springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV16ia6epENY?p=32)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 研究背景
 近年来，随着网络技术的不断发展，越来越多人喜欢在网络上查找各种自己所需信息。阿博图书馆管理系统对用户和管理员都有很大帮助，阿博图书馆管理系统通过和数据库管理系软件协作来实现用户与管理员之间的一个很好的操作平台，基于这一点，设计了一个阿博图书馆管理系统。
@@ -96,14 +95,14 @@ Vue 将遍历它的属性，用 Object.defineProperty 将它们转为 gettertter
 （1）用户功能需求
 
 用户进入系统可以查看首页、个人中心、图书借阅管理、图书归还管理、缴纳罚金管理、我的收藏管理等操作。用户用例图如图3-1所示。
-######### ![](/images/0000stringboot/0031springboot/blog.001.png)
+######### ![](/images/0000wxapp//blog.001.png)
 图3-1用户用例图
 
 （2）管理员功能需求
 
 管理员登陆后，主要功能模块包括首页、个人中心、用户管理、图书分类管理、图书信息管理、图书借阅管理、图书归还管理、缴纳罚金管理、留言板管理、系统管理等功能。管理员用例图如图3-2所示。
 
-![](/images/0000stringboot/0031springboot/blog.002.png)
+![](/images/0000wxapp//blog.002.png)
 
 图3-2 管理员用例图
 
@@ -128,7 +127,7 @@ Vue 将遍历它的属性，用 Object.defineProperty 将它们转为 gettertter
 ## 4.1 系统的功能结构图
 过系统需求分析，该阿博图书馆管理系统功能结构图如图4-1所示：
 #########
-![](/images/0000stringboot/0031springboot/blog.003.png)
+![](/images/0000wxapp//blog.003.png)
 
 图4-1 系统功能结构图
 
@@ -139,19 +138,19 @@ Vue 将遍历它的属性，用 Object.defineProperty 将它们转为 gettertter
 
 (1) 用户管理实体E-R图如图4-2所示：
 
-![](/images/0000stringboot/0031springboot/blog.004.png)
+![](/images/0000wxapp//blog.004.png)
 
 `        `图4-2用户管理实体属性图
 
 ` `(2) 图书信息管理实体E-R图如图4-3所示：
 
-![](/images/0000stringboot/0031springboot/blog.005.png)
+![](/images/0000wxapp//blog.005.png)
 
 图4-3图书信息管理实体属性图
 
 (3) 缴纳罚金管理实体E-R图如图4-4所示：
 
-![](/images/0000stringboot/0031springboot/blog.006.png)
+![](/images/0000wxapp//blog.006.png)
 
 `   `图4-4缴纳罚金管理实体图
 
@@ -263,49 +262,49 @@ Vue 将遍历它的属性，用 Object.defineProperty 将它们转为 gettertter
 
 管理员登录，通过填写用户名、密码、角色进行登录，如图5-1所示。
 
-![](/images/0000stringboot/0031springboot/blog.007.png)
+![](/images/0000wxapp//blog.007.png)
 
 图5-1管理员登录界面图
 
 管理员登录进入阿博图书馆管理系统页面可以查看首页、个人中心、用户管理、图书分类管理、图书信息管理、图书借阅管理、图书归还管理、缴纳罚金管理、留言板管理、系统管理等信息，如图5-2所示。
 
-![](/images/0000stringboot/0031springboot/blog.008.png)
+![](/images/0000wxapp//blog.008.png)
 
 图5-2管理员功能界面图
 
 用户管理，在用户管理列表可以查看用户名、姓名、性别、头像、手机、身份证等内容，还可以根据需要进行详情、修改或删除等操作，如图5-3所示。
 
-![](/images/0000stringboot/0031springboot/blog.009.png)
+![](/images/0000wxapp//blog.009.png)
 
 图5-3用户管理界面图
 
 图书分类管理，在图书分类管理列表可以查看图书分类等信息，并可根据需要进行详情、修改或删除等操作，如图5-4所示。
 
-![](/images/0000stringboot/0031springboot/blog.010.png)
+![](/images/0000wxapp//blog.010.png)
 
 图5-4图书分类管理界面图
 
 图书信息管理，在图书信息管理列表可以查看图书编号、图书名称、图书分类、图片、作者、出版社、图书状态、可借天数、可借数量等信息，并可根据需要进行详情、修改查看评论或删除等操作，如图5-5所示。
 
-![](/images/0000stringboot/0031springboot/blog.011.png)
+![](/images/0000wxapp//blog.011.png)
 
 图5-5图书信息管理界面图
 
 图书借阅管理，在图书借阅管理页面可以查看借阅单号、图书编号、图书名称、图书分类、图片、可借天数、可借数量、借阅日期、借阅天数、应还日期、借阅状态、用户名、姓名、手机、身份证、审核回复、审核状态、审核等内容，并且根据需要进行详情、修改等操作，如图5-6所示。
 
-![](/images/0000stringboot/0031springboot/blog.012.png)
+![](/images/0000wxapp//blog.012.png)
 
 图5-6图书借阅管理界面图
 
 缴纳罚金管理，在缴纳罚金管理页面可以查看借阅单号、图书编号、图书名称、罚款说明、罚款金额、罚款日期、用户名、手机、是否支付等内容，并且根据需要进行详情、修改或删除等操作，如图5-7所示。
 
-![](/images/0000stringboot/0031springboot/blog.013.png)
+![](/images/0000wxapp//blog.013.png)
 
 图5-7缴纳罚金管理界面图
 
 轮播图；该页面为轮播图管理界面。管理员可以在此页面进行首页轮播图的管理，通过新建操作可在轮播图中加入新的图片，还可以对以上传的图片进行修改操作，以及图片的删除操作，如图5-8所示。
 
-![](/images/0000stringboot/0031springboot/blog.014.png)
+![](/images/0000wxapp//blog.014.png)
 
 图5-8轮播图管理界面图
 
@@ -315,13 +314,13 @@ Vue 将遍历它的属性，用 Object.defineProperty 将它们转为 gettertter
 
 用户登录进入阿博图书馆管理系统可以查看首页、个人中心、图书借阅管理、图书归还管理、缴纳罚金管理、我的收藏管理等内容，如图5-9所示。
 
-![](/images/0000stringboot/0031springboot/blog.015.png)
+![](/images/0000wxapp//blog.015.png)
 
 图5-9用户功能界面图
 
 图书归还管理，在图书归还管理列表中通过查看借阅单号、图书编号、图书名称、图书分类、图片、可借天数、借阅日期、应还日期、归还日期、用户名、手机、审核回复、审核状态等信息，并且根据需要进行详情、修改或删除等操作，如图5-10所示。
 
-![](/images/0000stringboot/0031springboot/blog.016.png)
+![](/images/0000wxapp//blog.016.png)
 
 图5-10图书归还管理界面图
 
@@ -329,34 +328,34 @@ Vue 将遍历它的属性，用 Object.defineProperty 将它们转为 gettertter
 ## 5.3前台首页功能模块
 阿博图书馆管理系统，在阿博图书馆管理系统页面可以查看首页、图书信息、公告信息、留言反馈、个人中心、后台管理等内容，如图5-11所示。
 
-![](/images/0000stringboot/0031springboot/blog.017.png)
+![](/images/0000wxapp//blog.017.png)
 
 图5-11前台首页界面图
 
 用户注册、用户登录，通过注册填写用户名、密码、姓名、性别、手机、身份证等信息进行注册、登录，如图5-12所示。
 
-![](/images/0000stringboot/0031springboot/blog.018.png)
+![](/images/0000wxapp//blog.018.png)
 
-![](/images/0000stringboot/0031springboot/blog.019.png)
+![](/images/0000wxapp//blog.019.png)
 
 
 图5-12用户注册、用户登录界面图
 
 图书信息，在图书信息页面可以查看图书编号、图书名称、图书分类、图片、作者、出版社、图书状态、可借天数、可借数量、点击次数等信息，进行借阅、点我收藏操作，如图5-13所示。 
 
-![](/images/0000stringboot/0031springboot/blog.020.png)
+![](/images/0000wxapp//blog.020.png)
 
 图5-13图书信息界面图
 
 个人中心，在个人中心页面可以填写用户名、密码、姓名、性别、头像、手机、身份证等信息进行更新信息、退出登录操作，如图5-14所示。
 
-![](/images/0000stringboot/0031springboot/blog.021.png)
+![](/images/0000wxapp//blog.021.png)
 
 图5-14个人中心界面图
 
 留言反馈，在留言反馈页面可以填写留言内容、回复内容、用户名等信息进行立即提交操作，如图5-15所示。 
 
-![](/images/0000stringboot/0031springboot/blog.022.png)
+![](/images/0000wxapp//blog.022.png)
 
 图5-15留言反馈界面图
 

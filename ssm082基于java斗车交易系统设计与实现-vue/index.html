@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer" />
+        <meta name="robots" content="noodp" />
+        <title>ssm082基于java斗车交易系统设计与实现&#43;vue - chenqi blog</title><meta name="Description" content="Hugo theme - chenqi"><meta property="og:url" content="https://chenqi199.github.io/ssm082%E5%9F%BA%E4%BA%8Ejava%E6%96%97%E8%BD%A6%E4%BA%A4%E6%98%93%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/">
+  <meta property="og:site_name" content="chenqi blog">
+  <meta property="og:title" content="ssm082基于java斗车交易系统设计与实现&#43;vue">
+  <meta property="og:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm082基于java斗车交易系统设计与实现&#43;vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 系统概述 1.1 概述 随着">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-11-22T22:29:53+08:00">
+    <meta property="article:modified_time" content="2023-11-22T22:29:53+08:00">
+    <meta property="article:tag" content="Java斗车">
+    <meta property="article:tag" content="Ssmjava">
+    <meta property="article:tag" content="斗车交易">
+    <meta property="article:tag" content="系统设计">
+    <meta property="article:tag" content="交易系统">
+    <meta property="article:tag" content="设计实现">
+    <meta property="og:image" content="https://chenqi199.github.io/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chenqi199.github.io/logo.png">
+  <meta name="twitter:title" content="ssm082基于java斗车交易系统设计与实现&#43;vue">
+  <meta name="twitter:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm082基于java斗车交易系统设计与实现&#43;vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 系统概述 1.1 概述 随着">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chenqi199.github.io/ssm082%E5%9F%BA%E4%BA%8Ejava%E6%96%97%E8%BD%A6%E4%BA%A4%E6%98%93%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" /><link rel="prev" href="https://chenqi199.github.io/0077springboot%E6%B0%91%E5%AE%BF%E5%9C%A8%E7%BA%BF%E9%A2%84%E5%AE%9A%E5%B9%B3%E5%8F%B0/" /><link rel="next" href="https://chenqi199.github.io/ssm081%E9%AB%98%E6%A0%A1%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "ssm082基于java斗车交易系统设计与实现+vue",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chenqi199.github.io\/ssm082%E5%9F%BA%E4%BA%8Ejava%E6%96%97%E8%BD%A6%E4%BA%A4%E6%98%93%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue\/"
+        },"image": ["https:\/\/chenqi199.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "java斗车, ssmjava, 斗车交易, 系统设计, 交易系统, 设计实现","wordcount":  6232 ,
+        "url": "https:\/\/chenqi199.github.io\/ssm082%E5%9F%BA%E4%BA%8Ejava%E6%96%97%E8%BD%A6%E4%BA%A4%E6%98%93%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue\/","datePublished": "2023-11-22T22:29:53+08:00","dateModified": "2023-11-22T22:29:53+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/chenqi199.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "chenqi"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/ssm082%E5%9F%BA%E4%BA%8Ejava%E6%96%97%E8%BD%A6%E4%BA%A4%E6%98%93%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/ssm082%E5%9F%BA%E4%BA%8Ejava%E6%96%97%E8%BD%A6%E4%BA%A4%E6%98%93%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">ssm082基于java斗车交易系统设计与实现+vue</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="chenqi199" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>chenqi</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-11-22">2023-11-22</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 6232 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 13 分钟&nbsp;<span id="/ssm082%E5%9F%BA%E4%BA%8Ejava%E6%96%97%E8%BD%A6%E4%BA%A4%E6%98%93%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" class="leancloud_visitors" data-flag-title="ssm082基于java斗车交易系统设计与实现&#43;vue">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">github 项目仓库</a> 开源仅有后端代码</a></li>
+        <li><a href="#点击播放视频-">点击播放视频 ▼</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#11-概述">1.1 概述</a></li>
+    <li><a href="#12课题意义">1.2课题意义</a></li>
+    <li><a href="#13-主要内容">1.3 主要内容</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#21-java简介">2.1 java简介</a></li>
+    <li><a href="#22-mysql数据库">2.2 Mysql数据库</a></li>
+    <li><a href="#23-bs结构">2.3 B/S结构</a></li>
+    <li><a href="#24-ssm三大框架">2.4 SSM三大框架</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#31技术可行性技术背景">3.1技术可行性：技术背景     </a></li>
+    <li><a href="#32经济可行性">3.2经济可行性</a></li>
+    <li><a href="#33操作可行性">3.3操作可行性： </a></li>
+    <li><a href="#34系统设计规则">3.4系统设计规则</a></li>
+    <li><a href="#35系统流程和逻辑">3.5系统流程和逻辑</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#41-概述">4.1 概述</a></li>
+    <li><a href="#42-系统结构">4.2 系统结构</a></li>
+    <li><a href="#43-数据库设计">4.3. 数据库设计</a>
+      <ul>
+        <li><a href="#431-数据库实体">4.3.1 数据库实体</a></li>
+        <li><a href="#432-数据库设计表">4.3.2 数据库设计表</a></li>
+      </ul>
+    </li>
+    <li><a href="#44-数据表">4.4 数据表</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#51管理员功能模块">5.1管理员功能模块</a></li>
+    <li><a href="#52用户前台前功能模块">5.2用户前台前功能模块</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="项目清单-包安装运行httpchenqi1990site-官网地址-httpchenqi1990site"><a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">项目清单 包安装运行</a> 官网地址 <a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">http://chenqi1990.site</a></h1>
+<h1 id="ssm082基于java斗车交易系统设计与实现vuehttpsgithubcomgraduationproject-springboot"><a href="https://github.com/GraduationProject-springboot/" target="_blank" rel="noopener noreffer ">ssm082基于java斗车交易系统设计与实现+vue</a></h1>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        data-srcset="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 1.5x, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        title="picture" /></p>
+<h3 id="github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">github 项目仓库</a> 开源仅有后端代码</h3>
+<h3 id="点击播放视频-">点击播放视频 ▼</h3>
+<p><a href="https://www.bilibili.com/video/BV1T48XecE9G?p=80" target="_blank" rel="noopener noreffer "><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.sstatic.net/Vp2cE.png"
+        data-srcset="https://i.sstatic.net/Vp2cE.png, https://i.sstatic.net/Vp2cE.png 1.5x, https://i.sstatic.net/Vp2cE.png 2x"
+        data-sizes="auto"
+        alt="https://i.sstatic.net/Vp2cE.png"
+        title="Watch the video" /></a></p>
+<h1 id="系统概述">系统概述</h1>
+<h2 id="11-概述">1.1 概述</h2>
+<p><code>　</code>随着社会的快速发展，计算机的影响是全面且深入的。人们的生活水平不断提高，日常生活中人们对斗车交易方面的要求也在不断提高，需要咨询的人数更是不断增加，使得斗车交易系统的开发成为必需而且紧迫的事情。斗车交易系统主要是借助计算机，通过对斗车交易系统所需的信息管理，增加用户选择，同时也方便对广大用户信息的及时查询、修改以及对用户信息的及时了解。斗车交易系统对用户带来了更多的便利, 该系统通过和数据库管理系统软件协作来满足用户的需求。</p>
+<h2 id="12课题意义">1.2课题意义</h2>
+<p>随着全球信息化的发展，人们的生活节奏越来越快，对信息的时效性越来越重视。以传统的宣传方式为载体的传统媒介早已不能满足用户对获取信息的方式、便捷性的需求。所以斗车交易系统渐渐成为用户关注的焦点。首先，斗车交易系统，网上获取信息的实时性、便捷性要远远高于传统媒介。系统一经上线，无论用户在世界的哪个角落，只要能够连接互联网，就能在第一时间获得想要的信息。</p>
+<p>以往的汽车信息相关信息管理，都是工作人员统计。这样即浪费时间，时效性低，而且需要查找和变更的时候很不方便。随着科学的进步，技术的成熟，计算机信息化也日新月异的发展，社会也已经深刻的认识，计算机功能非常的强大，计算机已经进入了人类社会发展的各个领域，并且发挥着十分重要的作用。</p>
+<p>计算机技术在现代管理中的应用，使计算机成为用户应用现代技术的重要工具。能够有效的解决获取信息便捷化、全面化的问题，提高效率。</p>
+<h2 id="13-主要内容">1.3 主要内容</h2>
+<p>斗车交易系统从功能、数据流程、可行性、运行环境等方面进行需求分析。对斗车交易系统的数据库、功能进行了详细设计。分析了主要界面设计和相关组件设计，对斗车交易系统的具体实现进行了介绍，从而达到对斗车交易系统的管理。</p>
+<p>详细内容介绍，将在以下六章中详细阐述：</p>
+<p>第一章、绪论，介绍了研究课题选择的背景及意义、研究现状，简要介绍了本文的章节内容。</p>
+<p>第二章、引入技术知识，通过引入关键技术进行开发，向系统中涉及直观表达的技术知识。</p>
+<p>第三章、重点分析了系统的分析，从系统强大的供需市场出发，对系统开发的可行性，系统流程以及系统性能和功能进行了探讨。</p>
+<p>第四章、介绍了系统的详细设计方案，包括系统结构设计和数据库设计。</p>
+<p>第五章、系统设计的实现，通过对系统功能设计的详细说明，论证了系统的结构。</p>
+<p>第六章、系统的整体测试，评判系统是否可以上线运行。</p>
+<p>采用java技术，从数据库中获取数据、向数据库中写入数据，实现系统直接对数据库进行各种操作，在网页中加入动态内容，从而实现斗车交易系统所需要的各种基本功能。</p>
+<h1 id="2-系统开发环境">2 系统开发环境</h1>
+<h2 id="21-java简介">2.1 java简介</h2>
+<p>Java语言是在二十世纪末由Sun公司发布的，而且公开源代码，这一优点吸引了许多世界各地优秀的编程爱好者，也使得他们开发出当时一款又一款经典好玩的小游戏。Java语言是纯面向对象语言之一，从发布初期到现今，可以说有将近20多年的历史，已发展成为人类计算机编程语言发展史上的一个深远影响。</p>
+<p>Java语言具有非常多种的特性：（1）跨平台的无关性；（2）面向对象； （3）安全性得以保障；（4）支持多个任务；（5）多种编写方式，代码编写简单。对比其他的低级语言、高级语言，Java语言具有明显的显著优势以及未来开阔的前景，可以广泛的应用在个人笔记本电脑、大数据、大型游戏等等。</p>
+<p>首先，Java语言具有面向对象的特性，并且易于理解。关于对象，其实可以理解成每一种事物都是一种对象，包括我们人类自身都是一种对象。利用面向对象语言的基本特征来解决软件开发中的实际问题，为有效软件开发提供了技术支持。</p>
+<p>其次，Java 语言具有很好的跨平台无关性。所编写出来的应用程序是Java语言编写的，那么就无需再使用编译器来修改程序代码，可以直接在任何计算机系统中运行，Windows系统可以运行，在Linux系统中也可以，也就是经过一次编译，可以到处运行，所以Java语言具有卓越的可移植性，可以很好的跨平台实现。</p>
+<h2 id="22-mysql数据库">2.2 Mysql数据库</h2>
+<p>Mysql是一个多患者、多线程的服务器，采用SQL的数据库，数据库管理系统是基于SQL的患者以及服务器模式的关系，它的优点有强大的功能、操作简单、管理方便、可靠安全、运行较快、多线程、跨平台性、完全网络化、稳定性等，非常适合Web站点或者其他应用软件，在数据库后端的开发。此外，利用许多语言，患者可以编写和访问Mysql数据库的程序。Mysql数据库也是开放源代码的，开发者越来越喜欢使用Mysql关系数据库，应用范围也被推而广之。这是由于速度快和易用性， Web站点或应用软件的数据库后端的开发也都在使用它。</p>
+<p>mysql 数据库它有很多的优点，例如它在操作上能够让人通俗易懂、功能强大、信息储存量高等优点。所以被人们广泛应用，对于mysql数据库来说它一般主要是对数据进行编码和查询，而且在很多的设计当中都应用到了该数据库，在此过程当中我们可以对常规的数据进行查询和组合，所以我们在进行使用mysql数据库的时候只要对编写一小段的数据就能实现相应的功能。数据库，就是数据存储的储藏室，只不过数据是存储在计算机上的，而不是现实中的储藏室，数据的存放是按固定格式，而不是无序的，则定义就是 ：长期有固定格式，可以共享的存储在计算机存储器上。数据库管理主要包括数据表的建立，数据存储、修改和增加数据，为了使数据库系统能够正常运行，相关人员进行的管理工作。数据表的建立，可以对数据表中的数据进行调整，数据的重新组合及重新构造，保证数据的安全性。</p>
+<h2 id="23-bs结构">2.3 B/S结构</h2>
+<p>BROWSER/SERVER程序架构方式是使用电脑中安装的各种浏览器来进行访问和使用的，相比C/S的程序结构不需要进行程序的安装就可以直接使用。BROWSER/SERVER架构的运行方式是在远程的服务器上进行安装一个，然后在任何接入互联网的电脑上访问和使用。BROWSER/SERVER架构的开发方式给患者带来了极大的便利，在任何时间和地点都可以使用开发的程序系统。</p>
+<p>在B/S的结构中，患者可以在任何可以上网的地方访问和使用系统网站的功能，没有地域和时间等方面的限制，B/S结构是把程序完整放置到计算机网络的服务器上，通过计算机互联网给患者提供远程的网络服务。在三层体系结构的B/S系统中，通过浏览器，患者可以对很多服务器发出请求， B/S系统会很大程度的降低工作量，患者只需要安装运行较少的患者端即可，大量的工作将由服务器承担，另外，服务器也完成包括访问数据库，执行应用程序的工作等等。</p>
+<p>B/S结构主要有三层，分别为数据层、控制逻辑层和视图层。患者通过视图层，让控制层调用数据层的数据，从而达到整个访问过程。三层相互独立，维护方便，使用安全，三层有互相调用，提高效率。</p>
+<h2 id="24-ssm三大框架">2.4 SSM三大框架</h2>
+<p>1.Spring的优势:
+通过Spring的IOC特性，将对象之间的依赖关系交给了Spring控制，方便解耦，简化了开发。</p>
+<p>2.Spring MVC的优势:
+SpringMVC是使用了MVC设计思想的轻量级web框架，对web层进行解耦，使我们的开发更简洁。</p>
+<p>3.Mybatis的优势:</p>
+<p>数据库的操作(sql)采用xml文件配置，解除了sql和代码的耦合，提供映射标签，支持对象和和数据库orm字段关系的映射，支持对象关系映射标签，支持对象关系的组建提供了xml标签，支持动态的sql</p>
+<h1 id="3-需求分析">3 需求分析</h1>
+<h2 id="31技术可行性技术背景">3.1技术可行性：技术背景     </h2>
+<p>斗车交易系统是在Windows操作系统中进行开发运用的，而且目前PC机的各项性能已经可以胜任普通网站的web服务器。系统开发所使用的技术也都是自身所具有的，也是当下广泛应用的技术之一。</p>
+<p>系统的开发环境和配置都是可以自行安装的，系统使用Java开发工具，使用比较成熟的Mysql数据库进行对系统前台及后台的数据交互，根据技术语言对数据库，结合需求进行修改维护，可以使得网站运行更具有稳定性和安全性，从而完成实现网站的开发。</p>
+<p>（1）硬件可行性分析</p>
+<p>系统管理及信息分析的设计对于所使用的计算机没有什么硬性的要求，计算机只要可以正常的使用进行代码的编写及页面设计就可行，主要是对于服务器有些要求，对于平台搭建完成要上传的服务器是有一定的要求的，服务器必须选择安全性比较高的，然后就是在打开网站必须顺畅，不能停顿太长时间；性价比高；安全性高。</p>
+<p>（2）软件可行性分析</p>
+<p>开发整个系统使用的是云计算，流量的可扩展性和基于流量的智能调整云计算的优点就是流量的可扩展性和基于流量的智能调整，保障了数据信息能够得到及时的备份，整个系统可以安全有效的运行。</p>
+<p>因此，我们从两个方面进行了可行性研究，可以看出系统的开发没有问题。</p>
+<h2 id="32经济可行性">3.2经济可行性</h2>
+<p>在斗车交易系统开发之前所做的市场调研及与其相关的其他管理系统，都是没有任何费用的。所有的调查研究都是通过开发者自己的努力，所有的工作也都是自己亲力亲为的。在碰到自己比较难以解决的问题时，大多数是通过指导老师和同学的帮助进行相关问题的解决。所以对于斗车交易系统的开发在经济上是完全可行的，没有任何费用支出的。</p>
+<p>使用比较成熟的技术，系统是基于Java的开发，采用Mysql数据库。所以系统在开发人力、财力方面的要求不高，具有经济可行性。</p>
+<h2 id="33操作可行性">3.3操作可行性： </h2>
+<p>可操作性主要是对在斗车交易系统设计完成后，用户的使用体验度，以及管理员可以通过系统随时管理相关的数据信息，并且对于管理员、用户二个角色，都可以简单明了的进入到自己的系统界面，通过界面可以简单明了地操作功能模块，方便用户信息的操作需求和管理员数据信息。对于系统的操作，不需要专业人员都可以直接进行功能模块的操作管理，所以斗车交易系统的可操作性是完全可以的。本系统的操作使用的也是界面窗口进行登录，所以操作人员只要会简单的电脑操作就完全可以的。</p>
+<h2 id="34系统设计规则">3.4系统设计规则</h2>
+<p>本斗车交易系统采用Java技术，Mysql数据库开发，充分保证了系统稳定性、完整性。</p>
+<p>斗车交易系统的设计与实现的设计思想如下：</p>
+<ol>
+<li>操作简单方便、系统界面安全良好：简单明了的页面布局，方便查询管理的相关信息。</li>
+</ol>
+<p>2、即时可见：对斗车交易系统信息的处理将立马在对应地点可以查询到，从而实现“即时发布、即时见效”的系统功能。</p>
+<p>3、功能的完善性：管理员；个人中心、用户管理、汽车分类管理、汽车品牌管理、汽车颜色管理、汽车信息管理、系统管理、订单管理，</p>
+<p>用户前台；首页、汽车信息、公告信息、个人中心、后台管理、购物车、在线咨询等模块的修改和维护操作。</p>
+<h2 id="35系统流程和逻辑">3.5系统流程和逻辑</h2>
+<p>系统业务流程图，如图所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm082/blog.001.png"
+        data-srcset="/images/0000ssm/ssm082/blog.001.png, /images/0000ssm/ssm082/blog.001.png 1.5x, /images/0000ssm/ssm082/blog.001.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm082/blog.001.png"
+        title="/images/0000ssm/ssm082/blog.001.png" /></p>
+<p>图3-1登录流程图</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm082/blog.002.png"
+        data-srcset="/images/0000ssm/ssm082/blog.002.png, /images/0000ssm/ssm082/blog.002.png 1.5x, /images/0000ssm/ssm082/blog.002.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm082/blog.002.png"
+        title="/images/0000ssm/ssm082/blog.002.png" /></p>
+<p>图3-2添加信息流程图</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm082/blog.003.png"
+        data-srcset="/images/0000ssm/ssm082/blog.003.png, /images/0000ssm/ssm082/blog.003.png 1.5x, /images/0000ssm/ssm082/blog.003.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm082/blog.003.png"
+        title="/images/0000ssm/ssm082/blog.003.png" /></p>
+<p>图3-3注册信息流程图</p>
+<h1 id="4系统概要设计">4系统概要设计</h1>
+<h2 id="41-概述">4.1 概述</h2>
+<p>斗车交易系统基于Web服务模式，是一个适用于Internet环境下的模型结构。只要用户能连上Internet,便可以在不受时间、地点的限制来使用这个系统。斗车交易系统工作原理图，如图4-1所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm082/blog.004.png"
+        data-srcset="/images/0000ssm/ssm082/blog.004.png, /images/0000ssm/ssm082/blog.004.png 1.5x, /images/0000ssm/ssm082/blog.004.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm082/blog.004.png"
+        title="/images/0000ssm/ssm082/blog.004.png" /></p>
+<p>图4-1  系统工作原理图</p>
+<h2 id="42-系统结构">4.2 系统结构</h2>
+<p>本系统架构网站系统，本系统的具体功能如下：</p>
+<p>斗车交易系统登陆界面</p>
+<p>用户登录</p>
+<p>密码正确</p>
+<p>管理员界面</p>
+<p>用户界面</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm082/blog.005.png"
+        data-srcset="/images/0000ssm/ssm082/blog.005.png, /images/0000ssm/ssm082/blog.005.png 1.5x, /images/0000ssm/ssm082/blog.005.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm082/blog.005.png"
+        title="/images/0000ssm/ssm082/blog.005.png" /></p>
+<p>图4-2系统功能结构图</p>
+<p>管理员：个人中心、用户管理、汽车分类管理、汽车品牌管理、汽车颜色管理、汽车信息管理、系统管理、订单管理，功能结构图，如图4-3所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm082/blog.006.png"
+        data-srcset="/images/0000ssm/ssm082/blog.006.png, /images/0000ssm/ssm082/blog.006.png 1.5x, /images/0000ssm/ssm082/blog.006.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm082/blog.006.png"
+        title="/images/0000ssm/ssm082/blog.006.png" /></p>
+<p>图4-3 管理员功能结构图</p>
+<p>用户前台；首页、汽车信息、公告信息、个人中心、后台管理、购物车、在线咨询，结构图，如图4-4所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm082/blog.007.png"
+        data-srcset="/images/0000ssm/ssm082/blog.007.png, /images/0000ssm/ssm082/blog.007.png 1.5x, /images/0000ssm/ssm082/blog.007.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm082/blog.007.png"
+        title="/images/0000ssm/ssm082/blog.007.png" /></p>
+<p>图4-4 用户前台结构图</p>
+<h2 id="43-数据库设计">4.3. 数据库设计</h2>
+<h3 id="431-数据库实体">4.3.1 数据库实体</h3>
+<p>管理员信息结构图，如图4-6所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm082/blog.008.png"
+        data-srcset="/images/0000ssm/ssm082/blog.008.png, /images/0000ssm/ssm082/blog.008.png 1.5x, /images/0000ssm/ssm082/blog.008.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm082/blog.008.png"
+        title="/images/0000ssm/ssm082/blog.008.png" /></p>
+<p><code> </code>图4-6 管理员信息实体结构图</p>
+<p>用户信息：用户名、姓名、头像、性别、联系电话，实体属性图，如图4-7所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm082/blog.009.png"
+        data-srcset="/images/0000ssm/ssm082/blog.009.png, /images/0000ssm/ssm082/blog.009.png 1.5x, /images/0000ssm/ssm082/blog.009.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm082/blog.009.png"
+        title="/images/0000ssm/ssm082/blog.009.png" /></p>
+<p>图4-7用户信息实体属性图</p>
+<p>汽车信息：汽车名称、分类、品牌、颜色、图片、座位、换挡方式、汽车排量、上市年份、上牌时间、行驶里程，实体属性图如图4-8所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm082/blog.010.png"
+        data-srcset="/images/0000ssm/ssm082/blog.010.png, /images/0000ssm/ssm082/blog.010.png 1.5x, /images/0000ssm/ssm082/blog.010.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm082/blog.010.png"
+        title="/images/0000ssm/ssm082/blog.010.png" /></p>
+<p>图4-8汽车信息实体属性图</p>
+<h3 id="432-数据库设计表">4.3.2 数据库设计表</h3>
+<h2 id="44-数据表">4.4 数据表</h2>
+<p>将数据库概念设计的E-R图转换为关系数据库。在关系数据库中，数据关系由数据表组成，但是表的结构表现在表的字段上。</p>
+<p>allusers表:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">字段名称</th>
+<th style="text-align:center">字段类型</th>
+<th style="text-align:center">大小</th>
+<th style="text-align:center">允许为空</th>
+<th style="text-align:center">最大长度</th>
+<th style="text-align:center">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">10</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">username</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">150</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">255</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">pwd</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">150</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">255</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">cx</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">150</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">255</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">DateTime</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">19</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>qichexinxi表:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">字段名称</th>
+<th style="text-align:center">字段类型</th>
+<th style="text-align:center">大小</th>
+<th style="text-align:center">允许为空</th>
+<th style="text-align:center">最大长度</th>
+<th style="text-align:center">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">10</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">150</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">255</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">qichemingcheng</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">150</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">255</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">fenlei</td>
+<td style="text-align:center">DateTime</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">255</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">pinpai</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">150</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">255</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">yanse</td>
+<td style="text-align:center">DateTime</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">255</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">tupian</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">150</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">255</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">zuowei</td>
+<td style="text-align:center">DateTime</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">255</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">huandangfangshi</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">150</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">255</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">qichepailiang</td>
+<td style="text-align:center">DateTime</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">255</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">shangshinianfen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">150</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">255</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td style="text-align:center">shangpaishijian</td>
+<td style="text-align:center">DateTime</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">255</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">12</td>
+<td style="text-align:center">xingshilicheng</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">150</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">255</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">13</td>
+<td style="text-align:center">qichexiangqing</td>
+<td style="text-align:center">DateTime</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">255</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>yonghu表:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">字段名称</th>
+<th style="text-align:center">字段类型</th>
+<th style="text-align:center">大小</th>
+<th style="text-align:center">允许为空</th>
+<th style="text-align:center">最大长度</th>
+<th style="text-align:center">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">10</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">150</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">255</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">yonghuming</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">150</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">255</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">mima</td>
+<td style="text-align:center">DateTime</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">255</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">xingming</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">150</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">255</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">touxiang</td>
+<td style="text-align:center">DateTime</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">255</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">xingbie</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">150</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">255</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">lianxidianhua</td>
+<td style="text-align:center">DateTime</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">255</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>qichepinpai表:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">字段名称</th>
+<th style="text-align:center">字段类型</th>
+<th style="text-align:center">大小</th>
+<th style="text-align:center">允许为空</th>
+<th style="text-align:center">最大长度</th>
+<th style="text-align:center">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">10</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">150</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">255</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">pinpai</td>
+<td style="text-align:center">DateTime</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">255</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="heading"></h1>
+<h1 id="第5章-系统详细设计">第5章 系统详细设计</h1>
+<h2 id="51管理员功能模块">5.1管理员功能模块</h2>
+<p>管理员登录，管理员通过输入用户名、密码等信息进行系统登录，如图5-1所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm082/blog.011.png"
+        data-srcset="/images/0000ssm/ssm082/blog.011.png, /images/0000ssm/ssm082/blog.011.png 1.5x, /images/0000ssm/ssm082/blog.011.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm082/blog.011.png"
+        title="/images/0000ssm/ssm082/blog.011.png" /></p>
+<p>图5-1管理员登录界面图</p>
+<p>首页，管理员登录进入斗车交易系统可以查看个人中心、用户管理、汽车分类管理、汽车品牌管理、汽车颜色管理、汽车信息管理、系统管理、订单管理等内容，如图5-2所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm082/blog.012.png"
+        data-srcset="/images/0000ssm/ssm082/blog.012.png, /images/0000ssm/ssm082/blog.012.png 1.5x, /images/0000ssm/ssm082/blog.012.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm082/blog.012.png"
+        title="/images/0000ssm/ssm082/blog.012.png" /></p>
+<p>图5-2管理员首页功能界面图</p>
+<p>用户管理，管理员在用户管理页面可以查看用户名、姓名、头像、性别、联系电话等内容，并可根据需要对用户信息进行详情，修改或删除等操作，如图5-3所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm082/blog.013.png"
+        data-srcset="/images/0000ssm/ssm082/blog.013.png, /images/0000ssm/ssm082/blog.013.png 1.5x, /images/0000ssm/ssm082/blog.013.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm082/blog.013.png"
+        title="/images/0000ssm/ssm082/blog.013.png" /></p>
+<p>图5-3用户管理界面图</p>
+<p>汽车分类管理，管理员在汽车分类管理页面可以进行新增、详情、修改或删除等操作，如图5-4所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm082/blog.014.png"
+        data-srcset="/images/0000ssm/ssm082/blog.014.png, /images/0000ssm/ssm082/blog.014.png 1.5x, /images/0000ssm/ssm082/blog.014.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm082/blog.014.png"
+        title="/images/0000ssm/ssm082/blog.014.png" /></p>
+<p>图5-4汽车分类管理界面图</p>
+<p>汽车颜色管理，管理员在汽车颜色页面可以进行新增、详情，修改，删除操作，如图5-5所示。 <img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm082/blog.015.png"
+        data-srcset="/images/0000ssm/ssm082/blog.015.png, /images/0000ssm/ssm082/blog.015.png 1.5x, /images/0000ssm/ssm082/blog.015.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm082/blog.015.png"
+        title="/images/0000ssm/ssm082/blog.015.png" /></p>
+<p>图5-5汽车颜色管理界面图</p>
+<p>汽车信息管理，管理员在汽车信息页面可以进行查看汽车名称、分类、品牌、颜色、图片、座位、换挡方式、汽车排量、上市年份、上牌时间、行驶里程，可进行新增、详情、修改或删除等操作，如图5-6所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm082/blog.016.png"
+        data-srcset="/images/0000ssm/ssm082/blog.016.png, /images/0000ssm/ssm082/blog.016.png 1.5x, /images/0000ssm/ssm082/blog.016.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm082/blog.016.png"
+        title="/images/0000ssm/ssm082/blog.016.png" /></p>
+<p>图5-6汽车信息管理界面图</p>
+<p>系统管理，管理员通过系统管理页面查看在线咨询、轮播图管理、公告信息等进行咨询回复、上传前台首页图片、公告发布进行添加、删除、修改以及查看并对整个系统进行维护等操作，如图5-7所示。 <img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm082/blog.017.png"
+        data-srcset="/images/0000ssm/ssm082/blog.017.png, /images/0000ssm/ssm082/blog.017.png 1.5x, /images/0000ssm/ssm082/blog.017.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm082/blog.017.png"
+        title="/images/0000ssm/ssm082/blog.017.png" /></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm082/blog.018.png"
+        data-srcset="/images/0000ssm/ssm082/blog.018.png, /images/0000ssm/ssm082/blog.018.png 1.5x, /images/0000ssm/ssm082/blog.018.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm082/blog.018.png"
+        title="/images/0000ssm/ssm082/blog.018.png" /></p>
+<p>图5-7系统管理界面图</p>
+<p>订单管理： 管理员通过订单列表可以查看已退款订单、已完成订单、已发货订单、未支付订单、已取消订单、已支付订单等信息进行详情、或修改删除查操作。，如图5-8所示。 <img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm082/blog.019.png"
+        data-srcset="/images/0000ssm/ssm082/blog.019.png, /images/0000ssm/ssm082/blog.019.png 1.5x, /images/0000ssm/ssm082/blog.019.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm082/blog.019.png"
+        title="/images/0000ssm/ssm082/blog.019.png" /></p>
+<p>图5-8订单管理界面图</p>
+<h2 id="52用户前台前功能模块">5.2用户前台前功能模块</h2>
+<p>首页，用户登录进入斗车交易系统首页可以查看首页、汽车信息、公告信息、个人中心、后台管理、购物车、在线咨询等内容，如图5-9所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm082/blog.020.png"
+        data-srcset="/images/0000ssm/ssm082/blog.020.png, /images/0000ssm/ssm082/blog.020.png 1.5x, /images/0000ssm/ssm082/blog.020.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm082/blog.020.png"
+        title="/images/0000ssm/ssm082/blog.020.png" />图5-9前台首页功能界面图</p>
+<p>用户注册，在用户注册页面通过填写用户名、密码、姓名、性别、联系电话等信息进行注册，如图5-10所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm082/blog.021.png"
+        data-srcset="/images/0000ssm/ssm082/blog.021.png, /images/0000ssm/ssm082/blog.021.png 1.5x, /images/0000ssm/ssm082/blog.021.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm082/blog.021.png"
+        title="/images/0000ssm/ssm082/blog.021.png" /></p>
+<p>图5-10用户注册界面图</p>
+<p>用户登录，在用户登录页面可以填写用户名、密码等内容，进行登录，如图5-11所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm082/blog.022.png"
+        data-srcset="/images/0000ssm/ssm082/blog.022.png, /images/0000ssm/ssm082/blog.022.png 1.5x, /images/0000ssm/ssm082/blog.022.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm082/blog.022.png"
+        title="/images/0000ssm/ssm082/blog.022.png" /></p>
+<p>图5-11用户登录界面图</p>
+<p>汽车信息，用户在汽车信息页面可以查看汽车名称、分类、品牌、颜色、图片、座位、换挡方式、汽车排量、上市年份、上牌时间、行驶里程等信息，也可根据需要输入汽车信息名称进行搜索，操作，进行收藏、添加购物车、立即购买操作，如图5-12所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm082/blog.023.png"
+        data-srcset="/images/0000ssm/ssm082/blog.023.png, /images/0000ssm/ssm082/blog.023.png 1.5x, /images/0000ssm/ssm082/blog.023.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm082/blog.023.png"
+        title="/images/0000ssm/ssm082/blog.023.png" /></p>
+<p>图5-12汽车信息界面图</p>
+<p>个人中心，用户在个人信息页面可以查看用户名、密码、姓名、头像、性别、联系电话等内容，可进行提交操作 ，如图5-13所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm082/blog.024.png"
+        data-srcset="/images/0000ssm/ssm082/blog.024.png, /images/0000ssm/ssm082/blog.024.png 1.5x, /images/0000ssm/ssm082/blog.024.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm082/blog.024.png"
+        title="/images/0000ssm/ssm082/blog.024.png" /></p>
+<p>图5-13个人信息界面图</p>
+<p>我的地址，用户在我的地址页面填写联系人、手机号码、默认地址、选择地址进行提交操作，如图5-14所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm082/blog.025.png"
+        data-srcset="/images/0000ssm/ssm082/blog.025.png, /images/0000ssm/ssm082/blog.025.png 1.5x, /images/0000ssm/ssm082/blog.025.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm082/blog.025.png"
+        title="/images/0000ssm/ssm082/blog.025.png" /></p>
+<p>图5-14我的地址界面图</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2023-11-22</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/ssm082%E5%9F%BA%E4%BA%8Ejava%E6%96%97%E8%BD%A6%E4%BA%A4%E6%98%93%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://chenqi199.github.io/ssm082%E5%9F%BA%E4%BA%8Ejava%E6%96%97%E8%BD%A6%E4%BA%A4%E6%98%93%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" data-title="ssm082基于java斗车交易系统设计与实现&#43;vue" data-hashtags="java斗车,ssmjava,斗车交易,系统设计,交易系统,设计实现"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://chenqi199.github.io/ssm082%E5%9F%BA%E4%BA%8Ejava%E6%96%97%E8%BD%A6%E4%BA%A4%E6%98%93%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" data-hashtag="java斗车"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://chenqi199.github.io/ssm082%E5%9F%BA%E4%BA%8Ejava%E6%96%97%E8%BD%A6%E4%BA%A4%E6%98%93%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" data-title="ssm082基于java斗车交易系统设计与实现&#43;vue"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://chenqi199.github.io/ssm082%E5%9F%BA%E4%BA%8Ejava%E6%96%97%E8%BD%A6%E4%BA%A4%E6%98%93%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" data-title="ssm082基于java斗车交易系统设计与实现&#43;vue"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://chenqi199.github.io/ssm082%E5%9F%BA%E4%BA%8Ejava%E6%96%97%E8%BD%A6%E4%BA%A4%E6%98%93%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" data-title="ssm082基于java斗车交易系统设计与实现&#43;vue" data-ralateuid="https://gitee.com/chen_q_i"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/java%E6%96%97%E8%BD%A6/">Java斗车</a>,&nbsp;<a href="/tags/ssmjava/">Ssmjava</a>,&nbsp;<a href="/tags/%E6%96%97%E8%BD%A6%E4%BA%A4%E6%98%93/">斗车交易</a>,&nbsp;<a href="/tags/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/">系统设计</a>,&nbsp;<a href="/tags/%E4%BA%A4%E6%98%93%E7%B3%BB%E7%BB%9F/">交易系统</a>,&nbsp;<a href="/tags/%E8%AE%BE%E8%AE%A1%E5%AE%9E%E7%8E%B0/">设计实现</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/0077springboot%E6%B0%91%E5%AE%BF%E5%9C%A8%E7%BA%BF%E9%A2%84%E5%AE%9A%E5%B9%B3%E5%8F%B0/" class="prev" rel="prev" title="0077springboot民宿在线预定平台"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>0077springboot民宿在线预定平台</a>
+            <a href="/ssm081%E9%AB%98%E6%A0%A1%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" class="next" rel="next" title="ssm081高校实验室管理系统的设计与实现&#43;vue">ssm081高校实验室管理系统的设计与实现+vue<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.128.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="chenqi199" target="_blank">chenqi</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

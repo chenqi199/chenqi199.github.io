@@ -1,17 +1,16 @@
 # 0012springboot旅游网站的设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0012springboot旅游网站的设计与实现](https://github.com/GraduationProject-springboot/0012springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV16ia6epENY?p=13)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 课题开发的背景
 从古至今，通过书本获取知识信息的方式完全被互联网络信息化，但是旅游借还，对于旅游网站工作来说，仍然是一项非常重要的工作。尤其是旅游信息文化，这个周期的信息登记，传统人工记录模式已不符合当前社会发展和旅游管理工作需求。对于旅游的路线，传统的方式都是通过纸质进行对旅游路线的查看及购买，方便用户查找可以能够快一点的找到某旅游的路线信息。
@@ -108,7 +107,7 @@ Mysql的语言是非结构化的，用户可以在数据上进行工作，并且
 
 登录流程，系统登录必须输入正确的登录信息。登录流程图如图3-2所示。
 
-![](/images/0000stringboot/0012springboot/blog.001.png)
+![](/images/0000wxapp//blog.001.png)
 
 图3-2用户登录流程图
 
@@ -116,7 +115,7 @@ Mysql的语言是非结构化的，用户可以在数据上进行工作，并且
 
 管理员通过登录成功进入到系统操作界面，可以根据系统界面的功能模块，管理员进行修改维护等操作。如图3-3所示。
 
-![](/images/0000stringboot/0012springboot/blog.002.png)
+![](/images/0000wxapp//blog.002.png)
 
 `		`图3-3管理员后台管理流程图
 
@@ -124,7 +123,7 @@ Mysql的语言是非结构化的，用户可以在数据上进行工作，并且
 
 用户修改登录密码时，用户名是固定不变，只要直接输入新密码即可。新密码只要不空，输入后点击提交即可成功修改。具体如图3-4所示。
 
-![](/images/0000stringboot/0012springboot/blog.003.png)
+![](/images/0000wxapp//blog.003.png)
 
 图3-4修改密码流程图
 
@@ -136,7 +135,7 @@ Mysql的语言是非结构化的，用户可以在数据上进行工作，并且
 
 用户拥有最高管理权限。通过以上需求分析的调查与研究，将系统的总体功能定义如下图4-1所示。
 
-![](/images/0000stringboot/0012springboot/blog.004.png)
+![](/images/0000wxapp//blog.004.png)
 
 图4-1 系统总体功能结构图
 ## 4.2 数据库概述
@@ -148,19 +147,19 @@ Mysql的语言是非结构化的，用户可以在数据上进行工作，并且
 
 （1）用户E-R图
 
-![](/images/0000stringboot/0012springboot/blog.005.png)
+![](/images/0000wxapp//blog.005.png)
 
 图4-2管理员E-R图
 
 （2）订单信息信息E-R图
 
-![](/images/0000stringboot/0012springboot/blog.006.png)
+![](/images/0000wxapp//blog.006.png)
 
 图4-4 旅游路线信息E-R图
 
 （3）旅游路线信息E-R图
 
-![](/images/0000stringboot/0012springboot/blog.007.png)
+![](/images/0000wxapp//blog.007.png)
 
 图4-4 旅游路线信息E-R图
 ### 4.2.2 数据库逻辑设计
@@ -247,7 +246,7 @@ Mysql的语言是非结构化的，用户可以在数据上进行工作，并且
 ## 5.1登录界面
 登录窗口，用户通过登录窗口可以进行登录或注册。还没注册的用户可以进行填写用户名、密码进行注册操作，如图5-1所示，
 
-![](/images/0000stringboot/0012springboot/blog.008.png)
+![](/images/0000wxapp//blog.008.png)
 
 图5-2登录窗口界面
 ## 5.2管理员功能模块
@@ -255,77 +254,77 @@ Mysql的语言是非结构化的，用户可以在数据上进行工作，并且
 
 旅游路线管理：通过列表可以获取路线名称、路线分类、封面图、景点名称、出发地、目的地、交通方式、出行时间、费用包含、价格等信息，进行查看旅游详情或修改、查看评论操作，或新增、删除，如图5-2所示。
 
-![](/images/0000stringboot/0012springboot/blog.009.png)
+![](/images/0000wxapp//blog.009.png)
 
 图5-2旅游路线界面
 
 旅游资讯：管理员通过列表可以进行查看标题、简介、图片等信息，进行详情、修改或删除操作，并通过新增进行添加旅游资讯信息或删除操作，如图5-3所示。
 
-![](/images/0000stringboot/0012springboot/blog.010.png)
+![](/images/0000wxapp//blog.010.png)
 
 图5-3旅游资讯界面
 
 订单管理：管理员通过列表可以进行查看订单编号、商品名称、商品图片、购买数量、价格、折扣价格、总价格、支付类型、地址等信息，进行详情、发货或删除操作，并通过输入进行订单编号、商品名称操作，如图5-4所示。
 
-![](/images/0000stringboot/0012springboot/blog.011.png)
+![](/images/0000wxapp//blog.011.png)
 
 图5-4订单管理界面
 
 客服管理：管理员通过列表可以进行查看新消息或状态等信息，进行查看或回复操作，如图5-5所示。
 
-![](/images/0000stringboot/0012springboot/blog.012.png)
+![](/images/0000wxapp//blog.012.png)
 
 图5-5客服管理界面图 
 
 ## 5.3用户功能模块
 用户登录成功后，可以进行查看旅游路线、最新线路、旅游资讯、个人中心、后台管理、购物车、客服等功能模块。进行相对应操作。如图5-6所示。
 
-![](/images/0000stringboot/0012springboot/blog.013.png)
+![](/images/0000wxapp//blog.013.png)
 
 图5-6前台首页界面
 
 个人中心：通过列表可以进行查看个人中心、我的订单、我的地址、我的收藏等功能，进行相对应操作，个人中心：通过页面可以进行修改用户名、密码、姓名、头像、性别、联系电话、余额等信息，进行更新信息操作，如图5-7所示。
 
-![](/images/0000stringboot/0012springboot/blog.014.png)
+![](/images/0000wxapp//blog.014.png)
 
 图5-7个人中心界面
 
 个人中心：通过列表可以进行查看个人中心、我的订单、我的地址、我的收藏等功能，进行相对应操作，个人中心：通过页面可以进行修改用户名、密码、姓名、头像、性别、联系电话、余额等信息，进行更新信息操作，如图5-8所示。我的地址：通过列表可以进行查看联系人、手机号码、默认地址等信息、进行添加地址或重置操作，如图5-9所示。
 
-![](/images/0000stringboot/0012springboot/blog.015.png)
+![](/images/0000wxapp//blog.015.png)
 
 图5-8个人中心界面
 
-![](/images/0000stringboot/0012springboot/blog.016.png)
+![](/images/0000wxapp//blog.016.png)
 
 图5-9我的地址界面图
 
 购物车：通过列表可以进行查看购买商品、价格、数量、总价等信息、进行查看或删除操作，如图5-10所示。
 
-![](/images/0000stringboot/0012springboot/blog.017.png)
+![](/images/0000wxapp//blog.017.png)
 
 图5-10购物车界面图
 
 旅游线路：通过列表可以进行查看路线名称、价格、路线分类、景点名称、出发地、目的地、交通方式、出行时间、费用包含、点击次数等信息、进行添加购物车或立即购买、收藏操作，如图5-11所示。用户通过点击立即购买进入页面可以进行选择收货地址进行查看订单信息，进行在线支付操作，如图5-12所示。
 
-![](/images/0000stringboot/0012springboot/blog.018.png)
+![](/images/0000wxapp//blog.018.png)
 
 图5-11旅游路线界面图
 
-![](/images/0000stringboot/0012springboot/blog.019.png)
+![](/images/0000wxapp//blog.019.png)
 
 图5-12购买界面图
 
 我的订单：通过列表可以进行查看订单编号、商品、价格、数量、总价、地址等信息、进行查看订单信息或退款操作，如图5-13所示。
 
-![](/images/0000stringboot/0012springboot/blog.020.png)
+![](/images/0000wxapp//blog.020.png)
 
 图5-13我的订单界面图
 
 旅游资讯：通过旅游资讯可以进行查看订标题、资讯图片、新出路线、等信息、进行查看查看信息或发布旅游资讯信息操作，如图5-14所示。
 
 
-![](/images/0000stringboot/0012springboot/blog.021.png)
+![](/images/0000wxapp//blog.021.png)
 
 图5-14旅游资讯界面图 
 

@@ -1,0 +1,40 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>报修管理 - 标签 - chenqi blog</title>
+        <link>https://chenqi199.github.io/tags/%E6%8A%A5%E4%BF%AE%E7%AE%A1%E7%90%86/</link>
+        <description>报修管理 - 标签 - chenqi blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>chen_q_i@163.com (chenqi)</managingEditor>
+            <webMaster>chen_q_i@163.com (chenqi)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 21 Jul 2024 10:33:04 &#43;0800</lastBuildDate><atom:link href="https://chenqi199.github.io/tags/%E6%8A%A5%E4%BF%AE%E7%AE%A1%E7%90%86/" rel="self" type="application/rss+xml" /><item>
+    <title>ssm804基于vue的学生宿舍设备报修管理系统的设计与实现&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm804%E5%9F%BA%E4%BA%8Evue%E7%9A%84%E5%AD%A6%E7%94%9F%E5%AE%BF%E8%88%8D%E8%AE%BE%E5%A4%87%E6%8A%A5%E4%BF%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/</link>
+    <pubDate>Sun, 21 Jul 2024 10:33:04 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm804%E5%9F%BA%E4%BA%8Evue%E7%9A%84%E5%AD%A6%E7%94%9F%E5%AE%BF%E8%88%8D%E8%AE%BE%E5%A4%87%E6%8A%A5%E4%BF%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm804基于vue的学生宿舍设备报修管理系统的设计与实现+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论]]></description>
+</item>
+<item>
+    <title>ssm742基于Web的校园报修管理系统&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm742%E5%9F%BA%E4%BA%8Eweb%E7%9A%84%E6%A0%A1%E5%9B%AD%E6%8A%A5%E4%BF%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/</link>
+    <pubDate>Sun, 30 Jun 2024 10:33:02 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm742%E5%9F%BA%E4%BA%8Eweb%E7%9A%84%E6%A0%A1%E5%9B%AD%E6%8A%A5%E4%BF%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm742基于Web的校园报修管理系统+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第1章 绪论 1.1 课题背景 二十]]></description>
+</item>
+<item>
+    <title>0182springboot公寓报修管理系统</title>
+    <link>https://chenqi199.github.io/0182springboot%E5%85%AC%E5%AF%93%E6%8A%A5%E4%BF%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/</link>
+    <pubDate>Wed, 27 Dec 2023 11:23:19 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/0182springboot%E5%85%AC%E5%AF%93%E6%8A%A5%E4%BF%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site 0182springboot公寓报修管理系统 github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1.1 研究背景 当前社会各行业]]></description>
+</item>
+<item>
+    <title>0182springboot公寓报修管理系统</title>
+    <link>https://chenqi199.github.io/0182springboot%E5%85%AC%E5%AF%93%E6%8A%A5%E4%BF%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/</link>
+    <pubDate>Wed, 27 Dec 2023 11:22:08 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/0182springboot%E5%85%AC%E5%AF%93%E6%8A%A5%E4%BF%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site 0182springboot公寓报修管理系统 github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1.1 研究背景 当前社会各行业]]></description>
+</item>
+</channel>
+</rss>

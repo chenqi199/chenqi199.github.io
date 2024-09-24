@@ -1,17 +1,16 @@
 # 0041springbootIT技术交流和分享平台的设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0041springbootIT技术交流和分享平台的设计与实现](https://github.com/GraduationProject-springboot/0041springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)]()
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
 ## 1.1 研究背景
@@ -62,7 +61,7 @@ Java是一种非常常用的编程语言，在全球编程语言排行版上总�
 ## 2.2 B/S结构
 在早期的程序开发中，使用得最多的莫过于C/S架构了，现在的生活中软件在生活的各个方面落地，使用了C/S架构开发出来的软件也是不在少数的，比如企业日常办公使用到的微软的OFFICE软件，我国自己研发的文档处理软件WPS，还有娱乐软件腾讯的QQ，腾讯的微信，以及电脑上安装的杀毒软件金山杀毒软件，瑞金杀毒软件等都是C/S架构[6]。但是在Internet网络盛行之后，鉴于大家对数据信息共享的需求，在原来的C/S架构上进行了升级改进之后，有了现在的主流架构B/S架构，B/S架构就是在C/S架构上多了一个浏览器，让原来的直接访问服务器的方式，变成了通过浏览器去访问服务器[12]。充分运用到了当下不断成熟的浏览器技术。也让软件的开发成本以及维护成本降低了。可以说B/S这种新型的架构模式让软件的开发变得便利化。图2.3描述了B/S架构的工作原理。详细见下图。
 
-![](/images/0000stringboot/0041springboot/blog.001.png)
+![](/images/0000wxapp//blog.001.png)
 
 图2-1 B/S架构的工作原理图
 ## 2.3 MYSQL数据库
@@ -97,39 +96,39 @@ Spring Boot是一个简化程序设置的拥有开箱即用的框架，它主要
 ### 3.3.1用户功能分析
 用户进入本系统可查看系统信息，包括首页、笔记分享，注册登录后主要功能模块包括个人中心、笔记分享管理、笔记类型管理以及我的收藏管理，用户用例图如图3-1所示。
 
-![](/images/0000stringboot/0041springboot/blog.002.png)
+![](/images/0000wxapp//blog.002.png)
 
 图3-1 用户用例图
 ### 3.3.2管理员功能分析
 管理员登录后可对系统进行全面管理，管理员主要实现的功能模块包括个人中心、用户管理、笔记分享管理、笔记类型管理以及系统管理五大部分，管理员用例图如图3-3所示。
 
-![](/images/0000stringboot/0041springboot/blog.003.png)
+![](/images/0000wxapp//blog.003.png)
 
 图3-2 管理员用例图
 ## 3.4 系统结构分析
 ### 3.4.1逻辑结构
 基于Spring Boot的IT技术交流和分享平台的特点就是利用Browser/Server（B/S）结构，为用户提供了一个便利的IT技术交流和分享的平台，让用户只要上网就可以实现IT技术交流和分享。本系统的网络应用原理示意图如图3-3所示：
 
-![](/images/0000stringboot/0041springboot/blog.004.png)
+![](/images/0000wxapp//blog.004.png)
 
 图3-3系统的网络应用原理示意图
 ### 3.4.2物理结构
 系统实现的物理结构如图3-4所示：
 
-![](/images/0000stringboot/0041springboot/blog.005.png)
+![](/images/0000wxapp//blog.005.png)
 
 图3-4 系统实现的物理结构图
 ## 3.5 系统流程分析
 ### 3.5.1注册流程
 未有账号的用户可进行注册操作，用户注册流程图如图3-5所示。
 
-![](/images/0000stringboot/0041springboot/blog.006.png)
+![](/images/0000wxapp//blog.006.png)
 
 图3-5注册信息流程图
 ### 3.5.2登录流程
 登录模块主要满足了管理员和用户的权限登录，用户登录流程图如图3-6所示。
 
-![](/images/0000stringboot/0041springboot/blog.007.png)
+![](/images/0000wxapp//blog.007.png)
 
 图3-6 登录流程图
 
@@ -138,13 +137,13 @@ Spring Boot是一个简化程序设置的拥有开箱即用的框架，它主要
 ## 4.1系统概要设计
 基于Spring Boot的IT技术交流和分享平台并没有使用C/S结构，而是基于网络浏览器的方式去访问服务器，进而获取需要的数据信息，这种依靠浏览器进行数据访问的模式就是现在用得比较广泛的适用于广域网并且没有网速限制要求的B/S结构，图4-1就是开发出来的程序工作原理图。
 
-![](/images/0000stringboot/0041springboot/blog.008.png)
+![](/images/0000wxapp//blog.008.png)
 
 图4-1 系统工作原理图
 ## 4.2系统结构设计
 系统结构设计是一个将一个庞大的任务细分为多个小的任务的过程，这些小的任务分段完成后，组合在一起形成一个完整的任务。本基于Spring Boot的IT技术交流和分享平台主要管理员模块以及用户模块两大部分，系统结构图如图4-1所示。
 
-![](/images/0000stringboot/0041springboot/blog.009.png)
+![](/images/0000wxapp//blog.009.png)
 
 图4-2系统功能模块图
 ## 4.3 数据库设计
@@ -156,31 +155,31 @@ Spring Boot是一个简化程序设置的拥有开箱即用的框架，它主要
 
 （1）管理员信息实体属性图如图4-4所示：
 
-![](/images/0000stringboot/0041springboot/blog.010.png)
+![](/images/0000wxapp//blog.010.png)
 
 图4-4 管理员信息实体属性图
 
 （2）用户信息实体属性图如图4-5所示：
 
-![](/images/0000stringboot/0041springboot/blog.011.png)
+![](/images/0000wxapp//blog.011.png)
 
 图4-5 用户信息实体属性图
 
 （3）笔记信息实体属性图如图4-6所示：
 
-![](/images/0000stringboot/0041springboot/blog.012.png)
+![](/images/0000wxapp//blog.012.png)
 
 图4-6  笔记信息实体属性图
 
 （4）笔记类型信息实体属性图如图4-7所示：
 
-![](/images/0000stringboot/0041springboot/blog.013.png)
+![](/images/0000wxapp//blog.013.png)
 
 图4-7  笔记类型信息实体属性图
 ### 4.3.2 数据库逻辑结构设计
 数据库的逻辑结构的设计需要将前面概念设计得到的E-R图转换成关系模型。接着就是优化关系模型，逻辑结构设计的过程表现如下
 
-![](/images/0000stringboot/0041springboot/blog.014.png)
+![](/images/0000wxapp//blog.014.png)
 
 图4-10  逻辑结构设计的过程
 
@@ -244,62 +243,62 @@ Spring Boot是一个简化程序设置的拥有开箱即用的框架，它主要
 ## 5.1 用户功能模块的实现
 用户在系统前台可查看系统信息，系统前台主界面展示如图5-1所示。
 
-![](/images/0000stringboot/0041springboot/blog.015.png)
+![](/images/0000wxapp//blog.015.png)
 
 图5-1系统前台主界面
 ### 5.1.1用户注册界面
 没有账号的用户可进行注册操作，用户注册界面展示如图5-2所示。
 
-![](/images/0000stringboot/0041springboot/blog.016.png)
+![](/images/0000wxapp//blog.016.png)
 
 图5-2用户注册界面
 ### 5.1.2用户登录界面
 用户在登录界面可输入登录信息，点击登录按钮进行登录系统，用户登录界面展示如图5-3所示。
 
-![](/images/0000stringboot/0041springboot/blog.017.png)
+![](/images/0000wxapp//blog.017.png)
 
 图5-3 用户登录界面
 ### 5.1.3笔记分享详情界面
 用户可选择笔记分享查看详情信息，笔记分享详情界面展示如图5-4所示。
 
-![](/images/0000stringboot/0041springboot/blog.018.png)
+![](/images/0000wxapp//blog.018.png)
 
 图 5-4  笔记分享详情界面
 ### 5.1.4添加笔记分享界面
 用户登录后可添加笔记分享信息，添加笔记分享界面展示如图5-5所示。
 
-![](/images/0000stringboot/0041springboot/blog.019.png)
+![](/images/0000wxapp//blog.019.png)
 
 图5-5 添加笔记分享界面
 ### 5.1.5我的收藏界面
 用户可管理个人已有收藏笔记分享信息，我的收藏界面展示如图5-6所示。
 
-![](/images/0000stringboot/0041springboot/blog.020.png)
+![](/images/0000wxapp//blog.020.png)
 
 图5-6  我的收藏界面
 ## 5.2 管理员功能模块的实现
 ### 5.2.1管理员登录界面
 管理员要想进入系统后台对系统进行管理操作，必须登录系统后台，管理员登录界面展示如图5-7所示。
 
-![](/images/0000stringboot/0041springboot/blog.021.png)
+![](/images/0000wxapp//blog.021.png)
 
 图5-7 管理员登录界面
 ### 5.2.2用户管理界面
 管理员在用户管理急么可查看所有用户信息，并可对其进行编辑和删除操作，用户管理界面展示如图5-8所示。
 
-![](/images/0000stringboot/0041springboot/blog.022.png)
+![](/images/0000wxapp//blog.022.png)
 
 图5-8  用户管理界面
 ### 5.2.3笔记类型管理界面
 管理员可增删改查笔记类型信息，笔记类型管理界面展示如图5-9所示。
 
-![](/images/0000stringboot/0041springboot/blog.023.png)
+![](/images/0000wxapp//blog.023.png)
 
 图5-9  笔记类型管理界面
 ### 5.2.4笔记分享管理界面
 管理员可增删改查笔记分享信息，笔记分享管理界面展示如图5-10所示。
 
-![](/images/0000stringboot/0041springboot/blog.024.png)
+![](/images/0000wxapp//blog.024.png)
 
 图5-10   笔记分享管理界面
 

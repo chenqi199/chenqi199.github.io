@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>网络财务 - 标签 - chenqi blog</title>
+        <link>https://chenqi199.github.io/tags/%E7%BD%91%E7%BB%9C%E8%B4%A2%E5%8A%A1/</link>
+        <description>网络财务 - 标签 - chenqi blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>chen_q_i@163.com (chenqi)</managingEditor>
+            <webMaster>chen_q_i@163.com (chenqi)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 05 Mar 2024 10:32:53 &#43;0800</lastBuildDate><atom:link href="https://chenqi199.github.io/tags/%E7%BD%91%E7%BB%9C%E8%B4%A2%E5%8A%A1/" rel="self" type="application/rss+xml" /><item>
+    <title>ssm391基于ssm框架网络财务设计与实现&#43;jsp</title>
+    <link>https://chenqi199.github.io/ssm391%E5%9F%BA%E4%BA%8Essm%E6%A1%86%E6%9E%B6%E7%BD%91%E7%BB%9C%E8%B4%A2%E5%8A%A1%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/</link>
+    <pubDate>Tue, 05 Mar 2024 10:32:53 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm391%E5%9F%BA%E4%BA%8Essm%E6%A1%86%E6%9E%B6%E7%BD%91%E7%BB%9C%E8%B4%A2%E5%8A%A1%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm391基于ssm框架网络财务设计与实现+jsp github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1.1 研究背景 当前社]]></description>
+</item>
+</channel>
+</rss>

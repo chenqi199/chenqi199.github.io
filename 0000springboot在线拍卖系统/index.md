@@ -1,17 +1,16 @@
 # 0000springboot在线拍卖系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0000springboot在线拍卖系统](https://github.com/GraduationProject-springboot/0000springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV16ia6epENY?p=1)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 系统概述
 ## 1.1 概述
@@ -105,15 +104,15 @@ Spring Boot特点：
 ## 3.5系统流程和逻辑
 系统业务流程图，如图所示：
 
-![](/images/0000stringboot/0000springboot/blog.001.png)
+![](/images/0000wxapp//blog.001.png)
 
 图3-1登录流程图
 
-![](/images/0000stringboot/0000springboot/blog.002.png) 
+![](/images/0000wxapp//blog.002.png) 
 
 图3-2添加信息流程图
 
-![](/images/0000stringboot/0000springboot/blog.003.png) 
+![](/images/0000wxapp//blog.003.png) 
 
 图3-3注册信息流程图
 
@@ -122,7 +121,7 @@ Spring Boot特点：
 ## 4.1 概述
 在线拍卖系统基于Web服务模式，是一个适用于Internet环境下的模型结构。只要用户能连上Internet,便可以在不受时间、地点的限制来使用这个系统。在线拍卖系统工作原理图，如图4-1所示：
 
-![](/images/0000stringboot/0000springboot/blog.004.png)
+![](/images/0000wxapp//blog.004.png)
 
 图4-1  系统工作原理图
 ## 4.2 系统结构
@@ -138,25 +137,25 @@ Spring Boot特点：
 
 用户界面
 
-![](/images/0000stringboot/0000springboot/blog.005.png)
+![](/images/0000wxapp//blog.005.png)
 
 图4-2系统功能结构图
 
 管理员功能结构图，如图4-3所示：
 
-![](/images/0000stringboot/0000springboot/blog.006.png)
+![](/images/0000wxapp//blog.006.png)
 
 图4-3 管理员功能结构图
 
 前台首页功能结构图，如图4-4所示：
 
-![](/images/0000stringboot/0000springboot/blog.007.png)
+![](/images/0000wxapp//blog.007.png)
 
 图4-4 前台首页功能结构图
 
 用户功能结构图，如图4-5所示：
 
-![](/images/0000stringboot/0000springboot/blog.008.png)
+![](/images/0000wxapp//blog.008.png)
 
 图4-5用户功能结构图
 
@@ -164,25 +163,25 @@ Spring Boot特点：
 ### 4.3.1 数据库实体
 管理员信息结构图，如图4-6所示：
 
-![](/images/0000stringboot/0000springboot/blog.009.png)
+![](/images/0000wxapp//blog.009.png)
 
 ` `图4-6 管理员信息实体结构图
 
 拍卖商品管理实体属性图，如图4-7所示：
 
-![](/images/0000stringboot/0000springboot/blog.010.png)
+![](/images/0000wxapp//blog.010.png)
 
 图4-7拍卖商品管理实体属性图
 
 用户管理实体属性图如图4-8所示。
 
-![](/images/0000stringboot/0000springboot/blog.011.png)
+![](/images/0000wxapp//blog.011.png)
 
 图4-8用户管理实体属性图
 
 历史竞拍管理实体属性图如图4-9所示。
 
-![](/images/0000stringboot/0000springboot/blog.012.png)
+![](/images/0000wxapp//blog.012.png)
 
 图4-9历史竞拍管理实体属性图
 
@@ -260,25 +259,25 @@ Spring Boot特点：
 ## 5.1管理员功能模块
 管理员登录，管理员通过输入用户名、密码、角色等信息进行系统登录，如图5-1所示。
 
-![](/images/0000stringboot/0000springboot/blog.013.png)
+![](/images/0000wxapp//blog.013.png)
 
 图5-1管理员登录界面图
 
 管理员登录进入在线拍卖系统可以查看首页、个人中心、用户管理、商品类型管理、拍卖商品管理、历史竞拍管理、竞拍订单管理、留言板管理、系统管理等内容，如图5-2所示。
 
-![](/images/0000stringboot/0000springboot/blog.014.png)
+![](/images/0000wxapp//blog.014.png)
 
 图5-2管理员功能界面图
 
 修改密码，在修改密码页面可以填写原密码、新密码、确认密码等内容，并可根据需要对修改密码进行详情，修改或删除等操作，如图5-3所示。
 
-![](/images/0000stringboot/0000springboot/blog.015.png)
+![](/images/0000wxapp//blog.015.png)
 
 图5-3修改密码界面图
 
 用户管理，在用户管理页面可以填写用户名、密码、姓名、性别、头像、身份证、手机、邮箱、地址等内容，并可根据需要对用户管理进行，修改或删除等操作，如图5-4所示。
 
-![](/images/0000stringboot/0000springboot/blog.016.png)
+![](/images/0000wxapp//blog.016.png)
 
 图5-4用户管理界面图
 
@@ -286,42 +285,42 @@ Spring Boot特点：
 
 商品类型管理，在商品类型管理页面可以填写商品类型等进行修改，删除或查看详细内容等操作，如图5-5所示。
 
-![](/images/0000stringboot/0000springboot/blog.017.png)
+![](/images/0000wxapp//blog.017.png)
 
 图5-5商品类型管理界面图
 
-拍卖商品管理，在拍卖商品管理页面可以查看商品名称；商品类型、图片、价格、活动时间、活动状态等内容，并可根据需要对拍卖商品管理进行详情，修改，删除或详细内容等操作，如图5-6所示。 ![](/images/0000stringboot/0000springboot/blog.018.png)
+拍卖商品管理，在拍卖商品管理页面可以查看商品名称；商品类型、图片、价格、活动时间、活动状态等内容，并可根据需要对拍卖商品管理进行详情，修改，删除或详细内容等操作，如图5-6所示。 ![](/images/0000wxapp//blog.018.png)
 
 图5-6拍卖商品管理界面图
 
 竞拍公告 ，在竞拍公告页面可以查看标题、简介、图片等内容，并可根据需要对竞拍公告进行详情，修改，删除或详细内容等操作，如图5-7所示。
 
-![](/images/0000stringboot/0000springboot/blog.019.png)
+![](/images/0000wxapp//blog.019.png)
 
 图5-7竞拍公告界面图
 
 轮播图；该页面为轮播图管理界面。管理员可以在此页面进行首页轮播图的管理，通过新建操作可在轮播图中加入新的图片，还可以对以上传的图片进行修改操作，以及图片的删除操作，如图5-8所示。
 
-![](/images/0000stringboot/0000springboot/blog.020.png)
+![](/images/0000wxapp//blog.020.png)
 
 图5-8轮播图管理界面图
 
 历史竞拍管理，在历史竞拍管理页面可以查看商品名称；商品类型、日期、价格、用户名、姓名、手机、地址、审核回复、审核状态、审核等内容，并可根据需要对历史竞拍管理进行详情，修改，删除或详细内容等操作，如图5-9所示。
 
-![](/images/0000stringboot/0000springboot/blog.021.png)
+![](/images/0000wxapp//blog.021.png)
 
 图5-9历史竞拍管理界面图
 
 竞拍订单管理，在竞拍订单管理页面可以查看订单编号、商品名称；商品类型、成交价格、发布日期、用户名、姓名、手机、邮箱、地址、是否支付等内容，并可根据需要对竞拍订单管理进行详情，修改，删除或详细内容等操作，如图5-10所示。
 
-![](/images/0000stringboot/0000springboot/blog.022.png)
+![](/images/0000wxapp//blog.022.png)
 
 图5-10竞拍订单管理界面图
 
 
 留言板管理，在留言板管理页面可以查看用户名、留言内容、回复内容等内容，并可根据需要对留言板管理进行详情，修改，删除或详细内容等操作，如图5-11所示。
 
-![](/images/0000stringboot/0000springboot/blog.023.png)
+![](/images/0000wxapp//blog.023.png)
 
 图5-11留言板管理界面图
 
@@ -330,24 +329,24 @@ Spring Boot特点：
 ## 5.2用户功能模块
 用户登录进入在线拍卖系统可以查看首页、个人中心、历史竞拍管理、竞拍订单管理、留言板管理等内容，如图5-12所示。
 
-![](/images/0000stringboot/0000springboot/blog.024.png)图5-12用户功能界面图
+![](/images/0000wxapp//blog.024.png)图5-12用户功能界面图
 
 历史竞拍管理，在历史竞拍管理页面可以查看商品名称；商品类型、日期、价格、用户名、姓名、手机、地址、审核回复、审核状态、审核等内容，并可根据需要对历史竞拍管理进行详情，修改，删除或详细内容等操作，如图5-13所示。
 
-![](/images/0000stringboot/0000springboot/blog.025.png)
+![](/images/0000wxapp//blog.025.png)
 
 图5-13历史竞拍管理界面图
 
 
 留言板管理，在留言板管理页面可以查看用户名、留言内容、回复内容等内容，并可根据需要对留言板管理进行详情，修改，删除或详细内容等操作，如图5-14所示。
 
-![](/images/0000stringboot/0000springboot/blog.026.png)
+![](/images/0000wxapp//blog.026.png)
 
 图5-14留言板管理界面图
 
 竞拍订单管理，在竞拍订单管理页面可以查看订单编号、商品名称；商品类型、成交价格、发布日期、用户名、姓名、手机、邮箱、地址、是否支付等内容，并可根据需要对竞拍订单管理进行详情，修改，删除或详细内容等操作，如图5-15所示。
 
-![](/images/0000stringboot/0000springboot/blog.027.png)
+![](/images/0000wxapp//blog.027.png)
 
 图5-15竞拍订单管理界面图
 
@@ -360,32 +359,32 @@ Spring Boot特点：
 ## 5.3前台首页功能模块
 用户登录进入在线拍卖系统可以首页、拍卖商品、竞拍公告、留言反馈、个人中心、后台管理等内容，如图5-16所示。
 
-![](/images/0000stringboot/0000springboot/blog.028.png)图5-16前台首页功能界面图
+![](/images/0000wxapp//blog.028.png)图5-16前台首页功能界面图
 
 登录、用户注册，在用户注册页面通过填写用户名、密码、姓名、身份证、手机、邮箱、地址等信息进行注册、登录，如图5-17所示。
 
-![](/images/0000stringboot/0000springboot/blog.029.png)
+![](/images/0000wxapp//blog.029.png)
 
 
-![](/images/0000stringboot/0000springboot/blog.030.png)
+![](/images/0000wxapp//blog.030.png)
 
 图5-17用户注册、登录界面图
 
 拍卖商品，在拍卖商品页面可以填写商品名称；商品类型、图片、价格、活动时间、活动状态等内容，进行竞拍，如图5-18所示。
 
-![](/images/0000stringboot/0000springboot/blog.031.png)
+![](/images/0000wxapp//blog.031.png)
 
 图5-18拍卖商品界面图
 
 留言反馈，在留言反馈页面可以填写留言内容等内容，并可根据需要对留言反馈进行立即提交操作，如图5-19所示。
 
-![](/images/0000stringboot/0000springboot/blog.032.png)
+![](/images/0000wxapp//blog.032.png)
 
 图5-19留言反馈界面图
 
 竞拍公告，在竞拍公告页面可以填写公告信息等内容，并可根据需要对竞拍公告进行提交操作，如图5-20所示。
 
-![](/images/0000stringboot/0000springboot/blog.033.png)
+![](/images/0000wxapp//blog.033.png)
 
 图5-20竞拍公告界面图
 

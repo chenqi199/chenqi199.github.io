@@ -1,17 +1,16 @@
 # 0026springboot网上点餐系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0026springboot网上点餐系统](https://github.com/GraduationProject-springboot/0026springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV16ia6epENY?p=27)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第一章 绪 论
 1.1背景及意义
@@ -103,32 +102,32 @@ Spring Boot特点：
 ### 3.4.1管理员用例
 管理员登录后可进行首页、个人中心、用户管理、美食店管理、美食分类管理、美食信息管理、美食订单管理、美食评价管理、系统管理，管理员的用例如图3-1所示。
 
-![](/images/0000stringboot/0026springboot/blog.002.png)
+![](/images/0000wxapp//blog.002.png)
 
 图3-1 管理员用例图
 ### 3.4.2用户用例
 用户注册登录后可进行首页、个人中心、美食订单管理、美食评价管理、我的收藏管理，用户用例如图3-2所示。
 
-![](/images/0000stringboot/0026springboot/blog.003.png)
+![](/images/0000wxapp//blog.003.png)
 
 图3-2 用户用例图
 ## 3.5系统流程分析
 ### 3.5.1添加信息流程
 添加信息,编号系统使用自动编号模式,没有用户填写,用户添加信息输入信息,系统将自动确认的信息和数据,验证的成功是有效的信息添加到数据库,信息无效,重新输入信息。添加信息流程如图3-3所示。
 
-![](/images/0000stringboot/0026springboot/blog.004.png)
+![](/images/0000wxapp//blog.004.png)
 
 图3-3 添加信息流程图
 ### 3.5.2操作流程
 用户想进入系统，首先进入系统登录界面，通过正确的用户名、密码，选择登录类型登录，系统会检查登录信息，信息正确，然后输入相应的功能界面，提示信息错误，登录失败。系统操作流程如图3-4所示。
 
-![](/images/0000stringboot/0026springboot/blog.005.png)
+![](/images/0000wxapp//blog.005.png)
 
 图3-4操作流程图
 ### 3.5.3删除信息流程
 用户选择要删除的信息并单击Delete按钮。系统提示是否删除信息。如果用户想要删除信息，系统将删除信息。系统数据库删除信息。删除信息流程图如图3-5所示。
 
-![](/images/0000stringboot/0026springboot/blog.006.png)
+![](/images/0000wxapp//blog.006.png)
 
 图3-5 删除信息流程图
 
@@ -149,7 +148,7 @@ Spring Boot特点：
 
 用  户
 
-![](/images/0000stringboot/0026springboot/blog.007.png)
+![](/images/0000wxapp//blog.007.png)
 
 图4-1  系统结构
 
@@ -171,13 +170,13 @@ Y
 
 用户界面
 
-![](/images/0000stringboot/0026springboot/blog.008.png)
+![](/images/0000wxapp//blog.008.png)
 
 图4-2 登录结构图
 
 这些功能可以充分满足网上点餐系统的需求。此系统功能较为全面如下图系统功能结构如图4-3所示。
 
-![](/images/0000stringboot/0026springboot/blog.009.png)
+![](/images/0000wxapp//blog.009.png)
 
 图4-3系统功能结构图
 
@@ -186,19 +185,19 @@ Y
 
 网上点餐系统的数据流程：
 
-![](/images/0000stringboot/0026springboot/blog.010.png)
+![](/images/0000wxapp//blog.010.png)
 
 图4-4  系统数据流程图
 
 用户管理实体E-R图，如图4.5所示。
 
-![](/images/0000stringboot/0026springboot/blog.011.png)
+![](/images/0000wxapp//blog.011.png)
 
 `    `图4.5用户管理E-R图
 
 美食店管理E-R图，如图4.6所示。
 
-![](/images/0000stringboot/0026springboot/blog.012.png)
+![](/images/0000wxapp//blog.012.png)
 
 ` `图4.6美食店管理E-R图
 
@@ -287,13 +286,13 @@ Y
 ## 5.1用户功能模块
 用户点击进入到系统操作界面，可以对首页、个人中心、美食订单管理、美食评价管理、我的收藏管理等功能模块，个人信息：通过列表可以获取用户账号、用户姓名、性别、年龄、头像、用户手机、配送地址并进行修改操作，如图5-1所示。
 
-![](/images/0000stringboot/0026springboot/blog.013.png)
+![](/images/0000wxapp//blog.013.png)
 
 图5-1个人信息界面图
 
 美食评价管理：通过列表可以获取店铺账号、店铺名称、美食名称、用户账号、用户姓名、图片、评分、评价内容、评价时间等信息，进行详情、修改、删除操作，如图5-2所示。
 
-![](/images/0000stringboot/0026springboot/blog.014.png)
+![](/images/0000wxapp//blog.014.png)
 
 图5-2美食评价管理界面图
 
@@ -301,7 +300,7 @@ Y
 
 我的收藏管理：通过列表可以获取收藏名称、收藏图片等信息，进行详情、删除操作，如图5-3所示。
 
-![](/images/0000stringboot/0026springboot/blog.015.png)
+![](/images/0000wxapp//blog.015.png)
 
 图5-3我的收藏管理界面图
 
@@ -313,48 +312,48 @@ Y
 
 用户管理：通过列表可以获取用户账号、用户姓名、性别、年龄、头像、用户手机、配送地址等内容，可以进行修改或删除操作，如图5-5所示。
 
-![](/images/0000stringboot/0026springboot/blog.016.png)
+![](/images/0000wxapp//blog.016.png)
 
 图5-4管理员登录页面
 
-![](/images/0000stringboot/0026springboot/blog.017.png)
+![](/images/0000wxapp//blog.017.png)
 
 图5-5用户管理页面
 
 美食店管理：通过列表可以获取店铺账号、店铺名称、照片、联系电话、店铺介绍、店铺地址、招聘美食、联系人等信息，进行删除或修改操作，如图5-6所示。
 
 
-![](/images/0000stringboot/0026springboot/blog.018.png)
+![](/images/0000wxapp//blog.018.png)
 
 图5-6美食店管理界面图
 
 美食分类管理：通过列表可以获取美食分类等信息，进行修改或删除操作，如图5-7所示。
 
-![](/images/0000stringboot/0026springboot/blog.019.png)
+![](/images/0000wxapp//blog.019.png)
 
 图5-7美食分类管理界面图 
 
 美食信息管理：通过列表可以获取美食名称、美食分类、店铺账号、店铺名称、联系电话、图片、口味、特色、价格等信息，进行修改或删除操作，如图5-8所示。
 
-![](/images/0000stringboot/0026springboot/blog.020.png)
+![](/images/0000wxapp//blog.020.png)
 
 图5-8美食信息管理界面图
 
 美食评价管理：管理员通过列表可以获取店铺账号、店铺名称、美食名称、用户账号、用户姓名、图片、评分、评价内容、评价时间等信息，进行修改或删除操作，如图5-9所示。
 
-![](/images/0000stringboot/0026springboot/blog.021.png)
+![](/images/0000wxapp//blog.021.png)
 
 图5-9美食评价管理界面图
 
 美食资讯：管理员通过列表可以获取标题、简介、图片等信息，进行修改或删除操作，如图5-10所示。
 
-![](/images/0000stringboot/0026springboot/blog.022.png)
+![](/images/0000wxapp//blog.022.png)
 
 图5-10美食资讯界面图
 
 轮播图；该页面为轮播图管理界面。管理员可以在此页面进行首页轮播图的管理，通过新建操作可在轮播图中加入新的图片，还可以对以上传的图片进行修改操作，以及图片的删除操作，如图5-11所示。
 
-![](/images/0000stringboot/0026springboot/blog.023.png)
+![](/images/0000wxapp//blog.023.png)
 
 图5-11轮播图管理界面图
 
@@ -362,19 +361,19 @@ Y
 ## 5.3美食店功能模块
 美食店点击进入到系统操作界面，可以对首页、个人中心、美食信息管理、美食订单管理、美食评价管理等功能模块，个人信息：通过列表可以获取店铺账号、店铺名称、照片、联系电话、店铺介绍、店铺地址、招聘美食、联系人并进行修改操作，如图5-12所示。
 
-![](/images/0000stringboot/0026springboot/blog.024.png)
+![](/images/0000wxapp//blog.024.png)
 
 图5-12个人信息界面图
 
 美食信息管理：通过列表可以获取美食名称、美食分类、店铺账号、店铺名称、联系电话、图片、口味、特色、价格等信息，进行详情、修改、删除操作，如图5-13所示。
 
-![](/images/0000stringboot/0026springboot/blog.025.png)
+![](/images/0000wxapp//blog.025.png)
 
 图5-13美食信息管理界面图
 
 美食评价管理：通过列表可以获取店铺账号、店铺名称、美食名称、用户账号、用户姓名、图片、评分、评价内容、评价时间等信息，进行详情、修改、删除操作，如图5-14所示。
 
-![](/images/0000stringboot/0026springboot/blog.026.png)
+![](/images/0000wxapp//blog.026.png)
 
 图5-14美食评价管理界面图
 
@@ -384,7 +383,7 @@ Y
 ## 5.4前台首页功能模块
 网上点餐系统，在系统首页可以查看首页、美食店、美食信息、美食评价、美食资讯、个人中心、后台管理等内容，如图5-15所示。
 
-![](/images/0000stringboot/0026springboot/blog.027.png)
+![](/images/0000wxapp//blog.027.png)
 
 图5-15前台首页功能界面图
 
@@ -392,17 +391,17 @@ Y
 
 `    `用户注册，在注册页面可以查看用户账号、密码、用户姓名、性别、年龄、用户手机、配送地址等信息进行注册，如图5-16所示。
 
-![](/images/0000stringboot/0026springboot/blog.028.png)
+![](/images/0000wxapp//blog.028.png)
 
 图5-16用户注册界面图
 #########
 用户登录，在登录页面通过填写账号、密码等信息完成登录，如图5-17所示。在美食信息页面通过查看美食名称、美食分类、店铺账号、店铺名称、联系电话、图片、口味、特色、价格等信息进行点餐、点我收藏操作，如图5-18所示。
 
-![](/images/0000stringboot/0026springboot/blog.029.png)
+![](/images/0000wxapp//blog.029.png)
 
 图5-17用户登录界面图
 #########
-![](/images/0000stringboot/0026springboot/blog.030.png)
+![](/images/0000wxapp//blog.030.png)
 
 图5-18美食信息界面图
 

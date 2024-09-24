@@ -1,0 +1,24 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>赛事管理 - 标签 - chenqi blog</title>
+        <link>https://chenqi199.github.io/tags/%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86/</link>
+        <description>赛事管理 - 标签 - chenqi blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>chen_q_i@163.com (chenqi)</managingEditor>
+            <webMaster>chen_q_i@163.com (chenqi)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 21 Jun 2024 10:33:02 &#43;0800</lastBuildDate><atom:link href="https://chenqi199.github.io/tags/%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86/" rel="self" type="application/rss+xml" /><item>
+    <title>ssm713校园体育赛事管理系统的设计与实现&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm713%E6%A0%A1%E5%9B%AD%E4%BD%93%E8%82%B2%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/</link>
+    <pubDate>Fri, 21 Jun 2024 10:33:02 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm713%E6%A0%A1%E5%9B%AD%E4%BD%93%E8%82%B2%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm713校园体育赛事管理系统的设计与实现+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 课题背景 身处网络]]></description>
+</item>
+<item>
+    <title>0687springbootCSGO赛事管理系统--论文</title>
+    <link>https://chenqi199.github.io/0687springbootcsgo%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F--%E8%AE%BA%E6%96%87/</link>
+    <pubDate>Wed, 12 Jun 2024 11:23:24 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/0687springbootcsgo%E8%B5%9B%E4%BA%8B%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F--%E8%AE%BA%E6%96%87/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site 0687springbootCSGO赛事管理系统&ndash;论文 github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1]]></description>
+</item>
+</channel>
+</rss>

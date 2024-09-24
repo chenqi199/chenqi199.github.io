@@ -1,17 +1,16 @@
 # 0134springboot林业产品推荐系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0134springboot林业产品推荐系统](https://github.com/GraduationProject-springboot/0134springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1ECs?p=33)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
 ## 1.1 选题背景
@@ -69,19 +68,19 @@ Vue就是Vue.js框架，是用来构建用户在浏览器访问界面的一种�
 ## 3.3 系统流程分析
 软件开发设计的思想始终贯穿本系统，其开发流程见下图。前期需要进行功能分析，功能设计，还有对系统后台支持数据库的设计，利用编码技术对设计的系统进行实现，然后检测和完善。
 
-![](/images/0100stringboot/0134springboot/blog.001.png)
+![](/images/0100wxapp//blog.001.png)
 
 图3.1系统开发流程图
 
 访问者之所以可以访问林业产品推荐系统，主要是其数据库有该访问者的记录信息，这个记录是通过注册进行写入的数据。注册流程见下图。每当访问者进行林业产品推荐系统注册时，其登记的每条记录都会在系统后台进行逐个判断。这个判断规则是提前设置的。一旦该访问者的登记信息在数据库中保存，即代表该访问者成为林业产品推荐系统中的一份子。
 
-![](/images/0100stringboot/0134springboot/blog.002.png)
+![](/images/0100wxapp//blog.002.png)
 
 图3.2 注册流程图
 
 访问者操作系统，前提是需要验证身份，而登录功能的设置就是把本系统的用户引导进入后台操作区，把不是本系统的用户拒之门外。其流程见下图。
 
-![](/images/0100stringboot/0134springboot/blog.003.png)
+![](/images/0100wxapp//blog.003.png)
 
 图3.3 登录流程图
 ## 3.4系统功能分析
@@ -89,13 +88,13 @@ Vue就是Vue.js框架，是用来构建用户在浏览器访问界面的一种�
 
 林业产品推荐系统设置了管理员权限，其用例图见下图。管理员登录进入本人后台之后，管理商品和用户，管理商品评价和商品资讯，管理不同状态的订单。
 
-![](/images/0100stringboot/0134springboot/blog.004.png)
+![](/images/0100wxapp//blog.004.png)
 
 图3.4 管理员用例图
 
 林业产品推荐系统设置了用户权限，其用例图见下图。用户管理收货地址，管理不同状态的订单，收藏商品，购买商品。
 
-![](/images/0100stringboot/0134springboot/blog.005.png)
+![](/images/0100wxapp//blog.005.png)
 
 图3.5 用户用例图
 
@@ -125,13 +124,13 @@ Vue就是Vue.js框架，是用来构建用户在浏览器访问界面的一种�
 
 设计的管理员的详细功能见下图，管理员登录进入本人后台之后，管理商品和用户，管理商品评价和商品资讯，管理不同状态的订单。
 
-![](/images/0100stringboot/0134springboot/blog.006.png)
+![](/images/0100wxapp//blog.006.png)
 
 图4.1 管理员功能结构图
 
 设计的用户的详细功能见下图，用户管理收货地址，管理不同状态的订单，收藏商品，购买商品。
 
-![](/images/0100stringboot/0134springboot/blog.007.png)
+![](/images/0100wxapp//blog.007.png)
 
 图4.2 用户功能结构图
 ## 4.3数据库设计
@@ -151,31 +150,31 @@ Vue就是Vue.js框架，是用来构建用户在浏览器访问界面的一种�
 
 （1）设计的订单实体，其具备的属性见下图。
 
-![](/images/0100stringboot/0134springboot/blog.008.png)
+![](/images/0100wxapp//blog.008.png)
 
 图4.4 订单实体属性图
 
 （2）设计的商品实体，其具备的属性见下图。
 
-![](/images/0100stringboot/0134springboot/blog.009.png)
+![](/images/0100wxapp//blog.009.png)
 
 图4.5 商品实体属性图
 
 （3）设计的用户实体，其具备的属性见下图。
 
-![](/images/0100stringboot/0134springboot/blog.010.png)
+![](/images/0100wxapp//blog.010.png)
 
 图4.6 用户实体属性图
 
 （4）设计的购物车实体，其具备的属性见下图。
 
-![](/images/0100stringboot/0134springboot/blog.011.png)
+![](/images/0100wxapp//blog.011.png)
 
 图4.7 购物车实体属性图
 
 （5）设计的各实体间关系见下图。
 
-![](/images/0100stringboot/0134springboot/blog.012.png)
+![](/images/0100wxapp//blog.012.png)
 
 图4.8 实体间关系E-R图
 ### 4.3.2 数据库表结构
@@ -328,56 +327,56 @@ Vue就是Vue.js框架，是用来构建用户在浏览器访问界面的一种�
 ### 5.1.1 商品信息管理
 管理员权限中的商品信息管理，其运行效果见下图。管理员维护商品资料，能修改与删除。也能登记本页面没有的商品资料。
 
-![](/images/0100stringboot/0134springboot/blog.015.png)
+![](/images/0100wxapp//blog.015.png)
 
 图5.1 商品信息管理页面
 ### 5.1.2 用户管理
 管理员权限中的用户管理，其运行效果见下图。用户可以注册提交信息，也可以让管理员在后台添加用户，维护用户资料，包括修改与删除。
 
-![](/images/0100stringboot/0134springboot/blog.016.png)
+![](/images/0100wxapp//blog.016.png)
 
 图5.2 用户管理页面
 ### 5.1.3 商品资讯
 管理员权限中的商品资讯，其运行效果见下图。管理员具备发布商品资讯的权限，在本页面，管理员可以修改商品资讯信息，修改商品资讯的简介或标题，也能删除指定的商品资讯。
 
-![](/images/0100stringboot/0134springboot/blog.017.png)
+![](/images/0100wxapp//blog.017.png)
 
 图5.3 商品资讯页面
 ### 5.1.4 已支付订单
 管理员权限中的已支付订单，其运行效果见下图。管理员管理处于不同状态的订单，查看已支付的订单的收货地址并进行发货。
 
-![](/images/0100stringboot/0134springboot/blog.018.png)
+![](/images/0100wxapp//blog.018.png)
 
 图5.4 已支付订单页面
 ## 5.2 用户功能实现
 ### 5.2.1 商品信息
 用户权限中的商品信息，其运行效果见下图。用户在本页面可以操作的功能比较多，可以收藏，评价页面内的商品，可以直接购买，也能暂时加入购物车保存商品。
 
-![](/images/0100stringboot/0134springboot/blog.019.png)
+![](/images/0100wxapp//blog.019.png)
 
 图5.5 商品信息页面
 ### 5.2.2 购物车
 用户权限中的购物车，其运行效果见下图。购物车帮助用户暂时保存购买的商品，方便用户一次性下单购买多种商品。
 
-![](/images/0100stringboot/0134springboot/blog.020.png)
+![](/images/0100wxapp//blog.020.png)
 
 图5.6 购物车页面
 ### 5.2.3 提交订单
 用户权限中的提交订单，其运行效果见下图。下单支付前，收货地址和购买的商品需要再次核对清楚，最后支付订单。
 
-![](/images/0100stringboot/0134springboot/blog.021.png)
+![](/images/0100wxapp//blog.021.png)
 
 图5.7 提交订单页面
 ### 5.2.4 已支付订单
 用户权限中的已支付订单，其运行效果见下图。用户对订单明细进行查看，可以选择对某些误购买的商品进行退款。
 
-![](/images/0100stringboot/0134springboot/blog.022.png)
+![](/images/0100wxapp//blog.022.png)
 
 图5.8 已支付订单页面
 ### 5.2.5 我的地址
 用户权限中的我的地址，其运行效果见下图。用户管理收货地址，能修改与删除。
 
-![](/images/0100stringboot/0134springboot/blog.023.png)
+![](/images/0100wxapp//blog.023.png)
 
 图5.9 我的地址页面
 

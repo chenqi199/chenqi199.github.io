@@ -1,17 +1,16 @@
 # 0650springboot冬奥会科普平台--论文
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0650springboot冬奥会科普平台--论文](https://github.com/GraduationProject-springboot/0650springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV14HerezEwW?p=7)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
 ## 1.1 课题背景
@@ -82,7 +81,7 @@ SpringBoot可以看做是Spring的加强版本，但实质上都是Spring的相�
 ## 2.3 B/S模式
 B/S结构是目前使用最多的结构模式，它可以使得平台的开发更加的简单，好操作，而且还可以对其进行维护。使用该结构时只需要在计算机中安装数据库，和一些很常用的浏览器就可以了。浏览器就会与数据库进行信息的连接，可以实现很多的功能，B/S结构是可以直接进行使用的，而且B/S结构在使用中极大的减少了工作的维护。基于B/S的软件，所有的数据库之间都是相互独立的，因此是非常安全的。因为基于B/S结构可以清楚的看到平台正在处理的业务，并且能够及时的让管理人员做出决策，这样就可以避免企业的损失。B/S结构的基本特点是集中式的管理模式，用户使用平台生成数据后，这些数据就可以存储到平台的数据库中，方便日后能够用到，这样就可以满足人们的所有的需求。
 
-![](/images/0600stringboot/0650springboot/blog.007.png)
+![](/images/0600wxapp//blog.007.png)
 
 图2-1  B/S模式三层结构图
 ## 2.4MyEclipse环境配置
@@ -154,13 +153,13 @@ MySQLadmin -u root -p password 123
 
 （1）管理员用例图如下所示：
 
-![](/images/0600stringboot/0650springboot/blog.008.png)
+![](/images/0600wxapp//blog.008.png)
 
 图3-1管理员用例图
 
 （2）用户用例图如下所示：
 
-![](/images/0600stringboot/0650springboot/blog.009.png)
+![](/images/0600wxapp//blog.009.png)
 
 图3-2用户用例图
 ## 3.4平台设计规则与运行环境
@@ -181,19 +180,19 @@ MySQLadmin -u root -p password 123
 ### 3.5.1操作流程
 平台登录流程图，如图所示：
 
-![](/images/0600stringboot/0650springboot/blog.010.png)
+![](/images/0600wxapp//blog.010.png)
 
 图3-3登录流程图
 ### 3.5.2添加信息流程
 添加信息流程图，如图所示：
 
-![](/images/0600stringboot/0650springboot/blog.011.png)
+![](/images/0600wxapp//blog.011.png)
 
 图3-4添加信息流程图
 ### 3.5.3删除信息流程
 删除信息流程图，如图所示：
 
-![](/images/0600stringboot/0650springboot/blog.012.png)
+![](/images/0600wxapp//blog.012.png)
 
 图3-5删除信息流程图
 
@@ -203,7 +202,7 @@ MySQLadmin -u root -p password 123
 ## 4.1 平台设计主要功能
 通过市场调研及咨询研究，了解了使用者及管理者的使用需求，于是制定了管理员和用户等模块。其功能结构图如下图4-1所示：
 
-![](/images/0600stringboot/0650springboot/blog.013.png)
+![](/images/0600wxapp//blog.013.png)
 
 图4-1平台功能结构图
 ## 4.2 数据库设计
@@ -214,19 +213,19 @@ MySQLadmin -u root -p password 123
 ### 4.2.2 E-R图
 用户管理E-R图，如图4-2所示：
 
-![](/images/0600stringboot/0650springboot/blog.014.png)
+![](/images/0600wxapp//blog.014.png)
 
 ` `图4-2 用户管理E-R图
 
 冬奥会项目管理E-R图，如图4-3所示：
 
-![](/images/0600stringboot/0650springboot/blog.015.png)
+![](/images/0600wxapp//blog.015.png)
 
 图4-3冬奥会项目管理E-R图
 
 精彩视频管理E-R图如图4-4所示。
 
-![](/images/0600stringboot/0650springboot/blog.016.png)
+![](/images/0600wxapp//blog.016.png)
 
 图4-4精彩视频管E-R图
 
@@ -387,74 +386,74 @@ MySQLadmin -u root -p password 123
 ## 5.1登录注册
 登录，用户通过填写注册时输入的用户名、密码、选择角色等信息进行登录操作，如图5-1所示。
 
-![](/images/0600stringboot/0650springboot/blog.017.png)
+![](/images/0600wxapp//blog.017.png)
 
 图5-1登录界面图
 
 用户注册，在冬奥会科普平台注册页面通过填写用户名，密码，确认密码，昵称，手机等内容进行注册操作，如图5-2所示。
 
-![](/images/0600stringboot/0650springboot/blog.018.png)
+![](/images/0600wxapp//blog.018.png)
 
 图5-2用户注册界面图
 
 ## 5.2系统功能模块
 登录进入冬奥会科普平台可以查看首页，冬奥会项目，精彩视频，冬奥论坛，冬奥新闻，个人中心等功能进行详细操作，如图5-3所示。
 
-![](/images/0600stringboot/0650springboot/blog.019.png)
+![](/images/0600wxapp//blog.019.png)
 
 图5-3系统首页界面图
 
 冬奥会项目；在冬奥会项目页面中可以查看运动名称，项目类型，比赛时间，参赛人数，发布人，发布时间，点击次数等内容进行收藏操作；如图5-4所示。
 
-![](/images/0600stringboot/0650springboot/blog.020.png)
+![](/images/0600wxapp//blog.020.png)
 
 图5-4冬奥会运动界面图
 
 精彩视频；在精彩视频页面中可以查看视频名称，视频编号，比赛名称，项目类型，视频来源，发布时间等内容进行收藏操作；如图5-5所示。
 
-![](/images/0600stringboot/0650springboot/blog.021.png)
+![](/images/0600wxapp//blog.021.png)
 
 图5-5精彩视频界面图
 
 冬奥论坛；在冬奥论坛页面中可以对标题，类型等内容进行操作；如图5-6所示。
 
-![](/images/0600stringboot/0650springboot/blog.022.png)
+![](/images/0600wxapp//blog.022.png)
 
 图5-6冬奥论坛界面图
 ## 5.3管理员功能模块
 管理员登录进入冬奥会科普平台可以查看首页，个人中心，用户管理，项目类型管理，冬奥会项目管理，精彩视频管理，冬奥论坛，系统管理等功能，并进行详细操作，如图5-7所示。
 
-![](/images/0600stringboot/0650springboot/blog.023.png)
+![](/images/0600wxapp//blog.023.png)
 
 图5-7管理员功能界面图
 
 用户管理；在用户页面中可以对索引，账号，昵称，性别，手机等内容进行详情，修改和删除操作；如图5-8所示。
 
-![](/images/0600stringboot/0650springboot/blog.024.png)
+![](/images/0600wxapp//blog.024.png)
 
 图5-8 用户管理界面图
 
 项目类型管理；在项目类型页面中可以对索引，项目类型等内容进行详情，修改和删除操作；如图5-9所示。
 
-![](/images/0600stringboot/0650springboot/blog.025.png)
+![](/images/0600wxapp//blog.025.png)
 
 图5-9项目类型界面图
 
 冬奥会项目管理；在冬奥会项目页面中可以查看索引，运动名称，项目类型，图片，比赛时间，参赛人数，发布人，发布时间等信息，并进行详情，修改，查看评论和删除等操作；如图5-10所示。
 
-![](/images/0600stringboot/0650springboot/blog.026.png)
+![](/images/0600wxapp//blog.026.png)
 
 图5-10冬奥会项目界面图
 
 精彩视频管理；在精彩视频页面可以对索引，视频编号，视频名称，比赛名称，项目类型，视频，视频来源，发布时间，封面图片等内容并进行详情，修改，查看评论和删除等操作；如图5-11所示。
 
-![](/images/0600stringboot/0650springboot/blog.027.png)
+![](/images/0600wxapp//blog.027.png)
 
 图5-11精彩视频管理界面图
 
 冬奥论坛；在冬奥论坛页面中可以查看索引，帖子标题，用户名，状态等详细内容，并进行详情，修改，查看评论和删除等操作；如图5-12所示。
 
-![](/images/0600stringboot/0650springboot/blog.028.png)
+![](/images/0600wxapp//blog.028.png)
 
 图5-12冬奥论坛界面图
 

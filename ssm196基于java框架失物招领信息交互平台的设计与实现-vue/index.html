@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer" />
+        <meta name="robots" content="noodp" />
+        <title>ssm196基于Java框架失物招领信息交互平台的设计与实现&#43;vue - chenqi blog</title><meta name="Description" content="Hugo theme - chenqi"><meta property="og:url" content="https://chenqi199.github.io/ssm196%E5%9F%BA%E4%BA%8Ejava%E6%A1%86%E6%9E%B6%E5%A4%B1%E7%89%A9%E6%8B%9B%E9%A2%86%E4%BF%A1%E6%81%AF%E4%BA%A4%E4%BA%92%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/">
+  <meta property="og:site_name" content="chenqi blog">
+  <meta property="og:title" content="ssm196基于Java框架失物招领信息交互平台的设计与实现&#43;vue">
+  <meta property="og:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm196基于Java框架失物招领信息交互平台的设计与实现&#43;vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 系统">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-12-31T10:32:49+08:00">
+    <meta property="article:modified_time" content="2023-12-31T10:32:49+08:00">
+    <meta property="article:tag" content="Ssm框架">
+    <meta property="article:tag" content="失物招领">
+    <meta property="article:tag" content="交互平台">
+    <meta property="article:tag" content="框架失物">
+    <meta property="article:tag" content="信息交互">
+    <meta property="article:tag" content="招领信息">
+    <meta property="og:image" content="https://chenqi199.github.io/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chenqi199.github.io/logo.png">
+  <meta name="twitter:title" content="ssm196基于Java框架失物招领信息交互平台的设计与实现&#43;vue">
+  <meta name="twitter:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm196基于Java框架失物招领信息交互平台的设计与实现&#43;vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 系统">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chenqi199.github.io/ssm196%E5%9F%BA%E4%BA%8Ejava%E6%A1%86%E6%9E%B6%E5%A4%B1%E7%89%A9%E6%8B%9B%E9%A2%86%E4%BF%A1%E6%81%AF%E4%BA%A4%E4%BA%92%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" /><link rel="prev" href="https://chenqi199.github.io/0193springboot%E5%8C%BB%E8%8D%AF%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" /><link rel="next" href="https://chenqi199.github.io/ssm195%E5%9F%BA%E4%BA%8Ejava%E7%9A%84%E5%B0%8F%E5%9E%8B%E8%B6%85%E5%B8%82%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "ssm196基于Java框架失物招领信息交互平台的设计与实现+vue",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chenqi199.github.io\/ssm196%E5%9F%BA%E4%BA%8Ejava%E6%A1%86%E6%9E%B6%E5%A4%B1%E7%89%A9%E6%8B%9B%E9%A2%86%E4%BF%A1%E6%81%AF%E4%BA%A4%E4%BA%92%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue\/"
+        },"image": ["https:\/\/chenqi199.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "ssm框架, 失物招领, 交互平台, 框架失物, 信息交互, 招领信息","wordcount":  2579 ,
+        "url": "https:\/\/chenqi199.github.io\/ssm196%E5%9F%BA%E4%BA%8Ejava%E6%A1%86%E6%9E%B6%E5%A4%B1%E7%89%A9%E6%8B%9B%E9%A2%86%E4%BF%A1%E6%81%AF%E4%BA%A4%E4%BA%92%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue\/","datePublished": "2023-12-31T10:32:49+08:00","dateModified": "2023-12-31T10:32:49+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/chenqi199.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "chenqi"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/ssm196%E5%9F%BA%E4%BA%8Ejava%E6%A1%86%E6%9E%B6%E5%A4%B1%E7%89%A9%E6%8B%9B%E9%A2%86%E4%BF%A1%E6%81%AF%E4%BA%A4%E4%BA%92%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/ssm196%E5%9F%BA%E4%BA%8Ejava%E6%A1%86%E6%9E%B6%E5%A4%B1%E7%89%A9%E6%8B%9B%E9%A2%86%E4%BF%A1%E6%81%AF%E4%BA%A4%E4%BA%92%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">ssm196基于Java框架失物招领信息交互平台的设计与实现+vue</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="chenqi199" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>chenqi</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-12-31">2023-12-31</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 2579 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 6 分钟&nbsp;<span id="/ssm196%E5%9F%BA%E4%BA%8Ejava%E6%A1%86%E6%9E%B6%E5%A4%B1%E7%89%A9%E6%8B%9B%E9%A2%86%E4%BF%A1%E6%81%AF%E4%BA%A4%E4%BA%92%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" class="leancloud_visitors" data-flag-title="ssm196基于Java框架失物招领信息交互平台的设计与实现&#43;vue">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">github 项目仓库</a> 开源仅有后端代码</a></li>
+        <li><a href="#点击播放视频-">点击播放视频 ▼</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#42-系统结构设计">4.2 系统结构设计</a></li>
+    <li><a href="#43数据库设计">4.3数据库设计</a>
+      <ul>
+        <li><a href="#431-数据库设计原则">4.3.1 数据库设计原则</a></li>
+        <li><a href="#432-数据库实体">4.3.2 数据库实体</a></li>
+        <li><a href="#433-数据库表设计">4.3.3 数据库表设计</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#51-管理员登录">5.1 管理员登录</a></li>
+    <li><a href="#52--管理员功能模块">5.2  管理员功能模块</a>
+      <ul>
+        <li><a href="#521-用户管理">5.2.1 用户管理</a></li>
+        <li><a href="#522失物招领管理">5.2.2失物招领管理</a></li>
+        <li><a href="#523-物品类型管理">5.2.3 物品类型管理</a></li>
+        <li><a href="#524失物认领管理">5.2.4失物认领管理</a></li>
+        <li><a href="#525物品挂失管理">5.2.5物品挂失管理</a></li>
+        <li><a href="#526寻物论坛">5.2.6寻物论坛</a></li>
+        <li><a href="#527网站资讯">5.2.7网站资讯</a></li>
+      </ul>
+    </li>
+    <li><a href="#53-前台首页功能模块">5.3 前台首页功能模块</a></li>
+    <li><a href="#531用户注册用户登录">5.3.1用户注册、用户登录</a></li>
+    <li><a href="#532个人中心">5.3.2个人中心</a></li>
+    <li><a href="#533失物招领">5.3.3失物招领</a></li>
+    <li><a href="#54-用户功能模块">5.4 用户功能模块</a></li>
+    <li><a href="#541失物招领管理">5.4.1失物招领管理</a></li>
+    <li><a href="#542物品挂失管理">5.4.2物品挂失管理</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="项目清单-包安装运行httpchenqi1990site-官网地址-httpchenqi1990site"><a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">项目清单 包安装运行</a> 官网地址 <a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">http://chenqi1990.site</a></h1>
+<h1 id="ssm196基于java框架失物招领信息交互平台的设计与实现vuehttpsgithubcomgraduationproject-springboot"><a href="https://github.com/GraduationProject-springboot/" target="_blank" rel="noopener noreffer ">ssm196基于Java框架失物招领信息交互平台的设计与实现+vue</a></h1>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        data-srcset="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 1.5x, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        title="picture" /></p>
+<h3 id="github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">github 项目仓库</a> 开源仅有后端代码</h3>
+<h3 id="点击播放视频-">点击播放视频 ▼</h3>
+<p><a href="https://www.bilibili.com/video/BV1T48XecE9G?p=190" target="_blank" rel="noopener noreffer "><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.sstatic.net/Vp2cE.png"
+        data-srcset="https://i.sstatic.net/Vp2cE.png, https://i.sstatic.net/Vp2cE.png 1.5x, https://i.sstatic.net/Vp2cE.png 2x"
+        data-sizes="auto"
+        alt="https://i.sstatic.net/Vp2cE.png"
+        title="Watch the video" /></a></p>
+<h1 id="系统概述">系统概述</h1>
+<p>进过系统的分析后，就开始记性系统的设计，系统设计包含总体设计和详细设计。总体设计只是一个大体的设计，经过了总体设计，我们能够划分出系统的一些东西，例如文件、文档、数据等。而且我们通过总体设计，大致可以划分出了程序的模块，以及功能。但是只是一个初步的分类，并没有真正的实现。</p>
+<p>整体设计，只是一个初步设计，而且，对于一个项目，我们可以进行多个整体设计，通过对比，包括性能的对比、成本的对比、效益的对比，来最终确定一个最优的设计方案，选择优秀的整体设计可以降低开发成本，增加公司效益，从这一点来讲，整体设计还是非常重要的。</p>
+<p>失物招领信息交互平台工作原理图如图4-1所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm196/blog.012.png"
+        data-srcset="/images/0100ssm/ssm196/blog.012.png, /images/0100ssm/ssm196/blog.012.png 1.5x, /images/0100ssm/ssm196/blog.012.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm196/blog.012.png"
+        title="/images/0100ssm/ssm196/blog.012.png" /></p>
+<p>图4-1 系统工作原理图</p>
+<h2 id="42-系统结构设计">4.2 系统结构设计</h2>
+<p>系统架构图属于系统设计阶段，系统架构图只是这个阶段一个产物，系统的总体架构决定了整个系统的模式，是系统的基础。失物招领信息交互平台的整体结构设计如图4-2所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm196/blog.013.png"
+        data-srcset="/images/0100ssm/ssm196/blog.013.png, /images/0100ssm/ssm196/blog.013.png 1.5x, /images/0100ssm/ssm196/blog.013.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm196/blog.013.png"
+        title="/images/0100ssm/ssm196/blog.013.png" /></p>
+<p>图4-2 系统结构图</p>
+<h2 id="43数据库设计">4.3数据库设计</h2>
+<p>数据库是计算机信息系统的基础。目前，电脑系统的关键与核心部分就是数据库。数据库开发的优劣对整个系统的质量和速度有着直接影响。</p>
+<h3 id="431-数据库设计原则">4.3.1 数据库设计原则</h3>
+<p>数据库的概念结构设计采用实体—联系（E-R）模型设计方法。E-R模型法的组成元素有：实体、属性、联系，E-R模型用E-R图表示，是提示用户工作环境中所涉及的事物，属性则是对实体特性的描述。在系统设计当中数据库起着决定性的因素。下面设计出这几个关键实体的实体—关系图。</p>
+<h3 id="432-数据库实体">4.3.2 数据库实体</h3>
+<p>数据模型中的实体（Entity），也称为实例，对应现实世界中可区别于其他对象的“事件”或“事物”。例如，公司中的每个员工，家里中的每个家具。</p>
+<p>本系统的E-R图如下图所示：</p>
+<p>1、用户信息实体图如图4-3所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm196/blog.014.png"
+        data-srcset="/images/0100ssm/ssm196/blog.014.png, /images/0100ssm/ssm196/blog.014.png 1.5x, /images/0100ssm/ssm196/blog.014.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm196/blog.014.png"
+        title="/images/0100ssm/ssm196/blog.014.png" /></p>
+<p>图4-3用户信息实体图</p>
+<p>2、失物招领信息实体图如图4-4所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm196/blog.015.png"
+        data-srcset="/images/0100ssm/ssm196/blog.015.png, /images/0100ssm/ssm196/blog.015.png 1.5x, /images/0100ssm/ssm196/blog.015.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm196/blog.015.png"
+        title="/images/0100ssm/ssm196/blog.015.png" /></p>
+<p><code>       </code>图4-4失物招领信息实体图</p>
+<p>3、物品挂失信息实体图如图4-5所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm196/blog.016.png"
+        data-srcset="/images/0100ssm/ssm196/blog.016.png, /images/0100ssm/ssm196/blog.016.png 1.5x, /images/0100ssm/ssm196/blog.016.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm196/blog.016.png"
+        title="/images/0100ssm/ssm196/blog.016.png" /></p>
+<p><code>     </code>图4-5物品挂失信息实体图</p>
+<h3 id="433-数据库表设计">4.3.3 数据库表设计</h3>
+<p>数据库的表信息属于设计的一部分，下面介绍数据库中的各个表的详细信息。</p>
+<p>表4-1 allusers表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">约束</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center">NOT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">username</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center"><code> </code>default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">pwd</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center"><code> </code>default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">cx</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center"><code> </code>default NULL</td>
+</tr>
+</tbody>
+</table>
+<p><code>  </code>表4-2 shiwurenling表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">约束</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center">NOT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">shiwubianhao</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">wupinmingcheng</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">wupinleixing</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">wupintupian</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">zhanghao</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">yonghu</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">shouji</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">renlingshijian</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">renlingmiaoshu</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">sfsh</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">shhf</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+</tbody>
+</table>
+<p>表4-3：shiwuzhaoling表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">约束</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center"><code> </code>int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center">NOT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">shiwubianhao</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">wupinmingcheng</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">wupinleixing</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>      </code>wupintupian</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">shiyishijian</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>     </code>shiyididian</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>     </code>wupinzhuangtai</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">xiangqing</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+</tbody>
+</table>
+<p>表4-4：wupinguashi表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">约束</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center"><code> </code>int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center">NOT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">wupinmingcheng</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">wupinleixing</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">wupintupian</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">yishishijian</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">yishididian</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">zhanghao</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">yonghu</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">shouji</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">yishixiangqing</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+</tbody>
+</table>
+<p>表4-5：yonghu表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">约束</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center"><code> </code>int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center">NOT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">zhanghao</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">mima</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">yonghu</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">xingbie</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">shouji</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">youxiang</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">touxiang</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">default NULL</td>
+</tr>
+</tbody>
+</table>
+<p>#########</p>
+<h1 id="5系统界面实现">5系统界面实现</h1>
+<h2 id="51-管理员登录">5.1 管理员登录</h2>
+<p>管理员输入个人的用户名、密码和角色登录系统，这时候系统的数据库就会在进行查找相关的信息，如果我们输入的用户名、密码和角色不正确，数据库就会提示出错误的信息提示，同时会提示管理员重新输入自己的用户名、密码、角色，直到用户名、密码输入成功后，会提登录成功的信息。网站管理员登录效果图如图5-1所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm196/blog.017.png"
+        data-srcset="/images/0100ssm/ssm196/blog.017.png, /images/0100ssm/ssm196/blog.017.png 1.5x, /images/0100ssm/ssm196/blog.017.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm196/blog.017.png"
+        title="/images/0100ssm/ssm196/blog.017.png" />  <br>
+图5-1管理员登录界面</p>
+<h2 id="52--管理员功能模块">5.2  管理员功能模块</h2>
+<h3 id="521-用户管理">5.2.1 用户管理</h3>
+<p>管理员对用户管理进行查看账号、用户、性别、手机、邮箱、头像并进行详情、删除、修改等操作。程序成效图如下图5-2所示:</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm196/blog.018.png"
+        data-srcset="/images/0100ssm/ssm196/blog.018.png, /images/0100ssm/ssm196/blog.018.png 1.5x, /images/0100ssm/ssm196/blog.018.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm196/blog.018.png"
+        title="/images/0100ssm/ssm196/blog.018.png" /></p>
+<p>图5-2用户管理界面图</p>
+<h3 id="522失物招领管理">5.2.2失物招领管理</h3>
+<p>管理员对失物招领管理进行查看失物编号、物品名称、物品类型、物品图片、拾遗时间、拾遗地点、物品状态等信息并可以进行详情、删除、修改操作。程序效果图如下图5-3所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm196/blog.019.png"
+        data-srcset="/images/0100ssm/ssm196/blog.019.png, /images/0100ssm/ssm196/blog.019.png 1.5x, /images/0100ssm/ssm196/blog.019.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm196/blog.019.png"
+        title="/images/0100ssm/ssm196/blog.019.png" /></p>
+<p>图5-3失物招领管理界面</p>
+<h3 id="523-物品类型管理">5.2.3 物品类型管理</h3>
+<p>管理员对物品类型管理进行查看物品类型等信息并可以进行详情、删除、修改操作。程序效果图如下图5-4所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm196/blog.020.png"
+        data-srcset="/images/0100ssm/ssm196/blog.020.png, /images/0100ssm/ssm196/blog.020.png 1.5x, /images/0100ssm/ssm196/blog.020.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm196/blog.020.png"
+        title="/images/0100ssm/ssm196/blog.020.png" /></p>
+<p>图5-4物品类型管理界面</p>
+<h3 id="524失物认领管理">5.2.4失物认领管理</h3>
+<p>管理员对失物认领管理进行查看失物编号、物品名称、物品类型、物品图片、账号、用户、手机、认领时间、审核回复、审核状态、审核等进行详情、删除、修改操作。程序效果图如下图5-5所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm196/blog.021.png"
+        data-srcset="/images/0100ssm/ssm196/blog.021.png, /images/0100ssm/ssm196/blog.021.png 1.5x, /images/0100ssm/ssm196/blog.021.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm196/blog.021.png"
+        title="/images/0100ssm/ssm196/blog.021.png" /></p>
+<p>图5-5失物认领管理界面</p>
+<h3 id="525物品挂失管理">5.2.5物品挂失管理</h3>
+<p>管理员对物品挂失管理进行查看物品名称、物品类型、物品图片、遗失时间、遗失地点、账号、用户、手机等信息并可以进行详情、删除、修改操作。程序效果图如下图5-6所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm196/blog.022.png"
+        data-srcset="/images/0100ssm/ssm196/blog.022.png, /images/0100ssm/ssm196/blog.022.png 1.5x, /images/0100ssm/ssm196/blog.022.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm196/blog.022.png"
+        title="/images/0100ssm/ssm196/blog.022.png" /></p>
+<p>图5-6物品挂失管理界面</p>
+<h3 id="526寻物论坛">5.2.6寻物论坛</h3>
+<p>管理员对寻物论坛进行查看帖子标题、用户名、状态等信息并可以进行详情、删除、修改操作。程序效果图如下图5-7所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm196/blog.023.png"
+        data-srcset="/images/0100ssm/ssm196/blog.023.png, /images/0100ssm/ssm196/blog.023.png 1.5x, /images/0100ssm/ssm196/blog.023.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm196/blog.023.png"
+        title="/images/0100ssm/ssm196/blog.023.png" /></p>
+<p>图5-7寻物论坛界面</p>
+<h3 id="527网站资讯">5.2.7网站资讯</h3>
+<p>管理员对网站资讯进行查看标题、图片等信息并可以进行详情、删除、修改操作。程序效果图如下图5-8所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm196/blog.024.png"
+        data-srcset="/images/0100ssm/ssm196/blog.024.png, /images/0100ssm/ssm196/blog.024.png 1.5x, /images/0100ssm/ssm196/blog.024.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm196/blog.024.png"
+        title="/images/0100ssm/ssm196/blog.024.png" /></p>
+<p>图5-8网站资讯界面</p>
+<h2 id="53-前台首页功能模块">5.3 前台首页功能模块</h2>
+<p>前台首页详情页面首页、失物招领、物品挂失、寻物论坛、网站资讯、个人中心、后台管理等功能操作。程序效果图如下图5-9所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm196/blog.025.png"
+        data-srcset="/images/0100ssm/ssm196/blog.025.png, /images/0100ssm/ssm196/blog.025.png 1.5x, /images/0100ssm/ssm196/blog.025.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm196/blog.025.png"
+        title="/images/0100ssm/ssm196/blog.025.png" /></p>
+<p>图5-9前台首页功能界面</p>
+<h2 id="531用户注册用户登录">5.3.1用户注册、用户登录</h2>
+<p>用户在线填写账号、密码、用户、手机、邮箱等信息进行注册、登录操作。程序效果图如下图5-10所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm196/blog.026.png"
+        data-srcset="/images/0100ssm/ssm196/blog.026.png, /images/0100ssm/ssm196/blog.026.png 1.5x, /images/0100ssm/ssm196/blog.026.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm196/blog.026.png"
+        title="/images/0100ssm/ssm196/blog.026.png" /></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm196/blog.027.png"
+        data-srcset="/images/0100ssm/ssm196/blog.027.png, /images/0100ssm/ssm196/blog.027.png 1.5x, /images/0100ssm/ssm196/blog.027.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm196/blog.027.png"
+        title="/images/0100ssm/ssm196/blog.027.png" /></p>
+<p>图5-10用户登录、用户注册界面</p>
+<h2 id="532个人中心">5.3.2个人中心</h2>
+<p>用户进入个人中心可以填写账号、密码、用户、性别、手机、邮箱等信息，并可以进行更新信息、退出登录操作。程序效果图如下图5-11所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm196/blog.028.png"
+        data-srcset="/images/0100ssm/ssm196/blog.028.png, /images/0100ssm/ssm196/blog.028.png 1.5x, /images/0100ssm/ssm196/blog.028.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm196/blog.028.png"
+        title="/images/0100ssm/ssm196/blog.028.png" /></p>
+<p>图5-11个人中心界面</p>
+<h2 id="533失物招领">5.3.3失物招领</h2>
+<p>用户进入失物招领可以查看失物编号、物品名称、物品类型、物品图片、拾遗时间、拾遗地点、物品状态等信息进行认领操作。程序效果图如下图5-12所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm196/blog.029.png"
+        data-srcset="/images/0100ssm/ssm196/blog.029.png, /images/0100ssm/ssm196/blog.029.png 1.5x, /images/0100ssm/ssm196/blog.029.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm196/blog.029.png"
+        title="/images/0100ssm/ssm196/blog.029.png" /></p>
+<p>图5-12失物招领界面</p>
+<h2 id="54-用户功能模块">5.4 用户功能模块</h2>
+<h2 id="541失物招领管理">5.4.1失物招领管理</h2>
+<p>用户进入失物招领管理可以查看失物编号、物品名称、物品类型、物品图片、拾遗时间、拾遗地点、物品状态等信息进行详情。程序效果图如下图5-13所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm196/blog.030.png"
+        data-srcset="/images/0100ssm/ssm196/blog.030.png, /images/0100ssm/ssm196/blog.030.png 1.5x, /images/0100ssm/ssm196/blog.030.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm196/blog.030.png"
+        title="/images/0100ssm/ssm196/blog.030.png" /></p>
+<p>图5-13失物招领管理界面</p>
+<h2 id="542物品挂失管理">5.4.2物品挂失管理</h2>
+<p>用户进入物品挂失管理可以查看物品名称、物品类型、物品图片、遗失时间、遗失地点、账号、用户、手机并可以进行详情、删除等操作。程序效果图如下图5-14所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm196/blog.031.png"
+        data-srcset="/images/0100ssm/ssm196/blog.031.png, /images/0100ssm/ssm196/blog.031.png 1.5x, /images/0100ssm/ssm196/blog.031.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm196/blog.031.png"
+        title="/images/0100ssm/ssm196/blog.031.png" /></p>
+<p>图5-14物品挂失管理界面</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2023-12-31</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/ssm196%E5%9F%BA%E4%BA%8Ejava%E6%A1%86%E6%9E%B6%E5%A4%B1%E7%89%A9%E6%8B%9B%E9%A2%86%E4%BF%A1%E6%81%AF%E4%BA%A4%E4%BA%92%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://chenqi199.github.io/ssm196%E5%9F%BA%E4%BA%8Ejava%E6%A1%86%E6%9E%B6%E5%A4%B1%E7%89%A9%E6%8B%9B%E9%A2%86%E4%BF%A1%E6%81%AF%E4%BA%A4%E4%BA%92%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" data-title="ssm196基于Java框架失物招领信息交互平台的设计与实现&#43;vue" data-hashtags="ssm框架,失物招领,交互平台,框架失物,信息交互,招领信息"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://chenqi199.github.io/ssm196%E5%9F%BA%E4%BA%8Ejava%E6%A1%86%E6%9E%B6%E5%A4%B1%E7%89%A9%E6%8B%9B%E9%A2%86%E4%BF%A1%E6%81%AF%E4%BA%A4%E4%BA%92%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" data-hashtag="ssm框架"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://chenqi199.github.io/ssm196%E5%9F%BA%E4%BA%8Ejava%E6%A1%86%E6%9E%B6%E5%A4%B1%E7%89%A9%E6%8B%9B%E9%A2%86%E4%BF%A1%E6%81%AF%E4%BA%A4%E4%BA%92%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" data-title="ssm196基于Java框架失物招领信息交互平台的设计与实现&#43;vue"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://chenqi199.github.io/ssm196%E5%9F%BA%E4%BA%8Ejava%E6%A1%86%E6%9E%B6%E5%A4%B1%E7%89%A9%E6%8B%9B%E9%A2%86%E4%BF%A1%E6%81%AF%E4%BA%A4%E4%BA%92%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" data-title="ssm196基于Java框架失物招领信息交互平台的设计与实现&#43;vue"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://chenqi199.github.io/ssm196%E5%9F%BA%E4%BA%8Ejava%E6%A1%86%E6%9E%B6%E5%A4%B1%E7%89%A9%E6%8B%9B%E9%A2%86%E4%BF%A1%E6%81%AF%E4%BA%A4%E4%BA%92%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" data-title="ssm196基于Java框架失物招领信息交互平台的设计与实现&#43;vue" data-ralateuid="https://gitee.com/chen_q_i"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ssm%E6%A1%86%E6%9E%B6/">Ssm框架</a>,&nbsp;<a href="/tags/%E5%A4%B1%E7%89%A9%E6%8B%9B%E9%A2%86/">失物招领</a>,&nbsp;<a href="/tags/%E4%BA%A4%E4%BA%92%E5%B9%B3%E5%8F%B0/">交互平台</a>,&nbsp;<a href="/tags/%E6%A1%86%E6%9E%B6%E5%A4%B1%E7%89%A9/">框架失物</a>,&nbsp;<a href="/tags/%E4%BF%A1%E6%81%AF%E4%BA%A4%E4%BA%92/">信息交互</a>,&nbsp;<a href="/tags/%E6%8B%9B%E9%A2%86%E4%BF%A1%E6%81%AF/">招领信息</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/0193springboot%E5%8C%BB%E8%8D%AF%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" class="prev" rel="prev" title="0193springboot医药管理系统"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>0193springboot医药管理系统</a>
+            <a href="/ssm195%E5%9F%BA%E4%BA%8Ejava%E7%9A%84%E5%B0%8F%E5%9E%8B%E8%B6%85%E5%B8%82%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" class="next" rel="next" title="ssm195基于java的小型超市管理系统&#43;vue">ssm195基于java的小型超市管理系统+vue<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.128.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="chenqi199" target="_blank">chenqi</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

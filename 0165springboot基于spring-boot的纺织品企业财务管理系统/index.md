@@ -1,17 +1,16 @@
 # 0165springboot基于spring boot的纺织品企业财务管理系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0165springboot基于spring boot的纺织品企业财务管理系统](https://github.com/GraduationProject-springboot/0165springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1ECs?p=63)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第一章 绪论
 ## 1.1 选题背景
@@ -63,25 +62,25 @@ B/S架构的说法是区别于C/S架构，如果单纯的说B/S架构，仅仅�
 ## 3.2系统流程分析
 从系统的角色上分析，每个用户角色都代表了不同的账号身份，而不同的身份则代表着功能的异同，所以首先要区分用户的角色身份问题。设置用户登录需要输入账号，密码，系统会判断输入的信息，输入的数据正确才能进行下一步操作，如果不正确的账号密码，则拒绝用户登录，也代表着用户没有继续访问的权限，系统是无法继续提供服务的。
 
-![](/images/0100stringboot/0165springboot/blog.001.png)
+![](/images/0100wxapp//blog.001.png)
 
 图3-1 操作流程图
 
 任何一个系统都有一个操作流程，本设计里面，对于任何数据的存储都有一定的合法要求，只有符合设定要求的数据才可以进行存储。具体步骤参考下图。
 
-![](/images/0100stringboot/0165springboot/blog.002.png)
+![](/images/0100wxapp//blog.002.png)
 
 图3-2 添加信息流程图
 
 数据的存储并不是一成不变的，当需要对已经存在的数据进行改变的时候，同样也遵循着操作流程，想更改数据首先要确定更改之前的数据是什么，然后输入新的数据是否合法，都要符合流程，只有合法数据才可以被更新到数据库里存储。具体步骤参考下图。
 
-![](/images/0100stringboot/0165springboot/blog.003.png)
+![](/images/0100wxapp//blog.003.png)
 
 图3-3 修改信息流程图
 
 删除操作，在数据存储方面是一件比较慎重的事件，很有可能会产生失误操作，所以一般删除操作的时候都要提示是否删除，确定删除才会更新数据库内容，实现删除目的。具体步骤参考下图。
 
-![](/images/0100stringboot/0165springboot/blog.004.png)
+![](/images/0100wxapp//blog.004.png)
 
 图3-4 删除信息流程图
 ## 3.3系统性能分析
@@ -97,19 +96,19 @@ B/S架构的说法是区别于C/S架构，如果单纯的说B/S架构，仅仅�
 
 管理员用例图的绘制结果见图3-5。管理员登录进入本系统操作的功能包括增删改查财务人员，收费信息，薪资信息，支出信息，报销信息，管理留言，管理员工等。
 
-![](/images/0100stringboot/0165springboot/blog.005.png)
+![](/images/0100wxapp//blog.005.png)
 
 图3-5 管理员用例图
 
 财务人员用例图的绘制结果见图3-6。财务人员登录进入本系统操作的功能包括对收费信息，薪资信息，支出信息进行管理，审核报销信息，查询公告。
 
-![](/images/0100stringboot/0165springboot/blog.006.png)
+![](/images/0100wxapp//blog.006.png)
 
 图3-6 财务人员用例图
 
 员工用例图的绘制结果见图3-7。员工登录进入本系统操作的功能包括查询公告，查询薪资，新增报销信息和留言。
 
-![](/images/0100stringboot/0165springboot/blog.007.png)
+![](/images/0100wxapp//blog.007.png)
 
 图3-7 员工用例图
 # 第四章 系统设计
@@ -127,24 +126,24 @@ B/S架构的说法是区别于C/S架构，如果单纯的说B/S架构，仅仅�
 
 系统总体功能结构图见图4-1。系统的角色有管理员，财务人员，员工。
 
-![](/images/0100stringboot/0165springboot/blog.008.png)图4-1 系统总体功能结构图
+![](/images/0100wxapp//blog.008.png)图4-1 系统总体功能结构图
 ## 4.3 功能模块设计
 ### 4.3.1 管理员功能模块设计
 管理员功能结构图的绘制结果见图4-2。管理员登录进入本系统操作的功能包括增删改查财务人员，收费信息，薪资信息，支出信息，报销信息，管理留言，管理员工等。
 
-![](/images/0100stringboot/0165springboot/blog.009.png)
+![](/images/0100wxapp//blog.009.png)
 
 图4-2 管理员功能结构图
 ### 4.3.2 财务人员功能模块设计
 财务人员功能结构图的绘制结果见图4-3。财务人员登录进入本系统操作的功能包括对收费信息，薪资信息，支出信息进行管理，审核报销信息，查询公告。
 
-![](/images/0100stringboot/0165springboot/blog.010.png)
+![](/images/0100wxapp//blog.010.png)
 
 图4-3 财务人员功能结构图
 ### 4.3.3 员工功能模块设计
 员工功能结构图的绘制结果见图4-4。员工登录进入本系统操作的功能包括查询公告，查询薪资，新增报销信息和留言。
 
-![](/images/0100stringboot/0165springboot/blog.011.png)
+![](/images/0100wxapp//blog.011.png)
 
 图4-4 员工功能结构图
 ## 4.4 数据库设计
@@ -154,31 +153,31 @@ B/S架构的说法是区别于C/S架构，如果单纯的说B/S架构，仅仅�
 
 （1）使用Visio这样的常用的实体属性图绘制工具来绘制报销信息实体属性图，绘制结果见图4-3。
 
-![](/images/0100stringboot/0165springboot/blog.012.png)
+![](/images/0100wxapp//blog.012.png)
 
 图4-3 报销信息实体属性图
 
 （2）使用Visio这样的常用的实体属性图绘制工具来绘制财务人员实体属性图，绘制结果见图4-4。
 
-![](/images/0100stringboot/0165springboot/blog.013.png)
+![](/images/0100wxapp//blog.013.png)
 
 图4-4 财务人员实体属性图
 
 （3）使用Visio这样的常用的实体属性图绘制工具来绘制薪资实体属性图，绘制结果见图4-5。
 
-![](/images/0100stringboot/0165springboot/blog.014.png)
+![](/images/0100wxapp//blog.014.png)
 
 图4-5 薪资实体属性图
 
 （4）使用Visio这样的常用的实体属性图绘制工具来绘制员工实体属性图，绘制结果见图4-6。
 
-![](/images/0100stringboot/0165springboot/blog.015.png)
+![](/images/0100wxapp//blog.015.png)
 
 图4-6 员工实体属性图
 
 （5）绘制的上述实体间存在的联系见图4-7。
 
-![](/images/0100stringboot/0165springboot/blog.016.png)
+![](/images/0100wxapp//blog.016.png)
 
 图4-7 实体间关系E-R图
 ### 4.4.2 数据库物理设计
@@ -330,57 +329,57 @@ B/S架构的说法是区别于C/S架构，如果单纯的说B/S架构，仅仅�
 ### 5.1.1 财务人员管理
 管理员进入如图5-1所示的财务人员管理界面之后，管理员点击信息显示栏中最右侧的修改，删除按钮可依次完成含有财务人员手机号，性别，电子邮箱等数据的财务人员信息的修改，删除。
 
-![](/images/0100stringboot/0165springboot/blog.018.png)
+![](/images/0100wxapp//blog.018.png)
 
 图5-1 财务人员管理界面
 ### 5.1.2 留言管理
 管理员进入如图5-2所示的留言管理界面之后，管理员点击信息显示栏中最右侧的修改，删除按钮可依次完成含有员工手机号，员工姓名，留言内容，回复内容等数据的留言信息的修改，删除。
 
-![](/images/0100stringboot/0165springboot/blog.019.png)
+![](/images/0100wxapp//blog.019.png)
 
 图5-2 留言管理界面
 ### 5.1.3 薪资管理
 管理员进入如图5-3所示的薪资管理界面之后，管理员点击信息显示栏中最右侧的修改，删除按钮可依次完成含有薪资，月份，电子邮箱，员工头像等数据的薪资信息的修改，删除。
 
-![](/images/0100stringboot/0165springboot/blog.020.png)
+![](/images/0100wxapp//blog.020.png)
 
 图5-3 薪资管理界面
 ## 5.2 财务人员功能实现
 ### 5.2.1 报销信息管理
 财务人员进入如图5-4所示的报销信息管理界面之后，财务人员点击信息显示栏中最右侧的详情，审核按钮可依次完成含有报销金额，报销名目，电子邮箱等数据的报销信息的详情查看，审核操作。
 
-![](/images/0100stringboot/0165springboot/blog.021.png)
+![](/images/0100wxapp//blog.021.png)
 
 图5-4 报销信息管理界面
 ### 5.2.2 收费信息管理
 财务人员进入如图5-5所示的收费信息管理界面之后，财务人员点击信息显示栏中最右侧的修改，删除按钮可依次完成含有实收金额，收费类型，收费名目等数据的收费信息的修改，删除。财务人员点击新增按钮即可新增收费信息。
 
-![](/images/0100stringboot/0165springboot/blog.022.png)
+![](/images/0100wxapp//blog.022.png)
 
 图5-5 收费信息管理界面
 ### 5.2.3 支出信息管理
 财务人员进入如图5-6所示的支出信息管理界面之后，财务人员点击信息显示栏中最右侧的修改，删除按钮可依次完成含有支出金额，支出类型，支出名目等数据的支出信息的修改，删除。财务人员点击新增按钮即可新增支出信息。
 
-![](/images/0100stringboot/0165springboot/blog.023.png)
+![](/images/0100wxapp//blog.023.png)
 
 图5-6 支出信息管理界面
 ## 5.3 员工功能实现
 ### 5.3.1 报销信息管理
 员工进入如图5-7所示的报销信息管理界面之后，员工点击信息显示栏右侧的详情，删除按钮可依次完成报销数据的详情查看，删除，员工点击新增按钮即可新增报销信息，查询报销信息的查询条件有报销名目，员工姓名。
 
-![](/images/0100stringboot/0165springboot/blog.024.png)
+![](/images/0100wxapp//blog.024.png)
 
 图5-7 报销信息管理界面
 ### 5.3.2 留言管理
 员工进入如图5-8所示的留言管理界面之后，员工点击信息显示栏右侧的详情按钮可完成留言数据的详情查看，员工点击新增按钮即可新增留言信息，查询留言信息的查询条件有留言标题，员工姓名。
 
-![](/images/0100stringboot/0165springboot/blog.025.png)
+![](/images/0100wxapp//blog.025.png)
 
 图5-8 留言管理界面
 ### 5.3.3 薪资查询
 员工进入如图5-9所示的薪资查询界面之后，员工点击信息显示栏右侧的详情按钮可完成薪资数据的详情查看，查询薪资信息的查询条件有月份，员工姓名。
 
-![](/images/0100stringboot/0165springboot/blog.026.png)
+![](/images/0100wxapp//blog.026.png)
 
 图5-9 薪资查询界面
 

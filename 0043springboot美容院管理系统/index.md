@@ -1,17 +1,16 @@
 # 0043springboot美容院管理系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0043springboot美容院管理系统](https://github.com/GraduationProject-springboot/0043springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV16ia6epENY?p=44)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第一章 绪论
 ## 1.1 选题背景
@@ -59,25 +58,25 @@ MYSQL数据库起源于瑞典，但是经营不善被数据库行业老大甲骨
 ## 3.2系统流程分析
 要访问美容院管理系统，需要符合要求的身份，证明访问者身份的信息就是在登录界面需要填写的信息，其中有用户名，有密码。在登录界面，系统后台也有专门编写的安全验证机制，只有信息匹配的访问者才有资格进入系统。具体流程见下图。如果访问者提供的信息在数据库中没有记录，就表明该访问者没有权限，也就无法享受系统提供的服务。
 
-![](/images/0000stringboot/0043springboot/blog.001.png)
+![](/images/0000wxapp//blog.001.png)
 
 图3-1 操作流程图
 
 在美容院管理系统里面，任何填充的数据都要经过合法性验证，具体流程见下图。只有符合条件的数据才可以保存。
 
-![](/images/0000stringboot/0043springboot/blog.002.png)
+![](/images/0000wxapp//blog.002.png)
 
 图3-2 添加信息流程图
 
 经过时间的改变，系统里面的很多数据也需要更新，更新时，同样需要检查更新的数据是否合法，具体流程见下图。只有判断符合要求的数据最终才可以保存。
 
-![](/images/0000stringboot/0043springboot/blog.003.png)
+![](/images/0000wxapp//blog.003.png)
 
 图3-3 修改信息流程图
 
 为了避免操作者大意误删数据，任何需要删除的数据，都需要反复确认，具体流程见下图。删除的数据将不会在页面中显示。
 
-![](/images/0000stringboot/0043springboot/blog.004.png)
+![](/images/0000wxapp//blog.004.png)
 
 图3-4 删除信息流程图
 ## 3.3系统性能分析
@@ -101,31 +100,31 @@ MYSQL数据库起源于瑞典，但是经营不善被数据库行业老大甲骨
 
 为了直观显示系统的功能，运用用例图这样的工具显示分析的结果。分析的管理员功能如下。管理员管理美容用品，美容项目，美容部位，管理技师预约，管理订单，统计美容用品销量。
 
-![](/images/0000stringboot/0043springboot/blog.005.png)
+![](/images/0000wxapp//blog.005.png)
 
 图3-5 管理员用例图
 
 为了直观显示系统的功能，运用用例图这样的工具显示分析的结果。分析的技师功能如下。技师统计美容用品库存，管理美容项目，审核会员预约信息。
 
-![](/images/0000stringboot/0043springboot/blog.006.png)
+![](/images/0000wxapp//blog.006.png)
 
 图3-6 技师用例图
 
 为了直观显示系统的功能，运用用例图这样的工具显示分析的结果。分析的前台功能如下。前台负责普通用户与会员的管理，审核会员预约信息。
 
-![](/images/0000stringboot/0043springboot/blog.007.png)
+![](/images/0000wxapp//blog.007.png)
 
 图3-7 前台用例图
 
 为了直观显示系统的功能，运用用例图这样的工具显示分析的结果。分析的普通用户功能如下。普通用户购买美容用品，管理购买订单，管理收货地址。
 
-![](/images/0000stringboot/0043springboot/blog.008.png)
+![](/images/0000wxapp//blog.008.png)
 
 图3-8 普通用户用例图
 
 为了直观显示系统的功能，运用用例图这样的工具显示分析的结果。分析的会员功能如下。会员购买美容用品，预约美容项目，管理预约信息以及购买订单。
 
-![](/images/0000stringboot/0043springboot/blog.009.png)
+![](/images/0000wxapp//blog.009.png)
 
 图3-9 会员用例图
 
@@ -146,31 +145,31 @@ MYSQL数据库起源于瑞典，但是经营不善被数据库行业老大甲骨
 ## 4.2功能结构设计
 这部分内容使用结构图这样的工具，显示设计结果，设计的管理员功能见下图。管理员管理美容用品，美容项目，美容部位，管理技师预约，管理订单，统计美容用品销量。
 
-![](/images/0000stringboot/0043springboot/blog.010.png)
+![](/images/0000wxapp//blog.010.png)
 
 图4-1 管理员功能结构图
 
 这部分内容使用结构图这样的工具，显示设计结果，设计的技师功能见下图。技师统计美容用品库存，管理美容项目，审核会员预约信息。
 
-![](/images/0000stringboot/0043springboot/blog.011.png)
+![](/images/0000wxapp//blog.011.png)
 
 图4-2 技师功能结构图
 
 这部分内容使用结构图这样的工具，显示设计结果，设计的前台功能见下图。前台负责普通用户与会员的管理，审核会员预约信息。
 
-![](/images/0000stringboot/0043springboot/blog.012.png)
+![](/images/0000wxapp//blog.012.png)
 
 图4-3 前台功能结构图
 
 这部分内容使用结构图这样的工具，显示设计结果，设计的普通用户功能见下图。普通用户购买美容用品，管理购买订单，管理收货地址。
 
-![](/images/0000stringboot/0043springboot/blog.013.png)
+![](/images/0000wxapp//blog.013.png)
 
 图4-4 普通用户功能结构图
 
 这部分内容使用结构图这样的工具，显示设计结果，设计的会员功能见下图。会员购买美容用品，预约美容项目，管理预约信息以及购买订单。
 
-![](/images/0000stringboot/0043springboot/blog.014.png)
+![](/images/0000wxapp//blog.014.png)
 
 图4-5 会员功能结构图
 ## 4.3数据库设计
@@ -182,31 +181,31 @@ MYSQL数据库起源于瑞典，但是经营不善被数据库行业老大甲骨
 
 （1）设计的美容项目实体，还有其属性见下图。
 
-![](/images/0000stringboot/0043springboot/blog.015.png)
+![](/images/0000wxapp//blog.015.png)
 
 图4-3 美容项目实体属性图
 
 （2）设计的会员实体，还有其属性见下图。
 
-![](/images/0000stringboot/0043springboot/blog.016.png)
+![](/images/0000wxapp//blog.016.png)
 
 图4-4 会员实体属性图
 
 （3）设计的美容用品实体，还有其属性见下图。
 
-![](/images/0000stringboot/0043springboot/blog.017.png)
+![](/images/0000wxapp//blog.017.png)
 
 图4-5 美容用品实体属性图
 
 4. 设计的管理员实体，还有其属性见下图。
 
-![](/images/0000stringboot/0043springboot/blog.018.png)
+![](/images/0000wxapp//blog.018.png)
 
 图4-6 管理员实体属性图
 
 （5）设计上述实体间关系见下图。
 
-![](/images/0000stringboot/0043springboot/blog.019.png)
+![](/images/0000wxapp//blog.019.png)
 
 图4-7 实体间关系E-R图
 ### 4.3.2 数据库表结构
@@ -402,77 +401,77 @@ MYSQL数据库起源于瑞典，但是经营不善被数据库行业老大甲骨
 ### 5.1.1 美容部位管理
 实现管理员权限的美容部位管理功能，其运行效果见下图。管理员修改美容部位信息，删除美容部位信息，新增美容部位信息。
 
-![](/images/0000stringboot/0043springboot/blog.020.png)
+![](/images/0000wxapp//blog.020.png)
 
 图5-1 美容部位管理页面
 ### 5.1.2 销量信息统计
 实现管理员权限的销量信息统计功能，其运行效果见下图。管理员通过销量统计报表查看各种美容用品的销量信息。
 
-![](/images/0000stringboot/0043springboot/blog.021.png)
+![](/images/0000wxapp//blog.021.png)
 
 图5-2 销量信息统计页面
 ### 5.1.3 已支付订单
 实现管理员权限的已支付订单功能，其运行效果见下图。管理员查看已支付订单信息，查看下单人提供的收货地址，然后进行订单发货。
 
-![](/images/0000stringboot/0043springboot/blog.022.png)
+![](/images/0000wxapp//blog.022.png)
 
 图5-3 已支付订单页面
 ## 5.2技师功能实现
 ### 5.2.1 统计美容用品库存
 实现技师权限的统计美容用品库存功能，其运行效果见下图。技师可以通过统计报表查看各种美容用品对应的现有库存量。
 
-![](/images/0000stringboot/0043springboot/blog.023.png)
+![](/images/0000wxapp//blog.023.png)
 
 图5-4 统计美容用品库存页面
 ### 5.2.2 预约信息管理
 实现技师权限的预约信息管理功能，其运行效果见下图。会员预约技师提供的美容项目，技师则需要进行查看和审核。
 
-![](/images/0000stringboot/0043springboot/blog.024.png)
+![](/images/0000wxapp//blog.024.png)
 
 图5-5 预约信息管理页面
 ## 5.3 前台功能实现
 ### 5.3.1 普通用户管理
 实现前台权限的普通用户管理功能，其运行效果见下图。普通用户的基本信息也能让前台进行增删改查管理。
 
-![](/images/0000stringboot/0043springboot/blog.025.png)
+![](/images/0000wxapp//blog.025.png)
 
 图5-6 普通用户管理页面
 ### 5.3.2 会员管理
 实现前台权限的会员管理功能，其运行效果见下图。会员的基本信息可以让前台进行修改，也能让前台进行查询或删除。
 
-![](/images/0000stringboot/0043springboot/blog.026.png)
+![](/images/0000wxapp//blog.026.png)
 
 图5-7 会员管理页面
 ## 5.4 普通用户功能实现
 ### 5.4.1 美容用品
 实现普通用户权限的美容用品功能，其运行效果见下图。普通用户查看美容用品，在本页面购买美容用品，或把美容用品添加购物车。
 
-![](/images/0000stringboot/0043springboot/blog.027.png)
+![](/images/0000wxapp//blog.027.png)
 
 图5-8 美容用品页面
 ### 5.4.2 购物车
 实现普通用户权限的购物车功能，其运行效果见下图。普通用户在本模块购买美容用品，需要提供收货地址，然后选择支付方式支付订单。
 
-![](/images/0000stringboot/0043springboot/blog.028.png)
+![](/images/0000wxapp//blog.028.png)
 
 图5-9 购物车页面
 ### 5.4.3 我的订单
 实现普通用户权限的我的订单功能，其运行效果见下图。普通用户在本模块查看不同状态的订单，已支付订单在未发货前也能退款。
 
-![](/images/0000stringboot/0043springboot/blog.029.png)
+![](/images/0000wxapp//blog.029.png)
 
 图5-10 我的订单页面
 ## 5.5 会员功能实现
 ### 5.5.1 美容项目
 实现会员权限的美容项目功能，其运行效果见下图。会员查看美容项目介绍，预约美容项目。
 
-![](/images/0000stringboot/0043springboot/blog.030.png)
+![](/images/0000wxapp//blog.030.png)
 
 图5-11 美容项目页面
 ### 5.5.2 预约信息管理
 实现会员权限的预约信息管理功能，其运行效果见下图。会员提交了美容项目预约信息之后，需要到自己的后台查看预约项目审核情况。
 
-![](/images/0000stringboot/0043springboot/blog.031.png)
+![](/images/0000wxapp//blog.031.png)
 
 图5-12 预约信息管理页面
 

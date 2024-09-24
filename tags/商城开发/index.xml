@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>商城开发 - 标签 - chenqi blog</title>
+        <link>https://chenqi199.github.io/tags/%E5%95%86%E5%9F%8E%E5%BC%80%E5%8F%91/</link>
+        <description>商城开发 - 标签 - chenqi blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>chen_q_i@163.com (chenqi)</managingEditor>
+            <webMaster>chen_q_i@163.com (chenqi)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 09 Feb 2024 10:32:52 &#43;0800</lastBuildDate><atom:link href="https://chenqi199.github.io/tags/%E5%95%86%E5%9F%8E%E5%BC%80%E5%8F%91/" rel="self" type="application/rss+xml" /><item>
+    <title>ssm315基于java的水果网上商城的开发与设计&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm315%E5%9F%BA%E4%BA%8Ejava%E7%9A%84%E6%B0%B4%E6%9E%9C%E7%BD%91%E4%B8%8A%E5%95%86%E5%9F%8E%E7%9A%84%E5%BC%80%E5%8F%91%E4%B8%8E%E8%AE%BE%E8%AE%A1-vue/</link>
+    <pubDate>Fri, 09 Feb 2024 10:32:52 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm315%E5%9F%BA%E4%BA%8Ejava%E7%9A%84%E6%B0%B4%E6%9E%9C%E7%BD%91%E4%B8%8A%E5%95%86%E5%9F%8E%E7%9A%84%E5%BC%80%E5%8F%91%E4%B8%8E%E8%AE%BE%E8%AE%A1-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm315基于java的水果网上商城的开发与设计+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1.1 研究背景]]></description>
+</item>
+</channel>
+</rss>

@@ -1,17 +1,16 @@
 # 0102springboot抗疫物资管理系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0102springboot抗疫物资管理系统](https://github.com/GraduationProject-springboot/0102springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1ECs?p=3)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 概述
 ## 1.1 研究背景
@@ -118,13 +117,13 @@ Spring Boot特点：
 
 （1）管理员用例需求如图3-1所示：
 
-![](/images/0100stringboot/0102springboot/blog.001.png)
+![](/images/0100wxapp//blog.001.png)
 
 图3-1管理员用例需求图
 
 2. 用户用例需求如图3-2所示：
 
-![](/images/0100stringboot/0102springboot/blog.002.png)
+![](/images/0100wxapp//blog.002.png)
 
 图3-2用户用例图
 
@@ -133,13 +132,13 @@ Spring Boot特点：
 ## 3.4 业务流程分析
 在系统流程分析当中调查分析它是比较重要的环节，因为在这个系统当中它都涉及到每个环节的业务流程，所以从抗疫物资管理系统的整体设计上要保证各个信息的正确输入和输出以及对数据储存的完整，并结合实际的操作步骤来绘制出具体的流程图。具体流程图如下图3-3所示：
 
-![](/images/0100stringboot/0102springboot/blog.003.png)
+![](/images/0100wxapp//blog.003.png)
 
 图3-3系统开发流程图
 ### 3.4.1登录流程
 为了保证系统的安全，用户要想进入抗疫物资管理系统必须进行登录操作，用户登录流程图如图3-4所示
 
-![](/images/0100stringboot/0102springboot/blog.004.png)
+![](/images/0100wxapp//blog.004.png)
 
 图3-4 登录流程图
 
@@ -149,7 +148,7 @@ Spring Boot特点：
 ## 4.1 系统的功能结构图
 通过系统需求分析，本抗疫物资管理系统的功能结构设计如图4-1所示：
 
-![](/images/0100stringboot/0102springboot/blog.005.png)
+![](/images/0100wxapp//blog.005.png)
 
 图4-1 系统功能图
 ## 4.2 系统数据库设计
@@ -158,19 +157,19 @@ Spring Boot特点：
 
 （1）物质入库信息实体E-R图如图4-2所示：
 
-![](/images/0100stringboot/0102springboot/blog.006.png)
+![](/images/0100wxapp//blog.006.png)
 
 图4-2 物质入库信息实体图
 
 （2）物质出库信息实体E-R图如图4-3所示：
 
-![](/images/0100stringboot/0102springboot/blog.007.png)
+![](/images/0100wxapp//blog.007.png)
 
 图4-3 物质出库信息实体图
 
 （3）用户信息实体E- R图，如图4-4所示：
 
-![](/images/0100stringboot/0102springboot/blog.008.png)
+![](/images/0100wxapp//blog.008.png)
 
 图4-4用户信息实体图
 ### 4.2.2  数据表字段设计
@@ -240,50 +239,50 @@ Spring Boot特点：
 ## 5.1管理员登录
 管理员登录，通过填写用户名、密码、角色等信息，输入完成后选择登录即可进入抗疫物资管理系统，如图5-1所示。
 
-![](/images/0100stringboot/0102springboot/blog.009.png)
+![](/images/0100wxapp//blog.009.png)
 
 5.2管理员功能实现             图5-1管理员登录界面图
 ### 5.2.1 用户管理
 管理员对用户管理获取用户名、用户姓名、头像、性别、年龄、手机号码、邮箱等信息并进行详情、删除、修改。用户管理效果图如图5-2所示。
 
-![](/images/0100stringboot/0102springboot/blog.010.png)
+![](/images/0100wxapp//blog.010.png)
 
 图5-2用户管理界面图
 ### 5.2.2 公告信息管理
 管理员对公告信息管理查看标题、图片、发布日期等信息进行详情、删除、修改操作。公告信息管理效果图如图5-3所示。
 
-![](/images/0100stringboot/0102springboot/blog.011.png)
+![](/images/0100wxapp//blog.011.png)
 
 图5-3公告信息管理界面图
 ### 5.2.3轮播图管理
 轮播图；该页面为轮播图管理界面。管理员可以在此页面进行首页轮播图的管理，通过新建操作可在轮播图中加入新的图片，还可以对以上传的图片进行修改操作，以及图片的删除操作。轮播图管理效果图如图5-4所示。
 
-![](/images/0100stringboot/0102springboot/blog.012.png)
+![](/images/0100wxapp//blog.012.png)
 
 图5-4轮播图管理界面图
 ### 5.2.4 物质分类管理
 管理员对物质分类管理进行查看物质分类等信息进行详情、修改、删除操作。物质分类管理效果图如图5-5所示。
 
-![](/images/0100stringboot/0102springboot/blog.013.png)
+![](/images/0100wxapp//blog.013.png)
 
 图5-5物质分类管理界面图
 ### 5.2.5 物质信息管理
 管理员对物质信息管理进行查看物质名称、图片、物质分类、规格、数量等信息进行详情、删除、修改等操作。物质信息管理效果图如图5-6所示。
 
-![](/images/0100stringboot/0102springboot/blog.014.png)
+![](/images/0100wxapp//blog.014.png)
 
 图5-6物质信息管理界面图
 ### 5.2.6 物质入库管理
 管理员对物质入库管理进行查看入库单号、物质名称、物质分类、数量、入库日期等信息进行详情、删除、修改操作。物质入库管理效果图如图5-7所示。
 
-![](/images/0100stringboot/0102springboot/blog.015.png)
+![](/images/0100wxapp//blog.015.png)
 
 图5-7物质入库管理界面图
 
 ### 5.2.7 物质出库管理
 管理员对物质出库管理进行查看出库单号、物质名称、物质分类、数量、出库日期等信息进行详情、删除、修改操作。物质出库管理效果图如图5-8所示。
 
-![](/images/0100stringboot/0102springboot/blog.016.png)
+![](/images/0100wxapp//blog.016.png)
 
 图5-8物质出库管理界面图
 
@@ -292,14 +291,14 @@ Spring Boot特点：
 
 抗疫物资管理系统，在系统可以查看首页、个人中心等内容，如图5-9所示。
 
-![](/images/0100stringboot/0102springboot/blog.017.png)
+![](/images/0100wxapp//blog.017.png)
 
 图5-9用户功能界面图
 
 ### 5.3.1个人信息
 用户对个人信息进行查看用户名、用户姓名、头像、性别、年龄、手机号码、邮箱等信息进行修改操作。个人信息效果图如图5-10所示。
 
-![](/images/0100stringboot/0102springboot/blog.018.png)
+![](/images/0100wxapp//blog.018.png)
 
 图5-10个人信息界面图
 
@@ -311,32 +310,32 @@ Spring Boot特点：
 
 5.4.1 抗疫物资管理系统，在系统首页可以查看首页、公告信息、个人中心、后台管理等内容，如图5-11所示。
 
-![](/images/0100stringboot/0102springboot/blog.019.png)
+![](/images/0100wxapp//blog.019.png)
 
 图5-11系统功能界面图
 
 `    `5.4.2用户注册，在注册页面通过填写用户名、密码、用户姓名、年龄、手机号码、邮箱等信息进行注册，如图5-12所示。
 
-![](/images/0100stringboot/0102springboot/blog.020.png)
+![](/images/0100wxapp//blog.020.png)
 
 
 图5-12用户注册界面图
 
 5.4.3用户登录，在登录页面通过填写账号、密码等信息进行登录，如图5-13所示。
 
-![](/images/0100stringboot/0102springboot/blog.021.png)
+![](/images/0100wxapp//blog.021.png)
 
 图5-13用户登录界面图
 
 5.4.4公告信息，在公告信息页面中可以查看标题、发布日期等信息，如图5-14所示。
 
-![](/images/0100stringboot/0102springboot/blog.022.png)
+![](/images/0100wxapp//blog.022.png)
 
 图5-14公告信息界面图
 
 5.4.5个人中心，在个人中心页面中可以填写用户名、密码、用户姓名、头像、性别、年龄、手机号码、邮箱等详细信息进行更新信息、退出登录，如图5-15所示。
 
-![](/images/0100stringboot/0102springboot/blog.023.png)
+![](/images/0100wxapp//blog.023.png)
 
 图5-15个人中心界面图
 

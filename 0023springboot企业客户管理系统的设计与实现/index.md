@@ -1,17 +1,16 @@
 # 0023springboot企业客户管理系统的设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0023springboot企业客户管理系统的设计与实现](https://github.com/GraduationProject-springboot/0023springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV16ia6epENY?p=24)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
 ## 1.1研究背景
@@ -65,7 +64,7 @@ JAVA相对其它语言来说，比较简单，编译起来更方便一些，安�
 ## 2.4 B/S结构
 B/S（浏览器/服务器）结构是目前主流的网络化的结构模式，它能够把系统核心功能集中在服务器上面，可以帮助系统开发人员简化操作，便于维护和使用。只需要员工在员工端安装360浏览器、谷歌浏览器、QQ浏览器等当前大众浏览器，在电脑里面安装sqlserver、mysql数据库等数据库。安装好的浏览器与服务器端的数据库进行信息数据的交互。很多专门软件能够做到的事情，采用B/S结构模式也能实现，它能够结合Web浏览器技术，ActiveX技术以及多种脚本语言等技术。帮助程序开发者节约了不少开发成本。目前B/S结构成为程序开发主流结构，它最好的地方就是没有地点限制还不用专门安装软件，笔记本或者电脑能够上网就能访问系统。系统使用B/S进行开发在后期系统维护上面就会很省事，不用什么问题都在服务器上面操作，简单的员工端处理就解决部分问题，开发出来的程序跟员工交互性上面也会增强，还可以实时刷新浏览器进行程序局部的数据信息更新。
 
-![](/images/0000stringboot/0023springboot/blog.001.png)
+![](/images/0000wxapp//blog.001.png)
 
 图2-1 B/S模式三层结构图
 
@@ -95,13 +94,13 @@ B/S（浏览器/服务器）结构是目前主流的网络化的结构模式，�
 
 （1）管理员模块：系统中的核心用户是管理员，管理员登录后，通过管理员功能来管理后台系统。主要功能有：首页、个人中心、员工管理、客户信息管理、行业类型管理、项目信息管理、项目类型管理、项目收益管理等功能。管理员用例图如图3-1所示。
 
-![](/images/0000stringboot/0023springboot/blog.002.png)
+![](/images/0000wxapp//blog.002.png)
 
 图3-1　管理员用例图
 
 （2）员工：首页、个人中心、客户信息管理、项目信息管理、项目收益管理等功能，员工如图3-2所示。
 
-![](/images/0000stringboot/0023springboot/blog.003.png)
+![](/images/0000wxapp//blog.003.png)
 
 图3-2 员工用例图
 
@@ -109,25 +108,25 @@ B/S（浏览器/服务器）结构是目前主流的网络化的结构模式，�
 ### 3.4.1登录流程
 登录模块主要满足管理员以及员工的权限登录，员工登录流程图如图3-4所示。
 
-![](/images/0000stringboot/0023springboot/blog.004.png)
+![](/images/0000wxapp//blog.004.png)
 
 图3-4 登录流程图
 ### 3.4.2注册流程
 未有账号的员工可进入注册界面进行注册操作，员工注册流程图如图3-5所示。
 
-![](/images/0000stringboot/0023springboot/blog.004.png)
+![](/images/0000wxapp//blog.004.png)
 
 图3-5 注册流程图
 ### 3.4.3添加信息流程
 员工在添加信息时，信息编号自动生成，系统会对添加的信息进行验证，验证通过则添加至数据库，添加信息成功，反之添加失败。添加信息流程如图3-6所示。
 
-![](/images/0000stringboot/0023springboot/blog.005.png)
+![](/images/0000wxapp//blog.005.png)
 
 图3-6 添加信息流程图
 ### 3.4.4删除信息流程
 员工可选择要删除的信息进行信息删除操作，在删除信息时系统提示是否确定删除信息，是则删除信息成功，系统数据库将信息进行删除。删除信息流程图如图3-7所示。
 
-![](/images/0000stringboot/0023springboot/blog.006.png)
+![](/images/0000wxapp//blog.006.png)
 
 图3-7 删除信息流程图
 
@@ -135,7 +134,7 @@ B/S（浏览器/服务器）结构是目前主流的网络化的结构模式，�
 ## 4.1系统概要设计
 本企业客户管理系统选择B/S结构(Browser/Server,浏览器/服务器结构)和基于Web服务两种模式。适合在互联网上进行操作，只要员工能连网，任何时间、任何地点都可以进行系统的操作使用。系统工作原理图如图4-1所示：
 
-![](/images/0000stringboot/0023springboot/blog.007.png)
+![](/images/0000wxapp//blog.007.png)
 
 图4-1 系统工作原理图
 ## 4.2系统结构设计
@@ -143,20 +142,20 @@ B/S（浏览器/服务器）结构是目前主流的网络化的结构模式，�
 
 本企业客户管理系统结构图如图4-2所示。
 
-![](/images/0000stringboot/0023springboot/blog.008.png)
+![](/images/0000wxapp//blog.008.png)
 
 图4-2 系统功能结构图
 ## 4.3系统顺序图设计
 ### 4.3.1登录模块顺序图
 登录模块主要满足了管理员以及员工的权限登录，登录模块顺序图如图4-3所示。
 
-![](/images/0000stringboot/0023springboot/blog.009.png)
+![](/images/0000wxapp//blog.009.png)
 
 图4-3 登录顺序图
 ### 4.3.2添加信息模块顺序图
 管理员以及员工登录后均可进行添加信息操作，添加信息模块顺序图如图4-4所示。
 
-![](/images/0000stringboot/0023springboot/blog.010.png)
+![](/images/0000wxapp//blog.010.png)
 
 图4-4 添加信息顺序图
 ## 4.4数据库设计
@@ -165,18 +164,18 @@ B/S（浏览器/服务器）结构是目前主流的网络化的结构模式，�
 本企业客户管理系统采用的是MYSQL数据库，数据存储快，因为企业客户管理系统 ，主要的就是对信息的管理，信息内容比较多，这就需要好好的设计一个好的数据库，分类要清楚，不能添加信息的时候，造成信息太过混乱，设计好的数据库首先就需要先把各个实体之间的关系表达明确，系统的E-R图如下图所示：
 
 1、员工管理实体图如图4-5所示：
-######### ![](/images/0000stringboot/0023springboot/blog.011.png)
+######### ![](/images/0000wxapp//blog.011.png)
 图4-5 员工管理实体图
 
 2、客户信息管理实体图如图4-6所示：
 
-![](/images/0000stringboot/0023springboot/blog.012.png)
+![](/images/0000wxapp//blog.012.png)
 
 图4-6 客户信息管理实体图
 
 3、项目信息管理实体图如图4-7所示：
 
-![](/images/0000stringboot/0023springboot/blog.013.png)
+![](/images/0000wxapp//blog.013.png)
 
 图4-7 项目信息管理实体图
 ### 4.4.2数据库表设计
@@ -250,7 +249,7 @@ yuangong表:
 
 管理员登录，通过填写用户名、密码、角色进行登录，如图5-1所示。
 
-![](/images/0000stringboot/0023springboot/blog.014.png)
+![](/images/0000wxapp//blog.014.png)
 
 图5-1管理员登录界面图
 
@@ -258,42 +257,42 @@ yuangong表:
 
 个人信息，在个人信息页面中可以通过填写用户名等内容进行修改、添加操作，如图5-2所示。在员工管理页面中可以填写工号、姓名、性别、照片、身份证、手机、邮箱等信息，还可以根据需要对员工管理进行详情、修改或删除等操作，如图5-3所示。
 
-![](/images/0000stringboot/0023springboot/blog.015.png)
+![](/images/0000wxapp//blog.015.png)
 
 图5-2个人信息界面图
 
-![](/images/0000stringboot/0023springboot/blog.016.png)
+![](/images/0000wxapp//blog.016.png)
 
 图5-3员工管理界面图
 
 客户信息管理，在客户信息管理页面中可以填写客户名称、行业类型、性别、年龄、照片、手机、身份证、备注、工号、姓名等信息，并可根据需要对已有客户信息管理进行详情、修改或删除等操作，如图5-4所示。
 
-![](/images/0000stringboot/0023springboot/blog.017.png)
+![](/images/0000wxapp//blog.017.png)
 
 图5-4客户信息管理界面图
 
 行业类型管理，在行业类型管理页面中可以填写行业类型等内容，并可根据需要对已有行业类型管理进行修改或删除等操作，如图5-5所示。
 
-![](/images/0000stringboot/0023springboot/blog.018.png)
+![](/images/0000wxapp//blog.018.png)
 
 图5-5行业类型管理界面图
 
 项目信息管理，在项目信息管理页面中可以填写项目名称、项目类型、客户名称、签单金额、签单数量、项目进度、签订日期、工号、签单人等内容，并且根据需要对已有项目信息管理进行详情、收益分配、修改或删除等操作，如图5-6所示。
 
-![](/images/0000stringboot/0023springboot/blog.019.png)
+![](/images/0000wxapp//blog.019.png)
 
 图5-6项目信息管理界面图
 
 项目类型管理，在项目类型管理页面中可以填写项目类型等内容，并且根据需要对已有项目类型管理进行详情、修改或删除等操作，如图5-7所示。
 
-![](/images/0000stringboot/0023springboot/blog.020.png)
+![](/images/0000wxapp//blog.020.png)
 
 图5-7项目类型管理界面图
 
 
 项目收益管理，在项目收益管理页面中可以填写项目名称、项目类型、签单金额、分配类型、分配金额、日期等内容，并且根据需要对已有项目收益管理进行详情、修改或删除等操作，如图5-8所示。
 
-![](/images/0000stringboot/0023springboot/blog.021.png)
+![](/images/0000wxapp//blog.021.png)
 
 图5-8项目收益管理界面图
 
@@ -307,25 +306,25 @@ yuangong表:
 
 员工注册，员工注册通过填写输入工号、姓名、性别、照片、身份证、手机、邮箱等信息即可进行员工注册，如图5-9所示。
 
-![](/images/0000stringboot/0023springboot/blog.022.png)
+![](/images/0000wxapp//blog.022.png)
 
 图5-9员工注册界面图
 
 个人信息，在个人信息页面中可以查看工号、姓名、性别、照片、身份证、手机、邮箱等信息内容，并且根据需要对已有个人信息进行修改等其他详细操作，如图5-10所示。
 
-![](/images/0000stringboot/0023springboot/blog.016.png)
+![](/images/0000wxapp//blog.016.png)
 
 图5-10个人信息界面图
 
 客户信息管理，在客户信息管理页面中通过填写客户名称、行业类型、性别、年龄、照片、手机、身份证、备注、工号、姓名等信息内容，并且根据需要对已有客户信息管理进行详情、修改、删除等其他详细操作，如图5-11所示。
 
-![](/images/0000stringboot/0023springboot/blog.020.png)
+![](/images/0000wxapp//blog.020.png)
 
 图5-11客户信息管理界面图
 
 项目信息管理，在项目信息管理页面中可以填写项目名称、项目类型、客户名称、签单金额、签单数量、项目进度、签订日期、工号、签单人等信息内容，并且根据需要对已有项目信息管理进行详情、修改、删除等详细操作，如图5-12所示。
 
-![](/images/0000stringboot/0023springboot/blog.023.png)
+![](/images/0000wxapp//blog.023.png)
 
 图5-12项目信息管理界面图
 

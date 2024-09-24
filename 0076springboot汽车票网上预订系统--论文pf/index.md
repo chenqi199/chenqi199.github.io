@@ -1,17 +1,16 @@
 # 0076springboot汽车票网上预订系统--论文pf
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0076springboot汽车票网上预订系统--论文pf](https://github.com/GraduationProject-springboot/0076springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV16ia6epENY?p=77)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 系统概述
 1.1 研究背景
@@ -128,11 +127,11 @@ SpringBoot可以与经典的Java开发工具一起使用或者作为命令行工
 
 4）输入数据尽早地记录成其处理所需的形式，以防止数据由一种介质转移到另一种介质时需要转录而可能发生的错误。
 ## 3.4系统流程和逻辑
-![](/images/0000stringboot/0076springboot/blog.001.png)
+![](/images/0000wxapp//blog.001.png)
 
 图3-3登录流程图
 
-![](/images/0000stringboot/0076springboot/blog.002.png)
+![](/images/0000wxapp//blog.002.png)
 
 图3-4修改密码流程图
 
@@ -140,13 +139,13 @@ SpringBoot可以与经典的Java开发工具一起使用或者作为命令行工
 ## 4.1概述
 本系统采用B/S结构(Browser/Server,浏览器/服务器结构)和基于Web服务两种模式，是一个适用于Internet环境下的模型结构。只要用户能连上Internet,便可以在任何时间、任何地点使用。系统工作原理图如图4-1所示：
 
-![](/images/0000stringboot/0076springboot/blog.003.png)
+![](/images/0000wxapp//blog.003.png)
 
 图4-1系统工作原理图
 ## 4.2系统结构
 本系统是基于B/S架构的网站系统，设计的功能结构图如下图所示：
 
-![](/images/0000stringboot/0076springboot/blog.004.png)
+![](/images/0000wxapp//blog.004.png)
 
 图4-2功能结构图
 ## 4.3.数据库设计
@@ -157,19 +156,19 @@ SpringBoot可以与经典的Java开发工具一起使用或者作为命令行工
 
 （1）公告信息的实体属性图如下：
 
-![](/images/0000stringboot/0076springboot/blog.005.png)
+![](/images/0000wxapp//blog.005.png)
 
 图4.12  公告信息实体属性图
 
 （2）留言板信息实体属性图如图4.13所示：
 
-![](/images/0000stringboot/0076springboot/blog.006.png)
+![](/images/0000wxapp//blog.006.png)
 
 图4.13  留言板信息实体属性图
 
 （3）管理员信息实体属性图如图4.14所示：
 
-![](/images/0000stringboot/0076springboot/blog.007.png)
+![](/images/0000wxapp//blog.007.png)
 
 图4.14 管理员信息实体属性图
 ### 4.3.2数据库设计表
@@ -302,38 +301,38 @@ SpringBoot可以与经典的Java开发工具一起使用或者作为命令行工
 ## 5.1 用户注册
 用户需要注册才可以登录。具体界面的展示如图5.1所示。
 
-![](/images/0000stringboot/0076springboot/blog.009.png)
+![](/images/0000wxapp//blog.009.png)
 
 图5.1 用户注册界面
 ## 5.2 汽车票
 用户登录后在后台汽车票信息可以进行预定操作。具体界面如图5.2所示。
 
-![](/images/0000stringboot/0076springboot/blog.010.png)
+![](/images/0000wxapp//blog.010.png)
 
 图5.2 汽车票界面
 ## 5.3 订单
 用户可以在订单管理里面对订单信息进行换票和支付操作。界面如下图所示：
 
-![](/images/0000stringboot/0076springboot/blog.011.png)
+![](/images/0000wxapp//blog.011.png)
 
 图5.3 订单界面
 ## 5.4 汽车票添加
 管理员可以对汽车票信息进行添加修改删除操作。界面如下图所示：
 
-![](/images/0000stringboot/0076springboot/blog.012.png)
+![](/images/0000wxapp//blog.012.png)
 
 图5.4 汽车票管理界面
 
 ## 5.5 退票审核
 管理员可以对用户的退票信息进行审核。界面如下图所示：
 
-![](/images/0000stringboot/0076springboot/blog.013.png)
+![](/images/0000wxapp//blog.013.png)
 
 图5.5 退票审核界面
 ## 5.6 留言反馈管理
 管理员可以对留言反馈进行审核，修改，删除操作。界面如下图所示：
 
-![](/images/0000stringboot/0076springboot/blog.014.png)
+![](/images/0000wxapp//blog.014.png)
 
 图5.6 留言反馈界面
 

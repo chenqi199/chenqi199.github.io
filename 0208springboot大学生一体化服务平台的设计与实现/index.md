@@ -1,17 +1,16 @@
 # 0208springboot大学生一体化服务平台的设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0208springboot大学生一体化服务平台的设计与实现](https://github.com/GraduationProject-springboot/0208springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)]()
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 绪论
 ## 1.1 课题背景
@@ -64,25 +63,25 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 3.2.1 操作流程
 使用者在操作大学生一体化服务平台中，应该按照本系统提供的操作流程（图3.1即为本系统的操作流程图）进行操作，可以减少操作失误，从而节省进入大学生一体化服务平台的时间。
 
-![](/images/0200stringboot/0208springboot/blog.001.png)
+![](/images/0200wxapp//blog.001.png)
 
 图3.1 系统操作流程
 ### 3.2.2 登录流程
 大学生一体化服务平台通过登录功能（图3.2即为其登录的流程）引导使用者进入指定的功能操作区，也避免非本系统的用户享受本系统提供的服务以及查看本系统提供的信息，进而保证用户安全。
 
-![](/images/0200stringboot/0208springboot/blog.002.png)
+![](/images/0200wxapp//blog.002.png)
 
 图3.2 登录流程
 ### 3.2.3 删除信息流程
 大学生一体化服务平台在经过长期使用后，会产生很多的数据信息。为了腾出存储空间存放更多的数据，本系统数据库中存储的数据，一些没有参考价值的数据需要进行删除（图3.3即为删除信息的流程），删除数据过程中，为避免误删，使用者要根据系统的提示来决定是否删除数据。
 
-![](/images/0200stringboot/0208springboot/blog.003.png)
+![](/images/0200wxapp//blog.003.png)
 
 图3.3 删除信息流程
 ### 3.2.4 添加信息流程
 大学生一体化服务平台提供可视化的功能操作区，非常方便使用者进行数据操作，当使用者往系统中录入数据时（图3.4即为添加信息的流程），本系统也会进行数据合法性的判断，符合要求的数据才能够在数据库指定表中进行登记。
 
-![](/images/0200stringboot/0208springboot/blog.004.png)
+![](/images/0200wxapp//blog.004.png)
 
 图3.4 添加信息流程
 ## 3.3 性能需求
@@ -108,25 +107,25 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 图3.5即为管理员用例图，管理员权限操作的功能包括用户管理，司机管理，商家管理，服务信息管理，服务接单管理，组队拼车管理，拼车信息管理，服务类型管理，闲置交易管理，兼职信息管理，兼职应聘管理等。
 
-![](/images/0200stringboot/0208springboot/blog.005.png)
+![](/images/0200wxapp//blog.005.png)
 
 图3.5 管理员用例图
 
 图3.6即为司机用例图，司机权限操作的功能包括增删改查组队拼车信息，管理拼车信息。
 
-![](/images/0200stringboot/0208springboot/blog.006.png)
+![](/images/0200wxapp//blog.006.png)
 
 图3.6 司机用例图
 
 图3.7即为商家用例图，商家权限操作的功能包括增删改查兼职信息，下载应聘简历，管理兼职应聘信息等。
 
-![](/images/0200stringboot/0208springboot/blog.007.png)
+![](/images/0200wxapp//blog.007.png)
 
 图3.7 商家用例图
 
 图3.8即为用户用例图，用户权限操作的功能包括对服务接单，可以参与拼车，可以应聘兼职，可以管理服务信息，管理闲置交易信息，查看服务接单信息以及兼职应聘信息等。
 
-![](/images/0200stringboot/0208springboot/blog.008.png)
+![](/images/0200wxapp//blog.008.png)
 
 图3.8 用户用例图
 # 第4章 系统设计
@@ -134,25 +133,25 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ## 4.1 功能结构设计
 图4.1即为设计的管理员功能结构，管理员权限操作的功能包括用户管理，司机管理，商家管理，服务信息管理，服务接单管理，组队拼车管理，拼车信息管理，服务类型管理，闲置交易管理，兼职信息管理，兼职应聘管理等。
 
-![](/images/0200stringboot/0208springboot/blog.009.png)
+![](/images/0200wxapp//blog.009.png)
 
 图4.1 管理员功能结构
 
 图4.2即为设计的司机功能结构，司机权限操作的功能包括增删改查组队拼车信息，管理拼车信息。
 
-![](/images/0200stringboot/0208springboot/blog.010.png)
+![](/images/0200wxapp//blog.010.png)
 
 图4.2 司机功能结构
 
 图4.3即为设计的商家功能结构，商家权限操作的功能包括增删改查兼职信息，下载应聘简历，管理兼职应聘信息等。
 
-![](/images/0200stringboot/0208springboot/blog.011.png)
+![](/images/0200wxapp//blog.011.png)
 
 图4.3 商家功能结构
 
 图4.4即为设计的用户功能结构，用户权限操作的功能包括对服务接单，可以参与拼车，可以应聘兼职，可以管理服务信息，管理闲置交易信息，查看服务接单信息以及兼职应聘信息等。
 
-![](/images/0200stringboot/0208springboot/blog.012.png)
+![](/images/0200wxapp//blog.012.png)
 
 图4.4 用户功能结构
 ## 4.2 数据库设计
@@ -162,37 +161,37 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 （1）图4.4即为服务这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0208springboot/blog.013.png)
+![](/images/0200wxapp//blog.013.png)
 
 图4.4 服务实体属性图
 
 （2）图4.5即为兼职这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0208springboot/blog.014.png)
+![](/images/0200wxapp//blog.014.png)
 
 图4.5 兼职实体属性图
 
 （3）图4.6即为闲置交易这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0208springboot/blog.015.png)
+![](/images/0200wxapp//blog.015.png)
 
 图4.6 闲置交易实体属性图
 
 4. 图4.7即为组队拼车这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0208springboot/blog.016.png)
+![](/images/0200wxapp//blog.016.png)
 
 图4.7 组队拼车实体属性图
 
 4. 图4.8即为用户这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0208springboot/blog.017.png)
+![](/images/0200wxapp//blog.017.png)
 
 图4.8 用户实体属性图
 
 4. 图4.9即为上面介绍的实体中存在的联系。
 
-![](/images/0200stringboot/0208springboot/blog.018.png)
+![](/images/0200wxapp//blog.018.png)
 
 图4.9实体间关系E-R图
 ### 4.2.2 数据库物理设计
@@ -391,76 +390,76 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 5.1.1 司机管理
 图5.1 即为编码实现的司机管理界面，司机信息包括司机姓名，联系电话，车牌号，司机账号等信息，管理员修改司机，删除司机信息等。
 
-![](/images/0200stringboot/0208springboot/blog.020.png)
+![](/images/0200wxapp//blog.020.png)
 
 图5.1 司机管理界面
 ### 5.1.2 商家管理
 图5.2 即为编码实现的商家管理界面，商家信息有联系电话，商家地址，商家名称等信息，管理员修改商家，新增商家等。
 
-![](/images/0200stringboot/0208springboot/blog.021.png)
+![](/images/0200wxapp//blog.021.png)
 
 图5.2 商家管理界面
 ### 5.1.3 用户管理
 图5.3 即为编码实现的用户管理界面，用户信息有性别，手机号码，头像，用户姓名，用户账号等信息，管理员修改用户，删除需要删除的用户等。
 
-![](/images/0200stringboot/0208springboot/blog.022.png)
+![](/images/0200wxapp//blog.022.png)
 
 图5.3 用户管理界面
 ## 5.2 司机功能实现
 ### 5.2.1 组队拼车管理
 图5.4 即为编码实现的组队拼车管理界面，司机录入组队拼车信息，组队拼车信息包括出发地点，单人费用，座位数，到达地点，联系电话等信息，登记有错误的组队拼车信息也能让司机进行修改，同时也能删除需要删除的组队拼车信息。
 
-![](/images/0200stringboot/0208springboot/blog.023.png)
+![](/images/0200wxapp//blog.023.png)
 
 图5.4 组队拼车管理界面
 ### 5.2.2 拼车信息管理
 图5.5 即为编码实现的拼车信息管理界面，司机在拼车信息管理界面中查看拼车信息详细信息，查看用户姓名和手机号以及是否支付拼车订单。
 
-![](/images/0200stringboot/0208springboot/blog.024.png)
+![](/images/0200wxapp//blog.024.png)
 
 图5.5 拼车信息管理界面
 ## 5.3 商家功能实现
 ### 5.3.1 兼职信息管理
 图5.6 即为编码实现的兼职信息管理界面，商家登记兼职信息，兼职信息包括工作地点，工作时间，薪资待遇，岗位名称等信息，商家对兼职信息可以查询，更改等。
 
-![](/images/0200stringboot/0208springboot/blog.025.png)
+![](/images/0200wxapp//blog.025.png)
 
 图5.6 兼职信息管理界面
 ### 5.3.2 兼职应聘管理
 图5.7 即为编码实现的兼职应聘管理界面，商家下载用户的应聘简历，审核用户的应聘信息，查看兼职应聘详细信息等。
 
-![](/images/0200stringboot/0208springboot/blog.026.png)
+![](/images/0200wxapp//blog.026.png)
 
 图5.7 兼职应聘管理界面
 ## 5.4 用户功能实现
 ### 5.4.1 服务信息
 图5.8 即为编码实现的服务信息界面，用户可以对未接单的服务进行接单，可以查看服务详细内容等。
 
-![](/images/0200stringboot/0208springboot/blog.027.png)
+![](/images/0200wxapp//blog.027.png)
 
 图5.8 服务信息界面
 ### 5.4.2 组队拼车
 图5.9 即为编码实现的组队拼车界面，用户查看组队拼车信息，用户点击拼车按钮就能提交拼车信息。
 
-![](/images/0200stringboot/0208springboot/blog.028.png)
+![](/images/0200wxapp//blog.028.png)
 
 图5.9 组队拼车界面
 ### 5.4.3 兼职信息
 图5.10 即为编码实现的兼职信息界面，用户查看兼职岗位信息，招聘人数信息以及薪资待遇信息等，用户可以通过应聘来投递个人简历。
 
-![](/images/0200stringboot/0208springboot/blog.029.png)
+![](/images/0200wxapp//blog.029.png)
 
 图5.10 兼职信息界面
 ### 5.4.4 闲置交易管理
 图5.11 即为编码实现的闲置交易管理界面，用户在后台的闲置交易管理界面对闲置物品进行发布，更改，删除等。
 
-![](/images/0200stringboot/0208springboot/blog.030.png)
+![](/images/0200wxapp//blog.030.png)
 
 图5.11 闲置交易管理界面
 ### 5.4.5 拼车信息管理
 图5.12 即为编码实现的拼车信息管理界面，用户在后台的拼车信息管理界面对提交的拼车订单进行支付，同时对拼车信息明细进行查看。
 
-![](/images/0200stringboot/0208springboot/blog.031.png)
+![](/images/0200wxapp//blog.031.png)
 
 图5.12 拼车信息管理界面
 # 

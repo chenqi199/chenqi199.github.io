@@ -1,17 +1,16 @@
 # 0013springboot校园管理系统的设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0013springboot校园管理系统的设计与实现](https://github.com/GraduationProject-springboot/0013springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV16ia6epENY?p=14)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 绪论
 ## 1.1背景及意义
@@ -119,19 +118,19 @@ Spring Boot特点：
 
 ## 3.4系统流程分析
 ### 3.4.1操作流程
-系统登录流程图，如图所示：![](/images/0000stringboot/0013springboot/blog.001.png)
+系统登录流程图，如图所示：![](/images/0000wxapp//blog.001.png)
 
 图3-1登录流程图
 ### 3.4.2添加信息流程
 添加信息流程图，如图所示：
 
-![](/images/0000stringboot/0013springboot/blog.002.png) 
+![](/images/0000wxapp//blog.002.png) 
 
 图3-2添加信息流程图
 ### 3.4.3删除信息流程
 删除信息流程图，如图所示：
 
-![](/images/0000stringboot/0013springboot/blog.003.png)
+![](/images/0000wxapp//blog.003.png)
 
 图3-3删除信息流程图
 
@@ -153,7 +152,7 @@ Spring Boot特点：
 
 用户
 
-![](/images/0000stringboot/0013springboot/blog.004.png)
+![](/images/0000wxapp//blog.004.png)
 
 图4-1 系统结构
 
@@ -171,13 +170,13 @@ Spring Boot特点：
 
 用户界面
 
-![](/images/0000stringboot/0013springboot/blog.005.png)
+![](/images/0000wxapp//blog.005.png)
 
 图4-2 登录结构图
 
 校园管理系统结构图，如图4-3所示。
 
-![](/images/0000stringboot/0013springboot/blog.006.png)
+![](/images/0000wxapp//blog.006.png)
 
 图4-3 校园管理系统结构图
 ## 4.2开发流程设计
@@ -185,7 +184,7 @@ Spring Boot特点：
 
 校园管理系统的开发对管理模块和系统使用的数据库进行分析，编写代码，系统测试，如图4-4所示。
 
-![](/images/0000stringboot/0013springboot/blog.007.png)
+![](/images/0000wxapp//blog.007.png)
 
 图4-4开发系统流程图
 ## 4.3 数据库设计原则
@@ -195,25 +194,25 @@ Spring Boot特点：
 
 院校管理属性图如图4-5所示。
 
-![](/images/0000stringboot/0013springboot/blog.008.png)
+![](/images/0000wxapp//blog.008.png)
 
 图4-5 院校管理实体属性图
 
 用户管理实体属性图如图4-6所示。
 
-![](/images/0000stringboot/0013springboot/blog.009.png)
+![](/images/0000wxapp//blog.009.png)
 
 `  `图4-6用户管理实体属性图
 
 单位管理实体属性图如图4-7所示。
 
-![](/images/0000stringboot/0013springboot/blog.010.png)
+![](/images/0000wxapp//blog.010.png)
 
 `     `图4-7单位管理实体属性图
 
 通知推送管理实体属性图如图4-8所示。
 
-![](/images/0000stringboot/0013springboot/blog.011.png)
+![](/images/0000wxapp//blog.011.png)
 
 `   `图4-8通知推送管理实体属性图
 ## 4.4 数据表
@@ -375,7 +374,7 @@ Spring Boot特点：
 ## 5.1管理员功能模块
 管理员登录，通过填写注册时输入的用户名、密码、角色进行登录，如图5-1所示。
 
-![](/images/0000stringboot/0013springboot/blog.012.png)
+![](/images/0000wxapp//blog.012.png)
 
 图5-1管理员登录界面图
 
@@ -383,47 +382,47 @@ Spring Boot特点：
 
 院校管理，在院校管理页面中可以通过填写学院名称、资料文件、学院简介、职工人数、院校账号等信息进行详情、修改、删除等操作，如图5-2所示。还可以根据需要对用户管理进行详情、修改或删除等详细操作，如图5-3所示。
 
-![](/images/0000stringboot/0013springboot/blog.013.png)
+![](/images/0000wxapp//blog.013.png)
 
 图5-2院校管理界面图
 
-![](/images/0000stringboot/0013springboot/blog.014.png)
+![](/images/0000wxapp//blog.014.png)
 
 图5-3用户管理界面图
 
 单位类别管理，在单位类别管理页面中可以填写单位类别等信息，并可根据需要对单位类别管理进行详情、修改或删除等操作，如图5-4所示。
 
-![](/images/0000stringboot/0013springboot/blog.015.png)
+![](/images/0000wxapp//blog.015.png)
 
 图5-4单位类别管理界面图
 
 院校管理员管理，在院校管理员管理页面中可以填写院校账号、负责人姓名、性别、年龄、联系方式、备注等信息，并可根据需要对院校管理员管理进行详情、修改或删除等详细操作，如图5-5所示。
 
-![](/images/0000stringboot/0013springboot/blog.016.png)
+![](/images/0000wxapp//blog.016.png)
 
 图5-5院校管理员管理界面图
 
 单位管理，在单位管理页面中可以填写姓名、性别、年龄、照片、个人资料、单位类别、备注、联系方式等信息，并且根据需要对单位管理进行详情、绑定用户、修改或删除等详细操作，如图5-6所示。
 
-![](/images/0000stringboot/0013springboot/blog.017.png)
+![](/images/0000wxapp//blog.017.png)
 
 图5-6单位管理界面图
 
 通知推送管理，在通知推送管理页面中可以填写院校账号、负责人姓名、用户账号、用户姓名、通知内容、发送时间等信息，并且根据需要对通知推送管理进行详情、修改或删除等详细操作，如图5-7所示。
 
-![](/images/0000stringboot/0013springboot/blog.018.png)
+![](/images/0000wxapp//blog.018.png)
 
 图5-7通知推送管理界面图
 
 投票信息管理，在投票信息管理页面中可以填写候选人姓名、性别、年龄、赞成票、反对票、更新时间等内容，并且根据需要对投票信息管理进行详情、修改或删除等详细操作，如图5-8所示。
 
-![](/images/0000stringboot/0013springboot/blog.019.png)
+![](/images/0000wxapp//blog.019.png)
 
 图5-8投票信息管理界面图
 
 通知回复管理，在通知回复管理页面中可以填写院校账号、用户账号、回复内容、回复时间等内容，并且根据需要对通知回复管理进行详情、修改或删除等详细操作，如图5-9所示。
 
-![](/images/0000stringboot/0013springboot/blog.020.png)
+![](/images/0000wxapp//blog.020.png)
 
 图5-9通知回复管理界面图
 
@@ -432,25 +431,25 @@ Spring Boot特点：
 
 个人信息，在个人信息页面中通过填写用户账号、用户姓名、性别、年龄、个人资料、照片、联系方式、单位类别等信息还可以根据需要对个人信息进行修改，如图5-10所示。
 
-![](/images/0000stringboot/0013springboot/blog.021.png)
+![](/images/0000wxapp//blog.021.png)
 
 图5-10个人信息界面图
 
 单位管理，在单位管理页面中可以查看姓名、性别、年龄、照片、个人资料、单位类别、备注、联系方式等信息内容，并且根据需要对单位管理进行详情等其他详细操作，如图5-11所示。
 
-![](/images/0000stringboot/0013springboot/blog.022.png)
+![](/images/0000wxapp//blog.022.png)
 
 图5-11单位管理界面图
 
 通知推送管理，在通知推送管理页面中通过填写院校账号、负责人姓名、用户账号、用户姓名、通知内容、发送时间等内容进行详情、修改、删除等操作，如图5-12所示。
 
-![](/images/0000stringboot/0013springboot/blog.023.png)
+![](/images/0000wxapp//blog.023.png)
 
 图5-12通知推送管理界面图
 
 投票信息管理，在投票信息管理页面中通过填写候选人姓名、性别、年龄、赞成票、反对票、更新时间等内容进行详情等操作，如图5-13所示。
 
-![](/images/0000stringboot/0013springboot/blog.024.png)
+![](/images/0000wxapp//blog.024.png)
 
 图5-13投票信息管理界面图
 
@@ -459,31 +458,31 @@ Spring Boot特点：
 
 个人信息，在个人信息页面中通过填写院校账号、负责人姓名、性别、年龄、联系方式、备注等信息还可以根据需要对个人信息进行修改等操作，如图5-14所示。
 
-![](/images/0000stringboot/0013springboot/blog.025.png)
+![](/images/0000wxapp//blog.025.png)
 
 图5-14个人信息界面图
 
 用户管理，在用户管理页面中可以填写用户账号、用户姓名、性别、年龄、个人资料、照片、联系方式、单位类别等信息内容，并且根据需要对用户管理进行详情、修改或删除等其他详细操作，如图5-15所示。
 
-![](/images/0000stringboot/0013springboot/blog.026.png)
+![](/images/0000wxapp//blog.026.png)
 
 图5-15用户管理界面图
 
 单位类别管理，在单位类别管理页面中通过填写单位类别等内容进行详情、修改、删除，如图5-16所示。
 
-![](/images/0000stringboot/0013springboot/blog.027.png)
+![](/images/0000wxapp//blog.027.png)
 
 图5-16单位类别管理界面图
 
 通知推送管理，在通知推送管理页面中通过填写院校账号、负责人姓名、用户账号、用户姓名、通知内容、发送时间等内容进行详情、回复等操作，如图5-17所示。
 
-![](/images/0000stringboot/0013springboot/blog.028.png)
+![](/images/0000wxapp//blog.028.png)
 
 图5-17通知推送管理界面图
 
 通知回复管理，在通知回复管理页面中通过填写院校账号、用户账号、回复内容、回复时间等内容进行详情、修改、删除等操作，如图5-18所示。
 
-![](/images/0000stringboot/0013springboot/blog.029.png)
+![](/images/0000wxapp//blog.029.png)
 
 图5-18通知回复管理界面图
 

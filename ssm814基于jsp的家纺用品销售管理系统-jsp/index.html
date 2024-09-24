@@ -1,0 +1,1712 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer" />
+        <meta name="robots" content="noodp" />
+        <title>ssm814基于JSP的家纺用品销售管理系统&#43;jsp - chenqi blog</title><meta name="Description" content="Hugo theme - chenqi"><meta property="og:url" content="https://chenqi199.github.io/ssm814%E5%9F%BA%E4%BA%8Ejsp%E7%9A%84%E5%AE%B6%E7%BA%BA%E7%94%A8%E5%93%81%E9%94%80%E5%94%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-jsp/">
+  <meta property="og:site_name" content="chenqi blog">
+  <meta property="og:title" content="ssm814基于JSP的家纺用品销售管理系统&#43;jsp">
+  <meta property="og:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm814基于JSP的家纺用品销售管理系统&#43;jsp github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1.1研究背景 从">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-07-24T10:33:04+08:00">
+    <meta property="article:modified_time" content="2024-07-24T10:33:04+08:00">
+    <meta property="article:tag" content="Ssm纺">
+    <meta property="article:tag" content="纺用品">
+    <meta property="article:tag" content="用品销售">
+    <meta property="article:tag" content="销售管理">
+    <meta property="article:tag" content="管理系统">
+    <meta property="og:image" content="https://chenqi199.github.io/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chenqi199.github.io/logo.png">
+  <meta name="twitter:title" content="ssm814基于JSP的家纺用品销售管理系统&#43;jsp">
+  <meta name="twitter:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm814基于JSP的家纺用品销售管理系统&#43;jsp github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1.1研究背景 从">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chenqi199.github.io/ssm814%E5%9F%BA%E4%BA%8Ejsp%E7%9A%84%E5%AE%B6%E7%BA%BA%E7%94%A8%E5%93%81%E9%94%80%E5%94%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-jsp/" /><link rel="prev" href="https://chenqi199.github.io/ssm809%E9%A9%BE%E8%80%83%E8%87%AA%E4%B8%BB%E5%AD%A6%E4%B9%A0%E9%A2%84%E7%BA%A6%E5%B9%B3%E5%8F%B0-vue/" /><link rel="next" href="https://chenqi199.github.io/ssm813%E6%95%99%E5%8A%A1%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "ssm814基于JSP的家纺用品销售管理系统+jsp",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chenqi199.github.io\/ssm814%E5%9F%BA%E4%BA%8Ejsp%E7%9A%84%E5%AE%B6%E7%BA%BA%E7%94%A8%E5%93%81%E9%94%80%E5%94%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-jsp\/"
+        },"image": ["https:\/\/chenqi199.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "ssm纺, 纺用品, 用品销售, 销售管理, 管理系统","wordcount":  12776 ,
+        "url": "https:\/\/chenqi199.github.io\/ssm814%E5%9F%BA%E4%BA%8Ejsp%E7%9A%84%E5%AE%B6%E7%BA%BA%E7%94%A8%E5%93%81%E9%94%80%E5%94%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-jsp\/","datePublished": "2024-07-24T10:33:04+08:00","dateModified": "2024-07-24T10:33:04+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/chenqi199.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "chenqi"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/ssm814%E5%9F%BA%E4%BA%8Ejsp%E7%9A%84%E5%AE%B6%E7%BA%BA%E7%94%A8%E5%93%81%E9%94%80%E5%94%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-jsp/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/ssm814%E5%9F%BA%E4%BA%8Ejsp%E7%9A%84%E5%AE%B6%E7%BA%BA%E7%94%A8%E5%93%81%E9%94%80%E5%94%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-jsp/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">ssm814基于JSP的家纺用品销售管理系统+jsp</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="chenqi199" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>chenqi</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-07-24">2024-07-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 12776 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 26 分钟&nbsp;<span id="/ssm814%E5%9F%BA%E4%BA%8Ejsp%E7%9A%84%E5%AE%B6%E7%BA%BA%E7%94%A8%E5%93%81%E9%94%80%E5%94%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-jsp/" class="leancloud_visitors" data-flag-title="ssm814基于JSP的家纺用品销售管理系统&#43;jsp">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">github 项目仓库</a> 开源仅有后端代码</a></li>
+        <li><a href="#点击播放视频-">点击播放视频 ▼</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#11研究背景">1.1研究背景</a></li>
+    <li><a href="#12国内外研究现状">1.2国内外研究现状</a></li>
+    <li><a href="#13目的和意义">1.3目的和意义</a></li>
+    <li><a href="#14论文结构安排">1.4论文结构安排</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#21-mysql数据库">2.1 Mysql数据库</a></li>
+    <li><a href="#22-ssm框架">2.2 SSM框架</a></li>
+    <li><a href="#23-idea-开发工具">2.3 IDEA 开发工具</a></li>
+    <li><a href="#24-jsp技术">2.4 JSP技术</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#31系统可行性分析">3.1系统可行性分析</a>
+      <ul>
+        <li><a href="#311-时间可行性分析">3.1.1 时间可行性分析</a></li>
+        <li><a href="#312-技术可行性分析">3.1.2 技术可行性分析</a></li>
+        <li><a href="#313-经济可行性分析">3.1.3 经济可行性分析</a></li>
+        <li><a href="#314-操作可行性分析">3.1.4 操作可行性分析</a></li>
+      </ul>
+    </li>
+    <li><a href="#32系统性能分析">3.2系统性能分析</a></li>
+    <li><a href="#33系统流程分析">3.3系统流程分析</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#41系统功能结构设计">4.1系统功能结构设计</a></li>
+    <li><a href="#42数据库设计">4.2数据库设计</a>
+      <ul>
+        <li><a href="#421数据库e-r图">4.2.1数据库E-R图</a></li>
+        <li><a href="#422-数据库表结构">4.2.2 数据库表结构</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#51管理员功能介绍">5.1管理员功能介绍</a>
+      <ul>
+        <li><a href="#511用户管理">5.1.1用户管理</a></li>
+        <li><a href="#512-商家管理">5.1.2 商家管理</a></li>
+        <li><a href="#513-公告管理">5.1.3 公告管理</a></li>
+      </ul>
+    </li>
+    <li><a href="#52-商家功能介绍">5.2 商家功能介绍</a>
+      <ul>
+        <li><a href="#521商品管理">5.2.1商品管理</a></li>
+        <li><a href="#522商品评价">5.2.2商品评价</a></li>
+        <li><a href="#523商品订单">5.2.3商品订单</a></li>
+      </ul>
+    </li>
+    <li><a href="#53-用户功能介绍">5.3 用户功能介绍</a>
+      <ul>
+        <li><a href="#531商品信息">5.3.1商品信息</a></li>
+        <li><a href="#532购物车">5.3.2购物车</a></li>
+        <li><a href="#533提交订单">5.3.3提交订单</a></li>
+        <li><a href="#534我的订单">5.3.4我的订单</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="项目清单-包安装运行httpchenqi1990site-官网地址-httpchenqi1990site"><a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">项目清单 包安装运行</a> 官网地址 <a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">http://chenqi1990.site</a></h1>
+<h1 id="ssm814基于jsp的家纺用品销售管理系统jsphttpsgithubcomgraduationproject-springboot"><a href="https://github.com/GraduationProject-springboot/" target="_blank" rel="noopener noreffer ">ssm814基于JSP的家纺用品销售管理系统+jsp</a></h1>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        data-srcset="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 1.5x, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        title="picture" /></p>
+<h3 id="github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">github 项目仓库</a> 开源仅有后端代码</h3>
+<h3 id="点击播放视频-">点击播放视频 ▼</h3>
+<p><a href="https://www.bilibili.com/video/BV1xRe2eHEsa?p=13" target="_blank" rel="noopener noreffer "><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.sstatic.net/Vp2cE.png"
+        data-srcset="https://i.sstatic.net/Vp2cE.png, https://i.sstatic.net/Vp2cE.png 1.5x, https://i.sstatic.net/Vp2cE.png 2x"
+        data-sizes="auto"
+        alt="https://i.sstatic.net/Vp2cE.png"
+        title="Watch the video" /></a></p>
+<h1 id="绪论">绪论</h1>
+<h2 id="11研究背景">1.1研究背景</h2>
+<p>从古到今，信息的录入，存储，检索都受制于社会生产力的发展，不仅仅浪费大量的人力资源还需要浪费大量的社会物资，并且不能长时间的保留，信息检索随着时间的跨度呈几何级的难于检索，并且如果对有些数据进行核对校验或者分析统计，需要用到的时间还有人力更是不可估计。但是随着计算机网络的发展，这些事情都不再是痛点，计算机语言的发展就是对传统行业各个方面进行了变革，尤其是信息管理方面。比如计算机各个系列各种型号，多种适配，哪些零件可以与其他零件进行组合，哪些不可以，这些如果是传统行业会弄成好多本书籍进行记录，但是通过软件的信息录入整合，程序进行判断，可以有效的提升效率。在这样的背景下，各行各业都在梳理自己的信息管理流程和需求。本设计就是在这样的环境下，针对家纺用品销售管理信息设计的家纺用品销售管理系统，用来解决家纺用品销售管理信息信息管理问题的痛点和难点，让家纺用品销售管理信息信息管理变得更加高效节能。</p>
+<h2 id="12国内外研究现状">1.2国内外研究现状</h2>
+<p>国外品牌如下:</p>
+<p>1.瑞士Bico(瑞士十大家纺品牌)</p>
+<p>bico瑞柯创立于1861年，现已成为瑞士以健康与舒适睡眠所著称床具品牌，公司总部位于Schanis,St.Gallen。Bico现属于瑞典希丁安集团(HildingAndersGroup)。希丁安集团是欧洲及亚洲的床具行业的知名品牌，在全球拥有约24家工厂，超过8000名员工，业务遍及欧亚40多个国家及地区。</p>
+<p>bico瑞柯是瑞非常受客户信赖的床具品牌，拥有极高的市场占有率。bico瑞柯一直致力于与睡眠专家、睡眠机构、瑞士联邦材料科学和技术实验室(EMPA)、瑞士人体工学研究中心(AEH)紧密合作，率先使用了HYTREL材料代替金属制造弹簧。2015年2月起，希丁安集团高端品牌Bico瑞柯和瑞士航空进行合作。为瑞士航空A340头等舱提供Bico瑞柯和其泡棉供应商FoamPartner合作研发的高品质ViscoPore泡棉床垫。</p>
+<p>2.美国Serta(美国十大家纺品牌)</p>
+<p>舒达（Serta），诞生于1931年，是一个全球性专业的健康睡眠品牌。舒达是专业制造床垫品牌，90多年来始终致力于为全球消费者提供优质健康的睡眠服务，让每个人都能“夜夜好眠”是舒达的愿景。当您躺下的瞬间，即可感受到与众不同。舒达自1998年进入中国以来，坚持并一贯秉承“制造世界上最好的床垫”为使命。</p>
+<p>3.美国丝涟Sealy(美国十大家纺品牌)</p>
+<p>“丝涟”于1881年创建，诞生于美国德克萨斯州休斯顿郊外的“丝涟”小镇，一位名叫DanielHaynes的轧棉机工匠开始一种棉塞床垫的生产。很快，“来自丝涟的床垫”闻名遐迩。</p>
+<p>1949年，“丝涟”开始与当时顶尖骨科矫形外科专家合作进行产品研发，其中有美国著名骨科矫形外科和背部疼痛研究权威，并邀请了闻名全美的骨科矫形外科专家Dr. Robert G.Addison博士，成功将“护脊”概念引入床垫的制造当中。</p>
+<p>1950年，经过骨科矫形外科专家的指导，“丝涟”推出首款“美姿”品牌产品，成为当时业内唯一专注于背部正确承托，保护脊柱健康的床垫品牌。</p>
+<p>1977年，丝涟“美姿”品牌成为更强承托力的高性能弹簧床垫的代名词，并逐步在美国市场享有美誉。丝涟“美姿”床垫迅速走向全球，带给全世界用户一种全新的优质睡眠体验。</p>
+<p>1988年，研发具有“感应”特性的美姿感应弹簧PostureTech，革新弹簧芯的设计和性能。</p>
+<p>2002年盐湖城冬奥会以及2004年雅典奥运会，“丝涟”皆被选为美国国家代表团唯一指定床垫品牌。21世纪初，丝涟相继成功进入香港、新加坡、台湾、马来西亚等亚太地区。</p>
+<p>2006年，丝涟创立骨科矫形咨询委员会OAB，将产品研发测试与人体科研结晶更紧密结合，使丝涟床垫在“健康睡眠”方面有了更加深度的优化。同年4月7日，正式在纽约证券交易所挂牌上市。</p>
+<p>2008年，丝涟中国正式成立，将健康睡眠理念和舒适睡眠产品带入中国大陆市场。 [3]</p>
+<p>丝涟品牌已成为全球享誉的床垫制造商，在机械化量产盛行之时，丝涟仍然坚持采用部分工序手工制造，以精良材质和创新科技，为用户带去优质睡眠体验和健康生活。</p>
+<p>4.德国Breckle(德国十大家纺品牌)</p>
+<p>德国“Breckle”(福莱哥勒)有限公司创立于1932年，时逢德国的魏玛共和国时代，当时德国的实用艺术和纯粹艺术结于一体的现代主义风格给了福莱哥勒最初的灵感和一贯的追求。创立初期的福莱哥勒，虽然只是Emil Breckle领导的4人小作坊，但是共同的理念追求，使福莱哥勒产品呈现出一种精确、简洁的独特之美，加之内在的工艺设计，打破了当时累赘、不切实际的家具风格，成为当时聚集魏玛的新贵人士的居家首选，更因品质优良成为欧美的上层社会梦寐以求的珍品，由此，福莱哥勒也迈出了通往世界顶级家具殿堂的第一步。目前拥有上百位经验丰富的专业设计研发人员，精良的机器设备，成熟的电脑监控生产流程，全力打造精品床垫。</p>
+<p>认真严谨的“福莱哥勒人”通过坚持不懈的努力与付出，使“Breckle”品牌床垫在推出市场后受到消费者的一致好评与认可，迅速占有欧洲三分之二的床垫消费市场份额，平均每个销售点的年销售额达 €50,000,000.00(欧元)。在要求严苛的德国人眼中，“Breckle”品牌床垫早已成为“健康睡眠”的同义词。</p>
+<p>理性、严谨，简约、恒久——78年的品牌积淀和绽放，后继的福莱哥勒子孙们坚持福莱哥勒开创的品牌风格，在工艺设计、科技研发和产品品质上不懈追求，凝聚起国际顶级的设计师和工程师团队，加之严苛的德国工序流程，和世界顶尖的制造工艺，福莱哥勒的每一款产品都精致完美到无懈可击——这就是福莱哥勒的标志，在创建极具个性风格的品质生活的同时，成就自身全球知名品牌。</p>
+<p>5.希腊Coco-mat(希腊十大家纺品牌)</p>
+<p>COCO-MAT品牌1989年诞生于希腊雅典。公司最初以制作纯天然材料的床垫为主。1992年，公司生产总部搬迁至希腊北部的桑西工业区，如今，COCO-MAT已拥有超过12.3万平方米的工厂。1999年COCO-MAT在西班牙的马德里开设了其国外第一家分店。几年后，也就是2003年，在中国开设第一家门店，地址就选在杭州，同年，COCO-MAT荣获了EFQM（欧洲质量管理基金会）颁发的金奖。截止目前，COCO-MAT在希腊已有家零售门店，除希腊外欧洲有门店，在中国拥有门店，在沙特阿拉伯和美国分别拥有一家门店。</p>
+<p>COCO-MAT现已成为民用家居和酒店业内公认的领导品牌。销售网络发展迅速，目前在全球十一个国家设有直营店，覆盖世界各个角落。</p>
+<p>我们致力于制造符合可持续发展要求的世界上最好的床。 COCO-MAT床以及家居床垫完全不使用金属弹簧，而由多层天然原料喷天然液态乳胶压制组合而成，可对人体提供更加完美舒适的有效支撑。并且COCO-MAT床垫充分发挥了天然乳胶的抗菌防螨特性，使得我们的寝具中微生物细菌的滋生可以有效地被抑制。</p>
+<p>我们所有的产品都由可再生、天然原材料构成，如椰果纤维，羊毛，棉，丝绸，亚麻，原木等。</p>
+<p>2009年，一场来势凶猛的金融危机让中国纺织业遭遇了其高速发展30年来的最冷&quot;寒冬&quot;。据调查，全国45%的家纺企业处于亏损，最糟糕的时候南通19%的中小家纺企业关停。而在国家拉动内需政策的支持下，原依赖出口加工的家纺企业因转为内销，在渠道、品牌等条件下有些&quot;水土不服&quot;、风雨飘摇，对于中国家纺2009年是个不平凡的一年。2010年，家纺行业历史最难过的一年，在这一年中，棉花价格暴涨三倍，导致很多纺织企业停产，由此引发胚布有价无市。家纺企业在大环境下，不得不提价。同时，房地产业带来的负面影响，买房人比例急速下跌。据行业统计，家纺企业2010年销售额相比2009年平均下滑13个点。</p>
+<p>纵观我国家纺行业发展历程，共经历了三个阶段:原始期、起步期、井喷期，至2013年阶段正进入稳定增长期。经过多年鏖战，家纺行业的竞争格局开始悄然变化，品牌家纺正在崛起。在这个阶段，随着家纺行业消费与竞争的不断升级，家纺行业正处在起步阶段向发展阶段过渡的时期，即市场的最大变化是已进入高速发展中的结构性调整周期。</p>
+<p>&ldquo;十一五&quot;时期，我国家纺行业成功应对全球金融危机、人民币汇率升值、生产成本大幅上涨等诸多不利因素的影响，在&quot;十五&quot;快速发展基础上，保持了稳定向上的运行态势。进一步加大了资源优化整合力度，在生产、经营、品牌建设等领域均取得了较大进步。加强国际接轨，促进了行业国际竞争力与比较优势的较大提升，基本实现了家纺大国的发展目标。家纺的一些知名品牌有罗莱、梦洁、艾莱依等。2011年作为&quot;十二五&quot;的开局之年，我国家纺行业形势良好。2011年家纺行业1548家规模以上企业累计完成工业总产值2097.65亿元，出口交货值539.11亿元，实现利润总额122.40亿元，产销率达97.97%。我国服装类纺织品消费约占纺织品消费总量的65%，家用纺织品消费仅占23%，且家用纺织品的人均消费所占消费性支出还不足1%。从国内外家纺用品消费的现实差距以及未来发展趋势看，中国家纺行业有着巨大的发展空间。&ldquo;十二五&quot;时期，家纺产业发展的主要任务是引导消费，积极扩大内需;创新渠道，促进企业做强做大;提倡家纺文化，加强品牌建设;优化产业布局，促进梯度发展;整合资源，提高科技贡献率;加强人才培养，夯实强国基础;践行低碳环保，实现可持续发展;完善公共服务平台，创造良好产业环境。</p>
+<h2 id="13目的和意义">1.3目的和意义</h2>
+<p>开发这套系统的目的，就是让不同的人员对不同的信息进行录入，查询，汇总，分析，让职责更明了，权限更清晰，职能更细致，响应更及时。能快速提升信息检索效率，只需要输入自己想要的条件进行查询汇总，就能及时的得到信息，能快速的应对市场反应提升各个部门的协作效率，信息的存储更加的安全，不在害怕水火，信息备份更简便，只需要设计数据库定时备份，定时迁移，数据存储和数据迁移的成本微乎其微。如果还用之前的信息管理模式，就会发现在市场上失去了竞争力，在同行业内失去了先进性，负担更重，前进更缓慢。使用更先进的互联网信息管理模式，数据可以及时的进行处理，可以根据数据处理结果进行更直观更明锐的判断，在提升自我竞争力的同时也能节能环保，为社会绿化人类的美好家园增加了贡献。</p>
+<h2 id="14论文结构安排">1.4论文结构安排</h2>
+<p>本文对家纺用品销售管理系统的设计开发过程分为7个部分进行介绍。其中包括绪论部分，系统开发技术部分，系统分析，设计，实现，测试都会作为一个章节进行说明。</p>
+<p>第1章绪论：这部分是论文的开头，主要介绍系统的背景，介绍系统的开发意义。</p>
+<p>第2章开发环境：这部分主要针对系统开发的环境进行说明，主要有工具介绍，数据库介绍等。</p>
+<p>第3章系统分析：这部分主要还是根据用户的操作需要，分析系统功能，也会分析系统是否值得开发的可行性问题。</p>
+<p>第4章系统设计：这部分是在功能分析的层面上，进行更深层次的分析，设计，最终的设计成果是数据库结构与E-R图的设计，和功能结构图的设计。</p>
+<p>第5章系统实现：这部分是程序开发的重点，主要还是依靠过硬的编程知识实现系统的功能。</p>
+<p>第6章系统测试：这部分主要还是检验程序的合格性，各项指标，比如功能，性能，界面等是否达标。</p>
+<p>第7章结论：这部分主要总结设计工作，并对未来工作进行展望。</p>
+<h1 id="2-开发环境">2 开发环境</h1>
+<h2 id="21-mysql数据库">2.1 Mysql数据库</h2>
+<p>MYSQL数据库是由瑞典的一家名称为MySQL-AB的公司开发出一款延续至今的关系型数据库，接着被数据库公司老大Oracle给收购了，之前好多人认为Oralce公司收购之后会雪藏，然后把道路让给Oracle公司的拳头产品也就是Oracle数据库，没想到的是Oracle公司后续支持mysql数据库让它成为了公司另一个拳头产品，与Oracle市场定位完全不同，使Oracle公司在数据库行业的市场占有率遥遥领先，发展的越来越好。</p>
+<p>MYSQL数据库有自带的客户端管理工具，比如SQLYon，或者是native for mysql，或者是mysql-font，这些都是很友好的MySQL使用工具，可以视图化处理相关数据。虽然某些模块是收费的版本，但是作为课题来讲，免费功能是完全满足程序的需要，还有就是他的安装配置方面很简单，学习起来也是遵循于SQL语法的，网上也有充足的学习资料可以进行随时随地的学习，所以最终选择的数据库就是MYSQL数据库。</p>
+<h2 id="22-ssm框架">2.2 SSM框架</h2>
+<p>SSM框架，是Spring + Spring MVC + MyBatis的缩写，这个是继SSH之后，目前比较主流的Java EE企业级框架，适用于搭建各种大型的企业级应用系统。</p>
+<h2 id="23-idea-开发工具">2.3 IDEA 开发工具</h2>
+<p>IDEA 全称IntelliJ IDEA，是用于java语言开发的集成环境(也可用于其他语言)，IntelliJ在业界被公认为最好的java开发工具之一，尤其在智能代码助手、代码自动提示、重构、J2EE支持、Ant、JUnit、CVS整合、代码审查、 创新的GUI设计等方面的功能可以说是超常的。IDEA是JetBrains公司的产品，这家公司总部位于捷克共和国的首都布拉格，开发人员以严谨著称的东欧程序员为主。</p>
+<h2 id="24-jsp技术">2.4 JSP技术</h2>
+<p>JSP（全称JavaServer Pages）是由Sun Microsystems公司主导创建的一种动态网页技术标准。JSP部署于网络服务器上，可以响应客户端发送的请求，并根据请求内容动态地生成HTML、XML或其他格式文档的Web网页，然后返回给请求者。JSP技术以Java语言作为脚本语言，为用户的HTTP请求提供服务，并能与服务器上的其它Java程序共同处理复杂的业务需求。</p>
+<p>JSP将Java代码和特定变动内容嵌入到静态的页面中，实现以静态页面为模板，动态生成其中的部分内容。JSP引入了被称为“JSP动作”的XML标签，用来调用内建功能。另外，可以创建JSP标签库，然后像使用标准HTML或XML标签一样使用它们。标签库能增强功能和服务器性能，而且不受跨平台问题的限制。JSP文件在运行时会被其编译器转换成更原始的Servlet代码。JSP编译器可以把JSP文件编译成用Java代码写的Servlet，然后再由Java编译器来编译成能快速执行的二进制机器码，也可以直接编译成二进制码。</p>
+<p>能以模板化的方式简单、高效地添加动态网页内容。</p>
+<p>可利用JavaBean和标签库技术复用常用的功能代码（设计好的组件容易实现重复利用，减少重复劳动）。标签库不仅带有通用的内置标签（JSTL)，而且支持可扩展功能的自定义标签。</p>
+<p>有良好的工具支持。</p>
+<p>继承了Java语言的相对易用性。</p>
+<p>继承了Java的跨平台优势，实现“一次编写，处处运行”。因为支持Java及其相关技术的开发平台多，网站开发人员可以选择在最适合自己的系统平台上进行JSP开发；不同环境下开发的JSP项目，在所有客户端上都能顺利访问。</p>
+<p>页面中的动（控制变动内容的部分）/静（内容不需变动的部分）区域以分散但又有序的形式组合在一起，能使人更直观地看出页面代码的整体结构，也使得设计页面效果和程序逻辑这2部分工作容易分离（外观视图与逻辑分离）。从而方便分配人员并发挥各自长处，实现高效地分工合作。</p>
+<p>可与其它企业级Java技术相互配合。JSP可以只专门负责页面中的数据呈现，实现分层开发。</p>
+<p>包含内容编辑 播报</p>
+<p>JSP指令</p>
+<p>JSP指令控制JSP编译器如何去生成servlet，以下是可用的指令：</p>
+<p>包含指令include –包含指令通知JSP编译器把另外一个文件完全包含入当前文件中。效果就好像被包含文件的内容直接被粘贴到当前文件中一样。这个功能和C预处理器所提供的很类似。被包含文件的扩展名一般都是&quot;jspf&rdquo;（即JSPFragment，JSP片段）:</p>
+<p>&lt;%@ include file=&ldquo;somefile.jsp&rdquo; %&gt;</p>
+<p>页面指令page –页面指令有以下几个选项：</p>
+<p>import</p>
+<p>使一个JAVA导入声明被插入到最终页面文件。</p>
+<p>contentType</p>
+<p>规定了生成内容的类型。当生成非HTML内容或者当前字符集并非默认字符集时使用。</p>
+<p>errorPage</p>
+<p>处理HTTP请求时，如果出现异常则显示该错误提示信息页面。</p>
+<p>isErrorPage</p>
+<p>如果设置为TRUE，则表示当前文件是一个错误提示页面。</p>
+<p>isThreadSafe</p>
+<p>表示最终生成的servlet是否具有线程安全性。</p>
+<p>&lt;%@ page import=&ldquo;java.util.*&rdquo; %&gt; //example import导入样例&lt;%@ page contentType=&ldquo;text/html&rdquo; %&gt; //example contentType页面类型样例&lt;%@ page isErrorPage=false %&gt; //example for non error page无错页面样例&lt;%@ page isThreadSafe=true %&gt; //example for a thread safe JSP执行绪安全JSP样例</p>
+<p>注意：在同一个JSP文件中只有“import”导入页面指令可以被多次使用。</p>
+<p>标签库指令taglib –标签库指令描述了要使用的JSP标签库。该指令需要指定一个前缀prefix（和C++的名字空间很类似）和标签库的描述URI:</p>
+<p>&lt;%@ taglib prefix=&ldquo;myprefix&rdquo; uri=&ldquo;taglib/mytag.tld&rdquo; %&gt;</p>
+<p>JSP脚本元素和变量</p>
+<p>标准脚本变量</p>
+<p>以下是永远可用的脚本变量：</p>
+<p>out：JSPWriter，用来写入响应流的数据</p>
+<p>page：servlet自身</p>
+<p>pageContext：一个PageContext实例包括和整个页面相联系的数据，一个给定的HTML页面可以在多个JSP之间传递。</p>
+<p>request：HTTP request（请求）对象</p>
+<p>response：HTTP response（响应）对象</p>
+<p>session：HTTP session（服务端会话）对象</p>
+<p>脚本元素</p>
+<p>有三个基本的脚本元素，作用是使JAVA代码可以直接插入servlet.</p>
+<p>一种是声明标签，在JAVA SERVLET的类体中放入一个变量的定义。静态的数据成员也可以如此定义。</p>
+<p>&lt;%! int serverInstanceVariable = 1; %&gt;</p>
+<p>一种是脚本标签，在JAVA SERVLET的类的_jspService()方法中放入所包含的语句。</p>
+<p>1 &lt;% int localStackBasedVariable = 1; out.println(localStackBasedVariable); %&gt;</p>
+<p>一种是表达式标签，在JAVA SERVLET的类中放入待赋值的表达式，表达式注意不能以分号结尾。</p>
+<p>&lt;%= &ldquo;expanded inline data &quot; + 1 %&gt;</p>
+<p>JSP动作</p>
+<p>JSP动作是一系列可以调用内建于网络服务器中的功能的XML标签。JSP提供了以下动作：</p>
+<p>jsp:include</p>
+<p>和子过程类似，JAVA SERVLET暂时接管对其它指定的JSP页的请求和响应。当处理完该JSP页后就马上把控制权交还当前JSP页。这样JSP代码就可以在多个JSP页中共享而不用复制。</p>
+<p>jsp:param</p>
+<p>可以在jsp:include, jsp:forward或jsp:params块之间使用。指定一个将加入请求的当前参数组中的参数。</p>
+<p>jsp:forward</p>
+<p>用于处理对另一个JSP或SERVLET的请求和响应。控制权永远不会交还给当前JSP页。</p>
+<p>jsp:plugin</p>
+<p>Netscape Navigator的老版本和Internet Explorer使用不同的标签以嵌入一个applet。这个动作产生为嵌入一个APPLET所需要的指定浏览器标签。</p>
+<p>jsp:fallback</p>
+<p>如果浏览器不支持APPLETS则会显示的内容。</p>
+<p>jsp:getProperty</p>
+<p>从指定的JavaBean中获取一个属性值。</p>
+<p>jsp:setProperty</p>
+<p>在指定的JavaBean中设置一个属性值。</p>
+<p>jsp:useBean</p>
+<p>创建或者复用一个JavaBean变量到JSP页。</p>
+<h1 id="3-系统分析">3 系统分析</h1>
+<h2 id="31系统可行性分析">3.1系统可行性分析</h2>
+<p>在初步确定设计的课题之后，首先就需要对该课题的可行性问题进行思考，通常程序的开发是一个长期并对专业知识要求较高的任务。在决定制作之前，要进行充分的分析与考虑，对其进行可行性分析也是衡量程序的投入成本与产生的效益问题，假如投入成本远远大于产生的效益，那么此程序就可以不用进行制作了，只有当其产生的效益远远大于投入的成本时，并可以确定程序是可以制作出来，以及使用中并不存在操作困难的前提下，才可以将程序的开发提上议程。</p>
+<h3 id="311-时间可行性分析">3.1.1 时间可行性分析</h3>
+<p>首先此程序的制作主要是学院的统一安排，所以在时间上，学院给出的时间以及安排的各个时间节点对应的配套任务都可以保证程序的开发如期完成。也就是说只要跟随学院的时间安排进行设计制作作品，是可以完成开发任务的。</p>
+<h3 id="312-技术可行性分析">3.1.2 技术可行性分析</h3>
+<p>此程序是作为计算机专业学生的一个毕业答辩项目，它运用到的专业知识，大学期间，学校老师都已经讲授过，并且也在学习期间以及期末考核中，老师们安排了一些类似课程设计这样的作业，本人也通过这些作业进行了练习，也知晓程序的设计流程，也熟悉软件环境的安装，通过平时的实践，本人也具备一定的开发基础以及经验，并具备一定的学以致用的能力。因此，此程序开发在技术上准备充分，开发确实可行！</p>
+<h3 id="313-经济可行性分析">3.1.3 经济可行性分析</h3>
+<p>通过对程序制作中需要花费的资金进行分析，可以得出此程序无需考虑资金投入问题。首先程序制作涉及到软件以及硬件环境都有现成的资源，硬件环境就是一台可以上网的笔记本，也可以是学院的图书馆的机房里面的电脑，软件环境也能从各大浏览器进行下载安装，无论软件还是硬件上所需要的资源都不需要资金投入。对于程序完成制作之后，在使用者的使用期间，此程序还会节省人工成本，节省时间成本，并给使用者带来较客观的收益。</p>
+<h3 id="314-操作可行性分析">3.1.4 操作可行性分析</h3>
+<p>程序的各个操作功能都有对应的界面，每个功能界面都有相应的功能提示，比如导航条是每个程序必备的界面设置，点击程序的各个功能导航条，会进入相应的操作界面，从这个角度来看，可以得出的信息就是，该程序的操作逻辑并不复杂，就算生活中的普通用户操作该程序，也能根据程序里面的功能提示进行操作。因此，程序的运行使用是可以进行的。</p>
+<p>总而言之，此程序从技术角度分析可以进行开发，从时间角度分析，预留时间完全够用，从操作角度分析，程序的操作难度较低，使用者可以顺利操作等，因此，程序也就可以投入人力与时间进行制作。</p>
+<h2 id="32系统性能分析">3.2系统性能分析</h2>
+<p>如何制作出一款性能优良的程序也是需要提前分析和考虑的，程序的性能首先要保证稳定性，主要是让使用者可以信赖程序。程序现有的功能需求是为了解决当前面临的问题，在此基础上，也需要把社会的进步，科技的发展考虑在内。多年以后，相信用户的需求就不仅仅是现在提出来的需求了，肯定会额外增加许多新的功能，因为在早期，由于用户需求还有程序开发者的技术水平的影响，早期的程序大都只是简单的增加，删除，以及数据更新等，并不存在数据的分析功能，比如数据统计等。然而，现在科学也在进步，开发技术也在迭代更新，开发者的开发经验以及开发技能也得到提升，程序具备的功能也是在同步更新，比如以前的程序，基本就是数据的增加，修改等功能，现在开发的程序都开始考虑对数据进行统计与分析的功能。因此，对于一般系统的开发或者对于旧系统的更新等，都需要涉及到升级，一个是性能上保持优越，另一个是功能上保持更加齐全等，这些都需要在原来的系统上进行改变，并达到升级的目的，所以，任何可开发程序都要模块化，也都要具备可扩展性，并且在进行程序功能扩展时，程序原本正常运行的功能可以继续使用，程序本身的整体结构保持原样。一个稳定性强，并可迭代升级的程序，在满足使用者日常操作需求的同时，也能更好应对当前时代的变化。</p>
+<h2 id="33系统流程分析">3.3系统流程分析</h2>
+<p>流程图更能反映程序处理信息的逻辑，本部分内容对程序的流程进行说明。</p>
+<p>信息添加流程：程序里面的所有数据都是是操作者录入的数据，之所以可以成功录入这些数据，主要还是逻辑判断，判断输入的信息合理，程序数据库才会保存数据。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0800ssm/ssm814/blog.001.png"
+        data-srcset="/images/0800ssm/ssm814/blog.001.png, /images/0800ssm/ssm814/blog.001.png 1.5x, /images/0800ssm/ssm814/blog.001.png 2x"
+        data-sizes="auto"
+        alt="/images/0800ssm/ssm814/blog.001.png"
+        title="/images/0800ssm/ssm814/blog.001.png" /></p>
+<p>图3.1 信息添加流程图</p>
+<p>信息修改流程：程序里面的所有数据也是需要使用者不断检查的，当检查某个数据项的信息有错误，也能修改。所以程序设置的修改功能，主要还是帮助用户更高效地更正程序数据，保持数据的正确性与可用性。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0800ssm/ssm814/blog.002.png"
+        data-srcset="/images/0800ssm/ssm814/blog.002.png, /images/0800ssm/ssm814/blog.002.png 1.5x, /images/0800ssm/ssm814/blog.002.png 2x"
+        data-sizes="auto"
+        alt="/images/0800ssm/ssm814/blog.002.png"
+        title="/images/0800ssm/ssm814/blog.002.png" /></p>
+<p>图3.2 信息修改流程图</p>
+<p>信息查询流程：程序后台存放的数据很多，当用户需要某种信息时，不可能再去一行行寻找，所以查询功能的设置也是必要的，相应的程序查询流程（见下图）也是需要检验用户填写的查询条件的合理性与可靠性。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0800ssm/ssm814/blog.003.png"
+        data-srcset="/images/0800ssm/ssm814/blog.003.png, /images/0800ssm/ssm814/blog.003.png 1.5x, /images/0800ssm/ssm814/blog.003.png 2x"
+        data-sizes="auto"
+        alt="/images/0800ssm/ssm814/blog.003.png"
+        title="/images/0800ssm/ssm814/blog.003.png" /></p>
+<p>图3.3 信息查询流程图</p>
+<h1 id="4-系统设计">4 系统设计</h1>
+<p>程序的系统设计阶段任务比较重，需要具体设计程序功能，也需要设计存储数据的数据库。设计功能可以以功能结构图展示设计结果，设计数据库，可以以E-R图和表结构展示设计的数据库。</p>
+<h2 id="41系统功能结构设计">4.1系统功能结构设计</h2>
+<p>在使用用例图绘制管理员的功能之后，需要对管理员的功能进行更加细致的设计，也是为下阶段的系统实现做好准备。设计管理员的功能使用结构图展示（见下图）。管理员功能有个人中心，轮播图管理，公告类型管理，商家信用类型管理，商品类型管理，公告管理，商品管理，商品评价管理，商品评价管理，商品留言管理，商品订单管理，用户管理，商家管理。商家可以注册和登录，修改个人信息，修改密码，商品管理，商品评价管理，商品留言管理，商品订单管理。用户可以注册和登录，修改个人信息和修改个人密码，查看公告信息，查看商品信息，查看商家信息，可以对商品信息进行搜索和购买，可以把商品添加到购物车里进行操作，也可以对商品进行留言和评价以及收藏，可以管理自己的收获地址和商品收藏以及查看自己的商品订单等操作。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0800ssm/ssm814/blog.004.png"
+        data-srcset="/images/0800ssm/ssm814/blog.004.png, /images/0800ssm/ssm814/blog.004.png 1.5x, /images/0800ssm/ssm814/blog.004.png 2x"
+        data-sizes="auto"
+        alt="/images/0800ssm/ssm814/blog.004.png"
+        title="/images/0800ssm/ssm814/blog.004.png" /></p>
+<p>图4.1 管理员功能结构图</p>
+<h2 id="42数据库设计">4.2数据库设计</h2>
+<p>操作者使用程序，不管是信息添加，信息删除和查询等都是在处理和访问程序数据，程序的数据只会越来越多，所以一个专门保存数据的工具就显得很有必要。这个工具就是数据库，为了让所选数据库更好的服务于开发的程序，就要对这个数据库创建相应的数据库文件，并进行规则设计，让数据库在应对程序的各种数据处理请求时可以及时进行反馈。</p>
+<h3 id="421数据库e-r图">4.2.1数据库E-R图</h3>
+<p>在分析出并设计好程序的相关功能之后，还有一个比较重要的设计任务，就是参照程序的功能设计出此程序的数据库，这部分内容设计到数据库实体的确定，主要是绘制其E-R图，也涉及到在数据库中创建表，完成表结构的具体设计。说到E-R图的绘制，市场上也有很多绘制其的软件，它们大都提供了E-R图的基本表示符号，所以通过鼠标的选择与拖拽就可以完成初步的绘制，由于使用习惯的问题，本人更加倾向于微软的Visio，对PowerDesigner建模工具，还有对比较受欢迎的Navicat等工具接触较少，为了如期提交作品，这里就不再花费额外的时间去学习一些E-R图的建模工具了，仅仅使用常用的，比较熟悉的Visio工具就行了。代表E-R图符号的有矩形，椭圆，菱形。它们分别表示不同的信息，第一种是矩形符号，绘制实体时选用，第二种是椭圆符号，专门代表矩形实体的属性，第三种是菱形符号，专门代表各个矩形实体当中的某种联系。</p>
+<p>（1）此数据库设计了管理员实体，它对应的E-R图（见下图）需要使用Visio工具绘制。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0800ssm/ssm814/blog.005.png"
+        data-srcset="/images/0800ssm/ssm814/blog.005.png, /images/0800ssm/ssm814/blog.005.png 1.5x, /images/0800ssm/ssm814/blog.005.png 2x"
+        data-sizes="auto"
+        alt="/images/0800ssm/ssm814/blog.005.png"
+        title="/images/0800ssm/ssm814/blog.005.png" /></p>
+<p>图4.7 管理员实体E-R图</p>
+<p>（2）此数据库设计了用户实体，它对应的E-R图（见下图）需要使用Visio工具绘制。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0800ssm/ssm814/blog.006.png"
+        data-srcset="/images/0800ssm/ssm814/blog.006.png, /images/0800ssm/ssm814/blog.006.png 1.5x, /images/0800ssm/ssm814/blog.006.png 2x"
+        data-sizes="auto"
+        alt="/images/0800ssm/ssm814/blog.006.png"
+        title="/images/0800ssm/ssm814/blog.006.png" /></p>
+<p>图4.8 用户实体E-R图</p>
+<p>（3）此数据库设计了商家实体，它对应的E-R图（见下图）需要使用Visio工具绘制。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0800ssm/ssm814/blog.007.png"
+        data-srcset="/images/0800ssm/ssm814/blog.007.png, /images/0800ssm/ssm814/blog.007.png 1.5x, /images/0800ssm/ssm814/blog.007.png 2x"
+        data-sizes="auto"
+        alt="/images/0800ssm/ssm814/blog.007.png"
+        title="/images/0800ssm/ssm814/blog.007.png" /></p>
+<p>图4.9 商家实体E-R图</p>
+<h3 id="422-数据库表结构">4.2.2 数据库表结构</h3>
+<p>存储程序数据需要一定的规则进行，这样才可以确保后期在对数据库的数据进行使用时，可以使用一定的规则进行查询并显示出来。数据库里面的每个表的结构设计都是不一样的，但是都包含了字段名，字段对应的数据类型，以及数据类型的长度值等。每当设计好一个数据表结构时，在程序运行中，就会依照这样的表结构依次存储数据，所以在程序进行数据添加时，数据库中就会新增数据，程序进行数据更新时，数据库也是同步更新数据。程序执行删除功能时，也会在对应数据表中清除相应的数据。所以，每当使用者在执行功能时，都会在操作界面查看实时变化的数据，这些数据同样也是在数据库当中进行变化，最后会把数据库当中的已经发生变化的信息同步显示在程序操作界面。所以，数据表的结构的设计一定要多花时间进行思考。设计出最优秀的结构，可以减少数据冗余，让数据检索更快捷，让数据存储可以更方便，让程序的整体性能可以提升。</p>
+<p>1商品评价表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">shangpin_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">商品</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">yonghu_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">用户</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">shangpin_commentback_text</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">评价内容</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">insert_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">评价时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">reply_text</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">回复内容</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">update_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">回复时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">2收货地址表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">yonghu_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">创建用户</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">address_name</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">收货人</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">address_phone</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">电话</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">address_dizhi</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">地址</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">isdefault_types</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">是否默认地址</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">insert_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">添加时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">update_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">修改时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3商品表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">shangjia_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">商家</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">shangpin_name</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">商品名称</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">shangpin_uuid_number</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">商品编号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">shangpin_photo</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">商品照片</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">shangpin_types</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">商品类型</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">mingxingchanpin_types</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">是否明星产品</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">shangpin_kucun_number</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">商品库存</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">shangpin_old_money</td>
+<td style="text-align:center">BigDecimal</td>
+<td style="text-align:center">商品原价</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">shangpin_new_money</td>
+<td style="text-align:center">BigDecimal</td>
+<td style="text-align:center">现价</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td style="text-align:center">shangpin_clicknum</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">商品热度</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">12</td>
+<td style="text-align:center">shangpin_content</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">商品介绍</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">13</td>
+<td style="text-align:center">shangxia_types</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">是否上架</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">14</td>
+<td style="text-align:center">shangpin_delete</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">逻辑删除</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">15</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4商品收藏表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">shangpin_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">商品</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">yonghu_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">用户</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">shangpin_collection_types</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">类型</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">insert_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">收藏时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5商品留言表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">shangpin_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">商品</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">yonghu_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">用户</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">shangpin_liuyan_text</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">留言内容</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">insert_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">留言时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">reply_text</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">回复内容</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">update_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">回复时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6购物车表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">yonghu_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">所属用户</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">shangpin_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">商品</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">buy_number</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">购买数量</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">添加时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">update_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">更新时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">insert_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7商家表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">username</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">账户</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">password</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">密码</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">shangjia_name</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">商家名称</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">shangjia_phone</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">联系方式</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">shangjia_email</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">邮箱</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">shangjia_photo</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">营业执照展示</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">shangjia_xingji_types</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">商家信用类型</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">new_money</td>
+<td style="text-align:center">BigDecimal</td>
+<td style="text-align:center">现有余额</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">shangjia_content</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">商家简介</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td style="text-align:center">shangjia_delete</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">逻辑删除</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">12</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8管理员表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">username</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">用户名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">password</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">密码</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">role</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">角色</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">新增时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">9token表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">userid</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">用户id</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">username</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">用户名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">tablename</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">表名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">role</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">角色</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">token</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">密码</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">新增时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">expiratedtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">过期时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">10字典表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">dic_code</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">字段</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">dic_name</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">字段名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">code_index</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">编码</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">index_name</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">编码名字</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">super_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">父字段id</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">beizhu</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">备注</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">11用户表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">username</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">账户</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">password</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">密码</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">yonghu_uuid_number</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">用户唯一编号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">yonghu_name</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">用户姓名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">yonghu_phone</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">用户手机号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">yonghu_id_number</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">用户身份证号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">yonghu_photo</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">用户头像</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">sex_types</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">性别</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">yonghu_email</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">电子邮箱</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td style="text-align:center">new_money</td>
+<td style="text-align:center">BigDecimal</td>
+<td style="text-align:center">余额</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">12</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">12商品订单表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">shangpin_order_uuid_number</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">订单号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">address_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">收货地址</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">shangpin_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">商品</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">yonghu_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">用户</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">buy_number</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">购买数量</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">shangpin_order_true_price</td>
+<td style="text-align:center">BigDecimal</td>
+<td style="text-align:center">实付价格</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">shangpin_order_courier_name</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">快递公司</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">shangpin_order_courier_number</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">订单快递单号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">shangpin_order_types</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">订单类型</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td style="text-align:center">shangpin_order_payment_types</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">支付类型</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">12</td>
+<td style="text-align:center">insert_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">订单创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">13</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">13配置文件表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">name</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">配置参数名称</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">value</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">配置参数值</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">14公告表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">gonggao_name</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">公告名称</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">gonggao_photo</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">公告图片</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">gonggao_types</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">公告类型</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">insert_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">公告发布时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">gonggao_content</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">公告详情</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+</tbody>
+</table>
+<h1 id="5-系统实现">5 系统实现</h1>
+<p>程序设计阶段的完成，就可以使用设计结果，比如功能结构的设计结果，数据库的设计结果来指导程序的开发内容，主要还是使用开发技术来实现程序功能。实现部分不仅包括了界面的布局与排版，也涉及到对功能的实现。</p>
+<h2 id="51管理员功能介绍">5.1管理员功能介绍</h2>
+<h3 id="511用户管理">5.1.1用户管理</h3>
+<p>管理员可以添加，修改，删除，查询用户信息。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0800ssm/ssm814/blog.008.png"
+        data-srcset="/images/0800ssm/ssm814/blog.008.png, /images/0800ssm/ssm814/blog.008.png 1.5x, /images/0800ssm/ssm814/blog.008.png 2x"
+        data-sizes="auto"
+        alt="/images/0800ssm/ssm814/blog.008.png"
+        title="/images/0800ssm/ssm814/blog.008.png" /></p>
+<p>图5.1 用户管理页面</p>
+<h3 id="512-商家管理">5.1.2 商家管理</h3>
+<p>管理员可以添加，修改，删除，查询商家信息。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0800ssm/ssm814/blog.009.png"
+        data-srcset="/images/0800ssm/ssm814/blog.009.png, /images/0800ssm/ssm814/blog.009.png 1.5x, /images/0800ssm/ssm814/blog.009.png 2x"
+        data-sizes="auto"
+        alt="/images/0800ssm/ssm814/blog.009.png"
+        title="/images/0800ssm/ssm814/blog.009.png" /></p>
+<p>图5.2 商家管理页面</p>
+<h3 id="513-公告管理">5.1.3 公告管理</h3>
+<p>管理员可以添加，修改，删除，查询公告信息。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0800ssm/ssm814/blog.010.png"
+        data-srcset="/images/0800ssm/ssm814/blog.010.png, /images/0800ssm/ssm814/blog.010.png 1.5x, /images/0800ssm/ssm814/blog.010.png 2x"
+        data-sizes="auto"
+        alt="/images/0800ssm/ssm814/blog.010.png"
+        title="/images/0800ssm/ssm814/blog.010.png" /></p>
+<p>图5.3 公告管理页面</p>
+<h2 id="52-商家功能介绍">5.2 商家功能介绍</h2>
+<h3 id="521商品管理">5.2.1商品管理</h3>
+<p>商家可以对商品信息进行添加，修改，删除，查询，上架，下架，增加和减少库存等操作。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0800ssm/ssm814/blog.011.png"
+        data-srcset="/images/0800ssm/ssm814/blog.011.png, /images/0800ssm/ssm814/blog.011.png 1.5x, /images/0800ssm/ssm814/blog.011.png 2x"
+        data-sizes="auto"
+        alt="/images/0800ssm/ssm814/blog.011.png"
+        title="/images/0800ssm/ssm814/blog.011.png" /></p>
+<p>图5.4 商品管理页面</p>
+<h3 id="522商品评价">5.2.2商品评价</h3>
+<p>商家可以查看和搜索以及回复商品评价信息。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0800ssm/ssm814/blog.012.png"
+        data-srcset="/images/0800ssm/ssm814/blog.012.png, /images/0800ssm/ssm814/blog.012.png 1.5x, /images/0800ssm/ssm814/blog.012.png 2x"
+        data-sizes="auto"
+        alt="/images/0800ssm/ssm814/blog.012.png"
+        title="/images/0800ssm/ssm814/blog.012.png" /></p>
+<p>图5.5 商品评价页面</p>
+<h3 id="523商品订单">5.2.3商品订单</h3>
+<p>商家可以搜索，查看用户提交的订单信息。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0800ssm/ssm814/blog.013.png"
+        data-srcset="/images/0800ssm/ssm814/blog.013.png, /images/0800ssm/ssm814/blog.013.png 1.5x, /images/0800ssm/ssm814/blog.013.png 2x"
+        data-sizes="auto"
+        alt="/images/0800ssm/ssm814/blog.013.png"
+        title="/images/0800ssm/ssm814/blog.013.png" /></p>
+<p>图5.6 商品订单页面</p>
+<h2 id="53-用户功能介绍">5.3 用户功能介绍</h2>
+<h3 id="531商品信息">5.3.1商品信息</h3>
+<p>用户可以查看商品信息，收藏商品信息，留言和评价，添加到购物车和立即购买操作。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0800ssm/ssm814/blog.014.png"
+        data-srcset="/images/0800ssm/ssm814/blog.014.png, /images/0800ssm/ssm814/blog.014.png 1.5x, /images/0800ssm/ssm814/blog.014.png 2x"
+        data-sizes="auto"
+        alt="/images/0800ssm/ssm814/blog.014.png"
+        title="/images/0800ssm/ssm814/blog.014.png" /></p>
+<p>图5.7 商品信息页面</p>
+<h3 id="532购物车">5.3.2购物车</h3>
+<p>用户可以把商品添加到购物车，在购物车里面进行修改数量和点击结算操作。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0800ssm/ssm814/blog.015.png"
+        data-srcset="/images/0800ssm/ssm814/blog.015.png, /images/0800ssm/ssm814/blog.015.png 1.5x, /images/0800ssm/ssm814/blog.015.png 2x"
+        data-sizes="auto"
+        alt="/images/0800ssm/ssm814/blog.015.png"
+        title="/images/0800ssm/ssm814/blog.015.png" /></p>
+<p>图5.8 购物车页面</p>
+<h3 id="533提交订单">5.3.3提交订单</h3>
+<p>用户可以提交订单，可以选择收货人和收货地址。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0800ssm/ssm814/blog.016.png"
+        data-srcset="/images/0800ssm/ssm814/blog.016.png, /images/0800ssm/ssm814/blog.016.png 1.5x, /images/0800ssm/ssm814/blog.016.png 2x"
+        data-sizes="auto"
+        alt="/images/0800ssm/ssm814/blog.016.png"
+        title="/images/0800ssm/ssm814/blog.016.png" /></p>
+<p>图5.9 提交订单页面</p>
+<h3 id="534我的订单">5.3.4我的订单</h3>
+<p>用户可以查看自己的订单信息。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0800ssm/ssm814/blog.017.png"
+        data-srcset="/images/0800ssm/ssm814/blog.017.png, /images/0800ssm/ssm814/blog.017.png 1.5x, /images/0800ssm/ssm814/blog.017.png 2x"
+        data-sizes="auto"
+        alt="/images/0800ssm/ssm814/blog.017.png"
+        title="/images/0800ssm/ssm814/blog.017.png" /></p>
+<p>图5.810 我的订单页面</p>
+<h1 id="系统">系统</h1>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2024-07-24</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/ssm814%E5%9F%BA%E4%BA%8Ejsp%E7%9A%84%E5%AE%B6%E7%BA%BA%E7%94%A8%E5%93%81%E9%94%80%E5%94%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-jsp/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://chenqi199.github.io/ssm814%E5%9F%BA%E4%BA%8Ejsp%E7%9A%84%E5%AE%B6%E7%BA%BA%E7%94%A8%E5%93%81%E9%94%80%E5%94%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-jsp/" data-title="ssm814基于JSP的家纺用品销售管理系统&#43;jsp" data-hashtags="ssm纺,纺用品,用品销售,销售管理,管理系统"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://chenqi199.github.io/ssm814%E5%9F%BA%E4%BA%8Ejsp%E7%9A%84%E5%AE%B6%E7%BA%BA%E7%94%A8%E5%93%81%E9%94%80%E5%94%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-jsp/" data-hashtag="ssm纺"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://chenqi199.github.io/ssm814%E5%9F%BA%E4%BA%8Ejsp%E7%9A%84%E5%AE%B6%E7%BA%BA%E7%94%A8%E5%93%81%E9%94%80%E5%94%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-jsp/" data-title="ssm814基于JSP的家纺用品销售管理系统&#43;jsp"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://chenqi199.github.io/ssm814%E5%9F%BA%E4%BA%8Ejsp%E7%9A%84%E5%AE%B6%E7%BA%BA%E7%94%A8%E5%93%81%E9%94%80%E5%94%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-jsp/" data-title="ssm814基于JSP的家纺用品销售管理系统&#43;jsp"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://chenqi199.github.io/ssm814%E5%9F%BA%E4%BA%8Ejsp%E7%9A%84%E5%AE%B6%E7%BA%BA%E7%94%A8%E5%93%81%E9%94%80%E5%94%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-jsp/" data-title="ssm814基于JSP的家纺用品销售管理系统&#43;jsp" data-ralateuid="https://gitee.com/chen_q_i"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ssm%E7%BA%BA/">Ssm纺</a>,&nbsp;<a href="/tags/%E7%BA%BA%E7%94%A8%E5%93%81/">纺用品</a>,&nbsp;<a href="/tags/%E7%94%A8%E5%93%81%E9%94%80%E5%94%AE/">用品销售</a>,&nbsp;<a href="/tags/%E9%94%80%E5%94%AE%E7%AE%A1%E7%90%86/">销售管理</a>,&nbsp;<a href="/tags/%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/">管理系统</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/ssm809%E9%A9%BE%E8%80%83%E8%87%AA%E4%B8%BB%E5%AD%A6%E4%B9%A0%E9%A2%84%E7%BA%A6%E5%B9%B3%E5%8F%B0-vue/" class="prev" rel="prev" title="ssm809驾考自主学习预约平台&#43;vue"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>ssm809驾考自主学习预约平台+vue</a>
+            <a href="/ssm813%E6%95%99%E5%8A%A1%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" class="next" rel="next" title="ssm813教务管理系统&#43;vue">ssm813教务管理系统+vue<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.128.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="chenqi199" target="_blank">chenqi</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

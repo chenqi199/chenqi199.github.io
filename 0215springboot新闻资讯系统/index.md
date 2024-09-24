@@ -1,17 +1,16 @@
 # 0215springboot新闻资讯系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0215springboot新闻资讯系统](https://github.com/GraduationProject-springboot/0215springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)]()
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第一章  课题背景及研究内容
 
@@ -45,7 +44,7 @@
 ## 2.1 B/S结构  
 B/S结构实际上就是Browser/Server（浏览器/服务器）的缩写，B/S结构是目前软件开发中的主流结构，大多数软件开发者都采用B/S这样的三层体系结构。采用B/S结构开发的新闻资讯系统能够大大方便用户使用操作，用户随时随地都可以进行新闻资讯系统的访问操作，只需要用户拥有一台会连上网络的计算机就行了，并且使用B/S 模式开发的新闻资讯系统是基于浏览器的操作方式，在与用户进行交互以及程序的表现方式上面将会更加吸引人，这样的模式也给程序员开发程序降低了难度，程序开发成本也会相应缩减不少。我们在使用新闻资讯系统期间，系统也会随着用户需求进行完善升级，使用B/S 模式开发的新闻资讯系统就完全不需要担心，因为它的升级速度快，升级产生的成本费用很低，大多依赖于用户自己在网络上下载最新版本进行安装完成程序更新。下图为B/S结构图。
 
-![](/images/0200stringboot/0215springboot/blog.004.png)
+![](/images/0200wxapp//blog.004.png)
 
 图2.2 B/S结构图
 ## 2.2 MySQL数据库
@@ -72,13 +71,13 @@ B/S结构实际上就是Browser/Server（浏览器/服务器）的缩写，B/S�
 ## 3.2系统流程分析
 新闻资讯系统的开发也是有对应的流程，开发之前必须要进行用户功能需求的分析，最后根据功能需求进行网站设计还有数据库相关数据的设计工作，此次开发的新闻资讯系统开发流程如图3.1所示。
 
-![](/images/0200stringboot/0215springboot/blog.005.png)
+![](/images/0200wxapp//blog.005.png)
 
 图3.1 系统开发流程图
 
 系统开发完成之后会给用户提供登录入口，在这个界面用户输入的信息会得到验证，通过验证之后才能进去新闻资讯系统的访问主界面，系统登录执行流程如下：
 
-![](/images/0200stringboot/0215springboot/blog.006.png)
+![](/images/0200wxapp//blog.006.png)
 
 图3.2 系统执行流程图
 ## 3.3系统功能需求分析
@@ -168,7 +167,7 @@ B/S结构实际上就是Browser/Server（浏览器/服务器）的缩写，B/S�
 吸文章修改
 
 删文章删除
-![](/images/0200stringboot/0215springboot/blog.007.png)
+![](/images/0200wxapp//blog.007.png)
 
 图4.1 管理员功能结构图
 
@@ -182,27 +181,27 @@ B/S结构实际上就是Browser/Server（浏览器/服务器）的缩写，B/S�
 
 （1）下图是用户实体和其具备的属性。
 
-![用户](/images/0200stringboot/0215springboot/blog.008.jpeg "用户")
+![用户](/images/0200wxapp//blog.008.jpeg "用户")
 图4.1 用户实体属性图
 
 （2）下图是文章收藏实体和其具备的属性。
 
-![文章收藏](/images/0200stringboot/0215springboot/blog.009.jpeg "文章收藏")
+![文章收藏](/images/0200wxapp//blog.009.jpeg "文章收藏")
 图4.2 文章收藏实体属性图
 
 （3）下图是文章留言实体和其具备的属性。
 
-![文章留言](/images/0200stringboot/0215springboot/blog.010.jpeg "文章留言")
+![文章留言](/images/0200wxapp//blog.010.jpeg "文章留言")
 图4.3 文章留言实体属性图
 
 （4）下图是自媒体人实体和其具备的属性。
 
-![自媒体人](/images/0200stringboot/0215springboot/blog.011.jpeg "自媒体人")
+![自媒体人](/images/0200wxapp//blog.011.jpeg "自媒体人")
 图4.4 自媒体人实体属性图
 
 （5）下图是文章实体和其具备的属性。
 
-![文章](/images/0200stringboot/0215springboot/blog.012.jpeg "文章")
+![文章](/images/0200wxapp//blog.012.jpeg "文章")
 图4.5 文章实体属性图
 
 
@@ -317,19 +316,19 @@ B/S结构实际上就是Browser/Server（浏览器/服务器）的缩写，B/S�
 ### 5.1.1 文章列表
 如图5.1显示的就是文章列表页面，此页面提供给管理员的功能有：查看文章、新增文章、修改文章、删除文章等。
 
-![](/images/0200stringboot/0215springboot/blog.013.png)
+![](/images/0200wxapp//blog.013.png)
 
 图5.1 文章列表页面
 ### 5.1.2 用户管理
 管理员可以对前台的注册用户的基本信息进行管理，可以设置注册用户的账号为冻结或者是在用状态，管理员也能选择很多个已经失效的注册用户的信息进行批量删除操作。注册用户管理界面如图5.2所示。
 
-![](/images/0200stringboot/0215springboot/blog.014.png)
+![](/images/0200wxapp//blog.014.png)
 
 图5.2 用户管理页面
 ### 5.1.3 文章类型管理
 文章类型管理页面显示所有文章类型，在此页面既可以让管理员添加新的文章信息类型，也能对已有的文章类型信息执行编辑更新，失效的文章类型信息也能让管理员快速删除。下图就是文章类型管理页面。文章类型管理界面如图5.3所示。
 
-![](/images/0200stringboot/0215springboot/blog.015.png)
+![](/images/0200wxapp//blog.015.png)
 
 图5.3文章类型管理界面
 

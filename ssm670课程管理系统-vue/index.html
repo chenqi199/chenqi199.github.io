@@ -1,0 +1,1633 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer" />
+        <meta name="robots" content="noodp" />
+        <title>ssm670课程管理系统&#43;vue - chenqi blog</title><meta name="Description" content="Hugo theme - chenqi"><meta property="og:url" content="https://chenqi199.github.io/ssm670%E8%AF%BE%E7%A8%8B%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/">
+  <meta property="og:site_name" content="chenqi blog">
+  <meta property="og:title" content="ssm670课程管理系统&#43;vue">
+  <meta property="og:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm670课程管理系统&#43;vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第1章 绪论 1.1研究背景 近年来，第三产业">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-06-06T10:33:00+08:00">
+    <meta property="article:modified_time" content="2024-06-06T10:33:00+08:00">
+    <meta property="article:tag" content="Ssm课程">
+    <meta property="article:tag" content="课程管理">
+    <meta property="article:tag" content="管理系统">
+    <meta property="og:image" content="https://chenqi199.github.io/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chenqi199.github.io/logo.png">
+  <meta name="twitter:title" content="ssm670课程管理系统&#43;vue">
+  <meta name="twitter:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm670课程管理系统&#43;vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第1章 绪论 1.1研究背景 近年来，第三产业">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chenqi199.github.io/ssm670%E8%AF%BE%E7%A8%8B%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" /><link rel="prev" href="https://chenqi199.github.io/0665springbootjava%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0--%E8%AE%BA%E6%96%87/" /><link rel="next" href="https://chenqi199.github.io/ssm669%E5%9F%BA%E4%BA%8Eweb%E7%9A%84%E5%AD%A6%E7%94%9F%E8%80%83%E5%8B%A4%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "ssm670课程管理系统+vue",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chenqi199.github.io\/ssm670%E8%AF%BE%E7%A8%8B%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue\/"
+        },"image": ["https:\/\/chenqi199.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "ssm课程, 课程管理, 管理系统","wordcount":  10659 ,
+        "url": "https:\/\/chenqi199.github.io\/ssm670%E8%AF%BE%E7%A8%8B%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue\/","datePublished": "2024-06-06T10:33:00+08:00","dateModified": "2024-06-06T10:33:00+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/chenqi199.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "chenqi"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/ssm670%E8%AF%BE%E7%A8%8B%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/ssm670%E8%AF%BE%E7%A8%8B%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">ssm670课程管理系统+vue</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="chenqi199" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>chenqi</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-06-06">2024-06-06</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 10659 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 22 分钟&nbsp;<span id="/ssm670%E8%AF%BE%E7%A8%8B%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" class="leancloud_visitors" data-flag-title="ssm670课程管理系统&#43;vue">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">github 项目仓库</a> 开源仅有后端代码</a></li>
+        <li><a href="#点击播放视频-">点击播放视频 ▼</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#11研究背景">1.1研究背景</a></li>
+    <li><a href="#12研究意义">1.2研究意义</a></li>
+    <li><a href="#13国内外研究现状">1.3国内外研究现状</a>
+      <ul>
+        <li><a href="#131国外研究现状">1.3.1国外研究现状</a></li>
+        <li><a href="#132国内研究现状">1.3.2国内研究现状</a></li>
+      </ul>
+    </li>
+    <li><a href="#14研究内容与方法">1.4研究内容与方法</a>
+      <ul>
+        <li><a href="#141研究内容">1.4.1研究内容</a></li>
+        <li><a href="#142研究方法">1.4.2研究方法</a></li>
+      </ul>
+    </li>
+    <li><a href="#15论文的组织结构">1.5论文的组织结构</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#21-bs结构">2.1 B/S结构</a></li>
+    <li><a href="#22-java语言">2.2 Java语言</a></li>
+    <li><a href="#23-ssm框架">2.3 SSM框架</a></li>
+    <li><a href="#24-mysql数据库">2.4 MySQL数据库</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#31系统的需求分析">3.1系统的需求分析</a></li>
+    <li><a href="#32系统的可行性分析">3.2系统的可行性分析</a>
+      <ul>
+        <li><a href="#321经济可行性">3.2.1经济可行性</a></li>
+        <li><a href="#322技术可行性">3.2.2技术可行性</a></li>
+        <li><a href="#323操作可行性">3.2.3操作可行性</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#41系统的总体功能设计">4.1系统的总体功能设计</a>
+      <ul>
+        <li><a href="#421概念设计">4.2.1概念设计</a></li>
+        <li><a href="#422逻辑设计">4.2.2逻辑设计</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#51个人中心">5.1个人中心</a></li>
+    <li><a href="#52基础数据管理">5.2基础数据管理</a></li>
+    <li><a href="#53老师管理">5.3老师管理</a></li>
+    <li><a href="#54学生管理">5.4学生管理</a></li>
+    <li><a href="#55考勤管理">5.5考勤管理</a></li>
+    <li><a href="#56课程管理">5.6课程管理</a></li>
+    <li><a href="#57课程留言管理">5.7课程留言管理</a></li>
+    <li><a href="#58课程收藏管理">5.8课程收藏管理</a></li>
+    <li><a href="#59课程订单管理">5.9课程订单管理</a></li>
+    <li><a href="#510章节管理">5.10章节管理</a></li>
+    <li><a href="#511作业管理">5.11作业管理</a></li>
+    <li><a href="#512轮播图管理">5.12轮播图管理</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="项目清单-包安装运行httpchenqi1990site-官网地址-httpchenqi1990site"><a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">项目清单 包安装运行</a> 官网地址 <a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">http://chenqi1990.site</a></h1>
+<h1 id="ssm670课程管理系统vuehttpsgithubcomgraduationproject-springboot"><a href="https://github.com/GraduationProject-springboot/" target="_blank" rel="noopener noreffer ">ssm670课程管理系统+vue</a></h1>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        data-srcset="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 1.5x, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        title="picture" /></p>
+<h3 id="github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">github 项目仓库</a> 开源仅有后端代码</h3>
+<h3 id="点击播放视频-">点击播放视频 ▼</h3>
+<p><a href="" rel=""><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.sstatic.net/Vp2cE.png"
+        data-srcset="https://i.sstatic.net/Vp2cE.png, https://i.sstatic.net/Vp2cE.png 1.5x, https://i.sstatic.net/Vp2cE.png 2x"
+        data-sizes="auto"
+        alt="https://i.sstatic.net/Vp2cE.png"
+        title="Watch the video" /></a></p>
+<h1 id="第1章-绪论">第1章 绪论</h1>
+<h2 id="11研究背景">1.1研究背景</h2>
+<p>近年来，第三产业发展非常迅速，诸如计算机服务、旅游、娱乐、体育等服务行业，对整个社会的经济建设起到了极大地促进作用，这一点是毋庸置疑的。现下，国家也出台了一些列的政策来支持和鼓励第三服务产业的发展与完善，用以带动社会经济的发展[1]。所以，整体来说，国家是比较提倡发展第三方服务行业的。纵观计算机领域的整个发展历程，从计算机的诞生到现在，已经有几百年的历史了，计算机应用技术也逐步趋于成熟，并且相关的设计人员也在不断地对其进行改进和完善。再到如今，计算机已经发展成为一个比较热门的行业了。在高校中，计算机、人工智能等专业热度非常高，许多学生在选择专业的时候，大都优先考虑计算机专业。在社会上，计算机类行业也成为了比较受欢迎的行业，从在浏览器中访问的网址，到手机上的各种应用程序，到大型的软件服务设备，基本上都离不开计算机技术支持，以及硬件的支撑。</p>
+<p>如今，互联网几乎遍布于世界的各个角落，人工智能、大数据占据的越来越重要的社会地位，比如疫情期间，通过大数据技术进行筛查，确定哪些人员无接触史，哪些人员需要重点观察，由此可以在极短的时间内，以最快的速度对疫情进行防控。在这个大背景环境的推动下，本人通过学习Java语言、MySQL数据库、SSM框架等相关的计算机技术，打好坚实的技术基础，方便后期对系统进行研发。而后再通过对系统进行分析,确定系统的总体功能需求，以及实现的可能性，方便接下来详细地设计相关的功能模块，最后成功的研发了一款基于SSM的课程管理系统。本系统改善了传统的管理模式，将原先的手工记录和管理信息，改进为使用计算机存储和管理信息记录，极大地方便了工作人员对相关数据进行处理，为学校节约了不少的管理开销，并且能够在较短的时间内响应用户的需求，这种便捷的操作，对于用户来说可以节省了不少时间和精力，也省去了不少的麻烦，极大了方便了用户。</p>
+<h2 id="12研究意义">1.2研究意义</h2>
+<p>传统的信息管理模式，主要是以人力为主进行管理和控制，由工作人员负责登记用户信息，再通过对照之前的信息记录，确定是否给用户提供相关的使用需求，以及如何提供能让用户满意的使用需求。这种管理模式已经适应不了时代的变化了，正在不断地走下坡路，并且逐步被信息化管理模式所取代。所谓的信息化管理模式，是现在主流的一种管理模式，其通过与计算机技术相结合的方式，对行业的整个工作模式和服务流程进行改进和完善。其主要通过使用计算机等设备，将工作服务流程电子化，并且进行存储记录，用以提高行业整体的服务水平。结合使用计算机技术，本人研发出一款基于SSM的课程管理系统，采用电子化的方式对数据信息进行存储，便于工作人员对相关信息进行记录和管理，有利于提高学校的工作运营效率以及工作人员的管理速度，以此更好的满足用户的相关需求，最终达到提升用户的使用感受的目的，由此可见设计和实现本系统具有重要的意义和价值。</p>
+<h2 id="13国内外研究现状">1.3国内外研究现状</h2>
+<h3 id="131国外研究现状">1.3.1国外研究现状</h3>
+<p>美国是最先发展计算机技术的众多国家之一，早在上个世纪，美国就快速的将计算机技术发展起来，并且将其运用在军事、医院、学校、社会服务等场所。日本、德国等国家紧随其后，不断地发展和完善计算机技术，侧重将医疗、社会服务等领域与计算机技术相结合[2]。而后随着社会的发展与进步，计算机技术逐渐趋于成熟。许多发达国家在探索将计算机技术应用于各行各业中时，从另一个角度来看，也在不断地推进学校的信息化管理进程，使得课程管理也变得更加网络化、信息化了。有许多专家表示，可以结合使用图像处理软件、人工智能技术等相关工具，深度地分析课程管理系统，主要从简化运行操作，加设功能模块，美化系统界面，保障数据安全等方面，更深层次地提升和优化系统，并且尽可能地在理想状态下做到实时的信息共享。</p>
+<h3 id="132国内研究现状">1.3.2国内研究现状</h3>
+<p>国内的计算机技术的发展虽然晚于国外，尤其是美国、英国、德国等发达国家。但是我国的计算机技术发展势头非常迅猛，近些年，也逐渐走向成熟和完善的阶段。现在，选择网上购物已经成为人们日常生活的一种常态趋势，当然这也离不开对于天猫、支付宝、微信等应用软件的使用[3]。许多企业结合使用了云计算、人工智能等先进的计算机技术，自主研发了行业相关的信息管理系统，计算机技术逐渐趋于成熟，使用设计的功能逐渐趋于完备。结合计算机技术，采用主流的B/S开发结构模式开发一款基于SSM的课程管理系统。由此，本系统能够支持工作人员随时随地的通过使用浏览器进行访问操作，支持随时随地对相关的课程信息进行管理，便于及时为用户提供一定的功能服务。并且所设计的系统基本上能够符合用户的客观使用需求，有利于充分协调学校的人力、财力、物力等资源，不断提高相关工作人员的管理质量和水平[4]。</p>
+<h2 id="14研究内容与方法">1.4研究内容与方法</h2>
+<h3 id="141研究内容">1.4.1研究内容</h3>
+<p>本文首先介绍了课程管理系统的研究背景与意义，其次介绍了系统的总体功能设计，接着将对系统规划好的总体功能拆分成了各个功能子模块，然后详细地对每一个小的功能子模块进行设计，最后介绍了展示设计好的功能模块以及测试结果。系统主要分为管理员角色和用户角色，具体的功能设计包括注册登录管理、用户信息管理、课程信息管理、考勤信息管理等模块。注册登录管理功能是新用户在使用系统前，需要通过注册步骤，登记详细的信息资料，而后再通过输入正确的账号和密码，成功登录系统后，即可通过一系列的操作来满足自己的相关需求。用户信息管理功能是管理相关的用户信息资料，管理人员根据现实情况的需要，选择性的对用户信息记录进行更新处理。课程信息管理是管理相关的课程信息记录，保存详情的课程信息情况，方便及时响应用户的服务请求。考勤信息管理是管理相关的考勤信息记录，方便相关人员及时查看考勤信息，如果遇到异常的考勤信息，可以及时对其进行处理，在较短的时间内解决问题，提高用户的使用体验。</p>
+<h3 id="142研究方法">1.4.2研究方法</h3>
+<p>本系统以B/S结构进行实现，通过使用idea工具编写相关的java代码，设计系统功能模块，再通过MySQL数据库管控数据资源，由此有利于对系统相关数据进行必要的管理和控制。系统设计的最关键的环节，则是需要通过SSM框架设计系统功能架构，再通过Tomcat服务器将系统发布到浏览器上，以便相关用户的操作和使用。本系统的设计和实现促进了学校的信息化建设，有利于简化相关人员工作流程，提高工作效率，提升工作幸福感。</p>
+<h2 id="15论文的组织结构">1.5论文的组织结构</h2>
+<p>基于SSM的课程管理系统的设计与实现的论文组织安排，大致可以被分为七个章节，具体的内容如下：</p>
+<p>第一章为绪论，本章主要介绍了系统的背景、现状、方法等内容。根据研究背景与意义，介绍所要设计的系统的研究背景和理论依据，再通过国内外研究现状，了解当前相关的系统软件产品的实际研究情况，最后通过研究内容与方法，总体概括系统的整个开发流程和实现步骤，为系统提供可靠的理论依据和技术支持。</p>
+<p>第二章为相关技术介绍，本章主要介绍了开发所使用的相关技术。本系统主要使用的开发技术包括Java语言、SSM框架、MySQL数据库等，并且所使用的开发模式为B/S结构。其中，Java语言具有跨平台性，可移植性高，可以支持在不同的浏览器上运行本系统，MySQL数据库占用内存少，执行速度快，对于中小型系统的数据管理是非常好的选择。</p>
+<p>第三章为系统分析，系统分析阶段主要是对系统进行需求和可行性分析，规划系统的功能设计，判断系统实现的可能性。根据需求分析，确认使用者对系统的基本功能需求，再通过在经济、操作、法律上进行可行性分析，分析系统研发的实际意义和使用价值，系统性能的稳定性和功能操作的便捷性，以及成功投入市场的可能性。</p>
+<p>第四章为系统设计，系统设计阶段主要是对系统进行总体功能和数据库设计。通过介绍系统的总体功能设计，总体规划系统的功能模块，为系统的基本功能实现提供参考依据和设计思路。再通过介绍数据库设计，设计相关的数据二维表格存放和管理与系统有关的数据信息，便于相关人员管理与系统有关的数据信息，维护和更新数据信息的安全。</p>
+<p>第五章为系统实现，系统实现阶段主要是对课程信息管理、考勤信息管理等功能模块进行阐述。通过前面介绍的系统分析，功能及数据库设计等相关内容，详细地实现系统功能模块。系统的具体实现步骤，就是对各子模块详细设计的过程，在整个系统设计过程中，这一阶段是极为重要，直接关系到用户对系统的使用感受。</p>
+<p>第六章为系统测试，本章主要是对测试相关的内容进行叙述。本系统主要使用功能测试的方法，检查测验系统主要功能，测试所设计的系统功能模块能否正常打开，并且用户能够正常操作和使用，在系统运行过程中是否发生异常，如运行异常、数据异常、结果异常等，并且根据测试结果，给出相应的测试总结，由此得出相关结论，说明系统是否达到预期要求、设计目的。</p>
+<h1 id="第2章-开发技术介绍">第2章 开发技术介绍</h1>
+<h2 id="21-bs结构">2.1 B/S结构</h2>
+<p>就软件开发的现状而言，目前主要使用的系统开发结构模式大致可以分为C/S模式和B/S模式[5]。用户在使用基于C/S模式开发的系统时，必须下载相应的客户端，即应用程序，才能操作和使用软件系统的相关功能模块。从使用者的角度来看，由于下载和安装客户端的步骤比较繁琐，期间还需要确保下载网速的稳定性，以及安装步骤的正确性，进而增加了用户放弃使用该系统的可能性，由此可见C/S模式具有很大的局限性。</p>
+<p>由于C/S模式适用于小范围的局域网，并且具有一定的通信效率，所以在以前系统规模很小的时代，主要使用C/S模式对系统开发。随着时代地发展以及社会地进步，C/S模式也越来越满足不了开发者的设计需要，以及使用者的使用需求[6]。当下，C/S模式已经满足不了实际的系统程序设计要求，由此，B/S模式以C/S模式为基础而被提出，并且在近些年逐渐发展成为主流的开发结构模式。在B/S模式下开发的系统，不再需要用户下载和安装相应的应用程序，直接通过使用浏览器，输入正确的网站地址，以访问网站的形式实现系统的相关功能操作，这一特点对C/S模式下的开发设计做出了极大地改进，当然，使用本系统的前提是确保账号和密码是合法的。</p>
+<h2 id="22-java语言">2.2 Java语言</h2>
+<p>Java语言是一种将数据和操作方法封装成对象整体的程序设计语言，它拥有着优秀的技术体系结构。目前在市场上，很大一部分的应用系统主要使用Java语言进行开发[7]。Java语言具有简单易懂，操作方便，健壮性强等优点，开发人员能够的在短时间内理解和掌握Java语言，并将其运用到具体的系统开发过程中学。针对于系统内存管理问题，Java语言为解决这类问题，内部提供了垃圾回收机制。为了极大地简化了开发编程的难易程度，Java语言还将C语言中的指针，改进成了引用，所以受到了很多开发人员的喜爱。Java语言还具有跨平台性的特点，意味着它的可移植性非常高，这一特点有利于开发人员更新和维护相关代码，由它所开发的系统可以支持在不同的浏览器中打开。因为使用Java开发的系统兼容性较强，代码通用性较高，为了后期方便对系统进行完善和维护，所以本人最终选择使用Java语言开发本系统。</p>
+<h2 id="23-ssm框架">2.3 SSM框架</h2>
+<p>SSM框架主要由Spring、SpringMVC、MyBatis这三个框架所集成的，是现在比较流行的一种Java开发框架，能够适用于大中型的应用程序的设计和搭建。Spring是前几十年前兴起的一种轻量级的、开源的Java开发框架，使用它可以解决相关的系统对象创建和对象依赖问题，并且也可以将高耦合的系统分解为低耦合的多个功能模块，方便对系统模块进行明确的分工，对功能代码进行理解和修改，这就极大地减轻了设计人员的开发压力[8]。SpringMVC框架是基于Spring框架而被提出的，它以MVC三层架构为核心，对Spring的相关技术进行了整合，主要针对于Web端进行技术架构，通过对相关的请求处理进行细化处理，对相关的用户请求做出一定的响应处理。MyBatis框架是一种开源的Java持久层框架，它主要是通过改进手动设置参数和获取结果记录的方式，通过支持对数据库进行存储过程、高级映射等处理，使得数据库的操作更加定制化、透明化，因此降低了数据库访问的复杂性，提高了开发的工作效率。</p>
+<h2 id="24-mysql数据库">2.4 MySQL数据库</h2>
+<p>MySQL数据库是一种使用频繁的关系型数据库。因为其具有开源免费、占用内存少、安装简单、操作便捷、使用灵活等优点，所以经常被运用于中小型的系统开发中[9]。MySQL数据库可以支持多线程，在同一个时间内，能够同时响应多个用户的使用需求。MySQL数据库还自带了优化器，方便设计人员在 使用过程中，快速的查询相关的数据信息。除此之外，SQLServer数据库在当下也是使用比较频繁的，它在数据安全、系统稳定等方面还是比有所保障，但是由于其收费使用、占用内存大、操作复杂、维护成本高， 一般适用于中型及以上的系统开发中。MySQL数据库也有着许多的应用程序接口，以供相关的编程语言使用，编写的代码具有极高的通用性和维护性，并且MySQL数据库能够迅速的处理上千条数据记录，在系统故发生障时，能通过日志文件快速恢复。MySQL数据库与SQLServer数据库相比较，综合考虑成本开销、占存大小、代码通用、数据维护、操作难易程度等方面，MySQL数据库占有很大的优势，在数据库设计人员的眼中，MySQL数据库的实际运用价值极高。</p>
+<h1 id="第3章-系统分析">第3章 系统分析</h1>
+<h2 id="31系统的需求分析">3.1系统的需求分析</h2>
+<p>需求分析阶段是设计系统功能模块的总方向，可以这样来说，系统的整个的开发流程以及设计进度，基本上都是以需求分析为基本依据的[10]。需求分析阶段可以确定系统的基本功能设计，以及在最后的系统验收阶段，再通过对需求分析报告进行对比，验证系统的功能设计是否合理，能否满足用户的基本需要，最终判断总结系统是否成功现实。本文主要通过问卷调查的方式，来分析课程管理系统所需要的相关功能[11]。根据调查结果显示，系统用户主要有两种类型，一种是以使用为主要目的的用户角色类型，另一种是以管理为主要目的的管理员角色类型。本系统主要功能需求包括课程信息管理、考勤信息管理等模块。其中，密码信息、用户信息、课程信息、考勤信息等都是非常重要的数据记录，在系统设计的过程中，需要进行一定的加密处理，确保数据安全性，切实的保护好用户的重要信息。</p>
+<h2 id="32系统的可行性分析">3.2系统的可行性分析</h2>
+<h3 id="321经济可行性">3.2.1经济可行性</h3>
+<p>对系统进行经济可行性分析，也可以被称为对系统进行经济可行性研究，它是从社会的经济发展出发，通过研究整个的系统可行性，对成本收益情况进行全面地、具体地分析，并且根据所分析的可行性报告，为相关的投资者提供最科学的决策理论和最优的投资方案。本系统的开发促进了学校的信息化管理，管理人员可以直接通过在浏览器上发布课程管理系统的网站地址，即可用户根据一定的需要，有选择的对系统相关功能进行操作。这种方式打破了时间和空间的限制，可以使得学校在较短的时间内最大化地管理课程的相关信息。并且本系统所使用的开发技术和相关工具，大部分是开源的、免费的，所以可以节约很大一笔开发成本。综合上述内容分析可知，本系统的实现在经济层面上是具备可行性的。</p>
+<h3 id="322技术可行性">3.2.2技术可行性</h3>
+<p>本系统是基于Java语言而进行开发的，因为Java语言容易学习、使用简单、稳定性强等特点，所以许多的开发技术人员均喜欢使用Java语言进行系统设计。现今很多程序系统的研究和开发，是通过使用Java语言进行编码设计的。此外，Java语言还具有跨平台的优点，这意味着所设计的系统是与平台无关的，也就说明由Java语言开发的系统可以支持在不同的浏览器上运行和使用。在条件大致相同的情况下，对比其他数据库，本系统使用的是MySQL数据库的相关语法简单易懂，数据库设计人员可以尽可能快的对其掌握和使用。MySQL数据库还具有占用系统内存少、功能齐全、响应速度快、使用不收费等特点，能够在极短时间内处理上千条信息记录，所以能够保证系统可以高效地运行和工作。综合上述内容分析可知，系统的实现在技术层面上是具备可行性的。</p>
+<h3 id="323操作可行性">3.2.3操作可行性</h3>
+<p>如今，人们的日常生活已经离不开互联网的使用，在一定程度上，学校的信息化建设促进着社会的发展。人们通过使用手机上的应用程序，比如，通过使用电子商务系统，可以实现网上购物、在线支付等功能；通过使用国家官方网站，可以查看最新消息，申报个人业务；通过使用医院管理系统，可以进行网上预约挂号，在线查看体检报告等操作。在这些应用的背景下，本系统使用的是B/S开发结构模式，网站界面以人性化的设计为主，具有美观友好、交互性好等优点，用户不需要掌握一定的编程技术，直接通过对系统进行简单的功能操作，即可满足自己的使用需求。本系统还设计了一些提示信息，便于用户更好的理解系统相关功能，较快的以正确的操作方式来使用系统。综合上述内容分析可知，系统的实现在操作层面上是具备可行性的。</p>
+<h1 id="第4章-系统设计">第4章 系统设计</h1>
+<h2 id="41系统的总体功能设计">4.1系统的总体功能设计</h2>
+<p>系统的总体功能设计，是需求分析的下个阶段，是系统实现的上个阶段，它是系统详细功能设计的一个大方向，也就是说系统的各类子功能模块的设计，都是以总体功能设计为目标而进行的。通过对系统进行需求分析可知，可以大致了解系统具体所需要的相关的主要功能模块。本系统主要的功能需求包括课程信息管理、考勤信息管理等模块。系统总体功能设计图如图4-1所示。</p>
+<p>基于SSM的课程管理系统</p>
+<p>用户信息管理</p>
+<p>章节信息管理</p>
+<p>课程订单管理</p>
+<p>考勤信息管理</p>
+<p>课程信息管理</p>
+<p>用户信息修改</p>
+<p>用户信息新增</p>
+<p>课程信息添加</p>
+<p>课程信息删除</p>
+<p>课程信息修改</p>
+<p>考勤信息添加</p>
+<p>考勤信息修改</p>
+<p>考勤信息删除</p>
+<p>章节信息添加</p>
+<p>章节信息删改</p>
+<p>章节信息删除</p>
+<p>课程订单添加</p>
+<p>课程订单修改</p>
+<p>课程订单删除</p>
+<p>作业信息管理</p>
+<p>作业信息修改</p>
+<p>作业信息删除</p>
+<p>作业信息添加</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm670/blog.002.png"
+        data-srcset="/images/0600ssm/ssm670/blog.002.png, /images/0600ssm/ssm670/blog.002.png 1.5x, /images/0600ssm/ssm670/blog.002.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm670/blog.002.png"
+        title="/images/0600ssm/ssm670/blog.002.png" /></p>
+<p>图4-1系统总体功能设计图</p>
+<p>4.2数据库设计</p>
+<h3 id="421概念设计">4.2.1概念设计</h3>
+<p>本系统使用轻量级的MySQL数据库，对系统相关的数据信息进行管理和维护[12]。数据库设计阶段一般可以被分为概念设计和逻辑设计这两个阶段。在进行数据库相关设计的全过程中，两个阶段所起到作用是完全不同的，概念设计是实现数据库设计的主要基础，逻辑设计阶段是完成数据库设计的最终目标。概念设计阶段以设计实体-联系图（E-R图）的方式，将现实世界中用户的相关需求抽象化为虚拟世界中的概念模型。本人通过设计E-R图，详细地对系统各实体以及其存在的联系进行了表达。各实体信息的实体属性图如图4-2、图4-3、图4-4、图4-5、图4-6、图4-7、图4-8、图4-9、图4-10、图4-11、图4-12、图4-13、图4-14、图4-15所示，系统总体E-R图如图4-16所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm670/blog.003.png"
+        data-srcset="/images/0600ssm/ssm670/blog.003.png, /images/0600ssm/ssm670/blog.003.png 1.5x, /images/0600ssm/ssm670/blog.003.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm670/blog.003.png"
+        title="/images/0600ssm/ssm670/blog.003.png" /></p>
+<p>图4-2管理员信息实体属性图</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm670/blog.004.png"
+        data-srcset="/images/0600ssm/ssm670/blog.004.png, /images/0600ssm/ssm670/blog.004.png 1.5x, /images/0600ssm/ssm670/blog.004.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm670/blog.004.png"
+        title="/images/0600ssm/ssm670/blog.004.png" /></p>
+<p>图4-3老师信息实体属性图</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm670/blog.005.png"
+        data-srcset="/images/0600ssm/ssm670/blog.005.png, /images/0600ssm/ssm670/blog.005.png 1.5x, /images/0600ssm/ssm670/blog.005.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm670/blog.005.png"
+        title="/images/0600ssm/ssm670/blog.005.png" /></p>
+<p>图4-4学生信息实体属性图</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm670/blog.006.png"
+        data-srcset="/images/0600ssm/ssm670/blog.006.png, /images/0600ssm/ssm670/blog.006.png 1.5x, /images/0600ssm/ssm670/blog.006.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm670/blog.006.png"
+        title="/images/0600ssm/ssm670/blog.006.png" /></p>
+<p>图4-5字典信息实体属性图</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm670/blog.007.png"
+        data-srcset="/images/0600ssm/ssm670/blog.007.png, /images/0600ssm/ssm670/blog.007.png 1.5x, /images/0600ssm/ssm670/blog.007.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm670/blog.007.png"
+        title="/images/0600ssm/ssm670/blog.007.png" /></p>
+<p>图4-6课程信息实体属性图</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm670/blog.008.png"
+        data-srcset="/images/0600ssm/ssm670/blog.008.png, /images/0600ssm/ssm670/blog.008.png 1.5x, /images/0600ssm/ssm670/blog.008.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm670/blog.008.png"
+        title="/images/0600ssm/ssm670/blog.008.png" /></p>
+<p>图4-7课程订单信息实体属性图</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm670/blog.009.png"
+        data-srcset="/images/0600ssm/ssm670/blog.009.png, /images/0600ssm/ssm670/blog.009.png 1.5x, /images/0600ssm/ssm670/blog.009.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm670/blog.009.png"
+        title="/images/0600ssm/ssm670/blog.009.png" /></p>
+<p>图4-8课程留言信息实体属性图</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm670/blog.010.png"
+        data-srcset="/images/0600ssm/ssm670/blog.010.png, /images/0600ssm/ssm670/blog.010.png 1.5x, /images/0600ssm/ssm670/blog.010.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm670/blog.010.png"
+        title="/images/0600ssm/ssm670/blog.010.png" /></p>
+<p>图4-9课程收藏信息实体属性图</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm670/blog.011.png"
+        data-srcset="/images/0600ssm/ssm670/blog.011.png, /images/0600ssm/ssm670/blog.011.png 1.5x, /images/0600ssm/ssm670/blog.011.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm670/blog.011.png"
+        title="/images/0600ssm/ssm670/blog.011.png" /></p>
+<p>图4-10考勤信息实体属性图</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm670/blog.012.png"
+        data-srcset="/images/0600ssm/ssm670/blog.012.png, /images/0600ssm/ssm670/blog.012.png 1.5x, /images/0600ssm/ssm670/blog.012.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm670/blog.012.png"
+        title="/images/0600ssm/ssm670/blog.012.png" /></p>
+<p>图4-11章节信息实体属性图</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm670/blog.013.png"
+        data-srcset="/images/0600ssm/ssm670/blog.013.png, /images/0600ssm/ssm670/blog.013.png 1.5x, /images/0600ssm/ssm670/blog.013.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm670/blog.013.png"
+        title="/images/0600ssm/ssm670/blog.013.png" /></p>
+<p>图4-12章节留言信息实体属性图</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm670/blog.014.png"
+        data-srcset="/images/0600ssm/ssm670/blog.014.png, /images/0600ssm/ssm670/blog.014.png 1.5x, /images/0600ssm/ssm670/blog.014.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm670/blog.014.png"
+        title="/images/0600ssm/ssm670/blog.014.png" /></p>
+<p>图4-13章节收藏信息实体属性图</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm670/blog.015.png"
+        data-srcset="/images/0600ssm/ssm670/blog.015.png, /images/0600ssm/ssm670/blog.015.png 1.5x, /images/0600ssm/ssm670/blog.015.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm670/blog.015.png"
+        title="/images/0600ssm/ssm670/blog.015.png" /></p>
+<p>图4-14作业信息实体属性图</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm670/blog.016.png"
+        data-srcset="/images/0600ssm/ssm670/blog.016.png, /images/0600ssm/ssm670/blog.016.png 1.5x, /images/0600ssm/ssm670/blog.016.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm670/blog.016.png"
+        title="/images/0600ssm/ssm670/blog.016.png" /></p>
+<p>图4-15回答信息实体属性图</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm670/blog.017.png"
+        data-srcset="/images/0600ssm/ssm670/blog.017.png, /images/0600ssm/ssm670/blog.017.png 1.5x, /images/0600ssm/ssm670/blog.017.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm670/blog.017.png"
+        title="/images/0600ssm/ssm670/blog.017.png" /></p>
+<p>图4-16系统总体E-R图</p>
+<h3 id="422逻辑设计">4.2.2逻辑设计</h3>
+<p>逻辑设计阶段主要的工作是将概念设计中的E-R图，转换成方便系统进行存储和管理的二维表格形式。这一阶段也可以被称为数据库的详细设计，其直接关系到系统功能模块的正常运行、数据信息的正常更新等[13]。在设计过程中，需要充分考虑数据库的规范性和合理性，使得能够满足系统的功能和性能需求。本系统相关的数据表格设计内容如下所示。</p>
+<p>表4-1 管理员信息表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">编号</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">username</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">用户名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">password</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">密码</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">role</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">角色</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">新增时间</td>
+<td style="text-align:center">是</td>
+</tr>
+</tbody>
+</table>
+<p>表4-2 老师信息表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">username</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">账户</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">password</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">密码</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">laoshi_name</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">老师姓名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">laoshi_phone</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">老师手机号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">laoshi_photo</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">老师头像</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">sex_types</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">性别</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">laoshi_email</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">电子邮箱</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+</tbody>
+</table>
+<p>表4-3 学生信息表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">username</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">账户</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">password</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">密码</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">xuesheng_name</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">学生姓名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">xuesheng_phone</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">学生手机号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">xuesheng_id_number</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">学生身份证号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">xuesheng_photo</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">学生头像</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">banji_types</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">班级</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">sex_types</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">性别</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">xuesheng_email</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">电子邮箱</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td style="text-align:center">new_money</td>
+<td style="text-align:center">BigDecimal</td>
+<td style="text-align:center">余额</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">12</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+</tbody>
+</table>
+<p>表4-4 字典信息表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">dic_code</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">字段</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">dic_name</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">字段名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">code_index</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">编码</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">index_name</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">编码名字</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">super_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">父字段id</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">beizhu</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">备注</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+</tbody>
+</table>
+<p>表4-5 课程信息表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">laoshi_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">课程</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">kecheng_name</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">课程名称</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">kecheng_photo</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">课程照片</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">kecheng_types</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">课程类型</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">kecheng_old_money</td>
+<td style="text-align:center">BigDecimal</td>
+<td style="text-align:center">课程原价</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">kecheng_new_money</td>
+<td style="text-align:center">BigDecimal</td>
+<td style="text-align:center">现价</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">kecheng_clicknum</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">点击次数</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">shangxia_types</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">是否上架</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">kecheng_delete</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">逻辑删除</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td style="text-align:center">kecheng_content</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">课程介绍</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">12</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+</tbody>
+</table>
+<p>表4-6 课程订单信息表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">kecheng_order_uuid_number</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">订单号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">kecheng_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">课程</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">xuesheng_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">用户</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">kecheng_order_true_price</td>
+<td style="text-align:center">BigDecimal</td>
+<td style="text-align:center">实付价格</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">kecheng_order_payment_types</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">支付类型</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">insert_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">订单创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+</tbody>
+</table>
+<p>表4-7 课程留言信息表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">kecheng_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">课程</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">xuesheng_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">学生</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">kecheng_liuyan_text</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">留言内容</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">reply_text</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">回复内容</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">insert_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">留言时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">update_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">回复时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+</tbody>
+</table>
+<p>表4-8 课程收藏信息表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">kecheng_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">课程</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">xuesheng_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">学生</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">kecheng_collection_types</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">类型</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">insert_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">收藏时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+</tbody>
+</table>
+<p>表4-9 考勤信息表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">xuesheng_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">学生</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">kaoqin_content</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">考勤备注</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">insert_time</td>
+<td style="text-align:center">date</td>
+<td style="text-align:center">打卡日期</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+</tbody>
+</table>
+<p>表4-10 章节信息表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">kecheng_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">课程</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">zhangjie_name</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">章节名称</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">zhangjie_photo</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">章节照片</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">zhangjie_video</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">视频</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">zhangjie_delete</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">逻辑删除</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">zhangjie_content</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">章节介绍</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+</tbody>
+</table>
+<p>表4-11 章节留言信息表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">zhangjie_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">章节</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">xuesheng_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">学生</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">zhangjie_liuyan_text</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">留言内容</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">reply_text</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">回复内容</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">insert_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">留言时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">update_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">回复时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+</tbody>
+</table>
+<p>表4-12 章节收藏信息表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">zhangjie_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">章节</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">xuesheng_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">学生</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">zhangjie_collection_types</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">类型</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">insert_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">收藏时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+</tbody>
+</table>
+<p>表4-13 作业信息表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">laoshi_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">老师</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">banji_types</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">班级</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">zuoye_uuid_number</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">作业唯一编号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">zuoye_name</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">作业名称</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">zuoye_types</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">作业类型</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">insert_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">作业发布时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">zuoye_file</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">作业文件</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">zuoye_content</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">作业详情</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+</tbody>
+</table>
+<p>表4-14 回答信息表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">zuoye_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">作业</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">xuesheng_id</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">学生</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">huifu_file</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">回答文件</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+</tbody>
+</table>
+<h1 id="第5章-系统实现">第5章 系统实现</h1>
+<h2 id="51个人中心">5.1个人中心</h2>
+<p>通过设计的个人中心功能模块，用户可以选择修改账号密码，查看个人资料信息，通过不定期的对个人账户密码进行更新，保障个人信息安全，修改密码界面设计如图5-1所示，个人信息界面设计如图5-2所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm670/blog.018.png"
+        data-srcset="/images/0600ssm/ssm670/blog.018.png, /images/0600ssm/ssm670/blog.018.png 1.5x, /images/0600ssm/ssm670/blog.018.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm670/blog.018.png"
+        title="/images/0600ssm/ssm670/blog.018.png" /></p>
+<p>图5-1修改密码界面</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm670/blog.019.png"
+        data-srcset="/images/0600ssm/ssm670/blog.019.png, /images/0600ssm/ssm670/blog.019.png 1.5x, /images/0600ssm/ssm670/blog.019.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm670/blog.019.png"
+        title="/images/0600ssm/ssm670/blog.019.png" /></p>
+<p>图5-2个人信息界面</p>
+<h2 id="52基础数据管理">5.2基础数据管理</h2>
+<p>通过设计的基础数据管理功能模块，管理用户可以管理相关的班级、课程类型、作业类型信息记录，比如进行查看班级、课程类型、作业类型信息的详细资料，修改班级、课程类型、作业类型的名称信息，删除已经失效的班级、课程类型、作业类型信息记录等操作，班级管理界面设计如图5-3所示，课程类型管理界面设计如图5-4所示，作业类型管理界面设计如图5-5所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm670/blog.020.png"
+        data-srcset="/images/0600ssm/ssm670/blog.020.png, /images/0600ssm/ssm670/blog.020.png 1.5x, /images/0600ssm/ssm670/blog.020.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm670/blog.020.png"
+        title="/images/0600ssm/ssm670/blog.020.png" /></p>
+<p>图5-3班级管理界面</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm670/blog.021.png"
+        data-srcset="/images/0600ssm/ssm670/blog.021.png, /images/0600ssm/ssm670/blog.021.png 1.5x, /images/0600ssm/ssm670/blog.021.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm670/blog.021.png"
+        title="/images/0600ssm/ssm670/blog.021.png" /></p>
+<p>图5-4课程类型管理界面</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm670/blog.022.png"
+        data-srcset="/images/0600ssm/ssm670/blog.022.png, /images/0600ssm/ssm670/blog.022.png 1.5x, /images/0600ssm/ssm670/blog.022.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm670/blog.022.png"
+        title="/images/0600ssm/ssm670/blog.022.png" /></p>
+<p>图5-5作业类型管理界面</p>
+<h2 id="53老师管理">5.3老师管理</h2>
+<p>通过设计的老师管理功能模块，管理用户可以管理相关的老师信息资料，比如进行查看老师的详细资料，修改老师的联系方式，添加某位新的老师信息记录，删除已经注销的老师信息记录等操作，老师管理界面设计如图5-6所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm670/blog.023.png"
+        data-srcset="/images/0600ssm/ssm670/blog.023.png, /images/0600ssm/ssm670/blog.023.png 1.5x, /images/0600ssm/ssm670/blog.023.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm670/blog.023.png"
+        title="/images/0600ssm/ssm670/blog.023.png" /></p>
+<p>图5-6老师管理界面</p>
+<h2 id="54学生管理">5.4学生管理</h2>
+<p>通过设计的学生管理功能模块，管理用户可以管理相关的学生信息资料，比如进行查看学生的详细资料，修改学生的联系方式，添加某位新的学生信息记录，删除已经注销的学生信息记录等操作，学生管理界面设计如图5-7所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm670/blog.024.png"
+        data-srcset="/images/0600ssm/ssm670/blog.024.png, /images/0600ssm/ssm670/blog.024.png 1.5x, /images/0600ssm/ssm670/blog.024.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm670/blog.024.png"
+        title="/images/0600ssm/ssm670/blog.024.png" /></p>
+<p>图5-7学生管理界面</p>
+<h2 id="55考勤管理">5.5考勤管理</h2>
+<p>通过设计的考勤管理功能模块，管理用户可以管理相关的考勤信息记录，比如进行查看考勤信息的详细信息，修改考勤的结果信息，删除已经失效的考勤信息记录等操作，考勤管理界面设计如图5-8所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm670/blog.025.png"
+        data-srcset="/images/0600ssm/ssm670/blog.025.png, /images/0600ssm/ssm670/blog.025.png 1.5x, /images/0600ssm/ssm670/blog.025.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm670/blog.025.png"
+        title="/images/0600ssm/ssm670/blog.025.png" /></p>
+<p>图5-8考勤管理界面</p>
+<h2 id="56课程管理">5.6课程管理</h2>
+<p>通过设计的课程管理功能模块，管理用户可以管理相关的课程信息记录，比如进行查看课程信息的详细信息，修改课程的名称信息，删除已经失效的课程信息记录等操作，课程管理界面设计如图5-9所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm670/blog.026.png"
+        data-srcset="/images/0600ssm/ssm670/blog.026.png, /images/0600ssm/ssm670/blog.026.png 1.5x, /images/0600ssm/ssm670/blog.026.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm670/blog.026.png"
+        title="/images/0600ssm/ssm670/blog.026.png" /></p>
+<p>图5-9课程管理界面</p>
+<h2 id="57课程留言管理">5.7课程留言管理</h2>
+<p>通过设计的课程留言管理功能模块，管理用户可以管理相关的课程留言信息记录，比如进行查看课程留言信息的详细信息，修改课程的留言内容信息，删除已经失效的课程留言信息记录等操作，课程留言管理界面设计如图5-10所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm670/blog.027.png"
+        data-srcset="/images/0600ssm/ssm670/blog.027.png, /images/0600ssm/ssm670/blog.027.png 1.5x, /images/0600ssm/ssm670/blog.027.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm670/blog.027.png"
+        title="/images/0600ssm/ssm670/blog.027.png" /></p>
+<p>图5-10课程留言管理界面</p>
+<h2 id="58课程收藏管理">5.8课程收藏管理</h2>
+<p>通过设计的课程收藏管理功能模块，管理用户可以管理相关的课程收藏信息记录，比如进行查看课程收藏信息的详细信息，修改课程的收藏时间信息，删除已经失效的课程收藏信息记录等操作，课程收藏管理界面设计如图5-11所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm670/blog.028.png"
+        data-srcset="/images/0600ssm/ssm670/blog.028.png, /images/0600ssm/ssm670/blog.028.png 1.5x, /images/0600ssm/ssm670/blog.028.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm670/blog.028.png"
+        title="/images/0600ssm/ssm670/blog.028.png" /></p>
+<p>图5-11课程收藏管理界面</p>
+<h2 id="59课程订单管理">5.9课程订单管理</h2>
+<p>通过设计的课程订单管理功能模块，管理用户可以管理相关的课程订单信息记录，比如进行查看课程订单信息的详细信息，修改课程的订单创建信息，删除已经失效的课程订单信息记录等操作，课程订单管理界面设计如图5-12所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm670/blog.029.png"
+        data-srcset="/images/0600ssm/ssm670/blog.029.png, /images/0600ssm/ssm670/blog.029.png 1.5x, /images/0600ssm/ssm670/blog.029.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm670/blog.029.png"
+        title="/images/0600ssm/ssm670/blog.029.png" /></p>
+<p>图5-12课程订单管理界面</p>
+<h2 id="510章节管理">5.10章节管理</h2>
+<p>通过设计的章节管理功能模块，管理用户可以管理相关的章节、章节留言、章节收藏信息记录，比如进行查看章节、章节留言、章节收藏信息的详细信息，修改章节名称、留言内容、收藏时间等信息，删除已经失效的章节、章节留言、章节收藏信息记录等操作，章节管理界面设计如图5-13所示，章节留言管理界面设计如图5-14所示，章节收藏管理界面设计如图5-15所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm670/blog.030.png"
+        data-srcset="/images/0600ssm/ssm670/blog.030.png, /images/0600ssm/ssm670/blog.030.png 1.5x, /images/0600ssm/ssm670/blog.030.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm670/blog.030.png"
+        title="/images/0600ssm/ssm670/blog.030.png" /></p>
+<p>图5-13章节管理界面</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm670/blog.031.png"
+        data-srcset="/images/0600ssm/ssm670/blog.031.png, /images/0600ssm/ssm670/blog.031.png 1.5x, /images/0600ssm/ssm670/blog.031.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm670/blog.031.png"
+        title="/images/0600ssm/ssm670/blog.031.png" /></p>
+<p>图5-14章节留言管理界面</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm670/blog.032.png"
+        data-srcset="/images/0600ssm/ssm670/blog.032.png, /images/0600ssm/ssm670/blog.032.png 1.5x, /images/0600ssm/ssm670/blog.032.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm670/blog.032.png"
+        title="/images/0600ssm/ssm670/blog.032.png" /></p>
+<p>图5-15章节收藏管理界面</p>
+<h2 id="511作业管理">5.11作业管理</h2>
+<p>通过设计的作业管理功能模块，管理用户可以管理相关的作业、回答信息记录，比如进行查看作业、回答信息的详细信息，修改作业名称、作业文件等信息，删除已经失效的作业、回答信息记录等操作，作业管理界面设计如图5-16所示，回答管理界面设计如图5-17所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm670/blog.033.png"
+        data-srcset="/images/0600ssm/ssm670/blog.033.png, /images/0600ssm/ssm670/blog.033.png 1.5x, /images/0600ssm/ssm670/blog.033.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm670/blog.033.png"
+        title="/images/0600ssm/ssm670/blog.033.png" /></p>
+<p>图5-16作业管理界面</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm670/blog.034.png"
+        data-srcset="/images/0600ssm/ssm670/blog.034.png, /images/0600ssm/ssm670/blog.034.png 1.5x, /images/0600ssm/ssm670/blog.034.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm670/blog.034.png"
+        title="/images/0600ssm/ssm670/blog.034.png" /></p>
+<p>图5-17回答管理界面</p>
+<h2 id="512轮播图管理">5.12轮播图管理</h2>
+<p>通过设计的轮播图管理功能模块，管理用户可以管理相关的轮播图信息记录，比如进行查看轮播图信息的详细资料，修改轮播图的名称信息，删除已经失效的轮播图信息记录等操作，轮播图管理界面设计如图5-18所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0600ssm/ssm670/blog.035.png"
+        data-srcset="/images/0600ssm/ssm670/blog.035.png, /images/0600ssm/ssm670/blog.035.png 1.5x, /images/0600ssm/ssm670/blog.035.png 2x"
+        data-sizes="auto"
+        alt="/images/0600ssm/ssm670/blog.035.png"
+        title="/images/0600ssm/ssm670/blog.035.png" /></p>
+<p>图5-18轮播图管理界面</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2024-06-06</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/ssm670%E8%AF%BE%E7%A8%8B%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://chenqi199.github.io/ssm670%E8%AF%BE%E7%A8%8B%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" data-title="ssm670课程管理系统&#43;vue" data-hashtags="ssm课程,课程管理,管理系统"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://chenqi199.github.io/ssm670%E8%AF%BE%E7%A8%8B%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" data-hashtag="ssm课程"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://chenqi199.github.io/ssm670%E8%AF%BE%E7%A8%8B%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" data-title="ssm670课程管理系统&#43;vue"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://chenqi199.github.io/ssm670%E8%AF%BE%E7%A8%8B%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" data-title="ssm670课程管理系统&#43;vue"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://chenqi199.github.io/ssm670%E8%AF%BE%E7%A8%8B%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" data-title="ssm670课程管理系统&#43;vue" data-ralateuid="https://gitee.com/chen_q_i"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ssm%E8%AF%BE%E7%A8%8B/">Ssm课程</a>,&nbsp;<a href="/tags/%E8%AF%BE%E7%A8%8B%E7%AE%A1%E7%90%86/">课程管理</a>,&nbsp;<a href="/tags/%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/">管理系统</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/0665springbootjava%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0--%E8%AE%BA%E6%96%87/" class="prev" rel="prev" title="0665springbootjava学习平台--论文"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>0665springbootjava学习平台--论文</a>
+            <a href="/ssm669%E5%9F%BA%E4%BA%8Eweb%E7%9A%84%E5%AD%A6%E7%94%9F%E8%80%83%E5%8B%A4%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" class="next" rel="next" title="ssm669基于web的学生考勤管理系统&#43;vue">ssm669基于web的学生考勤管理系统+vue<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.128.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="chenqi199" target="_blank">chenqi</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

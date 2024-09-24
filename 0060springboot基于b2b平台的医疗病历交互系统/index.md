@@ -1,17 +1,16 @@
 # 0060springboot基于B2B平台的医疗病历交互系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0060springboot基于B2B平台的医疗病历交互系统](https://github.com/GraduationProject-springboot/0060springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV16ia6epENY?p=61)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
 计算机已经从科研院所，大中型企业，走进了平常百姓家，Internet遍及世界各地，在网上能够用计算机进行文字草拟、修改、打印清样、文件登陆、检索、综合统计、分类、数据库管理等，用科学的方法将无序的信息进行加工整理，组成有序的、方便存储和利用的艺术科研共享信息已经成为流行。计算机技术、网络技术和信息技术的发展，越来越多地改善这现代人的工作、生活。基于B2B平台的医疗病历交互系统是计算机技术和网络迅速发展的一个学习信息应用解决方案。基于B2B平台的医疗病历交互系统将Internet网络技术与现代管理观念相融合，针对信息技术的特点对基于B2B平台的医疗病历交互系统进行规划和重构，对学习信息流进行优化及合理配置，生成动态的、安全的、专有的数字化信息源，将学习体系全面自动化，流程化，数字化。以此为桥梁，横向连接学习信息系统，从而更明确、更有效地支持学习信息的管理和决策。目前社会已经进入了信息时代，社会的各个领域由于信息技术革命，都发生了改天换地的变化，紧跟时代的步伐是每个用户的发展所趋，提高各个用户现代化的管理能力，来适应整个科技社会的变化和发展。用户对信息需求的增长，使计算机、网络技术已经融合到各种用户的平常工作当中。本文研究了基于B2B平台的医疗病历交互系统，从而加快了学习信息化建设的步伐。
@@ -89,7 +88,7 @@ Tomcat 服务器是一个免费的开放源代码的Web 应用服务器，属于
 密码错误
 
 数据库
-![](/images/0000stringboot/0060springboot/blog.001.png)
+![](/images/0000wxapp//blog.001.png)
 
 图3-1  系统操作流程图
 ### 3.2.2 数据增加流程
@@ -107,7 +106,7 @@ Tomcat 服务器是一个免费的开放源代码的Web 应用服务器，属于
 
 结束
 
-![](/images/0000stringboot/0060springboot/blog.002.png)
+![](/images/0000wxapp//blog.002.png)
 
 图3-2  数据增加流程图
 ### 3.2.3 数据修改流程
@@ -125,7 +124,7 @@ Tomcat 服务器是一个免费的开放源代码的Web 应用服务器，属于
 
 结束
 
-![](/images/0000stringboot/0060springboot/blog.003.png)
+![](/images/0000wxapp//blog.003.png)
 
 图3-3  数据修改流程图
 ### 3.2.4 数据删除流程
@@ -139,7 +138,7 @@ Tomcat 服务器是一个免费的开放源代码的Web 应用服务器，属于
 
 更新数据库
 
-![](/images/0000stringboot/0060springboot/blog.004.png)
+![](/images/0000wxapp//blog.004.png)
 
 图3-4  数据删除流程图
 ## 3.3 可行性研究
@@ -175,25 +174,25 @@ Tomcat 服务器是一个免费的开放源代码的Web 应用服务器，属于
 
 管理员功能模块如图4-1所示：
 
-![](/images/0000stringboot/0060springboot/blog.005.png)
+![](/images/0000wxapp//blog.005.png)
 
 图4-1管理员功能模块图
 
 医院功能模块如图4-2所示：
 
-![](/images/0000stringboot/0060springboot/blog.006.png)
+![](/images/0000wxapp//blog.006.png)
 
 图4-2医院功能模块图
 
 用户功能模块如图4-3所示：
 
-![](/images/0000stringboot/0060springboot/blog.007.png)
+![](/images/0000wxapp//blog.007.png)
 
 图4-3用户功能模块图
 
 医生功能模块如图4-4所示：
 
-![](/images/0000stringboot/0060springboot/blog.008.png)
+![](/images/0000wxapp//blog.008.png)
 
 图4-4医生功能模块图
 
@@ -209,15 +208,15 @@ Tomcat 服务器是一个免费的开放源代码的Web 应用服务器，属于
 
 医院ER图
 
-![](/images/0000stringboot/0060springboot/blog.009.png)
+![](/images/0000wxapp//blog.009.png)
 
 管理员ER图
 
-![](/images/0000stringboot/0060springboot/blog.010.png)
+![](/images/0000wxapp//blog.010.png)
 
 文章类型ER图
 
-![](/images/0000stringboot/0060springboot/blog.011.png)
+![](/images/0000wxapp//blog.011.png)
 ## 4.5 数据库逻辑结构设计
 模式设计的目的是确定物理数据结构。它的主要问题是处理具体的数据库管理系统的结构约束。第三范式形式的实体及关系模型是模式设计过程的输入。我们通常用“范式”定义来对数据冗余的程度进行消除。第一范式（1NF）数据冗余很大程度上，第五范式（5NF）最小的数据冗余水平。但是，范式级别越高，则需要存储相同的数据被分解成多个表，随着范式水平的提高，数据结构的存储结构和问题的域之间的匹配程度也在不断变化的数据需求下降的时候，因此，不太稳定。第三范式是需要提高访问表中增加的水平，因此性能（速度）将减少。从实际的角度来看，选择在大多数情况下，第三范式是比较合适的。该系统的大致轮廓确定以下，一个重要的步骤就是设计一个数据库的内容以及表的设计直接影响了开发的系统的质量。在设计的过程中，考虑了设计数据表范式规则，但更重要的考虑了用户使用的方便性。根据E-R模型，该软件建立了以下逻辑数据结构。
 
@@ -525,7 +524,7 @@ Tomcat 服务器是一个免费的开放源代码的Web 应用服务器，属于
 ### 5.1.1 医院管理
 管理员可以在医院管理界面对医院信息进行添加，修改，删除，查询操作。医院管理页面的运行结果如图5-1所示：
 
-![](/images/0000stringboot/0060springboot/blog.012.png)
+![](/images/0000wxapp//blog.012.png)
 
 图5-1医院管理界面 
 ### 5.1.2 医院注册
@@ -533,7 +532,7 @@ Tomcat 服务器是一个免费的开放源代码的Web 应用服务器，属于
 
 
 
-![](/images/0000stringboot/0060springboot/blog.013.png)
+![](/images/0000wxapp//blog.013.png)
 
 图5-2 医院注册界面 
 ### 5.1.3 医院文章
@@ -541,7 +540,7 @@ Tomcat 服务器是一个免费的开放源代码的Web 应用服务器，属于
 
 
 
-![](/images/0000stringboot/0060springboot/blog.014.png)
+![](/images/0000wxapp//blog.014.png)
 
 图5-3 医院文章界面 
 ### 5.1.4 医生信息
@@ -549,7 +548,7 @@ Tomcat 服务器是一个免费的开放源代码的Web 应用服务器，属于
 
 
 
-![](/images/0000stringboot/0060springboot/blog.015.png)
+![](/images/0000wxapp//blog.015.png)
 
 图5-4 医生信息界面 
 ## 5.2 用户角色 
@@ -558,7 +557,7 @@ Tomcat 服务器是一个免费的开放源代码的Web 应用服务器，属于
 
 
 
-![](/images/0000stringboot/0060springboot/blog.016.png)
+![](/images/0000wxapp//blog.016.png)
 
 图5-5 医院注册界面 
 ### 5.2.2 医疗安排
@@ -566,7 +565,7 @@ Tomcat 服务器是一个免费的开放源代码的Web 应用服务器，属于
 
 
 
-![](/images/0000stringboot/0060springboot/blog.017.png)
+![](/images/0000wxapp//blog.017.png)
 
 图5-6 医疗安排界面 
 
@@ -576,7 +575,7 @@ Tomcat 服务器是一个免费的开放源代码的Web 应用服务器，属于
 
 
 
-![](/images/0000stringboot/0060springboot/blog.018.png)
+![](/images/0000wxapp//blog.018.png)
 
 图5-7 院区注册界面 
 ### 5.3.2 医院公告
@@ -584,7 +583,7 @@ Tomcat 服务器是一个免费的开放源代码的Web 应用服务器，属于
 
 
 
-![](/images/0000stringboot/0060springboot/blog.019.png)
+![](/images/0000wxapp//blog.019.png)
 
 图5-8 医院公告界面 
 ## 5.4 医生角色 
@@ -593,7 +592,7 @@ Tomcat 服务器是一个免费的开放源代码的Web 应用服务器，属于
 
 
 
-![](/images/0000stringboot/0060springboot/blog.020.png)
+![](/images/0000wxapp//blog.020.png)
 
 图5-9 医院工作人员界面 
 ### 5.4.2 病人病历
@@ -601,7 +600,7 @@ Tomcat 服务器是一个免费的开放源代码的Web 应用服务器，属于
 
 
 
-![](/images/0000stringboot/0060springboot/blog.021.png)
+![](/images/0000wxapp//blog.021.png)
 
 图5-10 病人病历界面 
 

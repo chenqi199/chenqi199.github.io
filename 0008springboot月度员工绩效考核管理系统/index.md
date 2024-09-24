@@ -1,17 +1,16 @@
 # 0008springboot月度员工绩效考核管理系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0008springboot月度员工绩效考核管理系统](https://github.com/GraduationProject-springboot/0008springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV16ia6epENY?p=9)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 引言
 ## 1.1课题研究现状
@@ -117,19 +116,19 @@ SpringBoot是由Pivotal团队在2013年开始研发、2014年4月发布第一个
 ### 2.7.1管理员用例图分析
 管理员的功能根据上节已进行完整的分析，根据功能画出管理员的用例图如下图2.1所示：
 
-![](/images/0000stringboot/0008springboot/blog.001.png)
+![](/images/0000wxapp//blog.001.png)
 
 图2.1管理员用例图
 ### 2.7.2员工用例图分析
 员工的功能也已在上节进行详细的分析，本系统的员工用例图如下图2.2所示：
 
-![](/images/0000stringboot/0008springboot/blog.002.png)
+![](/images/0000wxapp//blog.002.png)
 
 图2.2员工用例图
 ## 2.8系统主要业务流程分析
 想要系统的操作流程与逻辑正确就需要事先进行系统的流程设计分析，本系统的业务流程如下图2.3所示：
 
-` `![](/images/0000stringboot/0008springboot/blog.003.png)
+` `![](/images/0000wxapp//blog.003.png)
 
 图2.3系统业务流程图
 
@@ -148,7 +147,7 @@ SpringBoot是由Pivotal团队在2013年开始研发、2014年4月发布第一个
 ## 3.2系统功能结构设计
 根据系统分析中分析出来的功能，本系统的主要功能包括部门管理、岗位管理、绩效指标管理、绩效考核管理、员工管理、通知管理等。本系统的功能结构设计如下图3.1所示：
 
-![](/images/0000stringboot/0008springboot/blog.004.png)
+![](/images/0000wxapp//blog.004.png)
 
 图3.1系统功能结构图
 ## 3.3数据库结构设计
@@ -158,25 +157,25 @@ SpringBoot是由Pivotal团队在2013年开始研发、2014年4月发布第一个
 
 （1）管理员实体的Er图如下图3.2所示：
 
-![](/images/0000stringboot/0008springboot/blog.005.png)
+![](/images/0000wxapp//blog.005.png)
 
 图3.2管理员Er图
 
 （2）管理员管理的员工信息ER图如图3.3所示。
 
-![](/images/0000stringboot/0008springboot/blog.006.png)
+![](/images/0000wxapp//blog.006.png)
 
 图3.3员工信息ER图
 
 （3）企业中部门信息ER图如图3.4所示：
 
-![](/images/0000stringboot/0008springboot/blog.007.png)
+![](/images/0000wxapp//blog.007.png)
 
 图3.4部门信息ER图
 
 （4）绩效考核信息ER图如下图3.5所示：
 
-![](/images/0000stringboot/0008springboot/blog.008.png)
+![](/images/0000wxapp//blog.008.png)
 
 图3.5绩效考核信息ER图
 ### 3.3.2数据库表设计
@@ -279,19 +278,19 @@ SpringBoot是由Pivotal团队在2013年开始研发、2014年4月发布第一个
 ### 4.1.1系统登录模块实现
 本模块界面加入了系统标题和角色的选择，在本界面中采用了图形和控件进行合理摆放的方法进行设计，还加入了合适的背景图片，使登录界面更加的直观。系统登录模块设计实现界面如下图4.1所示：
 
-![](/images/0000stringboot/0008springboot/blog.009.png)
+![](/images/0000wxapp//blog.009.png)
 
 图4.1系统登录模块界面实现
 ### 4.1.2个人中心管理功能模块实现
 本界面主要是对管理员账号和密码进行设置，是管理员角色的操作功能，员工不能添加管理员账号，个人中心管理功能实现界面如下图4.2所示：
 
-` `![](/images/0000stringboot/0008springboot/blog.010.png)
+` `![](/images/0000wxapp//blog.010.png)
 
 图4.2个人中心管理模块实现界面
 ### 4.1.3部门信息管理模块实现
 部门信息是管理员角色的功能，管理员可以为企业添加新的部门，可以查询部门的创建时间，管理员添加部门信息的实现界面如下图4.3所示：
 
-![](/images/0000stringboot/0008springboot/blog.011.png)
+![](/images/0000wxapp//blog.011.png)
 
 图4.3管理员添加部门信息实现界面
 
@@ -299,31 +298,31 @@ SpringBoot是由Pivotal团队在2013年开始研发、2014年4月发布第一个
 ### 4.1.4部门信息管理模块实现
 管理员可以在新员工招入时进行添加，对员工进行部门的安排和备注的添加。管理员添加员工信息的界面实现如下图4.4所示：
 
-` `![](/images/0000stringboot/0008springboot/blog.012.png)
+` `![](/images/0000wxapp//blog.012.png)
 
 图4.4管理员添加员工信息界面实现
 ### 4.1.5绩效指标管理模块实现
 本功能是为了方便管理员对员工进行绩效考核，添加绩效指标的实现界面如下图4.5所示：
 
-` `![](/images/0000stringboot/0008springboot/blog.013.png)
+` `![](/images/0000wxapp//blog.013.png)
 
 图4.5添加绩效指标模块的界面实现
 ### 4.1.6公告信息管理模块的实现
 本功能可以实现公告的发布，添加公告信息功能模块的实现界面如下图4.6所示：
 
-` `![](/images/0000stringboot/0008springboot/blog.014.png)
+` `![](/images/0000wxapp//blog.014.png)
 
 图4.6添加公告模块的实现界面
 ### 4.1.7岗位管理模块的实现
 管理员可以对员工分配岗位，管理员查询岗位的实现界面如下图4.7所示：
 
-` `![](/images/0000stringboot/0008springboot/blog.015.png)
+` `![](/images/0000wxapp//blog.015.png)
 
 图4.7查询岗位信息的实现界面
 ### 4.1.8绩效考核管理模块的实现
 发布员工的绩效考核，绩效考核信息的实现界面如下图4.8所示：
 
-` `![](/images/0000stringboot/0008springboot/blog.016.png)
+` `![](/images/0000wxapp//blog.016.png)
 
 图4.8绩效考核信息界面
 
@@ -331,7 +330,7 @@ SpringBoot是由Pivotal团队在2013年开始研发、2014年4月发布第一个
 
 员工可以查询公告和绩效指标、绩效考核信息，也可以修改个人资料和密码。实现界面如下图4.9所示：
 
-![](/images/0000stringboot/0008springboot/blog.017.png)
+![](/images/0000wxapp//blog.017.png)
 
 图4.9员工功能的实现界面
 

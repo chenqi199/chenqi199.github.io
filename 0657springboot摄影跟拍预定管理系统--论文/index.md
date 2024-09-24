@@ -1,17 +1,16 @@
 # 0657springboot摄影跟拍预定管理系统--论文
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0657springboot摄影跟拍预定管理系统--论文](https://github.com/GraduationProject-springboot/0657springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV14HerezEwW?p=14)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
 ## 1.1项目研究的背景
@@ -40,7 +39,7 @@
 ## 2.1 B/S架构
 B/S结构是目前使用最多的结构模式，它可以使得系统的开发更加的简单，好操作，而且还可以对其进行维护。使用该结构时只需要在计算机中安装数据库，和一些很常用的浏览器就可以了。浏览器就会与数据库进行信息的连接，可以实现很多的功能，B/S结构是可以直接进行使用的，而且B/S结构在使用中极大的减少了工作的维护。基于B/S的软件，所有的数据库之间都是相互独立的，因此是非常安全的。因为基于B/S结构可以清楚的看到系统正在处理的业务，并且能够及时的让管理人员做出决策，这样就可以避免企业的损失。B/S结构的基本特点是集中式的管理模式，用户使用系统生成数据后，这些数据就可以存储到系统的数据库中，方便日后能够用到，这样就可以满足人们的所有的需求。
 
-![](/images/0600stringboot/0657springboot/blog.002.png)
+![](/images/0600wxapp//blog.002.png)
 
 图2-1  B/S模式三层结构图
 ## 2.2Java技术
@@ -106,35 +105,35 @@ SpringBoot的主要优点有：1.为所有Spring开发提供了一个更快、�
 
 (a) 管理员；管理员使用本系统涉到的功能主要有：首页、个人中心、用户管理、摄影师管理、摄影跟拍管理、类别管理、周边商品管理、商品类型管理、跟拍预约管理、跟拍流程管理、成品信息管理、商品订单管理、系统管理等功能。管理员用例图如图3-1所示。
 
-![](/images/0600stringboot/0657springboot/blog.003.png)
+![](/images/0600wxapp//blog.003.png)
 
 图3-1　管理员用例图
 
 ` `(b)摄影师；摄影师使用本系统涉到的功能主要有：首页、个人中心、跟拍预约管理、跟拍流程管理、成品信息管理、商品订单管理等功能。摄影师用例图如图3-2所示。
 
-![](/images/0600stringboot/0657springboot/blog.004.png)
+![](/images/0600wxapp//blog.004.png)
 
 图3-2摄影师用例图
 
 (c)用户主要包括首页、个人中心、跟拍预约管理、跟拍流程管理、成品信息管理、商品订单管理、评论信息管理、我的收藏管理等功能。用户用例图如图3-3所示。
 
-![](/images/0600stringboot/0657springboot/blog.005.png)
+![](/images/0600wxapp//blog.005.png)
 
 图3-3用户用例图
 ## 3.4系统流程的分析
 由于不同的系统实际使用用户角色的不同,他们的业务分析也会变得有所不一样,为了论述方便接下来都将以用户功能权限下的系统业务流程来分析,如下图所展示:
 ### 3.4.1 用户管理的流程
 
-![](/images/0600stringboot/0657springboot/blog.006.png)
+![](/images/0600wxapp//blog.006.png)
 
 图3-4 用户管理流程
 ### 3.4.2个人中心管理流程
 
-![](/images/0600stringboot/0657springboot/blog.007.png)
+![](/images/0600wxapp//blog.007.png)
 
 图3-5 个人中心管理流程
 ### 3.4.3登录流程
-![](/images/0600stringboot/0657springboot/blog.008.png)
+![](/images/0600wxapp//blog.008.png)
 
 图3-6 登录流程
 
@@ -164,7 +163,7 @@ SpringBoot的主要优点有：1.为所有Spring开发提供了一个更快、�
 ## 4.1 软件功能模块设计
 系统整体功能如下图所示：
 
-![](/images/0600stringboot/0657springboot/blog.009.png)
+![](/images/0600wxapp//blog.009.png)
 
 图 4-1系统总体功能模块图
 ## 4.2数据库设计
@@ -173,19 +172,19 @@ SpringBoot的主要优点有：1.为所有Spring开发提供了一个更快、�
 
 个人中心实体图如图4-2所示：
 
-![](/images/0600stringboot/0657springboot/blog.010.png)
+![](/images/0600wxapp//blog.010.png)
 
 图4-2个人中心实体图
 
 摄影跟拍实体图如图4-3所示：
 
-![](/images/0600stringboot/0657springboot/blog.011.png)
+![](/images/0600wxapp//blog.011.png)
 
 图4-3摄影跟拍实体图
 
 周边商品实体图如图4-4所示：
 
-![](/images/0600stringboot/0657springboot/blog.012.png)
+![](/images/0600wxapp//blog.012.png)
 
 图4-4周边商品实体图
 
@@ -459,130 +458,130 @@ SpringBoot的主要优点有：1.为所有Spring开发提供了一个更快、�
 ## 5.1系统功能模块
 摄影跟拍预定管理系统，在系统首页可以查看首页、摄影跟拍、周边商品、公告信息、个人中心、后台管理等内容，并进行详细操作，如图5-1所示。
 
-![](/images/0600stringboot/0657springboot/blog.013.png)
+![](/images/0600wxapp//blog.013.png)
 
 图5-1系统首页界面图
 
 摄影跟拍，在摄影跟拍页面中可以查看套餐名称、类别、套餐简介、拍摄地点、套餐价格、注意事项、发布日期等内容进行预约、评论或收藏等操作，如图5-2所示。
 
-![](/images/0600stringboot/0657springboot/blog.014.png)
+![](/images/0600wxapp//blog.014.png)
 
 图5-2摄影跟拍界面图
 
 周边商品，在周边商品页面可以查看商品名称、商品类型、商品规格、商品简介、原材料、生产地、单价、数量、上架日期、点击次数等内容进行购买、收藏或评论等操作，如图5-3所示。
 
-![](/images/0600stringboot/0657springboot/blog.015.png)
+![](/images/0600wxapp//blog.015.png)
 
 图5-3周边商品界面图
 
 个人中心，在个人中心页面通过填写个人账号、密码、 姓名、邮箱、手机号码、图片等内容进行更新信息，并可以根据我的收藏进行相应的操作，如图5-4所示。
 
-![](/images/0600stringboot/0657springboot/blog.016.png)
+![](/images/0600wxapp//blog.016.png)
 
 图5-4个人中心界面图
 
 ## 5.2管理员功能模块
 管理员进行登录，进入系统前在登录页面根据要求填写用户名和密码，选择角色等信息，点击登录进行登录操作，如图5-5所示。
 
-![](/images/0600stringboot/0657springboot/blog.017.jpeg)
+![](/images/0600wxapp//blog.017.jpeg)
 
 图5-5管理员登录界面图
 
 管理员登录系统后，可以对首页、个人中心、用户管理、摄影师管理、摄影跟拍管理、类别管理、周边商品管理、商品类型管理、跟拍预约管理、跟拍流程管理、成品信息管理、商品订单管理、系统管理等进行相应的操作管理，如图5-6所示。
 
-![](/images/0600stringboot/0657springboot/blog.018.png)
+![](/images/0600wxapp//blog.018.png)
 
 图5-6管理员功能界面图
 
 用户管理，在用户管理页面可以对索引、个人账号、姓名、性别、邮箱、手机号码、照片等内容进行详情、修改或删除等操作，如图5-7所示。
 
-![](/images/0600stringboot/0657springboot/blog.019.png)
+![](/images/0600wxapp//blog.019.png)
 
 图5-7用户管理界面图
 
 摄影师管理，在摄影师管理页面可以对索引、工号、员工姓名、性别、邮箱、联系手机、照片等内容进行详情、修改或删除等操作，如图5-8所示。
 
-![](/images/0600stringboot/0657springboot/blog.020.png)
+![](/images/0600wxapp//blog.020.png)
 
 图5-8摄影师管理界面图
 
 摄影跟拍管理，在摄影跟拍管理页面可以对索引、套餐名称、套餐图片、类别、拍摄地点、套餐价格、注意事项、发布日期等内容进行详情、修改、查看评论或删除等操作，如图5-9所示。
 
-![](/images/0600stringboot/0657springboot/blog.021.png)
+![](/images/0600wxapp//blog.021.png)
 
 图5-9摄影跟拍管理界面图
 
 类别管理，在课程分类管理页面可以对索引、类型等内容进行详情、修改或删除等操作，如图5-10所示。
 
-![](/images/0600stringboot/0657springboot/blog.022.png)
+![](/images/0600wxapp//blog.022.png)
 
 图5-10类别管理界面图
 
 周边商品管理，在周边商品管理页面可以对索引、商品名称、商品类型、商品图片、商品规格、生产地、原材料、单价、数量、上架日期等内容进行详情、修改、查看评论或删除等操作，如图5-11所示。
 
-![](/images/0600stringboot/0657springboot/blog.023.png)
+![](/images/0600wxapp//blog.023.png)
 
 图5-11周边商品管理界面图
 
 成品信息管理，在成品信息管理页面可以对索引、成品名称、 成品图片、成品附件、个人账号、姓名、手机号码、上传日期、工号、员工姓名、联系手机等内容进行详情或删除等操作，如图5-12所示。
 
-![](/images/0600stringboot/0657springboot/blog.024.png)
+![](/images/0600wxapp//blog.024.png)
 
 图5-12成品信息管理界面图
 
 商品订单管理，在商品订单管理页面中可以对索引、商品名称、商品类型、单价、数量、金额、个人账号、姓名、手机号码、下单备注、下单时间、是否支付、审核回复、审核状态、审核等内容进行详情或删除等操作，如图5-13所示。
 
-![](/images/0600stringboot/0657springboot/blog.025.png)
+![](/images/0600wxapp//blog.025.png)
 
 图5-13商品订单管理界面图
 
 系统管理，在轮播图管理页面中可以对索引、名称、值等内容进行详情或修改等操作，并可以根据公告信息进行相应的操作，如图5-14所示。
 
-![](/images/0600stringboot/0657springboot/blog.026.png)
+![](/images/0600wxapp//blog.026.png)
 
 图5-14系统管理界面图
 
 ## 5.3摄影师功能模块
 摄影师登录进入摄影跟拍预定管理系统可以对首页、个人中心、跟拍预约管理、跟拍流程管理、成品信息管理、商品订单管理等进行相应操作，如图5-15所示。
 
-![](/images/0600stringboot/0657springboot/blog.027.png)
+![](/images/0600wxapp//blog.027.png)
 
 图5-15摄影师功能界面图
 
 跟拍预约管理，在跟拍预约管理页面中可以对索引、套餐名称、类型、拍摄地点、套餐价格、个人账号、姓名、手机号码、预约日期、预约备注、下单时间、是否支付、审核回复、审核状态、审核等内容进行详情或流程等操作，如图5-16所示。
 
-![](/images/0600stringboot/0657springboot/blog.028.png)
+![](/images/0600wxapp//blog.028.png)
 
 图5-16跟拍预约管理界面图
 
 跟拍流程管理，在跟拍流程管理页面可以对索引、套餐名称、类别、拍摄地点、个人账号、姓名、手机号码、安排时间、工号、员工姓名、联系手机、操作日期审核回复、审核状态等内容进行详情、成品、修改或删除等操作，如图5-17所示。
 
-![](/images/0600stringboot/0657springboot/blog.029.png)
+![](/images/0600wxapp//blog.029.png)
 
 图5-17跟拍流程管理界面图
 
 ## 5.4用户功能模块
 用户注册，通过填写个人账号、密码、 确认密码、 姓名、邮箱、手机号码等内容进行注册等操作，如图5-18所示。
 
-![](/images/0600stringboot/0657springboot/blog.030.png)
+![](/images/0600wxapp//blog.030.png)
 
 图5-18用户注册界面图
 
 用户登录进入摄影跟拍预定管理系统可以对首页、个人中心、跟拍预约管理、跟拍流程管理、成品信息管理、商品订单管理、评论信息管理、我的收藏管理等进行相应操作，如图5-19所示。
 
-![](/images/0600stringboot/0657springboot/blog.031.png)
+![](/images/0600wxapp//blog.031.png)
 
 图5-19用户功能界面图
 
 成品信息管理，在成品信息管理页面可以对索引、成品名称、 成品图片、成品附件、个人账号、姓名、手机号码、上传日期、工号、员工姓名、联系手机等内容进行详情等操作，如图5-20所示。
 
-![](/images/0600stringboot/0657springboot/blog.032.png)
+![](/images/0600wxapp//blog.032.png)
 
 图5-20成品信息管理界面图
 
 跟拍预约管理，在跟拍预约管理页面可以对索引、套餐名称、类型、拍摄地点、套餐价格、个人账号、姓名、手机号码、预约日期、预约备注、下单时间、是否支付、审核回复、审核状态、审核等内容进行详情等操作，如图5-21所示。
 
-![](/images/0600stringboot/0657springboot/blog.033.png)
+![](/images/0600wxapp//blog.033.png)
 
 图5-21跟拍预约管理界面图
 

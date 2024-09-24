@@ -1,17 +1,16 @@
 # 0139springboot体育馆使用预约平台的设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0139springboot体育馆使用预约平台的设计与实现](https://github.com/GraduationProject-springboot/0139springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1ECs?p=38)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 绪论
 ## 1.1 课题背景
@@ -66,7 +65,7 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 使用者在操作体育馆使用预约平台中，应该按照本系统提供的操作流程（图3.1即为本系统的操作流程图）进行操作，这样可以减少使用者操作中出现的错误，从而节省进入体育馆使用预约平台的时间。
 
-![](/images/0100stringboot/0139springboot/blog.001.png)
+![](/images/0100wxapp//blog.001.png)
 
 图3.1 系统操作流程
 
@@ -74,7 +73,7 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 体育馆使用预约平台通过登录功能（图3.2即为其登录的流程）引导使用者进入指定的功能操作区，也避免非本系统的用户享受本系统提供的服务以及查看本系统提供的信息，从而保障本系统用户的安全使用。
 
-![](/images/0100stringboot/0139springboot/blog.002.png)
+![](/images/0100wxapp//blog.002.png)
 
 图3.2 登录流程
 
@@ -82,7 +81,7 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 体育馆使用预约平台在经过长期使用后，会产生很多的数据信息。为了腾出存储空间存放更多的数据，本系统数据库中存储的数据，一些没有参考价值的数据需要进行删除（图3.3即为删除信息的流程），删除数据过程中，为避免误删，使用者要根据系统的提示来决定是否删除数据。
 
-![](/images/0100stringboot/0139springboot/blog.003.png)
+![](/images/0100wxapp//blog.003.png)
 
 图3.3 删除信息流程
 
@@ -90,7 +89,7 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 体育馆使用预约平台提供可视化的功能操作区，非常方便使用者进行数据操作，当使用者往系统中录入数据时（图3.4即为添加信息的流程），本系统也会进行数据合法性的判断，符合要求的数据才能够在数据库指定表中进行登记。
 
-![](/images/0100stringboot/0139springboot/blog.004.png)
+![](/images/0100wxapp//blog.004.png)
 
 图3.4 添加信息流程
 ## 3.3 系统性能需求
@@ -110,13 +109,13 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 图3.5即为管理员用例图，管理员权限操作的功能包括对注册用户信息的管理，对场地，场地预约订单，公告，论坛帖子等信息的管理。
 
-![](/images/0100stringboot/0139springboot/blog.005.png)
+![](/images/0100wxapp//blog.005.png)
 
 图3.5 管理员用例图
 
 图3.6即为用户用例图，用户权限操作的功能包括参与论坛帖子发布与评论，查看公告，预约场地，收藏场地等。
 
-![](/images/0100stringboot/0139springboot/blog.006.png)
+![](/images/0100wxapp//blog.006.png)
 
 图3.6 用户用例图
 # 第4章 系统设计
@@ -125,13 +124,13 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 4.1.1 管理员模块功能
 图4.1即为设计的管理员功能结构，管理员权限操作的功能包括对注册用户信息的管理，对场地，场地预约订单，公告，论坛帖子等信息的管理。
 
-![](/images/0100stringboot/0139springboot/blog.007.png)
+![](/images/0100wxapp//blog.007.png)
 
 图4.1 管理员功能结构
 ### 4.1.2 用户模块功能
 图4.2即为设计的用户功能结构，用户权限操作的功能包括参与论坛帖子发布与评论，查看公告，预约场地，收藏场地等。
 
-![](/images/0100stringboot/0139springboot/blog.008.png)
+![](/images/0100wxapp//blog.008.png)
 
 图4.2 用户功能结构
 ## 4.2 数据库设计
@@ -141,31 +140,31 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 （1）图4.4即为场地这个实体所拥有的属性值。
 
-![](/images/0100stringboot/0139springboot/blog.009.png)
+![](/images/0100wxapp//blog.009.png)
 
 图4.4 场地实体属性图
 
 （2）图4.5即为用户这个实体所拥有的属性值。
 
-![](/images/0100stringboot/0139springboot/blog.010.png)
+![](/images/0100wxapp//blog.010.png)
 
 图4.5 用户实体属性图
 
 （3）图4.6即为公告这个实体所拥有的属性值。
 
-![](/images/0100stringboot/0139springboot/blog.011.png)
+![](/images/0100wxapp//blog.011.png)
 
 图4.6 公告实体属性图
 
 4. 图4.7即为管理员这个实体所拥有的属性值。
 
-![](/images/0100stringboot/0139springboot/blog.012.png)
+![](/images/0100wxapp//blog.012.png)
 
 图4.7 管理员实体属性图
 
 4. 图4.8即为上面介绍的实体中存在的联系。
 
-![](/images/0100stringboot/0139springboot/blog.013.png)
+![](/images/0100wxapp//blog.013.png)
 
 图4.8 实体间关系E-R图
 ### 4.2.2 数据库表设计
@@ -274,7 +273,7 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 5.1.1 论坛管理
 图5.1 即为编码实现的论坛管理界面，管理员在该界面中查看论坛回复信息，修改论坛帖子内容，可以删除论坛帖子。论坛信息包含帖子标题，用户姓名，用户手机号，用户身份证，查询的时候可以通过这些信息查询出来结果，添加内容的时候需要输入帖子类型，帖子标题，发布内容。
 
-![](/images/0100stringboot/0139springboot/blog.014.png)
+![](/images/0100wxapp//blog.014.png)
 
 图5.1 论坛管理界面
 
@@ -316,7 +315,7 @@ public R save(@RequestBody ForumEntity forum, HttpServletRequest request){
 ### 5.1.2 用户管理
 图5.2 即为编码实现的用户管理界面，管理员在该界面中为注册系统的用户重置密码，更改用户的头像，电子邮箱等基础信息，删除需要删除的用户。用户信息包含账号，密码，手机号，身份证，头像，性别，电子信箱，余额等。查询的时候只需要提供用户姓名，手机号，身份证就可以查询。
 
-![](/images/0100stringboot/0139springboot/blog.015.png)
+![](/images/0100wxapp//blog.015.png)
 
 图5.2 用户管理界面
 
@@ -353,7 +352,7 @@ public R save(@RequestBody YonghuEntity yonghu, HttpServletRequest request){
 ### 5.1.3 场地管理
 图5.3 即为编码实现的场地管理界面，管理员在该界面中可以更改场地信息，新增新的场地信息，删除需要删除的场地资料。场地搜索只需要输入场地名称，场地类型就可以查到结果。新增场地则需要输入场地编号，场地名称，照片，类型，原价，现价，时间段，半全场，推荐吃饭地点，场地介绍等。
 
-![](/images/0100stringboot/0139springboot/blog.016.png)
+![](/images/0100wxapp//blog.016.png)
 
 图5.3 场地管理界面
 
@@ -394,7 +393,7 @@ public R update(@RequestBody ChangdiEntity changdi, HttpServletRequest request){
 ### 5.1.4 场地订单管理
 图5.4 即为编码实现的场地订单管理界面，管理员在该界面中对用户预约的场地订单进行查询，更改等，查看场地预约订单的预约时间段信息以及订单类型等信息。可以通过输入场地名称，类型，用户姓名，用户手机号，用户身份证号来进行查询场地预约信息。
 
-![](/images/0100stringboot/0139springboot/blog.017.png)
+![](/images/0100wxapp//blog.017.png)
 
 图5.4 场地订单管理界面
 
@@ -429,14 +428,14 @@ public R page(@RequestParam Map<String, Object> params, HttpServletRequest reque
 ### 5.1.5 公告信息管理
 图5.5 即为编码实现的公告信息管理界面，管理员在该界面中负责发布公告信息，更改公告信息的部分信息，删除需要删除的公告。
 
-![](/images/0100stringboot/0139springboot/blog.018.png)
+![](/images/0100wxapp//blog.018.png)
 
 图5.5 公告信息管理界面
 ## 5.2 用户前台功能实现
 ### 5.2.1 场地信息
 图5.6 即为编码实现的场地信息界面，用户在该界面中对场地进行预定，或收藏场地方便下次查看场地信息。可以看到的场地名称，类型，原价，现价，人数，点击次数，半全场，推荐吃饭地点，订购日期，订购时间段详情介绍。
 
-![](/images/0100stringboot/0139springboot/blog.019.png)
+![](/images/0100wxapp//blog.019.png)
 
 图5.6 场地信息界面
 
@@ -491,13 +490,13 @@ public R add(@RequestBody ChangdiOrderEntity changdiOrder, HttpServletRequest re
 ### 5.2.2 在线论坛
 图5.7 即为编码实现的在线论坛界面，用户在该界面中对论坛所有帖子进行查看，查看帖子之后可以发布帖子评论，用户也能点击发布帖子链接进入新界面发布自己的帖子。主要可以看到帖子标题，发布人权限，发布时间，可以对这些帖子进行回复操作。
 
-![](/images/0100stringboot/0139springboot/blog.020.png)
+![](/images/0100wxapp//blog.020.png)
 
 图5.7 在线论坛界面
 ### 5.2.3 场地预约
 图5.8 即为编码实现的场地预约界面，用户在该界面中浏览已经预约的场地。如果存在误操作，用户可以取消预约的场地。在个人中心我的场地预约里面，有全部场地预约，已使用，取消预约，已预约这几个状态的预约信息，已经取消预约的不能再取消，已预约尚未取消预约的才可以取消预约。
 
-![](/images/0100stringboot/0139springboot/blog.021.png)
+![](/images/0100wxapp//blog.021.png)
 
 图5.8 场地预约界面
 

@@ -1,17 +1,16 @@
 # 0034springboot学科竞赛管理
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0034springboot学科竞赛管理](https://github.com/GraduationProject-springboot/0034springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV16ia6epENY?p=35)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 研究背景
 当今时代是飞速发展的信息时代。在各行各业中离不开信息处理，这正是计算机被广泛应用于信息管理系统的环境。计算机的最大好处在于利用它能够进行信息管理。使用计算机进行信息控制，不仅提高了工作效率，而且大大的提高了其安全性。尤其对于复杂的信息管理，计算机能够充分发挥它的优越性。
@@ -61,7 +60,7 @@ Java是一种非常常用的编程语言，在全球编程语言排行版上总�
 
 相对于C/S模式，B/S模式是对C/S模式应用的扩展，B/S模式不用对不同的计算机安装不同应用程序，还有安全性的要求及对模式上手难度都比前者更好。B/S模式可以让客户机的压力大大减轻，工作的负荷被合理的分配了。
 
-![](/images/0000stringboot/0034springboot/blog.002.png)
+![](/images/0000wxapp//blog.002.png)
 
 图2-1  B/S模式三层结构图
 ## 2.3MYSQL数据库
@@ -117,32 +116,32 @@ VUE的出现，加快了前后端分离的进程，提高了程序员的工作�
 
 （1）管理员：管理员登陆后可对系统进行全面管理，管理员主要功能模块包括个人中心、学生管理、教师管理、赛项信息管理、赛项报名管理、奖项统计管理、管理员管理以及系统管理，管理员实现了对系统信息的查看、添加、修改和删除的功能。管理员用例图如图3-1所示。
 
-![](/images/0000stringboot/0034springboot/blog.003.png)
+![](/images/0000wxapp//blog.003.png)
 
 图3-1 管理员用例图
 
 （2）学生：学生进入本学科竞赛管理系统的设计与实现前台可查看系统信息，包括首页、赛项信息以及新闻资讯等，注册登录后主要功能模块包括个人中心和赛项报名管理。
 
-![](/images/0000stringboot/0034springboot/blog.004.png)
+![](/images/0000wxapp//blog.004.png)
 
 图3-2 学生用例图
 ## 3.4系统流程分析
 ### 3.4.1注册流程
 未有账号的学生可进行注册操作，在注册时系统首先判断账号是否存在，存在则提示账号已存在，不存在则判断输入的信息是否合法，合法则在数据库添加注册信息，注册成功，反之注册失败，注册流程如图3-3所示。
 
-![](/images/0000stringboot/0034springboot/blog.005.png)
+![](/images/0000wxapp//blog.005.png)
 
 图3-3  用户注册流程图
 ### 3.4.2登录流程
 登录模块主要满足了学生以及管理员的权限登录，学生登录流程图如图3-4所示。
 
-![](/images/0000stringboot/0034springboot/blog.006.png)
+![](/images/0000wxapp//blog.006.png)
 
 图 3-4 学生登录流程图
 ### 3.4.3添加信息流程
 管理员和学生登录后均可进行信息的添加操作，添加信息流程图如图3-5所示。
 
-![](/images/0000stringboot/0034springboot/blog.007.png)
+![](/images/0000wxapp//blog.007.png)
 
 图3-5添加信息流程图
 
@@ -152,13 +151,13 @@ VUE的出现，加快了前后端分离的进程，提高了程序员的工作�
 ## 4.1系统概要设计
 学科竞赛管理系统的设计与实现主要分为管理员和学生两个角色，系统采用B/S结构(Browser/Server,浏览器/服务器结构)和基于Web服务两种模式，是一个适用于Internet环境下的模型结构。只要用户能连上Internet，便可以在任何时间、任何地点使用。系统工作原理图如图4-1所示：
 
-![](/images/0000stringboot/0034springboot/blog.008.png)
+![](/images/0000wxapp//blog.008.png)
 
 图4-1 系统工作原理图
 ## 4.2系统结构设计
 系统架构的整体设计是一个将一个庞大的任务细分为多个小的任务的过程，这些小的任务分段完成后，组合在一起形成一个完整的任务。本学科竞赛管理系统的设计与实现主要包括学生功能模块和管理员功能模块两大部分，系统结构设计如图4-2所示。
 
-![](/images/0000stringboot/0034springboot/blog.009.png)
+![](/images/0000wxapp//blog.009.png)
 
 图4-2系统结构图
 ## 4.3 系统顺序图
@@ -166,7 +165,7 @@ VUE的出现，加快了前后端分离的进程，提高了程序员的工作�
 
 用户在登录时，首先进入系统登录窗口，用户需要输入用户名和密码，点击登录按钮进行登录操作，系统会以用户名和密码为参数在数据库中进行登录信息的验证，验证成功则登录成功，进入用户主界面。登录模块顺序图如图4-3所示。
 
-![](/images/0000stringboot/0034springboot/blog.010.png)
+![](/images/0000wxapp//blog.010.png)
 
 图4-3 登录顺序图
 
@@ -174,7 +173,7 @@ VUE的出现，加快了前后端分离的进程，提高了程序员的工作�
 
 未有账号的用户可进入注册界面进行注册操作，在注册界面输入注册信息，点击提交按钮，系统首先判断用户名是否存在，存在则提示重新输入，不存在则验证注册信息是否正确，正确则在数据库中添加注册数据，提示注册成功。用户注册模块顺序图如图4-4所示。
 
-![](/images/0000stringboot/0034springboot/blog.011.png)
+![](/images/0000wxapp//blog.011.png)
 
 图4-4 注册顺序图
 
@@ -182,7 +181,7 @@ VUE的出现，加快了前后端分离的进程，提高了程序员的工作�
 
 用户登录后可进入修改密码界面进行修改密码操作，在修改密码时，需要输入原始密码和新密码，系统会在数据库中进行原密码的验证，原密码正确则在数据库中添加修改数据，修改成功。修改密码顺序图如图4-5所示。
 
-![](/images/0000stringboot/0034springboot/blog.012.png)
+![](/images/0000wxapp//blog.012.png)
 
 图4-5 修改密码顺序图
 ## 4.4数据库设计
@@ -195,31 +194,31 @@ E-R图是一种描述显示数据类型间的关系的数据描述方法，E-R�
 
 （1）奖项统计实体属性E-R图如图4-6所示。
 
-![](/images/0000stringboot/0034springboot/blog.013.png)
+![](/images/0000wxapp//blog.013.png)
 
 图4-6  奖项统计实体属性E-R图
 
 （2）赛项报名实体属性E-R图如图4-7所示。
 
-![](/images/0000stringboot/0034springboot/blog.014.png)
+![](/images/0000wxapp//blog.014.png)
 
 图4-7 赛项目标实体属性E-R图
 
 （3）管理员实体属性E-R图如图4-8所示。
 
-![](/images/0000stringboot/0034springboot/blog.015.png)
+![](/images/0000wxapp//blog.015.png)
 
 图4-8  管理员实体属性E-R图
 
 （4）赛项实体属性E-R图如图4-9所示。
 
-![](/images/0000stringboot/0034springboot/blog.016.png)
+![](/images/0000wxapp//blog.016.png)
 
 图4-9  赛项实体属性E-R图
 
 （5）学生实体属性E-R图如图4-10所示。
 
-![](/images/0000stringboot/0034springboot/blog.017.png)
+![](/images/0000wxapp//blog.017.png)
 
 图4-10 学生实体属性E-R图
 ### 4.4.2 数据库表设计
@@ -306,72 +305,72 @@ E-R图是一种描述显示数据类型间的关系的数据描述方法，E-R�
 ## 5.1学生功能模块的实现
 学生进入本系统可查看系统信息，系统主界面展示如图5-1所示。
 
-![](/images/0000stringboot/0034springboot/blog.018.png)
+![](/images/0000wxapp//blog.018.png)
 
 图5-1系统主界面图
 ### 5.1.1 学生注册界面
 没有账号的学生用户可进行注册操作，学生注册界面展示如图5-2所示。
 
-![](/images/0000stringboot/0034springboot/blog.019.png)
+![](/images/0000wxapp//blog.019.png)
 
 图5-2 学生注册界面图
 ### 5.1.2 学生登录界面
 学生在登录时需输入正确的登录用户名和密码，系统会以登录用户名、密码为参数进行登录信息的验证，信息正确则登录成功，反之登录失败，学生登录界面展示如图5-2所示。
 
-![](/images/0000stringboot/0034springboot/blog.020.png)
+![](/images/0000wxapp//blog.020.png)
 
 图5-3   学生登录界面图
 ### 5.1.3 赛项详情界面
 学生可选择赛项查看详情信息，登录后可进行报名操作，赛项详情界面展示如图5-4所示，报名界面展示如图5-5所示。
 
-![](/images/0000stringboot/0034springboot/blog.021.png)
+![](/images/0000wxapp//blog.021.png)
 
 图5-4 赛项详情界面图
 
-![](/images/0000stringboot/0034springboot/blog.022.png)
+![](/images/0000wxapp//blog.022.png)
 
 图5-5  报名界面图
 ### 5.1.4 个人中心界面
 学生可对个人信息进行修改，个人中心界面展示如图5-6所示。
 
-![](/images/0000stringboot/0034springboot/blog.023.png)
+![](/images/0000wxapp//blog.023.png)
 
 图5-6  个人中心界面图
 ## 5.2管理员功能模块的实现
 ### 5.2.1 管理员登录界面
 管理员要想进入后台进行管理操作，必须登录系统后台，管理员登录界面展示如图5-7所示。
 
-![](/images/0000stringboot/0034springboot/blog.024.png)
+![](/images/0000wxapp//blog.024.png)
 
 图5-7 管理员登录界面图
 ### 5.2.2 学生管理界面
 管理在学生管理界面可查看所有学生信息，并可对其进行修改和删除操作，同时也可添加学生信息，学生管理界面展示如图5-8所示。
 
-![](/images/0000stringboot/0034springboot/blog.025.png)
+![](/images/0000wxapp//blog.025.png)
 
 图5-8 学生管理界面图
 ### 5.2.3 教师管理界面
 管理员可增删改查教师信息，教师管理界面展示如图5-9所示。
 
-![](/images/0000stringboot/0034springboot/blog.026.png)
+![](/images/0000wxapp//blog.026.png)
 
 图5-9 教师管理界面图
 ### 5.2.4 赛项信息管理界面
 管理员可增删改查赛项信息，赛项信息管理界面如图5-10所示。
 
-![](/images/0000stringboot/0034springboot/blog.027.png)
+![](/images/0000wxapp//blog.027.png)
 
 图5-10  赛项信息管理界面图
 ### 5.2.5 赛项报名管理界面
 管理员可查看所有赛项报名信息，并可对其进行审核、修改和删除操作，赛项报名管理界面展示如图5-11所示。
 
-![](/images/0000stringboot/0034springboot/blog.028.png)
+![](/images/0000wxapp//blog.028.png)
 
 图5-11 赛项报名管理界面图
 ### 5.2.6 奖项统计管理界面
 管理员可增删改查奖项统计信息，奖项统计管理界面展示如图5-12所示。
 
-![](/images/0000stringboot/0034springboot/blog.029.png)
+![](/images/0000wxapp//blog.029.png)
 
 图5-12 奖项统计管理界面图
 

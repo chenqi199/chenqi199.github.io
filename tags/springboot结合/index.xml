@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Springboot结合 - 标签 - chenqi blog</title>
+        <link>https://chenqi199.github.io/tags/springboot%E7%BB%93%E5%90%88/</link>
+        <description>Springboot结合 - 标签 - chenqi blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>chen_q_i@163.com (chenqi)</managingEditor>
+            <webMaster>chen_q_i@163.com (chenqi)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 25 Jun 2024 11:23:25 &#43;0800</lastBuildDate><atom:link href="https://chenqi199.github.io/tags/springboot%E7%BB%93%E5%90%88/" rel="self" type="application/rss+xml" /><item>
+    <title>0726springboot结合疫情情况的婚恋系统</title>
+    <link>https://chenqi199.github.io/0726springboot%E7%BB%93%E5%90%88%E7%96%AB%E6%83%85%E6%83%85%E5%86%B5%E7%9A%84%E5%A9%9A%E6%81%8B%E7%B3%BB%E7%BB%9F/</link>
+    <pubDate>Tue, 25 Jun 2024 11:23:25 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/0726springboot%E7%BB%93%E5%90%88%E7%96%AB%E6%83%85%E6%83%85%E5%86%B5%E7%9A%84%E5%A9%9A%E6%81%8B%E7%B3%BB%E7%BB%9F/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site 0726springboot结合疫情情况的婚恋系统 github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 内容整理中]]></description>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer" />
+        <meta name="robots" content="noodp" />
+        <title>ssm008医院门诊挂号系统&#43;jsp - chenqi blog</title><meta name="Description" content="Hugo theme - chenqi"><meta property="og:url" content="https://chenqi199.github.io/ssm008%E5%8C%BB%E9%99%A2%E9%97%A8%E8%AF%8A%E6%8C%82%E5%8F%B7%E7%B3%BB%E7%BB%9F-jsp/">
+  <meta property="og:site_name" content="chenqi blog">
+  <meta property="og:title" content="ssm008医院门诊挂号系统&#43;jsp">
+  <meta property="og:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm008医院门诊挂号系统&#43;jsp github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第1章 绪论 1.1背景及意义 随着社会的">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-10-29T22:29:50+08:00">
+    <meta property="article:modified_time" content="2023-10-29T22:29:50+08:00">
+    <meta property="article:tag" content="Ssm医院">
+    <meta property="article:tag" content="门诊挂号">
+    <meta property="article:tag" content="医院门诊">
+    <meta property="article:tag" content="挂号系统">
+    <meta property="og:image" content="https://chenqi199.github.io/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chenqi199.github.io/logo.png">
+  <meta name="twitter:title" content="ssm008医院门诊挂号系统&#43;jsp">
+  <meta name="twitter:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm008医院门诊挂号系统&#43;jsp github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第1章 绪论 1.1背景及意义 随着社会的">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chenqi199.github.io/ssm008%E5%8C%BB%E9%99%A2%E9%97%A8%E8%AF%8A%E6%8C%82%E5%8F%B7%E7%B3%BB%E7%BB%9F-jsp/" /><link rel="prev" href="https://chenqi199.github.io/ssm009%E6%AF%95%E4%B8%9A%E7%94%9F%E5%B0%B1%E4%B8%9A%E4%BF%A1%E6%81%AF%E7%BB%9F%E8%AE%A1%E7%B3%BB%E7%BB%9F-vue/" /><link rel="next" href="https://chenqi199.github.io/0010springboot%E8%AF%BE%E7%A8%8B%E4%BD%9C%E4%B8%9A%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "ssm008医院门诊挂号系统+jsp",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chenqi199.github.io\/ssm008%E5%8C%BB%E9%99%A2%E9%97%A8%E8%AF%8A%E6%8C%82%E5%8F%B7%E7%B3%BB%E7%BB%9F-jsp\/"
+        },"image": ["https:\/\/chenqi199.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "ssm医院, 门诊挂号, 医院门诊, 挂号系统","wordcount":  7460 ,
+        "url": "https:\/\/chenqi199.github.io\/ssm008%E5%8C%BB%E9%99%A2%E9%97%A8%E8%AF%8A%E6%8C%82%E5%8F%B7%E7%B3%BB%E7%BB%9F-jsp\/","datePublished": "2023-10-29T22:29:50+08:00","dateModified": "2023-10-29T22:29:50+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/chenqi199.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "chenqi"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/ssm008%E5%8C%BB%E9%99%A2%E9%97%A8%E8%AF%8A%E6%8C%82%E5%8F%B7%E7%B3%BB%E7%BB%9F-jsp/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/ssm008%E5%8C%BB%E9%99%A2%E9%97%A8%E8%AF%8A%E6%8C%82%E5%8F%B7%E7%B3%BB%E7%BB%9F-jsp/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">ssm008医院门诊挂号系统+jsp</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="chenqi199" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>chenqi</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-10-29">2023-10-29</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 7460 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 15 分钟&nbsp;<span id="/ssm008%E5%8C%BB%E9%99%A2%E9%97%A8%E8%AF%8A%E6%8C%82%E5%8F%B7%E7%B3%BB%E7%BB%9F-jsp/" class="leancloud_visitors" data-flag-title="ssm008医院门诊挂号系统&#43;jsp">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">github 项目仓库</a> 开源仅有后端代码</a></li>
+        <li><a href="#点击播放视频-">点击播放视频 ▼</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#11背景及意义">1.1背景及意义</a></li>
+    <li><a href="#12-国内外研究概况">1.2 国内外研究概况</a></li>
+    <li><a href="#13-研究的内容">1.3 研究的内容</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#21-jsp技术介绍">2.1 JSP技术介绍</a></li>
+    <li><a href="#22-myeclipse开发环境">2.2 MyEclipse开发环境</a></li>
+    <li><a href="#23-tomcat服务器">2.3 Tomcat服务器</a></li>
+    <li><a href="#24-mysql数据库">2.4 MySQL数据库</a></li>
+    <li><a href="#25-java简介">2.5 JAVA简介</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#31-需求分析">3.1 需求分析</a></li>
+    <li><a href="#32-系统可行性分析">3.2 系统可行性分析</a>
+      <ul>
+        <li><a href="#321技术可行性技术背景">3.2.1技术可行性：技术背景</a></li>
+        <li><a href="#322经济可行性">3.2.2经济可行性</a></li>
+        <li><a href="#323操作可行性">3.2.3操作可行性：</a></li>
+      </ul>
+    </li>
+    <li><a href="#33-项目设计目标与原则">3.3 项目设计目标与原则</a></li>
+    <li><a href="#34系统流程分析">3.4系统流程分析</a>
+      <ul>
+        <li><a href="#341操作流程">3.4.1操作流程</a></li>
+        <li><a href="#342添加信息流程">3.4.2添加信息流程</a></li>
+        <li><a href="#343删除信息流程">3.4.3删除信息流程</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#41-系统体系结构">4.1 系统体系结构</a></li>
+    <li><a href="#42开发流程设计">4.2开发流程设计</a></li>
+    <li><a href="#43-数据库设计原则">4.3 数据库设计原则</a></li>
+    <li><a href="#44-数据表">4.4 数据表</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#51管理员功能模块">5.1管理员功能模块</a></li>
+    <li><a href="#52护士功能模块">5.2护士功能模块</a></li>
+    <li><a href="#53医生功能模块">5.3医生功能模块</a></li>
+    <li><a href="#54药房功能模块">5.4药房功能模块</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="项目清单-包安装运行httpchenqi1990site-官网地址-httpchenqi1990site"><a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">项目清单 包安装运行</a> 官网地址 <a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">http://chenqi1990.site</a></h1>
+<h1 id="ssm008医院门诊挂号系统jsphttpsgithubcomgraduationproject-springboot"><a href="https://github.com/GraduationProject-springboot/" target="_blank" rel="noopener noreffer ">ssm008医院门诊挂号系统+jsp</a></h1>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        data-srcset="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 1.5x, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        title="picture" /></p>
+<h3 id="github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">github 项目仓库</a> 开源仅有后端代码</h3>
+<h3 id="点击播放视频-">点击播放视频 ▼</h3>
+<p><a href="https://www.bilibili.com/video/BV1T48XecE9G?p=7" target="_blank" rel="noopener noreffer "><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.sstatic.net/Vp2cE.png"
+        data-srcset="https://i.sstatic.net/Vp2cE.png, https://i.sstatic.net/Vp2cE.png 1.5x, https://i.sstatic.net/Vp2cE.png 2x"
+        data-sizes="auto"
+        alt="https://i.sstatic.net/Vp2cE.png"
+        title="Watch the video" /></a></p>
+<h1 id="第1章-绪论">第1章 绪论</h1>
+<h2 id="11背景及意义">1.1背景及意义</h2>
+<p>随着社会的快速发展，计算机的影响是全面且深入的。用户生活水平的不断提高，日常生活中用户对医院门诊挂号系统方面的要求也在不断提高，使得医院门诊挂号的人数更是不断增加，使得医院门诊挂号系统 的开发成为必需而且紧迫的事情。医院门诊挂号系统 主要是借助计算机，通过对医院门诊挂号系统 所需的信息管理，增加用户的选择，同时也方便对广大用户信息的及时查询、修改以及对用户信息的及时了解。医院门诊挂号系统 对用户带来了更多的便利，该系统通过和数据库管理系统软件协作来满足用户的需求。计算机技术在现代管理中的应用，使计算机成为人们应用现代技术的重要工具。能够有效的解决获取信息便捷化、全面化的问题，提高效率。</p>
+<h2 id="12-国内外研究概况">1.2 国内外研究概况</h2>
+<p>随着国内经济形势的不断发展，中国互联网进入了一个难得的高峰发展时期，这使得中外资本家纷纷转向互联网市场。然而，许多管理领域的不合理结构，人员不足以及管理需求的增加使得更多的人具备了互联网管理的意识。</p>
+<p>在当今高度发达的信息中，信息管理改革已成为一种更加广泛和全面的趋势。 “医院门诊挂号系统 ”是基于Mysql数据库，在JSP程序设计的基础上实现的。为确保中国经济的持续发展，信息时代日益更新，蓬勃发展。同时，随着信息社会的快速发展，医院门诊挂号系统 面临着越来越多的信息，因此很难获得他们对高效信息的需求，如何使用方便快捷的方式使查询者在广阔的海洋信息中查询，存储，管理和共享信息方面有效，对我们的工作和生活具有重要的现实意义。因此，国内外技术界对此进行了深入而广泛的研究，一个新的研究领域——医院门诊挂号系统 诞生了。</p>
+<h2 id="13-研究的内容">1.3 研究的内容</h2>
+<p>目前许多人仍将传统的纸质工具作为信息管理的主要工具，而网络技术的应用只是起到辅助作用。在对网络工具的认知程度上，较为传统的office软件等仍是人们使用的主要工具，而相对全面且专业的医院门诊挂号系统 的信息管理软件仍没有得到大多数人的了解或认可。本选题则旨在通过标签分类管理等方式，实现管理员；个人中心、药房管理、护士管理、医生管理、病人信息管理、科室信息管理、挂号管理、诊断信息管理、病例库管理、开药信息管理、药品信息管理、收费信息管理，护士；个人中心、病人信息管理、挂号管理，药房；个人中心、挂号管理、药品信息管理、收费信息管理，医生；个人中心、挂号管理、诊断信息管理、病例库管理、开药信息管理等信息管理功能，从而达到对医院门诊挂号系统信息的高效管理。</p>
+<h1 id="第2章-相关技术">第2章 相关技术</h1>
+<h2 id="21-jsp技术介绍">2.1 JSP技术介绍</h2>
+<p>JSP技术本身是一种脚本语言，但它的功能是十分强大的，因为它可以使用所有的JAVA类。当它与JavaBeans 类进行结合时，它可以使显示逻辑和内容分开，这就极大的方便了用户的需求。JavaBeans 可以对JSP技术的程序进行扩展，从而形成新的应用程序，而且JavaBeans的代码可以重复使用，所以就便于对程序进行维护。JavaBean 组件有内部的接口，可以帮助不同的人对系统进行访问。1999年，Sun微系统公司正式推出了JSP技术，这是一种动态技术，是基于整个JAVA体系和JavaServlet提出的，是具有普遍适用性的WEB技术，也是本系统设计的核心技术之一。JSP技术能够极大的提高WEB网页的运行速度。这些内容会与脚本结合，并且由JavaBean和Servlet组件封装。所有的脚本均在服务器端运行，JSP引擎会针对客户端所 提交的申请进行解释，然后生成脚本程序和JSP标识，然后通过HTML/XML页面将结果反馈给浏览器。因此，开发人员亲自设计最终页 面的格式和HTML/XML标识时，完全可以使用JSP技术。</p>
+<p>所以结合医院门诊挂号系统的需求及功能模块的实现，使用JSP技术是最合适的，而且JSP的拓展性比较好，对于医院门诊挂号系统 在后期使用过程中可以不断对系统功能进行拓展，使系统更完善，更方便的满足用户需求。</p>
+<h2 id="22-myeclipse开发环境">2.2 MyEclipse开发环境</h2>
+<p>MyEclipse支持广泛、兼容性高并且功能强大，是一个Eclipse 插件集合，普遍适应于JAVA和J2EE的系统开发，支持 JDBC，Hibernate，AJAX，Struts，Java Servlet，Spring，EJB3等市面上存在的几乎所有数据库链接工具和主流Eclipse产品 开发工具。</p>
+<p>MyEclipse在业内是所熟知的开发工具，该平台在开发的过程中运用的就是该工具。MyEclipse又被称之为企业级的工作平台，它是以Eclipse IDE为基础的。MyEclipse可以帮助我们进行数据库的研发和J2EE的使用，除此之外，还可以提高系统的运营能力，这突出表现在服务器的整合过程中。MyEclipse的功能相当完备，能够为J2EE的集成提供必要的环境支持，从而完成编码、测试、调试及发布等功能。它可以支持JSP，HTML，SQL，Javascript，Struts， CSS等。</p>
+<h2 id="23-tomcat服务器">2.3 Tomcat服务器</h2>
+<p>Tomcat属于一种轻型的服务器，所以说在中小企业中并不具有普适性。但是当程序员需要开发或调试JSP 程序时，则通常会将该服务器作为首选。对于一个仅具有计算机基础知识的人来说，计算机系统具有一个好的Apache服务器，可以很好的对HTML 页面进行访问。Tomcat 虽然是Apache的扩展，但是它们都是可以独立运行的，二者是不互相干扰的。当配置正确的时候，Apache服务器为HTML 页面的运行提供技术支持，Tomcat 的任务则是运行Servle和JSP 页面。Tomca也具有一定的HTML页面处理功能。</p>
+<h2 id="24-mysql数据库">2.4 MySQL数据库</h2>
+<p>Mysql的语言是非结构化的，用户可以在数据上进行工作。因为Mysql的语言和结构比较简单，但是功能和存储信息量很强大，所以得到了普遍的应用。</p>
+<p>Mysql数据库在编程过程中的作用是很广泛的，为用户进行数据查询带来了方便。Mysql数据库的应用因其灵活性强，功能强大，所以在实现某功能时只需要一小段代码，而不像其他程序需要编写大段代码。总体来说，Mysql数据库的语言相对要简洁很多。</p>
+<h2 id="25-java简介">2.5 JAVA简介</h2>
+<p>Java主要采用CORBA技术和安全模型，可以在互联网应用的数据保护。它还提供了对EJB（Enterprise JavaBeans）的全面支持，java servlet API，Java（java server pages），和XML技术。JAVA语言是一种面向对象的语言，它通过提供最基本的方法来完成指定的任务，开发者只需要知道一些概念就能够编写出一些应用程序。Java程序相对较小，其代码能够在小机器上运行。Java是一种计算机编程语言，具有封装、继承和多态性三个主要特性，广泛应用于企业Web应用程序开发和移动应用程序开发。</p>
+<p>Java语言和一般编译器以及直译的区别在于，Java首先将源代码转换为字节码，然后将其转换为JVM的可执行文件，JVM可以在各种不同的JVM上运行。因此，实现了它的跨平台特性。虽然这使得Java在早期非常缓慢，但是随着Java的开发，它已经得到了改进。</p>
+<h1 id="第3章-系统分析">第3章 系统分析</h1>
+<h2 id="31-需求分析">3.1 需求分析</h2>
+<p>医院门诊挂号系统 主要是为了提高工作人员的工作效率和更方便快捷的满足用户，更好存储所有数据信息及快速方便的检索功能，对系统的各个模块是通过许多今天的发达系统做出合理的分析来确定考虑用户的可操作性，遵循开发的系统优化的原则，经过全面的调查和研究。</p>
+<p>系统所要实现的功能分析，对于现在网络方便的管理，系统要实现用户可以直接在平台上进行查看所有数据信息，根据需求可以进行在线添加，删除或修改医院门诊挂号系统 信息，这样既能节省时间，不用再像传统的方式耽误时间，真的很难去满足用户的各种需求。所以医院门诊挂号系统 的开发不仅能满足用户的需求，还能减少原有不必要的工作量，大大提高了管理员的工作效率。</p>
+<h2 id="32-系统可行性分析">3.2 系统可行性分析</h2>
+<h3 id="321技术可行性技术背景">3.2.1技术可行性：技术背景</h3>
+<p>本网站在Windows操作系统中进行开发，并且目前PC机的性能已经可以胜任普通网站的web服务器。系统开发所使用的技术也都是自身所具有的，也是当下广泛应用的技术之一。</p>
+<p>系统的开发环境和配置都是可以自行安装的，系统使用JSP开发工具，使用比较成熟的Mysql数据库进行对系统后台的数据交互，根据技术语言对数据库，结合需求进行修改维护，可以使得网站运行更具有稳定性和安全性，从而完成实现网站的开发。</p>
+<p>（1）硬件可行性分析</p>
+<p>系统管理及信息分析的设计对于所使用的计算机没有什么硬性的要求，计算机只要可以正常的使用进行代码的编写及页面设计就可行，主要是对于服务器有些要求，对于平台搭建完成要上传的服务器是有一定的要求的，服务器必须选择安全性比较高的，然后就是在打开网站必须顺畅，不能停顿太长时间；性价比高；安全性高。</p>
+<p>（2）软件可行性分析</p>
+<p>开发整个系统使用的是云计算，流量的可扩展性和基于流量的智能调整云计算的优点就是流量的可扩展性和基于流量的智能调整，保障系统的安全和数据信息的及时备份。</p>
+<p>因此，我们从两个方面进行了可行性研究，可以看出系统的开发没有问题。</p>
+<h3 id="322经济可行性">3.2.2经济可行性</h3>
+<p>在医院门诊挂号系统开发之前所做的市场调研及其他相关的管理系统，都是没有任何费用的，都是通过开发者自己的努力，所有工作都是自己亲力亲为，在碰到自己比较难以解决的问题，大多是通过同学和指导老师的帮助进行相关信息的解决，所以对于医院门诊挂号系统 的开发在经济上是完全可行的，没有任何费用支出的。</p>
+<p>使用比较成熟的技术，系统是基于JSP的开发，采用Mysql数据库。所以系统在开发人力、财力要求不高，具有经济可行性。</p>
+<h3 id="323操作可行性">3.2.3操作可行性：</h3>
+<p>可操作性主要是对医院门诊挂号系统 设计完成后，用户的使用体验度，以及管理员可以通过系统随时管理相关的数据信息，并且对于管理员、护士、医生、药房四个权限角色，都可以简单明了的进入到自己的系统界面，通过界面导航菜单可以简单明了地操作功能模块，方便用户信息的操作需求和管理员管理数据信息，对于系统的操作，不需要专业人员都可以直接进行功能模块的操作管理，所以在系统的可操作性是完全可以的。本系统的操作过程使用的也是界面窗口进行登录，所以操作人员只要会简单的电脑操作就完全可以的。</p>
+<h2 id="33-项目设计目标与原则">3.3 项目设计目标与原则</h2>
+<p>1、关于医院门诊挂号系统 的基本要求</p>
+<p>（1）功能要求：个人中心、药房管理、护士管理、医生管理、病人信息管理、科室信息管理、挂号管理、诊断信息管理、病例库管理、开药信息管理、药品信息管理、收费信息管理等功能模块。</p>
+<p>（2）性能：在不同操作系统上均能无差错实现在不同类型的用户登入相应界面后能不出差错、方便地进行预期操作。</p>
+<p>（3）安全与保密要求：用户都必须通过注册、登录才能进入系统。</p>
+<p>（4）环境要求：支持Windows系列、Vista系统等多种操作系统使用。</p>
+<p>2、开发目标</p>
+<p>医院门诊挂号系统 的主要开发目标如下：</p>
+<p>（1）实现管理系统信息关系的系统化、规范化和自动化；</p>
+<p>（2）减少维护人员的工作量以及实现用户对信息的控制和管理；</p>
+<p>（3）方便查询信息及管理信息等；</p>
+<p>（4）通过网络操作，提高改善处理问题和操作人员工作的效率；</p>
+<p>（5）考虑到用户多样性特点，要求界面和操作简便易懂。</p>
+<p>3、设计原则</p>
+<p>本医院门诊挂号系统采用JSP技术，Mysql数据库开发，充分保证了系统稳定性、完整性。</p>
+<p>医院门诊挂号系统的设计与实现的设计思想如下：</p>
+<ol>
+<li>操作简单方便、系统界面安全良好、简单明了的页面布局、方便查询相关信息。</li>
+<li>即时可见：对医院门诊挂号系统信息的处理将立马在对应地点可以查询到，从而实现“即时发布、即时见效”的系统功能。</li>
+</ol>
+<h2 id="34系统流程分析">3.4系统流程分析</h2>
+<h3 id="341操作流程">3.4.1操作流程</h3>
+<p>系统登录流程图，如图所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm008/blog.001.png"
+        data-srcset="/images/0000ssm/ssm008/blog.001.png, /images/0000ssm/ssm008/blog.001.png 1.5x, /images/0000ssm/ssm008/blog.001.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm008/blog.001.png"
+        title="/images/0000ssm/ssm008/blog.001.png" /></p>
+<p>图3-1登录流程图</p>
+<h3 id="342添加信息流程">3.4.2添加信息流程</h3>
+<p>添加信息流程图，如图所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm008/blog.002.png"
+        data-srcset="/images/0000ssm/ssm008/blog.002.png, /images/0000ssm/ssm008/blog.002.png 1.5x, /images/0000ssm/ssm008/blog.002.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm008/blog.002.png"
+        title="/images/0000ssm/ssm008/blog.002.png" /></p>
+<p>图3-2添加信息流程图</p>
+<h3 id="343删除信息流程">3.4.3删除信息流程</h3>
+<p>删除信息流程图，如图所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm008/blog.003.png"
+        data-srcset="/images/0000ssm/ssm008/blog.003.png, /images/0000ssm/ssm008/blog.003.png 1.5x, /images/0000ssm/ssm008/blog.003.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm008/blog.003.png"
+        title="/images/0000ssm/ssm008/blog.003.png" /></p>
+<p>图3-3删除信息流程图</p>
+<h1 id="第4章-系统设计">第4章 系统设计</h1>
+<h2 id="41-系统体系结构">4.1 系统体系结构</h2>
+<p>医院门诊挂号系统的结构图4-1所示：</p>
+<p>网</p>
+<p>络</p>
+<p>管理员</p>
+<p>服务器和程序</p>
+<p>医生</p>
+<p>护士</p>
+<p>药房</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm008/blog.004.png"
+        data-srcset="/images/0000ssm/ssm008/blog.004.png, /images/0000ssm/ssm008/blog.004.png 1.5x, /images/0000ssm/ssm008/blog.004.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm008/blog.004.png"
+        title="/images/0000ssm/ssm008/blog.004.png" /></p>
+<p>图4-1 系统结构</p>
+<p>登录系统结构图，如图4-2所示：</p>
+<p>医院门诊挂号系统登录界面</p>
+<p>用户登录</p>
+<p>密码正确</p>
+<p>管理员界面</p>
+<p>医生界面</p>
+<p>护士界面</p>
+<p>药房界面</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm008/blog.005.png"
+        data-srcset="/images/0000ssm/ssm008/blog.005.png, /images/0000ssm/ssm008/blog.005.png 1.5x, /images/0000ssm/ssm008/blog.005.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm008/blog.005.png"
+        title="/images/0000ssm/ssm008/blog.005.png" /></p>
+<p>图4-2 登录结构图</p>
+<p>医院门诊挂号系统结构图，如图4-3所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm008/blog.006.png"
+        data-srcset="/images/0000ssm/ssm008/blog.006.png, /images/0000ssm/ssm008/blog.006.png 1.5x, /images/0000ssm/ssm008/blog.006.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm008/blog.006.png"
+        title="/images/0000ssm/ssm008/blog.006.png" /></p>
+<p>图4-3 医院门诊挂号系统结构图</p>
+<h2 id="42开发流程设计">4.2开发流程设计</h2>
+<p>系统流程的分析是通过调查系统所涉及问题的识别、可行性、可操作性、系统分析处理能力等具体环节来调节、整理系统的设计方案以确保系统能达到理想的状态。这些操作都要从注册、登录处着眼进行一系列的流程测试保证数据库的完整，从而把控系统所涉及信息管理的安全、保证信息输入、输出正常转换。然后，通过实际操作完成流程图的绘制工作。</p>
+<p>医院门诊挂号系统的开发对管理模块和系统使用的数据库进行分析，编写代码，系统测试，如图4-4所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm008/blog.007.png"
+        data-srcset="/images/0000ssm/ssm008/blog.007.png, /images/0000ssm/ssm008/blog.007.png 1.5x, /images/0000ssm/ssm008/blog.007.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm008/blog.007.png"
+        title="/images/0000ssm/ssm008/blog.007.png" /></p>
+<p>图4-4开发系统流程图</p>
+<h2 id="43-数据库设计原则">4.3 数据库设计原则</h2>
+<p>学习编程，我们都知道数据库设计是基于需要设计的系统功能，我们需要建立一个数据库关系模型，用于存储数据信息，这样当我们在程序中时，就没有必要为程序页面添加数据，从而提高系统的效率。数据库存储了很多信息，可以说是信息管理系统的核心和基础，数据库还为系统提供了添加、删除、修改和检查等操作模块，使系统能够快速找到自己想要的信息，而不是在程序代码中找到。数据库中信息表的每个部分根据一定的关系精确地组合，排列和组合成数据表。</p>
+<p>通过医院门诊挂号系统 的功能进行规划分成几个实体信息，实体信息将通过ER图进行说明，本系统的主要实体图如下：</p>
+<p>管理员信息属性图如图4-5所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm008/blog.008.png"
+        data-srcset="/images/0000ssm/ssm008/blog.008.png, /images/0000ssm/ssm008/blog.008.png 1.5x, /images/0000ssm/ssm008/blog.008.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm008/blog.008.png"
+        title="/images/0000ssm/ssm008/blog.008.png" /></p>
+<p>图4-5 管理员信息实体属性图</p>
+<p>诊断信息管理属性图如图4-6所示</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm008/blog.009.png"
+        data-srcset="/images/0000ssm/ssm008/blog.009.png, /images/0000ssm/ssm008/blog.009.png 1.5x, /images/0000ssm/ssm008/blog.009.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm008/blog.009.png"
+        title="/images/0000ssm/ssm008/blog.009.png" /></p>
+<p>图4-6诊断信息管理属性图</p>
+<p>药品信息管理属性图如图4-7所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm008/blog.010.png"
+        data-srcset="/images/0000ssm/ssm008/blog.010.png, /images/0000ssm/ssm008/blog.010.png 1.5x, /images/0000ssm/ssm008/blog.010.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm008/blog.010.png"
+        title="/images/0000ssm/ssm008/blog.010.png" /></p>
+<p>图4-7药品信息管理实体属性图</p>
+<p>开药信息管理实体属性图如图4-8所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm008/blog.011.png"
+        data-srcset="/images/0000ssm/ssm008/blog.011.png, /images/0000ssm/ssm008/blog.011.png 1.5x, /images/0000ssm/ssm008/blog.011.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm008/blog.011.png"
+        title="/images/0000ssm/ssm008/blog.011.png" /></p>
+<p><code>  </code>图4-8开药信息管理实体属性图</p>
+<h2 id="44-数据表">4.4 数据表</h2>
+<p>将数据库概念设计的E-R图转换为关系数据库。在关系数据库中，数据关系由数据表组成，但是表的结构表现在表的字段上。</p>
+<p>表4-1：allusers表</p>
+<table>
+<thead>
+<tr>
+<th>列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">约束</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center">PRIMARY KEY</td>
+</tr>
+<tr>
+<td>username</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td>pwd</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td>cx</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td>表4-2：bingrenxinxi表</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">约束</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center">PRIMARY KEY</td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">bingrenxingming</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">shenfenzheng</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">nianling</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">zhaopian</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">lianxidianhua</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">表4-3：guahao表</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">约束</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">ID</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center">PRIMARY KEY</td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">guahaobianhao</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">jiuzhenkeshi</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">guahaofeiyong</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">guahaoleixing</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">bingrenxingming</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">shenfenzheng</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">255</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">lianxidianhua</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">255</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">xingbie</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">255</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">nianling</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">255</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">xiaohaixinxi</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">255</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">xiaohaijiazhang</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">255</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">jiuzhenriqi</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">255</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">表4-4；kaiyaoxinxi表</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">约束</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center">PRIMARY KEY</td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">guahaobianhao</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">jiuzhenkeshi</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">bingrenxingming</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">shenfenzheng</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">yaopinbianma</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">255</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">yaopinfenlei</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">255</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">yaopinmingcheng</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">255</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">kaiyaoshuliang</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">255</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">shiyongshuoming</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">255</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+</tbody>
+</table>
+<p>#########</p>
+<h1 id="第5章-系统详细设计">第5章 系统详细设计</h1>
+<h2 id="51管理员功能模块">5.1管理员功能模块</h2>
+<p>管理员登录，通过填写用户名、密码等信息，输入完成后选择登录即可进入医院门诊挂号系统 ，如图5-1所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm008/blog.012.png"
+        data-srcset="/images/0000ssm/ssm008/blog.012.png, /images/0000ssm/ssm008/blog.012.png 1.5x, /images/0000ssm/ssm008/blog.012.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm008/blog.012.png"
+        title="/images/0000ssm/ssm008/blog.012.png" /></p>
+<p>图5-1管理员登录界面图</p>
+<p>医院门诊挂号系统 ，在医院门诊挂号系统可以查看个人中心、药房管理、护士管理、医生管理、病人信息管理、科室信息管理、挂号管理、诊断信息管理、病例库管理、开药信息管理、药品信息管理、收费信息管理等内容，如图5-2所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm008/blog.013.png"
+        data-srcset="/images/0000ssm/ssm008/blog.013.png, /images/0000ssm/ssm008/blog.013.png 1.5x, /images/0000ssm/ssm008/blog.013.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm008/blog.013.png"
+        title="/images/0000ssm/ssm008/blog.013.png" /></p>
+<p>图5-2管理员功能界面图</p>
+<p>护士管理，通过填写护士账号、密码、护士姓名、性别、年龄、照片等信息进行查看、修改、删除操作，如图5-3所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm008/blog.014.png"
+        data-srcset="/images/0000ssm/ssm008/blog.014.png, /images/0000ssm/ssm008/blog.014.png 1.5x, /images/0000ssm/ssm008/blog.014.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm008/blog.014.png"
+        title="/images/0000ssm/ssm008/blog.014.png" /></p>
+<p>图5-3护士管理界面图</p>
+<p>医生管理，在医生管理页面可以查看医生工号、密码、医生姓名、职称、性别、医龄、联系电话、照片等信息进行修改、删除、查看，如图5-4所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm008/blog.015.png"
+        data-srcset="/images/0000ssm/ssm008/blog.015.png, /images/0000ssm/ssm008/blog.015.png 1.5x, /images/0000ssm/ssm008/blog.015.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm008/blog.015.png"
+        title="/images/0000ssm/ssm008/blog.015.png" /></p>
+<p>图5-4医生管理界面图</p>
+<p>科室信息管理，在科室信息管理页面可以查看科室名称等信息进行查看、修改、删除，如图5-5所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm008/blog.016.png"
+        data-srcset="/images/0000ssm/ssm008/blog.016.png, /images/0000ssm/ssm008/blog.016.png 1.5x, /images/0000ssm/ssm008/blog.016.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm008/blog.016.png"
+        title="/images/0000ssm/ssm008/blog.016.png" /></p>
+<p>图5-5科室信息管理界面图</p>
+<p>挂号管理，在挂号管理页面可以查看挂号编号、就诊科室、挂号费用、挂号类型、病人姓名、身份证、联系电话、性别、年龄、小孩信息、小孩家长、就诊日期等信息进行查看、修改、删除，如图5-6所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm008/blog.017.png"
+        data-srcset="/images/0000ssm/ssm008/blog.017.png, /images/0000ssm/ssm008/blog.017.png 1.5x, /images/0000ssm/ssm008/blog.017.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm008/blog.017.png"
+        title="/images/0000ssm/ssm008/blog.017.png" /></p>
+<p>图5-6挂号管理界面图</p>
+<p>诊断信息管理，在诊断信息管理页面可以查看挂号编号、就诊科室、病人姓名、身份证、体温、血压、病因等信息进行查看、修改、删除，如图5-7所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm008/blog.018.png"
+        data-srcset="/images/0000ssm/ssm008/blog.018.png, /images/0000ssm/ssm008/blog.018.png 1.5x, /images/0000ssm/ssm008/blog.018.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm008/blog.018.png"
+        title="/images/0000ssm/ssm008/blog.018.png" /></p>
+<p>图5-7诊断信息管理界面图</p>
+<p>开药信息管理，在开药信息管理页面可以查看挂号编号、就诊科室、病人姓名、身份证、药品编码、药品分类、药品名称、开药数量、使用说明等信息进行查看、修改、删除，如图5-8所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm008/blog.019.png"
+        data-srcset="/images/0000ssm/ssm008/blog.019.png, /images/0000ssm/ssm008/blog.019.png 1.5x, /images/0000ssm/ssm008/blog.019.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm008/blog.019.png"
+        title="/images/0000ssm/ssm008/blog.019.png" /></p>
+<p>图5-8开药信息管理界面图</p>
+<p>药品信息管理，在药品信息管理页面可以查看药品编码、药品名称、药品分类、单价、总量、用完数量、库存剩余等信息进行查看、修改、删除，如图5-9所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm008/blog.020.png"
+        data-srcset="/images/0000ssm/ssm008/blog.020.png, /images/0000ssm/ssm008/blog.020.png 1.5x, /images/0000ssm/ssm008/blog.020.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm008/blog.020.png"
+        title="/images/0000ssm/ssm008/blog.020.png" /></p>
+<p>图5-9药品信息管理界面图</p>
+<h2 id="52护士功能模块">5.2护士功能模块</h2>
+<p>病人信息管理，在病人信息管理页面通过填写病人姓名、身份证、性别、年龄、照片、联系电话等信息进行查看、修改、删除如图5-10所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm008/blog.021.png"
+        data-srcset="/images/0000ssm/ssm008/blog.021.png, /images/0000ssm/ssm008/blog.021.png 1.5x, /images/0000ssm/ssm008/blog.021.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm008/blog.021.png"
+        title="/images/0000ssm/ssm008/blog.021.png" /></p>
+<p>图5-10病人信息管理界面图</p>
+<p>挂号管理，在挂号管理页面可以查看挂号编号、就诊科室、挂号费用、挂号类型、病人姓名、身份证、联系电话、性别、年龄、小孩信息、小孩家长、就诊日期等信息进行查看、修改、删除，如图5-11所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm008/blog.022.png"
+        data-srcset="/images/0000ssm/ssm008/blog.022.png, /images/0000ssm/ssm008/blog.022.png 1.5x, /images/0000ssm/ssm008/blog.022.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm008/blog.022.png"
+        title="/images/0000ssm/ssm008/blog.022.png" /></p>
+<p>图5-11挂号管理界面图</p>
+<p>个人信息，在个人信息页面可以查看护士账号、密码、护士姓名、性别、年龄、照片等信息进行查看、修改、删除，如图5-12所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm008/blog.023.png"
+        data-srcset="/images/0000ssm/ssm008/blog.023.png, /images/0000ssm/ssm008/blog.023.png 1.5x, /images/0000ssm/ssm008/blog.023.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm008/blog.023.png"
+        title="/images/0000ssm/ssm008/blog.023.png" /></p>
+<p>图5-12个人信息界面图</p>
+<h2 id="53医生功能模块">5.3医生功能模块</h2>
+<p>挂号管理，在挂号管理页面通过查看挂号编号、就诊科室、挂号费用、挂号类型、病人姓名、身份证、联系电话、性别、年龄、小孩信息、小孩家长、就诊日期等信息进行查看、详情如图5-13所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm008/blog.024.png"
+        data-srcset="/images/0000ssm/ssm008/blog.024.png, /images/0000ssm/ssm008/blog.024.png 1.5x, /images/0000ssm/ssm008/blog.024.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm008/blog.024.png"
+        title="/images/0000ssm/ssm008/blog.024.png" /></p>
+<p>图5-13挂号管理界面图</p>
+<p>诊断信息管理，在诊断信息管理页面可以查看挂号编号、就诊科室、病人姓名、身份证、体温、血压、病因等信息进行修改、删除，如图5-14所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm008/blog.025.png"
+        data-srcset="/images/0000ssm/ssm008/blog.025.png, /images/0000ssm/ssm008/blog.025.png 1.5x, /images/0000ssm/ssm008/blog.025.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm008/blog.025.png"
+        title="/images/0000ssm/ssm008/blog.025.png" /></p>
+<p>图5-14诊断信息管理界面图</p>
+<p>病例库管理，在病例库管理页面可以查看病因等信息进行查看、修改、删除，如图5-15所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm008/blog.026.png"
+        data-srcset="/images/0000ssm/ssm008/blog.026.png, /images/0000ssm/ssm008/blog.026.png 1.5x, /images/0000ssm/ssm008/blog.026.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm008/blog.026.png"
+        title="/images/0000ssm/ssm008/blog.026.png" /></p>
+<p>图5-15病例库管理界面图</p>
+<h2 id="54药房功能模块">5.4药房功能模块</h2>
+<p>挂号管理，在挂号管理页面通过填写挂号编号、就诊科室、挂号费用、挂号类型、病人姓名、身份证、联系电话、性别、年龄、小孩信息、小孩家长、就诊日期等信息进行查看如图5-16所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm008/blog.027.png"
+        data-srcset="/images/0000ssm/ssm008/blog.027.png, /images/0000ssm/ssm008/blog.027.png 1.5x, /images/0000ssm/ssm008/blog.027.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm008/blog.027.png"
+        title="/images/0000ssm/ssm008/blog.027.png" /></p>
+<p>图5-16挂号管理界面图</p>
+<p>药品信息管理，在药品信息管理页面可以查看药品编码、药品名称、药品分类、单价、总量、用完数量、库存剩余等信息进行查看、修改、删除，如图5-17所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm008/blog.028.png"
+        data-srcset="/images/0000ssm/ssm008/blog.028.png, /images/0000ssm/ssm008/blog.028.png 1.5x, /images/0000ssm/ssm008/blog.028.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm008/blog.028.png"
+        title="/images/0000ssm/ssm008/blog.028.png" /></p>
+<p>图5-17药品信息管理界面图</p>
+<p>收费信息管理，在收费信息管理页面可以获取挂号编号、挂号类型、挂号费用、药品收费、总收费、病人姓名、联系电话、身份证等信息进行查看、修改、删除，如图5-18所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm008/blog.029.png"
+        data-srcset="/images/0000ssm/ssm008/blog.029.png, /images/0000ssm/ssm008/blog.029.png 1.5x, /images/0000ssm/ssm008/blog.029.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm008/blog.029.png"
+        title="/images/0000ssm/ssm008/blog.029.png" /></p>
+<p>图5-18收费信息管理界面图</p>
+<h1 id="heading"></h1>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2023-10-29</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/ssm008%E5%8C%BB%E9%99%A2%E9%97%A8%E8%AF%8A%E6%8C%82%E5%8F%B7%E7%B3%BB%E7%BB%9F-jsp/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://chenqi199.github.io/ssm008%E5%8C%BB%E9%99%A2%E9%97%A8%E8%AF%8A%E6%8C%82%E5%8F%B7%E7%B3%BB%E7%BB%9F-jsp/" data-title="ssm008医院门诊挂号系统&#43;jsp" data-hashtags="ssm医院,门诊挂号,医院门诊,挂号系统"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://chenqi199.github.io/ssm008%E5%8C%BB%E9%99%A2%E9%97%A8%E8%AF%8A%E6%8C%82%E5%8F%B7%E7%B3%BB%E7%BB%9F-jsp/" data-hashtag="ssm医院"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://chenqi199.github.io/ssm008%E5%8C%BB%E9%99%A2%E9%97%A8%E8%AF%8A%E6%8C%82%E5%8F%B7%E7%B3%BB%E7%BB%9F-jsp/" data-title="ssm008医院门诊挂号系统&#43;jsp"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://chenqi199.github.io/ssm008%E5%8C%BB%E9%99%A2%E9%97%A8%E8%AF%8A%E6%8C%82%E5%8F%B7%E7%B3%BB%E7%BB%9F-jsp/" data-title="ssm008医院门诊挂号系统&#43;jsp"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://chenqi199.github.io/ssm008%E5%8C%BB%E9%99%A2%E9%97%A8%E8%AF%8A%E6%8C%82%E5%8F%B7%E7%B3%BB%E7%BB%9F-jsp/" data-title="ssm008医院门诊挂号系统&#43;jsp" data-ralateuid="https://gitee.com/chen_q_i"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ssm%E5%8C%BB%E9%99%A2/">Ssm医院</a>,&nbsp;<a href="/tags/%E9%97%A8%E8%AF%8A%E6%8C%82%E5%8F%B7/">门诊挂号</a>,&nbsp;<a href="/tags/%E5%8C%BB%E9%99%A2%E9%97%A8%E8%AF%8A/">医院门诊</a>,&nbsp;<a href="/tags/%E6%8C%82%E5%8F%B7%E7%B3%BB%E7%BB%9F/">挂号系统</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/ssm009%E6%AF%95%E4%B8%9A%E7%94%9F%E5%B0%B1%E4%B8%9A%E4%BF%A1%E6%81%AF%E7%BB%9F%E8%AE%A1%E7%B3%BB%E7%BB%9F-vue/" class="prev" rel="prev" title="ssm009毕业生就业信息统计系统&#43;vue"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>ssm009毕业生就业信息统计系统+vue</a>
+            <a href="/0010springboot%E8%AF%BE%E7%A8%8B%E4%BD%9C%E4%B8%9A%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" class="next" rel="next" title="0010springboot课程作业管理系统">0010springboot课程作业管理系统<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.128.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="chenqi199" target="_blank">chenqi</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

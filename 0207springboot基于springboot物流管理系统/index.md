@@ -1,17 +1,16 @@
 # 0207springboot基于springboot物流管理系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0207springboot基于springboot物流管理系统](https://github.com/GraduationProject-springboot/0207springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)]()
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 绪论
 ## 1.1 研究背景
@@ -82,25 +81,25 @@ Spring Boot可以与经典的Java开发工具一起使用或者作为命令行�
 ## 3.3系统流程分析
 分析程序的流程，涉及到程序的整体操作流程，通过分析与设计，绘制的程序操作流程图见下图。此程序为了确保安全，会让使用者通过登录模块验证信息，符合要求的使用者才有权限操作程序。
 
-![](/images/0200stringboot/0207springboot/blog.001.png)
+![](/images/0200wxapp//blog.001.png)
 
 图3-1 程序操作流程图
 
 程序处理数据会涉及到数据的录入环节，绘制的添加流程见下图。程序录入数据过程中，始终与数据库保持同步。
 
-![](/images/0200stringboot/0207springboot/blog.002.png)
+![](/images/0200wxapp//blog.002.png)
 
 图3-2 信息添加流程图
 
 程序里面的数据也会出现错误，因此就有相应的修改数据的功能，绘制的程序修改流程见下图。此过程也是跟后台数据库进行数据同步显示。
 
-![](/images/0200stringboot/0207springboot/blog.003.png)
+![](/images/0200wxapp//blog.003.png)
 
 图3-3信息修改流程图
 
 程序数据存放于数据仓库，有时也会涉及到数据删除，此过程对应的流程图见下图。数据信息被删除之后，数据库里面也就没有了该数据信息了。
 
-![](/images/0200stringboot/0207springboot/blog.004.png)
+![](/images/0200wxapp//blog.004.png)
 
 图3-4 信息删除流程图
 
@@ -124,7 +123,7 @@ Spring Boot可以与经典的Java开发工具一起使用或者作为命令行�
 ## 4.2 功能结构设计
 在管理员功能模块确定下来的基础上，对管理员各个功能进行设计，确定管理员功能的详细模块。绘制的管理员功能结构见下图。管理员可以管理所有，包含个人中心，用户管理，管理员管理，公告信息管理，咨询信息管理，车辆信息管理，物流信息管理，试题管理，系统管理，考试管理等。
 
-![](/images/0200stringboot/0207springboot/blog.005.png)
+![](/images/0200wxapp//blog.005.png)
 
 图4-2 管理员功能结构图
 ## 4.3 数据库设计
@@ -134,19 +133,19 @@ Spring Boot可以与经典的Java开发工具一起使用或者作为命令行�
 
 （1）管理员实体属性图通过Visio工具绘制，绘制结果展示如下：
 
-![](/images/0200stringboot/0207springboot/blog.006.png)
+![](/images/0200wxapp//blog.006.png)
 
 图4-4 管理员实体属性图
 
 （2）用户实体属性图通过Visio工具绘制，绘制结果展示如下：
 
-![](/images/0200stringboot/0207springboot/blog.007.png)
+![](/images/0200wxapp//blog.007.png)
 
 图4-5 用户实体属性图
 
 （3）公告信息实体属性图通过Visio工具绘制，绘制结果展示如下：
 
-![](/images/0200stringboot/0207springboot/blog.008.png)
+![](/images/0200wxapp//blog.008.png)
 
 图4-6 公告信息实体属性图
 ### 4.3.2 数据库表结构
@@ -239,50 +238,50 @@ Spring Boot可以与经典的Java开发工具一起使用或者作为命令行�
 ### 5.1.1 用户管理
 管理员可以对用户信息进行添加，修改，删除，查询操作。
 
-![](/images/0200stringboot/0207springboot/blog.009.png)
+![](/images/0200wxapp//blog.009.png)
 
 图5-1 用户管理页面
 ### 5.1.2 公告信息管理
 管理员可以对公告信息信息进行添加，修改，删除，查询操作。
 
-![](/images/0200stringboot/0207springboot/blog.010.png)
+![](/images/0200wxapp//blog.010.png)
 
 图5-2 公告信息管理页面
 ### 5.1.3 物流信息管理
 管理员可以对物流信息进行添加，修改，删除，查询操作。
 
-![](/images/0200stringboot/0207springboot/blog.011.png)
+![](/images/0200wxapp//blog.011.png)
 
 图5-3 物流信息管理页面
 ### 5.1.4 车辆信息管理
 管理员可以对车辆信息进行添加，修改，删除操作。
 
-![](/images/0200stringboot/0207springboot/blog.012.png)
+![](/images/0200wxapp//blog.012.png)
 
 图5-4 车辆信息管理页面
 ## 5.2 用户功能实现
 ### 5.2.1 物流信息
 用户登录后可以查看物流信息，可以看到物流信息状态和详情。
 
-![](/images/0200stringboot/0207springboot/blog.013.png)
+![](/images/0200wxapp//blog.013.png)
 
 图5-5 物流信息页面
 ### 5.2.2 运单信息添加
 用户可以在运单信息管理里面添加运单信息。
 
-![](/images/0200stringboot/0207springboot/blog.014.png)
+![](/images/0200wxapp//blog.014.png)
 
 图5-6 运单信息添加页面
 ### 5.2.3 运单管理
 用户可以对自己发布的运单信息进行添加修改删除查询操作。
 
-![](/images/0200stringboot/0207springboot/blog.015.png)
+![](/images/0200wxapp//blog.015.png)
 
 图5-7 运单管理页面
 ### 5.2.4 个人信息
 用户可以在个人信息里面修改自己的资料。
 
-![](/images/0200stringboot/0207springboot/blog.016.png)
+![](/images/0200wxapp//blog.016.png)
 
 图5-8 个人信息页面
 

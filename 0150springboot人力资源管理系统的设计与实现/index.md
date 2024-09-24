@@ -1,17 +1,16 @@
 # 0150springboot人力资源管理系统的设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0150springboot人力资源管理系统的设计与实现](https://github.com/GraduationProject-springboot/0150springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1ECs?p=49)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第一章  课题背景及研究内容
 
@@ -45,7 +44,7 @@
 ## 2.1 B/S结构  
 B/S结构实际上就是Browser/Server（浏览器/服务器）的缩写，B/S结构是目前软件开发中的主流结构，大多数软件开发者都采用B/S这样的三层体系结构。采用B/S结构开发的人力资源管理系统能够大大方便用户使用操作，用户随时随地都可以进行人力资源管理系统的访问操作，只需要用户拥有一台会连上网络的计算机就行了，并且使用B/S 模式开发的人力资源管理系统是基于浏览器的操作方式，在与用户进行交互以及程序的表现方式上面将会更加吸引人，这样的模式也给程序员开发程序降低了难度，程序开发成本也会相应缩减不少。我们在使用人力资源管理系统期间，系统也会随着用户需求进行完善升级，使用B/S 模式开发的人力资源管理系统就完全不需要担心，因为它的升级速度快，升级产生的成本费用很低，大多依赖于用户自己在网络上下载最新版本进行安装完成程序更新。下图为B/S结构图。
 
-![](/images/0100stringboot/0150springboot/blog.004.png)
+![](/images/0100wxapp//blog.004.png)
 
 图2.2 B/S结构图
 ## 2.2 MySQL数据库
@@ -71,13 +70,13 @@ B/S结构实际上就是Browser/Server（浏览器/服务器）的缩写，B/S�
 ## 3.2系统流程分析
 人力资源管理系统的开发也是有对应的流程，开发之前必须要进行用户功能需求的分析，最后根据功能需求进行网站设计还有数据库相关数据的设计工作，此次开发的人力资源管理系统开发流程如图3.1所示。
 
-![](/images/0100stringboot/0150springboot/blog.005.png)
+![](/images/0100wxapp//blog.005.png)
 
 图3.1 系统开发流程图
 
 系统开发完成之后会给用户提供登录入口，在这个界面用户输入的信息会得到验证，通过验证之后才能进去人力资源管理系统的访问主界面，系统登录执行流程如下：
 
-![](/images/0100stringboot/0150springboot/blog.006.png)
+![](/images/0100wxapp//blog.006.png)
 
 图3.2 系统执行流程图
 ## 3.3系统功能需求分析
@@ -167,7 +166,7 @@ B/S结构实际上就是Browser/Server（浏览器/服务器）的缩写，B/S�
 吸应聘修改
 
 删应聘删除
-![](/images/0100stringboot/0150springboot/blog.007.png)
+![](/images/0100wxapp//blog.007.png)
 
 图4.1 管理员功能结构图
 
@@ -181,32 +180,32 @@ B/S结构实际上就是Browser/Server（浏览器/服务器）的缩写，B/S�
 
 （1）下图是招聘信息实体和其具备的属性。
 
-![招聘信息](/images/0100stringboot/0150springboot/blog.008.jpeg "招聘信息")
+![招聘信息](/images/0100wxapp//blog.008.jpeg "招聘信息")
 图4.1 招聘信息实体属性图
 
 （2）下图是部门实体和其具备的属性。
 
-![部门](/images/0100stringboot/0150springboot/blog.009.jpeg "部门")
+![部门](/images/0100wxapp//blog.009.jpeg "部门")
 图4.2 部门实体属性图
 
 （3）下图是工资实体和其具备的属性。
 
-![工资](/images/0100stringboot/0150springboot/blog.010.jpeg "工资")
+![工资](/images/0100wxapp//blog.010.jpeg "工资")
 图4.3 工资实体属性图
 
 （4）下图是员工实体和其具备的属性。
 
-![员工](/images/0100stringboot/0150springboot/blog.011.jpeg "员工")
+![员工](/images/0100wxapp//blog.011.jpeg "员工")
 图4.4 员工实体属性图
 
 （5）下图是应聘记录实体和其具备的属性。
 
-![应聘记录](/images/0100stringboot/0150springboot/blog.012.jpeg "应聘记录")
+![应聘记录](/images/0100wxapp//blog.012.jpeg "应聘记录")
 图4.5 应聘记录实体属性图
 
 （6）下图是人事调配实体和其具备的属性。
 
-![人事调配](/images/0100stringboot/0150springboot/blog.013.jpeg "人事调配")
+![人事调配](/images/0100wxapp//blog.013.jpeg "人事调配")
 图4.6 人事调配实体属性图
 
 
@@ -321,19 +320,19 @@ B/S结构实际上就是Browser/Server（浏览器/服务器）的缩写，B/S�
 ### 5.1.1 员工列表
 如图5.1显示的就是员工列表页面，此页面提供给管理员的功能有：查看员工、新增员工、修改员工、删除员工等。
 
-![](/images/0100stringboot/0150springboot/blog.014.png)
+![](/images/0100wxapp//blog.014.png)
 
 图5.1 员工列表页面
 ### 5.1.2 招聘信息管理
 管理员可以对前台的招聘信息的基本信息进行管理，新增招聘信息,删除招聘信息,修改招聘信息。招聘信息管理界面如图5.2所示。
 
-![](/images/0100stringboot/0150springboot/blog.015.png)
+![](/images/0100wxapp//blog.015.png)
 
 图5.2 招聘信息管理页面
 ### 5.1.3 应聘记录管理
 应聘记录管理页面显示所有应聘记录，在此页面既可以让管理员添加新的应聘信息类型，也能对已有的应聘记录信息执行编辑更新，失效的应聘记录信息也能让管理员快速删除。下图就是应聘记录管理页面。应聘记录管理界面如图5.3所示。
 
-![](/images/0100stringboot/0150springboot/blog.016.png)
+![](/images/0100wxapp//blog.016.png)
 
 图5.3应聘记录管理界面
 

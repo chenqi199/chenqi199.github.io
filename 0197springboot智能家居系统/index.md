@@ -1,17 +1,16 @@
 # 0197springboot智能家居系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0197springboot智能家居系统](https://github.com/GraduationProject-springboot/0197springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1ECs?p=95)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 研究背景与现状
 时代的进步使人们的生活实现了部分自动化，由最初的全手动办公已转向手动+自动相结合的方式。比如各种办公系统、智能电子电器的出现，都为人们生活的享受提供帮助。采用新型的自动化方式可以减少手动的办公时间，增加正确率从而增加人们的幸福指数。时代进步中计算机技术的发展尤为突出，渗透进生活的方方面面，各种App、	网站、管理系统、小程序迅速占领市场。
@@ -91,19 +90,19 @@ Web程序一般可以分为静态网站和动态两种形式，前几年的时�
 ## 2.5系统功能分析
 系统的功能分析决定了系统的功能设计，完整详细的系统功能分析可以使系统的开发事半功倍。本系统的功能围绕管理员、用户两种权限设计。根据不同权限的不同需求设计出更符合用户要求的功能。本系统中管理员可以管理所有内容，包括使用权限、家具信息、任务信息、基础数据信息等。本基于Springboot的智能家居系统管理员的用例图如下图2-1所示：
 
-![](/images/0100stringboot/0197springboot/blog.001.png)
+![](/images/0100wxapp//blog.001.png)
 
 图2-1管理员用例图
 
 用户用例为任务管理和家具管理、个人资料管理。用户用例图如下图2-2所示：
 
-![](/images/0100stringboot/0197springboot/blog.002.png)
+![](/images/0100wxapp//blog.002.png)
 
 图2-2用户用例图
 ## 2.6系统操作流程分析
 `　　`信息从如何产生到反馈结果的过程可以称为信息的流程。分析好系统的操作流程才可以使系统正确运行不会出现Bug。本系统的流程为管理员先进行登录，登录后管理用户的账号、密码等信息。用户使用注册时的账号密码进行登录，然后进行个人资料的修改、任务发布、家具管理等操作。当用户操作后，管理员可以在管理员界面立即收到操作后的信息，并且可以进行修改。本基于Springboot的智能家居系统的操作流程如下图2-3所示：
 
-![](/images/0100stringboot/0197springboot/blog.003.png) 
+![](/images/0100wxapp//blog.003.png) 
 
 图2-3基于Springboot的智能家居系统操作流程图
 
@@ -126,7 +125,7 @@ Web程序一般可以分为静态网站和动态两种形式，前几年的时�
 ## 3.1系统功能结构设计
 系统的功能结构是采用树形图来绘制功能设计。根据分析所得，本系统的功能设计为管理员和用户两部分。管理员为高级角色，可以管理系统里的所有信息，包括用户信息。用户功能为发布任务和管理家具。本基于Springboot的智能家居系统的功能结构设计图如下图3-1所示：  
 
-![](/images/0100stringboot/0197springboot/blog.004.png)
+![](/images/0100wxapp//blog.004.png)
 
 图3-1基于Springboot的智能家居系统功能结构图
 ## 3.2数据库设计
@@ -138,31 +137,31 @@ Web程序一般可以分为静态网站和动态两种形式，前几年的时�
 
 1. 管理员的ER图中的属性有账号、密码、权限。管理员ER图如下图3-2所示：
 
-![](/images/0100stringboot/0197springboot/blog.005.png)
+![](/images/0100wxapp//blog.005.png)
 
 图3-2管理员ER图
 
 1. 用户的ER图里的属性有账号、姓名、编号等，用户的ER图如下图3-3所示：
 
-![](/images/0100stringboot/0197springboot/blog.006.png)
+![](/images/0100wxapp//blog.006.png)
 
 图3-3用户ER图
 
 1. 家具信息的ER图里的属性有名称、类别、图片、区域、状态等，家具的ER图如下图3-4所示：
 
-![](/images/0100stringboot/0197springboot/blog.007.png)
+![](/images/0100wxapp//blog.007.png)
 
 图3-4家具信息ER图
 
 (4)任务的ER图里的属性有家具信息和任务信息等，任务ER图如下图3-5所示：
 
-![](/images/0100stringboot/0197springboot/blog.008.png)
+![](/images/0100wxapp//blog.008.png)
 
 图3-5任务ER图
 
 1. 本系统的实体关系图如下图3-6所示：
 
-![](/images/0100stringboot/0197springboot/blog.009.png)
+![](/images/0100wxapp//blog.009.png)
 
 图3-6实体关系图
 ### 3.2.2数据库表设计
@@ -170,11 +169,11 @@ Web程序一般可以分为静态网站和动态两种形式，前几年的时�
 
 表3-1　config
 
-![](/images/0100stringboot/0197springboot/blog.010.png)
+![](/images/0100wxapp//blog.010.png)
 
 表3-2　dictionary
 
-![](/images/0100stringboot/0197springboot/blog.011.png)
+![](/images/0100wxapp//blog.011.png)
 
 
 
@@ -185,25 +184,25 @@ Web程序一般可以分为静态网站和动态两种形式，前几年的时�
 
 表3-3　jiaju
 
-![](/images/0100stringboot/0197springboot/blog.012.png)
+![](/images/0100wxapp//blog.012.png)
 
 ||
 | :- |
 表3-4　renwu
 
-![](/images/0100stringboot/0197springboot/blog.013.png)
+![](/images/0100wxapp//blog.013.png)
 
 ||
 | :- |
 表3-5　token
 
-![](/images/0100stringboot/0197springboot/blog.014.png)
+![](/images/0100wxapp//blog.014.png)
 
 ||
 | :- |
 表3-6　users
 
-![](/images/0100stringboot/0197springboot/blog.015.png)
+![](/images/0100wxapp//blog.015.png)
 
 ||
 | :- |
@@ -211,7 +210,7 @@ Web程序一般可以分为静态网站和动态两种形式，前几年的时�
 
 表3-7　yonghu
 
-![](/images/0100stringboot/0197springboot/blog.016.png)
+![](/images/0100wxapp//blog.016.png)
 
 
 
@@ -235,51 +234,51 @@ Web程序一般可以分为静态网站和动态两种形式，前几年的时�
 ## 4.1用户登录功能的详细实现
 用户登录界面起到验证身份的作用，本界面采用图片背景进行设计。在用户登录界面里设置了程序的名称和用户、密码、权限的文本框。在文本框下是登录按钮和用户注册按钮。用户在信息输入完成后可以使用这两个按钮进行相对应的操作。用户登录功能的实现界面如下图4-1所示：
 
-![](/images/0100stringboot/0197springboot/blog.017.png)
+![](/images/0100wxapp//blog.017.png)
 
 图4-1用户登录实现界面
 ## 4.2管理员权限的功能实现
 ### 4.2.1个人中心管理功能的详细实现
 `    `本功能的作用为修改当前登录用户的登录密码以及信息。本功能可以实现新密码的设置。个人中心管理功能的实现界面如下图4-2所示：
 
-![](/images/0100stringboot/0197springboot/blog.018.png)
+![](/images/0100wxapp//blog.018.png)
 
 图4-2个人中心管理功能的界面实现
 ### 4.2.2用户信息管理功能的详细实现
 管理员负责用户信息的审核和管理。用户的密码可以通过本功能重置。管理员查询用户信息的功能实现如下图4-3所示：
 
-![](/images/0100stringboot/0197springboot/blog.019.png)
+![](/images/0100wxapp//blog.019.png)
 
 图4-3管理员查询用户信息的实现界面
 ### 4.2.3家具管理功能的详细实现
 管理员可以对家具的信息进行管理、审核。包括增加家具和淘汰家具，管理员查询家具信息的实现界面如下图4-4所示：
 
-![](/images/0100stringboot/0197springboot/blog.020.png)
+![](/images/0100wxapp//blog.020.png)
 
 图4-4管理员查询家具信息的实现界面
 ### 4.2.4任务管理功能的详细实现
 管理员可以查询用户发布的任务指令，并对任务进行修改等必要操作。管理员查询任务功能的实现界面如下图4-5所示：
 
-![](/images/0100stringboot/0197springboot/blog.021.png)
+![](/images/0100wxapp//blog.021.png)
 
 图4-5管理员查询任务的实现界面
 ### 4.2.5基础数据管理功能的详细界面实现
 管理员可以实现家具类型、区域类型的管理。管理员添加家具类型的实现界面如下图4-6所示：
 
-![](/images/0100stringboot/0197springboot/blog.022.png)
+![](/images/0100wxapp//blog.022.png)
 
 图4-6管理员添加家具类型信息功能的运行界面
 ## 4.3用户权限的功能实现
 ### 4.3.1家具管理功能的详细实现
 用户可以实现家具的查询和家具的新增、修改、删除。家具查询功能实现界面如下图4-7所示：
 
-![](/images/0100stringboot/0197springboot/blog.023.png)
+![](/images/0100wxapp//blog.023.png)
 
 图4-7家具查询功能的实现界面
 ### 4.3.2任务管理功能的详细实现
 用户可以发布任务，填写任务单就可以实现任务的发布。用户发布任务功能的实现界面如下图4-8所示：
 
-![](/images/0100stringboot/0197springboot/blog.024.png)
+![](/images/0100wxapp//blog.024.png)
 
 图4-8用户发布任务功能的实现界面
 

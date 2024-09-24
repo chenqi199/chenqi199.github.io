@@ -1,17 +1,16 @@
 # 0059springboot师生共评的作业管理系统设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0059springboot师生共评的作业管理系统设计与实现](https://github.com/GraduationProject-springboot/0059springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV16ia6epENY?p=60)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 系统概述
 1.1 研究背景
@@ -131,11 +130,11 @@ Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进
 
 4）输入数据尽早地记录成其处理所需的形式，以防止数据由一种介质转移到另一种介质时需要转录而可能发生的错误。
 ## 3.4系统流程和逻辑
-![](/images/0000stringboot/0059springboot/blog.001.png)
+![](/images/0000wxapp//blog.001.png)
 
 图3-3登录流程图
 
-![](/images/0000stringboot/0059springboot/blog.002.png)
+![](/images/0000wxapp//blog.002.png)
 
 图3-4修改密码流程图
 
@@ -143,19 +142,19 @@ Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进
 ## 4.1概述
 本系统采用B/S结构(Browser/Server,浏览器/服务器结构)和基于Web服务两种模式，是一个适用于Internet环境下的模型结构。只要用户能连上Internet,便可以在任何时间、任何地点使用。系统工作原理图如图4-1所示：
 
-![](/images/0000stringboot/0059springboot/blog.003.png)
+![](/images/0000wxapp//blog.003.png)
 
 图4-1系统工作原理图
 ## 4.2系统结构
 本系统是基于B/S架构的网站系统，设计的教师功能结构图如下图所示：
 
-![](/images/0000stringboot/0059springboot/blog.004.png)
+![](/images/0000wxapp//blog.004.png)
 
 图4-2教师功能结构图
 
 本系统是基于B/S架构的网站系统，设计的用户功能结构图如下图所示：
 
-![](/images/0000stringboot/0059springboot/blog.005.png)
+![](/images/0000wxapp//blog.005.png)
 
 图4-3 用户功能结构图
 
@@ -167,19 +166,19 @@ Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进
 
 （1）教师信息的实体属性图如下：
 
-![](/images/0000stringboot/0059springboot/blog.006.png)
+![](/images/0000wxapp//blog.006.png)
 
 图4.12  教师信息实体属性图
 
 （2）课程实体属性图如图4.13所示：
 
-![](/images/0000stringboot/0059springboot/blog.007.png)
+![](/images/0000wxapp//blog.007.png)
 
 图4.13  课程实体属性图
 
 （3）管理员实体属性图如图4.14所示：
 
-![](/images/0000stringboot/0059springboot/blog.008.png)
+![](/images/0000wxapp//blog.008.png)
 
 图4.14 管理员实体属性图
 ### 4.3.2数据库设计表
@@ -345,19 +344,19 @@ Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进
 ### 5.1.1 课程管理
 师生共评的作业管理系统的学生可以在前台首页查看课程信息，并且可以下载操作。具体界面的展示如图5.1所示。
 
-![](/images/0000stringboot/0059springboot/blog.010.png)
+![](/images/0000wxapp//blog.010.png)
 
 图5.1 课程管理管理界面
 ### 5.1.2 作业管理
 学生登录可以在作业栏目看到作业，并且可以进行提交，但是提交必须学生登录才可以提交。具体界面如图5.2所示。
 
-![](/images/0000stringboot/0059springboot/blog.011.png)
+![](/images/0000wxapp//blog.011.png)
 
 图5.3 作业管理
 ### 5.2.1 作业互评
 学生登录可以查看别人的作业并可以对作业进行评价。界面如下图所示：
 
-![](/images/0000stringboot/0059springboot/blog.012.png)
+![](/images/0000wxapp//blog.012.png)
 
 图5.4 作业互评管理界面
 
@@ -365,19 +364,19 @@ Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进
 ### 5.2.2 小组管理
 教师登录后可以在后台管理小组信息看，可以对小组信息进行添加修改删除操作。界面如下图所示：
 
-![](/images/0000stringboot/0059springboot/blog.013.png)
+![](/images/0000wxapp//blog.013.png)
 
 图5.5 小组管理界面
 ### 5.3.1 作业管理
 教师登录后可以对作业信息进行添加修改删除操作。界面如下图所示：
 
-![](/images/0000stringboot/0059springboot/blog.014.png)
+![](/images/0000wxapp//blog.014.png)
 
 图5.6 作业管理界面
 ### 5.3.2 作业评分
 教师登录后可以对作业评分进行添加，修改删除操作。界面如下图所示：
 
-![](/images/0000stringboot/0059springboot/blog.015.png)
+![](/images/0000wxapp//blog.015.png)
 
 图5.7 作业评分界面
 

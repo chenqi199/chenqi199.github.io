@@ -1,0 +1,24 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Ssm端 - 标签 - chenqi blog</title>
+        <link>https://chenqi199.github.io/tags/ssm%E7%AB%AF/</link>
+        <description>Ssm端 - 标签 - chenqi blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>chen_q_i@163.com (chenqi)</managingEditor>
+            <webMaster>chen_q_i@163.com (chenqi)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 17 Dec 2023 10:32:48 &#43;0800</lastBuildDate><atom:link href="https://chenqi199.github.io/tags/ssm%E7%AB%AF/" rel="self" type="application/rss+xml" /><item>
+    <title>ssm153前后端分离鲜花销售系统&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm153%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E9%B2%9C%E8%8A%B1%E9%94%80%E5%94%AE%E7%B3%BB%E7%BB%9F-vue/</link>
+    <pubDate>Sun, 17 Dec 2023 10:32:48 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm153%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E9%B2%9C%E8%8A%B1%E9%94%80%E5%94%AE%E7%B3%BB%E7%BB%9F-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm153前后端分离鲜花销售系统+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1.1 研究背景 当前社会各行业领]]></description>
+</item>
+<item>
+    <title>ssm069端游账号销售管理系统&#43;jsp</title>
+    <link>https://chenqi199.github.io/ssm069%E7%AB%AF%E6%B8%B8%E8%B4%A6%E5%8F%B7%E9%94%80%E5%94%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-jsp/</link>
+    <pubDate>Sat, 18 Nov 2023 22:29:53 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm069%E7%AB%AF%E6%B8%B8%E8%B4%A6%E5%8F%B7%E9%94%80%E5%94%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-jsp/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm069端游账号销售管理系统+jsp github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第1章 绪论 1.1 课题背景 互联网发展至]]></description>
+</item>
+</channel>
+</rss>

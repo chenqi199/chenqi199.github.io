@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer" />
+        <meta name="robots" content="noodp" />
+        <title>ssm530便民自行车管理系统的开发与实现&#43;vue - chenqi blog</title><meta name="Description" content="Hugo theme - chenqi"><meta property="og:url" content="https://chenqi199.github.io/ssm530%E4%BE%BF%E6%B0%91%E8%87%AA%E8%A1%8C%E8%BD%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/">
+  <meta property="og:site_name" content="chenqi blog">
+  <meta property="og:title" content="ssm530便民自行车管理系统的开发与实现&#43;vue">
+  <meta property="og:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm530便民自行车管理系统的开发与实现&#43;vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 研究背景 自计算机发展以">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-04-21T10:32:57+08:00">
+    <meta property="article:modified_time" content="2024-04-21T10:32:57+08:00">
+    <meta property="article:tag" content="Ssm便民">
+    <meta property="article:tag" content="便民自行车">
+    <meta property="article:tag" content="自行车管理">
+    <meta property="article:tag" content="系统开发">
+    <meta property="article:tag" content="开发实现">
+    <meta property="article:tag" content="管理系统">
+    <meta property="og:image" content="https://chenqi199.github.io/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chenqi199.github.io/logo.png">
+  <meta name="twitter:title" content="ssm530便民自行车管理系统的开发与实现&#43;vue">
+  <meta name="twitter:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm530便民自行车管理系统的开发与实现&#43;vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 研究背景 自计算机发展以">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chenqi199.github.io/ssm530%E4%BE%BF%E6%B0%91%E8%87%AA%E8%A1%8C%E8%BD%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" /><link rel="prev" href="https://chenqi199.github.io/ssm531%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AE%9E%E8%B7%B5%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-jsp/" /><link rel="next" href="https://chenqi199.github.io/ssm535%E5%9F%BA%E4%BA%8Essm%E7%9A%84%E6%B8%B8%E6%88%8F%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "ssm530便民自行车管理系统的开发与实现+vue",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chenqi199.github.io\/ssm530%E4%BE%BF%E6%B0%91%E8%87%AA%E8%A1%8C%E8%BD%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue\/"
+        },"image": ["https:\/\/chenqi199.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "ssm便民, 便民自行车, 自行车管理, 系统开发, 开发实现, 管理系统","wordcount":  7574 ,
+        "url": "https:\/\/chenqi199.github.io\/ssm530%E4%BE%BF%E6%B0%91%E8%87%AA%E8%A1%8C%E8%BD%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue\/","datePublished": "2024-04-21T10:32:57+08:00","dateModified": "2024-04-21T10:32:57+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/chenqi199.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "chenqi"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/ssm530%E4%BE%BF%E6%B0%91%E8%87%AA%E8%A1%8C%E8%BD%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/ssm530%E4%BE%BF%E6%B0%91%E8%87%AA%E8%A1%8C%E8%BD%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">ssm530便民自行车管理系统的开发与实现+vue</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="chenqi199" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>chenqi</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-04-21">2024-04-21</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 7574 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 16 分钟&nbsp;<span id="/ssm530%E4%BE%BF%E6%B0%91%E8%87%AA%E8%A1%8C%E8%BD%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" class="leancloud_visitors" data-flag-title="ssm530便民自行车管理系统的开发与实现&#43;vue">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">github 项目仓库</a> 开源仅有后端代码</a></li>
+        <li><a href="#点击播放视频-">点击播放视频 ▼</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#12课题现状与实现意义">1.2课题现状与实现意义</a></li>
+    <li><a href="#13课题内容">1.3课题内容</a></li>
+    <li><a href="#14论文结构安排">1.4论文结构安排</a></li>
+    <li><a href="#21系统使用相关技术分析">2.1系统使用相关技术分析</a>
+      <ul>
+        <li><a href="#211java语言介绍">2.1.1Java语言介绍</a></li>
+        <li><a href="#212mysql数据库介绍">2.1.2Mysql数据库介绍</a></li>
+        <li><a href="#213tomcat服务器介绍">2.1.3Tomcat服务器介绍</a></li>
+        <li><a href="#214-ssm框架介绍">2.1.4 SSM框架介绍</a></li>
+      </ul>
+    </li>
+    <li><a href="#22系统可行性分析">2.2系统可行性分析</a>
+      <ul>
+        <li><a href="#221系统经济可行性分析">2.2.1系统经济可行性分析</a></li>
+        <li><a href="#222系统技术可行性分析">2.2.2系统技术可行性分析</a></li>
+        <li><a href="#223系统操作可行性分析">2.2.3系统操作可行性分析</a></li>
+      </ul>
+    </li>
+    <li><a href="#23系统需求分析">2.3系统需求分析</a>
+      <ul>
+        <li><a href="#231传统租用系统优缺点分析">2.3.1传统租用系统优缺点分析</a></li>
+        <li><a href="#232本便民自行车管理系统分析">2.3.2本便民自行车管理系统分析</a></li>
+      </ul>
+    </li>
+    <li><a href="#24系统功能分析">2.4系统功能分析</a></li>
+    <li><a href="#25系统性能分析">2.5系统性能分析</a></li>
+    <li><a href="#26用例图">2.6用例图</a></li>
+    <li><a href="#27系统业务流程">2.7系统业务流程</a></li>
+    <li><a href="#31系统体系结构">3.1系统体系结构</a></li>
+    <li><a href="#32系统功能结构">3.2系统功能结构</a></li>
+    <li><a href="#33数据库设计">3.3数据库设计</a>
+      <ul>
+        <li><a href="#331er图设计">3.3.1ER图设计</a></li>
+        <li><a href="#332数据库表设计">3.3.2数据库表设计</a></li>
+      </ul>
+    </li>
+    <li><a href="#41系统调试运行">4.1系统调试运行</a></li>
+    <li><a href="#42登录功能的界面实现">4.2登录功能的界面实现</a></li>
+    <li><a href="#43管理员功能的设计实现">4.3管理员功能的设计实现</a>
+      <ul>
+        <li><a href="#431用户管理功能的实现界面">4.3.1用户管理功能的实现界面</a></li>
+        <li><a href="#432车辆信息管理功能的实现界面">4.3.2车辆信息管理功能的实现界面</a></li>
+        <li><a href="#433-车辆订单管理功能的实现界面">4.3.3 车辆订单管理功能的实现界面</a></li>
+        <li><a href="#434车辆损耗管理功能的实现界面">4.3.4车辆损耗管理功能的实现界面</a></li>
+        <li><a href="#435车辆类型管理功能的实现界面">4.3.5车辆类型管理功能的实现界面</a></li>
+        <li><a href="#436个人中心管理功能的实现界面">4.3.6个人中心管理功能的实现界面</a></li>
+      </ul>
+    </li>
+    <li><a href="#44用户角色功能的界面实现">4.4用户角色功能的界面实现</a>
+      <ul>
+        <li><a href="#441车辆信息浏览功能的界面实现">4.4.1车辆信息浏览功能的界面实现</a></li>
+        <li><a href="#442自行车租用功能的实现界面">4.4.2自行车租用功能的实现界面</a></li>
+        <li><a href="#443订单管理功能的实现界面">4.4.3订单管理功能的实现界面</a></li>
+        <li><a href="#444车辆收藏管理功能的设计界面">4.4.4车辆收藏管理功能的设计界面</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="项目清单-包安装运行httpchenqi1990site-官网地址-httpchenqi1990site"><a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">项目清单 包安装运行</a> 官网地址 <a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">http://chenqi1990.site</a></h1>
+<h1 id="ssm530便民自行车管理系统的开发与实现vuehttpsgithubcomgraduationproject-springboot"><a href="https://github.com/GraduationProject-springboot/" target="_blank" rel="noopener noreffer ">ssm530便民自行车管理系统的开发与实现+vue</a></h1>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        data-srcset="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 1.5x, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        title="picture" /></p>
+<h3 id="github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">github 项目仓库</a> 开源仅有后端代码</h3>
+<h3 id="点击播放视频-">点击播放视频 ▼</h3>
+<p><a href="https://www.bilibili.com/video/BV1t58veLEnL?p=127" target="_blank" rel="noopener noreffer "><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.sstatic.net/Vp2cE.png"
+        data-srcset="https://i.sstatic.net/Vp2cE.png, https://i.sstatic.net/Vp2cE.png 1.5x, https://i.sstatic.net/Vp2cE.png 2x"
+        data-sizes="auto"
+        alt="https://i.sstatic.net/Vp2cE.png"
+        title="Watch the video" /></a></p>
+<h1 id="研究背景">研究背景</h1>
+<p>自计算机发展以来给人们的生活带来了改变。第一代计算机为1946年美国设计，最开始用于复杂的科学计算，占地面积、开机时间要求都非常高，经过数十几的改变计算机技术才发展到今天。现如今已是电子时代、数据时代，所有的生活都离不开计算机和网络。工作中有各类办公软件、APP，娱乐中有各类游戏软件、视频软件等都为生活带来了便捷，特别是我国的手机支付功能更是领先世界。科技推动了时代的发展。现在人们自行车租用大多已从传统的面对面租用转换到线上租用。线上租用拥有更大的优点，信息种类全、流程清晰、结果反馈快。由于传统租用需要亲力亲为，信息单一，需要多部门面对面共同配合而逐渐被加入线上租用方式。</p>
+<p>现在，网络覆盖范围扩大，价格便宜，各大商户都开放的有无线网络。手机也得到了普及，计算机技术也深入到手机中。普通生活、娱乐等都可以在线上解决。线上已成为趋势，大部分的行业都可以在线上开通业务，通过线上为人们解决问题，改变面对面方式，提高工作效率以及减少时间浪费。</p>
+<h2 id="12课题现状与实现意义">1.2课题现状与实现意义</h2>
+<p><code>  </code>现在网上管理平台使用率高的有企业办公软件、收银软件、会计软件以及各类国家性质的办公平台。对于自行车租用管理来言，想要突破发展就需要加入线上平台，传统租用自行车需要找中介或者直接联系车主，找中介需要收取中介费用，直接联系车主途径太少，工作效率低下。目前也有大量的共享单车，这类自行车租用时需要先找到自行车然后扫码进行租用，在用车的高峰期想要找到一辆可用的自行车非常困难，而本系统可以提前在系统里预约车辆，不必在高峰期时抢，方便用户的车辆使用。</p>
+<p>本系统采用商家对用户的模式，管理员利用本平台可以管理自行车信息、租用信息等。本系统可以帮助管理员工作管理，实现自行车的无地域、无时间审核。用户可以随时浏览、查询自行车，可以了解自行车的详情以及在线租用、归还。本系统可以帮助用户更快的租用自行车和管理订单，帮助商家增加出租途径，减少时间费用。本便民自行车管理系统实现数据的自动化，减少管理员的工作内容并实现数据的清晰化，实现费用的自动计算和线上支付，使资金更加透明。</p>
+<h2 id="13课题内容">1.3课题内容</h2>
+<p><code>    </code>本便民自行车管理系统使用角色可以分为用户、管理员。用户可以根据要求租用自行车，管理员在收到用户的租用后可以进行在线审核，当通过审核后用户可以在自己的操作平台里看到租用订单，同时可以进行在线归还。管理员还可以管理用户信息和自行车租用信息、车辆损耗信息、车辆类型信息等。</p>
+<h2 id="14论文结构安排">1.4论文结构安排</h2>
+<p><code>   </code>本论文的结构安排为三部分，分别为：</p>
+<p>（1）第一部分，</p>
+<p>摘要，本部分为简单的阐述，使读者可以对本论文有大致的了解；</p>
+<p>外文翻译，采用英语对摘要进行翻译；</p>
+<p>目录，本部分可以使读者对本论文有详细的了解。</p>
+<p>（2）第二部分为正文部分，</p>
+<p>绪论，本章从课题开发的来源、现状来进行介绍，总结出本系统开发的意义以及内容等；</p>
+<p>系统分析，本章包括语言、技术等的介绍以及系统的需求分析、可行性分析、流程分析等；</p>
+<p>系统设计，本章包括系统的功能结构图、数据库设计等；</p>
+<p>系统实现，本章采用系统运行截图加文字进行本系统的详细介绍；</p>
+<p>系统测试，本章采用测试的方法进行主要核心功能的测试介绍；</p>
+<p>（3）第三部分为总结、致谢、参考文献。</p>
+<p>第2章　系统分析</p>
+<h2 id="21系统使用相关技术分析">2.1系统使用相关技术分析</h2>
+<h3 id="211java语言介绍">2.1.1Java语言介绍</h3>
+<p>Java语言是一种分布式的简单的 开发语言，有很好的特征，在安全方面、性能方面等。非常适合在Internet环境中使用，也是目前企业级运用中最常用的一个编程语言，具有很大的影响力。主要是通过面向对象的形式进行开发，这样的话，就更能满足人们的需求。在编程开发使用中，主要通过封装的方式，通过类来实现，具有很好的可编辑行和操作性，这就是面向对象语言的最大特性，还可以在同一个类中把共同特性的类封装起来，形成一个抽象类，抽象类形容的不是一个对象，而是一个实体，这样就使用过程中就可以进行实例化，达到更好的效果。类之间还可以进行继承，比如一个类可以把另个类的特征进行继承，这样就可以重复使用，所以说这种继承性的类实际上还是同一个类体，这样就可以达到最大的效果。通过java开发的代码还有很好的扩展性，可以通过不同的类达到的不同的效果，更好的提高使用效率，而且在后期维护方面非常的方便，开发的代码更加实用，更加简洁。</p>
+<h3 id="212mysql数据库介绍">2.1.2Mysql数据库介绍</h3>
+<p>Mysql数据库是Oracle公司推出的一个数据库管理软件，有很好的性能设计，可以充分发挥和利用互联网的优势，而且在数据库管理方面非常的方便，支持图形化管理，非常适合新手的使用，可以直接在本地进行数据管理和配置，而且有很强大的数据处理能力，还有很好的安全性。在数据存储的过程中可以支持多处理器的存储结构，可以自动生产和处理sql语句，有很强大的数据读取和复制存储功能，最最重要的是一个开放式的数据软件，可以为开放人员提供一个很好的数据库管理平台。</p>
+<h3 id="213tomcat服务器介绍">2.1.3Tomcat服务器介绍</h3>
+<p>Tomcat服务器是一个小型的轻量级服务器，非常适合一些小型的系统和本地的服务器使用，特别适合一些新手开发者使用。Tomcat服务器主要是当成java程序的服务器使用，Tomcat服务器相当于就是Apache的一个扩展应用，区别就是他可以独立运行，当客户端上配置好Tomcat服务器以后，就可以直接通过服务器对HTML页面完成数据访问和响应。非常受程序员的喜欢，因为占用的运行空间非常的小时，不影响服务器性能，而且扩展性很好，支持很多开发过程中常用的功能，可以根据开发者的需求进行不断的改进和完善，所以说Tomcat服务器是目前使用非常广泛的一个服务器。</p>
+<h3 id="214-ssm框架介绍">2.1.4 SSM框架介绍</h3>
+<p>SSM框架为一种由服务器和客户端组合而成的框架，属于一种简单的网页框架。在工作中通过页面向控制器发送请求，然后由控制器进行处理逻辑的调用，最后由逻辑层向持久层传送消息，最终由控制器调用视图进行数据的展示。</p>
+<h2 id="22系统可行性分析">2.2系统可行性分析</h2>
+<p><code>   </code>系统是否可行决定了系统开发的成功性。想要系统的设计工作不会白费就需要经过详细的系统可行性分析。根据充分调查和参考相关论文发现，系统的可行性分析一般包括系统的技术可行性分析、系统的经济可行性分析、系统的操作可行性分析三种。</p>
+<h3 id="221系统经济可行性分析">2.2.1系统经济可行性分析</h3>
+<p><code>   </code>本系统是Web型的管理平台，采用的Java语言开发的，开发周期比较短，而且技术成熟，所以在开发过程中没有过高的投入要求，有很好的经济可行性。</p>
+<h3 id="222系统技术可行性分析">2.2.2系统技术可行性分析</h3>
+<p>本系统采用的技术有Vue网页技术、Mysql数据库、B/s模式、Java语言等。</p>
+<p>（1）通过Vue进行前台的页面开发，具有很好的稳定性，而且可以直接在线升级维护，可以更方便的实现数据管理，通过Vue的最大特征就是系统提前已经自动完成了很大不重要的简单工作，可以自动生成很多常规代码，这样减少很大的工作量。而且Vue技术非常成熟，可以参考的案例也非常多。</p>
+<p>（2）数据库采用Mysql数据库，也是非常适合学生用的一款小型数据库，使用起来非常的简单，而且数据处理效率高。</p>
+<p>（3）采用B/s模式的网站已经是目前的开发主流，也是未来的发展方向。</p>
+<p>（4）采用Java语言进行后台代码的开发，是面向对象的开发语言，可以直接查看和调用已用的案例，可以直接调用Xml服务，而且兼容性非常的强，不管是哪个平台，都可以直接调用，而且是通用的，可以提高开发者的工作效率，而且有很好的灵活性，使用起来非常的方便。</p>
+<p>所以通过以上几点的分析，开发人员只要能熟练的操作以上的技术就行，具有开发技术可行性。</p>
+<h3 id="223系统操作可行性分析">2.2.3系统操作可行性分析</h3>
+<p><code>　  </code>因为本系统是采用B/s的架构模式进行开发的，所以只有安装的有浏览器和数据库服务器就可以进行系统的访问的使用。而且非常的简单易操作，普通用户只需要有最简单的互联网操作经验就行。</p>
+<h2 id="23系统需求分析">2.3系统需求分析</h2>
+<p><code>    </code>现在网上管理系统的技术发展已经非常成熟，各大公司的使用率也非常可观，特别是在一些重要的行业里使用率更高。便民自行车管理系统可以方便用户更快的解决自己的问题，并且售后服务非常完善。现在实体企业里也会采用线上、线下相结合的方式进行工作，各部门的资料可以共享调用，工作内容可以在线发布，非常适合现代生活。便民自行车管理系统是时代的趋势，其需求性不言而喻。</p>
+<h3 id="231传统租用系统优缺点分析">2.3.1传统租用系统优缺点分析</h3>
+<p><code>  　</code>在最早出现的租用系统中主要使用人为工作人员，这类租用系统主要是采用C/s模式，这种模式可以保证数据的安全和存储性，数据库采用的也都是复杂、高性能的数据库，这类租赁系统需要使用人员经过定期的培训才可以使用。随着网络的快速发展，这类租用系统的缺点也逐渐暴露出来，由于采用C/s模式就必须要求固定的客户端，这就需要足够严格的客户端条件，一旦客户端出现问题，系统里的数据都会出现问题，稳定性差，而且C/s模式的系统最大的问题是不能多次修改，如果系统经过了多次的补充、修改就会造成运行出错，为系统的使用造成不便。传统的租赁系统通常采用的是脚本语言，脚本语言不够成熟，更容易出错，造成使用人员的损失。</p>
+<h3 id="232本便民自行车管理系统分析">2.3.2本便民自行车管理系统分析</h3>
+<p><code>  </code>通过对传统租用系统的分析发现主要问题在于系统的模式架构上和数据库上。想要数据更为稳定就需要更稳定的数据库，好的数据库可以保证系统拥有更大的容错率和移植性，也可以在多种数据库中进行相互结合以此来保证系统里数据的安全。同时还需要注意系统的延续性，时代不断的发展，就会要求系统的服务更加的完善。想要使系统的生命周期更长就需要更为成熟的开发语言、技术、环境等。</p>
+<p>本便民自行车管理系统采用的模式架构为B/s，B/s框架可以脱离固定的客户端，把系统部署到浏览器上供用户使用，还可以把功能进行模块划分使数据库和操作界面分开，这样可以实现当任何一方出现问题时，另一方不受影响。数据库采用Mysql，Mysql数据库可以单独运行，当用户在进行操作后可自动保存操作后的数据，改变需要去数据库里修改数据的问题。开发语言采用Java，Java语言为动态语言，使用时间长久，已发展的非常成熟。本系统的其它技术包括Idea运行软件，Vue网页技术，Html技术等都是经过时间考验的。</p>
+<h2 id="24系统功能分析">2.4系统功能分析</h2>
+<p>本人参考大量的租用管理软件以及充分调查需要自行车的用户和管理员需求，设计出的本便民自行车管理系统使用角色为用户、管理员。框架界面分为用户操作界面、管理员操作界面。用户的功能设计为：</p>
+<ol>
+<li>个人资料管理功能，可以针对自己的信息资料进行修改管理；</li>
+<li>订单管理功能，用户可以管理自己的租用订单并进行在线还车；</li>
+<li>收藏管理功能，实现自行车的收藏以及删除收藏；</li>
+</ol>
+<p>管理员的功能设计为：</p>
+<ol>
+<li>订单信息管理功能，本功能可以收到用户的租用订单并进行审核安排；</li>
+<li>用户管理功能，此功能可以对用户的账号、资料等进行审核管理；</li>
+<li>个人中心管理功能，对管理员的账号密码等进行管理；</li>
+<li>车辆损耗管理功能，可以实现车辆的损耗登记和修改；</li>
+<li>车辆管理功能，对车辆进行更新、修改、删除等。</li>
+</ol>
+<p>前台界面为：</p>
+<ol>
+<li>车辆信息功能，展示全部的车辆，包括车辆的名称、价格、图片等信息；</li>
+<li>用户注册功能，非用户可以实现注册，注册成功后可以租用自行车；</li>
+<li>后台管理功能，实现管理员账号的登录；</li>
+<li>个人中心功能，可以跳转进当前登录用户的个人中心界面。</li>
+</ol>
+<h2 id="25系统性能分析">2.5系统性能分析</h2>
+<p>在系统分析中还有重要的一点就是系统的性能分析，除却系统的功能分析其它问题都可以划分到系统的性能分析。主要包括系统数据问题、系统运行问题、系统安全问题。</p>
+<ol>
+<li>系统数据问题表现在数据库的设计中，因为便民自行车管理系统的核心在于自行车的租用，在租用操作中会引起多种数据的变化。想要数据在变化时不会出错就需要在数据库设计时注意不同数据字段、类型等的主外键联系；</li>
+<li>系统的运行问题表现在多平台、多人在运行系统时的稳定性。系统的运行速度也需要注意，运行的卡顿、读码速度等都需要经过多次测试；</li>
+<li>系统的安全性问题表现在不同角色的使用权限，用户做为普通人员的角色不能越权，管理员做为权限最多的角色要可以管理其它几种角色。</li>
+</ol>
+<h2 id="26用例图">2.6用例图</h2>
+<p><code>    </code>根据功能分析得出，本系统的主要使用角色为管理员和用户。用户可以查看自行车、管理租用订单、租用自行车等。管理员可以管理管理员信息、用户的资料、审核自行车出租、自行车归还、管理车辆损耗信息等。系统用例图如下图2-1所示：</p>
+<p><code>　　    </code><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm530/blog.001.png"
+        data-srcset="/images/0500ssm/ssm530/blog.001.png, /images/0500ssm/ssm530/blog.001.png 1.5x, /images/0500ssm/ssm530/blog.001.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm530/blog.001.png"
+        title="/images/0500ssm/ssm530/blog.001.png" /></p>
+<p>图2-1便民自行车管理系统用例图</p>
+<h2 id="27系统业务流程">2.7系统业务流程</h2>
+<p>业务流程可以按照用户使用本系统的步骤进行设计。本系统中用户的流程为查看自行车、租用自行车、管理租用订单、进行归还等。管理员的流程为管理车辆类型信息、发布自行车、处理订单、管理用户信息、管理员账号信息等。便民自行车管理系统的业务流程如下图2-2所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm530/blog.002.png"
+        data-srcset="/images/0500ssm/ssm530/blog.002.png, /images/0500ssm/ssm530/blog.002.png 1.5x, /images/0500ssm/ssm530/blog.002.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm530/blog.002.png"
+        title="/images/0500ssm/ssm530/blog.002.png" /></p>
+<p>图2-2便民自行车管理系统业务流程图</p>
+<p>（1）用户登录是使用本系统的必经之路，在登录时需要输入信息、判断信息。用户登录的流程图如下图2-3所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm530/blog.003.png"
+        data-srcset="/images/0500ssm/ssm530/blog.003.png, /images/0500ssm/ssm530/blog.003.png 1.5x, /images/0500ssm/ssm530/blog.003.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm530/blog.003.png"
+        title="/images/0500ssm/ssm530/blog.003.png" /></p>
+<p>图2-3用户登录的流程图</p>
+<p>（2）用户租用自行车时需要判断填写的信息是否正确，当填写的信息都为正确时才可以把租用信息传送到管理员手中。用户租用自行车流程图如下图2-4所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm530/blog.004.png"
+        data-srcset="/images/0500ssm/ssm530/blog.004.png, /images/0500ssm/ssm530/blog.004.png 1.5x, /images/0500ssm/ssm530/blog.004.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm530/blog.004.png"
+        title="/images/0500ssm/ssm530/blog.004.png" /></p>
+<p>图2-4用户租用自行车流程图</p>
+<p>第3章　系统设计</p>
+<h2 id="31系统体系结构">3.1系统体系结构</h2>
+<p><code>    </code>系统的体系结构非常重要，往往决定了系统的质量和生命周期。针对不同的系统可以采用不同的系统体系结构。本系统为便民自行车管理系统，属于开放式的平台，所以在体系结构中采用B/s。B/s结构抛弃了固定客户端要求，采用服务器、客户端的模式。用户操作界面和管理员操作界面分开展示。B/s结构基于互联网，需要网络的支持，由用户在浏览器上发布命令，服务器负责向数据库传送命令，最后再由服务器把反馈的结果传回浏览器给用户进行呈现。</p>
+<h2 id="32系统功能结构">3.2系统功能结构</h2>
+<p>系统的功能结构是系统实现的框架，本系统的主要结构为管理员和用户。管理员的功能为管理员账号管理、车辆类型管理、用户管理、车辆信息管理、车辆损耗管理等。用户的功能为个人中心、自行车信息浏览、收藏自行车、订单管理、租用自行车、在线还车等。本便民自行车管理系统功能结构图如下图3-1所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm530/blog.005.png"
+        data-srcset="/images/0500ssm/ssm530/blog.005.png, /images/0500ssm/ssm530/blog.005.png 1.5x, /images/0500ssm/ssm530/blog.005.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm530/blog.005.png"
+        title="/images/0500ssm/ssm530/blog.005.png" /></p>
+<p>图3-1便民自行车管理系统功能结构图</p>
+<h2 id="33数据库设计">3.3数据库设计</h2>
+<p>数据库设计在系统设计中占有重大比例，数据库的设计包括ER图设计和数据库表设计。</p>
+<h3 id="331er图设计">3.3.1ER图设计</h3>
+<p>根据本系统的特点，本系统设计的主要实体包括管理员信息、用户信息、自行车信息、订单信息等。</p>
+<ol>
+<li>管理员ER图包括的属性有管理员的编号、用户名和密码等。管理员ER图如下图3-2所示：</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm530/blog.006.png"
+        data-srcset="/images/0500ssm/ssm530/blog.006.png, /images/0500ssm/ssm530/blog.006.png 1.5x, /images/0500ssm/ssm530/blog.006.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm530/blog.006.png"
+        title="/images/0500ssm/ssm530/blog.006.png" /></p>
+<p>图3-2管理员实体的ER图</p>
+<ol>
+<li>自行车信息包含的属性为自行车的详细描述，有编号、名称等。自行车信息ER图如下图3-3所示：</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm530/blog.007.png"
+        data-srcset="/images/0500ssm/ssm530/blog.007.png, /images/0500ssm/ssm530/blog.007.png 1.5x, /images/0500ssm/ssm530/blog.007.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm530/blog.007.png"
+        title="/images/0500ssm/ssm530/blog.007.png" /></p>
+<p>图3-3自行车信息实体ER图</p>
+<p>（3）用户信息的属性包括用户的个人资料，有姓名、性别、电话等。用户信息实体ER图如下图3-4所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm530/blog.008.png"
+        data-srcset="/images/0500ssm/ssm530/blog.008.png, /images/0500ssm/ssm530/blog.008.png 1.5x, /images/0500ssm/ssm530/blog.008.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm530/blog.008.png"
+        title="/images/0500ssm/ssm530/blog.008.png" /></p>
+<p>图3-4用户实体ER图</p>
+<p>（4）订单实体的属性有编号、租用人等。订单实体ER图如下图3-5所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm530/blog.009.png"
+        data-srcset="/images/0500ssm/ssm530/blog.009.png, /images/0500ssm/ssm530/blog.009.png 1.5x, /images/0500ssm/ssm530/blog.009.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm530/blog.009.png"
+        title="/images/0500ssm/ssm530/blog.009.png" /></p>
+<p>图3-5订单信息实体ER图</p>
+<p>（7）本便民自行车管理系统的整体实体关系图如下图3-6所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm530/blog.010.png"
+        data-srcset="/images/0500ssm/ssm530/blog.010.png, /images/0500ssm/ssm530/blog.010.png 1.5x, /images/0500ssm/ssm530/blog.010.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm530/blog.010.png"
+        title="/images/0500ssm/ssm530/blog.010.png" /></p>
+<p>图3-6系统关系ER图</p>
+<h3 id="332数据库表设计">3.3.2数据库表设计</h3>
+<p><code>   </code>根据数据ER图的设计，本系统的数据库表有管理员信息表、用户信息表、自行车信息表、订单信息表等。本系统的数据库表如下图3-1至3-9所示：</p>
+<p>表3-1 cheliang</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm530/blog.011.png"
+        data-srcset="/images/0500ssm/ssm530/blog.011.png, /images/0500ssm/ssm530/blog.011.png 1.5x, /images/0500ssm/ssm530/blog.011.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm530/blog.011.png"
+        title="/images/0500ssm/ssm530/blog.011.png" /></p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">表3-2 cheliang_collection</td>
+</tr>
+</tbody>
+</table>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm530/blog.012.png"
+        data-srcset="/images/0500ssm/ssm530/blog.012.png, /images/0500ssm/ssm530/blog.012.png 1.5x, /images/0500ssm/ssm530/blog.012.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm530/blog.012.png"
+        title="/images/0500ssm/ssm530/blog.012.png" /></p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">表3-3 cheliang_order</td>
+</tr>
+</tbody>
+</table>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm530/blog.013.png"
+        data-srcset="/images/0500ssm/ssm530/blog.013.png, /images/0500ssm/ssm530/blog.013.png 1.5x, /images/0500ssm/ssm530/blog.013.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm530/blog.013.png"
+        title="/images/0500ssm/ssm530/blog.013.png" /></p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">表3-4 cheliang_sunhao</td>
+</tr>
+</tbody>
+</table>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm530/blog.014.png"
+        data-srcset="/images/0500ssm/ssm530/blog.014.png, /images/0500ssm/ssm530/blog.014.png 1.5x, /images/0500ssm/ssm530/blog.014.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm530/blog.014.png"
+        title="/images/0500ssm/ssm530/blog.014.png" /></p>
+<p>表3-5 config</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm530/blog.015.png"
+        data-srcset="/images/0500ssm/ssm530/blog.015.png, /images/0500ssm/ssm530/blog.015.png 1.5x, /images/0500ssm/ssm530/blog.015.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm530/blog.015.png"
+        title="/images/0500ssm/ssm530/blog.015.png" /></p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">表3-6 dictionary</td>
+</tr>
+</tbody>
+</table>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm530/blog.016.png"
+        data-srcset="/images/0500ssm/ssm530/blog.016.png, /images/0500ssm/ssm530/blog.016.png 1.5x, /images/0500ssm/ssm530/blog.016.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm530/blog.016.png"
+        title="/images/0500ssm/ssm530/blog.016.png" /></p>
+<p>表3-7 token</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm530/blog.017.png"
+        data-srcset="/images/0500ssm/ssm530/blog.017.png, /images/0500ssm/ssm530/blog.017.png 1.5x, /images/0500ssm/ssm530/blog.017.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm530/blog.017.png"
+        title="/images/0500ssm/ssm530/blog.017.png" /></p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">表3-8 users</td>
+</tr>
+</tbody>
+</table>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm530/blog.018.png"
+        data-srcset="/images/0500ssm/ssm530/blog.018.png, /images/0500ssm/ssm530/blog.018.png 1.5x, /images/0500ssm/ssm530/blog.018.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm530/blog.018.png"
+        title="/images/0500ssm/ssm530/blog.018.png" /></p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+</table>
+<p>表3-9 yonghu</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm530/blog.019.png"
+        data-srcset="/images/0500ssm/ssm530/blog.019.png, /images/0500ssm/ssm530/blog.019.png 1.5x, /images/0500ssm/ssm530/blog.019.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm530/blog.019.png"
+        title="/images/0500ssm/ssm530/blog.019.png" /></p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+</table>
+<p>第4章 系统实现</p>
+<h2 id="41系统调试运行">4.1系统调试运行</h2>
+<p><code>   </code>在电脑上安装Idea软件和Mysql软件后，先打开Mysql软件，运行数据库。数据库运行成功后可以看到本系统所创建的所有数据库表。然后打开Idea软件，在打开本系统的源码后可以进行运行，运行成功后可以出现系统登录的界面。系统调试运行界面如下图4-1所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm530/blog.020.png"
+        data-srcset="/images/0500ssm/ssm530/blog.020.png, /images/0500ssm/ssm530/blog.020.png 1.5x, /images/0500ssm/ssm530/blog.020.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm530/blog.020.png"
+        title="/images/0500ssm/ssm530/blog.020.png" /></p>
+<p>图4-1系统运行调试界面</p>
+<h2 id="42登录功能的界面实现">4.2登录功能的界面实现</h2>
+<p>系统运行调试后，需要登录。登录界面设计的目的是保证当前的使用角色等级。管理员同样需要登录后才可以进行操作。在登录界面里加入了身份的选择，在登录时只需要填写用户账号和密码、验证码，选择权限就可以实现。管理员登录的运行界面如下图4-2所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm530/blog.021.png"
+        data-srcset="/images/0500ssm/ssm530/blog.021.png, /images/0500ssm/ssm530/blog.021.png 1.5x, /images/0500ssm/ssm530/blog.021.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm530/blog.021.png"
+        title="/images/0500ssm/ssm530/blog.021.png" /></p>
+<p>图4-2管理员登录的运行界面</p>
+<p>在登录的界面中包含的元素有系统题目、输入框、登录按钮、选择框。本系统的使用权限为管理员和用户。用户登录的运行界面如下图4-3所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm530/blog.022.png"
+        data-srcset="/images/0500ssm/ssm530/blog.022.png, /images/0500ssm/ssm530/blog.022.png 1.5x, /images/0500ssm/ssm530/blog.022.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm530/blog.022.png"
+        title="/images/0500ssm/ssm530/blog.022.png" /></p>
+<p>图4-3用户登录的运行界面</p>
+<h2 id="43管理员功能的设计实现">4.3管理员功能的设计实现</h2>
+<h3 id="431用户管理功能的实现界面">4.3.1用户管理功能的实现界面</h3>
+<p>用户的信息可由管理员添加，本功能设计的目的是添加和审核用户的资料，当发现不当的使用用户可以删除其账号。当删除用户信息后相对应的用户信息表里的信息也会随着删除掉。查询用户信息功能的运行界面如下图4-4所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm530/blog.023.png"
+        data-srcset="/images/0500ssm/ssm530/blog.023.png, /images/0500ssm/ssm530/blog.023.png 1.5x, /images/0500ssm/ssm530/blog.023.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm530/blog.023.png"
+        title="/images/0500ssm/ssm530/blog.023.png" /></p>
+<p>图4-4查询用户信息功能的运行界面</p>
+<h3 id="432车辆信息管理功能的实现界面">4.3.2车辆信息管理功能的实现界面</h3>
+<p><code>    </code>用户浏览的车辆信息可由管理员在此功能里进行维护添加，同样当管理员添加、编辑车辆信息后，数据库表中的车辆信息表也会发生改变。车辆信息管理功能的运行界面如下图4-5所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm530/blog.024.png"
+        data-srcset="/images/0500ssm/ssm530/blog.024.png, /images/0500ssm/ssm530/blog.024.png 1.5x, /images/0500ssm/ssm530/blog.024.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm530/blog.024.png"
+        title="/images/0500ssm/ssm530/blog.024.png" /></p>
+<p>图4-5车辆信息管理功能的运行界面</p>
+<p>在添加车辆信息时可以提交和取消。发布新车辆信息的运行界面如下图4-6所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm530/blog.025.png"
+        data-srcset="/images/0500ssm/ssm530/blog.025.png, /images/0500ssm/ssm530/blog.025.png 1.5x, /images/0500ssm/ssm530/blog.025.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm530/blog.025.png"
+        title="/images/0500ssm/ssm530/blog.025.png" /></p>
+<p>图4-6发布新车辆信息的运行界面</p>
+<h3 id="433-车辆订单管理功能的实现界面">4.3.3 车辆订单管理功能的实现界面</h3>
+<p><code>   </code>管理员可以审核车辆订单信息，可以查询到具体车辆的骑行时间等。车辆订单管理功能的运行界面如下图4-7所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm530/blog.026.png"
+        data-srcset="/images/0500ssm/ssm530/blog.026.png, /images/0500ssm/ssm530/blog.026.png 1.5x, /images/0500ssm/ssm530/blog.026.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm530/blog.026.png"
+        title="/images/0500ssm/ssm530/blog.026.png" /></p>
+<p>图4-7车辆订单管理功能的运行界面</p>
+<h3 id="434车辆损耗管理功能的实现界面">4.3.4车辆损耗管理功能的实现界面</h3>
+<p>管理员管理车辆的损耗信息，可以详细记录每辆车的使用情况。管理员查询车辆损耗的设计界面如下图4-8所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm530/blog.027.png"
+        data-srcset="/images/0500ssm/ssm530/blog.027.png, /images/0500ssm/ssm530/blog.027.png 1.5x, /images/0500ssm/ssm530/blog.027.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm530/blog.027.png"
+        title="/images/0500ssm/ssm530/blog.027.png" /></p>
+<p>图4-8管理员查询车辆损耗功能的设计界面</p>
+<h3 id="435车辆类型管理功能的实现界面">4.3.5车辆类型管理功能的实现界面</h3>
+<p>管理员可以设置车辆的类型，方便车辆的管理。管理员添加车辆类型功能的实现界面如下图4-9所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm530/blog.028.png"
+        data-srcset="/images/0500ssm/ssm530/blog.028.png, /images/0500ssm/ssm530/blog.028.png 1.5x, /images/0500ssm/ssm530/blog.028.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm530/blog.028.png"
+        title="/images/0500ssm/ssm530/blog.028.png" /></p>
+<p>图4-9添加车辆类型功能的实现界面</p>
+<h3 id="436个人中心管理功能的实现界面">4.3.6个人中心管理功能的实现界面</h3>
+<p>管理员可以对自己的账号进行管理，可以添加新的管理员账号也可以修改当前的密码。修改密码功能的实现界面如下图4-10所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm530/blog.029.png"
+        data-srcset="/images/0500ssm/ssm530/blog.029.png, /images/0500ssm/ssm530/blog.029.png 1.5x, /images/0500ssm/ssm530/blog.029.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm530/blog.029.png"
+        title="/images/0500ssm/ssm530/blog.029.png" /></p>
+<p>图4-10管理员修改密码功能的运行界面</p>
+<h2 id="44用户角色功能的界面实现">4.4用户角色功能的界面实现</h2>
+<h3 id="441车辆信息浏览功能的界面实现">4.4.1车辆信息浏览功能的界面实现</h3>
+<p><code>  　</code>用户的功能主要为租用自行车，所以浏览出租的车辆信息为最基本的功能。车辆信息已图片为主进行展示。车辆信息浏览功能的运行界面如下图4-11所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm530/blog.030.png"
+        data-srcset="/images/0500ssm/ssm530/blog.030.png, /images/0500ssm/ssm530/blog.030.png 1.5x, /images/0500ssm/ssm530/blog.030.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm530/blog.030.png"
+        title="/images/0500ssm/ssm530/blog.030.png" /></p>
+<p>图4-11车辆信息浏览运行界面</p>
+<h3 id="442自行车租用功能的实现界面">4.4.2自行车租用功能的实现界面</h3>
+<p><code>   </code>用户在选择好自行车后可以在线租用，在租用界面里按照要求填写信息就可以完成租用。自行车租用功能的运行界面如下图4-12所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm530/blog.031.png"
+        data-srcset="/images/0500ssm/ssm530/blog.031.png, /images/0500ssm/ssm530/blog.031.png 1.5x, /images/0500ssm/ssm530/blog.031.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm530/blog.031.png"
+        title="/images/0500ssm/ssm530/blog.031.png" /></p>
+<p>图4-12自行车租用功能的运行界面</p>
+<h3 id="443订单管理功能的实现界面">4.4.3订单管理功能的实现界面</h3>
+<p>用户租用完成后，需要由管理员进行审核才可以正式完成租用。自行车订单管理功能的实现界面如下图4-13所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm530/blog.032.png"
+        data-srcset="/images/0500ssm/ssm530/blog.032.png, /images/0500ssm/ssm530/blog.032.png 1.5x, /images/0500ssm/ssm530/blog.032.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm530/blog.032.png"
+        title="/images/0500ssm/ssm530/blog.032.png" /></p>
+<p>图4-13订单管理功能的实现界面</p>
+<h3 id="444车辆收藏管理功能的设计界面">4.4.4车辆收藏管理功能的设计界面</h3>
+<p>用户可以删除收藏的车辆。实现界面如下图4-14所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm530/blog.033.png"
+        data-srcset="/images/0500ssm/ssm530/blog.033.png, /images/0500ssm/ssm530/blog.033.png 1.5x, /images/0500ssm/ssm530/blog.033.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm530/blog.033.png"
+        title="/images/0500ssm/ssm530/blog.033.png" /></p>
+<p>图4-14车辆收藏管理的功能实现界面</p>
+<p>第5章 系统测试</p>
+<h1 id="系统测试的方">系统测试的方</h1>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2024-04-21</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/ssm530%E4%BE%BF%E6%B0%91%E8%87%AA%E8%A1%8C%E8%BD%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://chenqi199.github.io/ssm530%E4%BE%BF%E6%B0%91%E8%87%AA%E8%A1%8C%E8%BD%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" data-title="ssm530便民自行车管理系统的开发与实现&#43;vue" data-hashtags="ssm便民,便民自行车,自行车管理,系统开发,开发实现,管理系统"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://chenqi199.github.io/ssm530%E4%BE%BF%E6%B0%91%E8%87%AA%E8%A1%8C%E8%BD%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" data-hashtag="ssm便民"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://chenqi199.github.io/ssm530%E4%BE%BF%E6%B0%91%E8%87%AA%E8%A1%8C%E8%BD%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" data-title="ssm530便民自行车管理系统的开发与实现&#43;vue"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://chenqi199.github.io/ssm530%E4%BE%BF%E6%B0%91%E8%87%AA%E8%A1%8C%E8%BD%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" data-title="ssm530便民自行车管理系统的开发与实现&#43;vue"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://chenqi199.github.io/ssm530%E4%BE%BF%E6%B0%91%E8%87%AA%E8%A1%8C%E8%BD%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" data-title="ssm530便民自行车管理系统的开发与实现&#43;vue" data-ralateuid="https://gitee.com/chen_q_i"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ssm%E4%BE%BF%E6%B0%91/">Ssm便民</a>,&nbsp;<a href="/tags/%E4%BE%BF%E6%B0%91%E8%87%AA%E8%A1%8C%E8%BD%A6/">便民自行车</a>,&nbsp;<a href="/tags/%E8%87%AA%E8%A1%8C%E8%BD%A6%E7%AE%A1%E7%90%86/">自行车管理</a>,&nbsp;<a href="/tags/%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%8F%91/">系统开发</a>,&nbsp;<a href="/tags/%E5%BC%80%E5%8F%91%E5%AE%9E%E7%8E%B0/">开发实现</a>,&nbsp;<a href="/tags/%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/">管理系统</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/ssm531%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AE%9E%E8%B7%B5%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-jsp/" class="prev" rel="prev" title="ssm531程序设计实践项目管理系统&#43;jsp"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>ssm531程序设计实践项目管理系统+jsp</a>
+            <a href="/ssm535%E5%9F%BA%E4%BA%8Essm%E7%9A%84%E6%B8%B8%E6%88%8F%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" class="next" rel="next" title="ssm535基于SSM的游戏资源管理系统&#43;vue">ssm535基于SSM的游戏资源管理系统+vue<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.128.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="chenqi199" target="_blank">chenqi</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

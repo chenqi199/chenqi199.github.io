@@ -1,0 +1,64 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>教学平台 - 标签 - chenqi blog</title>
+        <link>https://chenqi199.github.io/tags/%E6%95%99%E5%AD%A6%E5%B9%B3%E5%8F%B0/</link>
+        <description>教学平台 - 标签 - chenqi blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>chen_q_i@163.com (chenqi)</managingEditor>
+            <webMaster>chen_q_i@163.com (chenqi)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 19 Jul 2024 11:23:27 &#43;0800</lastBuildDate><atom:link href="https://chenqi199.github.io/tags/%E6%95%99%E5%AD%A6%E5%B9%B3%E5%8F%B0/" rel="self" type="application/rss+xml" /><item>
+    <title>0797springboot线上教学平台</title>
+    <link>https://chenqi199.github.io/0797springboot%E7%BA%BF%E4%B8%8A%E6%95%99%E5%AD%A6%E5%B9%B3%E5%8F%B0/</link>
+    <pubDate>Fri, 19 Jul 2024 11:23:27 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/0797springboot%E7%BA%BF%E4%B8%8A%E6%95%99%E5%AD%A6%E5%B9%B3%E5%8F%B0/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site 0797springboot线上教学平台 github 项目仓库 开源仅有后端代码 点击播放视频 ▼ JAVA简介 Java主要采用CO]]></description>
+</item>
+<item>
+    <title>ssm671课程在线教学平台设计与实现&#43;jsp</title>
+    <link>https://chenqi199.github.io/ssm671%E8%AF%BE%E7%A8%8B%E5%9C%A8%E7%BA%BF%E6%95%99%E5%AD%A6%E5%B9%B3%E5%8F%B0%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/</link>
+    <pubDate>Fri, 07 Jun 2024 10:33:00 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm671%E8%AF%BE%E7%A8%8B%E5%9C%A8%E7%BA%BF%E6%95%99%E5%AD%A6%E5%B9%B3%E5%8F%B0%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm671课程在线教学平台设计与实现+jsp github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第1章 绪论 1.1 课题背景 二十一]]></description>
+</item>
+<item>
+    <title>ssm381课程辅助教学平台的设计与实现设计&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm381%E8%AF%BE%E7%A8%8B%E8%BE%85%E5%8A%A9%E6%95%99%E5%AD%A6%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1-vue/</link>
+    <pubDate>Sat, 02 Mar 2024 10:32:53 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm381%E8%AF%BE%E7%A8%8B%E8%BE%85%E5%8A%A9%E6%95%99%E5%AD%A6%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm381课程辅助教学平台的设计与实现设计+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第1章 绪论 1.1 课题背景]]></description>
+</item>
+<item>
+    <title>ssm191计算机公共基础课程mooc教学平台的设计和实现&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm191%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%85%AC%E5%85%B1%E5%9F%BA%E7%A1%80%E8%AF%BE%E7%A8%8Bmooc%E6%95%99%E5%AD%A6%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E5%92%8C%E5%AE%9E%E7%8E%B0-vue/</link>
+    <pubDate>Sat, 30 Dec 2023 10:32:49 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm191%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%85%AC%E5%85%B1%E5%9F%BA%E7%A1%80%E8%AF%BE%E7%A8%8Bmooc%E6%95%99%E5%AD%A6%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E5%92%8C%E5%AE%9E%E7%8E%B0-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm191计算机公共基础课程mooc教学平台的设计和实现+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 内容整]]></description>
+</item>
+<item>
+    <title>ssm117网络教学平台的设计与实现&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm117%E7%BD%91%E7%BB%9C%E6%95%99%E5%AD%A6%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/</link>
+    <pubDate>Tue, 05 Dec 2023 10:32:47 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm117%E7%BD%91%E7%BB%9C%E6%95%99%E5%AD%A6%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm117网络教学平台的设计与实现+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 研究背景 目前，在网络大环境下]]></description>
+</item>
+<item>
+    <title>0078springboot信息化在线教学平台的设计与实现</title>
+    <link>https://chenqi199.github.io/0078springboot%E4%BF%A1%E6%81%AF%E5%8C%96%E5%9C%A8%E7%BA%BF%E6%95%99%E5%AD%A6%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/</link>
+    <pubDate>Wed, 22 Nov 2023 11:23:17 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/0078springboot%E4%BF%A1%E6%81%AF%E5%8C%96%E5%9C%A8%E7%BA%BF%E6%95%99%E5%AD%A6%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site 0078springboot信息化在线教学平台的设计与实现 github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 系统概述 1.1 研究]]></description>
+</item>
+<item>
+    <title>0078springboot信息化在线教学平台的设计与实现</title>
+    <link>https://chenqi199.github.io/0078springboot%E4%BF%A1%E6%81%AF%E5%8C%96%E5%9C%A8%E7%BA%BF%E6%95%99%E5%AD%A6%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/</link>
+    <pubDate>Wed, 22 Nov 2023 11:22:07 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/0078springboot%E4%BF%A1%E6%81%AF%E5%8C%96%E5%9C%A8%E7%BA%BF%E6%95%99%E5%AD%A6%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site 0078springboot信息化在线教学平台的设计与实现 github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 系统概述 1.1 研究]]></description>
+</item>
+</channel>
+</rss>

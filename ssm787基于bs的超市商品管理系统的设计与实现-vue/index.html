@@ -1,0 +1,2071 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer" />
+        <meta name="robots" content="noodp" />
+        <title>ssm787基于BS的超市商品管理系统的设计与实现&#43;vue - chenqi blog</title><meta name="Description" content="Hugo theme - chenqi"><meta property="og:url" content="https://chenqi199.github.io/ssm787%E5%9F%BA%E4%BA%8Ebs%E7%9A%84%E8%B6%85%E5%B8%82%E5%95%86%E5%93%81%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/">
+  <meta property="og:site_name" content="chenqi blog">
+  <meta property="og:title" content="ssm787基于BS的超市商品管理系统的设计与实现&#43;vue">
+  <meta property="og:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm787基于BS的超市商品管理系统的设计与实现&#43;vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 研究背景与现状">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-07-15T10:33:03+08:00">
+    <meta property="article:modified_time" content="2024-07-15T10:33:03+08:00">
+    <meta property="article:tag" content="Ssm超市">
+    <meta property="article:tag" content="超市商品">
+    <meta property="article:tag" content="系统设计">
+    <meta property="article:tag" content="设计实现">
+    <meta property="article:tag" content="商品管理">
+    <meta property="article:tag" content="管理系统">
+    <meta property="og:image" content="https://chenqi199.github.io/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chenqi199.github.io/logo.png">
+  <meta name="twitter:title" content="ssm787基于BS的超市商品管理系统的设计与实现&#43;vue">
+  <meta name="twitter:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm787基于BS的超市商品管理系统的设计与实现&#43;vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 研究背景与现状">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chenqi199.github.io/ssm787%E5%9F%BA%E4%BA%8Ebs%E7%9A%84%E8%B6%85%E5%B8%82%E5%95%86%E5%93%81%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" /><link rel="prev" href="https://chenqi199.github.io/0784springboot%E9%9F%B3%E4%B9%90%E7%BF%BB%E5%94%B1%E4%B8%8E%E5%88%86%E4%BA%AB%E5%B9%B3%E5%8F%B0/" /><link rel="next" href="https://chenqi199.github.io/ssm786%E5%AE%B6%E4%B9%A1%E7%89%B9%E4%BA%A7%E7%BD%91%E4%B8%8A%E5%95%86%E5%9F%8E%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "ssm787基于BS的超市商品管理系统的设计与实现+vue",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chenqi199.github.io\/ssm787%E5%9F%BA%E4%BA%8Ebs%E7%9A%84%E8%B6%85%E5%B8%82%E5%95%86%E5%93%81%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue\/"
+        },"image": ["https:\/\/chenqi199.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "ssm超市, 超市商品, 系统设计, 设计实现, 商品管理, 管理系统","wordcount":  7343 ,
+        "url": "https:\/\/chenqi199.github.io\/ssm787%E5%9F%BA%E4%BA%8Ebs%E7%9A%84%E8%B6%85%E5%B8%82%E5%95%86%E5%93%81%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue\/","datePublished": "2024-07-15T10:33:03+08:00","dateModified": "2024-07-15T10:33:03+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/chenqi199.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "chenqi"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/ssm787%E5%9F%BA%E4%BA%8Ebs%E7%9A%84%E8%B6%85%E5%B8%82%E5%95%86%E5%93%81%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/ssm787%E5%9F%BA%E4%BA%8Ebs%E7%9A%84%E8%B6%85%E5%B8%82%E5%95%86%E5%93%81%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">ssm787基于BS的超市商品管理系统的设计与实现+vue</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="chenqi199" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>chenqi</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-07-15">2024-07-15</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 7343 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 15 分钟&nbsp;<span id="/ssm787%E5%9F%BA%E4%BA%8Ebs%E7%9A%84%E8%B6%85%E5%B8%82%E5%95%86%E5%93%81%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" class="leancloud_visitors" data-flag-title="ssm787基于BS的超市商品管理系统的设计与实现&#43;vue">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">github 项目仓库</a> 开源仅有后端代码</a></li>
+        <li><a href="#点击播放视频-">点击播放视频 ▼</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#12课题实现目的和研究意义">1.2课题实现目的和研究意义</a></li>
+    <li><a href="#13课题研究内容">1.3课题研究内容</a></li>
+    <li><a href="#14论文结构安排">1.4论文结构安排</a></li>
+    <li><a href="#21系统开发中使用相关技术介绍">2.1系统开发中使用相关技术介绍</a>
+      <ul>
+        <li><a href="#211java介绍">2.1.1Java介绍</a></li>
+        <li><a href="#212mysql数据库介绍">2.1.2Mysql数据库介绍</a></li>
+        <li><a href="#213bs架构介绍">2.1.3B/s架构介绍</a></li>
+      </ul>
+    </li>
+    <li><a href="#22系统可行性分析">2.2系统可行性分析</a>
+      <ul>
+        <li><a href="#221经济可行性分析">2.2.1经济可行性分析</a></li>
+        <li><a href="#222操作可行性分析">2.2.2操作可行性分析</a></li>
+        <li><a href="#223技术可行性分析">2.2.3技术可行性分析</a></li>
+      </ul>
+    </li>
+    <li><a href="#23系统需求分析">2.3系统需求分析</a></li>
+    <li><a href="#24系统性能分析">2.4系统性能分析</a></li>
+    <li><a href="#25系统功能分析">2.5系统功能分析</a></li>
+    <li><a href="#26系统操作流程分析">2.6系统操作流程分析</a></li>
+    <li><a href="#31系统功能结构设计">3.1系统功能结构设计</a></li>
+    <li><a href="#32数据库设计">3.2数据库设计</a>
+      <ul>
+        <li><a href="#321数据er图设计">3.2.1数据ER图设计</a></li>
+        <li><a href="#322数据库表设计">3.2.2数据库表设计</a></li>
+      </ul>
+    </li>
+    <li><a href="#41用户登录功能的详细实现">4.1用户登录功能的详细实现</a></li>
+    <li><a href="#42管理员权限的功能实现">4.2管理员权限的功能实现</a>
+      <ul>
+        <li><a href="#421个人中心管理功能的详细实现">4.2.1个人中心管理功能的详细实现</a></li>
+        <li><a href="#422员工信息管理功能的详细实现">4.2.2员工信息管理功能的详细实现</a></li>
+        <li><a href="#423商品信息管理功能的详细实现">4.2.3商品信息管理功能的详细实现</a></li>
+        <li><a href="#424供应商管理功能的详细界面实现">4.2.4供应商管理功能的详细界面实现</a></li>
+        <li><a href="#425商品销售管理功能的详细实现">4.2.5商品销售管理功能的详细实现</a></li>
+        <li><a href="#426商品销售统计功能的详细实现">4.2.6商品销售统计功能的详细实现</a></li>
+        <li><a href="#427采购进退货管理功能的实现界面">4.2.7采购进退货管理功能的实现界面</a></li>
+        <li><a href="#428基础数据管理功能的实现界面">4.2.8基础数据管理功能的实现界面</a></li>
+      </ul>
+    </li>
+    <li><a href="#43采购员工权限的功能详细实现">4.3采购员工权限的功能详细实现</a>
+      <ul>
+        <li><a href="#431采购进货管理功能的详细实现">4.3.1采购进货管理功能的详细实现</a></li>
+        <li><a href="#432采购退货管理功能的详细实现">4.3.2采购退货管理功能的详细实现</a></li>
+        <li><a href="#433商品管理功能的详细实现">4.3.3商品管理功能的详细实现</a></li>
+        <li><a href="#434供应商管理功能的详细实现">4.3.4供应商管理功能的详细实现</a></li>
+      </ul>
+    </li>
+    <li><a href="#44销售员工的功能实现">4.4销售员工的功能实现</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="项目清单-包安装运行httpchenqi1990site-官网地址-httpchenqi1990site"><a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">项目清单 包安装运行</a> 官网地址 <a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">http://chenqi1990.site</a></h1>
+<h1 id="ssm787基于bs的超市商品管理系统的设计与实现vuehttpsgithubcomgraduationproject-springboot"><a href="https://github.com/GraduationProject-springboot/" target="_blank" rel="noopener noreffer ">ssm787基于BS的超市商品管理系统的设计与实现+vue</a></h1>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        data-srcset="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 1.5x, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        title="picture" /></p>
+<h3 id="github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">github 项目仓库</a> 开源仅有后端代码</h3>
+<h3 id="点击播放视频-">点击播放视频 ▼</h3>
+<p><a href="https://www.bilibili.com/video/BV1Tm8QeZE4a?p=182" target="_blank" rel="noopener noreffer "><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.sstatic.net/Vp2cE.png"
+        data-srcset="https://i.sstatic.net/Vp2cE.png, https://i.sstatic.net/Vp2cE.png 1.5x, https://i.sstatic.net/Vp2cE.png 2x"
+        data-sizes="auto"
+        alt="https://i.sstatic.net/Vp2cE.png"
+        title="Watch the video" /></a></p>
+<h1 id="研究背景与现状">研究背景与现状</h1>
+<p>时代的进步使人们的生活实现了部分自动化，由最初的全手动办公已转向手动+自动相结合的方式。比如各种办公系统、智能电子电器的出现，都为人们生活的享受提供帮助。采用新型的自动化方式可以减少手动的办公时间，增加正确率从而增加人们的幸福指数。时代进步中计算机技术的发展尤为突出，渗透进生活的方方面面，各种App、	网站、管理系统、小程序迅速占领市场。</p>
+<p>对于超市商品管理的现实问题，大多数超市采用人工加办公辅助软件的方式进行管理，这类方式对于信息的发布和流程、后续的资料整理工作都是非常大的帮助。但一般都还是针对管理人员使用，如果员工想要操作需要一步一步进行批准，非常复杂。现实超市商品管理工作中缺少一种更为优质、简单的方法途径。</p>
+<h2 id="12课题实现目的和研究意义">1.2课题实现目的和研究意义</h2>
+<p>时代的发展也为人们提出了更高的要求，只有不断的学习和发展才可以前进。目前我们正在科技和网络发展的关键点，网络已实现普及。然而还是有大量的企业、机构采用传统的办公方式进行处理事务，当然传统的方式对于小规模的企业、机构来说更为适合，但想要发展就需要以发展的目光来看待问题。如果可以采用更科学、省力的方式进行办公将会带来变革。</p>
+<p>超市的商品日常管理关系着超市的业绩和销售、亏损。超市对商品的进销存要严格把关，更要考虑到商品的质量、到期情况。以往都是由员工人工统计库存情况，超市审核力度不好把控，监督不了商品的实际情况。如果采用共享的平台，把商品管理的相关负责人员都结合到一起，起到共同监管的目的就可以解决这类问题。商品的所有信息都可以由管理员直接管理，员工的操作过程也可由相关管理员负责把控，把员工的管理工作实现流程化、清晰化，减少暗箱操作，提供更为透明的工作流程，实现超市商品管理的真正价值。</p>
+<h2 id="13课题研究内容">1.3课题研究内容</h2>
+<p><code>　　</code>本系统从超市商品管理的工作出发，包括管理员和采购员工、销售员工三种权限。管理员的功能为个人中心、管理员管理、商品管理、销售员工管理、采购员工管理、商品销售管理、采购进退货管理、供应商管理等，实现系统里信息的全面管控，采购员工的功能为个人资料管理和商品管理、采购进货管理、采购退货管理、供应商信息管理。销售员工负责商品信息和商品销售的管理，三种权限的用户功能相辅相成，不可缺少，共同帮助超市的商品日常运营管理。本系统实现“放手”、“透明化”管理，使商品的管理更加简单、轻松。</p>
+<h2 id="14论文结构安排">1.4论文结构安排</h2>
+<p>本篇论文的结构分为摘要、目录、正文部分、总结、致谢和参考文献。正文部分为核心。正文部分分为：</p>
+<p>第1章绪论，从课题的开发背景、现状、目的意义等进行本课题的介绍；</p>
+<p>第2章系统分析，从系统的开发技术、环境、可行性、操作流程等进行系统的详细分析；</p>
+<p>第3章系统设计，从系统的功能图、数据库设计、ER图、数据库表进行系统的设计；</p>
+<p>第4章系统实现，主要介绍系统的实现界面和实现内容；</p>
+<p>第5章系统测试，讲解主要功能的测试过程以及测试结果。</p>
+<p>第2章 系统分析</p>
+<h2 id="21系统开发中使用相关技术介绍">2.1系统开发中使用相关技术介绍</h2>
+<h3 id="211java介绍">2.1.1Java介绍</h3>
+<p>Java语言是从C++进行衍生出来的一种新型编程语言，他保留了c++语言中很多核心技术，继承了他的面向对象的优点，而且舍弃了很多缺点，比如在Java语言中去掉了指针，这样可以减少很多错误，还去掉了运算符，这样提高了运行处理效率。还增加了很多优点，添加了垃圾回收功能，提高了代码的使用率，总体来说，Java语言是一个分布式的、高性能的、多线程的开发语言。Java从开发之初就是打算作为一个开放性的语言技术，这就要求需要有很高的兼容性，首先就需要同样的代码程序可以在不同的计算机上运行，还要支持不同的网络，同时还要注重安全性，方便用户使用。Java语言最突出的特点就是面向对象，可以把一个对象当成很多代码状态的物体，然后进行自定义类型进行关联操作，这样进行集合起来的代码就叫对象，面向对象的方法可以使设计根据的简单，方便管理，还可以减少失败。C++最大的一个缺点就是没有垃圾回收机制，通常在编程的过程中，初始化对象时候系统会自动分配一个内存地址，如果不需要这个对象的时候，系统不能进行自动删除和回收，这样造成了很大的内存浪费，导致系统卡顿，会让系统非常的不稳定，严重的话甚至会系统崩溃，而Java语言就是在这个基础上设置了垃圾回收机制，当一个使用过的对象没有引用的时候，系统可以自动删除，回收内存，这样就可以很好的避免了内存泄漏，保障了程序的安全，同时提高了运行效率。</p>
+<h3 id="212mysql数据库介绍">2.1.2Mysql数据库介绍</h3>
+<p>Mysql数据库是目前比较流行的一种开源数据库，可以支持多种编译器进行在线测试，从而保证了代码的可移植性，而且支持多种操作系统有很好的跨平台性，为编程语言提供所需要的API,可以多线程同时运行，这样有效的减少了内存占用率，提高了使用效率。运行的过程中还能自动优化sql查询算法，这样使数据查询速度达到了显著的提高，而且Mysql数据库还可以作为一个独立的程序在客户端中单独使用，也可以嵌入到其他程序中搭配一起使用。Mysql数据库效率非常的高，可以处理上千万条数据，可以同时支持多种不同的数据引擎，而且是开源的软件，不需要支付任何费用，而且可以进行定制，使用GPL协议进行代码修改，开发属于自己的Mysql系统。综上所述，Mysql数据库是一个非常受欢迎的一个数据库，体积小，速度快，最重要的还是免费，非常适合中小型项目的开发使用。</p>
+<h3 id="213bs架构介绍">2.1.3B/s架构介绍</h3>
+<p>B/s架构是随着网络快速发展而开发出来的一种网络框架，跟传统的cs框架最大的区别就是，直接把代码部署到网络服务器中，这样方便了系统的后期开发和维护，然后用户可以直接通过浏览器进行代码的访问，不需要额外安装任何的软件客户端，简化了用户的使用。B/s结构是指Browser／Server结构，意思就是只需要安装一个服务器就行了， 客户端方面主要就是采用浏览器进行访问，主要是对传统的c/s架构的一种改进，采用www浏览器技术和其他Script语言技术，把系统实现需要的代码全部部署到了服务器上面，是一种新型的架构技术，可以直接借助浏览器进行数据访问和数据交互。最大的优点就是，不需要安装客户端，不受环境影响，可以实时实地的进行访问，其次就是维护非常的方便。当然了有优点也有不可避免的缺点，首先是在访问速度方面，比较受网络的影响，不像C/s架构一样，处理速度非常的快，直接在本机就可以完成数据交互，而B/s需要借助网络才能进行服务器访问，必须保证有顺畅的网络，才能有好的使用体验，其次就是安全性，因为所有数据存储在网络服务器中，比较容易受到攻击，从而造成数据泄漏，这是目前B/s架构存在的最大的弊端。所以说B/s架构适合一些电子商务类的网站，适合比较有用户共享交互的，开放性的网站的设计与开发。所以我开发本系统采用B/s架构是非常适合的，可以达到多人同时登录系统，可以实现信息交互，而且方便随时随地的进行数据访问，而且我对B/s架构开发比较熟悉，所以本系统就采用B/s架构来进行开发设计。</p>
+<h2 id="22系统可行性分析">2.2系统可行性分析</h2>
+<p>系统的可行性关系着系统开发的成功和市场，没有经过详细可行性分析的系统开发过程会非常艰难。系统可行性从系统的经济方面、操作方面和技术方面进行分析。</p>
+<h3 id="221经济可行性分析">2.2.1经济可行性分析</h3>
+<p><code>   </code>系统开发所需要的经济主要在系统的成本问题、运行问题和维护问题上。本系统在开发中不需要经济的支撑，所需要的开发软件和设备都是在已有条件上。本系统在运行里所需要的环境也都为免费就可以下载的。本系统在后期的维护上也只需要技术支持就可以完成。所以本系统在经济可行性上可以通过。</p>
+<h3 id="222操作可行性分析">2.2.2操作可行性分析</h3>
+<p>本系统在开发中充分调查了所使用用户的操作习惯和风格，所有的操作流程也都为简单的流程，在操作中也设置了提醒。用户在使用本系统时只要按照提示就可以完成，非常简单。所以本系统在操作可行性上可以通过。</p>
+<h3 id="223技术可行性分析">2.2.3技术可行性分析</h3>
+<p><code>  　</code>本系统所需要的技术支持为Java语言，Mysql数据库，Vue技术和B/s框架等。所使用的技术都为开源成熟的技术，也是目前流行的技术之一。使用这些技术开发的系统可以保证系统的前詹性和稳定性、安全性。所以本系统在技术可性性上可以通过。</p>
+<h2 id="23系统需求分析">2.3系统需求分析</h2>
+<p>目前计算机、网络技术已进入到各行各业。超市做为社会的重要组成部分更应该身体力行，超市商品管理里的所有工作都是围绕商品而展开，每件商品的档案信息都非常多，如果采用传统的管理方式非常容易造成混乱，而且对于商品的信息查询非常不便。对于商品的日期、质量、数据都需要额外的严谨，如果还是采用传统的商品管理方式对员工、商品都做不到百分百的监管，员工的操作也实现不了透明。所以非常需要新的管理方式出现。</p>
+<h2 id="24系统性能分析">2.4系统性能分析</h2>
+<p>系统在设计时也需要注意系统的性能，一般系统的性能方面包括系统的稳定性、安全性、界面设计方面、操作方面、协调等方面。</p>
+<ol>
+<li>本系统在界面设计方面尊重所有的使用权限，多方面参考不同使用权限的使用习惯以及风格，综合不同的情况整理出符合大众要求的系统界面。做到自己的最大能力；</li>
+<li>在系统的稳定性、安全性方面采用必要的登录验证，不同权限采用不同的账号和密码。为了使系统更为稳定采用成熟的开发环境和技术，在代码编写时尽可能的减少冗余，保证系统的运行效率；</li>
+<li>在系统的操作流程方面，尽可能的采用简单的流程来实现用户要求的反馈，当用户提出需求时，可以用最少的步骤进行提问操作；</li>
+<li>本系统采用数据库和功能界面分开设计，这样可以保证当系统的功能运行出错时不会影响系统里的数据，也就保证了数据的安全。</li>
+</ol>
+<h2 id="25系统功能分析">2.5系统功能分析</h2>
+<p>系统的功能分析决定了系统的功能设计，完整详细的系统功能分析可以使系统的开发事半功倍。本系统的功能围绕管理员、销售员工、采购员工三种权限设计。根据不同权限的不同需求设计出更符合用户要求的功能。本系统中管理员可以管理所有内容，包括使用权限、商品信息、采购进退货信息、商品销售信息等。本基于B/S的超市商品管理系统管理员的用例图如下图2-1所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm787/blog.001.png"
+        data-srcset="/images/0700ssm/ssm787/blog.001.png, /images/0700ssm/ssm787/blog.001.png 1.5x, /images/0700ssm/ssm787/blog.001.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm787/blog.001.png"
+        title="/images/0700ssm/ssm787/blog.001.png" /></p>
+<p>图2-1管理员用例图</p>
+<p>采购员工可以管理个人资料、商品信息、采购进货、采购退货、供应商，采购员工用例图如下图2-2所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm787/blog.002.png"
+        data-srcset="/images/0700ssm/ssm787/blog.002.png, /images/0700ssm/ssm787/blog.002.png 1.5x, /images/0700ssm/ssm787/blog.002.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm787/blog.002.png"
+        title="/images/0700ssm/ssm787/blog.002.png" /></p>
+<p>图2-2采购员工用例图</p>
+<p><code>	</code>销售员工可以管理商品信息和商品销售信息、个人中心。销售员工用例图如下图2-3所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm787/blog.003.png"
+        data-srcset="/images/0700ssm/ssm787/blog.003.png, /images/0700ssm/ssm787/blog.003.png 1.5x, /images/0700ssm/ssm787/blog.003.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm787/blog.003.png"
+        title="/images/0700ssm/ssm787/blog.003.png" /></p>
+<p>图2-3销售员工用例图</p>
+<h2 id="26系统操作流程分析">2.6系统操作流程分析</h2>
+<p><code>　　</code>信息从如何产生到反馈结果的过程可以称为信息的流程。分析好系统的操作流程才可以使系统正确运行不会出现Bug。本系统的流程为管理员先进行登录，登录后管理员工的账号、密码等信息。不同员工使用管理员设置的账号密码进行登录，然后进行个人资料的修改、商品管理、销售、采购等操作。当员工操作后，管理员可以在管理员界面立即收到操作后的信息，并且可以进行修改。本基于B/S的超市商品管理系统的操作流程如下图2-4所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm787/blog.004.png"
+        data-srcset="/images/0700ssm/ssm787/blog.004.png, /images/0700ssm/ssm787/blog.004.png 1.5x, /images/0700ssm/ssm787/blog.004.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm787/blog.004.png"
+        title="/images/0700ssm/ssm787/blog.004.png" /> 图2-4基于B/S的超市商品管理系统操作流程图</p>
+<p>第3章 系统设计</p>
+<h2 id="31系统功能结构设计">3.1系统功能结构设计</h2>
+<p>系统的功能结构是采用树形图来绘制功能设计。根据分析所得，本系统的功能设计为管理员和销售员工、采购员工三部分。管理员为高级角色，可以管理系统里的所有信息，包括员工信息。本基于B/S的超市商品管理系统的功能结构设计图如下图3-1所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm787/blog.005.png"
+        data-srcset="/images/0700ssm/ssm787/blog.005.png, /images/0700ssm/ssm787/blog.005.png 1.5x, /images/0700ssm/ssm787/blog.005.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm787/blog.005.png"
+        title="/images/0700ssm/ssm787/blog.005.png" />　　图3-1基于B/S的超市商品管理系统功能结构图</p>
+<h2 id="32数据库设计">3.2数据库设计</h2>
+<p><code>　　</code>数据库为数据的仓库，决定了数据的保存和修改、删除、调用等。数据库的稳定决定了系统里数据的安全。本系统采用Mysql数据库，在建立数据库时采用Root用户名。数据库的建立过程为先进行数据的ER图设计然后进行数据库表的实现。</p>
+<h3 id="321数据er图设计">3.2.1数据ER图设计</h3>
+<p>数据ER图中记录了关系、实体、属性。实体与实体的关系决定了数据在调用时的正确与否，实体的属性决定了该实体的内容。数据ER图的设计同样重要，也是数据库建立的基础。</p>
+<p>通过系统中的功能数据分析，本系统的实体主要有员工、管理员、商品信息、销售信息、采购信息等。</p>
+<ol>
+<li>管理员的ER图中的属性有账号、密码、权限。管理员ER图如下图3-2所示：</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm787/blog.006.png"
+        data-srcset="/images/0700ssm/ssm787/blog.006.png, /images/0700ssm/ssm787/blog.006.png 1.5x, /images/0700ssm/ssm787/blog.006.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm787/blog.006.png"
+        title="/images/0700ssm/ssm787/blog.006.png" /></p>
+<p>图3-2管理员ER图</p>
+<ol>
+<li>员工的ER图里的属性有账号、姓名、编号等，员工的ER图如下图3-3所示：</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm787/blog.007.png"
+        data-srcset="/images/0700ssm/ssm787/blog.007.png, /images/0700ssm/ssm787/blog.007.png 1.5x, /images/0700ssm/ssm787/blog.007.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm787/blog.007.png"
+        title="/images/0700ssm/ssm787/blog.007.png" /></p>
+<p>图3-3员工ER图</p>
+<ol>
+<li>商品信息的ER图里的属性有名称、类别、图片、价格、数量等，商品的ER图如下图3-4所示：</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm787/blog.008.png"
+        data-srcset="/images/0700ssm/ssm787/blog.008.png, /images/0700ssm/ssm787/blog.008.png 1.5x, /images/0700ssm/ssm787/blog.008.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm787/blog.008.png"
+        title="/images/0700ssm/ssm787/blog.008.png" /></p>
+<p>图3-4商品信息ER图</p>
+<p>(4)采购的ER图里的属性有名称、编号、供应商、负责人等，采购ER图如下图3-5所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm787/blog.009.png"
+        data-srcset="/images/0700ssm/ssm787/blog.009.png, /images/0700ssm/ssm787/blog.009.png 1.5x, /images/0700ssm/ssm787/blog.009.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm787/blog.009.png"
+        title="/images/0700ssm/ssm787/blog.009.png" /></p>
+<p>图3-5采购ER图</p>
+<p>（5）销售信息ER图里的属性有编号、名称、价格、操作员、库存、数量等，销售信息ER图如下图3-6所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm787/blog.010.png"
+        data-srcset="/images/0700ssm/ssm787/blog.010.png, /images/0700ssm/ssm787/blog.010.png 1.5x, /images/0700ssm/ssm787/blog.010.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm787/blog.010.png"
+        title="/images/0700ssm/ssm787/blog.010.png" /></p>
+<p>图3-6销售信息ER图</p>
+<h3 id="322数据库表设计">3.2.2数据库表设计</h3>
+<p>数据库表是把ER图进行详细化、实体化。不同的表名下保存着相对应的表信息数据。在数据库表里记录着数据的主键、外键、数据类型、长度等。本基于B/S的超市商品管理系统所创建的数据库表有管理员信息表、员工信息表、商品信息表、库存信息表、进货入库信息表等。本基于B/S的超市商品管理系统的数据库表如下表3-1—3-11所示：</p>
+<p>表3-1　caigoujinhuo</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">小数位</th>
+<th style="text-align:center">标识</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">外键</th>
+<th style="text-align:center">允许空</th>
+<th style="text-align:center">默认值</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">否</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">auto_increment</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">shangpin_id</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">gongyingshang_id</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">caigouyuangong_id</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">caigoujinhuo_uuid_number</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">caigoujinhuo_number</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">caigoujinhuo_content</td>
+<td style="text-align:center">text</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">insert_time</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>表3-2　caigoutuihuo</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">小数位</th>
+<th style="text-align:center">标识</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">外键</th>
+<th style="text-align:center">允许空</th>
+<th style="text-align:center">默认值</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">否</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">auto_increment</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">shangpin_id</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">caigouyuangong_id</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">caigoutuihuo_uuid_number</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">caigoutuihuo_number</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">caigoutuihuo_content</td>
+<td style="text-align:center">text</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">insert_time</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">表3-3　caigouyuangong</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">小数位</th>
+<th style="text-align:center">标识</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">外键</th>
+<th style="text-align:center">允许空</th>
+<th style="text-align:center">默认值</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">否</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">auto_increment</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">username</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">password</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">caigouyuangong_uuid_number</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">caigouyuangong_name</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">caigouyuangong_phone</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">caigouyuangong_id_number</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">caigouyuangong_photo</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">sex_types</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">caigouyuangong_email</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">表3-4　config</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">小数位</th>
+<th style="text-align:center">标识</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">外键</th>
+<th style="text-align:center">允许空</th>
+<th style="text-align:center">默认值</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">否</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">auto_increment</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">name</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">否</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">value</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>表3-5　dictionary</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">小数位</th>
+<th style="text-align:center">标识</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">外键</th>
+<th style="text-align:center">允许空</th>
+<th style="text-align:center">默认值</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">否</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">auto_increment</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">dic_code</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">dic_name</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">code_index</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">index_name</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">super_id</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">beizhu</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">表3-6　gongyingshang</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">小数位</th>
+<th style="text-align:center">标识</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">外键</th>
+<th style="text-align:center">允许空</th>
+<th style="text-align:center">默认值</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">否</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">auto_increment</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">gongyingshang_name</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">gongyingshang_types</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">gongyingshang_xinyongdengji_types</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">gongyingshang_content</td>
+<td style="text-align:center">text</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">表3-7　shangpin</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">小数位</th>
+<th style="text-align:center">标识</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">外键</th>
+<th style="text-align:center">允许空</th>
+<th style="text-align:center">默认值</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">否</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">auto_increment</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">shangpin_uuid_number</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">shangpin_name</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">shangpin_photo</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">shangpin_types</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">shangpin_kucun_number</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">shangpin_danwei</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">shangpin_jinjia_money</td>
+<td style="text-align:center">decimal</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">shangpin_shoujia_money</td>
+<td style="text-align:center">decimal</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">shangpin_content</td>
+<td style="text-align:center">text</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td style="text-align:center">insert_time</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">12</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">表3-8　token</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">小数位</th>
+<th style="text-align:center">标识</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">外键</th>
+<th style="text-align:center">允许空</th>
+<th style="text-align:center">默认值</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">否</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">auto_increment</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">userid</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">否</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">username</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">否</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">tablename</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">role</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">token</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">否</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">否</td>
+<td style="text-align:center">CURRENT_TIMESTAMP</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">expiratedtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">否</td>
+<td style="text-align:center">CURRENT_TIMESTAMP</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">表3-9　users</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">小数位</th>
+<th style="text-align:center">标识</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">外键</th>
+<th style="text-align:center">允许空</th>
+<th style="text-align:center">默认值</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">否</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">auto_increment</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">username</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">否</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">password</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">否</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">role</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">管理员</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">否</td>
+<td style="text-align:center">CURRENT_TIMESTAMP</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">表3-10　xiaoshou</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">小数位</th>
+<th style="text-align:center">标识</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">外键</th>
+<th style="text-align:center">允许空</th>
+<th style="text-align:center">默认值</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">否</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">auto_increment</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">shangpin_id</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">xiaoshouyuangong_id</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">xiaoshou_uuid_number</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">xiaoshou_kucun_number</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">xiaoshou_zongchengben_money</td>
+<td style="text-align:center">decimal</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">xiaoshou_zongshoujia_money</td>
+<td style="text-align:center">decimal</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">xiaoshou_zonglirun_money</td>
+<td style="text-align:center">decimal</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">xiaoshou_content</td>
+<td style="text-align:center">text</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">insert_time</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>表3-11　xiaoshouyuangong</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">小数位</th>
+<th style="text-align:center">标识</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">外键</th>
+<th style="text-align:center">允许空</th>
+<th style="text-align:center">默认值</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">否</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">auto_increment</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">username</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">password</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">xiaoshouyuangong_uuid_number</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">xiaoshouyuangong_name</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">xiaoshouyuangong_phone</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">xiaoshouyuangong_id_number</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">xiaoshouyuangong_photo</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">sex_types</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">xiaoshouyuangong_email</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td style="text-align:center">create_time</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>第4章 系统详细实现</p>
+<h2 id="41用户登录功能的详细实现">4.1用户登录功能的详细实现</h2>
+<p>用户登录界面起到验证身份的作用，本界面采用图片背景进行设计。在用户登录界面里设置了程序的名称和用户、密码、权限的文本框。在文本框下是登录按钮。用户在信息输入完成后可以使用这个按钮进行相对应的操作。用户登录功能的实现界面如下图4-1所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm787/blog.011.png"
+        data-srcset="/images/0700ssm/ssm787/blog.011.png, /images/0700ssm/ssm787/blog.011.png 1.5x, /images/0700ssm/ssm787/blog.011.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm787/blog.011.png"
+        title="/images/0700ssm/ssm787/blog.011.png" /></p>
+<p>图4-1用户登录实现界面</p>
+<h2 id="42管理员权限的功能实现">4.2管理员权限的功能实现</h2>
+<h3 id="421个人中心管理功能的详细实现">4.2.1个人中心管理功能的详细实现</h3>
+<p><code>   </code>个人中心管理功能的作用为修改密码和添加、删除管理员用户。本功能可以实现新增管理员和减少管理员。个人中心管理功能的实现界面如下图4-2所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm787/blog.012.png"
+        data-srcset="/images/0700ssm/ssm787/blog.012.png, /images/0700ssm/ssm787/blog.012.png 1.5x, /images/0700ssm/ssm787/blog.012.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm787/blog.012.png"
+        title="/images/0700ssm/ssm787/blog.012.png" /></p>
+<p>图4-2个人中心管理功能的界面实现</p>
+<h3 id="422员工信息管理功能的详细实现">4.2.2员工信息管理功能的详细实现</h3>
+<p>管理员负责员工信息的录入和管理。员工信息包括销售员工和采购员工，员工的账号和密码则是由本功能进行添加。管理员查询员工信息的功能实现如下图4-3所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm787/blog.013.png"
+        data-srcset="/images/0700ssm/ssm787/blog.013.png, /images/0700ssm/ssm787/blog.013.png 1.5x, /images/0700ssm/ssm787/blog.013.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm787/blog.013.png"
+        title="/images/0700ssm/ssm787/blog.013.png" /></p>
+<p>图4-3管理员查询员工信息的实现界面</p>
+<h3 id="423商品信息管理功能的详细实现">4.2.3商品信息管理功能的详细实现</h3>
+<p>管理员可以对商品的信息进行管理、审核。管理员查询商品信息的实现界面如下图4-4所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm787/blog.014.png"
+        data-srcset="/images/0700ssm/ssm787/blog.014.png, /images/0700ssm/ssm787/blog.014.png 1.5x, /images/0700ssm/ssm787/blog.014.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm787/blog.014.png"
+        title="/images/0700ssm/ssm787/blog.014.png" /></p>
+<p>图4-4管理员查询商品信息的实现界面</p>
+<h3 id="424供应商管理功能的详细界面实现">4.2.4供应商管理功能的详细界面实现</h3>
+<p>管理员可以对供应商信息进行管理和添加。管理员查询供应商信息的实现界面如下图4-5所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm787/blog.015.png"
+        data-srcset="/images/0700ssm/ssm787/blog.015.png, /images/0700ssm/ssm787/blog.015.png 1.5x, /images/0700ssm/ssm787/blog.015.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm787/blog.015.png"
+        title="/images/0700ssm/ssm787/blog.015.png" /></p>
+<p>图4-5管理员查询供应商功能的运行界面</p>
+<h3 id="425商品销售管理功能的详细实现">4.2.5商品销售管理功能的详细实现</h3>
+<p>管理员可以添加和管理商品的销售信息，查询商品销售功能的界面实现如下图4-6所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm787/blog.016.png"
+        data-srcset="/images/0700ssm/ssm787/blog.016.png, /images/0700ssm/ssm787/blog.016.png 1.5x, /images/0700ssm/ssm787/blog.016.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm787/blog.016.png"
+        title="/images/0700ssm/ssm787/blog.016.png" /></p>
+<p>图4-6管理员查询商品销售功能的运行界面</p>
+<h3 id="426商品销售统计功能的详细实现">4.2.6商品销售统计功能的详细实现</h3>
+<p>管理员可以对销售数据进行统计，功能的实现界面如下图4-7所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm787/blog.017.png"
+        data-srcset="/images/0700ssm/ssm787/blog.017.png, /images/0700ssm/ssm787/blog.017.png 1.5x, /images/0700ssm/ssm787/blog.017.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm787/blog.017.png"
+        title="/images/0700ssm/ssm787/blog.017.png" /></p>
+<p>图4-7管理员商品销售统计功能的运行界面</p>
+<h3 id="427采购进退货管理功能的实现界面">4.2.7采购进退货管理功能的实现界面</h3>
+<p>管理员可以查看和管理采购的进货信息、退货信息，实现界面如下图4-8所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm787/blog.018.png"
+        data-srcset="/images/0700ssm/ssm787/blog.018.png, /images/0700ssm/ssm787/blog.018.png 1.5x, /images/0700ssm/ssm787/blog.018.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm787/blog.018.png"
+        title="/images/0700ssm/ssm787/blog.018.png" /></p>
+<p>图4-8管理员查询采购进退货功能的实现界面</p>
+<h3 id="428基础数据管理功能的实现界面">4.2.8基础数据管理功能的实现界面</h3>
+<p>基础数据包括商品类型和供应商类型，管理员可以设置不同的类型。实现界面如下图4-9所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm787/blog.019.png"
+        data-srcset="/images/0700ssm/ssm787/blog.019.png, /images/0700ssm/ssm787/blog.019.png 1.5x, /images/0700ssm/ssm787/blog.019.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm787/blog.019.png"
+        title="/images/0700ssm/ssm787/blog.019.png" /></p>
+<p>图4-9基础数据管理功能的实现界面</p>
+<h2 id="43采购员工权限的功能详细实现">4.3采购员工权限的功能详细实现</h2>
+<h3 id="431采购进货管理功能的详细实现">4.3.1采购进货管理功能的详细实现</h3>
+<p>采购员工功能里可以添加采购进货信息。采购员工添加采购进货功能的实现界面如下图4-10所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm787/blog.020.png"
+        data-srcset="/images/0700ssm/ssm787/blog.020.png, /images/0700ssm/ssm787/blog.020.png 1.5x, /images/0700ssm/ssm787/blog.020.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm787/blog.020.png"
+        title="/images/0700ssm/ssm787/blog.020.png" /></p>
+<p>图4-10采购员工添加采购进货功能的运行界面</p>
+<h3 id="432采购退货管理功能的详细实现">4.3.2采购退货管理功能的详细实现</h3>
+<p>采购员工在退货功能里可以添加退货信息和统计退货信息。采购员工添加采购退货功能的实现界面如下图4-11所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm787/blog.021.png"
+        data-srcset="/images/0700ssm/ssm787/blog.021.png, /images/0700ssm/ssm787/blog.021.png 1.5x, /images/0700ssm/ssm787/blog.021.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm787/blog.021.png"
+        title="/images/0700ssm/ssm787/blog.021.png" /></p>
+<p>图4-11添加采购退货功能的运行界面</p>
+<h3 id="433商品管理功能的详细实现">4.3.3商品管理功能的详细实现</h3>
+<p>采购员工在商品管理里可以查看到商品的库存，实现界面如下图4-12所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm787/blog.022.png"
+        data-srcset="/images/0700ssm/ssm787/blog.022.png, /images/0700ssm/ssm787/blog.022.png 1.5x, /images/0700ssm/ssm787/blog.022.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm787/blog.022.png"
+        title="/images/0700ssm/ssm787/blog.022.png" /></p>
+<p>图4-12查询商品信息功能的运行界面</p>
+<h3 id="434供应商管理功能的详细实现">4.3.4供应商管理功能的详细实现</h3>
+<p>采购员工可以查询供应商，供应商查询实现界面如下图4-13所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm787/blog.023.png"
+        data-srcset="/images/0700ssm/ssm787/blog.023.png, /images/0700ssm/ssm787/blog.023.png 1.5x, /images/0700ssm/ssm787/blog.023.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm787/blog.023.png"
+        title="/images/0700ssm/ssm787/blog.023.png" /></p>
+<p>图4-13供应商查询功能的运行界面</p>
+<h2 id="44销售员工的功能实现">4.4销售员工的功能实现</h2>
+<p>销售员工主要负责商品的销售登记，实现界面如下图4-14所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0700ssm/ssm787/blog.024.png"
+        data-srcset="/images/0700ssm/ssm787/blog.024.png, /images/0700ssm/ssm787/blog.024.png 1.5x, /images/0700ssm/ssm787/blog.024.png 2x"
+        data-sizes="auto"
+        alt="/images/0700ssm/ssm787/blog.024.png"
+        title="/images/0700ssm/ssm787/blog.024.png" /></p>
+<p>图4-14销售员工的功能实现界面</p>
+<p>第5章 系统测试</p>
+<h1 id="系统测试的方">系统测试的方</h1>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2024-07-15</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/ssm787%E5%9F%BA%E4%BA%8Ebs%E7%9A%84%E8%B6%85%E5%B8%82%E5%95%86%E5%93%81%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://chenqi199.github.io/ssm787%E5%9F%BA%E4%BA%8Ebs%E7%9A%84%E8%B6%85%E5%B8%82%E5%95%86%E5%93%81%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" data-title="ssm787基于BS的超市商品管理系统的设计与实现&#43;vue" data-hashtags="ssm超市,超市商品,系统设计,设计实现,商品管理,管理系统"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://chenqi199.github.io/ssm787%E5%9F%BA%E4%BA%8Ebs%E7%9A%84%E8%B6%85%E5%B8%82%E5%95%86%E5%93%81%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" data-hashtag="ssm超市"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://chenqi199.github.io/ssm787%E5%9F%BA%E4%BA%8Ebs%E7%9A%84%E8%B6%85%E5%B8%82%E5%95%86%E5%93%81%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" data-title="ssm787基于BS的超市商品管理系统的设计与实现&#43;vue"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://chenqi199.github.io/ssm787%E5%9F%BA%E4%BA%8Ebs%E7%9A%84%E8%B6%85%E5%B8%82%E5%95%86%E5%93%81%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" data-title="ssm787基于BS的超市商品管理系统的设计与实现&#43;vue"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://chenqi199.github.io/ssm787%E5%9F%BA%E4%BA%8Ebs%E7%9A%84%E8%B6%85%E5%B8%82%E5%95%86%E5%93%81%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" data-title="ssm787基于BS的超市商品管理系统的设计与实现&#43;vue" data-ralateuid="https://gitee.com/chen_q_i"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ssm%E8%B6%85%E5%B8%82/">Ssm超市</a>,&nbsp;<a href="/tags/%E8%B6%85%E5%B8%82%E5%95%86%E5%93%81/">超市商品</a>,&nbsp;<a href="/tags/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/">系统设计</a>,&nbsp;<a href="/tags/%E8%AE%BE%E8%AE%A1%E5%AE%9E%E7%8E%B0/">设计实现</a>,&nbsp;<a href="/tags/%E5%95%86%E5%93%81%E7%AE%A1%E7%90%86/">商品管理</a>,&nbsp;<a href="/tags/%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/">管理系统</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/0784springboot%E9%9F%B3%E4%B9%90%E7%BF%BB%E5%94%B1%E4%B8%8E%E5%88%86%E4%BA%AB%E5%B9%B3%E5%8F%B0/" class="prev" rel="prev" title="0784springboot音乐翻唱与分享平台"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>0784springboot音乐翻唱与分享平台</a>
+            <a href="/ssm786%E5%AE%B6%E4%B9%A1%E7%89%B9%E4%BA%A7%E7%BD%91%E4%B8%8A%E5%95%86%E5%9F%8E%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" class="next" rel="next" title="ssm786家乡特产网上商城的设计与实现&#43;vue">ssm786家乡特产网上商城的设计与实现+vue<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.128.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="chenqi199" target="_blank">chenqi</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

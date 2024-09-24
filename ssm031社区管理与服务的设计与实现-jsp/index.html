@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer" />
+        <meta name="robots" content="noodp" />
+        <title>ssm031社区管理与服务的设计与实现&#43;jsp - chenqi blog</title><meta name="Description" content="Hugo theme - chenqi"><meta property="og:url" content="https://chenqi199.github.io/ssm031%E7%A4%BE%E5%8C%BA%E7%AE%A1%E7%90%86%E4%B8%8E%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/">
+  <meta property="og:site_name" content="chenqi blog">
+  <meta property="og:title" content="ssm031社区管理与服务的设计与实现&#43;jsp">
+  <meta property="og:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm031社区管理与服务的设计与实现&#43;jsp github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第一章 绪论 1.1研究背景 当">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-11-05T22:29:51+08:00">
+    <meta property="article:modified_time" content="2023-11-05T22:29:51+08:00">
+    <meta property="article:tag" content="Ssm社区">
+    <meta property="article:tag" content="社区管理">
+    <meta property="article:tag" content="设计实现">
+    <meta property="article:tag" content="服务设计">
+    <meta property="article:tag" content="管理服务">
+    <meta property="og:image" content="https://chenqi199.github.io/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chenqi199.github.io/logo.png">
+  <meta name="twitter:title" content="ssm031社区管理与服务的设计与实现&#43;jsp">
+  <meta name="twitter:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm031社区管理与服务的设计与实现&#43;jsp github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第一章 绪论 1.1研究背景 当">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chenqi199.github.io/ssm031%E7%A4%BE%E5%8C%BA%E7%AE%A1%E7%90%86%E4%B8%8E%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" /><link rel="prev" href="https://chenqi199.github.io/0026springboot%E7%BD%91%E4%B8%8A%E7%82%B9%E9%A4%90%E7%B3%BB%E7%BB%9F/" /><link rel="next" href="https://chenqi199.github.io/ssm030%E5%B0%8F%E5%AD%A6%E7%94%9F%E8%AF%BE%E5%A4%96%E7%9F%A5%E8%AF%86%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99-vue/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "ssm031社区管理与服务的设计与实现+jsp",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chenqi199.github.io\/ssm031%E7%A4%BE%E5%8C%BA%E7%AE%A1%E7%90%86%E4%B8%8E%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp\/"
+        },"image": ["https:\/\/chenqi199.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "ssm社区, 社区管理, 设计实现, 服务设计, 管理服务","wordcount":  7458 ,
+        "url": "https:\/\/chenqi199.github.io\/ssm031%E7%A4%BE%E5%8C%BA%E7%AE%A1%E7%90%86%E4%B8%8E%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp\/","datePublished": "2023-11-05T22:29:51+08:00","dateModified": "2023-11-05T22:29:51+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/chenqi199.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "chenqi"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/ssm031%E7%A4%BE%E5%8C%BA%E7%AE%A1%E7%90%86%E4%B8%8E%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/ssm031%E7%A4%BE%E5%8C%BA%E7%AE%A1%E7%90%86%E4%B8%8E%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">ssm031社区管理与服务的设计与实现+jsp</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="chenqi199" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>chenqi</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-11-05">2023-11-05</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 7458 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 15 分钟&nbsp;<span id="/ssm031%E7%A4%BE%E5%8C%BA%E7%AE%A1%E7%90%86%E4%B8%8E%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" class="leancloud_visitors" data-flag-title="ssm031社区管理与服务的设计与实现&#43;jsp">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">github 项目仓库</a> 开源仅有后端代码</a></li>
+        <li><a href="#点击播放视频-">点击播放视频 ▼</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#11研究背景">1.1研究背景</a></li>
+    <li><a href="#12-研究现状">1.2 研究现状</a></li>
+    <li><a href="#13-研究内容">1.3 研究内容</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#21-java简介">2.1 Java简介</a></li>
+    <li><a href="#22-mysql数据库">2.2 MySql数据库</a></li>
+    <li><a href="#23-bs结构">2.3 B/S结构</a></li>
+    <li><a href="#-24-tomcat服务器"><code> </code>2.4 Tomcat服务器</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#31可行性分析">3.1可行性分析</a>
+      <ul>
+        <li><a href="#311技术可行性">3.1.1技术可行性</a></li>
+        <li><a href="#312经济可行性">3.1.2经济可行性</a></li>
+        <li><a href="#313运行可行性">3.1.3运行可行性</a></li>
+        <li><a href="#314法律可行性">3.1.4法律可行性</a></li>
+      </ul>
+    </li>
+    <li><a href="#32-系统性能分析">3.2 系统性能分析</a></li>
+    <li><a href="#33-系统功能分析">3.3 系统功能分析</a></li>
+    <li><a href="#34-系统流程分析">3.4 系统流程分析</a>
+      <ul>
+        <li><a href="#341注册流程">3.4.1注册流程</a></li>
+        <li><a href="#342登录流程">3.4.2登录流程</a></li>
+        <li><a href="#343活动报名流程">3.4.3活动报名流程</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#41系统概要设计">4.1系统概要设计</a></li>
+    <li><a href="#42-系统结构设计">4.2 系统结构设计</a></li>
+    <li><a href="#43系统顺序图设计">4.3系统顺序图设计</a>
+      <ul>
+        <li><a href="#431登录模块顺序图">4.3.1登录模块顺序图</a></li>
+        <li><a href="#432添加信息模块顺序图">4.3.2添加信息模块顺序图</a></li>
+      </ul>
+    </li>
+    <li><a href="#44数据库设计">4.4数据库设计</a>
+      <ul>
+        <li><a href="#441-数据库e-r图设计">4.4.1 数据库E-R图设计</a></li>
+        <li><a href="#472-数据库表设计">4.7.2 数据库表设计</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#51社区用户功能模块的实现">5.1社区用户功能模块的实现</a>
+      <ul>
+        <li><a href="#511社区用户注册界面">5.1.1社区用户注册界面</a></li>
+        <li><a href="#512社区用户登录界面">5.1.2社区用户登录界面</a></li>
+        <li><a href="#513论坛发帖界面">5.1.3论坛发帖界面</a></li>
+        <li><a href="#514社区活动详情界面">5.1.4社区活动详情界面</a></li>
+        <li><a href="#515社区公共场所详情界面">5.1.5社区公共场所详情界面</a></li>
+        <li><a href="#516社区活动报名界面">5.1.6社区活动报名界面</a></li>
+        <li><a href="#517住户反馈界面">5.1.7住户反馈界面</a></li>
+      </ul>
+    </li>
+    <li><a href="#52管理员功能模块的实现">5.2管理员功能模块的实现</a>
+      <ul>
+        <li><a href="#521管理员登录界面">5.2.1管理员登录界面</a></li>
+        <li><a href="#522社区用户管理界面">5.2.2社区用户管理界面</a></li>
+        <li><a href="#52社区公共场所管理界面">5.2.社区公共场所管理界面</a></li>
+        <li><a href="#524社区活动管理界面">5.2.4社区活动管理界面</a></li>
+        <li><a href="#525活动报名管理界面">5.2.5活动报名管理界面</a></li>
+        <li><a href="#526住户反馈管理界面">5.2.6住户反馈管理界面</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="项目清单-包安装运行httpchenqi1990site-官网地址-httpchenqi1990site"><a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">项目清单 包安装运行</a> 官网地址 <a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">http://chenqi1990.site</a></h1>
+<h1 id="ssm031社区管理与服务的设计与实现jsphttpsgithubcomgraduationproject-springboot"><a href="https://github.com/GraduationProject-springboot/" target="_blank" rel="noopener noreffer ">ssm031社区管理与服务的设计与实现+jsp</a></h1>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        data-srcset="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 1.5x, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        title="picture" /></p>
+<h3 id="github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">github 项目仓库</a> 开源仅有后端代码</h3>
+<h3 id="点击播放视频-">点击播放视频 ▼</h3>
+<p><a href="https://www.bilibili.com/video/BV1T48XecE9G?p=30" target="_blank" rel="noopener noreffer "><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.sstatic.net/Vp2cE.png"
+        data-srcset="https://i.sstatic.net/Vp2cE.png, https://i.sstatic.net/Vp2cE.png 1.5x, https://i.sstatic.net/Vp2cE.png 2x"
+        data-sizes="auto"
+        alt="https://i.sstatic.net/Vp2cE.png"
+        title="Watch the video" /></a></p>
+<h1 id="第一章--绪论">第一章  绪论</h1>
+<h2 id="11研究背景">1.1研究背景</h2>
+<p>当今时代是飞速发展的信息时代。在各行各业中离不开信息处理，这正是计算机被广泛应用于信息管理系统的环境。计算机的最大好处在于利用它能够进行信息管理。使用计算机进行信息控制，不仅提高了工作效率，而且大大的提高了其安全性。尤其对于复杂的信息管理，计算机能够充分发挥它的优越性。</p>
+<p>对于社区管理和服务方面，虽然现在已经有利用信息技术运作社区管理和服务的例子，但大都处于起步阶段，有的仅仅是一些静态的网页设计或单纯的搬一些必需的表格上电脑，缺乏互动性，这些并没有很好的利用信息技术实现真正的社区管理和服务的自动化。因此为了解决这一问题，更好的为社区居民服务，选择开发本社区管理与服务系统。</p>
+<p>在互联网的迅速发展下，局域网的普及，为建立社区管理与服务系统的设计与实现提供了基础条件。社区管理与服务系统与传统的社区管理与服务方式相比，有着无法比拟的优点，网络共享、传播速度快的特点，社区居民可以随时随地进入系统查询所需信息，同时管理员可通过计算机可对系统相关信息进行全面管理，更好的为广大社区居民服务。</p>
+<h2 id="12-研究现状">1.2 研究现状</h2>
+<p>随着计算机的普及，信息技术也得到了空前的发展，计算机应用的领域也越来越广泛。提高处理事情的效率也已经成为了各行各业所追求的目标。</p>
+<p>在国外，由于计算机发展的比较早，信息技术发展相比于国内更加快速，况且国外对于计算机系统应用的也是广泛。在国外社区管理与服务系统很早就已经开始进行实施了，而且效果相当不错。由于国外应用社区管理与服务系统的时间很长，所以使得他们在实际的工作中发现了计算机系统的不足之处，并将这些不足之处进行弥补。也是通过这些不足之出，国外的研究人员也逐渐制定了完善的规则和标准。并将其应用到社区管理与服务系统中。使得软件系统技术得到了长足的发展。</p>
+<p>在国内，计算机普及的时间比较短，信息技术发展的还不是很完善，对于计算机信息应用的也不是很多，对计算机系统了解还不是透彻，导致计算机系统在实际应用中的实际效果与预期效果大相径庭，国内缺少的是解决计算机系统出现的问题的经验，因为对计算机系统的应用太少，国内缺少的是解决计算机系统所产生的问题的经验，想要社区管理与服务系统方面的研究水平得到提高，就要多遇到问题，然后解决问题，这样积累经验的速度才是最快的。</p>
+<h2 id="13-研究内容">1.3 研究内容</h2>
+<p>根据社区管理与服务系统编写的论文主要阐述了社区管理与服务系统的开发过程中使用的技术，首先进行系统需求分析，进而进行系统设计，最后才是系统功能实现以及测试几个部分，在开始编写论文之前亲自到图书馆借阅Java书籍，MYSQL数据库书籍等编程书籍，然后针对开发的社区管理与服务系统，去网上查找了很多别人做好的系统，根据他们的功能设计进行自己的系统的系统功能结构设计，出具需求报告，最后才是进行程序编码，系统完成后才能进行测试和最后的验收工作，程序开发流程大致如此。</p>
+<p>这次编写的论文包含了6个部分的内容，具体内容如下：</p>
+<p>第一部分绪论：文章主要从课题背景以及研究现状综合阐述了开发此系统的必要性。</p>
+<p>第二部分相关技术：系统开发用到的各种技术都大致做出了简介</p>
+<p>第三部分系统分析：从可行性分析和功能需求分析等角度综合研究了此次开发的系统</p>
+<p>第四部分系统设计：功能模块设计和数据库设计这两部分内容都有专门的表格和图片表示</p>
+<p>第五部分系统实现：进行系统主要功能模块的界面展示</p>
+<p>第六部分系统测试：检验程序是否达到预期目标</p>
+<h1 id="第二章--系统关键技术">第二章  系统关键技术</h1>
+<h2 id="21-java简介">2.1 Java简介</h2>
+<p>Java是一种非常常用的编程语言，在全球编程语言排行版上总是前三。在方兴未艾的计算机技术发展历程中，Java的身影无处不在，并且拥有旺盛的生命力。Java的跨平台能力十分强大，只需一次编译，任何地方都可以运行[1]。除此之外，它还拥有简单的语法和实用的类库，让编程人员可以尽可能将精力集中在问题的求解上，并且许多开源项目和科研成果都是采用它实现的。</p>
+<p>在1995年这一年的5月份，著名的Sun Microsystems公司在程序开发设计上面郑重推出一种面向对象开发的程序设计语言——Java，最开始的时候Java是由詹姆斯.高斯林这位伟大的JAVA之父来进行主导，但是在后来由于各种原因，让甲骨文公司这个针对商业程序创建了oracle大型数据库的公司收购了Java[3]。Java的平台总共算下来有3个，分别为javaME和javaSE以及javaEE这3个java平台。下面将对其进行分别介绍。</p>
+<p>（1）在电脑桌面程序的开发上面需要选择JavaME，这个用得也比较多。</p>
+<p>（2）企业也会根据工作以及业务需要开发各种软件，那么就会选用JavcEE这个支持企业版软件的开发的Java平台，JavcEE主攻运用在企业领域上面的web应用，JavcEE也在javaSE的基础上获得了比如jsp技术 ，Servlet技术等程序开发技术的支持。</p>
+<p>（3）现在生活中手机的普及化，也使得手机端这样的移动设备的软件的兴起，JavaME这个迷你版java平台就能运用于移动端的软件开发操作。</p>
+<h2 id="22-mysql数据库">2.2 MySql数据库</h2>
+<p>MySQL 是关系型数据库管理系统的代表， 因为MySQL是其免费开源的，而且MySQL的功能已经足够用对于学习和中小型企业来讲，所以开发中小型网站都会选择MySQL作为网站的数据库。[13]</p>
+<p>MySQL具有开放性，它是一种关系型数据库管理系统，并且它的源代码可以被大众所熟知[3]。由于MySQL是开放源代码的，因此，只要经过授权就可以在自己需求的基础上对其进行修改。MySQL因为其固有的特点而备受关注，它具有很强的适应性，并且十分可靠，查询速度快。MySQL安装起来非常方便，且数据存储量大，不需要事务化处理。Sql语言拥有很多的方法，在项目中编写sql语句时使用起来是非常方便的，不会像其他语言那样需要编写更多的语句。正因为MySQL使用sql语言进行数据库管理，所以它收到了大多数程序员的热爱。</p>
+<h2 id="23-bs结构">2.3 B/S结构</h2>
+<p>目前软件项目的开发存在两种架构模式，就是B/S模式和C/S模式，C/S模式就是较早流行的客户端和服务端模式，要使用新版应用需要暂停使用更新升级，就好比现在手机上的各种APP应用。而这次课题项目使用的是基于B/S,就是浏览器/服务端而开发的web项目。应用的更新都在服务端上进行，而且项目维护方便，不需要安装，只需要有浏览器和网络就可以了，越来越多的web项目被开发出来，也得到用户的认可。</p>
+<p>系统的设计模式是C/S结构的一种变化或者改进的结构，即使B/S结构，又可以称为Browser/Server(浏览器/服务器)结构，是跟着随着Internet技术的兴起的。这种结构是能够在WWW浏览器完全实现用户的界面，事务逻辑有部分是在前端实现的。但是，主要的还是在服务器端实现的，形成3-tier结构。B/S结构大体是使用逐渐成熟的WWW浏览器技术和各种Script语言以及ActiveX技术，通过浏览器就可实现原来需要复杂专用软件才能实现出需要的功能，还非常的节约成本，这是一种升级的系统构造技术。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm031/blog.001.png"
+        data-srcset="/images/0000ssm/ssm031/blog.001.png, /images/0000ssm/ssm031/blog.001.png 1.5x, /images/0000ssm/ssm031/blog.001.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm031/blog.001.png"
+        title="/images/0000ssm/ssm031/blog.001.png" /></p>
+<p>图2-1  B/S模式三层结构图</p>
+<h2 id="-24-tomcat服务器"><code> </code>2.4 Tomcat服务器</h2>
+<p>Tomcat在JSP 程序调试中应用广泛，它本身就是一款轻量级的源代码开放的能够支持jsp和servlets的目前比较主流的Web 服务器。普遍适用于中小型开发系统以及同时访问系统的用户数量比较少的场景。Tomcat默认模式实际上是Servlet容器，另外Tomcat服务器它能够处理html文件的功能，这点跟Web服务器和IIS同样。只是在处理html文件上，Tomcat服务器没有Apache服务器优越。Tomcat发展以来，目前已经更新到9.0版本了。之所以选择Tomcat服务器来源于它的先进技术，稳定性能等优点，当然最主要的还是Java程序开发者对Tomcat服务器的接纳和认可，Tomcat服务器也深受某些软件开发商的喜爱。</p>
+<h1 id="第三章--系统分析">第三章  系统分析</h1>
+<h2 id="31可行性分析">3.1可行性分析</h2>
+<p>在系统开发之初要进行系统可行分析，这样做的目的就是使用最小成本解决最大问题，一旦程序开发满足用户需要，带来的好处也是很多的。下面我们将从技术上、经济上以及运行上等方面来考虑这个系统到底值不值得开发。</p>
+<h3 id="311技术可行性">3.1.1技术可行性</h3>
+<p>本文将开发的系统，将采用的关键技术包括Java编程语言、B/S结构、MYSQL数据库存储技术等。开发程序选择的是面向对象的，功能强大的，简单易用的Java程序设计语言，数据库的开发工具使用到了MYSQL数据库，由于自己之前接触过一些简单的程序开发方面的设计作品，所以对Eclipse工具的使用比较熟练，对于数据库的操作技巧也有一定的积累。另外，程序开发需要在自己电脑上安装的软件并不多，在win7操作系统的大环境下，能够完全搭建好程序开发的操作环境，比如Eclipse工具，MYSQL数据库工具，以及处理程序图片的Photoshop工具等都能安装在自己的电脑上。总的说来，开发这个程序在技术上是可以实现的，该项目的开发是有保障的。</p>
+<h3 id="312经济可行性">3.1.2经济可行性</h3>
+<p>开发该系统时，优先考虑了使用网页来完成该系统。从已有的Web网页开发的案例、资料中，可知Web所需要的软硬件简单，切开发成本低。且从引进该系统后的预想表现将会比传统方式优异，其具有高效、低成本的特点。可以大量节省管理的人力、物力，具有一定经济效益和社会效益。综上所述，该系统具有高经济可行性</p>
+<h3 id="313运行可行性">3.1.3运行可行性</h3>
+<p>运行可行性是对组织结构的影响，现有人员和机构和环境对系统的适应性及人员培训补充计划的可行性。以目前信息技术的普及程度之广、相关工作的操作人员的水平之高，是足以胜任的。综上所述，该系统具有高运行可行性。</p>
+<h3 id="314法律可行性">3.1.4法律可行性</h3>
+<p>（1）所使用的技术或者资料（书籍、文献、软件）合乎中国法律。</p>
+<p>（2）所开发过程不涉合同、侵权、责任和各种法律相抵的问题。</p>
+<p>（3）所完成系统不存在侵犯版权问题。</p>
+<p>（4）完全符合中国的《中华人民共和国著作权法》和《计算机软件保护条例》。</p>
+<p>综上所述，该系统具有高法律可行性。</p>
+<p>通过分析论证，该社区管理与服务系统总体上是具有高可行性的。</p>
+<h2 id="32-系统性能分析">3.2 系统性能分析</h2>
+<p>达到如以下的性能需求指标，可以保证系统的安全性、可靠性、稳定性，需要：</p>
+<p>（1）系统响应的精确性和实时性</p>
+<p>这是本系统必要的性能。考虑到未来系统可能承受的工作量，需要能够承担得起企业级的信息处理需求。实时性是该系统的生命线，因此需采用软实时系统来进行保证。</p>
+<p>（2）系统的开放性和系统的可扩充性</p>
+<p>本系统是一个较为初期的一个雏形，以后势必会根据的社区管理与服务需求的扩大或转变。这就要求本系统需要提供足够的开放型和可扩充性，只要符合本系统的设计准则都可以将新的模块加入。通过这样的升级、维护来完成本系统后期的生命周期。</p>
+<p>（3）系统的易用性和易维护性</p>
+<p>要求不论是熟悉或不熟悉计算机的用户都可以对系统进行有效的人机交互。因此提供给用户一个友好、漂亮的图形接口是非常重要的。这可以通过发一些纸质和实际的界面模型问卷调查来获得最佳的效果。此外，也考虑到维护本系统的操作人员，有效的手段的数据备份、管理和错误检测、恢复需要被提供给相关的人员。</p>
+<p>（4）系统的响应速度</p>
+<p>要求系统在任何情况下的平均响应速度达到秒级，具有软实时性。一是为了保证了系统的工作效率，二为了防止系统错误、瘫痪。</p>
+<h2 id="33-系统功能分析">3.3 系统功能分析</h2>
+<p>本社区管理与服务系统主要包括管理员功能模块和社区用户功能模块两大部分，下面分别介绍其功能：</p>
+<p>（1）管理员功能模块</p>
+<p>管理员是这两类用户中权限最高的，管理员登录后可对系统进行全面管理，确保系统正常稳定运行，管理员主要功能包括个人中心、社区用户管理、社区停车管理、社区公共场所管理、新闻类型管理、新闻资讯管理、社区政务服务管理、社区活动管理、活动报名管理、服务类型管理、社区安保维护管理、住户反馈管理、公共场所预约管理、社区论坛以及系统管理。管理员用例图如图3-1所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm031/blog.002.png"
+        data-srcset="/images/0000ssm/ssm031/blog.002.png, /images/0000ssm/ssm031/blog.002.png 1.5x, /images/0000ssm/ssm031/blog.002.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm031/blog.002.png"
+        title="/images/0000ssm/ssm031/blog.002.png" /></p>
+<p>图3-1 管理员用例图</p>
+<p>（2）社区用户功能模块</p>
+<p>社区用户在系统前台可查看系统信息，包括首页、社区公共场所、新闻资讯、社区政务服务、社区活动、论坛信息等，注册登录后主要功能模块包括个人中心、活动报名管理、住户反馈管理以及公告场所预约管理，社区用户用例图如图3-2所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm031/blog.003.png"
+        data-srcset="/images/0000ssm/ssm031/blog.003.png, /images/0000ssm/ssm031/blog.003.png 1.5x, /images/0000ssm/ssm031/blog.003.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm031/blog.003.png"
+        title="/images/0000ssm/ssm031/blog.003.png" /></p>
+<p>图3-2 社区用户用例图</p>
+<h2 id="34-系统流程分析">3.4 系统流程分析</h2>
+<h3 id="341注册流程">3.4.1注册流程</h3>
+<p>未有账号的社区用户可进行注册操作，注册流程图如图3-3所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm031/blog.004.png"
+        data-srcset="/images/0000ssm/ssm031/blog.004.png, /images/0000ssm/ssm031/blog.004.png 1.5x, /images/0000ssm/ssm031/blog.004.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm031/blog.004.png"
+        title="/images/0000ssm/ssm031/blog.004.png" /></p>
+<p>图3-3 注册流程图</p>
+<h3 id="342登录流程">3.4.2登录流程</h3>
+<p>登录模块主要满足了管理员和社区用户的权限登录，用户在登录界面输入用户名和密码，点击登录，通过验证，进入系统，登录流程图如图3-4所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm031/blog.005.png"
+        data-srcset="/images/0000ssm/ssm031/blog.005.png, /images/0000ssm/ssm031/blog.005.png 1.5x, /images/0000ssm/ssm031/blog.005.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm031/blog.005.png"
+        title="/images/0000ssm/ssm031/blog.005.png" /></p>
+<p>图3-4登录流程图</p>
+<h3 id="343活动报名流程">3.4.3活动报名流程</h3>
+<p>社区用户在活动报名时需要登录系统，只要登录后才可进行活动报名操作，用户活动报名的流程分析如图3-5所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm031/blog.006.png"
+        data-srcset="/images/0000ssm/ssm031/blog.006.png, /images/0000ssm/ssm031/blog.006.png 1.5x, /images/0000ssm/ssm031/blog.006.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm031/blog.006.png"
+        title="/images/0000ssm/ssm031/blog.006.png" /></p>
+<p>图3-5 活动报名流程图</p>
+<h1 id="第四章--系统设计">第四章  系统设计</h1>
+<h2 id="41系统概要设计">4.1系统概要设计</h2>
+<p>本社区管理与服务系统并没有使用C/S结构，而是基于网络浏览器的方式去访问服务器，进而获取需要的数据信息，这种依靠浏览器进行数据访问的模式就是现在用得比较广泛的适用于广域网并且没有网速限制要求的B/S结构，图4-1就是开发出来的程序工作原理图。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm031/blog.007.png"
+        data-srcset="/images/0000ssm/ssm031/blog.007.png, /images/0000ssm/ssm031/blog.007.png 1.5x, /images/0000ssm/ssm031/blog.007.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm031/blog.007.png"
+        title="/images/0000ssm/ssm031/blog.007.png" /></p>
+<p>图4-1 系统工作原理图</p>
+<h2 id="42-系统结构设计">4.2 系统结构设计</h2>
+<p>根据前面的各项设计分析，按照系统开发的基本理念对网站进行分解，从模块上主要可分为管理员功能模块和用户功能模块两大部分，本社区管理与服务系统结构图如图4-2所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm031/blog.008.png"
+        data-srcset="/images/0000ssm/ssm031/blog.008.png, /images/0000ssm/ssm031/blog.008.png 1.5x, /images/0000ssm/ssm031/blog.008.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm031/blog.008.png"
+        title="/images/0000ssm/ssm031/blog.008.png" /></p>
+<p>图4-2 系统结构图</p>
+<h2 id="43系统顺序图设计">4.3系统顺序图设计</h2>
+<h3 id="431登录模块顺序图">4.3.1登录模块顺序图</h3>
+<p>登录模块主要完成了社区用户和管理员的权限登录，登录模块的顺序图如图 4-3所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm031/blog.009.png"
+        data-srcset="/images/0000ssm/ssm031/blog.009.png, /images/0000ssm/ssm031/blog.009.png 1.5x, /images/0000ssm/ssm031/blog.009.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm031/blog.009.png"
+        title="/images/0000ssm/ssm031/blog.009.png" /></p>
+<p>图4-3用户登录顺序图</p>
+<h3 id="432添加信息模块顺序图">4.3.2添加信息模块顺序图</h3>
+<p>管理员和社区用户登录后均可进行统计信息操作，添加信息顺序图如图4-4所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm031/blog.010.png"
+        data-srcset="/images/0000ssm/ssm031/blog.010.png, /images/0000ssm/ssm031/blog.010.png 1.5x, /images/0000ssm/ssm031/blog.010.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm031/blog.010.png"
+        title="/images/0000ssm/ssm031/blog.010.png" /></p>
+<p>图4-4添加信息顺序图</p>
+<h2 id="44数据库设计">4.4数据库设计</h2>
+<h3 id="441-数据库e-r图设计">4.4.1 数据库E-R图设计</h3>
+<p>系统E-R图就是系统的实体关系图，它是用来描述某一组织(单位)的概念模型，提供了表示实体、属性和联系的方法。构成E-R图的基本要素是实体、属性和关系。实体是指客观存在并可相互区分的事特；属性指指实体所具有的每一个特性。根据数据库中的几个表分别绘制数据库的实体图。以下给出本系统中比较重要的实体E-R图。</p>
+<p>（1）社区论坛信息实体E- R图，如图4-5所示</p>
+<p><code>     </code><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm031/blog.011.png"
+        data-srcset="/images/0000ssm/ssm031/blog.011.png, /images/0000ssm/ssm031/blog.011.png 1.5x, /images/0000ssm/ssm031/blog.011.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm031/blog.011.png"
+        title="/images/0000ssm/ssm031/blog.011.png" /></p>
+<p>图4-5  社区论坛信息实体图</p>
+<p>（2）管理员信息实体E- R图，如图4-6所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm031/blog.012.png"
+        data-srcset="/images/0000ssm/ssm031/blog.012.png, /images/0000ssm/ssm031/blog.012.png 1.5x, /images/0000ssm/ssm031/blog.012.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm031/blog.012.png"
+        title="/images/0000ssm/ssm031/blog.012.png" /></p>
+<p>图4-6 管理员信息实体图</p>
+<p>（3）社区用户信息实体E- R图，如图4-7所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm031/blog.013.png"
+        data-srcset="/images/0000ssm/ssm031/blog.013.png, /images/0000ssm/ssm031/blog.013.png 1.5x, /images/0000ssm/ssm031/blog.013.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm031/blog.013.png"
+        title="/images/0000ssm/ssm031/blog.013.png" /></p>
+<p>图4-7  社区用户信息实体图</p>
+<p>（4）社区活动信息实体E- R图，如图4-8所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm031/blog.014.png"
+        data-srcset="/images/0000ssm/ssm031/blog.014.png, /images/0000ssm/ssm031/blog.014.png 1.5x, /images/0000ssm/ssm031/blog.014.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm031/blog.014.png"
+        title="/images/0000ssm/ssm031/blog.014.png" /></p>
+<p>图4-8 社区活动信息实体图</p>
+<p>（5）社区公共场所信息实体E- R图，如图4-9所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm031/blog.015.png"
+        data-srcset="/images/0000ssm/ssm031/blog.015.png, /images/0000ssm/ssm031/blog.015.png 1.5x, /images/0000ssm/ssm031/blog.015.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm031/blog.015.png"
+        title="/images/0000ssm/ssm031/blog.015.png" /></p>
+<p>图4-9  区公共场所信息实体图</p>
+<h3 id="472-数据库表设计">4.7.2 数据库表设计</h3>
+<p>本社区管理与服务系统需要后台数据库，本系统采用MYSQL数据库作为数据存储，下面介绍数据库中的各个表的详细信息。</p>
+<p>表4-1 社区论坛信息表(forum)</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">是否允许空</th>
+<th style="text-align:center">字段含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint(20)</td>
+<td style="text-align:center">NOT NULL</td>
+<td style="text-align:center">编号</td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">创建时间</td>
+</tr>
+<tr>
+<td style="text-align:center">title</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">帖子标题</td>
+</tr>
+<tr>
+<td style="text-align:center">content</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">帖子内容</td>
+</tr>
+<tr>
+<td style="text-align:center">parentid</td>
+<td style="text-align:center">bigint(20)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">父节点编号</td>
+</tr>
+<tr>
+<td style="text-align:center">userid</td>
+<td style="text-align:center">bigint(20)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">用户编号</td>
+</tr>
+<tr>
+<td style="text-align:center">username</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">用户名</td>
+</tr>
+<tr>
+<td style="text-align:center">isdone</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">状态</td>
+</tr>
+<tr>
+<td style="text-align:center">表4-2  管理员信息表(users)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">是否允许空</th>
+<th style="text-align:center">字段含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint(20)</td>
+<td style="text-align:center">NOT NULL</td>
+<td style="text-align:center">编号</td>
+</tr>
+<tr>
+<td style="text-align:center">username</td>
+<td style="text-align:center">varchar(100)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">用户名</td>
+</tr>
+<tr>
+<td style="text-align:center">password</td>
+<td style="text-align:center">varchar(100)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">密码</td>
+</tr>
+<tr>
+<td style="text-align:center">role</td>
+<td style="text-align:center">varchar(100)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">角色</td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">新增时间</td>
+</tr>
+<tr>
+<td style="text-align:center">表4-3  社区用户信息表(shequyonghu)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">是否允许空</th>
+<th style="text-align:center">字段含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint(20)</td>
+<td style="text-align:center">NOT NULL</td>
+<td style="text-align:center">编号</td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">创建时间</td>
+</tr>
+<tr>
+<td style="text-align:center">yonghuzhanghao</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">用户账号</td>
+</tr>
+<tr>
+<td style="text-align:center">mima</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">密码</td>
+</tr>
+<tr>
+<td style="text-align:center">yonghuxingming</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">用户姓名</td>
+</tr>
+<tr>
+<td style="text-align:center">xingbie</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">性别</td>
+</tr>
+<tr>
+<td style="text-align:center">nianling</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">年龄</td>
+</tr>
+<tr>
+<td style="text-align:center">touxiang</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">头像</td>
+</tr>
+<tr>
+<td style="text-align:center">yonghushouji</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">用户手机</td>
+</tr>
+<tr>
+<td style="text-align:center">zhuzhi</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">住址</td>
+</tr>
+<tr>
+<td style="text-align:center">表4-4  社区活动信息表(shequhuodong)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">是否允许空</th>
+<th style="text-align:center">字段含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint(20)</td>
+<td style="text-align:center">NOT NULL</td>
+<td style="text-align:center">编号</td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">创建时间</td>
+</tr>
+<tr>
+<td style="text-align:center">huodongmingcheng</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">活动名称</td>
+</tr>
+<tr>
+<td style="text-align:center">huodongtupian</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">活动图片</td>
+</tr>
+<tr>
+<td style="text-align:center">`baomingtiaojian</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">报名条件</td>
+</tr>
+<tr>
+<td style="text-align:center">kaishishijian</td>
+<td style="text-align:center">date</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">开始时间</td>
+</tr>
+<tr>
+<td style="text-align:center">jieshushijian</td>
+<td style="text-align:center">date</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">结束时间</td>
+</tr>
+<tr>
+<td style="text-align:center">huodongneirong</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">活动内容</td>
+</tr>
+<tr>
+<td style="text-align:center">huodongdidian</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">活动地点</td>
+</tr>
+<tr>
+<td style="text-align:center">jubanfang`</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">举办方</td>
+</tr>
+<tr>
+<td style="text-align:center">lianxidianhua</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">联系电话</td>
+</tr>
+<tr>
+<td style="text-align:center">表4-5  社区公共场所信息表(shequgonggongchangsuo)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">是否允许空</th>
+<th style="text-align:center">字段含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint(20)</td>
+<td style="text-align:center">NOT NULL</td>
+<td style="text-align:center">编号</td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">创建时间</td>
+</tr>
+<tr>
+<td style="text-align:center">changsuomingcheng</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">场所名称</td>
+</tr>
+<tr>
+<td style="text-align:center">`didian</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">地点</td>
+</tr>
+<tr>
+<td style="text-align:center">fengmiantupian</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">封面图片</td>
+</tr>
+<tr>
+<td style="text-align:center">yongtu</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">用途</td>
+</tr>
+<tr>
+<td style="text-align:center">fuzeren</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">负责人</td>
+</tr>
+<tr>
+<td style="text-align:center">`lianxidianhua</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">联系电话</td>
+</tr>
+<tr>
+<td style="text-align:center">kaifangshijian</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">开始时间</td>
+</tr>
+</tbody>
+</table>
+<h1 id="第五章--系统的实现">第五章  系统的实现</h1>
+<h2 id="51社区用户功能模块的实现">5.1社区用户功能模块的实现</h2>
+<p>社区用户进入系统前台可查看系统信息，包括首页、社区公共场所、新闻资讯、社区政务服务和社区活动等，系统主界面如图5-1所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm031/blog.016.png"
+        data-srcset="/images/0000ssm/ssm031/blog.016.png, /images/0000ssm/ssm031/blog.016.png 1.5x, /images/0000ssm/ssm031/blog.016.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm031/blog.016.png"
+        title="/images/0000ssm/ssm031/blog.016.png" /></p>
+<p>图5-1 系统主界面</p>
+<h3 id="511社区用户注册界面">5.1.1社区用户注册界面</h3>
+<p>未有账号的社区用户可进入注册界面进行注册操作，社区用户注册界面如图5-2所示 。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm031/blog.017.png"
+        data-srcset="/images/0000ssm/ssm031/blog.017.png, /images/0000ssm/ssm031/blog.017.png 1.5x, /images/0000ssm/ssm031/blog.017.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm031/blog.017.png"
+        title="/images/0000ssm/ssm031/blog.017.png" /></p>
+<p>图5-2  社区用户注册界面</p>
+<h3 id="512社区用户登录界面">5.1.2社区用户登录界面</h3>
+<p>社区用户要想实现活动报名等操作，必须登录系统，社区用户登录界面如图5-3所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm031/blog.018.png"
+        data-srcset="/images/0000ssm/ssm031/blog.018.png, /images/0000ssm/ssm031/blog.018.png 1.5x, /images/0000ssm/ssm031/blog.018.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm031/blog.018.png"
+        title="/images/0000ssm/ssm031/blog.018.png" /></p>
+<p>图5-3 社区用户登录界面</p>
+<h3 id="513论坛发帖界面">5.1.3论坛发帖界面</h3>
+<p>社区用户登录后可进行论坛发帖操作，论坛发帖界面如图5-4所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm031/blog.019.png"
+        data-srcset="/images/0000ssm/ssm031/blog.019.png, /images/0000ssm/ssm031/blog.019.png 1.5x, /images/0000ssm/ssm031/blog.019.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm031/blog.019.png"
+        title="/images/0000ssm/ssm031/blog.019.png" /></p>
+<p>图5-4  论坛发帖界面</p>
+<h3 id="514社区活动详情界面">5.1.4社区活动详情界面</h3>
+<p>社区用户可选择社区活动查看详情信息，登录后可实现报名操作，社区活动详情界面如图5-5所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm031/blog.020.png"
+        data-srcset="/images/0000ssm/ssm031/blog.020.png, /images/0000ssm/ssm031/blog.020.png 1.5x, /images/0000ssm/ssm031/blog.020.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm031/blog.020.png"
+        title="/images/0000ssm/ssm031/blog.020.png" /></p>
+<p>图5-5  社区活动详情界面</p>
+<h3 id="515社区公共场所详情界面">5.1.5社区公共场所详情界面</h3>
+<p>社区用户可选择社区公共场所查看详情信息，登录后可进行预约，社区公共场所详情界面如图5-6所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm031/blog.021.png"
+        data-srcset="/images/0000ssm/ssm031/blog.021.png, /images/0000ssm/ssm031/blog.021.png 1.5x, /images/0000ssm/ssm031/blog.021.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm031/blog.021.png"
+        title="/images/0000ssm/ssm031/blog.021.png" /></p>
+<p>图5-6  社区公共场所详情界面</p>
+<h3 id="516社区活动报名界面">5.1.6社区活动报名界面</h3>
+<p>社区用户可选择活动进行报名操作，在报名时需要填写相关信息，社区活动报名界面如图5-7所示</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm031/blog.022.png"
+        data-srcset="/images/0000ssm/ssm031/blog.022.png, /images/0000ssm/ssm031/blog.022.png 1.5x, /images/0000ssm/ssm031/blog.022.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm031/blog.022.png"
+        title="/images/0000ssm/ssm031/blog.022.png" /></p>
+<p>图5-7  社区活动报名界面</p>
+<h3 id="517住户反馈界面">5.1.7住户反馈界面</h3>
+<p>社区用户登录后可进行统计住户反馈信息，住户反馈界面如图5-8所示</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm031/blog.023.png"
+        data-srcset="/images/0000ssm/ssm031/blog.023.png, /images/0000ssm/ssm031/blog.023.png 1.5x, /images/0000ssm/ssm031/blog.023.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm031/blog.023.png"
+        title="/images/0000ssm/ssm031/blog.023.png" /></p>
+<p>图5-8  住户反馈界面</p>
+<h2 id="52管理员功能模块的实现">5.2管理员功能模块的实现</h2>
+<h3 id="521管理员登录界面">5.2.1管理员登录界面</h3>
+<p>管理员要想进入后台对系统进行管理操作，必须登录系统后台，管理员登录界面如图5-9所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm031/blog.024.png"
+        data-srcset="/images/0000ssm/ssm031/blog.024.png, /images/0000ssm/ssm031/blog.024.png 1.5x, /images/0000ssm/ssm031/blog.024.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm031/blog.024.png"
+        title="/images/0000ssm/ssm031/blog.024.png" /></p>
+<p>图5-9  管理员登录界面</p>
+<h3 id="522社区用户管理界面">5.2.2社区用户管理界面</h3>
+<p>管理员在社区用户管理界面可查看所有社区用户信息，并可对其进行修改和删除操作，社区用户管理界面如图5-10所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm031/blog.025.png"
+        data-srcset="/images/0000ssm/ssm031/blog.025.png, /images/0000ssm/ssm031/blog.025.png 1.5x, /images/0000ssm/ssm031/blog.025.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm031/blog.025.png"
+        title="/images/0000ssm/ssm031/blog.025.png" /></p>
+<p>图5-10 社区用户管理界面</p>
+<h3 id="52社区公共场所管理界面">5.2.社区公共场所管理界面</h3>
+<p>管理员可新增、编辑和删除社区公共场所信息，社区公共场所管理界面如图5-11所示，添加社区公共场所界面展示如图5-12所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm031/blog.026.png"
+        data-srcset="/images/0000ssm/ssm031/blog.026.png, /images/0000ssm/ssm031/blog.026.png 1.5x, /images/0000ssm/ssm031/blog.026.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm031/blog.026.png"
+        title="/images/0000ssm/ssm031/blog.026.png" /></p>
+<p>图5-11 社区公共场所管理界面</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm031/blog.027.png"
+        data-srcset="/images/0000ssm/ssm031/blog.027.png, /images/0000ssm/ssm031/blog.027.png 1.5x, /images/0000ssm/ssm031/blog.027.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm031/blog.027.png"
+        title="/images/0000ssm/ssm031/blog.027.png" /></p>
+<p>图5-12 添加社区公共场所界面</p>
+<h3 id="524社区活动管理界面">5.2.4社区活动管理界面</h3>
+<p>管理员可新增、修改和删除社区活动信息，社区活动管理界面如图5-13所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm031/blog.028.png"
+        data-srcset="/images/0000ssm/ssm031/blog.028.png, /images/0000ssm/ssm031/blog.028.png 1.5x, /images/0000ssm/ssm031/blog.028.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm031/blog.028.png"
+        title="/images/0000ssm/ssm031/blog.028.png" /></p>
+<p>图5-13  社区活动管理界面</p>
+<h3 id="525活动报名管理界面">5.2.5活动报名管理界面</h3>
+<p>管理员可查看社区用户活动报名信息，并可对其进行审核、修改和删除操作，活动报名管理界面如图5-14所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm031/blog.029.png"
+        data-srcset="/images/0000ssm/ssm031/blog.029.png, /images/0000ssm/ssm031/blog.029.png 1.5x, /images/0000ssm/ssm031/blog.029.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm031/blog.029.png"
+        title="/images/0000ssm/ssm031/blog.029.png" /></p>
+<p>图5-14  活动报名管理界面</p>
+<h3 id="526住户反馈管理界面">5.2.6住户反馈管理界面</h3>
+<p>管理员可查看社区住户反馈信息，并可对其进行审核、修改和删除操作，住户反馈管理界面展示如图5-15所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm031/blog.030.png"
+        data-srcset="/images/0000ssm/ssm031/blog.030.png, /images/0000ssm/ssm031/blog.030.png 1.5x, /images/0000ssm/ssm031/blog.030.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm031/blog.030.png"
+        title="/images/0000ssm/ssm031/blog.030.png" /></p>
+<p>图5-15  住户反馈管理界面</p>
+<h1 id="heading"></h1>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2023-11-05</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/ssm031%E7%A4%BE%E5%8C%BA%E7%AE%A1%E7%90%86%E4%B8%8E%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://chenqi199.github.io/ssm031%E7%A4%BE%E5%8C%BA%E7%AE%A1%E7%90%86%E4%B8%8E%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" data-title="ssm031社区管理与服务的设计与实现&#43;jsp" data-hashtags="ssm社区,社区管理,设计实现,服务设计,管理服务"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://chenqi199.github.io/ssm031%E7%A4%BE%E5%8C%BA%E7%AE%A1%E7%90%86%E4%B8%8E%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" data-hashtag="ssm社区"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://chenqi199.github.io/ssm031%E7%A4%BE%E5%8C%BA%E7%AE%A1%E7%90%86%E4%B8%8E%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" data-title="ssm031社区管理与服务的设计与实现&#43;jsp"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://chenqi199.github.io/ssm031%E7%A4%BE%E5%8C%BA%E7%AE%A1%E7%90%86%E4%B8%8E%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" data-title="ssm031社区管理与服务的设计与实现&#43;jsp"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://chenqi199.github.io/ssm031%E7%A4%BE%E5%8C%BA%E7%AE%A1%E7%90%86%E4%B8%8E%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" data-title="ssm031社区管理与服务的设计与实现&#43;jsp" data-ralateuid="https://gitee.com/chen_q_i"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ssm%E7%A4%BE%E5%8C%BA/">Ssm社区</a>,&nbsp;<a href="/tags/%E7%A4%BE%E5%8C%BA%E7%AE%A1%E7%90%86/">社区管理</a>,&nbsp;<a href="/tags/%E8%AE%BE%E8%AE%A1%E5%AE%9E%E7%8E%B0/">设计实现</a>,&nbsp;<a href="/tags/%E6%9C%8D%E5%8A%A1%E8%AE%BE%E8%AE%A1/">服务设计</a>,&nbsp;<a href="/tags/%E7%AE%A1%E7%90%86%E6%9C%8D%E5%8A%A1/">管理服务</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/0026springboot%E7%BD%91%E4%B8%8A%E7%82%B9%E9%A4%90%E7%B3%BB%E7%BB%9F/" class="prev" rel="prev" title="0026springboot网上点餐系统"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>0026springboot网上点餐系统</a>
+            <a href="/ssm030%E5%B0%8F%E5%AD%A6%E7%94%9F%E8%AF%BE%E5%A4%96%E7%9F%A5%E8%AF%86%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99-vue/" class="next" rel="next" title="ssm030小学生课外知识学习网站&#43;vue">ssm030小学生课外知识学习网站+vue<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.128.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="chenqi199" target="_blank">chenqi</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

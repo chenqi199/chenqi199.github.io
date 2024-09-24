@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.min.css",
-	"sourceRoot": "/Users/chen/work/jianzhi/001Code2600/git_blog/chenqi199.github.io/chenqi-blog",
+	"sourceRoot": "/Users/chen/work/jianzhi/001Code2600/git_blog/chenqi199_github_io/chenqi-blog",
 	"sources": [
 		"themes/LoveIt/assets/css/style.scss",
 		"themes/LoveIt/assets/lib/normalize/normalize.css",

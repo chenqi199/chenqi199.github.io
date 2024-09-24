@@ -1,17 +1,16 @@
 # 0038springboot基于Web足球青训俱乐部管理后台系统开发
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0038springboot基于Web足球青训俱乐部管理后台系统开发](https://github.com/GraduationProject-springboot/0038springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV16ia6epENY?p=39)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
 
@@ -64,7 +63,7 @@ Java是一门伟大的纯面向对象的编程语言和编程语言。同时，�
 
 B/S架构这种只需要用户在浏览器上运行不需要再下载客户端的模式，使用浏览器就可以实现和下载客户端的一样复杂的功能。给管理系统的用户带来了很大的方便，节约了大量的成本。现在B/S架构已经在Web开发上被广泛运用，它的基础内容也在不断的完善更新。
 
-![](/images/0000stringboot/0038springboot/blog.001.png)
+![](/images/0000wxapp//blog.001.png)
 
 图2-1  B/S模式三层结构图
 ## 2.3 MYSQL数据库
@@ -106,7 +105,7 @@ Spring Boot是一个简化程序设置的拥有开箱即用的框架，它主要
 
 学员用例图如图3-1所示。
 
-![](/images/0000stringboot/0038springboot/blog.002.png)
+![](/images/0000wxapp//blog.002.png)
 
 图3-1 学员用例图
 
@@ -114,7 +113,7 @@ Spring Boot是一个简化程序设置的拥有开箱即用的框架，它主要
 
 管理员用例图如图3-2所示。
 
-![](/images/0000stringboot/0038springboot/blog.003.png)
+![](/images/0000wxapp//blog.003.png)
 
 图3-2 管理员用例图
 
@@ -122,20 +121,20 @@ Spring Boot是一个简化程序设置的拥有开箱即用的框架，它主要
 
 教练用例图如图3-2所示。
 
-![](/images/0000stringboot/0038springboot/blog.004.png)
+![](/images/0000wxapp//blog.004.png)
 
 图3-3 教练用例图
 ## 3.4 系统流程分析
 ### 3.4.1注册流程
 未有账号的学员和教练均可进行注册操作，学员注册流程图如图3-4所示。
 
-![](/images/0000stringboot/0038springboot/blog.005.png)
+![](/images/0000wxapp//blog.005.png)
 
 图3-4注册流程图
 ### 3.4.2登录流程
 学员、教练和管理员均可进行登录操作，用户登录流程图如图3-5所示。
 
-![](/images/0000stringboot/0038springboot/blog.006.png)
+![](/images/0000wxapp//blog.006.png)
 
 图3-5 登录流程图
 #
@@ -144,7 +143,7 @@ Spring Boot是一个简化程序设置的拥有开箱即用的框架，它主要
 ## 4.1 系统架构设计
 B/S系统架构是本系统开发采用的结构模式，使用B/S模式开发程序以及程序后期维护层面需要的经济成本是很低的，用户能够承担得起。使用这样的模式开发，用户使用起来舒心愉悦，不会觉得别扭，操作很容易就熟练了。而且方便管理。采用B/S体系结构开发的应用软件仅仅需要在客户端安装谷歌浏览器或者其他浏览器就可以操作，对于维护和升级操作则在服务器端就能完成，不用在客户端进行操作，这样就节省了许多开销，B/S模式能够保证软件应用的跨平台性和通用性，采用它开发软件是最佳选择。B/S模式示意图如图4-1所示。
 
-![](/images/0000stringboot/0038springboot/blog.007.png)
+![](/images/0000wxapp//blog.007.png)
 
 图4-1 B/S模式示意图
 ## 4.2 系统结构设计
@@ -152,7 +151,7 @@ B/S系统架构是本系统开发采用的结构模式，使用B/S模式开发�
 
 本基于Web的足球青训俱乐部管理后台系统由学员功能模块、教练功能模块和管理员功能模块三大部分构成，系统的结构图如图4-2所示。
 
-![](/images/0000stringboot/0038springboot/blog.008.png)
+![](/images/0000wxapp//blog.008.png)
 
 图4-2系统结构图
 ## 4.3 数据库设计
@@ -163,37 +162,37 @@ B/S系统架构是本系统开发采用的结构模式，使用B/S模式开发�
 
 （1）课程安排信息实体E- R图，如图4-5所示：
 
-![](/images/0000stringboot/0038springboot/blog.009.png)
+![](/images/0000wxapp//blog.009.png)
 
 图4-5 课程安排信息实体图
 
 （2）教练信息实体E- R图，如图4-6所示：
 
-![](/images/0000stringboot/0038springboot/blog.010.png)
+![](/images/0000wxapp//blog.010.png)
 
 图4-6 教练信息实体图
 
 （3）订单实体E- R图，如图4-7所示：
 
-![](/images/0000stringboot/0038springboot/blog.011.png)
+![](/images/0000wxapp//blog.011.png)
 
 图4-7  订单实体图
 
 （4）管理员实体E- R图，如图4-8所示：
 
-![](/images/0000stringboot/0038springboot/blog.012.png)
+![](/images/0000wxapp//blog.012.png)
 
 图4-8  管理员实体图
 
 （5）学员实体E- R图，如图4-9所示：
 
-![](/images/0000stringboot/0038springboot/blog.013.png)
+![](/images/0000wxapp//blog.013.png)
 
 图4-9  学员实体图
 
 （6）商品实体E- R图，如图4-10所示：
 
-![](/images/0000stringboot/0038springboot/blog.014.png)
+![](/images/0000wxapp//blog.014.png)
 
 图4-10  商品实体图
 ### 4.3.2数据库表设计
@@ -301,93 +300,93 @@ B/S系统架构是本系统开发采用的结构模式，使用B/S模式开发�
 ## 5.1 学员功能模块的实现
 学员进入本系统可查看系统信息，系统前台主界面展示如图5-1所示。
 
-![](/images/0000stringboot/0038springboot/blog.015.png)
+![](/images/0000wxapp//blog.015.png)
 
 图5-1系统主界面图
 ### 5.1.1学员注册界面
 未有账号的学员可进入注册界面进行注册操作，学员注册界面展示如图5-2所示。
 
-![](/images/0000stringboot/0038springboot/blog.016.png)
+![](/images/0000wxapp//blog.016.png)
 
 图5-2学员注册界面图
 ### 5.1.2学员登录界面
 学员要想进行商品购买操作，必须登录系统，学员登录界面展示如图5-3所示。
 
-![](/images/0000stringboot/0038springboot/blog.017.png)
+![](/images/0000wxapp//blog.017.png)
 
 图5-3学员登录界面图
 ### 5.1.3商品详情界面
 学员在商品详情界面可查看商品详细信息，登录后可加入购物车或者立即购买操作，商品详情界面展示如图5-4所示。
 
-![](/images/0000stringboot/0038springboot/blog.018.png)
+![](/images/0000wxapp//blog.018.png)
 
 图5-4 商品详情界面图
 ### 5.1.4课程安排详情界面
 学员可选择课程安排查看详情信息，登录后可进行上课签到操作，课程安排详情界面展示如图5-5所示。
 
-![](/images/0000stringboot/0038springboot/blog.019.png)
+![](/images/0000wxapp//blog.019.png)
 
 图5-5 课程安排详情界面图
 ### 5.1.5上课签到界面
 学员登录后可进行上课签到操作，上课签到界面展示如图5-6所示。
 
-![](/images/0000stringboot/0038springboot/blog.020.png)
+![](/images/0000wxapp//blog.020.png)
 
 图5-6  上课签到界面图
 ### 5.1.6个人中心界面
 学员登录后可对个人信息进行管理，个人中心界面展示如图5-7所示。
 
-![](/images/0000stringboot/0038springboot/blog.021.png)
+![](/images/0000wxapp//blog.021.png)
 
 图5-7  个人中心界面图
 ### 5.1.7我的订单界面
 学员可进入我的订单界面查看个人已有订单信息，其界面展示如图5-8所示。
 
-![](/images/0000stringboot/0038springboot/blog.022.png)
+![](/images/0000wxapp//blog.022.png)
 
 图5-8  我的订单界面图
 ## 5.2管理员功能模块的实现
 ### 5.2.1管理员登录界面
 管理员要想进入系统后台对系统进行管理操作，必须进行登录系统，管理员登录界面展示如图5-9所示。
 
-![](/images/0000stringboot/0038springboot/blog.023.png)
+![](/images/0000wxapp//blog.023.png)
 
 图5-9管理员管理界面图
 ### 5.2.2公告信息管理界面
 管理员可增删改查公告信息，公告信息管理界面展示如图5-10所示。
 
-![](/images/0000stringboot/0038springboot/blog.024.png)
+![](/images/0000wxapp//blog.024.png)
 
 图5-10  公告信息管理界面图
 ### 5.2.3学员管理界面
 管理员可查看、添加、修改和删除学员信息，学员管理界面展示如图5-11所示。
 
-![](/images/0000stringboot/0038springboot/blog.025.png)
+![](/images/0000wxapp//blog.025.png)
 
 图5-11  学员管理界面图
 ### 5.2.4商品信息管理界面
 管理员可增删改查商品信息，商品信息管理界面展示如图5-12所示。
 
-![](/images/0000stringboot/0038springboot/blog.026.png)
+![](/images/0000wxapp//blog.026.png)
 
 图5-12  商品信息管理界面图
 ### 5.2.5课程安排管理界面
 管理员可添加、修改和删除课程安排信息，课程安排管理界面展示如图5-13所示。
 
-![](/images/0000stringboot/0038springboot/blog.027.png)
+![](/images/0000wxapp//blog.027.png)
 
 图5-13  课程安排管理界面图
 ## 5.3教练功能模块的实现
 ### 5.3.1课程安排界面
 教练登录后可查看课程安排信息，课程安排界面展示如图5-14所示。
 
-![](/images/0000stringboot/0038springboot/blog.028.png)
+![](/images/0000wxapp//blog.028.png)
 
 图5-14 课程安排界面图
 ### 5.3.2课程签到管理界面
 教练可查看学员课程签到信息，并可对其进行审核操作，课程签到管理界面展示如图5-15所示。
 
-![](/images/0000stringboot/0038springboot/blog.029.png)
+![](/images/0000wxapp//blog.029.png)
 
 图5-15 课程签到管理界面图
 

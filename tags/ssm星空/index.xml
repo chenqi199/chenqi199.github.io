@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Ssm星空 - 标签 - chenqi blog</title>
+        <link>https://chenqi199.github.io/tags/ssm%E6%98%9F%E7%A9%BA/</link>
+        <description>Ssm星空 - 标签 - chenqi blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>chen_q_i@163.com (chenqi)</managingEditor>
+            <webMaster>chen_q_i@163.com (chenqi)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 03 Dec 2023 10:32:47 &#43;0800</lastBuildDate><atom:link href="https://chenqi199.github.io/tags/ssm%E6%98%9F%E7%A9%BA/" rel="self" type="application/rss+xml" /><item>
+    <title>ssm112星空游戏购买下载平台的设计与实现&#43;jsp</title>
+    <link>https://chenqi199.github.io/ssm112%E6%98%9F%E7%A9%BA%E6%B8%B8%E6%88%8F%E8%B4%AD%E4%B9%B0%E4%B8%8B%E8%BD%BD%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/</link>
+    <pubDate>Sun, 03 Dec 2023 10:32:47 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm112%E6%98%9F%E7%A9%BA%E6%B8%B8%E6%88%8F%E8%B4%AD%E4%B9%B0%E4%B8%8B%E8%BD%BD%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm112星空游戏购买下载平台的设计与实现+jsp github 项目仓库 开源仅有后端代码 点击播放视频 ▼ JAVA简介 Java]]></description>
+</item>
+</channel>
+</rss>

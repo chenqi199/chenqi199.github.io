@@ -1,17 +1,16 @@
 # 0214springboot基于springboot技术的美食烹饪互动平台的设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0214springboot基于springboot技术的美食烹饪互动平台的设计与实现](https://github.com/GraduationProject-springboot/0214springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)]()
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 绪论
 ## 1.1 课题背景
@@ -64,25 +63,25 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 3.2.1 操作流程
 使用者在操作美食烹饪互动平台中，应该按照本系统提供的操作流程（图3.1即为本系统的操作流程图）进行操作，可以减少操作失误，从而节省进入美食烹饪互动平台的时间。
 
-![](/images/0200stringboot/0214springboot/blog.001.png)
+![](/images/0200wxapp//blog.001.png)
 
 图3.1 系统操作流程
 ### 3.2.2 登录流程
 美食烹饪互动平台通过登录功能（图3.2即为其登录的流程）引导使用者进入指定的功能操作区，也避免非本系统的用户享受本系统提供的服务以及查看本系统提供的信息，进而保证用户安全。
 
-![](/images/0200stringboot/0214springboot/blog.002.png)
+![](/images/0200wxapp//blog.002.png)
 
 图3.2 登录流程
 ### 3.2.3 删除信息流程
 美食烹饪互动平台在经过长期使用后，会产生很多的数据信息。为了腾出存储空间存放更多的数据，本系统数据库中存储的数据，一些没有参考价值的数据需要进行删除（图3.3即为删除信息的流程），删除数据过程中，为避免误删，使用者要根据系统的提示来决定是否删除数据。
 
-![](/images/0200stringboot/0214springboot/blog.003.png)
+![](/images/0200wxapp//blog.003.png)
 
 图3.3 删除信息流程
 ### 3.2.4 添加信息流程
 美食烹饪互动平台提供可视化的功能操作区，非常方便使用者进行数据操作，当使用者往系统中录入数据时（图3.4即为添加信息的流程），本系统也会进行数据合法性的判断，符合要求的数据才能够在数据库指定表中进行登记。
 
-![](/images/0200stringboot/0214springboot/blog.004.png)
+![](/images/0200wxapp//blog.004.png)
 
 图3.4 添加信息流程
 ## 3.3 性能需求
@@ -108,13 +107,13 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 图3.5即为管理员用例图，管理员权限操作的功能包括管理美食，对美食留言进行回复，管理美食知识信息，管理美食知识类型，管理用户，管理公告等。
 
-![](/images/0200stringboot/0214springboot/blog.005.png)
+![](/images/0200wxapp//blog.005.png)
 
 图3.5 管理员用例图
 
 图3.6即为用户用例图，用户权限操作的功能包括在线观看美食做法视频，查看美食食材信息以及美食详细介绍信息，查看美食知识以及公告信息等。
 
-![](/images/0200stringboot/0214springboot/blog.006.png)
+![](/images/0200wxapp//blog.006.png)
 
 图3.6 用户用例图
 # 第4章 系统设计
@@ -134,13 +133,13 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ## 4.2 功能结构设计
 图4.1即为设计的管理员功能结构，管理员权限操作的功能包括管理美食，对美食留言进行回复，管理美食知识信息，管理美食知识类型，管理用户，管理公告等。
 
-![](/images/0200stringboot/0214springboot/blog.007.png)
+![](/images/0200wxapp//blog.007.png)
 
 图4.1 管理员功能结构
 
 图4.2即为设计的用户功能结构，用户权限操作的功能包括在线观看美食做法视频，查看美食食材信息以及美食详细介绍信息，查看美食知识以及公告信息等。
 
-![](/images/0200stringboot/0214springboot/blog.008.png)
+![](/images/0200wxapp//blog.008.png)
 
 图4.2 用户功能结构
 ## 4.3 数据库设计
@@ -150,31 +149,31 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 （1）图4.4即为管理员这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0214springboot/blog.009.png)
+![](/images/0200wxapp//blog.009.png)
 
 图4.4 管理员实体属性图
 
 （2）图4.5即为美食知识这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0214springboot/blog.010.png)
+![](/images/0200wxapp//blog.010.png)
 
 图4.5 美食知识实体属性图
 
 （3）图4.6即为美食这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0214springboot/blog.011.png)
+![](/images/0200wxapp//blog.011.png)
 
 图4.6 美食实体属性图
 
 4. 图4.7即为用户这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0214springboot/blog.012.png)
+![](/images/0200wxapp//blog.012.png)
 
 图4.7 用户实体属性图
 
 4. 图4.8即为上面介绍的实体中存在的联系。
 
-![](/images/0200stringboot/0214springboot/blog.013.png)
+![](/images/0200wxapp//blog.013.png)
 
 图4.8 实体间关系E-R图
 ### 4.3.2 数据库物理设计
@@ -281,44 +280,44 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 5.1.1 美食管理
 图5.1 即为编码实现的美食管理界面，美食信息包括美食名称，美食照片，美食相关食材，美食做法，美食名称等信息，对于本界面展示的美食信息，管理员可以下架，上架，修改，删除，查询等。
 
-![](/images/0200stringboot/0214springboot/blog.014.png)
+![](/images/0200wxapp//blog.014.png)
 
 图5.1 美食管理界面
 ### 5.1.2 用户管理
 图5.2 即为编码实现的用户管理界面，管理员在用户管理界面中可以为本界面显示的所有用户信息进行查询，修改，删除。
 
-![](/images/0200stringboot/0214springboot/blog.015.png)
+![](/images/0200wxapp//blog.015.png)
 
 图5.2 用户管理界面
 ### 5.1.3 美食留言管理
 图5.3 即为编码实现的美食留言管理界面，用户查看美食之后，会发布跟美食相关的留言信息，管理员在美食留言管理界面对这些留言进行查看以及回复。
 
-![](/images/0200stringboot/0214springboot/blog.016.png)
+![](/images/0200wxapp//blog.016.png)
 
 图5.3 美食留言管理界面
 ### 5.1.4 美食知识管理
 图5.4 即为编码实现的美食知识管理界面，用户在前台查看的美食知识信息都是管理员在美食知识管理界面发布的信息，美食知识管理界面展示的美食知识信息可以让管理员修改，查询，删除等。
 
-![](/images/0200stringboot/0214springboot/blog.017.png)
+![](/images/0200wxapp//blog.017.png)
 
 图5.4 美食知识管理界面
 ## 5.2 用户功能实现
 ### 5.2.1 美食信息
 图5.5 即为编码实现的美食信息界面，用户在美食信息界面查看美食详细介绍以及相关食材信息，可以观看美食做法视频，可以收藏美食，也能在美食信息界面的下方留言区域发布留言。
 
-![](/images/0200stringboot/0214springboot/blog.018.png)
+![](/images/0200wxapp//blog.018.png)
 
 图5.5 美食信息界面
 ### 5.2.2 美食知识
 图5.6 即为编码实现的美食知识界面，用户可以通过美食知识类型来筛选美食知识信息，可以在查询框中编辑美食知识名称来实现对美食知识信息的查询。
 
-![](/images/0200stringboot/0214springboot/blog.019.png)
+![](/images/0200wxapp//blog.019.png)
 
 图5.6 美食知识界面
 ### 5.2.3 公告信息
 图5.7 即为编码实现的公告信息界面，用户可以通过公告类型来筛选公告信息，可以在查询框中编辑公告名称来实现对公告信息的查询。
 
-![](/images/0200stringboot/0214springboot/blog.020.png)
+![](/images/0200wxapp//blog.020.png)
 
 图5.7 公告信息界面
 # 

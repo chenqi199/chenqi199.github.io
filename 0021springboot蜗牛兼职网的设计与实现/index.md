@@ -1,17 +1,16 @@
 # 0021springboot蜗牛兼职网的设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0021springboot蜗牛兼职网的设计与实现](https://github.com/GraduationProject-springboot/0021springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV16ia6epENY?p=22)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 绪论
 ## 1.1背景及意义
@@ -109,19 +108,19 @@ Spring Boot特点：
 
 ## 3.4系统流程分析
 ### 3.4.1操作流程
-系统登录流程图，如图所示：![](/images/0000stringboot/0021springboot/blog.001.png)
+系统登录流程图，如图所示：![](/images/0000wxapp//blog.001.png)
 
 图3-1登录流程图
 ### 3.4.2添加信息流程
 添加信息流程图，如图所示：
 
-![](/images/0000stringboot/0021springboot/blog.002.png) 
+![](/images/0000wxapp//blog.002.png) 
 
 图3-2添加信息流程图
 ### 3.4.3删除信息流程
 删除信息流程图，如图所示：
 
-![](/images/0000stringboot/0021springboot/blog.003.png)
+![](/images/0000wxapp//blog.003.png)
 
 图3-3删除信息流程图
 
@@ -143,7 +142,7 @@ Spring Boot特点：
 
 用户
 
-![](/images/0000stringboot/0021springboot/blog.004.png)
+![](/images/0000wxapp//blog.004.png)
 
 图4-1 系统结构
 
@@ -161,13 +160,13 @@ Spring Boot特点：
 
 用户界面
 
-![](/images/0000stringboot/0021springboot/blog.005.png)
+![](/images/0000wxapp//blog.005.png)
 
 图4-2 登录结构图
 
 蜗牛兼职网结构图，如图4-3所示。
 
-![](/images/0000stringboot/0021springboot/blog.006.png)
+![](/images/0000wxapp//blog.006.png)
 
 图4-3 蜗牛兼职网结构图
 ## 4.2开发流程设计
@@ -175,7 +174,7 @@ Spring Boot特点：
 
 蜗牛兼职网的开发对管理模块和系统使用的数据库进行分析，编写代码，系统测试，如图4-4所示。
 
-![](/images/0000stringboot/0021springboot/blog.007.png)
+![](/images/0000wxapp//blog.007.png)
 
 图4-4开发系统流程图
 ## 4.3 数据库设计原则
@@ -185,25 +184,25 @@ Spring Boot特点：
 
 用户信息属性图如图4-5所示。
 
-![](/images/0000stringboot/0021springboot/blog.008.png)
+![](/images/0000wxapp//blog.008.png)
 
 图4-5 用户信息实体属性图
 
 企业信息实体属性图如图4-6所示。
 
-![](/images/0000stringboot/0021springboot/blog.009.png)
+![](/images/0000wxapp//blog.009.png)
 
 `      `图4-6企业信息属性图
 
 兼职信息属性图如图4-7所示。
 
-![](/images/0000stringboot/0021springboot/blog.010.png)
+![](/images/0000wxapp//blog.010.png)
 
 `     `图4-7兼职信息实体属性图
 
 留言板信息实体属性图如图4-8所示。
 
-![](/images/0000stringboot/0021springboot/blog.011.png)
+![](/images/0000wxapp//blog.011.png)
 
 `   `图4-8留言板信息实体属性图
 ## 4.4 数据表
@@ -307,7 +306,7 @@ Spring Boot特点：
 ## 5.1管理员功能模块
 管理员登录，通过填写输入用户名、密码、角色进行登录，如图5-1所示。
 
-![](/images/0000stringboot/0021springboot/blog.012.png)
+![](/images/0000wxapp//blog.012.png)
 
 图5-1管理员登录界面图
 
@@ -315,35 +314,35 @@ Spring Boot特点：
 
 用户管理，在用户管理页面中可以通过填写用户名、密码、用户姓名、头像、性别、手机号码、邮箱等信息进行详情、修改、删除等操作，如图5-2所示。还可以根据需要对企业管理进行详情、修改或删除等详细操作，如图5-3所示。
 
-![](/images/0000stringboot/0021springboot/blog.013.png)
+![](/images/0000wxapp//blog.013.png)
 
 图5-2用户管理界面图
 
-![](/images/0000stringboot/0021springboot/blog.014.png)
+![](/images/0000wxapp//blog.014.png)
 
 图5-3企业管理界面图
 
 兼职信息管理，在兼职信息管理页面中可以查看职位名称、图片、招聘人数、薪资待遇、职位简介、工作内容、发布日期、企业号、企业名称、联系人、联系方式等信息，并可根据需要对兼职信息管理进行详情、修改或删除等操作，如图5-4所示。
 
-![](/images/0000stringboot/0021springboot/blog.015.png)
+![](/images/0000wxapp//blog.015.png)
 
 图5-4兼职信息管理界面图
 
 职位申请管理，在职位申请管理页面中可以查看职位名称、招聘人数、薪资待遇、职位简介、工作内容、企业号、企业名称、申请日期、简历、用户名、用户姓名、手机号码、审核回复、审核状态等信息，并可根据需要对职位申请管理进行详情、修改或删除等详细操作，如图5-5所示。
 
-![](/images/0000stringboot/0021springboot/blog.016.png)
+![](/images/0000wxapp//blog.016.png)
 
 图5-5职位申请管理界面图
 
 留言板管理，在留言板管理页面中可以查看用户名、留言内容、回复内容等内容，并且根据需要对留言板管理进行详情、回复、修改或删除等详细操作，如图5-6所示。
 
-![](/images/0000stringboot/0021springboot/blog.017.png)
+![](/images/0000wxapp//blog.017.png)
 
 图5-6留言板管理界面图
 
 轮播图；该页面为轮播图管理界面。管理员可以在此页面进行首页轮播图的管理，通过新建操作可在轮播图中加入新的图片，还可以对以上传的图片进行修改操作，以及图片的删除操作，如图5-7所示。
 
-![](/images/0000stringboot/0021springboot/blog.018.png)
+![](/images/0000wxapp//blog.018.png)
 
 图5-7轮播图管理界面图
 
@@ -354,12 +353,12 @@ Spring Boot特点：
 
 用户登录进入蜗牛兼职网可以查看首页、个人中心、职位申请管理等功能。如图5-9所示
 
-![](/images/0000stringboot/0021springboot/blog.019.png)
+![](/images/0000wxapp//blog.019.png)
 
 图5-8用户登录界面图
 
 
-![](/images/0000stringboot/0021springboot/blog.020.png)
+![](/images/0000wxapp//blog.020.png)
 
 图5-9用户功能界面图
 
@@ -367,7 +366,7 @@ Spring Boot特点：
 
 职位申请管理，在职位申请管理页面中可以查看职位名称、招聘人数、薪资待遇、职位简介、工作内容、企业号、企业名称、申请日期、简历、用户名、用户姓名、手机号码、审核回复、审核状态等信息内容，并且根据需要对职位申请管理进行详情、修改或删除等其他详细操作，如图5-10所示。
 
-![](/images/0000stringboot/0021springboot/blog.021.png)
+![](/images/0000wxapp//blog.021.png)
 
 图5-10职位申请管理界面图
 
@@ -376,7 +375,7 @@ Spring Boot特点：
 ## 5.3前台首页功能模块
 蜗牛兼职网，在蜗牛兼职网可以查看首页、兼职信息、留言反馈、个人中心、后台管理等内容，如图5-11所示。
 
-![](/images/0000stringboot/0021springboot/blog.022.png)
+![](/images/0000wxapp//blog.022.png)
 
 图5-11前台首页界面图
 
@@ -385,40 +384,40 @@ Spring Boot特点：
 用户登录，通过填写用户名、密码进行登录，如图5-12所示。
 
 
-![](/images/0000stringboot/0021springboot/blog.023.png)
+![](/images/0000wxapp//blog.023.png)
 
 图5-12用户登录界面图
 
 
 兼职信息，在兼职信息页面可以填写职位名称、图片、招聘人数、薪资待遇、职位简介、工作内容、发布日期、企业号、企业名称、联系人、联系方式等信息进行点击下载，如图5-13所示。 
 
-![](/images/0000stringboot/0021springboot/blog.024.png)
+![](/images/0000wxapp//blog.024.png)
 
 图5-13兼职信息界面图
 
 留言反馈，在留言反馈页面可以填写留言内容等进行立即提交或重置等操作，如图5-14所示。
 
-![](/images/0000stringboot/0021springboot/blog.025.png)
+![](/images/0000wxapp//blog.025.png)
 
 图5-14留言反馈界面图
 
 ## 5.4企业功能模块
 企业登录进入蜗牛兼职网可以查看首页、个人中心、兼职信息管理、职位申请管理等内容。企业登录，通过填写用户名、密码、角色进行登录，如图5-15所示。
 
-![](/images/0000stringboot/0021springboot/blog.026.png)
+![](/images/0000wxapp//blog.026.png)
 
 图5-15企业登录界面图
 
 个人信息，在个人信息页面中通过填写企业号、企业名称、图片、联系人、联系方式、邮箱、地址等信息还可以根据需要对个人信息进行修改，如图5-16所示。
 
-![](/images/0000stringboot/0021springboot/blog.027.png)
+![](/images/0000wxapp//blog.027.png)
 
 图5-16个人信息界面图
 
 
 兼职信息管理，在兼职信息管理页面中通过填写职位名称、图片、招聘人数、薪资待遇、职位简介、工作内容、发布日期、企业号、企业名称、联系人、联系方式等内容进行详情、修改、删除等操作，如图5-17所示。
 
-![](/images/0000stringboot/0021springboot/blog.028.png)
+![](/images/0000wxapp//blog.028.png)
 
 图5-17兼职信息管理界面图
 
@@ -426,7 +425,7 @@ Spring Boot特点：
 
 职位申请管理，在职位申请管理页面中通过填写职位名称、招聘人数、薪资待遇、职位简介、工作内容、企业号、企业名称、申请日期、简历、用户名、用户姓名、手机号码、审核回复、审核状态等内容进行详情、修改等操作，如图5-18所示。
 
-![](/images/0000stringboot/0021springboot/blog.029.png)
+![](/images/0000wxapp//blog.029.png)
 
 图5-18职位申请管理界面图
 

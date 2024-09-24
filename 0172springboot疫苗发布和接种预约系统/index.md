@@ -1,17 +1,16 @@
 # 0172springboot疫苗发布和接种预约系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0172springboot疫苗发布和接种预约系统](https://github.com/GraduationProject-springboot/0172springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1ECs?p=70)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第一章 绪论
 ## 1.1 研究背景
@@ -65,19 +64,19 @@ JDK这个是Java开发所必须的东西。Java开发必须用JDK，运行必须
 ## 3.2系统流程分析
 本项目在处理数据方面，必须规定其流程，要让每个步骤都要符合设定预期。注册的结果可以说只有两种结果，一个是成功，一个是失败，成功就会把注册时候输入的数据写入到数据库表里存储，如果失败则提示提示失败，并且不写入数据库。因为两种结果，所以要对数据的合法性进行判断，而数据的合法性需要对每条信息进行判断，主要对哪条信息判断，这些都要有流程。
 
-![](/images/0100stringboot/0172springboot/blog.001.png)
+![](/images/0100wxapp//blog.001.png)
 
 图3.1用户注册流程图
 
 登录是所有系统必不可少的功能之一。虽然不起眼，但是却是一件不可缺少的事情，登录的作用主要代表着当前操作用户是某人，当然，登录的时候是需要输入账号和密码的，都正确才可以登录，登录的时候会对输入的信息进行判断的。
 
-![](/images/0100stringboot/0172springboot/blog.002.png)
+![](/images/0100wxapp//blog.002.png)
 
 图3.2 用户登录流程图
 
 数据的添加是一件比较严肃的事情，必须判断正确与否，不然随意的添加可能会导致数据库设定与实际数据输入要求不一致，导致数据丢失的问题，所以必须根据数据设定要求，在输入数据的时候就进行判断输入信息是否合法。
 
-![](/images/0100stringboot/0172springboot/blog.003.png)
+![](/images/0100wxapp//blog.003.png)
 
 图3.3 信息添加流程图
 ## 3.3 系统性能分析
@@ -100,7 +99,7 @@ JDK这个是Java开发所必须的东西。Java开发必须用JDK，运行必须
 
 管理员对公告信息，医院信息，疫苗信息，医生信息，用户信息，论坛帖子信息以及预约接种信息等信息进行管理。对管理员的功能进行分析之后，将使用图3.4的管理员用例图来描述管理员的功能。
 
-![](/images/0100stringboot/0172springboot/blog.004.png)
+![](/images/0100wxapp//blog.004.png)
 
 图3.4 管理员用例图
 
@@ -108,7 +107,7 @@ JDK这个是Java开发所必须的东西。Java开发必须用JDK，运行必须
 
 医生需要审核用户提交的预约接种信息，查看医院信息，公告信息以及疫苗信息。对医生的功能进行分析之后，将使用图3.5的医生用例图来描述医生的功能。
 
-![](/images/0100stringboot/0172springboot/blog.005.png)
+![](/images/0100wxapp//blog.005.png)
 
 图3.5 医生用例图
 
@@ -116,7 +115,7 @@ JDK这个是Java开发所必须的东西。Java开发必须用JDK，运行必须
 
 用户查看疫苗信息，查看医院信息，提交预约接种信息，查看公告等。对用户的功能进行分析之后，将使用图3.6的用户用例图来描述用户的功能。
 
-![](/images/0100stringboot/0172springboot/blog.006.png)
+![](/images/0100wxapp//blog.006.png)
 
 图3.6 用户用例图
 
@@ -135,19 +134,19 @@ JDK这个是Java开发所必须的东西。Java开发必须用JDK，运行必须
 ## 4.2功能模块设计
 本小节运用功能结构图来描述管理员具备的详细的功能，对管理员的功能结构图绘制结果如图4.1所示。管理员对公告信息，医院信息，疫苗信息，医生信息，用户信息，论坛帖子信息以及预约接种信息等信息进行管理。
 
-![](/images/0100stringboot/0172springboot/blog.007.png)
+![](/images/0100wxapp//blog.007.png)
 
 图4.1 管理员功能结构图
 
 本小节运用功能结构图来描述医生具备的详细的功能，对医生的功能结构图绘制结果如图4.2所示。医生需要审核用户提交的预约接种信息，查看医院信息，公告信息以及疫苗信息。
 
-`  `![](/images/0100stringboot/0172springboot/blog.008.png)
+`  `![](/images/0100wxapp//blog.008.png)
 
 图4.2 医生功能结构图
 
 本小节运用功能结构图来描述用户具备的详细的功能，对用户的功能结构图绘制结果如图4.3所示。用户查看疫苗信息，查看医院信息，提交预约接种信息，查看公告等。
 
-![](/images/0100stringboot/0172springboot/blog.009.png)
+![](/images/0100wxapp//blog.009.png)
 
 图4.3 用户功能结构图
 ## 4.3数据库设计
@@ -157,31 +156,31 @@ JDK这个是Java开发所必须的东西。Java开发必须用JDK，运行必须
 
 （1）图4.4即为疫苗这个实体所拥有的属性值。
 
-![](/images/0100stringboot/0172springboot/blog.010.png)
+![](/images/0100wxapp//blog.010.png)
 
 图4.4 疫苗实体属性图
 
 （2）图4.5即为预约接种这个实体所拥有的属性值。
 
-![](/images/0100stringboot/0172springboot/blog.011.png)
+![](/images/0100wxapp//blog.011.png)
 
 图4.5 预约接种实体属性图
 
 （3）图4.6即为用户这个实体所拥有的属性值。
 
-![](/images/0100stringboot/0172springboot/blog.012.png)
+![](/images/0100wxapp//blog.012.png)
 
 图4.6 用户实体属性图
 
 4. 图4.7即为医生这个实体所拥有的属性值。
 
-![](/images/0100stringboot/0172springboot/blog.013.png)
+![](/images/0100wxapp//blog.013.png)
 
 图4.7 医生实体属性图
 
 （5）图4.8即为上面介绍的实体中存在的联系。
 
-![](/images/0100stringboot/0172springboot/blog.014.png)
+![](/images/0100wxapp//blog.014.png)
 
 图4.8 实体间关系E-R图
 ### 4.3.2 数据库表结构
@@ -302,57 +301,57 @@ JDK这个是Java开发所必须的东西。Java开发必须用JDK，运行必须
 ### 5.1.1 疫苗信息管理
 管理员点击导航栏的疫苗信息管理链接就进入疫苗信息管理界面。疫苗信息管理界面如图5.1所示。本功能允许管理员对疫苗信息进行修改，包括修改疫苗图片，疫苗标题等信息，删除疫苗信息等。
 
-![](/images/0100stringboot/0172springboot/blog.016.png)
+![](/images/0100wxapp//blog.016.png)
 
 图5.1 疫苗信息管理界面
 ### 5.1.2 医院信息管理
 管理员点击导航栏的医院信息管理链接就进入医院信息管理界面。医院信息管理界面如图5.2所示。本功能允许管理员修改医院图片，医院地址等信息，删除需要删除的医院信息等。
 
-![](/images/0100stringboot/0172springboot/blog.017.png)
+![](/images/0100wxapp//blog.017.png)
 
 图5.2 医院信息管理界面
 ### 5.1.3 医生管理
 管理员点击导航栏的医生管理链接就进入医生管理界面。医生管理界面如图5.3所示。本功能允许管理员修改医生头像，修改医生姓名等信息，删除需要删除的医生信息。
 
-![](/images/0100stringboot/0172springboot/blog.018.png)
+![](/images/0100wxapp//blog.018.png)
 
 图5.3 医生管理界面
 ## 5.2 医生功能实现
 ### 5.2.1 预约接种管理
 医生点击导航栏的预约接种管理链接就进入预约接种管理界面。预约接种管理界面如图5.4所示。医生需要对预约接种信息进行查看，然后审核预约接种信息。
 
-![](/images/0100stringboot/0172springboot/blog.019.png)
+![](/images/0100wxapp//blog.019.png)
 
 图5.4 预约接种管理界面
 ### 5.2.2 疫苗信息查看
 医生点击导航栏的疫苗信息查看链接就进入疫苗信息查看界面。疫苗信息查看界面如图5.5所示。本功能允许医生查询疫苗信息，查看疫苗类型，医院地址，疫苗图片等信息。
 
-![](/images/0100stringboot/0172springboot/blog.020.png)
+![](/images/0100wxapp//blog.020.png)
 
 图5.5 疫苗信息查看界面
 ### 5.2.3 医院信息查看
 医生点击导航栏的医院信息查看链接就进入医院信息查看界面。医院信息查看界面如图5.6所示。本功能允许医生查询医院信息，查看医院地址，医院图片等信息。
 
-![](/images/0100stringboot/0172springboot/blog.021.png)
+![](/images/0100wxapp//blog.021.png)
 
 图5.6 医院信息查看界面
 ## 5.3 用户功能实现
 ### 5.3.1 在线论坛
 用户点击导航栏的在线论坛链接就进入在线论坛界面。在线论坛界面如图5.7所示。本功能允许用户查看所有帖子，并可以对已查看的帖子发布评论。
 
-![](/images/0100stringboot/0172springboot/blog.022.png)
+![](/images/0100wxapp//blog.022.png)
 
 图5.7 在线论坛界面
 ### 5.3.2 疫苗信息
 用户点击导航栏的疫苗信息链接就进入疫苗信息界面。疫苗信息界面如图5.8所示。本功能允许用户对系统推荐的疫苗信息进行查看，以及对疫苗进行预约接种。
 
-![](/images/0100stringboot/0172springboot/blog.023.png)
+![](/images/0100wxapp//blog.023.png)
 
 图5.8 疫苗信息界面
 ### 5.3.3 医院信息 
 用户点击导航栏的医院信息链接就进入医院信息界面。医院信息界面如图5.9所示。本功能允许用户查看系统推荐的医院信息，查看医院介绍信息，查看医院地址信息等。
 
-![](/images/0100stringboot/0172springboot/blog.024.png)
+![](/images/0100wxapp//blog.024.png)
 
 图5.9 医院信息界面
 

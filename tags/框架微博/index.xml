@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>框架微博 - 标签 - chenqi blog</title>
+        <link>https://chenqi199.github.io/tags/%E6%A1%86%E6%9E%B6%E5%BE%AE%E5%8D%9A/</link>
+        <description>框架微博 - 标签 - chenqi blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>chen_q_i@163.com (chenqi)</managingEditor>
+            <webMaster>chen_q_i@163.com (chenqi)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 12 Dec 2023 10:32:48 &#43;0800</lastBuildDate><atom:link href="https://chenqi199.github.io/tags/%E6%A1%86%E6%9E%B6%E5%BE%AE%E5%8D%9A/" rel="self" type="application/rss+xml" /><item>
+    <title>ssm137基于SSM框架的微博系统&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm137%E5%9F%BA%E4%BA%8Essm%E6%A1%86%E6%9E%B6%E7%9A%84%E5%BE%AE%E5%8D%9A%E7%B3%BB%E7%BB%9F-vue/</link>
+    <pubDate>Tue, 12 Dec 2023 10:32:48 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm137%E5%9F%BA%E4%BA%8Essm%E6%A1%86%E6%9E%B6%E7%9A%84%E5%BE%AE%E5%8D%9A%E7%B3%BB%E7%BB%9F-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm137基于SSM框架的微博系统+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1.1 选题背景 网络技术和计算]]></description>
+</item>
+</channel>
+</rss>

@@ -1,17 +1,16 @@
 # 0299springboot线上医院挂号系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0299springboot线上医院挂号系统](https://github.com/GraduationProject-springboot/0299springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1EbH?p=65)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 绪论
 ## 1.1 研究背景
@@ -73,25 +72,25 @@
 ## 3.3系统流程分析
 分析程序的流程，涉及到程序的整体操作流程，通过分析与设计，绘制的程序操作流程图见下图。此程序为了确保安全，会让使用者通过登录模块验证信息，符合要求的使用者才有权限操作程序。
 
-![](/images/0200stringboot/0299springboot/blog.001.png)
+![](/images/0200wxapp//blog.001.png)
 
 图3-1 程序操作流程图
 
 程序处理数据会涉及到数据的录入环节，绘制的添加流程见下图。程序录入数据过程中，始终与数据库保持同步。
 
-![](/images/0200stringboot/0299springboot/blog.002.png)
+![](/images/0200wxapp//blog.002.png)
 
 图3-2 信息添加流程图
 
 程序里面的数据也会出现错误，因此就有相应的修改数据的功能，绘制的程序修改流程见下图。此过程也是跟后台数据库进行数据同步显示。
 
-![](/images/0200stringboot/0299springboot/blog.003.png)
+![](/images/0200wxapp//blog.003.png)
 
 图3-3信息修改流程图
 
 程序数据存放于数据仓库，有时也会涉及到数据删除，此过程对应的流程图见下图。数据信息被删除之后，数据库里面也就没有了该数据信息了。
 
-![](/images/0200stringboot/0299springboot/blog.004.png)
+![](/images/0200wxapp//blog.004.png)
 
 图3-4 信息删除流程图
 
@@ -116,7 +115,7 @@
 ## 4.2 系统结构设计
 在系统结构设计上，经综合考虑还是选择比C/S更省资金的B/S结构模式，现如今浏览器已经实现了普及，并在技术上逐渐完善和成熟，它在节约软件开发成本的基础上，还能实现原本用专业软件操作才能实现的强大功能。总之，B/S结构是当下全新的，认可度高的系统构造技术。系统结构设计图通过绘制，效果展示如下：
 
-![](/images/0200stringboot/0299springboot/blog.005.png)
+![](/images/0200wxapp//blog.005.png)
 
 图4.1 系统结构设计图
 ## 4.3功能结构设计
@@ -175,7 +174,7 @@
 吸单页数据修改
 
 删单页数据删除
-![](/images/0200stringboot/0299springboot/blog.006.png)
+![](/images/0200wxapp//blog.006.png)
 
 图4.2 管理员功能结构图
 ## 4.4数据库设计
@@ -183,39 +182,39 @@
 ### 4.4.1 数据库E-R图
 在绘制E-R图之前，先要找出数据库的实体，明确各个实体具有的属性，比如用户信息这个实体，它具备的属性包括了用户的姓名属性，用户的密码属性，用户的创建时间属性等，所以明确了用户这个实体，以及用户实体具备的属性之后，就需要根据这些信息绘制用户实体对应的实体属性图了。绘制软件选用当下认可度高，使用范围广，操作便利的微软旗下的Visio工具。系统中各实体信息的实体属性图，以及总体的实体联系图如下图所示。
 
-![](/images/0200stringboot/0299springboot/blog.007.png)
+![](/images/0200wxapp//blog.007.png)
 
 图4.3 字典实体属性图
 
-![](/images/0200stringboot/0299springboot/blog.008.png)
+![](/images/0200wxapp//blog.008.png)
 
 图4.4 论坛实体属性图
 
-![](/images/0200stringboot/0299springboot/blog.009.png)
+![](/images/0200wxapp//blog.009.png)
 
 图4.5 用户实体属性图
 
-![](/images/0200stringboot/0299springboot/blog.010.png)
+![](/images/0200wxapp//blog.010.png)
 
 图4.6 单页实体属性图
 
-![](/images/0200stringboot/0299springboot/blog.011.png)
+![](/images/0200wxapp//blog.011.png)
 
 图4.7 医生实体属性图
 
-![](/images/0200stringboot/0299springboot/blog.012.png)
+![](/images/0200wxapp//blog.012.png)
 
 图4.8 医生留言实体属性图
 
-![](/images/0200stringboot/0299springboot/blog.013.png)
+![](/images/0200wxapp//blog.013.png)
 
 图4.9 医生挂号实体属性图
 
-![](/images/0200stringboot/0299springboot/blog.014.png)
+![](/images/0200wxapp//blog.014.png)
 
 图4.10 管理员实体属性图
 
-![](/images/0200stringboot/0299springboot/blog.015.png)
+![](/images/0200wxapp//blog.015.png)
 
 图4.11 系统总体实体联系图
 ### 4.4.2 数据库表结构
@@ -334,19 +333,19 @@
 ### 5.1.1 医生管理
 此页面让管理员管理医生的数据，医生管理页面见下图。此页面主要实现医生的增加、修改、删除、查看的功能。
 
-![](/images/0200stringboot/0299springboot/blog.016.png)
+![](/images/0200wxapp//blog.016.png)
 
 图5.1 医生管理页面
 ### 5.1.2 单页数据信息管理
 单页数据信息管理页面提供的功能操作有：新增单页数据，修改单页数据，删除单页数据操作。下图就是单页数据信息管理页面。
 
-![](/images/0200stringboot/0299springboot/blog.017.png)
+![](/images/0200wxapp//blog.017.png)
 
 图5.2 单页数据信息管理页面
 ### 5.1.3医生挂号订单管理
 医生挂号订单管理页面显示所有医生挂号订单，在此页面既可以让管理员添加新的单页数据信息类型，也能对已有的医生挂号订单信息执行编辑更新，失效的医生挂号订单信息也能让管理员快速删除。下图就是医生挂号订单管理页面。
 
-![](/images/0200stringboot/0299springboot/blog.018.png)
+![](/images/0200wxapp//blog.018.png)
 
 图5.3 医生挂号订单列表页面
 

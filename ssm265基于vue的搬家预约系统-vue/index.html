@@ -1,0 +1,1825 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer" />
+        <meta name="robots" content="noodp" />
+        <title>ssm265基于vue的搬家预约系统&#43;vue - chenqi blog</title><meta name="Description" content="Hugo theme - chenqi"><meta property="og:url" content="https://chenqi199.github.io/ssm265%E5%9F%BA%E4%BA%8Evue%E7%9A%84%E6%90%AC%E5%AE%B6%E9%A2%84%E7%BA%A6%E7%B3%BB%E7%BB%9F-vue/">
+  <meta property="og:site_name" content="chenqi blog">
+  <meta property="og:title" content="ssm265基于vue的搬家预约系统&#43;vue">
+  <meta property="og:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm265基于vue的搬家预约系统&#43;vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 计算机已经从科研院所，大">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-01-23T10:32:51+08:00">
+    <meta property="article:modified_time" content="2024-01-23T10:32:51+08:00">
+    <meta property="article:tag" content="Ssmvue">
+    <meta property="article:tag" content="Vue搬家">
+    <meta property="article:tag" content="搬家预约">
+    <meta property="article:tag" content="预约系统">
+    <meta property="og:image" content="https://chenqi199.github.io/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chenqi199.github.io/logo.png">
+  <meta name="twitter:title" content="ssm265基于vue的搬家预约系统&#43;vue">
+  <meta name="twitter:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm265基于vue的搬家预约系统&#43;vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 计算机已经从科研院所，大">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chenqi199.github.io/ssm265%E5%9F%BA%E4%BA%8Evue%E7%9A%84%E6%90%AC%E5%AE%B6%E9%A2%84%E7%BA%A6%E7%B3%BB%E7%BB%9F-vue/" /><link rel="prev" href="https://chenqi199.github.io/springboot260%E7%81%AB%E9%94%85%E5%BA%97%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" /><link rel="next" href="https://chenqi199.github.io/ssm264%E5%9F%BA%E4%BA%8Essm%E6%A1%86%E6%9E%B6%E7%9A%84%E4%B8%AA%E4%BA%BA%E9%80%9A%E8%AE%AF%E5%BD%95-jsp/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "ssm265基于vue的搬家预约系统+vue",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chenqi199.github.io\/ssm265%E5%9F%BA%E4%BA%8Evue%E7%9A%84%E6%90%AC%E5%AE%B6%E9%A2%84%E7%BA%A6%E7%B3%BB%E7%BB%9F-vue\/"
+        },"image": ["https:\/\/chenqi199.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "ssmvue, vue搬家, 搬家预约, 预约系统","wordcount":  9958 ,
+        "url": "https:\/\/chenqi199.github.io\/ssm265%E5%9F%BA%E4%BA%8Evue%E7%9A%84%E6%90%AC%E5%AE%B6%E9%A2%84%E7%BA%A6%E7%B3%BB%E7%BB%9F-vue\/","datePublished": "2024-01-23T10:32:51+08:00","dateModified": "2024-01-23T10:32:51+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/chenqi199.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "chenqi"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/ssm265%E5%9F%BA%E4%BA%8Evue%E7%9A%84%E6%90%AC%E5%AE%B6%E9%A2%84%E7%BA%A6%E7%B3%BB%E7%BB%9F-vue/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/ssm265%E5%9F%BA%E4%BA%8Evue%E7%9A%84%E6%90%AC%E5%AE%B6%E9%A2%84%E7%BA%A6%E7%B3%BB%E7%BB%9F-vue/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">ssm265基于vue的搬家预约系统+vue</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="chenqi199" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>chenqi</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-01-23">2024-01-23</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 9958 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 20 分钟&nbsp;<span id="/ssm265%E5%9F%BA%E4%BA%8Evue%E7%9A%84%E6%90%AC%E5%AE%B6%E9%A2%84%E7%BA%A6%E7%B3%BB%E7%BB%9F-vue/" class="leancloud_visitors" data-flag-title="ssm265基于vue的搬家预约系统&#43;vue">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">github 项目仓库</a> 开源仅有后端代码</a></li>
+        <li><a href="#点击播放视频-">点击播放视频 ▼</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#11-选题的依据及意义">1.1 选题的依据及意义</a></li>
+    <li><a href="#12-国内外现状研究">1.2 国内外现状研究</a></li>
+    <li><a href="#13-研究目的">1.3 研究目的</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#21-vue简介">2.1 VUE简介</a></li>
+    <li><a href="#22-bs模式分析">2.2 B/S模式分析</a></li>
+    <li><a href="#23-mysql简介">2.3 MySQL简介</a></li>
+    <li><a href="#24-ssm框架简介">2.4 SSM框架简介</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#31-需求分析">3.1 需求分析</a></li>
+    <li><a href="#32-可行性研究">3.2 可行性研究</a>
+      <ul>
+        <li><a href="#321-技术可行性">3.2.1 技术可行性</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#41-系统总体设计">4.1 系统总体设计</a></li>
+    <li><a href="#42-概要设计">4.2 概要设计</a></li>
+    <li><a href="#43-数据库概念结构设计">4.3 数据库概念结构设计</a></li>
+    <li><a href="#44-数据库逻辑结构设计">4.4 数据库逻辑结构设计</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#51-管理员模块">5.1 管理员模块</a>
+      <ul>
+        <li><a href="#511-用户管理">5.1.1 用户管理</a></li>
+        <li><a href="#512-司机管理">5.1.2 司机管理</a></li>
+        <li><a href="#513-搬家人员管理">5.1.3 搬家人员管理</a></li>
+        <li><a href="#514-搬家须知管理">5.1.4 搬家须知管理</a></li>
+        <li><a href="#515-搬家服务管理">5.1.5 搬家服务管理</a></li>
+      </ul>
+    </li>
+    <li><a href="#52-搬家人员模块">5.2 搬家人员模块</a>
+      <ul>
+        <li><a href="#521-搬家订单管理">5.2.1 搬家订单管理</a></li>
+      </ul>
+    </li>
+    <li><a href="#53-司机模块">5.3 司机模块</a>
+      <ul>
+        <li><a href="#531-搬家订单管理">5.3.1 搬家订单管理</a></li>
+      </ul>
+    </li>
+    <li><a href="#54-用户模块">5.4 用户模块</a>
+      <ul>
+        <li><a href="#541-搬家订单">5.4.1 搬家订单</a></li>
+        <li><a href="#542-我的收藏">5.4.2 我的收藏</a></li>
+        <li><a href="#543-搬家新闻">5.4.3 搬家新闻</a></li>
+        <li><a href="#544-搬家须知">5.4.4 搬家须知</a></li>
+        <li><a href="#545-搬家服务">5.4.5 搬家服务</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#-6-程序的测试"><code> </code>6 程序的测试</a>
+      <ul>
+        <li><a href="#61-测试的重要性及目的">6.1 测试的重要性及目的</a></li>
+        <li><a href="#62-测试的步骤">6.2 测试的步骤</a></li>
+        <li><a href="#63-测试的主要内容">6.3 测试的主要内容</a></li>
+        <li><a href="#64-测试用例">6.4 测试用例</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="项目清单-包安装运行httpchenqi1990site-官网地址-httpchenqi1990site"><a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">项目清单 包安装运行</a> 官网地址 <a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">http://chenqi1990.site</a></h1>
+<h1 id="ssm265基于vue的搬家预约系统vuehttpsgithubcomgraduationproject-springboot"><a href="https://github.com/GraduationProject-springboot/" target="_blank" rel="noopener noreffer ">ssm265基于vue的搬家预约系统+vue</a></h1>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        data-srcset="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 1.5x, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        title="picture" /></p>
+<h3 id="github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">github 项目仓库</a> 开源仅有后端代码</h3>
+<h3 id="点击播放视频-">点击播放视频 ▼</h3>
+<p><a href="https://www.bilibili.com/video/BV1gn8XeNE2J?p=63" target="_blank" rel="noopener noreffer "><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.sstatic.net/Vp2cE.png"
+        data-srcset="https://i.sstatic.net/Vp2cE.png, https://i.sstatic.net/Vp2cE.png 1.5x, https://i.sstatic.net/Vp2cE.png 2x"
+        data-sizes="auto"
+        alt="https://i.sstatic.net/Vp2cE.png"
+        title="Watch the video" /></a></p>
+<h1 id="绪论">绪论</h1>
+<p>计算机已经从科研院所，大中型企业，走进了平常百姓家，Internet遍及世界各地，在网上能够用计算机进行文字草拟、修改、打印清样、文件登陆、检索、综合统计、分类、数据库管理等，用科学的方法将无序的信息进行加工整理，组成有序的、方便存储和利用的艺术科研共享信息已经成为流行。计算机技术、网络技术和信息技术的发展，越来越多地改善这现代人的工作、生活。搬家预约系统是计算机技术和网络迅速发展的一个搬家预约信息应用解决方案。搬家预约系统将Internet网络技术与现代管理观念相融合，针对信息技术的特点对搬家预约系统进行规划和重构，对搬家预约信息流进行优化及合理配置，生成动态的、安全的、专有的数字化信息源，将搬家预约体系全面自动化，流程化，数字化。以此为桥梁，横向连接搬家预约信息系统，从而更明确、更有效地支持搬家预约信息的管理和决策。目前社会已经进入了信息时代，社会的各个领域由于信息技术革命，都发生了改天换地的变化，紧跟时代的步伐是每个搬家预约的发展所趋，加强搬家预约竞争力和提高各个搬家预约现代化的管理能力，来适应整个科技社会的变化和发展。搬家预约对信息需求的增长，使计算机、网络技术已经融合到各种搬家预约的平常工作当中。为了在各搬家预约竞争中有明显的优势，本文研究了搬家预约系统，从而加快了搬家预约信息化建设的步伐。</p>
+<h2 id="11-选题的依据及意义">1.1 选题的依据及意义</h2>
+<p>信息技术的发展，带来机遇的同时，也使搬家预约信息管理工作面临严峻的挑战。因为，在当前互联网开放式环境下，传统的搬家预约信息管理模式是以资金运动为对象的，它存在许多局限性，在当前的环境下，已经很难再适应搬家预约经营管理的要求，可以说，传统的搬家预约信息管理模式，不仅不能适合搬家预约的发展，也已经远远不能够适应当前社会发展新形势的要求。在互联网技术还没有得到广泛应用的早期，各搬家预约信息之间的交流、搬家预约系统的处理都是人工操作完成的，随着社会进入信息时代和社会生活的快节奏化，在传统的搬家预约信息管理中，需要经过若干道手续，整个过程都需要手工操作，效率十分低下。旧的搬家预约内搬家预约信息的管理方法早就不能满足搬家预约对大量的搬家预约信息的快速处理与统计的需求，不能适应时代的发展趋势，且由于他们之间关联复杂，统计和查询的方式各不相同；且会出现信息的重复传递问题，因此该过程必须实现信息化，于是需要一种新的技术改善现状，因此搬家预约系统在适应时代发展需求中产生。因此，作为现代搬家预约，必须建立一种能够应付这些新形式的新的搬家预约信息管理模式，搬家预约系统就是一种理想的选择。搬家预约系统，具有创新性和革命性的功能和意义。信息化系统的建设是推动搬家预约管理创新、技术创新和制度创新和文化创新的强大动力，是提高搬家预约经营链高效运作的重要保障。同时，在当前信息经济时代，搬家预约信息化管理是搬家预约信息化的重点和核心，在搬家预约信息化进程中，起到关键性作用。</p>
+<h2 id="12-国内外现状研究">1.2 国内外现状研究</h2>
+<p>国内目前已有很多搬家预约实现了信息化管理，建立了基于内部的局域网系统，外部和因特网相连，硬件设施也是非常完备。另外在软件应用方面，我国很多软件开发公司已开发了各种各样的搬家预约信息管理系统，不过这些搬家预约信息管理系统很多是基于当前国内的搬家预约信息管理制度，没有实现特别强大的功能应用，尚未能够受到国际上的认可，暂时没有实现国际化标准的要求。搬家预约系统怎么去面对国际化的发展要求，将会是我国面临的非常重要的问题。近年来我国信息事业发展迅速，手工管理方式在搬家预约信息管理等需要大量事务处理的应用中已显得不相适应，采用IT技术提高服务质量和管理水平势在必行。目前，对外开放必然趋势使信息行业直面外国同行单位的直接挑战，因此，信息行业必须提高其工作效率，改善其工作环境。</p>
+<h2 id="13-研究目的">1.3 研究目的</h2>
+<p>本课题的目的是使搬家预约信息管理清晰化，透明化，便于操作，易于管理。通过功能模块的优化组合实现不同的管理细节，使管理过程实现最大程度的自动化与信息化,并能自动对人工操作环节进行复查,使搬家预约系统出错率降至最低。</p>
+<p>如何开发一个实用的搬家预约系统，是摆在设计者面前的一大难题。 通过对搬家预约系统进行深入分析和研究，本文从功能模块、数据格式、通用性三个方面进行细化，提出搬家预约系统设计的理论依据和实现的方法。</p>
+<h1 id="第2章-设计技术">第2章 设计技术</h1>
+<h2 id="21-vue简介">2.1 VUE简介</h2>
+<p>Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。另一方面，当与现代化的工具链以及各种支持类库结合使用时，Vue 也完全能够为复杂的单页应用提供驱动。</p>
+<h2 id="22-bs模式分析">2.2 B/S模式分析</h2>
+<p>C/S模式主要由客户应用程序(Client)、服务器管理程序(Server)和中间件(middleware)三个部件组成。客户应用程序是系统中用户与数据组件交互。服务器程序负责系统资源，如管理信息数据库的有效管理，其主要工作是当多个客户端同时请求同一个服务器上的资源，以优化这些资源的管理。中间件是负责连接客户端应用程序和服务器管理器，一个合作作业完成，以满足用户的查询的管理数据的要求。</p>
+<p>B/S模式首先简化了客户端。它无需象C/S模式那样在不同的客户机上安装不同的客户应用程序，而只需安装通用的浏览器软件。这样不但可以节省客户机的硬盘空间与内存，而且使安装过程更加简便、网络结构更加灵活。</p>
+<p>再次，它使用户的操作变得更简单。对于C/S模式，客户应用程序有自己特定的规格，使用者需要接受专门培训。而采用B/S模式时，客户端只是一个简单易用的浏览器软件。无论是决策层还是操作层的人员都无需培训，就可以直接使用。B/S模式的这种特性，还使 MIS系统维护的限制因素更少。</p>
+<p>最后，B/S特别适用于网上信息发布，使得传统的MIS的功能有所扩展。这是C/S所无法实现的。而这种新增的网上信息发布功能恰是现代搬家预约所需的。这使得搬家预约的电子文件可以取代大部分的纸质文件，从而使搬家预约工作的效率得以提高，简化搬家预约行政工作的手续，节约了物力和人力。</p>
+<p>鉴于B/S比C/S的具有更先进性，B/S逐步的成为了当今流行的一种MIS平台系统。本系统也采用B/S结构开发。</p>
+<h2 id="23-mysql简介">2.3 MySQL简介</h2>
+<p>MySQL是一个关系型数据库管理系统，由瑞典MySQL AB公司开发，目前属于Oracle公司。MySQL是最流行的关系型数据库管理系统，在WEB应用方面MySQL是最好的RDBMS(Relational Database Management System：关系数据库管理系统)应用软件之一。MySQL是一种关联数据库管理系统，关联数据库将数据保存在不同的表中，这样就增加了速度并提高了灵活性。MySQL所使用的SQL语言是用于访问数据库的最常用标准化语言。MySQL软件采用了双授权政策（本词条“授权政策”），它分为社区版和商业版，由于其体积小、速度快、总体拥有成本低，尤其是开放源码这一特点，一般中小型网站的开发都选择MySQL作为网站数据库。</p>
+<h2 id="24-ssm框架简介">2.4 SSM框架简介</h2>
+<p>Spring MVC属于SpringFrameWork的后续产品，已经融合在Spring Web Flow 里面。Spring 框架提供了构建 Web 应用程序的全功能 MVC 模块。使用 Spring 可插入的 MVC 架构，从而在使用Spring进行WEB开发时，可以选择使用Spring 的SpringMVC框架或集成其他MVC开发框架，如Struts1，Struts2等。</p>
+<p>Spring MVC 分离了控制器、模型对象、过滤器以及处理程序对象的角色，这种分离让它们更容易进行定制</p>
+<p>易于同其它View框架（Tiles等）无缝集成，采用IOC便于测试。</p>
+<p>Spring Framework是一个开源的Java／Java EE全功能栈的应用程序框架， 以Apache许可证形式发布，也有.NET平台上的移植版本。Spring Framework 提供了一个简易的开发方式，这种开发方式，将避免那些可能致使底层代码 变得繁杂混乱的大量的属性文件和帮助类。</p>
+<p>MyBatis是一个Java持久化框架，它通过XML描述符或注解把对象与存储过程或SQL语句关联起来。</p>
+<h1 id="第3章-需求分析与可行性分析">第3章 需求分析与可行性分析</h1>
+<h2 id="31-需求分析">3.1 需求分析</h2>
+<p>伴随着信息行业的蓬勃发展和人们办公自动化意识的增强，搬家预约信息管理部门的工作也越来越繁重，原来的搬家预约系统已经不能完全满足相关人员使用的需要。为了协助信息搬家预约开展搬家预约信息管理工作，提高工作效率，充分利用信息行业的现有资源，开发更好的搬家预约系统势在必行。</p>
+<h2 id="32-可行性研究">3.2 可行性研究</h2>
+<p>现在许多搬家预约的管理方式既困难又浪费时间和成本，很容易出错。所以应该掌握先进的管理方式，从而提高搬家预约的效率和降低成本。搬家预约系统主要有以下优势：</p>
+<h3 id="321-技术可行性">3.2.1 技术可行性</h3>
+<p>技术可行性要考虑利用现有的技术能否顺利的完成开发系统的工作，硬件和软件配置能不能满足开发的需求等。本次要开发的搬家预约系统用的是是比较流行的JSP技术，用它来创建使用脚本语言，结合HTML代码来制作动态网页。即可快速完成系统的应用程序，不进行编译，容易编写，可直接在服务器端口执行，使用Windows记事本这种普通的文本编辑器，就可以设计编辑，不需要用到浏览器。因此较为简单易学调试也比较简单，软件方面：由于使用的是目前相对成熟发展的B/S模式软件，故软件开发的平台可行,因此在技术上本次开发是绝对可行的。</p>
+<p>3.2.2 运行可行性</p>
+<p>系统的开发，是典型的Mis开发，主要是对数据的处理，包括数据的收集，数据的变换，及数据的各种报表形式的输出。</p>
+<p>新的系统运行后对现行旧的系统带来包括（工作环境、管理方式、组织机构等）的后果以及影响来进行评判和估计。同时更需要考虑到的是：对现有的管理人员进行培训，补充、分析在给出的时间里是不是能完成预定开发系统的任务等。</p>
+<p>我国目前技术已经相当的普及信息化，各种工作人员都具备一定的高度的水平，所以本系统在运行上具备了可行性。</p>
+<p>3.2.3 时间可行性</p>
+<p>从时间上看，在两个月的时间里学习相关知识，并开发搬家预约系统，时间上是有点紧，但是不是不可能实现，在做毕业设计的这几个月里，我通过努力使得功能应该基本可以实现。</p>
+<h1 id="第4章-系统设计">第4章 系统设计</h1>
+<h2 id="41-系统总体设计">4.1 系统总体设计</h2>
+<p>系统不仅要求功能完善，而且还要界面友好，因此，对于一个成功的系统设计，功能模块的设计是关键。由于本系统可执行的是一般性质的搬家预约信息管理工作，本系统具有一般适用性，其所实现的功能满足搬家预约对日常性搬家预约信息的管理。首先，整个系统分成几个小的模块，小的问题，然后，进一步细分模块，添加细节。</p>
+<p>系统功能模块如图4-1所示：</p>
+<p><figure><a class="lightgallery" href="/images/0200ssm/ssm265/blog.001.jpeg" title="结构设计图" data-thumbnail="/images/0200ssm/ssm265/blog.001.jpeg" data-sub-html="<h2>结构设计图</h2><p>结构设计图</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/0200ssm/ssm265/blog.001.jpeg"
+            data-srcset="/images/0200ssm/ssm265/blog.001.jpeg, /images/0200ssm/ssm265/blog.001.jpeg 1.5x, /images/0200ssm/ssm265/blog.001.jpeg 2x"
+            data-sizes="auto"
+            alt="/images/0200ssm/ssm265/blog.001.jpeg" />
+    </a><figcaption class="image-caption">结构设计图</figcaption>
+    </figure></p>
+<p>图4-1系统功能模块图</p>
+<h2 id="42-概要设计">4.2 概要设计</h2>
+<p>在系统需求分析阶段，搞清楚了要开发的这个软件需要“做什么”的问题，形成一个系统目标的逻辑模型来。然后我们所要做的就是要把软件需要“做什么”的这个逻辑模型转换成“怎么做”的一个物理模型，最后再着手实现系统的需求。首先，我们需要描述的是系统的总的体系结构。</p>
+<h2 id="43-数据库概念结构设计">4.3 数据库概念结构设计</h2>
+<p>在每一个应用程序中，数据库的设计是其中非常重要的部分，选择合适的数据库并创建合计的结构式开发程序时首要的问题。数据库将用MySQL进行设计和管理。数据库安全性就是保证数据库信息的保密性，完整性，一致性和可用性，防止非法用户越权使用数据库从而窃取，更改或破坏数据库中数据[6]，将提供一些安全措施来保证数据库的安全。根据以上章节对系统所做的需求分析和系统设计，规划出本系统中使用的数据库实体E-R图如下所示：</p>
+<p>（1）下图是搬家须知实体和其具备的属性。</p>
+<p><figure><a class="lightgallery" href="/images/0200ssm/ssm265/blog.002.jpeg" title="D:\111sheji\搬家预约系统\ssm5rbk6\img\搬家须知.jpg" data-thumbnail="/images/0200ssm/ssm265/blog.002.jpeg" data-sub-html="<h2>D:\111sheji\搬家预约系统\ssm5rbk6\\img\搬家须知.jpg</h2><p>D:\111sheji\搬家预约系统\ssm5rbk6\img\搬家须知.jpg</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/0200ssm/ssm265/blog.002.jpeg"
+            data-srcset="/images/0200ssm/ssm265/blog.002.jpeg, /images/0200ssm/ssm265/blog.002.jpeg 1.5x, /images/0200ssm/ssm265/blog.002.jpeg 2x"
+            data-sizes="auto"
+            alt="/images/0200ssm/ssm265/blog.002.jpeg" />
+    </a><figcaption class="image-caption">D:\111sheji\搬家预约系统\ssm5rbk6\\img\搬家须知.jpg</figcaption>
+    </figure>
+搬家须知实体属性图</p>
+<p>（2）下图是用户实体和其具备的属性。</p>
+<p><figure><a class="lightgallery" href="/images/0200ssm/ssm265/blog.003.jpeg" title="D:\111sheji\搬家预约系统\ssm5rbk6\img\用户.jpg" data-thumbnail="/images/0200ssm/ssm265/blog.003.jpeg" data-sub-html="<h2>D:\111sheji\搬家预约系统\ssm5rbk6\\img\用户.jpg</h2><p>D:\111sheji\搬家预约系统\ssm5rbk6\img\用户.jpg</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/0200ssm/ssm265/blog.003.jpeg"
+            data-srcset="/images/0200ssm/ssm265/blog.003.jpeg, /images/0200ssm/ssm265/blog.003.jpeg 1.5x, /images/0200ssm/ssm265/blog.003.jpeg 2x"
+            data-sizes="auto"
+            alt="/images/0200ssm/ssm265/blog.003.jpeg" />
+    </a><figcaption class="image-caption">D:\111sheji\搬家预约系统\ssm5rbk6\\img\用户.jpg</figcaption>
+    </figure>
+用户实体属性图</p>
+<p>（3）下图是搬家人员实体和其具备的属性。</p>
+<p><figure><a class="lightgallery" href="/images/0200ssm/ssm265/blog.004.jpeg" title="D:\111sheji\搬家预约系统\ssm5rbk6\img\搬家人员.jpg" data-thumbnail="/images/0200ssm/ssm265/blog.004.jpeg" data-sub-html="<h2>D:\111sheji\搬家预约系统\ssm5rbk6\\img\搬家人员.jpg</h2><p>D:\111sheji\搬家预约系统\ssm5rbk6\img\搬家人员.jpg</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/0200ssm/ssm265/blog.004.jpeg"
+            data-srcset="/images/0200ssm/ssm265/blog.004.jpeg, /images/0200ssm/ssm265/blog.004.jpeg 1.5x, /images/0200ssm/ssm265/blog.004.jpeg 2x"
+            data-sizes="auto"
+            alt="/images/0200ssm/ssm265/blog.004.jpeg" />
+    </a><figcaption class="image-caption">D:\111sheji\搬家预约系统\ssm5rbk6\\img\搬家人员.jpg</figcaption>
+    </figure>
+搬家人员实体属性图</p>
+<p>（4）下图是收藏表实体和其具备的属性。</p>
+<p><figure><a class="lightgallery" href="/images/0200ssm/ssm265/blog.005.jpeg" title="D:\111sheji\搬家预约系统\ssm5rbk6\img\收藏表.jpg" data-thumbnail="/images/0200ssm/ssm265/blog.005.jpeg" data-sub-html="<h2>D:\111sheji\搬家预约系统\ssm5rbk6\\img\收藏表.jpg</h2><p>D:\111sheji\搬家预约系统\ssm5rbk6\img\收藏表.jpg</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/0200ssm/ssm265/blog.005.jpeg"
+            data-srcset="/images/0200ssm/ssm265/blog.005.jpeg, /images/0200ssm/ssm265/blog.005.jpeg 1.5x, /images/0200ssm/ssm265/blog.005.jpeg 2x"
+            data-sizes="auto"
+            alt="/images/0200ssm/ssm265/blog.005.jpeg" />
+    </a><figcaption class="image-caption">D:\111sheji\搬家预约系统\ssm5rbk6\\img\收藏表.jpg</figcaption>
+    </figure>
+收藏表实体属性图</p>
+<p>（5）下图是司机实体和其具备的属性。</p>
+<p><figure><a class="lightgallery" href="/images/0200ssm/ssm265/blog.006.jpeg" title="D:\111sheji\搬家预约系统\ssm5rbk6\img\司机.jpg" data-thumbnail="/images/0200ssm/ssm265/blog.006.jpeg" data-sub-html="<h2>D:\111sheji\搬家预约系统\ssm5rbk6\\img\司机.jpg</h2><p>D:\111sheji\搬家预约系统\ssm5rbk6\img\司机.jpg</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/0200ssm/ssm265/blog.006.jpeg"
+            data-srcset="/images/0200ssm/ssm265/blog.006.jpeg, /images/0200ssm/ssm265/blog.006.jpeg 1.5x, /images/0200ssm/ssm265/blog.006.jpeg 2x"
+            data-sizes="auto"
+            alt="/images/0200ssm/ssm265/blog.006.jpeg" />
+    </a><figcaption class="image-caption">D:\111sheji\搬家预约系统\ssm5rbk6\\img\司机.jpg</figcaption>
+    </figure>
+司机实体属性图</p>
+<p>（6）下图是搬家订单实体和其具备的属性。</p>
+<p><figure><a class="lightgallery" href="/images/0200ssm/ssm265/blog.007.jpeg" title="D:\111sheji\搬家预约系统\ssm5rbk6\img\搬家订单.jpg" data-thumbnail="/images/0200ssm/ssm265/blog.007.jpeg" data-sub-html="<h2>D:\111sheji\搬家预约系统\ssm5rbk6\\img\搬家订单.jpg</h2><p>D:\111sheji\搬家预约系统\ssm5rbk6\img\搬家订单.jpg</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/0200ssm/ssm265/blog.007.jpeg"
+            data-srcset="/images/0200ssm/ssm265/blog.007.jpeg, /images/0200ssm/ssm265/blog.007.jpeg 1.5x, /images/0200ssm/ssm265/blog.007.jpeg 2x"
+            data-sizes="auto"
+            alt="/images/0200ssm/ssm265/blog.007.jpeg" />
+    </a><figcaption class="image-caption">D:\111sheji\搬家预约系统\ssm5rbk6\\img\搬家订单.jpg</figcaption>
+    </figure>
+搬家订单实体属性图</p>
+<p>（7）下图是搬家服务实体和其具备的属性。</p>
+<p><figure><a class="lightgallery" href="/images/0200ssm/ssm265/blog.008.jpeg" title="D:\111sheji\搬家预约系统\ssm5rbk6\img\搬家服务.jpg" data-thumbnail="/images/0200ssm/ssm265/blog.008.jpeg" data-sub-html="<h2>D:\111sheji\搬家预约系统\ssm5rbk6\\img\搬家服务.jpg</h2><p>D:\111sheji\搬家预约系统\ssm5rbk6\img\搬家服务.jpg</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/0200ssm/ssm265/blog.008.jpeg"
+            data-srcset="/images/0200ssm/ssm265/blog.008.jpeg, /images/0200ssm/ssm265/blog.008.jpeg 1.5x, /images/0200ssm/ssm265/blog.008.jpeg 2x"
+            data-sizes="auto"
+            alt="/images/0200ssm/ssm265/blog.008.jpeg" />
+    </a><figcaption class="image-caption">D:\111sheji\搬家预约系统\ssm5rbk6\\img\搬家服务.jpg</figcaption>
+    </figure>
+搬家服务实体属性图</p>
+<p>（8）下图是客服中心实体和其具备的属性。</p>
+<p><figure><a class="lightgallery" href="/images/0200ssm/ssm265/blog.009.jpeg" title="D:\111sheji\搬家预约系统\ssm5rbk6\img\客服中心.jpg" data-thumbnail="/images/0200ssm/ssm265/blog.009.jpeg" data-sub-html="<h2>D:\111sheji\搬家预约系统\ssm5rbk6\\img\客服中心.jpg</h2><p>D:\111sheji\搬家预约系统\ssm5rbk6\img\客服中心.jpg</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/0200ssm/ssm265/blog.009.jpeg"
+            data-srcset="/images/0200ssm/ssm265/blog.009.jpeg, /images/0200ssm/ssm265/blog.009.jpeg 1.5x, /images/0200ssm/ssm265/blog.009.jpeg 2x"
+            data-sizes="auto"
+            alt="/images/0200ssm/ssm265/blog.009.jpeg" />
+    </a><figcaption class="image-caption">D:\111sheji\搬家预约系统\ssm5rbk6\\img\客服中心.jpg</figcaption>
+    </figure>
+客服中心实体属性图</p>
+<p>（9）下图是服务类型实体和其具备的属性。</p>
+<p><figure><a class="lightgallery" href="/images/0200ssm/ssm265/blog.010.jpeg" title="D:\111sheji\搬家预约系统\ssm5rbk6\img\服务类型.jpg" data-thumbnail="/images/0200ssm/ssm265/blog.010.jpeg" data-sub-html="<h2>D:\111sheji\搬家预约系统\ssm5rbk6\\img\服务类型.jpg</h2><p>D:\111sheji\搬家预约系统\ssm5rbk6\img\服务类型.jpg</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/0200ssm/ssm265/blog.010.jpeg"
+            data-srcset="/images/0200ssm/ssm265/blog.010.jpeg, /images/0200ssm/ssm265/blog.010.jpeg 1.5x, /images/0200ssm/ssm265/blog.010.jpeg 2x"
+            data-sizes="auto"
+            alt="/images/0200ssm/ssm265/blog.010.jpeg" />
+    </a><figcaption class="image-caption">D:\111sheji\搬家预约系统\ssm5rbk6\\img\服务类型.jpg</figcaption>
+    </figure>
+服务类型实体属性图</p>
+<p>（10）下图是搬家新闻实体和其具备的属性。</p>
+<p><figure><a class="lightgallery" href="/images/0200ssm/ssm265/blog.011.jpeg" title="D:\111sheji\搬家预约系统\ssm5rbk6\img\搬家新闻.jpg" data-thumbnail="/images/0200ssm/ssm265/blog.011.jpeg" data-sub-html="<h2>D:\111sheji\搬家预约系统\ssm5rbk6\\img\搬家新闻.jpg</h2><p>D:\111sheji\搬家预约系统\ssm5rbk6\img\搬家新闻.jpg</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/0200ssm/ssm265/blog.011.jpeg"
+            data-srcset="/images/0200ssm/ssm265/blog.011.jpeg, /images/0200ssm/ssm265/blog.011.jpeg 1.5x, /images/0200ssm/ssm265/blog.011.jpeg 2x"
+            data-sizes="auto"
+            alt="/images/0200ssm/ssm265/blog.011.jpeg" />
+    </a><figcaption class="image-caption">D:\111sheji\搬家预约系统\ssm5rbk6\\img\搬家新闻.jpg</figcaption>
+    </figure>
+搬家新闻实体属性图</p>
+<p>（11）下图是货车类型实体和其具备的属性。</p>
+<p><figure><a class="lightgallery" href="/images/0200ssm/ssm265/blog.012.jpeg" title="D:\111sheji\搬家预约系统\ssm5rbk6\img\货车类型.jpg" data-thumbnail="/images/0200ssm/ssm265/blog.012.jpeg" data-sub-html="<h2>D:\111sheji\搬家预约系统\ssm5rbk6\\img\货车类型.jpg</h2><p>D:\111sheji\搬家预约系统\ssm5rbk6\img\货车类型.jpg</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/0200ssm/ssm265/blog.012.jpeg"
+            data-srcset="/images/0200ssm/ssm265/blog.012.jpeg, /images/0200ssm/ssm265/blog.012.jpeg 1.5x, /images/0200ssm/ssm265/blog.012.jpeg 2x"
+            data-sizes="auto"
+            alt="/images/0200ssm/ssm265/blog.012.jpeg" />
+    </a><figcaption class="image-caption">D:\111sheji\搬家预约系统\ssm5rbk6\\img\货车类型.jpg</figcaption>
+    </figure>
+货车类型实体属性图</p>
+<p>（12）下图是用户表实体和其具备的属性。</p>
+<p><figure><a class="lightgallery" href="/images/0200ssm/ssm265/blog.013.jpeg" title="D:\111sheji\搬家预约系统\ssm5rbk6\img\用户表.jpg" data-thumbnail="/images/0200ssm/ssm265/blog.013.jpeg" data-sub-html="<h2>D:\111sheji\搬家预约系统\ssm5rbk6\\img\用户表.jpg</h2><p>D:\111sheji\搬家预约系统\ssm5rbk6\img\用户表.jpg</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/0200ssm/ssm265/blog.013.jpeg"
+            data-srcset="/images/0200ssm/ssm265/blog.013.jpeg, /images/0200ssm/ssm265/blog.013.jpeg 1.5x, /images/0200ssm/ssm265/blog.013.jpeg 2x"
+            data-sizes="auto"
+            alt="/images/0200ssm/ssm265/blog.013.jpeg" />
+    </a><figcaption class="image-caption">D:\111sheji\搬家预约系统\ssm5rbk6\\img\用户表.jpg</figcaption>
+    </figure>
+用户表实体属性图</p>
+<h2 id="44-数据库逻辑结构设计">4.4 数据库逻辑结构设计</h2>
+<p>数据库概念模型独立于任何特定的数据库管理系统，因此，需要根据具体使用的数据库管理系统的特点进行转换。本系统的数据结构比较清晰，依据搬家预约系统的功能要求，主要设计出数据库的表如下：</p>
+<p>表4.1搬家订单表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">sijizhanghao</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">司机账号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">sijixingming</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">司机姓名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">sijidianhua</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">司机电话</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">chepaihao</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">车牌号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">banjiarenyuan</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">搬家人员</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">zhanghao</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">账号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">xingming</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">姓名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">jiashudianhua</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">家属电话</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td style="text-align:center">banjiajiage</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">搬家价格</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">12</td>
+<td style="text-align:center">fuwuleixing</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">服务类型</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">13</td>
+<td style="text-align:center">huocheleixing</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">货车类型</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">14</td>
+<td style="text-align:center">yuyueshijian</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">预约时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">15</td>
+<td style="text-align:center">banjiaqidian</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">搬家起点</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">16</td>
+<td style="text-align:center">banjiamudedi</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">搬家目的地</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">17</td>
+<td style="text-align:center">tupian</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">图片</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">18</td>
+<td style="text-align:center">ispay</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">是否支付</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.2搬家服务表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">banjiaxuzhi</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">搬家须知</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">fuwuleixing</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">服务类型</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">huocheleixing</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">货车类型</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">shoufeibiaozhun</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">收费标准</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">banjiajiage</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">搬家价格</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">sijizhanghao</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">司机账号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">sijixingming</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">司机姓名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">sijidianhua</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">司机电话</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td style="text-align:center">chepaihao</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">车牌号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">12</td>
+<td style="text-align:center">banjiarenyuan</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">搬家人员</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">13</td>
+<td style="text-align:center">tupian</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">图片</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.3搬家人员表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">gonghao</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">工号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">mima</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">密码</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">xingming</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">姓名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">xingbie</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">性别</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">shouji</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">手机</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">youxiang</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">邮箱</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">shenfenzheng</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">身份证</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">zhaopian</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">照片</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.4搬家须知表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">biaoti</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">标题</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">shoufeibiaozhun</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">收费标准</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">banjialiucheng</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">搬家流程</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">xiangqing</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">详情</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">zhuyishixiang</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">注意事项</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">fujian</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">附件</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">tupian</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">图片</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.5客服中心表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">userid</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">用户id</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">adminid</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">管理员id</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">ask</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">提问</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">reply</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">回复</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">isreply</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">是否回复</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.6配置文件表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">name</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">配置参数名称</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">value</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">配置参数值</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.7服务类型表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">fuwuleixing</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">服务类型</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.8货车类型表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">huocheleixing</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">货车类型</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.9搬家新闻表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">title</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">标题</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">introduction</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">简介</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">picture</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">图片</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">content</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">内容</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.10司机表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">sijizhanghao</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">司机账号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">mima</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">密码</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">sijixingming</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">司机姓名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">nianling</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">年龄</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">xingbie</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">性别</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">jialing</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">驾龄</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">chepaihao</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">车牌号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">cheliangpinpai</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">车辆品牌</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td style="text-align:center">huocheleixing</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">货车类型</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">12</td>
+<td style="text-align:center">sijidianhua</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">司机电话</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">13</td>
+<td style="text-align:center">zhaopian</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">照片</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.11收藏表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">userid</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">用户id</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">refid</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">收藏id</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">tablename</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">表名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">name</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">收藏名称</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">picture</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">收藏图片</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.12token表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">userid</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">用户id</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">username</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">用户名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">tablename</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">表名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">role</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">角色</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">token</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">密码</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">新增时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">expiratedtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">过期时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.13用户表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">username</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">用户名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">password</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">密码</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">role</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">角色</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">新增时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.14用户表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">zhanghao</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">账号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">mima</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">密码</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">xingming</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">姓名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">xingbie</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">性别</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">shouji</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">手机</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">shenfenzheng</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">身份证</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">youxiang</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">邮箱</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">jiashudianhua</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">家属电话</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td style="text-align:center">zhaopian</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">照片</td>
+<td style="text-align:center">是</td>
+</tr>
+</tbody>
+</table>
+<h1 id="第5章-系统实现">第5章 系统实现</h1>
+<h2 id="51-管理员模块">5.1 管理员模块</h2>
+<h3 id="511-用户管理">5.1.1 用户管理</h3>
+<p>管理员可以对用户进行添加修改删除查询操作。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0200ssm/ssm265/blog.014.png"
+        data-srcset="/images/0200ssm/ssm265/blog.014.png, /images/0200ssm/ssm265/blog.014.png 1.5x, /images/0200ssm/ssm265/blog.014.png 2x"
+        data-sizes="auto"
+        alt="/images/0200ssm/ssm265/blog.014.png"
+        title="/images/0200ssm/ssm265/blog.014.png" /></p>
+<p>图5-1用户管理界面</p>
+<h3 id="512-司机管理">5.1.2 司机管理</h3>
+<p>管理员可以对司机进行添加修改删除查询操作。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0200ssm/ssm265/blog.015.png"
+        data-srcset="/images/0200ssm/ssm265/blog.015.png, /images/0200ssm/ssm265/blog.015.png 1.5x, /images/0200ssm/ssm265/blog.015.png 2x"
+        data-sizes="auto"
+        alt="/images/0200ssm/ssm265/blog.015.png"
+        title="/images/0200ssm/ssm265/blog.015.png" /></p>
+<p>图5-2司机管理界面</p>
+<h3 id="513-搬家人员管理">5.1.3 搬家人员管理</h3>
+<p>管理员可以对搬家人员进行添加修改删除查询操作。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0200ssm/ssm265/blog.016.png"
+        data-srcset="/images/0200ssm/ssm265/blog.016.png, /images/0200ssm/ssm265/blog.016.png 1.5x, /images/0200ssm/ssm265/blog.016.png 2x"
+        data-sizes="auto"
+        alt="/images/0200ssm/ssm265/blog.016.png"
+        title="/images/0200ssm/ssm265/blog.016.png" /></p>
+<p>图5-3搬家人员管理界面</p>
+<h3 id="514-搬家须知管理">5.1.4 搬家须知管理</h3>
+<p>管理员可以对搬家须知进行添加修改删除查询操作。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0200ssm/ssm265/blog.017.png"
+        data-srcset="/images/0200ssm/ssm265/blog.017.png, /images/0200ssm/ssm265/blog.017.png 1.5x, /images/0200ssm/ssm265/blog.017.png 2x"
+        data-sizes="auto"
+        alt="/images/0200ssm/ssm265/blog.017.png"
+        title="/images/0200ssm/ssm265/blog.017.png" /></p>
+<p>图5-4搬家须知管理界面</p>
+<h3 id="515-搬家服务管理">5.1.5 搬家服务管理</h3>
+<p>管理员可以对搬家服务进行添加修改删除查询操作。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0200ssm/ssm265/blog.018.png"
+        data-srcset="/images/0200ssm/ssm265/blog.018.png, /images/0200ssm/ssm265/blog.018.png 1.5x, /images/0200ssm/ssm265/blog.018.png 2x"
+        data-sizes="auto"
+        alt="/images/0200ssm/ssm265/blog.018.png"
+        title="/images/0200ssm/ssm265/blog.018.png" /></p>
+<p>图5-5搬家服务管理界面</p>
+<h2 id="52-搬家人员模块">5.2 搬家人员模块</h2>
+<h3 id="521-搬家订单管理">5.2.1 搬家订单管理</h3>
+<p>搬家人员可以在搬家订单里面查看关于自己的搬家订单信息。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0200ssm/ssm265/blog.019.png"
+        data-srcset="/images/0200ssm/ssm265/blog.019.png, /images/0200ssm/ssm265/blog.019.png 1.5x, /images/0200ssm/ssm265/blog.019.png 2x"
+        data-sizes="auto"
+        alt="/images/0200ssm/ssm265/blog.019.png"
+        title="/images/0200ssm/ssm265/blog.019.png" /></p>
+<p>图5-6搬家订单管理界面</p>
+<h2 id="53-司机模块">5.3 司机模块</h2>
+<h3 id="531-搬家订单管理">5.3.1 搬家订单管理</h3>
+<p>司机可以在搬家订单里面查看关于自己的搬家订单信息。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0200ssm/ssm265/blog.020.png"
+        data-srcset="/images/0200ssm/ssm265/blog.020.png, /images/0200ssm/ssm265/blog.020.png 1.5x, /images/0200ssm/ssm265/blog.020.png 2x"
+        data-sizes="auto"
+        alt="/images/0200ssm/ssm265/blog.020.png"
+        title="/images/0200ssm/ssm265/blog.020.png" /></p>
+<p>图5-7搬家订单管理界面</p>
+<h2 id="54-用户模块">5.4 用户模块</h2>
+<h3 id="541-搬家订单">5.4.1 搬家订单</h3>
+<p>用户可以在搬家订单里面查看关于自己的搬家订单信息。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0200ssm/ssm265/blog.021.png"
+        data-srcset="/images/0200ssm/ssm265/blog.021.png, /images/0200ssm/ssm265/blog.021.png 1.5x, /images/0200ssm/ssm265/blog.021.png 2x"
+        data-sizes="auto"
+        alt="/images/0200ssm/ssm265/blog.021.png"
+        title="/images/0200ssm/ssm265/blog.021.png" /></p>
+<p>图5-8搬家订单管理界面</p>
+<h3 id="542-我的收藏">5.4.2 我的收藏</h3>
+<p>用户可以收藏搬家信息，也可以删除收藏的信息，还可以查询自己收藏的信息。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0200ssm/ssm265/blog.022.png"
+        data-srcset="/images/0200ssm/ssm265/blog.022.png, /images/0200ssm/ssm265/blog.022.png 1.5x, /images/0200ssm/ssm265/blog.022.png 2x"
+        data-sizes="auto"
+        alt="/images/0200ssm/ssm265/blog.022.png"
+        title="/images/0200ssm/ssm265/blog.022.png" /></p>
+<p>图5-9我的收藏界面</p>
+<h3 id="543-搬家新闻">5.4.3 搬家新闻</h3>
+<p>用户可以在前台页面查看搬家新闻信息。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0200ssm/ssm265/blog.023.png"
+        data-srcset="/images/0200ssm/ssm265/blog.023.png, /images/0200ssm/ssm265/blog.023.png 1.5x, /images/0200ssm/ssm265/blog.023.png 2x"
+        data-sizes="auto"
+        alt="/images/0200ssm/ssm265/blog.023.png"
+        title="/images/0200ssm/ssm265/blog.023.png" /></p>
+<p>图5-10搬家新闻界面</p>
+<h3 id="544-搬家须知">5.4.4 搬家须知</h3>
+<p>用户可以在前台页面查看搬家须知信息。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0200ssm/ssm265/blog.024.png"
+        data-srcset="/images/0200ssm/ssm265/blog.024.png, /images/0200ssm/ssm265/blog.024.png 1.5x, /images/0200ssm/ssm265/blog.024.png 2x"
+        data-sizes="auto"
+        alt="/images/0200ssm/ssm265/blog.024.png"
+        title="/images/0200ssm/ssm265/blog.024.png" /></p>
+<p>图5-11搬家须知界面</p>
+<h3 id="545-搬家服务">5.4.5 搬家服务</h3>
+<p>用户可以在前台页面查看搬家服务信息，还可以进行预约操作。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0200ssm/ssm265/blog.025.png"
+        data-srcset="/images/0200ssm/ssm265/blog.025.png, /images/0200ssm/ssm265/blog.025.png 1.5x, /images/0200ssm/ssm265/blog.025.png 2x"
+        data-sizes="auto"
+        alt="/images/0200ssm/ssm265/blog.025.png"
+        title="/images/0200ssm/ssm265/blog.025.png" /></p>
+<p>图5-12 搬家服务界面</p>
+<h1 id="第6章-测试">第6章 测试</h1>
+<h2 id="-6-程序的测试"><code> </code>6 程序的测试</h2>
+<h3 id="61-测试的重要性及目的">6.1 测试的重要性及目的</h3>
+<p>（1）测试的重要性</p>
+<p>在软件生命周期中，软件的测试占据着一个重要的位置，在传统的瀑布模式中，软件测试学只是处于在运行维护阶段之前，是软件产品交付给大众用户使用之前用以保证软件质量重要的一个方法。近来，软件工程界中更加趋向于一种新观点，即认为软件每一阶段中的生命周期都理应包含测试，因此使检查本阶段的成果能不能接近预期的结果目标，进而尽可能早一点发现到错误并加以改正，如果测试不是在早期阶段进行的，那么错误将延时扩散，最后常常会导致成品测试面临巨大的困难。</p>
+<p>（2）测试的目的</p>
+<p>首先，测试并不仅仅是为了要找出错误。通过分析错误产生的原因和错误的分布特征，可以帮助项目管理者发现当前所采用的软件过程的缺陷，以便改进。同时，这种分析也能帮助我们设计出有针对性地检测方法，改善测试的有效性。其次，没有检查出错误的测试也有它的价值，完整的测试是测试质量评定的一种方式。</p>
+<h3 id="62-测试的步骤">6.2 测试的步骤</h3>
+<p>类似系统开发的过程，测试工作的过程也需要分步骤来进行，每个步骤在逻辑上是前一个步骤的继续。大型系统软件一般是由若干个子系统而组成的，每一个子系统又是由若干个小的模块组成的。因此，大型系统软件的测试功过基本上由下面的几个步骤组成：</p>
+<p>（1）模块测试 在对模块进行的测试工作步骤中所发现的经常是详细设计和编码的错误。</p>
+<p>（2）系统测试 在对系统进行的测试工作步骤中发现的经常是软件设计时出现的错误，也有可能会发现需求说明中的出现错误。</p>
+<p>（3）验收测试 在对验收进行的测试工作步骤中发现的经常是系统需求说明书中出现的错误。</p>
+<h3 id="63-测试的主要内容">6.3 测试的主要内容</h3>
+<p>我们在进行测试工作的时候为了保证系统的质量，可以将测试工作的内容分成以下所说的几个部分，即: 审查代码、集成测试、单元测试、系统测试和确认测试。</p>
+<p>（1）单元测试</p>
+<p>检查系统设计最小的单位（—个模块）就是单元测试，通过测试检查出用来定义该模块的功能说明不符合与实现该模块的实际功能的情况，以及编码时的错误。</p>
+<p>（2）集成测试</p>
+<p>我们可以将每个小的模块按照设计的需求组装起来后同时进行集成测试，集成测试的主要目的是检查与接口有关联的某些问题。假设一个模块和另一个模块可能会出现由于疏忽的问题而引起有危害的影响；把子功能模块组合起来后可能不能产生预期的主功能；有个别的看起来视乎能接受的误差却很有可能积累到不能接受的程度；全程数据结构可能有错误等。</p>
+<p>（3）确认测试</p>
+<p>确认测试的目的是向未来的用户表明系统能够像预定要求那样工作。经集成测试后，已经按照设计把所有的模块组装成一个完整的软件系统，基本排除了接口的错误，接下来我们就应该进一步的检验系统软件的有效性，就是确认测试工作的任务，是将系统软件的性能和功能发挥到如用户们合理期待的一样。</p>
+<p>（4）系统测试</p>
+<p>完成软件设计开发以后，最后还要将它与系统中其他的部分整合运行，从性能测试、安全测试、强度测试和恢复测试等四个方面来进行系统测试。</p>
+<h3 id="64-测试用例">6.4 测试用例</h3>
+<p>（1） 用户登录测试</p>
+<p>用户登录信息测试过程如表6-1所示:</p>
+<p>表6-1  用户登录测试表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">测试目的</th>
+<th style="text-align:left">操作流程</th>
+<th style="text-align:left">测试用例</th>
+<th style="text-align:left">预测结果</th>
+<th style="text-align:left">测试结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">用户登录</td>
+<td style="text-align:left">填写用户名密码，点击首页【登录】按钮</td>
+<td style="text-align:left"><p>用户名：1</p><p>密码：a</p></td>
+<td style="text-align:left">登录失败</td>
+<td style="text-align:left">提示错误信息</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"><p>用户名：yonghu1</p><p>密码：yonghu1</p></td>
+<td style="text-align:left">登录成功</td>
+<td style="text-align:left">登录成功</td>
+</tr>
+</tbody>
+</table>
+<p><code> </code>（2） 信息发布测试</p>
+<p><code>  </code>信息发布测试过程如表6-2所示：</p>
+<p>表6-2 信息发布测试表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">测试项目</th>
+<th style="text-align:center">操作流程</th>
+<th style="text-align:center">测试用例</th>
+<th style="text-align:center">预测结果</th>
+<th style="text-align:center">测试结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">信息发布</td>
+<td style="text-align:center">管理员登陆后点击首页【信息】按钮，发布信息</td>
+<td style="text-align:center">空</td>
+<td style="text-align:center">发布失败，弹出提示按钮</td>
+<td style="text-align:center">发布失败，提示请填写内容</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">信息有可能延迟</td>
+<td style="text-align:center">发表成功</td>
+<td style="text-align:center">发表成功</td>
+</tr>
+</tbody>
+</table>
+<p>（3）后台管理登录测试</p>
+<p>后台管理登录测试过程如表6-3所示：</p>
+<p>表6-3  后台管理登录测试</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">测试目的</th>
+<th style="text-align:center">操作流程</th>
+<th style="text-align:center">测试用例</th>
+<th style="text-align:center">预测结果</th>
+<th style="text-align:center">测试结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">后台管理登录</td>
+<td style="text-align:center">点击首页填写用户名密码，点击首页【登录】按钮</td>
+<td style="text-align:center"><p>用户名：abo</p><p>密码：123456</p></td>
+<td style="text-align:center">登录失败</td>
+<td style="text-align:center">提示错误信息</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><p>用户名：abo</p><p>密码：abo</p></td>
+<td style="text-align:center">登录成功</td>
+<td style="text-align:center">登录成功</td>
+</tr>
+</tbody>
+</table>
+<h1 id="结论">结论</h1>
+<p>制作毕业设计的紧张激烈和忙乱的几个月，我有机会做专业的基本理论，从而实现了学以致用。以前我们也有过一些设计的体会，但只不过是设计了一个的模块或一个小系统，而此次的毕业设计则是将所学到的计算机的知识和管理类的知识加以综合来设计出一个适合运行管理的搬家预约系统。要想设计使用户满意，就需要我们付出更多的努力。我在设计中经常出现一些问题不知该如何解决，在此时指导老师和许多同学给予了我帮助。在设计的过程中增加了于实际接触的机会，不仅培养了我的自学和编程能力，让我在即将离开学校进入社会之前有了一定的资本，提高了我与人沟通的能力。</p>
+<p>尽管本次开发设计的项目已经取得一定的成效，但由于用户的需求又在不断更新着，随着进一步发展软件设计的技术和时间的推移，在接下来的开发中丰富和完善系统都是很有必要的，以下三个方面具体的说明了我对本次设计开发的项目构想展望：</p>
+<p>1.系统通用性的问题</p>
+<p>目前我们可以通过本系统基本实现搬家预约信息管理工作。为增加软件的通用性，我们可以考虑通过系统的二次开发把该系统推广到全国各搬家预约，使整个搬家预约系统管理工作更加规范完善。</p>
+<p>2.系统的完善性问题</p>
+<p>本系统虽然实现了搬家预约信息管理工作的申请审批等一般流程，但是在审核申请人材料上，还只能依赖申请人填写的信息进行审核，有些信息的真实性不能在第一时间得到准确反馈，所以对申请人信息的在线核实工作是今后一个努力的方向。</p>
+<p>3.与其他部门系统相对接的问题</p>
+<p>如何将搬家预约系统与搬家预约的办公管理系统等相关系统进行有效的对接，实现信息的共享也是今后开发的重点。</p>
+<h1 id="致谢">致谢</h1>
+<p>转眼间，大学四年学习即将完成，回首过去几年的校园生活，可谓是苦乐交加，但是最多的还是收获。本论文的工作是在我的导师[XXXX] 教授的悉心指导下完成的，[XXXX]  教授严谨的治学态度和科学的工作方法给了我极大的帮助和影响。在此衷心感谢三年来[XXXX]  老师对我的关心和指导。</p>
+<p>感谢学校的老师们不仅无私的传授给我们知识，还教会了我们懂得如何做人，对他们表示由衷的感谢。管理信息系统这个学科的毕设任务非常之繁重，通过这几个月充实又紧张的设计过程，深深的感到学习知识得到了一次飞跃，我相信：这次的毕业设计将为我的大学学习打上一个完整的句号。</p>
+<p>另外和我同组同学大家始终团结协作，努力拼搏，增强了我的团队意识，并且我们接下了深厚的友谊，我们自始至终在一种愉快的气氛中学习工作。此次毕业设计对提高我的编程技术、协调团队成员的关系等方面都由许多益处。在此我一并向他们表示感谢。我还要感谢我的母校，以及在学校四年生活中给予我关心和帮助的老师和同学，是他们教会了我专业的知识和怎样做人。经过本次毕业设计还让我懂得了作为一个计算机领域的学生，我们要会的不只是编写代码，还有更重要的就是要有整体掌控系统开发和设计的能力。我要在以后的学习工作当中不断使自己完善。</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2024-01-23</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/ssm265%E5%9F%BA%E4%BA%8Evue%E7%9A%84%E6%90%AC%E5%AE%B6%E9%A2%84%E7%BA%A6%E7%B3%BB%E7%BB%9F-vue/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://chenqi199.github.io/ssm265%E5%9F%BA%E4%BA%8Evue%E7%9A%84%E6%90%AC%E5%AE%B6%E9%A2%84%E7%BA%A6%E7%B3%BB%E7%BB%9F-vue/" data-title="ssm265基于vue的搬家预约系统&#43;vue" data-hashtags="ssmvue,vue搬家,搬家预约,预约系统"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://chenqi199.github.io/ssm265%E5%9F%BA%E4%BA%8Evue%E7%9A%84%E6%90%AC%E5%AE%B6%E9%A2%84%E7%BA%A6%E7%B3%BB%E7%BB%9F-vue/" data-hashtag="ssmvue"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://chenqi199.github.io/ssm265%E5%9F%BA%E4%BA%8Evue%E7%9A%84%E6%90%AC%E5%AE%B6%E9%A2%84%E7%BA%A6%E7%B3%BB%E7%BB%9F-vue/" data-title="ssm265基于vue的搬家预约系统&#43;vue"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://chenqi199.github.io/ssm265%E5%9F%BA%E4%BA%8Evue%E7%9A%84%E6%90%AC%E5%AE%B6%E9%A2%84%E7%BA%A6%E7%B3%BB%E7%BB%9F-vue/" data-title="ssm265基于vue的搬家预约系统&#43;vue"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://chenqi199.github.io/ssm265%E5%9F%BA%E4%BA%8Evue%E7%9A%84%E6%90%AC%E5%AE%B6%E9%A2%84%E7%BA%A6%E7%B3%BB%E7%BB%9F-vue/" data-title="ssm265基于vue的搬家预约系统&#43;vue" data-ralateuid="https://gitee.com/chen_q_i"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ssmvue/">Ssmvue</a>,&nbsp;<a href="/tags/vue%E6%90%AC%E5%AE%B6/">Vue搬家</a>,&nbsp;<a href="/tags/%E6%90%AC%E5%AE%B6%E9%A2%84%E7%BA%A6/">搬家预约</a>,&nbsp;<a href="/tags/%E9%A2%84%E7%BA%A6%E7%B3%BB%E7%BB%9F/">预约系统</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/springboot260%E7%81%AB%E9%94%85%E5%BA%97%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" class="prev" rel="prev" title="springboot260火锅店管理系统"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>springboot260火锅店管理系统</a>
+            <a href="/ssm264%E5%9F%BA%E4%BA%8Essm%E6%A1%86%E6%9E%B6%E7%9A%84%E4%B8%AA%E4%BA%BA%E9%80%9A%E8%AE%AF%E5%BD%95-jsp/" class="next" rel="next" title="ssm264基于SSM框架的个人通讯录&#43;jsp">ssm264基于SSM框架的个人通讯录+jsp<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.128.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="chenqi199" target="_blank">chenqi</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

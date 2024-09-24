@@ -1,0 +1,24 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>医患 - 标签 - chenqi blog</title>
+        <link>https://chenqi199.github.io/tags/%E5%8C%BB%E6%82%A3/</link>
+        <description>医患 - 标签 - chenqi blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>chen_q_i@163.com (chenqi)</managingEditor>
+            <webMaster>chen_q_i@163.com (chenqi)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 09 Jun 2024 11:23:24 &#43;0800</lastBuildDate><atom:link href="https://chenqi199.github.io/tags/%E5%8C%BB%E6%82%A3/" rel="self" type="application/rss+xml" /><item>
+    <title>0679springboot医患档案管理系统</title>
+    <link>https://chenqi199.github.io/0679springboot%E5%8C%BB%E6%82%A3%E6%A1%A3%E6%A1%88%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/</link>
+    <pubDate>Sun, 09 Jun 2024 11:23:24 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/0679springboot%E5%8C%BB%E6%82%A3%E6%A1%A3%E6%A1%88%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site 0679springboot医患档案管理系统 github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 内容整理中]]></description>
+</item>
+<item>
+    <title>ssm077铁岭河医院医患管理系统&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm077%E9%93%81%E5%B2%AD%E6%B2%B3%E5%8C%BB%E9%99%A2%E5%8C%BB%E6%82%A3%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/</link>
+    <pubDate>Tue, 21 Nov 2023 22:29:53 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm077%E9%93%81%E5%B2%AD%E6%B2%B3%E5%8C%BB%E9%99%A2%E5%8C%BB%E6%82%A3%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm077铁岭河医院医患管理系统+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 系统概述 进过系统的分析后，就开]]></description>
+</item>
+</channel>
+</rss>

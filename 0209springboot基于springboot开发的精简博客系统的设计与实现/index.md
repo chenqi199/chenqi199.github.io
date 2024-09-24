@@ -1,17 +1,16 @@
 # 0209springboot基于Springboot开发的精简博客系统的设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0209springboot基于Springboot开发的精简博客系统的设计与实现](https://github.com/GraduationProject-springboot/0209springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)]()
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
 ## 1.1研究背景与意义
@@ -128,42 +127,42 @@ MySQL数据库是目前使用较多的关系型数据库。因为其具有开源
 论坛信息添加
 
 
-![](/images/0200stringboot/0209springboot/blog.003.png)
+![](/images/0200wxapp//blog.003.png)
 
 图4-1系统总体功能设计图
 ## 4.2数据库设计
 ### 4.2.1概念设计
 本系统使用轻量级的MySQL数据库，对系统相关的数据信息进行管理和维护[12]。数据库设计阶段主要可以被分为两个阶段，分别为概念设计和逻辑设计阶段。在整个的数据库设计的过程中，两个阶段起到作用是不同的，概念设计阶段是实现基础，逻辑设计阶段最终目标。概念设计阶段主要通过使用实体-联系图（E-R图）的方式，将现实世界中用户的相关需求抽象化为虚拟世界中的概念模型。本人通过设计E-R图，详细的对系统中的实体以及实体之间的联系进行了表达。各实体信息的E-R图如图4-2、图4-3、图4-4、图4-5、图4-6、图4-7、图4-8所示，系统总体E-R图如图4-9所示。
 
-![](/images/0200stringboot/0209springboot/blog.004.png)
+![](/images/0200wxapp//blog.004.png)
 
 图4-2管理员信息E-R图
 
-![](/images/0200stringboot/0209springboot/blog.005.png)
+![](/images/0200wxapp//blog.005.png)
 
 图4-3用户信息E-R图
 
-![](/images/0200stringboot/0209springboot/blog.006.png)
+![](/images/0200wxapp//blog.006.png)
 
 图4-4博客信息E-R图
 
-![](/images/0200stringboot/0209springboot/blog.007.png)
+![](/images/0200wxapp//blog.007.png)
 
 图4-5博客评论信息E-R图
 
-![](/images/0200stringboot/0209springboot/blog.008.png)
+![](/images/0200wxapp//blog.008.png)
 
 图4-6博客收藏信息E-R图
 
-![](/images/0200stringboot/0209springboot/blog.009.png)
+![](/images/0200wxapp//blog.009.png)
 
 图4-7公告信息E-R图
 
-![](/images/0200stringboot/0209springboot/blog.010.png)
+![](/images/0200wxapp//blog.010.png)
 
 图4-8论坛信息E-R图
 
-![](/images/0200stringboot/0209springboot/blog.011.png)
+![](/images/0200wxapp//blog.011.png)
 
 图4-9系统总体E-R图
 ### 4.2.2逻辑设计
@@ -274,73 +273,73 @@ MySQL数据库是目前使用较多的关系型数据库。因为其具有开源
 ## 5.1个人中心
 通过设计的个人中心管理功能模块，管理用户可以对相关的个人信息进行管理，比如管理用户可以更新个人账号的密码信息，修改个人账号的用户名信息等，修改密码界面设计如图5-1所示，个人信息界面设计如图5-2所示。
 
-![](/images/0200stringboot/0209springboot/blog.012.png)
+![](/images/0200wxapp//blog.012.png)
 
 图5-1修改密码界面
 
-![](/images/0200stringboot/0209springboot/blog.013.png)
+![](/images/0200wxapp//blog.013.png)
 
 图5-2个人信息界面
 ## 5.2管理员管理
 通过设计的管理员管理功能模块，管理用户可以管理相关的管理员信息资料，比如进行查看管理员的用户名，更新管理员的密码信息，删除已经注销的管理员信息记录等操作，管理员管理界面设计如图5-3所示。
 
-![](/images/0200stringboot/0209springboot/blog.014.png)
+![](/images/0200wxapp//blog.014.png)
 
 图5-3管理员管理界面
 ## 5.3用户管理
 通过设计的员工管理功能模块，管理用户可以管理相关的用户信息资料，比如进行查看用户姓名，修改用户联系方式，删除已经注销的用户信息记录等操作，用户管理界面设计如图5-4所示。
 
-![](/images/0200stringboot/0209springboot/blog.015.png)
+![](/images/0200wxapp//blog.015.png)
 
 图5-4用户管理界面
 ## 5.4基础数据管理
 通过设计的基础数据管理功能模块，管理用户可以对相关的博客类型、帖子类型、公告类型信息进行管理，比如管理用户可以查看博客类型、帖子类型、公告类型的详情信息，删除失效的博客类型、帖子类型、公告类型信息记录等，博客类型管理界面设计如图5-5所示，帖子类型管理界面设计如图5-6所示，公告类型管理界面设计如图5-7所示。
 
-![](/images/0200stringboot/0209springboot/blog.016.png)
+![](/images/0200wxapp//blog.016.png)
 
 图5-5博客类型管理界面
 
-![](/images/0200stringboot/0209springboot/blog.017.png)
+![](/images/0200wxapp//blog.017.png)
 
 图5-6帖子类型管理界面
 
-![](/images/0200stringboot/0209springboot/blog.018.png)
+![](/images/0200wxapp//blog.018.png)
 
 图5-7公告类型管理界面
 ## 5.5博客信息管理
 通过设计的博客信息管理功能模块，管理用户可以对相关的博客信息进行管理，比如管理用户可以查看博客内容信息，删除已经失效的博客信息记录等操作，博客信息管理界面设计如图5-8所示。
 
-![](/images/0200stringboot/0209springboot/blog.019.png)
+![](/images/0200wxapp//blog.019.png)
 
 图5-8博客信息管理界面
 ## 5.6博客评论管理
 通过设计的博客评论信息管理功能模块，管理用户可以对相关的博客评论信息进行管理，比如管理用户可以查看博客评论内容信息，删除已经失效的博客评论信息记录等操作，博客评论管理界面设计如图5-9所示。
 
-![](/images/0200stringboot/0209springboot/blog.020.png)
+![](/images/0200wxapp//blog.020.png)
 
 图5-9博客评论管理界面
 ## 5.7博客收藏管理
 通过设计的博客收藏管理功能模块，管理用户可以对相关的博客收藏信息进行管理，比如管理用户可以查看博客收藏时间信息，删除已经失效的博客收藏信息记录等操作，博客收藏管理界面设计如图5-10所示。
 
-![](/images/0200stringboot/0209springboot/blog.021.png)
+![](/images/0200wxapp//blog.021.png)
 
 图5-10博客收藏管理界面
 ## 5.8论坛管理
 通过设计的论坛管理功能模块，管理用户可以对相关的论坛信息进行管理，比如管理用户可以查看论坛的帖子内容信息，删除已经失效的论坛信息记录等操作，论坛管理界面设计如图5-11所示。
 
-![](/images/0200stringboot/0209springboot/blog.022.png)
+![](/images/0200wxapp//blog.022.png)
 
 图5-11论坛管理界面
 ## 5.9公告信息管理
 通过设计的公告信息管理功能模块，管理用户可以对相关的公告信息进行管理，比如管理用户可以查看公告时间信息，删除已经失效的公告信息记录等操作，公告信息管理界面设计如图5-12所示。
 
-![](/images/0200stringboot/0209springboot/blog.023.png)
+![](/images/0200wxapp//blog.023.png)
 
 图5-12公告信息管理界面
 ## 5.10轮播图管理
 通过设计的轮播图管理功能模块，管理用户可以对相关的轮播图信息进行管理，比如管理用户可以查看轮播图名称信息，删除已经失效的轮播图信息记录等操作，轮播图管理界面设计如图5-13所示。
 
-![](/images/0200stringboot/0209springboot/blog.024.png)
+![](/images/0200wxapp//blog.024.png)
 
 图5-13轮播图管理界面
 

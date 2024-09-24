@@ -1,17 +1,16 @@
 # 0255springboot基于springboot+vue的游戏交易系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0255springboot基于springboot+vue的游戏交易系统](https://github.com/GraduationProject-springboot/0255springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1EbH?p=23)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第一章 绪论
 ## 1.1 选题背景
@@ -59,25 +58,25 @@ Spring Boot适合初学者，也适合从以前的Spring框架开发者学习，
 ## 3.2系统流程分析
 从系统的角色上分析，每个用户角色都代表了不同的账号身份，而不同的身份则代表着功能的异同，所以首先要区分用户的角色身份问题。设置用户登录需要输入账号和密码，输入的信息必须与数据库里已经存在的账号密码信息进行比对，只有正确的账号和密码才可以进行下一步的页面显示操作，如果不正确的账号密码，则拒绝用户登录，也代表着用户没有继续访问的权限，系统是无法继续提供服务的。
 
-![](/images/0200stringboot/0255springboot/blog.001.png)
+![](/images/0200wxapp//blog.001.png)
 
 图3-1 操作流程图
 
 任何一个系统都有一个操作流程，本设计里面，对于任何数据的存储都有一定的合法要求，只有符合设定要求的数据才可以进行存储。具体步骤参考下图。
 
-![](/images/0200stringboot/0255springboot/blog.002.png)
+![](/images/0200wxapp//blog.002.png)
 
 图3-2 添加信息流程图
 
 数据的存储并不是一成不变的，当需要对已经存在的数据进行改变的时候，同样也遵循着操作流程，想更改数据首先要确定更改之前的数据是什么，然后输入新的数据是否合法，都要符合流程，只有合法数据才可以被更新到数据库里存储。具体步骤参考下图。
 
-![](/images/0200stringboot/0255springboot/blog.003.png)
+![](/images/0200wxapp//blog.003.png)
 
 图3-3 修改信息流程图
 
 删除操作，在数据存储方面是一件比较慎重的事件，很有可能会产生失误操作，所以一般删除操作的时候都要提示是否删除，确定删除才会更新数据库内容，实现删除目的。具体步骤参考下图。
 
-![](/images/0200stringboot/0255springboot/blog.004.png)
+![](/images/0200wxapp//blog.004.png)
 
 图3-4 删除信息流程图
 ## 3.3系统性能分析
@@ -93,13 +92,13 @@ Spring Boot适合初学者，也适合从以前的Spring框架开发者学习，
 
 管理员用例图的绘制结果见图3-5。管理员登录进入本系统操作的功能包括对商品信息，订单投诉信息，商品评价信息，商品收藏信息，会员等级信息，商品订单信息等进行管理。
 
-![](/images/0200stringboot/0255springboot/blog.005.png)
+![](/images/0200wxapp//blog.005.png)
 
 图3-5 管理员用例图
 
 用户用例图的绘制结果见图3-6。用户登录进入本系统操作的功能包括收藏喜欢的商品以及购买商品，查看商品购买信息，管理购物车，管理订单投诉等。
 
-![](/images/0200stringboot/0255springboot/blog.006.png)
+![](/images/0200wxapp//blog.006.png)
 
 图3-6 用户用例图
 # 第四章 系统设计
@@ -117,13 +116,13 @@ Spring Boot适合初学者，也适合从以前的Spring框架开发者学习，
 
 管理员功能结构图的绘制结果见图4-1。管理员登录进入本系统操作的功能包括对商品信息，订单投诉信息，商品评价信息，商品收藏信息，会员等级信息，商品订单信息等进行管理。
 
-![](/images/0200stringboot/0255springboot/blog.007.png)
+![](/images/0200wxapp//blog.007.png)
 
 图4-1 管理员功能结构图
 
 用户功能结构图的绘制结果见图4-2。用户登录进入本系统操作的功能包括收藏喜欢的商品以及购买商品，查看商品购买信息，管理购物车，管理订单投诉等。
 
-![](/images/0200stringboot/0255springboot/blog.008.png)
+![](/images/0200wxapp//blog.008.png)
 
 图4-2 用户功能结构图
 ## 4.3数据库设计
@@ -133,31 +132,31 @@ Spring Boot适合初学者，也适合从以前的Spring框架开发者学习，
 
 （1）使用Visio这样的常用的实体属性图绘制工具来绘制商品实体属性图，绘制结果见图4-3。
 
-![](/images/0200stringboot/0255springboot/blog.009.png)
+![](/images/0200wxapp//blog.009.png)
 
 图4-3 商品实体属性图
 
 （2）使用Visio这样的常用的实体属性图绘制工具来绘制商品订单实体属性图，绘制结果见图4-4。
 
-![](/images/0200stringboot/0255springboot/blog.010.png)
+![](/images/0200wxapp//blog.010.png)
 
 图4-4 商品订单实体属性图
 
 （3）使用Visio这样的常用的实体属性图绘制工具来绘制用户实体属性图，绘制结果见图4-5。
 
-![](/images/0200stringboot/0255springboot/blog.011.png)
+![](/images/0200wxapp//blog.011.png)
 
 图4-5 用户实体属性图
 
 （4）使用Visio这样的常用的实体属性图绘制工具来绘制管理员实体属性图，绘制结果见图4-6。
 
-![](/images/0200stringboot/0255springboot/blog.012.png)
+![](/images/0200wxapp//blog.012.png)
 
 图4-6 管理员实体属性图
 
 （5）绘制的上述实体间存在的联系见图4-7。
 
-![](/images/0200stringboot/0255springboot/blog.013.png)
+![](/images/0200wxapp//blog.013.png)
 
 图4-7 实体间关系E-R图
 ### 4.3.2 数据库物理设计
@@ -311,56 +310,56 @@ Spring Boot适合初学者，也适合从以前的Spring框架开发者学习，
 ### 5.1.1 商品管理
 管理员进入如图5-1所示的商品管理界面之后，管理员点击信息显示栏中最右侧的修改，删除，下架，增加库存，减少库存按钮可依次完成商品信息的修改，删除，下架，商品库存增加，减少商品库存等操作。
 
-![](/images/0200stringboot/0255springboot/blog.015.png)
+![](/images/0200wxapp//blog.015.png)
 
 图5-1 商品管理界面
 ### 5.1.2 商品评价管理
 管理员进入如图5-2所示的商品评价管理界面之后，管理员点击信息显示栏中最右侧的回复，删除按钮可依次完成商品评价信息的回复，删除等操作。
 
-![](/images/0200stringboot/0255springboot/blog.016.png)
+![](/images/0200wxapp//blog.016.png)
 
 图5-2 商品评价管理界面
 ### 5.1.3 商品订单管理
 管理员进入如图5-3所示的商品订单管理界面之后，管理员点击信息显示栏中最右侧的详情，删除，发货按钮可依次完成商品订单信息的详情查看，删除，发货等操作。
 
-![](/images/0200stringboot/0255springboot/blog.017.png)
+![](/images/0200wxapp//blog.017.png)
 
 图5-3 商品订单管理界面
 ### 5.1.4 订单投诉管理 
 管理员进入如图5-4所示的订单投诉管理界面之后，管理员点击信息显示栏中最右侧的修改，删除按钮可依次完成订单投诉信息的修改，删除操作。
 
-![](/images/0200stringboot/0255springboot/blog.018.png)
+![](/images/0200wxapp//blog.018.png)
 
 图5-4 订单投诉管理界面
 ### 5.1.5 用户管理
 管理员进入如图5-5所示的用户管理界面之后，管理员点击信息显示栏中最右侧的修改，删除，重置密码按钮可依次完成用户信息的修改，删除，账户密码重置等操作。
 
-![](/images/0200stringboot/0255springboot/blog.019.png)
+![](/images/0200wxapp//blog.019.png)
 
 图5-5 用户管理界面
 ## 5.2 用户功能实现
 ### 5.2.1 商品信息
 用户进入如图5-6所示的商品信息界面之后，用户通过商品介绍信息了解商品，用户点击立即购买按钮可以实现商品的快速下单。
 
-![](/images/0200stringboot/0255springboot/blog.020.png)
+![](/images/0200wxapp//blog.020.png)
 
 图5-6 商品信息界面
 ### 5.2.2 确认下单
 用户进入如图5-7所示的确认下单界面之后，用户确认商品信息以及实付金额信息是否正确，最后提交订单。
 
-![](/images/0200stringboot/0255springboot/blog.021.png)
+![](/images/0200wxapp//blog.021.png)
 
 图5-7 确认下单界面
 ### 5.2.3 商品订单
 用户进入如图5-8所示的商品订单界面之后，用户根据个人需要对不同订单进行相应操作。包括退款，收货等操作。
 
-![](/images/0200stringboot/0255springboot/blog.022.png)
+![](/images/0200wxapp//blog.022.png)
 
 图5-8 商品订单界面
 ### 5.2.4 购物车
 用户进入如图5-9所示的购物车界面之后，用户通过购物车可以集中所有需要购买的商品，然后统一提交订单并统一支付。
 
-![](/images/0200stringboot/0255springboot/blog.023.png)
+![](/images/0200wxapp//blog.023.png)
 
 图5-9 购物车界面
 

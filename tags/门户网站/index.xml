@@ -1,0 +1,24 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>门户网站 - 标签 - chenqi blog</title>
+        <link>https://chenqi199.github.io/tags/%E9%97%A8%E6%88%B7%E7%BD%91%E7%AB%99/</link>
+        <description>门户网站 - 标签 - chenqi blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>chen_q_i@163.com (chenqi)</managingEditor>
+            <webMaster>chen_q_i@163.com (chenqi)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 26 Jul 2024 10:33:04 &#43;0800</lastBuildDate><atom:link href="https://chenqi199.github.io/tags/%E9%97%A8%E6%88%B7%E7%BD%91%E7%AB%99/" rel="self" type="application/rss+xml" /><item>
+    <title>ssm820基于web技术的税务门户网站的实现&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm820%E5%9F%BA%E4%BA%8Eweb%E6%8A%80%E6%9C%AF%E7%9A%84%E7%A8%8E%E5%8A%A1%E9%97%A8%E6%88%B7%E7%BD%91%E7%AB%99%E7%9A%84%E5%AE%9E%E7%8E%B0-vue/</link>
+    <pubDate>Fri, 26 Jul 2024 10:33:04 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm820%E5%9F%BA%E4%BA%8Eweb%E6%8A%80%E6%9C%AF%E7%9A%84%E7%A8%8E%E5%8A%A1%E9%97%A8%E6%88%B7%E7%BD%91%E7%AB%99%E7%9A%84%E5%AE%9E%E7%8E%B0-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm820基于web技术的税务门户网站的实现+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1.1 研究背景 当前]]></description>
+</item>
+<item>
+    <title>ssm329网月科技公司门户网站开发与实现&#43;jsp</title>
+    <link>https://chenqi199.github.io/ssm329%E7%BD%91%E6%9C%88%E7%A7%91%E6%8A%80%E5%85%AC%E5%8F%B8%E9%97%A8%E6%88%B7%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/</link>
+    <pubDate>Wed, 14 Feb 2024 10:32:52 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm329%E7%BD%91%E6%9C%88%E7%A7%91%E6%8A%80%E5%85%AC%E5%8F%B8%E9%97%A8%E6%88%B7%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm329网月科技公司门户网站开发与实现+jsp github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 系统概述 1.1 研究背景 智慧]]></description>
+</item>
+</channel>
+</rss>

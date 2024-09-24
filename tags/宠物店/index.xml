@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>宠物店 - 标签 - chenqi blog</title>
+        <link>https://chenqi199.github.io/tags/%E5%AE%A0%E7%89%A9%E5%BA%97/</link>
+        <description>宠物店 - 标签 - chenqi blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>chen_q_i@163.com (chenqi)</managingEditor>
+            <webMaster>chen_q_i@163.com (chenqi)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 24 Jan 2024 10:32:51 &#43;0800</lastBuildDate><atom:link href="https://chenqi199.github.io/tags/%E5%AE%A0%E7%89%A9%E5%BA%97/" rel="self" type="application/rss+xml" /><item>
+    <title>ssm266宠物店管理平台开发</title>
+    <link>https://chenqi199.github.io/ssm266%E5%AE%A0%E7%89%A9%E5%BA%97%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0%E5%BC%80%E5%8F%91/</link>
+    <pubDate>Wed, 24 Jan 2024 10:32:51 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm266%E5%AE%A0%E7%89%A9%E5%BA%97%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0%E5%BC%80%E5%8F%91/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm266宠物店管理平台开发 github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 内容整理中]]></description>
+</item>
+</channel>
+</rss>

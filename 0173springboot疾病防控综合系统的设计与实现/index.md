@@ -1,17 +1,16 @@
 # 0173springboot疾病防控综合系统的设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0173springboot疾病防控综合系统的设计与实现](https://github.com/GraduationProject-springboot/0173springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1ECs?p=71)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第一章 绪论
 ## 1.1 选题背景
@@ -59,25 +58,25 @@ Spring Boot适合初学者，也适合从以前的Spring框架开发者学习，
 ## 3.2系统流程分析
 从系统的角色上分析，每个用户角色都代表了不同的账号身份，而不同的身份则代表着功能的异同，所以首先要区分用户的角色身份问题。设置用户登录需要输入账号和密码，输入的信息必须与数据库里已经存在的账号密码信息进行比对，只有正确的账号和密码才可以进行下一步的页面显示操作，如果不正确的账号密码，则拒绝用户登录，也代表着用户没有继续访问的权限，系统是无法继续提供服务的。
 
-![](/images/0100stringboot/0173springboot/blog.001.png)
+![](/images/0100wxapp//blog.001.png)
 
 图3-1 操作流程图
 
 任何一个系统都有一个操作流程，本设计里面，对于任何数据的存储都有一定的合法要求，只有符合设定要求的数据才可以进行存储。具体步骤参考下图。
 
-![](/images/0100stringboot/0173springboot/blog.002.png)
+![](/images/0100wxapp//blog.002.png)
 
 图3-2 添加信息流程图
 
 数据的存储并不是一成不变的，当需要对已经存在的数据进行改变的时候，同样也遵循着操作流程，想更改数据首先要确定更改之前的数据是什么，然后输入新的数据是否合法，都要符合流程，只有合法数据才可以被更新到数据库里存储。具体步骤参考下图。
 
-![](/images/0100stringboot/0173springboot/blog.003.png)
+![](/images/0100wxapp//blog.003.png)
 
 图3-3 修改信息流程图
 
 删除操作，在数据存储方面是一件比较慎重的事件，很有可能会产生失误操作，所以一般删除操作的时候都要提示是否删除，确定删除才会更新数据库内容，实现删除目的。具体步骤参考下图。
 
-![](/images/0100stringboot/0173springboot/blog.004.png)
+![](/images/0100wxapp//blog.004.png)
 
 图3-4 删除信息流程图
 ## 3.3系统性能分析
@@ -93,13 +92,13 @@ Spring Boot适合初学者，也适合从以前的Spring框架开发者学习，
 
 管理员用例图的绘制结果见图3-5。管理员登录进入本系统操作的功能包括管理打卡信息，管理核酸检测，管理接种记录，管理物资，审核物资申请，管理出入记录，管理社区疫情等。
 
-![](/images/0100stringboot/0173springboot/blog.005.png)
+![](/images/0100wxapp//blog.005.png)
 
 图3-5 管理员用例图
 
 用户用例图的绘制结果见图3-6。用户登录进入本系统操作的功能包括查看出入记录，核酸检测，接种记录，管理打卡，申请物资等。
 
-![](/images/0100stringboot/0173springboot/blog.006.png)
+![](/images/0100wxapp//blog.006.png)
 
 图3-6 用户用例图
 # 第四章 系统设计
@@ -117,13 +116,13 @@ Spring Boot适合初学者，也适合从以前的Spring框架开发者学习，
 
 管理员功能结构图的绘制结果见图4-1。管理员登录进入本系统操作的功能包括管理打卡信息，管理核酸检测，管理接种记录，管理物资，审核物资申请，管理出入记录，管理社区疫情等。
 
-![](/images/0100stringboot/0173springboot/blog.007.png)
+![](/images/0100wxapp//blog.007.png)
 
 图4-1 管理员功能结构图
 
 用户功能结构图的绘制结果见图4-2。用户登录进入本系统操作的功能包括查看出入记录，核酸检测，接种记录，管理打卡，申请物资等。
 
-![](/images/0100stringboot/0173springboot/blog.008.png)
+![](/images/0100wxapp//blog.008.png)
 
 图4-2 用户功能结构图
 ## 4.3数据库设计
@@ -133,31 +132,31 @@ Spring Boot适合初学者，也适合从以前的Spring框架开发者学习，
 
 （1）使用Visio这样的常用的实体属性图绘制工具来绘制打卡实体属性图，绘制结果见图4-3。
 
-![](/images/0100stringboot/0173springboot/blog.009.png)
+![](/images/0100wxapp//blog.009.png)
 
 图4-3 打卡实体属性图
 
 （2）使用Visio这样的常用的实体属性图绘制工具来绘制接种记录实体属性图，绘制结果见图4-4。
 
-![](/images/0100stringboot/0173springboot/blog.010.png)
+![](/images/0100wxapp//blog.010.png)
 
 图4-4 接种记录实体属性图
 
 （3）使用Visio这样的常用的实体属性图绘制工具来绘制物资实体属性图，绘制结果见图4-5。
 
-![](/images/0100stringboot/0173springboot/blog.011.png)
+![](/images/0100wxapp//blog.011.png)
 
 图4-5 物资实体属性图
 
 （4）使用Visio这样的常用的实体属性图绘制工具来绘制用户实体属性图，绘制结果见图4-6。
 
-![](/images/0100stringboot/0173springboot/blog.012.png)
+![](/images/0100wxapp//blog.012.png)
 
 图4-6 用户实体属性图
 
 （5）绘制的上述实体间存在的联系见图4-7。
 
-![](/images/0100stringboot/0173springboot/blog.013.png)
+![](/images/0100wxapp//blog.013.png)
 
 图4-7 实体间关系E-R图
 ### 4.3.2 数据库物理设计
@@ -302,56 +301,56 @@ Spring Boot适合初学者，也适合从以前的Spring框架开发者学习，
 ### 5.1.1 核酸检测管理
 管理员进入如图5-1所示的核酸检测管理界面之后，管理员点击信息显示栏中最右侧的修改，删除按钮可依次完成核酸检测信息的修改，删除等操作，管理员也能在当前界面查询核酸检测信息，添加核酸检测信息等。
 
-![](/images/0100stringboot/0173springboot/blog.015.png)
+![](/images/0100wxapp//blog.015.png)
 
 图5-1 核酸检测管理界面
 ### 5.1.2 接种记录管理
 管理员进入如图5-2所示的接种记录管理界面之后，管理员点击信息显示栏中最右侧的修改，删除按钮可依次完成接种记录信息的修改，删除等操作，管理员在当前界面也能添加接种记录，查询接种记录。
 
-![](/images/0100stringboot/0173springboot/blog.016.png)
+![](/images/0100wxapp//blog.016.png)
 
 图5-2 接种记录管理界面
 ### 5.1.3 物资管理
 管理员进入如图5-3所示的物资管理界面之后，管理员点击信息显示栏中最右侧的修改，删除，增加库存，减少库存按钮可依次完成物资信息的修改，删除，增加库存，减少库存等操作。
 
-![](/images/0100stringboot/0173springboot/blog.017.png)
+![](/images/0100wxapp//blog.017.png)
 
 图5-3 物资管理界面
 ### 5.1.4 物资申请管理
 管理员进入如图5-4所示的物资申请管理界面之后，管理员点击信息显示栏中最右侧的修改，删除按钮可依次完成物资申请信息的修改，删除操作，管理员在本界面也能审核用户提交的物资申请信息。
 
-![](/images/0100stringboot/0173springboot/blog.018.png)
+![](/images/0100wxapp//blog.018.png)
 
 图5-4 物资申请管理界面
 ### 5.1.5 出入记录管理
 管理员进入如图5-5所示的出入记录管理界面之后，管理员点击信息显示栏中最右侧的修改，删除按钮可依次完成用户出入记录信息的修改，删除操作，管理员在本界面也能添加出入记录信息，查询出入记录信息等。
 
-![](/images/0100stringboot/0173springboot/blog.019.png)
+![](/images/0100wxapp//blog.019.png)
 
 图5-5 出入记录管理界面
 ## 5.2 用户功能实现
 ### 5.2.1 打卡管理
 用户进入如图5-6所示的打卡管理界面之后，用户点击信息显示栏右侧的删除按钮可以删除打卡信息，用户在本界面可以新增打卡信息，查询打卡信息等。
 
-![](/images/0100stringboot/0173springboot/blog.020.png)
+![](/images/0100wxapp//blog.020.png)
 
 图5-6 打卡管理界面
 ### 5.2.2 接种记录查看
 用户进入如图5-7所示的接种记录查看界面之后，用户可以查看接种记录信息，可以查询接种记录信息等。
 
-![](/images/0100stringboot/0173springboot/blog.021.png)
+![](/images/0100wxapp//blog.021.png)
 
 图5-7 接种记录查看界面
 ### 5.2.3 公告信息查看
 用户进入如图5-8所示的公告信息查看界面之后，用户可以查询公告，鼠标点击公告标题可以查看公告的具体内容。
 
-![](/images/0100stringboot/0173springboot/blog.022.png)
+![](/images/0100wxapp//blog.022.png)
 
 图5-8 公告信息查看界面
 ### 5.2.4 社区疫情情况
 用户进入如图5-9所示的社区疫情情况界面之后，用户可以查询社区疫情情况信息，可以点击社区疫情情况的标题查看社区疫情情况的具体内容。
 
-![](/images/0100stringboot/0173springboot/blog.023.png)
+![](/images/0100wxapp//blog.023.png)
 
 图5-9 社区疫情情况界面
 

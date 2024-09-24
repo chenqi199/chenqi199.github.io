@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>卖系统 - 标签 - chenqi blog</title>
+        <link>https://chenqi199.github.io/tags/%E5%8D%96%E7%B3%BB%E7%BB%9F/</link>
+        <description>卖系统 - 标签 - chenqi blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>chen_q_i@163.com (chenqi)</managingEditor>
+            <webMaster>chen_q_i@163.com (chenqi)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 10 Jun 2024 11:23:24 &#43;0800</lastBuildDate><atom:link href="https://chenqi199.github.io/tags/%E5%8D%96%E7%B3%BB%E7%BB%9F/" rel="self" type="application/rss+xml" /><item>
+    <title>0682springboot在线外卖系统</title>
+    <link>https://chenqi199.github.io/0682springboot%E5%9C%A8%E7%BA%BF%E5%A4%96%E5%8D%96%E7%B3%BB%E7%BB%9F/</link>
+    <pubDate>Mon, 10 Jun 2024 11:23:24 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/0682springboot%E5%9C%A8%E7%BA%BF%E5%A4%96%E5%8D%96%E7%B3%BB%E7%BB%9F/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site 0682springboot在线外卖系统 github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 内容整理中]]></description>
+</item>
+</channel>
+</rss>

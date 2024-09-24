@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer" />
+        <meta name="robots" content="noodp" />
+        <title>ssm576中小型医院管理系统的设计与实现&#43;jsp - chenqi blog</title><meta name="Description" content="Hugo theme - chenqi"><meta property="og:url" content="https://chenqi199.github.io/ssm576%E4%B8%AD%E5%B0%8F%E5%9E%8B%E5%8C%BB%E9%99%A2%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/">
+  <meta property="og:site_name" content="chenqi blog">
+  <meta property="og:title" content="ssm576中小型医院管理系统的设计与实现&#43;jsp">
+  <meta property="og:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm576中小型医院管理系统的设计与实现&#43;jsp github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 研究背景和来源 目前的网">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-05-06T10:32:58+08:00">
+    <meta property="article:modified_time" content="2024-05-06T10:32:58+08:00">
+    <meta property="article:tag" content="Ssm医院">
+    <meta property="article:tag" content="系统设计">
+    <meta property="article:tag" content="设计实现">
+    <meta property="article:tag" content="医院管理">
+    <meta property="article:tag" content="管理系统">
+    <meta property="og:image" content="https://chenqi199.github.io/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chenqi199.github.io/logo.png">
+  <meta name="twitter:title" content="ssm576中小型医院管理系统的设计与实现&#43;jsp">
+  <meta name="twitter:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm576中小型医院管理系统的设计与实现&#43;jsp github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 研究背景和来源 目前的网">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chenqi199.github.io/ssm576%E4%B8%AD%E5%B0%8F%E5%9E%8B%E5%8C%BB%E9%99%A2%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" /><link rel="prev" href="https://chenqi199.github.io/ssm577%E8%AE%A2%E9%A4%90%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-jsp/" /><link rel="next" href="https://chenqi199.github.io/ssm575%E5%AD%A6%E7%94%9F%E6%A1%A3%E6%A1%88%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-jsp/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "ssm576中小型医院管理系统的设计与实现+jsp",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chenqi199.github.io\/ssm576%E4%B8%AD%E5%B0%8F%E5%9E%8B%E5%8C%BB%E9%99%A2%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp\/"
+        },"image": ["https:\/\/chenqi199.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "ssm医院, 系统设计, 设计实现, 医院管理, 管理系统","wordcount":  6757 ,
+        "url": "https:\/\/chenqi199.github.io\/ssm576%E4%B8%AD%E5%B0%8F%E5%9E%8B%E5%8C%BB%E9%99%A2%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp\/","datePublished": "2024-05-06T10:32:58+08:00","dateModified": "2024-05-06T10:32:58+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/chenqi199.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "chenqi"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/ssm576%E4%B8%AD%E5%B0%8F%E5%9E%8B%E5%8C%BB%E9%99%A2%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/ssm576%E4%B8%AD%E5%B0%8F%E5%9E%8B%E5%8C%BB%E9%99%A2%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">ssm576中小型医院管理系统的设计与实现+jsp</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="chenqi199" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>chenqi</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-05-06">2024-05-06</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 6757 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 14 分钟&nbsp;<span id="/ssm576%E4%B8%AD%E5%B0%8F%E5%9E%8B%E5%8C%BB%E9%99%A2%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" class="leancloud_visitors" data-flag-title="ssm576中小型医院管理系统的设计与实现&#43;jsp">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">github 项目仓库</a> 开源仅有后端代码</a></li>
+        <li><a href="#点击播放视频-">点击播放视频 ▼</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#12课题研究现状">1.2课题研究现状</a></li>
+    <li><a href="#13课题开发的目的和意义">1.3课题开发的目的和意义</a></li>
+    <li><a href="#14课题开发内容">1.4课题开发内容</a></li>
+    <li><a href="#15论文结构安排">1.5论文结构安排</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#21系统开发使用的关键技术">2.1系统开发使用的关键技术</a></li>
+    <li><a href="#22-jsp技术介绍">2.2 Jsp技术介绍</a></li>
+    <li><a href="#23-idea介绍">2.3 Idea介绍</a></li>
+    <li><a href="#24-mysql数据库介绍">2.4 Mysql数据库介绍</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#31系统需求分析">3.1系统需求分析</a></li>
+    <li><a href="#32系统可行性分析">3.2系统可行性分析</a>
+      <ul>
+        <li><a href="#322经济可行性">3.2.2经济可行性</a></li>
+        <li><a href="#323运行可行性分析">3.2.3运行可行性分析</a></li>
+        <li><a href="#324法律可行性">3.2.4法律可行性</a></li>
+      </ul>
+    </li>
+    <li><a href="#33系统功能分析">3.3系统功能分析</a></li>
+    <li><a href="#34系统性能分析">3.4系统性能分析</a></li>
+    <li><a href="#35业务流程分析">3.5业务流程分析</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#41系统功能结构设计">4.1系统功能结构设计</a></li>
+    <li><a href="#42系统数据库设计">4.2系统数据库设计</a>
+      <ul>
+        <li><a href="#421数据库er图设计">4.2.1数据库ER图设计</a></li>
+        <li><a href="#422数据库表设计">4.2.2数据库表设计</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#51前台界面的实现">5.1前台界面的实现</a>
+      <ul>
+        <li><a href="#511首页界面的实现">5.1.1首页界面的实现</a></li>
+        <li><a href="#512门诊功能的实现界面">5.1.2门诊功能的实现界面</a></li>
+        <li><a href="#513个人中心功能的实现界面">5.1.3个人中心功能的实现界面</a></li>
+        <li><a href="#514公告功能的实现界面">5.1.4公告功能的实现界面</a></li>
+      </ul>
+    </li>
+    <li><a href="#52用户角色功能的界面实现">5.2用户角色功能的界面实现</a>
+      <ul>
+        <li><a href="#521挂号功能的实现界面">5.2.1挂号功能的实现界面</a></li>
+        <li><a href="#522处方信息管理功能的实现界面">5.2.2处方信息管理功能的实现界面</a></li>
+        <li><a href="#523门诊项目功能的实现界面">5.2.3门诊项目功能的实现界面</a></li>
+        <li><a href="#524住院登记功能的实现界面">5.2.4住院登记功能的实现界面</a></li>
+        <li><a href="#525出院信息功能的实现界面">5.2.5出院信息功能的实现界面</a></li>
+      </ul>
+    </li>
+    <li><a href="#52管理员功能的实现界面">5.2管理员功能的实现界面</a></li>
+    <li><a href="#53医生功能的实现界面">5.3医生功能的实现界面</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="项目清单-包安装运行httpchenqi1990site-官网地址-httpchenqi1990site"><a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">项目清单 包安装运行</a> 官网地址 <a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">http://chenqi1990.site</a></h1>
+<h1 id="ssm576中小型医院管理系统的设计与实现jsphttpsgithubcomgraduationproject-springboot"><a href="https://github.com/GraduationProject-springboot/" target="_blank" rel="noopener noreffer ">ssm576中小型医院管理系统的设计与实现+jsp</a></h1>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        data-srcset="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 1.5x, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        title="picture" /></p>
+<h3 id="github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">github 项目仓库</a> 开源仅有后端代码</h3>
+<h3 id="点击播放视频-">点击播放视频 ▼</h3>
+<p><a href="https://www.bilibili.com/video/BV1t58veLEnL?p=173" target="_blank" rel="noopener noreffer "><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.sstatic.net/Vp2cE.png"
+        data-srcset="https://i.sstatic.net/Vp2cE.png, https://i.sstatic.net/Vp2cE.png 1.5x, https://i.sstatic.net/Vp2cE.png 2x"
+        data-sizes="auto"
+        alt="https://i.sstatic.net/Vp2cE.png"
+        title="Watch the video" /></a></p>
+<h1 id="研究背景和来源">研究背景和来源</h1>
+<p>目前的网站平台类系统已各种各样，涉及到生活中的每一个部分。购物类、管理类、信息统计类、办公类、官网类等非常丰富。我国各类网站的发展已非常成熟，这些系统依靠网络和计算机技术不断完善发展为人们带来更好的生活体验。而医院类的网站更是多种多样，三甲以上的医院一般都有自己的官方网站，拥有的客户群体都非常大。</p>
+<p>由于生活环境的恶劣多种疾病呈年轻化，医院每天接诊的人数都非常多。患者看病大部分的时间都浪费在排队、检查上。经常因为医生给出的建议太过专业造成患者不理解，影响患者的治疗。针对有些问题患者会多次询问，造成医生工作的重复性，不利于效率的提高。</p>
+<h2 id="12课题研究现状">1.2课题研究现状</h2>
+<p>目前用户挂号的主要途径还是通过传统方式。采用在医院挂号处先了解科室情况再进行现场挂号，这种方式对于时间充足、离医院不远的用户来说非常适合，但对时间有限特别是外地来就医的用户来说非常困难，还有一部分想要挂名医的来说更加困难。这部分用户想要提高挂号效率必须采用其它辅助手段，像很多用户找黄牛，雇佣跑腿代挂号，这些方式不仅需要资金的支持，还会增加被骗的风险，所以，现在大量的用户转换到线上挂号方式。</p>
+<p>我国线上医院的发展已形成一定的规模，在众多医院网站里最终目的都是宣传自己的医院、介绍自己医院的优势。有些医院网站里也提供挂号功能，但不能实现更全面的功能，使用户无法满足自己的要求。用户想查询费用信息、处方信息、住院信息等都还需要找专业工作人员才可以完成。</p>
+<h2 id="13课题开发的目的和意义">1.3课题开发的目的和意义</h2>
+<p>本系统的实现目的在于帮助用户的信息查询和挂号。和网上的医院官方网站相比，本系统针对性更强，向使用用户展示最为详细的门诊信息，并可以以多种方式展示，以此来满足用户的需求。本系统的核心在于内容，以丰富的信息种类取胜，去繁留简，使本系统的用户更容易抓住重点，找到核心内容，减少用户烦躁心理。本系统的实现拥有更大的意义：</p>
+<ol>
+<li>本系统功能全面、针对性强，使系统用户更为直观，操作也更为简单，只要有上网经验的用户都可以轻松掌握；</li>
+<li>本系统采用多种信息种类，用户可以根据自己的需求选择需要的信息；</li>
+<li>本系统中的门诊信息都是由管理员发布，可以做到正确、精准；</li>
+<li>本系统中设有公告功能，用户可以及时了解医院情况，不至于到医院后才发现有特殊情况而影响看病。</li>
+</ol>
+<h2 id="14课题开发内容">1.4课题开发内容</h2>
+<p>本中小型医院管理系统采用前台+后台的方式进行设计。前台信息主要为内容展示，后台信息为用户可以操作的功能。本系统的前台信息可由非注册用户、注册用户、管理员、医生共同浏览，包括门诊信息、公告信息、个人中心、后台管理等。门诊详情里添加科室，使用户可以更快的挂号。注册用户在个人后台可以管理挂号信息，查询处方信息和门诊项目信息，可以在线支付费用以及进行住院登记、出院信息管理。管理员在后台的功能为医生管理、用户管理、药品管理、项目管理、科室信息、门诊管理、挂号管理、处方管理、住院管理、出院管理等。医生可以管理挂号信息和为用户开处方以及管理药品信息、住院信息、出院信息等。</p>
+<h2 id="15论文结构安排">1.5论文结构安排</h2>
+<p>本篇论文分为摘要、目录、绪论、系统开发关键技术介绍、系统分析、系统设计和系统实现、系统测试、总结、致谢、参考文献。本篇论文的核心集中在系统设计和系统实现部分。绪论部分为基础调研，在系统分析中阐述系统的需求分析、可行性分析和数据流程图、用例图等。</p>
+<h1 id="第2章-系统开发关键技术介绍">第2章 系统开发关键技术介绍</h1>
+<h2 id="21系统开发使用的关键技术">2.1系统开发使用的关键技术</h2>
+<p>本系统在开发中选择SSM框架进行设计，语言采用Java，数据库采用Mysql，并在设计中加入Jsp技术，本系统的运行环境为Idea。</p>
+<h2 id="22-jsp技术介绍">2.2 Jsp技术介绍</h2>
+<p>Jsp是一个用来开发前台界面的JavaScript框架，体积非常的小，所以运行效率非常的高，可以直接通过虚拟设定的 DOM进行各种JavaScript计算，因为操作过程中相当于是一个预处理，所以并没有真实的DOM，也可以称作为一个虚拟的DOM。Jsp还可以进行双向的数据绑定，这样操作起来更加的简单，使用户可以不用管DOM对象，直接去操作业务逻辑就可以了，可以应用的场景非常的多，而且开发成本也非常的低。目前的市场后已经有很多成熟稳定的框架组件，可以直接拿来使用，对于初学者来说非常的方便。</p>
+<h2 id="23-idea介绍">2.3 Idea介绍</h2>
+<p>Idea是公认的最好用Java开发工具之一，常见最多的都是用来跟Eclipse进行比较，Eclipse可以说是最简单的，但是在兼容方面，代码设计方面明显不足。而Idea就是在Eclipse基础上进行了整合升级，更加智能。Idea最大的创新就是有智能代码助手，可以实现代码提示，还能进行代码重构，代码审查，非常适合新手的使用。Idea的宗旨就是实现智能编码，使编码更加的简单，所以在Idea上有很多其他软件所没有的特色功能，比如进行智能选取，不需要开发者在手动操作，还有各种丰富的导航模式可供选择，可以直接导入就能使用，不需要开发者在重新建立，还有历史记录功能，在误删误操作的情况下，通过这个功能就可以直接恢复。而且Idea相比Eclipse调试也更简单，通过Eclipse调试的时候需要选定表达式，否则就没办法查看它的值，而通过Idea则不需要进行任何操作，Idea会自动理解你所需要的表达式，然后给你建议参考值。而且在编码方面更加智能，会自动跳出需要的变量和参数，然后建议你最优选择。所以说相比Eclipse来说，用Idea开发更加的简单方便，更适合新用户的开发使用。</p>
+<h2 id="24-mysql数据库介绍">2.4 Mysql数据库介绍</h2>
+<p>数据库主要就是用来存储和管理系统数据的，按照数据结构来进行组织和存储的，数据库都有自己独立的接口来进行创建，访问，管理等，也可以直接用文件的形式进行数据存储，但是读写速度比较慢，效率不高，所以一般都是采用专门的数据库软件来进行数据库存储和管理，这样可以更加科学有效的实现数据的存储，也更加的安全。而Mysql就是一个关系型数据库管理系统，可以把各种不同的数据库存储到不同的表结构中 ，这样可以提高查找效率。</p>
+<h1 id="第3章-系统分析">第3章 系统分析</h1>
+<h2 id="31系统需求分析">3.1系统需求分析</h2>
+<p><code>    </code>目前用户想要了解医院信息，都会去网上搜索该医院的相关信息，但网上的信息真假难辨，经常会对患者造成误导。用户在看病完成后，想要查询处方信息、费用信息等都没有有效的平台，必须找工作人员了解。医院经常都是人满为患，需要排队是常态。用户大量的时间都需要浪费在排队上，对于医院来说，人流量太大也不利于安全。而开发的本中小型医院管理系统则可以解决这类问题，用户可以在平台里了解详细的门诊信息，并进行挂号和费用支付，可以查看处方信息和进行入院、出院的线上登记查询，非常方便，由此发现，本中小型医院管理系统非常有前景。</p>
+<h2 id="32系统可行性分析">3.2系统可行性分析</h2>
+<p>可行性分析主要是先进行初步调查，然后从各个方面进行系统可行性研究，比如系统需要做什么，采用什么技术，进行各种分析研究，然后得到一个可行性的方案。然后在对方案进行各个功能模块的设计，进行系统设计分析，研究系统设计可行性。所以要从多方面进行考虑，而本文主要从技术上，经济上，操作上，法律上进行研究分析。</p>
+<p>3.2.1技术可行性</p>
+<p>随着技术的快速发展，各种软件开发技术也在不停的更新，不断的发展，大家都在选择适合自己水平的，能达到开发需求的软件技术和开发环境。所以根据我的开发需求，然后决定开发本系统采用Java语言SSM框架来完成，开发出来的系统可以满足功能需求，而且操作界面美观，符合目前的审美，最重要的是开发相对简单，可以自动生成所需要的框架结构。前端框架采用Jsp，数据库Mysql，体积更小，存储速度快，可以满足本次开发的需求。</p>
+<h3 id="322经济可行性">3.2.2经济可行性</h3>
+<p>经济可行性分析主要是对前期投资进行分析，对系统维护费用分析，对开发完成后取得的经济收益进行分析。因为本系统完全是自己开发的，作为毕业设计用途的，只需要基础的设施就行，需要电脑硬件，开发软件等，不需要额外的投入，完全满足开发需求。而系统开发完成后可以方便用户使用，还能带来一定的经济效益，所以开发本系统在经济上是可行的。</p>
+<h3 id="323运行可行性分析">3.2.3运行可行性分析</h3>
+<p>开发本系统过程中已经充分考虑了使用者的感受，界面美观，而且有功能导航栏，方便用户很好的掌握，而且还有各种提示符，哪怕对计算机操作不熟练的也能使用本系统。所以综合考虑，本系统在运行方面是可行的。</p>
+<h3 id="324法律可行性">3.2.4法律可行性</h3>
+<p>开发本系统过程中参阅的相关资料都是在学校图书馆参阅的，均为正规渠道，而且开发均是本人独立开发的，均是自己的知识储备，全是自己原创的，不存在知识产权，所以才法律上是可行的。</p>
+<h2 id="33系统功能分析">3.3系统功能分析</h2>
+<p>本系统采用功能针对性强、文字描述精确的方式进行设计。本中小型医院管理系统是关于医院办公信息的系统，在设计功能时只取用最基础的功能，目的是提供最精准的服务。本系统包括前台和后台两部分。</p>
+<p>前台的功能为：</p>
+<ol>
+<li>公告信息，展示公告详情，并且展示公告发布时间方便用户了解公告时效；</li>
+<li>门诊信息，以图片、文字方式展示门诊列表，点击门诊图片展示详情门诊的描述，用户可以进行挂号；</li>
+<li>用户注册功能，实现注册为用户会员的功能；</li>
+<li>后台管理功能，本功能为管理员登录提供窗口；</li>
+<li>个人中心功能，本功能为用户登录后进入个人后台使用的窗口。</li>
+</ol>
+<p>后台管理员功能：</p>
+<ol>
+<li>系统用户管理，实现密码和个人信息的修改以及注册用户的检查管理；</li>
+<li>系统管理功能，可以更新和删除、修改公告；</li>
+<li>医生管理功能，审核医生和管理医生；</li>
+<li>药品管理功能，实现药品的更新和检查；</li>
+<li>项目管理功能，可以设置门诊项目；</li>
+<li>科室类型管理功能，设置医院里的科室信息；</li>
+<li>门诊信息管理功能，可以安排医生的坐诊；</li>
+<li>挂号信息功能，查询和审核用户的挂号；</li>
+<li>处方信息管理功能，可以查看医生的处方；</li>
+<li>住院登记功能，可以查询用户的住院详情；</li>
+<li>出院信息管理功能，可以查询用户的出院详情。</li>
+</ol>
+<p>医生功能：</p>
+<ol>
+<li>门诊管理功能，查询门诊安排情况；</li>
+<li>挂号信息管理功能，审核用户的挂号；</li>
+<li>处方信息管理，为挂号的用户开处方；</li>
+<li>住院登记管理功能，实现用户的住院登记；</li>
+<li>出院信息管理功能，实现用户的出院；</li>
+<li>药品信息管理功能，查询药品信息。</li>
+</ol>
+<p>用户功能：</p>
+<ol>
+<li>挂号信息管理功能，查询自己的挂号详情并进行费用的支付；</li>
+<li>处方信息管理功能，可以查询医生开的处方；</li>
+<li>住院登记功能，查询住院详情；</li>
+<li>出院信息功能，查询出院详情。</li>
+</ol>
+<p>管理员用例图如下图3.1所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.001.png"
+        data-srcset="/images/0500ssm/ssm576/blog.001.png, /images/0500ssm/ssm576/blog.001.png 1.5x, /images/0500ssm/ssm576/blog.001.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.001.png"
+        title="/images/0500ssm/ssm576/blog.001.png" /></p>
+<p>图3.1管理员用例图</p>
+<p>用户用例图如下图3.2所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.002.png"
+        data-srcset="/images/0500ssm/ssm576/blog.002.png, /images/0500ssm/ssm576/blog.002.png 1.5x, /images/0500ssm/ssm576/blog.002.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.002.png"
+        title="/images/0500ssm/ssm576/blog.002.png" /></p>
+<p>图3.2用户用例图</p>
+<p>医生用例图如下图3.3所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.003.png"
+        data-srcset="/images/0500ssm/ssm576/blog.003.png, /images/0500ssm/ssm576/blog.003.png 1.5x, /images/0500ssm/ssm576/blog.003.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.003.png"
+        title="/images/0500ssm/ssm576/blog.003.png" /></p>
+<p>图3.3医生用例图</p>
+<h2 id="34系统性能分析">3.4系统性能分析</h2>
+<p>系统性能方面包括系统的框架、系统的开发理念、系统的开发界面原则、系统开发标准、系统开发流程、系统开发安全性、系统运行稳定性等。具体性能分析如下：</p>
+<ol>
+<li>本系统是面向所有人群而开发的网站平台，所以采用的框架模式为B/s，B/s模式是借助浏览器进行系统访问的平台，所有信息可以共享；</li>
+<li>系统在设计中采用结构化方式，首先将功能分为大的方面，再由大方面分为小方面，最后分为小细节再整合成完整的系统；</li>
+<li>系统在界面设计时采用Jsp技术，可以使界面更丰富，元素更多；</li>
+<li>系统的操作流程采用简单的思路，使使用用户可以快速掌握本系统；</li>
+<li>系统的运行速度要快，所有操作可以快速反映；</li>
+<li>在系统开发时要注意系统的资源占用，以最少占用为标准进行设计；</li>
+<li>采用发展的眼光看待问题，把系统的生命周期延长到最大；</li>
+<li>调查所有使用用户的需求尽可能的满足。</li>
+</ol>
+<h2 id="35业务流程分析">3.5业务流程分析</h2>
+<p><code>    </code>业务流程涉及到系统的每个部分，调查系统在运行中数据会流动的每个环节，以用户注册开始到用户挂号进行业务流程分析。确保所有信息的流入、流出以及数据的完整性和处理问题的方法。本系统的流程为用户首先通过注册，注册成功后进行登录，登录后可以浏览公告信息、门诊信息，在门诊详情里可以挂号，挂号后同医生管理挂号信息和开出处方，用户查询处方和查询住院信息、出院信息等。系统中的所有数据都需要管理员审核。本系统的用户挂号流程图如下图3.4所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.004.png"
+        data-srcset="/images/0500ssm/ssm576/blog.004.png, /images/0500ssm/ssm576/blog.004.png 1.5x, /images/0500ssm/ssm576/blog.004.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.004.png"
+        title="/images/0500ssm/ssm576/blog.004.png" /></p>
+<p>图3.4系统用户挂号流程图</p>
+<h1 id="第4章-系统设计">第4章 系统设计</h1>
+<h2 id="41系统功能结构设计">4.1系统功能结构设计</h2>
+<p><code>   </code>本系统的功能界面设计为四个，前台界面、用户中心界面和管理员中心界面、医生中心界面。根据不同用户的不同需求分开设计功能。前台界面的功能为公告、门诊信息、个人中心和后台管理，用户中心界面的功能为个人资料、挂号信息管理、住院登记等，管理员中心界面的功能为系统用户、门诊信息等，医生中心界面的功能为挂号管理、处方信息管理等。本系统的功能结构图如下图4.1所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.005.png"
+        data-srcset="/images/0500ssm/ssm576/blog.005.png, /images/0500ssm/ssm576/blog.005.png 1.5x, /images/0500ssm/ssm576/blog.005.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.005.png"
+        title="/images/0500ssm/ssm576/blog.005.png" />                       图4.1系统功能结构图</p>
+<h2 id="42系统数据库设计">4.2系统数据库设计</h2>
+<p>数据库就是数据的存储仓库，按照计算机的格式进行数据存入。为了使数据库具有独立性，防止因为系统崩溃而数据有损的问题在数据库建立时都采用单独的数据库。数据库具有共享性和单独性，在系统运行时会自动和相对应的数据进行通讯连接。本中小型医院管理系统采用Mysql数据库设计，身份验证为Root，密码为Root。</p>
+<h3 id="421数据库er图设计">4.2.1数据库ER图设计</h3>
+<p>根据分析所得本系统中主要的数据为管理员、用户、门诊信息、挂号信息、处方信息、住院信息等。所以本节针对这些数据画出数据ER图。</p>
+<p>（1）管理员实体的属性为用户名和密码。管理员实体ER图如下图4.2所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.006.png"
+        data-srcset="/images/0500ssm/ssm576/blog.006.png, /images/0500ssm/ssm576/blog.006.png 1.5x, /images/0500ssm/ssm576/blog.006.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.006.png"
+        title="/images/0500ssm/ssm576/blog.006.png" /></p>
+<p>图4.2管理员实体ER图</p>
+<p>（2）用户实体的属性为编号、姓名、性别、病历等。用户实体ER图如下图4.3所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.007.png"
+        data-srcset="/images/0500ssm/ssm576/blog.007.png, /images/0500ssm/ssm576/blog.007.png 1.5x, /images/0500ssm/ssm576/blog.007.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.007.png"
+        title="/images/0500ssm/ssm576/blog.007.png" /></p>
+<p>图4.3用户实体ER图</p>
+<p>（3）挂号信息实体的属性包括编号、挂号医生、挂号时间等。挂号信息实体ER图如下图4.4所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.008.png"
+        data-srcset="/images/0500ssm/ssm576/blog.008.png, /images/0500ssm/ssm576/blog.008.png 1.5x, /images/0500ssm/ssm576/blog.008.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.008.png"
+        title="/images/0500ssm/ssm576/blog.008.png" /></p>
+<p>图4.4挂号信息实体ER图</p>
+<p>（4）门诊信息实体的属性包括编号、名称、科室、医生等。门诊信息实体的ER图如下图4.5所示：</p>
+<p><code>　　　　　　</code><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.009.png"
+        data-srcset="/images/0500ssm/ssm576/blog.009.png, /images/0500ssm/ssm576/blog.009.png 1.5x, /images/0500ssm/ssm576/blog.009.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.009.png"
+        title="/images/0500ssm/ssm576/blog.009.png" /></p>
+<p>图4.5门诊信息实体ER图</p>
+<p>（5）类别信息实体的属性包括编号和名称。类别信息实体ER图如下图4.6所示：</p>
+<p><code>　</code><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.010.png"
+        data-srcset="/images/0500ssm/ssm576/blog.010.png, /images/0500ssm/ssm576/blog.010.png 1.5x, /images/0500ssm/ssm576/blog.010.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.010.png"
+        title="/images/0500ssm/ssm576/blog.010.png" /></p>
+<p>图4.6分类信息实体的ER图</p>
+<p>（6）本系统的关系ER图如下图4.7所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.011.png"
+        data-srcset="/images/0500ssm/ssm576/blog.011.png, /images/0500ssm/ssm576/blog.011.png 1.5x, /images/0500ssm/ssm576/blog.011.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.011.png"
+        title="/images/0500ssm/ssm576/blog.011.png" /></p>
+<p>图4.7系统关系ER图</p>
+<h3 id="422数据库表设计">4.2.2数据库表设计</h3>
+<p>本系统针对医院管理而设计，所以本系统的数据库表围绕医院而建立。本系统的数据库表包括门诊信息表、挂号信息表、处方信息表等。本系统的数据库表结构如下图4.1－4.16 所示：</p>
+<p>表4.1 chufangxinxi</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.012.png"
+        data-srcset="/images/0500ssm/ssm576/blog.012.png, /images/0500ssm/ssm576/blog.012.png 1.5x, /images/0500ssm/ssm576/blog.012.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.012.png"
+        title="/images/0500ssm/ssm576/blog.012.png" /></p>
+<p>表4.2 chuyuanxinxi</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.013.png"
+        data-srcset="/images/0500ssm/ssm576/blog.013.png, /images/0500ssm/ssm576/blog.013.png 1.5x, /images/0500ssm/ssm576/blog.013.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.013.png"
+        title="/images/0500ssm/ssm576/blog.013.png" /></p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">表4.3 config</td>
+</tr>
+</tbody>
+</table>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.014.png"
+        data-srcset="/images/0500ssm/ssm576/blog.014.png, /images/0500ssm/ssm576/blog.014.png 1.5x, /images/0500ssm/ssm576/blog.014.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.014.png"
+        title="/images/0500ssm/ssm576/blog.014.png" /></p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">表4.4 guahaoxinxi</td>
+</tr>
+</tbody>
+</table>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.015.png"
+        data-srcset="/images/0500ssm/ssm576/blog.015.png, /images/0500ssm/ssm576/blog.015.png 1.5x, /images/0500ssm/ssm576/blog.015.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.015.png"
+        title="/images/0500ssm/ssm576/blog.015.png" /></p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+</table>
+<p>表4.5 keshileixing</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.016.png"
+        data-srcset="/images/0500ssm/ssm576/blog.016.png, /images/0500ssm/ssm576/blog.016.png 1.5x, /images/0500ssm/ssm576/blog.016.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.016.png"
+        title="/images/0500ssm/ssm576/blog.016.png" /></p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">表4.6 menzhenxiangmu</td>
+</tr>
+</tbody>
+</table>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.017.png"
+        data-srcset="/images/0500ssm/ssm576/blog.017.png, /images/0500ssm/ssm576/blog.017.png 1.5x, /images/0500ssm/ssm576/blog.017.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.017.png"
+        title="/images/0500ssm/ssm576/blog.017.png" /></p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+</table>
+<p>表4.7 menzhenxinxi</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.018.png"
+        data-srcset="/images/0500ssm/ssm576/blog.018.png, /images/0500ssm/ssm576/blog.018.png 1.5x, /images/0500ssm/ssm576/blog.018.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.018.png"
+        title="/images/0500ssm/ssm576/blog.018.png" /></p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">表4.8 news</td>
+</tr>
+</tbody>
+</table>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.019.png"
+        data-srcset="/images/0500ssm/ssm576/blog.019.png, /images/0500ssm/ssm576/blog.019.png 1.5x, /images/0500ssm/ssm576/blog.019.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.019.png"
+        title="/images/0500ssm/ssm576/blog.019.png" /></p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+</table>
+<p>表4.9 token</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.020.png"
+        data-srcset="/images/0500ssm/ssm576/blog.020.png, /images/0500ssm/ssm576/blog.020.png 1.5x, /images/0500ssm/ssm576/blog.020.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.020.png"
+        title="/images/0500ssm/ssm576/blog.020.png" /></p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">表4.10 users</td>
+</tr>
+</tbody>
+</table>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.021.png"
+        data-srcset="/images/0500ssm/ssm576/blog.021.png, /images/0500ssm/ssm576/blog.021.png 1.5x, /images/0500ssm/ssm576/blog.021.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.021.png"
+        title="/images/0500ssm/ssm576/blog.021.png" /></p>
+<p>表4.11 xiangmuleixing</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.022.png"
+        data-srcset="/images/0500ssm/ssm576/blog.022.png, /images/0500ssm/ssm576/blog.022.png 1.5x, /images/0500ssm/ssm576/blog.022.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.022.png"
+        title="/images/0500ssm/ssm576/blog.022.png" /></p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+</table>
+<p>表4.12 yaopinleibie</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.023.png"
+        data-srcset="/images/0500ssm/ssm576/blog.023.png, /images/0500ssm/ssm576/blog.023.png 1.5x, /images/0500ssm/ssm576/blog.023.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.023.png"
+        title="/images/0500ssm/ssm576/blog.023.png" /></p>
+<p>表4.13 yaopinxinxi</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.024.png"
+        data-srcset="/images/0500ssm/ssm576/blog.024.png, /images/0500ssm/ssm576/blog.024.png 1.5x, /images/0500ssm/ssm576/blog.024.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.024.png"
+        title="/images/0500ssm/ssm576/blog.024.png" /></p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+</table>
+<p>表4.14 yisheng</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.025.png"
+        data-srcset="/images/0500ssm/ssm576/blog.025.png, /images/0500ssm/ssm576/blog.025.png 1.5x, /images/0500ssm/ssm576/blog.025.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.025.png"
+        title="/images/0500ssm/ssm576/blog.025.png" /></p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">表4.15 yonghu</td>
+</tr>
+</tbody>
+</table>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.026.png"
+        data-srcset="/images/0500ssm/ssm576/blog.026.png, /images/0500ssm/ssm576/blog.026.png 1.5x, /images/0500ssm/ssm576/blog.026.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.026.png"
+        title="/images/0500ssm/ssm576/blog.026.png" /></p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+</table>
+<p>表4.16 zhuyuandengji</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.027.png"
+        data-srcset="/images/0500ssm/ssm576/blog.027.png, /images/0500ssm/ssm576/blog.027.png 1.5x, /images/0500ssm/ssm576/blog.027.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.027.png"
+        title="/images/0500ssm/ssm576/blog.027.png" /></p>
+<h1 id="heading"></h1>
+<h1 id="heading-1"></h1>
+<h1 id="heading-2"></h1>
+<h1 id="heading-3"></h1>
+<h1 id="第5章-系统实现">第5章 系统实现</h1>
+<h2 id="51前台界面的实现">5.1前台界面的实现</h2>
+<p>在前台里所有的信息都是共享的，注册用户、非注册用户、游客都可以浏览。包括公告信息、门诊信息、个人中心和后台管理等。</p>
+<h3 id="511首页界面的实现">5.1.1首页界面的实现</h3>
+<p><code>   </code>本功能设计的目的是帮助用户一键返回首页，在首页里的元素包括图片、列表框、文字、按钮等。在首页的上半部分是粉底白字的系统名称，系统名称下面是导航栏，接着就是图片，图片下面是门诊信息。首页界面的实现界面如下图5.1所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.028.png"
+        data-srcset="/images/0500ssm/ssm576/blog.028.png, /images/0500ssm/ssm576/blog.028.png 1.5x, /images/0500ssm/ssm576/blog.028.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.028.png"
+        title="/images/0500ssm/ssm576/blog.028.png" /></p>
+<p>图5.1首页界面的实现效果</p>
+<h3 id="512门诊功能的实现界面">5.1.2门诊功能的实现界面</h3>
+<p>在门诊功能里可以看到坐诊的科室和医生等信息。门诊功能的实现界面如下图5.2所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.029.png"
+        data-srcset="/images/0500ssm/ssm576/blog.029.png, /images/0500ssm/ssm576/blog.029.png 1.5x, /images/0500ssm/ssm576/blog.029.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.029.png"
+        title="/images/0500ssm/ssm576/blog.029.png" /></p>
+<p>图5.2门诊功能的实现界面</p>
+<p>科室的实现界面如下图5.3所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.030.png"
+        data-srcset="/images/0500ssm/ssm576/blog.030.png, /images/0500ssm/ssm576/blog.030.png 1.5x, /images/0500ssm/ssm576/blog.030.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.030.png"
+        title="/images/0500ssm/ssm576/blog.030.png" /></p>
+<p>图5.3科室的实现界面</p>
+<h3 id="513个人中心功能的实现界面">5.1.3个人中心功能的实现界面</h3>
+<p>用户登录后在个人中心里可以管理自己的注册信息，实现界面如下图5.4所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.031.png"
+        data-srcset="/images/0500ssm/ssm576/blog.031.png, /images/0500ssm/ssm576/blog.031.png 1.5x, /images/0500ssm/ssm576/blog.031.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.031.png"
+        title="/images/0500ssm/ssm576/blog.031.png" /></p>
+<p>图5.4用户中心的功能实现界面</p>
+<h3 id="514公告功能的实现界面">5.1.4公告功能的实现界面</h3>
+<p>在本功能模块里展示公告标题，想要看具体的公告详情需要点击公告标题进入公告详情页。公告信息功能的实现界面如下图5.5所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.032.png"
+        data-srcset="/images/0500ssm/ssm576/blog.032.png, /images/0500ssm/ssm576/blog.032.png 1.5x, /images/0500ssm/ssm576/blog.032.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.032.png"
+        title="/images/0500ssm/ssm576/blog.032.png" /></p>
+<p>图5.5系统公告信息功能的实现界面</p>
+<h2 id="52用户角色功能的界面实现">5.2用户角色功能的界面实现</h2>
+<h3 id="521挂号功能的实现界面">5.2.1挂号功能的实现界面</h3>
+<p>用户在门诊信息里可以挂号，挂号成功后可以管理挂号信息和在线支付费用。挂号功能的实现界面如下图5.6所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.033.png"
+        data-srcset="/images/0500ssm/ssm576/blog.033.png, /images/0500ssm/ssm576/blog.033.png 1.5x, /images/0500ssm/ssm576/blog.033.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.033.png"
+        title="/images/0500ssm/ssm576/blog.033.png" /></p>
+<p>图5.6挂号功能的实现界面</p>
+<h3 id="522处方信息管理功能的实现界面">5.2.2处方信息管理功能的实现界面</h3>
+<p>用户可以查询医生开出的处方，并进行费用的支付。处方信息功能的实现界面如下图5.7所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.034.png"
+        data-srcset="/images/0500ssm/ssm576/blog.034.png, /images/0500ssm/ssm576/blog.034.png 1.5x, /images/0500ssm/ssm576/blog.034.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.034.png"
+        title="/images/0500ssm/ssm576/blog.034.png" /></p>
+<p>图5.7处方信息功能的实现界面</p>
+<h3 id="523门诊项目功能的实现界面">5.2.3门诊项目功能的实现界面</h3>
+<p>用户可以查询门诊项目。门诊项目功能的实现界面如下图5.8所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.035.png"
+        data-srcset="/images/0500ssm/ssm576/blog.035.png, /images/0500ssm/ssm576/blog.035.png 1.5x, /images/0500ssm/ssm576/blog.035.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.035.png"
+        title="/images/0500ssm/ssm576/blog.035.png" /></p>
+<p>图5.8辨认项目功能的实现界面</p>
+<h3 id="524住院登记功能的实现界面">5.2.4住院登记功能的实现界面</h3>
+<p>用户可以查询住院的详情。住院登记功能的实现界面如下图5.9所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.036.png"
+        data-srcset="/images/0500ssm/ssm576/blog.036.png, /images/0500ssm/ssm576/blog.036.png 1.5x, /images/0500ssm/ssm576/blog.036.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.036.png"
+        title="/images/0500ssm/ssm576/blog.036.png" /></p>
+<p>图5.9住院登记功能的实现界面</p>
+<h3 id="525出院信息功能的实现界面">5.2.5出院信息功能的实现界面</h3>
+<p>用户可以查询出院信息以及进行费用的结算。实现界面如下图5.10所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.037.png"
+        data-srcset="/images/0500ssm/ssm576/blog.037.png, /images/0500ssm/ssm576/blog.037.png 1.5x, /images/0500ssm/ssm576/blog.037.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.037.png"
+        title="/images/0500ssm/ssm576/blog.037.png" /></p>
+<p>图5.10出院信息功能的实现界面</p>
+<h2 id="52管理员功能的实现界面">5.2管理员功能的实现界面</h2>
+<p>管理员的功能为管理前台信息和审核医生管理的功能以及管理用户信息。管理的前台信息包括公告信息、门诊信息、项目信息、类型信息等。管理员功能的实现界面如下图5.11所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.038.png"
+        data-srcset="/images/0500ssm/ssm576/blog.038.png, /images/0500ssm/ssm576/blog.038.png 1.5x, /images/0500ssm/ssm576/blog.038.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.038.png"
+        title="/images/0500ssm/ssm576/blog.038.png" /></p>
+<p>图5.11管理员功能的实现界面</p>
+<h2 id="53医生功能的实现界面">5.3医生功能的实现界面</h2>
+<p>医生的功能为管理个人资料和管理挂号信息、为用户开处方，登记用户的住院信息和处理用户的出院信息、查询药品等。医生功能的实现界面如下图5.12所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0500ssm/ssm576/blog.039.png"
+        data-srcset="/images/0500ssm/ssm576/blog.039.png, /images/0500ssm/ssm576/blog.039.png 1.5x, /images/0500ssm/ssm576/blog.039.png 2x"
+        data-sizes="auto"
+        alt="/images/0500ssm/ssm576/blog.039.png"
+        title="/images/0500ssm/ssm576/blog.039.png" /></p>
+<p>图5.12医生功能的实现界面</p>
+<p>第6章 系统测试</p>
+<h1 id="系统测试">系统测试</h1>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2024-05-06</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/ssm576%E4%B8%AD%E5%B0%8F%E5%9E%8B%E5%8C%BB%E9%99%A2%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://chenqi199.github.io/ssm576%E4%B8%AD%E5%B0%8F%E5%9E%8B%E5%8C%BB%E9%99%A2%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" data-title="ssm576中小型医院管理系统的设计与实现&#43;jsp" data-hashtags="ssm医院,系统设计,设计实现,医院管理,管理系统"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://chenqi199.github.io/ssm576%E4%B8%AD%E5%B0%8F%E5%9E%8B%E5%8C%BB%E9%99%A2%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" data-hashtag="ssm医院"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://chenqi199.github.io/ssm576%E4%B8%AD%E5%B0%8F%E5%9E%8B%E5%8C%BB%E9%99%A2%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" data-title="ssm576中小型医院管理系统的设计与实现&#43;jsp"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://chenqi199.github.io/ssm576%E4%B8%AD%E5%B0%8F%E5%9E%8B%E5%8C%BB%E9%99%A2%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" data-title="ssm576中小型医院管理系统的设计与实现&#43;jsp"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://chenqi199.github.io/ssm576%E4%B8%AD%E5%B0%8F%E5%9E%8B%E5%8C%BB%E9%99%A2%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" data-title="ssm576中小型医院管理系统的设计与实现&#43;jsp" data-ralateuid="https://gitee.com/chen_q_i"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ssm%E5%8C%BB%E9%99%A2/">Ssm医院</a>,&nbsp;<a href="/tags/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/">系统设计</a>,&nbsp;<a href="/tags/%E8%AE%BE%E8%AE%A1%E5%AE%9E%E7%8E%B0/">设计实现</a>,&nbsp;<a href="/tags/%E5%8C%BB%E9%99%A2%E7%AE%A1%E7%90%86/">医院管理</a>,&nbsp;<a href="/tags/%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/">管理系统</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/ssm577%E8%AE%A2%E9%A4%90%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-jsp/" class="prev" rel="prev" title="ssm577订餐管理系统&#43;jsp"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>ssm577订餐管理系统+jsp</a>
+            <a href="/ssm575%E5%AD%A6%E7%94%9F%E6%A1%A3%E6%A1%88%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-jsp/" class="next" rel="next" title="ssm575学生档案管理系统&#43;jsp">ssm575学生档案管理系统+jsp<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.128.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="chenqi199" target="_blank">chenqi</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

@@ -1,17 +1,16 @@
 # 0091springboot安康旅游网站的设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0091springboot安康旅游网站的设计与实现](https://github.com/GraduationProject-springboot/0091springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV16ia6epENY?p=92)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第一章 绪论
 ## 1.1 研究现状
@@ -87,7 +86,7 @@ MySQL支持标准化数据库查询语言SQL。MySQL是一款非常适合个人�
 
 相对于C/S模式，B/S模式是对C/S模式应用的扩展，B/S模式不用对不同的计算机安装不同应用程序，还有安全性的要求及对模式上手难度都比前者更好。B/S模式可以让客户机的压力大大减轻，工作的负荷被合理的分配了。其B/S架构图如下图所示：
 
-![](/images/0000stringboot/0091springboot/blog.001.png)
+![](/images/0000wxapp//blog.001.png)
 
 图2.1 B/S模式架构图
 ## 2.5 Spring Boot框架  
@@ -142,21 +141,21 @@ Spring Boot的特点
 ### 3.4.1注册流程
 未有账号的游客可进行注册操作，游客注册流程图如图3.1所示。
 
-![](/images/0000stringboot/0091springboot/blog.002.png)
+![](/images/0000wxapp//blog.002.png)
 
 图3.1注册流程图
 ### 3.4.2 登录流程
 登录模块主要满足了管理员和游客的权限登录，用户登录流程图如图3.2所示。
 
-![](/images/0000stringboot/0091springboot/blog.003.png)
+![](/images/0000wxapp//blog.003.png)
 
 图3.2 登录流程图
 ## 3.5系统架构分析
 基于JSP的安康旅游网站的结构我们采用B/S架构来实现。采用B/S程序架构首要条件是我们要把安康旅游网站的数据库和程序放到远程服务器上，只需要在一个服务器上对程序和数据库进行配置，就可以在任何联通这台服务器的电脑上使用架设好的系统。这样的结构打破了时间和地域的限制，用户在使用安康旅游网站的时候变得非常方便。下图就非常明白的展现了基于JSP的安康旅游网站的网络系统结构。
 
-![](/images/0000stringboot/0091springboot/blog.004.png)
+![](/images/0000wxapp//blog.004.png)
 
-![](/images/0000stringboot/0091springboot/blog.005.png)
+![](/images/0000wxapp//blog.005.png)
 
 图3.3 基于JSP的安康旅游网站架构设计图 
 
@@ -168,7 +167,7 @@ Spring Boot的特点
 
 本基于JSP的安康旅游网站主要实现了游客功能模块和管理员功能模块两大部分，系统结构图如图4-1所示。
 
-![](/images/0000stringboot/0091springboot/blog.006.png)
+![](/images/0000wxapp//blog.006.png)
 
 图4.1 系统功能结构图
 ## 4.2系统顺序图设计
@@ -176,7 +175,7 @@ Spring Boot的特点
 
 登录模块主要满足了管理员和游客的权限登录，登录模块的顺序图如图4.2所示。
 
-![](/images/0000stringboot/0091springboot/blog.007.png)
+![](/images/0000wxapp//blog.007.png)
 
 图4.2用户登录顺序图
 
@@ -184,7 +183,7 @@ Spring Boot的特点
 
 管理员和游客登录后均可进行信息的添加操作，添加信息顺序图如图4.3所示
 
-![](/images/0000stringboot/0091springboot/blog.008.png)
+![](/images/0000wxapp//blog.008.png)
 
 图4.3添加信息顺序图
 ## 4.3数据库设计
@@ -200,31 +199,31 @@ E-R图是一种描述显示数据类型间的关系的数据描述方法，E-R�
 
 1.管理员信息实体属性图如图4.4所示：
 
-![](/images/0000stringboot/0091springboot/blog.009.png)
+![](/images/0000wxapp//blog.009.png)
 
 图4.4  管理员信息实体属性图
 
 2.景点信息信息实体属性图如图4.5所示：
 
-![](/images/0000stringboot/0091springboot/blog.010.png)
+![](/images/0000wxapp//blog.010.png)
 
 图4.5 景点信息信息实体属性图
 
 3.酒店信息实体属性图如图4.6所示：
 
-![](/images/0000stringboot/0091springboot/blog.011.png)
+![](/images/0000wxapp//blog.011.png)
 
 图4.6 酒店信息实体属性图
 
 4.游客信息实体属性图如图4.7所示：
 
-![](/images/0000stringboot/0091springboot/blog.012.png)
+![](/images/0000wxapp//blog.012.png)
 
 图4.7  游客信息实体属性图
 
 5.旅游线路信息实体属性图如图4.8所示：
 
-![](/images/0000stringboot/0091springboot/blog.013.png)
+![](/images/0000wxapp//blog.013.png)
 
 图4.8  旅游线路信息实体属性图
 ### 4.3.2 数据库表设计
@@ -309,73 +308,73 @@ E-R图是一种描述显示数据类型间的关系的数据描述方法，E-R�
 ## 5.1登录模块的实现
 用户要想进入本系统，必须通过正确的用户名和密码，选择登录类型进行登录操作，在登录时系统会以用户名、密码和登录类型为参数进行登录信息的验证，信息正确则登录进入对应用户功能界面可进行功能处理，反之登录失败，系统登录界面展示如图5.1所示。
 
-![](/images/0000stringboot/0091springboot/blog.014.png)
+![](/images/0000wxapp//blog.014.png)
 
 图5.1  系统登录界面
 ## 5.2管理员功能模块的实现
 ### 5.2.1景点信息管理界面
 管理员可添加、修改和删除景点信息信息，景点信息管理界面展示如图5.2所示，添加景点信息信息界面展示如图5.3所示。
 
-![](/images/0000stringboot/0091springboot/blog.015.png)
+![](/images/0000wxapp//blog.015.png)
 
 图5.2 景点信息管理界面
 
-![](/images/0000stringboot/0091springboot/blog.016.png)
+![](/images/0000wxapp//blog.016.png)
 
 图5.3  添加景点信息信息界面
 ### 5.2.2酒店信息管理界面
 管理员可增删改查酒店信息，酒店信息管理界面展示如图5.4所示。
 
-![](/images/0000stringboot/0091springboot/blog.017.png)
+![](/images/0000wxapp//blog.017.png)
 
 图5.4  酒店信息管理界面
 ### 5.2.3特产管理界面
 管理员可增删改查特产信息，特产管理界面展示如图5.5所示。
 
-![](/images/0000stringboot/0091springboot/blog.018.png)
+![](/images/0000wxapp//blog.018.png)
 
 图5.5  特产管理界面
 ### 5.2.4游客管理界面
 管理员可查看、添加、修改和删除游客信息，游客管理界面展示如图5.6所示。
 
-![](/images/0000stringboot/0091springboot/blog.019.png)
+![](/images/0000wxapp//blog.019.png)
 
 图5.6  游客管理界面
 ### 5.2.5景点购票订单管理界面
 管理员可查看景点购票订单信息，并可对其进行审核、修改和删除操作，景点购票订单管理界面展示如图5.7所示。
 
-![](/images/0000stringboot/0091springboot/blog.020.png)
+![](/images/0000wxapp//blog.020.png)
 
 图5.7 景点购票订单管理界面
 ## 5.3游客功能模块的实现
 ### 5.3.1系统主界面
 游客进入本系统可查看系统信息，系统主界面展示如图5.8所示。
 
-![](/images/0000stringboot/0091springboot/blog.021.png)
+![](/images/0000wxapp//blog.021.png)
 
 图5.8 系统主界面
 ### 5.3.2游客注册界面
 未有账号的游客可进入注册界面进行注册操作，游客注册界面展示如图5.9所示。
 
-![](/images/0000stringboot/0091springboot/blog.022.png)
+![](/images/0000wxapp//blog.022.png)
 
 图5.9 游客注册界面
 ### 5.3.3景点信息详情界面
 游客可选择景点信息查看景点信息详情信息，登录后可进行购票操作，景点信息详情界面展示如图5.10所示。
 
-![](/images/0000stringboot/0091springboot/blog.023.png)
+![](/images/0000wxapp//blog.023.png)
 
 图5.10景点信息详情界面
 ### 5.3.4酒店详情界面
 游客可选择酒店查看详情信息，登录后可进行预订下单操作，酒店详情界面展示如图5.11所示。
 
-![](/images/0000stringboot/0091springboot/blog.024.png)
+![](/images/0000wxapp//blog.024.png)
 
 图5.11酒店详情界面
 ### 5.3.5特产详情界面
 游客可选择特产查看详情信息，登录后可进行购买操作，特产详情界面展示如图5.12所示。
 
-![](/images/0000stringboot/0091springboot/blog.025.png)
+![](/images/0000wxapp//blog.025.png)
 
 图5.12 特产详情界面
 

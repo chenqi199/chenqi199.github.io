@@ -1,17 +1,16 @@
 # 0113springboot基于多维分类的知识管理系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0113springboot基于多维分类的知识管理系统](https://github.com/GraduationProject-springboot/0113springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1ECs?p=13)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
 ## 1.1 研究背景
@@ -82,19 +81,19 @@ layui 是一套开源的 Web UI 解决方案，采用自身经典的模块化规
 ### 3.3.1 系统开发流程
 程序开发首先需要分析所开发程序的功能，这个步骤也是程序的需求分析阶段，这个阶段的任务很重要，因为程序功能确定之后，后面的设计，编码等环节都跟系统的分析阶段所完成的内容挂钩。程序在开发时大致都遵循以下流程。
 
-![](/images/0100stringboot/0113springboot/blog.001.png)
+![](/images/0100wxapp//blog.001.png)
 
 图3.1系统开发流程图
 ### 3.3.2 系统注册流程
 程序提供注册的功能（注册对应流程在下图展示）。就是让非系统操作用户变成程序的操作用户，主要让用户在注册页面上，根据页面提示，规范填写个人信息，程序也会根据用户填写的内容进行逻辑判断，确定用户身份是合格的身份之后，用户填写的数据才可以被数据库写入用户数据表里面。
 
-![](/images/0100stringboot/0113springboot/blog.002.png)
+![](/images/0100wxapp//blog.002.png)
 
 图3.2 注册流程图
 ### 3.3.3 系统登录流程
 程序投入生活让使用者使用，都需要经过登录模块这个入门环节，这个功能也就像现实生活一样，需要使用正确的钥匙打开门，才能进入。而登录模块需要的钥匙就是账号，密码，这两项数据正确就能访问程序的功能区。登录流程也会在下图展示，里面也有相应的判断规则。
 
-![](/images/0100stringboot/0113springboot/blog.003.png)
+![](/images/0100wxapp//blog.003.png)
 
 图3.3 登录流程图
 
@@ -106,11 +105,11 @@ layui 是一套开源的 Web UI 解决方案，采用自身经典的模块化规
 ## 4.1 系统结构设计
 本程序在设计结构选择上首选B/S，也是为了满足程序今后升级便利，以及程序低维护成本的要求。本程序的网络拓扑设计也会在下图展示，通过图形的方式来描述更容易理解。
 
-![](/images/0100stringboot/0113springboot/blog.004.png)图4.1 系统网络拓扑设计图
+![](/images/0100wxapp//blog.004.png)图4.1 系统网络拓扑设计图
 ## 4.2系统功能模块设计
 程序的功能在系统分析这部分已经确定了，这部分主要还是针对程序功能进行更加详细的设计，设计成果使用结构图展示直观明了，也更容易让人理解。绘制结构图采用的工具是Visio，使用它可以快速绘制出不同角色拥有的功能结构。
 
-![结构设计图](/images/0100stringboot/0113springboot/blog.005.jpeg "结构设计图")
+![结构设计图](/images/0100wxapp//blog.005.jpeg "结构设计图")
 
 图4.2 功能结构图
 ## 4.3数据库设计
@@ -120,32 +119,32 @@ layui 是一套开源的 Web UI 解决方案，采用自身经典的模块化规
 
 （1）下图是知识信息评论表实体和其具备的属性。
 
-![D:\111sheji\多维分类的知识管理系统\springbootuaaa4\\img\知识信息评论表.jpg](/images/0100stringboot/0113springboot/blog.006.jpeg "D:\111sheji\多维分类的知识管理系统\springbootuaaa4\\img\知识信息评论表.jpg")
+![D:\111sheji\多维分类的知识管理系统\springbootuaaa4\\img\知识信息评论表.jpg](/images/0100wxapp//blog.006.jpeg "D:\111sheji\多维分类的知识管理系统\springbootuaaa4\\img\知识信息评论表.jpg")
 知识信息评论表实体属性图
 
 （2）下图是用户实体和其具备的属性。
 
-![D:\111sheji\多维分类的知识管理系统\springbootuaaa4\\img\用户.jpg](/images/0100stringboot/0113springboot/blog.007.jpeg "D:\111sheji\多维分类的知识管理系统\springbootuaaa4\\img\用户.jpg")
+![D:\111sheji\多维分类的知识管理系统\springbootuaaa4\\img\用户.jpg](/images/0100wxapp//blog.007.jpeg "D:\111sheji\多维分类的知识管理系统\springbootuaaa4\\img\用户.jpg")
 用户实体属性图
 
 （3）下图是知识分类实体和其具备的属性。
 
-![D:\111sheji\多维分类的知识管理系统\springbootuaaa4\\img\知识分类.jpg](/images/0100stringboot/0113springboot/blog.008.jpeg "D:\111sheji\多维分类的知识管理系统\springbootuaaa4\\img\知识分类.jpg")
+![D:\111sheji\多维分类的知识管理系统\springbootuaaa4\\img\知识分类.jpg](/images/0100wxapp//blog.008.jpeg "D:\111sheji\多维分类的知识管理系统\springbootuaaa4\\img\知识分类.jpg")
 知识分类实体属性图
 
 （4）下图是收藏表实体和其具备的属性。
 
-![D:\111sheji\多维分类的知识管理系统\springbootuaaa4\\img\收藏表.jpg](/images/0100stringboot/0113springboot/blog.009.jpeg "D:\111sheji\多维分类的知识管理系统\springbootuaaa4\\img\收藏表.jpg")
+![D:\111sheji\多维分类的知识管理系统\springbootuaaa4\\img\收藏表.jpg](/images/0100wxapp//blog.009.jpeg "D:\111sheji\多维分类的知识管理系统\springbootuaaa4\\img\收藏表.jpg")
 收藏表实体属性图
 
 （5）下图是知识信息实体和其具备的属性。
 
-![D:\111sheji\多维分类的知识管理系统\springbootuaaa4\\img\知识信息.jpg](/images/0100stringboot/0113springboot/blog.010.jpeg "D:\111sheji\多维分类的知识管理系统\springbootuaaa4\\img\知识信息.jpg")
+![D:\111sheji\多维分类的知识管理系统\springbootuaaa4\\img\知识信息.jpg](/images/0100wxapp//blog.010.jpeg "D:\111sheji\多维分类的知识管理系统\springbootuaaa4\\img\知识信息.jpg")
 知识信息实体属性图
 
 （6）下图是用户表实体和其具备的属性。
 
-![D:\111sheji\多维分类的知识管理系统\springbootuaaa4\\img\用户表.jpg](/images/0100stringboot/0113springboot/blog.011.jpeg "D:\111sheji\多维分类的知识管理系统\springbootuaaa4\\img\用户表.jpg")
+![D:\111sheji\多维分类的知识管理系统\springbootuaaa4\\img\用户表.jpg](/images/0100wxapp//blog.011.jpeg "D:\111sheji\多维分类的知识管理系统\springbootuaaa4\\img\用户表.jpg")
 用户表实体属性图
 ### 4.3.2 数据库表结构
 在上述内容中，已经设计出相应的E-R模型，就可以在数据库里面根据各个实体创建相应的数据表，不过在初次使用数据库工具的时候，是需要创建一个针对程序的数据库文件，有了此步操作之后，才在刚创建的数据库文件里面创建数据表，创建数据表需要涉及到字段的设计，主键的设计，字段长度与类型的设计等内容，只有设计好的数据表结构才可以按照此规则存放对应的程序数据。这里举个例子，就拿上面提到的用户实体来说吧，用户具备的属性值，比如账号，比如联系方式与电话等都可以设计成该用户数据表里面的字段，然后对这些字段设计其数据类型，长度，并选择该表的主键作为此用户数据表的唯一标志。数据库里面的各个数据表都有它们的主键，这样也是为了方便区分各个数据表。 
@@ -243,51 +242,51 @@ layui 是一套开源的 Web UI 解决方案，采用自身经典的模块化规
 ### 5.1.1 用户管理
 管理员可以对用户信息进行添加，修改，删除，查询操作。
 
-![](/images/0100stringboot/0113springboot/blog.012.png)
+![](/images/0100wxapp//blog.012.png)
 
 图5.1 用户管理页面
 ### 5.1.2 知识分类管理
 管理员可以对知识分类信息进行添加，修改，删除，查询操作。
 
-![](/images/0100stringboot/0113springboot/blog.013.png)
+![](/images/0100wxapp//blog.013.png)
 
 图5.2 知识分类管理页面
 ### 5.1.3 知识信息管理
 管理员可以对知识信息进行添加，修改，删除，查询操作。
 
-![](/images/0100stringboot/0113springboot/blog.014.png)
+![](/images/0100wxapp//blog.014.png)
 
 图5.3 知识信息管理页面
 ### 5.1.4 知识信息添加
 管理员可以对知识信息进行添加操作。
 
-![](/images/0100stringboot/0113springboot/blog.015.png)
+![](/images/0100wxapp//blog.015.png)
 
 图5.4 知识信息添加管理页面
 ## 5.2 用户功能实现
 ### 5.2.1 首页
 用户可以在首页查看多维分类的知识管理系统所有信息，可以看到有导航栏，点击就可以跳转到导航的项目。
 
-![](/images/0100stringboot/0113springboot/blog.016.png)
+![](/images/0100wxapp//blog.016.png)
 
 图5.5 首页页面
 ### 5.2.2 知识信息
 用户可以查看知识信息，也可以下载，评论，收藏知识信息。
 
-![](/images/0100stringboot/0113springboot/blog.017.png)
+![](/images/0100wxapp//blog.017.png)
 
 图5.6 知识信息管理页面
 
 ### 5.2.1 个人中心
 用户可以在个人中心修改自己的个人信息。
 
-![](/images/0100stringboot/0113springboot/blog.018.png)
+![](/images/0100wxapp//blog.018.png)
 
 图5.7 个人中心页面
 ### 5.2.2 我的收藏
 用户可以在个人中心里面点击我的收藏，可以看到自己收藏过的知识信息，还可以进行取消收藏操作。
 
-![](/images/0100stringboot/0113springboot/blog.019.png)
+![](/images/0100wxapp//blog.019.png)
 
 图5.8 我的收藏页面
 

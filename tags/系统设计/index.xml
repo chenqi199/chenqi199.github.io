@@ -1,0 +1,88 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>系统设计 - 标签 - chenqi blog</title>
+        <link>https://chenqi199.github.io/tags/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/</link>
+        <description>系统设计 - 标签 - chenqi blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>chen_q_i@163.com (chenqi)</managingEditor>
+            <webMaster>chen_q_i@163.com (chenqi)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 29 Jul 2024 10:33:04 &#43;0800</lastBuildDate><atom:link href="https://chenqi199.github.io/tags/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/" rel="self" type="application/rss+xml" /><item>
+    <title>ssm827基于SSM框架的民宿预订管理系统设计与实现&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm827%E5%9F%BA%E4%BA%8Essm%E6%A1%86%E6%9E%B6%E7%9A%84%E6%B0%91%E5%AE%BF%E9%A2%84%E8%AE%A2%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/</link>
+    <pubDate>Mon, 29 Jul 2024 10:33:04 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm827%E5%9F%BA%E4%BA%8Essm%E6%A1%86%E6%9E%B6%E7%9A%84%E6%B0%91%E5%AE%BF%E9%A2%84%E8%AE%A2%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm827基于SSM框架的民宿预订管理系统设计与实现+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1.1 研究]]></description>
+</item>
+<item>
+    <title>ssm823基于ssm的心理预约咨询管理系统的设计与实现&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm823%E5%9F%BA%E4%BA%8Essm%E7%9A%84%E5%BF%83%E7%90%86%E9%A2%84%E7%BA%A6%E5%92%A8%E8%AF%A2%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/</link>
+    <pubDate>Sat, 27 Jul 2024 10:33:04 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm823%E5%9F%BA%E4%BA%8Essm%E7%9A%84%E5%BF%83%E7%90%86%E9%A2%84%E7%BA%A6%E5%92%A8%E8%AF%A2%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm823基于ssm的心理预约咨询管理系统的设计与实现+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1.1 研]]></description>
+</item>
+<item>
+    <title>ssm806心理测评系统的设计与实现&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm806%E5%BF%83%E7%90%86%E6%B5%8B%E8%AF%84%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/</link>
+    <pubDate>Mon, 22 Jul 2024 10:33:04 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm806%E5%BF%83%E7%90%86%E6%B5%8B%E8%AF%84%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm806心理测评系统的设计与实现+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 内容整理中]]></description>
+</item>
+<item>
+    <title>ssm807基于JAVA的学生网上请假系统的设计与实现&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm807%E5%9F%BA%E4%BA%8Ejava%E7%9A%84%E5%AD%A6%E7%94%9F%E7%BD%91%E4%B8%8A%E8%AF%B7%E5%81%87%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/</link>
+    <pubDate>Mon, 22 Jul 2024 10:33:04 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm807%E5%9F%BA%E4%BA%8Ejava%E7%9A%84%E5%AD%A6%E7%94%9F%E7%BD%91%E4%B8%8A%E8%AF%B7%E5%81%87%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm807基于JAVA的学生网上请假系统的设计与实现+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 （一）]]></description>
+</item>
+<item>
+    <title>ssm800基于web的音乐管理系统的设计与实现&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm800%E5%9F%BA%E4%BA%8Eweb%E7%9A%84%E9%9F%B3%E4%B9%90%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/</link>
+    <pubDate>Sat, 20 Jul 2024 10:33:04 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm800%E5%9F%BA%E4%BA%8Eweb%E7%9A%84%E9%9F%B3%E4%B9%90%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm800基于web的音乐管理系统的设计与实现+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第1章 绪论 1.1 课题]]></description>
+</item>
+<item>
+    <title>ssm802代驾应用系统的设计与实现&#43;jsp</title>
+    <link>https://chenqi199.github.io/ssm802%E4%BB%A3%E9%A9%BE%E5%BA%94%E7%94%A8%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/</link>
+    <pubDate>Sat, 20 Jul 2024 10:33:04 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm802%E4%BB%A3%E9%A9%BE%E5%BA%94%E7%94%A8%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm802代驾应用系统的设计与实现+jsp github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第一章 绪论 1.1 选题背景 目前整个]]></description>
+</item>
+<item>
+    <title>ssm796青年租房管理系统的设计与开发&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm796%E9%9D%92%E5%B9%B4%E7%A7%9F%E6%88%BF%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91-vue/</link>
+    <pubDate>Thu, 18 Jul 2024 10:33:03 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm796%E9%9D%92%E5%B9%B4%E7%A7%9F%E6%88%BF%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm796青年租房管理系统的设计与开发+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1.1 研究背景 当前社会各]]></description>
+</item>
+<item>
+    <title>ssm792公司进销存管理系统设计与开发&#43;jsp</title>
+    <link>https://chenqi199.github.io/ssm792%E5%85%AC%E5%8F%B8%E8%BF%9B%E9%94%80%E5%AD%98%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91-jsp/</link>
+    <pubDate>Wed, 17 Jul 2024 10:33:03 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm792%E5%85%AC%E5%8F%B8%E8%BF%9B%E9%94%80%E5%AD%98%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91-jsp/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm792公司进销存管理系统设计与开发+jsp github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第1章 绪论 1.1选题动因]]></description>
+</item>
+<item>
+    <title>ssm793基于Vue的线上书籍查阅系统设计与实现&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm793%E5%9F%BA%E4%BA%8Evue%E7%9A%84%E7%BA%BF%E4%B8%8A%E4%B9%A6%E7%B1%8D%E6%9F%A5%E9%98%85%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/</link>
+    <pubDate>Wed, 17 Jul 2024 10:33:03 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm793%E5%9F%BA%E4%BA%8Evue%E7%9A%84%E7%BA%BF%E4%B8%8A%E4%B9%A6%E7%B1%8D%E6%9F%A5%E9%98%85%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm793基于Vue的线上书籍查阅系统设计与实现+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第1章 绪论 1.1 研]]></description>
+</item>
+<item>
+    <title>ssm790基于ssm技术的金融支付终端管理系统设计与实现&#43;jsp</title>
+    <link>https://chenqi199.github.io/ssm790%E5%9F%BA%E4%BA%8Essm%E6%8A%80%E6%9C%AF%E7%9A%84%E9%87%91%E8%9E%8D%E6%94%AF%E4%BB%98%E7%BB%88%E7%AB%AF%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/</link>
+    <pubDate>Tue, 16 Jul 2024 10:33:03 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm790%E5%9F%BA%E4%BA%8Essm%E6%8A%80%E6%9C%AF%E7%9A%84%E9%87%91%E8%9E%8D%E6%94%AF%E4%BB%98%E7%BB%88%E7%AB%AF%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm790基于ssm技术的金融支付终端管理系统设计与实现+jsp github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1.1]]></description>
+</item>
+</channel>
+</rss>

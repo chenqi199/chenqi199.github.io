@@ -1,17 +1,16 @@
 # 0242springboot小学生身体素质测评管理系统设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0242springboot小学生身体素质测评管理系统设计与实现](https://github.com/GraduationProject-springboot/0242springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1EbH?p=12)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 绪论
 ## 1.1 课题背景
@@ -64,25 +63,25 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 3.2.1 操作流程
 使用者在操作小学生身体素质测评管理系统中，应该按照本系统提供的操作流程（图3.1即为本系统的操作流程图）进行操作，可以减少操作失误，从而节省进入小学生身体素质测评管理系统的时间。
 
-![](/images/0200stringboot/0242springboot/blog.001.png)
+![](/images/0200wxapp//blog.001.png)
 
 图3.1 系统操作流程
 ### 3.2.2 登录流程
 小学生身体素质测评管理系统通过登录功能（图3.2即为其登录的流程）引导使用者进入指定的功能操作区，也避免非本系统的用户享受本系统提供的服务以及查看本系统提供的信息，进而保证用户安全。
 
-![](/images/0200stringboot/0242springboot/blog.002.png)
+![](/images/0200wxapp//blog.002.png)
 
 图3.2 登录流程
 ### 3.2.3 删除信息流程
 小学生身体素质测评管理系统在经过长期使用后，会产生很多的数据信息。为了腾出存储空间存放更多的数据，本系统数据库中存储的数据，一些没有参考价值的数据需要进行删除（图3.3即为删除信息的流程），删除数据过程中，为避免误删，使用者要根据系统的提示来决定是否删除数据。
 
-![](/images/0200stringboot/0242springboot/blog.003.png)
+![](/images/0200wxapp//blog.003.png)
 
 图3.3 删除信息流程
 ### 3.2.4 添加信息流程
 小学生身体素质测评管理系统提供可视化的功能操作区，非常方便使用者进行数据操作，当使用者往系统中录入数据时（图3.4即为添加信息的流程），本系统也会进行数据合法性的判断，符合要求的数据才能够在数据库指定表中进行登记。
 
-![](/images/0200stringboot/0242springboot/blog.004.png)
+![](/images/0200wxapp//blog.004.png)
 
 图3.4 添加信息流程
 ## 3.3 性能需求
@@ -108,19 +107,19 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 图3.5即为管理员用例图，管理员权限操作的功能包括管理测试信息，管理测试报告，管理消息通知，管理数据推送，管理健康评估，查看测试报告和健康评估的统计报表信息等。
 
-![](/images/0200stringboot/0242springboot/blog.005.png)
+![](/images/0200wxapp//blog.005.png)
 
 图3.5 管理员用例图
 
 图3.6即为教师用例图，教师权限操作的功能包括审核测试报名信息，上传体测数据，管理数据推送信息等。
 
-![](/images/0200stringboot/0242springboot/blog.006.png)
+![](/images/0200wxapp//blog.006.png)
 
 图3.6 教师用例图
 
 图3.7即为学生用例图，学生权限操作的功能包括对测试项目进行报名，参与论坛交流，查看测试报告，查看健康评估信息，查看数据推送信息以及消息通知信息等。
 
-![](/images/0200stringboot/0242springboot/blog.007.png)
+![](/images/0200wxapp//blog.007.png)
 
 图3.7 学生用例图
 # 第4章 系统设计
@@ -140,19 +139,19 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ## 4.2 功能结构设计
 图4.1即为设计的管理员功能结构，管理员权限操作的功能包括管理测试信息，管理测试报告，管理消息通知，管理数据推送，管理健康评估，查看测试报告和健康评估的统计报表信息等。
 
-![](/images/0200stringboot/0242springboot/blog.008.png)
+![](/images/0200wxapp//blog.008.png)
 
 图4.1 管理员功能结构
 
 图4.2即为设计的教师功能结构，教师权限操作的功能包括审核测试报名信息，上传体测数据，管理数据推送信息等。
 
-![](/images/0200stringboot/0242springboot/blog.009.png)
+![](/images/0200wxapp//blog.009.png)
 
 图4.2 教师功能结构
 
 图4.3即为设计的学生功能结构，学生权限操作的功能包括对测试项目进行报名，参与论坛交流，查看测试报告，查看健康评估信息，查看数据推送信息以及消息通知信息等。
 
-![](/images/0200stringboot/0242springboot/blog.010.png)
+![](/images/0200wxapp//blog.010.png)
 
 图4.3 学生功能结构
 ## 4.3 数据库设计
@@ -162,31 +161,31 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 （1）图4.4即为测试报告这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0242springboot/blog.011.png)
+![](/images/0200wxapp//blog.011.png)
 
 图4.4 测试报告实体属性图
 
 （2）图4.5即为学生这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0242springboot/blog.012.png)
+![](/images/0200wxapp//blog.012.png)
 
 图4.5 学生实体属性图
 
 （3）图4.6即为测试信息这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0242springboot/blog.013.png)
+![](/images/0200wxapp//blog.013.png)
 
 图4.6 测试信息实体属性图
 
 4. 图4.7即为管理员这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0242springboot/blog.014.png)
+![](/images/0200wxapp//blog.014.png)
 
 图4.7 管理员实体属性图
 
 4. 图4.8即为上面介绍的实体中存在的联系。
 
-![](/images/0200stringboot/0242springboot/blog.015.png)
+![](/images/0200wxapp//blog.015.png)
 
 图4.8 实体间关系E-R图
 ### 4.3.2 数据库物理设计
@@ -394,69 +393,69 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 5.1.1 测试信息管理
 图5.1 即为编码实现的测试信息管理界面，管理员在测试信息管理界面中可以对界面中显示的所有测试信息进行更改，查询，删除。
 
-![](/images/0200stringboot/0242springboot/blog.017.png)
+![](/images/0200wxapp//blog.017.png)
 
 图5.1 测试信息管理界面
 ### 5.1.2 测试报告管理
 图5.2 即为编码实现的测试报告管理界面，管理员在测试报告管理界面中可以为本界面显示的所有测试报告信息进行查询，修改，删除，可以查看测试报告的统计报表。
 
-![](/images/0200stringboot/0242springboot/blog.018.png)
+![](/images/0200wxapp//blog.018.png)
 
 图5.2 测试报告管理界面
 ### 5.1.3 测试报告统计报表
 图5.3 即为编码实现的测试报告统计报表界面，管理员在测试报告统计报表界面中查看测试报告的统计报表信息，该统计报表是以柱形图的形式展现，能直观表达出各个学生的测试成绩信息。
 
-![](/images/0200stringboot/0242springboot/blog.019.png)
+![](/images/0200wxapp//blog.019.png)
 
 图5.3 测试报告统计报表界面
 ### 5.1.4 健康评估统计报表
 图5.4 即为编码实现的健康评估统计报表界面，管理员在健康评估统计报表界面查看各个学生的健康评估综合素质分。
 
-![](/images/0200stringboot/0242springboot/blog.020.png)
+![](/images/0200wxapp//blog.020.png)
 
 图5.4 健康评估统计报表界面
 ## 5.2 教师功能实现
 ### 5.2.1 测试报名管理
 图5.5 即为编码实现的测试报名管理界面，教师在测试报名管理界面中审核学生的测试报名信息，可以上传学生的测试数据信息，可以查询测试报名信息等。
 
-![](/images/0200stringboot/0242springboot/blog.021.png)
+![](/images/0200wxapp//blog.021.png)
 
 图5.5 测试报名管理界面
 ### 5.2.2 体侧数据管理
 图5.6 即为编码实现的体侧数据管理界面，教师在体侧数据管理界面中修改体侧数据信息，查询体侧数据信息，删除体侧数据信息等。
 
-![](/images/0200stringboot/0242springboot/blog.022.png)
+![](/images/0200wxapp//blog.022.png)
 
 图5.6 体侧数据管理界面
 ### 5.2.3 数据推送管理
 图5.7 即为编码实现的数据推送管理界面，教师在数据推送管理界面中对需要推送的数据信息进行增加，修改，删除，查询等。
 
-![](/images/0200stringboot/0242springboot/blog.023.png)
+![](/images/0200wxapp//blog.023.png)
 
 图5.7 数据推送管理界面
 ## 5.3 学生功能实现
 ### 5.3.1 测试信息
 图5.8 即为编码实现的测试信息界面，学生在测试信息界面中可以参与报名，可以评论测试信息，可以收藏测试信息。
 
-![](/images/0200stringboot/0242springboot/blog.024.png)
+![](/images/0200wxapp//blog.024.png)
 
 图5.8 测试信息界面
 ### 5.3.2 交流论坛
 图5.9 即为编码实现的交流论坛界面，学生在交流论坛界面中发帖，查询需要的帖子，对查看的帖子进行评论等。
 
-![](/images/0200stringboot/0242springboot/blog.025.png)
+![](/images/0200wxapp//blog.025.png)
 
 图5.9 交流论坛界面
 ### 5.3.3 测试报告查看
 图5.10 即为编码实现的测试报告查看界面，学生在测试报告查看界面中可以查看测试的成绩，测试的项目等信息。
 
-![](/images/0200stringboot/0242springboot/blog.026.png)
+![](/images/0200wxapp//blog.026.png)
 
 图5.10 测试报告查看界面
 ### 5.3.4 健康评估查看
 图5.11 即为编码实现的健康评估查看界面，学生在健康评估查看界面中可以查看综合素质分，身体机能分，身体素质分等信息。
 
-![](/images/0200stringboot/0242springboot/blog.027.png)
+![](/images/0200wxapp//blog.027.png)
 
 图5.11 健康评估查看界面
 # 

@@ -1,17 +1,16 @@
 # 0198springboot疫情打卡健康评测系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0198springboot疫情打卡健康评测系统](https://github.com/GraduationProject-springboot/0198springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)]()
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 绪论
 ## 1.1 选题动因
@@ -60,19 +59,19 @@ Navicat是一款管理数据库的软件。众所周知，所有的数据库只�
 
 在系统的各项操作中，其他的录入环节，会对操作者具体操作的每条信息都会提出验证要求，比如不能为空，只能是汉字，以及其他的要求等，这些都在前端需要编写清楚，达到友好提示的目的，有效的帮助操作人员理解操作。具体数据的流程如下面的图所示。当操作员输入信息后，点击提交后台就会接收操作员提交的信息，并且提前编写好的逻辑会继续验证，如果数据合格就存入到数据库里并且返回成功提示，这样一个录入环节就达到了设计要求。
 
-![](/images/0100stringboot/0198springboot/blog.001.png)
+![](/images/0100wxapp//blog.001.png)
 
 图3.1 添加信息流程图
 
 有时候录入的一些数据可能需要修改，修改就是纠正之前的操作，所以修改数据必须是先把想要修改的数据从数据库里获取出来，然后在这个之上进行修改，修改数据也有相应的操作流程。
 
-![](/images/0100stringboot/0198springboot/blog.002.png)
+![](/images/0100wxapp//blog.002.png)
 
 图3.2 修改信息流程图
 
 数据的查询是在任何程序上都是一个常规的操作，面对的数据量不一样，想要获取想要的数据时间也不一样，都是尽快的获取自己想要的结果，所以数据查询就需要有个查询条件作为查询关键词，这样可以更好的获取符合关键词的数据。
 
-![](/images/0100stringboot/0198springboot/blog.003.png)
+![](/images/0100wxapp//blog.003.png)
 
 图3.3 查询信息流程图
 ## 3.3 系统性能分析
@@ -92,13 +91,13 @@ Navicat是一款管理数据库的软件。众所周知，所有的数据库只�
 
 疫情打卡健康评测系统的操作者有管理员，分析的管理员功能将使用用例图进行展示。图3.4展示了管理员用例图。管理员审核学生返校申请信息，管理学生居家，学生打卡，学生留言，试卷，试题以及学生考试信息等。
 
-![](/images/0100stringboot/0198springboot/blog.004.png)
+![](/images/0100wxapp//blog.004.png)
 
 图3.4 管理员用例图
 
 疫情打卡健康评测系统的操作者有学生，分析的学生的功能将使用用例图进行展示。图3.5展示了学生用例图。学生选择试卷进行考试，查看考试得分信息，添加学生返校申请信息，添加并管理打卡和居家信息。
 
-![](/images/0100stringboot/0198springboot/blog.005.png)
+![](/images/0100wxapp//blog.005.png)
 
 图3.5 学生用例图
 
@@ -119,13 +118,13 @@ Navicat是一款管理数据库的软件。众所周知，所有的数据库只�
 
 管理员具备的详细功能将参照最终的设计结果，即图4.1所示的管理员功能结构图。其中管理员审核学生返校申请信息，管理学生居家，学生打卡，学生留言，试卷，试题以及学生考试信息等。
 
-![](/images/0100stringboot/0198springboot/blog.006.png)
+![](/images/0100wxapp//blog.006.png)
 
 图4.1 管理员功能结构图
 
 学生具备的详细功能将参照最终的设计结果，即图4.2所示的学生功能结构图。其中学生选择试卷进行考试，查看考试得分信息，添加学生返校申请信息，添加并管理打卡和居家信息。
 
-![](/images/0100stringboot/0198springboot/blog.007.png)
+![](/images/0100wxapp//blog.007.png)
 
 图4.2 学生功能结构图
 ## 4.3 数据库设计
@@ -145,31 +144,31 @@ Navicat是一款管理数据库的软件。众所周知，所有的数据库只�
 
 （1）把学生返校申请具备的属性通过属性图进行展示，绘制的属性图见图4.4。
 
-![](/images/0100stringboot/0198springboot/blog.008.png)
+![](/images/0100wxapp//blog.008.png)
 
 图4.4 学生返校申请实体属性图
 
 （2）把学生具备的属性通过属性图进行展示，绘制的属性图见图4.5。
 
-![](/images/0100stringboot/0198springboot/blog.009.png)
+![](/images/0100wxapp//blog.009.png)
 
 图4.5 学生实体属性图
 
 （3）把打卡具备的属性通过属性图进行展示，绘制的属性图见图4.6。
 
-![](/images/0100stringboot/0198springboot/blog.010.png)
+![](/images/0100wxapp//blog.010.png)
 
 图4.6 打卡实体属性图
 
 （4）把管理员具备的属性通过属性图进行展示，绘制的属性图见图4.7。
 
-![](/images/0100stringboot/0198springboot/blog.011.png)
+![](/images/0100wxapp//blog.011.png)
 
 图4.7 管理员实体属性图
 
 （5）上述实体间关系见图4.8。
 
-![](/images/0100stringboot/0198springboot/blog.012.png)
+![](/images/0100wxapp//blog.012.png)
 
 图4.8 实体间关系E-R图
 ### 4.3.2 数据库表结构设计
@@ -338,62 +337,62 @@ Navicat是一款管理数据库的软件。众所周知，所有的数据库只�
 ### 5.1.1 学生返校申请管理
 实现学生返校申请管理功能，其界面运行的效果图见图5.1。在该界面，管理员修改，删除学生返校申请信息，审核学生返校申请信息，学生返校申请信息包括健康码，行程码，核酸报告等信息。
 
-![](/images/0100stringboot/0198springboot/blog.015.png)
+![](/images/0100wxapp//blog.015.png)
 
 图5.1 学生返校申请管理界面
 ### 5.1.2 试卷管理
 实现试卷管理功能，其界面运行的效果图见图5.2。在该界面，管理员对试卷的考试时长，试卷总分等信息进行添加，修改，管理员查询试卷需要在查询框中编辑试卷名称即可查询。
 
-![](/images/0100stringboot/0198springboot/blog.016.png)
+![](/images/0100wxapp//blog.016.png)
 
 图5.2 试卷管理界面
 ### 5.1.3 试题管理
 实现试题管理功能，其界面运行的效果图见图5.3。在该界面，管理员负责新增多选题，判断题，单选题等信息，以及对各种试题进行排序，可以更改，删除试题信息等。
 
-![](/images/0100stringboot/0198springboot/blog.017.png)
+![](/images/0100wxapp//blog.017.png)
 
 图5.3 试题管理界面
 ### 5.1.4 留言板管理
 实现留言板管理功能，其界面运行的效果图见图5.4。在该界面，管理员除了需要回复留言之外，还可以查询留言内容，删除留言等。
 
-![](/images/0100stringboot/0198springboot/blog.018.png)
+![](/images/0100wxapp//blog.018.png)
 
 图5.4 留言板管理界面
 ### 5.1.5 考试管理
 实现考试管理功能，其界面运行的效果图见图5.5。在该界面，管理员对学生的答题情况以及学生答题试卷所得总分信息进行查看。
 
-![](/images/0100stringboot/0198springboot/blog.019.png)
+![](/images/0100wxapp//blog.019.png)
 
 图5.5 考试管理界面
 ## 5.2 学生功能实现
 ### 5.2.1 试卷表
 实现试卷表功能，其界面运行的效果图见图5.6。在该界面，学生查看试卷名称，试卷总分信息，学生点击考试按钮，即可对相应试卷进行线上答题。
 
-![](/images/0100stringboot/0198springboot/blog.020.png)
+![](/images/0100wxapp//blog.020.png)
 
 图5.6 试卷表界面
 ### 5.2.2 在线考试
 实现在线考试功能，其界面运行的效果图见图5.7。在该界面，学生需要在规定时间内回答完试卷的试题，然后上交答卷。
 
-![](/images/0100stringboot/0198springboot/blog.021.png)
+![](/images/0100wxapp//blog.021.png)
 
 图5.7 在线考试界面
 ### 5.2.3 打卡管理
 实现打卡管理功能，其界面运行的效果图见图5.8。在该界面，学生每天登记打卡日期以及打卡照片等信息，能够查询，修改打卡信息。
 
-![](/images/0100stringboot/0198springboot/blog.022.png)
+![](/images/0100wxapp//blog.022.png)
 
 图5.8 打卡管理界面
 ### 5.2.4 居家管理
 实现居家管理功能，其界面运行的效果图见图5.9。在该界面，学生登记居家状态，居家日期，居家位置等信息，查询，修改居家信息等。
 
-![](/images/0100stringboot/0198springboot/blog.023.png)
+![](/images/0100wxapp//blog.023.png)
 
 图5.9 居家管理界面
 ### 5.2.5 学生返校申请管理
 实现学生返校申请管理功能，其界面运行的效果图见图5.10。在该界面，学生登记健康码，行程码，核酸检测报告等信息，查看管理员对学生返校申请的审核情况。
 
-![](/images/0100stringboot/0198springboot/blog.024.png)
+![](/images/0100wxapp//blog.024.png)
 
 图5.10 学生返校申请管理界面
 # 

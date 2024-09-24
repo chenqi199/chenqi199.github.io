@@ -1,17 +1,16 @@
 # 0183springboot校园网上店铺的设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0183springboot校园网上店铺的设计与实现](https://github.com/GraduationProject-springboot/0183springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1ECs?p=81)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 绪论
 ## 1.1 课题背景
@@ -64,25 +63,25 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 3.2.1 操作流程
 使用者在操作校园网上店铺中，应该按照本系统提供的操作流程（图3.1即为本系统的操作流程图）进行操作，可以减少操作失误，从而节省进入校园网上店铺的时间。
 
-![](/images/0100stringboot/0183springboot/blog.001.png)
+![](/images/0100wxapp//blog.001.png)
 
 图3.1 系统操作流程
 ### 3.2.2 登录流程
 校园网上店铺通过登录功能（图3.2即为其登录的流程）引导使用者进入指定的功能操作区，也避免非本系统的用户享受本系统提供的服务以及查看本系统提供的信息，进而保证用户安全。
 
-![](/images/0100stringboot/0183springboot/blog.002.png)
+![](/images/0100wxapp//blog.002.png)
 
 图3.2 登录流程
 ### 3.2.3 删除信息流程
 校园网上店铺在经过长期使用后，会产生很多的数据信息。为了腾出存储空间存放更多的数据，本系统数据库中存储的数据，一些没有参考价值的数据需要进行删除（图3.3即为删除信息的流程），删除数据过程中，为避免误删，使用者要根据系统的提示来决定是否删除数据。
 
-![](/images/0100stringboot/0183springboot/blog.003.png)
+![](/images/0100wxapp//blog.003.png)
 
 图3.3 删除信息流程
 ### 3.2.4 添加信息流程
 校园网上店铺提供可视化的功能操作区，非常方便使用者进行数据操作，当使用者往系统中录入数据时（图3.4即为添加信息的流程），本系统也会进行数据合法性的判断，符合要求的数据才能够在数据库指定表中进行登记。
 
-![](/images/0100stringboot/0183springboot/blog.004.png)
+![](/images/0100wxapp//blog.004.png)
 
 图3.4 添加信息流程
 ## 3.3 性能需求
@@ -108,19 +107,19 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 图3.5即为管理员用例图，管理员权限操作的功能包括管理商铺，管理会员等级信息，管理商品留言，管理商品收藏，管理商品，管理用户等。
 
-![](/images/0100stringboot/0183springboot/blog.005.png)
+![](/images/0100wxapp//blog.005.png)
 
 图3.5 管理员用例图
 
 图3.6即为商铺用例图，商铺权限操作的功能包括下架商品，增加商品库存，减少商品库存，上架商品，回复商品留言，管理商品订单等。
 
-![](/images/0100stringboot/0183springboot/blog.006.png)
+![](/images/0100wxapp//blog.006.png)
 
 图3.6 商铺用例图
 
 图3.7即为用户用例图，用户权限操作的功能包括查看商铺，购买商品，提交订单，管理商品订单，查看网站介绍等。
 
-![](/images/0100stringboot/0183springboot/blog.007.png)
+![](/images/0100wxapp//blog.007.png)
 
 图3.7 用户用例图
 # 第4章 系统设计
@@ -140,19 +139,19 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ## 4.2 功能结构设计
 图4.1即为设计的管理员功能结构，管理员权限操作的功能包括管理商铺，管理会员等级信息，管理商品留言，管理商品收藏，管理商品，管理用户等。
 
-![](/images/0100stringboot/0183springboot/blog.008.png)
+![](/images/0100wxapp//blog.008.png)
 
 图4.1 管理员功能结构
 
 图4.2即为设计的商铺功能结构，商铺权限操作的功能包括下架商品，增加商品库存，减少商品库存，上架商品，回复商品留言，管理商品订单等。
 
-![](/images/0100stringboot/0183springboot/blog.009.png)
+![](/images/0100wxapp//blog.009.png)
 
 图4.2 商铺功能结构
 
 图4.3即为设计的用户功能结构，用户权限操作的功能包括查看商铺，购买商品，提交订单，管理商品订单，查看网站介绍等。
 
-![](/images/0100stringboot/0183springboot/blog.010.png)
+![](/images/0100wxapp//blog.010.png)
 
 图4.3 用户功能结构
 ## 4.3 数据库设计
@@ -162,31 +161,31 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 （1）图4.4即为商品这个实体所拥有的属性值。
 
-![](/images/0100stringboot/0183springboot/blog.011.png)
+![](/images/0100wxapp//blog.011.png)
 
 图4.4 商品实体属性图
 
 （2）图4.5即为商品订单这个实体所拥有的属性值。
 
-![](/images/0100stringboot/0183springboot/blog.012.png)
+![](/images/0100wxapp//blog.012.png)
 
 图4.5 商品订单实体属性图
 
 （3）图4.6即为商铺这个实体所拥有的属性值。
 
-![](/images/0100stringboot/0183springboot/blog.013.png)
+![](/images/0100wxapp//blog.013.png)
 
 图4.6 商铺实体属性图
 
 4. 图4.7即为用户这个实体所拥有的属性值。
 
-![](/images/0100stringboot/0183springboot/blog.014.png)
+![](/images/0100wxapp//blog.014.png)
 
 图4.7 用户实体属性图
 
 4. 图4.8即为上面介绍的实体中存在的联系。
 
-![](/images/0100stringboot/0183springboot/blog.015.png)
+![](/images/0100wxapp//blog.015.png)
 
 图4.8 实体间关系E-R图
 ### 4.3.2 数据库物理设计
@@ -335,69 +334,69 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 5.1.1 公告管理
 图5.1 即为编码实现的公告管理界面，管理员在公告管理界面中可以对界面中显示的所有公告信息进行更改，查询，删除。
 
-![](/images/0100stringboot/0183springboot/blog.016.png)
+![](/images/0100wxapp//blog.016.png)
 
 图5.1 公告管理界面
 ### 5.1.2 用户管理
 图5.2 即为编码实现的用户管理界面，管理员在用户管理界面中可以为本界面显示的所有用户信息进行查询，修改，删除，用户信息有电子邮箱，余额，会员等级，用户身份证号等。
 
-![](/images/0100stringboot/0183springboot/blog.017.png)
+![](/images/0100wxapp//blog.017.png)
 
 图5.2 用户管理界面
 ### 5.1.3 商铺管理
 图5.3 即为编码实现的商铺管理界面，管理员在商铺管理界面中新增商铺，更改商铺的营业执照，商铺信用类型等，可以删除需要删除的商铺信息。
 
-![](/images/0100stringboot/0183springboot/blog.018.png)
+![](/images/0100wxapp//blog.018.png)
 
 图5.3 商铺管理界面
 ### 5.1.4 会员等级管理
 图5.4 即为编码实现的会员等级管理界面，管理员在会员等级管理界面修改会员等级信息，不同会员所属等级不同，那么在购买商品时，享受的折扣也不一样。
 
-![](/images/0100stringboot/0183springboot/blog.019.png)
+![](/images/0100wxapp//blog.019.png)
 
 图5.4 会员等级管理界面
 ## 5.2 商铺功能实现
 ### 5.2.1 商品管理
 图5.5 即为编码实现的商品管理界面，商铺在商品管理界面中为商品的库存进行增加，减少操作，可以上架商品，下架商品以及更改商品信息等。
 
-![](/images/0100stringboot/0183springboot/blog.020.png)
+![](/images/0100wxapp//blog.020.png)
 
 图5.5 商品管理界面
 ### 5.2.2 商品评价管理
 图5.6 即为编码实现的商品评价管理界面，商铺在商品评价管理界面中查看用户对商品的评价信息，商品评价信息有商品名称，评价内容，评价时间，回复内容，回复时间等，商品评价的回复信息是商铺回复的信息。
 
-![](/images/0100stringboot/0183springboot/blog.021.png)
+![](/images/0100wxapp//blog.021.png)
 
 图5.6 商品评价管理界面
 ### 5.2.3 商品订单管理
 图5.7 即为编码实现的商品订单管理界面，商铺在商品订单管理界面中对商品订单查询，对已支付的商品订单进行发货，商铺可以通过商品订单详情来了解更多商品订单的详细内容。
 
-![](/images/0100stringboot/0183springboot/blog.022.png)
+![](/images/0100wxapp//blog.022.png)
 
 图5.7 商品订单管理界面
 ## 5.3 用户功能实现
 ### 5.3.1 商铺信息
 图5.8 即为编码实现的商铺信息界面，用户在商铺信息界面中查看商铺介绍还有商铺的营业执照以及商铺的信用信息等。
 
-![](/images/0100stringboot/0183springboot/blog.023.png)
+![](/images/0100wxapp//blog.023.png)
 
 图5.8 商铺信息界面
 ### 5.3.2 商品信息
 图5.9 即为编码实现的商品信息界面，用户在商品信息界面中查看商品简介，商品信息包括商品库存，商品原价，购买获得积分等信息，用户可以直接购买商品。
 
-![](/images/0100stringboot/0183springboot/blog.024.png)
+![](/images/0100wxapp//blog.024.png)
 
 图5.9 商品信息界面
 ### 5.3.3 确认下单
 图5.10 即为编码实现的确认下单界面，用户在确认下单界面中可以提交订单，前提是检查购买的物品以及收货的地址信息等是否正确。
 
-![](/images/0100stringboot/0183springboot/blog.025.png)
+![](/images/0100wxapp//blog.025.png)
 
 图5.10 确认下单界面
 ### 5.3.4 商品订单
 图5.11 即为编码实现的商品订单界面，用户在商品订单界面中可以退款，可以收货，可以评价订单等。
 
-![](/images/0100stringboot/0183springboot/blog.026.png)
+![](/images/0100wxapp//blog.026.png)
 
 图5.11 商品订单界面
 # 

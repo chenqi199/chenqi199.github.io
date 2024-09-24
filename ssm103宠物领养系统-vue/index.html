@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer" />
+        <meta name="robots" content="noodp" />
+        <title>ssm103宠物领养系统&#43;vue - chenqi blog</title><meta name="Description" content="Hugo theme - chenqi"><meta property="og:url" content="https://chenqi199.github.io/ssm103%E5%AE%A0%E7%89%A9%E9%A2%86%E5%85%BB%E7%B3%BB%E7%BB%9F-vue/">
+  <meta property="og:site_name" content="chenqi blog">
+  <meta property="og:title" content="ssm103宠物领养系统&#43;vue">
+  <meta property="og:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm103宠物领养系统&#43;vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 课题背景 在当今的社会，可以说是信息技术的">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-11-30T10:32:46+08:00">
+    <meta property="article:modified_time" content="2023-11-30T10:32:46+08:00">
+    <meta property="article:tag" content="Ssm宠物">
+    <meta property="article:tag" content="宠物领养">
+    <meta property="article:tag" content="领养系统">
+    <meta property="og:image" content="https://chenqi199.github.io/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chenqi199.github.io/logo.png">
+  <meta name="twitter:title" content="ssm103宠物领养系统&#43;vue">
+  <meta name="twitter:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm103宠物领养系统&#43;vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 课题背景 在当今的社会，可以说是信息技术的">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chenqi199.github.io/ssm103%E5%AE%A0%E7%89%A9%E9%A2%86%E5%85%BB%E7%B3%BB%E7%BB%9F-vue/" /><link rel="prev" href="https://chenqi199.github.io/ssm101%E7%8F%A0%E5%AE%9D%E9%A6%96%E9%A5%B0%E4%BA%A4%E6%98%93%E5%B9%B3%E5%8F%B0%E5%BC%80%E5%8F%91-jsp/" /><link rel="next" href="https://chenqi199.github.io/ssm102%E9%AD%85%E5%8A%9B%E7%B9%81%E5%B3%99%E5%AE%A3%E4%BC%A0%E7%BD%91%E7%AB%99%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "ssm103宠物领养系统+vue",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chenqi199.github.io\/ssm103%E5%AE%A0%E7%89%A9%E9%A2%86%E5%85%BB%E7%B3%BB%E7%BB%9F-vue\/"
+        },"image": ["https:\/\/chenqi199.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "ssm宠物, 宠物领养, 领养系统","wordcount":  6512 ,
+        "url": "https:\/\/chenqi199.github.io\/ssm103%E5%AE%A0%E7%89%A9%E9%A2%86%E5%85%BB%E7%B3%BB%E7%BB%9F-vue\/","datePublished": "2023-11-30T10:32:46+08:00","dateModified": "2023-11-30T10:32:46+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/chenqi199.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "chenqi"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/ssm103%E5%AE%A0%E7%89%A9%E9%A2%86%E5%85%BB%E7%B3%BB%E7%BB%9F-vue/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/ssm103%E5%AE%A0%E7%89%A9%E9%A2%86%E5%85%BB%E7%B3%BB%E7%BB%9F-vue/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">ssm103宠物领养系统+vue</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="chenqi199" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>chenqi</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-11-30">2023-11-30</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 6512 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 13 分钟&nbsp;<span id="/ssm103%E5%AE%A0%E7%89%A9%E9%A2%86%E5%85%BB%E7%B3%BB%E7%BB%9F-vue/" class="leancloud_visitors" data-flag-title="ssm103宠物领养系统&#43;vue">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">github 项目仓库</a> 开源仅有后端代码</a></li>
+        <li><a href="#点击播放视频-">点击播放视频 ▼</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#设计原则">设计原则</a></li>
+    <li><a href="#论文组织结构">论文组织结构</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#jsp技术">JSP技术</a></li>
+    <li><a href="#java技术">JAVA技术</a></li>
+    <li><a href="#bs结构">B/S结构</a></li>
+    <li><a href="#mysql数据库">MYSQL数据库</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#可行性分析">可行性分析</a>
+      <ul>
+        <li><a href="#操作可行性">操作可行性</a></li>
+        <li><a href="#经济可行性">经济可行性</a></li>
+        <li><a href="#技术可行性">技术可行性</a></li>
+        <li><a href="#法律可行性">法律可行性</a></li>
+      </ul>
+    </li>
+    <li><a href="#系统功能分析">系统功能分析</a></li>
+    <li><a href="#系统性能分析">系统性能分析</a></li>
+    <li><a href="#系统流程分析">系统流程分析</a>
+      <ul>
+        <li><a href="#注册流程">注册流程</a></li>
+        <li><a href="#登录流程">登录流程</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#系统结构设计">系统结构设计</a></li>
+    <li><a href="#系统顺序图设计">系统顺序图设计</a></li>
+    <li><a href="#数据库设计">数据库设计</a>
+      <ul>
+        <li><a href="#数据库e-r图设计">数据库E-R图设计</a></li>
+        <li><a href="#数据库表设计">数据库表设计</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#用户功能模块的实现">用户功能模块的实现</a>
+      <ul>
+        <li><a href="#系统主界面">系统主界面</a></li>
+        <li><a href="#用户注册界面">用户注册界面</a></li>
+        <li><a href="#用户登录界面">用户登录界面</a></li>
+        <li><a href="#送养宠物详情界面">送养宠物详情界面</a></li>
+        <li><a href="#添加送养宠物界面">添加送养宠物界面</a></li>
+        <li><a href="#添加宠物秀界面">添加宠物秀界面</a></li>
+        <li><a href="#个人中心界面">个人中心界面</a></li>
+      </ul>
+    </li>
+    <li><a href="#管理员功能模块的实现">管理员功能模块的实现</a>
+      <ul>
+        <li><a href="#管理员登录界面">管理员登录界面</a></li>
+        <li><a href="#用户管理界面">用户管理界面</a></li>
+        <li><a href="#送养宠物管理界面">送养宠物管理界面</a></li>
+        <li><a href="#地区类型管理界面">地区类型管理界面</a></li>
+        <li><a href="#申请领养管理界面">申请领养管理界面</a></li>
+        <li><a href="#宠物秀管理界面">宠物秀管理界面</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="项目清单-包安装运行httpchenqi1990site-官网地址-httpchenqi1990site"><a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">项目清单 包安装运行</a> 官网地址 <a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">http://chenqi1990.site</a></h1>
+<h1 id="ssm103宠物领养系统vuehttpsgithubcomgraduationproject-springboot"><a href="https://github.com/GraduationProject-springboot/" target="_blank" rel="noopener noreffer ">ssm103宠物领养系统+vue</a></h1>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        data-srcset="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 1.5x, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        title="picture" /></p>
+<h3 id="github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">github 项目仓库</a> 开源仅有后端代码</h3>
+<h3 id="点击播放视频-">点击播放视频 ▼</h3>
+<p><a href="https://www.bilibili.com/video/BV1T48XecE9G?p=99" target="_blank" rel="noopener noreffer "><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.sstatic.net/Vp2cE.png"
+        data-srcset="https://i.sstatic.net/Vp2cE.png, https://i.sstatic.net/Vp2cE.png 1.5x, https://i.sstatic.net/Vp2cE.png 2x"
+        data-sizes="auto"
+        alt="https://i.sstatic.net/Vp2cE.png"
+        title="Watch the video" /></a></p>
+<h1 id="课题背景">课题背景</h1>
+<p>在当今的社会，可以说是信息技术的发展时代，在社会的方方面面无不涉及到各种信息的处理。信息是人们对客观世界的具体描述，是人们进行交流与联系的重要途径。人类社会就处在一个对信息进行有效合理的加工中。它将促进整个社会的发展。随着社会信息技术的提高，计算机已被广泛应用于当今社会的各个领域，成为推动社会发展的首要技术动力。</p>
+<p>在现在的社会生活中，人们的生活品质不断的提高，物质的需求也相应的得到了满足。但是也有一些人在物质上的满足并不能填满心里的孤寂。当一个人在外拼搏，就算在工作氛围中有很多人的陪伴，但是回家也可能会是一个冷冷清清的环境。所以这时候如果有了一个宠物的陪伴，心里的孤寂也会得到很大的慰藉，饲养宠物可以给我们带来快乐，也让我们的心灵得到慰藉。这让用户宠物领养的需求日益在增加，但是人们在领养宠物方面却缺乏一个很好的平台，针对这一情况，开发了本宠物领养系统，为用户通过一个全新的宠物领养的平台，提高效率。</p>
+<ol>
+<li>
+<h2 id="设计原则">设计原则</h2>
+</li>
+</ol>
+<p>在开始开发项目之前，必须要先考虑项目的实用性、科学性，以及该项目是否能够真正让用户受益并尽可能的发挥项目的作用。因此，在开发前，通过以下几条原则对项目进行判断：</p>
+<p>（1）可行性原则。项目需要保证经济可行性和技术可行性，这包括了项目在浏览端、服务端等方面上的经济和技术上是可以达成的。</p>
+<p>（2）适应性原则。项目要保证可维护性和可扩展性，这是每个非短期项目都需要考虑的，并且不论是维护还是扩展，都必须要建立在适应用户的正常需求的基础上。</p>
+<p>（3）安全性及保密性原则。要充分保证用户信息的安全性和保密性，不能因为开发上的疏忽，导致用户的信息泄露。</p>
+<p>（4）系统工程原则。为了确保项目的整体性，在项目调查、项目分析、项目设计、项目开发的过程中，都需遵从项目工程的方法和步骤逐步进行。</p>
+<p>（5）统一规划、分期实施、逐步完善原则。项目开发的过程中，要按照规划、分期实施，特别是要注意在项目开发过程中要有条理，从点到面，一步步完善，不要贪图进度，要循环渐进的对项目进行开发。</p>
+<ol>
+<li>
+<h2 id="论文组织结构">论文组织结构</h2>
+</li>
+</ol>
+<p>第一章主要是简单的介绍下设计本网站的研究背景、设计原则，在这一章里主要是让大家了解下我的设计的前因后果，为接下来我的其它章节做铺垫。</p>
+<p>第二章主要是介绍在设计过程中所涉及到的技术。</p>
+<p>第三章主要是介绍下设计这个网站所需要的需求以及我们的功能需求分析，因为只有更好的分析清楚我们的功能需求才能更好的完成我们的设计。</p>
+<p>第四章网站系统设计，主要介绍了网站结构的设计以及展示了数据库E-R图设计，这一章主要是为了能让大家更好的了解网站的一些基本设计信息。</p>
+<p>第五章系统的实现，介绍了系统每个模块的设计与实现，让大家能清晰的了解系统的主要功能。</p>
+<p>第六章系统的测试，这章主要是测试下各个部分每个功能是否能用，看下是否有错误。</p>
+<p>第七章总结，进行最后的总结工作。</p>
+<ol>
+<li>
+<h1 id="系统关键技术">系统关键技术</h1>
+<ol>
+<li>
+<h2 id="jsp技术">JSP技术</h2>
+</li>
+</ol>
+</li>
+</ol>
+<p>JSP(Java脚本页面)是Sun和许多参与建立的公司所提倡的动态web技术。将Java程序添加到传统的web页面HTML文件(*)。htm,*。Html) [7]。</p>
+<p>JSP这种能够独立使用的编程语言可以嵌入在html语言里面运行，正因为JSP参照了许多编程语言的特性，使得JSP在web的脚本技术当中也占有一定的重要位置，对于刚入门编程行业的初学者来讲，jsp这种编程语言不仅容易学习，而且还具备许多高级的特性。在程序的开发过程中，使用jsp也不失为一种正确的选择，像表单数据的收集操作以及字符串信息的处理方面等等，jsp都能很轻松地解决，帮助程序开发者省下许多时间，JSP 新版本的发布，标志着一个全新的JSP时代的到来，它最大的特点就是引入了面向对象的全部机制，并保留了向下的兼容性[8]。综上所述，使用JSP，可以自由的选择操作系统、Web服务器以及合适的数据库管理系统。同时，设计开发时，有两种选择，一种是面向过程，另一种是面向对象，或者也可以两种都使用，可以称为混和方式设计。</p>
+<p>JSP的优点:编写一次，始终运行。还有jsp可以延展可以缩短的强大优势，还有就是支持多种开发语言并且兼容性好，适用于很多平台顺利运行。</p>
+<ol>
+<li>
+<h2 id="java技术">JAVA技术</h2>
+</li>
+</ol>
+<p>Java是面向对象进行编程的一门语言，基础语法和C语言、C++都差不多，Java删除了C++里面的多指针、继承、自动的强制类型转换等，Java的JVM还可以自动进行垃圾回收，减少了程序员的后顾之忧。最重要的一点是Java语言是支持跨平台的，这使Java语言的使用更加广泛。</p>
+<p>JDK（Java Development Kit）是Java语言的软件开发工具包。Java开发中JDK是最重要的核心，JDK里面有JRE，包括client和server端的。环境变量需要配置好。[1]</p>
+<p>JRE（JAVA Runtime Environment）是支持Java程序运行的标准环境，JRE里面只有client运行环境，会自动的添加PATH 。</p>
+<ol>
+<li>
+<h2 id="bs结构">B/S结构</h2>
+</li>
+</ol>
+<p>此次设计的网络结构模式B/S结构（Browser/Server）。B/S架构也称为B/S模式，是一种服务器以及浏览器架构模式。B/S的工作模式都是先由浏览器请求，服务器再响应。B/S体系结构解决了异构系统中的连接难题，大大改善了系统的开放性，让系统的扩展和维护更加简单；同时，B/S体系结构操作也比较容易，界面全都为浏览器模式，容易分发数据的捕获程序。只要安装通用的浏览器（如WWW浏览器）就能通过Web服务器与数据库进行数据交互。此结构的好处之一在于由于它使用的统一的浏览器，使其可以在不同的地方且不需要用专门的软件进行操作，实现了不论你使用怎样的接入网的方式都可以对公共的数据进行调用和浏览。</p>
+<p>相对于C/S模式，B/S模式是对C/S模式应用的扩展，B/S模式不用对不同的计算机安装不同应用程序，还有安全性的要求及对模式上手难度都比前者更好。B/S模式可以让客户机的压力大大减轻，工作的负荷被合理的分配了。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm103/blog.001.png"
+        data-srcset="/images/0100ssm/ssm103/blog.001.png, /images/0100ssm/ssm103/blog.001.png 1.5x, /images/0100ssm/ssm103/blog.001.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm103/blog.001.png"
+        title="/images/0100ssm/ssm103/blog.001.png" /></p>
+<p>图2-1  B/S模式三层结构图</p>
+<ol>
+<li>
+<h2 id="mysql数据库">MYSQL数据库</h2>
+</li>
+</ol>
+<p>MySQL 是关系型数据库管理系统的代表， 因为MySQL是其免费开源的，而且MySQL的功能已经足够用对于学习和中小型企业来讲，所以开发中小型网站都会选择MySQL作为网站的数据库。[13]</p>
+<p>MySQL具有开放性，它是一种关系型数据库管理系统，并且它的源代码可以被大众所熟知[3]。由于MySQL是开放源代码的，因此，只要经过授权就可以在自己需求的基础上对其进行修改。MySQL因为其固有的特点而备受关注，它具有很强的适应性，并且十分可靠，查询速度快。MySQL安装起来非常方便，且数据存储量大，不需要事务化处理。Sql语言拥有很多的方法，在项目中编写sql语句时使用起来是非常方便的，不会像其他语言那样需要编写更多的语句。正因为MySQL使用sql语言进行数据库管理，所以它收到了大多数程序员的热爱。</p>
+<ol>
+<li>
+<h1 id="系统分析">系统分析</h1>
+<ol>
+<li>
+<h2 id="可行性分析">可行性分析</h2>
+</li>
+</ol>
+</li>
+</ol>
+<p>本节通过对系统实行的目的初步调查和分析，提出可行性方案并对其一一进行论证。我们在这里主要从技术可行性、经济可行性和操作可行性等方面进行分析。</p>
+<ol>
+<li>
+<h3 id="操作可行性">操作可行性</h3>
+</li>
+</ol>
+<p>本人自己就是学生，程序开发经验不足，在界面设计上面不会设计太复杂，要讲究简单好看，操作上要方便，不能让用户觉得不流畅。用户一旦进入操作界面，界面上就会有相应提示，跟着操作提示就可以找到对应的功能操作模块，对于用户来说免培训就能使用。</p>
+<ol>
+<li>
+<h3 id="经济可行性">经济可行性</h3>
+</li>
+</ol>
+<p>由于自己本身就是学生，还没有正式参加工作，金钱上面一直都处于缺乏状态。所以在开发程序过程中，我是不会花太多经济成本在上面的。针对开发软件和数据库，还有界面设计的photoshop软件等在百度上面就可以直接下载，然后根据各种安装视频进行安装，这些资源都是免费的，程序编码阶段使用的源代码在百度上面可以轻松获得，在有网络的环境下就能下载下来，不需要支付任何费用，经济成本很低。</p>
+<ol>
+<li>
+<h3 id="技术可行性">技术可行性</h3>
+</li>
+</ol>
+<p>本系统使用Java语言作为后面控制层编码的语言，Java语言有面向对象的特点，所以使用它会让整体结构更加的清晰[3]。JSP将内容的生成和显示进行分离以为方便进行动态网站的开发[4]。同时使用mysql存储数据，保证数据不会丢失。此系统在技术上来说是非常成熟的，可以进行非常平稳的技术开发。</p>
+<ol>
+<li>
+<h3 id="法律可行性">法律可行性</h3>
+</li>
+</ol>
+<p>本课题开发和运行的宠物领养系统没有任何与国家法律法规相违背的之处。而且宠物领养系统所使用的操作方式是根据一般大众的日常习惯研发的，操作简单易懂，便于管理。所以具有法律可行性。</p>
+<p>从上面几个部分的可行性分析得出，这次开发的宠物领养系统在开发上面没有什么大问题，值得开发。</p>
+<ol>
+<li>
+<h2 id="系统功能分析">系统功能分析</h2>
+</li>
+</ol>
+<p>本宠物领养系统主要包括两大功能模块，即管理员模块、用户模块。下面将对这两个大功能进行具体功能需求分析。</p>
+<p>（1）管理员：管理员登录后主要功能包括个人中心、用户管理、送养宠物管理、地区类型管理、失信黑名单管理、申请领养管理、宠物秀管理以及系统管理。管理员用例图如图3-1所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm103/blog.002.png"
+        data-srcset="/images/0100ssm/ssm103/blog.002.png, /images/0100ssm/ssm103/blog.002.png 1.5x, /images/0100ssm/ssm103/blog.002.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm103/blog.002.png"
+        title="/images/0100ssm/ssm103/blog.002.png" /></p>
+<p>图3-1管理员用例图</p>
+<p>（2）用户：用户进入系统前台可查看系统信息，包括网站首页、送养宠物、失信黑名单以及宠物秀等。用户要想实现宠物领养操作，必须进行登录系统，未有账号用户可进入注册界面进行注册操作，注册登录后主要功能包括个人中心、送养宠物管理、失信黑名单管理、申请领养管理以及宠物秀管理。用户用例图如图3-2所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm103/blog.003.png"
+        data-srcset="/images/0100ssm/ssm103/blog.003.png, /images/0100ssm/ssm103/blog.003.png 1.5x, /images/0100ssm/ssm103/blog.003.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm103/blog.003.png"
+        title="/images/0100ssm/ssm103/blog.003.png" /></p>
+<p>图3-2用户用例图</p>
+<ol>
+<li>
+<h2 id="系统性能分析">系统性能分析</h2>
+</li>
+</ol>
+<p>（1）系统的存储性：因为是宠物领养系统，所以就会在数据库要求上比较严格，信息录入的比较多，而且丰富复杂， 这就需要一个强大的数据库来存放更多的数据和保证数据的时时性。</p>
+<p>（2）系统的易学性：系统设计的应该简单易学的，设计的各种功能应该简单操作，不需要努力学习培训，缩短用户熟悉系统的进程。</p>
+<p>（3）系统的数据要求：数据应该录入准确，需要更新时，数据应该可以及时的修改，数据还应该有独立保存，不能删除数据的时候会连带着把还需要的数据都删除掉。</p>
+<p>（4）系统稳定性：开发的宠物领养系统要求运行稳定，运行过程中无界面不清楚、字体模糊等现象。</p>
+<p>（5）系统的兼容性：该系统采用Java技术开发。Web开发采用Java Servlet和JSP应用程序，可以在Linux和Windows等平台上使用，具有良好的兼容性。</p>
+<ol>
+<li>
+<h2 id="系统流程分析">系统流程分析</h2>
+<ol>
+<li>
+<h3 id="注册流程">注册流程</h3>
+</li>
+</ol>
+</li>
+</ol>
+<p>未有账号的用户可进行注册操作，注册流程图如图3-3所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm103/blog.004.png"
+        data-srcset="/images/0100ssm/ssm103/blog.004.png, /images/0100ssm/ssm103/blog.004.png 1.5x, /images/0100ssm/ssm103/blog.004.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm103/blog.004.png"
+        title="/images/0100ssm/ssm103/blog.004.png" /></p>
+<p>图3-3 注册流程图</p>
+<ol>
+<li>
+<h3 id="登录流程">登录流程</h3>
+</li>
+</ol>
+<p>登录模块主要满足了管理员和用户的权限登录，用户在登录界面输入用户名和密码，点击登录，通过验证，进入系统，登录流程图如图3-4所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm103/blog.005.png"
+        data-srcset="/images/0100ssm/ssm103/blog.005.png, /images/0100ssm/ssm103/blog.005.png 1.5x, /images/0100ssm/ssm103/blog.005.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm103/blog.005.png"
+        title="/images/0100ssm/ssm103/blog.005.png" /></p>
+<p>图3-4登录流程图</p>
+<ol>
+<li>
+<h1 id="系统设计">系统设计</h1>
+<ol>
+<li>
+<h2 id="系统结构设计">系统结构设计</h2>
+</li>
+</ol>
+</li>
+</ol>
+<p>在系统结构设计过程中，首先，整个系统分成几个小的模块，小的问题，然后，进一步细分模块，添加细节。根据第三章中系统功能需求分析，可构建本宠物领养系统的结构图，如图4-1所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm103/blog.006.png"
+        data-srcset="/images/0100ssm/ssm103/blog.006.png, /images/0100ssm/ssm103/blog.006.png 1.5x, /images/0100ssm/ssm103/blog.006.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm103/blog.006.png"
+        title="/images/0100ssm/ssm103/blog.006.png" /></p>
+<p>图4-1 系统结构图</p>
+<ol>
+<li>
+<h2 id="系统顺序图设计">系统顺序图设计</h2>
+</li>
+</ol>
+<p>顺序图表示交互、是指为得到一个期望的结果而在多个分类器角色之间进行的交互序列。</p>
+<p>（1）登录顺序图</p>
+<p>用户在登录时，首先进入系统登录窗口，用户需要输入用户名和密码，点击登录按钮进行登录操作，系统会以用户名和密码为参数在数据库中进行登录信息的验证，验证成功则登录成功，进入用户主界面。登录模块顺序图如图4-2所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm103/blog.007.png"
+        data-srcset="/images/0100ssm/ssm103/blog.007.png, /images/0100ssm/ssm103/blog.007.png 1.5x, /images/0100ssm/ssm103/blog.007.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm103/blog.007.png"
+        title="/images/0100ssm/ssm103/blog.007.png" /></p>
+<p>图4-2 登录顺序图</p>
+<p>（2）注册顺序图</p>
+<p>未有账号的用户可进入注册界面进行注册操作，在注册界面输入注册信息，点击提交按钮，系统首先判断用户名是否存在，存在则提示重新输入，不存在则验证注册信息是否正确，正确则在数据库中添加注册数据，提示注册成功。用户注册模块顺序图如图4-3所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm103/blog.008.png"
+        data-srcset="/images/0100ssm/ssm103/blog.008.png, /images/0100ssm/ssm103/blog.008.png 1.5x, /images/0100ssm/ssm103/blog.008.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm103/blog.008.png"
+        title="/images/0100ssm/ssm103/blog.008.png" /></p>
+<p>图4-3 注册顺序图</p>
+<ol>
+<li>
+<h2 id="数据库设计">数据库设计</h2>
+</li>
+</ol>
+<p>一个好的数据库可以关系到程序开发的优劣，数据库设计离不开表结构的设计，还有表与表之间的联系，以及系统开发需要设计的数据表内容等信息。在进行数据库设计期间，还是需要多花时间进行考虑，最终设计出配套程序的数据库出来。</p>
+<ol>
+<li>
+<h3 id="数据库e-r图设计">数据库E-R图设计</h3>
+</li>
+</ol>
+<p>E-R图是一种描述显示数据类型间的关系的数据描述方法，E-R图可以完整地映射出现实模型的关系。E-R图中的三个最为重要的元素就是实体、属性、关系，E-R图即由这三点组成。E-R图是最能体系各个实体之间关系的，包括每个实体都包括哪些属性，搞清楚这些我们设计数据库表的时候才能够不遗忘，才能完整的设计。下面我们例出本宠物领养系统主要的几个E-R图。</p>
+<p>1、管理员信息实体属性E-R图如图4-4所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm103/blog.009.png"
+        data-srcset="/images/0100ssm/ssm103/blog.009.png, /images/0100ssm/ssm103/blog.009.png 1.5x, /images/0100ssm/ssm103/blog.009.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm103/blog.009.png"
+        title="/images/0100ssm/ssm103/blog.009.png" /></p>
+<p>图4-4  管理员信息实体属性E-R图</p>
+<p>2、宠物秀信息实体属性E-R图如图4-5所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm103/blog.010.png"
+        data-srcset="/images/0100ssm/ssm103/blog.010.png, /images/0100ssm/ssm103/blog.010.png 1.5x, /images/0100ssm/ssm103/blog.010.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm103/blog.010.png"
+        title="/images/0100ssm/ssm103/blog.010.png" /></p>
+<p>图4-5  宠物秀信息实体属性E-R图</p>
+<p>3、地区类型信息实体属性E-R图如图4-6所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm103/blog.011.png"
+        data-srcset="/images/0100ssm/ssm103/blog.011.png, /images/0100ssm/ssm103/blog.011.png 1.5x, /images/0100ssm/ssm103/blog.011.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm103/blog.011.png"
+        title="/images/0100ssm/ssm103/blog.011.png" /></p>
+<p>图4-6  地区类型信息实体属性E-R图</p>
+<p>4、申请领养信息实体属性E-R图如图4-7所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm103/blog.012.png"
+        data-srcset="/images/0100ssm/ssm103/blog.012.png, /images/0100ssm/ssm103/blog.012.png 1.5x, /images/0100ssm/ssm103/blog.012.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm103/blog.012.png"
+        title="/images/0100ssm/ssm103/blog.012.png" /></p>
+<p>图4-7  申请领养信息实体属性E-R图</p>
+<p>5、送养宠物信息实体属性E-R图如图4-8所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm103/blog.013.png"
+        data-srcset="/images/0100ssm/ssm103/blog.013.png, /images/0100ssm/ssm103/blog.013.png 1.5x, /images/0100ssm/ssm103/blog.013.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm103/blog.013.png"
+        title="/images/0100ssm/ssm103/blog.013.png" /></p>
+<p>图4-8  送养宠物信息实体属性E-R图</p>
+<ol>
+<li>
+<h3 id="数据库表设计">数据库表设计</h3>
+</li>
+</ol>
+<p>宠物领养系统采用MYSQL数据库进行数据的储存，下面介绍数据库中的各个表的详细信息。</p>
+<p>表4-1   users管理员信息表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">是否允许空</th>
+<th style="text-align:center">字段含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id`</td>
+<td style="text-align:center">bigint(20)</td>
+<td style="text-align:center">NOT NULL</td>
+<td style="text-align:center">编号</td>
+</tr>
+<tr>
+<td style="text-align:center">username`</td>
+<td style="text-align:center">varchar(100)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">用户名</td>
+</tr>
+<tr>
+<td style="text-align:center">password`</td>
+<td style="text-align:center">varchar(100)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">密码</td>
+</tr>
+<tr>
+<td style="text-align:center">role</td>
+<td style="text-align:center">varchar(100)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">角色</td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">新增时间</td>
+</tr>
+</tbody>
+</table>
+<p>表4-2  chongwuxiu宠物秀信息表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">是否允许空</th>
+<th style="text-align:center">字段含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">`id</td>
+<td style="text-align:center">bigint(20)</td>
+<td style="text-align:center">NOT NULL</td>
+<td style="text-align:center">编号</td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center"><code>	</code>timestamp</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">创建时间</td>
+</tr>
+<tr>
+<td style="text-align:center">chongwudongtai</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">宠物动态</td>
+</tr>
+<tr>
+<td style="text-align:center">chongwuzhaopian</td>
+<td style="text-align:center"><code>	</code>varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">宠物照片</td>
+</tr>
+<tr>
+<td style="text-align:center">shouyanghao</td>
+<td style="text-align:center"><code>	</code>varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">收养号</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>shouyangming</code></td>
+<td style="text-align:center"><code>	</code>varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">收养名</td>
+</tr>
+<tr>
+<td style="text-align:center">thumbsupnum`</td>
+<td style="text-align:center"><code>	</code>int(11)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">赞数</td>
+</tr>
+<tr>
+<td style="text-align:center">crazilynum`</td>
+<td style="text-align:center"><code>	</code>int(11)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">踩数</td>
+</tr>
+<tr>
+<td style="text-align:center">clicktime</td>
+<td style="text-align:center">` datetime</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">最近点击时间</td>
+</tr>
+</tbody>
+</table>
+<p>表4-3  diquleixing地区类型信息表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">主键/允许空</th>
+<th style="text-align:center">字段含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">`id</td>
+<td style="text-align:center">bigint(20)</td>
+<td style="text-align:center">NOT NULL</td>
+<td style="text-align:center">编号</td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center"><code>	</code>timestamp</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">创建时间</td>
+</tr>
+<tr>
+<td style="text-align:center">leixing</td>
+<td style="text-align:center"><code>	</code>varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">类型</td>
+</tr>
+</tbody>
+</table>
+<p>表4-4   shenqinglingyang申请领养信息表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">主键/允许空</th>
+<th style="text-align:center">字段含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">`id</td>
+<td style="text-align:center">bigint(20)</td>
+<td style="text-align:center">NOT NULL</td>
+<td style="text-align:center">编号</td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center"><code>	</code>timestamp</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">创建时间</td>
+</tr>
+<tr>
+<td style="text-align:center">chongwumingcheng</td>
+<td style="text-align:center"><code>	</code>varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">宠物名称</td>
+</tr>
+<tr>
+<td style="text-align:center">chongwuzhaopian</td>
+<td style="text-align:center"><code>	</code>varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">宠物照片</td>
+</tr>
+<tr>
+<td style="text-align:center">chongwudizhi</td>
+<td style="text-align:center"><code>	</code>varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">宠物地址</td>
+</tr>
+<tr>
+<td style="text-align:center">songyanghao</td>
+<td style="text-align:center"><code>	</code>varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">送养号</td>
+</tr>
+<tr>
+<td style="text-align:center">songyangming</td>
+<td style="text-align:center"><code>	</code>varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">送养名</td>
+</tr>
+<tr>
+<td style="text-align:center">diqu</td>
+<td style="text-align:center"><code>	</code>varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">地区</td>
+</tr>
+<tr>
+<td style="text-align:center">shouyanghao</td>
+<td style="text-align:center"><code>	</code>varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">收养号</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>shouyangming</code></td>
+<td style="text-align:center"><code>	</code>varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">收养名</td>
+</tr>
+<tr>
+<td style="text-align:center">xingbie</td>
+<td style="text-align:center"><code>	</code>varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">性别</td>
+</tr>
+<tr>
+<td style="text-align:center">shouji</td>
+<td style="text-align:center"><code>	</code>varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">手机</td>
+</tr>
+<tr>
+<td style="text-align:center">weixinhao</td>
+<td style="text-align:center"><code>	</code>varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">微信号</td>
+</tr>
+<tr>
+<td style="text-align:center">`dizhi</td>
+<td style="text-align:center"><code>	</code>varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">地址</td>
+</tr>
+<tr>
+<td style="text-align:center">lingyangyuanyin</td>
+<td style="text-align:center"><code>	</code>varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">领养原因</td>
+</tr>
+<tr>
+<td style="text-align:center">yangchongjingyan</td>
+<td style="text-align:center"><code>	</code>varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">养宠经验'</td>
+</tr>
+<tr>
+<td style="text-align:center">sfsh</td>
+<td style="text-align:center"><code>	</code>varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">是否审核</td>
+</tr>
+<tr>
+<td style="text-align:center">shhf`</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">审核回复</td>
+</tr>
+</tbody>
+</table>
+<p>表4-5  `songyangchongwu送养宠物信息表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">主键/允许空</th>
+<th style="text-align:center">字段含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">`id</td>
+<td style="text-align:center">bigint(20)</td>
+<td style="text-align:center">NOT NULL</td>
+<td style="text-align:center">编号</td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center"><code>	</code>timestamp</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">创建时间</td>
+</tr>
+<tr>
+<td style="text-align:center">chongwumingcheng</td>
+<td style="text-align:center"><code>	</code>varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">宠物名称</td>
+</tr>
+<tr>
+<td style="text-align:center">chongwuzhaopian</td>
+<td style="text-align:center"><code>	</code>varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">宠物照片</td>
+</tr>
+<tr>
+<td style="text-align:center">chongwudizhi</td>
+<td style="text-align:center"><code>	</code>varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">宠物地址</td>
+</tr>
+<tr>
+<td style="text-align:center">diqu</td>
+<td style="text-align:center"><code>	</code>varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">地区</td>
+</tr>
+<tr>
+<td style="text-align:center">fabushijian`</td>
+<td style="text-align:center"><code>	</code>datetime</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">发布时间</td>
+</tr>
+<tr>
+<td style="text-align:center">songyanghao`</td>
+<td style="text-align:center"><code>	</code>varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">送养号</td>
+</tr>
+<tr>
+<td style="text-align:center">songyangming</td>
+<td style="text-align:center"><code>	</code>varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">送养名</td>
+</tr>
+<tr>
+<td style="text-align:center">shouji</td>
+<td style="text-align:center"><code>	</code>varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">手机</td>
+</tr>
+<tr>
+<td style="text-align:center">songyangzhuangtai</td>
+<td style="text-align:center"><code>	</code>varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">送养状态</td>
+</tr>
+<tr>
+<td style="text-align:center">sfsh</td>
+<td style="text-align:center"><code>	</code>varchar(200)</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">是否审核</td>
+</tr>
+<tr>
+<td style="text-align:center">shhf`</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">审核回复</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>
+<h1 id="系统的实现">系统的实现</h1>
+<ol>
+<li>
+<h2 id="用户功能模块的实现">用户功能模块的实现</h2>
+<ol>
+<li>
+<h3 id="系统主界面">系统主界面</h3>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<p>用户进入本系统可查看系统信息，系统主界面展示如图5-1所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm103/blog.014.png"
+        data-srcset="/images/0100ssm/ssm103/blog.014.png, /images/0100ssm/ssm103/blog.014.png 1.5x, /images/0100ssm/ssm103/blog.014.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm103/blog.014.png"
+        title="/images/0100ssm/ssm103/blog.014.png" /></p>
+<p>图5-1系统主界面图</p>
+<ol>
+<li>
+<h3 id="用户注册界面">用户注册界面</h3>
+</li>
+</ol>
+<p>未有账号的用户可进行注册操作，在注册的时候可根据提示输入相关注册信息，用户注册界面如图5-2所示</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm103/blog.015.png"
+        data-srcset="/images/0100ssm/ssm103/blog.015.png, /images/0100ssm/ssm103/blog.015.png 1.5x, /images/0100ssm/ssm103/blog.015.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm103/blog.015.png"
+        title="/images/0100ssm/ssm103/blog.015.png" /></p>
+<p>图5-2 用户注册登录界面</p>
+<ol>
+<li>
+<h3 id="用户登录界面">用户登录界面</h3>
+</li>
+</ol>
+<p>用户要想进行申请领养宠物操作必须登录系统，用户登录界面展示如图5-3所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm103/blog.016.png"
+        data-srcset="/images/0100ssm/ssm103/blog.016.png, /images/0100ssm/ssm103/blog.016.png 1.5x, /images/0100ssm/ssm103/blog.016.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm103/blog.016.png"
+        title="/images/0100ssm/ssm103/blog.016.png" /></p>
+<p>图5-3用户登录界面</p>
+<ol>
+<li>
+<h3 id="送养宠物详情界面">送养宠物详情界面</h3>
+</li>
+</ol>
+<p>用户可查看送养宠物详情信息，登录后可进行申请领养操作，送养宠物详情界面展示如图5-4所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm103/blog.017.png"
+        data-srcset="/images/0100ssm/ssm103/blog.017.png, /images/0100ssm/ssm103/blog.017.png 1.5x, /images/0100ssm/ssm103/blog.017.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm103/blog.017.png"
+        title="/images/0100ssm/ssm103/blog.017.png" /></p>
+<p>图5-4 送养宠物详情界面</p>
+<ol>
+<li>
+<h3 id="添加送养宠物界面">添加送养宠物界面</h3>
+</li>
+</ol>
+<p>用户登录后可添加送养宠物信息，添加送养宠物界面如图5-5所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm103/blog.018.png"
+        data-srcset="/images/0100ssm/ssm103/blog.018.png, /images/0100ssm/ssm103/blog.018.png 1.5x, /images/0100ssm/ssm103/blog.018.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm103/blog.018.png"
+        title="/images/0100ssm/ssm103/blog.018.png" /></p>
+<p>图5-5 添加送养宠物界面</p>
+<ol>
+<li>
+<h3 id="添加宠物秀界面">添加宠物秀界面</h3>
+</li>
+</ol>
+<p>用户登录后还可添加宠物秀，添加宠物秀界面如图5-6所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm103/blog.019.png"
+        data-srcset="/images/0100ssm/ssm103/blog.019.png, /images/0100ssm/ssm103/blog.019.png 1.5x, /images/0100ssm/ssm103/blog.019.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm103/blog.019.png"
+        title="/images/0100ssm/ssm103/blog.019.png" /></p>
+<p>图5-6  添加宠物秀界面</p>
+<ol>
+<li>
+<h3 id="个人中心界面">个人中心界面</h3>
+</li>
+</ol>
+<p>用户可管理个人信息，个人中心界面展示如图5-7所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm103/blog.020.png"
+        data-srcset="/images/0100ssm/ssm103/blog.020.png, /images/0100ssm/ssm103/blog.020.png 1.5x, /images/0100ssm/ssm103/blog.020.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm103/blog.020.png"
+        title="/images/0100ssm/ssm103/blog.020.png" /></p>
+<p>图5-7  个人中心界面</p>
+<ol>
+<li>
+<h2 id="管理员功能模块的实现">管理员功能模块的实现</h2>
+<ol>
+<li>
+<h3 id="管理员登录界面">管理员登录界面</h3>
+</li>
+</ol>
+</li>
+</ol>
+<p>管理员要想进入系统后台进行管理操作，必须登录系统后台，管理员登录界面如图5-8所示</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm103/blog.021.png"
+        data-srcset="/images/0100ssm/ssm103/blog.021.png, /images/0100ssm/ssm103/blog.021.png 1.5x, /images/0100ssm/ssm103/blog.021.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm103/blog.021.png"
+        title="/images/0100ssm/ssm103/blog.021.png" /></p>
+<p>图5-8 管理员登录界面</p>
+<ol>
+<li>
+<h3 id="用户管理界面">用户管理界面</h3>
+</li>
+</ol>
+<p>管理员在用户管理界面可查看所有用户信息，对已有用户信息可进行修改和删除操作，也可添加用户信息，用户管理界面如图5-8所示</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm103/blog.022.png"
+        data-srcset="/images/0100ssm/ssm103/blog.022.png, /images/0100ssm/ssm103/blog.022.png 1.5x, /images/0100ssm/ssm103/blog.022.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm103/blog.022.png"
+        title="/images/0100ssm/ssm103/blog.022.png" /></p>
+<p>图5-9  用户管理界面</p>
+<ol>
+<li>
+<h3 id="送养宠物管理界面">送养宠物管理界面</h3>
+</li>
+</ol>
+<p>管理员可查看所有送养宠物信息，并可对其进行审核、修改和删除操作，送养宠物管理界面展示如图5-10所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm103/blog.023.png"
+        data-srcset="/images/0100ssm/ssm103/blog.023.png, /images/0100ssm/ssm103/blog.023.png 1.5x, /images/0100ssm/ssm103/blog.023.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm103/blog.023.png"
+        title="/images/0100ssm/ssm103/blog.023.png" /></p>
+<p>图5-10  送养宠物管理界面</p>
+<ol>
+<li>
+<h3 id="地区类型管理界面">地区类型管理界面</h3>
+</li>
+</ol>
+<p>管理员可添加、修改和删除地区类型信息，地区类型管理界面如图5-11所示，添加地区类型界面展示如图5-12所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm103/blog.024.png"
+        data-srcset="/images/0100ssm/ssm103/blog.024.png, /images/0100ssm/ssm103/blog.024.png 1.5x, /images/0100ssm/ssm103/blog.024.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm103/blog.024.png"
+        title="/images/0100ssm/ssm103/blog.024.png" /></p>
+<p>图5-11  地区类型管理界面</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm103/blog.025.png"
+        data-srcset="/images/0100ssm/ssm103/blog.025.png, /images/0100ssm/ssm103/blog.025.png 1.5x, /images/0100ssm/ssm103/blog.025.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm103/blog.025.png"
+        title="/images/0100ssm/ssm103/blog.025.png" /></p>
+<p>图5-12  添加地区类型界面</p>
+<ol>
+<li>
+<h3 id="申请领养管理界面">申请领养管理界面</h3>
+</li>
+</ol>
+<p>管理员可查看所有所有申请领养信息，并可对其进行审核操作，申请领养管理界面如图5-13所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm103/blog.026.png"
+        data-srcset="/images/0100ssm/ssm103/blog.026.png, /images/0100ssm/ssm103/blog.026.png 1.5x, /images/0100ssm/ssm103/blog.026.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm103/blog.026.png"
+        title="/images/0100ssm/ssm103/blog.026.png" /></p>
+<p>图5-13  申请领养管理界面</p>
+<ol>
+<li>
+<h3 id="宠物秀管理界面">宠物秀管理界面</h3>
+</li>
+</ol>
+<p>管理员可查看所有宠物秀信息，并可对其进行删除操作，宠物秀管理界面如图5-14所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm103/blog.027.png"
+        data-srcset="/images/0100ssm/ssm103/blog.027.png, /images/0100ssm/ssm103/blog.027.png 1.5x, /images/0100ssm/ssm103/blog.027.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm103/blog.027.png"
+        title="/images/0100ssm/ssm103/blog.027.png" /></p>
+<p>图5-14 宠物秀管理界面</p>
+<ol>
+<li>
+<h1 id="heading"></h1>
+</li>
+</ol>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2023-11-30</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/ssm103%E5%AE%A0%E7%89%A9%E9%A2%86%E5%85%BB%E7%B3%BB%E7%BB%9F-vue/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://chenqi199.github.io/ssm103%E5%AE%A0%E7%89%A9%E9%A2%86%E5%85%BB%E7%B3%BB%E7%BB%9F-vue/" data-title="ssm103宠物领养系统&#43;vue" data-hashtags="ssm宠物,宠物领养,领养系统"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://chenqi199.github.io/ssm103%E5%AE%A0%E7%89%A9%E9%A2%86%E5%85%BB%E7%B3%BB%E7%BB%9F-vue/" data-hashtag="ssm宠物"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://chenqi199.github.io/ssm103%E5%AE%A0%E7%89%A9%E9%A2%86%E5%85%BB%E7%B3%BB%E7%BB%9F-vue/" data-title="ssm103宠物领养系统&#43;vue"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://chenqi199.github.io/ssm103%E5%AE%A0%E7%89%A9%E9%A2%86%E5%85%BB%E7%B3%BB%E7%BB%9F-vue/" data-title="ssm103宠物领养系统&#43;vue"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://chenqi199.github.io/ssm103%E5%AE%A0%E7%89%A9%E9%A2%86%E5%85%BB%E7%B3%BB%E7%BB%9F-vue/" data-title="ssm103宠物领养系统&#43;vue" data-ralateuid="https://gitee.com/chen_q_i"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ssm%E5%AE%A0%E7%89%A9/">Ssm宠物</a>,&nbsp;<a href="/tags/%E5%AE%A0%E7%89%A9%E9%A2%86%E5%85%BB/">宠物领养</a>,&nbsp;<a href="/tags/%E9%A2%86%E5%85%BB%E7%B3%BB%E7%BB%9F/">领养系统</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/ssm101%E7%8F%A0%E5%AE%9D%E9%A6%96%E9%A5%B0%E4%BA%A4%E6%98%93%E5%B9%B3%E5%8F%B0%E5%BC%80%E5%8F%91-jsp/" class="prev" rel="prev" title="ssm101珠宝首饰交易平台开发&#43;jsp"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>ssm101珠宝首饰交易平台开发+jsp</a>
+            <a href="/ssm102%E9%AD%85%E5%8A%9B%E7%B9%81%E5%B3%99%E5%AE%A3%E4%BC%A0%E7%BD%91%E7%AB%99%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" class="next" rel="next" title="ssm102“魅力”繁峙宣传网站的设计与实现&#43;vue">ssm102“魅力”繁峙宣传网站的设计与实现+vue<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.128.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="chenqi199" target="_blank">chenqi</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

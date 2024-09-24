@@ -1,17 +1,16 @@
 # 0303springboot民谣网站的设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0303springboot民谣网站的设计与实现](https://github.com/GraduationProject-springboot/0303springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)]()
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 绪论
 ## 1.1研究背景
@@ -136,7 +135,7 @@ MySQL数据库是一种使用频繁的关系型数据库。因为其具有开源
 公告信息添加
 
 
-![](/images/0300stringboot/0303springboot/blog.002.png)
+![](/images/0300wxapp//blog.002.png)
 
 图4-1系统总体功能设计图
 
@@ -144,43 +143,43 @@ MySQL数据库是一种使用频繁的关系型数据库。因为其具有开源
 ### 4.2.1概念设计
 本系统使用轻量级的MySQL数据库，对系统相关的数据信息进行管理和维护[12]。数据库设计阶段一般可以被分为概念设计和逻辑设计这两个阶段。在进行数据库相关设计的全过程中，两个阶段所起到作用是完全不同的，概念设计是实现数据库设计的主要基础，逻辑设计阶段是完成数据库设计的最终目标。概念设计阶段以设计实体-联系图（E-R图）的方式，将现实世界中用户的相关需求抽象化为虚拟世界中的概念模型。本人通过设计E-R图，详细地对系统各实体以及其存在的联系进行了表达。各实体信息的实体属性图如图4-2、图4-3、图4-4、图4-5、图4-6、图4-7、图4-8、图4-9、图4-10所示，系统总体E-R图如图4-11所示。
 
-![](/images/0300stringboot/0303springboot/blog.003.png)
+![](/images/0300wxapp//blog.003.png)
 
 图4-2管理员信息实体属性图
 
-![](/images/0300stringboot/0303springboot/blog.004.png)
+![](/images/0300wxapp//blog.004.png)
 
 图4-3用户信息实体属性图
 
-![](/images/0300stringboot/0303springboot/blog.005.png)
+![](/images/0300wxapp//blog.005.png)
 
 图4-4歌曲信息实体属性图
 
-![](/images/0300stringboot/0303springboot/blog.006.png)
+![](/images/0300wxapp//blog.006.png)
 
 图4-5字典信息实体属性图
 
-![](/images/0300stringboot/0303springboot/blog.007.png)
+![](/images/0300wxapp//blog.007.png)
 
 图4-6歌曲收藏信息实体属性图
 
-![](/images/0300stringboot/0303springboot/blog.008.png)
+![](/images/0300wxapp//blog.008.png)
 
 图4-7歌曲留言信息实体属性图
 
-![](/images/0300stringboot/0303springboot/blog.009.png)
+![](/images/0300wxapp//blog.009.png)
 
 图4-8论坛信息实体属性图
 
-![](/images/0300stringboot/0303springboot/blog.010.png)
+![](/images/0300wxapp//blog.010.png)
 
 图4-9留言版信息实体属性图
 
-![](/images/0300stringboot/0303springboot/blog.011.png)
+![](/images/0300wxapp//blog.011.png)
 
 图4-10公告信息实体属性图
 
-![](/images/0300stringboot/0303springboot/blog.012.png)
+![](/images/0300wxapp//blog.012.png)
 
 图4-11系统总体E-R图
 ### 4.2.2逻辑设计
@@ -315,75 +314,75 @@ MySQL数据库是一种使用频繁的关系型数据库。因为其具有开源
 ## 5.1个人中心
 通过设计的个人中心功能模块，用户可以选择修改账号密码，查看个人资料信息，通过不定期的对个人账户密码进行更新，保障个人信息安全，修改密码界面设计如图5-1所示，个人信息界面设计如图5-2所示。
 
-![](/images/0300stringboot/0303springboot/blog.013.png)
+![](/images/0300wxapp//blog.013.png)
 
 图5-1修改密码界面
 
-![](/images/0300stringboot/0303springboot/blog.014.png)
+![](/images/0300wxapp//blog.014.png)
 
 图5-2个人信息界面
 ## 5.2管理员管理
 通过设计的管理员管理功能模块，管理用户可以管理相关的管理员用户信息资料，比如进行查看管理员的详细资料，修改管理员的密码信息，删除已经注销的管理员信息记录等操作，管理员管理界面设计如图5-3所示。
 
-![](/images/0300stringboot/0303springboot/blog.015.png)
+![](/images/0300wxapp//blog.015.png)
 
 图5-3管理员管理界面
 ## 5.3基础数据管理
 通过设计的基础数据管理功能模块，管理用户可以管理相关的歌曲类型、公告类型信息记录，比如进行查看歌曲类型、公告类型信息的详细资料，修改歌曲类型、公告类型的名称信息，删除已经失效的歌曲类型、公告类型信息记录等操作，歌曲类型管理界面设计如图5-4所示，公告类型管理界面设计如图5-5所示。
 
-![](/images/0300stringboot/0303springboot/blog.016.png)
+![](/images/0300wxapp//blog.016.png)
 
 图5-4歌曲类型管理界面
 
-![](/images/0300stringboot/0303springboot/blog.017.png)
+![](/images/0300wxapp//blog.017.png)
 
 图5-5公告类型管理界面
 ## 5.4论坛管理
 通过设计的论坛管理功能模块，管理用户可以管理相关的论坛信息记录，比如进行查看论坛信息的详细资料，修改论坛的帖子内容信息，删除已经失效的论坛信息记录等操作，论坛管理界面设计如图5-6所示。
 
-![](/images/0300stringboot/0303springboot/blog.018.png)
+![](/images/0300wxapp//blog.018.png)
 
 图5-6论坛管理界面
 ## 5.5歌曲管理
 通过设计的歌曲管理功能模块，管理用户可以管理相关的歌曲信息记录，比如进行查看歌曲信息的详细资料，修改歌曲的封面信息，删除已经失效的歌曲信息记录等操作，歌曲管理界面设计如图5-7所示。
 
-![](/images/0300stringboot/0303springboot/blog.019.png)
+![](/images/0300wxapp//blog.019.png)
 
 图5-7歌曲管理界面
 ## 5.6歌曲留言管理
 通过设计的歌曲留言管理功能模块，管理用户可以管理相关的歌曲留言信息记录，比如进行查看歌曲留言信息的详细资料，修改歌曲的留言内容信息，删除已经失效的歌曲留言信息记录等操作，歌曲留言管理界面设计如图5-8所示。
 
-![](/images/0300stringboot/0303springboot/blog.020.png)
+![](/images/0300wxapp//blog.020.png)
 
 图5-8歌曲留言管理界面
 ## 5.7歌曲收藏管理
 通过设计的歌曲收藏管理功能模块，管理用户可以管理相关的歌曲收藏信息记录，比如进行查看歌曲收藏信息的详细资料，修改歌曲的收藏时间信息，删除已经失效的歌曲收藏信息记录等操作，歌曲收藏管理界面设计如图5-9所示。
 
-![](/images/0300stringboot/0303springboot/blog.021.png)
+![](/images/0300wxapp//blog.021.png)
 
 图5-9歌曲收藏管理界面
 ## 5.8留言版管理
 通过设计的留言版管理功能模块，管理用户可以管理相关的留言版信息记录，比如进行查看留言版信息的详细资料，修改留言版留言内容和回复内容信息，删除已经失效的留言版信息记录等操作，留言版管理界面设计如图5-10所示。
 
-![](/images/0300stringboot/0303springboot/blog.022.png)
+![](/images/0300wxapp//blog.022.png)
 
 图5-10留言版管理界面
 ## 5.9公告信息管理
 通过设计的公告信息管理功能模块，管理用户可以管理相关的公告信息记录，比如进行查看公告信息的详细资料，修改公告的标题信息，删除已经失效的公告信息记录等操作，公告信息管理界面设计如图5-11所示。
 
-![](/images/0300stringboot/0303springboot/blog.023.png)
+![](/images/0300wxapp//blog.023.png)
 
 图5-11公告信息管理界面
 ## 5.10用户管理
 通过设计的用户管理功能模块，管理用户可以管理相关的用户信息资料，比如进行查看用户的详细资料，修改用户的联系方式，删除已经注销的用户信息记录等操作，用户管理界面设计如图5-12所示。
 
-![](/images/0300stringboot/0303springboot/blog.024.png)
+![](/images/0300wxapp//blog.024.png)
 
 图5-12用户管理界面
 ## 5.11轮播图管理
 通过设计的轮播图管理功能模块，管理用户可以管理相关的轮播图信息记录，比如进行查看轮播图信息的详细资料，修改轮播图的名称信息，删除已经失效的轮播图信息记录等操作，轮播图管理界面设计如图5-13所示。
 
-![](/images/0300stringboot/0303springboot/blog.025.png)
+![](/images/0300wxapp//blog.025.png)
 
 图5-13轮播图管理界面
 

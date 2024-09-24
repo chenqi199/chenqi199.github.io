@@ -1,17 +1,16 @@
 # 0290springboot校园疫情防控系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0290springboot校园疫情防控系统](https://github.com/GraduationProject-springboot/0290springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1EbH?p=56)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 绪论
 ## 1.1 课题背景
@@ -64,25 +63,25 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 3.2.1 操作流程
 使用者在操作校园疫情防控系统中，应该按照本系统提供的操作流程（图3.1即为本系统的操作流程图）进行操作，可以减少操作失误，从而节省进入校园疫情防控系统的时间。
 
-![](/images/0200stringboot/0290springboot/blog.001.png)
+![](/images/0200wxapp//blog.001.png)
 
 图3.1 系统操作流程
 ### 3.2.2 登录流程
 校园疫情防控系统通过登录功能（图3.2即为其登录的流程）引导使用者进入指定的功能操作区，也避免非本系统的用户享受本系统提供的服务以及查看本系统提供的信息，进而保证用户安全。
 
-![](/images/0200stringboot/0290springboot/blog.002.png)
+![](/images/0200wxapp//blog.002.png)
 
 图3.2 登录流程
 ### 3.2.3 删除信息流程
 校园疫情防控系统在经过长期使用后，会产生很多的数据信息。为了腾出存储空间存放更多的数据，本系统数据库中存储的数据，一些没有参考价值的数据需要进行删除（图3.3即为删除信息的流程），删除数据过程中，为避免误删，使用者要根据系统的提示来决定是否删除数据。
 
-![](/images/0200stringboot/0290springboot/blog.003.png)
+![](/images/0200wxapp//blog.003.png)
 
 图3.3 删除信息流程
 ### 3.2.4 添加信息流程
 校园疫情防控系统提供可视化的功能操作区，非常方便使用者进行数据操作，当使用者往系统中录入数据时（图3.4即为添加信息的流程），本系统也会进行数据合法性的判断，符合要求的数据才能够在数据库指定表中进行登记。
 
-![](/images/0200stringboot/0290springboot/blog.004.png)
+![](/images/0200wxapp//blog.004.png)
 
 图3.4 添加信息流程
 ## 3.3 性能需求
@@ -108,19 +107,19 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 图3.5即为管理员用例图，管理员权限操作的功能包括查看学生的健康信息，管理聊天室信息，对教师，学生请假，学生，公告信息进行管理。
 
-![](/images/0200stringboot/0290springboot/blog.005.png)
+![](/images/0200wxapp//blog.005.png)
 
 图3.5 管理员用例图
 
 图3.6即为教师用例图，教师权限操作的功能包括发布聊天信息，回复聊天信息，查看学生健康信息，审核学生请假信息，查看学生信息等。
 
-![](/images/0200stringboot/0290springboot/blog.006.png)
+![](/images/0200wxapp//blog.006.png)
 
 图3.6 教师用例图
 
 图3.7即为学生用例图，学生权限操作的功能包括管理聊天室的聊天信息，可以添加请假信息，查看教师对学生请假的处理结果信息，登记并管理学生自己的健康信息等。
 
-![](/images/0200stringboot/0290springboot/blog.007.png)
+![](/images/0200wxapp//blog.007.png)
 
 图3.7 学生用例图
 # 第4章 系统设计
@@ -140,19 +139,19 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ## 4.2 功能结构设计
 图4.1即为设计的管理员功能结构，管理员权限操作的功能包括查看学生的健康信息，管理聊天室信息，对教师，学生请假，学生，公告信息进行管理。
 
-![](/images/0200stringboot/0290springboot/blog.008.png)
+![](/images/0200wxapp//blog.008.png)
 
 图4.1 管理员功能结构
 
 图4.2即为设计的教师功能结构，教师权限操作的功能包括发布聊天信息，回复聊天信息，查看学生健康信息，审核学生请假信息，查看学生信息等。
 
-![](/images/0200stringboot/0290springboot/blog.009.png)
+![](/images/0200wxapp//blog.009.png)
 
 图4.2 教师功能结构
 
 图4.3即为设计的学生功能结构，学生权限操作的功能包括管理聊天室的聊天信息，可以添加请假信息，查看教师对学生请假的处理结果信息，登记并管理学生自己的健康信息等。
 
-![](/images/0200stringboot/0290springboot/blog.010.png)
+![](/images/0200wxapp//blog.010.png)
 
 图4.3 学生功能结构
 ## 4.3 数据库设计
@@ -162,31 +161,31 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 （1）图4.4即为教师这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0290springboot/blog.011.png)
+![](/images/0200wxapp//blog.011.png)
 
 图4.4 教师实体属性图
 
 （2）图4.5即为学生请假这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0290springboot/blog.012.png)
+![](/images/0200wxapp//blog.012.png)
 
 图4.5 学生请假实体属性图
 
 （3）图4.6即为学生这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0290springboot/blog.013.png)
+![](/images/0200wxapp//blog.013.png)
 
 图4.6 学生实体属性图
 
 4. 图4.7即为健康信息这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0290springboot/blog.014.png)
+![](/images/0200wxapp//blog.014.png)
 
 图4.7 健康信息实体属性图
 
 4. 图4.8即为上面介绍的实体中存在的联系。
 
-![](/images/0200stringboot/0290springboot/blog.015.png)
+![](/images/0200wxapp//blog.015.png)
 
 图4.8 实体间关系E-R图
 ### 4.3.2 数据库物理设计
@@ -297,57 +296,57 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 5.1.1 教师管理
 图5.1 即为编码实现的教师管理界面，教师信息包括教师姓名，学院，邮箱等信息，管理员对有错误数据的教师信息使用修改功能可以及时更正，需要删除的教师信息也能使用删除功能及时删除。
 
-![](/images/0200stringboot/0290springboot/blog.017.png)
+![](/images/0200wxapp//blog.017.png)
 
 图5.1 教师管理界面
 ### 5.1.2 学生管理
 图5.2 即为编码实现的学生管理界面，管理员对学生数据可以添加，也能通过文件的形式导入学生数据。学生信息出现错误，管理员也能使用修改功能及时更正。
 
-![](/images/0200stringboot/0290springboot/blog.018.png)
+![](/images/0200wxapp//blog.018.png)
 
 图5.2 学生管理界面
 ### 5.1.3 公告信息管理
 图5.3 即为编码实现的公告信息管理界面，公告的内容需要管理员添加，在公告信息管理界面，管理员也能修改公告内容。
 
-![](/images/0200stringboot/0290springboot/blog.019.png)
+![](/images/0200wxapp//blog.019.png)
 
 图5.3 公告信息管理界面
 ## 5.2 教师功能实现
 ### 5.2.1 健康表查看
 图5.4 即为编码实现的健康表查看界面，健康表信息包括健康状态，体温，学生姓名等信息，教师根据健康状态或学生姓名对学生的健康信息进行查询。
 
-![](/images/0200stringboot/0290springboot/blog.020.png)
+![](/images/0200wxapp//blog.020.png)
 
 图5.4 健康表查看界面
 ### 5.2.2 学生请假管理
 图5.5 即为编码实现的学生请假管理界面，学生申请请假，教师就需要在学生请假管理界面审核。学生请假信息有请假原因，请假时间，请假状态等信息。
 
-![](/images/0200stringboot/0290springboot/blog.021.png)
+![](/images/0200wxapp//blog.021.png)
 
 图5.5 学生请假管理界面
 ### 5.2.3 聊天室管理
 图5.6 即为编码实现的聊天室管理界面，教师可以新增聊天，可以查看聊天室的回复信息，在查看聊天室的回复信息之后，教师也能发布聊天回复信息。
 
-![](/images/0200stringboot/0290springboot/blog.022.png)
+![](/images/0200wxapp//blog.022.png)
 
 图5.6 聊天室管理界面
 ## 5.3 学生功能实现
 ### 5.3.1 健康表管理
 图5.7 即为编码实现的健康表管理界面，学生自己在健康表管理界面登记健康信息，包括学生的体温，详情等信息都需要登记，已经登记的有错误数据的健康信息可以进行修改。
 
-![](/images/0200stringboot/0290springboot/blog.023.png)
+![](/images/0200wxapp//blog.023.png)
 
 图5.7 健康表管理界面
 ### 5.3.2 学生请假管理
 图5.8 即为编码实现的学生请假管理界面，学生需要请假时，需要在学生请假管理界面添加请假的具体内容，包括请假原因和天数信息，最后等待教师处理学生请假信息。
 
-![](/images/0200stringboot/0290springboot/blog.024.png)
+![](/images/0200wxapp//blog.024.png)
 
 图5.8 学生请假管理界面
 ### 5.3.3 聊天室管理
 图5.9 即为编码实现的聊天室管理界面，学生通过聊天室可以发布聊天信息，可以删除自己发布的聊天信息，也能查看聊天的回复信息。
 
-![](/images/0200stringboot/0290springboot/blog.025.png)
+![](/images/0200wxapp//blog.025.png)
 
 图5.9 聊天室管理界面
 # 

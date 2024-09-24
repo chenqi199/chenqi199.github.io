@@ -1,17 +1,16 @@
 # 0317springboot基于HTML语言的环保网站的设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0317springboot基于HTML语言的环保网站的设计与实现](https://github.com/GraduationProject-springboot/0317springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)]()
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
 ## 1.1 研究背景
@@ -140,25 +139,25 @@ SpringBoot可以与经典的Java开发工具一起使用或者作为命令行工
 ### 3.3.1 操作流程分析
 程序上交给用户进行使用时，需要提供程序的操作流程图（如图3.1所示），这样便于用户容易理解程序的具体工作步骤，现如今程序的操作流程都有一个大致的标准，即先通过登录页面提交登录数据，通过程序验证正确之后，用户才能在程序功能操作区页面操作对应的功能。
 
-![](/images/0300stringboot/0317springboot/blog.001.png)
+![](/images/0300wxapp//blog.001.png)
 
 图3.1 程序操作流程图
 ### 3.3.2 登录流程分析
 在这个部分，需要对程序的登录功能模块的运行流程（如图3.2所示），进行单独说明。程序设置登录模块也是为了安全起见，让用户使用放心，登录模块主要就是让用户提交登录信息，程序进行数据验证，验证通过的用户才能够成功登录程序。
 
-![](/images/0300stringboot/0317springboot/blog.002.png)
+![](/images/0300wxapp//blog.002.png)
 
 图3.2 程序登录流程图
 ### 3.3.3 信息添加流程分析
 程序的添加功能就是提供给操作者录入信息的功能，不管是涉及到用户信息添加，还是其它功能模块涉及到的信息添加，程序的信息添加流程（如图3.3所示）都是一致的。程序都是先对操作者录入的数据进行判定，这个判定规则是一段提前编写完成的程序代码，当程序判定数据符合要求时，才会把操作者录入的数据登记在数据表里面，比如添加的用户信息，就会把新添加的用户信息写入用户信息的数据表文件里面。
 
-![](/images/0300stringboot/0317springboot/blog.003.png)
+![](/images/0300wxapp//blog.003.png)
 
 图3.3 信息添加流程图
 ### 3.3.4 信息删除流程分析
 当从程序里面删除某种无效数据时，遵循程序的信息删除流程（如图3.4所示），先要选中操作者需要删除的数据，程序为了预防操作者误删信息，也会进行提示，当操作者真正确定要删选中的信息时，该信息就会从数据库中被永久删除。
 
-![](/images/0300stringboot/0317springboot/blog.004.png)
+![](/images/0300wxapp//blog.004.png)
 
 图3.4 信息删除流程图
 
@@ -183,13 +182,13 @@ SpringBoot可以与经典的Java开发工具一起使用或者作为命令行工
 ## 4.2 系统概要设计
 本次拟开发的系统为了节约开发成本，也为了后期在维护和升级上的便利性，打算通过浏览器来实现系统功能界面的展示，让程序软件的主要事务集中在后台的服务器端处理，前端部分只用处理少量的事务逻辑。下面使用一张图（如图4.1所示）来说明程序的工作原理。
 
-![](/images/0300stringboot/0317springboot/blog.005.png)
+![](/images/0300wxapp//blog.005.png)
 
 图4.1 程序工作的原理图
 ## 4.3 系统功能结构设计
 在分析并得出使用者对程序的功能要求时，就可以进行程序设计了。如图4.2展示的就是管理员功能结构图，管理员功能有个人中心，管理员管理，濒危生物管理，地区管理，环保健康类型管理，保护法类型管理，公告类型管理，论坛管理，环保健康管理，环境保护管理，环境保护法管理，公告信息管理，轮播图管理。用户可以注册登录，修改个人信息，查看管理员发布的各种信息还可以留言，可以对濒危生物收藏，环保健康收藏，环境保护收藏等操作。
 
-![](/images/0300stringboot/0317springboot/blog.006.png)
+![](/images/0300wxapp//blog.006.png)
 
 图4.2 管理员功能结构图
 ## 4.4 数据库设计
@@ -199,31 +198,31 @@ SpringBoot可以与经典的Java开发工具一起使用或者作为命令行工
 
 1. 管理员实体中的属性有姓名，密码等信息。以此绘制的实体属性图见图4.4。
 
-![](/images/0300stringboot/0317springboot/blog.007.png)
+![](/images/0300wxapp//blog.007.png)
 
 图4.4 管理员实体属性图
 
 （2）用户实体中的属性有账户，密码，姓名等信息。以此绘制的实体属性图见图4.5。
 
-![](/images/0300stringboot/0317springboot/blog.008.png)
+![](/images/0300wxapp//blog.008.png)
 
 图4.5 车主实体属性图
 
 （3）公告实体中的属性有编号，状态等。以此绘制的实体属性图见图4.6。
 
-![](/images/0300stringboot/0317springboot/blog.009.png)
+![](/images/0300wxapp//blog.009.png)
 
 图4.6 公告实体属性图
 
 4. 濒危生物实体中的属性有车牌，车位，收费等信息。以此绘制的实体属性图见图4.7。
 
-![](/images/0300stringboot/0317springboot/blog.010.png)
+![](/images/0300wxapp//blog.010.png)
 
 图4.7 濒危生物实体属性图
 
 4. 各个实体之间的联系用下图的E-R图表示。绘制的系统E-R图见图4.8。
 
-![](/images/0300stringboot/0317springboot/blog.011.png)
+![](/images/0300wxapp//blog.011.png)
 
 图4.8 系统E-R图
 ### 4.4.2 数据库表结构设计
@@ -434,74 +433,74 @@ SpringBoot可以与经典的Java开发工具一起使用或者作为命令行工
 ### 5.1.1 管理员管理
 如图5.1显示的就是管理员管理页面，管理员可以对管理员信息进行添加，修改，删除，查询操作。
 
-![](/images/0300stringboot/0317springboot/blog.012.png)
+![](/images/0300wxapp//blog.012.png)
 
 图5.1 管理员管理页面
 ### 5.1.2 濒危生物管理
 如图5.2显示的就是濒危生物管理页面，管理员可以对濒危生物信息进行添加，修改，删除，查询操作。
 
-![](/images/0300stringboot/0317springboot/blog.013.png)
+![](/images/0300wxapp//blog.013.png)
 
 图5.2 濒危生物管理页面
 ### 5.1.3 论坛管理
 如图5.3显示的就是论坛管理页面，管理员可以对论坛信息进行添加，修改，删除，查询操作。
 
-![](/images/0300stringboot/0317springboot/blog.014.png)
+![](/images/0300wxapp//blog.014.png)
 
 图5.3 论坛管理页面
 ### 5.1.4 环保健康管理
 如图5.4显示的就是环保健康管理页面，管理员可以对环保健康信息进行添加，修改，删除，查询操作。
 
-![](/images/0300stringboot/0317springboot/blog.015.png)
+![](/images/0300wxapp//blog.015.png)
 
 图5.4 环保健康管理页面
 ### 5.1.5 环境保护管理
 如图5.5显示的就是环境保护页面，管理员可以对环境保护信息进行添加，修改，删除，查询操作。
 
-![](/images/0300stringboot/0317springboot/blog.016.png)
+![](/images/0300wxapp//blog.016.png)
 
 图5.5 环境保护管理页面
 ### 5.1.6 环境保护法管理
 如图5.6显示的就是环境保护法管理页面，管理员可以对环境保护法信息进行添加，修改，删除，查询操作。
 
-![](/images/0300stringboot/0317springboot/blog.017.png)
+![](/images/0300wxapp//blog.017.png)
 
 图5.6 环境保护法管理页面
 ### 5.1.7 公告信息管理
 如图5.7显示的就是公告信息管理页面，管理员可以对公告信息进行添加，修改，删除，查询操作。
 
-![](/images/0300stringboot/0317springboot/blog.018.png)
+![](/images/0300wxapp//blog.018.png)
 
 图5.7 公告信息管理页面
 ### 5.1.8 用户信息管理
 如图5.8显示的就是用户信息页面，管理员可以对用户信息进行添加，修改，删除，查询操作。
 
-![](/images/0300stringboot/0317springboot/blog.019.png)
+![](/images/0300wxapp//blog.019.png)
 
 图5.8 用户信息管理页面
 ## 5.2 用户功能介绍
 ### 5.2.1 个人中心
 如图5.9显示的就是个人中心页面，用户注册登录后点击个人中心可以修改个人资料和查看自己的收藏信息。
 
-![](/images/0300stringboot/0317springboot/blog.020.png)
+![](/images/0300wxapp//blog.020.png)
 
 图5.9 个人中心页面
 ### 5.2.2 濒危生物信息
 如图5.9显示的就是濒危生物页面，用户可以在濒危生物界面查看濒危生物信息。
 
-![](/images/0300stringboot/0317springboot/blog.021.png)
+![](/images/0300wxapp//blog.021.png)
 
 图5.10 濒危生物页面
 ### 5.2.3 环境保护信息
 如图5.9显示的就是环境保护信息页面，用户点击环境保护可以查看环境保护信息。
 
-![](/images/0300stringboot/0317springboot/blog.022.png)
+![](/images/0300wxapp//blog.022.png)
 
 图5.11 环境保护信息页面
 ### 5.2.4 公告信息管理
 如图5.9显示的就是公告信息页面，用户登录后可以点击公告信息里面查看公告信息。
 
-![](/images/0300stringboot/0317springboot/blog.023.png)
+![](/images/0300wxapp//blog.023.png)
 
 图5.12 公告信息页面
 

@@ -1,17 +1,16 @@
 # 0202springboot医疗挂号管理系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0202springboot医疗挂号管理系统](https://github.com/GraduationProject-springboot/0202springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)]()
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第一章 绪论
 ## 1.1 选题背景
@@ -59,25 +58,25 @@ Spring Boot适合初学者，也适合从以前的Spring框架开发者学习，
 ## 3.2系统流程分析
 从系统的角色上分析，每个用户角色都代表了不同的账号身份，而不同的身份则代表着功能的异同，所以首先要区分用户的角色身份问题。设置用户登录需要输入账号和密码，输入的信息必须与数据库里已经存在的账号密码信息进行比对，只有正确的账号和密码才可以进行下一步的页面显示操作，如果不正确的账号密码，则拒绝用户登录，也代表着用户没有继续访问的权限，系统是无法继续提供服务的。
 
-![](/images/0200stringboot/0202springboot/blog.001.png)
+![](/images/0200wxapp//blog.001.png)
 
 图3-1 操作流程图
 
 任何一个系统都有一个操作流程，本设计里面，对于任何数据的存储都有一定的合法要求，只有符合设定要求的数据才可以进行存储。具体步骤参考下图。
 
-![](/images/0200stringboot/0202springboot/blog.002.png)
+![](/images/0200wxapp//blog.002.png)
 
 图3-2 添加信息流程图
 
 数据的存储并不是一成不变的，当需要对已经存在的数据进行改变的时候，同样也遵循着操作流程，想更改数据首先要确定更改之前的数据是什么，然后输入新的数据是否合法，都要符合流程，只有合法数据才可以被更新到数据库里存储。具体步骤参考下图。
 
-![](/images/0200stringboot/0202springboot/blog.003.png)
+![](/images/0200wxapp//blog.003.png)
 
 图3-3 修改信息流程图
 
 删除操作，在数据存储方面是一件比较慎重的事件，很有可能会产生失误操作，所以一般删除操作的时候都要提示是否删除，确定删除才会更新数据库内容，实现删除目的。具体步骤参考下图。
 
-![](/images/0200stringboot/0202springboot/blog.004.png)
+![](/images/0200wxapp//blog.004.png)
 
 图3-4 删除信息流程图
 ## 3.3系统性能分析
@@ -93,25 +92,25 @@ Spring Boot适合初学者，也适合从以前的Spring框架开发者学习，
 
 管理员用例图的绘制结果见图3-5。管理员登录进入本系统操作的功能包括对挂号人员，划价人员，患者，门诊信息，体检信息，药品信息等进行管理。
 
-![](/images/0200stringboot/0202springboot/blog.005.png)
+![](/images/0200wxapp//blog.005.png)
 
 图3-5 管理员用例图
 
 挂号人员用例图的绘制结果见图3-6。挂号人员登录进入本系统操作的功能包括新增挂号信息，新增患者信息，管理挂号和患者信息，查看门诊信息，病例信息，以及药品信息等。
 
-![](/images/0200stringboot/0202springboot/blog.006.png)
+![](/images/0200wxapp//blog.006.png)
 
 图3-6 挂号人员用例图
 
 划价人员用例图的绘制结果见图3-7。划价人员登录进入本系统操作的功能包括为已划价的病例进行取药，查看体检信息，药品信息，医生信息，门诊信息等。
 
-![](/images/0200stringboot/0202springboot/blog.007.png)
+![](/images/0200wxapp//blog.007.png)
 
 图3-7 划价人员用例图
 
 医生用例图的绘制结果见图3-8。医生登录进入本系统操作的功能包括添加病例信息，管理病例信息，查看挂号信息，患者信息，体检信息，门诊信息等。
 
-![](/images/0200stringboot/0202springboot/blog.008.png)
+![](/images/0200wxapp//blog.008.png)
 
 图3-8 医生用例图
 # 第四章 系统设计
@@ -129,25 +128,25 @@ Spring Boot适合初学者，也适合从以前的Spring框架开发者学习，
 
 管理员功能结构图的绘制结果见图4-1。管理员登录进入本系统操作的功能包括对挂号人员，划价人员，患者，门诊信息，体检信息，药品信息等进行管理。
 
-![](/images/0200stringboot/0202springboot/blog.009.png)
+![](/images/0200wxapp//blog.009.png)
 
 图4-1 管理员功能结构图
 
 挂号人员功能结构图的绘制结果见图4-2。挂号人员登录进入本系统操作的功能包括新增挂号信息，新增患者信息，管理挂号和患者信息，查看门诊信息，病例信息，以及药品信息等。
 
-![](/images/0200stringboot/0202springboot/blog.010.png)
+![](/images/0200wxapp//blog.010.png)
 
 图4-2 挂号人员功能结构图
 
 划价人员功能结构图的绘制结果见图4-3。划价人员登录进入本系统操作的功能包括为已划价的病例进行取药，查看体检信息，药品信息，医生信息，门诊信息等。
 
-![](/images/0200stringboot/0202springboot/blog.011.png)
+![](/images/0200wxapp//blog.011.png)
 
 图4-3 划价人员功能结构图
 
 医生功能结构图的绘制结果见图4-4。医生登录进入本系统操作的功能包括添加病例信息，管理病例信息，查看挂号信息，患者信息，体检信息，门诊信息等。
 
-![](/images/0200stringboot/0202springboot/blog.012.png)
+![](/images/0200wxapp//blog.012.png)
 
 图4-4 医生功能结构图
 ## 4.3数据库设计
@@ -157,31 +156,31 @@ Spring Boot适合初学者，也适合从以前的Spring框架开发者学习，
 
 （1）使用Visio这样的常用的实体属性图绘制工具来绘制病例实体属性图，绘制结果见图4-3。
 
-![](/images/0200stringboot/0202springboot/blog.013.png)
+![](/images/0200wxapp//blog.013.png)
 
 图4-3 病例实体属性图
 
 （2）使用Visio这样的常用的实体属性图绘制工具来绘制挂号实体属性图，绘制结果见图4-4。
 
-![](/images/0200stringboot/0202springboot/blog.014.png)
+![](/images/0200wxapp//blog.014.png)
 
 图4-4 挂号实体属性图
 
 （3）使用Visio这样的常用的实体属性图绘制工具来绘制医生实体属性图，绘制结果见图4-5。
 
-![](/images/0200stringboot/0202springboot/blog.015.png)
+![](/images/0200wxapp//blog.015.png)
 
 图4-5 医生实体属性图
 
 （4）使用Visio这样的常用的实体属性图绘制工具来绘制挂号人员实体属性图，绘制结果见图4-6。
 
-![](/images/0200stringboot/0202springboot/blog.016.png)
+![](/images/0200wxapp//blog.016.png)
 
 图4-6 挂号人员实体属性图
 
 （5）绘制的上述实体间存在的联系见图4-7。
 
-![](/images/0200stringboot/0202springboot/blog.017.png)
+![](/images/0200wxapp//blog.017.png)
 
 图4-7 实体间关系E-R图
 ### 4.3.2 数据库物理设计
@@ -339,76 +338,76 @@ Spring Boot适合初学者，也适合从以前的Spring框架开发者学习，
 ### 5.1.1 药品管理
 管理员进入如图5-1所示的药品管理界面之后，管理员点击信息显示栏中最右侧的修改，删除按钮可依次完成药品信息的修改，删除等操作。
 
-![](/images/0200stringboot/0202springboot/blog.019.png)
+![](/images/0200wxapp//blog.019.png)
 
 图5-1 药品管理界面
 ### 5.1.2 体检管理
 管理员进入如图5-2所示的体检管理界面之后，管理员点击信息显示栏中最右侧的修改，删除按钮可依次完成体检信息的修改，删除等操作。
 
-![](/images/0200stringboot/0202springboot/blog.020.png)
+![](/images/0200wxapp//blog.020.png)
 
 图5-2 体检管理界面
 ### 5.1.3 门诊管理
 管理员进入如图5-3所示的门诊管理界面之后，管理员点击信息显示栏中最右侧的修改，删除按钮可依次完成门诊信息的修改，删除等操作。
 
-![](/images/0200stringboot/0202springboot/blog.021.png)
+![](/images/0200wxapp//blog.021.png)
 
 图5-3 门诊管理界面
 ## 5.2 挂号人员功能实现
 ### 5.2.1 患者管理
 挂号人员进入如图5-4所示的患者管理界面之后，挂号人员点击信息显示栏中最右侧的详情，删除按钮可依次完成患者信息的详情查看，删除等操作。挂号人员可以新增患者信息。
 
-![](/images/0200stringboot/0202springboot/blog.022.png)
+![](/images/0200wxapp//blog.022.png)
 
 图5-4 患者管理界面
 ### 5.2.2 挂号管理
 挂号人员进入如图5-5所示的挂号管理界面之后，挂号人员点击信息显示栏中最右侧的修改，删除按钮可依次完成挂号信息的修改，删除等操作。挂号人员需要添加挂号信息。
 
-![](/images/0200stringboot/0202springboot/blog.023.png)
+![](/images/0200wxapp//blog.023.png)
 
 图5-5 挂号管理界面
 ### 5.2.3 门诊查看
 挂号人员进入如图5-6所示的门诊查看界面之后，挂号人员点击信息显示栏中最右侧的详情按钮可以查看门诊详情，包括医生姓名，挂号费，门诊位置，星期几坐诊等信息。
 
-![](/images/0200stringboot/0202springboot/blog.024.png)
+![](/images/0200wxapp//blog.024.png)
 
 图5-6 门诊查看界面
 ## 5.3 划价人员功能实现
 ### 5.3.1 病例管理
 划价人员进入如图5-7所示的病例管理界面之后，划价人员可以查看病例详细内容，可以对已划价状态的病例进行取药操作。
 
-![](/images/0200stringboot/0202springboot/blog.025.png)
+![](/images/0200wxapp//blog.025.png)
 
 图5-7 病例管理界面
 ### 5.3.2 体检查看
 划价人员进入如图5-8所示的体检查看界面之后，划价人员可以查看患者的体检详情信息，包括左眼度数，肺部听诊，血常规详情等信息。
 
-![](/images/0200stringboot/0202springboot/blog.026.png)
+![](/images/0200wxapp//blog.026.png)
 
 图5-8 体检查看界面
 ### 5.3.3 药品查看
 划价人员进入如图5-9所示的药品查看界面之后，划价人员查看药品详情，包括药品名称，药品编号等信息。
 
-![](/images/0200stringboot/0202springboot/blog.027.png)
+![](/images/0200wxapp//blog.027.png)
 
 图5-9 药品查看界面
 ## 5.4 医生功能实现
 ### 5.4.1 病例管理
 医生进入如图5-10所示的病例管理界面之后，医生可以删除患者的病例信息，可以对患者的病例进行新增。
 
-![](/images/0200stringboot/0202springboot/blog.028.png)
+![](/images/0200wxapp//blog.028.png)
 
 图5-10 病例管理界面
 ### 5.4.2 挂号查看
 医生进入如图5-11所示的挂号查看界面之后，医生查看患者挂号费，科室，职位，挂号人员姓名，患者姓名等信息，可以查询患者挂号信息。
 
-![](/images/0200stringboot/0202springboot/blog.029.png)
+![](/images/0200wxapp//blog.029.png)
 
 图5-11 挂号查看界面
 ### 5.4.3 患者查看
 医生进入如图5-12所示的患者查看界面之后，医生查看患者详情，包括患者手机号，患者姓名，患者身份证号等信息，可以查询患者信息。
 
-![](/images/0200stringboot/0202springboot/blog.030.png)
+![](/images/0200wxapp//blog.030.png)
 
 图5-12 患者查看界面
 

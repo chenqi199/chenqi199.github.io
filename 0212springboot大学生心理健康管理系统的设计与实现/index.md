@@ -1,17 +1,16 @@
 # 0212springboot大学生心理健康管理系统的设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0212springboot大学生心理健康管理系统的设计与实现](https://github.com/GraduationProject-springboot/0212springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)]()
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第一章  课题背景及研究内容
 
@@ -45,7 +44,7 @@
 ## 2.1 B/S结构  
 B/S结构实际上就是Browser/Server（浏览器/服务器）的缩写，B/S结构是目前软件开发中的主流结构，大多数软件开发者都采用B/S这样的三层体系结构。采用B/S结构开发的大学生心理健康管理系统能够大大方便用户使用操作，用户随时随地都可以进行大学生心理健康管理系统的访问操作，只需要用户拥有一台会连上网络的计算机就行了，并且使用B/S 模式开发的大学生心理健康管理系统是基于浏览器的操作方式，在与用户进行交互以及程序的表现方式上面将会更加吸引人，这样的模式也给程序员开发程序降低了难度，程序开发成本也会相应缩减不少。我们在使用大学生心理健康管理系统期间，系统也会随着用户需求进行完善升级，使用B/S 模式开发的大学生心理健康管理系统就完全不需要担心，因为它的升级速度快，升级产生的成本费用很低，大多依赖于用户自己在网络上下载最新版本进行安装完成程序更新。下图为B/S结构图。
 
-![](/images/0200stringboot/0212springboot/blog.004.png)
+![](/images/0200wxapp//blog.004.png)
 
 图2.2 B/S结构图
 ## 2.2 MySQL数据库
@@ -72,13 +71,13 @@ B/S结构实际上就是Browser/Server（浏览器/服务器）的缩写，B/S�
 ## 3.2系统流程分析
 大学生心理健康管理系统的开发也是有对应的流程，开发之前必须要进行用户功能需求的分析，最后根据功能需求进行网站设计还有数据库相关数据的设计工作，此次开发的大学生心理健康管理系统开发流程如图3.1所示。
 
-![](/images/0200stringboot/0212springboot/blog.005.png)
+![](/images/0200wxapp//blog.005.png)
 
 图3.1 系统开发流程图
 
 系统开发完成之后会给用户提供登录入口，在这个界面用户输入的信息会得到验证，通过验证之后才能进去大学生心理健康管理系统的访问主界面，系统登录执行流程如下：
 
-![](/images/0200stringboot/0212springboot/blog.006.png)
+![](/images/0200wxapp//blog.006.png)
 
 图3.2 系统执行流程图
 ## 3.3系统功能需求分析
@@ -168,7 +167,7 @@ B/S结构实际上就是Browser/Server（浏览器/服务器）的缩写，B/S�
 吸通知修改
 
 删通知删除
-![](/images/0200stringboot/0212springboot/blog.007.png)
+![](/images/0200wxapp//blog.007.png)
 
 图4.1 管理员功能结构图
 
@@ -182,62 +181,62 @@ B/S结构实际上就是Browser/Server（浏览器/服务器）的缩写，B/S�
 
 （1）下图是心理老师实体和其具备的属性。
 
-![心理老师](/images/0200stringboot/0212springboot/blog.008.jpeg "心理老师")
+![心理老师](/images/0200wxapp//blog.008.jpeg "心理老师")
 图4.1 心理老师实体属性图
 
 （2）下图是考试记录表实体和其具备的属性。
 
-![考试记录表](/images/0200stringboot/0212springboot/blog.009.jpeg "考试记录表")
+![考试记录表](/images/0200wxapp//blog.009.jpeg "考试记录表")
 图4.2 考试记录表实体属性图
 
 （3）下图是答题详情表实体和其具备的属性。
 
-![答题详情表](/images/0200stringboot/0212springboot/blog.010.jpeg "答题详情表")
+![答题详情表](/images/0200wxapp//blog.010.jpeg "答题详情表")
 图4.3 答题详情表实体属性图
 
 （4）下图是错题表实体和其具备的属性。
 
-![错题表](/images/0200stringboot/0212springboot/blog.011.jpeg "错题表")
+![错题表](/images/0200wxapp//blog.011.jpeg "错题表")
 图4.4 错题表实体属性图
 
 （5）下图是健康知识实体和其具备的属性。
 
-![健康知识](/images/0200stringboot/0212springboot/blog.012.jpeg "健康知识")
+![健康知识](/images/0200wxapp//blog.012.jpeg "健康知识")
 图4.5 健康知识实体属性图
 
 （6）下图是心理老师留言实体和其具备的属性。
 
-![心理老师留言](/images/0200stringboot/0212springboot/blog.013.jpeg "心理老师留言")
+![心理老师留言](/images/0200wxapp//blog.013.jpeg "心理老师留言")
 图4.6 心理老师留言实体属性图
 
 （7）下图是试卷表实体和其具备的属性。
 
-![试卷表](/images/0200stringboot/0212springboot/blog.014.jpeg "试卷表")
+![试卷表](/images/0200wxapp//blog.014.jpeg "试卷表")
 图4.7 试卷表实体属性图
 
 （8）下图是学生实体和其具备的属性。
 
-![学生](/images/0200stringboot/0212springboot/blog.015.jpeg "学生")
+![学生](/images/0200wxapp//blog.015.jpeg "学生")
 图4.8 学生实体属性图
 
 （9）下图是试题表实体和其具备的属性。
 
-![试题表](/images/0200stringboot/0212springboot/blog.016.jpeg "试题表")
+![试题表](/images/0200wxapp//blog.016.jpeg "试题表")
 图4.9 试题表实体属性图
 
 （10）下图是通知实体和其具备的属性。
 
-![通知](/images/0200stringboot/0212springboot/blog.017.jpeg "通知")
+![通知](/images/0200wxapp//blog.017.jpeg "通知")
 图4.10 通知实体属性图
 
 （11）下图是心理老师预约订单实体和其具备的属性。
 
-![心理老师预约订单](/images/0200stringboot/0212springboot/blog.018.jpeg "心理老师预约订单")
+![心理老师预约订单](/images/0200wxapp//blog.018.jpeg "心理老师预约订单")
 图4.11 心理老师预约订单实体属性图
 
 （12）下图是心理老师收藏实体和其具备的属性。
 
-![心理老师收藏](/images/0200stringboot/0212springboot/blog.019.jpeg "心理老师收藏")
+![心理老师收藏](/images/0200wxapp//blog.019.jpeg "心理老师收藏")
 图4.12 心理老师收藏实体属性图
 
 
@@ -415,19 +414,19 @@ B/S结构实际上就是Browser/Server（浏览器/服务器）的缩写，B/S�
 ### 5.1.1 试卷列表
 如图5.1显示的就是试卷列表页面，此页面提供给管理员的功能有：查看试卷、新增试卷、修改试卷、删除试卷等。
 
-![](/images/0200stringboot/0212springboot/blog.020.png)
+![](/images/0200wxapp//blog.020.png)
 
 图5.1 试卷列表页面
 ### 5.1.2 通知信息管理
 管理员可以对前台的注册用户的基本信息进行管理，可以设置注册用户的账号为冻结或者是在用状态，管理员也能选择很多个已经失效的注册用户的信息进行批量删除操作。注册用户管理界面如图5.2所示。
 
-![](/images/0200stringboot/0212springboot/blog.021.png)
+![](/images/0200wxapp//blog.021.png)
 
 图5.2 通知信息管理页面
 ### 5.1.3 通知类型管理
 通知类型管理页面显示所有通知类型，在此页面既可以让管理员添加新的通知信息类型，也能对已有的通知类型信息执行编辑更新，失效的通知类型信息也能让管理员快速删除。下图就是通知类型管理页面。通知类型管理界面如图5.3所示。
 
-![](/images/0200stringboot/0212springboot/blog.022.png)
+![](/images/0200wxapp//blog.022.png)
 
 图5.3通知类型管理界面
 

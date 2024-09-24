@@ -1,0 +1,24 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Ssm药店 - 标签 - chenqi blog</title>
+        <link>https://chenqi199.github.io/tags/ssm%E8%8D%AF%E5%BA%97/</link>
+        <description>Ssm药店 - 标签 - chenqi blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>chen_q_i@163.com (chenqi)</managingEditor>
+            <webMaster>chen_q_i@163.com (chenqi)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 14 Jun 2024 10:33:01 &#43;0800</lastBuildDate><atom:link href="https://chenqi199.github.io/tags/ssm%E8%8D%AF%E5%BA%97/" rel="self" type="application/rss+xml" /><item>
+    <title>ssm694基于Java的药店药品信息管理系统的设计与实现&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm694%E5%9F%BA%E4%BA%8Ejava%E7%9A%84%E8%8D%AF%E5%BA%97%E8%8D%AF%E5%93%81%E4%BF%A1%E6%81%AF%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/</link>
+    <pubDate>Fri, 14 Jun 2024 10:33:01 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm694%E5%9F%BA%E4%BA%8Ejava%E7%9A%84%E8%8D%AF%E5%BA%97%E8%8D%AF%E5%93%81%E4%BF%A1%E6%81%AF%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm694基于Java的药店药品信息管理系统的设计与实现+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第一章]]></description>
+</item>
+<item>
+    <title>ssm347基于SSM的药店药品销售系统&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm347%E5%9F%BA%E4%BA%8Essm%E7%9A%84%E8%8D%AF%E5%BA%97%E8%8D%AF%E5%93%81%E9%94%80%E5%94%AE%E7%B3%BB%E7%BB%9F-vue/</link>
+    <pubDate>Tue, 20 Feb 2024 10:32:53 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm347%E5%9F%BA%E4%BA%8Essm%E7%9A%84%E8%8D%AF%E5%BA%97%E8%8D%AF%E5%93%81%E9%94%80%E5%94%AE%E7%B3%BB%E7%BB%9F-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm347基于SSM的药店药品销售系统+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 系统概述 1.1 研究背景 智慧养]]></description>
+</item>
+</channel>
+</rss>

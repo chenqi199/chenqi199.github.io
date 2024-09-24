@@ -1,17 +1,16 @@
 # 0131springboot公司日常考勤系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0131springboot公司日常考勤系统](https://github.com/GraduationProject-springboot/0131springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1ECs?p=30)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 绪论
 ## 1.1 项目背景及意义
@@ -94,7 +93,7 @@ SpringBoot是按照Pivotal的完整团队带出的全面的新型设计，其设
 
 请假申请
 
-![](/images/0100stringboot/0131springboot/blog.003.png)
+![](/images/0100wxapp//blog.003.png)
 
 图4-1 系统总体功能模块图
 ### 4.1.2 系统的结构框架图
@@ -128,7 +127,7 @@ WEB服务器
 
 数据库
 
-![](/images/0100stringboot/0131springboot/blog.004.png)
+![](/images/0100wxapp//blog.004.png)
 
 
 
@@ -158,7 +157,7 @@ WEB服务器
 退出
 
 考勤管理
-## ![](/images/0100stringboot/0131springboot/blog.005.png)4.2 系统流程图
+## ![](/images/0100wxapp//blog.005.png)4.2 系统流程图
 
 
 
@@ -192,7 +191,7 @@ MySQL 提供了许多支持数据库应用程序的工具。这些工具中有�
 个人出勤记录
 
 记录操作
-![](/images/0100stringboot/0131springboot/blog.006.png)上下班
+![](/images/0100wxapp//blog.006.png)上下班
 
 
 加班
@@ -253,7 +252,7 @@ E－R图如下：
 出勤级别
 
 考勤管理
-![](/images/0100stringboot/0131springboot/blog.007.png)
+![](/images/0100wxapp//blog.007.png)
 
 
 
@@ -289,7 +288,7 @@ E－R图如下：
 管理员密码
 
 姓名
-![](/images/0100stringboot/0131springboot/blog.008.png)
+![](/images/0100wxapp//blog.008.png)
 
 图5-3 管理员信息表属性图
 
@@ -311,7 +310,7 @@ E－R图如下：
 
 登陆用户名
 
-![](/images/0100stringboot/0131springboot/blog.009.png)
+![](/images/0100wxapp//blog.009.png)
 
 图5-4 员工信息表属性图
 
@@ -325,7 +324,7 @@ E－R图如下：
 
 天数
 
-![](/images/0100stringboot/0131springboot/blog.010.png)
+![](/images/0100wxapp//blog.010.png)
 
 图5-5 出勤信息表属性图
 
@@ -339,7 +338,7 @@ E－R图如下：
 
 内容
 
-![](/images/0100stringboot/0131springboot/blog.011.png)
+![](/images/0100wxapp//blog.011.png)
 
 图5-6 公告信息表属性图
 
@@ -361,7 +360,7 @@ E－R图如下：
 
 员工ID
 
-![](/images/0100stringboot/0131springboot/blog.012.png)
+![](/images/0100wxapp//blog.012.png)
 
 图5-7 请假申请信息表属性图
 ### 4.4.3 数据库物理设计
@@ -560,7 +559,7 @@ go
 ## 5.1 用户登陆
 当系统登陆时，首先出现的是一个用户权限登陆的界面, 权限设置主要是维护系统的安全性和完整性。拥有管理员权限的操作员能对其他操作员进行相应的权限设置，没有权限的操作员不能对相应的窗口进行操作。如下图所示：
 
-![](/images/0100stringboot/0131springboot/blog.013.png "IMG\_256")
+![](/images/0100wxapp//blog.013.png "IMG\_256")
 
 
 页面程序说明，如表5-1所示：
@@ -579,16 +578,16 @@ go
 ## 5.2 修改密码
 当选中密码修改菜单时，输入一次旧密码，两次新密码，然后按修改按钮，密码修改成功。请务必记住自己的密码，并注意保密。
 ## 5.3 系统主界面
-![IMG\_256](/images/0100stringboot/0131springboot/blog.014.png "IMG\_256")
+![IMG\_256](/images/0100wxapp//blog.014.png "IMG\_256")
 
 ## 5.4 部门管理界面
 此部分只有管理员可以进行操作，它可以进行添加删除部门，这些部门存在于企业并作为每一位工作人员的归属。如图所示。
 
-![](/images/0100stringboot/0131springboot/blog.015.png "IMG\_256")
+![](/images/0100wxapp//blog.015.png "IMG\_256")
 ## 5.5 员工管理
 管理员记录新工作的工作人员信息，并给与工作人员一定的登陆权限，也可以删除退休或者辞职的工作人员。对于信息改变的工作人员进行信息修改。同时可以把需要的工作人员信息通过查找的方式调出来。例如输入关键字姓名，年龄学历等信息。如图所示。
 
-![IMG\_256](/images/0100stringboot/0131springboot/blog.016.png "IMG\_256")
+![IMG\_256](/images/0100wxapp//blog.016.png "IMG\_256")
 
 1、员工信息录入功能
 
@@ -612,7 +611,7 @@ Y
 输入员工信息
 
 提示错误信息
-![](/images/0100stringboot/0131springboot/blog.017.png)
+![](/images/0100wxapp//blog.017.png)
 
 
 
@@ -669,7 +668,7 @@ Y
 
 N
 
-![](/images/0100stringboot/0131springboot/blog.018.png)图5-6 查询员工流程图
+![](/images/0100wxapp//blog.018.png)图5-6 查询员工流程图
 
 3、员工修改功能
 
@@ -689,7 +688,7 @@ Y
 
 提示错误信息
 
-![](/images/0100stringboot/0131springboot/blog.019.png)本功能实现的是对研究生档案的修改，并且保存起来。本功能的程序流程图如图5-7所示。
+![](/images/0100wxapp//blog.019.png)本功能实现的是对研究生档案的修改，并且保存起来。本功能的程序流程图如图5-7所示。
 
 `   `图5-7 员工修改流程图
 
@@ -711,16 +710,16 @@ Y
 
 提示错误信息
 
-本功能实现的是对研究生档案的删除。本功能的程序流程图如图5-8所示。![](/images/0100stringboot/0131springboot/blog.020.png)
+本功能实现的是对研究生档案的删除。本功能的程序流程图如图5-8所示。![](/images/0100wxapp//blog.020.png)
 
 图5-8 员工删除流程图
 
 
 ## 5.6 系统公告管理
-![IMG\_256](/images/0100stringboot/0131springboot/blog.021.png "IMG\_256")
+![IMG\_256](/images/0100wxapp//blog.021.png "IMG\_256")
 
 ## 5.7请假申请
-![IMG\_256](/images/0100stringboot/0131springboot/blog.022.png "IMG\_256")
+![IMG\_256](/images/0100wxapp//blog.022.png "IMG\_256")
 
 
 

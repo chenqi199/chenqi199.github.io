@@ -1,17 +1,16 @@
 # 0032springboot小徐影城管理系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0032springboot小徐影城管理系统](https://github.com/GraduationProject-springboot/0032springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV16ia6epENY?p=33)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 概述
 ## 1.1 研究背景
@@ -127,13 +126,13 @@ Vue 将遍历它的属性，用 Object.defineProperty 将它们转为 gettertter
 
 （1）管理员用例需求如图3-1所示：
 
-![](/images/0000stringboot/0032springboot/blog.001.png)
+![](/images/0000wxapp//blog.001.png)
 
 图3-1管理员用例需求图
 
 2. 用户前台用例需求如图3-2所示：
 
-![](/images/0000stringboot/0032springboot/blog.002.png)
+![](/images/0000wxapp//blog.002.png)
 
 图3-2用户前台用例图
 
@@ -142,13 +141,13 @@ Vue 将遍历它的属性，用 Object.defineProperty 将它们转为 gettertter
 ## 3.4 业务流程分析
 在系统流程分析当中调查分析它是比较重要的环节，因为在这个系统当中它都涉及到每个环节的业务流程，所以从小徐影城管理系统的整体设计上要保证各个信息的正确输入和输出以及对数据储存的完整，并结合实际的操作步骤来绘制出具体的流程图。具体流程图如下图3-3所示：
 
-![](/images/0000stringboot/0032springboot/blog.003.png)
+![](/images/0000wxapp//blog.003.png)
 
 图3-3系统开发流程图
 ### 3.4.1登录流程
 为了保证系统的安全，用户要想进入小徐影城管理系统必须进行登录操作，用户登录流程图如图3-4所示
 
-![](/images/0000stringboot/0032springboot/blog.004.png)
+![](/images/0000wxapp//blog.004.png)
 
 图3-4 登录流程图
 
@@ -158,7 +157,7 @@ Vue 将遍历它的属性，用 Object.defineProperty 将它们转为 gettertter
 ## 4.1 系统的功能结构图
 通过系统需求分析，本小徐影城管理系统的功能结构设计如图4-1所示：
 
-![](/images/0000stringboot/0032springboot/blog.005.png)
+![](/images/0000wxapp//blog.005.png)
 
 图4-1 系统功能图
 ## 4.2 系统数据库设计
@@ -167,19 +166,19 @@ Vue 将遍历它的属性，用 Object.defineProperty 将它们转为 gettertter
 
 （1）用户管理实体E-R图如图4-2所示：
 
-![](/images/0000stringboot/0032springboot/blog.006.png)
+![](/images/0000wxapp//blog.006.png)
 
 图4-2 用户管理实体图
 
 （2）电影信息管理实体E-R图如图4-3所示：
 
-![](/images/0000stringboot/0032springboot/blog.007.png)
+![](/images/0000wxapp//blog.007.png)
 
 图4-3电影信息管理实体图
 
 （3）购票统计管理实体E- R图，如图4-4所示：
 
-![](/images/0000stringboot/0032springboot/blog.008.png)
+![](/images/0000wxapp//blog.008.png)
 
 图4-4购票统计管理实体图
 ### 4.2.2  数据表字段设计
@@ -255,7 +254,7 @@ Vue 将遍历它的属性，用 Object.defineProperty 将它们转为 gettertter
 ## 5.1管理员登录
 管理员登录，通过填写用户名、密码、角色等信息，输入完成后选择登录即可进入小徐影城管理系统，如图5-1所示。
 
-![](/images/0000stringboot/0032springboot/blog.009.png)
+![](/images/0000wxapp//blog.009.png)
 
 图5-1管理员登录界面图
 
@@ -264,7 +263,7 @@ Vue 将遍历它的属性，用 Object.defineProperty 将它们转为 gettertter
 
 管理员通过后台管理，进入页面可以获取首页、个人中心、用户管理、电影类型管理、放映厅管理、电影信息管理、购票统计管理、系统管理、订单管理等功能模块内容，如图5-2所示。
 
-` `![](/images/0000stringboot/0032springboot/blog.010.png) 
+` `![](/images/0000wxapp//blog.010.png) 
 
 图5-2管理员功能界面图
 ###
@@ -272,49 +271,49 @@ Vue 将遍历它的属性，用 Object.defineProperty 将它们转为 gettertter
 ###
 用户管理，在用户管理页面通过查看用户名、姓名、头像、性别、联系电话等信息并进行详情、删除、修改操作，如图5-3所示。
 
-![](/images/0000stringboot/0032springboot/blog.011.png)
+![](/images/0000wxapp//blog.011.png)
 
 图5-3用户管理界面图
 
 电影类型管理，在电影类型管理页面通过查看类型等信息进行详情、删除、修改操作。如图5-4所示。
 
-![](/images/0000stringboot/0032springboot/blog.012.png)
+![](/images/0000wxapp//blog.012.png)
 
 图5-4电影类型管理界面图
 
 放映厅管理，在放映厅管理页面通过查看放映厅等信息进行详情、删除、修改操作。如图5-5所示。
 
-![](/images/0000stringboot/0032springboot/blog.013.png)
+![](/images/0000wxapp//blog.013.png)
 
 图5-5放映厅管理界面图
 ###
 电影信息管理，在电影信息管理页面通过查看电影名称、类型、海报、导演、主演、上映日期、片长、电影预告、放映厅、场次、价格、座位总数、已选座位等信息进行详情、统计、查看评论、删除、修改操作。如图5-6所示。
 
-![](/images/0000stringboot/0032springboot/blog.014.png)
+![](/images/0000wxapp//blog.014.png)
 
 图5-6电影信息管理界面图
 ###
 购票统计管理，在购票统计管理页面通过查看电影名称、类型、海报、导演、用户名、联系电话、购票数量、购票金额、购票日期、备注等信息进行详情、删除、修改操作。如图5-7所示。
 
-![](/images/0000stringboot/0032springboot/blog.015.png)
+![](/images/0000wxapp//blog.015.png)
 
 图5-7购票统计管理界面图
 
 电影资讯，在电影资讯页面通过查看标题、简介、图片等信息进行详情、删除、修改操作。如图5-8所示。
 
-![](/images/0000stringboot/0032springboot/blog.016.png)
+![](/images/0000wxapp//blog.016.png)
 
 图5-8电影资讯界面图
 
 轮播图；该页面为轮播图管理界面。管理员可以在此页面进行首页轮播图的管理，通过新建操作可在轮播图中加入新的图片，还可以对以上传的图片进行修改操作，以及图片的删除操作。如图5-9所示。
 
-![](/images/0000stringboot/0032springboot/blog.017.png)
+![](/images/0000wxapp//blog.017.png)
 
 图5-9轮播图管理界面图
 
 订单管理，在订单管理页面通过查看订单编号、商品名称、商品图片、购买数量、价格/积分、折扣价格、总价格/总积分、折扣总价格、支付类型、状态、地址等信息进行详情、发货、删除操作。如图5-10所示。
 
-![](/images/0000stringboot/0032springboot/blog.018.png)
+![](/images/0000wxapp//blog.018.png)
 
 图5-10订单管理界面图
 
@@ -323,32 +322,32 @@ Vue 将遍历它的属性，用 Object.defineProperty 将它们转为 gettertter
 
 ` `小徐影城管理系统，在前台首页可以查看首页、电影信息、电影资讯、个人中心、后台管理、在线客服等内容，如图5-11所示。
 
-![](/images/0000stringboot/0032springboot/blog.019.png)
+![](/images/0000wxapp//blog.019.png)
 
 图5-11前台功能界面图
 
 `   `用户注册，在注册页面通过填写用户名、密码、姓名、联系电话等内容进行注册，如图5-12所示。
 
-![](/images/0000stringboot/0032springboot/blog.020.png)
+![](/images/0000wxapp//blog.020.png)
 
 
 图5-12用户注册界面图
 
 用户登录，在登录页面通过填写账号、密码等信息进行登录，如图5-13所示。
 
-![](/images/0000stringboot/0032springboot/blog.021.png)
+![](/images/0000wxapp//blog.021.png)
 
 图5-13用户登录界面图
 
 个人中心，在个人中心页面中可以填写用户名、密码、姓名、头像、性别、联系电话、余额等信息进行点我充值、更新信息、退出登录操作，如图5-14所示。
 
-![](/images/0000stringboot/0032springboot/blog.022.png)
+![](/images/0000wxapp//blog.022.png)
 
 图5-14个人中心界面图
 
 电影信息，在电影信息页面中可以查看电影名称、类型、海报、导演、主演、上映日期、片长、电影预告、放映厅、场次、价格、座位总数、点击次数、已选座位等详细信息进行点我收藏、立即预定等操作，如图5-15所示。
 
-![](/images/0000stringboot/0032springboot/blog.023.png)
+![](/images/0000wxapp//blog.023.png)
 
 图5-15电影信息界面图
 
@@ -360,7 +359,7 @@ Vue 将遍历它的属性，用 Object.defineProperty 将它们转为 gettertter
 
 地址等详细信息进行确认收货等操作，如图5-16所示。
 
-![](/images/0000stringboot/0032springboot/blog.024.png)
+![](/images/0000wxapp//blog.024.png)
 
 图5-16我的订单界面图
 

@@ -1,17 +1,16 @@
 # 0271springboot车辆管理系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0271springboot车辆管理系统](https://github.com/GraduationProject-springboot/0271springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1EbH?p=37)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
 ## 1.1研究背景与意义
@@ -128,46 +127,46 @@ MySQL数据库是目前使用较多的关系型数据库。因为其具有开源
 违章登记添加
 
 
-![](/images/0200stringboot/0271springboot/blog.003.png)
+![](/images/0200wxapp//blog.003.png)
 
 图4-1系统总体功能设计图
 ## 4.2数据库设计
 ### 4.2.1概念设计
 本系统使用轻量级的MySQL数据库，对系统相关的数据信息进行管理和维护[12]。数据库设计阶段主要可以被分为两个阶段，分别为概念设计和逻辑设计阶段。在整个的数据库设计的过程中，两个阶段起到作用是不同的，概念设计阶段是实现基础，逻辑设计阶段最终目标。概念设计阶段主要通过使用实体-联系图（E-R图）的方式，将现实世界中用户的相关需求抽象化为虚拟世界中的概念模型。本人通过设计E-R图，详细的对系统中的实体以及实体之间的联系进行了表达。各实体信息的E-R图如图4-2、图4-3、图4-4、图4-5、图4-6、图4-7、图4-8、图4-9所示，系统总体E-R图如图4-10所示。
 
-![](/images/0200stringboot/0271springboot/blog.004.png)
+![](/images/0200wxapp//blog.004.png)
 
 图4-2管理员信息E-R图
 
-![](/images/0200stringboot/0271springboot/blog.005.png)
+![](/images/0200wxapp//blog.005.png)
 
 图4-3用户信息E-R图
 
-![](/images/0200stringboot/0271springboot/blog.006.png)
+![](/images/0200wxapp//blog.006.png)
 
 图4-4 用户信息E-R图
 
-![](/images/0200stringboot/0271springboot/blog.007.png)
+![](/images/0200wxapp//blog.007.png)
 
 图4-5车辆信息E-R图
 
-![](/images/0200stringboot/0271springboot/blog.008.png)
+![](/images/0200wxapp//blog.008.png)
 
 图4-6保养登记信息E-R图
 
-![](/images/0200stringboot/0271springboot/blog.009.png)
+![](/images/0200wxapp//blog.009.png)
 
 图4-7事故登记信息E-R图
 
-![](/images/0200stringboot/0271springboot/blog.010.png)
+![](/images/0200wxapp//blog.010.png)
 
 图4-8维修登记信息E-R图
 
-![](/images/0200stringboot/0271springboot/blog.011.png)
+![](/images/0200wxapp//blog.011.png)
 
 图4-9违章登记信息E-R图
 
-![](/images/0200stringboot/0271springboot/blog.012.png)
+![](/images/0200wxapp//blog.012.png)
 
 图4-10系统总体E-R图
 ### 4.2.2逻辑设计
@@ -296,79 +295,79 @@ MySQL数据库是目前使用较多的关系型数据库。因为其具有开源
 ## 5.1个人中心
 通过设计的个人中心管理功能模块，管理用户可以对相关的个人信息进行管理，比如管理用户可以更新个人账号的密码信息，修改个人账号的用户名信息等，修改密码界面设计如图5-1所示，个人信息界面设计如图5-2所示。
 
-![](/images/0200stringboot/0271springboot/blog.013.png)
+![](/images/0200wxapp//blog.013.png)
 
 图5-1修改密码界面
 
-![](/images/0200stringboot/0271springboot/blog.014.png)
+![](/images/0200wxapp//blog.014.png)
 
 图5-2个人信息界面
 ## 5.2员工管理
 通过设计的员工管理功能模块，管理用户可以管理相关的员工信息资料，比如进行查看员工姓名，修改员工联系方式，删除已经注销的员工信息记录等操作，员工管理界面设计如图5-3所示。
 
-![](/images/0200stringboot/0271springboot/blog.015.png)
+![](/images/0200wxapp//blog.015.png)
 
 图5-3员工管理界面
 ## 5.3用户管理
 通过设计的员工管理功能模块，管理用户可以管理相关的用户信息资料，比如进行查看用户姓名，修改用户联系方式，删除已经注销的用户信息记录等操作，用户管理界面设计如图5-4所示。
 
-![](/images/0200stringboot/0271springboot/blog.016.png)
+![](/images/0200wxapp//blog.016.png)
 
 图5-4用户管理界面
 ## 5.4基础数据管理
 通过设计的基础数据管理功能模块，管理用户可以对相关的保养类型、车辆类型、事故类型、维修类型、违章类型、准假车型信息进行管理，比如管理用户可以查看保养类型、车辆类型、事故类型、维修类型、违章类型、准假车型的详情信息，删除失效的保养类型、车辆类型、事故类型、维修类型、违章类型、准假车型信息记录等，保养类型管理界面设计如图5-5所示，车辆类型管理界面设计如图5-6所示，事故类型管理界面设计如图5-7所示，维修类型管理界面设计如图5-8所示，违章类型管理界面设计如图5-9所示，准假车型管理界面设计如图5-10所示。
 
-![](/images/0200stringboot/0271springboot/blog.017.png)
+![](/images/0200wxapp//blog.017.png)
 
 图5-5保养类型管理界面
 
-![](/images/0200stringboot/0271springboot/blog.018.png)
+![](/images/0200wxapp//blog.018.png)
 
 图5-6车辆类型管理界面
 
-![](/images/0200stringboot/0271springboot/blog.019.png)
+![](/images/0200wxapp//blog.019.png)
 
 图5-7事故类型管理界面
 
-![](/images/0200stringboot/0271springboot/blog.020.png)
+![](/images/0200wxapp//blog.020.png)
 
 图5-8维修类型管理界面
 
-![](/images/0200stringboot/0271springboot/blog.021.png)
+![](/images/0200wxapp//blog.021.png)
 
 图5-9违章类型管理界面
 
-![](/images/0200stringboot/0271springboot/blog.022.png)
+![](/images/0200wxapp//blog.022.png)
 
 图5-10准驾车型管理界面
 ## 5.5车辆管理
 通过设计的车辆管理功能模块，管理用户可以对相关的车辆信息进行管理，比如管理用户可以查看车辆的绑定车牌号信息，删除已经失效的车辆信息记录等操作，车辆管理界面设计如图5-11所示。
 
-![](/images/0200stringboot/0271springboot/blog.023.png)
+![](/images/0200wxapp//blog.023.png)
 
 图5-11车辆管理界面
 ## 5.6保养登记管理
 通过设计的保养登记管理功能模块，管理用户可以对相关的保养登记信息进行管理，比如管理用户可以查看车辆的保养时间，修改保养登记信息记录，删除已经失效的保养登记信息记录等操作，保养登记管理界面设计如图5-12所示。
 
-![](/images/0200stringboot/0271springboot/blog.024.png)
+![](/images/0200wxapp//blog.024.png)
 
 图5-12保养登记管理界面
 ## 5.7事故登记管理
 通过设计的事故登记管理功能模块，管理用户可以对相关的事故登记信息进行管理，比如管理用户可以查看事故的发生时间，修改事故登记信息记录，删除已经失效的事故登记信息记录等操作，事故登记管理界面设计如图5-13所示。
 
-![](/images/0200stringboot/0271springboot/blog.025.png)
+![](/images/0200wxapp//blog.025.png)
 
 图5-13事故登记管理界面
 ## 5.8维修登记管理
 通过设计的维修登记管理功能模块，管理用户可以对相关的维修登记信息资进行管理，比如管理用户可以查看车辆的维修时间，修改维修登记信息记录，删除已经失效的维修登记信息记录等操作，维修登记管理界面设计如图5-14所示。
 
-![](/images/0200stringboot/0271springboot/blog.026.png)
+![](/images/0200wxapp//blog.026.png)
 
 图5-14维修登记管理界面
 ## 5.9违章登记管理
 通过设计的违章登记管理功能模块，管理用户可以对相关的违章登记信息资进行管理，比如管理用户可以查看车辆的违章时间，修改违章登记信息记录，删除已经失效的违章登记信息记录等操作，违章登记管理界面设计如图5-15所示。
 
-![](/images/0200stringboot/0271springboot/blog.027.png)
+![](/images/0200wxapp//blog.027.png)
 
 图5-15违章登记管理界面
 

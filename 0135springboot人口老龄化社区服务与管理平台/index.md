@@ -1,17 +1,16 @@
 # 0135springboot人口老龄化社区服务与管理平台
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0135springboot人口老龄化社区服务与管理平台](https://github.com/GraduationProject-springboot/0135springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1ECs?p=34)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 系统概述
 1.1 研究背景
@@ -242,11 +241,11 @@ MyBatis本是apache的一个开源项目iBatis,2010年这个项目由apache soft
 
 4）输入数据尽早地记录成其处理所需的形式，以防止数据由一种介质转移到另一种介质时需要转录而可能发生的错误。
 ## 3.4系统流程和逻辑
-![](/images/0100stringboot/0135springboot/blog.001.png)
+![](/images/0100wxapp//blog.001.png)
 
 图3-3登录流程图
 
-![](/images/0100stringboot/0135springboot/blog.002.png)
+![](/images/0100wxapp//blog.002.png)
 
 图3-4修改密码流程图
 
@@ -294,13 +293,13 @@ MyBatis本是apache的一个开源项目iBatis,2010年这个项目由apache soft
 
 本系统采用B/S结构(Browser/Server,浏览器/服务器结构)和基于Web服务两种模式，是一个适用于Internet环境下的模型结构。只要用户能连上Internet,便可以在任何时间、任何地点使用。系统工作原理图如图4-1所示：
 
-![](/images/0100stringboot/0135springboot/blog.003.png)
+![](/images/0100wxapp//blog.003.png)
 
 图4-1系统工作原理图
 ## 4.2系统结构
 本系统是基于B/S架构的网站系统，设计的功能结构图如下图所示：
 
-![](/images/0100stringboot/0135springboot/blog.004.png)
+![](/images/0100wxapp//blog.004.png)
 
 图4-2功能结构图
 
@@ -315,19 +314,19 @@ MyBatis本是apache的一个开源项目iBatis,2010年这个项目由apache soft
 
 （1）社区资讯信息的实体属性图如下：
 
-![](/images/0100stringboot/0135springboot/blog.005.png)
+![](/images/0100wxapp//blog.005.png)
 
 图4.12  社区资讯实体属性图
 
 （2）社区文件信息实体属性图如图4.13所示：
 
-![](/images/0100stringboot/0135springboot/blog.006.png)
+![](/images/0100wxapp//blog.006.png)
 
 图4.13  社区文件信息实体属性图
 
 （3）管理员信息实体属性图如图4.14所示：
 
-![](/images/0100stringboot/0135springboot/blog.007.png)
+![](/images/0100wxapp//blog.007.png)
 
 图4.14 管理员信息实体属性图
 ### 4.3.2数据库设计表
@@ -559,38 +558,38 @@ MyBatis本是apache的一个开源项目iBatis,2010年这个项目由apache soft
 ## 5.1 用户信息管理
 人口老龄化社区服务与管理平台的系统管理员可以对用户信息添加修改删除以及查询操作。具体界面的展示如图5.1所示。
 
-![](/images/0100stringboot/0135springboot/blog.010.png)
+![](/images/0100wxapp//blog.010.png)
 
 图5.1 用户信息管理界面
 ## 5.2 员工信息管理
 系统管理员可以对员工信息进行添加，修改，删除操作。具体界面如图5.2所示。
 
-![](/images/0100stringboot/0135springboot/blog.011.png)
+![](/images/0100wxapp//blog.011.png)
 
 
 图5.2 用户信息管理界面
 ## 5.3 社区信息管理
 系统管理员可以对社区信息进行添加，修改，删除以及查询操作。具体界面如图5.2所示。
 
-![](/images/0100stringboot/0135springboot/blog.012.png)
+![](/images/0100wxapp//blog.012.png)
 
 图5.3 社区信息管理界面
 ## 5.4 老人信息查看
 管理员可以对员工添加的员工信息进行查看。具体界面如图5.2所示。
 
-![](/images/0100stringboot/0135springboot/blog.013.png)
+![](/images/0100wxapp//blog.013.png)
 
 图5.4 老人信息查看界面
 ## 5.5 社区文件管理
 系统管理员可以对社区文件信息进行添加修改删除操作。具体界面如图5.2所示。
 
-![](/images/0100stringboot/0135springboot/blog.014.png)
+![](/images/0100wxapp//blog.014.png)
 
 图5.5 社区文件管理界面
 ## 5.6 走访任务管理
 系统管理员可以对走访任务进行添加修改删除操作，走访任务主要是对员工进行布置的，走访任务里面需要选择员工信息的。具体界面如图5.2所示。
 
-![](/images/0100stringboot/0135springboot/blog.015.png)
+![](/images/0100wxapp//blog.015.png)
 
 图5.6 走访任务管理界面
 
@@ -602,19 +601,19 @@ MyBatis本是apache的一个开源项目iBatis,2010年这个项目由apache soft
 ## 5.7 走访信息查看
 管理员可以对走访信息进行查看，走访信息是员工添加的。界面如下图所示：
 
-![](/images/0100stringboot/0135springboot/blog.016.png)
+![](/images/0100wxapp//blog.016.png)
 
 图5.7 走访信息查看界面
 ## 5.8 社区活动管理
 员工可以对社区活动机进行添加，修改，删除，查询操作。界面如下图所示：
 
-![](/images/0100stringboot/0135springboot/blog.017.png)
+![](/images/0100wxapp//blog.017.png)
 
 图5.8 社区活动管理界面
 ## 5.9 活动报名
 用户登录后可以在首页查看相关信息，并且可以在社区活动栏目查看社区活动信息，并且可以进行活动报名。界面如下图所示：
 
-![](/images/0100stringboot/0135springboot/blog.018.png)
+![](/images/0100wxapp//blog.018.png)
 
 图5.9 活动报名界面
 

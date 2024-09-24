@@ -1,17 +1,16 @@
 # 0225springboot经方药食两用服务平台
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0225springboot经方药食两用服务平台](https://github.com/GraduationProject-springboot/0225springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)]()
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
 ## 1.1研究背景与意义
@@ -124,7 +123,7 @@ Java语言具有跨平台性，本系统主要通过Java语言进行编码实现
 
 文章删除
 
-![](/images/0200stringboot/0225springboot/blog.002.png)
+![](/images/0200wxapp//blog.002.png)
 
 图4-1系统总体功能设计图
 
@@ -138,52 +137,52 @@ Java语言具有跨平台性，本系统主要通过Java语言进行编码实现
 
 （1）下图是用户实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\jingfangyaoshiliangyongfuwupingtai\用户.jpg](/images/0200stringboot/0225springboot/blog.003.jpeg)
+![C:\Users\Administrator\Desktop\img\jingfangyaoshiliangyongfuwupingtai\用户.jpg](/images/0200wxapp//blog.003.jpeg)
 图4.1 用户实体属性图
 
 （2）下图是文章留言实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\jingfangyaoshiliangyongfuwupingtai\文章留言.jpg](/images/0200stringboot/0225springboot/blog.004.jpeg)
+![C:\Users\Administrator\Desktop\img\jingfangyaoshiliangyongfuwupingtai\文章留言.jpg](/images/0200wxapp//blog.004.jpeg)
 图4.2 文章留言实体属性图
 
 （3）下图是药方收藏实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\jingfangyaoshiliangyongfuwupingtai\药方收藏.jpg](/images/0200stringboot/0225springboot/blog.004.jpeg)
+![C:\Users\Administrator\Desktop\img\jingfangyaoshiliangyongfuwupingtai\药方收藏.jpg](/images/0200wxapp//blog.004.jpeg)
 图4.3 药方收藏实体属性图
 
 （4）下图是药食两用药材收藏实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\jingfangyaoshiliangyongfuwupingtai\药食两用药材收藏.jpg](/images/0200stringboot/0225springboot/blog.004.jpeg)
+![C:\Users\Administrator\Desktop\img\jingfangyaoshiliangyongfuwupingtai\药食两用药材收藏.jpg](/images/0200wxapp//blog.004.jpeg)
 图4.4 药食两用药材收藏实体属性图
 
 （5）下图是文章收藏实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\jingfangyaoshiliangyongfuwupingtai\文章收藏.jpg](/images/0200stringboot/0225springboot/blog.004.jpeg)
+![C:\Users\Administrator\Desktop\img\jingfangyaoshiliangyongfuwupingtai\文章收藏.jpg](/images/0200wxapp//blog.004.jpeg)
 图4.5 文章收藏实体属性图
 
 （6）下图是单页数据实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\jingfangyaoshiliangyongfuwupingtai\单页数据.jpg](/images/0200stringboot/0225springboot/blog.005.jpeg)
+![C:\Users\Administrator\Desktop\img\jingfangyaoshiliangyongfuwupingtai\单页数据.jpg](/images/0200wxapp//blog.005.jpeg)
 图4.6 单页数据实体属性图
 
 （7）下图是中医翻译实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\jingfangyaoshiliangyongfuwupingtai\中医翻译.jpg](/images/0200stringboot/0225springboot/blog.004.jpeg)
+![C:\Users\Administrator\Desktop\img\jingfangyaoshiliangyongfuwupingtai\中医翻译.jpg](/images/0200wxapp//blog.004.jpeg)
 图4.7 中医翻译实体属性图
 
 （8）下图是文章实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\jingfangyaoshiliangyongfuwupingtai\文章.jpg](/images/0200stringboot/0225springboot/blog.003.jpeg)
+![C:\Users\Administrator\Desktop\img\jingfangyaoshiliangyongfuwupingtai\文章.jpg](/images/0200wxapp//blog.003.jpeg)
 图4.8 文章实体属性图
 
 （9）下图是药方实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\jingfangyaoshiliangyongfuwupingtai\药方.jpg](/images/0200stringboot/0225springboot/blog.003.jpeg)
+![C:\Users\Administrator\Desktop\img\jingfangyaoshiliangyongfuwupingtai\药方.jpg](/images/0200wxapp//blog.003.jpeg)
 图4.9 药方实体属性图
 
 （10）下图是药食两用药材实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\jingfangyaoshiliangyongfuwupingtai\药食两用药材.jpg](/images/0200stringboot/0225springboot/blog.003.jpeg)
+![C:\Users\Administrator\Desktop\img\jingfangyaoshiliangyongfuwupingtai\药食两用药材.jpg](/images/0200wxapp//blog.003.jpeg)
 图4.10 药食两用药材实体属性图
 ### 4.2.2逻辑设计
 本系统使用MySQL数据库管理与系统相关的数据信息。逻辑设计阶段是将上一个阶段中的概念数据模型，转换为方便数据库进行存储的关系模型，即基本表的形式，方便开发人员后期对数据模型进行优化和管理[20]。逻辑设计阶段是整个数据库设计设计的关键，与系统有关的信息将会在这一阶段中被存储在数据库中，当用户使用本系统进行相关的功能操作时，与之有关的数据信息所在的基本表会发生相应的更新变化。数据库的逻辑设计阶段主要任务是将与系统相关的数据信息，设计成为方便数据库存储和管理的基本表格的形式，具体内容如下。
@@ -350,26 +349,26 @@ Java语言具有跨平台性，本系统主要通过Java语言进行编码实现
 ### 5.1.1管理员登录
 管理员可以选择任一浏览器打开网址，输入信息无误后，以管理员的身份行使相关的管理权限，管理员登录界面设计如图5-1所示。
 
-![](/images/0200stringboot/0225springboot/blog.006.png)
+![](/images/0200wxapp//blog.006.png)
 
 图5-1管理员登录界面
 ### 5.1.2药方管理
 管理员可以通过选择药方管理，管理相关的药方信息记录，比如进行查看药方信息标题，修改药方信息来源等操作，药方管理界面设计如图5-2所示。
 
-![](/images/0200stringboot/0225springboot/blog.007.png)
+![](/images/0200wxapp//blog.007.png)
 
 图5-2药方管理界面
 
 ### 5.1.3文章管理
 管理员可以通过选择文章管理，管理相关的文章信息记录，比如进行查看文章详情,删除错误的文章信息,发布文章等操作，文章管理界面如图5-3所示。
 
-![](/images/0200stringboot/0225springboot/blog.008.png)
+![](/images/0200wxapp//blog.008.png)
 
 图5-3 文章管理界面
 ### 5.1.4文章类型管理
 管理员可以通过选择文章类型管理，管理相关的文章类型信息，比如查看所有文章类型,删除无用文章类型,修改文章类型,添加文章类型等操作，文章类型管理界面设计如图5-4所示。
 
-![](/images/0200stringboot/0225springboot/blog.009.png)
+![](/images/0200wxapp//blog.009.png)
 
 图5-4文章类型管理界面
 # 系

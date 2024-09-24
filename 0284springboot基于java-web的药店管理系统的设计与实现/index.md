@@ -1,17 +1,16 @@
 # 0284springboot基于Java web的药店管理系统的设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0284springboot基于Java web的药店管理系统的设计与实现](https://github.com/GraduationProject-springboot/0284springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1EbH?p=50)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第一章  课题背景及研究内容
 
@@ -45,7 +44,7 @@
 ## 2.1 B/S结构  
 B/S结构实际上就是Browser/Server（浏览器/服务器）的缩写，B/S结构是目前软件开发中的主流结构，大多数软件开发者都采用B/S这样的三层体系结构。采用B/S结构开发的药店管理系统能够大大方便用户使用操作，用户随时随地都可以进行药店管理系统的访问操作，只需要用户拥有一台会连上网络的计算机就行了，并且使用B/S 模式开发的药店管理系统是基于浏览器的操作方式，在与用户进行交互以及程序的表现方式上面将会更加吸引人，这样的模式也给程序员开发程序降低了难度，程序开发成本也会相应缩减不少。我们在使用药店管理系统期间，系统也会随着用户需求进行完善升级，使用B/S 模式开发的药店管理系统就完全不需要担心，因为它的升级速度快，升级产生的成本费用很低，大多依赖于用户自己在网络上下载最新版本进行安装完成程序更新。下图为B/S结构图。
 
-![](/images/0200stringboot/0284springboot/blog.004.png)
+![](/images/0200wxapp//blog.004.png)
 
 图2.2 B/S结构图
 ## 2.2 MySQL数据库
@@ -72,13 +71,13 @@ B/S结构实际上就是Browser/Server（浏览器/服务器）的缩写，B/S�
 ## 3.2系统流程分析
 药店管理系统的开发也是有对应的流程，开发之前必须要进行用户功能需求的分析，最后根据功能需求进行网站设计还有数据库相关数据的设计工作，此次开发的药店管理系统开发流程如图3.1所示。
 
-![](/images/0200stringboot/0284springboot/blog.005.png)
+![](/images/0200wxapp//blog.005.png)
 
 图3.1 系统开发流程图
 
 系统开发完成之后会给用户提供登录入口，在这个界面用户输入的信息会得到验证，通过验证之后才能进去药店管理系统的访问主界面，系统登录执行流程如下：
 
-![](/images/0200stringboot/0284springboot/blog.006.png)
+![](/images/0200wxapp//blog.006.png)
 
 图3.2 系统执行流程图
 ## 3.3系统功能需求分析
@@ -168,7 +167,7 @@ B/S结构实际上就是Browser/Server（浏览器/服务器）的缩写，B/S�
 吸供应商修改
 
 删供应商删除
-![](/images/0200stringboot/0284springboot/blog.007.png)
+![](/images/0200wxapp//blog.007.png)
 
 图4.1 管理员功能结构图
 
@@ -182,27 +181,27 @@ B/S结构实际上就是Browser/Server（浏览器/服务器）的缩写，B/S�
 
 （1）下图是药品实体和其具备的属性。
 
-![药品](/images/0200stringboot/0284springboot/blog.008.jpeg "药品")
+![药品](/images/0200wxapp//blog.008.jpeg "药品")
 图4.1 药品实体属性图
 
 （2）下图是员工实体和其具备的属性。
 
-![员工](/images/0200stringboot/0284springboot/blog.009.jpeg "员工")
+![员工](/images/0200wxapp//blog.009.jpeg "员工")
 图4.2 员工实体属性图
 
 （3）下图是供应商信息实体和其具备的属性。
 
-![供应商信息](/images/0200stringboot/0284springboot/blog.010.jpeg "供应商信息")
+![供应商信息](/images/0200wxapp//blog.010.jpeg "供应商信息")
 图4.3 供应商信息实体属性图
 
 （4）下图是销售实体和其具备的属性。
 
-![销售](/images/0200stringboot/0284springboot/blog.011.jpeg "销售")
+![销售](/images/0200wxapp//blog.011.jpeg "销售")
 图4.4 销售实体属性图
 
 （5）下图是进货实体和其具备的属性。
 
-![进货](/images/0200stringboot/0284springboot/blog.012.jpeg "进货")
+![进货](/images/0200wxapp//blog.012.jpeg "进货")
 图4.5 进货实体属性图
 
 
@@ -304,19 +303,19 @@ B/S结构实际上就是Browser/Server（浏览器/服务器）的缩写，B/S�
 ### 5.1.1 药品列表
 如图5.1显示的就是药品列表页面，此页面提供给管理员的功能有：查看药品、新增药品、修改药品、删除药品等。
 
-![](/images/0200stringboot/0284springboot/blog.013.png)
+![](/images/0200wxapp//blog.013.png)
 
 图5.1 药品列表页面
 ### 5.1.2 供应商信息管理
 管理员可以对前台的注册用户的基本信息进行管理，可以设置注册用户的账号为冻结或者是在用状态，管理员也能选择很多个已经失效的注册用户的信息进行批量删除操作。注册用户管理界面如图5.2所示。
 
-![](/images/0200stringboot/0284springboot/blog.014.png)
+![](/images/0200wxapp//blog.014.png)
 
 图5.2 供应商信息管理页面
 ### 5.1.3 供应商类型管理
 供应商类型管理页面显示所有供应商类型，在此页面既可以让管理员添加新的供应商信息类型，也能对已有的供应商类型信息执行编辑更新，失效的供应商类型信息也能让管理员快速删除。下图就是供应商类型管理页面。供应商类型管理界面如图5.3所示。
 
-![](/images/0200stringboot/0284springboot/blog.015.png)
+![](/images/0200wxapp//blog.015.png)
 
 图5.3供应商类型管理界面
 

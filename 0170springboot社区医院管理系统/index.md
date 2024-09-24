@@ -1,17 +1,16 @@
 # 0170springboot社区医院管理系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0170springboot社区医院管理系统](https://github.com/GraduationProject-springboot/0170springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1ECs?p=68)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 绪论
 ## 1.1 研究背景
@@ -71,25 +70,25 @@
 ## 3.3系统流程分析
 分析程序的流程，涉及到程序的整体操作流程，通过分析与设计，绘制的程序操作流程图见下图。此程序为了确保安全，会让使用者通过登录模块验证信息，符合要求的使用者才有权限操作程序。
 
-![](/images/0100stringboot/0170springboot/blog.001.png)
+![](/images/0100wxapp//blog.001.png)
 
 图3-1 程序操作流程图
 
 程序处理数据会涉及到数据的录入环节，绘制的添加流程见下图。程序录入数据过程中，始终与数据库保持同步。
 
-![](/images/0100stringboot/0170springboot/blog.002.png)
+![](/images/0100wxapp//blog.002.png)
 
 图3-2 信息添加流程图
 
 程序里面的数据也会出现错误，因此就有相应的修改数据的功能，绘制的程序修改流程见下图。此过程也是跟后台数据库进行数据同步显示。
 
-![](/images/0100stringboot/0170springboot/blog.003.png)
+![](/images/0100wxapp//blog.003.png)
 
 图3-3信息修改流程图
 
 程序数据存放于数据仓库，有时也会涉及到数据删除，此过程对应的流程图见下图。数据信息被删除之后，数据库里面也就没有了该数据信息了。
 
-![](/images/0100stringboot/0170springboot/blog.004.png)
+![](/images/0100wxapp//blog.004.png)
 
 图3-4 信息删除流程图
 
@@ -114,7 +113,7 @@
 ## 4.2 系统结构设计
 在系统结构设计上，经综合考虑还是选择比C/S更省资金的B/S结构模式，现如今浏览器已经实现了普及，并在技术上逐渐完善和成熟，它在节约软件开发成本的基础上，还能实现原本用专业软件操作才能实现的强大功能。总之，B/S结构是当下全新的，认可度高的系统构造技术。系统结构设计图通过绘制，效果展示如下：
 
-![](/images/0100stringboot/0170springboot/blog.005.png)
+![](/images/0100wxapp//blog.005.png)
 
 图4-1 系统结构设计图
 ## 4.3功能结构设计
@@ -173,7 +172,7 @@ j就诊信息管管理
 吸公告修改
 
 删公告删除
-![](/images/0100stringboot/0170springboot/blog.006.png)
+![](/images/0100wxapp//blog.006.png)
 
 图4.3 管理员功能结构图
 
@@ -187,52 +186,52 @@ j就诊信息管管理
 
 （1）下图是用户实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shequyiyuan\用户.jpg](/images/0100stringboot/0170springboot/blog.007.jpeg "C:\Users\Administrator\Desktop\img\shequyiyuan\用户.jpg")
+![C:\Users\Administrator\Desktop\img\shequyiyuan\用户.jpg](/images/0100wxapp//blog.007.jpeg "C:\Users\Administrator\Desktop\img\shequyiyuan\用户.jpg")
 图4.1 用户实体属性图
 
 （2）下图是药品实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shequyiyuan\药品.jpg](/images/0100stringboot/0170springboot/blog.008.jpeg "C:\Users\Administrator\Desktop\img\shequyiyuan\药品.jpg")
+![C:\Users\Administrator\Desktop\img\shequyiyuan\药品.jpg](/images/0100wxapp//blog.008.jpeg "C:\Users\Administrator\Desktop\img\shequyiyuan\药品.jpg")
 图4.2 药品实体属性图
 
 （3）下图是家庭医生实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shequyiyuan\家庭医生.jpg](/images/0100stringboot/0170springboot/blog.009.jpeg "C:\Users\Administrator\Desktop\img\shequyiyuan\家庭医生.jpg")
+![C:\Users\Administrator\Desktop\img\shequyiyuan\家庭医生.jpg](/images/0100wxapp//blog.009.jpeg "C:\Users\Administrator\Desktop\img\shequyiyuan\家庭医生.jpg")
 图4.3 家庭医生实体属性图
 
 （4）下图是字典表实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shequyiyuan\字典表.jpg](/images/0100stringboot/0170springboot/blog.010.jpeg "C:\Users\Administrator\Desktop\img\shequyiyuan\字典表.jpg")
+![C:\Users\Administrator\Desktop\img\shequyiyuan\字典表.jpg](/images/0100wxapp//blog.010.jpeg "C:\Users\Administrator\Desktop\img\shequyiyuan\字典表.jpg")
 图4.4 字典表实体属性图
 
 （5）下图是就诊信息实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shequyiyuan\就诊信息.jpg](/images/0100stringboot/0170springboot/blog.011.jpeg "C:\Users\Administrator\Desktop\img\shequyiyuan\就诊信息.jpg")
+![C:\Users\Administrator\Desktop\img\shequyiyuan\就诊信息.jpg](/images/0100wxapp//blog.011.jpeg "C:\Users\Administrator\Desktop\img\shequyiyuan\就诊信息.jpg")
 图4.5 就诊信息实体属性图
 
 （6）下图是病例信息实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shequyiyuan\病例信息.jpg](/images/0100stringboot/0170springboot/blog.012.jpeg "C:\Users\Administrator\Desktop\img\shequyiyuan\病例信息.jpg")
+![C:\Users\Administrator\Desktop\img\shequyiyuan\病例信息.jpg](/images/0100wxapp//blog.012.jpeg "C:\Users\Administrator\Desktop\img\shequyiyuan\病例信息.jpg")
 图4.6 病例信息实体属性图
 
 （7）下图是前台实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shequyiyuan\前台.jpg](/images/0100stringboot/0170springboot/blog.013.jpeg "C:\Users\Administrator\Desktop\img\shequyiyuan\前台.jpg")
+![C:\Users\Administrator\Desktop\img\shequyiyuan\前台.jpg](/images/0100wxapp//blog.013.jpeg "C:\Users\Administrator\Desktop\img\shequyiyuan\前台.jpg")
 图4.7 前台实体属性图
 
 （8）下图是健康档案实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shequyiyuan\健康档案.jpg](/images/0100stringboot/0170springboot/blog.014.jpeg "C:\Users\Administrator\Desktop\img\shequyiyuan\健康档案.jpg")
+![C:\Users\Administrator\Desktop\img\shequyiyuan\健康档案.jpg](/images/0100wxapp//blog.014.jpeg "C:\Users\Administrator\Desktop\img\shequyiyuan\健康档案.jpg")
 图4.8 健康档案实体属性图
 
 （9）下图是用户表实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shequyiyuan\用户表.jpg](/images/0100stringboot/0170springboot/blog.015.jpeg "C:\Users\Administrator\Desktop\img\shequyiyuan\用户表.jpg")
+![C:\Users\Administrator\Desktop\img\shequyiyuan\用户表.jpg](/images/0100wxapp//blog.015.jpeg "C:\Users\Administrator\Desktop\img\shequyiyuan\用户表.jpg")
 图4.9 用户表实体属性图
 
 （10）下图是医生实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shequyiyuan\医生.jpg](/images/0100stringboot/0170springboot/blog.016.jpeg "C:\Users\Administrator\Desktop\img\shequyiyuan\医生.jpg")
+![C:\Users\Administrator\Desktop\img\shequyiyuan\医生.jpg](/images/0100wxapp//blog.016.jpeg "C:\Users\Administrator\Desktop\img\shequyiyuan\医生.jpg")
 图4.10 医生实体属性图
 
 
@@ -375,26 +374,26 @@ j就诊信息管管理
 
 还进行了对用户名称的模糊查询的条件
 
-![](/images/0100stringboot/0170springboot/blog.017.png)
+![](/images/0100wxapp//blog.017.png)
 
 图5.1 用户信息管理页面
 ### 5.2 病例信息管理
 如图5.2显示的就是病例信息管理页面，此页面提供给管理员的功能有：查看已发布的病例信息数据，修改病例信息，病例信息作废，即可删除，还进行了对病例信息名称的模糊查询 病例信息信息的类型查询等等一些条件。
 
-![](/images/0100stringboot/0170springboot/blog.018.png)
+![](/images/0100wxapp//blog.018.png)
 
 
 图5.2 病例信息管理页面
 ### 5.3家庭医生管理
 如图5.3显示的就是家庭医生管理页面，此页面提供给管理员的功能有：根据家庭医生进行条件查询，还可以对家庭医生进行新增、修改、查询操作等等。
 
-![](/images/0100stringboot/0170springboot/blog.019.png)
+![](/images/0100wxapp//blog.019.png)
 
 图5.3 家庭医生管理页面
 ### 5.1药品信息管理
 如图5.4显示的就是药品信息管理页面，此页面提供给管理员的功能有：根据药品信息进行新增、修改、查询操作等等。
 
-![](/images/0100stringboot/0170springboot/blog.020.png)
+![](/images/0100wxapp//blog.020.png)
 
 
 图5.4 药品信息管理页面

@@ -1,17 +1,16 @@
 # 0028springboot网上购物商城系统研发
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0028springboot网上购物商城系统研发](https://github.com/GraduationProject-springboot/0028springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV16ia6epENY?p=29)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 绪论
 ## 1.1 课题背景
@@ -97,7 +96,7 @@ Web服务
 
 求
 
-![](/images/0000stringboot/0028springboot/blog.001.png)
+![](/images/0000wxapp//blog.001.png)
 
 图2-1 B/S三层框架结构图
 ## 2.4 MYSQL数据库
@@ -123,19 +122,19 @@ MySQL具有开放性，它是一种关系型数据库管理系统，并且它的
 
 （1）用户：用户在系统前台可查看系统信息，包括首页、商品信息等，注册登录后主要功能模块包括购物车、个人中心、我的地址、我的收藏管理以及订单管理，用例图如图3-1所示。
 
-![](/images/0000stringboot/0028springboot/blog.002.png)
+![](/images/0000wxapp//blog.002.png)
 
 图3-1 用户用例图
 
 （2）管理员：管理员登录后可对系统进行全面的管理，主要功能模块包括个人中心、用户管理、商家管理、商品分类管理、商品信息管理、我的收藏管理、系统管理以及订单管理。管理员用例图如图3-2所示。
 
-![](/images/0000stringboot/0028springboot/blog.003.png)
+![](/images/0000wxapp//blog.003.png)
 
 图3-2 管理员用例图图
 
 （3）商家：商家注册登录后主要功能模块包括个人中心、商品信息管理、我的收藏管理以及订单管理。商家用例图如图3-3所示。
 
-![](/images/0000stringboot/0028springboot/blog.004.png)
+![](/images/0000wxapp//blog.004.png)
 
 图3-3 商家用例图
 ## 3.3 系统性能分析
@@ -152,19 +151,19 @@ MySQL具有开放性，它是一种关系型数据库管理系统，并且它的
 ### 3.4.1注册流程
 未有账号的用户可进行注册操作，在注册时系统会判断用户名是否已存在，已存在的话，提示返回重新填写用户名，用户名不存在，填写其他注册信息，系统判断注册信息是否正确，正确则在数据库中添加用户信息，注册成功。用户注册流程图如图3-4所示。
 
-![](/images/0000stringboot/0028springboot/blog.005.png)
+![](/images/0000wxapp//blog.005.png)
 
 图3-4注册流程图
 ### 3.4.2登录流程
 登录模块主要满足了用户、商家以及管理员的权限登录，用户登录流程图如图3-5所示
 
-![](/images/0000stringboot/0028springboot/blog.006.png)
+![](/images/0000wxapp//blog.006.png)
 
 图3-5登录流程图
 ### 3.4.3购买流程
 用户在购买商品时需要登录系统，只要登录后才可支付购买商品，用户购买商品的流程分析如图3-6所示。
 
-![](/images/0000stringboot/0028springboot/blog.007.png)
+![](/images/0000wxapp//blog.007.png)
 
 图3-6 购买流程图
 #
@@ -174,20 +173,20 @@ MySQL具有开放性，它是一种关系型数据库管理系统，并且它的
 
 本基于Spring Boot的网上购物商城系统主要包括用户模块、商家模块和管理员模块，根据第三章中系统功能需求分析，可画出本基于Spring Boot的网上购物商城系统的结构图如图4-1所示：
 
-![](/images/0000stringboot/0028springboot/blog.008.png)
+![](/images/0000wxapp//blog.008.png)
 
 图 4-1  系统结构图
 ## 4.2系统顺序图
 ### 4.2.1登录模块顺序图
 用户、商家和管理员均可进行登录操作，登录模块的顺序图如图 4-2 所示。
 
-![](/images/0000stringboot/0028springboot/blog.009.png)
+![](/images/0000wxapp//blog.009.png)
 
 图4-2用户登录顺序图
 ### 4.2.2添加信息模块顺序图
 管理员、商家和用户登录后均可进行添加信息操作，添加信息顺序图如图4-3所示
 
-![](/images/0000stringboot/0028springboot/blog.010.png)
+![](/images/0000wxapp//blog.010.png)
 
 图4-3添加信息顺序图
 ## 4.3 数据库设计
@@ -196,37 +195,37 @@ E-R图展现了数据的实体结构关系，为系统数据管理奠定了基�
 
 1、商品分类信息实体E-R图如图4-4所示：
 
-![](/images/0000stringboot/0028springboot/blog.011.png)
+![](/images/0000wxapp//blog.011.png)
 
 图4-4 商品分类信息实体的E-R图
 
 2、商家信息实体E-R图如图4-5所示：
 
-![](/images/0000stringboot/0028springboot/blog.012.png)
+![](/images/0000wxapp//blog.012.png)
 
 图4-5 商家信息实体E-R图
 
 3、订单实体图如图4-6所示。
 
-![](/images/0000stringboot/0028springboot/blog.013.png)
+![](/images/0000wxapp//blog.013.png)
 
 图4-6 订单实体E-R图
 
 4、管理员信息实体图如图4-7所示。
 
-![](/images/0000stringboot/0028springboot/blog.014.png)
+![](/images/0000wxapp//blog.014.png)
 
 图4-7 管理员信息实体E-R图
 
 5、商品信息实体图如图4-8所示。
 
-![](/images/0000stringboot/0028springboot/blog.015.png)
+![](/images/0000wxapp//blog.015.png)
 
 图4-8 商品信息实体E-R图
 
 6、用户信息实体图如图4-9所示。
 
-![](/images/0000stringboot/0028springboot/blog.016.png)
+![](/images/0000wxapp//blog.016.png)
 
 图4-9用户信息实体E-R图
 ### 4.3.2数据库表设计
@@ -328,83 +327,83 @@ E-R图展现了数据的实体结构关系，为系统数据管理奠定了基�
 ### 5.1.1用户注册界面
 没有账号的用户可进入注册界面进行注册操作，用户注册界面的运行效果如图5-1所示.
 
-![](/images/0000stringboot/0028springboot/blog.017.png)
+![](/images/0000wxapp//blog.017.png)
 
 图5-1 用户注册界面
 ### 5.1.2用户登录界面
 用户要想实现商品购买等操作，必须进行登录操作，在登录界面输入正确的用户名和密码，选择登录类型，点击登录按钮进行登录，用户登录界面如图5-2所示。
 
-![](/images/0000stringboot/0028springboot/blog.018.png)
+![](/images/0000wxapp//blog.018.png)
 
 图5-2用户登录界面
 ### 5.1.3个人中心界面
 用户登录后可对个人信息进行修改，个人中心界面的运行效果如图5-3所示.
 
-![](/images/0000stringboot/0028springboot/blog.019.png)
+![](/images/0000wxapp//blog.019.png)
 
 图5-3个人中心界面
 ### 5.1.4商品详情界面
 用户可选择商品查看商品详情信息，登录后可进行加入购物车和购买操作，商品详情界面如图5-4所示。
 
-![](/images/0000stringboot/0028springboot/blog.020.png)
+![](/images/0000wxapp//blog.020.png)
 
-![](/images/0000stringboot/0028springboot/blog.021.png)
+![](/images/0000wxapp//blog.021.png)
 
 图5-4 商品详情界面
 ### 5.1.5购物车界面
 用户在购物车界面可查看购物车商品信息，并可进行修改数量、删除商品以及购买等操作，购物车界面展示如图5-5所示。
 
-![](/images/0000stringboot/0028springboot/blog.022.png)
+![](/images/0000wxapp//blog.022.png)
 
 图5-5 购物车界面
 ### 5.1.6我的订单界面
 用户在我的订单界面可查看个人订单信息，我的订单界面如图5-6所示。
 
-![](/images/0000stringboot/0028springboot/blog.023.png)
+![](/images/0000wxapp//blog.023.png)
 
 图5-6 我的订单界面
 ### 5.1.7我的地址界面
 用户可增删改查个人地址信息，我的地址界面如图5-7所示。
 
-![](/images/0000stringboot/0028springboot/blog.024.png)
+![](/images/0000wxapp//blog.024.png)
 
 图5-7  我的地址界面
 ## 5.2 管理员功能模块的实现
 ### 5.2.1管理员登录界面
 管理员要想进入系统后台对系统进行管理，首要进入登录界面，需通过正确的账号、密码进行登录操作，管理员登录界面如图5-8所示 。
 
-![](/images/0000stringboot/0028springboot/blog.025.png)
+![](/images/0000wxapp//blog.025.png)
 
 图5-8 管理员登录界面
 ### 5.2.2商家管理界面
 管理员可增删改查商家信息，商家管理界面展示如图5-9所示 。
 
-![](/images/0000stringboot/0028springboot/blog.026.png)
+![](/images/0000wxapp//blog.026.png)
 
 图5-9  商家管理界面
 ### 5.2.3用户管理界面
 管理员可查看、修改和删除用户信息，并可新增用户，用户管理界面展示如图5-10所示 。
 
-![](/images/0000stringboot/0028springboot/blog.027.png)
+![](/images/0000wxapp//blog.027.png)
 
 图5-10  用户管理界面
 ### 5.2.4商品分类管理界面
 管理员可增删改查商品分类信息，商品分类界面展示如图5-11所示 。
 
-![](/images/0000stringboot/0028springboot/blog.028.png)
+![](/images/0000wxapp//blog.028.png)
 
 图5-11 商品分类管理界面
 ## 5.3 商家功能模块的实现
 ### 5.3.1商品信息管理界面
 商家可添加、修改和删除商品信息，商品信息管理界面如图5-12所示。
 
-![](/images/0000stringboot/0028springboot/blog.029.png)
+![](/images/0000wxapp//blog.029.png)
 
 图5-12商品信息管理界面
 ### 5.3.2添加商品信息界面
 商家可进入到添加商品信息界面进行添加信息，添加商品信息界面展示如图5-13所示 。
 
-![](/images/0000stringboot/0028springboot/blog.030.png)
+![](/images/0000wxapp//blog.030.png)
 
 图5-13 添加商品信息界面
 

@@ -1,17 +1,16 @@
 # 0137springboot宠物领养系统的设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0137springboot宠物领养系统的设计与实现](https://github.com/GraduationProject-springboot/0137springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1ECs?p=36)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 绪论
 ## 1.1 课题背景
@@ -64,25 +63,25 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 3.2.1 操作流程
 使用者在操作宠物领养系统中，应该按照本系统提供的操作流程（图3.1即为本系统的操作流程图）进行操作，这样可以减少使用者操作中出现的错误，从而节省进入宠物领养系统的时间。
 
-![](/images/0100stringboot/0137springboot/blog.001.png)
+![](/images/0100wxapp//blog.001.png)
 
 图3.1 系统操作流程
 ### 3.2.2 登录流程
 宠物领养系统通过登录功能（图3.2即为其登录的流程）引导使用者进入指定的功能操作区，也避免非本系统的用户享受本系统提供的服务以及查看本系统提供的信息，从而保障本系统用户的安全使用。
 
-![](/images/0100stringboot/0137springboot/blog.002.png)
+![](/images/0100wxapp//blog.002.png)
 
 图3.2 登录流程
 ### 3.2.3 删除信息流程
 宠物领养系统在经过长期使用后，会产生很多的数据信息。为了腾出存储空间存放更多的数据，本系统数据库中存储的数据，一些没有参考价值的数据需要进行删除（图3.3即为删除信息的流程），删除数据过程中，为避免误删，使用者要根据系统的提示来决定是否删除数据。
 
-![](/images/0100stringboot/0137springboot/blog.003.png)
+![](/images/0100wxapp//blog.003.png)
 
 图3.3 删除信息流程
 ### 3.2.4 添加信息流程
 宠物领养系统提供可视化的功能操作区，非常方便使用者进行数据操作，当使用者往系统中录入数据时（图3.4即为添加信息的流程），本系统也会进行数据合法性的判断，符合要求的数据才能够在数据库指定表中进行登记。
 
-![](/images/0100stringboot/0137springboot/blog.004.png)
+![](/images/0100wxapp//blog.004.png)
 
 图3.4 添加信息流程
 ## 3.3 性能需求
@@ -102,13 +101,13 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 图3.5即为管理员用例图，管理员权限操作的功能包括对注册用户信息的管理，对宠物领养，宠物认领，教学视频，感谢信以及公告进行管理，审核宠物领养以及认领的信息。
 
-![](/images/0100stringboot/0137springboot/blog.005.png)
+![](/images/0100wxapp//blog.005.png)
 
 图3.5 管理员用例图
 
 图3.6即为用户用例图，用户权限操作的功能包括申请领养宠物，申请认领宠物，查看申请的宠物领养或申请的宠物认领的审核状态，发布感谢信，查看或对教学视频进行收藏以及留言。
 
-![](/images/0100stringboot/0137springboot/blog.006.png)
+![](/images/0100wxapp//blog.006.png)
 
 图3.6 用户用例图
 # 第4章 系统设计
@@ -116,13 +115,13 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ## 4.1 功能结构设计
 图4.1即为设计的管理员功能结构，管理员权限操作的功能包括对注册用户信息的管理，对宠物领养，宠物认领，教学视频，感谢信以及公告进行管理，审核宠物领养以及认领的信息。
 
-![](/images/0100stringboot/0137springboot/blog.007.png)
+![](/images/0100wxapp//blog.007.png)
 
 图4.1 管理员功能结构
 
 图4.2即为设计的用户功能结构，用户权限操作的功能包括申请领养宠物，申请认领宠物，查看申请的宠物领养或申请的宠物认领的审核状态，发布感谢信，查看或对教学视频进行收藏以及留言。
 
-![](/images/0100stringboot/0137springboot/blog.008.png)
+![](/images/0100wxapp//blog.008.png)
 
 图4.2 用户功能结构
 ## 4.2 数据库设计
@@ -132,31 +131,31 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 （1）图4.4即为宠物认领这个实体所拥有的属性值。
 
-![](/images/0100stringboot/0137springboot/blog.009.png)
+![](/images/0100wxapp//blog.009.png)
 
 图4.4 宠物认领实体属性图
 
 （2）图4.5即为用户这个实体所拥有的属性值。
 
-![](/images/0100stringboot/0137springboot/blog.010.png)
+![](/images/0100wxapp//blog.010.png)
 
 图4.5 用户实体属性图
 
 （3）图4.6即为宠物领养这个实体所拥有的属性值。
 
-![](/images/0100stringboot/0137springboot/blog.011.png)
+![](/images/0100wxapp//blog.011.png)
 
 图4.6 宠物领养实体属性图
 
 4. 图4.7即为管理员这个实体所拥有的属性值。
 
-![](/images/0100stringboot/0137springboot/blog.012.png)
+![](/images/0100wxapp//blog.012.png)
 
 图4.7 管理员实体属性图
 
 4. 图4.8即为上面介绍的实体中存在的联系。
 
-![](/images/0100stringboot/0137springboot/blog.013.png)
+![](/images/0100wxapp//blog.013.png)
 
 图4.8 实体间关系E-R图
 ### 4.2.2 数据库物理设计
@@ -291,56 +290,56 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 5.1.1 宠物领养管理
 图5.1 即为编码实现的宠物领养管理界面，管理员在该界面中发布需要领养的宠物的资料，可以对宠物领养的信息进行更改，查询，删除。
 
-![](/images/0100stringboot/0137springboot/blog.014.png)
+![](/images/0100wxapp//blog.014.png)
 
 图5.1 宠物领养管理界面
 ### 5.1.2 宠物领养审核管理
 图5.2 即为编码实现的宠物领养审核管理界面，管理员在该界面中对用户申请领养的宠物进行线上审核，管理员对宠物领养的信息审核通过之后，该宠物的领养状态就是被领养的状态了。
 
-![](/images/0100stringboot/0137springboot/blog.015.png)
+![](/images/0100wxapp//blog.015.png)
 
 图5.2 宠物领养审核管理界面
 ### 5.1.3 宠物认领管理
 图5.3 即为编码实现的宠物认领管理界面，管理员在该界面中发布宠物的认领信息，其中包括宠物的图片，宠物的类型等信息，管理员对宠物的认领信息也能更改，查询，删除。
 
-![](/images/0100stringboot/0137springboot/blog.016.png)
+![](/images/0100wxapp//blog.016.png)
 
 图5.3 宠物认领管理界面
 ### 5.1.4 宠物认领审核管理
 图5.4 即为编码实现的宠物认领审核管理界面，管理员在该界面中对用户申请认领的宠物信息进行线上审核，审核后的宠物认领信息只能进行查看和查询。
 
-![](/images/0100stringboot/0137springboot/blog.017.png)
+![](/images/0100wxapp//blog.017.png)
 
 图5.4 宠物认领审核管理界面
 ### 5.1.5 教学视频管理
 图5.5 即为编码实现的教学视频管理界面，管理员在该界面中主要是上传教学视频，对教学视频信息包括视频文件，视频标题等资料进行更改，查询，或删除，可以查看已发布教学视频的用户点赞数等信息。
 
-![](/images/0100stringboot/0137springboot/blog.018.png)
+![](/images/0100wxapp//blog.018.png)
 
 图5.5 教学视频管理界面
 ## 5.2 用户功能实现
 ### 5.2.1 宠物领养
 图5.6 即为编码实现的宠物领养界面，用户在该界面中查看宠物领养的介绍信息，只能对未被领养的宠物进行申请领养，已经被领养的宠物只能查看其介绍信息。
 
-![](/images/0100stringboot/0137springboot/blog.019.png)
+![](/images/0100wxapp//blog.019.png)
 
 图5.6 宠物领养界面
 ### 5.2.2 宠物认领
 图5.7 即为编码实现的宠物认领界面，用户在该界面中查看宠物认领信息，已经找到主人的宠物不支持认领。还没有找到主人的宠物才能进行申请认领。
 
-![](/images/0100stringboot/0137springboot/blog.020.png)
+![](/images/0100wxapp//blog.020.png)
 
 图5.7 宠物认领界面
 ### 5.2.3 教学视频
 图5.8 即为编码实现的教学视频界面，用户在该界面中主要就是播放教学视频，在教学视频下方发布留言，该教学视频也支持用户在当前页面进行收藏，方便下次查看。
 
-![](/images/0100stringboot/0137springboot/blog.021.png)
+![](/images/0100wxapp//blog.021.png)
 
 图5.8 教学视频界面
 ### 5.2.4 感谢信管理
 图5.9 即为编码实现的感谢信管理界面，用户在该界面中可以发布感谢信，对感谢信的内容进行更改，查询，删除。
 
-![](/images/0100stringboot/0137springboot/blog.022.png)
+![](/images/0100wxapp//blog.022.png)
 
 图5.9 感谢信管理界面
 # 

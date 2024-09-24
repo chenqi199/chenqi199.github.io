@@ -1,17 +1,16 @@
 # 0727springboot网上书城--论文
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0727springboot网上书城--论文](https://github.com/GraduationProject-springboot/0727springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
-
-# [项目清单](https://chenqi1990.site) 包安装运行
 
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
 [![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV14HerezEwW?p=79)
-
 
 # 课题背景
 随着科学技术发展，电脑已成为人们生活中必不可少的生活办公工具，在这样的背景下，网络技术被应用到各个方面，为了提高办公生活效率，网络信息技术飞速发展。在这样的背景下人类社会进入了全新的信息化的时代。网上书城管理一直是信息管理的一大难题，网上书城人数多，信息量大，此时寻找有效便捷的网上书城管理方法就是当务之急。而日趋成熟的计算机信息管理技术便成为解决这一难题的唯一之选。如今计算机信息管理技术来处理网上书城信息早已游刃有余，其实信息管理技术已经渗透到各个行业的信息控制管理当中，且有着举足轻重的地位。而随着现代化社会主义不断进步，普通群众生活水平有了大幅提高，很多方面都在网络上去实现，从而网络也就成为了最直接、即方便又快捷的接入口。 

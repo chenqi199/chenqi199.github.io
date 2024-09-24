@@ -1,17 +1,16 @@
 # 0111springboot基于Spring Boot技术的卓越导师双选系统设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0111springboot基于Spring Boot技术的卓越导师双选系统设计与实现](https://github.com/GraduationProject-springboot/0111springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1ECs?p=11)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第一章 绪论
 ## 1.1 选题背景
@@ -59,25 +58,25 @@ MYSQL数据库起源于瑞典，但是经营不善被数据库行业老大甲骨
 ## 3.2系统流程分析
 要访问卓越导师双选系统，需要符合要求的身份，证明访问者身份的信息就是在登录界面需要填写的信息，其中有用户名，有密码。在登录界面，系统后台也有专门编写的安全验证机制，只有信息匹配的访问者才有资格进入系统。具体流程见下图。如果访问者提供的信息在数据库中没有记录，就表明该访问者没有权限，也就无法享受系统提供的服务。
 
-![](/images/0100stringboot/0111springboot/blog.001.png)
+![](/images/0100wxapp//blog.001.png)
 
 图3-1 操作流程图
 
 在卓越导师双选系统里面，任何填充的数据都要经过合法性验证，具体流程见下图。只有符合条件的数据才可以保存。
 
-![](/images/0100stringboot/0111springboot/blog.002.png)
+![](/images/0100wxapp//blog.002.png)
 
 图3-2 添加信息流程图
 
 经过时间的改变，系统里面的很多数据也需要更新，更新时，同样需要检查更新的数据是否合法，具体流程见下图。只有判断符合要求的数据最终才可以保存。
 
-![](/images/0100stringboot/0111springboot/blog.003.png)
+![](/images/0100wxapp//blog.003.png)
 
 图3-3 修改信息流程图
 
 为了避免操作者大意误删数据，任何需要删除的数据，都需要反复确认，具体流程见下图。删除的数据将不会在页面中显示。
 
-![](/images/0100stringboot/0111springboot/blog.004.png)
+![](/images/0100wxapp//blog.004.png)
 
 图3-4 删除信息流程图
 ## 3.3系统性能分析
@@ -101,19 +100,19 @@ MYSQL数据库起源于瑞典，但是经营不善被数据库行业老大甲骨
 
 为了直观显示系统的功能，运用用例图这样的工具显示分析的结果。分析的管理员功能如下。管理员管理学员，导师，管理项目信息，管理项目提交，管理指导项目信息。
 
-![](/images/0100stringboot/0111springboot/blog.005.png)
+![](/images/0100wxapp//blog.005.png)
 
 图3-5 管理员用例图
 
 为了直观显示系统的功能，运用用例图这样的工具显示分析的结果。分析的导师功能如下。导师管理导师选择信息，管理项目，管理项目提交并对学员提交的项目进行指导。
 
-![](/images/0100stringboot/0111springboot/blog.006.png)
+![](/images/0100wxapp//blog.006.png)
 
 图3-6 导师用例图
 
 为了直观显示系统的功能，运用用例图这样的工具显示分析的结果。分析的学员功能如下。学员选择导师，查看项目，提交已完成的项目文件，查看导师对项目的指导信息。
 
-![](/images/0100stringboot/0111springboot/blog.007.png)
+![](/images/0100wxapp//blog.007.png)
 
 图3-7 学员用例图
 
@@ -134,19 +133,19 @@ MYSQL数据库起源于瑞典，但是经营不善被数据库行业老大甲骨
 ## 4.2功能结构设计
 这部分内容使用结构图这样的工具，显示设计结果，设计的管理员功能见下图。管理员管理学员，导师，管理项目信息，管理项目提交，管理指导项目信息。
 
-![](/images/0100stringboot/0111springboot/blog.008.png)
+![](/images/0100wxapp//blog.008.png)
 
 图4-1 管理员功能结构图
 
 这部分内容使用结构图这样的工具，显示设计结果，设计的导师功能见下图。导师管理导师选择信息，管理项目，管理项目提交并对学员提交的项目进行指导。
 
-![](/images/0100stringboot/0111springboot/blog.009.png)
+![](/images/0100wxapp//blog.009.png)
 
 图4-2 导师功能结构图
 
 这部分内容使用结构图这样的工具，显示设计结果，设计的学员功能见下图。学员选择导师，查看项目，提交已完成的项目文件，查看导师对项目的指导信息。
 
-![](/images/0100stringboot/0111springboot/blog.010.png)
+![](/images/0100wxapp//blog.010.png)
 
 图4-3 学员功能结构图
 ## 4.3数据库设计
@@ -158,31 +157,31 @@ MYSQL数据库起源于瑞典，但是经营不善被数据库行业老大甲骨
 
 （1）设计的项目实体，还有其属性见下图。
 
-![](/images/0100stringboot/0111springboot/blog.011.png)
+![](/images/0100wxapp//blog.011.png)
 
 图4-3 项目实体属性图
 
 （2）设计的学员实体，还有其属性见下图。
 
-![](/images/0100stringboot/0111springboot/blog.012.png)
+![](/images/0100wxapp//blog.012.png)
 
 图4-4 学员实体属性图
 
 （3）设计的指导项目实体，还有其属性见下图。
 
-![](/images/0100stringboot/0111springboot/blog.013.png)
+![](/images/0100wxapp//blog.013.png)
 
 图4-5 指导项目实体属性图
 
 4. 设计的导师实体，还有其属性见下图。
 
-![](/images/0100stringboot/0111springboot/blog.014.png)
+![](/images/0100wxapp//blog.014.png)
 
 图4-6 导师实体属性图
 
 （5）设计上述实体间关系见下图。
 
-![](/images/0100stringboot/0111springboot/blog.015.png)
+![](/images/0100wxapp//blog.015.png)
 
 图4-7 实体间关系E-R图
 ### 4.3.2 数据库表结构
@@ -307,51 +306,51 @@ MYSQL数据库起源于瑞典，但是经营不善被数据库行业老大甲骨
 ### 5.1.1 导师信息管理
 实现管理员权限的导师信息管理功能，其运行效果见下图。管理员修改导师所教科目信息，电话，邮箱，教师姓名等信息，可以删除指定的导师信息。
 
-![](/images/0100stringboot/0111springboot/blog.017.png)
+![](/images/0100wxapp//blog.017.png)
 
 图5-1 导师信息管理页面
 ### 5.1.2 导师选择统计报表
 实现管理员权限的导师选择统计报表功能，其运行效果见下图。管理员查看导师选择统计报表信息，查看选择各位导师的学员人数信息。
 
-![](/images/0100stringboot/0111springboot/blog.018.png)
+![](/images/0100wxapp//blog.018.png)
 
 图5-2 导师选择统计报表页面
 ### 5.1.3 学员管理
 实现管理员权限的学员管理功能，其运行效果见下图。管理员查看学员信息，对学员的资料进行修改，查询，删除等操作。
 
-![](/images/0100stringboot/0111springboot/blog.019.png)
+![](/images/0100wxapp//blog.019.png)
 
 图5-3 学员管理页面
 ## 5.2导师功能实现
 ### 5.2.1 项目信息管理
 实现导师权限的项目信息管理功能，其运行效果见下图。导师新增项目，上传项目文件，修改项目信息，在本页面删除指定的项目信息。
 
-![](/images/0100stringboot/0111springboot/blog.020.png)
+![](/images/0100wxapp//blog.020.png)
 
 图5-4 项目信息管理页面
 ### 5.2.2 项目提交管理
 实现导师权限的项目提交管理功能，其运行效果见下图。导师下载学员提交的已完成的项目文件，导师点击指导项目按钮可以对学员提交的项目进行指导。
 
-![](/images/0100stringboot/0111springboot/blog.021.png)
+![](/images/0100wxapp//blog.021.png)
 
 图5-5 项目提交管理页面
 ## 5.3 学员功能实现
 ### 5.3.1 导师信息管理
 实现学员权限的导师信息管理功能，其运行效果见下图。学员查看导师所教科目，邮箱以及电话等信息，可以点击右侧的选择导师按钮对该导师进行选择。
 
-![](/images/0100stringboot/0111springboot/blog.022.png)
+![](/images/0100wxapp//blog.022.png)
 
 图5-6 导师信息管理页面
 ### 5.3.2 项目信息管理
 实现学员权限的项目信息管理功能，其运行效果见下图。学员查看项目信息，在规定时间内完成导师布置的项目，并在当前页面提交已完成的项目文件。
 
-![](/images/0100stringboot/0111springboot/blog.023.png)
+![](/images/0100wxapp//blog.023.png)
 
 图5-7 项目信息管理页面
 ### 5.3.3 指导项目查看
 实现学员权限的指导项目查看功能，其运行效果见下图。学员查看导师对自己提交的项目的指导信息。
 
-![](/images/0100stringboot/0111springboot/blog.024.png)
+![](/images/0100wxapp//blog.024.png)
 
 图5-8 指导项目查看页面
 

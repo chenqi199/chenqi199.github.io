@@ -1,17 +1,16 @@
 # 0217springboot医院药品管理系统设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0217springboot医院药品管理系统设计与实现](https://github.com/GraduationProject-springboot/0217springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)]()
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
    1. ## 课题背景
@@ -70,7 +69,7 @@ MYSQL数据库的特点包括：能够应用于多种操作系统中；查询SQL
 1. ## B/S结构
 当前比较流行的网络化结构模式是B/S（浏览器/服务器）结构，它能够在服务器上面集中系统的所有核心功能，使系统开发人员的工作变得简单，并且开发出的系统也更容易使用和后期维护。用于比较熟悉的浏览器有360浏览器、谷歌浏览器、QQ浏览器等，用于比较熟悉的数据库有sqlserver、mysql数据库等，上边这些数据库和浏览器都可以安装在客户端上。B/S结构没有什么限制，并且还不需要专门的安装软件，只要笔记本、电脑有网络就能够访问系统。采用B/S结构开发的程序，比较好维护，只需要在客户端就可处理，不需要非得在服务器上处理，并且跟用户的交互性比较好，刷新浏览器就可进行数据信息的实时更新[22]。B/S架构如图2-1所示：
 
-![](/images/0200stringboot/0217springboot/blog.001.png)
+![](/images/0200wxapp//blog.001.png)
 
 图2-1 B/S模式架构图
 1. ## SSM框架技术
@@ -106,20 +105,20 @@ MYSQL数据库的特点包括：能够应用于多种操作系统中；查询SQL
 
 用户静态结构如图3-1所示。
 
-![](/images/0200stringboot/0217springboot/blog.002.png)
+![](/images/0200wxapp//blog.002.png)
 
 图3-1  用户静态结构图
 1. ## 系统流程分析
    1. ### 注册流程
 用户注册之后才可以登录系统，用户注册流程如图3-2所示：
 
-![](/images/0200stringboot/0217springboot/blog.003.png)
+![](/images/0200wxapp//blog.003.png)
 
 图3-2  注册流程图
 1. ### 登录流程
 用户需要登录系统之后，才可以进行校园失物评论、校园失物下载等操作。而管理员也只有登录系统之后，可以对系统各个方面的内容进行管理，不受任何限制。用户登录流程如图3-3所示。
 
-![](/images/0200stringboot/0217springboot/blog.004.png)
+![](/images/0200wxapp//blog.004.png)
 
 图3-3  登录流程图
 1. # 系统设计
@@ -128,7 +127,7 @@ MYSQL数据库的特点包括：能够应用于多种操作系统中；查询SQL
 
 系统工作原理如图4-1所示。
 
-![](/images/0200stringboot/0217springboot/blog.005.png)
+![](/images/0200wxapp//blog.005.png)
 
 图4-1 系统工作原理图
 1. ## 系统结构设计
@@ -189,7 +188,7 @@ MYSQL数据库的特点包括：能够应用于多种操作系统中；查询SQL
 公告类型添加
 
 
-![](/images/0200stringboot/0217springboot/blog.006.png)
+![](/images/0200wxapp//blog.006.png)
 
 图4-2 系统结构图
 
@@ -203,47 +202,47 @@ MYSQL数据库的特点包括：能够应用于多种操作系统中；查询SQL
 
 （1）下图是出入库详情实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\yiyuanyaopinguanli\出入库详情.jpg](/images/0200stringboot/0217springboot/blog.007.jpeg "C:\Users\Administrator\Desktop\img\yiyuanyaopinguanli\出入库详情.jpg")
+![C:\Users\Administrator\Desktop\img\yiyuanyaopinguanli\出入库详情.jpg](/images/0200wxapp//blog.007.jpeg "C:\Users\Administrator\Desktop\img\yiyuanyaopinguanli\出入库详情.jpg")
 图4.1 出入库详情实体属性图
 
 （2）下图是用户实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\yiyuanyaopinguanli\用户.jpg](/images/0200stringboot/0217springboot/blog.008.jpeg "C:\Users\Administrator\Desktop\img\yiyuanyaopinguanli\用户.jpg")
+![C:\Users\Administrator\Desktop\img\yiyuanyaopinguanli\用户.jpg](/images/0200wxapp//blog.008.jpeg "C:\Users\Administrator\Desktop\img\yiyuanyaopinguanli\用户.jpg")
 图4.2 用户实体属性图
 
 （3）下图是公告信息实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\yiyuanyaopinguanli\公告信息.jpg](/images/0200stringboot/0217springboot/blog.009.jpeg "C:\Users\Administrator\Desktop\img\yiyuanyaopinguanli\公告信息.jpg")
+![C:\Users\Administrator\Desktop\img\yiyuanyaopinguanli\公告信息.jpg](/images/0200wxapp//blog.009.jpeg "C:\Users\Administrator\Desktop\img\yiyuanyaopinguanli\公告信息.jpg")
 图4.3 公告信息实体属性图
 
 （4）下图是出入库实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\yiyuanyaopinguanli\出入库.jpg](/images/0200stringboot/0217springboot/blog.010.jpeg "C:\Users\Administrator\Desktop\img\yiyuanyaopinguanli\出入库.jpg")
+![C:\Users\Administrator\Desktop\img\yiyuanyaopinguanli\出入库.jpg](/images/0200wxapp//blog.010.jpeg "C:\Users\Administrator\Desktop\img\yiyuanyaopinguanli\出入库.jpg")
 图4.4 出入库实体属性图
 
 （5）下图是字典表实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\yiyuanyaopinguanli\字典表.jpg](/images/0200stringboot/0217springboot/blog.011.jpeg "C:\Users\Administrator\Desktop\img\yiyuanyaopinguanli\字典表.jpg")
+![C:\Users\Administrator\Desktop\img\yiyuanyaopinguanli\字典表.jpg](/images/0200wxapp//blog.011.jpeg "C:\Users\Administrator\Desktop\img\yiyuanyaopinguanli\字典表.jpg")
 图4.5 字典表实体属性图
 
 （6）下图是取退记录实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\yiyuanyaopinguanli\取退记录.jpg](/images/0200stringboot/0217springboot/blog.012.jpeg "C:\Users\Administrator\Desktop\img\yiyuanyaopinguanli\取退记录.jpg")
+![C:\Users\Administrator\Desktop\img\yiyuanyaopinguanli\取退记录.jpg](/images/0200wxapp//blog.012.jpeg "C:\Users\Administrator\Desktop\img\yiyuanyaopinguanli\取退记录.jpg")
 图4.6 取退记录实体属性图
 
 （7）下图是药品信息实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\yiyuanyaopinguanli\药品信息.jpg](/images/0200stringboot/0217springboot/blog.013.jpeg "C:\Users\Administrator\Desktop\img\yiyuanyaopinguanli\药品信息.jpg")
+![C:\Users\Administrator\Desktop\img\yiyuanyaopinguanli\药品信息.jpg](/images/0200wxapp//blog.013.jpeg "C:\Users\Administrator\Desktop\img\yiyuanyaopinguanli\药品信息.jpg")
 图4.7 药品信息实体属性图
 
 （8）下图是员工实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\yiyuanyaopinguanli\员工.jpg](/images/0200stringboot/0217springboot/blog.014.jpeg "C:\Users\Administrator\Desktop\img\yiyuanyaopinguanli\员工.jpg")
+![C:\Users\Administrator\Desktop\img\yiyuanyaopinguanli\员工.jpg](/images/0200wxapp//blog.014.jpeg "C:\Users\Administrator\Desktop\img\yiyuanyaopinguanli\员工.jpg")
 图4.8 员工实体属性图
 
 （9）下图是用户表实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\yiyuanyaopinguanli\用户表.jpg](/images/0200stringboot/0217springboot/blog.015.jpeg "C:\Users\Administrator\Desktop\img\yiyuanyaopinguanli\用户表.jpg")
+![C:\Users\Administrator\Desktop\img\yiyuanyaopinguanli\用户表.jpg](/images/0200wxapp//blog.015.jpeg "C:\Users\Administrator\Desktop\img\yiyuanyaopinguanli\用户表.jpg")
 图4.9 用户表实体属性图
 ### 数据库表设计
 采用MYSQL数据库对该医院药品管理系统的数据进行存储，数据库中所包括的各个数据库表的详细信息如下所示：
@@ -356,26 +355,26 @@ MYSQL数据库的特点包括：能够应用于多种操作系统中；查询SQL
 
 还进行了对用户名称的模糊查询的条件
 
-![](/images/0200stringboot/0217springboot/blog.016.png)
+![](/images/0200wxapp//blog.016.png)
 
 图5.1 用户信息管理页面
 ### 5.2 员工信息管理
 如图5.2显示的就是员工信息管理页面，此页面提供给管理员的功能有：查看已发布的员工信息数据，修改员工信息，员工信息作废，即可删除，还进行了对员工信息名称的模糊查询 员工信息信息的类型查询等等一些条件。
 
-![](/images/0200stringboot/0217springboot/blog.017.png)
+![](/images/0200wxapp//blog.017.png)
 
 
 图5.2 员工信息管理页面
 ### 5.3药品信息管理
 如图5.3显示的就是药品信息管理页面，此页面提供给管理员的功能有：根据药品信息进行条件查询，还可以对药品信息进行新增、修改、查询操作等等。
 
-![](/images/0200stringboot/0217springboot/blog.018.png)
+![](/images/0200wxapp//blog.018.png)
 
 图5.3 药品信息管理页面
 ### 5.1公告信息管理
 如图5.4显示的就是公告信息管理页面，此页面提供给管理员的功能有：根据公告信息进行新增、修改、查询操作等等。
 
-![](/images/0200stringboot/0217springboot/blog.019.png)
+![](/images/0200wxapp//blog.019.png)
 
 图5.4 公告信息管理页面
 

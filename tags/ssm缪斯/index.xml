@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Ssm缪斯 - 标签 - chenqi blog</title>
+        <link>https://chenqi199.github.io/tags/ssm%E7%BC%AA%E6%96%AF/</link>
+        <description>Ssm缪斯 - 标签 - chenqi blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>chen_q_i@163.com (chenqi)</managingEditor>
+            <webMaster>chen_q_i@163.com (chenqi)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 17 Jan 2024 10:32:50 &#43;0800</lastBuildDate><atom:link href="https://chenqi199.github.io/tags/ssm%E7%BC%AA%E6%96%AF/" rel="self" type="application/rss+xml" /><item>
+    <title>ssm247缪斯乐器购物网站的设计与实现&#43;jsp</title>
+    <link>https://chenqi199.github.io/ssm247%E7%BC%AA%E6%96%AF%E4%B9%90%E5%99%A8%E8%B4%AD%E7%89%A9%E7%BD%91%E7%AB%99%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/</link>
+    <pubDate>Wed, 17 Jan 2024 10:32:50 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm247%E7%BC%AA%E6%96%AF%E4%B9%90%E5%99%A8%E8%B4%AD%E7%89%A9%E7%BD%91%E7%AB%99%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm247缪斯乐器购物网站的设计与实现+jsp github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1.1 研究背景 当前社会各]]></description>
+</item>
+</channel>
+</rss>

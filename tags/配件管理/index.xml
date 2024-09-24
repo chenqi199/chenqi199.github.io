@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>配件管理 - 标签 - chenqi blog</title>
+        <link>https://chenqi199.github.io/tags/%E9%85%8D%E4%BB%B6%E7%AE%A1%E7%90%86/</link>
+        <description>配件管理 - 标签 - chenqi blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>chen_q_i@163.com (chenqi)</managingEditor>
+            <webMaster>chen_q_i@163.com (chenqi)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 25 Feb 2024 10:32:53 &#43;0800</lastBuildDate><atom:link href="https://chenqi199.github.io/tags/%E9%85%8D%E4%BB%B6%E7%AE%A1%E7%90%86/" rel="self" type="application/rss+xml" /><item>
+    <title>ssm362设备配件管理和设备检修&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm362%E8%AE%BE%E5%A4%87%E9%85%8D%E4%BB%B6%E7%AE%A1%E7%90%86%E5%92%8C%E8%AE%BE%E5%A4%87%E6%A3%80%E4%BF%AE-vue/</link>
+    <pubDate>Sun, 25 Feb 2024 10:32:53 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm362%E8%AE%BE%E5%A4%87%E9%85%8D%E4%BB%B6%E7%AE%A1%E7%90%86%E5%92%8C%E8%AE%BE%E5%A4%87%E6%A3%80%E4%BF%AE-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm362设备配件管理和设备检修+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 系统概述 1.1 研究背景 随着计算机技]]></description>
+</item>
+</channel>
+</rss>

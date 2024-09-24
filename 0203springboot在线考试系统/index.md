@@ -1,17 +1,16 @@
 # 0203springboot在线考试系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0203springboot在线考试系统](https://github.com/GraduationProject-springboot/0203springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)]()
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
 ## 1.1 研究背景
@@ -46,7 +45,7 @@
 ## 2.1 B/S架构介绍  
 在早期的程序开发中，使用得最多的莫过于C/S架构了，现在的生活中软件在生活的各个方面落地，使用了C/S架构开发出来的软件也是不在少数的，比如企业日常办公使用到的微软的OFFICE软件，我国自己研发的文档处理软件WPS，还有娱乐软件腾讯的QQ，腾讯的微信，以及电脑上安装的杀毒软件金山杀毒软件，瑞金杀毒软件等都是C/S架构。但是在Internet网络盛行之后，鉴于大家对数据信息共享的需求，在原来的C/S架构上进行了升级改进之后，有了现在的主流架构B/S架构，B/S架构就是在C/S架构上多了一个浏览器，让原来的直接访问服务器的方式，变成了通过浏览器去访问服务器。充分运用到了当下不断成熟的浏览器技术。也让软件的开发成本以及维护成本降低了。可以说B/S这种新型的架构模式让软件的开发变得便利化。图2.2描述了B/S架构的工作原理。详细见下图。
 
-![](/images/0200stringboot/0203springboot/blog.001.png)
+![](/images/0200wxapp//blog.001.png)
 
 图2.2 B/S架构的工作原理图
 ## 2.2 Mysql数据库介绍
@@ -56,7 +55,7 @@
 
 本次之所以选择MySQL数据库来当程序数据存放的仓库，则是因为此数据库安装不用费时，也不需要各种百度信息去解决安装过程中出现的任何问题，而且由于自己的电脑内存比较小，才4个G，为了更好的开发项目程序，针对低配置的电脑选择MySQL数据库也是情理之中。图2.3展示了数据列设计中需要使用的列类型。
 
-![](/images/0200stringboot/0203springboot/blog.002.png)
+![](/images/0200wxapp//blog.002.png)
 
 ` `图2.3数据列类型图
 ## 2.3 JAVA语言介绍
@@ -68,7 +67,7 @@
 
 3.现在生活中手机的普及化，也使得手机端这样的移动设备的软件的兴起，JavaME这个迷你版java平台就能运用于移动端的软件开发操作。图2.4就是 Java技术原理图。
 
-![](/images/0200stringboot/0203springboot/blog.003.png)
+![](/images/0200wxapp//blog.003.png)
 
 图2.4 Java技术原理图
 
@@ -102,25 +101,25 @@
 ## 3.3系统流程分析
 管理员假如要操作系统提供的功能，那么管理员就要在系统的登录界面，填写管理员登录的账号信息，填写相应的密码信息，管理员需要保证这两者能够验证身份的账号以及密码信息的正确性，这样管理员就可以通过登录界面进入系统后台操作界面。图3.1就是开发的程序软件在线考试系统它的操作流程图。
 
-![](/images/0200stringboot/0203springboot/blog.004.png)
+![](/images/0200wxapp//blog.004.png)
 
 图3.1 系统操作流程图
 ### 3.3.1系统登录流程
 在线考试系统的登录流程，针对的角色就是操作员的操作角色。在登录界面需要的必填信息就是账号信息，配上登录的密码信息就能登录在线考试系统，需要注意的就是必填的账号信息和登录密码信息，都需要进行验证，系统会判断账号还有填写的密码信息的正确性，只有这两者信息都正确了，就能成功登录在线考试系统了。系统登录流程图如下图。
 
-![](/images/0200stringboot/0203springboot/blog.005.png)
+![](/images/0200wxapp//blog.005.png)
 
 图3.2　系统登录流程图
 ### 3.3.2信息添加流程
 用户在添加信息的界面填写的任何数据信息也是需要验证的，系统会判断用户填写信息的格式还有数据信息是不是合法信息，如果用户填写的信息是合法内容，系统就会在数据库对应的数据表里面添加信息。添加信息流程如下图。
 
-![](/images/0200stringboot/0203springboot/blog.006.png)
+![](/images/0200wxapp//blog.006.png)
 
 图3.3 添加信息流程图
 ### 3.3.3信息删除流程
 对于那些已经失效的信息，需要用户及时进行删除，这样有利于腾出空间存放其他信息。删除信息也是先从数据库对应数据表里面删除数据，接着就是更新数据表的信息。这样删除的数据，在用户操作界面就查看不到了。信息删除流程如下图所示。
 
-![](/images/0200stringboot/0203springboot/blog.007.png)
+![](/images/0200wxapp//blog.007.png)
 
 图3.4 信息删除流程图
 ## 3.4系统功能分析
@@ -133,7 +132,7 @@
 ## 4.1系统概要设计
 在线考试系统并没有使用C/S结构，而是基于网络浏览器的方式去访问服务器，进而获取需要的数据信息，这种依靠浏览器进行数据访问的模式就是现在用得比较广泛的适用于广域网并且没有网速限制要求的B/S结构，图4.1就是开发出来的程序工作原理图。
 
-![](/images/0200stringboot/0203springboot/blog.008.png)
+![](/images/0200wxapp//blog.008.png)
 
 图4.1 程序工作的原理图
 ## 4.2系统功能结构设计
@@ -151,37 +150,37 @@
 
 （1）下图是考试记录表实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\javazaixiankaoshi\考试记录表.jpg](/images/0200stringboot/0203springboot/blog.009.jpeg "C:\Users\Administrator\Desktop\img\javazaixiankaoshi\考试记录表.jpg")
+![C:\Users\Administrator\Desktop\img\javazaixiankaoshi\考试记录表.jpg](/images/0200wxapp//blog.009.jpeg "C:\Users\Administrator\Desktop\img\javazaixiankaoshi\考试记录表.jpg")
 图4.1 考试记录表实体属性图
 
 （2）下图是答题详情表实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\javazaixiankaoshi\答题详情表.jpg](/images/0200stringboot/0203springboot/blog.010.jpeg "C:\Users\Administrator\Desktop\img\javazaixiankaoshi\答题详情表.jpg")
+![C:\Users\Administrator\Desktop\img\javazaixiankaoshi\答题详情表.jpg](/images/0200wxapp//blog.010.jpeg "C:\Users\Administrator\Desktop\img\javazaixiankaoshi\答题详情表.jpg")
 图4.2 答题详情表实体属性图
 
 （3）下图是老师实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\javazaixiankaoshi\老师.jpg](/images/0200stringboot/0203springboot/blog.011.jpeg "C:\Users\Administrator\Desktop\img\javazaixiankaoshi\老师.jpg")
+![C:\Users\Administrator\Desktop\img\javazaixiankaoshi\老师.jpg](/images/0200wxapp//blog.011.jpeg "C:\Users\Administrator\Desktop\img\javazaixiankaoshi\老师.jpg")
 图4.3 老师实体属性图
 
 （4）下图是错题表实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\javazaixiankaoshi\错题表.jpg](/images/0200stringboot/0203springboot/blog.012.jpeg "C:\Users\Administrator\Desktop\img\javazaixiankaoshi\错题表.jpg")
+![C:\Users\Administrator\Desktop\img\javazaixiankaoshi\错题表.jpg](/images/0200wxapp//blog.012.jpeg "C:\Users\Administrator\Desktop\img\javazaixiankaoshi\错题表.jpg")
 图4.4 错题表实体属性图
 
 （5）下图是课程留言实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\javazaixiankaoshi\课程留言.jpg](/images/0200stringboot/0203springboot/blog.013.jpeg "C:\Users\Administrator\Desktop\img\javazaixiankaoshi\课程留言.jpg")
+![C:\Users\Administrator\Desktop\img\javazaixiankaoshi\课程留言.jpg](/images/0200wxapp//blog.013.jpeg "C:\Users\Administrator\Desktop\img\javazaixiankaoshi\课程留言.jpg")
 图4.5 课程留言实体属性图
 
 （6）下图是学生实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\javazaixiankaoshi\学生.jpg](/images/0200stringboot/0203springboot/blog.014.jpeg "C:\Users\Administrator\Desktop\img\javazaixiankaoshi\学生.jpg")
+![C:\Users\Administrator\Desktop\img\javazaixiankaoshi\学生.jpg](/images/0200wxapp//blog.014.jpeg "C:\Users\Administrator\Desktop\img\javazaixiankaoshi\学生.jpg")
 图4.6 学生实体属性图
 
 （7）下图是公告实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\javazaixiankaoshi\公告.jpg](/images/0200stringboot/0203springboot/blog.015.jpeg "C:\Users\Administrator\Desktop\img\javazaixiankaoshi\公告.jpg")
+![C:\Users\Administrator\Desktop\img\javazaixiankaoshi\公告.jpg](/images/0200wxapp//blog.015.jpeg "C:\Users\Administrator\Desktop\img\javazaixiankaoshi\公告.jpg")
 图4.7 公告实体属性图
 
 ### 4.3.2 数据库表结构设计
@@ -204,25 +203,25 @@
 ### 5.1.1管理员登录
 系统登录功能是程序必不可少的功能，在登录页面必填的数据有两项，一项就是账号，另一项数据就是密码，当管理员正确填写并提交这二者数据之后，管理员就可以进入系统后台功能操作区。下图就是管理员登录页面。
 
-![](/images/0200stringboot/0203springboot/blog.016.png)
+![](/images/0200wxapp//blog.016.png)
 
 图5.1 管理员登录页面
 ### 5.1.2 试卷管理
 项目管理页面提供的功能操作有：查看试卷，删除试卷操作，新增试卷操作，修改试卷操作。下图就是试卷管理页面。
 
-![](/images/0200stringboot/0203springboot/blog.017.png)
+![](/images/0200wxapp//blog.017.png)
 
 图5.2  试卷管理页面
 ### 5.1.3 公告信息管理
 公告信息管理页面提供的功能操作有：新增公告，修改公告，删除公告操作。下图就是公告信息管理页面。
 
-![](/images/0200stringboot/0203springboot/blog.018.png)
+![](/images/0200wxapp//blog.018.png)
 
 图5.3 公告信息管理页面
 ### 5.1.4公告类型管理
 公告类型管理页面显示所有公告类型，在此页面既可以让管理员添加新的公告信息类型，也能对已有的公告类型信息执行编辑更新，失效的公告类型信息也能让管理员快速删除。下图就是公告类型管理页面。
 
-![](/images/0200stringboot/0203springboot/blog.019.png)
+![](/images/0200wxapp//blog.019.png)
 
 图5.4 公告类型列表页面
 

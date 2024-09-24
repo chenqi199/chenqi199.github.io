@@ -1,17 +1,16 @@
 # 0205springboot农商对接系统的设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0205springboot农商对接系统的设计与实现](https://github.com/GraduationProject-springboot/0205springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)]()
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 前言
 ## 1.1 课题背景
@@ -65,25 +64,25 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 3.2.1 操作流程
 使用者在操作农商对接系统中，应该按照本系统提供的操作流程（图3.1即为本系统的操作流程图）进行操作，可以减少操作失误，从而节省进入农商对接系统的时间。
 
-![](/images/0200stringboot/0205springboot/blog.002.png)
+![](/images/0200wxapp//blog.002.png)
 
 图3.1 系统操作流程
 ### 3.2.2 登录流程
 农商对接系统通过登录功能（图3.2即为其登录的流程）引导使用者进入指定的功能操作区，也避免非本系统的用户享受本系统提供的服务以及查看本系统提供的信息，进而保证用户安全。
 
-![](/images/0200stringboot/0205springboot/blog.003.png)
+![](/images/0200wxapp//blog.003.png)
 
 图3.2 登录流程
 ### 3.2.3 删除信息流程
 农商对接系统在经过长期使用后，会产生很多的数据信息。为了腾出存储空间存放更多的数据，本系统数据库中存储的数据，一些没有参考价值的数据需要进行删除（图3.3即为删除信息的流程），删除数据过程中，为避免误删，使用者要根据系统的提示来决定是否删除数据。
 
-![](/images/0200stringboot/0205springboot/blog.004.png)
+![](/images/0200wxapp//blog.004.png)
 
 图3.3 删除信息流程
 ### 3.2.4 添加信息流程
 农商对接系统提供可视化的功能操作区，非常方便使用者进行数据操作，当使用者往系统中录入数据时（图3.4即为添加信息的流程），本系统也会进行数据合法性的判断，符合要求的数据才能够在数据库指定表中进行登记。【6】
 
-![](/images/0200stringboot/0205springboot/blog.005.png)
+![](/images/0200wxapp//blog.005.png)
 
 图3.4 添加信息流程
 ## 3.3 性能需求
@@ -109,19 +108,19 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 图3.5即为管理员用例图，管理员权限操作的功能包括管理卖家，管理用户，管理订单和订单追踪信息，管理售后信息，管理售后处理信息，管理用户与卖家的交流信息等。
 
-![](/images/0200stringboot/0205springboot/blog.006.png)
+![](/images/0200wxapp//blog.006.png)
 
 图3.5 管理员用例图
 
 图3.6即为卖家用例图，卖家权限操作的功能包括对订单商品进行交货，处理订单商品的售后信息，管理商品，回复用户咨询商品的交流信息等。
 
-![](/images/0200stringboot/0205springboot/blog.007.png)
+![](/images/0200wxapp//blog.007.png)
 
 图3.6 卖家用例图
 
 图3.7即为用户用例图，用户权限操作的功能包括预定商品，咨询商品，支付订单商品，对订单商品申请售后，查看售后处理信息等。
 
-![](/images/0200stringboot/0205springboot/blog.008.png)
+![](/images/0200wxapp//blog.008.png)
 
 图3.7 用户用例图
 # 4 系统设计
@@ -141,19 +140,19 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ## 4.2 功能结构设计
 图4.1即为设计的管理员功能结构，管理员权限操作的功能包括管理卖家，管理用户，管理订单和订单追踪信息，管理售后信息，管理售后处理信息，管理用户与卖家的交流信息等。
 
-![](/images/0200stringboot/0205springboot/blog.009.png)
+![](/images/0200wxapp//blog.009.png)
 
 图4.1 管理员功能结构
 
 图4.2即为设计的卖家功能结构，卖家权限操作的功能包括对订单商品进行交货，处理订单商品的售后信息，管理商品，回复用户咨询商品的交流信息等。
 
-![](/images/0200stringboot/0205springboot/blog.010.png)
+![](/images/0200wxapp//blog.010.png)
 
 图4.2 卖家功能结构
 
 图4.3即为设计的用户功能结构，用户权限操作的功能包括预定商品，咨询商品，支付订单商品，对订单商品申请售后，查看售后处理信息等。
 
-![](/images/0200stringboot/0205springboot/blog.011.png)
+![](/images/0200wxapp//blog.011.png)
 
 图4.3 用户功能结构
 ## 4.3 数据库设计
@@ -163,31 +162,31 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 （1）图4.4即为商品这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0205springboot/blog.012.png)
+![](/images/0200wxapp//blog.012.png)
 
 图4.4 商品实体属性图
 
 （2）图4.5即为订单这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0205springboot/blog.013.png)
+![](/images/0200wxapp//blog.013.png)
 
 图4.5 订单实体属性图
 
 （3）图4.6即为卖家这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0205springboot/blog.014.png)
+![](/images/0200wxapp//blog.014.png)
 
 图4.6 卖家实体属性图
 
 4. 图4.7即为用户这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0205springboot/blog.015.png)
+![](/images/0200wxapp//blog.015.png)
 
 图4.7 用户实体属性图
 
 4. 图4.8即为上面介绍的实体中存在的联系。
 
-![](/images/0200stringboot/0205springboot/blog.016.png)
+![](/images/0200wxapp//blog.016.png)
 
 图4.8 实体间关系E-R图
 ### 4.3.2 数据库物理设计
@@ -385,69 +384,69 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 5.1.1 卖家管理
 图5.1 即为编码实现的卖家管理界面，卖家信息有电话，卖家姓名，账号，性别等信息，管理员查询卖家，更改卖家信息，新增卖家，删除卖家等。
 
-![](/images/0200stringboot/0205springboot/blog.017.png)
+![](/images/0200wxapp//blog.017.png)
 
 图5.1 卖家管理界面
 ### 5.1.2 用户管理
 图5.2 即为编码实现的用户管理界面，用户的头像，邮箱，姓名，手机等信息也能让管理员更改和登记新用户信息，查询用户，删除用户等。
 
-![](/images/0200stringboot/0205springboot/blog.018.png)
+![](/images/0200wxapp//blog.018.png)
 
 图5.2 用户管理界面
 ### 5.1.3 售后信息管理
 图5.3 即为编码实现的售后信息管理界面，管理员查看售后信息，包括售后信息的状态，用户姓名，卖家姓名，商品等信息都能够查看，管理员也能更改，删除，查询售后信息。
 
-![](/images/0200stringboot/0205springboot/blog.019.png)
+![](/images/0200wxapp//blog.019.png)
 
 图5.3 售后信息管理界面
 ## 5.2 卖家功能实现
 ### 5.2.1 商品信息管理
 图5.4 即为编码实现的商品信息管理界面，卖家对商品价格，卖家姓名，电话，商品图片等信息进行修改，可以查询商品，新增商品等。
 
-![](/images/0200stringboot/0205springboot/blog.020.png)
+![](/images/0200wxapp//blog.020.png)
 
 图5.4 商品信息管理界面
 ### 5.2.2 订单信息管理
 图5.5 即为编码实现的订单信息管理界面，卖家根据订单约定的交货时间进行交货，可以查看订单明细信息，主要是交货时间，总价格，下单时间，商品名称，用户姓名，手机等信息，卖家可以查询订单。
 
-![](/images/0200stringboot/0205springboot/blog.021.png)
+![](/images/0200wxapp//blog.021.png)
 
 图5.5 订单信息管理界面
 ### 5.2.3 订单追踪管理
 图5.6 即为编码实现的订单追踪管理界面，卖家查看用户姓名，商品名称，交接时间，卖家姓名等信息，可以更改订单追踪信息，查询订单追踪信息等。
 
-![](/images/0200stringboot/0205springboot/blog.022.png)
+![](/images/0200wxapp//blog.022.png)
 
 图5.6 订单追踪管理界面
 ### 5.2.4 在线交流管理
 图5.7 即为编码实现的在线交流管理界面，卖家对用户咨询商品的信息进行查看和回复，可以删除用户与卖家的交流信息。
 
-![](/images/0200stringboot/0205springboot/blog.023.png)
+![](/images/0200wxapp//blog.023.png)
 
 图5.7 在线交流管理界面
 ## 5.3 用户功能实现
 ### 5.3.1 商品信息
 图5.8 即为编码实现的商品信息界面，用户在前台的商品信息界面对展示的商品信息进行查看后，可以收藏商品，预定商品，如果用户想了解更多关于商品的信息，可以点击交流按钮向卖家咨询，同时可以在商品信息界面下方的评论区域发布对商品的评论等。
 
-![](/images/0200stringboot/0205springboot/blog.024.png)
+![](/images/0200wxapp//blog.024.png)
 
 图5.8 商品信息界面
 ### 5.3.2 资讯信息
 图5.9 即为编码实现的资讯信息界面，用户查询资讯信息，需要在查询框中编辑资讯标题才可以查询资讯，可以查看资讯信息界面展示的各种资讯信息。
 
-![](/images/0200stringboot/0205springboot/blog.025.png)
+![](/images/0200wxapp//blog.025.png)
 
 图5.9 资讯信息界面
 ### 5.3.3 订单信息管理
 图5.10 即为编码实现的订单信息管理界面，用户预定商品，需要在订单信息管理界面支付。
 
-![](/images/0200stringboot/0205springboot/blog.026.png)
+![](/images/0200wxapp//blog.026.png)
 
 图5.10 订单信息管理界面
 ### 5.3.4 订单追踪管理
 图5.11 即为编码实现的订单追踪管理界面，卖家交货之后，用户发现订单商品存在问题，可以申请对订单商品进行售后。
 
-![](/images/0200stringboot/0205springboot/blog.027.png)
+![](/images/0200wxapp//blog.027.png)
 
 图5.11 订单追踪管理界面
 # 

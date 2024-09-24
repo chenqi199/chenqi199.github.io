@@ -1,17 +1,16 @@
 # 0116springboot企业资产管理系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0116springboot企业资产管理系统](https://github.com/GraduationProject-springboot/0116springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1ECs?p=16)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 系统概述
 1.1 研究背景
@@ -242,11 +241,11 @@ MyBatis本是apache的一个开源项目iBatis,2010年这个项目由apache soft
 
 4）输入数据尽早地记录成其处理所需的形式，以防止数据由一种介质转移到另一种介质时需要转录而可能发生的错误。
 ## 3.4系统流程和逻辑
-![](/images/0100stringboot/0116springboot/blog.001.png)
+![](/images/0100wxapp//blog.001.png)
 
 图3-3登录流程图
 
-![](/images/0100stringboot/0116springboot/blog.002.png)
+![](/images/0100wxapp//blog.002.png)
 
 图3-4修改密码流程图
 
@@ -294,13 +293,13 @@ MyBatis本是apache的一个开源项目iBatis,2010年这个项目由apache soft
 
 本系统采用B/S结构(Browser/Server,浏览器/服务器结构)和基于Web服务两种模式，是一个适用于Internet环境下的模型结构。只要用户能连上Internet,便可以在任何时间、任何地点使用。系统工作原理图如图4-1所示：
 
-![](/images/0100stringboot/0116springboot/blog.003.png)
+![](/images/0100wxapp//blog.003.png)
 
 图4-1系统工作原理图
 ## 4.2系统结构
 本系统是基于B/S架构的网站系统，设计的功能结构图如下图所示：
 
-![](/images/0100stringboot/0116springboot/blog.004.png)
+![](/images/0100wxapp//blog.004.png)
 
 图4-2功能结构图
 
@@ -315,19 +314,19 @@ MyBatis本是apache的一个开源项目iBatis,2010年这个项目由apache soft
 
 （1）资产分类信息的实体属性图如下：
 
-![](/images/0100stringboot/0116springboot/blog.005.png)
+![](/images/0100wxapp//blog.005.png)
 
 图4.12  资产分类实体属性图
 
 （2）资产信息实体属性图如图4.13所示：
 
-![](/images/0100stringboot/0116springboot/blog.006.png)
+![](/images/0100wxapp//blog.006.png)
 
 图4.13  资产信息实体属性图
 
 （3）管理员信息实体属性图如图4.14所示：
 
-![](/images/0100stringboot/0116springboot/blog.007.png)
+![](/images/0100wxapp//blog.007.png)
 
 图4.14 管理员信息实体属性图
 ### 4.3.2数据库设计表
@@ -458,38 +457,38 @@ MyBatis本是apache的一个开源项目iBatis,2010年这个项目由apache soft
 ## 5.1 用户信息管理
 企业资产管理系统的系统管理员可以对用户信息添加修改删除以及查询操作。具体界面的展示如图5.1所示。
 
-![](/images/0100stringboot/0116springboot/blog.010.png)
+![](/images/0100wxapp//blog.010.png)
 
 图5.1 用户信息管理界面
 ## 5.2 用户审核管理
 系统管理员可以查看对用户注册信息进行审核操作。具体界面如图5.2所示。
 
-![](/images/0100stringboot/0116springboot/blog.011.png)
+![](/images/0100wxapp//blog.011.png)
 
 
 图5.2 用户审核管理界面
 ## 5.3 资产分类管理
 系统管理员可以查看对资产分类进行添加，修改，删除以及查询操作。具体界面如图5.2所示。
 
-![](/images/0100stringboot/0116springboot/blog.012.png)
+![](/images/0100wxapp//blog.012.png)
 
 图5.3 资产分类信息管理界面
 ## 5.4 资产信息管理
 系统管理员可以查看对资产信息进行添加，修改，删除以及查询操作，还可以对资产信息进行统计。具体界面如图5.2所示。
 
-![](/images/0100stringboot/0116springboot/blog.013.png)
+![](/images/0100wxapp//blog.013.png)
 
 图5.4 资产信息信息管理界面
 ## 5.5 资产信息添加
 系统管理员可以查看资产信息添加。具体界面如图5.2所示。
 
-![](/images/0100stringboot/0116springboot/blog.014.png)
+![](/images/0100wxapp//blog.014.png)
 
 图5.5 资产信息添加界面
 ## 5.6 资产借出统计
 系统管理员可以查看对资产借出信息进行统计。具体界面如图5.2所示。
 
-![](/images/0100stringboot/0116springboot/blog.015.png)
+![](/images/0100wxapp//blog.015.png)
 
 图5.6 资产借出统计界面
 
@@ -501,19 +500,19 @@ MyBatis本是apache的一个开源项目iBatis,2010年这个项目由apache soft
 ## 5.7 资产归还审核
 管理员可以对资产归还进行审核操作。界面如下图所示：
 
-![](/images/0100stringboot/0116springboot/blog.016.png)
+![](/images/0100wxapp//blog.016.png)
 
 图5.7 资产归还管理界面
 ## 5.8 资产维修管理
 管理员可以对资产维修进行添加，修改，删除，查询操作。界面如下图所示：
 
-![](/images/0100stringboot/0116springboot/blog.017.png)
+![](/images/0100wxapp//blog.017.png)
 
 图5.8 资产维修管理界面
 ## 5.9 资产维修添加
 管理员可以对资产维修进行添加操作。界面如下图所示：
 
-![](/images/0100stringboot/0116springboot/blog.018.png)
+![](/images/0100wxapp//blog.018.png)
 
 图5.8 资产维修添加界面
 

@@ -1,17 +1,16 @@
 # 0054springboot服装生产管理的设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0054springboot服装生产管理的设计与实现](https://github.com/GraduationProject-springboot/0054springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV16ia6epENY?p=55)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
 
@@ -142,32 +141,32 @@ Web服务
 
 请求
 
-![](/images/0000stringboot/0054springboot/blog.001.png)
+![](/images/0000wxapp//blog.001.png)
 
 图3-1系统技术框架图
 ## 3.5 系统流程分析
 ### 3.5.1开发流程
 协力服装厂服装生产管理系统的开发也是有对应的流程，开发之前必须要进行用户功能需求的分析，最后根据功能需求进行网站设计还有数据库相关数据的设计工作，此次开发的协力服装厂服装生产管理系统开发流程如图3-2所示。
 
-![D:\用户目录\Documents\Tencent Files\736505925\FileRecv\DSH}\_\_@$MA6E\_E[YBHK0`JA.png](/images/0000stringboot/0054springboot/blog.002.png "DSH}\_\_@$MA6E\_E[YBHK0`JA")
+![D:\用户目录\Documents\Tencent Files\736505925\FileRecv\DSH}\_\_@$MA6E\_E[YBHK0`JA.png](/images/0000wxapp//blog.002.png "DSH}\_\_@$MA6E\_E[YBHK0`JA")
 
 图3-2 开发流程图
 ### 3.5.2登录流程
 用户要想在协力服装厂服装生产管理系统中进行参与操作，必须登录系统，用户登录流程图如图3-3所示。
 
-![](/images/0000stringboot/0054springboot/blog.003.png)
+![](/images/0000wxapp//blog.003.png)
 
 图3-3登录流程图
 ### 3.5.3 注册流程
 未有账号的用户可进行注册操作，注册流程图如图3-4所示。
 
-![](/images/0000stringboot/0054springboot/blog.004.png)
+![](/images/0000wxapp//blog.004.png)
 
 图3-4 注册流程图
 ### 3.5.4添加信息流程
 在添加信息时，系统首先判断信息是否合法，合法则添加成功，反之重新输入。添加信息流程图如图3-5所示。
 
-![](/images/0000stringboot/0054springboot/blog.005.png)
+![](/images/0000wxapp//blog.005.png)
 
 图3-5 添加信息流程图
 
@@ -178,20 +177,20 @@ Web服务
 ## 4.1 系统结构设计
 在结构设计过程中，首先对系统进行需求分析，然后进行系统初步设计，将系统功能模块细化，具体分析每一个功能模块具体应该首先哪些功能，最后将各个模块进行整合，实现系统结构的最终设计。本协力服装厂服装生产管理系统结构设计如图4-1所示。
 
-![](/images/0000stringboot/0054springboot/blog.006.png)
+![](/images/0000wxapp//blog.006.png)
 
 图4-1 系统结构图
 ## 4.2 系统顺序图设计
 ### 4.2.1登录模块顺序图
 登录模块主要满足了管理员和用户的权限登录，登录模块的顺序图如图 4-2 所示。
 
-![](/images/0000stringboot/0054springboot/blog.007.png)
+![](/images/0000wxapp//blog.007.png)
 
 图4-2登录顺序图
 ### 4.2.2添加信息模块顺序图
 管理员和用户登录后均可进行信息的添加操作，添加信息顺序图如图4-3所示
 
-![](/images/0000stringboot/0054springboot/blog.008.png)
+![](/images/0000wxapp//blog.008.png)
 
 图4-3添加信息顺序图
 ## 4.3 系统数据库设计
@@ -207,31 +206,31 @@ E-R图是一种描述显示数据类型间的关系的数据描述方法，E-R�
 
 （1）管理员信息实体E-R图如图4-4所示：
 
-![](/images/0000stringboot/0054springboot/blog.009.png)
+![](/images/0000wxapp//blog.009.png)
 
 图4-4 管理员信息实体E-R图
 
 （2）用户信息实体E-R图如图4-5所示：
 
-![](/images/0000stringboot/0054springboot/blog.010.png)
+![](/images/0000wxapp//blog.010.png)
 
 图4-5  用户信息实体E-R图
 
 （3）样板信息实体E-R图如图4-6所示：
 
-![](/images/0000stringboot/0054springboot/blog.011.png)
+![](/images/0000wxapp//blog.011.png)
 
 图4-6  样板信息实体E-R图
 
 （4）考勤信息实体E-R图如图4-7所示：
 
-![](/images/0000stringboot/0054springboot/blog.012.png)
+![](/images/0000wxapp//blog.012.png)
 
 图4-7 考勤信息实体E-R图
 
 （5）工资信息实体E-R图如图4-8所示：
 
-![](/images/0000stringboot/0054springboot/blog.013.png)
+![](/images/0000wxapp//blog.013.png)
 
 图4-8  工资信息实体E-R图
 ### 4.3.2 数据库表设计
@@ -314,59 +313,59 @@ E-R图是一种描述显示数据类型间的关系的数据描述方法，E-R�
 ## 5.1 登录界面的实现
 用户要想进入本系统必须进行登录操作，进入对应角色登录界面，在登录界面输入系统账号、登录密码，选择登录类型，点击登录按钮进行登录系统，管理员登录界面展示如图5-1所示，用户登录界面展示如图5-2所示。
 
-![](/images/0000stringboot/0054springboot/blog.014.png)
+![](/images/0000wxapp//blog.014.png)
 
 图5-1  管理员登录界面图
 
-![](/images/0000stringboot/0054springboot/blog.015.png)
+![](/images/0000wxapp//blog.015.png)
 
 图5-2用户登录界面图
 ## 5.2 系统主界面的实现
 用户在系统前台可查看系统信息，包括首页、人事安排以及样板等，系统主界面展示如图5-3所示。
 
-![](/images/0000stringboot/0054springboot/blog.016.png)
+![](/images/0000wxapp//blog.016.png)
 
 图5-3 系统主界面图
 ## 5.3 用户管理模块的实现
 管理员登录后可查询、添加、修改和删除用户信息，用户管理界面展示如图5-4所示。
 
-![](/images/0000stringboot/0054springboot/blog.017.png)
+![](/images/0000wxapp//blog.017.png)
 
 图5-4 用户管理界面图
 ## 5.4 人事安排管理模块的实现
 管理员可增删改查人事安排信息，人事安排管理界面展示如图5-5所示。
 
-![](/images/0000stringboot/0054springboot/blog.018.png)
+![](/images/0000wxapp//blog.018.png)
 
 图5-5  人事安排管理界面图
 ## 5.5 工资管理模块的实现
 管理员可增删改查工资信息，用户登录后可查看个人工资信息，工资管理界面展示如图5-6所示，添加工资界面展示如图5-7所示，工资查询界面展示如图5-8所示。
 
-![](/images/0000stringboot/0054springboot/blog.019.png)
+![](/images/0000wxapp//blog.019.png)
 
 图5-6  工资管理界面图
 
-![](/images/0000stringboot/0054springboot/blog.020.png)
+![](/images/0000wxapp//blog.020.png)
 
 图5-7 添加工资界面图
 
-![](/images/0000stringboot/0054springboot/blog.021.png)
+![](/images/0000wxapp//blog.021.png)
 
 图5-8 工资查询界面图
 ## 5.6 考勤管理模块的实现
 用户登录后可添加考勤信息，管理员可查看用户添加的考勤，并可对其进行审核操作，添加考勤界面展示如图5-9所示。考勤管理界面展示如图5-10所示
 
-![](/images/0000stringboot/0054springboot/blog.022.png)
+![](/images/0000wxapp//blog.022.png)
 
 图5-9 添加考勤界面图
 
-![](/images/0000stringboot/0054springboot/blog.023.png)
+![](/images/0000wxapp//blog.023.png)
 
 图5-10  考勤管理界面图
 ## 5.7 样板管理模块的实现
 管理员可增删改查样板信息，样板管理界面展示如图5-11所示。
 
-![](/images/0000stringboot/0054springboot/blog.024.png)
+![](/images/0000wxapp//blog.024.png)
 
 图5-11 样板管理界面图
 #

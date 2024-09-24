@@ -1,17 +1,16 @@
 # 0235springboot基于springboot在线课程管理系统的设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0235springboot基于springboot在线课程管理系统的设计与实现](https://github.com/GraduationProject-springboot/0235springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1EbH?p=6)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
 
@@ -71,25 +70,25 @@ Spring Boot适合初学者，也适合从以前的Spring框架开发者学习，
 ## 3.2系统流程分析
 从系统的角色上分析，每个用户角色都代表了不同的账号身份，而不同的身份则代表着功能的异同，所以首先要区分用户的角色身份问题。设置用户登录需要输入账号和密码，输入的信息必须与数据库里已经存在的账号密码信息进行比对，只有正确的账号和密码才可以进行下一步的页面显示操作，如果不正确的账号密码，则拒绝用户登录，也代表着用户没有继续访问的权限，系统是无法继续提供服务的[7]。如图3.1
 
-![](/images/0200stringboot/0235springboot/blog.004.png)
+![](/images/0200wxapp//blog.004.png)
 
 图3.1 操作流程图
 
 任何一个系统都有一个操作流程，本设计里面，对于任何数据的存储都有一定的合法要求，只有符合设定要求的数据才可以进行存储。如图3.2。
 
-![](/images/0200stringboot/0235springboot/blog.005.png)
+![](/images/0200wxapp//blog.005.png)
 
 图3.2 添加信息流程图
 
 数据的存储并不是一成不变的，当需要对已经存在的数据进行改变的时候，同样也遵循着操作流程，想更改数据首先要确定更改之前的数据是什么，然后输入新的数据是否合法，都要符合流程，只有合法数据才可以被更新到数据库里存储。如图3.3。
 
-![](/images/0200stringboot/0235springboot/blog.006.png)
+![](/images/0200wxapp//blog.006.png)
 
 图3.3 修改信息流程图
 
 删除操作，在数据存储方面是一件比较慎重的事件，很有可能会产生失误操作，所以一般删除操作的时候都要提示是否删除，确定删除才会更新数据库内容，实现删除目的。如图3.4。
 
-![](/images/0200stringboot/0235springboot/blog.007.png)
+![](/images/0200wxapp//blog.007.png)
 
 图3.4 删除信息流程图
 
@@ -106,19 +105,19 @@ Spring Boot适合初学者，也适合从以前的Spring框架开发者学习，
 
 管理员用例图的绘制结果见图3.5。管理员登录进入本系统操作的功能包括对教学计划，通知公告，教师，学生，课程信息进行增删改查，以及管理课程收藏和课程留言，管理班级等信息。
 
-![](/images/0200stringboot/0235springboot/blog.008.png)
+![](/images/0200wxapp//blog.008.png)
 
 图3.5 管理员用例图
 
 教师用例图的绘制结果见图3.6。教师登录进入本系统操作的功能包括新增教学计划，新增课程信息，对学生的课程留言进行回复，查看通知公告。
 
-![](/images/0200stringboot/0235springboot/blog.009.png)
+![](/images/0200wxapp//blog.009.png)
 
 图3.6 教师用例图
 
 学生用例图的绘制结果见图3.7。学生登录进入本系统操作的功能包括观看课程视频，查看课程知识，对课程留言，查看通知公告，更改个人信息。
 
-![](/images/0200stringboot/0235springboot/blog.010.png)
+![](/images/0200wxapp//blog.010.png)
 
 图3.7 学生用例图
 #
@@ -140,19 +139,19 @@ Spring Boot适合初学者，也适合从以前的Spring框架开发者学习，
 
 管理员功能结构图的绘制结果见图4.1。管理员登录进入本系统操作的功能包括对教学计划，通知公告，教师，学生，课程信息进行增删改查，以及管理课程收藏和课程留言，管理班级等信息。
 
-![](/images/0200stringboot/0235springboot/blog.011.png)
+![](/images/0200wxapp//blog.011.png)
 
 图4.1 管理员功能结构图
 
 教师功能结构图的绘制结果见图4.2。教师登录进入本系统操作的功能包括新增教学计划，新增课程信息，对学生的课程留言进行回复，查看通知公告。
 
-![](/images/0200stringboot/0235springboot/blog.012.png)
+![](/images/0200wxapp//blog.012.png)
 
 图4.2 教师功能结构图
 
 学生功能结构图的绘制结果见图4.3。学生登录进入本系统操作的功能包括观看课程视频，查看课程知识，对课程留言，查看通知公告，更改个人信息。
 
-![](/images/0200stringboot/0235springboot/blog.013.png)
+![](/images/0200wxapp//blog.013.png)
 
 图4.3 学生功能结构图
 
@@ -163,31 +162,31 @@ Spring Boot适合初学者，也适合从以前的Spring框架开发者学习，
 
 1. 使用Visio这样的常用的实体属性图绘制工具来绘制教师实体属性图，绘制结果见图4.3。
 
-![](/images/0200stringboot/0235springboot/blog.014.png)
+![](/images/0200wxapp//blog.014.png)
 
 图4.3 教师实体属性图
 
 1. 使用Visio这样的常用的实体属性图绘制工具来绘制课程实体属性图，绘制结果见图4.4。
 
-![](/images/0200stringboot/0235springboot/blog.015.png)
+![](/images/0200wxapp//blog.015.png)
 
 图4.4 课程实体属性图
 
 1. 使用Visio这样的常用的实体属性图绘制工具来绘制教学计划实体属性图，绘制结果见图4.5。
 
-![](/images/0200stringboot/0235springboot/blog.016.png)
+![](/images/0200wxapp//blog.016.png)
 
 图4.5 教学计划实体属性图
 
 1. 使用Visio这样的常用的实体属性图绘制工具来绘制学生实体属性图，绘制结果见图4.6。
 
-![](/images/0200stringboot/0235springboot/blog.017.png)
+![](/images/0200wxapp//blog.017.png)
 
 图4.6 学生实体属性图
 
 1. 绘制的上述实体间存在的联系见图4.7。
 
-![](/images/0200stringboot/0235springboot/blog.018.png)
+![](/images/0200wxapp//blog.018.png)
 
 图4.7 实体间关系E-R图
 
@@ -204,7 +203,7 @@ Spring Boot适合初学者，也适合从以前的Spring框架开发者学习，
 
 通过上节内容可以知晓数据库中的各个实体，并通过一定方式把这些实体表示的内容进行数据表的转换，通常来说，每个实体都会对应一张具体的数据表，在本系统指定的数据库中创建命名好的数据库，才可以对数据表进行创建与设计。在线课程管理系统数据表设计结果展示如表4.1,表4.2，表4.3，表4.4，表4.5，表4.6，表4.7，表4.8：
 
-![打开新的 phpMyAdmin 窗口](/images/0200stringboot/0235springboot/blog.019.png)表4.1 通知公告表
+![打开新的 phpMyAdmin 窗口](/images/0200wxapp//blog.019.png)表4.1 通知公告表
 
 |字段|注释|类型|空|
 | :-: | :-: | :-: | :-: |
@@ -324,7 +323,7 @@ Spring Boot适合初学者，也适合从以前的Spring框架开发者学习，
 |banji\_types|班级 |int(11)|是|
 |xuesheng\_email|电子邮箱|varchar(200)|是|
 |create\_time|创建时间|timestamp|是|
-![打开新的 phpMyAdmin 窗口](/images/0200stringboot/0235springboot/blog.019.png)
+![打开新的 phpMyAdmin 窗口](/images/0200wxapp//blog.019.png)
 #
 第 5 章 系统实现
 #
@@ -336,7 +335,7 @@ Spring Boot适合初学者，也适合从以前的Spring框架开发者学习，
 ### 5.1.1 通知公告管理
 管理员进入如图5.1所示的通知公告管理界面之后，管理员点击信息显示栏中最右侧的修改，删除按钮可依次完成通知公告信息的修改，删除等操作。通知公告信息有通知公告名称，通知公告内容等信息[12]。
 
-![](/images/0200stringboot/0235springboot/blog.020.png)
+![](/images/0200wxapp//blog.020.png)
 
 图5.1 通知公告管理界面
 
@@ -367,7 +366,7 @@ public R save(@RequestBody GonggaoEntity gonggao, HttpServletRequest request){
 
 
 
-![](/images/0200stringboot/0235springboot/blog.021.png)
+![](/images/0200wxapp//blog.021.png)
 
 图5.2 教师管理界面
 
@@ -380,7 +379,7 @@ public R delete(@RequestBody Integer[] ids){
 ### 5.1.3 学生管理
 管理员进入如图5.3所示的学生管理界面之后，管理员点击信息显示栏中最右侧的修改，删除按钮可依次完成学生信息的修改，删除等操作。学生的账号密码，管理员也能重置。
 
-![](/images/0200stringboot/0235springboot/blog.022.png)
+![](/images/0200wxapp//blog.022.png)
 
 图5.3 学生管理界面
 
@@ -395,7 +394,7 @@ public R delete(@RequestBody Integer[] ids){
 ### 5.2.1 教学计划管理
 教师进入如图5.4所示的教学计划管理界面之后，教师点击信息显示栏中最右侧的修改，删除按钮可依次完成教学计划信息的修改，删除等操作。教学计划信息包括教学计划文件，教学计划名称，教学计划编号等信息，教师可以添加教学计划。
 
-![](/images/0200stringboot/0235springboot/blog.023.png)
+![](/images/0200wxapp//blog.023.png)
 
 图5.4 教学计划管理界面
 
@@ -432,7 +431,7 @@ public R save(@RequestBody JiaoxuejihuaEntity jiaoxuejihua, HttpServletRequest r
 ### 5.2.2 课程管理
 教师进入如图5.5所示的课程管理界面之后，教师点击信息显示栏中最右侧的修改，删除，下架按钮可依次完成课程信息的修改，删除，下架等操作。课程信息包括课程热度，课程视频，课程编号，课程名称等信息。教师也能添加课程[13]。
 
-![](/images/0200stringboot/0235springboot/blog.024.png)
+![](/images/0200wxapp//blog.024.png)
 
 图5.5 课程管理界面
 
@@ -473,7 +472,7 @@ public R save(@RequestBody KechengEntity kecheng, HttpServletRequest request){
 ### 5.2.3 课程留言管理
 教师进入如图5.6所示的课程留言管理界面之后，教师点击信息显示栏中最右侧的详情，回复按钮可依次完成课程留言信息的详情查看，留言回复等操作。
 
-![](/images/0200stringboot/0235springboot/blog.025.png)
+![](/images/0200wxapp//blog.025.png)
 
 图5.6 课程留言管理界面
 
@@ -506,21 +505,21 @@ public R update(@RequestBody KechengLiuyanEntity kechengLiuyan, HttpServletReque
 ### 5.3.1 课程信息
 学生进入如图5.7所示的课程信息界面之后，学生通过播放课程视频的方式学习课程知识，学生也能查看课程的知识要点，考试大纲等信息，还可以发布课程的留言信息。
 
-![](/images/0200stringboot/0235springboot/blog.026.png)
+![](/images/0200wxapp//blog.026.png)
 
 图5-7 课程信息界面
 
 ### 5.3.2 通知公告
 学生进入如图5.8所示的通知公告界面之后，学生根据通知公告类型筛选通知公告信息，学生可以查看通知公告的具体内容。
 
-![](/images/0200stringboot/0235springboot/blog.027.png)
+![](/images/0200wxapp//blog.027.png)
 
 图5-8 通知公告界面
 
 ### 5.3.3 更改个人信息
 学生进入如图5.9所示的更改个人信息界面之后，学生重新上传头像来替换现有的头像，以及对电子邮箱，手机号等产生变化的数据进行更改，更改了数据之后，需要学生点击更新信息按钮来保存更改的数据。
 
-![](/images/0200stringboot/0235springboot/blog.028.png)
+![](/images/0200wxapp//blog.028.png)
 
 图5.9 更改个人信息界面
 

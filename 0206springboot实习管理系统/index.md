@@ -1,17 +1,16 @@
 # 0206springboot实习管理系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0206springboot实习管理系统](https://github.com/GraduationProject-springboot/0206springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)]()
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
 ## 1.1研究背景与意义
@@ -124,7 +123,7 @@ Java语言具有跨平台性，本系统主要通过Java语言进行编码实现
 
 公告删除
 
-![](/images/0200stringboot/0206springboot/blog.002.png)
+![](/images/0200wxapp//blog.002.png)
 
 图4-1系统总体功能设计图
 
@@ -138,52 +137,52 @@ Java语言具有跨平台性，本系统主要通过Java语言进行编码实现
 
 （1）下图是实习分享留言实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shixiguanlixitong\实习分享留言.jpg](/images/0200stringboot/0206springboot/blog.003.jpeg)
+![C:\Users\Administrator\Desktop\img\shixiguanlixitong\实习分享留言.jpg](/images/0200wxapp//blog.003.jpeg)
 图4.1 实习分享留言实体属性图
 
 （2）下图是实习成绩实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shixiguanlixitong\实习成绩.jpg](/images/0200stringboot/0206springboot/blog.004.jpeg)
+![C:\Users\Administrator\Desktop\img\shixiguanlixitong\实习成绩.jpg](/images/0200wxapp//blog.004.jpeg)
 图4.2 实习成绩实体属性图
 
 （3）下图是老师实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shixiguanlixitong\老师.jpg](/images/0200stringboot/0206springboot/blog.004.jpeg)
+![C:\Users\Administrator\Desktop\img\shixiguanlixitong\老师.jpg](/images/0200wxapp//blog.004.jpeg)
 图4.3 老师实体属性图
 
 （4）下图是实习实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shixiguanlixitong\实习.jpg](/images/0200stringboot/0206springboot/blog.004.jpeg)
+![C:\Users\Administrator\Desktop\img\shixiguanlixitong\实习.jpg](/images/0200wxapp//blog.004.jpeg)
 图4.4 实习实体属性图
 
 （5）下图是实习周报实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shixiguanlixitong\实习周报.jpg](/images/0200stringboot/0206springboot/blog.004.jpeg)
+![C:\Users\Administrator\Desktop\img\shixiguanlixitong\实习周报.jpg](/images/0200wxapp//blog.004.jpeg)
 图4.5 实习周报实体属性图
 
 （6）下图是实习分享收藏实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shixiguanlixitong\实习分享收藏.jpg](/images/0200stringboot/0206springboot/blog.003.jpeg)
+![C:\Users\Administrator\Desktop\img\shixiguanlixitong\实习分享收藏.jpg](/images/0200wxapp//blog.003.jpeg)
 图4.6 实习分享收藏实体属性图
 
 （7）下图是论坛实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shixiguanlixitong\论坛.jpg](/images/0200stringboot/0206springboot/blog.004.jpeg)
+![C:\Users\Administrator\Desktop\img\shixiguanlixitong\论坛.jpg](/images/0200wxapp//blog.004.jpeg)
 图4.7 论坛实体属性图
 
 （8）下图是实习分享实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shixiguanlixitong\实习分享.jpg](/images/0200stringboot/0206springboot/blog.004.jpeg)
+![C:\Users\Administrator\Desktop\img\shixiguanlixitong\实习分享.jpg](/images/0200wxapp//blog.004.jpeg)
 图4.8 实习分享实体属性图
 
 （9）下图是学生实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shixiguanlixitong\学生.jpg](/images/0200stringboot/0206springboot/blog.004.jpeg)
+![C:\Users\Administrator\Desktop\img\shixiguanlixitong\学生.jpg](/images/0200wxapp//blog.004.jpeg)
 图4.9 学生实体属性图
 
 （10）下图是公告实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shixiguanlixitong\公告.jpg](/images/0200stringboot/0206springboot/blog.003.jpeg)
+![C:\Users\Administrator\Desktop\img\shixiguanlixitong\公告.jpg](/images/0200wxapp//blog.003.jpeg)
 图4.10 公告实体属性图
 
 ### 4.2.2逻辑设计
@@ -355,26 +354,26 @@ Java语言具有跨平台性，本系统主要通过Java语言进行编码实现
 ### 5.1.1管理员登录
 管理员可以选择任一浏览器打开网址，输入信息无误后，以管理员的身份行使相关的管理权限，管理员登录界面设计如图5-1所示。
 
-![](/images/0200stringboot/0206springboot/blog.005.png)
+![](/images/0200wxapp//blog.005.png)
 
 图5-1管理员登录界面
 ### 5.1.2实习管理
 管理员可以通过选择实习管理，管理相关的实习信息记录，比如进行查看实习信息标题，修改实习信息来源等操作，实习管理界面设计如图5-2所示。
 
-![](/images/0200stringboot/0206springboot/blog.006.png)
+![](/images/0200wxapp//blog.006.png)
 
 图5-2实习管理界面
 
 ### 5.1.3公告管理
 管理员可以通过选择公告管理，管理相关的公告信息记录，比如进行查看公告详情,删除错误的公告信息,发布公告等操作，公告管理界面如图5-3所示。
 
-![](/images/0200stringboot/0206springboot/blog.007.png)
+![](/images/0200wxapp//blog.007.png)
 
 图5-3 公告管理界面
 ### 5.1.4公告类型管理
 管理员可以通过选择公告类型管理，管理相关的公告类型信息，比如查看所有公告类型,删除无用公告类型,修改公告类型,添加公告类型等操作，公告类型管理界面设计如图5-4所示。
 
-![](/images/0200stringboot/0206springboot/blog.008.png)
+![](/images/0200wxapp//blog.008.png)
 
 图5-4会员管理界面
 # 系

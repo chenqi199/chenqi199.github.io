@@ -1,17 +1,16 @@
 # 0093springboot酒店客房管理系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0093springboot酒店客房管理系统](https://github.com/GraduationProject-springboot/0093springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV16ia6epENY?p=94)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 系统概述
 1.1 研究背景
@@ -135,11 +134,11 @@ Vue 的目标是通过尽可能简单的 API 实现响应的数据绑定和组�
 
 4）输入数据尽早地记录成其处理所需的形式，以防止数据由一种介质转移到另一种介质时需要转录而可能发生的错误。
 ## 3.4系统流程和逻辑
-![](/images/0000stringboot/0093springboot/blog.001.png)
+![](/images/0000wxapp//blog.001.png)
 
 图3-3登录流程图
 
-![](/images/0000stringboot/0093springboot/blog.002.png)
+![](/images/0000wxapp//blog.002.png)
 
 图3-4修改密码流程图
 
@@ -147,13 +146,13 @@ Vue 的目标是通过尽可能简单的 API 实现响应的数据绑定和组�
 ## 4.1概述
 本系统采用B/S结构(Browser/Server,浏览器/服务器结构)和基于Web服务两种模式，是一个适用于Internet环境下的模型结构。只要用户能连上Internet,便可以在任何时间、任何地点使用。系统工作原理图如图4-1所示：
 
-![](/images/0000stringboot/0093springboot/blog.003.png)
+![](/images/0000wxapp//blog.003.png)
 
 图4-1系统工作原理图
 ## 4.2系统结构
 本系统是基于B/S架构的网站系统，设计的功能结构图如下图所示：
 
-![](/images/0000stringboot/0093springboot/blog.004.png)
+![](/images/0000wxapp//blog.004.png)
 
 图4-2功能结构图
 
@@ -165,19 +164,19 @@ Vue 的目标是通过尽可能简单的 API 实现响应的数据绑定和组�
 
 （1）留言板信息的实体属性图如下：
 
-![](/images/0000stringboot/0093springboot/blog.005.png)
+![](/images/0000wxapp//blog.005.png)
 
 图4.12  留言板信息实体属性图
 
 （2）客服信息实体属性图如图4.13所示：
 
-![](/images/0000stringboot/0093springboot/blog.006.png)
+![](/images/0000wxapp//blog.006.png)
 
 图4.13  客服信息实体属性图
 
 （3）酒店资讯信息实体属性图如图4.14所示：
 
-![](/images/0000stringboot/0093springboot/blog.007.png)
+![](/images/0000wxapp//blog.007.png)
 
 图4.14 酒店资讯信息实体属性图
 ### 4.3.2数据库设计表
@@ -475,38 +474,38 @@ Vue 的目标是通过尽可能简单的 API 实现响应的数据绑定和组�
 ## 5.1 用户信息管理
 酒店客房管理系统的系统管理员可以管理用户信息，可以对用户信息信息添加修改删除以及查询操作。具体界面的展示如图5.1所示。
 
-![](/images/0000stringboot/0093springboot/blog.010.png)
+![](/images/0000wxapp//blog.010.png)
 
 图5.1 用户信息信息管理界面
 ## 5.2 会员信息管理
 系统管理员可以查看对会员信息信息进行添加，修改，删除以及查询操作。具体界面如图5.2所示。
 
-![](/images/0000stringboot/0093springboot/blog.011.png)
+![](/images/0000wxapp//blog.011.png)
 
 图5.2 会员信息信息管理界面
 ## 5.3 客房信息管理
 管理员可以对客房信息信息进行修改，删除以及查询操作。界面如下图所示：
 
-![](/images/0000stringboot/0093springboot/blog.012.png)
+![](/images/0000wxapp//blog.012.png)
 
 图5.3 客房信息信息管理界面
 ## 5.4 收藏客房管理
 用户登录后可以对客房信息进行收藏，预定。界面如下图所示：
 
-![](/images/0000stringboot/0093springboot/blog.013.png)
+![](/images/0000wxapp//blog.013.png)
 
 图5.4 收藏客房管理界面
 
 ## 5.5 用户入住管理
 管理员可以对用户入住信息进行管理，可以添加，修改，删除以及清扫。界面如下图所示：
 
-![](/images/0000stringboot/0093springboot/blog.014.png)
+![](/images/0000wxapp//blog.014.png)
 
 图5.5 用户入住界面
 ## 5.6 客房清扫管理
 清洁人员登录可以对用户入住的客房进行清扫。界面如下图所示：
 
-![](/images/0000stringboot/0093springboot/blog.015.png)
+![](/images/0000wxapp//blog.015.png)
 
 图5.6 客房清扫界面
 

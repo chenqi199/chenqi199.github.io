@@ -1,17 +1,16 @@
 # 0160springboot公交线路查询系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0160springboot公交线路查询系统](https://github.com/GraduationProject-springboot/0160springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1ECs?p=58)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 绪论
 ## 1.1 研究背景
@@ -82,25 +81,25 @@ SpringBoot可以与经典的Java开发工具一起使用或者作为命令行工
 ## 3.3系统流程分析
 分析程序的流程，涉及到程序的整体操作流程，通过分析与设计，绘制的程序操作流程图见下图。此程序为了确保安全，会让使用者通过登录模块验证信息，符合要求的使用者才有权限操作程序。
 
-![](/images/0100stringboot/0160springboot/blog.001.png)
+![](/images/0100wxapp//blog.001.png)
 
 图3-1 程序操作流程图
 
 程序处理数据会涉及到数据的录入环节，绘制的添加流程见下图。程序录入数据过程中，始终与数据库保持同步。
 
-![](/images/0100stringboot/0160springboot/blog.002.png)
+![](/images/0100wxapp//blog.002.png)
 
 图3-2 信息添加流程图
 
 程序里面的数据也会出现错误，因此就有相应的修改数据的功能，绘制的程序修改流程见下图。此过程也是跟后台数据库进行数据同步显示。
 
-![](/images/0100stringboot/0160springboot/blog.003.png)
+![](/images/0100wxapp//blog.003.png)
 
 图3-3信息修改流程图
 
 程序数据存放于数据仓库，有时也会涉及到数据删除，此过程对应的流程图见下图。数据信息被删除之后，数据库里面也就没有了该数据信息了。
 
-![](/images/0100stringboot/0160springboot/blog.004.png)
+![](/images/0100wxapp//blog.004.png)
 
 图3-4 信息删除流程图
 
@@ -124,7 +123,7 @@ SpringBoot可以与经典的Java开发工具一起使用或者作为命令行工
 ## 4.2 功能结构设计
 在管理员功能模块确定下来的基础上，对管理员各个功能进行设计，确定管理员功能的详细模块。绘制的管理员功能结构见下图。管理员功能有个人中心，用户管理，图书分类管理，图书信息管理，订单管理，系统管理。
 
-![](/images/0100stringboot/0160springboot/blog.005.png)
+![](/images/0100wxapp//blog.005.png)
 
 图4-2 管理员功能结构图
 ## 4.3 数据库设计
@@ -134,19 +133,19 @@ SpringBoot可以与经典的Java开发工具一起使用或者作为命令行工
 
 （1）管理员实体属性图通过Visio工具绘制，绘制结果展示如下：
 
-![](/images/0100stringboot/0160springboot/blog.006.png)
+![](/images/0100wxapp//blog.006.png)
 
 图4-4 管理员实体属性图
 
 （2）用户实体属性图通过Visio工具绘制，绘制结果展示如下：
 
-![](/images/0100stringboot/0160springboot/blog.007.png)
+![](/images/0100wxapp//blog.007.png)
 
 图4-5 用户实体属性图
 
 （3）网站公告实体属性图通过Visio工具绘制，绘制结果展示如下：
 
-![](/images/0100stringboot/0160springboot/blog.008.png)
+![](/images/0100wxapp//blog.008.png)
 
 图4-6 网站公告实体属性图
 ### 4.3.2 数据库表结构
@@ -284,50 +283,50 @@ SpringBoot可以与经典的Java开发工具一起使用或者作为命令行工
 ### 5.1.1 用户管理
 管理员可以对用户信息进行添加，修改，删除，查询操作。
 
-![](/images/0100stringboot/0160springboot/blog.009.png)
+![](/images/0100wxapp//blog.009.png)
 
 图5-1 用户管理页面
 ### 5.1.2 公交线路管理
 管理员可以对公交线路信息进行添加，修改，删除，查询操作。
 
-![](/images/0100stringboot/0160springboot/blog.010.png)
+![](/images/0100wxapp//blog.010.png)
 
 图5-2 公交线路管理页面
 ### 5.1.3 网站公告管理
 管理员可以对网站公告信息进行添加，修改，删除，查询操作。
 
-![](/images/0100stringboot/0160springboot/blog.011.png)
+![](/images/0100wxapp//blog.011.png)
 
 图5-3 网站公告管理页面
 ### 5.1.4 友情链接管理
 管理员可以对友情链接信息进行添加，修改，删除，查询操作。
 
-![](/images/0100stringboot/0160springboot/blog.012.png)
+![](/images/0100wxapp//blog.012.png)
 
 图5-4 友情链接管理页面
 ## 5.2 用户功能实现
 ### 5.2.1 用户注册
 用户想要登录系统需要先进行注册，注册账号不能重复。
 
-![](/images/0100stringboot/0160springboot/blog.013.png)
+![](/images/0100wxapp//blog.013.png)
 
 图5-5 用户注册页面
 ### 5.2.2 用户登录
 用户注册成功后在登录界面需要输入正确的账号密码才可以登录。
 
-![](/images/0100stringboot/0160springboot/blog.014.png)
+![](/images/0100wxapp//blog.014.png)
 
 图5-6 用户登录页面
 ### 5.2.3 公交线路详情
 用户可以查看公交线路查询，可以收藏和评论公交线路。
 
-![](/images/0100stringboot/0160springboot/blog.015.png)
+![](/images/0100wxapp//blog.015.png)
 
 图5-7 公交线路详情页面
 ### 5.2.4 我的收藏
 用户收藏过的图书信息可以在我的收藏里查看查询和删除。
 
-![](/images/0100stringboot/0160springboot/blog.016.png)
+![](/images/0100wxapp//blog.016.png)
 
 图5-8 我的收藏页面
 

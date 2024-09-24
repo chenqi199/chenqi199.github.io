@@ -1,17 +1,16 @@
 # 0665springbootjava学习平台--论文
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0665springbootjava学习平台--论文](https://github.com/GraduationProject-springboot/0665springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV14HerezEwW?p=21)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)]()
 
 # 课题背景与意义
 在Internet高速发展的今天，计算机的应用几乎完全覆盖我们生活的各个领域，互联网在经济，生活等方面有着举足轻重的地位，成为人们资源共享，信息快速传递的重要渠道。在中国，网上管理的兴起也同时飞速发展着。为了适应现代人类强烈的时间观念，对于学习传统管理方式的缺点，互联网的出现打破了这种局限性，给了广大用户更大的选择空间，促进了平台的管理，有效的避免了学习信息缭乱的局面，方便用户。本平台中，管理员可以以最方便的形式，在最短的时间内查找最多的学习信息。因此，系统无疑给人们的生活带来了极大的方便，网络的应用让时间和距离不再是局限。

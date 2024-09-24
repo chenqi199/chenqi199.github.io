@@ -1,17 +1,16 @@
 # 0295springboot基于个性化定制的智慧校园管理系统设计与开发
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0295springboot基于个性化定制的智慧校园管理系统设计与开发](https://github.com/GraduationProject-springboot/0295springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1EbH?p=61)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 绪论
 ## 1.1 课题背景
@@ -64,25 +63,25 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 3.2.1 操作流程
 使用者在操作智慧校园管理系统中，应该按照本系统提供的操作流程（图3.1即为本系统的操作流程图）进行操作，可以减少操作失误，从而节省进入智慧校园管理系统的时间。
 
-![](/images/0200stringboot/0295springboot/blog.001.png)
+![](/images/0200wxapp//blog.001.png)
 
 图3.1 系统操作流程
 ### 3.2.2 登录流程
 智慧校园管理系统通过登录功能（图3.2即为其登录的流程）引导使用者进入指定的功能操作区，也避免非本系统的用户享受本系统提供的服务以及查看本系统提供的信息，进而保证用户安全。
 
-![](/images/0200stringboot/0295springboot/blog.002.png)
+![](/images/0200wxapp//blog.002.png)
 
 图3.2 登录流程
 ### 3.2.3 删除信息流程
 智慧校园管理系统在经过长期使用后，会产生很多的数据信息。为了腾出存储空间存放更多的数据，本系统数据库中存储的数据，一些没有参考价值的数据需要进行删除（图3.3即为删除信息的流程），删除数据过程中，为避免误删，使用者要根据系统的提示来决定是否删除数据。
 
-![](/images/0200stringboot/0295springboot/blog.003.png)
+![](/images/0200wxapp//blog.003.png)
 
 图3.3 删除信息流程
 ### 3.2.4 添加信息流程
 智慧校园管理系统提供可视化的功能操作区，非常方便使用者进行数据操作，当使用者往系统中录入数据时（图3.4即为添加信息的流程），本系统也会进行数据合法性的判断，符合要求的数据才能够在数据库指定表中进行登记。
 
-![](/images/0200stringboot/0295springboot/blog.004.png)
+![](/images/0200wxapp//blog.004.png)
 
 图3.4 添加信息流程
 ## 3.3 性能需求
@@ -108,19 +107,19 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 图3.5即为管理员用例图，管理员权限操作的功能包括管理记事本，管理备忘录，管理软件，管理课程，管理音乐，管理宿舍，管理成绩，管理老师等。
 
-![](/images/0200stringboot/0295springboot/blog.005.png)
+![](/images/0200wxapp//blog.005.png)
 
 图3.5 管理员用例图
 
 图3.6即为老师用例图，老师权限操作的功能包括管理成绩，管理宿舍，管理宿舍归寝，管理宿舍报修，管理音乐，管理软件等。
 
-![](/images/0200stringboot/0295springboot/blog.006.png)
+![](/images/0200wxapp//blog.006.png)
 
 图3.6 老师用例图
 
 图3.7即为用户用例图，用户权限操作的功能包括下载软件安装包，观看课程视频以及软件安装视频，播放音乐，查看成绩，管理备忘录以及记事本信息，提交宿舍报修信息，查看宿舍人员信息等。
 
-![](/images/0200stringboot/0295springboot/blog.007.png)
+![](/images/0200wxapp//blog.007.png)
 
 图3.7 用户用例图
 # 第4章 系统设计
@@ -128,19 +127,19 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ## 4.1 功能结构设计
 图4.1即为设计的管理员功能结构，管理员权限操作的功能包括管理记事本，管理备忘录，管理软件，管理课程，管理音乐，管理宿舍，管理成绩，管理老师等。
 
-![](/images/0200stringboot/0295springboot/blog.008.png)
+![](/images/0200wxapp//blog.008.png)
 
 图4.1 管理员功能结构
 
 图4.2即为设计的老师功能结构，老师权限操作的功能包括管理成绩，管理宿舍，管理宿舍归寝，管理宿舍报修，管理音乐，管理软件等。
 
-![](/images/0200stringboot/0295springboot/blog.009.png)
+![](/images/0200wxapp//blog.009.png)
 
 图4.2 老师功能结构
 
 图4.3即为设计的用户功能结构，用户权限操作的功能包括下载软件安装包，观看课程视频以及软件安装视频，播放音乐，查看成绩，管理备忘录以及记事本信息，提交宿舍报修信息，查看宿舍人员信息等。
 
-![](/images/0200stringboot/0295springboot/blog.010.png)
+![](/images/0200wxapp//blog.010.png)
 
 图4.3 用户功能结构
 ## 4.2 数据库设计
@@ -150,49 +149,49 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 （1）图4.4即为宿舍报修这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0295springboot/blog.011.png)
+![](/images/0200wxapp//blog.011.png)
 
 图4.4 宿舍报修实体属性图
 
 （2）图4.5即为备忘录这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0295springboot/blog.012.png)
+![](/images/0200wxapp//blog.012.png)
 
 图4.5 备忘录实体属性图
 
 （3）图4.6即为成绩这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0295springboot/blog.013.png)
+![](/images/0200wxapp//blog.013.png)
 
 图4.6 成绩实体属性图
 
 4. 图4.7即为软件这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0295springboot/blog.014.png)
+![](/images/0200wxapp//blog.014.png)
 
 图4.7 软件实体属性图
 
 4. 图4.8即为课程这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0295springboot/blog.015.png)
+![](/images/0200wxapp//blog.015.png)
 
 图4.8 课程实体属性图
 
 4. 图4.9即为音乐这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0295springboot/blog.016.png)
+![](/images/0200wxapp//blog.016.png)
 
 图4.9 音乐实体属性图
 
 4. 图4.10即为用户这个实体所拥有的属性值。
 
-![](/images/0200stringboot/0295springboot/blog.017.png)
+![](/images/0200wxapp//blog.017.png)
 
 图4.10 用户实体属性图
 
 4. 图4.11即为上面介绍的实体中存在的联系。
 
-![](/images/0200stringboot/0295springboot/blog.018.png)
+![](/images/0200wxapp//blog.018.png)
 
 图4.11实体间关系E-R图
 ### 4.2.2 数据库物理设计
@@ -437,75 +436,75 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 5.1.1 音乐管理
 图5.1 即为编码实现的音乐管理界面，管理员下架音乐，上架音乐，修改音乐信息，包括修改音乐热度，音乐名称，音乐类型等信息，删除音乐，查询音乐等。
 
-![](/images/0200stringboot/0295springboot/blog.020.png)
+![](/images/0200wxapp//blog.020.png)
 
 图5.1 音乐管理界面
 ### 5.1.2 软件管理
 图5.2 即为编码实现的软件管理界面，管理员上传计算机专业相关的软件安装包，可以修改软件描述信息，包括软件名称，软件照片，安装教程，软件类型等信息，可以下架软件，删除软件信息等。
 
-![](/images/0200stringboot/0295springboot/blog.021.png)
+![](/images/0200wxapp//blog.021.png)
 
 图5.2 软件管理界面
 ### 5.1.3 备忘录管理
 图5.3 即为编码实现的备忘录管理界面，管理员增删改查备忘录信息，备忘录信息包括备忘录名称，备忘录类型，记录时间等信息。
 
-![](/images/0200stringboot/0295springboot/blog.022.png)
+![](/images/0200wxapp//blog.022.png)
 
 图5.3 备忘录管理界面
 ## 5.2 老师功能实现
 ### 5.2.1 宿舍管理
 图5.4 即为编码实现的宿舍管理界面，老师在宿舍管理界面录入宿舍信息，宿舍信息包括宿舍地址，宿舍名称，录入时间等信息，老师可以查询宿舍，修改宿舍信息等。
 
-![](/images/0200stringboot/0295springboot/blog.023.png)
+![](/images/0200wxapp//blog.023.png)
 
 图5.4 宿舍管理界面
 ### 5.2.2 宿舍归寝管理
 图5.5 即为编码实现的宿舍归寝管理界面，老师在宿舍归寝管理界面中登记宿舍归寝信息，宿舍归寝信息包括归寝状态，归寝日期，用户姓名等信息，老师可以修改宿舍归寝信息，查询宿舍归寝信息等。
 
-![](/images/0200stringboot/0295springboot/blog.024.png)
+![](/images/0200wxapp//blog.024.png)
 
 图5.5 宿舍归寝管理界面
 ### 5.2.3 课程管理
 图5.6 即为编码实现的课程管理界面，老师需要上传课程学习视频，上传课件，登记课程信息等，同时老师可以上架课程，下架课程，修改课程描述信息，删除课程等。
 
-![](/images/0200stringboot/0295springboot/blog.025.png)
+![](/images/0200wxapp//blog.025.png)
 
 图5.6 课程管理界面
 ### 5.2.4 成绩管理
 图5.7 即为编码实现的成绩管理界面，老师登记用户的课程成绩信息，可以修改成绩分数，查询用户成绩等。
 
-![](/images/0200stringboot/0295springboot/blog.026.png)
+![](/images/0200wxapp//blog.026.png)
 
 图5.7 成绩管理界面
 ## 5.3 用户功能实现
 ### 5.3.1 软件信息
 图5.8 即为编码实现的软件信息界面，用户下载软件安装包，查看软件安装视频，在软件信息界面的下方留言区域发布留言。
 
-![](/images/0200stringboot/0295springboot/blog.027.png)
+![](/images/0200wxapp//blog.027.png)
 
 图5.8 软件信息界面
 ### 5.3.2 课程信息
 图5.9 即为编码实现的课程信息界面，用户通过课程视频学习课程知识，可以下载课程课件，可以在课程信息界面下方的留言区域发布课程留言，可以可以收藏本界面的课程。
 
-![](/images/0200stringboot/0295springboot/blog.028.png)
+![](/images/0200wxapp//blog.028.png)
 
 图5.9 课程信息界面
 ### 5.3.3 音乐信息
 图5.10 即为编码实现的音乐信息界面，用户收听音乐，可以在音乐信息界面的下方留言区域发布音乐留言信息，可以收藏音乐，已经收藏的音乐可以取消收藏。
 
-![](/images/0200stringboot/0295springboot/blog.029.png)
+![](/images/0200wxapp//blog.029.png)
 
 图5.10 音乐信息界面
 ### 5.3.4 宿舍报修管理
 图5.11 即为编码实现的宿舍报修管理界面，用户在后台的宿舍报修管理界面提交宿舍报修信息，可以查询宿舍报修信息等。
 
-![](/images/0200stringboot/0295springboot/blog.030.png)
+![](/images/0200wxapp//blog.030.png)
 
 图5.11 宿舍报修管理界面
 ### 5.3.5 成绩查看
 图5.12 即为编码实现的成绩查看界面，用户在后台的成绩查看界面查看课程考试分数，查询课程成绩。
 
-![](/images/0200stringboot/0295springboot/blog.031.png)
+![](/images/0200wxapp//blog.031.png)
 
 图5.12 成绩查看界面
 # 

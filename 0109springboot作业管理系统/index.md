@@ -1,17 +1,16 @@
 # 0109springboot作业管理系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0109springboot作业管理系统](https://github.com/GraduationProject-springboot/0109springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1ECs?p=9)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
 ## 1.1 研究背景
@@ -96,25 +95,25 @@ SpringBoot可以与经典的Java开发工具一起使用或者作为命令行工
 ## 3.3系统流程分析
 管理员假如要操作系统提供的功能，那么管理员就要在系统的登录界面，填写管理员登录的账号信息，填写相应的密码信息，管理员需要保证这两者能够验证身份的账号以及密码信息的正确性，这样管理员就可以通过登录界面进入系统后台操作界面。图3.1就是开发的程序软件作业管理系统它的操作流程图。
 
-![](/images/0100stringboot/0109springboot/blog.001.png)
+![](/images/0100wxapp//blog.001.png)
 
 图3.1 系统操作流程图
 ### 3.3.1系统登录流程
 作业管理系统的登录流程，针对的角色就是操作员的操作角色。在登录界面需要的必填信息就是账号信息，配上登录的密码信息就能登录作业管理系统，需要注意的就是必填的账号信息和登录密码信息，都需要进行验证，系统会判断账号还有填写的密码信息的正确性，只有这两者信息都正确了，就能成功登录作业管理系统了。系统登录流程图如下图。
 
-![](/images/0100stringboot/0109springboot/blog.002.png)
+![](/images/0100wxapp//blog.002.png)
 
 图3.2　系统登录流程图
 ### 3.3.2信息添加流程
 用户在添加信息的界面填写的任何数据信息也是需要验证的，系统会判断用户填写信息的格式还有数据信息是不是合法信息，如果用户填写的信息是合法内容，系统就会在数据库对应的数据表里面添加信息。添加信息流程如下图。
 
-![](/images/0100stringboot/0109springboot/blog.003.png)
+![](/images/0100wxapp//blog.003.png)
 
 图3.3 添加信息流程图
 ### 3.3.3信息删除流程
 对于那些已经失效的信息，需要用户及时进行删除，这样有利于腾出空间存放其他信息。删除信息也是先从数据库对应数据表里面删除数据，接着就是更新数据表的信息。这样删除的数据，在用户操作界面就查看不到了。信息删除流程如下图所示。
 
-![](/images/0100stringboot/0109springboot/blog.004.png)
+![](/images/0100wxapp//blog.004.png)
 
 图3.4 信息删除流程图
 
@@ -122,13 +121,13 @@ SpringBoot可以与经典的Java开发工具一起使用或者作为命令行工
 ## 4.1系统概要设计
 作业管理系统并没有使用C/S结构，而是基于网络浏览器的方式去访问服务器，进而获取需要的数据信息，这种依靠浏览器进行数据访问的模式就是现在用得比较广泛的适用于广域网并且没有网速限制要求的B/S结构，图4.1就是开发出来的程序工作原理图。
 
-![](/images/0100stringboot/0109springboot/blog.005.png)
+![](/images/0100wxapp//blog.005.png)
 
 图4.1 程序工作的原理图
 ## 4.2系统功能结构设计
 下图就是系统功能结构图。
 
-![](/images/0100stringboot/0109springboot/blog.006.png)
+![](/images/0100wxapp//blog.006.png)
 
 图4.1 系统功能结构图
 ## 4.3数据库设计
@@ -139,19 +138,19 @@ SpringBoot可以与经典的Java开发工具一起使用或者作为命令行工
 
 （1）下图就是管理员实体E-R图
 
-![](/images/0100stringboot/0109springboot/blog.007.png)
+![](/images/0100wxapp//blog.007.png)
 
 图4.7 管理员实体E-R图
 
 （2）下图就是教师实体E-R图
 
-![](/images/0100stringboot/0109springboot/blog.008.png)
+![](/images/0100wxapp//blog.008.png)
 
 图4.8 教师实体E-R图
 
 （3）下图就是学生信息实体E-R图
 
-![](/images/0100stringboot/0109springboot/blog.009.png)
+![](/images/0100wxapp//blog.009.png)
 
 图4.9 学生信息实体E-R图
 ### 4.3.2 数据库表结构设计
@@ -261,59 +260,59 @@ SpringBoot可以与经典的Java开发工具一起使用或者作为命令行工
 ## 5.1 学生管理
 管理员可以添加，查询，修改，删除学生。下图就是学生管理页面。
 
-![](/images/0100stringboot/0109springboot/blog.010.png)
+![](/images/0100wxapp//blog.010.png)
 
 图5.1 学生管理页面
 ## 5.2 教师管理
 管理员可以对教师信息进行添加，删除，查询和修改操作。下图就是通讯录信息管理页面。
 
-![](/images/0100stringboot/0109springboot/blog.011.png)
+![](/images/0100wxapp//blog.011.png)
 
 图5.2教师信息管理页面
 ## 5.3 班级管理
 管理员可以对班级进行添加，查询，修改，删除操作。下图就是班级管理页面。
 
-![](/images/0100stringboot/0109springboot/blog.012.png)
+![](/images/0100wxapp//blog.012.png)
 
 图5.3 班级管理页面
 ## 5.4 作业管理
 管理员可以对作业进行修改，删除操作。下图就是作业管理页面。
 
-![](/images/0100stringboot/0109springboot/blog.013.png)
+![](/images/0100wxapp//blog.013.png)
 
 图5.4 作业管理页面
 ## 5.5 作业提交管理
 管理员可以对作业提交进行添加，查询，修改，删除操作。下图就是作业提交管理页面。
 
-![](/images/0100stringboot/0109springboot/blog.014.png)
+![](/images/0100wxapp//blog.014.png)
 
 图5.5 作业提交管理页面
 
 ## 5.6 作业点评管理
 管理员可以对作业点评信息进行查看，修改，删除操作。下图就是作业点评管理页面。
 
-![](/images/0100stringboot/0109springboot/blog.015.png)
+![](/images/0100wxapp//blog.015.png)
 
 图5.6 作业点评管理页面
 
 ## 5.7 教师作业发布
 教师可以发布作业，发布作业需要填写作业相关信息。下图就是作业发布页面。
 
-![](/images/0100stringboot/0109springboot/blog.016.png)
+![](/images/0100wxapp//blog.016.png)
 
 图5.7 作业发布页面
 
 ## 5.8 学生作业提交
 学生提交作业需要先选择教师发布的作业信息后才可以点击提交自己的作业，需要输入自己作业的相关信息。下图就是作业提交页面。
 
-![](/images/0100stringboot/0109springboot/blog.017.png)
+![](/images/0100wxapp//blog.017.png)
 
 图5.8 作业提交页面
 
 ## 5.9 学生作业点评
 学生可以在作业点评里面看到关于自己作业的点评信息。下图就是学生作业点评页面。
 
-![](/images/0100stringboot/0109springboot/blog.018.png)
+![](/images/0100wxapp//blog.018.png)
 
 图5.9 学生作业点评管理页面
 

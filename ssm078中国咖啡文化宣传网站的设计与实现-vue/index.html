@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer" />
+        <meta name="robots" content="noodp" />
+        <title>ssm078中国咖啡文化宣传网站的设计与实现&#43;vue - chenqi blog</title><meta name="Description" content="Hugo theme - chenqi"><meta property="og:url" content="https://chenqi199.github.io/ssm078%E4%B8%AD%E5%9B%BD%E5%92%96%E5%95%A1%E6%96%87%E5%8C%96%E5%AE%A3%E4%BC%A0%E7%BD%91%E7%AB%99%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/">
+  <meta property="og:site_name" content="chenqi blog">
+  <meta property="og:title" content="ssm078中国咖啡文化宣传网站的设计与实现&#43;vue">
+  <meta property="og:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm078中国咖啡文化宣传网站的设计与实现&#43;vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第1章 绪论 1.1 课题背景">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-11-21T22:29:53+08:00">
+    <meta property="article:modified_time" content="2023-11-21T22:29:53+08:00">
+    <meta property="article:tag" content="Ssm中国">
+    <meta property="article:tag" content="网站设计">
+    <meta property="article:tag" content="宣传网站">
+    <meta property="article:tag" content="咖啡文化">
+    <meta property="article:tag" content="设计实现">
+    <meta property="article:tag" content="中国咖啡">
+    <meta property="og:image" content="https://chenqi199.github.io/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chenqi199.github.io/logo.png">
+  <meta name="twitter:title" content="ssm078中国咖啡文化宣传网站的设计与实现&#43;vue">
+  <meta name="twitter:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm078中国咖啡文化宣传网站的设计与实现&#43;vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第1章 绪论 1.1 课题背景">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chenqi199.github.io/ssm078%E4%B8%AD%E5%9B%BD%E5%92%96%E5%95%A1%E6%96%87%E5%8C%96%E5%AE%A3%E4%BC%A0%E7%BD%91%E7%AB%99%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" /><link rel="prev" href="https://chenqi199.github.io/ssm079%E5%9F%BA%E4%BA%8Essm%E6%A1%86%E6%9E%B6%E4%BA%91%E8%B6%A3%E7%A7%91%E6%8A%80%E5%AE%A2%E6%88%B7%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-jsp/" /><link rel="next" href="https://chenqi199.github.io/ssm077%E9%93%81%E5%B2%AD%E6%B2%B3%E5%8C%BB%E9%99%A2%E5%8C%BB%E6%82%A3%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "ssm078中国咖啡文化宣传网站的设计与实现+vue",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chenqi199.github.io\/ssm078%E4%B8%AD%E5%9B%BD%E5%92%96%E5%95%A1%E6%96%87%E5%8C%96%E5%AE%A3%E4%BC%A0%E7%BD%91%E7%AB%99%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue\/"
+        },"image": ["https:\/\/chenqi199.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "ssm中国, 网站设计, 宣传网站, 咖啡文化, 设计实现, 中国咖啡","wordcount":  7386 ,
+        "url": "https:\/\/chenqi199.github.io\/ssm078%E4%B8%AD%E5%9B%BD%E5%92%96%E5%95%A1%E6%96%87%E5%8C%96%E5%AE%A3%E4%BC%A0%E7%BD%91%E7%AB%99%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue\/","datePublished": "2023-11-21T22:29:53+08:00","dateModified": "2023-11-21T22:29:53+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/chenqi199.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "chenqi"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/ssm078%E4%B8%AD%E5%9B%BD%E5%92%96%E5%95%A1%E6%96%87%E5%8C%96%E5%AE%A3%E4%BC%A0%E7%BD%91%E7%AB%99%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/ssm078%E4%B8%AD%E5%9B%BD%E5%92%96%E5%95%A1%E6%96%87%E5%8C%96%E5%AE%A3%E4%BC%A0%E7%BD%91%E7%AB%99%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">ssm078中国咖啡文化宣传网站的设计与实现+vue</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="chenqi199" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>chenqi</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-11-21">2023-11-21</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 7386 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 15 分钟&nbsp;<span id="/ssm078%E4%B8%AD%E5%9B%BD%E5%92%96%E5%95%A1%E6%96%87%E5%8C%96%E5%AE%A3%E4%BC%A0%E7%BD%91%E7%AB%99%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" class="leancloud_visitors" data-flag-title="ssm078中国咖啡文化宣传网站的设计与实现&#43;vue">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">github 项目仓库</a> 开源仅有后端代码</a></li>
+        <li><a href="#点击播放视频-">点击播放视频 ▼</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#11-课题背景">1.1 课题背景</a></li>
+    <li><a href="#12--设计原则">1.2  设计原则</a></li>
+    <li><a href="#13--研究内容">1.3  研究内容</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#21-java技术">2.1 Java技术</a></li>
+    <li><a href="#22-ssm框架">2.2 SSM框架</a></li>
+    <li><a href="#23-bs结构">2.3 B/S结构</a></li>
+    <li><a href="#24-mysql数据库">2.4 MYSQL数据库</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#31-可行性分析">3.1 可行性分析</a>
+      <ul>
+        <li><a href="#311-技术可行性">3.1.1 技术可行性</a></li>
+        <li><a href="#312-经济可行性">3.1.2 经济可行性</a></li>
+        <li><a href="#313-操作可行性">3.1.3 操作可行性</a></li>
+        <li><a href="#314-时间可行性">3.1.4 时间可行性</a></li>
+      </ul>
+    </li>
+    <li><a href="#32-系统功能分析">3.2 系统功能分析</a></li>
+    <li><a href="#33-系统性能分析">3.3 系统性能分析</a></li>
+    <li><a href="#34-系统流程分析">3.4 系统流程分析</a>
+      <ul>
+        <li><a href="#341注册流程">3.4.1注册流程</a></li>
+        <li><a href="#342登录流程">3.4.2登录流程</a></li>
+        <li><a href="#343购买流程">3.4.3购买流程</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#41-系统结构设计">4.1 系统结构设计</a></li>
+    <li><a href="#42系统顺序图">4.2系统顺序图</a>
+      <ul>
+        <li><a href="#421登录模块顺序图">4.2.1登录模块顺序图</a></li>
+        <li><a href="#422添加信息模块顺序图">4.2.2添加信息模块顺序图</a></li>
+      </ul>
+    </li>
+    <li><a href="#43-数据库设计">4.3 数据库设计</a>
+      <ul>
+        <li><a href="#431-数据库e-r图设计">4.3.1 数据库E-R图设计</a></li>
+        <li><a href="#432数据库表设计">4.3.2数据库表设计</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#51-用户功能模块的实现">5.1 用户功能模块的实现</a>
+      <ul>
+        <li><a href="#511用户注册界面">5.1.1用户注册界面</a></li>
+        <li><a href="#512用户登录界面">5.1.2用户登录界面</a></li>
+        <li><a href="#513系统主界面">5.1.3系统主界面</a></li>
+        <li><a href="#514咖啡详情界面">5.1.4咖啡详情界面</a></li>
+        <li><a href="#515购物车界面">5.1.5购物车界面</a></li>
+        <li><a href="#516我的订单界面">5.1.6我的订单界面</a></li>
+        <li><a href="#517我的地址界面">5.1.7我的地址界面</a></li>
+      </ul>
+    </li>
+    <li><a href="#52-管理员功能模块的实现">5.2 管理员功能模块的实现</a>
+      <ul>
+        <li><a href="#521管理员登录界面">5.2.1管理员登录界面</a></li>
+        <li><a href="#522订单管理界面">5.2.2订单管理界面</a></li>
+        <li><a href="#523用户管理界面">5.2.3用户管理界面</a></li>
+        <li><a href="#524咖啡分类管理界面">5.2.4咖啡分类管理界面</a></li>
+        <li><a href="#525咖啡商城管理界面">5.2.5咖啡商城管理界面</a></li>
+        <li><a href="#526添加咖啡信息界面">5.2.6添加咖啡信息界面</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="项目清单-包安装运行httpchenqi1990site-官网地址-httpchenqi1990site"><a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">项目清单 包安装运行</a> 官网地址 <a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">http://chenqi1990.site</a></h1>
+<h1 id="ssm078中国咖啡文化宣传网站的设计与实现vuehttpsgithubcomgraduationproject-springboot"><a href="https://github.com/GraduationProject-springboot/" target="_blank" rel="noopener noreffer ">ssm078中国咖啡文化宣传网站的设计与实现+vue</a></h1>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        data-srcset="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 1.5x, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        title="picture" /></p>
+<h3 id="github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">github 项目仓库</a> 开源仅有后端代码</h3>
+<h3 id="点击播放视频-">点击播放视频 ▼</h3>
+<p><a href="https://www.bilibili.com/video/BV1T48XecE9G?p=76" target="_blank" rel="noopener noreffer "><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.sstatic.net/Vp2cE.png"
+        data-srcset="https://i.sstatic.net/Vp2cE.png, https://i.sstatic.net/Vp2cE.png 1.5x, https://i.sstatic.net/Vp2cE.png 2x"
+        data-sizes="auto"
+        alt="https://i.sstatic.net/Vp2cE.png"
+        title="Watch the video" /></a></p>
+<h1 id="第1章-绪论">第1章 绪论</h1>
+<h2 id="11-课题背景">1.1 课题背景</h2>
+<p>网络交易（Electronic Commerce）：是指实现整个贸易过程中各阶段的贸易活动的电子化。网络交易是一种多技术的集合体。其业务可包括：信息交换、售后服务、销售、电子支付、运输、组建虚拟企业、公司和贸易伙伴可以共同拥有和运营的商业方法等。网络交易的整个贸易活动都可以实现自动化和电子化。网络交易应用系统的工作实质是对信息进行收集、处理、加工分析，形成各种商务应用数据库，并将信息流转换为物流和资金流的过程。</p>
+<p>现在的时代科技飞速地发展，网上购物已经深入大众的生活。互联网技术更是明显的提高，电脑已经走进千家万户。对于人们使用互联网进行网络交易已经逐渐深入人心，人们对于网购的信任度也比以往大幅提高，网络交易的份额正在逐年加大，网络交易的直观、有效、便捷等优点是传统的交易模式无法比拟的，因此，现在应抓住这个时机，在这个领域占有一席之地。</p>
+<p>由上可见，要建立好一个中国咖啡文化宣传网站，需要对大量的信息进行处理和分析，对于了解和掌握数据库系统的理论和实际应用都有很大的帮助。同时，网络交易在当前社会是一种很热门的商业活动，正在以人们无法想象的速度在全球范围内飞快地成长着。本次开发的中国咖啡文化宣传网站即实现了终稿咖啡文化宣传，又满足了用户网络购买咖啡商品的需求，符合当今电子商务和互联网快速发展的潮流。</p>
+<h2 id="12--设计原则">1.2  设计原则</h2>
+<p>在开始开发项目之前，必须要先考虑项目的实用性、科学性，以及该项目是否能够真正让用户受益并尽可能的发挥项目的作用。因此，在开发前，通过以下几条原则对项目进行判断：</p>
+<p>（1）可行性原则。项目需要保证经济可行性和技术可行性，这包括了项目在浏览端、服务端等方面上的经济和技术上是可以达成的。</p>
+<p>（2）适应性原则。项目要保证可维护性和可扩展性，这是每个非短期项目都需要考虑的，并且不论是维护还是扩展，都必须要建立在适应用户的正常需求的基础上。</p>
+<p>（3）安全性及保密性原则。要充分保证用户信息的安全性和保密性，不能因为开发上的疏忽，导致用户的信息泄露。</p>
+<p>（4）系统工程原则。为了确保项目的整体性，在项目调查、项目分析、项目设计、项目开发的过程中，都需遵从项目工程的方法和步骤逐步进行。</p>
+<p>（5）统一规划、分期实施、逐步完善原则。项目开发的过程中，要按照规划、分期实施，特别是要注意在项目开发过程中要有条理，从点到面，一步步完善，不要贪图进度，要循环渐进的对项目进行开发。</p>
+<h2 id="13--研究内容">1.3  研究内容</h2>
+<p>根据中国咖啡文化宣传网站编写的论文主要阐述了中国咖啡文化宣传网站的开发过程中使用的技术，首先进行系统需求分析，进而进行系统设计，最后才是系统功能实现以及测试几个部分，在开始编写论文之前亲自到图书馆借阅Java书籍，MYSQL数据库书籍等编程书籍，然后针对开发的中国咖啡文化宣传网站，去网上查找了很多别人做好的系统，根据他们的功能设计进行自己的系统的系统功能结构设计，出具需求报告，最后才是进行程序编码，系统完成后才能进行测试和最后的验收工作，程序开发流程大致如此。</p>
+<p>这次编写的论文包含了7个部分的内容，具体内容如下：</p>
+<p>第一部分绪论：文章主要从课题背景以及设计原则综合阐述了开发此系统的必要性。</p>
+<p>第二部分相关技术：系统开发用到的各种技术都大致做出了简介</p>
+<p>第三部分系统分析：从可行性分析和功能需求分析等角度综合研究了此次开发的系统</p>
+<p>第四部分系统设计：功能模块设计和数据库设计这两部分内容都有专门的表格和图片表示</p>
+<p>第五部分系统实现：进行系统主要功能模块的界面展示</p>
+<p>第六部分系统测试：检验程序是否达到预期目标</p>
+<p>第七部分系统总结：进行总结工作</p>
+<h1 id="heading"></h1>
+<p>29</p>
+<h1 id="第2章--关键技术简介">第2章  关键技术简介</h1>
+<h2 id="21-java技术">2.1 Java技术</h2>
+<p>Java是一种非常常用的编程语言，在全球编程语言排行版上总是前三。在方兴未艾的计算机技术发展历程中，Java的身影无处不在，并且拥有旺盛的生命力。Java的跨平台能力十分强大，只需一次编译，任何地方都可以运行。除此之外，它还拥有简单的语法和实用的类库，让编程人员可以尽可能将精力集中在问题的求解上，并且许多开源项目和科研成果都是采用它实现的。</p>
+<p>在1995年这一年的5月份，著名的Sun Microsystems公司在程序开发设计上面郑重推出一种面向对象开发的程序设计语言——Java，最开始的时候Java是由詹姆斯.高斯林这位伟大的JAVA之父来进行主导，但是在后来由于各种原因，让甲骨文公司这个针对商业程序创建了oracle大型数据库的公司收购了Java。Java的平台总共算下来有3个，分别为javaME和javaSE以及javaEE这3个java平台。下面将对其进行分别介绍。</p>
+<p>（1）在电脑桌面程序的开发上面需要选择JavaME，这个用得也比较多。</p>
+<p>（2）企业也会根据工作以及业务需要开发各种软件，那么就会选用JavcEE这个支持企业版软件的开发的Java平台，JavcEE主攻运用在企业领域上面的web应用，JavcEE也在javaSE的基础上获得了比如jsp技术 ，Servlet技术等程序开发技术的支持。</p>
+<p>（3）现在生活中手机的普及化，也使得手机端这样的移动设备的软件的兴起，JavaME这个迷你版java平台就能运用于移动端的软件开发操作。</p>
+<h2 id="22-ssm框架">2.2 SSM框架</h2>
+<p>本中国咖啡文化宣传网站基于Spring、SpringMVC、Mybatis框架进行开发设计。</p>
+<p>Spring 框架是在2004年首次发布，之后出现了多次的重大修订。Spring框架是由七个不同的模块组成，分别是SpringCore、Spring AOP、Spring ORM、Spring DAO、Spring Web Flow、Spring Context和Spring Web MVC[16]。这些模块提供不同的平台来开发不同的企业应用程序 ，本课题使用Spring Web MVC模块开发基于MVC的应用程序。</p>
+<p>Spring Web MVC是基于Servlet API的原始Web框架，从一开始就包含在Spring 框架中。“Spring Web MVC”是该框架的正式名称，但通常被简称为“Spring MVC” [17]。Spring MVC框架提供了模型模块-视图模块-控制器的架构和可用于直接开发的Web应用程序的现成组件。Spring MVC模式将应用程序的不同方面分开，使元素之间形成松散耦合。</p>
+<p>MyBatis原名叫做iBatis属于持久层框架，消除了大部分JDBC代码和参数的设置以及结果集的检索。这个框架不仅支持普通SQL查询和存储过程，还支持高级的映射[18]。MyBatis使用.xml和注解来做原始映射和配置，将接口和Java对象映射成数据库记录。</p>
+<h2 id="23-bs结构">2.3 B/S结构</h2>
+<p>此次设计的网络结构模式B/S结构（Browser/Server）。B/S架构也称为B/S模式，是一种服务器以及浏览器架构模式。B/S的工作模式都是先由浏览器请求，服务器再响应。B/S体系结构解决了异构系统中的连接难题，大大改善了系统的开放性，让系统的扩展和维护更加简单；同时，B/S体系结构操作也比较容易，界面全都为浏览器模式，容易分发数据的捕获程序。只要安装通用的浏览器（如WWW浏览器）就能通过Web服务器与数据库进行数据交互。此结构的好处之一在于由于它使用的统一的浏览器，使其可以在不同的地方且不需要用专门的软件进行操作，实现了不论你使用怎样的接入网的方式都可以对公共的数据进行调用和浏览。</p>
+<p>相对于C/S模式，B/S模式是对C/S模式应用的扩展，B/S模式不用对不同的计算机安装不同应用程序，还有安全性的要求及对模式上手难度都比前者更好。B/S模式可以让客户机的压力大大减轻，工作的负荷被合理的分配了。</p>
+<p>B/S三层框架结构图如图2-1所示：</p>
+<p>显示逻辑</p>
+<p>浏览器</p>
+<p>事物处理逻辑</p>
+<p>Web服务</p>
+<p>数据库</p>
+<p>事物处理逻辑</p>
+<p>数据库服务器</p>
+<p>响应</p>
+<p>请求</p>
+<p>相应</p>
+<p>请求</p>
+<p>求</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm078/blog.001.png"
+        data-srcset="/images/0000ssm/ssm078/blog.001.png, /images/0000ssm/ssm078/blog.001.png 1.5x, /images/0000ssm/ssm078/blog.001.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm078/blog.001.png"
+        title="/images/0000ssm/ssm078/blog.001.png" /></p>
+<p>图2-1 B/S三层框架结构图</p>
+<h2 id="24-mysql数据库">2.4 MYSQL数据库</h2>
+<p>MySQL 是关系型数据库管理系统的代表， 因为MySQL是其免费开源的，而且MySQL的功能已经足够用对于学习和中小型企业来讲，所以开发中小型网站都会选择MySQL作为网站的数据库。</p>
+<p>MySQL具有开放性，它是一种关系型数据库管理系统，并且它的源代码可以被大众所熟知[3]。由于MySQL是开放源代码的，因此，只要经过授权就可以在自己需求的基础上对其进行修改。MySQL因为其固有的特点而备受关注，它具有很强的适应性，并且十分可靠，查询速度快。MySQL安装起来非常方便，且数据存储量大，不需要事务化处理。Sql语言拥有很多的方法，在项目中编写sql语句时使用起来是非常方便的，不会像其他语言那样需要编写更多的语句。正因为MySQL使用sql语言进行数据库管理，所以它收到了大多数程序员的热爱。</p>
+<h1 id="heading-1"></h1>
+<h1 id="第3章-系统分析">第3章 系统分析</h1>
+<h2 id="31-可行性分析">3.1 可行性分析</h2>
+<p>在系统开发之初要进行系统可行分析，这样做的目的就是使用最小成本解决最大问题，一旦程序开发满足用户需要，带来的好处也是很多的。下面我们将从技术上、操作上、经济上等方面来考虑这个系统到底值不值得开发。</p>
+<h3 id="311-技术可行性">3.1.1 技术可行性</h3>
+<p>本中国咖啡文化宣传网站采用Java和MYSQL数据库进行开发设计，作为计算机专业学生，在学校期间就接触到许多关于编程方面的知识，当然也包括各种编程软件，对他们的了解度也比较系统，所以技术开发上面还是有一定把握。</p>
+<h3 id="312-经济可行性">3.1.2 经济可行性</h3>
+<p>由于自己本身就是学生，还没有正式参加工作，金钱上面一直都处于缺乏状态。所以在开发程序过程中，我是不会花太多经济成本在上面的。针对开发软件和数据库，还有界面设计的photoshop软件等在百度上面就可以直接下载，然后根据各种安装视频进行安装，这些资源都是免费的，程序编码阶段使用的源代码在百度上面可以轻松获得，在有网络的环境下就能下载下来，不需要支付任何费用，经济成本很低。</p>
+<h3 id="313-操作可行性">3.1.3 操作可行性</h3>
+<p>本人自己就是学生，程序开发经验不足，在界面设计上面不会设计太复杂，要讲究简单好看，操作上要方便，不能让用户觉得不流畅。用户一旦进入操作界面，界面上就会有相应提示，跟着操作提示就可以找到对应的功能操作模块，对于用户来说免培训就能使用。本中国咖啡文化宣传网站本身具有操作可行性，其界面设计清晰、功能权限分配合理，操作简单，不同用户登录后可对进行相应功能模块的操作，具有极高的操作可行性。</p>
+<h3 id="314-时间可行性">3.1.4 时间可行性</h3>
+<p>从时间上看，在三个月的时间里学习相关知识，开发本中国咖啡文化宣传网站，时间上是有点紧，但是不是不可能实现，在做毕业设计的这几个月里，我通过努力使得功能应该基本可以实现。</p>
+<p>综上所述，我们进行了四个方面的可行性研究，可以看出，该中国咖啡文化宣传网站的开发是没有问题的。</p>
+<h2 id="32-系统功能分析">3.2 系统功能分析</h2>
+<p>本中国咖啡文化宣传网站主要满足两种用户的需求，这两种用户分别为管理员和用户，下面将对这两种用户分别实现的功能进行详细的阐述。</p>
+<p>（1）用户：用户在系统前台可查看系统信息，包括首页、咖啡商城、咖啡文化等，注册登录后主要功能模块包括购物车、个人中心、我的订单、我的地址、我的收藏，用例图如图3-1所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm078/blog.002.png"
+        data-srcset="/images/0000ssm/ssm078/blog.002.png, /images/0000ssm/ssm078/blog.002.png 1.5x, /images/0000ssm/ssm078/blog.002.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm078/blog.002.png"
+        title="/images/0000ssm/ssm078/blog.002.png" /></p>
+<p>图3-1 用户用例图</p>
+<p>（2）管理员：管理员登录后可对系统进行全面的管理，主要功能模块包括个人中心、用户管理、咖啡分类管理、咖啡商城管理、联系我们管理、系统管理以及订单管理。管理员用例图如图3-2所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm078/blog.003.png"
+        data-srcset="/images/0000ssm/ssm078/blog.003.png, /images/0000ssm/ssm078/blog.003.png 1.5x, /images/0000ssm/ssm078/blog.003.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm078/blog.003.png"
+        title="/images/0000ssm/ssm078/blog.003.png" /></p>
+<p>图3-2 管理员用例图图</p>
+<h2 id="33-系统性能分析">3.3 系统性能分析</h2>
+<p>（1）系统的存储性：因为是中国咖啡文化宣传网站，所以就会在数据库要求上比较严格，信息录入的比较多，而且丰富复杂， 这就需要一个强大的数据库来存放更多的数据和保证数据的时时性。</p>
+<p>（2）系统的易学性：系统设计的应该简单易学的，设计的各种功能应该简单操作，不需要努力学习培训，缩短用户熟悉系统的进程。</p>
+<p>（3）系统的数据要求：数据应该录入准确，需要更新时，数据应该可以及时的修改，数据还应该有独立保存，不能删除数据的时候会连带着把还需要的数据都删除掉。</p>
+<p>（4）系统稳定性：开发的中国咖啡文化宣传网站要求运行稳定，运行过程中无界面不清楚、字体模糊等现象。</p>
+<p>（5）系统可靠性：系统不可以有病毒类代码，必须有拦截器，验证方法，对里面信息的保护措施，这样才让人用的放心。</p>
+<h2 id="34-系统流程分析">3.4 系统流程分析</h2>
+<h3 id="341注册流程">3.4.1注册流程</h3>
+<p>未有账号的用户可进行注册操作，在注册时系统会判断用户名是否已存在，已存在的话，提示返回重新填写用户名，用户名不存在，填写其他注册信息，系统判断注册信息是否正确，正确则在数据库中添加用户信息，注册成功。用户注册流程图如图3-3所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm078/blog.004.png"
+        data-srcset="/images/0000ssm/ssm078/blog.004.png, /images/0000ssm/ssm078/blog.004.png 1.5x, /images/0000ssm/ssm078/blog.004.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm078/blog.004.png"
+        title="/images/0000ssm/ssm078/blog.004.png" /></p>
+<p>图3-3注册流程图</p>
+<h3 id="342登录流程">3.4.2登录流程</h3>
+<p>登录模块主要满足了用户以及管理员的权限登录，用户登录流程图如图3-4所示</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm078/blog.005.png"
+        data-srcset="/images/0000ssm/ssm078/blog.005.png, /images/0000ssm/ssm078/blog.005.png 1.5x, /images/0000ssm/ssm078/blog.005.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm078/blog.005.png"
+        title="/images/0000ssm/ssm078/blog.005.png" /></p>
+<p>图3-4登录流程图</p>
+<h3 id="343购买流程">3.4.3购买流程</h3>
+<p>用户在购买咖啡时需要登录系统，只要登录后才可支付购买咖啡，用户购买咖啡的流程分析如图3-5所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm078/blog.006.png"
+        data-srcset="/images/0000ssm/ssm078/blog.006.png, /images/0000ssm/ssm078/blog.006.png 1.5x, /images/0000ssm/ssm078/blog.006.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm078/blog.006.png"
+        title="/images/0000ssm/ssm078/blog.006.png" /></p>
+<p>图3-5 购买流程图</p>
+<h1 id="heading-2"></h1>
+<h1 id="第4章--系统设计">第4章  系统设计</h1>
+<h2 id="41-系统结构设计">4.1 系统结构设计</h2>
+<p>系统结构设计是一个将一个庞大的任务细分为多个小的任务的过程，这些小的任务分段完成后，组合在一起形成一个完整的任务。在整个设计过程，以确定可能的具体方案达成每一个小的最终目标，对于每一个小的目标而言，我们必须先了解一些相关的需求分析的信息。然后对系统进行初步的设计，并对其逐渐进行优化，设计出一个具体可实现的系统结构。</p>
+<p>本中国咖啡文化宣传网站主要包括用户模块和管理员模块，根据第三章中系统功能需求分析，可画出本中国咖啡文化宣传网站的结构图如图4-1所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm078/blog.007.png"
+        data-srcset="/images/0000ssm/ssm078/blog.007.png, /images/0000ssm/ssm078/blog.007.png 1.5x, /images/0000ssm/ssm078/blog.007.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm078/blog.007.png"
+        title="/images/0000ssm/ssm078/blog.007.png" /></p>
+<p>图 4-1  系统结构图</p>
+<h2 id="42系统顺序图">4.2系统顺序图</h2>
+<h3 id="421登录模块顺序图">4.2.1登录模块顺序图</h3>
+<p>用户和管理员均可进行登录操作，登录模块的顺序图如图 4-2 所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm078/blog.008.png"
+        data-srcset="/images/0000ssm/ssm078/blog.008.png, /images/0000ssm/ssm078/blog.008.png 1.5x, /images/0000ssm/ssm078/blog.008.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm078/blog.008.png"
+        title="/images/0000ssm/ssm078/blog.008.png" /></p>
+<p>图4-2用户登录顺序图</p>
+<h3 id="422添加信息模块顺序图">4.2.2添加信息模块顺序图</h3>
+<p>管理员和用户登录后均可进行添加信息操作，添加信息顺序图如图4-3所示</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm078/blog.009.png"
+        data-srcset="/images/0000ssm/ssm078/blog.009.png, /images/0000ssm/ssm078/blog.009.png 1.5x, /images/0000ssm/ssm078/blog.009.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm078/blog.009.png"
+        title="/images/0000ssm/ssm078/blog.009.png" /></p>
+<p>图4-3添加信息顺序图</p>
+<h2 id="43-数据库设计">4.3 数据库设计</h2>
+<h3 id="431-数据库e-r图设计">4.3.1 数据库E-R图设计</h3>
+<p>E-R图展现了数据的实体结构关系，为系统数据管理奠定了基础，也对数据进行规范化的设置，保证后期的高效性，避免数据出现重复造成冗余使得数据更新出现异常，无法同步数据和插入数据。通过E-R图也可便于对数据的设计和修改，如果一个数据库在被设计时没有相对应的E-R图，则整体数据库就缺少明确的定位和条理性，使得处理数据的效率大大降低，在需要更新或者查找数据时报错的可能性大大提升，对与后期运行调试系统会造成不必要的麻烦。本中国咖啡文化宣传网站的E-R图如下图所示：</p>
+<p>1、咖啡分类信息实体E-R图如图4-4所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm078/blog.010.png"
+        data-srcset="/images/0000ssm/ssm078/blog.010.png, /images/0000ssm/ssm078/blog.010.png 1.5x, /images/0000ssm/ssm078/blog.010.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm078/blog.010.png"
+        title="/images/0000ssm/ssm078/blog.010.png" /></p>
+<p>图4-4 咖啡分类信息实体的E-R图</p>
+<p>2、咖啡商城实体E-R图如图4-5所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm078/blog.011.png"
+        data-srcset="/images/0000ssm/ssm078/blog.011.png, /images/0000ssm/ssm078/blog.011.png 1.5x, /images/0000ssm/ssm078/blog.011.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm078/blog.011.png"
+        title="/images/0000ssm/ssm078/blog.011.png" /></p>
+<p>图4-5 咖啡商城实体E-R图</p>
+<p>3、订单实体图如图4-6所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm078/blog.012.png"
+        data-srcset="/images/0000ssm/ssm078/blog.012.png, /images/0000ssm/ssm078/blog.012.png 1.5x, /images/0000ssm/ssm078/blog.012.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm078/blog.012.png"
+        title="/images/0000ssm/ssm078/blog.012.png" /></p>
+<p>图4-6 订单实体E-R图</p>
+<p>4、管理员信息实体图如图4-7所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm078/blog.013.png"
+        data-srcset="/images/0000ssm/ssm078/blog.013.png, /images/0000ssm/ssm078/blog.013.png 1.5x, /images/0000ssm/ssm078/blog.013.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm078/blog.013.png"
+        title="/images/0000ssm/ssm078/blog.013.png" /></p>
+<p>图4-7 管理员信息实体E-R图</p>
+<p>5、用户信息实体图如图4-8所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm078/blog.014.png"
+        data-srcset="/images/0000ssm/ssm078/blog.014.png, /images/0000ssm/ssm078/blog.014.png 1.5x, /images/0000ssm/ssm078/blog.014.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm078/blog.014.png"
+        title="/images/0000ssm/ssm078/blog.014.png" /></p>
+<p>图4-8 用户信息实体E-R图</p>
+<h3 id="432数据库表设计">4.3.2数据库表设计</h3>
+<p>本中国咖啡文化宣传网站采用了MYSQL数据库进行系统数据的储存，主要的数据库表的具体设置如下：</p>
+<p>表4-1  tushufenlei咖啡分类信息表</p>
+<table>
+<thead>
+<tr>
+<th>列名</th>
+<th>说明</th>
+<th>类型 ( 长度 )</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>编号</td>
+<td>bigint(20)</td>
+<td>不允许空，主键</td>
+</tr>
+<tr>
+<td>addtime</td>
+<td>创建时间</td>
+<td>timestamp</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>zhonglei</td>
+<td>种类</td>
+<td>varchar(200)</td>
+<td>允许空</td>
+</tr>
+</tbody>
+</table>
+<p>表4-2 kafeishangcheng咖啡商城信息表</p>
+<table>
+<thead>
+<tr>
+<th>列名</th>
+<th>说明</th>
+<th>类型 ( 长度 )</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>编号</td>
+<td>bigint(20)</td>
+<td>不允许空，主键</td>
+</tr>
+<tr>
+<td>addtime</td>
+<td>创建时间</td>
+<td>timestamp</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>mingcheng</td>
+<td>名称</td>
+<td>varchar(200)</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>zhonglei</td>
+<td>种类</td>
+<td>varchar(200)</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>pinpai</td>
+<td>品牌</td>
+<td>varchar(200)</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>kouwei</td>
+<td>口味</td>
+<td>varchar(200)</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>baozhi</td>
+<td>保质</td>
+<td>varchar(200)</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>chandi</td>
+<td>产地</td>
+<td>varchar(200)</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>fengmian</td>
+<td>封面</td>
+<td>varchar(200)</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>xiangqing</td>
+<td>详情</td>
+<td>longtext</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>thumbsupnum</td>
+<td>赞数</td>
+<td>int(11)</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>crazilynum`</td>
+<td>踩数</td>
+<td>int(11)</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>clicktime</td>
+<td>最近点击时间</td>
+<td>datetime</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>clicknum</td>
+<td>点击次数</td>
+<td>int(11)</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>price</td>
+<td>价格</td>
+<td>float</td>
+<td>允许空</td>
+</tr>
+</tbody>
+</table>
+<p>表4-3  orders订单信息表</p>
+<table>
+<thead>
+<tr>
+<th>列名</th>
+<th>说明</th>
+<th>类型 ( 长度 )</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>编号</td>
+<td>bigint(20)</td>
+<td>不允许空，主键</td>
+</tr>
+<tr>
+<td>addtime</td>
+<td>下单时间</td>
+<td>timestamp</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>orderid</td>
+<td>订单编号</td>
+<td>varchar(200)</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>tablename</td>
+<td>商品表名</td>
+<td>varchar(200)</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>userid</td>
+<td>用户编号</td>
+<td>bigint(20)</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>goodid</td>
+<td>商品编号</td>
+<td>bigint(20)</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>goodname</td>
+<td>商品名称</td>
+<td>varchar(200)</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>picture</td>
+<td>商品图片</td>
+<td>varchar(200)</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>buynumber</td>
+<td>购买数量</td>
+<td>int(11)</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>price</td>
+<td>价格</td>
+<td>float</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>discountprice</td>
+<td>折扣价格</td>
+<td>float</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>total</td>
+<td>总价格</td>
+<td>float</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>discounttotal</td>
+<td>折扣总价格</td>
+<td>float</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>type</td>
+<td>支付类型</td>
+<td>int(11)</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>status</td>
+<td>状态</td>
+<td>varchar(200)</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>address</td>
+<td>地址</td>
+<td>varchar(200)</td>
+<td>允许空</td>
+</tr>
+</tbody>
+</table>
+<p>表4-4  users管理员信息表</p>
+<table>
+<thead>
+<tr>
+<th>列名</th>
+<th>说明</th>
+<th>类型 ( 长度 )</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>编号</td>
+<td>bigint(20)</td>
+<td>不允许空，主键</td>
+</tr>
+<tr>
+<td>username</td>
+<td>用户名</td>
+<td>varchar(100)</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>password</td>
+<td>密码</td>
+<td>varchar(100)</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>role</td>
+<td>角色</td>
+<td>varchar(100)</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>addtime</td>
+<td>添加时间</td>
+<td>timestamp</td>
+<td>允许空</td>
+</tr>
+</tbody>
+</table>
+<p>表4-5  yonghu用户信息表</p>
+<table>
+<thead>
+<tr>
+<th>列名</th>
+<th>说明</th>
+<th>类型 ( 长度 )</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>编号</td>
+<td>bigint(20)</td>
+<td>不允许空，主键</td>
+</tr>
+<tr>
+<td>addtime</td>
+<td>创建时间</td>
+<td>timestamp</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>zhanghao</td>
+<td>账号</td>
+<td>varchar(200)</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>mima</td>
+<td>密码</td>
+<td>varchar(200)</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>xingming</td>
+<td>姓名</td>
+<td>varchar(200)</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>xingbie</td>
+<td>性别</td>
+<td>int(11)</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>nianling</td>
+<td>年龄</td>
+<td>varchar(200)</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>shouji</td>
+<td>手机</td>
+<td>varchar(200)</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>youxiang</td>
+<td>邮箱</td>
+<td>varchar(200)</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>zhaopian</td>
+<td>照片</td>
+<td>varchar(200)</td>
+<td>允许空</td>
+</tr>
+<tr>
+<td>money</td>
+<td>余额</td>
+<td>float</td>
+<td>允许空</td>
+</tr>
+</tbody>
+</table>
+<h1 id="heading-3"></h1>
+<h1 id="第5章--系统的实现">第5章  系统的实现</h1>
+<h2 id="51-用户功能模块的实现">5.1 用户功能模块的实现</h2>
+<h3 id="511用户注册界面">5.1.1用户注册界面</h3>
+<p>没有账号的用户可进入注册界面进行注册操作，用户注册界面的运行效果如图5-1所示.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm078/blog.015.png"
+        data-srcset="/images/0000ssm/ssm078/blog.015.png, /images/0000ssm/ssm078/blog.015.png 1.5x, /images/0000ssm/ssm078/blog.015.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm078/blog.015.png"
+        title="/images/0000ssm/ssm078/blog.015.png" /></p>
+<p>图5-1 用户注册界面</p>
+<h3 id="512用户登录界面">5.1.2用户登录界面</h3>
+<p>用户要想实现咖啡购买等操作，必须进行登录操作，在登录界面输入正确的用户名和密码，选择登录类型，点击登录按钮进行登录，用户登录界面如图5-2所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm078/blog.016.png"
+        data-srcset="/images/0000ssm/ssm078/blog.016.png, /images/0000ssm/ssm078/blog.016.png 1.5x, /images/0000ssm/ssm078/blog.016.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm078/blog.016.png"
+        title="/images/0000ssm/ssm078/blog.016.png" /></p>
+<p>图5-2用户登录界面</p>
+<h3 id="513系统主界面">5.1.3系统主界面</h3>
+<p>用户可进入系统主界面查看系统信息，系统主界面的运行效果如图5-3所示.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm078/blog.017.png"
+        data-srcset="/images/0000ssm/ssm078/blog.017.png, /images/0000ssm/ssm078/blog.017.png 1.5x, /images/0000ssm/ssm078/blog.017.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm078/blog.017.png"
+        title="/images/0000ssm/ssm078/blog.017.png" /></p>
+<p>图5-3 系统主界面</p>
+<h3 id="514咖啡详情界面">5.1.4咖啡详情界面</h3>
+<p>用户可选择咖啡查看咖啡详情信息，登录后可进行加入购物车和购买操作，咖啡详情界面如图5-4所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm078/blog.018.png"
+        data-srcset="/images/0000ssm/ssm078/blog.018.png, /images/0000ssm/ssm078/blog.018.png 1.5x, /images/0000ssm/ssm078/blog.018.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm078/blog.018.png"
+        title="/images/0000ssm/ssm078/blog.018.png" /></p>
+<p>图5-4 咖啡详情界面</p>
+<h3 id="515购物车界面">5.1.5购物车界面</h3>
+<p>用户在购物车界面可查看购物车咖啡信息，并可进行修改数量、删除咖啡以及购买等操作，购物车界面展示如图5-5所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm078/blog.019.png"
+        data-srcset="/images/0000ssm/ssm078/blog.019.png, /images/0000ssm/ssm078/blog.019.png 1.5x, /images/0000ssm/ssm078/blog.019.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm078/blog.019.png"
+        title="/images/0000ssm/ssm078/blog.019.png" /></p>
+<p>图5-5 购物车界面</p>
+<h3 id="516我的订单界面">5.1.6我的订单界面</h3>
+<p>用户在我的订单界面可查看个人订单信息，我的订单界面如图5-6所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm078/blog.020.png"
+        data-srcset="/images/0000ssm/ssm078/blog.020.png, /images/0000ssm/ssm078/blog.020.png 1.5x, /images/0000ssm/ssm078/blog.020.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm078/blog.020.png"
+        title="/images/0000ssm/ssm078/blog.020.png" /></p>
+<p>图5-6 我的订单界面</p>
+<h3 id="517我的地址界面">5.1.7我的地址界面</h3>
+<p>用户可增删改查个人地址信息，我的地址界面如图5-7所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm078/blog.021.png"
+        data-srcset="/images/0000ssm/ssm078/blog.021.png, /images/0000ssm/ssm078/blog.021.png 1.5x, /images/0000ssm/ssm078/blog.021.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm078/blog.021.png"
+        title="/images/0000ssm/ssm078/blog.021.png" /></p>
+<p>图5-7  我的地址界面</p>
+<h2 id="52-管理员功能模块的实现">5.2 管理员功能模块的实现</h2>
+<h3 id="521管理员登录界面">5.2.1管理员登录界面</h3>
+<p>管理员要想进入系统后台对系统进行管理，首要进入登录界面，需通过正确的账号、密码进行登录操作，管理员登录界面如图5-8所示 。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm078/blog.022.png"
+        data-srcset="/images/0000ssm/ssm078/blog.022.png, /images/0000ssm/ssm078/blog.022.png 1.5x, /images/0000ssm/ssm078/blog.022.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm078/blog.022.png"
+        title="/images/0000ssm/ssm078/blog.022.png" /></p>
+<p>图5-8 管理员登录界面</p>
+<h3 id="522订单管理界面">5.2.2订单管理界面</h3>
+<p>管理员可管理所有订单信息，订单管理界面展示如图5-9所示 。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm078/blog.023.png"
+        data-srcset="/images/0000ssm/ssm078/blog.023.png, /images/0000ssm/ssm078/blog.023.png 1.5x, /images/0000ssm/ssm078/blog.023.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm078/blog.023.png"
+        title="/images/0000ssm/ssm078/blog.023.png" /></p>
+<p>图5-9  订单管理界面</p>
+<h3 id="523用户管理界面">5.2.3用户管理界面</h3>
+<p>管理员可查看、修改和删除用户信息，并可新增用户，用户管理界面展示如图5-10所示 。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm078/blog.024.png"
+        data-srcset="/images/0000ssm/ssm078/blog.024.png, /images/0000ssm/ssm078/blog.024.png 1.5x, /images/0000ssm/ssm078/blog.024.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm078/blog.024.png"
+        title="/images/0000ssm/ssm078/blog.024.png" /></p>
+<p>图5-10  用户管理界面</p>
+<h3 id="524咖啡分类管理界面">5.2.4咖啡分类管理界面</h3>
+<p>管理员可增删改查咖啡分类信息，咖啡分类界面展示如图5-11所示 。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm078/blog.025.png"
+        data-srcset="/images/0000ssm/ssm078/blog.025.png, /images/0000ssm/ssm078/blog.025.png 1.5x, /images/0000ssm/ssm078/blog.025.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm078/blog.025.png"
+        title="/images/0000ssm/ssm078/blog.025.png" /></p>
+<p>图5-11 咖啡分类管理界面</p>
+<h3 id="525咖啡商城管理界面">5.2.5咖啡商城管理界面</h3>
+<p>管理员可添加、修改和删除咖啡信息，咖啡商城管理界面如图5-12所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm078/blog.026.png"
+        data-srcset="/images/0000ssm/ssm078/blog.026.png, /images/0000ssm/ssm078/blog.026.png 1.5x, /images/0000ssm/ssm078/blog.026.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm078/blog.026.png"
+        title="/images/0000ssm/ssm078/blog.026.png" /></p>
+<p>图5-12 咖啡商城管理界面</p>
+<h3 id="526添加咖啡信息界面">5.2.6添加咖啡信息界面</h3>
+<p>管理员可进入到添加咖啡信息界面进行添加咖啡信息，添加咖啡信息界面展示如图5-13所示 。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm078/blog.027.png"
+        data-srcset="/images/0000ssm/ssm078/blog.027.png, /images/0000ssm/ssm078/blog.027.png 1.5x, /images/0000ssm/ssm078/blog.027.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm078/blog.027.png"
+        title="/images/0000ssm/ssm078/blog.027.png" /></p>
+<p>图5-13 添加咖啡信息界面</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2023-11-21</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/ssm078%E4%B8%AD%E5%9B%BD%E5%92%96%E5%95%A1%E6%96%87%E5%8C%96%E5%AE%A3%E4%BC%A0%E7%BD%91%E7%AB%99%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://chenqi199.github.io/ssm078%E4%B8%AD%E5%9B%BD%E5%92%96%E5%95%A1%E6%96%87%E5%8C%96%E5%AE%A3%E4%BC%A0%E7%BD%91%E7%AB%99%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" data-title="ssm078中国咖啡文化宣传网站的设计与实现&#43;vue" data-hashtags="ssm中国,网站设计,宣传网站,咖啡文化,设计实现,中国咖啡"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://chenqi199.github.io/ssm078%E4%B8%AD%E5%9B%BD%E5%92%96%E5%95%A1%E6%96%87%E5%8C%96%E5%AE%A3%E4%BC%A0%E7%BD%91%E7%AB%99%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" data-hashtag="ssm中国"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://chenqi199.github.io/ssm078%E4%B8%AD%E5%9B%BD%E5%92%96%E5%95%A1%E6%96%87%E5%8C%96%E5%AE%A3%E4%BC%A0%E7%BD%91%E7%AB%99%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" data-title="ssm078中国咖啡文化宣传网站的设计与实现&#43;vue"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://chenqi199.github.io/ssm078%E4%B8%AD%E5%9B%BD%E5%92%96%E5%95%A1%E6%96%87%E5%8C%96%E5%AE%A3%E4%BC%A0%E7%BD%91%E7%AB%99%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" data-title="ssm078中国咖啡文化宣传网站的设计与实现&#43;vue"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://chenqi199.github.io/ssm078%E4%B8%AD%E5%9B%BD%E5%92%96%E5%95%A1%E6%96%87%E5%8C%96%E5%AE%A3%E4%BC%A0%E7%BD%91%E7%AB%99%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" data-title="ssm078中国咖啡文化宣传网站的设计与实现&#43;vue" data-ralateuid="https://gitee.com/chen_q_i"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ssm%E4%B8%AD%E5%9B%BD/">Ssm中国</a>,&nbsp;<a href="/tags/%E7%BD%91%E7%AB%99%E8%AE%BE%E8%AE%A1/">网站设计</a>,&nbsp;<a href="/tags/%E5%AE%A3%E4%BC%A0%E7%BD%91%E7%AB%99/">宣传网站</a>,&nbsp;<a href="/tags/%E5%92%96%E5%95%A1%E6%96%87%E5%8C%96/">咖啡文化</a>,&nbsp;<a href="/tags/%E8%AE%BE%E8%AE%A1%E5%AE%9E%E7%8E%B0/">设计实现</a>,&nbsp;<a href="/tags/%E4%B8%AD%E5%9B%BD%E5%92%96%E5%95%A1/">中国咖啡</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/ssm079%E5%9F%BA%E4%BA%8Essm%E6%A1%86%E6%9E%B6%E4%BA%91%E8%B6%A3%E7%A7%91%E6%8A%80%E5%AE%A2%E6%88%B7%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-jsp/" class="prev" rel="prev" title="ssm079基于SSM框架云趣科技客户管理系统&#43;jsp"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>ssm079基于SSM框架云趣科技客户管理系统+jsp</a>
+            <a href="/ssm077%E9%93%81%E5%B2%AD%E6%B2%B3%E5%8C%BB%E9%99%A2%E5%8C%BB%E6%82%A3%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" class="next" rel="next" title="ssm077铁岭河医院医患管理系统&#43;vue">ssm077铁岭河医院医患管理系统+vue<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.128.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="chenqi199" target="_blank">chenqi</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

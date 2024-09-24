@@ -1,17 +1,16 @@
 # 0035springboot海滨体育馆管理系统的设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0035springboot海滨体育馆管理系统的设计与实现](https://github.com/GraduationProject-springboot/0035springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV16ia6epENY?p=36)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 课题背景
 当今时代是飞速发展的信息时代。在各行各业中离不开信息处理，这正是计算机被广泛应用于信息管理系统的环境。计算机的最大好处在于利用它能够进行信息管理。使用计算机进行信息控制，不仅提高了工作效率，而且大大的提高了其安全性。尤其对于复杂的信息管理，计算机能够充分发挥它的优越性。
@@ -118,7 +117,7 @@ Spring Boot是一个简化程序设置的拥有开箱即用的框架，它主要
 
 管理员登录后可对系统进行全面管理操作，包括个人中心、学生管理、器材管理、器材借出管理、器材归还管理、器材分类管理、校队签到管理、进入登记管理、离开登记管理、活动预约管理、灯光保修管理、体育论坛以及系统管理。管理员用例图如图3-1所示。
 
-![](/images/0000stringboot/0035springboot/blog.001.png)
+![](/images/0000wxapp//blog.001.png)
 
 图3-1 管理员用例图
 
@@ -126,26 +125,26 @@ Spring Boot是一个简化程序设置的拥有开箱即用的框架，它主要
 
 学生在系统前台可查看系统信息，包括首页、器材、体育论坛以及体育资讯等，没有账号的学生可进行注册操作，注册登录后主要功能模块包括个人中心、器材管理、器材借出管理、器材归还管理、校队签到管理、进入登记管理、离开登记管理、活动预约管理，学生用例图如图3-2所示。
 
-![](/images/0000stringboot/0035springboot/blog.002.png)
+![](/images/0000wxapp//blog.002.png)
 
 图3-2  学生用例图
 1. ## 系统流程分析
    1. ### 注册登录流程
 没有账号的学生可进行注册操作，注册后可进行登录，注册登录流程如图3-3所示。
 
-![](/images/0000stringboot/0035springboot/blog.003.png)
+![](/images/0000wxapp//blog.003.png)
 
 图3-3 注册登录流程图
 1. ### 添加信息流程
 用户在添加信息时，系统编号自动生成生成，用户需要输入信息，系统会其进行验证，验证通过则添加成功，反之添加失败，添加信息流程如图3-4所示。
 
-![](/images/0000stringboot/0035springboot/blog.004.png)
+![](/images/0000wxapp//blog.004.png)
 
 图3-4 添加信息流程图
 1. ### 删除信息流程
 用户可选择需要删除的数据进行删除信息操作，删除信息流程如图3-5所示。
 
-![](/images/0000stringboot/0035springboot/blog.005.png)
+![](/images/0000wxapp//blog.005.png)
 
 图3-5 删除信息流程图
 
@@ -153,13 +152,13 @@ Spring Boot是一个简化程序设置的拥有开箱即用的框架，它主要
    1. ## 系统概要设计
 本海滨体育馆管理系统并没有使用C/S结构，而是基于网络浏览器的方式去访问服务器，进而获取需要的数据信息，这种依靠浏览器进行数据访问的模式就是现在用得比较广泛的适用于广域网并且没有网速限制要求的B/S结构，图4-1就是开发出来的程序工作原理图。
 
-![](/images/0000stringboot/0035springboot/blog.006.png)
+![](/images/0000wxapp//blog.006.png)
 
 图4-1 系统工作原理图
 1. ## 系统结构设计
 在系统结构设计过程中，首先，整个系统分成几个小的模块，小的问题，然后，进一步细分模块，添加细节。本基于Spring Boot的海滨体育馆管理系统结构图如图4-2所示。
 
-![](/images/0000stringboot/0035springboot/blog.007.png)
+![](/images/0000wxapp//blog.007.png)
 
 图4-2 系统结构图
 1. ## 系统顺序图设计
@@ -167,7 +166,7 @@ Spring Boot是一个简化程序设置的拥有开箱即用的框架，它主要
 
 登录模块主要满足了管理员和学生的权限登录，登录模块顺序图如图4-3所示。
 
-![](/images/0000stringboot/0035springboot/blog.008.png)
+![](/images/0000wxapp//blog.008.png)
 
 图4-3 登录模块顺序图
 
@@ -175,7 +174,7 @@ Spring Boot是一个简化程序设置的拥有开箱即用的框架，它主要
 
 管理员和学生登录后均可进行添加信息操作，添加信息模块顺序图如图4-4所示。
 
-![](/images/0000stringboot/0035springboot/blog.009.png)
+![](/images/0000wxapp//blog.009.png)
 
 图4-4 添加信息模块顺序图
 1. ## 数据库设计
@@ -190,31 +189,31 @@ E-R图是一种描述显示数据类型间的关系的数据描述方法，E-R�
 
 （1）体育论坛信息实体E-R图如图4-5所示：
 
-![](/images/0000stringboot/0035springboot/blog.010.png)
+![](/images/0000wxapp//blog.010.png)
 
 图4-4  体育论坛信息实体E-R图
 
 （2）活动预约信息实体E-R图如图4-5所示：
 
-![](/images/0000stringboot/0035springboot/blog.011.png)
+![](/images/0000wxapp//blog.011.png)
 
 图4-5  活动预约实体E-R图
 
 （3）器材信息实体E-R图如图4-6所示：
 
-![](/images/0000stringboot/0035springboot/blog.012.png)
+![](/images/0000wxapp//blog.012.png)
 
 图4-6  器材信息实体E-R图
 
 （4）管理员信息实体E-R图如图4-7所示：
 
-![](/images/0000stringboot/0035springboot/blog.013.png)
+![](/images/0000wxapp//blog.013.png)
 
 图4-7  管理员实体E-R图
 
 （5）学生信息实体E-R图如图4-8所示：
 
-![](/images/0000stringboot/0035springboot/blog.014.png)
+![](/images/0000wxapp//blog.014.png)
 
 图4-8  学生实体E-R图
 1. ### 数据库表设计
@@ -297,51 +296,51 @@ E-R图是一种描述显示数据类型间的关系的数据描述方法，E-R�
    1. ## 登录模块的实现
 管理员和学生在登录界面输入用户名、密码，选择类型进行登录操作，系统登录界面展示如图5-1所示。
 
-![](/images/0000stringboot/0035springboot/blog.015.png)
+![](/images/0000wxapp//blog.015.png)
 
 图5-1系统登录界面图
 1. ## 注册模块的实现
 没有账号的学生用户可进行注册操作，学生注册界面如图5-2所示。
 
-![](/images/0000stringboot/0035springboot/blog.016.png)
+![](/images/0000wxapp//blog.016.png)
 
 图5-2  学生注册界面
 1. ## 学生管理模块的实现
 管理员可添加、修改和删除学生信息，学生管理界面如图5-3所示。
 
-![](/images/0000stringboot/0035springboot/blog.017.png)
+![](/images/0000wxapp//blog.017.png)
 
 图5-3 学生管理界面
 1. ## 系统主界面模块的实现
 学生可进入系统前台查看系统信息，包括首页、器材以及体育论坛等，系统主界面如图5-4所示。
 
-![](/images/0000stringboot/0035springboot/blog.018.png)
+![](/images/0000wxapp//blog.018.png)
 
 图5-4 系统主界面
 1. ## 器材管理模块的实现
 管理员可以添加、修改和删除器材信息，学生可查看器材信息，器材管理界面展示如图5-4所示。
 
-![](/images/0000stringboot/0035springboot/blog.019.png)
+![](/images/0000wxapp//blog.019.png)
 
 图5-5 器材管理界面
 1. ## 器材借出管理模块的实现
 学生可添加器材借出信息，管理员可查看管理所有器材借出信息，并可对其进行修改和删除操作，同时也可添加器材借出信息，器材借出管理界面如图5-6所示，添加器材借出界面展示如图5-7所示。
 
-![](/images/0000stringboot/0035springboot/blog.020.png)
+![](/images/0000wxapp//blog.020.png)
 
 图5-6 器材借出管理界面
 
-![](/images/0000stringboot/0035springboot/blog.021.png)
+![](/images/0000wxapp//blog.021.png)
 
 图5-7 添加器材借出界面
 1. ## 活动预约管理模块的实现
 学生可添加活动预约信息，管理员可查看活动预约信息，并可对其进行审核、修改和删除操作，活动预约管理界面如图5-8所示，添加活动预约界面展示如图5-9所示。
 
-![](/images/0000stringboot/0035springboot/blog.022.png)
+![](/images/0000wxapp//blog.022.png)
 
 图5-8 活动预约管理界面
 
-![](/images/0000stringboot/0035springboot/blog.023.png)
+![](/images/0000wxapp//blog.023.png)
 
 图5-9 添加活动预约界面
 1. #

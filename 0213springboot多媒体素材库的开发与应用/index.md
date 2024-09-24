@@ -1,17 +1,16 @@
 # 0213springboot多媒体素材库的开发与应用
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0213springboot多媒体素材库的开发与应用](https://github.com/GraduationProject-springboot/0213springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)]()
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
 ## 1.1研究背景与意义
@@ -124,7 +123,7 @@ Java语言具有跨平台性，本系统主要通过Java语言进行编码实现
 
 公告删除
 
-![](/images/0200stringboot/0213springboot/blog.002.png)
+![](/images/0200wxapp//blog.002.png)
 
 图4-1系统总体功能设计图
 
@@ -138,42 +137,42 @@ Java语言具有跨平台性，本系统主要通过Java语言进行编码实现
 
 （1）下图是留言板实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\duomeitisucaiku\留言板.jpg](/images/0200stringboot/0213springboot/blog.003.jpeg)
+![C:\Users\Administrator\Desktop\img\duomeitisucaiku\留言板.jpg](/images/0200wxapp//blog.003.jpeg)
 图4.1 留言板实体属性图
 
 （2）下图是用户实体和其具备的属性。
 
-![用户](/images/0200stringboot/0213springboot/blog.004.jpeg)
+![用户](/images/0200wxapp//blog.004.jpeg)
 图4.2 用户实体属性图
 
 （3）下图是公告实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\duomeitisucaiku\公告.jpg](/images/0200stringboot/0213springboot/blog.003.jpeg)
+![C:\Users\Administrator\Desktop\img\duomeitisucaiku\公告.jpg](/images/0200wxapp//blog.003.jpeg)
 图4.3 公告实体属性图
 
 （4）下图是单页数据实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\duomeitisucaiku\单页数据.jpg](/images/0200stringboot/0213springboot/blog.005.jpeg)
+![C:\Users\Administrator\Desktop\img\duomeitisucaiku\单页数据.jpg](/images/0200wxapp//blog.005.jpeg)
 图4.4 单页数据实体属性图
 
 （5）下图是素材评价实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\duomeitisucaiku\素材评价.jpg](/images/0200stringboot/0213springboot/blog.003.jpeg)
+![C:\Users\Administrator\Desktop\img\duomeitisucaiku\素材评价.jpg](/images/0200wxapp//blog.003.jpeg)
 图4.5 素材评价实体属性图
 
 （6）下图是素材订单实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\duomeitisucaiku\素材订单.jpg](/images/0200stringboot/0213springboot/blog.006.jpeg)
+![C:\Users\Administrator\Desktop\img\duomeitisucaiku\素材订单.jpg](/images/0200wxapp//blog.006.jpeg)
 图4.6 素材订单实体属性图
 
 （7）下图是素材收藏实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\duomeitisucaiku\素材收藏.jpg](/images/0200stringboot/0213springboot/blog.003.jpeg)
+![C:\Users\Administrator\Desktop\img\duomeitisucaiku\素材收藏.jpg](/images/0200wxapp//blog.003.jpeg)
 图4.7 素材收藏实体属性图
 
 （8）下图是素材实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\duomeitisucaiku\素材.jpg](/images/0200stringboot/0213springboot/blog.006.jpeg)
+![C:\Users\Administrator\Desktop\img\duomeitisucaiku\素材.jpg](/images/0200wxapp//blog.006.jpeg)
 图4.8 素材实体属性图
 
 ### 4.2.2逻辑设计
@@ -314,26 +313,26 @@ Java语言具有跨平台性，本系统主要通过Java语言进行编码实现
 ### 5.1.1管理员登录
 管理员可以选择任一浏览器打开网址，输入信息无误后，以管理员的身份行使相关的管理权限，管理员登录界面设计如图5-1所示。
 
-![](/images/0200stringboot/0213springboot/blog.007.png)
+![](/images/0200wxapp//blog.007.png)
 
 图5-1管理员登录界面
 ### 5.1.2素材管理
 管理员可以通过选择素材管理，管理相关的素材信息记录，比如进行查看素材信息标题，修改素材信息来源等操作，素材管理界面设计如图5-2所示。
 
-![](/images/0200stringboot/0213springboot/blog.008.png)
+![](/images/0200wxapp//blog.008.png)
 
 图5-2素材管理界面
 
 ### 5.1.3公告管理
 管理员可以通过选择公告管理，管理相关的公告信息记录，比如进行查看公告详情,删除错误的公告信息,发布公告等操作，公告管理界面如图5-3所示。
 
-![](/images/0200stringboot/0213springboot/blog.009.png)
+![](/images/0200wxapp//blog.009.png)
 
 图5-3 公告管理界面
 ### 5.1.4公告类型管理
 管理员可以通过选择公告类型管理，管理相关的公告类型信息，比如查看所有公告类型,删除无用公告类型,修改公告类型,添加公告类型等操作，公告类型管理界面设计如图5-4所示。
 
-![](/images/0200stringboot/0213springboot/blog.010.png)
+![](/images/0200wxapp//blog.010.png)
 
 图5-4公告类型管理界面
 # 系

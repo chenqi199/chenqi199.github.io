@@ -1,17 +1,16 @@
 # 0277springboot鲜牛奶订购系统的设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0277springboot鲜牛奶订购系统的设计与实现](https://github.com/GraduationProject-springboot/0277springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1EbH?p=43)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 绪论
 ## 1.1 课题背景
@@ -69,25 +68,25 @@ Vue框架因为是纯JavaScript开发的模式，只需要通过浏览器就可�
 ### 3.2.1 操作流程
 使用者在操作鲜牛奶订购系统中，应该按照本系统提供的操作流程（图3.1即为本系统的操作流程图）进行操作，可以减少操作失误，从而节省进入鲜牛奶订购系统的时间。
 
-![](/images/0200stringboot/0277springboot/blog.001.png)
+![](/images/0200wxapp//blog.001.png)
 
 图3.1 系统操作流程
 ### 3.2.2 登录流程
 鲜牛奶订购系统通过登录功能（图3.2即为其登录的流程）引导使用者进入指定的功能操作区，也避免非本系统的用户享受本系统提供的服务以及查看本系统提供的信息，进而保证用户安全。
 
-![](/images/0200stringboot/0277springboot/blog.002.png)
+![](/images/0200wxapp//blog.002.png)
 
 图3.2 登录流程
 ### 3.2.3 删除信息流程
 鲜牛奶订购系统在经过长期使用后，会产生很多的数据信息。为了腾出存储空间存放更多的数据，本系统数据库中存储的数据，一些没有参考价值的数据需要进行删除（图3.3即为删除信息的流程），删除数据过程中，为避免误删，使用者要根据系统的提示来决定是否删除数据。
 
-![](/images/0200stringboot/0277springboot/blog.003.png)
+![](/images/0200wxapp//blog.003.png)
 
 图3.3 删除信息流程
 ### 3.2.4 添加信息流程
 鲜牛奶订购系统提供可视化的功能操作区，非常方便使用者进行数据操作，当使用者往系统中录入数据时（图3.4即为添加信息的流程），本系统也会进行数据合法性的判断，符合要求的数据才能够在数据库指定表中进行登记。
 
-![](/images/0200stringboot/0277springboot/blog.004.png)
+![](/images/0200wxapp//blog.004.png)
 
 图3.4 添加信息流程
 ## 3.3 性能需求
@@ -113,19 +112,19 @@ Vue框架因为是纯JavaScript开发的模式，只需要通过浏览器就可�
 
 图3.5即为管理员用例图，管理员权限操作的功能包括管理商家，管理商家星级信息，管理用户，管理商品等。
 
-![](/images/0200stringboot/0277springboot/blog.005.png)
+![](/images/0200wxapp//blog.005.png)
 
 图3.5 管理员用例图
 
 图3.6即为商家用例图，商家权限操作的功能包括管理商品，回复商品评价，管理商品订单等。
 
-![](/images/0200stringboot/0277springboot/blog.006.png)
+![](/images/0200wxapp//blog.006.png)
 
 图3.6 商家用例图
 
 图3.7即为用户用例图，用户权限操作的功能包括查看商家，购买商品，提交订单，管理商品订单等。
 
-![](/images/0200stringboot/0277springboot/blog.007.png)
+![](/images/0200wxapp//blog.007.png)
 
 图3.7 用户用例图
 # 第4章 系统设计
@@ -145,19 +144,19 @@ Vue框架因为是纯JavaScript开发的模式，只需要通过浏览器就可�
 ## 4.2 功能结构设计
 图4.1即为设计的管理员功能结构，管理员权限操作的功能包括管理商家，管理商家星级信息，管理用户，管理商品等。
 
-![](/images/0200stringboot/0277springboot/blog.008.png)
+![](/images/0200wxapp//blog.008.png)
 
 图4.1 管理员功能结构
 
 图4.2即为设计的商家功能结构，商家权限操作的功能包括管理商品，回复商品评价，管理商品订单等。
 
-![](/images/0200stringboot/0277springboot/blog.009.png)
+![](/images/0200wxapp//blog.009.png)
 
 图4.2 商家功能结构
 
 图4.3即为设计的用户功能结构，用户权限操作的功能包括查看商家，购买商品，提交订单，管理商品订单等。
 
-![](/images/0200stringboot/0277springboot/blog.010.png)
+![](/images/0200wxapp//blog.010.png)
 
 图4.3 用户功能结构
 ## 4.3 数据库设计
@@ -167,31 +166,31 @@ Vue框架因为是纯JavaScript开发的模式，只需要通过浏览器就可�
 
 （1）图4.4即为商品这个实体所拥有的属性值。商品有商品类型，商品现价，商品名称等。
 
-![](/images/0200stringboot/0277springboot/blog.011.png)
+![](/images/0200wxapp//blog.011.png)
 
 图4.4 商品实体属性图
 
 （2）图4.5即为商品订单这个实体所拥有的属性值。商品订单有订购数量，订单类型，收货地址等。
 
-![](/images/0200stringboot/0277springboot/blog.012.png)
+![](/images/0200wxapp//blog.012.png)
 
 图4.5 商品订单实体属性图
 
 （3）图4.6即为商家这个实体所拥有的属性值。商家有邮箱，营业执照，商家星级类型等。
 
-![](/images/0200stringboot/0277springboot/blog.013.png)
+![](/images/0200wxapp//blog.013.png)
 
 图4.6 商家实体属性图
 
 4. 图4.7即为用户这个实体所拥有的属性值。用户有手机号，电子邮箱，用户头像等。
 
-![](/images/0200stringboot/0277springboot/blog.014.png)
+![](/images/0200wxapp//blog.014.png)
 
 图4.7 用户实体属性图
 
 4. 图4.8即为上面介绍的实体中存在的联系。
 
-![](/images/0200stringboot/0277springboot/blog.015.png)
+![](/images/0200wxapp//blog.015.png)
 
 图4.8 实体间关系E-R图
 ### 4.3.2 数据库物理设计
@@ -353,69 +352,69 @@ Vue框架因为是纯JavaScript开发的模式，只需要通过浏览器就可�
 ### 5.1.1 公告信息管理
 图5.1 即为编码实现的公告信息管理界面，公告信息包括了公告图片，公告类型，公告标题等，管理员在公告信息管理界面中可以对界面中显示的所有公告信息进行更改，查询，删除。
 
-![](/images/0200stringboot/0277springboot/blog.016.png)
+![](/images/0200wxapp//blog.016.png)
 
 图5.1 公告信息管理界面
 ### 5.1.2 用户管理
 图5.2 即为编码实现的用户管理界面，用户信息有性别，用户手机号，用户身份证号，用户头像等信息。管理员在用户管理界面中可以为本界面显示的所有用户信息进行查询，修改，删除，可以为用户的账号进行重置密码。
 
-![](/images/0200stringboot/0277springboot/blog.017.png)
+![](/images/0200wxapp//blog.017.png)
 
 图5.2 用户管理界面
 ### 5.1.3 商家管理
 图5.3 即为编码实现的商家管理界面，商家信息有营业执照，商家星级类型，商家名称等信息。管理员在商家管理界面中新增商家，更改商家的营业执照，商家星级信息等，可以删除需要删除的商家信息。
 
-![](/images/0200stringboot/0277springboot/blog.018.png)
+![](/images/0200wxapp//blog.018.png)
 
 图5.3 商家管理界面
 ### 5.1.4 商家星级管理
 图5.4 即为编码实现的商家星级管理界面，商家星级信息有商家星级类型名称等，管理员在商家星级管理界面修改商家星级信息，查询商家星级信息，删除商家星级信息等。
 
-![](/images/0200stringboot/0277springboot/blog.019.png)
+![](/images/0200wxapp//blog.019.png)
 
 图5.4 商家星级管理界面
 ## 5.2 商家功能实现
 ### 5.2.1 商品管理
 图5.5 即为编码实现的商品管理界面，商品信息有商品是否上架，剩余订购数量，商品原价等信息，商家在商品管理界面中为商品的可订购数量进行增加，为商品的可订购数量进行减少，可以上架商品，下架商品以及更改商品信息等。
 
-![](/images/0200stringboot/0277springboot/blog.020.png)
+![](/images/0200wxapp//blog.020.png)
 
 图5.5 商品管理界面
 ### 5.2.2 商品评价管理
 图5.6 即为编码实现的商品评价管理界面，商家在商品评价管理界面中查看用户对商品的评价信息，商品的评价信息有评价内容，回复内容等，商家需要对商品评价进行回复。
 
-![](/images/0200stringboot/0277springboot/blog.021.png)
+![](/images/0200wxapp//blog.021.png)
 
 图5.6 商品评价管理界面
 ### 5.2.3 商品订单管理
 图5.7 即为编码实现的商品订单管理界面，商品订单有订单号，实付价格，支付类型，商品照片等信息。商家在商品订单管理界面中对商品订单查询，查询条件有商品类型，商品名称，用户姓名等。管理员也能对商品订单详情进行查看。
 
-![](/images/0200stringboot/0277springboot/blog.022.png)
+![](/images/0200wxapp//blog.022.png)
 
 图5.7 商品订单管理界面
 ## 5.3 用户功能实现
 ### 5.3.1 商家信息
 图5.8 即为编码实现的商家信息界面，用户在商家信息界面中查看商家介绍还有商家的营业执照以及商家的星级信息等。
 
-![](/images/0200stringboot/0277springboot/blog.023.png)
+![](/images/0200wxapp//blog.023.png)
 
 图5.8 商家信息界面
 ### 5.3.2 商品信息
 图5.9 即为编码实现的商品信息界面，用户在商品信息界面中查看评论，可以直接购买商品。
 
-![](/images/0200stringboot/0277springboot/blog.024.png)
+![](/images/0200wxapp//blog.024.png)
 
 图5.9 商品信息界面
 ### 5.3.3 确认下单
 图5.10 即为编码实现的确认下单界面，用户在确认下单界面中可以提交订单，前提是检查购买的物品以及收货的地址信息等是否正确，也需要查看总金额信息以及实付款信息，最后根据实付款的金额进行支付。
 
-![](/images/0200stringboot/0277springboot/blog.025.png)
+![](/images/0200wxapp//blog.025.png)
 
 图5.10 确认下单界面
 ### 5.3.4 商品订单
 图5.11 即为编码实现的商品订单界面，用户在商品订单界面中可以退款，主要是对已支付的订单，发现不需要该订单商品，则可以申请退款，如果订单已经完成，用户可以评价订单。
 
-![](/images/0200stringboot/0277springboot/blog.026.png)
+![](/images/0200wxapp//blog.026.png)
 
 图5.11 商品订单界面
 # 

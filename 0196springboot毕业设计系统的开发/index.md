@@ -1,17 +1,16 @@
 # 0196springboot毕业设计系统的开发
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0196springboot毕业设计系统的开发](https://github.com/GraduationProject-springboot/0196springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1ECs?p=94)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第一章 绪论
 ## 1.1 选题背景
@@ -59,25 +58,25 @@ Spring Boot适合初学者，也适合从以前的Spring框架开发者学习，
 ## 3.2系统流程分析
 从系统的角色上分析，每个用户角色都代表了不同的账号身份，而不同的身份则代表着功能的异同，所以首先要区分用户的角色身份问题。设置用户登录需要输入账号和密码，输入的信息必须与数据库里已经存在的账号密码信息进行比对，只有正确的账号和密码才可以进行下一步的页面显示操作，如果不正确的账号密码，则拒绝用户登录，也代表着用户没有继续访问的权限，系统是无法继续提供服务的。
 
-![](/images/0100stringboot/0196springboot/blog.001.png)
+![](/images/0100wxapp//blog.001.png)
 
 图3-1 操作流程图
 
 任何一个系统都有一个操作流程，本设计里面，对于任何数据的存储都有一定的合法要求，只有符合设定要求的数据才可以进行存储。具体步骤参考下图。
 
-![](/images/0100stringboot/0196springboot/blog.002.png)
+![](/images/0100wxapp//blog.002.png)
 
 图3-2 添加信息流程图
 
 数据的存储并不是一成不变的，当需要对已经存在的数据进行改变的时候，同样也遵循着操作流程，想更改数据首先要确定更改之前的数据是什么，然后输入新的数据是否合法，都要符合流程，只有合法数据才可以被更新到数据库里存储。具体步骤参考下图。
 
-![](/images/0100stringboot/0196springboot/blog.003.png)
+![](/images/0100wxapp//blog.003.png)
 
 图3-3 修改信息流程图
 
 删除操作，在数据存储方面是一件比较慎重的事件，很有可能会产生失误操作，所以一般删除操作的时候都要提示是否删除，确定删除才会更新数据库内容，实现删除目的。具体步骤参考下图。
 
-![](/images/0100stringboot/0196springboot/blog.004.png)
+![](/images/0100wxapp//blog.004.png)
 
 图3-4 删除信息流程图
 ## 3.3系统性能分析
@@ -93,19 +92,19 @@ Spring Boot适合初学者，也适合从以前的Spring框架开发者学习，
 
 管理员用例图的绘制结果见图3-5。管理员登录进入本系统操作的功能包括查看成绩统计报表信息，管理课题信息，管理课题任务，管理选题申请信息，管理最终成绩信息等。
 
-![](/images/0100stringboot/0196springboot/blog.005.png)
+![](/images/0100wxapp//blog.005.png)
 
 图3-5 管理员用例图
 
 教师用例图的绘制结果见图3-6。教师登录进入本系统操作的功能包括查看学生信息，新增课题信息，新增课题任务信息，审核学生上传的阶段性文档，审核选题申请信息，管理最终成绩信息等。
 
-![](/images/0100stringboot/0196springboot/blog.006.png)
+![](/images/0100wxapp//blog.006.png)
 
 图3-6 教师用例图
 
 学生用例图的绘制结果见图3-7。学生登录进入本系统操作的功能包括对课题进行申请，查看课题任务并上传阶段性文档，查看最终成绩信息等。
 
-![](/images/0100stringboot/0196springboot/blog.007.png)
+![](/images/0100wxapp//blog.007.png)
 
 图3-7 学生用例图
 # 第四章 系统设计
@@ -123,19 +122,19 @@ Spring Boot适合初学者，也适合从以前的Spring框架开发者学习，
 
 管理员功能结构图的绘制结果见图4-1。管理员登录进入本系统操作的功能包括查看成绩统计报表信息，管理课题信息，管理课题任务，管理选题申请信息，管理最终成绩信息等。
 
-![](/images/0100stringboot/0196springboot/blog.008.png)
+![](/images/0100wxapp//blog.008.png)
 
 图4-1 管理员功能结构图
 
 教师功能结构图的绘制结果见图4-2。教师登录进入本系统操作的功能包括查看学生信息，新增课题信息，新增课题任务信息，审核学生上传的阶段性文档，审核选题申请信息，管理最终成绩信息等。
 
-![](/images/0100stringboot/0196springboot/blog.009.png)
+![](/images/0100wxapp//blog.009.png)
 
 图4-2 教师功能结构图
 
 学生功能结构图的绘制结果见图4-3。学生登录进入本系统操作的功能包括对课题进行申请，查看课题任务并上传阶段性文档，查看最终成绩信息等。
 
-![](/images/0100stringboot/0196springboot/blog.010.png)
+![](/images/0100wxapp//blog.010.png)
 
 图4-3 学生功能结构图
 ## 4.3数据库设计
@@ -145,31 +144,31 @@ Spring Boot适合初学者，也适合从以前的Spring框架开发者学习，
 
 （1）使用Visio这样的常用的实体属性图绘制工具来绘制教师实体属性图，绘制结果见图4-3。
 
-![](/images/0100stringboot/0196springboot/blog.011.png)
+![](/images/0100wxapp//blog.011.png)
 
 图4-3 教师实体属性图
 
 （2）使用Visio这样的常用的实体属性图绘制工具来绘制课题实体属性图，绘制结果见图4-4。
 
-![](/images/0100stringboot/0196springboot/blog.012.png)
+![](/images/0100wxapp//blog.012.png)
 
 图4-4 课题实体属性图
 
 （3）使用Visio这样的常用的实体属性图绘制工具来绘制课题任务实体属性图，绘制结果见图4-5。
 
-![](/images/0100stringboot/0196springboot/blog.013.png)
+![](/images/0100wxapp//blog.013.png)
 
 图4-5 课题任务实体属性图
 
 （4）使用Visio这样的常用的实体属性图绘制工具来绘制学生实体属性图，绘制结果见图4-6。
 
-![](/images/0100stringboot/0196springboot/blog.014.png)
+![](/images/0100wxapp//blog.014.png)
 
 图4-6 学生实体属性图
 
 （5）绘制的上述实体间存在的联系见图4-7。
 
-![](/images/0100stringboot/0196springboot/blog.015.png)
+![](/images/0100wxapp//blog.015.png)
 
 图4-7 实体间关系E-R图
 ### 4.3.2 数据库物理设计
@@ -294,57 +293,57 @@ Spring Boot适合初学者，也适合从以前的Spring框架开发者学习，
 ### 5.1.1 课题信息管理
 管理员进入如图5-1所示的课题信息管理界面之后，管理员点击信息显示栏中最右侧的修改，删除按钮可依次完成课题信息的修改，删除等操作，管理员也能在当前界面查询课题信息，添加课题信息等。
 
-![](/images/0100stringboot/0196springboot/blog.017.png)
+![](/images/0100wxapp//blog.017.png)
 
 图5-1 课题信息管理界面
 ### 5.1.2 成绩统计报表
 管理员进入如图5-2所示的成绩统计报表界面之后，管理员根据各个年份来统计各个学生的成绩信息，同时，管理员可以点击成绩统计报表界面右上角的各种小图标，可以把统计图转化为折线图，柱形图等图形，管理员也能下载统计报表。
 
-![](/images/0100stringboot/0196springboot/blog.018.png)
+![](/images/0100wxapp//blog.018.png)
 
 图5-2 成绩统计报表界面
 ### 5.1.3 教师管理
 管理员进入如图5-3所示的教师管理界面之后，管理员点击信息显示栏中最右侧的修改，删除按钮可依次完成教师信息的修改，删除等操作。
 
-![](/images/0100stringboot/0196springboot/blog.019.png)
+![](/images/0100wxapp//blog.019.png)
 
 图5-3 教师管理界面
 ## 5.2 教师功能实现
 ### 5.2.1 选题申请管理
 教师进入如图5-4所示的选题申请管理界面之后，教师负责审核学生选题信息，也可以拒绝学生选题信息，当学生完成课题任务之后，教师需要在选题申请管理界面发布学生的最终成绩。
 
-![](/images/0100stringboot/0196springboot/blog.020.png)
+![](/images/0100wxapp//blog.020.png)
 
 图5-4 选题申请管理界面
 ### 5.2.2 课题任务管理
 教师进入如图5-5所示的课题任务管理界面之后，教师负责发布课题任务，学生就需要完成任务并上传文档，教师就负责查看学生的任务完成情况信息，然后审核学生完成的课题任务，最后对学生完成的课题任务进行打分。
 
-![](/images/0100stringboot/0196springboot/blog.021.png)
+![](/images/0100wxapp//blog.021.png)
 
 图5-5 课题任务管理界面
 ### 5.2.3 最终成绩管理
 教师进入如图5-6所示的最终成绩管理界面之后，教师查看学生最终成绩信息，可以对学生的最终成绩信息进行查询或删除。
 
-![](/images/0100stringboot/0196springboot/blog.022.png)
+![](/images/0100wxapp//blog.022.png)
 
 图5-6 最终成绩管理界面
 ## 5.3 学生功能实现
 ### 5.3.1 课题信息管理
 学生进入如图5-7所示的课题信息管理界面之后，学生可以查看课题信息，如果学生没有选择课题，则可以对能够申请的课题进行申请。每个学生只能选择一个课题，已经成功选择课题的学生就不能申请课题了。
 
-![](/images/0100stringboot/0196springboot/blog.023.png)
+![](/images/0100wxapp//blog.023.png)
 
 图5-7 课题信息管理界面
 ### 5.3.2 课题任务管理
 学生进入如图5-8所示的课题任务管理界面之后，学生可以查看课题任务，然后完成课题任务并上传阶段性文档。
 
-![](/images/0100stringboot/0196springboot/blog.024.png)
+![](/images/0100wxapp//blog.024.png)
 
 图5-8 课题任务管理界面
 ### 5.3.3 最终成绩查看
 学生进入如图5-9所示的最终成绩查看界面之后，学生查看课题名称，查看成绩信息，可以通过课题名称，教师姓名，课题类型以及学生姓名来查询最终成绩。
 
-![](/images/0100stringboot/0196springboot/blog.025.png)
+![](/images/0100wxapp//blog.025.png)
 
 图5-9 最终成绩查看界面
 

@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer" />
+        <meta name="robots" content="noodp" />
+        <title>ssm112星空游戏购买下载平台的设计与实现&#43;jsp - chenqi blog</title><meta name="Description" content="Hugo theme - chenqi"><meta property="og:url" content="https://chenqi199.github.io/ssm112%E6%98%9F%E7%A9%BA%E6%B8%B8%E6%88%8F%E8%B4%AD%E4%B9%B0%E4%B8%8B%E8%BD%BD%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/">
+  <meta property="og:site_name" content="chenqi blog">
+  <meta property="og:title" content="ssm112星空游戏购买下载平台的设计与实现&#43;jsp">
+  <meta property="og:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm112星空游戏购买下载平台的设计与实现&#43;jsp github 项目仓库 开源仅有后端代码 点击播放视频 ▼ JAVA简介 Java">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-12-03T10:32:47+08:00">
+    <meta property="article:modified_time" content="2023-12-03T10:32:47+08:00">
+    <meta property="article:tag" content="Ssm星空">
+    <meta property="article:tag" content="下载平台">
+    <meta property="article:tag" content="星空游戏">
+    <meta property="article:tag" content="购买下载">
+    <meta property="article:tag" content="游戏购买">
+    <meta property="article:tag" content="平台设计">
+    <meta property="og:image" content="https://chenqi199.github.io/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chenqi199.github.io/logo.png">
+  <meta name="twitter:title" content="ssm112星空游戏购买下载平台的设计与实现&#43;jsp">
+  <meta name="twitter:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm112星空游戏购买下载平台的设计与实现&#43;jsp github 项目仓库 开源仅有后端代码 点击播放视频 ▼ JAVA简介 Java">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chenqi199.github.io/ssm112%E6%98%9F%E7%A9%BA%E6%B8%B8%E6%88%8F%E8%B4%AD%E4%B9%B0%E4%B8%8B%E8%BD%BD%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" /><link rel="prev" href="https://chenqi199.github.io/ssm110%E6%B0%91%E5%AE%BF%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-jsp/" /><link rel="next" href="https://chenqi199.github.io/ssm111%E5%9F%BA%E4%BA%8Emvc%E7%9A%84%E8%88%9E%E8%B9%88%E7%BD%91%E7%AB%99%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "ssm112星空游戏购买下载平台的设计与实现+jsp",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chenqi199.github.io\/ssm112%E6%98%9F%E7%A9%BA%E6%B8%B8%E6%88%8F%E8%B4%AD%E4%B9%B0%E4%B8%8B%E8%BD%BD%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp\/"
+        },"image": ["https:\/\/chenqi199.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "ssm星空, 下载平台, 星空游戏, 购买下载, 游戏购买, 平台设计","wordcount":  6714 ,
+        "url": "https:\/\/chenqi199.github.io\/ssm112%E6%98%9F%E7%A9%BA%E6%B8%B8%E6%88%8F%E8%B4%AD%E4%B9%B0%E4%B8%8B%E8%BD%BD%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp\/","datePublished": "2023-12-03T10:32:47+08:00","dateModified": "2023-12-03T10:32:47+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/chenqi199.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "chenqi"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/ssm112%E6%98%9F%E7%A9%BA%E6%B8%B8%E6%88%8F%E8%B4%AD%E4%B9%B0%E4%B8%8B%E8%BD%BD%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/ssm112%E6%98%9F%E7%A9%BA%E6%B8%B8%E6%88%8F%E8%B4%AD%E4%B9%B0%E4%B8%8B%E8%BD%BD%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">ssm112星空游戏购买下载平台的设计与实现+jsp</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="chenqi199" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>chenqi</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-12-03">2023-12-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 6714 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 14 分钟&nbsp;<span id="/ssm112%E6%98%9F%E7%A9%BA%E6%B8%B8%E6%88%8F%E8%B4%AD%E4%B9%B0%E4%B8%8B%E8%BD%BD%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" class="leancloud_visitors" data-flag-title="ssm112星空游戏购买下载平台的设计与实现&#43;jsp">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">github 项目仓库</a> 开源仅有后端代码</a></li>
+        <li><a href="#点击播放视频-">点击播放视频 ▼</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#23-tomcat服务器">2.3 Tomcat服务器</a></li>
+    <li><a href="#24-mysql数据库">2.4 MySQL数据库</a></li>
+    <li><a href="#25-ssm框架">2.5 SSM框架</a></li>
+    <li><a href="#31-可行性分析">3.1 可行性分析</a>
+      <ul>
+        <li><a href="#311-技术可行性">3.1.1 技术可行性</a></li>
+        <li><a href="#312-经济可行性">3.1.2 经济可行性</a></li>
+        <li><a href="#313-操作可行性">3.1.3 操作可行性</a></li>
+      </ul>
+    </li>
+    <li><a href="#32-项目设计目标与原则">3.2 项目设计目标与原则</a></li>
+    <li><a href="#33-系统流程分析">3.3 系统流程分析</a>
+      <ul>
+        <li><a href="#331-操作流程">3.3.1 操作流程</a></li>
+        <li><a href="#332-添加信息流程">3.3.2 添加信息流程</a></li>
+        <li><a href="#333-购买操作流程分析">3.3.3 购买操作流程分析</a></li>
+      </ul>
+    </li>
+    <li><a href="#34-系统功能需求分析">3.4 系统功能需求分析</a></li>
+    <li><a href="#41系统结构设计">4.1系统结构设计</a></li>
+    <li><a href="#42数据库设计">4.2数据库设计</a>
+      <ul>
+        <li><a href="#421-数据库e-r图设计">4.2.1 数据库E-R图设计</a></li>
+        <li><a href="#422-数据库表设计">4.2.2 数据库表设计</a></li>
+      </ul>
+    </li>
+    <li><a href="#51前台功能模块">5.1前台功能模块</a></li>
+    <li><a href="#52用户后台功能模块">5.2用户后台功能模块</a></li>
+    <li><a href="#53后台功能模块">5.3后台功能模块</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="项目清单-包安装运行httpchenqi1990site-官网地址-httpchenqi1990site"><a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">项目清单 包安装运行</a> 官网地址 <a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">http://chenqi1990.site</a></h1>
+<h1 id="ssm112星空游戏购买下载平台的设计与实现jsphttpsgithubcomgraduationproject-springboot"><a href="https://github.com/GraduationProject-springboot/" target="_blank" rel="noopener noreffer ">ssm112星空游戏购买下载平台的设计与实现+jsp</a></h1>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        data-srcset="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 1.5x, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        title="picture" /></p>
+<h3 id="github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">github 项目仓库</a> 开源仅有后端代码</h3>
+<h3 id="点击播放视频-">点击播放视频 ▼</h3>
+<p><a href="https://www.bilibili.com/video/BV1T48XecE9G?p=108" target="_blank" rel="noopener noreffer "><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.sstatic.net/Vp2cE.png"
+        data-srcset="https://i.sstatic.net/Vp2cE.png, https://i.sstatic.net/Vp2cE.png 1.5x, https://i.sstatic.net/Vp2cE.png 2x"
+        data-sizes="auto"
+        alt="https://i.sstatic.net/Vp2cE.png"
+        title="Watch the video" /></a></p>
+<h1 id="java简介">JAVA简介</h1>
+<p>Java主要采用CORBA技术和安全模型，可以在互联网应用的数据保护。它还提供了对EJB（Enterprise JavaBeans）的全面支持，java servlet API，JSP（java server pages），和XML技术。JAVA语言是一种面向对象的语言，它通过提供最基本的方法来完成指定的任务，开发者只需要知道一些概念就能够编写出一些应用程序。Java程序相对较小，其代码能够在小机器上运行。Java是一种计算机编程语言，具有封装、继承和多态性三个主要特性，广泛应用于企业Web应用程序开发和移动应用程序开发。</p>
+<p>Java语言和一般编译器以及直译的区别在于，Java首先将源代码转换为字节码，然后将其转换为JVM的可执行文件，JVM可以在各种不同的JVM上运行。因此，实现了它的跨平台特性。虽然这使得Java在早期非常缓慢，但是随着Java的开发，它已经得到了改进。</p>
+<h2 id="23-tomcat服务器">2.3 Tomcat服务器</h2>
+<p>Tomcat属于一种轻型的服务器，当程序员需要开发或调试JSP 程序时，则通常会将该服务器作为首选。对于一个仅具有计算机基础知识的人来说，计算机系统具有一个好的Apache服务器，可以很好的对HTML 页面进行访问。Tomcat 虽然是Apache的扩展，但是它们都是可以独立运行的，二者是不互相干扰的。当配置正确的时候，Apache服务器为HTML 页面的运行提供技术支持，Tomcat 的任务则是运行Servle和JSP 页面。Tomca也具有一定的HTML页面处理功能。</p>
+<h2 id="24-mysql数据库">2.4 MySQL数据库</h2>
+<p>数据库是系统开发过程中不可或缺的一部分。 在WEB应用方面，MySQL AB开发了一个具有很大优势的MySQL关系数据库管理系统。 MySQL可以将数据存储在不同的表中，这非常灵活，并且还可以提高系统在实际应用中的速度。 数据库访问最常用于标准SQL语言，MySQL用于SQL语言，因此它具有高度兼容性。数据库的操作是必不可少的，包括对数据库表的增加、删除、修改、查询等功能。现如今，数据库可以分为关系型数据库和非关系型数据库，Mysql属于关系性数据库，Mysql数据库是一款小型的关系型数据库，它以其自身特点：体积小、速度快、成本低等，Mysql数据库是目前最受欢迎的开源数据库。</p>
+<p>在WEB应用技术中， Mysql数据库支持不同的操作系统平台，虽然在不同平台下的安装和配置都不相同，但是差别也不是很大，Mysql在Windows平台下两种安装方式，二进制版和免安装版。安装完Mysql数据库之后，需要启动服务进程，相应的客户端就可以连接数据库，客户端可通过命令行或者图形界面工具登录数据库。</p>
+<h2 id="25-ssm框架">2.5 SSM框架</h2>
+<p>当今流行的“SSM组合框架”是Spring + SpringMVC + MyBatis的缩写，受到很多的追捧，“组合SSM框架”是强强联手、各司其职、协调互补的团队精神。web项目的框架，通常更简单的数据源。Spring属于一个轻量级的反转控制框架(IoC)，但它也是一个面向表面的容器(AOP)。SpringMVC常常用于控制器的分类工作模式，与模型对象分开，程序对象的作用与自动取款机进行处理。这种解耦治疗使整个系统的个性化变得更加容易。MyBatis是一个良好的可持续性框架，支持普通SQL查询，同时允许对存储过程的高级映射进行数据的优化处理。大型Java Web应用程序的由于开发成本太高，开发后难以维护和开发过程中一些难以解决的问题，而采用“SSM组合框架”，它允许建立业务层次结构，并为这个问题提供良好的解决方案。</p>
+<p>3 系统分析</p>
+<h2 id="31-可行性分析">3.1 可行性分析</h2>
+<h3 id="311-技术可行性">3.1.1 技术可行性</h3>
+<p>技术可行性主要取决于系统设计和开发中使用的软硬件配置是否能满足应用要求，相关技术是否能保证系统设计完成后的正常运行。本网站在Windows操作系统中进行开发，并且目前PC机的性能已经可以胜任普通系统的web服务器。系统开发所使用的技术也都是自身所具有的，也是当下广泛应用的技术之一。</p>
+<p>系统的开发环境和配置都是可以自行安装的，使用比较成熟的Mysql数据库进行对系统用户之间的数据交互，根据技术语言对数据库管理，结合需求进行修改维护，可以使得系统运行更具有稳定性和安全性，从而完成实现系统的开发。该系统目前采用比较成熟的JAVA技术，并利用其创建的脚本与结合创建动态网页。它可以在普通文本编辑器上编辑而无需编译，它可以直接在服务器上执行。它易于学习和操作，系统开发的基础是高度兼容和灵活的，从技术可行性上来分析系统开发时完全可行的。</p>
+<h3 id="312-经济可行性">3.1.2 经济可行性</h3>
+<p>星空游戏购买下载平台的开发之前所做的市场调研及其他管理相关的系统，是没有任何费用的，都是通过开发者自己的努力，所有的工作的都是自己亲力亲为，在碰到自己比较难以解决的问题，大多是通过同学和指导老师的帮助进行相关信息的解决，所以对于系统的开发在经济上是完全可行的，没有任何费用支出的。</p>
+<p>使用比较成熟的技术，系统是基于Java的开发，采用Mysql数据库。所以系统在开发人力、财力要求不高，具有经济可行性。</p>
+<h3 id="313-操作可行性">3.1.3 操作可行性</h3>
+<p>可操作性主要是对系统设计完成后，用户的使用体验度，通过界面导航菜单可以简单明了地进行查看所需的信息内容。对于系统的操作，不需要专业人员都可以直接进行功能模块的操作管理，所以在系统的可操作性是完全可以的。本系统的操作使用的也是界面窗口进行登录，所以操作人员只要会简单的电脑操作就完全可以的。</p>
+<h2 id="32-项目设计目标与原则">3.2 项目设计目标与原则</h2>
+<p>1、关于星空游戏购买下载平台的基本要求</p>
+<p>（1）功能要求：个人中心、用户管理、游戏分类管理、游戏信息管理、订单信息管理、游戏下载管理、管理员管理、留言板管理、系统管理等功能模块。</p>
+<p>（2）性能：在不同操作系统上均能无差错实现在不同类型的用户登入相应界面后能不出差错、方便地进行预期操作。</p>
+<p>（3）安全与保密要求：用户都必须通过身份验证才能进入系统，并且用户的权限也需要根据用户的类型进行限定。</p>
+<p>（4）环境要求：支持多种平台，可在Windows系列、Vista系统等多种操作系统下使用。</p>
+<p>2、设计原则</p>
+<p>系统架构设计应反映用户与整个系统接口模块之间的有效交互，以确保系统中实时数据的可扩展性和安全性。只有系统设计才能实现这一目标。可以扩展功能模块以适应系统的未来发展。</p>
+<p>在系统的所有功能模块中，必须要保证系统的数据安全性、易用性、柔软性和扩展性，下面分别对四个性能进行详细分析。</p>
+<p>（1）数据的安全性</p>
+<p>对于用户进行网上购物管理所牵扯到的数据信息，必须保证系统数据的安全性，因此在系统设计过程中必须要有多方面的考虑到系统的安全问题并进行解决处理。</p>
+<p>（2）易用性</p>
+<p>对于易用性主要是对于系统实现完成交付给用户，用户是否可以不用培训就能够进行系统管理操作，也就是常说的傻瓜操作，一定简单明了，任何人都可以上手对数据信息进行操作管理。</p>
+<p>（3）柔软性</p>
+<p>对于任何一个系统的实现都会涉及的服务种类繁多，所以在设计时一定确保系统可以随时更改并且可以随时处理。</p>
+<p>（4）扩展性</p>
+<p>互联网的不断发展，对于系统实现的所有的功能随着用户需求的不断提高，功能模块也将要不断扩展。</p>
+<p>由于这是一个星空游戏购买下载平台，系统的设计是为了更好地节省人员成本和各种成本，因此需要考虑系统开发成本和效益。</p>
+<h2 id="33-系统流程分析">3.3 系统流程分析</h2>
+<h3 id="331-操作流程">3.3.1 操作流程</h3>
+<p>对于系统的安全性的第一关，就是用户想要进入系统，必须通过登录窗口，输入自己的登录信息才可以进行登录，用户输入的信息准确无误后才可以进入到操作系统界面，进行功能模块的相对应操作，如果用户输入的信息不正确，则窗口出现提示框，用户登录失败，返回到第一步进行重新输入，如图3-1所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm112/blog.001.png"
+        data-srcset="/images/0100ssm/ssm112/blog.001.png, /images/0100ssm/ssm112/blog.001.png 1.5x, /images/0100ssm/ssm112/blog.001.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm112/blog.001.png"
+        title="/images/0100ssm/ssm112/blog.001.png" /></p>
+<p>图3-1注册流程图</p>
+<h3 id="332-添加信息流程">3.3.2 添加信息流程</h3>
+<p>对于星空游戏购买下载平台，需要随时添加所需要的数据信息，对于用户添加信息，需要根据添加界面，根据选框的内容进行填写所要添加的数据信息，信息输入完成后判断数据信息是否符合要求，符合要求则添加完成，用户所添加的信息不符合要求，则需要返回到第一步，重新输入数据信息，再进行判断操作，如图3-2所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm112/blog.002.png"
+        data-srcset="/images/0100ssm/ssm112/blog.002.png, /images/0100ssm/ssm112/blog.002.png 1.5x, /images/0100ssm/ssm112/blog.002.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm112/blog.002.png"
+        title="/images/0100ssm/ssm112/blog.002.png" /></p>
+<p>图3-2 添加信息流程图</p>
+<h3 id="333-购买操作流程分析">3.3.3 购买操作流程分析</h3>
+<p>系统牵扯到交易过程，所以在这一流程把控是比较严格的，确保数据信息的安全。购买流程分析如图3-3所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm112/blog.003.png"
+        data-srcset="/images/0100ssm/ssm112/blog.003.png, /images/0100ssm/ssm112/blog.003.png 1.5x, /images/0100ssm/ssm112/blog.003.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm112/blog.003.png"
+        title="/images/0100ssm/ssm112/blog.003.png" /></p>
+<p>图3-3 购买操作业务流程图</p>
+<h2 id="34-系统功能需求分析">3.4 系统功能需求分析</h2>
+<p>任意一个新网站的开发都需要完整的任务需求分析，需求分析的质量好坏决定了一个网站开发的意义，俗话说好的开头是成功的一半，对于星空游戏购买下载平台平台的设计与实现来说前期的分析更加显得尤为重要，任务分析决定了之后任务的开展和设计，只有完美的需求分析才能做出更好的让民众更为满意的网站，否则将会导致无法进行，更无法完成任务。</p>
+<p>任务需求分析在整个系统开发的过程中是相当重要的一环，直接决定了开发过程中的软件质量，分析得是否完善，是否考虑到了每一步可能会出现的问题，这些都决定了软件能否正常运行，网站结构是否稳定，是否能让客户满意，需求分析决定了整个系统的框架、功能和要求。</p>
+<p>4 系统设计</p>
+<h2 id="41系统结构设计">4.1系统结构设计</h2>
+<p>架构设计的目的是反映一个结构和其他元素之间的关系，抽象，通常用于指导大型软件系统。将一个巨大的任务细分为多个小任务的过程是系统架构的总体设计。完成小任务后，整个任务就可以完成了。具体的实现过程是分解系统，分析各部分的功能、接口和逻辑关系。页面是一个一个模块组建而成的，层次结构分明，思想运用的是面向对象，一个实体对应一个数据类型，还要对每个数据类添加一个实施类。</p>
+<p>星空游戏购买下载平台的实现主要包括用户和管理员两个用户角色，由于系统用户角色不同所使用的功能模块相应不同，管理员根据需求对系统功能模块进行维护管理操作。</p>
+<p>根据我们对星空游戏购买下载平台的功能要求进行分析，我们将本系统划分为以下几各主要的模块，如图4-1所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm112/blog.004.png"
+        data-srcset="/images/0100ssm/ssm112/blog.004.png, /images/0100ssm/ssm112/blog.004.png 1.5x, /images/0100ssm/ssm112/blog.004.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm112/blog.004.png"
+        title="/images/0100ssm/ssm112/blog.004.png" /></p>
+<p>图4-1 系统结构图</p>
+<h2 id="42数据库设计">4.2数据库设计</h2>
+<h3 id="421-数据库e-r图设计">4.2.1 数据库E-R图设计</h3>
+<p>学习编程，我们都知道数据库设计是基于需要设计的系统功能，我们需要建立一个数据库关系模型，用于存储数据信息，这样当我们在程序中时，就没有必要为程序页面添加数据，从而提高系统的效率。数据库存储了很多信息，可以说是信息管理系统的核心和基础，数据库还提供了添加、删除、修改和检查，使系统能够快速找到自己想要的信息，而不是在程序代码中找到。数据库中信息表的每个部分根据一定的关系精确地组合，排列和组合成数据表。</p>
+<p>通过星空游戏购买下载平台的功能进行规划分成几个实体信息，实体信息将通过ER图进行说明，本系统的主要实体图如下：</p>
+<p><code> </code>(1)管理员数据E-R图，如图4-2所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm112/blog.005.png"
+        data-srcset="/images/0100ssm/ssm112/blog.005.png, /images/0100ssm/ssm112/blog.005.png 1.5x, /images/0100ssm/ssm112/blog.005.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm112/blog.005.png"
+        title="/images/0100ssm/ssm112/blog.005.png" /></p>
+<p>图4-2 管理员信息实体属性图</p>
+<p>(2)用户信息数据E-R图如图4-3所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm112/blog.006.png"
+        data-srcset="/images/0100ssm/ssm112/blog.006.png, /images/0100ssm/ssm112/blog.006.png 1.5x, /images/0100ssm/ssm112/blog.006.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm112/blog.006.png"
+        title="/images/0100ssm/ssm112/blog.006.png" /></p>
+<p>图4-3 用户信息实体属性图</p>
+<p>(3)游戏信息数据E-R图如图4-4所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm112/blog.007.png"
+        data-srcset="/images/0100ssm/ssm112/blog.007.png, /images/0100ssm/ssm112/blog.007.png 1.5x, /images/0100ssm/ssm112/blog.007.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm112/blog.007.png"
+        title="/images/0100ssm/ssm112/blog.007.png" /></p>
+<p>图4-4 游戏信息实体属性图</p>
+<p>(4)订单信息数据E-R图如图4-5所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm112/blog.008.png"
+        data-srcset="/images/0100ssm/ssm112/blog.008.png, /images/0100ssm/ssm112/blog.008.png 1.5x, /images/0100ssm/ssm112/blog.008.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm112/blog.008.png"
+        title="/images/0100ssm/ssm112/blog.008.png" /></p>
+<p>图4-5 订单信息实体图</p>
+<p>(5)留言板信息数据E-R图如图4-6所示：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm112/blog.009.png"
+        data-srcset="/images/0100ssm/ssm112/blog.009.png, /images/0100ssm/ssm112/blog.009.png 1.5x, /images/0100ssm/ssm112/blog.009.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm112/blog.009.png"
+        title="/images/0100ssm/ssm112/blog.009.png" /></p>
+<p>图4-6 留言信息实体属性图</p>
+<h3 id="422-数据库表设计">4.2.2 数据库表设计</h3>
+<p>将数据库概念设计的E-R图转换为关系数据库。在关系数据库中，数据关系由数据表组成，但是表的结构表现在表的字段上。</p>
+<p>表4-1：config表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">约束</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">PRIMARY KEY</td>
+</tr>
+<tr>
+<td style="text-align:center">name</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">value</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">表4-2：dingdanxinxi表</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">约束</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">PRIMARY KEY</td>
+</tr>
+<tr>
+<td style="text-align:center">dingdanbianhao</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">youxifenlei</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">youximingcheng</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">kaifashang</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">kaifashang</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">jiage</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">goumairiqi</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">yonghuming</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">yonghuxingming</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">lianxifangshi</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">ispay</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">表4-3：discussyouxixinxi表</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">列名</th>
+<th>数据类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">约束</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td>bigint</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">PRIMARY KEY</td>
+</tr>
+<tr>
+<td style="text-align:center">refid</td>
+<td>bigint</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">userid</td>
+<td>bigint</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">nickname</td>
+<td>varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">表4-4：messages表</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">约束</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">PRIMARY KEY</td>
+</tr>
+<tr>
+<td style="text-align:center">userid</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">username</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">表4-5：storeup表</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">约束</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">PRIMARY KEY</td>
+</tr>
+<tr>
+<td style="text-align:center">userid</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">refid</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">tablename</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">name</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">picture</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">表4-6：token表</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">约束</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">PRIMARY KEY</td>
+</tr>
+<tr>
+<td style="text-align:center">userid</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">username</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">tablename</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">role</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">token</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">表4-7：users表</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">约束</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">PRIMARY KEY</td>
+</tr>
+<tr>
+<td style="text-align:center">username</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">password</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">role</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">表4-8：yonghu表</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">约束</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">PRIMARY KEY</td>
+</tr>
+<tr>
+<td style="text-align:center">yonghuming</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">mima</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">yonghuxingming</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">touxiang</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">xingbie</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">lianxifangshi</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">youxiang</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">表4-8：youxifenlei表</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">约束</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">PRIMARY KEY</td>
+</tr>
+<tr>
+<td style="text-align:center">youxifenlei</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">DEFAULT NULL</td>
+</tr>
+<tr>
+<td style="text-align:center">5 系统的实现</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="51前台功能模块">5.1前台功能模块</h2>
+<p>用户进入星空游戏购买下载平台平台可以查看首页、游戏信息、留言反馈、我的、后台等操作，系统前台主界面如图5-1所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm112/blog.010.png"
+        data-srcset="/images/0100ssm/ssm112/blog.010.png, /images/0100ssm/ssm112/blog.010.png 1.5x, /images/0100ssm/ssm112/blog.010.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm112/blog.010.png"
+        title="/images/0100ssm/ssm112/blog.010.png" /></p>
+<p><code>	</code>图5-1 系统前台主界面</p>
+<p>用户通过登录界面，进行在线填写用户名和密码，信息输入完成后选择提交，用户登录完成，如果用户没有自己的账号，需要在线注册成为网站会员，用户进入到注册界面，进行填写用户的基本信息内容，信息编辑完成后选择提交，如图5-2所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm112/blog.011.png"
+        data-srcset="/images/0100ssm/ssm112/blog.011.png, /images/0100ssm/ssm112/blog.011.png 1.5x, /images/0100ssm/ssm112/blog.011.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm112/blog.011.png"
+        title="/images/0100ssm/ssm112/blog.011.png" /></p>
+<p>图5-2 用户登录界面</p>
+<p>用户通过游戏信息列表可以查看网站已有的游戏信息类别，用户根据需求可以进行在线选择分类进行查看游戏信息，通过游戏信息列表查看界面展示的游戏信息，如图5-3所示，用户根据自己的需求可以点击商品图片进入到游戏详情界面，通过详情界面获取到游戏名称、开发商、价格、游戏简介、上市日期等信息，根据需求在线评价操作，也可结合需求进行在线购买等操作，如图5-4所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm112/blog.012.png"
+        data-srcset="/images/0100ssm/ssm112/blog.012.png, /images/0100ssm/ssm112/blog.012.png 1.5x, /images/0100ssm/ssm112/blog.012.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm112/blog.012.png"
+        title="/images/0100ssm/ssm112/blog.012.png" /></p>
+<p>图5-3 游戏信息列表界面</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm112/blog.013.png"
+        data-srcset="/images/0100ssm/ssm112/blog.013.png, /images/0100ssm/ssm112/blog.013.png 1.5x, /images/0100ssm/ssm112/blog.013.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm112/blog.013.png"
+        title="/images/0100ssm/ssm112/blog.013.png" /></p>
+<p>图5-4 游戏信息详情界面</p>
+<p>用户通过购买页面可以进行查看订单编号、游戏分类、开发商、价格、购买日期、用户名、用户姓名、联系方式等信息，进行提交订单操作，如图5-5所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm112/blog.014.png"
+        data-srcset="/images/0100ssm/ssm112/blog.014.png, /images/0100ssm/ssm112/blog.014.png 1.5x, /images/0100ssm/ssm112/blog.014.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm112/blog.014.png"
+        title="/images/0100ssm/ssm112/blog.014.png" /></p>
+<p>图5-5提交购买界面</p>
+<p>留言反馈：通过列表可以进行在线输入留言内容进行在线提交留言反馈信息，如图5-6所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm112/blog.015.png"
+        data-srcset="/images/0100ssm/ssm112/blog.015.png, /images/0100ssm/ssm112/blog.015.png 1.5x, /images/0100ssm/ssm112/blog.015.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm112/blog.015.png"
+        title="/images/0100ssm/ssm112/blog.015.png" /></p>
+<p>图5-6 留言反馈界面</p>
+<p>个人中心：通过页面可以进行获取个人中心、我的收藏等功能模块，进行相对应操作。个人中心：通过页面可以进行在线更新个人信息，进行在线更新操作，如图5-7所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm112/blog.016.png"
+        data-srcset="/images/0100ssm/ssm112/blog.016.png, /images/0100ssm/ssm112/blog.016.png 1.5x, /images/0100ssm/ssm112/blog.016.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm112/blog.016.png"
+        title="/images/0100ssm/ssm112/blog.016.png" /></p>
+<p>图5-7个人中心界面</p>
+<h2 id="52用户后台功能模块">5.2用户后台功能模块</h2>
+<p>用户通过后台进行查看个人中心、订单信息管理、游戏下载管理、我的收藏管理、留言板管理等功能模块，进行相对应操作。</p>
+<p>订单信息管理，用户根据自己的订单信息，可以进行查看订单编号、游戏分类、游戏名称、开发商、价格、购买日期、用户名、用户姓名、联系方式、是否支付等，进行在线查看订单或在线支付操作，并通过输入订单编号进行查询，如图5-8所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm112/blog.017.png"
+        data-srcset="/images/0100ssm/ssm112/blog.017.png, /images/0100ssm/ssm112/blog.017.png 1.5x, /images/0100ssm/ssm112/blog.017.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm112/blog.017.png"
+        title="/images/0100ssm/ssm112/blog.017.png" /></p>
+<p>图5-8订单信息管理界面</p>
+<p>游戏下载管理，通过列表可以获取订单编号、游戏分类、游戏名称、开发商、游戏软件、用户名、用户姓名等信息，进行在线查看并在线下载操作，并通过输入订单编号进行查询，如图5-9所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm112/blog.018.png"
+        data-srcset="/images/0100ssm/ssm112/blog.018.png, /images/0100ssm/ssm112/blog.018.png 1.5x, /images/0100ssm/ssm112/blog.018.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm112/blog.018.png"
+        title="/images/0100ssm/ssm112/blog.018.png" /></p>
+<p>图5-9游戏下载管理界面</p>
+<p>留言板管理，通过列表可以获取留言人ID、用户名、留言内容、回复内容等信息，进行在线查看或删除操作，并通过输入用户名进行查询操作，如图5-10所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm112/blog.019.png"
+        data-srcset="/images/0100ssm/ssm112/blog.019.png, /images/0100ssm/ssm112/blog.019.png 1.5x, /images/0100ssm/ssm112/blog.019.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm112/blog.019.png"
+        title="/images/0100ssm/ssm112/blog.019.png" /></p>
+<p>图5-10留言板管理界面</p>
+<h2 id="53后台功能模块">5.3后台功能模块</h2>
+<p>管理员通过登录窗口进行输入自己的账号信息进行在线登录，登录完成后可以对系统的个人中心、用户管理、游戏分类管理、游戏信息管理、订单信息管理、游戏下载管理、管理员管理、留言板管理、系统管理等功能模块进行在线编辑或者删除等操作。</p>
+<p>订单信息管理，管理员根据需求可以在线查看系统查看订单编号、游戏分类、游戏名称、开发商、价格、购买日期、用户名、用户姓名、联系方式、是否支付等信息，并结合需求可以对订单信息进行在线发送、查看订单、修改或删除等操作，如图5-11所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm112/blog.020.png"
+        data-srcset="/images/0100ssm/ssm112/blog.020.png, /images/0100ssm/ssm112/blog.020.png 1.5x, /images/0100ssm/ssm112/blog.020.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm112/blog.020.png"
+        title="/images/0100ssm/ssm112/blog.020.png" /></p>
+<p>图5-11订单信息管理界面</p>
+<p>游戏下载管理，管理员通过列表可以进行在线查看订单编号、游戏分类、游戏名称、开发商、游戏软件、用户名、用户姓名等信息，进行在线查看、在线下载、修改、删除操作，如图5-12所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm112/blog.021.png"
+        data-srcset="/images/0100ssm/ssm112/blog.021.png, /images/0100ssm/ssm112/blog.021.png 1.5x, /images/0100ssm/ssm112/blog.021.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm112/blog.021.png"
+        title="/images/0100ssm/ssm112/blog.021.png" /></p>
+<p>图5-12游戏下载管理界面</p>
+<p>用户管理：通过列表可以获取用户名、用户姓名、头像、性别、联系方式、邮箱等信息，进行在线查看、添加、修改或删除操作，并通过输入用户名、用户姓名进行查询、批量删除操作，如图5-13所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm112/blog.022.png"
+        data-srcset="/images/0100ssm/ssm112/blog.022.png, /images/0100ssm/ssm112/blog.022.png 1.5x, /images/0100ssm/ssm112/blog.022.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm112/blog.022.png"
+        title="/images/0100ssm/ssm112/blog.022.png" /></p>
+<p>图5-13 用户管理界面</p>
+<p>游戏分类管理：通过列表可以获取游戏分类等信息，进行在线查看、添加、修改或删除操作，并通过输入游戏分类进行查询、批量删除操作，如图5-14所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm112/blog.023.png"
+        data-srcset="/images/0100ssm/ssm112/blog.023.png, /images/0100ssm/ssm112/blog.023.png 1.5x, /images/0100ssm/ssm112/blog.023.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm112/blog.023.png"
+        title="/images/0100ssm/ssm112/blog.023.png" /></p>
+<p>图5-14游戏分类界面</p>
+<p>游戏信息管理：通过列表可以获取游戏名称、游戏分类、图片、开发商、价格、游戏简介、上市日期等信息，进行在线查看、修改添加或删除操作，并通过输入游戏名称进行查询，如图5-15所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm112/blog.024.png"
+        data-srcset="/images/0100ssm/ssm112/blog.024.png, /images/0100ssm/ssm112/blog.024.png 1.5x, /images/0100ssm/ssm112/blog.024.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm112/blog.024.png"
+        title="/images/0100ssm/ssm112/blog.024.png" /></p>
+<p>图5-15 游戏信息管理界面</p>
+<p>管理员管理：通过列表可以获取用户名、密码、角色等信息，进行在线查看、添加、修改或删除操作，并通过输入用户名进行查询，如图5-16所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm112/blog.025.png"
+        data-srcset="/images/0100ssm/ssm112/blog.025.png, /images/0100ssm/ssm112/blog.025.png 1.5x, /images/0100ssm/ssm112/blog.025.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm112/blog.025.png"
+        title="/images/0100ssm/ssm112/blog.025.png" /></p>
+<p>图5-16 管理员管理界面</p>
+<p>留言板管理，通过列表可以获取留言人、用户名、留言内容、回复内容等信息，进行在线查看、回复、修改或删除操作，如图5-17所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm112/blog.026.png"
+        data-srcset="/images/0100ssm/ssm112/blog.026.png, /images/0100ssm/ssm112/blog.026.png 1.5x, /images/0100ssm/ssm112/blog.026.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm112/blog.026.png"
+        title="/images/0100ssm/ssm112/blog.026.png" /></p>
+<p>图5-17 留言板管理界面</p>
+<p>36</p>
+<p>6 系统测试</p>
+<h1 id="系统测">系统测</h1>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2023-12-03</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/ssm112%E6%98%9F%E7%A9%BA%E6%B8%B8%E6%88%8F%E8%B4%AD%E4%B9%B0%E4%B8%8B%E8%BD%BD%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://chenqi199.github.io/ssm112%E6%98%9F%E7%A9%BA%E6%B8%B8%E6%88%8F%E8%B4%AD%E4%B9%B0%E4%B8%8B%E8%BD%BD%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" data-title="ssm112星空游戏购买下载平台的设计与实现&#43;jsp" data-hashtags="ssm星空,下载平台,星空游戏,购买下载,游戏购买,平台设计"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://chenqi199.github.io/ssm112%E6%98%9F%E7%A9%BA%E6%B8%B8%E6%88%8F%E8%B4%AD%E4%B9%B0%E4%B8%8B%E8%BD%BD%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" data-hashtag="ssm星空"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://chenqi199.github.io/ssm112%E6%98%9F%E7%A9%BA%E6%B8%B8%E6%88%8F%E8%B4%AD%E4%B9%B0%E4%B8%8B%E8%BD%BD%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" data-title="ssm112星空游戏购买下载平台的设计与实现&#43;jsp"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://chenqi199.github.io/ssm112%E6%98%9F%E7%A9%BA%E6%B8%B8%E6%88%8F%E8%B4%AD%E4%B9%B0%E4%B8%8B%E8%BD%BD%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" data-title="ssm112星空游戏购买下载平台的设计与实现&#43;jsp"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://chenqi199.github.io/ssm112%E6%98%9F%E7%A9%BA%E6%B8%B8%E6%88%8F%E8%B4%AD%E4%B9%B0%E4%B8%8B%E8%BD%BD%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" data-title="ssm112星空游戏购买下载平台的设计与实现&#43;jsp" data-ralateuid="https://gitee.com/chen_q_i"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ssm%E6%98%9F%E7%A9%BA/">Ssm星空</a>,&nbsp;<a href="/tags/%E4%B8%8B%E8%BD%BD%E5%B9%B3%E5%8F%B0/">下载平台</a>,&nbsp;<a href="/tags/%E6%98%9F%E7%A9%BA%E6%B8%B8%E6%88%8F/">星空游戏</a>,&nbsp;<a href="/tags/%E8%B4%AD%E4%B9%B0%E4%B8%8B%E8%BD%BD/">购买下载</a>,&nbsp;<a href="/tags/%E6%B8%B8%E6%88%8F%E8%B4%AD%E4%B9%B0/">游戏购买</a>,&nbsp;<a href="/tags/%E5%B9%B3%E5%8F%B0%E8%AE%BE%E8%AE%A1/">平台设计</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/ssm110%E6%B0%91%E5%AE%BF%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-jsp/" class="prev" rel="prev" title="ssm110民宿管理系统&#43;jsp"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>ssm110民宿管理系统+jsp</a>
+            <a href="/ssm111%E5%9F%BA%E4%BA%8Emvc%E7%9A%84%E8%88%9E%E8%B9%88%E7%BD%91%E7%AB%99%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" class="next" rel="next" title="ssm111基于MVC的舞蹈网站的设计与实现&#43;vue">ssm111基于MVC的舞蹈网站的设计与实现+vue<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.128.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="chenqi199" target="_blank">chenqi</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

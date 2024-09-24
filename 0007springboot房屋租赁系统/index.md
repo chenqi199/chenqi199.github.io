@@ -1,17 +1,16 @@
 # 0007springboot房屋租赁系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0007springboot房屋租赁系统](https://github.com/GraduationProject-springboot/0007springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV16ia6epENY?p=8)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 绪论
 ## 1.1背景及意义
@@ -141,7 +140,7 @@ Spring Boot特点：
 
 房屋租赁系统的结构，系统实现的功能模块如下图4-1所示。
 
-![](/images/0000stringboot/0007springboot/blog.003.png)
+![](/images/0000wxapp//blog.003.png)
 
 图4-1 系统功能图
 ## 4.2数据库设计
@@ -153,19 +152,19 @@ Spring Boot特点：
 
 用户信息实体E-R图，如图4.2所示。
 
-![](/images/0000stringboot/0007springboot/blog.004.png)
+![](/images/0000wxapp//blog.004.png)
 
 图4.2用户E-R图
 
 房屋信息管理E-R图，如图4.3所示。
 
-![](/images/0000stringboot/0007springboot/blog.005.png)
+![](/images/0000wxapp//blog.005.png)
 
 图4.3房屋信息E-R图
 
 公告信息管理E-R图，如图4.4示。
 
-![](/images/0000stringboot/0007springboot/blog.006.png)
+![](/images/0000wxapp//blog.006.png)
 
 图4.4公告E-R图
 ## 4.4 数据表
@@ -261,7 +260,7 @@ Spring Boot特点：
 
 管理员通过填写用户名、密码、选择权限进行登录，进入后台系统，如图5-1所示。
 
-![](/images/0000stringboot/0007springboot/blog.007.png)
+![](/images/0000wxapp//blog.007.png)
 
 图5-1管理员登录界面图
 
@@ -269,37 +268,37 @@ Spring Boot特点：
 
 房主管理：通过列表可以获取用户名、密码、姓名、头像、性别、职业、联系方式、身份证号、进行查看用户信息或修改删除操作还可以通过新增进行添加用户信息操作，如图5-2所示。
 
-![](/images/0000stringboot/0007springboot/blog.008.png)
+![](/images/0000wxapp//blog.008.png)
 
 图5-2房东管理页面
 
 房屋类型管理：通过列表可以进行查看房屋类型，进行查看详情或修改、删除操作，并通过新增进行添加类型信息，如图5-3所示。
 
-![](/images/0000stringboot/0007springboot/blog.009.png)
+![](/images/0000wxapp//blog.009.png)
 
 图5-3房屋类型界面图
 
 房屋信息管理：通过房屋信息列表可以查看房屋名称、房屋类型、房屋图片、出租方式、朝向楼层、面积、房屋状态、小区、详细地址、月租价格、押金、房屋设施、发布日期、房住帐号、房主姓名、等信息进行查看详细或修改或删除操作，并且可以通过查看评论进行在线回复信息或进行新增房屋信息，操作，如图54所示。
 
-![](/images/0000stringboot/0007springboot/blog.010.png)
+![](/images/0000wxapp//blog.010.png)
 
 图5-4房屋信息界面图
 
 公告信息管理：通过列表可以获取公告信息的标题、简介、图片等详细信息进行修改或删除操作，并且可以通过新增公告信息进行添加公告信息，如图5-5所示。
 
-![](/images/0000stringboot/0007springboot/blog.011.png)
+![](/images/0000wxapp//blog.011.png)
 
 图5-5公告信息界面图
 
 预约看房管理：通过列表可以获取预约编号、房屋名称、房屋类型、房屋状态、小区、月租价格、押金、租用月数、预约时间、用户名、姓名、身份证、联系电话、房主账号、房主姓名、审核回复、审核状态等信息，进行审核或删除操作，如图5-6所示。
 
-![](/images/0000stringboot/0007springboot/blog.012.png)
+![](/images/0000wxapp//blog.012.png)
 
 图5-6预约看房界面图
 
 我要当房东信息：通过列表可以查看房屋名称、房屋类型、图片、租赁方式、小区、月租价格、用户名、房屋详情、朝向楼层、面积、发布日期、联系电话等信息，进行查看详情或修改、删除操作或进行审核操作，如图5-7所示。
 
-![](/images/0000stringboot/0007springboot/blog.013.png)
+![](/images/0000wxapp//blog.013.png)
 
 图5-7我要当房东界面图
 
@@ -308,49 +307,49 @@ Spring Boot特点：
 
 房主通过填写用户名、密码、选择权限进行登录，进入后台系统，如图5-8所示。
 
-![](/images/0000stringboot/0007springboot/blog.007.png)
+![](/images/0000wxapp//blog.007.png)
 
 图5-8房主登录界面图
 
 房主登录成功后，进入后台页面，可以进行查看个人中心、房屋信息管理、预约看房管理、合同信息管理、房屋报修管理、维修处理管理、房屋评价管理等功能模块，进行相对应操作。如图5-9所示。
 
-![](/images/0000stringboot/0007springboot/blog.014.png)
+![](/images/0000wxapp//blog.014.png)
 
 图5-9房东信息页面
 
 预约看房管理：通过列表可以获取预约编号、房屋名称、房屋类型、房屋状态、房屋状态、小区、月租价格、押金、租用月数、租用金额、预约时间、用户名、姓名、身份证、联系电话、房主账号、房主姓名、审核回复、审核状态等信息、进行查看详情信息操作，如图5-10所示。
 
-![](/images/0000stringboot/0007springboot/blog.015.png)
+![](/images/0000wxapp//blog.015.png)
 
 图5-10预约看房管理界面图
 
 合同信息管理：通过合同信息列表可以获取合同编号、合同名称、合同类型、小区、月租价格、租用月数，租用金额。押金，房租状态。合同金额，合同内容、生效日、有限期限，用户名，联系电话，房主账号，房主姓名、是否支付、审核回复等信息。进行查看查看操作。如图5-11所示。
 
-![](/images/0000stringboot/0007springboot/blog.016.png)
+![](/images/0000wxapp//blog.016.png)
 
 图5-11合同信息管理界面图
 
 维修处理管理：通过列表可以进行查看房屋名称、房屋类型、报修名称、类型、报修日期、维修日期、维修反馈、维修进度、更新日期、房主账号、房主姓名、用户名、联系电话等信息，进行查看详细信息操作，如图5-12所示。
 
-![](/images/0000stringboot/0007springboot/blog.017.png)
+![](/images/0000wxapp//blog.017.png)
 
 图5-12维修处理界面图
 
 房屋评价管理：通过列表可以获取合同编号、房屋名称、房屋类型、小区、评分、评价内容、评价日期、房主账号、用户名、联系电话、审核回复、审核状态等信息，进行查看详情操作，如图5-13所示。
 
-![](/images/0000stringboot/0007springboot/blog.018.png)
+![](/images/0000wxapp//blog.018.png)
 
 图5-13房屋评价界面图
 ## 5.3用户功能模块
 通过房屋租赁系统网站页面可以查看首页、出租信息、求租信息、搜索信息、留言信息等功能模块，进行相对应操作。碧昂去可以通过会员登录、免费注册、忘记密码等信息，进行登录、注册或找回密码操作，通过输入用户名、密码、验证码等信息，进行登录，如图5-14所示。
 
-![](/images/0000stringboot/0007springboot/blog.019.png)
+![](/images/0000wxapp//blog.019.png)
 
 图5-14 用户登录界面
 
 用户通过登录进入房屋租赁系统页面可以进行查看系统的首页、房屋信息、我要当房东、公告信息、留言反馈、个人中心、后台管理等功能模块进行相对应操作。，如图5-15所示。
 
-![](/images/0000stringboot/0007springboot/blog.020.png)
+![](/images/0000wxapp//blog.020.png)
 
 图5-2首页页面
 
@@ -358,20 +357,20 @@ Spring Boot特点：
 
 通过个人中心页面可以进行修改或更新个人信息的用户名、密码、性别、职业、联系方式、上传头像身份证号等信息进行更新信息操作。如图5-16所示。
 
-![](/images/0000stringboot/0007springboot/blog.021.png)
+![](/images/0000wxapp//blog.021.png)
 
 图5-16个人信息页面 
 
 房屋信息用户通过点击房屋信息进入房屋信息，详情通过信息详情，可以过去房屋的房屋类型、租赁方式、朝向楼层、面积、房屋状态、小区、详细信息、月租价格、押金、房屋设施、发布日期、房屋帐号、房主姓名、等信息进行查看房屋详情和评论进行预约、收藏操作。如图5-17所示。
 
 
-![](/images/0000stringboot/0007springboot/blog.022.png)
+![](/images/0000wxapp//blog.022.png)
 
 图5-17房屋信息页面
 
 留言反馈：通过列表可以进行查看留言信息，并通列表进行输入留言标题、内容等信息，进行在线留言操作，如图5-18所示。
 
-![](/images/0000stringboot/0007springboot/blog.023.png)
+![](/images/0000wxapp//blog.023.png)
 
 图5-18留言反馈界面
 
@@ -379,25 +378,25 @@ Spring Boot特点：
 
 预约看房管理：通过列表可以进行查看预约编号、房屋名称、房屋类型、房屋状态、房屋状态、小区、月租价格、押金、租用月数、租用金额、预约时间、用户名、姓名、身份证、联系电话、房主账号、房主姓名、审核回复、审核状态等信息，进行查看详情，如图5-19所示。
 
-![](/images/0000stringboot/0007springboot/blog.024.png)图5-19预约看房界面
+![](/images/0000wxapp//blog.024.png)图5-19预约看房界面
 
 
 
 我要当房主管理、流通股我要当房主页面可以进行查看房屋名称、房屋类型、图片、租赁方式、小区、月租价格、用户名、房屋详情、朝向楼层、面积、发布日期、联系电话等信息，进行输入房屋信息、用户信息，进行提交审核操作，如图5-20所示。
 
-![](/images/0000stringboot/0007springboot/blog.025.png)
+![](/images/0000wxapp//blog.025.png)
 
 图5-20我要当房东界面图
 
 我要当房东信息：通过列表可以查看房屋名称、房屋类型、图片、租赁方式、小区、月租价格、用户名、房屋详情、朝向楼层、面积、发布日期、联系电话等信息等信息，进行查看详情或修改、删除操作，如图5-21所示。
 
-![](/images/0000stringboot/0007springboot/blog.026.png)
+![](/images/0000wxapp//blog.026.png)
 
 图5-21我要当房东界面图
 
 我的收藏管理：通过列表可以查看收藏名称、收藏图片等信息等信息，进行查看详情或修改、删除操作，如图5-22所示。
 
-![](/images/0000stringboot/0007springboot/blog.027.png)
+![](/images/0000wxapp//blog.027.png)
 
 图5-22我的收藏管理界面图
 

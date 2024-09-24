@@ -1,0 +1,1630 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer" />
+        <meta name="robots" content="noodp" />
+        <title>ssm065基于JAVA WEB技术大健康综合咨询问诊平台的设计与实现&#43;jsp - chenqi blog</title><meta name="Description" content="Hugo theme - chenqi"><meta property="og:url" content="https://chenqi199.github.io/ssm065%E5%9F%BA%E4%BA%8Ejava-web%E6%8A%80%E6%9C%AF%E5%A4%A7%E5%81%A5%E5%BA%B7%E7%BB%BC%E5%90%88%E5%92%A8%E8%AF%A2%E9%97%AE%E8%AF%8A%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/">
+  <meta property="og:site_name" content="chenqi blog">
+  <meta property="og:title" content="ssm065基于JAVA WEB技术大健康综合咨询问诊平台的设计与实现&#43;jsp">
+  <meta property="og:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm065基于JAVA WEB技术大健康综合咨询问诊平台的设计与实现&#43;jsp github 项目仓库 开源仅有后端代码 点击播放视">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-11-17T22:29:52+08:00">
+    <meta property="article:modified_time" content="2023-11-17T22:29:52+08:00">
+    <meta property="article:tag" content="问诊平台">
+    <meta property="article:tag" content="咨询问诊">
+    <meta property="article:tag" content="平台设计">
+    <meta property="article:tag" content="综合咨询">
+    <meta property="article:tag" content="健康综合">
+    <meta property="article:tag" content="设计实现">
+    <meta property="og:image" content="https://chenqi199.github.io/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chenqi199.github.io/logo.png">
+  <meta name="twitter:title" content="ssm065基于JAVA WEB技术大健康综合咨询问诊平台的设计与实现&#43;jsp">
+  <meta name="twitter:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm065基于JAVA WEB技术大健康综合咨询问诊平台的设计与实现&#43;jsp github 项目仓库 开源仅有后端代码 点击播放视">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chenqi199.github.io/ssm065%E5%9F%BA%E4%BA%8Ejava-web%E6%8A%80%E6%9C%AF%E5%A4%A7%E5%81%A5%E5%BA%B7%E7%BB%BC%E5%90%88%E5%92%A8%E8%AF%A2%E9%97%AE%E8%AF%8A%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" /><link rel="prev" href="https://chenqi199.github.io/ssm066%E5%86%9C%E5%AE%B6%E4%B9%90%E4%BF%A1%E6%81%AF%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" /><link rel="next" href="https://chenqi199.github.io/0067springboot%E6%A1%82%E6%9E%97%E6%97%85%E6%B8%B8%E6%99%AF%E7%82%B9%E5%AF%BC%E6%B8%B8%E5%B9%B3%E5%8F%B0/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "ssm065基于JAVA WEB技术大健康综合咨询问诊平台的设计与实现+jsp",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chenqi199.github.io\/ssm065%E5%9F%BA%E4%BA%8Ejava-web%E6%8A%80%E6%9C%AF%E5%A4%A7%E5%81%A5%E5%BA%B7%E7%BB%BC%E5%90%88%E5%92%A8%E8%AF%A2%E9%97%AE%E8%AF%8A%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp\/"
+        },"image": ["https:\/\/chenqi199.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "问诊平台, 咨询问诊, 平台设计, 综合咨询, 健康综合, 设计实现","wordcount":  7593 ,
+        "url": "https:\/\/chenqi199.github.io\/ssm065%E5%9F%BA%E4%BA%8Ejava-web%E6%8A%80%E6%9C%AF%E5%A4%A7%E5%81%A5%E5%BA%B7%E7%BB%BC%E5%90%88%E5%92%A8%E8%AF%A2%E9%97%AE%E8%AF%8A%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp\/","datePublished": "2023-11-17T22:29:52+08:00","dateModified": "2023-11-17T22:29:52+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/chenqi199.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "chenqi"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/ssm065%E5%9F%BA%E4%BA%8Ejava-web%E6%8A%80%E6%9C%AF%E5%A4%A7%E5%81%A5%E5%BA%B7%E7%BB%BC%E5%90%88%E5%92%A8%E8%AF%A2%E9%97%AE%E8%AF%8A%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/ssm065%E5%9F%BA%E4%BA%8Ejava-web%E6%8A%80%E6%9C%AF%E5%A4%A7%E5%81%A5%E5%BA%B7%E7%BB%BC%E5%90%88%E5%92%A8%E8%AF%A2%E9%97%AE%E8%AF%8A%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">ssm065基于JAVA WEB技术大健康综合咨询问诊平台的设计与实现+jsp</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="chenqi199" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>chenqi</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-11-17">2023-11-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 7593 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 16 分钟&nbsp;<span id="/ssm065%E5%9F%BA%E4%BA%8Ejava-web%E6%8A%80%E6%9C%AF%E5%A4%A7%E5%81%A5%E5%BA%B7%E7%BB%BC%E5%90%88%E5%92%A8%E8%AF%A2%E9%97%AE%E8%AF%8A%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" class="leancloud_visitors" data-flag-title="ssm065基于JAVA WEB技术大健康综合咨询问诊平台的设计与实现&#43;jsp">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">github 项目仓库</a> 开源仅有后端代码</a></li>
+        <li><a href="#点击播放视频-">点击播放视频 ▼</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#11-研究背景">1.1 研究背景</a></li>
+    <li><a href="#12-目的和意义">1.2 目的和意义</a></li>
+    <li><a href="#13-论文结构安排">1.3 论文结构安排</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#21-ssm框架介绍">2.1 SSM框架介绍</a></li>
+    <li><a href="#22-bs结构介绍">2.2 B/S结构介绍</a></li>
+    <li><a href="#23-mysql数据库介绍">2.3 Mysql数据库介绍</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#31-系统可行性分析">3.1 系统可行性分析</a>
+      <ul>
+        <li><a href="#311-技术可行性分析">3.1.1 技术可行性分析</a></li>
+        <li><a href="#312-经济可行性分析">3.1.2 经济可行性分析</a></li>
+        <li><a href="#313-运行可行性分析">3.1.3 运行可行性分析</a></li>
+      </ul>
+    </li>
+    <li><a href="#32-系统性能分析">3.2 系统性能分析</a>
+      <ul>
+        <li><a href="#321-易用性指标">3.2.1 易用性指标</a></li>
+        <li><a href="#322-可扩展性指标">3.2.2 可扩展性指标</a></li>
+        <li><a href="#323-健壮性指标">3.2.3 健壮性指标</a></li>
+        <li><a href="#324-安全性指标">3.2.4 安全性指标</a></li>
+      </ul>
+    </li>
+    <li><a href="#33-系统流程分析">3.3 系统流程分析</a>
+      <ul>
+        <li><a href="#331-操作流程分析">3.3.1 操作流程分析</a></li>
+        <li><a href="#332-登录流程分析">3.3.2 登录流程分析</a></li>
+        <li><a href="#333-信息添加流程分析">3.3.3 信息添加流程分析</a></li>
+        <li><a href="#334-信息删除流程分析">3.3.4 信息删除流程分析</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#41-系统概要设计">4.1 系统概要设计</a></li>
+    <li><a href="#42-系统功能结构设计">4.2 系统功能结构设计</a></li>
+    <li><a href="#43-数据库设计">4.3 数据库设计</a>
+      <ul>
+        <li><a href="#431-数据库e-r图设计">4.3.1 数据库E-R图设计</a></li>
+        <li><a href="#432-数据库表结构设计">4.3.2 数据库表结构设计</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#51用户信息管理">5.1用户信息管理</a></li>
+        <li><a href="#52-医生信息管理">5.2 医生信息管理</a></li>
+        <li><a href="#53科室信息管理">5.3科室信息管理</a></li>
+        <li><a href="#51新闻信息管理">5.1新闻信息管理</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="项目清单-包安装运行httpchenqi1990site-官网地址-httpchenqi1990site"><a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">项目清单 包安装运行</a> 官网地址 <a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">http://chenqi1990.site</a></h1>
+<h1 id="ssm065基于java-web技术大健康综合咨询问诊平台的设计与实现jsphttpsgithubcomgraduationproject-springboot"><a href="https://github.com/GraduationProject-springboot/" target="_blank" rel="noopener noreffer ">ssm065基于JAVA WEB技术大健康综合咨询问诊平台的设计与实现+jsp</a></h1>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        data-srcset="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 1.5x, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        title="picture" /></p>
+<h3 id="github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">github 项目仓库</a> 开源仅有后端代码</h3>
+<h3 id="点击播放视频-">点击播放视频 ▼</h3>
+<p><a href="https://www.bilibili.com/video/BV1T48XecE9G?p=63" target="_blank" rel="noopener noreffer "><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.sstatic.net/Vp2cE.png"
+        data-srcset="https://i.sstatic.net/Vp2cE.png, https://i.sstatic.net/Vp2cE.png 1.5x, https://i.sstatic.net/Vp2cE.png 2x"
+        data-sizes="auto"
+        alt="https://i.sstatic.net/Vp2cE.png"
+        title="Watch the video" /></a></p>
+<h1 id="绪论">绪论</h1>
+<h2 id="11-研究背景">1.1 研究背景</h2>
+<p>当前社会各行业领域竞争压力非常大，随着当前时代的信息化，科学化发展，让社会各行业领域都争相使用新的信息技术，对行业内的各种相关数据进行科学化，规范化管理。这样的大环境让那些止步不前，不接受信息改革带来的信息技术的企业随时面临被淘汰，被取代的风险。所以当今，各个行业领域，不管是传统的教育行业，餐饮行业，还是旅游行业，医疗行业等领域都将使用新的信息技术进行信息革命，改变传统的纸质化，需要人手工处理工作事务的办公环境。软件信息技术能够覆盖社会各行业领域是时代的发展要求，各种数据以及文件真正实现电子化是信息社会发展的不可逆转的必然趋势。本健康综合咨询问诊平台也是紧跟科学技术的发展，运用当今一流的软件技术实现软件系统的开发，让医生管理信息完全通过管理系统实现科学化，规范化，程序化管理。从而帮助信息管理者节省事务处理的时间，降低数据处理的错误率，对于基础数据的管理水平可以起到促进作用，也从一定程度上对随意的业务管理工作进行了避免，同时，健康综合咨询问诊平台的数据库里面存储的各种动态信息，也为上层管理人员作出重大决策提供了大量的事实依据。总之，健康综合咨询问诊平台是一款可以真正提升管理者的办公效率的软件系统。</p>
+<h2 id="12-目的和意义">1.2 目的和意义</h2>
+<p>信息数据的处理完全依赖人工进行操作，会耗费大量的人工成本，特别是面对大量的数据信息时，传统人工操作不仅不能对数据的出错率进行保证，还容易出现各种信息资源的低利用率与低安全性问题。更有甚者，耽误大量的宝贵时间，尤其是对信息的更新，归纳与统计更是耗财耗力的过程。所以电子化信息管理的出现就能缓解以及改变传统人工方式面临的处境，一方面可以确保信息数据在短时间被高效处理，还能节省人力成本，另一方面可以确保信息数据的安全性，可靠性，并可以实现信息数据的快速检索与修改操作，这些优点是之前的旧操作模式无法比拟的。因此健康综合咨询问诊平台为数据信息的管理模式的升级与改革提供了重要的窗口。</p>
+<h2 id="13-论文结构安排">1.3 论文结构安排</h2>
+<p>为了帮助用户更好的了解和理解程序的开发流程与相关内容，本文将通过六个章节进行内容阐述。</p>
+<p>第一章：描述了程序的开发背景，程序运用于现实生活的目的与意义，以及程序文档的结构安排信息；</p>
+<p>第二章：描述了程序的开发环境，包括程序开发涉及到的技术，程序开发使用的数据存储工具等信息；</p>
+<p>第三章：描述了程序着手进行开发时，会面临的可行性问题，并对程序功能以及性能要求进行描述；</p>
+<p>第四章：描述了程序大功能模块下的功能细分信息，以及存储程序数据的数据库表文件结构的设计信息等；</p>
+<p>第五章：描述了程序的功能实现界面的内容，也对程序操作人员操作的部分功能进行了描述；</p>
+<p>第六章：描述了程序功能的测试内容，并介绍了系统测试的概念与方法。</p>
+<h1 id="2-相关技术">2 相关技术</h1>
+<h2 id="21-ssm框架介绍">2.1 SSM框架介绍</h2>
+<p>本课题程序开发使用到的框架技术，英文名称缩写是SSM，在JavaWeb开发中使用的流行框架有SSH、SSM、SpringMVC等，作为一个课题程序采用SSH框架也可以，SSM框架也可以，SpringMVC也可以。SSH框架是属于重量级别的框架，配置繁琐，不够灵活，修改程序需要修改好多个文件，并且运行起来也占用内存较高，CPU使用率相对也高，SpringMVC是Spring开发的一套MVC架构，更灵活更好用，SSM框架取中间值，既没有SSH臃肿，也没有SpringMVC简化，属于中间级别的，在配置过程和使用过程中更能编写和理解。MyBatis框架取代Hibernate框架是因为它更灵活，不需要完全在框架里操作，它在数据操作上可以写出更灵活的代码，它的性能也比Hibernate框架更稳定。总的来说，使用SSM框架是通过综合考虑而使用的，网上有很多的使用教程和心得体会，而且SSM又是这么的流行，用SSM框架开发是顺其自然的。</p>
+<h2 id="22-bs结构介绍">2.2 B/S结构介绍</h2>
+<p>在早期，一些使用HTML语言编写的文件，再集合一些其它资源文件就可以组成一个最简单的Web程序，了解了Web程序也需要了解Web站点，它们之间的关系就是一个或者多个Web程序可以放在Internet上的一个Web站点（Web服务器）中进行使用。可以说Web应用程序的开发也带动了B/S这种网络结构模式的兴起。B是Brower（浏览器）的首字母，S是Server（服务器）的首字母，两个首字母进行组合就成了网络结构模式的简称B/S。由于这种结构模式通过安装在客户端的浏览器进行服务器的访问，可以把程序的核心功能安排在服务器中进行处理，给程序的开发，后期使用和维护省去了许多工作。图2.1展示的就是使用这种架构开发的程序的工作原理。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm065/blog.001.png"
+        data-srcset="/images/0000ssm/ssm065/blog.001.png, /images/0000ssm/ssm065/blog.001.png 1.5x, /images/0000ssm/ssm065/blog.001.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm065/blog.001.png"
+        title="/images/0000ssm/ssm065/blog.001.png" /></p>
+<p>图2.1 B/S架构的工作原理图</p>
+<h2 id="23-mysql数据库介绍">2.3 Mysql数据库介绍</h2>
+<p>开发的程序面向用户的只是程序的功能界面，让用户操作程序界面的各个功能，那么很多人就会问，用户使用程序功能生成的数据信息放在哪里的？这个就需要涉及到数据库的知识了，一般来说，程序开发通常就会对常用数据存储工具的特点进行分析比对，比如Mysql数据库的特点与优势，Access数据库的特点与优势，Sqlserver数据库的特点与优势等，最终看哪个数据库与需要开发的程序比较匹配，也符合程序功能运行需要的数据存储要求，比如，需要开发商业级别的程序，存储的数据对数据库要求较高，可以选用Oracle，如果只是比较简单的程序，对数据存储没有过多要求，可以选用微软旗下的Access，当开发程序要求数据库占用空间小，并能满足程序数据存储要求时，就可以考虑Oracle公司从瑞典MySQL AB公司在很早之前就收购过一个关系型数据库，它是现在的Mysql数据库。在数据库工具里面它是最受认可的其中一个应用软件。需要说明的信息就是，本程序的开发就运用到了此数据库。它将程序数据通过使用不同的数据表格进行保存，在增加了程序数据的存储速度的时候，也提高了数据库的灵活性。 图2.2展示的就是MySQL的架构图。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm065/blog.002.png"
+        data-srcset="/images/0000ssm/ssm065/blog.002.png, /images/0000ssm/ssm065/blog.002.png 1.5x, /images/0000ssm/ssm065/blog.002.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm065/blog.002.png"
+        title="/images/0000ssm/ssm065/blog.002.png" /></p>
+<p>图2.2 MySQL数据库架构图</p>
+<h1 id="3-系统分析">3 系统分析</h1>
+<p>当用户确定开发一款程序时，是需要遵循下面的顺序进行工作，概括为：系统分析&ndash;&gt;系统设计&ndash;&gt;系统开发&ndash;&gt;系统测试，无论这个过程是否有变更或者迭代，都是按照这样的顺序开展工作的。系统分析就是分析系统需要做什么的问题，主要目的就是确定系统的功能，这也为接下来的工作做了一个好的开端。</p>
+<h2 id="31-系统可行性分析">3.1 系统可行性分析</h2>
+<p>开发一款程序软件不仅需要时间，也需要人力，物力资源。而进行可行性分析这个环节就是解决用户这方面的疑问，看看程序在当前的条件下是否可以进行开发。</p>
+<h3 id="311-技术可行性分析">3.1.1 技术可行性分析</h3>
+<p>此程序选用的开发语言是Java，这种编程语言有着丰富的数据类型，在指令控制语句上也比较完善，更重要的就是对类与对象的大力支持，这些优点为程序开发者提供了技术保障，尤其是现在代码都逐渐模块化，有关系统功能开发的源码在网络上都公开展示了，所以让具备一定计算机开发基础的开发人员独立开发系统在技术上也逐渐容易。</p>
+<h3 id="312-经济可行性分析">3.1.2 经济可行性分析</h3>
+<p>开发此程序最关键的设备就是一台电脑，无论是学校计算机室配备的电脑，还是自己入学以来购置的笔记本，都是可以符合开发要求的设备，另外在网络上，学校本已完全覆盖了校园网，所以在设备以及网络上无须考虑经济问题。</p>
+<h3 id="313-运行可行性分析">3.1.3 运行可行性分析</h3>
+<p>随着电脑软件以及配套硬件的完善升级，当下的计算机环境是一片大好，尤其是计算机已经广泛普及到家家户户，所以计算机设备现在是随处可见，由于本次开发的程序占有的资源耗费较小，在一般的电脑或笔记本上都能轻松运转起来。</p>
+<p>通过上面的可行性描述，可以从经济，技术，运行方面解决程序开发是否可行的问题。因此可以认为该程序软件是可以进行开发的。</p>
+<h2 id="32-系统性能分析">3.2 系统性能分析</h2>
+<p>系统性能分析也是比较重要的内容，进行系统性能分析就是为了确保系统的功能要能够在生活中运行使用时，达到规定的指标，因此一个完整的系统软件，是需要进行系统的性能分析这个步骤的。本次进行性能分析主要从易用性指标，可扩展性指标，系统健壮性指标，系统安全性指标这几个方面进行分析。</p>
+<h3 id="321-易用性指标">3.2.1 易用性指标</h3>
+<p>本次程序软件的开发的目的就是让使用者可以通过使用该软件提高信息数据的管理效率，同时该程序软件也需要针对不同的操作用户设置对应的功能，因此，此程序的操作流程应该尽量与用户日常操作软件的行为习惯相贴合，另外，程序软件的设计与开发也应考虑非计算机专业用户的计算机操作水平，要让大部分使用者都可以轻松操作程序提供的各个功能。</p>
+<h3 id="322-可扩展性指标">3.2.2 可扩展性指标</h3>
+<p>当前需要开发的程序软件是根据当下的用户需求进行设计开发的，但是随着时间的推移，社会大环境的改变，开发出的程序也是需要与时俱进的，需要根据用户不断变换的需求进行相应的功能内容的扩展，需要注意的就是，当对成型的程序进行功能模块新增时，仍然需要保证程序原有架构以及功能不能受到影响，新增的功能模块在系统中也能够运行正常，该指标达标也就可以保证此程序是可以在满足信息管理要求下，从容应对市场环境的变化。</p>
+<h3 id="323-健壮性指标">3.2.3 健壮性指标</h3>
+<p>程序软件的开发就是为了投入使用时，可以一直稳定的处理各种数据信息，程序软件一旦不稳定，也会给使用者带来干扰。因此从性能分析的角度，就要要求程序软件在应对使用者的误操作，或者是使用者因为各种原因，填写有误的数据等情况时，程序要一直保持稳定，并能够正常让使用者进行使用。当程序的某个功能模块出现异常时，程序的其它功能模块也要能够确保正常使用。程序的健壮性指标达标可以让使用者产生良好的用户体验。</p>
+<h3 id="324-安全性指标">3.2.4 安全性指标</h3>
+<p>程序软件的安全问题是首要问题，毕竟程序对应数据库里面存放的数据信息是庞大的，里面也包括了许多重要的个人信息，这就对程序要具备一个完善的安全机制提出了要求。因此程序必须要设置登录功能用以进行用户身份的检查，以及身份和权限的匹配，通过对不同用户身份进行功能约束，绝不容忍用户越权操作程序。另外，也需要时刻防范计算机病毒，还有黑客，通过采取针对性的办法进行安全应对，确保程序时刻处于安全的环境，让使用者放心使用。</p>
+<h2 id="33-系统流程分析">3.3 系统流程分析</h2>
+<h3 id="331-操作流程分析">3.3.1 操作流程分析</h3>
+<p>程序上交给用户进行使用时，需要提供程序的操作流程图（如图3.1所示），这样便于用户容易理解程序的具体工作步骤，现如今程序的操作流程都有一个大致的标准，即先通过登录页面提交登录数据，通过程序验证正确之后，用户才能在程序功能操作区页面操作对应的功能。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm065/blog.003.png"
+        data-srcset="/images/0000ssm/ssm065/blog.003.png, /images/0000ssm/ssm065/blog.003.png 1.5x, /images/0000ssm/ssm065/blog.003.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm065/blog.003.png"
+        title="/images/0000ssm/ssm065/blog.003.png" /></p>
+<p>图3.1 程序操作流程图</p>
+<h3 id="332-登录流程分析">3.3.2 登录流程分析</h3>
+<p>在这个部分，需要对程序的登录功能模块的运行流程（如图3.2所示），进行单独说明。程序设置登录模块也是为了安全起见，让用户使用放心，登录模块主要就是让用户提交登录信息，程序进行数据验证，验证通过的用户才能够成功登录程序。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm065/blog.004.png"
+        data-srcset="/images/0000ssm/ssm065/blog.004.png, /images/0000ssm/ssm065/blog.004.png 1.5x, /images/0000ssm/ssm065/blog.004.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm065/blog.004.png"
+        title="/images/0000ssm/ssm065/blog.004.png" /></p>
+<p>图3.2 程序登录流程图</p>
+<h3 id="333-信息添加流程分析">3.3.3 信息添加流程分析</h3>
+<p>程序的添加功能就是提供给操作者录入信息的功能，不管是涉及到用户信息添加，还是其它功能模块涉及到的信息添加，程序的信息添加流程（如图3.3所示）都是一致的。程序都是先对操作者录入的数据进行判定，这个判定规则是一段提前编写完成的程序代码，当程序判定数据符合要求时，才会把操作者录入的数据登记在数据表里面，比如添加的用户信息，就会把新添加的用户信息写入用户信息的数据表文件里面。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm065/blog.005.png"
+        data-srcset="/images/0000ssm/ssm065/blog.005.png, /images/0000ssm/ssm065/blog.005.png 1.5x, /images/0000ssm/ssm065/blog.005.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm065/blog.005.png"
+        title="/images/0000ssm/ssm065/blog.005.png" /></p>
+<p>图3.3 信息添加流程图</p>
+<h3 id="334-信息删除流程分析">3.3.4 信息删除流程分析</h3>
+<p>当从程序里面删除某种无效数据时，遵循程序的信息删除流程（如图3.4所示），先要选中操作者需要删除的数据，程序为了预防操作者误删信息，也会进行提示，当操作者真正确定要删选中的信息时，该信息就会从数据库中被永久删除。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm065/blog.006.png"
+        data-srcset="/images/0000ssm/ssm065/blog.006.png, /images/0000ssm/ssm065/blog.006.png 1.5x, /images/0000ssm/ssm065/blog.006.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm065/blog.006.png"
+        title="/images/0000ssm/ssm065/blog.006.png" /></p>
+<p>图3.4 信息删除流程图</p>
+<h1 id="4-系统设计">4 系统设计</h1>
+<p>健康综合咨询问诊平台的设计方案比如功能框架的设计，比如数据库的设计的好坏也就决定了该系统在开发层面是否高效，以及在系统维护层面是否容易维护和升级，因为在系统实现阶段是需要考虑用户的所有需求，要是在设计阶段没有经过全方位考虑，那么系统实现的部分也就无从下手，所以系统设计部分也是至关重要的一个环节，只有根据用户需求进行细致全面的考虑，才有希望开发出功能健全稳定的程序软件。</p>
+<h2 id="41-系统概要设计">4.1 系统概要设计</h2>
+<p>本次拟开发的系统为了节约开发成本，也为了后期在维护和升级上的便利性，打算通过浏览器来实现系统功能界面的展示，让程序软件的主要事务集中在后台的服务器端处理，前端部分只用处理少量的事务逻辑。下面使用一张图（如图4.1所示）来说明程序的工作原理。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm065/blog.007.png"
+        data-srcset="/images/0000ssm/ssm065/blog.007.png, /images/0000ssm/ssm065/blog.007.png 1.5x, /images/0000ssm/ssm065/blog.007.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm065/blog.007.png"
+        title="/images/0000ssm/ssm065/blog.007.png" /></p>
+<p>图4.1 程序工作的原理图</p>
+<h2 id="42-系统功能结构设计">4.2 系统功能结构设计</h2>
+<p>在分析并得出使用者对程序的功能要求时，就可以进行程序设计了。如图4.2展示的就是管理员功能结构图，管理员主要负责填充图书和其类别信息，并对已填充的数据进行维护，包括修改与删除，管理员也需要审核老师注册信息，发布公告信息，管理自助租房信息等。</p>
+<p>健康综合咨询问诊平台</p>
+<p>系用户信息管理</p>
+<p>反用户资讯管理</p>
+<p>收科室信息管理</p>
+<p>申病例信息管理</p>
+<p>用医生信息管理</p>
+<p>帐用户信息修改</p>
+<p>密用户信息新增</p>
+<p>用医生信息添加</p>
+<p>用医生信息删除</p>
+<p>用医生信息修改</p>
+<p>申病例信息添加</p>
+<p>申病例信息修改</p>
+<p>申病例信息删除</p>
+<p>反用户资讯添加</p>
+<p>反用户资讯删改</p>
+<p>反用户资讯删除</p>
+<p>用科室信息添加</p>
+<p>用科室信息修改</p>
+<p>用科室信息删除</p>
+<p>反新闻信息管理</p>
+<p>反新闻信息修改</p>
+<p>反新闻信息删除</p>
+<p>反新闻信息添加</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm065/blog.008.png"
+        data-srcset="/images/0000ssm/ssm065/blog.008.png, /images/0000ssm/ssm065/blog.008.png 1.5x, /images/0000ssm/ssm065/blog.008.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm065/blog.008.png"
+        title="/images/0000ssm/ssm065/blog.008.png" /></p>
+<p>图4.2 系统功能结构图</p>
+<h2 id="43-数据库设计">4.3 数据库设计</h2>
+<p>程序功能操作不管是添加，修改，还是删除等功能产生的数据都是经由数据库进行数据保存和更新的，所以一个数据库设计的好坏也是程序是否好坏的判定标准，因为程序的成功，有一半的功劳都是靠数据库的优秀设计。数据库一旦设计得良好是可以减轻开发人员的开发负担的。</p>
+<h3 id="431-数据库e-r图设计">4.3.1 数据库E-R图设计</h3>
+<p>这个部分的设计需要使用到E-R图绘制工具，常用的工具就是Visio工具来绘制E-R模型图，这款工具不仅可以快速创建需要的E-R模型图，而且该工具提供的操作界面很简单，可以短时间内修改绘图界面的图形或者是文字的属性。在绘制E-R模型图时，要分清楚各个图形代表的含义，以免绘制出错，E-R模型图由长方形（实体），椭圆形（属性），菱形（关系）这三部分图形符号组成，绘制期间要区分开来，用准确的图形符号代表相应的数据元素。</p>
+<p>各个实体之间的联系用下图的E-R图表示。绘制的系统E-R图见图4.8。</p>
+<p>医生信息</p>
+<p>属于</p>
+<p>属于</p>
+<p>查询</p>
+<p>管理</p>
+<p>用户</p>
+<p>医生坐诊</p>
+<p>管理员</p>
+<p>健康综合咨询问诊平台</p>
+<p>管理</p>
+<p>管理</p>
+<p>管理</p>
+<p>查询</p>
+<p>n</p>
+<p>n</p>
+<p>n</p>
+<p>n</p>
+<p>1</p>
+<p>1</p>
+<p>n</p>
+<p>1</p>
+<p>1</p>
+<p>1
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm065/blog.009.png"
+        data-srcset="/images/0000ssm/ssm065/blog.009.png, /images/0000ssm/ssm065/blog.009.png 1.5x, /images/0000ssm/ssm065/blog.009.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm065/blog.009.png"
+        title="/images/0000ssm/ssm065/blog.009.png" /></p>
+<p>图4.8 系统E-R图</p>
+<h3 id="432-数据库表结构设计">4.3.2 数据库表结构设计</h3>
+<p>数据库系统一旦选定之后，需要根据程序要求在数据库中建立数据库文件，并在已经完成创建的数据库文件里面，为程序运行中产生的数据建立对应的数据表格，数据表结构设计就是对创建的数据表格进行字段设计，字段长度设计，字段类型设计等，当数据表格合理设计完成之后，才能正常存储相关程序运行产生的数据信息。</p>
+<p><code> </code>表4.1客服聊天表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">userid</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">用户id</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">adminid</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">管理员id</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">ask</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">提问</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">reply</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">回复</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">isreply</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">是否回复</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.2健康资讯评论表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">refid</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">关联表id</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">userid</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">用户id</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td style="text-align:center">content</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">评论内容</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">12</td>
+<td style="text-align:center">reply</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">回复内容</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.3医生坐诊评论表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">13</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">14</td>
+<td style="text-align:center">refid</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">关联表id</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">15</td>
+<td style="text-align:center">userid</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">用户id</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">16</td>
+<td style="text-align:center">content</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">评论内容</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">17</td>
+<td style="text-align:center">reply</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">回复内容</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.4健康资讯表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">18</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">19</td>
+<td style="text-align:center">zixunbiaoti</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">资讯标题</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">20</td>
+<td style="text-align:center">zixunleixing</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">资讯类型</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">21</td>
+<td style="text-align:center">tupian</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">图片</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">22</td>
+<td style="text-align:center">neirong</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">内容</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">23</td>
+<td style="text-align:center">ziliaofujian</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">资料附件</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">24</td>
+<td style="text-align:center">faburiqi</td>
+<td style="text-align:center">date</td>
+<td style="text-align:center">发布日期</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.5表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">25</td>
+<td style="text-align:center">ys_types</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">资讯医生</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">26</td>
+<td style="text-align:center">yh_types</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">资讯内容</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">27</td>
+<td style="text-align:center">information_content</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">资讯内容</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">28</td>
+<td style="text-align:center">information_time</td>
+<td style="text-align:center">datetime</td>
+<td style="text-align:center">资讯时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">29</td>
+<td style="text-align:center">reply_content</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">回复内容</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.6科室表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">30</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">31</td>
+<td style="text-align:center">keshi</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">科室</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.7新闻资讯表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">32</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">33</td>
+<td style="text-align:center">title</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">标题</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">34</td>
+<td style="text-align:center">picture</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">图片</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">35</td>
+<td style="text-align:center">content</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">内容</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.8收藏表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">36</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">37</td>
+<td style="text-align:center">userid</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">用户id</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">38</td>
+<td style="text-align:center">refid</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">收藏id</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">39</td>
+<td style="text-align:center">tablename</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">表名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">40</td>
+<td style="text-align:center">name</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">收藏名称</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">41</td>
+<td style="text-align:center">picture</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">收藏图片</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.9医生表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">42</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">43</td>
+<td style="text-align:center">yishenggonghao</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">医生工号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">44</td>
+<td style="text-align:center">mima</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">密码</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">45</td>
+<td style="text-align:center">yishengxingming</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">医生姓名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">46</td>
+<td style="text-align:center">xingbie</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">性别</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">47</td>
+<td style="text-align:center">touxiang</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">头像</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">48</td>
+<td style="text-align:center">zhicheng</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">职称</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">49</td>
+<td style="text-align:center">keshi</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">科室</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">50</td>
+<td style="text-align:center">lianxidianhua</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">联系电话</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">51</td>
+<td style="text-align:center">youxiang</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">邮箱</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">52</td>
+<td style="text-align:center">money</td>
+<td style="text-align:center">float</td>
+<td style="text-align:center">余额</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.10医生坐诊表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">53</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">54</td>
+<td style="text-align:center">yishenggonghao</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">医生工号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">55</td>
+<td style="text-align:center">yishengxingming</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">医生姓名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">56</td>
+<td style="text-align:center">xingbie</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">性别</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">57</td>
+<td style="text-align:center">touxiang</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">头像</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">58</td>
+<td style="text-align:center">zhicheng</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">职称</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">59</td>
+<td style="text-align:center">keshi</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">科室</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">60</td>
+<td style="text-align:center">youxiang</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">邮箱</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">61</td>
+<td style="text-align:center">shanzhanglingyu</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">擅长领域</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">62</td>
+<td style="text-align:center">zuozhenshijian</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">坐诊时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">63</td>
+<td style="text-align:center">guahaojiage</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">挂号价格</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">64</td>
+<td style="text-align:center">gerenjieshao</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">个人介绍</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.11用户表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">65</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">66</td>
+<td style="text-align:center">yonghuming</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">用户名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">67</td>
+<td style="text-align:center">mima</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">密码</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">68</td>
+<td style="text-align:center">xingming</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">姓名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">69</td>
+<td style="text-align:center">xingbie</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">性别</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">70</td>
+<td style="text-align:center">touxiang</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">头像</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">71</td>
+<td style="text-align:center">shouji</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">手机</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">72</td>
+<td style="text-align:center">money</td>
+<td style="text-align:center">float</td>
+<td style="text-align:center">余额</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">73</td>
+<td style="text-align:center">blacklist</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">是否拉黑</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.12用户病例表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">74</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">75</td>
+<td style="text-align:center">binglibianhao</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">病例编号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">76</td>
+<td style="text-align:center">binglimingcheng</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">病例名称</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">77</td>
+<td style="text-align:center">yonghuming</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">用户名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">78</td>
+<td style="text-align:center">xingming</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">姓名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">79</td>
+<td style="text-align:center">shouji</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">手机</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">80</td>
+<td style="text-align:center">bingqing</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">病情</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">81</td>
+<td style="text-align:center">jianchaxiangmu</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">检查项目</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">82</td>
+<td style="text-align:center">jianchajieguo</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">检查结果</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">83</td>
+<td style="text-align:center">yaodan</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">药单</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">84</td>
+<td style="text-align:center">yizhu</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">医嘱</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">85</td>
+<td style="text-align:center">zhuyishixiang</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">注意事项</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">86</td>
+<td style="text-align:center">binglifujian</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">病例附件</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">87</td>
+<td style="text-align:center">riqi</td>
+<td style="text-align:center">date</td>
+<td style="text-align:center">日期</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">88</td>
+<td style="text-align:center">yishenggonghao</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">医生工号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">89</td>
+<td style="text-align:center">zhicheng</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">职称</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.13预约挂号表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">90</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">91</td>
+<td style="text-align:center">yuyuebianhao</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">预约编号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">92</td>
+<td style="text-align:center">yuyuemingcheng</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">预约名称</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">93</td>
+<td style="text-align:center">yishenggonghao</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">医生工号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">94</td>
+<td style="text-align:center">yishengxingming</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">医生姓名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">95</td>
+<td style="text-align:center">touxiang</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">头像</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">96</td>
+<td style="text-align:center">yuyueshijian</td>
+<td style="text-align:center">datetime</td>
+<td style="text-align:center">预约时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">97</td>
+<td style="text-align:center">guahaojiage</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">挂号价格</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">98</td>
+<td style="text-align:center">yuyueneirong</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">预约内容</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">99</td>
+<td style="text-align:center">beizhu</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">备注</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">100</td>
+<td style="text-align:center">yonghuming</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">用户名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">101</td>
+<td style="text-align:center">xingming</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">姓名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">102</td>
+<td style="text-align:center">shouji</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">手机</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">103</td>
+<td style="text-align:center">sfsh</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">是否审核</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">104</td>
+<td style="text-align:center">shhf</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">审核回复</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">105</td>
+<td style="text-align:center">ispay</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">是否支付</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.14用户表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">106</td>
+<td style="text-align:center">username</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">用户名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">107</td>
+<td style="text-align:center">password</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">密码</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">108</td>
+<td style="text-align:center">role</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">角色</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">109</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">新增时间</td>
+<td style="text-align:center">是</td>
+</tr>
+</tbody>
+</table>
+<h1 id="5-系统实现">5 系统实现</h1>
+<p>系统实现部分就是将系统分析，系统设计部分的内容通过编码进行功能实现，以一个实际应用系统的形式展示系统分析与系统设计的结果。前面提到的系统分析，系统设计最主要还是进行功能，系统操作逻辑的设计，也包括了存储数据的数据库方面的设计等内容，系统实现就是一个最终的实施阶段，将前面的设计成果进行物理转化，最终出具可以运用于实际的软件系统。</p>
+<h3 id="51用户信息管理">5.1用户信息管理</h3>
+<p>如图5.1显示的就是用户信息管理页面，此页面提供给管理员的功能有：用户信息的查询管理，可以删除用户信息、修改用户信息、新增用户信息，</p>
+<p>还进行了对客户名称的模糊查询的条件</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm065/blog.010.png"
+        data-srcset="/images/0000ssm/ssm065/blog.010.png, /images/0000ssm/ssm065/blog.010.png 1.5x, /images/0000ssm/ssm065/blog.010.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm065/blog.010.png"
+        title="/images/0000ssm/ssm065/blog.010.png" /></p>
+<p>图5.1 用户信息管理页面</p>
+<h3 id="52-医生信息管理">5.2 医生信息管理</h3>
+<p>如图5.2显示的就是医生信息管理页面，此页面提供给管理员的功能有：查看已发布的医生信息数据，修改医生信息，医生信息作废，即可删除。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm065/blog.011.png"
+        data-srcset="/images/0000ssm/ssm065/blog.011.png, /images/0000ssm/ssm065/blog.011.png 1.5x, /images/0000ssm/ssm065/blog.011.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm065/blog.011.png"
+        title="/images/0000ssm/ssm065/blog.011.png" /></p>
+<p>图5.2 医生信息管理页面</p>
+<h3 id="53科室信息管理">5.3科室信息管理</h3>
+<p>如图5.3显示的就是科室信息管理页面，此页面提供给管理员的功能有：根据科室名称进行条件查询，还可以对科室数据进行新增、修改、查询操作等等。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm065/blog.012.png"
+        data-srcset="/images/0000ssm/ssm065/blog.012.png, /images/0000ssm/ssm065/blog.012.png 1.5x, /images/0000ssm/ssm065/blog.012.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm065/blog.012.png"
+        title="/images/0000ssm/ssm065/blog.012.png" /></p>
+<p>图5.3 科室信息管理页面</p>
+<h3 id="51新闻信息管理">5.1新闻信息管理</h3>
+<p>如图5.4显示的就是新闻信息管理页面，此页面提供给管理员的功能有：根据新闻信息进行新增、修改、查询操作等等。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0000ssm/ssm065/blog.013.png"
+        data-srcset="/images/0000ssm/ssm065/blog.013.png, /images/0000ssm/ssm065/blog.013.png 1.5x, /images/0000ssm/ssm065/blog.013.png 2x"
+        data-sizes="auto"
+        alt="/images/0000ssm/ssm065/blog.013.png"
+        title="/images/0000ssm/ssm065/blog.013.png" /></p>
+<p>图5.4 新闻信息管理页面</p>
+<h1 id="系统">系统</h1>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2023-11-17</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/ssm065%E5%9F%BA%E4%BA%8Ejava-web%E6%8A%80%E6%9C%AF%E5%A4%A7%E5%81%A5%E5%BA%B7%E7%BB%BC%E5%90%88%E5%92%A8%E8%AF%A2%E9%97%AE%E8%AF%8A%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://chenqi199.github.io/ssm065%E5%9F%BA%E4%BA%8Ejava-web%E6%8A%80%E6%9C%AF%E5%A4%A7%E5%81%A5%E5%BA%B7%E7%BB%BC%E5%90%88%E5%92%A8%E8%AF%A2%E9%97%AE%E8%AF%8A%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" data-title="ssm065基于JAVA WEB技术大健康综合咨询问诊平台的设计与实现&#43;jsp" data-hashtags="问诊平台,咨询问诊,平台设计,综合咨询,健康综合,设计实现"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://chenqi199.github.io/ssm065%E5%9F%BA%E4%BA%8Ejava-web%E6%8A%80%E6%9C%AF%E5%A4%A7%E5%81%A5%E5%BA%B7%E7%BB%BC%E5%90%88%E5%92%A8%E8%AF%A2%E9%97%AE%E8%AF%8A%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" data-hashtag="问诊平台"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://chenqi199.github.io/ssm065%E5%9F%BA%E4%BA%8Ejava-web%E6%8A%80%E6%9C%AF%E5%A4%A7%E5%81%A5%E5%BA%B7%E7%BB%BC%E5%90%88%E5%92%A8%E8%AF%A2%E9%97%AE%E8%AF%8A%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" data-title="ssm065基于JAVA WEB技术大健康综合咨询问诊平台的设计与实现&#43;jsp"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://chenqi199.github.io/ssm065%E5%9F%BA%E4%BA%8Ejava-web%E6%8A%80%E6%9C%AF%E5%A4%A7%E5%81%A5%E5%BA%B7%E7%BB%BC%E5%90%88%E5%92%A8%E8%AF%A2%E9%97%AE%E8%AF%8A%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" data-title="ssm065基于JAVA WEB技术大健康综合咨询问诊平台的设计与实现&#43;jsp"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://chenqi199.github.io/ssm065%E5%9F%BA%E4%BA%8Ejava-web%E6%8A%80%E6%9C%AF%E5%A4%A7%E5%81%A5%E5%BA%B7%E7%BB%BC%E5%90%88%E5%92%A8%E8%AF%A2%E9%97%AE%E8%AF%8A%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/" data-title="ssm065基于JAVA WEB技术大健康综合咨询问诊平台的设计与实现&#43;jsp" data-ralateuid="https://gitee.com/chen_q_i"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E9%97%AE%E8%AF%8A%E5%B9%B3%E5%8F%B0/">问诊平台</a>,&nbsp;<a href="/tags/%E5%92%A8%E8%AF%A2%E9%97%AE%E8%AF%8A/">咨询问诊</a>,&nbsp;<a href="/tags/%E5%B9%B3%E5%8F%B0%E8%AE%BE%E8%AE%A1/">平台设计</a>,&nbsp;<a href="/tags/%E7%BB%BC%E5%90%88%E5%92%A8%E8%AF%A2/">综合咨询</a>,&nbsp;<a href="/tags/%E5%81%A5%E5%BA%B7%E7%BB%BC%E5%90%88/">健康综合</a>,&nbsp;<a href="/tags/%E8%AE%BE%E8%AE%A1%E5%AE%9E%E7%8E%B0/">设计实现</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/ssm066%E5%86%9C%E5%AE%B6%E4%B9%90%E4%BF%A1%E6%81%AF%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/" class="prev" rel="prev" title="ssm066农家乐信息平台的设计与实现&#43;vue"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>ssm066农家乐信息平台的设计与实现+vue</a>
+            <a href="/0067springboot%E6%A1%82%E6%9E%97%E6%97%85%E6%B8%B8%E6%99%AF%E7%82%B9%E5%AF%BC%E6%B8%B8%E5%B9%B3%E5%8F%B0/" class="next" rel="next" title="0067springboot桂林旅游景点导游平台">0067springboot桂林旅游景点导游平台<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.128.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="chenqi199" target="_blank">chenqi</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

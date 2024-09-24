@@ -1,17 +1,16 @@
 # 0307springboot汽车销售系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0307springboot汽车销售系统](https://github.com/GraduationProject-springboot/0307springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)]()
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 绪论
 ## 1.1 课题背景
@@ -64,25 +63,25 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 3.2.1 操作流程
 使用者在操作汽车销售系统中，应该按照本系统提供的操作流程（图3.1即为本系统的操作流程图）进行操作，可以减少操作失误，从而节省进入汽车销售系统的时间。
 
-![](/images/0300stringboot/0307springboot/blog.001.png)
+![](/images/0300wxapp//blog.001.png)
 
 图3.1 系统操作流程
 ### 3.2.2 登录流程
 汽车销售系统通过登录功能（图3.2即为其登录的流程）引导使用者进入指定的功能操作区，也避免非本系统的用户享受本系统提供的服务以及查看本系统提供的信息，进而保证用户安全。
 
-![](/images/0300stringboot/0307springboot/blog.002.png)
+![](/images/0300wxapp//blog.002.png)
 
 图3.2 登录流程
 ### 3.2.3 删除信息流程
 汽车销售系统在经过长期使用后，会产生很多的数据信息。为了腾出存储空间存放更多的数据，本系统数据库中存储的数据，一些没有参考价值的数据需要进行删除（图3.3即为删除信息的流程），删除数据过程中，为避免误删，使用者要根据系统的提示来决定是否删除数据。
 
-![](/images/0300stringboot/0307springboot/blog.003.png)
+![](/images/0300wxapp//blog.003.png)
 
 图3.3 删除信息流程
 ### 3.2.4 添加信息流程
 汽车销售系统提供可视化的功能操作区，非常方便使用者进行数据操作，当使用者往系统中录入数据时（图3.4即为添加信息的流程），本系统也会进行数据合法性的判断，符合要求的数据才能够在数据库指定表中进行登记。
 
-![](/images/0300stringboot/0307springboot/blog.004.png)
+![](/images/0300wxapp//blog.004.png)
 
 图3.4 添加信息流程
 ## 3.3 性能需求
@@ -108,13 +107,13 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 图3.5即为管理员用例图，管理员权限操作的功能包括管理论坛帖子，管理汽车信息，回复汽车评价信息，管理汽车订单，管理汽车试驾预定信息等。
 
-![](/images/0300stringboot/0307springboot/blog.005.png)
+![](/images/0300wxapp//blog.005.png)
 
 图3.5 管理员用例图
 
 图3.6即为用户用例图，用户权限操作的功能包括预约汽车试驾，购买汽车，管理购物车，支付汽车订单，查看汽车订单等。
 
-![](/images/0300stringboot/0307springboot/blog.006.png)
+![](/images/0300wxapp//blog.006.png)
 
 图3.6 用户用例图
 # 第4章 系统设计
@@ -134,13 +133,13 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ## 4.2 功能结构设计
 图4.1即为设计的管理员功能结构，管理员权限操作的功能包括管理论坛帖子，管理汽车信息，回复汽车评价信息，管理汽车订单，管理汽车试驾预定信息等。
 
-![](/images/0300stringboot/0307springboot/blog.007.png)
+![](/images/0300wxapp//blog.007.png)
 
 图4.1 管理员功能结构
 
 图4.2即为设计的用户功能结构，用户权限操作的功能包括预约汽车试驾，购买汽车，管理购物车，支付汽车订单，查看汽车订单等。
 
-![](/images/0300stringboot/0307springboot/blog.008.png)
+![](/images/0300wxapp//blog.008.png)
 
 图4.2 用户功能结构
 ## 4.3 数据库设计
@@ -150,31 +149,31 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 （1）图4.4即为汽车订单这个实体所拥有的属性值。
 
-![](/images/0300stringboot/0307springboot/blog.009.png)
+![](/images/0300wxapp//blog.009.png)
 
 图4.4 汽车订单实体属性图
 
 （2）图4.5即为汽车这个实体所拥有的属性值。
 
-![](/images/0300stringboot/0307springboot/blog.010.png)
+![](/images/0300wxapp//blog.010.png)
 
 图4.5 汽车实体属性图
 
 （3）图4.6即为管理员这个实体所拥有的属性值。
 
-![](/images/0300stringboot/0307springboot/blog.011.png)
+![](/images/0300wxapp//blog.011.png)
 
 图4.6 管理员实体属性图
 
 4. 图4.7即为用户这个实体所拥有的属性值。
 
-![](/images/0300stringboot/0307springboot/blog.012.png)
+![](/images/0300wxapp//blog.012.png)
 
 图4.7 用户实体属性图
 
 4. 图4.8即为上面介绍的实体中存在的联系。
 
-![](/images/0300stringboot/0307springboot/blog.013.png)
+![](/images/0300wxapp//blog.013.png)
 
 图4.8 实体间关系E-R图
 ### 4.3.2 数据库物理设计
@@ -317,68 +316,68 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 5.1.1 论坛管理
 图5.1 即为编码实现的论坛管理界面，论坛信息包括帖子标题，帖子内容，发帖时间，身份，姓名，手机号等信息，管理员负责对有错误数据的论坛帖子使用修改功能及时更正信息，需要删除的论坛帖子可以使用删除功能及时删除，同时管理员通过查看论坛回复功能可以及时监督论坛帖子的回复信息，可以删除不良信息的论坛帖子回复信息，以及查看论坛帖子的各个回复信息等。
 
-![](/images/0300stringboot/0307springboot/blog.014.png)
+![](/images/0300wxapp//blog.014.png)
 
 图5.1 论坛管理界面
 ### 5.1.2 用户管理
 图5.2 即为编码实现的用户管理界面，用户信息有用户头像，余额，用户姓名等信息，管理员可以修改有错误数据的用户信息，可以使用删除功能删除需要删除的用户信息等。
 
-![](/images/0300stringboot/0307springboot/blog.015.png)
+![](/images/0300wxapp//blog.015.png)
 
 图5.2 用户管理界面
 ### 5.1.3 汽车管理
 图5.3 即为编码实现的汽车管理界面，汽车信息有汽车原价，汽车现价，汽车照片，汽车名称等信息，管理员负责登记汽车信息，使用修改功能对登记错误的汽车信息进行更正，需要删除的汽车信息也能使用删除功能及时删除，同时管理员也能管理汽车的库存信息，主要包括对汽车库存进行增加，或者是对汽车库存进行减少，以及对销量不好的汽车进行下架，上架汽车新品等操作。
 
-![](/images/0300stringboot/0307springboot/blog.016.png)
+![](/images/0300wxapp//blog.016.png)
 
 图5.3 汽车管理界面
 ### 5.1.4 汽车评价管理
 图5.4 即为编码实现的汽车评价管理界面，汽车评价信息有评价时间，评价内容，回复内容等，汽车评价是用户对汽车评价之后产生的信息，而回复信息则是管理员在查看汽车评价的内容之后，发布的回复信息。汽车评价管理界面展示的汽车评价信息也能让管理员删除和查询。
 
-![](/images/0300stringboot/0307springboot/blog.017.png)
+![](/images/0300wxapp//blog.017.png)
 
 图5.4 汽车评价管理界面
 ### 5.1.5 汽车试驾预定管理
 图5.5 即为编码实现的汽车试驾预定管理界面，用户预约汽车试驾，则产生的汽车试驾预定信息就会显示在汽车试驾预定管理界面，管理员可以查询汽车试驾预定信息，查看汽车试驾预定信息等。
 
-![](/images/0300stringboot/0307springboot/blog.018.png)
+![](/images/0300wxapp//blog.018.png)
 
 图5.5 汽车试驾预定管理界面
 ### 5.1.6 汽车订单管理
 图5.6 即为编码实现的汽车订单管理界面，管理员查看汽车订单详情，包括购买数量，实付价格，支付类型等信息，可以删除需要删除的汽车订单等。
 
-![](/images/0300stringboot/0307springboot/blog.019.png)
+![](/images/0300wxapp//blog.019.png)
 
 图5.6 汽车订单管理界面
 ## 5.2 用户功能实现
 ### 5.2.1 汽车信息
 图5.7 即为编码实现的汽车信息界面，用户查看汽车信息界面右侧区域展示的系统推荐的汽车信息，可以通过汽车的图片以及汽车介绍来了解汽车，用户购买汽车可以通过购买功能实现下单，如果用户有对汽车试驾的需要，可以点击预约按钮对汽车试驾进行预约。
 
-![](/images/0300stringboot/0307springboot/blog.020.png)
+![](/images/0300wxapp//blog.020.png)
 
 图5.7 汽车信息界面
 ### 5.2.2 预约汽车试驾
 图5.8 即为编码实现的预约汽车试驾界面，用户只需要选择合适的时间即可提交预约汽车试驾信息。
 
-![](/images/0300stringboot/0307springboot/blog.021.png)
+![](/images/0300wxapp//blog.021.png)
 
 图5.8 预约汽车试驾界面
 ### 5.2.3 购物车
 图5.9 即为编码实现的购物车界面，用户可以把需要购买的汽车都统一保存在购物车里面，然后对购买汽车的数量进行简单修改，最后对购买的汽车进行下单。
 
-![](/images/0300stringboot/0307springboot/blog.022.png)
+![](/images/0300wxapp//blog.022.png)
 
 图5.9 购物车界面
 ### 5.2.4 确认下单
 图5.10 即为编码实现的确认下单界面，用户先要确认收货地址，然后确认购买的汽车信息以及购买汽车的数量是否正确，最后确认支付的金额，然后提交订单。
 
-![](/images/0300stringboot/0307springboot/blog.023.png)
+![](/images/0300wxapp//blog.023.png)
 
 图5.10 确认下单界面
 ### 5.2.5 我的汽车订单
 图5.11 即为编码实现的我的汽车订单界面，我的汽车订单界面展示的信息都是用户购买汽车产生的信息，用户根据实际情况对汽车订单进行对应操作。
 
-![](/images/0300stringboot/0307springboot/blog.024.png)
+![](/images/0300wxapp//blog.024.png)
 
 图5.11 我的汽车订单界面
 

@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>论文投稿 - 标签 - chenqi blog</title>
+        <link>https://chenqi199.github.io/tags/%E8%AE%BA%E6%96%87%E6%8A%95%E7%A8%BF/</link>
+        <description>论文投稿 - 标签 - chenqi blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>chen_q_i@163.com (chenqi)</managingEditor>
+            <webMaster>chen_q_i@163.com (chenqi)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 12 Jan 2024 10:32:50 &#43;0800</lastBuildDate><atom:link href="https://chenqi199.github.io/tags/%E8%AE%BA%E6%96%87%E6%8A%95%E7%A8%BF/" rel="self" type="application/rss+xml" /><item>
+    <title>ssm231论文投稿系统&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm231%E8%AE%BA%E6%96%87%E6%8A%95%E7%A8%BF%E7%B3%BB%E7%BB%9F-vue/</link>
+    <pubDate>Fri, 12 Jan 2024 10:32:50 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm231%E8%AE%BA%E6%96%87%E6%8A%95%E7%A8%BF%E7%B3%BB%E7%BB%9F-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm231论文投稿系统+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 系统概述 1.1 研究背景 如今互联网高速发展，网]]></description>
+</item>
+</channel>
+</rss>

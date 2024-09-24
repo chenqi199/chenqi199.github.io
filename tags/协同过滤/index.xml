@@ -1,0 +1,24 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>协同过滤 - 标签 - chenqi blog</title>
+        <link>https://chenqi199.github.io/tags/%E5%8D%8F%E5%90%8C%E8%BF%87%E6%BB%A4/</link>
+        <description>协同过滤 - 标签 - chenqi blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>chen_q_i@163.com (chenqi)</managingEditor>
+            <webMaster>chen_q_i@163.com (chenqi)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 14 Jun 2024 11:23:24 &#43;0800</lastBuildDate><atom:link href="https://chenqi199.github.io/tags/%E5%8D%8F%E5%90%8C%E8%BF%87%E6%BB%A4/" rel="self" type="application/rss+xml" /><item>
+    <title>0692springboot基于协同过滤算法商品推荐系统</title>
+    <link>https://chenqi199.github.io/0692springboot%E5%9F%BA%E4%BA%8E%E5%8D%8F%E5%90%8C%E8%BF%87%E6%BB%A4%E7%AE%97%E6%B3%95%E5%95%86%E5%93%81%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/</link>
+    <pubDate>Fri, 14 Jun 2024 11:23:24 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/0692springboot%E5%9F%BA%E4%BA%8E%E5%8D%8F%E5%90%8C%E8%BF%87%E6%BB%A4%E7%AE%97%E6%B3%95%E5%95%86%E5%93%81%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site 0692springboot基于协同过滤算法商品推荐系统 github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 内容整理中]]></description>
+</item>
+<item>
+    <title>ssm617基于协同过滤技术的网上书城的开发与研究&#43;jsp</title>
+    <link>https://chenqi199.github.io/ssm617%E5%9F%BA%E4%BA%8E%E5%8D%8F%E5%90%8C%E8%BF%87%E6%BB%A4%E6%8A%80%E6%9C%AF%E7%9A%84%E7%BD%91%E4%B8%8A%E4%B9%A6%E5%9F%8E%E7%9A%84%E5%BC%80%E5%8F%91%E4%B8%8E%E7%A0%94%E7%A9%B6-jsp/</link>
+    <pubDate>Mon, 20 May 2024 10:32:59 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm617%E5%9F%BA%E4%BA%8E%E5%8D%8F%E5%90%8C%E8%BF%87%E6%BB%A4%E6%8A%80%E6%9C%AF%E7%9A%84%E7%BD%91%E4%B8%8A%E4%B9%A6%E5%9F%8E%E7%9A%84%E5%BC%80%E5%8F%91%E4%B8%8E%E7%A0%94%E7%A9%B6-jsp/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm617基于协同过滤技术的网上书城的开发与研究+jsp github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第1章 绪论 1.1 研]]></description>
+</item>
+</channel>
+</rss>

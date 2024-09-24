@@ -1,17 +1,16 @@
 # 0652springboot家乡特色推荐系统--论文
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0652springboot家乡特色推荐系统--论文](https://github.com/GraduationProject-springboot/0652springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV14HerezEwW?p=9)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 课题背景与意义
 在Internet高速发展的今天，计算机的应用几乎完全覆盖我们生活的各个领域，互联网在经济，生活等方面有着举足轻重的地位，成为人们资源共享，信息快速传递的重要渠道。在中国，网上管理的兴起也同时飞速发展着。为了适应现代人类强烈的时间观念，对于家乡特色文章传统管理方式的缺点，互联网的出现打破了这种局限性，给了广大用户更大的选择空间，促进了家乡特色文章管理，有效的避免了家乡特色文章管理缭乱的局面，方便用户。本网站中，管理员可以以最方便的形式，在最短的时间内查找最多的家乡特色文章信息。因此，系统无疑给人们的生活带来了极大的方便，网络的应用让时间和距离不再是局限。
@@ -51,7 +50,7 @@ Java是由SUN公司推出，该公司于2010年被oracle公司收购。Java本�
 ## 2.2 B/S架构
 B/S的系统是通过能上网的电脑就可以使用，它最大的优点是不需要安装专门的软件，首先浏览器向服务器发出请求，然后服务器处理请求把信息再返回给浏览器。不需要再次对数据进行存取与计算数据，只要负责显示数据来降低要求，如果说客户端像个“瘦子”，而服务器会越来越“胖”。B/S体系结构与C/S体系结构相比，最大的不同是：B/S体系的应用软件使用网络浏览器作为与用户交互的平台，而C/S则需要开发专用的应用程序。
 
-![2009318052962238](/images/0600stringboot/0652springboot/blog.007.png)
+![2009318052962238](/images/0600wxapp//blog.007.png)
 
 图2-1 B/S结构图
 
@@ -96,7 +95,7 @@ SpringBoot可以看做是Spring的加强版本，但实质上都是Spring的相�
 
 系统功能结构图是系统设计阶段，系统功能结构图只是这个阶段一个基础，整个系统的架构决定了系统的整体模式，是系统的根据。家乡特色推荐系统的整个设计结构如图3-1所示。
 
-![](/images/0600stringboot/0652springboot/blog.008.png)
+![](/images/0600wxapp//blog.008.png)
 
 图3-1系统功能结构图
 ## 3.2可行性研究
@@ -118,7 +117,7 @@ SpringBoot可以看做是Spring的加强版本，但实质上都是Spring的相�
 ## 3.4系统用例图
 系统用例图如下图3-2所示：
 
-![](/images/0600stringboot/0652springboot/blog.009.png)
+![](/images/0600wxapp//blog.009.png)
 
 图3-2 系统业务用例图
 
@@ -139,13 +138,13 @@ SpringBoot可以看做是Spring的加强版本，但实质上都是Spring的相�
 
 用户注册实体图如图4-1所示：
 
-![](/images/0600stringboot/0652springboot/blog.010.png)
+![](/images/0600wxapp//blog.010.png)
 
 图4-1用户注册实体图
 
 文章分享实体图如图4-2所示：
 
-![](/images/0600stringboot/0652springboot/blog.011.png)
+![](/images/0600wxapp//blog.011.png)
 
 图4-2文章分享实体图
 
@@ -272,81 +271,81 @@ SpringBoot可以看做是Spring的加强版本，但实质上都是Spring的相�
 ### 4.2.2系统流程图
 下图是用户进入这个家乡特色推荐系统后，基本的操作流程。
 
-![](/images/0600stringboot/0652springboot/blog.012.png)
+![](/images/0600wxapp//blog.012.png)
 
 图4-3系统操作流程图
 # 5系统详细设计
 ## 5.1系统功能模块
 家乡特色推荐系统，在系统首页可以查看首页，文章分享，资讯信息，个人中心，后台管理等内容进行详细操作，如图5-1所示。
 
-![](/images/0600stringboot/0652springboot/blog.013.png)
+![](/images/0600wxapp//blog.013.png)
 
 图5-1系统首页界面图
 
 用户注册，在用户注册页面通过填写用户名，密码，确认密码，姓名，手机等信息完成用户注册，如图5-2所示。
 
-![](/images/0600stringboot/0652springboot/blog.014.png)
+![](/images/0600wxapp//blog.014.png)
 
 图5-2用户注册界面图
 
 文章分享，在文章分享页面可以查看文章分类，简述，发布时间，用户名，姓名，点击次数等详细内容，并进行评论和收藏操作，如图5-3所示。
 
-![](/images/0600stringboot/0652springboot/blog.015.png)
+![](/images/0600wxapp//blog.015.png)
 
 图5-3文章分享界面图
 
 个人中心，在个人中心页面通过填写用户名，姓名，图片，密码，性别，手机等信息进行更新信息，根据需要对我的收藏进行详细操作，如图5-4所示。
 
-![](/images/0600stringboot/0652springboot/blog.016.png)
+![](/images/0600wxapp//blog.016.png)
 
 图5-4个人中心界面图
 
 ## 5.2管理员功能模块
 管理员登录，进入系统前在登录页面根据要求填写用户名和密码，选择角色等信息，点击登录进行登录操作，如图5-5所示。
 
-![](/images/0600stringboot/0652springboot/blog.017.png)
+![](/images/0600wxapp//blog.017.png)
 
 图5-5管理员登录界面图
 
 管理员登录系统后，可以对首页，个人中心，用户管理，文章分类管理，文章分享管理，系统管理等功能模块进行相应操作，如图5-6所示。
 
-![](/images/0600stringboot/0652springboot/blog.018.png)
+![](/images/0600wxapp//blog.018.png)
 
 图5-6管理员功能界面图
 
 用户管理，在用户管理页面可以对索引，用户名，姓名，头像，性别，手机，审核回复，审核状态，审核等信息进行详情，修改和删除等操作，如图5-7所示。
 
-![](/images/0600stringboot/0652springboot/blog.019.png)
+![](/images/0600wxapp//blog.019.png)
 
 图5-7用户管理界面图
 
 文章分类管理，在文章分类管理页面可以对索引，文章分类等内容进行详情，修改和删除等操作，如图5-8所示。
 
-![](/images/0600stringboot/0652springboot/blog.020.png)
+![](/images/0600wxapp//blog.020.png)
 
 图5-8文章分类管理界面图
 
 文章分享管理，在文章分享管理页面可以对索引，标题，图片，文章分类，简述，发布时间，用户名，姓名，审核回复，审核状态等内容进行详情，修改，查看评论和删除操作，如图5-9所示。
 
-![](/images/0600stringboot/0652springboot/blog.021.png)
+![](/images/0600wxapp//blog.021.png)
 
 图5-9文章分享管理界面图
 
 系统管理，在轮播图管理页面可以对索引，名称，值等内容进行详情，修改或删除等操作，如图5-10所示。
 
-![](/images/0600stringboot/0652springboot/blog.022.png)
+![](/images/0600wxapp//blog.022.png)
 
 图5-10系统管理界面图
 ## 5.3用户功能模块
 用户登录进入系统，可以对首页，个人中心，文章分享管理，我的收藏管理等功能模块进行相应操作，如图5-11所示。
 
-![](/images/0600stringboot/0652springboot/blog.023.png)
+![](/images/0600wxapp//blog.023.png)
 
 图5-11用户功能界面图
 
 文章分享管理，在文章分享管理页面可以对索引，标题，图片，文章分类，简述，发布时间，用户名，姓名，审核回复，审核状态等信息进行详情，修改，查看评论和删除等操作，如图5-12所示。
 
-![](/images/0600stringboot/0652springboot/blog.024.png)
+![](/images/0600wxapp//blog.024.png)
 
 图5-12文章分享管理界面图
 

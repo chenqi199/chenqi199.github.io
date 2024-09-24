@@ -1,17 +1,16 @@
 # 0154springboot基于JAVA语言的在线考试与学习交流网页平台
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0154springboot基于JAVA语言的在线考试与学习交流网页平台](https://github.com/GraduationProject-springboot/0154springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1ECs?p=53)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 绪论
 ## 1.1 课题背景
@@ -64,25 +63,25 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 3.2.1 操作流程
 使用者在操作在线考试与学习交流网页平台中，应该按照本系统提供的操作流程（图3.1即为本系统的操作流程图）进行操作，这样可以减少使用者操作中出现的错误，从而节省进入在线考试与学习交流网页平台的时间。
 
-![](/images/0100stringboot/0154springboot/blog.001.png)
+![](/images/0100wxapp//blog.001.png)
 
 图3.1 系统操作流程
 ### 3.2.2 登录流程
 在线考试与学习交流网页平台通过登录功能（图3.2即为其登录的流程）引导使用者进入指定的功能操作区，也避免非本系统的用户享受本系统提供的服务以及查看本系统提供的信息，从而保障本系统用户的安全使用。
 
-![](/images/0100stringboot/0154springboot/blog.002.png)
+![](/images/0100wxapp//blog.002.png)
 
 图3.2 登录流程
 ### 3.2.3 删除信息流程
 在线考试与学习交流网页平台在经过长期使用后，会产生很多的数据信息。为了腾出存储空间存放更多的数据，本系统数据库中存储的数据，一些没有参考价值的数据需要进行删除（图3.3即为删除信息的流程），删除数据过程中，为避免误删，使用者要根据系统的提示来决定是否删除数据。
 
-![](/images/0100stringboot/0154springboot/blog.003.png)
+![](/images/0100wxapp//blog.003.png)
 
 图3.3 删除信息流程
 ### 3.2.4 添加信息流程
 在线考试与学习交流网页平台提供可视化的功能操作区，非常方便使用者进行数据操作，当使用者往系统中录入数据时（图3.4即为添加信息的流程），本系统也会进行数据合法性的判断，符合要求的数据才能够在数据库指定表中进行登记。
 
-![](/images/0100stringboot/0154springboot/blog.004.png)
+![](/images/0100wxapp//blog.004.png)
 
 图3.4 添加信息流程
 ## 3.3 性能需求
@@ -102,13 +101,13 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 图3.5即为管理员用例图，管理员权限操作的功能包括对注册用户信息的管理，对试题，试卷，考试记录，错题本以及学习视频等信息的管理。
 
-![](/images/0100stringboot/0154springboot/blog.005.png)
+![](/images/0100wxapp//blog.005.png)
 
 图3.5 管理员用例图
 
 图3.6即为用户用例图，用户权限操作的功能包括选择试卷进行在线考试，查看考试记录和错题本，查看学习视频，查看论坛帖子。
 
-![](/images/0100stringboot/0154springboot/blog.006.png)
+![](/images/0100wxapp//blog.006.png)
 
 图3.6 用户用例图
 # 第4章 系统设计
@@ -116,13 +115,13 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ## 4.1 功能结构设计
 图4.1即为设计的管理员功能结构，管理员权限操作的功能包括对注册用户信息的管理，对试题，试卷，考试记录，错题本以及学习视频等信息的管理。
 
-![](/images/0100stringboot/0154springboot/blog.007.png)
+![](/images/0100wxapp//blog.007.png)
 
 图4.1 管理员功能结构
 
 图4.2即为设计的用户功能结构，用户权限操作的功能包括选择试卷进行在线考试，查看考试记录和错题本，查看学习视频，查看论坛帖子。
 
-![](/images/0100stringboot/0154springboot/blog.008.png)
+![](/images/0100wxapp//blog.008.png)
 
 图4.2 用户功能结构
 ## 4.2 数据库设计
@@ -132,31 +131,31 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 
 （1）图4.4即为学习视频这个实体所拥有的属性值。
 
-![](/images/0100stringboot/0154springboot/blog.009.png)
+![](/images/0100wxapp//blog.009.png)
 
 图4.4 学习视频实体属性图
 
 （2）图4.5即为用户这个实体所拥有的属性值。
 
-![](/images/0100stringboot/0154springboot/blog.010.png)
+![](/images/0100wxapp//blog.010.png)
 
 图4.5 用户实体属性图
 
 （3）图4.6即为试卷这个实体所拥有的属性值。
 
-![](/images/0100stringboot/0154springboot/blog.011.png)
+![](/images/0100wxapp//blog.011.png)
 
 图4.6 试卷实体属性图
 
 4. 图4.7即为试题这个实体所拥有的属性值。
 
-![](/images/0100stringboot/0154springboot/blog.012.png)
+![](/images/0100wxapp//blog.012.png)
 
 图4.7 试题实体属性图
 
 4. 图4.8即为上面介绍的实体中存在的联系。
 
-![](/images/0100stringboot/0154springboot/blog.013.png)
+![](/images/0100wxapp//blog.013.png)
 
 图4.8 实体间关系E-R图
 ### 4.2.2 数据库物理设计
@@ -305,56 +304,56 @@ Spring Boot是一种不需要代码生成的一种框架，并且可以不需要
 ### 5.1.1 学习视频管理
 图5.1 即为编码实现的学习视频管理界面，管理员在该界面中发布学习视频，对学习视频的相关内容进行修改，比如学习视频封面，讲师，学习类型等信息的更改，可以删除学习视频。
 
-![](/images/0100stringboot/0154springboot/blog.015.png)
+![](/images/0100wxapp//blog.015.png)
 
 图5.1 学习视频管理界面
 ### 5.1.2 试卷管理
 图5.2 即为编码实现的试卷管理界面，管理员在该界面中新增试卷，对本界面显示的试卷信息进行修改或删除，在搜索框中编辑试卷名称可以查询试卷信息。
 
-![](/images/0100stringboot/0154springboot/blog.016.png)
+![](/images/0100wxapp//blog.016.png)
 
 图5.2 试卷管理界面
 ### 5.1.3 试题管理
 图5.3 即为编码实现的试题管理界面，管理员在该界面中主要就是增加，修改，查询，删除试题信息。
 
-![](/images/0100stringboot/0154springboot/blog.017.png)
+![](/images/0100wxapp//blog.017.png)
 
 图5.3 试题管理界面
 ### 5.1.4 考试记录
 图5.4 即为编码实现的考试记录界面，管理员在该界面中对用户考试的记录信息进行查看，包括查看用户考试所得总分，用户考试的详情信息等。
 
-![](/images/0100stringboot/0154springboot/blog.018.png)
+![](/images/0100wxapp//blog.018.png)
 
 图5.4 考试记录界面
 ### 5.1.5 用户管理
 图5.5 即为编码实现的用户管理界面，管理员在该界面中负责为用户重置密码，更改用户的基础信息，查询用户，删除用户等。
 
-![](/images/0100stringboot/0154springboot/blog.019.png)
+![](/images/0100wxapp//blog.019.png)
 
 图5.5 用户管理界面
 ## 5.2 用户功能实现
 ### 5.2.1 试卷表
 图5.6 即为编码实现的试卷表界面，用户在该界面中选择试卷并参与在线考试。
 
-![](/images/0100stringboot/0154springboot/blog.020.png)
+![](/images/0100wxapp//blog.020.png)
 
 图5.6 试卷表界面
 ### 5.2.2 学习视频
 图5.7 即为编码实现的学习视频界面，用户在该界面中播放学习视频进行知识的学习，用户在视频下方可以查看留言，发布留言，查看留言回复信息等。
 
-![](/images/0100stringboot/0154springboot/blog.021.png)
+![](/images/0100wxapp//blog.021.png)
 
 图5.7 学习视频界面
 ### 5.2.3 错题表
 图5.8 即为编码实现的错题表界面，用户在该界面中查看错题信息，包括试卷名称，考生作答，试题类型，分值等信息。
 
-![](/images/0100stringboot/0154springboot/blog.022.png)
+![](/images/0100wxapp//blog.022.png)
 
 图5.8 错题表界面
 ### 5.2.4 论坛信息
 图5.9 即为编码实现的论坛信息界面，用户在该界面中可以查看论坛区域的所有帖子，用户在该区域也能发布帖子，每个帖子查看之后，用户可以发布帖子评论等。
 
-![](/images/0100stringboot/0154springboot/blog.023.png)
+![](/images/0100wxapp//blog.023.png)
 
 图5.9 论坛信息界面
 # 

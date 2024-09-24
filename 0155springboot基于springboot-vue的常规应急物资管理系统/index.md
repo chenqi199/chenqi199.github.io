@@ -1,17 +1,16 @@
 # 0155springboot基于SpringBoot+Vue的常规应急物资管理系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0155springboot基于SpringBoot+Vue的常规应急物资管理系统](https://github.com/GraduationProject-springboot/0155springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1ECs?p=54)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第一章  绪论
 ## 1.1研究背景
@@ -77,11 +76,11 @@ MySQL数据库是一种使用频繁的关系型数据库。因为其具有开源
 ## 4.1系统的总体功能设计
 系统的总体功能设计阶段，是通过结合系统分析阶段的相关内容，对系统的整体功能设计进行规划的过程。系统的总体功能设计是系统详细功能设计的一个大方向，也就是说系统的各类子功能模块的设计，都是以总体功能设计为目标而进行的。通过对系统进行需求分析可知，可以大致了解系统具体所需要的相关的主要功能模块。本系统主要的功能需求包括物资信息管理、物资运输管理等模块。管理员功能设计图如图4-1所示，用户功能设计图如图4-2所示。
 
-![](/images/0100stringboot/0155springboot/blog.003.png)
+![](/images/0100wxapp//blog.003.png)
 
 图4-1管理员功能设计图
 
-![](/images/0100stringboot/0155springboot/blog.004.png)
+![](/images/0100wxapp//blog.004.png)
 
 图4-2用户功能设计图
 
@@ -89,39 +88,39 @@ MySQL数据库是一种使用频繁的关系型数据库。因为其具有开源
 ### 4.2.1概念设计
 本系统使用轻量级的MySQL数据库，对系统相关的数据信息进行管理和维护[12]。数据库设计阶段一般可以被分为概念设计和逻辑设计这两个阶段。概念设计阶段是对系统进行数据库设计的重要基础，将现实世界中用户的相关需求抽象化为虚拟世界中的概念模型，为后续的逻辑设计做好准备工作。本人通过设计E-R图，详细的对系统中的实体以及实体之间的联系进行了表达。各实体信息的实体属性图如图4-3、图4-4、图4-5、图4-6、图4-7、图4-8、图4-9、图4-10所示，系统总体E-R图如图4-11所示。
 
-![](/images/0100stringboot/0155springboot/blog.005.png)
+![](/images/0100wxapp//blog.005.png)
 
 图4-3管理员信息实体属性图
 
-![](/images/0100stringboot/0155springboot/blog.006.png)
+![](/images/0100wxapp//blog.006.png)
 
 图4-4用户信息实体属性图
 
-![](/images/0100stringboot/0155springboot/blog.007.png)
+![](/images/0100wxapp//blog.007.png)
 
 图4-5字典信息实体属性图
 
-![](/images/0100stringboot/0155springboot/blog.008.png)
+![](/images/0100wxapp//blog.008.png)
 
 图4-6部门信息实体属性图
 
-![](/images/0100stringboot/0155springboot/blog.009.png)
+![](/images/0100wxapp//blog.009.png)
 
 图4-7物资信息实体属性图
 
-![](/images/0100stringboot/0155springboot/blog.010.png)
+![](/images/0100wxapp//blog.010.png)
 
 图4-8物资申请信息实体属性图
 
-![](/images/0100stringboot/0155springboot/blog.011.png)
+![](/images/0100wxapp//blog.011.png)
 
 图4-9 物资运输信息实体属性图
 
-![](/images/0100stringboot/0155springboot/blog.012.png)
+![](/images/0100wxapp//blog.012.png)
 
 图4-10健康打卡信息实体属性图
 
-![](/images/0100stringboot/0155springboot/blog.013.png)
+![](/images/0100wxapp//blog.013.png)
 
 图4-11系统总体E-R图
 ### 4.2.2逻辑设计
@@ -241,7 +240,7 @@ MySQL数据库是一种使用频繁的关系型数据库。因为其具有开源
 ### 5.1.1管理员首页
 通过设计的首页功能模块，管理用户可以成功登录系统，并且选择点击相关的功能模块按钮，操作和实现自己所需要的功能，管理员首页解饿设计如图5-1所示。
 
-![](/images/0100stringboot/0155springboot/blog.014.png)
+![](/images/0100wxapp//blog.014.png)
 
 图5-1管理员首页界面
 
@@ -301,11 +300,11 @@ MySQL数据库是一种使用频繁的关系型数据库。因为其具有开源
 ### 5.1.2个人中心
 通过设计的个人中心功能模块，管理用户可以选择修改账号密码，查看个人资料信息，通过不定期的对个人账户密码进行更新，保障个人信息安全，修改密码界面设计如图5-1所示，个人信息界面设计如图5-2所示。
 
-![](/images/0100stringboot/0155springboot/blog.015.png)
+![](/images/0100wxapp//blog.015.png)
 
 图5-1修改密码界面
 
-![](/images/0100stringboot/0155springboot/blog.016.png)
+![](/images/0100wxapp//blog.016.png)
 
 图5-2个人信息界面
 
@@ -357,7 +356,7 @@ MySQL数据库是一种使用频繁的关系型数据库。因为其具有开源
 ### 5.1.3健康打卡管理
 通过设计的健康打卡管理功能模块，管理用户可以管理相关的健康打卡信息记录，比如进行查看健康打卡的详细信息，修改健康打卡的日期信息，删除已经失效的健康打卡信息记录等操作，健康打卡管理界面设计如图5-3所示。
 
-![](/images/0100stringboot/0155springboot/blog.017.png)
+![](/images/0100wxapp//blog.017.png)
 
 图5-3健康打卡管理界面
 
@@ -419,7 +418,7 @@ MySQL数据库是一种使用频繁的关系型数据库。因为其具有开源
 ### 5.1.4基础数据管理
 通过设计的基础数据管理功能模块，管理用户可以管理相关的物资类型信息记录，比如进行查看物资类型的详细信息，修改物资类型的名称信息，删除已经失效的物资类型信息记录等操作，物资类型管理界面设计如图5-4所示。
 
-![](/images/0100stringboot/0155springboot/blog.018.png)
+![](/images/0100wxapp//blog.018.png)
 
 图5-4物资类型管理界面
 
@@ -507,7 +506,7 @@ MySQL数据库是一种使用频繁的关系型数据库。因为其具有开源
 ### 5.1.5物资管理
 通过设计的物资管理功能模块，管理用户可以管理相关的物资信息记录，比如进行查看物资的详细信息，修改物资的库存信息，删除已经失效的物资信息记录等操作，物资管理界面设计如图5-5所示。
 
-![](/images/0100stringboot/0155springboot/blog.019.png)
+![](/images/0100wxapp//blog.019.png)
 
 图5-5物资管理界面
 
@@ -577,7 +576,7 @@ MySQL数据库是一种使用频繁的关系型数据库。因为其具有开源
 ### 5.1.6物资申请管理
 通过设计的物资申请管理功能模块，管理用户可以管理相关的物资申请信息记录，比如进行查看物资申请的详细信息，修改物资的申请时间信息，删除已经失效的物资申请信息记录等操作，物资申请管理界面设计如图5-6所示。
 
-![](/images/0100stringboot/0155springboot/blog.020.png)
+![](/images/0100wxapp//blog.020.png)
 
 图5-6物资申请管理界面
 
@@ -638,7 +637,7 @@ MySQL数据库是一种使用频繁的关系型数据库。因为其具有开源
 ### 5.1.7物资运输管理
 通过设计的物资运输管理功能模块，管理用户可以管理相关的物资运输信息记录，比如进行查看物资运输的详细信息，修改物资运输的当前状态信息，删除已经失效的物资运输信息记录等操作，物资运输管理界面设计如图5-7所示。
 
-![](/images/0100stringboot/0155springboot/blog.021.png)
+![](/images/0100wxapp//blog.021.png)
 
 图5-7物资运输管理界面
 
@@ -697,7 +696,7 @@ MySQL数据库是一种使用频繁的关系型数据库。因为其具有开源
 ### 5.1.8用户管理
 通过设计的用户管理功能模块，管理用户可以管理相关的用户信息资料，比如进行查看用户的详细资料，修改用户的联系方式，删除已经注销的用户信息记录等操作，用户管理界面设计如图5-8所示。
 
-![](/images/0100stringboot/0155springboot/blog.022.png)
+![](/images/0100wxapp//blog.022.png)
 
 图5-8用户管理界面
 
@@ -767,7 +766,7 @@ MySQL数据库是一种使用频繁的关系型数据库。因为其具有开源
 ### 5.1.9部门管理
 通过设计的部门管理功能模块，管理用户可以管理相关的部门信息记录，比如进行查看部门的详细信息，修改部门的职责信息，删除已经失效的部门信息记录等操作，部门管理界面设计如图5-9所示。
 
-![](/images/0100stringboot/0155springboot/blog.023.png)
+![](/images/0100wxapp//blog.023.png)
 
 图5-9部门管理界面
 
@@ -828,7 +827,7 @@ MySQL数据库是一种使用频繁的关系型数据库。因为其具有开源
 ### 5.2.1用户首页
 通过设计的首页功能模块，管理用户可以成功登录系统，并且选择点击相关的功能模块按钮，操作和实现自己所需要的功能，管理员首页解饿设计如图5-10所示。
 
-![](/images/0100stringboot/0155springboot/blog.024.png)
+![](/images/0100wxapp//blog.024.png)
 
 图5-10用户首页界面
 
@@ -890,11 +889,11 @@ MySQL数据库是一种使用频繁的关系型数据库。因为其具有开源
 ### 5.2.2个人中心
 通过设计的个人中心管理功能模块，用户可以选择查看个人资料信息，选择更新个人相关的资料信息记录；也可以选择修改账号密码，通过不定期的对个人账户密码进行更新，保障个人信息安全，修改密码界面设计如图5-11所示，个人信息界面设计如图5-12所示。
 
-![](/images/0100stringboot/0155springboot/blog.025.png)
+![](/images/0100wxapp//blog.025.png)
 
 图5-11修改密码界面
 
-![](/images/0100stringboot/0155springboot/blog.026.png)
+![](/images/0100wxapp//blog.026.png)
 
 图5-12个人信息界面
 
@@ -964,7 +963,7 @@ MySQL数据库是一种使用频繁的关系型数据库。因为其具有开源
 ### 5.2.3健康打卡管理
 通过设计的健康打卡管理功能模块，用户可以管理相关的健康打卡信息记录，比如进行查看健康打卡的详细信息，修改健康打卡的日期信息，删除已经失效的健康打卡信息记录等操作，健康打卡管理界面设计如图5-13所示。
 
-![](/images/0100stringboot/0155springboot/blog.027.png)
+![](/images/0100wxapp//blog.027.png)
 
 图5-13健康打卡管理界面
 
@@ -1020,7 +1019,7 @@ MySQL数据库是一种使用频繁的关系型数据库。因为其具有开源
 ### 5.2.4物资管理
 通过设计的物资管理功能模块，管理用户可以查看相关的物资信息记录，可以查到物资名称、物资图片、物资类型、物资库存等详细信息，物资管理界面设计如图5-14所示。
 
-![](/images/0100stringboot/0155springboot/blog.028.png)
+![](/images/0100wxapp//blog.028.png)
 
 图5-14物资管理界面
 
@@ -1064,7 +1063,7 @@ MySQL数据库是一种使用频繁的关系型数据库。因为其具有开源
 ### 5.2.5物资申请管理
 通过设计的物资申请管理功能模块，用户可以管理相关的物资申请信息记录，比如进行查看物资申请的详细信息，新增相关的物资申请信息记录，物资申请管理界面设计如图5-15所示。
 
-![](/images/0100stringboot/0155springboot/blog.029.png)
+![](/images/0100wxapp//blog.029.png)
 
 图5-15物资申请管理界面
 
@@ -1132,7 +1131,7 @@ MySQL数据库是一种使用频繁的关系型数据库。因为其具有开源
 ### 5.2.6物资运输管理
 通过设计的物资运输管理功能模块，用户可以查看相关的物资运输信息记录，比如查到物资名称、物资图片、单位、运输数量、当前状态等详细信息，物资运输管理界面设计如图5-16所示。
 
-![](/images/0100stringboot/0155springboot/blog.030.png)
+![](/images/0100wxapp//blog.030.png)
 
 图5-16物资运输管理界面
 

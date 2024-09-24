@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer" />
+        <meta name="robots" content="noodp" />
+        <title>ssm821企业员工岗前培训管理系统&#43;vue - chenqi blog</title><meta name="Description" content="Hugo theme - chenqi"><meta property="og:url" content="https://chenqi199.github.io/ssm821%E4%BC%81%E4%B8%9A%E5%91%98%E5%B7%A5%E5%B2%97%E5%89%8D%E5%9F%B9%E8%AE%AD%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/">
+  <meta property="og:site_name" content="chenqi blog">
+  <meta property="og:title" content="ssm821企业员工岗前培训管理系统&#43;vue">
+  <meta property="og:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm821企业员工岗前培训管理系统&#43;vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1.1研究背景 从古到今，">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-07-27T10:33:04+08:00">
+    <meta property="article:modified_time" content="2024-07-27T10:33:04+08:00">
+    <meta property="article:tag" content="Ssm企业">
+    <meta property="article:tag" content="员工岗">
+    <meta property="article:tag" content="岗前">
+    <meta property="article:tag" content="企业员工">
+    <meta property="article:tag" content="前培训">
+    <meta property="article:tag" content="培训管理">
+    <meta property="og:image" content="https://chenqi199.github.io/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chenqi199.github.io/logo.png">
+  <meta name="twitter:title" content="ssm821企业员工岗前培训管理系统&#43;vue">
+  <meta name="twitter:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm821企业员工岗前培训管理系统&#43;vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1.1研究背景 从古到今，">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chenqi199.github.io/ssm821%E4%BC%81%E4%B8%9A%E5%91%98%E5%B7%A5%E5%B2%97%E5%89%8D%E5%9F%B9%E8%AE%AD%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" /><link rel="prev" href="https://chenqi199.github.io/ssm822%E5%9F%BA%E4%BA%8Ejsp%E7%9A%84%E7%94%B5%E7%AB%9E%E4%BA%A4%E4%BA%92%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%8F%91-jsp/" /><link rel="next" href="https://chenqi199.github.io/ssm826%E5%9F%BA%E4%BA%8Essm%E7%9A%84%E7%94%B5%E5%BD%B1%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F-vue/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "ssm821企业员工岗前培训管理系统+vue",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chenqi199.github.io\/ssm821%E4%BC%81%E4%B8%9A%E5%91%98%E5%B7%A5%E5%B2%97%E5%89%8D%E5%9F%B9%E8%AE%AD%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue\/"
+        },"image": ["https:\/\/chenqi199.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "ssm企业, 员工岗, 岗前, 企业员工, 前培训, 培训管理","wordcount":  6690 ,
+        "url": "https:\/\/chenqi199.github.io\/ssm821%E4%BC%81%E4%B8%9A%E5%91%98%E5%B7%A5%E5%B2%97%E5%89%8D%E5%9F%B9%E8%AE%AD%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue\/","datePublished": "2024-07-27T10:33:04+08:00","dateModified": "2024-07-27T10:33:04+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/chenqi199.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "chenqi"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/ssm821%E4%BC%81%E4%B8%9A%E5%91%98%E5%B7%A5%E5%B2%97%E5%89%8D%E5%9F%B9%E8%AE%AD%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/ssm821%E4%BC%81%E4%B8%9A%E5%91%98%E5%B7%A5%E5%B2%97%E5%89%8D%E5%9F%B9%E8%AE%AD%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">ssm821企业员工岗前培训管理系统+vue</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="chenqi199" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>chenqi</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-07-27">2024-07-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 6690 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 14 分钟&nbsp;<span id="/ssm821%E4%BC%81%E4%B8%9A%E5%91%98%E5%B7%A5%E5%B2%97%E5%89%8D%E5%9F%B9%E8%AE%AD%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" class="leancloud_visitors" data-flag-title="ssm821企业员工岗前培训管理系统&#43;vue">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">github 项目仓库</a> 开源仅有后端代码</a></li>
+        <li><a href="#点击播放视频-">点击播放视频 ▼</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#11研究背景">1.1研究背景</a></li>
+    <li><a href="#12目的和意义">1.2目的和意义</a></li>
+    <li><a href="#13论文结构安排">1.3论文结构安排</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#21-mysql数据库">2.1 Mysql数据库</a></li>
+    <li><a href="#22-ssm框架">2.2 SSM框架</a></li>
+    <li><a href="#23-idea-开发工具">2.3 IDEA 开发工具</a></li>
+    <li><a href="#24-vue技术">2.4 VUE技术</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#31系统可行性分析">3.1系统可行性分析</a>
+      <ul>
+        <li><a href="#311-时间可行性分析">3.1.1 时间可行性分析</a></li>
+        <li><a href="#312-技术可行性分析">3.1.2 技术可行性分析</a></li>
+        <li><a href="#313-经济可行性分析">3.1.3 经济可行性分析</a></li>
+        <li><a href="#314-操作可行性分析">3.1.4 操作可行性分析</a></li>
+      </ul>
+    </li>
+    <li><a href="#32系统性能分析">3.2系统性能分析</a></li>
+    <li><a href="#33系统流程分析">3.3系统流程分析</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#41系统功能结构设计">4.1系统功能结构设计</a></li>
+    <li><a href="#42数据库设计">4.2数据库设计</a>
+      <ul>
+        <li><a href="#421数据库e-r图">4.2.1数据库E-R图</a></li>
+        <li><a href="#422-数据库表结构">4.2.2 数据库表结构</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#51管理员功能介绍">5.1管理员功能介绍</a>
+      <ul>
+        <li><a href="#511部门主管管理">5.1.1部门主管管理</a></li>
+        <li><a href="#512-员工管理">5.1.2 员工管理</a></li>
+        <li><a href="#513-部门管理">5.1.3 部门管理</a></li>
+      </ul>
+    </li>
+    <li><a href="#52-部门主管功能介绍">5.2 部门主管功能介绍</a>
+      <ul>
+        <li><a href="#521员工管理">5.2.1员工管理</a></li>
+        <li><a href="#522个人信息">5.2.2个人信息</a></li>
+        <li><a href="#523培训需求管理">5.2.3培训需求管理</a></li>
+      </ul>
+    </li>
+    <li><a href="#53-员工功能介绍">5.3 员工功能介绍</a>
+      <ul>
+        <li><a href="#531培训计划">5.3.1培训计划</a></li>
+        <li><a href="#532培训活动">5.3.2培训活动</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="项目清单-包安装运行httpchenqi1990site-官网地址-httpchenqi1990site"><a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">项目清单 包安装运行</a> 官网地址 <a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">http://chenqi1990.site</a></h1>
+<h1 id="ssm821企业员工岗前培训管理系统vuehttpsgithubcomgraduationproject-springboot"><a href="https://github.com/GraduationProject-springboot/" target="_blank" rel="noopener noreffer ">ssm821企业员工岗前培训管理系统+vue</a></h1>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        data-srcset="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 1.5x, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        title="picture" /></p>
+<h3 id="github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">github 项目仓库</a> 开源仅有后端代码</h3>
+<h3 id="点击播放视频-">点击播放视频 ▼</h3>
+<p><a href="https://www.bilibili.com/video/BV1xRe2eHEsa?p=18" target="_blank" rel="noopener noreffer "><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.sstatic.net/Vp2cE.png"
+        data-srcset="https://i.sstatic.net/Vp2cE.png, https://i.sstatic.net/Vp2cE.png 1.5x, https://i.sstatic.net/Vp2cE.png 2x"
+        data-sizes="auto"
+        alt="https://i.sstatic.net/Vp2cE.png"
+        title="Watch the video" /></a></p>
+<h1 id="绪论">绪论</h1>
+<h2 id="11研究背景">1.1研究背景</h2>
+<p>从古到今，信息的录入，存储，检索都受制于社会生产力的发展，不仅仅浪费大量的人力资源还需要浪费大量的社会物资，并且不能长时间的保留，信息检索随着时间的跨度呈几何级的难于检索，并且如果对有些数据进行核对校验或者分析统计，需要用到的时间还有人力更是不可估计。但是随着计算机网络的发展，这些事情都不再是痛点，计算机语言的发展就是对传统行业各个方面进行了变革，尤其是信息管理方面。比如计算机各个系列各种型号，多种适配，哪些零件可以与其他零件进行组合，哪些不可以，这些如果是传统行业会弄成好多本书籍进行记录，但是通过软件的信息录入整合，程序进行判断，可以有效的提升效率。在这样的背景下，各行各业都在梳理自己的信息管理流程和需求。本设计就是在这样的环境下，针对企业员工岗前培训管理信息设计的企业员工岗前培训管理系统，用来解决企业员工岗前培训管理信息信息管理问题的痛点和难点，让企业员工岗前培训管理信息信息管理变得更加高效节能。</p>
+<h2 id="12目的和意义">1.2目的和意义</h2>
+<p>开发这套系统的目的，就是让不同的人员对不同的信息进行录入，查询，汇总，分析，让职责更明了，权限更清晰，职能更细致，响应更及时。能快速提升信息检索效率，只需要输入自己想要的条件进行查询汇总，就能及时的得到信息，能快速的应对市场反应提升各个部门的协作效率，信息的存储更加的安全，不在害怕水火，信息备份更简便，只需要设计数据库定时备份，定时迁移，数据存储和数据迁移的成本微乎其微。如果还用之前的信息管理模式，就会发现在市场上失去了竞争力，在同行业内失去了先进性，负担更重，前进更缓慢。使用更先进的互联网信息管理模式，数据可以及时的进行处理，可以根据数据处理结果进行更直观更明锐的判断，在提升自我竞争力的同时也能节能环保，为社会绿化人类的美好家园增加了贡献。</p>
+<h2 id="13论文结构安排">1.3论文结构安排</h2>
+<p>本文对企业员工岗前培训管理系统的设计开发过程分为7个部分进行介绍。其中包括绪论部分，系统开发技术部分，系统分析，设计，实现，测试都会作为一个章节进行说明。</p>
+<p>第1章绪论：这部分是论文的开头，主要介绍系统的背景，介绍系统的开发意义。</p>
+<p>第2章开发环境：这部分主要针对系统开发的环境进行说明，主要有工具介绍，数据库介绍等。</p>
+<p>第3章系统分析：这部分主要还是根据用户的操作需要，分析系统功能，也会分析系统是否值得开发的可行性问题。</p>
+<p>第4章系统设计：这部分是在功能分析的层面上，进行更深层次的分析，设计，最终的设计成果是数据库结构与E-R图的设计，和功能结构图的设计。</p>
+<p>第5章系统实现：这部分是程序开发的重点，主要还是依靠过硬的编程知识实现系统的功能。</p>
+<p>第6章系统测试：这部分主要还是检验程序的合格性，各项指标，比如功能，性能，界面等是否达标。</p>
+<p>第7章结论：这部分主要总结设计工作，并对未来工作进行展望。</p>
+<h1 id="2-开发环境">2 开发环境</h1>
+<h2 id="21-mysql数据库">2.1 Mysql数据库</h2>
+<p>MYSQL数据库是由瑞典的一家名称为MySQL-AB的公司开发出一款延续至今的关系型数据库，接着被数据库公司老大Oracle给收购了，之前好多人认为Oralce公司收购之后会雪藏，然后把道路让给Oracle公司的拳头产品也就是Oracle数据库，没想到的是Oracle公司后续支持mysql数据库让它成为了公司另一个拳头产品，与Oracle市场定位完全不同，使Oracle公司在数据库行业的市场占有率遥遥领先，发展的越来越好。</p>
+<p>MYSQL数据库有自带的客户端管理工具，比如SQLYon，或者是native for mysql，或者是mysql-font，这些都是很友好的MySQL使用工具，可以视图化处理相关数据。虽然某些模块是收费的版本，但是作为课题来讲，免费功能是完全满足程序的需要，还有就是他的安装配置方面很简单，学习起来也是遵循于SQL语法的，网上也有充足的学习资料可以进行随时随地的学习，所以最终选择的数据库就是MYSQL数据库。</p>
+<h2 id="22-ssm框架">2.2 SSM框架</h2>
+<p>SSM框架，是Spring + Spring MVC + MyBatis的缩写，这个是继SSH之后，目前比较主流的Java EE企业级框架，适用于搭建各种大型的企业级应用系统。</p>
+<h2 id="23-idea-开发工具">2.3 IDEA 开发工具</h2>
+<p>IDEA 全称IntelliJ IDEA，是用于java语言开发的集成环境(也可用于其他语言)，IntelliJ在业界被公认为最好的java开发工具之一，尤其在智能代码助手、代码自动提示、重构、J2EE支持、Ant、JUnit、CVS整合、代码审查、 创新的GUI设计等方面的功能可以说是超常的。IDEA是JetBrains公司的产品，这家公司总部位于捷克共和国的首都布拉格，开发人员以严谨著称的东欧程序员为主。</p>
+<h2 id="24-vue技术">2.4 VUE技术</h2>
+<p>Vue.js（读音 /vjuː/, 类似于 view） 是一套构建用户界面的渐进式框架。</p>
+<p>Vue 只关注视图层， 采用自底向上增量开发的设计。</p>
+<p>Vue 的目标是通过尽可能简单的 API 实现响应的数据绑定和组合的视图组件。</p>
+<h1 id="3-系统分析">3 系统分析</h1>
+<h2 id="31系统可行性分析">3.1系统可行性分析</h2>
+<p>在初步确定设计的课题之后，首先就需要对该课题的可行性问题进行思考，通常程序的开发是一个长期并对专业知识要求较高的任务。在决定制作之前，要进行充分的分析与考虑，对其进行可行性分析也是衡量程序的投入成本与产生的效益问题，假如投入成本远远大于产生的效益，那么此程序就可以不用进行制作了，只有当其产生的效益远远大于投入的成本时，并可以确定程序是可以制作出来，以及使用中并不存在操作困难的前提下，才可以将程序的开发提上议程。</p>
+<h3 id="311-时间可行性分析">3.1.1 时间可行性分析</h3>
+<p>首先此程序的制作主要是学院的统一安排，所以在时间上，学院给出的时间以及安排的各个时间节点对应的配套任务都可以保证程序的开发如期完成。也就是说只要跟随学院的时间安排进行设计制作作品，是可以完成开发任务的。</p>
+<h3 id="312-技术可行性分析">3.1.2 技术可行性分析</h3>
+<p>此程序是作为计算机专业学生的一个毕业答辩项目，它运用到的专业知识，大学期间，学校老师都已经讲授过，并且也在学习期间以及期末考核中，老师们安排了一些类似课程设计这样的作业，本人也通过这些作业进行了练习，也知晓程序的设计流程，也熟悉软件环境的安装，通过平时的实践，本人也具备一定的开发基础以及经验，并具备一定的学以致用的能力。因此，此程序开发在技术上准备充分，开发确实可行！</p>
+<h3 id="313-经济可行性分析">3.1.3 经济可行性分析</h3>
+<p>通过对程序制作中需要花费的资金进行分析，可以得出此程序无需考虑资金投入问题。首先程序制作涉及到软件以及硬件环境都有现成的资源，硬件环境就是一台可以上网的笔记本，也可以是学院的图书馆的机房里面的电脑，软件环境也能从各大浏览器进行下载安装，无论软件还是硬件上所需要的资源都不需要资金投入。对于程序完成制作之后，在使用者的使用期间，此程序还会节省人工成本，节省时间成本，并给使用者带来较客观的收益。</p>
+<h3 id="314-操作可行性分析">3.1.4 操作可行性分析</h3>
+<p>程序的各个操作功能都有对应的界面，每个功能界面都有相应的功能提示，比如导航条是每个程序必备的界面设置，点击程序的各个功能导航条，会进入相应的操作界面，从这个角度来看，可以得出的信息就是，该程序的操作逻辑并不复杂，就算生活中的普通用户操作该程序，也能根据程序里面的功能提示进行操作。因此，程序的运行使用是可以进行的。</p>
+<p>总而言之，此程序从技术角度分析可以进行开发，从时间角度分析，预留时间完全够用，从操作角度分析，程序的操作难度较低，使用者可以顺利操作等，因此，程序也就可以投入人力与时间进行制作。</p>
+<h2 id="32系统性能分析">3.2系统性能分析</h2>
+<p>如何制作出一款性能优良的程序也是需要提前分析和考虑的，程序的性能首先要保证稳定性，主要是让使用者可以信赖程序。程序现有的功能需求是为了解决当前面临的问题，在此基础上，也需要把社会的进步，科技的发展考虑在内。多年以后，相信用户的需求就不仅仅是现在提出来的需求了，肯定会额外增加许多新的功能，因为在早期，由于用户需求还有程序开发者的技术水平的影响，早期的程序大都只是简单的增加，删除，以及数据更新等，并不存在数据的分析功能，比如数据统计等。然而，现在科学也在进步，开发技术也在迭代更新，开发者的开发经验以及开发技能也得到提升，程序具备的功能也是在同步更新，比如以前的程序，基本就是数据的增加，修改等功能，现在开发的程序都开始考虑对数据进行统计与分析的功能。因此，对于一般系统的开发或者对于旧系统的更新等，都需要涉及到升级，一个是性能上保持优越，另一个是功能上保持更加齐全等，这些都需要在原来的系统上进行改变，并达到升级的目的，所以，任何可开发程序都要模块化，也都要具备可扩展性，并且在进行程序功能扩展时，程序原本正常运行的功能可以继续使用，程序本身的整体结构保持原样。一个稳定性强，并可迭代升级的程序，在满足使用者日常操作需求的同时，也能更好应对当前时代的变化。</p>
+<h2 id="33系统流程分析">3.3系统流程分析</h2>
+<p>流程图更能反映程序处理信息的逻辑，本部分内容对程序的流程进行说明。</p>
+<p>信息添加流程：程序里面的所有数据都是是操作者录入的数据，之所以可以成功录入这些数据，主要还是逻辑判断，判断输入的信息合理，程序数据库才会保存数据。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0800ssm/ssm821/blog.001.png"
+        data-srcset="/images/0800ssm/ssm821/blog.001.png, /images/0800ssm/ssm821/blog.001.png 1.5x, /images/0800ssm/ssm821/blog.001.png 2x"
+        data-sizes="auto"
+        alt="/images/0800ssm/ssm821/blog.001.png"
+        title="/images/0800ssm/ssm821/blog.001.png" /></p>
+<p>图3.1 信息添加流程图</p>
+<p>信息修改流程：程序里面的所有数据也是需要使用者不断检查的，当检查某个数据项的信息有错误，也能修改。所以程序设置的修改功能，主要还是帮助用户更高效地更正程序数据，保持数据的正确性与可用性。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0800ssm/ssm821/blog.002.png"
+        data-srcset="/images/0800ssm/ssm821/blog.002.png, /images/0800ssm/ssm821/blog.002.png 1.5x, /images/0800ssm/ssm821/blog.002.png 2x"
+        data-sizes="auto"
+        alt="/images/0800ssm/ssm821/blog.002.png"
+        title="/images/0800ssm/ssm821/blog.002.png" /></p>
+<p>图3.2 信息修改流程图</p>
+<p>信息查询流程：程序后台存放的数据很多，当用户需要某种信息时，不可能再去一行行寻找，所以查询功能的设置也是必要的，相应的程序查询流程（见下图）也是需要检验用户填写的查询条件的合理性与可靠性。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0800ssm/ssm821/blog.003.png"
+        data-srcset="/images/0800ssm/ssm821/blog.003.png, /images/0800ssm/ssm821/blog.003.png 1.5x, /images/0800ssm/ssm821/blog.003.png 2x"
+        data-sizes="auto"
+        alt="/images/0800ssm/ssm821/blog.003.png"
+        title="/images/0800ssm/ssm821/blog.003.png" /></p>
+<p>图3.3 信息查询流程图</p>
+<h1 id="4-系统设计">4 系统设计</h1>
+<p>程序的系统设计阶段任务比较重，需要具体设计程序功能，也需要设计存储数据的数据库。设计功能可以以功能结构图展示设计结果，设计数据库，可以以E-R图和表结构展示设计的数据库。</p>
+<h2 id="41系统功能结构设计">4.1系统功能结构设计</h2>
+<p>在使用用例图绘制管理员的功能之后，需要对管理员的功能进行更加细致的设计，也是为下阶段的系统实现做好准备。设计管理员的功能使用结构图展示（见下图）。管理员功能有个人中心，部门主管管理，员工管理，部门管理，培训资源管理，培训需求管理，培训计划管理，培训活动管理，培训课程管理。部门主管功能有个人中心，员工管理，培训需求管理，培训计划管理，培训活动管理，培训课程管理。员工功能有个人中心，培训需求管理，培训计划管理，培训活动管理，培训课程管理。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0800ssm/ssm821/blog.004.png"
+        data-srcset="/images/0800ssm/ssm821/blog.004.png, /images/0800ssm/ssm821/blog.004.png 1.5x, /images/0800ssm/ssm821/blog.004.png 2x"
+        data-sizes="auto"
+        alt="/images/0800ssm/ssm821/blog.004.png"
+        title="/images/0800ssm/ssm821/blog.004.png" /></p>
+<p>图4.1 管理员功能结构图</p>
+<h2 id="42数据库设计">4.2数据库设计</h2>
+<p>操作者使用程序，不管是信息添加，信息删除和查询等都是在处理和访问程序数据，程序的数据只会越来越多，所以一个专门保存数据的工具就显得很有必要。这个工具就是数据库，为了让所选数据库更好的服务于开发的程序，就要对这个数据库创建相应的数据库文件，并进行规则设计，让数据库在应对程序的各种数据处理请求时可以及时进行反馈。</p>
+<h3 id="421数据库e-r图">4.2.1数据库E-R图</h3>
+<p>在分析出并设计好程序的相关功能之后，还有一个比较重要的设计任务，就是参照程序的功能设计出此程序的数据库，这部分内容设计到数据库实体的确定，主要是绘制其E-R图，也涉及到在数据库中创建表，完成表结构的具体设计。说到E-R图的绘制，市场上也有很多绘制其的软件，它们大都提供了E-R图的基本表示符号，所以通过鼠标的选择与拖拽就可以完成初步的绘制，由于使用习惯的问题，本人更加倾向于微软的Visio，对PowerDesigner建模工具，还有对比较受欢迎的Navicat等工具接触较少，为了如期提交作品，这里就不再花费额外的时间去学习一些E-R图的建模工具了，仅仅使用常用的，比较熟悉的Visio工具就行了。代表E-R图符号的有矩形，椭圆，菱形。它们分别表示不同的信息，第一种是矩形符号，绘制实体时选用，第二种是椭圆符号，专门代表矩形实体的属性，第三种是菱形符号，专门代表各个矩形实体当中的某种联系。</p>
+<p>（1）此数据库设计了管理员实体，它对应的E-R图（见下图）需要使用Visio工具绘制。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0800ssm/ssm821/blog.005.png"
+        data-srcset="/images/0800ssm/ssm821/blog.005.png, /images/0800ssm/ssm821/blog.005.png 1.5x, /images/0800ssm/ssm821/blog.005.png 2x"
+        data-sizes="auto"
+        alt="/images/0800ssm/ssm821/blog.005.png"
+        title="/images/0800ssm/ssm821/blog.005.png" /></p>
+<p>图4.7 管理员实体E-R图</p>
+<p>（2）此数据库设计了部门主管实体，它对应的E-R图（见下图）需要使用Visio工具绘制。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0800ssm/ssm821/blog.006.png"
+        data-srcset="/images/0800ssm/ssm821/blog.006.png, /images/0800ssm/ssm821/blog.006.png 1.5x, /images/0800ssm/ssm821/blog.006.png 2x"
+        data-sizes="auto"
+        alt="/images/0800ssm/ssm821/blog.006.png"
+        title="/images/0800ssm/ssm821/blog.006.png" /></p>
+<p>图4.8 部门主管实体E-R图</p>
+<p>（3）此数据库设计了员工实体，它对应的E-R图（见下图）需要使用Visio工具绘制。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0800ssm/ssm821/blog.007.png"
+        data-srcset="/images/0800ssm/ssm821/blog.007.png, /images/0800ssm/ssm821/blog.007.png 1.5x, /images/0800ssm/ssm821/blog.007.png 2x"
+        data-sizes="auto"
+        alt="/images/0800ssm/ssm821/blog.007.png"
+        title="/images/0800ssm/ssm821/blog.007.png" /></p>
+<p>图4.9 员工实体E-R图</p>
+<h3 id="422-数据库表结构">4.2.2 数据库表结构</h3>
+<p>存储程序数据需要一定的规则进行，这样才可以确保后期在对数据库的数据进行使用时，可以使用一定的规则进行查询并显示出来。数据库里面的每个表的结构设计都是不一样的，但是都包含了字段名，字段对应的数据类型，以及数据类型的长度值等。每当设计好一个数据表结构时，在程序运行中，就会依照这样的表结构依次存储数据，所以在程序进行数据添加时，数据库中就会新增数据，程序进行数据更新时，数据库也是同步更新数据。程序执行删除功能时，也会在对应数据表中清除相应的数据。所以，每当使用者在执行功能时，都会在操作界面查看实时变化的数据，这些数据同样也是在数据库当中进行变化，最后会把数据库当中的已经发生变化的信息同步显示在程序操作界面。所以，数据表的结构的设计一定要多花时间进行思考。设计出最优秀的结构，可以减少数据冗余，让数据检索更快捷，让数据存储可以更方便，让程序的整体性能可以提升。</p>
+<p>1部门主管表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">zhuguanzhanghao</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">主管账号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">mima</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">密码</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">zhuguanxingming</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">主管姓名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">bumen</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">部门</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">zhuguanxingbie</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">主管性别</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">zhuguanshouji</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">主管手机</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">2培训课程表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">peixunkecheng</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">培训课程</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">peixunjiaoshi</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">培训教师</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">peixunjigou</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">培训机构</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">kechengdidian</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">课程地点</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">kechengshijian</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">课程时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">xueshi</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">学时</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">huodongmingcheng</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">活动名称</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">yuangonggonghao</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">员工工号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td style="text-align:center">yuangongxingming</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">员工姓名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">12</td>
+<td style="text-align:center">bumen</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">部门</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">13</td>
+<td style="text-align:center">yuangongshouji</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">员工手机</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">14</td>
+<td style="text-align:center">zhuguanzhanghao</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">主管账号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">15</td>
+<td style="text-align:center">zhuguanxingming</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">主管姓名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3员工表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">yuangonggonghao</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">员工工号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">mima</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">密码</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">yuangongxingming</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">员工姓名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">xingbie</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">性别</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">nianling</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">年龄</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">yuangongshouji</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">员工手机</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">zhaopian</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">照片</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">zhuguanzhanghao</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">主管账号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td style="text-align:center">zhuguanxingming</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">主管姓名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">12</td>
+<td style="text-align:center">bumen</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">部门</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4培训计划表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">jihuamingcheng</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">计划名称</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">jihuaneirong</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">计划内容</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">jihualeixing</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">计划类型</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">yusuanfeiyong</td>
+<td style="text-align:center">float</td>
+<td style="text-align:center">预算费用</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">yuangonggonghao</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">员工工号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">yuangongxingming</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">员工姓名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">yuangongshouji</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">员工手机</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">bumen</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">部门</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td style="text-align:center">zhuguanzhanghao</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">主管账号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">12</td>
+<td style="text-align:center">crossuserid</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">跨表用户id</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">13</td>
+<td style="text-align:center">crossrefid</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">跨表主键id</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5培训需求表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">yuangonggonghao</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">员工工号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">yuangongxingming</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">员工姓名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">bumen</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">部门</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">yuangongshouji</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">员工手机</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">xuqiuyuanyin</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">需求原因</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">xuqiuneirong</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">需求内容</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">shijianyaoqiu</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">时间要求</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">zhuguanzhanghao</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">主管账号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td style="text-align:center">zhuguanxingming</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">主管姓名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">12</td>
+<td style="text-align:center">sfsh</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">是否审核</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">13</td>
+<td style="text-align:center">shhf</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">审核回复</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6部门表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">bumen</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">部门</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7培训资源表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">peixunkecheng</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">培训课程</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">peixunjiaoshi</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">培训教师</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">peixunjigou</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">培训机构</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">peixunziliao</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">培训资料</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">peixunsheshi</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">培训设施</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8培训活动表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">huodongmingcheng</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">活动名称</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">yuangonggonghao</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">员工工号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">yuangongxingming</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">员工姓名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">bumen</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">部门</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">yuangongshouji</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">员工手机</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">zhuguanzhanghao</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">主管账号</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">zhuguanxingming</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">主管姓名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">crossuserid</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">跨表用户id</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td style="text-align:center">crossrefid</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">跨表主键id</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">9配置文件表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">name</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">配置参数名称</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">value</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">配置参数值</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">10用户表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">username</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">用户名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">password</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">密码</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">role</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">角色</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">新增时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">11token表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">列名</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">允许空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Id</td>
+<td style="text-align:center">Int</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">userid</td>
+<td style="text-align:center">Integer</td>
+<td style="text-align:center">用户id</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">username</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">用户名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">tablename</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">表名</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">role</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">角色</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">token</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">密码</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">新增时间</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">expiratedtime</td>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">过期时间</td>
+<td style="text-align:center">是</td>
+</tr>
+</tbody>
+</table>
+<h1 id="5-系统实现">5 系统实现</h1>
+<p>程序设计阶段的完成，就可以使用设计结果，比如功能结构的设计结果，数据库的设计结果来指导程序的开发内容，主要还是使用开发技术来实现程序功能。实现部分不仅包括了界面的布局与排版，也涉及到对功能的实现。</p>
+<h2 id="51管理员功能介绍">5.1管理员功能介绍</h2>
+<h3 id="511部门主管管理">5.1.1部门主管管理</h3>
+<p>管理员可以添加，修改，删除，查询部门主管信息。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0800ssm/ssm821/blog.008.png"
+        data-srcset="/images/0800ssm/ssm821/blog.008.png, /images/0800ssm/ssm821/blog.008.png 1.5x, /images/0800ssm/ssm821/blog.008.png 2x"
+        data-sizes="auto"
+        alt="/images/0800ssm/ssm821/blog.008.png"
+        title="/images/0800ssm/ssm821/blog.008.png" /></p>
+<p>图5.1 部门主管管理页面</p>
+<h3 id="512-员工管理">5.1.2 员工管理</h3>
+<p>管理员可以添加，修改，删除，查询员工信息。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0800ssm/ssm821/blog.009.png"
+        data-srcset="/images/0800ssm/ssm821/blog.009.png, /images/0800ssm/ssm821/blog.009.png 1.5x, /images/0800ssm/ssm821/blog.009.png 2x"
+        data-sizes="auto"
+        alt="/images/0800ssm/ssm821/blog.009.png"
+        title="/images/0800ssm/ssm821/blog.009.png" /></p>
+<p>图5.2 员工管理页面</p>
+<h3 id="513-部门管理">5.1.3 部门管理</h3>
+<p>管理员可以添加，修改，删除，查询部门信息。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0800ssm/ssm821/blog.010.png"
+        data-srcset="/images/0800ssm/ssm821/blog.010.png, /images/0800ssm/ssm821/blog.010.png 1.5x, /images/0800ssm/ssm821/blog.010.png 2x"
+        data-sizes="auto"
+        alt="/images/0800ssm/ssm821/blog.010.png"
+        title="/images/0800ssm/ssm821/blog.010.png" /></p>
+<p>图5.3 产品商城管理页面</p>
+<h2 id="52-部门主管功能介绍">5.2 部门主管功能介绍</h2>
+<h3 id="521员工管理">5.2.1员工管理</h3>
+<p>部门主管可以管理本部门的员工信息。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0800ssm/ssm821/blog.011.png"
+        data-srcset="/images/0800ssm/ssm821/blog.011.png, /images/0800ssm/ssm821/blog.011.png 1.5x, /images/0800ssm/ssm821/blog.011.png 2x"
+        data-sizes="auto"
+        alt="/images/0800ssm/ssm821/blog.011.png"
+        title="/images/0800ssm/ssm821/blog.011.png" /></p>
+<p>图5.4 员工管理页面</p>
+<h3 id="522个人信息">5.2.2个人信息</h3>
+<p>部门主管可以修改个人信息。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0800ssm/ssm821/blog.012.png"
+        data-srcset="/images/0800ssm/ssm821/blog.012.png, /images/0800ssm/ssm821/blog.012.png 1.5x, /images/0800ssm/ssm821/blog.012.png 2x"
+        data-sizes="auto"
+        alt="/images/0800ssm/ssm821/blog.012.png"
+        title="/images/0800ssm/ssm821/blog.012.png" /></p>
+<p>图5.5 个人信息页面</p>
+<h3 id="523培训需求管理">5.2.3培训需求管理</h3>
+<p>部门主管可以审核和查看以及搜索培训需求信息。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0800ssm/ssm821/blog.013.png"
+        data-srcset="/images/0800ssm/ssm821/blog.013.png, /images/0800ssm/ssm821/blog.013.png 1.5x, /images/0800ssm/ssm821/blog.013.png 2x"
+        data-sizes="auto"
+        alt="/images/0800ssm/ssm821/blog.013.png"
+        title="/images/0800ssm/ssm821/blog.013.png" /></p>
+<p>图5.6 培训需求管理页面</p>
+<h2 id="53-员工功能介绍">5.3 员工功能介绍</h2>
+<h3 id="531培训计划">5.3.1培训计划</h3>
+<p>员工可以查看自己的培训计划。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0800ssm/ssm821/blog.014.png"
+        data-srcset="/images/0800ssm/ssm821/blog.014.png, /images/0800ssm/ssm821/blog.014.png 1.5x, /images/0800ssm/ssm821/blog.014.png 2x"
+        data-sizes="auto"
+        alt="/images/0800ssm/ssm821/blog.014.png"
+        title="/images/0800ssm/ssm821/blog.014.png" /></p>
+<p>图5.7 培训计划页面</p>
+<h3 id="532培训活动">5.3.2培训活动</h3>
+<p>员工可以查看自己的培训活动。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0800ssm/ssm821/blog.015.png"
+        data-srcset="/images/0800ssm/ssm821/blog.015.png, /images/0800ssm/ssm821/blog.015.png 1.5x, /images/0800ssm/ssm821/blog.015.png 2x"
+        data-sizes="auto"
+        alt="/images/0800ssm/ssm821/blog.015.png"
+        title="/images/0800ssm/ssm821/blog.015.png" /></p>
+<p>图5.8 培训活动页面</p>
+<h1 id="系统">系统</h1>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2024-07-27</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/ssm821%E4%BC%81%E4%B8%9A%E5%91%98%E5%B7%A5%E5%B2%97%E5%89%8D%E5%9F%B9%E8%AE%AD%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://chenqi199.github.io/ssm821%E4%BC%81%E4%B8%9A%E5%91%98%E5%B7%A5%E5%B2%97%E5%89%8D%E5%9F%B9%E8%AE%AD%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" data-title="ssm821企业员工岗前培训管理系统&#43;vue" data-hashtags="ssm企业,员工岗,岗前,企业员工,前培训,培训管理"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://chenqi199.github.io/ssm821%E4%BC%81%E4%B8%9A%E5%91%98%E5%B7%A5%E5%B2%97%E5%89%8D%E5%9F%B9%E8%AE%AD%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" data-hashtag="ssm企业"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://chenqi199.github.io/ssm821%E4%BC%81%E4%B8%9A%E5%91%98%E5%B7%A5%E5%B2%97%E5%89%8D%E5%9F%B9%E8%AE%AD%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" data-title="ssm821企业员工岗前培训管理系统&#43;vue"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://chenqi199.github.io/ssm821%E4%BC%81%E4%B8%9A%E5%91%98%E5%B7%A5%E5%B2%97%E5%89%8D%E5%9F%B9%E8%AE%AD%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" data-title="ssm821企业员工岗前培训管理系统&#43;vue"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://chenqi199.github.io/ssm821%E4%BC%81%E4%B8%9A%E5%91%98%E5%B7%A5%E5%B2%97%E5%89%8D%E5%9F%B9%E8%AE%AD%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/" data-title="ssm821企业员工岗前培训管理系统&#43;vue" data-ralateuid="https://gitee.com/chen_q_i"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ssm%E4%BC%81%E4%B8%9A/">Ssm企业</a>,&nbsp;<a href="/tags/%E5%91%98%E5%B7%A5%E5%B2%97/">员工岗</a>,&nbsp;<a href="/tags/%E5%B2%97%E5%89%8D/">岗前</a>,&nbsp;<a href="/tags/%E4%BC%81%E4%B8%9A%E5%91%98%E5%B7%A5/">企业员工</a>,&nbsp;<a href="/tags/%E5%89%8D%E5%9F%B9%E8%AE%AD/">前培训</a>,&nbsp;<a href="/tags/%E5%9F%B9%E8%AE%AD%E7%AE%A1%E7%90%86/">培训管理</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/ssm822%E5%9F%BA%E4%BA%8Ejsp%E7%9A%84%E7%94%B5%E7%AB%9E%E4%BA%A4%E4%BA%92%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%8F%91-jsp/" class="prev" rel="prev" title="ssm822基于JSP的电竞交互管理系统开发&#43;jsp"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>ssm822基于JSP的电竞交互管理系统开发+jsp</a>
+            <a href="/ssm826%E5%9F%BA%E4%BA%8Essm%E7%9A%84%E7%94%B5%E5%BD%B1%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F-vue/" class="next" rel="next" title="ssm826基于ssm的电影评论系统&#43;vue">ssm826基于ssm的电影评论系统+vue<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.128.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="chenqi199" target="_blank">chenqi</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

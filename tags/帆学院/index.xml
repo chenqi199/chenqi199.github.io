@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>帆学院 - 标签 - chenqi blog</title>
+        <link>https://chenqi199.github.io/tags/%E5%B8%86%E5%AD%A6%E9%99%A2/</link>
+        <description>帆学院 - 标签 - chenqi blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>chen_q_i@163.com (chenqi)</managingEditor>
+            <webMaster>chen_q_i@163.com (chenqi)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 02 Mar 2024 10:32:53 &#43;0800</lastBuildDate><atom:link href="https://chenqi199.github.io/tags/%E5%B8%86%E5%AD%A6%E9%99%A2/" rel="self" type="application/rss+xml" /><item>
+    <title>ssm382航帆学院网站设计与实现&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm382%E8%88%AA%E5%B8%86%E5%AD%A6%E9%99%A2%E7%BD%91%E7%AB%99%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/</link>
+    <pubDate>Sat, 02 Mar 2024 10:32:53 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm382%E8%88%AA%E5%B8%86%E5%AD%A6%E9%99%A2%E7%BD%91%E7%AB%99%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm382航帆学院网站设计与实现+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1.1 研究背景 现在大家正处于互]]></description>
+</item>
+</channel>
+</rss>

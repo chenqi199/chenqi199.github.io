@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer" />
+        <meta name="robots" content="noodp" />
+        <title>ssm137基于SSM框架的微博系统&#43;vue - chenqi blog</title><meta name="Description" content="Hugo theme - chenqi"><meta property="og:url" content="https://chenqi199.github.io/ssm137%E5%9F%BA%E4%BA%8Essm%E6%A1%86%E6%9E%B6%E7%9A%84%E5%BE%AE%E5%8D%9A%E7%B3%BB%E7%BB%9F-vue/">
+  <meta property="og:site_name" content="chenqi blog">
+  <meta property="og:title" content="ssm137基于SSM框架的微博系统&#43;vue">
+  <meta property="og:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm137基于SSM框架的微博系统&#43;vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1.1 选题背景 网络技术和计算">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-12-12T10:32:48+08:00">
+    <meta property="article:modified_time" content="2023-12-12T10:32:48+08:00">
+    <meta property="article:tag" content="Ssm框架">
+    <meta property="article:tag" content="框架微博">
+    <meta property="article:tag" content="微博系统">
+    <meta property="og:image" content="https://chenqi199.github.io/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chenqi199.github.io/logo.png">
+  <meta name="twitter:title" content="ssm137基于SSM框架的微博系统&#43;vue">
+  <meta name="twitter:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm137基于SSM框架的微博系统&#43;vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1.1 选题背景 网络技术和计算">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chenqi199.github.io/ssm137%E5%9F%BA%E4%BA%8Essm%E6%A1%86%E6%9E%B6%E7%9A%84%E5%BE%AE%E5%8D%9A%E7%B3%BB%E7%BB%9F-vue/" /><link rel="prev" href="https://chenqi199.github.io/ssm138%E5%9F%BA%E4%BA%8E%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%AD%A6%E7%94%9F%E4%BA%8B%E5%8A%A1%E5%A4%84%E7%90%86%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1-jsp/" /><link rel="next" href="https://chenqi199.github.io/0139springboot%E4%BD%93%E8%82%B2%E9%A6%86%E4%BD%BF%E7%94%A8%E9%A2%84%E7%BA%A6%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "ssm137基于SSM框架的微博系统+vue",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chenqi199.github.io\/ssm137%E5%9F%BA%E4%BA%8Essm%E6%A1%86%E6%9E%B6%E7%9A%84%E5%BE%AE%E5%8D%9A%E7%B3%BB%E7%BB%9F-vue\/"
+        },"image": ["https:\/\/chenqi199.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "ssm框架, 框架微博, 微博系统","wordcount":  6565 ,
+        "url": "https:\/\/chenqi199.github.io\/ssm137%E5%9F%BA%E4%BA%8Essm%E6%A1%86%E6%9E%B6%E7%9A%84%E5%BE%AE%E5%8D%9A%E7%B3%BB%E7%BB%9F-vue\/","datePublished": "2023-12-12T10:32:48+08:00","dateModified": "2023-12-12T10:32:48+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/chenqi199.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "chenqi"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/ssm137%E5%9F%BA%E4%BA%8Essm%E6%A1%86%E6%9E%B6%E7%9A%84%E5%BE%AE%E5%8D%9A%E7%B3%BB%E7%BB%9F-vue/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/ssm137%E5%9F%BA%E4%BA%8Essm%E6%A1%86%E6%9E%B6%E7%9A%84%E5%BE%AE%E5%8D%9A%E7%B3%BB%E7%BB%9F-vue/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">ssm137基于SSM框架的微博系统+vue</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="chenqi199" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>chenqi</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-12-12">2023-12-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 6565 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 14 分钟&nbsp;<span id="/ssm137%E5%9F%BA%E4%BA%8Essm%E6%A1%86%E6%9E%B6%E7%9A%84%E5%BE%AE%E5%8D%9A%E7%B3%BB%E7%BB%9F-vue/" class="leancloud_visitors" data-flag-title="ssm137基于SSM框架的微博系统&#43;vue">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">github 项目仓库</a> 开源仅有后端代码</a></li>
+        <li><a href="#点击播放视频-">点击播放视频 ▼</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#11-选题背景">1.1 选题背景</a></li>
+    <li><a href="#12-选题意义">1.2 选题意义</a></li>
+    <li><a href="#13-研究内容">1.3 研究内容</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#21-java语言">2.1 Java语言</a></li>
+    <li><a href="#22-ssm框架">2.2 SSM框架</a></li>
+    <li><a href="#23-mysql数据库">2.3 MYSQL数据库</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#31可行性研究">3.1可行性研究</a>
+      <ul>
+        <li><a href="#311经济可行性">3.1.1经济可行性</a></li>
+        <li><a href="#312时间可行性">3.1.2时间可行性</a></li>
+        <li><a href="#313操作可行性">3.1.3操作可行性</a></li>
+      </ul>
+    </li>
+    <li><a href="#32系统性能分析">3.2系统性能分析</a>
+      <ul>
+        <li><a href="#321系统易用性">3.2.1系统易用性</a></li>
+        <li><a href="#322系统健壮性">3.2.2系统健壮性</a></li>
+        <li><a href="#323系统安全性">3.2.3系统安全性</a></li>
+      </ul>
+    </li>
+    <li><a href="#33-系统流程分析">3.3 系统流程分析</a></li>
+    <li><a href="#34系统功能分析">3.4系统功能分析</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#41系统目标">4.1系统目标</a></li>
+    <li><a href="#42功能结构设计">4.2功能结构设计</a></li>
+    <li><a href="#43数据库设计">4.3数据库设计</a>
+      <ul>
+        <li><a href="#431数据库e-r图">4.3.1数据库E-R图</a></li>
+        <li><a href="#432-数据库表结构">4.3.2 数据库表结构</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#51-管理员功能实现">5.1 管理员功能实现</a>
+      <ul>
+        <li><a href="#511-微博信息管理">5.1.1 微博信息管理</a></li>
+        <li><a href="#512-论坛交流">5.1.2 论坛交流</a></li>
+        <li><a href="#513-微博类型管理">5.1.3 微博类型管理</a></li>
+        <li><a href="#514-微博资讯">5.1.4 微博资讯</a></li>
+      </ul>
+    </li>
+    <li><a href="#52-用户功能实现">5.2 用户功能实现</a>
+      <ul>
+        <li><a href="#521-发布帖子">5.2.1 发布帖子</a></li>
+        <li><a href="#522-微博信息">5.2.2 微博信息</a></li>
+        <li><a href="#523-微博资讯">5.2.3 微博资讯</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="项目清单-包安装运行httpchenqi1990site-官网地址-httpchenqi1990site"><a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">项目清单 包安装运行</a> 官网地址 <a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">http://chenqi1990.site</a></h1>
+<h1 id="ssm137基于ssm框架的微博系统vuehttpsgithubcomgraduationproject-springboot"><a href="https://github.com/GraduationProject-springboot/" target="_blank" rel="noopener noreffer ">ssm137基于SSM框架的微博系统+vue</a></h1>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        data-srcset="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 1.5x, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        title="picture" /></p>
+<h3 id="github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">github 项目仓库</a> 开源仅有后端代码</h3>
+<h3 id="点击播放视频-">点击播放视频 ▼</h3>
+<p><a href="https://www.bilibili.com/video/BV1T48XecE9G?p=132" target="_blank" rel="noopener noreffer "><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.sstatic.net/Vp2cE.png"
+        data-srcset="https://i.sstatic.net/Vp2cE.png, https://i.sstatic.net/Vp2cE.png 1.5x, https://i.sstatic.net/Vp2cE.png 2x"
+        data-sizes="auto"
+        alt="https://i.sstatic.net/Vp2cE.png"
+        title="Watch the video" /></a></p>
+<h1 id="绪论">绪论</h1>
+<h2 id="11-选题背景">1.1 选题背景</h2>
+<p>网络技术和计算机技术发展至今，已经拥有了深厚的理论基础，并在现实中进行了充分运用，尤其是基于计算机运行的软件更是受到各界的关注。计算机软件可以针对不同行业的营业特点以及管理需求，设置不同的功能，可以符合各个行业的实际运营要求，其快速便捷的信息处理模式已经可以让信息的管理者从繁琐的工作中得到解脱，还可以实现数据的易维护和安全性。加上现在人们已经步入信息时代，所以对于信息的宣传和管理就很关键。因此信息化管理模式也是当今的管理趋势。对于分享与交流信息管理，如果仍使用旧办法进行，将会影响其在行业中的竞争力，也很容易被时代淘汰，所以分享与交流信息的管理计算机化，系统化是必要的。设计开发微博系统网站不仅会节约人力和管理成本，还会安全保存庞大的数据量，对于分享与交流信息的维护和检索也不需要花费很多时间，非常的便利。</p>
+<h2 id="12-选题意义">1.2 选题意义</h2>
+<p>微博系统网站在实际运用中，对管理员的综合素质的提升也有帮助。因为微博系统网站在减轻了分享与交流信息管理人员的工作量的同时，还可以让他们把节省出来的时间用来充实自己，提升个人能力，这样才可以充分发挥微博系统网站提供的服务，让微博系统网站显示数据信息的同时，也可以快速完成数据处理，提升服务水平。而且微博系统网站开发需要投入的成本较低，但是后期运用中，会产生大量效益，尤其是微博系统网站在进行高负荷运转时，还可以保证数据处理的质量与数据安全，通过对处理工作的流程的优化，可以节省传统模式需要投入的人力和资金，从而降低信息管理的成本。另外，微博系统网站在让分享与交流信息规范化的同时，也能及时通过数据输入的有效性规则检测出错误数据，让数据的录入达到准确性的目的，进而提升微博系统网站提供的数据的可靠性，让系统数据的错误率降至最低。</p>
+<h2 id="13-研究内容">1.3 研究内容</h2>
+<p>按照设计开发一个系统的常用流程来描述系统，可以把系统分成分析阶段，设计阶段，实现阶段，测试阶段。所以在编写系统的说明文档时，根据系统所处的阶段来描述系统的内容。</p>
+<p>绪论：这是对选题的背景，意义等内容做出介绍。</p>
+<p>系统开发技术：这是对系统即将使用的技术，包括使用的工具，编程的语言等做出介绍。</p>
+<p>系统分析：这是对系统做出分析，包括投资前期必备的可行性分析，包括对用户调研获取的需求，包括系统运行具备的性能等内容做出介绍。</p>
+<p>系统设计：这是对系统进行设计，包括运用绘图工具设计的系统功能结构，包括设计的在数据库中要创建的数据表的存储结构等内容做出介绍。</p>
+<p>系统实现：这是对系统进行编码实现。包括实现的系统各个模块的运行效果等内容做出介绍。</p>
+<p>系统测试：这是对编制的系统进行测试。包括功能的测试等内容做出介绍。</p>
+<h1 id="2-系统开发技术">2 系统开发技术</h1>
+<p>这部分内容主要介绍本系统使用的技术，包括使用的工具，编程的语言等内容。</p>
+<h2 id="21-java语言">2.1 Java语言</h2>
+<p>Java语言自公元1995年至今，已经超过25年了，依然在软件开发上面有很大的市场占有率。当年Sun公司发明Java就是为了发展一门跨平台的高级编程语言，让程序开发人员专注于程序开发过程，不需要关注服务器是属于哪个平台，因为跨平台的特性让语言发展的很迅速。Java的发展，吸收了C++这些语言的优点，因为新生事物一般就是解决老旧事物一些痛点的，虽然Java也有很多缺点，但是起码也算是一种发展方向。学习Java不需要太多的指针这些理念，也不用学习太过复杂的数据结构理论，比如什么堆栈这些概念，除非某些特殊行业对这些要求相当严谨之外，一般用Java开发程序是不用考虑各种各样的数据结构的。因为Java属于一种强类型语言，已经对各种数据定义了各种相应的类型。Java对数据类型定义分为两大种，一种是基本类型，含有8个基本属性，另一个是包装类。基本类和包装类从根本的定义上，都有很明显的区分，计算机运行也会有很明显的差别，如果用错了会编译错误还会影响运行效果的，Java的各种优点只需要按部就班的学习使用即可。</p>
+<h2 id="22-ssm框架">2.2 SSM框架</h2>
+<p>本课题开发的应用程序主要采用的框架技术是SSM，是Java语言的一种框架集合的简称，目前在Java语言方面，主要有两大分支，一个是主攻Java语言，学习了Java基础之后，会有很多Java进阶框架进行学习，主要是针对应用程序后台进行开发设计，另一方面是转行去学习安卓语言，主要是做安卓的前端设计方面，虽然也是Java语言，但是主要去学习安卓平台的各种架构和框架了。但是不管前端应用如何，SSM框架主要是针对服务端方面进行开发的一个主流框架集合。针对于传统的SSH框架的臃肿，配置繁琐，不管是开发还是二次开发都会造成时间上大量的浪费，并且学习上面也不能有效衔接，需要去适应框架的各种设计，而框架设计比较死板，容易出错。SSM框架是当前最流行的，告别了繁琐的配置，让配置更加灵活，让数据操作更加方便，选择SSM框架进行开发感觉是很合适的。</p>
+<h2 id="23-mysql数据库">2.3 MYSQL数据库</h2>
+<p>关系型数据库设计，对于数据库字段类型的设计以及字段长度的设计，都无时无刻的影响着后续程序开发后大量数据操作的运行效率。关系型数据库对不同的字段类型都有解释，本着课题所需的应用程序开发，寻找最适合的关系型数据库，基本上都有考虑。关系型数据库发展至今也有几十年了，优胜劣汰导致到现在还依然存在的关系型数据库其实并不多，基本上也都能满足应用程序的功能所需，所以要从其他方面来进行考虑数据库的选择。从安装维护上面考虑，SQL Server数据库有好几个G的安装包，并且安装过程中会安装很多不需要的功能，非常占用资源。Oracle数据库不比SQL Server安装包小，并且安装也会出现很多问题，对于课题所需来讲，没必要这么麻烦，并且安装还需要各种激活，只有MySQL数据库完全适合，几十兆大小的安装包，运行起来压力不大，毕竟开发电脑上还有很多其他有用的东西，而且完全免费，所以选择了MySQL数据库作为首选数据库。</p>
+<h1 id="3-系统分析">3 系统分析</h1>
+<p>这部分内容虽然在开发流程中处于最开始的环节，但是它对接下来的设计和实现起着重要的作用，因为系统分析结果的好坏，将直接影响后面环节的开展。</p>
+<h2 id="31可行性研究">3.1可行性研究</h2>
+<p>影响系统开发的因素有很多，比如开发成本高就不适合开展，或者是开发时间超过了预期，也不适合开展等等。所以，在正式作出开发决策前，研究系统可行性问题，从经济，时间，操作等角度论证系统是否可以开展。</p>
+<h3 id="311经济可行性">3.1.1经济可行性</h3>
+<p>微博系统网站可以简化工作流程，提供信息处理功能，并可以长期保存数据，在后期的数据查询与编辑中耗时少，提升信息管理效率，其带来的收益比较可观。对于本系统开发，无论是开发需要使用的计算机，还是开发工具等投入的成本很低，计算机是机房的电脑，开发工具是从网上下载安装的，并没有收取费用。</p>
+<h3 id="312时间可行性">3.1.2时间可行性</h3>
+<p>微博系统网站是作为本人毕设项目的一个作品，学院也充分预留了制作时间，并且在每个时间段，都安排了相应的任务，所以根据这个时间安排开展工作，是可以对本系统进行设计完成的。</p>
+<h3 id="313操作可行性">3.1.3操作可行性</h3>
+<p>随着电脑的普及，已经有很多人可以独立操作电脑了。而本系统就是在配置了运行环境的电脑上运行，其功能简单，省去了很多繁琐的操作逻辑，使用者通过页面导航可以直接进入功能操作区，所以稍微懂点电脑的人，都可以轻松完成系统的使用。</p>
+<p>综上所述，本系统可以开展接下来的工作了。</p>
+<h2 id="32系统性能分析">3.2系统性能分析</h2>
+<p>为了降低本系统在实际使用中的出错率，就需要分析系统具备的性能。常见的可以评估系统的性能的指标有安全性，易用性，健壮性等。</p>
+<h3 id="321系统易用性">3.2.1系统易用性</h3>
+<p>系统提供的信息和服务都有特定的用户群，所以，一个容易操作的系统相比一个不方便使用的系统来讲，用户还是更加青睐于使用方便的系统。所以系统具备易用性就显得非常重要。</p>
+<h3 id="322系统健壮性">3.2.2系统健壮性</h3>
+<p>系统在与用户进行交互过程中，面对用户的误操作行为，系统应该有相应的处理这种问题的反馈机制，而不是进入系统崩溃状态。系统中设置了很多的功能，在应对系统中某个功能出现异常情况时，系统的其它功能还是可以让用户使用。这就是系统健壮性的体现。</p>
+<h3 id="323系统安全性">3.2.3系统安全性</h3>
+<p>保存在系统里面的数据，都是比较重要的系统资源，一旦这些资源泄露，不仅会有财产损失，还会丧失很多客户。所以，系统里面的数据要随时都处于安全的环境中，因此就需要采取措施保证数据安全，比如设置登录功能，使用安全验证技术引导条件用户进入指定页面，而让非条件用户停留在登录页面，不能访问系统。</p>
+<h2 id="33-系统流程分析">3.3 系统流程分析</h2>
+<p>软件开发设计的思想始终贯穿本系统，其开发流程见下图。前期需要进行功能分析，功能设计，还有对系统后台支持数据库的设计，利用编码技术对设计的系统进行实现，然后检测和完善。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm137/blog.001.png"
+        data-srcset="/images/0100ssm/ssm137/blog.001.png, /images/0100ssm/ssm137/blog.001.png 1.5x, /images/0100ssm/ssm137/blog.001.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm137/blog.001.png"
+        title="/images/0100ssm/ssm137/blog.001.png" /></p>
+<p>图3.1系统开发流程图</p>
+<p>访问者之所以可以访问微博系统网站，主要是其数据库有该访问者的记录信息，这个记录是通过注册进行写入的数据。注册流程见下图。每当访问者进行微博系统网站注册时，其登记的每条记录都会在系统后台进行逐个判断。这个判断规则是提前设置的。一旦该访问者的登记信息在数据库中保存，即代表该访问者成为微博系统网站中的一份子。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm137/blog.002.png"
+        data-srcset="/images/0100ssm/ssm137/blog.002.png, /images/0100ssm/ssm137/blog.002.png 1.5x, /images/0100ssm/ssm137/blog.002.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm137/blog.002.png"
+        title="/images/0100ssm/ssm137/blog.002.png" /></p>
+<p>图3.2 注册流程图</p>
+<p>访问者操作系统，前提是需要验证身份，而登录功能的设置就是把本系统的用户引导进入后台操作区，把不是本系统的用户拒之门外。其流程见下图。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm137/blog.003.png"
+        data-srcset="/images/0100ssm/ssm137/blog.003.png, /images/0100ssm/ssm137/blog.003.png 1.5x, /images/0100ssm/ssm137/blog.003.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm137/blog.003.png"
+        title="/images/0100ssm/ssm137/blog.003.png" /></p>
+<p>图3.3 登录流程图</p>
+<h2 id="34系统功能分析">3.4系统功能分析</h2>
+<p>在明确系统的用途，以及系统的目标用户群后，可以对本系统的功能进行设置，可以获取调研用户对功能的要求，也可以对市场上同类系统进行分析和总结，得出本系统的功能。</p>
+<p>微博系统网站设置了管理员权限，其用例图见下图。管理员登录进入本人后台之后，管理微博类型和微博信息，发布微博资讯，管理论坛帖子信息，管理用户。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm137/blog.004.png"
+        data-srcset="/images/0100ssm/ssm137/blog.004.png, /images/0100ssm/ssm137/blog.004.png 1.5x, /images/0100ssm/ssm137/blog.004.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm137/blog.004.png"
+        title="/images/0100ssm/ssm137/blog.004.png" /></p>
+<p>图3.4 管理员用例图</p>
+<p>微博系统网站设置了用户权限，其用例图见下图。用户收藏微博，评论微博，查看微博资讯，在论坛交流模块发布帖子，评论帖子。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm137/blog.005.png"
+        data-srcset="/images/0100ssm/ssm137/blog.005.png, /images/0100ssm/ssm137/blog.005.png 1.5x, /images/0100ssm/ssm137/blog.005.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm137/blog.005.png"
+        title="/images/0100ssm/ssm137/blog.005.png" /></p>
+<p>图3.5 用户用例图</p>
+<h1 id="4-系统设计">4 系统设计</h1>
+<p>当前，系统的类型有很多，从系统呈现的内容来看，系统的类型有社交类，有商业类，有政府类，有新闻类等。那么，在众多系统类型中，先明确将要设计的系统的类型才是系统设计的首要工作，然后在此基础上明确系统的用户群，功能等，针对这些信息设计出具有独特体验和视觉的系统。如此才能让系统比较具有特色，也能够在众多相似系统中给用户留下深刻印象。</p>
+<h2 id="41系统目标">4.1系统目标</h2>
+<p>本系统在功能制定上，严格参照用户的要求，但是在设计本系统时，也要满足易操作，使用便利的设计要求。由此，设计出一个规范化并且符合用户需求的系统，一定要达到下述系统目标。</p>
+<p>第一个系统目标：用户与系统之间的操作方式是基于人机对话，可视化界面的设计除了美观性之外，也具备友好性。可视化界面提供的各类信息符合准确性，可靠性的要求，并能够方便用户灵活查看。</p>
+<p>第二个系统目标：用户与系统交互产生的数据，要严格规范的保存在数据库里，无论是后期管理人员查找与管理，都要确保数据安全。</p>
+<p>第三个系统目标：实现用户需求的功能。根据对用户的调查得出的功能需求，完成微博系统网站的设计与实现。</p>
+<p>第四个系统目标：在必要环节，对用户登记的数据进行检查，包括数据长度，以及数据输入类型等的检查，发现错误及时反馈，引导用户规范登记数据。常见的有密码修改，注册登录，用户资料填写等环节的数据核验。</p>
+<p>第五个系统目标：设计开发本系统，需要尽最大努力，在系统具备易操作的特点外，也要求系统于后期使用中，维护方便，让系统具备易维护的特点。</p>
+<p>第六个系统目标：本系统在交付用户使用时，可以达到运行稳定的目标，另外，系统具备安全性，也符合可靠性的条件，用户可以放心使用。</p>
+<h2 id="42功能结构设计">4.2功能结构设计</h2>
+<p>前面所做的功能分析，只是本系统的一个大概功能，这部分需要在此基础上进行各个模块的详细设计。</p>
+<p>设计的管理员的详细功能见下图，管理员登录进入本人后台之后，管理微博类型和微博信息，发布微博资讯，管理论坛帖子信息，管理用户。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm137/blog.006.png"
+        data-srcset="/images/0100ssm/ssm137/blog.006.png, /images/0100ssm/ssm137/blog.006.png 1.5x, /images/0100ssm/ssm137/blog.006.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm137/blog.006.png"
+        title="/images/0100ssm/ssm137/blog.006.png" /></p>
+<p>图4.1 管理员功能结构图</p>
+<p>设计的用户的详细功能见下图，用户收藏微博，评论微博，查看微博资讯，在论坛交流模块发布帖子，评论帖子。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm137/blog.007.png"
+        data-srcset="/images/0100ssm/ssm137/blog.007.png, /images/0100ssm/ssm137/blog.007.png 1.5x, /images/0100ssm/ssm137/blog.007.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm137/blog.007.png"
+        title="/images/0100ssm/ssm137/blog.007.png" /></p>
+<p>图4.2 用户功能结构图</p>
+<h2 id="43数据库设计">4.3数据库设计</h2>
+<p>相比非关系型数据库来说，目前市场上使用率比较高，并且易于维护的数据库，当数关系型数据库了。这个数据库主要是基于关系模型的方式来对数据信息进行组织。也就是常见的二维表模型。可以说二维表和二维表之间的相互联系就构成了关系型数据库。</p>
+<h3 id="431数据库e-r图">4.3.1数据库E-R图</h3>
+<p>为了更好地保存微博系统网站产生的数据，就需要在数据库的设计阶段对E-R模型进行建立，以及完成数据库中的表结构的创建。之所以要单独完成数据库的设计，主要有以下几点原因：</p>
+<p>第一点：防止代码冗余；</p>
+<p>第二点：防止占用过多内存；</p>
+<p>第三点：提升数据库的整体性能，方便程序开发以及数据更新；</p>
+<p>第四点：保证数据的完整性；</p>
+<p>本部分内容主要在于建立本系统的E-R模型，需要先收集数据，然后根据数据库实现的思路，对用户的需求进行分析，这期间需要对实体，属性，还有关系进行标识，为绘制E-R模型做好充足准备。同时，在作图中，也要注意作图规范，注意每个符号的正确使用。</p>
+<p>（1）设计的用户实体，其具备的属性见下图。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm137/blog.008.png"
+        data-srcset="/images/0100ssm/ssm137/blog.008.png, /images/0100ssm/ssm137/blog.008.png 1.5x, /images/0100ssm/ssm137/blog.008.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm137/blog.008.png"
+        title="/images/0100ssm/ssm137/blog.008.png" /></p>
+<p>图4.4 用户实体属性图</p>
+<p>（2）设计的微博信息实体，其具备的属性见下图。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm137/blog.009.png"
+        data-srcset="/images/0100ssm/ssm137/blog.009.png, /images/0100ssm/ssm137/blog.009.png 1.5x, /images/0100ssm/ssm137/blog.009.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm137/blog.009.png"
+        title="/images/0100ssm/ssm137/blog.009.png" /></p>
+<p>图4.5 微博信息实体属性图</p>
+<p>（3）设计的微博资讯实体，其具备的属性见下图。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm137/blog.010.png"
+        data-srcset="/images/0100ssm/ssm137/blog.010.png, /images/0100ssm/ssm137/blog.010.png 1.5x, /images/0100ssm/ssm137/blog.010.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm137/blog.010.png"
+        title="/images/0100ssm/ssm137/blog.010.png" /></p>
+<p>图4.6 微博资讯实体属性图</p>
+<p>（4）设计的微博类型实体，其具备的属性见下图。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm137/blog.011.png"
+        data-srcset="/images/0100ssm/ssm137/blog.011.png, /images/0100ssm/ssm137/blog.011.png 1.5x, /images/0100ssm/ssm137/blog.011.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm137/blog.011.png"
+        title="/images/0100ssm/ssm137/blog.011.png" /></p>
+<p>图4.7 微博类型实体属性图</p>
+<p>（5）设计的各实体间关系见下图。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm137/blog.012.png"
+        data-srcset="/images/0100ssm/ssm137/blog.012.png, /images/0100ssm/ssm137/blog.012.png 1.5x, /images/0100ssm/ssm137/blog.012.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm137/blog.012.png"
+        title="/images/0100ssm/ssm137/blog.012.png" /></p>
+<p>图4.8 实体间关系E-R图</p>
+<h3 id="432-数据库表结构">4.3.2 数据库表结构</h3>
+<p>为了设计出结构合理，性能优良的数据库，在设计数据库时，需要遵循三大范式：</p>
+<p>第一范式：确保数据表当中的每列所代表的字段值都不能再进行分解了；</p>
+<p>第二范式：在满足第一范式基础上，让数据表中每列与主键相关；</p>
+<p>第三范式：在满足第二范式基础上，确保每列数据直接与主键相关，不是间接相关。</p>
+<p>从上面的表述中可以看出，这三大范式，在等级上还是有区分的，最低等级的就数第一范式，最高等级的就是第三范式，趋于两者中间的是第二范式。总之，数据库设计按照这三大范式进行，可以简化设计过程，并且还会减少数据冗余，对于数据检索效率的提升也很有帮助。</p>
+<p><figure><a class="lightgallery" href="blog.013.png" title="blog.013.png" data-thumbnail="blog.013.png" data-sub-html="<h2>打开新的 phpMyAdmin 窗口</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="blog.013.png"
+            data-srcset="blog.013.png, blog.013.png 1.5x, blog.013.png 2x"
+            data-sizes="auto"
+            alt="blog.013.png" />
+    </a><figcaption class="image-caption">打开新的 phpMyAdmin 窗口</figcaption>
+    </figure>表4.1 论坛交流信息表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">空</th>
+<th style="text-align:center">默认</th>
+<th style="text-align:center">注释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id (主键)</td>
+<td style="text-align:center">bigint(20)</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">主键</td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center">CURRENT_TIMESTAMP</td>
+<td style="text-align:center">创建时间</td>
+</tr>
+<tr>
+<td style="text-align:center">title</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">帖子标题</td>
+</tr>
+<tr>
+<td style="text-align:center">content</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">帖子内容</td>
+</tr>
+<tr>
+<td style="text-align:center">parentid</td>
+<td style="text-align:center">bigint(20)</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">父节点id</td>
+</tr>
+<tr>
+<td style="text-align:center">userid</td>
+<td style="text-align:center">bigint(20)</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">用户id</td>
+</tr>
+<tr>
+<td style="text-align:center">username</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">用户名</td>
+</tr>
+<tr>
+<td style="text-align:center">isdone</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">状态</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.2 微博资讯信息表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">空</th>
+<th style="text-align:center">默认</th>
+<th style="text-align:center">注释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id (主键)</td>
+<td style="text-align:center">bigint(20)</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">主键</td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center">CURRENT_TIMESTAMP</td>
+<td style="text-align:center">创建时间</td>
+</tr>
+<tr>
+<td style="text-align:center">title</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">标题</td>
+</tr>
+<tr>
+<td style="text-align:center">introduction</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">简介</td>
+</tr>
+<tr>
+<td style="text-align:center">picture</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">图片</td>
+</tr>
+<tr>
+<td style="text-align:center">content</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">内容</td>
+</tr>
+</tbody>
+</table>
+<p>表4.3 微博类型信息表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">空</th>
+<th style="text-align:center">默认</th>
+<th style="text-align:center">注释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id (主键)</td>
+<td style="text-align:center">bigint(20)</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">主键</td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center">CURRENT_TIMESTAMP</td>
+<td style="text-align:center">创建时间</td>
+</tr>
+<tr>
+<td style="text-align:center">leixing</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">类型</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.4 微博信息表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">空</th>
+<th style="text-align:center">默认</th>
+<th style="text-align:center">注释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id (主键)</td>
+<td style="text-align:center">bigint(20)</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">主键</td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center">CURRENT_TIMESTAMP</td>
+<td style="text-align:center">创建时间</td>
+</tr>
+<tr>
+<td style="text-align:center">weibobiaoti</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">微博标题</td>
+</tr>
+<tr>
+<td style="text-align:center">leixing</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">类型</td>
+</tr>
+<tr>
+<td style="text-align:center">tupian</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">图片</td>
+</tr>
+<tr>
+<td style="text-align:center">weiboneirong</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">微博内容</td>
+</tr>
+<tr>
+<td style="text-align:center">faburiqi</td>
+<td style="text-align:center">date</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">发布日期</td>
+</tr>
+<tr>
+<td style="text-align:center">yonghuming</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">用户名</td>
+</tr>
+<tr>
+<td style="text-align:center">nicheng</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">昵称</td>
+</tr>
+<tr>
+<td style="text-align:center">clicktime</td>
+<td style="text-align:center">datetime</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">最近点击时间</td>
+</tr>
+<tr>
+<td style="text-align:center">clicknum</td>
+<td style="text-align:center">int(11)</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">点击次数</td>
+</tr>
+<tr>
+<td style="text-align:center">表4.5 用户信息表</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">空</th>
+<th style="text-align:center">默认</th>
+<th style="text-align:center">注释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id (主键)</td>
+<td style="text-align:center">bigint(20)</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">主键</td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center">CURRENT_TIMESTAMP</td>
+<td style="text-align:center">创建时间</td>
+</tr>
+<tr>
+<td style="text-align:center">yonghuming</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">用户名</td>
+</tr>
+<tr>
+<td style="text-align:center">mima</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">密码</td>
+</tr>
+<tr>
+<td style="text-align:center">xingming</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">姓名</td>
+</tr>
+<tr>
+<td style="text-align:center">nicheng</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">昵称</td>
+</tr>
+<tr>
+<td style="text-align:center">xingbie</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">性别</td>
+</tr>
+<tr>
+<td style="text-align:center">touxiang</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">头像</td>
+</tr>
+<tr>
+<td style="text-align:center">shouji</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">手机</td>
+</tr>
+<tr>
+<td style="text-align:center">youxiang</td>
+<td style="text-align:center">varchar(200)</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">NULL</td>
+<td style="text-align:center">邮箱</td>
+</tr>
+<tr>
+<td style="text-align:center"><figure><a class="lightgallery" href="blog.014.png" title="打开新的 phpMyAdmin 窗口" data-thumbnail="blog.014.png" data-sub-html="<h2>打开新的 phpMyAdmin 窗口</h2><p>打开新的 phpMyAdmin 窗口</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="blog.014.png"
+            data-srcset="blog.014.png, blog.014.png 1.5x, blog.014.png 2x"
+            data-sizes="auto"
+            alt="blog.014.png" />
+    </a><figcaption class="image-caption">打开新的 phpMyAdmin 窗口</figcaption>
+    </figure></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="5-系统实现">5 系统实现</h1>
+<p>在此部分内容中，主要通过系统功能的运行效果图展示前面设计的最终结果。系统实现对编制人员的技术能力有较高要求，因为需要他们使用编程的方式去实现系统设计的方案。</p>
+<h2 id="51-管理员功能实现">5.1 管理员功能实现</h2>
+<h3 id="511-微博信息管理">5.1.1 微博信息管理</h3>
+<p>管理员权限中的微博信息管理，其运行效果见下图。微博信息需要用户发布，管理员只负责修改，删除，查询。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm137/blog.015.png"
+        data-srcset="/images/0100ssm/ssm137/blog.015.png, /images/0100ssm/ssm137/blog.015.png 1.5x, /images/0100ssm/ssm137/blog.015.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm137/blog.015.png"
+        title="/images/0100ssm/ssm137/blog.015.png" /></p>
+<p>图5.1 微博信息管理页面</p>
+<h3 id="512-论坛交流">5.1.2 论坛交流</h3>
+<p>管理员权限中的论坛交流，其运行效果见下图。管理员对用户发布的帖子进行查看，可以查询帖子，删除帖子。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm137/blog.016.png"
+        data-srcset="/images/0100ssm/ssm137/blog.016.png, /images/0100ssm/ssm137/blog.016.png 1.5x, /images/0100ssm/ssm137/blog.016.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm137/blog.016.png"
+        title="/images/0100ssm/ssm137/blog.016.png" /></p>
+<p>图5.2 论坛交流页面</p>
+<h3 id="513-微博类型管理">5.1.3 微博类型管理</h3>
+<p>管理员权限中的微博类型管理，其运行效果见下图。管理员设置微博类型，修改微博类型，查询微博类型信息。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm137/blog.017.png"
+        data-srcset="/images/0100ssm/ssm137/blog.017.png, /images/0100ssm/ssm137/blog.017.png 1.5x, /images/0100ssm/ssm137/blog.017.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm137/blog.017.png"
+        title="/images/0100ssm/ssm137/blog.017.png" /></p>
+<p>图5.3 微博类型管理页面</p>
+<h3 id="514-微博资讯">5.1.4 微博资讯</h3>
+<p>管理员权限中的微博资讯，其运行效果见下图。前台展示的微博资讯需要管理员在后台发布并管理。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm137/blog.018.png"
+        data-srcset="/images/0100ssm/ssm137/blog.018.png, /images/0100ssm/ssm137/blog.018.png 1.5x, /images/0100ssm/ssm137/blog.018.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm137/blog.018.png"
+        title="/images/0100ssm/ssm137/blog.018.png" /></p>
+<p>图5.4 微博资讯页面</p>
+<h2 id="52-用户功能实现">5.2 用户功能实现</h2>
+<h3 id="521-发布帖子">5.2.1 发布帖子</h3>
+<p>用户权限中的发布帖子，其运行效果见下图。用户在论坛交流模块发布帖子。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm137/blog.019.png"
+        data-srcset="/images/0100ssm/ssm137/blog.019.png, /images/0100ssm/ssm137/blog.019.png 1.5x, /images/0100ssm/ssm137/blog.019.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm137/blog.019.png"
+        title="/images/0100ssm/ssm137/blog.019.png" /></p>
+<p>图5.5 发布帖子页面</p>
+<h3 id="522-微博信息">5.2.2 微博信息</h3>
+<p>用户权限中的微博信息，其运行效果见下图。用户收藏微博信息，评论微博信息。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm137/blog.020.png"
+        data-srcset="/images/0100ssm/ssm137/blog.020.png, /images/0100ssm/ssm137/blog.020.png 1.5x, /images/0100ssm/ssm137/blog.020.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm137/blog.020.png"
+        title="/images/0100ssm/ssm137/blog.020.png" /></p>
+<p>图5.6 微博信息页面</p>
+<h3 id="523-微博资讯">5.2.3 微博资讯</h3>
+<p>用户权限中的微博资讯，其运行效果见下图。用户查看微博资讯，点击标题即可查看其详情。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm137/blog.021.png"
+        data-srcset="/images/0100ssm/ssm137/blog.021.png, /images/0100ssm/ssm137/blog.021.png 1.5x, /images/0100ssm/ssm137/blog.021.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm137/blog.021.png"
+        title="/images/0100ssm/ssm137/blog.021.png" /></p>
+<p>图5.7 微博资讯页面</p>
+<h1 id="系统">系统</h1>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2023-12-12</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/ssm137%E5%9F%BA%E4%BA%8Essm%E6%A1%86%E6%9E%B6%E7%9A%84%E5%BE%AE%E5%8D%9A%E7%B3%BB%E7%BB%9F-vue/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://chenqi199.github.io/ssm137%E5%9F%BA%E4%BA%8Essm%E6%A1%86%E6%9E%B6%E7%9A%84%E5%BE%AE%E5%8D%9A%E7%B3%BB%E7%BB%9F-vue/" data-title="ssm137基于SSM框架的微博系统&#43;vue" data-hashtags="ssm框架,框架微博,微博系统"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://chenqi199.github.io/ssm137%E5%9F%BA%E4%BA%8Essm%E6%A1%86%E6%9E%B6%E7%9A%84%E5%BE%AE%E5%8D%9A%E7%B3%BB%E7%BB%9F-vue/" data-hashtag="ssm框架"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://chenqi199.github.io/ssm137%E5%9F%BA%E4%BA%8Essm%E6%A1%86%E6%9E%B6%E7%9A%84%E5%BE%AE%E5%8D%9A%E7%B3%BB%E7%BB%9F-vue/" data-title="ssm137基于SSM框架的微博系统&#43;vue"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://chenqi199.github.io/ssm137%E5%9F%BA%E4%BA%8Essm%E6%A1%86%E6%9E%B6%E7%9A%84%E5%BE%AE%E5%8D%9A%E7%B3%BB%E7%BB%9F-vue/" data-title="ssm137基于SSM框架的微博系统&#43;vue"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://chenqi199.github.io/ssm137%E5%9F%BA%E4%BA%8Essm%E6%A1%86%E6%9E%B6%E7%9A%84%E5%BE%AE%E5%8D%9A%E7%B3%BB%E7%BB%9F-vue/" data-title="ssm137基于SSM框架的微博系统&#43;vue" data-ralateuid="https://gitee.com/chen_q_i"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ssm%E6%A1%86%E6%9E%B6/">Ssm框架</a>,&nbsp;<a href="/tags/%E6%A1%86%E6%9E%B6%E5%BE%AE%E5%8D%9A/">框架微博</a>,&nbsp;<a href="/tags/%E5%BE%AE%E5%8D%9A%E7%B3%BB%E7%BB%9F/">微博系统</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/ssm138%E5%9F%BA%E4%BA%8E%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%AD%A6%E7%94%9F%E4%BA%8B%E5%8A%A1%E5%A4%84%E7%90%86%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1-jsp/" class="prev" rel="prev" title="ssm138基于面向对象的学生事务处理系统分析与设计&#43;jsp"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>ssm138基于面向对象的学生事务处理系统分析与设计+jsp</a>
+            <a href="/0139springboot%E4%BD%93%E8%82%B2%E9%A6%86%E4%BD%BF%E7%94%A8%E9%A2%84%E7%BA%A6%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" class="next" rel="next" title="0139springboot体育馆使用预约平台的设计与实现">0139springboot体育馆使用预约平台的设计与实现<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.128.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="chenqi199" target="_blank">chenqi</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

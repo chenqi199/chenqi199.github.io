@@ -1,0 +1,88 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Ssm学生 - 标签 - chenqi blog</title>
+        <link>https://chenqi199.github.io/tags/ssm%E5%AD%A6%E7%94%9F/</link>
+        <description>Ssm学生 - 标签 - chenqi blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>chen_q_i@163.com (chenqi)</managingEditor>
+            <webMaster>chen_q_i@163.com (chenqi)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 22 Jul 2024 10:33:04 &#43;0800</lastBuildDate><atom:link href="https://chenqi199.github.io/tags/ssm%E5%AD%A6%E7%94%9F/" rel="self" type="application/rss+xml" /><item>
+    <title>ssm807基于JAVA的学生网上请假系统的设计与实现&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm807%E5%9F%BA%E4%BA%8Ejava%E7%9A%84%E5%AD%A6%E7%94%9F%E7%BD%91%E4%B8%8A%E8%AF%B7%E5%81%87%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/</link>
+    <pubDate>Mon, 22 Jul 2024 10:33:04 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm807%E5%9F%BA%E4%BA%8Ejava%E7%9A%84%E5%AD%A6%E7%94%9F%E7%BD%91%E4%B8%8A%E8%AF%B7%E5%81%87%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm807基于JAVA的学生网上请假系统的设计与实现+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 （一）]]></description>
+</item>
+<item>
+    <title>ssm801学生奖惩管理系统&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm801%E5%AD%A6%E7%94%9F%E5%A5%96%E6%83%A9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/</link>
+    <pubDate>Sat, 20 Jul 2024 10:33:04 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm801%E5%AD%A6%E7%94%9F%E5%A5%96%E6%83%A9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm801学生奖惩管理系统+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第一章 绪论 1.1 选题背景 目前整个社会发展]]></description>
+</item>
+<item>
+    <title>ssm794学生工作管理系统&#43;jsp</title>
+    <link>https://chenqi199.github.io/ssm794%E5%AD%A6%E7%94%9F%E5%B7%A5%E4%BD%9C%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-jsp/</link>
+    <pubDate>Thu, 18 Jul 2024 10:33:03 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm794%E5%AD%A6%E7%94%9F%E5%B7%A5%E4%BD%9C%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-jsp/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm794学生工作管理系统+jsp github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1.1 研究背景 当前社会各行业领域竞争]]></description>
+</item>
+<item>
+    <title>ssm726基于web的学生就业管理系统的设计与实现&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm726%E5%9F%BA%E4%BA%8Eweb%E7%9A%84%E5%AD%A6%E7%94%9F%E5%B0%B1%E4%B8%9A%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/</link>
+    <pubDate>Tue, 25 Jun 2024 10:33:02 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm726%E5%9F%BA%E4%BA%8Eweb%E7%9A%84%E5%AD%A6%E7%94%9F%E5%B0%B1%E4%B8%9A%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm726基于web的学生就业管理系统的设计与实现+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第1章 绪论 1.1]]></description>
+</item>
+<item>
+    <title>ssm703学生考勤管理系统的设计与实现&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm703%E5%AD%A6%E7%94%9F%E8%80%83%E5%8B%A4%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/</link>
+    <pubDate>Mon, 17 Jun 2024 10:33:01 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm703%E5%AD%A6%E7%94%9F%E8%80%83%E5%8B%A4%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm703学生考勤管理系统的设计与实现+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 课题背景 身处网络时代]]></description>
+</item>
+<item>
+    <title>ssm699学生公寓管理系统的设计与开发&#43;jsp</title>
+    <link>https://chenqi199.github.io/ssm699%E5%AD%A6%E7%94%9F%E5%85%AC%E5%AF%93%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91-jsp/</link>
+    <pubDate>Sun, 16 Jun 2024 10:33:01 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm699%E5%AD%A6%E7%94%9F%E5%85%AC%E5%AF%93%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91-jsp/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm699学生公寓管理系统的设计与开发+jsp github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第一章 绪论 1.1研究背景]]></description>
+</item>
+<item>
+    <title>ssm679学生学籍管理系统设计与实现&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm679%E5%AD%A6%E7%94%9F%E5%AD%A6%E7%B1%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/</link>
+    <pubDate>Sun, 09 Jun 2024 10:33:01 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm679%E5%AD%A6%E7%94%9F%E5%AD%A6%E7%B1%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm679学生学籍管理系统设计与实现+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 课题背景 身处网络时代，]]></description>
+</item>
+<item>
+    <title>ssm669基于web的学生考勤管理系统&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm669%E5%9F%BA%E4%BA%8Eweb%E7%9A%84%E5%AD%A6%E7%94%9F%E8%80%83%E5%8B%A4%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/</link>
+    <pubDate>Thu, 06 Jun 2024 10:33:00 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm669%E5%9F%BA%E4%BA%8Eweb%E7%9A%84%E5%AD%A6%E7%94%9F%E8%80%83%E5%8B%A4%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm669基于web的学生考勤管理系统+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第1章 绪论 1.1研究背景]]></description>
+</item>
+<item>
+    <title>ssm610学生社团管理系统&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm610%E5%AD%A6%E7%94%9F%E7%A4%BE%E5%9B%A2%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/</link>
+    <pubDate>Fri, 17 May 2024 10:32:59 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm610%E5%AD%A6%E7%94%9F%E7%A4%BE%E5%9B%A2%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm610学生社团管理系统+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第一章 绪论 1.1 研究背景 在现在社会，对于]]></description>
+</item>
+<item>
+    <title>ssm575学生档案管理系统&#43;jsp</title>
+    <link>https://chenqi199.github.io/ssm575%E5%AD%A6%E7%94%9F%E6%A1%A3%E6%A1%88%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-jsp/</link>
+    <pubDate>Mon, 06 May 2024 10:32:58 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm575%E5%AD%A6%E7%94%9F%E6%A1%A3%E6%A1%88%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-jsp/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm575学生档案管理系统+jsp github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 研究现状 国外信息技术的发展步伐一]]></description>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,64 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Ssm医院 - 标签 - chenqi blog</title>
+        <link>https://chenqi199.github.io/tags/ssm%E5%8C%BB%E9%99%A2/</link>
+        <description>Ssm医院 - 标签 - chenqi blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>chen_q_i@163.com (chenqi)</managingEditor>
+            <webMaster>chen_q_i@163.com (chenqi)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 06 May 2024 10:32:58 &#43;0800</lastBuildDate><atom:link href="https://chenqi199.github.io/tags/ssm%E5%8C%BB%E9%99%A2/" rel="self" type="application/rss+xml" /><item>
+    <title>ssm576中小型医院管理系统的设计与实现&#43;jsp</title>
+    <link>https://chenqi199.github.io/ssm576%E4%B8%AD%E5%B0%8F%E5%9E%8B%E5%8C%BB%E9%99%A2%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/</link>
+    <pubDate>Mon, 06 May 2024 10:32:58 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm576%E4%B8%AD%E5%B0%8F%E5%9E%8B%E5%8C%BB%E9%99%A2%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-jsp/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm576中小型医院管理系统的设计与实现+jsp github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 研究背景和来源 目前的网]]></description>
+</item>
+<item>
+    <title>ssm525医院交互系统&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm525%E5%8C%BB%E9%99%A2%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F-vue/</link>
+    <pubDate>Fri, 19 Apr 2024 10:32:57 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm525%E5%8C%BB%E9%99%A2%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm525医院交互系统+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1.1研究背景与意义 1.1.1研究背]]></description>
+</item>
+<item>
+    <title>ssm416医院管理系统&#43;jsp</title>
+    <link>https://chenqi199.github.io/ssm416%E5%8C%BB%E9%99%A2%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-jsp/</link>
+    <pubDate>Thu, 14 Mar 2024 10:32:54 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm416%E5%8C%BB%E9%99%A2%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-jsp/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm416医院管理系统+jsp github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 绪论 1.1 研究背景 现在大家正处于互联网加的时]]></description>
+</item>
+<item>
+    <title>ssm401医院预约挂号系统的设计与实现&#43;vue带lw</title>
+    <link>https://chenqi199.github.io/ssm401%E5%8C%BB%E9%99%A2%E9%A2%84%E7%BA%A6%E6%8C%82%E5%8F%B7%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue%E5%B8%A6lw/</link>
+    <pubDate>Sat, 09 Mar 2024 10:32:54 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm401%E5%8C%BB%E9%99%A2%E9%A2%84%E7%BA%A6%E6%8C%82%E5%8F%B7%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0-vue%E5%B8%A6lw/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm401医院预约挂号系统的设计与实现+vue带lw github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 系统概述 1.1 研究背景]]></description>
+</item>
+<item>
+    <title>ssm132医院住院综合服务管理系统设计与开发&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm132%E5%8C%BB%E9%99%A2%E4%BD%8F%E9%99%A2%E7%BB%BC%E5%90%88%E6%9C%8D%E5%8A%A1%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91-vue/</link>
+    <pubDate>Sun, 10 Dec 2023 10:32:47 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm132%E5%8C%BB%E9%99%A2%E4%BD%8F%E9%99%A2%E7%BB%BC%E5%90%88%E6%9C%8D%E5%8A%A1%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm132医院住院综合服务管理系统设计与开发+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第1章 绪论 1.1 课题背]]></description>
+</item>
+<item>
+    <title>ssm012医院住院管理系统&#43;vue</title>
+    <link>https://chenqi199.github.io/ssm012%E5%8C%BB%E9%99%A2%E4%BD%8F%E9%99%A2%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/</link>
+    <pubDate>Mon, 30 Oct 2023 22:29:51 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm012%E5%8C%BB%E9%99%A2%E4%BD%8F%E9%99%A2%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-vue/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm012医院住院管理系统+vue github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第1章 绪论 1.1背景及意义 随着社会的]]></description>
+</item>
+<item>
+    <title>ssm008医院门诊挂号系统&#43;jsp</title>
+    <link>https://chenqi199.github.io/ssm008%E5%8C%BB%E9%99%A2%E9%97%A8%E8%AF%8A%E6%8C%82%E5%8F%B7%E7%B3%BB%E7%BB%9F-jsp/</link>
+    <pubDate>Sun, 29 Oct 2023 22:29:50 &#43;0800</pubDate>
+    <author>chenqi</author>
+    <guid>https://chenqi199.github.io/ssm008%E5%8C%BB%E9%99%A2%E9%97%A8%E8%AF%8A%E6%8C%82%E5%8F%B7%E7%B3%BB%E7%BB%9F-jsp/</guid>
+    <description><![CDATA[项目清单 包安装运行 官网地址 http://chenqi1990.site ssm008医院门诊挂号系统+jsp github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第1章 绪论 1.1背景及意义 随着社会的]]></description>
+</item>
+</channel>
+</rss>

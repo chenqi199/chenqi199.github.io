@@ -1,17 +1,16 @@
 # 0174springboot图书管理系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0174springboot图书管理系统](https://github.com/GraduationProject-springboot/0174springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1ECs?p=72)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
 
@@ -82,37 +81,37 @@ MySQL数据库是目前使用较多的关系型数据库。因为其具有开源
 ### 3.3.1开发流程
 图书管理系统开发的主要流程，首先是先对系统进行需求分析，确定系统所需要设计的主要功能模块，再通过功能模块编码和数据库设计等过程，对系统进行设计和实现，系统的开发流程如图3-1所示。
 
-![D:\用户目录\Documents\Tencent Files\736505925\FileRecv\DSH}\_\_@$MA6E\_E[YBHK0`JA.png](/images/0100stringboot/0174springboot/blog.004.png)
+![D:\用户目录\Documents\Tencent Files\736505925\FileRecv\DSH}\_\_@$MA6E\_E[YBHK0`JA.png](/images/0100wxapp//blog.004.png)
 
 图3-1开发流程图
 ### 3.3.2登录流程
 用户需要通过登录图书管理系统，输入正确的账号、密码，才能成功使用本系统，实现自己所需的功能操作，登录流程图如图3-2所示。
 
-![](/images/0100stringboot/0174springboot/blog.005.png)
+![](/images/0100wxapp//blog.005.png)
 
 图3-2登录流程图
 ### 3.3.3注册流程
 首次使用本系统的新用户，需要通过注册操作，再通过登录操作，才能成功使用系统功能模块，注册流程图如图3-3所示。
 
-![](/images/0100stringboot/0174springboot/blog.006.png)
+![](/images/0100wxapp//blog.006.png)
 
 图3-3注册流程图
 ### 3.3.4添加信息流程
 当添加系统所需要的数据信息时，需要输入正确、合法的字符格式，才能成功添加数据信息，添加信息流程图如图3-4所示。
 
-![](/images/0100stringboot/0174springboot/blog.007.png)
+![](/images/0100wxapp//blog.007.png)
 
 图3-4添加信息流程图
 ### 3.3.5修改信息流程
 当修改系统所需要的数据信息时，需要输入正确、合法的字符格式，才能成功修改数据信息，修改信息流程图如图3-5所示。
 
-![](/images/0100stringboot/0174springboot/blog.008.png)
+![](/images/0100wxapp//blog.008.png)
 
 图3-5修改信息流程图
 ### 3.3.6删除信息流程
 当删除系统所需要的数据信息时，选择需要删除的数据信息记录进行删除操作，添删除信息流程图如图3-6所示。
 
-![](/images/0100stringboot/0174springboot/blog.009.png)
+![](/images/0100wxapp//blog.009.png)
 
 图3-6删除信息流程图
 
@@ -174,38 +173,38 @@ MySQL数据库是目前使用较多的关系型数据库。因为其具有开源
 公告信息添加
 
 
-![](/images/0100stringboot/0174springboot/blog.010.png)
+![](/images/0100wxapp//blog.010.png)
 
 图4-1系统的总体功能设计
 ## 4.2数据库设计
 ### 4.2.1概念设计
 在数据库设计阶段，本系统通过使用开源的、小型的MySQL数据库对系统相关的数据信息进行管理和维护[12]。数据库设计大致可以被分为概念设计和逻辑设计两个阶段。概念设计阶段是逻辑设计阶段的重要依据，同样的，逻辑设计阶段也是概念设计阶段的实现目标。概念设计阶段主要通过使用实体-联系图（E-R图）的方式，将现实世界中用户对系统的实际需求，转换成设计人员能够理解的抽象的数据库概念模型。本人通过设计E-R图，详细的对系统中的实体以及实体之间的联系进行了表达。各实体信息的E-R图如图4-2、图4-3、图4-4、图4-5、图4-6、图4-7所示，系统总体E-R图如图4-8所示。
 
-![](/images/0100stringboot/0174springboot/blog.011.png)
+![](/images/0100wxapp//blog.011.png)
 
 图4-2管理员信息E-R图
 
-![](/images/0100stringboot/0174springboot/blog.012.png)
+![](/images/0100wxapp//blog.012.png)
 
 图4-3用户信息E-R图
 
-![](/images/0100stringboot/0174springboot/blog.013.png)
+![](/images/0100wxapp//blog.013.png)
 
 图4-4图书信息E-R图
 
-![](/images/0100stringboot/0174springboot/blog.014.png)
+![](/images/0100wxapp//blog.014.png)
 
 图4-5借阅信息E-R图
 
-![](/images/0100stringboot/0174springboot/blog.015.png)
+![](/images/0100wxapp//blog.015.png)
 
 图4-6论坛信息E-R图
 
-![](/images/0100stringboot/0174springboot/blog.016.png)
+![](/images/0100wxapp//blog.016.png)
 
 图4-7公告信息E-R图
 
-![](/images/0100stringboot/0174springboot/blog.017.png)
+![](/images/0100wxapp//blog.017.png)
 
 图4-8系统总体E-R图
 ### 4.2.2逻辑设计
@@ -302,77 +301,77 @@ MySQL数据库是目前使用较多的关系型数据库。因为其具有开源
 ## 5.1个人中心
 通过设计的个人中心管理功能模块，管理用户可以对相关的个人信息进行管理，比如管理用户可以更新个人账号的密码信息，修改个人账号的用户名信息等，修改密码界面设计如图5-1所示，个人信息界面设计如图5-2所示。
 
-![](/images/0100stringboot/0174springboot/blog.018.png)
+![](/images/0100wxapp//blog.018.png)
 
 图5-1修改密码界面
 
-![](/images/0100stringboot/0174springboot/blog.019.png)
+![](/images/0100wxapp//blog.019.png)
 
 图5-2个人信息界面
 ## 5.2管理员管理
 通过设计的管理员管理功能模块，管理用户可以对相关的管理员用户信息进行管理，比如管理用户可以查看管理员的用户名，更新管理员密码，删除已经注销的管理员用户信息记录等，管理员管理界面设计如图5-3所示。
 
-![](/images/0100stringboot/0174springboot/blog.020.png)
+![](/images/0100wxapp//blog.020.png)
 
 图5-3管理员管理界面
 ## 5.3用户管理
 通过设计的用户管理功能模块，管理用户可以对相关的用户信息进行管理，比如管理用户可以查看用户头像信息，更新用户手机号码，删除已经注销的用户信息记录等，用户管理界面设计如图5-4所示。
 
-![](/images/0100stringboot/0174springboot/blog.021.png)
+![](/images/0100wxapp//blog.021.png)
 
 图5-4用户管理界面
 ## 5.4图书出版社管理
 通过设计的图书出版社管理功能模块，管理用户可以对相关的图书出版社信息进行管理，比如管理用户可以添加新图书出版社信息记录，更新图书出版社名称，删除失效的图书出版社信息记录等，图书出版社管理界面设计如图5-5所示。
 
-![](/images/0100stringboot/0174springboot/blog.022.png)
+![](/images/0100wxapp//blog.022.png)
 
 图5-5图书出版社管理界面
 ## 5.5公告类型管理
 通过设计的公告类型管理功能模块，管理用户可以对相关的公告类型信息进行管理，比如管理用户可以添加新公告类型信息记录，更新公告类型名称，删除失效的公告类型信息记录等，公告类型管理界面设计如图5-6所示。
 
-![](/images/0100stringboot/0174springboot/blog.023.png)
+![](/images/0100wxapp//blog.023.png)
 
 图5-6公告类型管理界面
 ## 5.6所在书架管理
 通过设计的所在书架管理功能模块，管理用户可以对相关的所在书架信息进行管理，比如管理用户可以添加新所在书架信息记录，更新所在书架名称，删除失效的所在书架信息记录等，所在书架管理界面设计如图5-7所示。
 
-![](/images/0100stringboot/0174springboot/blog.024.png)
+![](/images/0100wxapp//blog.024.png)
 
 图5-7所在书架管理界面
 ## 5.7图书类型管理
 通过设计的图书类型管理功能模块，管理用户可以对相关的图书类型信息进行管理，比如管理用户可以添加新图书类型信息记录，更新图书类型名称，删除失效的图书类型信息记录等，图书类型管理界面设计如图5-8所示。
 
-![](/images/0100stringboot/0174springboot/blog.025.png)
+![](/images/0100wxapp//blog.025.png)
 
 图5-8图书类型管理界面
 ## 5.8论坛管理
 通过设计的论坛管理功能模块，管理用户可以对相关的论坛信息进行管理，比如管理用户可以添加新论坛信息记录，更新发布的帖子内容，删除失效的论坛信息记录等，论坛管理界面设计如图5-9所示。
 
-![](/images/0100stringboot/0174springboot/blog.026.png)
+![](/images/0100wxapp//blog.026.png)
 
 图5-9论坛管理界面
 ## 5.9公告信息管理
 通过设计的公告信息管理功能模块，管理用户可以对相关的公告信息信息进行管理，比如管理用户可以查看公告时间，删除失效的公告信息记录等，公告信息管理界面设计如图5-10所示。
 
-![](/images/0100stringboot/0174springboot/blog.027.png)
+![](/images/0100wxapp//blog.027.png)
 
 图5-10公告信息管理界面
 ## 5.10图书信息管理
 通过设计的图书信息管理功能模块，管理用户可以对相关的图书信息信息进行管理，比如管理用户可以查看图书数量，删除失效的图书信息记录等，图书信息管理界面设计如图5-11所示。
 
-![](/images/0100stringboot/0174springboot/blog.028.png)
+![](/images/0100wxapp//blog.028.png)
 
 图5-11图书信息管理界面
 ## 5.11借阅信息管理
 通过设计的借阅信息管理功能模块，管理用户可以对相关的借阅信息信息进行管理，比如管理用户可以查看借阅的图书类型，删除失效的借阅信息记录等，借阅信息管理界面设计如图5-12所示。
 
-![](/images/0100stringboot/0174springboot/blog.029.png)
+![](/images/0100wxapp//blog.029.png)
 
 图5-12借阅信息管理界面
 ## 5.12轮播图管理
 通过设计的轮播图管理功能模块，管理用户可以对相关的轮播图信息进行管理，比如管理用户可以查看轮播图信息，删除失效的轮播图信息记录等，轮播图管理界面设计如图5-13所示。
 
-![](/images/0100stringboot/0174springboot/blog.030.png)
+![](/images/0100wxapp//blog.030.png)
 
 图5-13轮播图管理界面
 

@@ -1,17 +1,16 @@
 # 0022springboot学生宿舍管理系统的设计与开发
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0022springboot学生宿舍管理系统的设计与开发](https://github.com/GraduationProject-springboot/0022springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV16ia6epENY?p=23)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 绪论
 ## 1.1 课题背景
@@ -79,25 +78,25 @@ SpringBoot的最大优点是继承了Spring框架的人气和底层设计财富�
 ### 3.2.1 操作流程
 进入本系统需要访问者提供验证信息。验证合格的访问者才能获取访问资格。其具体的操作流程见下图。访问者根据登录界面设置的信息项如实填写，待信息通过验证后，访问者可以进入指定的页面享受本系统提供的服务和阅读本系统的相关信息。
 
-![](/images/0000stringboot/0022springboot/blog.001.png)
+![](/images/0000wxapp//blog.001.png)
 
 图3.1 操作流程图
 ### 3.2.2 登录流程
 本系统的登录模块，其内部的流程见下图。主要对访问本系统的人员提供的验证信息进行逐个判断，系统面对录入错误的信息会给出提示，比如，提示账号不对，或提示密码不匹配等提示信息。总之，在登录页面填写的所有信息都符合要求，访问者就登录成功了。
 
-![](/images/0000stringboot/0022springboot/blog.002.png)
+![](/images/0000wxapp//blog.002.png)
 
 图3.2 登录流程图
 ### 3.2.3 删除信息流程
 本系统在经常性的使用后，会产生很多失去价值的信息，因此就需要及时清理数据，腾出系统的空间。对这些数据进行清理时，其对应的流程见下图。先选中要清理的数据，通过反复确认需要清理的数据，避免操作人员误删。已经删除的数据就不会出现在系统里面。
 
-![](/images/0000stringboot/0022springboot/blog.003.png)
+![](/images/0000wxapp//blog.003.png)
 
 图3.3 删除信息流程图
 ### 3.2.4 添加信息流程
 本系统主要用于显示信息，提供服务，其中，数据添加功能就是其中的服务之一，具体流程见下图。让操作者在信息添加的页面录入数据，待这些数据被提交检验合格后，就会在系统指定页面显示出来。
 
-![](/images/0000stringboot/0022springboot/blog.004.png)
+![](/images/0000wxapp//blog.004.png)
 
 图3.4 添加信息流程图
 ## 3.3 性能需求
@@ -123,19 +122,19 @@ SpringBoot的最大优点是继承了Spring框架的人气和底层设计财富�
 
 学生宿舍管理系统经过分析，确定了其需要设置管理员的角色，其操作的功能通过用例图展示（见下图）。管理员管理宿管员，管理学生，修改密码，维护个人信息。
 
-![](/images/0000stringboot/0022springboot/blog.005.png)
+![](/images/0000wxapp//blog.005.png)
 
 图3.5 管理员用例图
 
 学生宿舍管理系统经过分析，确定了其需要设置宿管员的角色，其操作的功能通过用例图展示（见下图）。宿管员管理公寓资产，缴费信息，公共场所清理信息，日常事务信息，审核学生床位安排信息。
 
-![](/images/0000stringboot/0022springboot/blog.006.png)
+![](/images/0000wxapp//blog.006.png)
 
 图3.6 宿管员用例图
 
 学生宿舍管理系统经过分析，确定了其需要设置学生的角色，其操作的功能通过用例图展示（见下图）。学生查看公共场所清理信息，日常事务，缴费信息，在线申请床位，查看床位安排。
 
-![](/images/0000stringboot/0022springboot/blog.007.png)
+![](/images/0000wxapp//blog.007.png)
 
 图3.7 学生用例图
 
@@ -156,19 +155,19 @@ SpringBoot的最大优点是继承了Spring框架的人气和底层设计财富�
 ## 4.2 功能结构设计
 在前面分析的管理员功能的基础上，进行接下来的设计工作，最终展示设计的管理员结构图（见下图）。管理员管理宿管员，管理学生，修改密码，维护个人信息。
 
-![](/images/0000stringboot/0022springboot/blog.008.png)
+![](/images/0000wxapp//blog.008.png)
 
 图4.1 管理员功能结构图
 
 在前面分析的宿管员功能的基础上，进行接下来的设计工作，最终展示设计的宿管员结构图（见下图）。宿管员管理公寓资产，缴费信息，公共场所清理信息，日常事务信息，审核学生床位安排信息。
 
-![](/images/0000stringboot/0022springboot/blog.009.png)
+![](/images/0000wxapp//blog.009.png)
 
 图4.2 宿管员功能结构图
 
 在前面分析的学生功能的基础上，进行接下来的设计工作，最终展示设计的学生结构图（见下图）。学生查看公共场所清理信息，日常事务，缴费信息，在线申请床位，查看床位安排。
 
-![](/images/0000stringboot/0022springboot/blog.010.png)
+![](/images/0000wxapp//blog.010.png)
 
 图4.3 学生功能结构图
 ## 4.3 数据库设计
@@ -178,31 +177,31 @@ SpringBoot的最大优点是继承了Spring框架的人气和底层设计财富�
 
 （1）下图是学生实体和其具备的属性。
 
-![](/images/0000stringboot/0022springboot/blog.011.png)
+![](/images/0000wxapp//blog.011.png)
 
 图4.4 学生实体属性图
 
 （2）下图是床位安排实体和其具备的属性。
 
-![](/images/0000stringboot/0022springboot/blog.012.png)
+![](/images/0000wxapp//blog.012.png)
 
 图4.5 床位安排实体属性图
 
 （3）下图是宿管员实体和其具备的属性。
 
-![](/images/0000stringboot/0022springboot/blog.013.png)
+![](/images/0000wxapp//blog.013.png)
 
 图4.6 宿管员实体属性图
 
 4. 下图是缴费实体和其具备的属性。
 
-![](/images/0000stringboot/0022springboot/blog.014.png)
+![](/images/0000wxapp//blog.014.png)
 
 图4.7 缴费实体属性图
 
 4. 下图为上述各实体间相互之间的关系。
 
-![](/images/0000stringboot/0022springboot/blog.015.png)
+![](/images/0000wxapp//blog.015.png)
 
 图4.8 实体间关系E-R图
 ### 4.3.2 数据库物理设计
@@ -329,63 +328,63 @@ SpringBoot的最大优点是继承了Spring框架的人气和底层设计财富�
 ### 5.1.1 宿管员管理
 管理员进入指定功能操作区之后可以管理宿管员。其页面见下图。宿管员的资料需要管理员负责管理，包括修改，新增，删除等操作。
 
-![](/images/0000stringboot/0022springboot/blog.017.png)
+![](/images/0000wxapp//blog.017.png)
 
 图5.1 宿管员管理页面
 ### 5.1.2 学生管理
 管理员进入指定功能操作区之后可以管理学生。其页面见下图。学生信息也需要管理员负责管理，包括信息的增删改查操作。
 
-![](/images/0000stringboot/0022springboot/blog.018.png)
+![](/images/0000wxapp//blog.018.png)
 
 图5.2 学生管理页面
 ## 5.2 宿管员功能实现
 ### 5.2.1 学生信息管理
 宿管员进入指定功能操作区之后可以管理学生信息。其页面见下图。宿管员增删改查学生信息，为各位学生申请床位，管理学生的卫生记录和日常事务评分。
 
-![](/images/0000stringboot/0022springboot/blog.019.png)
+![](/images/0000wxapp//blog.019.png)
 
 图5.3 学生信息管理页面
 ### 5.2.2 公寓资产管理
 宿管员进入指定功能操作区之后可以管理公寓资产。其页面见下图。公寓资产存在损坏情况，需要宿管员通过损坏按钮登记公寓资产损坏信息。
 
-![](/images/0000stringboot/0022springboot/blog.020.png)
+![](/images/0000wxapp//blog.020.png)
 
 图5.4 公寓资产管理页面
 ### 5.2.3 缴费信息管理
 宿管员进入指定功能操作区之后可以管理缴费信息。其页面见下图。宿管员增删改缴费信息。
 
-![](/images/0000stringboot/0022springboot/blog.021.png)
+![](/images/0000wxapp//blog.021.png)
 
 图5.5 缴费信息管理页面
 ### 5.2.4 床位安排管理
 宿管员进入指定功能操作区之后可以管理床位安排。其页面见下图。宿管员审核对学生的床位安排信息。
 
-![](/images/0000stringboot/0022springboot/blog.022.png)
+![](/images/0000wxapp//blog.022.png)
 
 图5.6 床位安排管理页面
 ## 5.3 学生功能实现
 ### 5.3.1 清理公共场所
 学生进入指定功能操作区之后可以查看清理公共场所信息。其页面见下图。各位学生负责清理的公共场所信息都会显示在本页面，学生可查询也能查看。
 
-![](/images/0000stringboot/0022springboot/blog.023.png)
+![](/images/0000wxapp//blog.023.png)
 
 图5.7 清理公共场所页面
 ### 5.3.2 申请床位
 学生进入指定功能操作区之后可以申请床位。其页面见下图。学生可以选择床位号进行床位申请，宿管员审核通过之后，学生才能使用申请的床位。
 
-![](/images/0000stringboot/0022springboot/blog.024.png)
+![](/images/0000wxapp//blog.024.png)
 
 图5.8 申请床位页面
 ### 5.3.3 日常事务
 学生进入指定功能操作区之后可以查看日常事务。其页面见下图。学生查看日常事务的加分项和评分标准信息。
 
-![](/images/0000stringboot/0022springboot/blog.025.png)
+![](/images/0000wxapp//blog.025.png)
 
 图5.9 日常事务页面
 ### 5.3.4 缴费信息
 学生进入指定功能操作区之后可以查看缴费信息。其页面见下图。学生查看住宿费用，以及缴费时间等信息。
 
-![](/images/0000stringboot/0022springboot/blog.026.png)
+![](/images/0000wxapp//blog.026.png)
 
 图5.10 缴费信息页面
 # 

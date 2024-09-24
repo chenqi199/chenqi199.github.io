@@ -1,17 +1,16 @@
 # 0092springboot厨艺交流平台的设计与实现代码
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0092springboot厨艺交流平台的设计与实现代码](https://github.com/GraduationProject-springboot/0092springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV16ia6epENY?p=93)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
 ## 1.1 研究背景
@@ -95,25 +94,25 @@ Spring Boot可以与经典的Java开发工具一起使用或者作为命令行�
 ## 3.3系统流程分析
 管理员假如要操作系统提供的功能，那么管理员就要在系统的登录界面，填写管理员登录的账号信息，填写相应的密码信息，管理员需要保证这两者能够验证身份的账号以及密码信息的正确性，这样管理员就可以通过登录界面进入系统后台操作界面。图3.1就是开发的程序软件厨艺交流平台它的操作流程图。
 
-![](/images/0000stringboot/0092springboot/blog.001.png)
+![](/images/0000wxapp//blog.001.png)
 
 图3.1 系统操作流程图
 ### 3.3.1系统登录流程
 厨艺交流平台的登录流程，针对的角色就是操作员的操作角色。在登录界面需要的必填信息就是账号信息，配上登录的密码信息就能登录厨艺交流平台，需要注意的就是必填的账号信息和登录密码信息，都需要进行验证，系统会判断账号还有填写的密码信息的正确性，只有这两者信息都正确了，就能成功登录厨艺交流平台了。系统登录流程图如下图。
 
-![](/images/0000stringboot/0092springboot/blog.002.png)
+![](/images/0000wxapp//blog.002.png)
 
 图3.2　系统登录流程图
 ### 3.3.2信息添加流程
 用户在添加信息的界面填写的任何数据信息也是需要验证的，系统会判断用户填写信息的格式还有数据信息是不是合法信息，如果用户填写的信息是合法内容，系统就会在数据库对应的数据表里面添加信息。添加信息流程如下图。
 
-![](/images/0000stringboot/0092springboot/blog.003.png)
+![](/images/0000wxapp//blog.003.png)
 
 图3.3 添加信息流程图
 ### 3.3.3信息删除流程
 对于那些已经失效的信息，需要用户及时进行删除，这样有利于腾出空间存放其他信息。删除信息也是先从数据库对应数据表里面删除数据，接着就是更新数据表的信息。这样删除的数据，在用户操作界面就查看不到了。信息删除流程如下图所示。
 
-![](/images/0000stringboot/0092springboot/blog.004.png)
+![](/images/0000wxapp//blog.004.png)
 
 图3.4 信息删除流程图
 
@@ -121,13 +120,13 @@ Spring Boot可以与经典的Java开发工具一起使用或者作为命令行�
 ## 4.1系统概要设计
 厨艺交流平台并没有使用C/S结构，而是基于网络浏览器的方式去访问服务器，进而获取需要的数据信息，这种依靠浏览器进行数据访问的模式就是现在用得比较广泛的适用于广域网并且没有网速限制要求的B/S结构，图4.1就是开发出来的程序工作原理图。
 
-![](/images/0000stringboot/0092springboot/blog.005.png)
+![](/images/0000wxapp//blog.005.png)
 
 图4.1 程序工作的原理图
 ## 4.2系统功能结构设计
 下图就是系统功能结构图。
 
-![](/images/0000stringboot/0092springboot/blog.006.png)
+![](/images/0000wxapp//blog.006.png)
 
 图4.1 系统功能结构图
 ## 4.3数据库设计
@@ -138,19 +137,19 @@ Spring Boot可以与经典的Java开发工具一起使用或者作为命令行�
 
 （1）下图就是商品信息实体E-R图
 
-![](/images/0000stringboot/0092springboot/blog.007.png)
+![](/images/0000wxapp//blog.007.png)
 
 图4.7 商品信息实体E-R图
 
 （2）下图就是菜谱分类实体E-R图
 
-![](/images/0000stringboot/0092springboot/blog.008.png)
+![](/images/0000wxapp//blog.008.png)
 
 图4.8 菜谱分类实体E-R图
 
 （3）下图就是商品分类实体E-R图
 
-![](/images/0000stringboot/0092springboot/blog.009.png)
+![](/images/0000wxapp//blog.009.png)
 
 图4.9 商品分类实体E-R图
 ### 4.3.2 数据库表结构设计
@@ -326,31 +325,31 @@ Spring Boot可以与经典的Java开发工具一起使用或者作为命令行�
 ## 5.1食材分类管理
 管理员管理食材分类，可以添加，修改，删除食材分类信息。下图就是食材分类管理页面。
 
-![](/images/0000stringboot/0092springboot/blog.010.png)
+![](/images/0000wxapp//blog.010.png)
 
 图5.1 食材分类管理页面
 ## 5.2 用户信息管理
 管理员管理用户信息，可以添加，修改，删除用户信息信息。下图就是用户信息管理页面。
 
-![](/images/0000stringboot/0092springboot/blog.011.png)
+![](/images/0000wxapp//blog.011.png)
 
 图5.2用户信息管理页面
 ## 5.3 菜谱分类管理
 管理员管理菜谱分类，可以添加，修改，删除菜谱分类信息。下图就是菜谱分类管理页面。
 
-![](/images/0000stringboot/0092springboot/blog.012.png)
+![](/images/0000wxapp//blog.012.png)
 
 图5.3 菜谱分类管理页面
 ## 5.4菜谱信息管理
 管理员管理菜谱信息，可以添加，修改，删除菜谱信息信息。下图就是菜谱信息管理页面。
 
-![](/images/0000stringboot/0092springboot/blog.013.png)
+![](/images/0000wxapp//blog.013.png)
 
 图5.4 菜谱信息管理页面
 ## 5.5食材信息管理
 管理员管理食材信息，可以添加，修改，删除食材信息信息。下图就是食材信息管理页面。
 
-![](/images/0000stringboot/0092springboot/blog.014.png)
+![](/images/0000wxapp//blog.014.png)
 
 图5.5 食材信息管理页面
 

@@ -1,17 +1,16 @@
 # 0058springboot课程答疑系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0058springboot课程答疑系统](https://github.com/GraduationProject-springboot/0058springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV16ia6epENY?p=59)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 系统概述
 1.1 研究背景
@@ -131,11 +130,11 @@ Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进
 
 4）输入数据尽早地记录成其处理所需的形式，以防止数据由一种介质转移到另一种介质时需要转录而可能发生的错误。
 ## 3.4系统流程和逻辑
-![](/images/0000stringboot/0058springboot/blog.001.png)
+![](/images/0000wxapp//blog.001.png)
 
 图3-3登录流程图
 
-![](/images/0000stringboot/0058springboot/blog.002.png)
+![](/images/0000wxapp//blog.002.png)
 
 图3-4修改密码流程图
 
@@ -143,25 +142,25 @@ Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进
 ## 4.1概述
 本系统采用B/S结构(Browser/Server,浏览器/服务器结构)和基于Web服务两种模式，是一个适用于Internet环境下的模型结构。只要用户能连上Internet,便可以在任何时间、任何地点使用。系统工作原理图如图4-1所示：
 
-![](/images/0000stringboot/0058springboot/blog.003.png)
+![](/images/0000wxapp//blog.003.png)
 
 图4-1系统工作原理图
 ## 4.2系统结构
 本系统是基于B/S架构的网站系统，设计的管理员功能结构图如下图所示：
 
-![](/images/0000stringboot/0058springboot/blog.004.png)
+![](/images/0000wxapp//blog.004.png)
 
 图4-1管理员功能结构图
 
 本系统是基于B/S架构的网站系统，设计的老师功能结构图如下图所示：
 
-![](/images/0000stringboot/0058springboot/blog.005.png)
+![](/images/0000wxapp//blog.005.png)
 
 图4-2老师功能结构图
 
 本系统是基于B/S架构的网站系统，设计的用户功能结构图如下图所示：
 
-![](/images/0000stringboot/0058springboot/blog.006.png)
+![](/images/0000wxapp//blog.006.png)
 
 图4-3 用户功能结构图
 
@@ -173,19 +172,19 @@ Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进
 
 （1）学生问题信息的实体属性图如下：
 
-![](/images/0000stringboot/0058springboot/blog.007.png)
+![](/images/0000wxapp//blog.007.png)
 
 图4.12  学生问题信息实体属性图
 
 （2）老师信息实体属性图如图4.13所示：
 
-![](/images/0000stringboot/0058springboot/blog.008.png)
+![](/images/0000wxapp//blog.008.png)
 
 图4.13  老师信息实体属性图
 
 （3）科目类型信息实体属性图如图4.14所示：
 
-![](/images/0000stringboot/0058springboot/blog.009.png)
+![](/images/0000wxapp//blog.009.png)
 
 图4.14 科目类型信息实体属性图
 ### 4.3.2数据库设计表
@@ -361,26 +360,26 @@ Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进
 ### 5.1.1 学生信息管理
 课程答疑系统的系统管理员可以管理学生，可以对学生信息添加修改删除以及查询操作。具体界面的展示如图5.1所示。
 
-![](/images/0000stringboot/0058springboot/blog.010.png)
+![](/images/0000wxapp//blog.010.png)
 
 图5.1 学生信息管理界面
 ### 5.1.2 科目类型管理
 系统管理员可以查看对科目类型信息进行添加，修改，删除以及查询操作。具体界面如图5.2所示。
 
-![](/images/0000stringboot/0058springboot/blog.011.png)
+![](/images/0000wxapp//blog.011.png)
 
 图5.2 科目类型信息管理界面
 ## 5.2 老师模块的实现
 ### 5.2.1 老师回答管理
 老师可以对老师回答进行查看以及查询操作。界面如下图所示：
 
-![](/images/0000stringboot/0058springboot/blog.012.png)
+![](/images/0000wxapp//blog.012.png)
 
 图5.3 在线报名信息管理界面
 ### 5.2.1 我的收藏管理
 老师可以对报我的收藏信息进行添加修改删除操作，还可以对业务信息进行查询。界面如下图所示：
 
-![](/images/0000stringboot/0058springboot/blog.013.png)
+![](/images/0000wxapp//blog.013.png)
 
 图5.4 我的收藏管理界面
 
@@ -388,20 +387,20 @@ Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进
 ### 5.2.2 学生问题
 学生登录之后，可以查看学生问题信息，也可以发布学生问题信息。界面如下图所示：
 
-![](/images/0000stringboot/0058springboot/blog.014.png)
+![](/images/0000wxapp//blog.014.png)
 
 图5.5 学生问题界面
 ### 5.2.3 留言反馈
 学生登录后在首页查看老师回答信息。界面如下图所示：
 
-![](/images/0000stringboot/0058springboot/blog.015.png)
+![](/images/0000wxapp//blog.015.png)
 
 图5.6 老师回答信息界面
 ### 5.2.3 交流区
 学生登录后可以在交流区发布信息。界面如下图所示：
 
 
-![](/images/0000stringboot/0058springboot/blog.016.png)
+![](/images/0000wxapp//blog.016.png)
 
 图5.7 交流区界面
 

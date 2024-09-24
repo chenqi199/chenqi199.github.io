@@ -1,17 +1,16 @@
 # 0756springboot学生毕业离校系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0756springboot学生毕业离校系统](https://github.com/GraduationProject-springboot/0756springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
-
-# [项目清单](https://chenqi1990.site) 包安装运行
 
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
 [![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV14HerezEwW?p=112)
-
 
 # 研究背景
 近年来，随着网络技术的不断发展，越来越多人喜欢在网络上查找信息，将自己喜欢的信息收藏，方便自己进行查看。学生毕业离校系统对学生、教师和管理员都有很大帮助，学生毕业离校系统通过和数据库管理系软件协作来实现学生、教师与管理员之间的一个很好的操作平台，基于这一点，设计了一个学生毕业离校系统。

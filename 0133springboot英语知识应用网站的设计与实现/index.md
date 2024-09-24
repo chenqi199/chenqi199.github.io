@@ -1,17 +1,16 @@
 # 0133springboot英语知识应用网站的设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0133springboot英语知识应用网站的设计与实现](https://github.com/GraduationProject-springboot/0133springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1ECs?p=32)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 系统概述
 1.1 研究背景
@@ -128,11 +127,11 @@ SpringBoot可以与经典的Java开发工具一起使用或者作为命令行工
 
 4）输入数据尽早地记录成其处理所需的形式，以防止数据由一种介质转移到另一种介质时需要转录而可能发生的错误。
 ## 3.4系统流程和逻辑
-![](/images/0100stringboot/0133springboot/blog.001.png)
+![](/images/0100wxapp//blog.001.png)
 
 图3-3登录流程图
 
-![](/images/0100stringboot/0133springboot/blog.002.png)
+![](/images/0100wxapp//blog.002.png)
 
 图3-4修改密码流程图
 
@@ -140,13 +139,13 @@ SpringBoot可以与经典的Java开发工具一起使用或者作为命令行工
 ## 4.1概述
 本系统采用B/S结构(Browser/Server,浏览器/服务器结构)和基于Web服务两种模式，是一个适用于Internet环境下的模型结构。只要用户能连上Internet,便可以在任何时间、任何地点使用。系统工作原理图如图4-1所示：
 
-![](/images/0100stringboot/0133springboot/blog.003.png)
+![](/images/0100wxapp//blog.003.png)
 
 图4-1系统工作原理图
 ## 4.2系统结构
 本系统是基于B/S架构的网站系统，设计的功能结构图如下图所示：
 
-![](/images/0100stringboot/0133springboot/blog.004.png)
+![](/images/0100wxapp//blog.004.png)
 
 图4-2功能结构图
 
@@ -158,19 +157,19 @@ SpringBoot可以与经典的Java开发工具一起使用或者作为命令行工
 
 （1）管理员信息的实体属性图如下：
 
-![](/images/0100stringboot/0133springboot/blog.005.png)
+![](/images/0100wxapp//blog.005.png)
 
 图4.12  管理员信息实体属性图
 
 （2）用户信息实体属性图如图4.13所示：
 
-![](/images/0100stringboot/0133springboot/blog.006.png)
+![](/images/0100wxapp//blog.006.png)
 
 图4.13  用户信息实体属性图
 
 （3）试卷信息实体属性图如图4.14所示：
 
-![](/images/0100stringboot/0133springboot/blog.007.png)
+![](/images/0100wxapp//blog.007.png)
 
 图4.14 试卷信息实体属性图
 ### 4.3.2数据库设计表
@@ -366,45 +365,45 @@ SpringBoot可以与经典的Java开发工具一起使用或者作为命令行工
 ### 5.1.1 用户信息管理
 英语知识应用网站的系统管理员可以对用户信息添加修改删除以及查询操作。具体界面的展示如图5.1所示。
 
-![](/images/0100stringboot/0133springboot/blog.009.png)
+![](/images/0100wxapp//blog.009.png)
 
 图5.1 用户信息管理界面
 ### 5.1.2 在线学习管理
 系统管理员可以对在线学习信息进行添加，修改，删除以及查询操作。具体界面如图5.2所示。
 
-![](/images/0100stringboot/0133springboot/blog.010.png)
+![](/images/0100wxapp//blog.010.png)
 
 图5.2 在线学习信息管理界面
 ### 5.1.3 学习技巧管理
 系统管理员可以对学习技巧信息进行添加，修改，删除以及查询操作。界面如下图所示：
 
-![](/images/0100stringboot/0133springboot/blog.011.png)
+![](/images/0100wxapp//blog.011.png)
 
 图5.3 学习技巧信息管理界面
 ### 5.1.4 培训信息管理
 系统管理员可以对培训信息进行添加修改删除操作。界面如下图所示：
 
-![](/images/0100stringboot/0133springboot/blog.012.png)
+![](/images/0100wxapp//blog.012.png)
 
 图5.4 培训信息管理界面
 
 ### 5.1.5 培训报名管理
 管理员可以查看用户培训报名信息状态，并且可以审核操作。界面如下图所示：
 
-![](/images/0100stringboot/0133springboot/blog.013.png)
+![](/images/0100wxapp//blog.013.png)
 
 图5.5 培训报名界面
 ### 5.1.6 试卷信息管理
 管理员可以对试卷信息进行添加修改删除操作。界面如下图所示：
 
-![](/images/0100stringboot/0133springboot/blog.014.png)
+![](/images/0100wxapp//blog.014.png)
 
 图5.6 试卷信息界面
 ### 5.1.7 试题信息管理
 管理员可以对试题信息进行添加修改删除操作。界面如下图所示：
 
 
-![](/images/0100stringboot/0133springboot/blog.015.png)
+![](/images/0100wxapp//blog.015.png)
 
 图5.7 试题信息管理界面
 
@@ -412,20 +411,20 @@ SpringBoot可以与经典的Java开发工具一起使用或者作为命令行工
 ### 5.3.1 学习技巧
 用户登录后可以查看学习技巧。界面如下图所示：
 
-![](/images/0100stringboot/0133springboot/blog.016.png)
+![](/images/0100wxapp//blog.016.png)
 
 图5.8 学习技巧界面
 ### 5.3.2 培训信息
 用户可以在首页查看培训信息。界面如下图所示：
 
-![](/images/0100stringboot/0133springboot/blog.017.png)
+![](/images/0100wxapp//blog.017.png)
 
 图5.9 培训信息界面
 ### 5.3.3 参加考试
 用户登录后可以在试卷管理界面进行参加考试。界面如下图所示：
 
 
-![](/images/0100stringboot/0133springboot/blog.018.png)
+![](/images/0100wxapp//blog.018.png)
 
 图5.10 参加考试界面
 

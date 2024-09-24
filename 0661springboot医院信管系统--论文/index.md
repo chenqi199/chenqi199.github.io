@@ -1,17 +1,16 @@
 # 0661springboot医院信管系统--论文
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0661springboot医院信管系统--论文](https://github.com/GraduationProject-springboot/0661springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV14HerezEwW?p=18)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
 ## 1.1 课题背景
@@ -82,7 +81,7 @@ SpringBoot可以看做是Spring的加强版本，但实质上都是Spring的相�
 ## 2.3 B/S模式
 B/S结构是目前使用最多的结构模式，它可以使得系统的开发更加的简单，好操作，而且还可以对其进行维护。使用该结构时只需要在计算机中安装数据库，和一些很常用的浏览器就可以了。浏览器就会与数据库进行信息的连接，可以实现很多的功能，B/S结构是可以直接进行使用的，而且B/S结构在使用中极大的减少了工作的维护。基于B/S的软件，所有的数据库之间都是相互独立的，因此是非常安全的。因为基于B/S结构可以清楚的看到系统正在处理的业务，并且能够及时的让管理人员做出决策，这样就可以避免企业的损失。B/S结构的基本特点是集中式的管理模式，用户使用系统生成数据后，这些数据就可以存储到系统的数据库中，方便日后能够用到，这样就可以满足人们的所有的需求。
 
-![](/images/0600stringboot/0661springboot/blog.007.png)
+![](/images/0600wxapp//blog.007.png)
 
 图2-1  B/S模式三层结构图
 ## 2.4MyEclipse环境配置
@@ -154,13 +153,13 @@ MySQLadmin -u root -p password 123
 
 （1）管理员用例图如下所示：
 
-![](/images/0600stringboot/0661springboot/blog.008.png)
+![](/images/0600wxapp//blog.008.png)
 
 图3-1管理员用例图
 
 （2）医生用例图如下所示：
 
-![](/images/0600stringboot/0661springboot/blog.009.png)
+![](/images/0600wxapp//blog.009.png)
 
 图3-2医生用例图
 ## 3.4 系统设计规则与运行环境
@@ -181,19 +180,19 @@ MySQLadmin -u root -p password 123
 ### 3.5.1操作流程
 系统登录流程图，如图所示：
 
-![](/images/0600stringboot/0661springboot/blog.010.png)
+![](/images/0600wxapp//blog.010.png)
 
 图3-3登录流程图
 ### 3.5.2添加信息流程
 添加信息流程图，如图所示：
 
-![](/images/0600stringboot/0661springboot/blog.011.png)
+![](/images/0600wxapp//blog.011.png)
 
 图3-4添加信息流程图
 ### 3.5.3删除信息流程
 删除信息流程图，如图所示：
 
-![](/images/0600stringboot/0661springboot/blog.012.png)
+![](/images/0600wxapp//blog.012.png)
 
 图3-5删除信息流程图
 
@@ -203,7 +202,7 @@ MySQLadmin -u root -p password 123
 ## 4.1 系统设计主要功能
 通过市场调研及咨询研究，了解了使用者及管理者的使用需求，于是制定了管理员，医生和用户等模块。其功能结构图如下图4-1所示：
 
-![](/images/0600stringboot/0661springboot/blog.013.png)
+![](/images/0600wxapp//blog.013.png)
 
 图4-1系统功能结构图
 ## 4.2 数据库设计
@@ -214,19 +213,19 @@ MySQLadmin -u root -p password 123
 ### 4.2.2 E-R图
 用户管理E-R图，如图4-2所示：
 
-![](/images/0600stringboot/0661springboot/blog.014.png)
+![](/images/0600wxapp//blog.014.png)
 
 ` `图4-2 用户管理E-R图
 
 医生管理E-R图，如图4-3所示：
 
-![](/images/0600stringboot/0661springboot/blog.015.png)
+![](/images/0600wxapp//blog.015.png)
 
 图4-3医生管理E-R图
 
 病房管理E-R图如图4-4所示。
 
-![](/images/0600stringboot/0661springboot/blog.016.png)
+![](/images/0600wxapp//blog.016.png)
 
 图4-4病房管理E-R图
 
@@ -468,25 +467,25 @@ MySQLadmin -u root -p password 123
 ## 5.1  系统功能模块
 医院信管系统，在系统首页可以查看首页,医生信息、医院概况、个人中心、后台管理、在线客服等内容，并进行详细操作；如图5-1所示。
 
-![](/images/0600stringboot/0661springboot/blog.017.png)
+![](/images/0600wxapp//blog.017.png)
 
 图5-1系统首页界面图
 
 用户注册，在医院信管系统注册页面通过填写账号，密码，输入密码，姓名，手机，邮箱，身份证等内容进行注册操作，如图5-2所示。
 
-![](/images/0600stringboot/0661springboot/blog.018.png)
+![](/images/0600wxapp//blog.018.png)
 
 图5-2用户注册界面图
 
 医生信息；在医生信息页面中可以对医生工号，挂号须知，科室，职称，挂号费，就医流程，联系电话等内容进行操作；如图5-3所示。
 
-![](/images/0600stringboot/0661springboot/blog.019.png)
+![](/images/0600wxapp//blog.019.png)
 
 图5-3医生信息界面图
 
 个人中心；在个人中心页面中可以对账号，密码，姓名，性别，手机，邮箱身份证号等内容进行操作；还可以对我的收藏进行详细操作；如图5-4所示。
 
-![](/images/0600stringboot/0661springboot/blog.020.png)
+![](/images/0600wxapp//blog.020.png)
 
 图5-4个人中心界面图
 
@@ -494,74 +493,74 @@ MySQLadmin -u root -p password 123
 
 管理员登录进入医院信管系统可以查看首页，个人中心，用户管理，医生管理，科室管理，医生信息管理，挂号信息管理，取消挂号管理，问诊记录管理，病房管理，药房管理，管理员管理等功能进行详细操作，如图5-5所示。
 
-![](/images/0600stringboot/0661springboot/blog.021.png)
+![](/images/0600wxapp//blog.021.png)
 
 图5-5管理员功能界面图
 
 用户管理；在用户管理页面中可以对索引，账号，姓名，性别，手机，邮箱，身份证等内容进行详情，修改和删除操作；如图5-6所示。
 
-![](/images/0600stringboot/0661springboot/blog.022.png)
+![](/images/0600wxapp//blog.022.png)
 
 图5-6用户管理界面图
 
 医生管理；在医生管理页面中可以对索引，医生工号，医生姓名，科室，职称，性别，医龄，联系电话，照片等内容进行详情，医生信息，修改和删除操作；如图5-7所示。
 
-![](/images/0600stringboot/0661springboot/blog.023.png)
+![](/images/0600wxapp//blog.023.png)
 
 图5-7医生管理界面图
 
 科室管理；在科室管理页面中可以对科室内容进行修改和删除操作；如图5-8所示。
 
-![](/images/0600stringboot/0661springboot/blog.024.png)
+![](/images/0600wxapp//blog.024.png)
 
 图5-8科室管理界面图
 
 医生信息管理；在医生信息管理页面中可以对索引，医生工号，医生姓名，挂号须知，科室，职称，挂号费，联系电话，照片等内容进行详情，挂号，修改，查看评论和删除操作；如图5-9所示。
 
-![](/images/0600stringboot/0661springboot/blog.025.png)
+![](/images/0600wxapp//blog.025.png)
 
 图5-9医生信息管理界面图
 
 取消挂号；在取消挂号管理页面中可以对索引，预约编号，医生工号，医生姓名，科室，预约时间，职称，挂号费，联系电话，账号，姓名，手机，原因，取消时间，审核回复，审核状态，审核等内容进行详情，修改和删除操作；如图5-10所示。
 
-![](/images/0600stringboot/0661springboot/blog.026.png)
+![](/images/0600wxapp//blog.026.png)
 
 图5-10取消挂号管理界面图
 
 问诊记录；在问诊记录管理页面中可以对索引，预约编号，账号，姓名，手机，身份证，药物过敏，检查报告，备注，就诊时间，医生工号，医生姓名，职称，科室，登记时间等内容进行详情，修改和删除操作；如图5-11所示。
 
-![](/images/0600stringboot/0661springboot/blog.027.png)
+![](/images/0600wxapp//blog.027.png)
 
 图5-11问诊记录管理界面图
 
 病房；在病房管理页面中可以对索引，病房号，病床数，病房位置，空闲床位，科室等进行相应的操作管理；如图5-12所示。
 
-![](/images/0600stringboot/0661springboot/blog.028.png)
+![](/images/0600wxapp//blog.028.png)
 
 图5-12病房管理界面图
 
 ## 5.3  医生功能模块
 医生登录进入医院信管系统可以查看首页，个人中心，挂号信息管理，取消挂号管理，问诊记录管理等功能，并进行详细操作，如图5-13所示。
 
-![](/images/0600stringboot/0661springboot/blog.029.png)
+![](/images/0600wxapp//blog.029.png)
 
 图5-13医生功能界面图
 
 挂号信息；在挂号信息页面通过对索引，预约编号，医生工号，医生姓名，科室，职称，挂号费，预约时间，联系电话，账号，姓名，手机，挂号时间，是否支付等进行修改操作；如图5-14所示。
 
-![](/images/0600stringboot/0661springboot/blog.030.png)
+![](/images/0600wxapp//blog.030.png)
 
 图5-14挂号管理界面图
 
 取消挂号管理；在取消挂号管理页面中可以查看索引，预约编号，医生工号，医生姓名，科室，预约时间，职称，挂号费，联系电话，账号，姓名，手机，原因，取消时间，审核回复，审核状态，审核等详细内容；如图5-15所示。
 
-![](/images/0600stringboot/0661springboot/blog.031.png)
+![](/images/0600wxapp//blog.031.png)
 
 图5-15取消挂号管理界面图
 
 问诊记录；在问诊记录管理页面中可以查看索引，预约编号，账号，姓名，手机，身份证，药物过敏，检查报告，备注，就诊时间，医生工号，医生姓名，职称，科室，登记时间等详细内容；如图5-16所示。
 
-![](/images/0600stringboot/0661springboot/blog.032.png)
+![](/images/0600wxapp//blog.032.png)
 
 图5-16问诊记录管理界面图
 #

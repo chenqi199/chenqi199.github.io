@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer" />
+        <meta name="robots" content="noodp" />
+        <title>ssm109基于jsp的网上手机商城&#43;jsp - chenqi blog</title><meta name="Description" content="Hugo theme - chenqi"><meta property="og:url" content="https://chenqi199.github.io/ssm109%E5%9F%BA%E4%BA%8Ejsp%E7%9A%84%E7%BD%91%E4%B8%8A%E6%89%8B%E6%9C%BA%E5%95%86%E5%9F%8E-jsp/">
+  <meta property="og:site_name" content="chenqi blog">
+  <meta property="og:title" content="ssm109基于jsp的网上手机商城&#43;jsp">
+  <meta property="og:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm109基于jsp的网上手机商城&#43;jsp github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第一章 绪 论 1.1背景及意义 系">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-12-02T10:32:46+08:00">
+    <meta property="article:modified_time" content="2023-12-02T10:32:46+08:00">
+    <meta property="article:tag" content="Ssm网上">
+    <meta property="article:tag" content="网上手机">
+    <meta property="article:tag" content="手机商城">
+    <meta property="og:image" content="https://chenqi199.github.io/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chenqi199.github.io/logo.png">
+  <meta name="twitter:title" content="ssm109基于jsp的网上手机商城&#43;jsp">
+  <meta name="twitter:description" content="项目清单 包安装运行 官网地址 http://chenqi1990.site ssm109基于jsp的网上手机商城&#43;jsp github 项目仓库 开源仅有后端代码 点击播放视频 ▼ 第一章 绪 论 1.1背景及意义 系">
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chenqi199.github.io/ssm109%E5%9F%BA%E4%BA%8Ejsp%E7%9A%84%E7%BD%91%E4%B8%8A%E6%89%8B%E6%9C%BA%E5%95%86%E5%9F%8E-jsp/" /><link rel="prev" href="https://chenqi199.github.io/0104springboot%E5%9F%BA%E4%BA%8E%E4%BF%9D%E4%BF%A1%E6%81%AF%E5%AD%A6%E7%A7%91%E5%B9%B3%E5%8F%B0%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" /><link rel="next" href="https://chenqi199.github.io/ssm108%E5%86%9C%E4%B8%9A%E8%A7%86%E9%A2%91%E5%AE%9E%E6%97%B6%E5%8F%91%E5%B8%83%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1-jsp/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "ssm109基于jsp的网上手机商城+jsp",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chenqi199.github.io\/ssm109%E5%9F%BA%E4%BA%8Ejsp%E7%9A%84%E7%BD%91%E4%B8%8A%E6%89%8B%E6%9C%BA%E5%95%86%E5%9F%8E-jsp\/"
+        },"image": ["https:\/\/chenqi199.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "ssm网上, 网上手机, 手机商城","wordcount":  7331 ,
+        "url": "https:\/\/chenqi199.github.io\/ssm109%E5%9F%BA%E4%BA%8Ejsp%E7%9A%84%E7%BD%91%E4%B8%8A%E6%89%8B%E6%9C%BA%E5%95%86%E5%9F%8E-jsp\/","datePublished": "2023-12-02T10:32:46+08:00","dateModified": "2023-12-02T10:32:46+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/chenqi199.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "chenqi"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="选择语言">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/ssm109%E5%9F%BA%E4%BA%8Ejsp%E7%9A%84%E7%BD%91%E4%B8%8A%E6%89%8B%E6%9C%BA%E5%95%86%E5%9F%8E-jsp/" selected>简体中文</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="chenqi blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>chenqi Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/ssm109%E5%9F%BA%E4%BA%8Ejsp%E7%9A%84%E7%BD%91%E4%B8%8A%E6%89%8B%E6%9C%BA%E5%95%86%E5%9F%8E-jsp/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">ssm109基于jsp的网上手机商城+jsp</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="chenqi199" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>chenqi</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-12-02">2023-12-02</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 7331 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 15 分钟&nbsp;<span id="/ssm109%E5%9F%BA%E4%BA%8Ejsp%E7%9A%84%E7%BD%91%E4%B8%8A%E6%89%8B%E6%9C%BA%E5%95%86%E5%9F%8E-jsp/" class="leancloud_visitors" data-flag-title="ssm109基于jsp的网上手机商城&#43;jsp">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects">github 项目仓库</a> 开源仅有后端代码</a></li>
+        <li><a href="#点击播放视频-">点击播放视频 ▼</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#21-jsp技术介绍">2.1 JSP技术介绍</a></li>
+    <li><a href="#22-java简介">2.2 JAVA简介</a></li>
+    <li><a href="#23-eclipse-开发环境">2.3 ECLIPSE 开发环境</a></li>
+    <li><a href="#24-tomcat服务器">2.4 Tomcat服务器</a></li>
+    <li><a href="#25-mysql数据库">2.5 MySQL数据库</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#31-系统设计目标">3.1 系统设计目标</a></li>
+    <li><a href="#32-系统可行性分析">3.2 系统可行性分析</a></li>
+    <li><a href="#33-系统功能分析和描述">3.3 系统功能分析和描述</a></li>
+    <li><a href="#34系统uml用例分析">3.4系统UML用例分析</a>
+      <ul>
+        <li><a href="#341管理员用例">3.4.1管理员用例</a></li>
+        <li><a href="#342用户用例">3.4.2用户用例</a></li>
+      </ul>
+    </li>
+    <li><a href="#35系统流程分析">3.5系统流程分析</a>
+      <ul>
+        <li><a href="#352添加信息流程">3.5.2添加信息流程</a></li>
+        <li><a href="#351操作流程">3.5.1操作流程</a></li>
+        <li><a href="#353删除信息流程">3.5.3删除信息流程</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#41-系统体系结构">4.1 系统体系结构</a></li>
+    <li><a href="#42-数据库设计原则">4.2 数据库设计原则</a></li>
+    <li><a href="#43-数据表">4.3 数据表</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#51用户功能模块">5.1用户功能模块</a></li>
+    <li><a href="#52管理员功能模块">5.2管理员功能模块</a></li>
+    <li><a href="#heading"></a></li>
+    <li><a href="#53前台首页功能模块">5.3前台首页功能模块</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="项目清单-包安装运行httpchenqi1990site-官网地址-httpchenqi1990site"><a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">项目清单 包安装运行</a> 官网地址 <a href="http://chenqi1990.site" target="_blank" rel="noopener noreffer ">http://chenqi1990.site</a></h1>
+<h1 id="ssm109基于jsp的网上手机商城jsphttpsgithubcomgraduationproject-springboot"><a href="https://github.com/GraduationProject-springboot/" target="_blank" rel="noopener noreffer ">ssm109基于jsp的网上手机商城+jsp</a></h1>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        data-srcset="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 1.5x, https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png"
+        title="picture" /></p>
+<h3 id="github-项目仓库httpsgithubcomgraduationproject-springbootallspringbootprojects-开源仅有后端代码"><a href="https://github.com/GraduationProject-springboot/allSpringbootProjects" target="_blank" rel="noopener noreffer ">github 项目仓库</a> 开源仅有后端代码</h3>
+<h3 id="点击播放视频-">点击播放视频 ▼</h3>
+<p><a href="https://www.bilibili.com/video/BV1T48XecE9G?p=105" target="_blank" rel="noopener noreffer "><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.sstatic.net/Vp2cE.png"
+        data-srcset="https://i.sstatic.net/Vp2cE.png, https://i.sstatic.net/Vp2cE.png 1.5x, https://i.sstatic.net/Vp2cE.png 2x"
+        data-sizes="auto"
+        alt="https://i.sstatic.net/Vp2cE.png"
+        title="Watch the video" /></a></p>
+<h1 id="第一章-绪-论">第一章 绪 论</h1>
+<p>1.1背景及意义</p>
+<p>系统管理也都将通过计算机进行整体智能化操作，对于网上手机商城所牵扯的管理及数据保存都是非常多的，例如管理员；主页、个人中心、用户管理、商品分类管理、商品信息管理、系统管理、订单管理，用户；主页、个人中心、我的收藏管理、订单管理，前台首页；商品信息、新闻资讯、我的、跳转到后台、购物车等，这给管理者的工作带来了巨大的挑战，面对大量的信息，传统的管理系统，都是通过笔记的方式进行详细信息的统计，后来出现电脑，通过电脑输入软件将纸质的信息统计到电脑上，这种方式比较传统，而且想要统计数据信息比较麻烦，还受时间和空间的影响，所以为此开发了网上手机商城；为用户提供了方便管理平台，方便管理员查看及维护，并且可以通过需求进行商品信息内容的编辑及维护等；对于用户而言，可以随时进行查看商品分类和订单信息等，管理员可以足不出户就可以获取到系统的数据信息等，而且还能节省用户很多时间，所以开发网上手机商城给管理者带来了很大的方便，同时也方便管理员对用户信息进行处理。</p>
+<p>本论文网上手机商城主要牵扯到的程序，数据库与计算机技术等。覆盖知识面大，可以大大的提高工作人员的效率。</p>
+<p>1.2国内外研究概况</p>
+<p>随着国内经济形势的不断发展，中国互联网进入了一个难得的高峰发展时期，这使得中外资本家纷纷转向互联网市场。 然而，许多管理领域的不合理结构，人员不足以及市场管理需求的增加使得更多的人具备了互联网管理的意识。</p>
+<p>在当今高度发达的信息中，信息管理改革已成为一种更加广泛和全面的趋势。 “网上手机商城”是基于Mysql数据库，在JSP程序设计的基础上实现的。为确保中国经济的持续发展，信息时代日益更新，同时，随着信息社会的快速发展，各种管理系统面临着越来越多的数据需要处理，如何用方便快捷的方式使管理者在广阔的数据海洋里面查询、存储、管理和共享有效的数据信息，对我们的学习，工作和生活具有重要的现实意义。因此，国内外学术界对此进行了深入而广泛的研究，一个新的研究领域——网上手机商城诞生了。</p>
+<p>28</p>
+<p>1.3 研究的内容</p>
+<p>目前许多人仍将传统的纸质工具作为信息管理的主要工具，而网络技术的应用只是起到辅助作用。在对网络工具的认知程度上，较为传统的office软件等仍是人们使用的主要工具，而相对全面且专业的信息管理软件仍没有得到大多数人的了解或认可。本选题则旨在通过标签分类管理等方式，实现网上手机商城的各种功能，从而达到对网上手机商城的管理。</p>
+<p>详细内容介绍，将在以下六章中详细阐述：</p>
+<p>第一章、绪论，介绍了研究课题选择的背景及意义、研究现状，简要介绍了本文的章节内容。</p>
+<p>第二章、引入技术知识，通过引入关键技术进行开发，向系统中涉及直观表达的技术知识。</p>
+<p>第三章、重点分析了系统的分析，从系统强大的供需市场出发，对系统开发的可行性，系统流程以及系统性能和功能进行了探讨。</p>
+<p>第四章、介绍了系统的详细设计方案，包括系统结构设计和数据库设计。</p>
+<p>第五章、系统设计的实现，通过对系统功能设计的详细说明，论证了系统的结构。</p>
+<p>第六章、系统的整体测试，评判系统是否可以上线运行。</p>
+<h1 id="第二章-关键技术的研究">第二章 关键技术的研究</h1>
+<h2 id="21-jsp技术介绍">2.1 JSP技术介绍</h2>
+<p>JSP技术本身是一种脚本语言，但它的功能是十分强大的，因为它可以使用所有的JAVA类。当它与JavaBeans 类进行结合时，它可以使显示逻辑和内容分开，这就极大的方便了用户的需求。JavaBeans 可以对JSP技术的程序进行扩展，从而形成新的应用程序，而且JavaBeans的代码可以重复使用，所以就便于对程序进行维护。JavaBean 组件有内部的接口，可以帮助不同的人对系统进行访问。1999年，Sun微系统公司正式推出了JSP技术，这是一种动态技术，是基于整个JAVA体系和JavaServlet提出的，是具有普遍适用性的WEB技术，也是本系统设计的核心技术之一。JSP技术能够极大的提高WEB网页的运行速度。这些内容会与脚本结合，并且由JavaBean和Servlet组件封装。所有的脚本均在服务器端运行，JSP引擎会针对客户端所 提交的申请进行解释，然后生成脚本程序和JSP标识，然后通过HTML/XML页面将结果反馈给浏览器。因此，开发人员亲自设计最终页面的格式和HTML/XML标识时，完全可以使用JSP技术。</p>
+<p>所以结合网上手机商城的需求及功能模块的实现，使用JSP技术是最合适的，而且JSP的拓展性比较好，对于系统在后期使用过程中可以不断对系统功能进行拓展，是系统更完成，更方便的满足用户管理。</p>
+<h2 id="22-java简介">2.2 JAVA简介</h2>
+<p>Java主要采用CORBA技术和安全模型，可以在互联网应用的数据保护。它还提供了对EJB（Enterprise JavaBeans）的全面支持，java servlet API，JSP（java server pages），和XML技术。JAVA语言是一种面向对象的语言，它通过提供最基本的方法来完成指定的任务，开发者只需要知道一些概念就能够编写出一些应用程序。Java程序相对较小，其代码能够在小机器上运行。Java是一种计算机编程语言，具有封装、继承和多态性三个主要特性，广泛应用于企业Web应用程序开发和移动应用程序开发。</p>
+<p>Java语言和一般编译器以及直译的区别在于，Java首先将源代码转换为字节码，然后将其转换为JVM的可执行文件，JVM可以在各种不同的JVM上运行。因此，实现了它的跨平台特性。虽然这使得Java在早期非常缓慢，但是随着Java的开发，它已经得到了改进。</p>
+<h2 id="23-eclipse-开发环境">2.3 ECLIPSE 开发环境</h2>
+<p>ECLIPSE 支持广泛、兼容性高并且功能强大，是一个Eclipse 插件集合，普遍适应于JAVA和J2EE的系统开发，支持 JDBC，Hibernate，AJAX，Struts，Java Servlet，Spring，EJB3等市面上存在的几乎所有数据库链接工具和主流Eclipse产品 开发工具。</p>
+<p>ECLIPSE 在业内是所熟知的开发工具，该平台在开发的过程中运用的就是该工具。ECLIPSE 又被称之为企业级的工作平台，它是以Eclipse IDE为基础的。ECLIPSE 可以帮助我们进行数据库的研发和J2EE的使用，除此之外，还可以提高系统的运营能力，这突出表现在服务器的整合过程中。ECLIPSE 的功能相当完备，能够为J2EE的集成提供必要的环境支持，从而完成编码、测试、调试及发布等功能。它可以支持JSP，HTML，SQL，Javascript，Struts， CSS等。</p>
+<h2 id="24-tomcat服务器">2.4 Tomcat服务器</h2>
+<p>Tomcat属于一种轻型的服务器，所以说在中小企业中并不具有普适性。但是当程序员需要开发或调试JSP 程序时，则通常会将该服务器作为首选。对于一个仅具有计算机基础知识的人来说，计算机系统具有一个好的Apache服务器，可以很好的对HTML 页面进行访问。Tomcat 虽然是Apache的扩展，但是它们都是可以独立运行的，二者是不互相干扰的。当配置正确的时候，Apache服务器为HTML 页面的运行提供技术支持，Tomcat 的任务则是运行Servle和JSP 页面。Tomca也具有一定的HTML页面处理功能。</p>
+<h2 id="25-mysql数据库">2.5 MySQL数据库</h2>
+<p>数据库是系统开发过程中不可或缺的一部分。在WEB应用方面，MySQL AB开发了一个具有很大优势的MySQL关系数据库管理系统。 MySQL可以将数据存储在不同的表中，这非常灵活，并且还可以提高系统在实际应用中的速度。数据库访问最常用于标准SQL语言，MySQL用于SQL语言，因此它具有高度兼容性。数据库的操作是必不可少的，包括对数据库表的增加、删除、修改、查询等功能。现如今，数据库可以分为关系型数据库和非关系型数据库，Mysql属于关系性数据库，Mysql数据库是一款小型的关系型数据库，它以其自身特点：体积小、速度快、成本低等，Mysql数据库是目前最受欢迎的开源数据库。</p>
+<p>在WEB应用技术中， Mysql数据库支持不同的操作系统平台，虽然在不同平台下的安装和配置都不相同，但是差别也不是很大，Mysql在Windows平台下两种安装方式，二进制版和免安装版。安装完Mysql数据库之后，需要启动服务进程，相应的客户端就可以连接数据库，客户端可通过命令行或者图形界面工具登录数据库。</p>
+<h1 id="第三章-系统分析">第三章 系统分析</h1>
+<h2 id="31-系统设计目标">3.1 系统设计目标</h2>
+<p>网上手机商城主要是为了用户方便对商品信息的了解以及查看商品分类和查看订单信息，也是为了更好的让管理员进行更好存储所有数据信息及快速方便的检索功能，对系统的各个模块是通过许多今天的发达系统做出合理的分析来确定考虑用户的可操作性，遵循开发的系统优化的原则，经过全面的调查和研究。</p>
+<p>系统所要实现的功能分析，对于现在网络方便的管理，根据自己的需求可以进行查看商品信息、新闻资讯、我的、跳转到后台、购物车等，这样既能节省用户的时间，不用在像传统的方式，需要查询，由于很多用户的时间原因，没有办法去相关实体店了解信息，真的很难去满足用户的各种需求。所以网上手机商城的开发不仅仅是能满足用户的需求，还能提高管理员的工作效率，减少原有不必要的工作量。</p>
+<h2 id="32-系统可行性分析">3.2 系统可行性分析</h2>
+<p>系统的开发环境和配置都是可以自行安装的，系统使用JSP开发工具，使用比较成熟的Mysql数据库进行对系统用户和管理员之间相关的数据交互，根据技术语言对数据库，结合需求进行修改维护，可以使得系统运行更具有稳定性和安全性，从而完成实现系统的开发。</p>
+<p>（1）硬件可行性分析</p>
+<p>网上手机商城及信息分析的设计对于所使用的计算机没有什么硬性的要求，计算机只要可以正常的使用进行代码的编写及页面设计就可行，主要是对于服务器有些要求，对于平台搭建完成要上传的服务器是有一定的要求的，服务器必须选择安全性比较高的，然后就是在打开系统必须顺畅，不能停顿太长时间；性价比高；安全性高。</p>
+<p>（2）软件可行性分析</p>
+<p>开发整个系统使用的是云计算，流量的可扩展性和基于流量的智能调整云计算的优点就是流量的可扩展性和基于流量的智能调整，保障系统的安全及数据信息的及时备份。</p>
+<p>因此，我们从两个方面进行了可行性研究，可以看出系统的开发没有问题。</p>
+<h2 id="33-系统功能分析和描述">3.3 系统功能分析和描述</h2>
+<p>使用网上手机商城的用户分管理员和用户两个角色的权限子模块。</p>
+<p>管理员所能使用的功能主要有：主页、个人中心、用户管理、商品分类管理、商品信息管理、系统管理、订单管理等。</p>
+<p>用户可以实现主页、个人中心、我的收藏管理、订单管理等。</p>
+<p>前台首页可以实现商品信息、新闻资讯、我的、跳转到后台、购物车等。</p>
+<h2 id="34系统uml用例分析">3.4系统UML用例分析</h2>
+<h3 id="341管理员用例">3.4.1管理员用例</h3>
+<p>管理员登录后可进行主页、个人中心、用户管理、商品分类管理、商品信息管理、系统管理、订单管理，管理员的用例如图3-1所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm109/blog.002.png"
+        data-srcset="/images/0100ssm/ssm109/blog.002.png, /images/0100ssm/ssm109/blog.002.png 1.5x, /images/0100ssm/ssm109/blog.002.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm109/blog.002.png"
+        title="/images/0100ssm/ssm109/blog.002.png" /></p>
+<p>图3-1 管理员用例图</p>
+<h3 id="342用户用例">3.4.2用户用例</h3>
+<p>用户注册登录后可进行主页、个人中心、我的收藏管理、订单管理，用户用例如图3-2所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm109/blog.003.png"
+        data-srcset="/images/0100ssm/ssm109/blog.003.png, /images/0100ssm/ssm109/blog.003.png 1.5x, /images/0100ssm/ssm109/blog.003.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm109/blog.003.png"
+        title="/images/0100ssm/ssm109/blog.003.png" /></p>
+<p>图3-2 用户用例图</p>
+<h2 id="35系统流程分析">3.5系统流程分析</h2>
+<h3 id="352添加信息流程">3.5.2添加信息流程</h3>
+<p>添加信息,编号系统使用自动编号模式,没有用户填写,用户添加信息输入信息,系统将自动确认的信息和数据,验证的成功是有效的信息添加到数据库,信息无效,重新输入信息。添加信息流程如图3-4所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm109/blog.004.png"
+        data-srcset="/images/0100ssm/ssm109/blog.004.png, /images/0100ssm/ssm109/blog.004.png 1.5x, /images/0100ssm/ssm109/blog.004.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm109/blog.004.png"
+        title="/images/0100ssm/ssm109/blog.004.png" /></p>
+<p>图3-4 添加信息流程图</p>
+<h3 id="351操作流程">3.5.1操作流程</h3>
+<p>用户想进入系统，首先进入系统登录界面，通过正确的用户名、密码，选择登录类型登录，系统会检查登录信息，信息正确，然后输入相应的功能界面，提示信息错误，登录失败。系统操作流程如图3-3所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm109/blog.005.png"
+        data-srcset="/images/0100ssm/ssm109/blog.005.png, /images/0100ssm/ssm109/blog.005.png 1.5x, /images/0100ssm/ssm109/blog.005.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm109/blog.005.png"
+        title="/images/0100ssm/ssm109/blog.005.png" /></p>
+<p>图3-3操作流程图</p>
+<h3 id="353删除信息流程">3.5.3删除信息流程</h3>
+<p>用户选择要删除的信息并单击Delete按钮。系统提示是否删除信息。如果用户想要删除信息，系统将删除信息。系统数据库删除信息。删除信息流程图如图3-5所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm109/blog.006.png"
+        data-srcset="/images/0100ssm/ssm109/blog.006.png, /images/0100ssm/ssm109/blog.006.png 1.5x, /images/0100ssm/ssm109/blog.006.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm109/blog.006.png"
+        title="/images/0100ssm/ssm109/blog.006.png" /></p>
+<p>图3-5 删除信息流程图</p>
+<h1 id="第四章-系统设计">第四章 系统设计</h1>
+<h2 id="41-系统体系结构">4.1 系统体系结构</h2>
+<p>网上手机商城的结构图4-1所示：</p>
+<p>网</p>
+<p>络</p>
+<p>用户</p>
+<p>服务器和程序</p>
+<p>管理员</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm109/blog.007.png"
+        data-srcset="/images/0100ssm/ssm109/blog.007.png, /images/0100ssm/ssm109/blog.007.png 1.5x, /images/0100ssm/ssm109/blog.007.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm109/blog.007.png"
+        title="/images/0100ssm/ssm109/blog.007.png" /></p>
+<p>图4-1  系统结构</p>
+<p>模块包括主界面，主页、个人中心、用户管理、商品分类管理、商品信息管理、系统管理、订单管理等进行相应的操作。</p>
+<p>登录系统结构图，如图4-2所示：</p>
+<p>Y</p>
+<p>网上手机商城登录界面</p>
+<p>用户登录</p>
+<p>密码正确</p>
+<p>管理员界面</p>
+<p>用户界面</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm109/blog.008.png"
+        data-srcset="/images/0100ssm/ssm109/blog.008.png, /images/0100ssm/ssm109/blog.008.png 1.5x, /images/0100ssm/ssm109/blog.008.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm109/blog.008.png"
+        title="/images/0100ssm/ssm109/blog.008.png" /></p>
+<p>图4-2 登录结构图</p>
+<p>这些功能可以充分满足网上手机商城的需求。此系统功能较为全面如下图系统功能结构如图4-4所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm109/blog.009.png"
+        data-srcset="/images/0100ssm/ssm109/blog.009.png, /images/0100ssm/ssm109/blog.009.png 1.5x, /images/0100ssm/ssm109/blog.009.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm109/blog.009.png"
+        title="图片1" /></p>
+<p>图4-4系统功能结构图</p>
+<h2 id="42-数据库设计原则">4.2 数据库设计原则</h2>
+<p>每个数据库的应用它们都是和区分开的，当运行到一定的程序当中，它就会与自己相关的协议与客户端进行通讯。那么这个系统就会对使这些数据进行连接。当我们选择哪个桥段的时候，接下来就会简单的叙述这个数据库是如何来创建的。当点击完成按钮的时候就会自动在对话框内弹出数据源的名称，在进行点击下一步即可，直接在输入相对应的身份验证和登录密码。</p>
+<p>网上手机商城的数据流程：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm109/blog.010.jpeg"
+        data-srcset="/images/0100ssm/ssm109/blog.010.jpeg, /images/0100ssm/ssm109/blog.010.jpeg 1.5x, /images/0100ssm/ssm109/blog.010.jpeg 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm109/blog.010.jpeg"
+        title="111111111" /></p>
+<p>图4-5  系统数据流程图</p>
+<p>商品信息实体E-R图，如图4.6所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm109/blog.011.png"
+        data-srcset="/images/0100ssm/ssm109/blog.011.png, /images/0100ssm/ssm109/blog.011.png 1.5x, /images/0100ssm/ssm109/blog.011.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm109/blog.011.png"
+        title="/images/0100ssm/ssm109/blog.011.png" /></p>
+<p><code>    </code>图4.6商品信息E-R图</p>
+<p>用户信息E-R图，如图4.7所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm109/blog.012.png"
+        data-srcset="/images/0100ssm/ssm109/blog.012.png, /images/0100ssm/ssm109/blog.012.png 1.5x, /images/0100ssm/ssm109/blog.012.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm109/blog.012.png"
+        title="/images/0100ssm/ssm109/blog.012.png" /></p>
+<p>图4.7用户信息E-R图</p>
+<h2 id="43-数据表">4.3 数据表</h2>
+<p>将数据库概念设计的E-R图转换为关系数据库。在关系数据库中，数据关系由数据表组成，但是表的结构表现在表的字段上。</p>
+<p>表名：shangpinfenlei</p>
+<p>功能：商品分类</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名称</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">字段说明</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">主键</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">CURRENT_TIMESTAMP</td>
+</tr>
+<tr>
+<td style="text-align:center">shangpinfenlei</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">商品分类</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>表名：shangpinxinxi</p>
+<p>功能：商品信息</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名称</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">字段说明</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">主键</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">CURRENT_TIMESTAMP</td>
+</tr>
+<tr>
+<td style="text-align:center">shangpinbianhao</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">商品编号</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">shangpinmingcheng</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">商品名称</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">shangpinfenlei</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">商品分类</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">shuliang</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">数量</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">pinpai</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">品牌</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">guige</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">规格</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">xiangqing</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">详情</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">fengmian</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">封面</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">jifen</td>
+<td style="text-align:center">float</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">可获积分</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>表名：yonghu</p>
+<p>功能：用户</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段名称</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">字段说明</th>
+<th style="text-align:center">主键</th>
+<th style="text-align:center">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">bigint</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">主键</td>
+<td style="text-align:center">主键</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">addtime</td>
+<td style="text-align:center">timestamp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">创建时间</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">CURRENT_TIMESTAMP</td>
+</tr>
+<tr>
+<td style="text-align:center">yonghuzhanghao</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">用户账号</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">yonghuxingming</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">用户姓名</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">mima</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">密码</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">xingbie</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">性别</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">lianxidianhua</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">200</td>
+<td style="text-align:center">联系电话</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">dianziyouxiang</td>
+<td style="text-align:center">longtext</td>
+<td style="text-align:center">4294967295</td>
+<td style="text-align:center">电子邮箱</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">money</td>
+<td style="text-align:center">float</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">余额</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">jifen</td>
+<td style="text-align:center">float</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">积分</td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="第五章-系统实现">第五章 系统实现</h1>
+<h2 id="51用户功能模块">5.1用户功能模块</h2>
+<p>用户点击进入到系统操作界面，可以对主页、个人中心、我的收藏管理、订单管理等功能模块，我的收藏管理：通过列表可以获取用户ID、收藏ID、表名、收藏名称、收藏图片信息并进行修改操作，如图5-1所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm109/blog.013.png"
+        data-srcset="/images/0100ssm/ssm109/blog.013.png, /images/0100ssm/ssm109/blog.013.png 1.5x, /images/0100ssm/ssm109/blog.013.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm109/blog.013.png"
+        title="/images/0100ssm/ssm109/blog.013.png" /></p>
+<p>图5-1我的收藏管理界面图</p>
+<p>已支付订单列表：通过列表可以获取订单id、用户id、商品id、商品名称、商品图片、购买数量、价格/积分、折扣价格、总价格/总积分、折扣总价格、支付类型、状态、地址等信息，进行查看操作，如图5-2所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm109/blog.014.png"
+        data-srcset="/images/0100ssm/ssm109/blog.014.png, /images/0100ssm/ssm109/blog.014.png 1.5x, /images/0100ssm/ssm109/blog.014.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm109/blog.014.png"
+        title="/images/0100ssm/ssm109/blog.014.png" /></p>
+<p>图5-2已支付订单列表界面图</p>
+<p>已退款订单列表：通过列表可以获取订单id、用户id、商品id、商品名称、商品图片、购买数量、价格/积分、折扣价格、总价格/总积分、折扣总价格、支付类型、状态、地址等信息，进行查看、删除操作，如图5-3所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm109/blog.015.png"
+        data-srcset="/images/0100ssm/ssm109/blog.015.png, /images/0100ssm/ssm109/blog.015.png 1.5x, /images/0100ssm/ssm109/blog.015.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm109/blog.015.png"
+        title="/images/0100ssm/ssm109/blog.015.png" /></p>
+<p>图5-3已退款订单列表界面图</p>
+<p>已发货订单列表：通过列表可以获取订单id、用户id、商品id、商品名称、商品图片、购买数量、价格/积分、折扣价格、总价格/总积分、折扣总价格、支付类型、状态、地址等信息，进行查看操作，如图5-4所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm109/blog.016.png"
+        data-srcset="/images/0100ssm/ssm109/blog.016.png, /images/0100ssm/ssm109/blog.016.png 1.5x, /images/0100ssm/ssm109/blog.016.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm109/blog.016.png"
+        title="/images/0100ssm/ssm109/blog.016.png" /></p>
+<p>图5-4已发货订单列表界面图</p>
+<p>已完成订单列表：通过列表可以获取订单id、用户id、商品id、商品名称、商品图片、购买数量、价格/积分、折扣价格、总价格/总积分、折扣总价格、支付类型、状态、地址等信息，进行查看、删除操作，如图5-5所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm109/blog.017.png"
+        data-srcset="/images/0100ssm/ssm109/blog.017.png, /images/0100ssm/ssm109/blog.017.png 1.5x, /images/0100ssm/ssm109/blog.017.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm109/blog.017.png"
+        title="/images/0100ssm/ssm109/blog.017.png" /></p>
+<p>图5-5已完成订单列表界面图</p>
+<h2 id="52管理员功能模块">5.2管理员功能模块</h2>
+<h2 id="heading"></h2>
+<p>管理员通过用户名和密码填写完成后进行登录，如图5-6所示。管理员登录成功后进入到系统操作界面，可以对主页、个人中心、用户管理、商品分类管理、商品信息管理、系统管理、订单管理等功能模块进行相对应操作。</p>
+<p>个人中心：通过列表可以获取原密码、新密码、确认密码等内容，可以进行修改或删除操作，如图5-7所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm109/blog.018.png"
+        data-srcset="/images/0100ssm/ssm109/blog.018.png, /images/0100ssm/ssm109/blog.018.png 1.5x, /images/0100ssm/ssm109/blog.018.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm109/blog.018.png"
+        title="/images/0100ssm/ssm109/blog.018.png" /></p>
+<p>图5-6管理员登录页面</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm109/blog.019.png"
+        data-srcset="/images/0100ssm/ssm109/blog.019.png, /images/0100ssm/ssm109/blog.019.png 1.5x, /images/0100ssm/ssm109/blog.019.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm109/blog.019.png"
+        title="/images/0100ssm/ssm109/blog.019.png" /></p>
+<p>图5-7个人中心页面</p>
+<p>用户管理：通过列表可以获取用户账号、用户姓名、密码、性别、联系电话、电子邮箱、余额等信息，进行修改或删除操作，如图5-9所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm109/blog.020.png"
+        data-srcset="/images/0100ssm/ssm109/blog.020.png, /images/0100ssm/ssm109/blog.020.png 1.5x, /images/0100ssm/ssm109/blog.020.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm109/blog.020.png"
+        title="/images/0100ssm/ssm109/blog.020.png" /></p>
+<p>图5-9用户管理界面图</p>
+<p>商品分类管理：通过列表可以获取商品分类等信息，进行修改或删除操作，如图5-10所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm109/blog.021.png"
+        data-srcset="/images/0100ssm/ssm109/blog.021.png, /images/0100ssm/ssm109/blog.021.png 1.5x, /images/0100ssm/ssm109/blog.021.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm109/blog.021.png"
+        title="/images/0100ssm/ssm109/blog.021.png" /></p>
+<p>图5-10商品分类管理界面图</p>
+<p>商品信息管理：管理员通过列表可以获取商品编号、商品名称、商品分类、数量、品牌、规格、封面、价格、详情等信息，进行修改或删除操作，如图5-11所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm109/blog.022.png"
+        data-srcset="/images/0100ssm/ssm109/blog.022.png, /images/0100ssm/ssm109/blog.022.png 1.5x, /images/0100ssm/ssm109/blog.022.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm109/blog.022.png"
+        title="/images/0100ssm/ssm109/blog.022.png" /></p>
+<p>图5-11商品信息管理界面图</p>
+<p>轮播图；该页面为轮播图管理界面。管理员可以在此页面进行首页轮播图的管理，通过新建操作可在轮播图中加入新的图片，还可以对以上传的图片进行修改操作，以及图片的删除操作，如图5-12所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm109/blog.023.png"
+        data-srcset="/images/0100ssm/ssm109/blog.023.png, /images/0100ssm/ssm109/blog.023.png 1.5x, /images/0100ssm/ssm109/blog.023.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm109/blog.023.png"
+        title="/images/0100ssm/ssm109/blog.023.png" /></p>
+<p>图5-12轮播图管理界面图</p>
+<p>已完成订单：管理员通过列表可以获取订单id、用户id、商品id、商品名称、商品图片、购买数量、价格/积分、折扣价格、总价格/总积分、折扣总价格、支付类型、状态、地址等信息，进行修改或删除操作，如图5-14所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm109/blog.024.png"
+        data-srcset="/images/0100ssm/ssm109/blog.024.png, /images/0100ssm/ssm109/blog.024.png 1.5x, /images/0100ssm/ssm109/blog.024.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm109/blog.024.png"
+        title="/images/0100ssm/ssm109/blog.024.png" /></p>
+<p>图5-14已完成订单界面图</p>
+<p>已支付订单列表：管理员通过列表可以获取订单id、用户id、商品id、商品名称、商品图片、购买数量、价格/积分、折扣价格、总价格/总积分、折扣总价格、支付类型、</p>
+<p>状态、地址等信息，进行修改或删除操作，如图5-15所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm109/blog.025.png"
+        data-srcset="/images/0100ssm/ssm109/blog.025.png, /images/0100ssm/ssm109/blog.025.png 1.5x, /images/0100ssm/ssm109/blog.025.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm109/blog.025.png"
+        title="/images/0100ssm/ssm109/blog.025.png" /></p>
+<p>图5-15已支付订单列表界面图</p>
+<p>已完成订单列表：管理员通过列表可以获取订单id、用户id、商品id、商品名称、商品图片、购买数量、价格/积分、折扣价格、总价格/总积分、折扣总价格、支付类型、</p>
+<p>状态、地址等信息，进行修改或删除操作，如图5-16所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm109/blog.026.png"
+        data-srcset="/images/0100ssm/ssm109/blog.026.png, /images/0100ssm/ssm109/blog.026.png 1.5x, /images/0100ssm/ssm109/blog.026.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm109/blog.026.png"
+        title="/images/0100ssm/ssm109/blog.026.png" /></p>
+<p>图5-16已完成订单列表界面图</p>
+<h2 id="53前台首页功能模块">5.3前台首页功能模块</h2>
+<p><code> </code>网上手机商城，在网上手机商城可以查看商品信息、我的、跳转到后台、购物车等内容，如图5-17所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm109/blog.027.png"
+        data-srcset="/images/0100ssm/ssm109/blog.027.png, /images/0100ssm/ssm109/blog.027.png 1.5x, /images/0100ssm/ssm109/blog.027.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm109/blog.027.png"
+        title="/images/0100ssm/ssm109/blog.027.png" /></p>
+<p>图5-17系统首页界面图</p>
+<p>登录、注册，通过注册填写用户账号、用户姓名、密码、联系电话、电子邮箱等信息进行注册操作，如图5-18所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm109/blog.028.png"
+        data-srcset="/images/0100ssm/ssm109/blog.028.png, /images/0100ssm/ssm109/blog.028.png 1.5x, /images/0100ssm/ssm109/blog.028.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm109/blog.028.png"
+        title="/images/0100ssm/ssm109/blog.028.png" /></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm109/blog.029.png"
+        data-srcset="/images/0100ssm/ssm109/blog.029.png, /images/0100ssm/ssm109/blog.029.png 1.5x, /images/0100ssm/ssm109/blog.029.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm109/blog.029.png"
+        title="/images/0100ssm/ssm109/blog.029.png" /></p>
+<p>图5-18登录、注册界面图</p>
+<p>商品信息，在商品信息页面可以查看商品编号、价格、数量、品牌、规格等信息进行立即购买，如图5-19所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm109/blog.030.png"
+        data-srcset="/images/0100ssm/ssm109/blog.030.png, /images/0100ssm/ssm109/blog.030.png 1.5x, /images/0100ssm/ssm109/blog.030.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm109/blog.030.png"
+        title="/images/0100ssm/ssm109/blog.030.png" /></p>
+<p>图5-19商品信息界面图</p>
+<p>个人中心，在个人中心页面可以查看用户账号、用户姓名、密码、性别、联系电话、电子邮箱等如图5-20所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm109/blog.031.png"
+        data-srcset="/images/0100ssm/ssm109/blog.031.png, /images/0100ssm/ssm109/blog.031.png 1.5x, /images/0100ssm/ssm109/blog.031.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm109/blog.031.png"
+        title="/images/0100ssm/ssm109/blog.031.png" /></p>
+<p>图5-20个人中心界面图</p>
+<p>收货地址添加，在收货地址添加页面可以查看个人中心、我的订单、我的地址、我的收藏等如图5-21所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm109/blog.032.png"
+        data-srcset="/images/0100ssm/ssm109/blog.032.png, /images/0100ssm/ssm109/blog.032.png 1.5x, /images/0100ssm/ssm109/blog.032.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm109/blog.032.png"
+        title="/images/0100ssm/ssm109/blog.032.png" /></p>
+<p>图5-21收货地址添加界面图</p>
+<p>确认下单，在确认下单页面可以查看选择收货地址、清单列表等信息进行支付如图5-22所示。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/0100ssm/ssm109/blog.033.png"
+        data-srcset="/images/0100ssm/ssm109/blog.033.png, /images/0100ssm/ssm109/blog.033.png 1.5x, /images/0100ssm/ssm109/blog.033.png 2x"
+        data-sizes="auto"
+        alt="/images/0100ssm/ssm109/blog.033.png"
+        title="/images/0100ssm/ssm109/blog.033.png" /></p>
+<p>图5-22确认下单界面图</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2023-12-02</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/ssm109%E5%9F%BA%E4%BA%8Ejsp%E7%9A%84%E7%BD%91%E4%B8%8A%E6%89%8B%E6%9C%BA%E5%95%86%E5%9F%8E-jsp/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://chenqi199.github.io/ssm109%E5%9F%BA%E4%BA%8Ejsp%E7%9A%84%E7%BD%91%E4%B8%8A%E6%89%8B%E6%9C%BA%E5%95%86%E5%9F%8E-jsp/" data-title="ssm109基于jsp的网上手机商城&#43;jsp" data-hashtags="ssm网上,网上手机,手机商城"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://chenqi199.github.io/ssm109%E5%9F%BA%E4%BA%8Ejsp%E7%9A%84%E7%BD%91%E4%B8%8A%E6%89%8B%E6%9C%BA%E5%95%86%E5%9F%8E-jsp/" data-hashtag="ssm网上"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://chenqi199.github.io/ssm109%E5%9F%BA%E4%BA%8Ejsp%E7%9A%84%E7%BD%91%E4%B8%8A%E6%89%8B%E6%9C%BA%E5%95%86%E5%9F%8E-jsp/" data-title="ssm109基于jsp的网上手机商城&#43;jsp"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://chenqi199.github.io/ssm109%E5%9F%BA%E4%BA%8Ejsp%E7%9A%84%E7%BD%91%E4%B8%8A%E6%89%8B%E6%9C%BA%E5%95%86%E5%9F%8E-jsp/" data-title="ssm109基于jsp的网上手机商城&#43;jsp"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://chenqi199.github.io/ssm109%E5%9F%BA%E4%BA%8Ejsp%E7%9A%84%E7%BD%91%E4%B8%8A%E6%89%8B%E6%9C%BA%E5%95%86%E5%9F%8E-jsp/" data-title="ssm109基于jsp的网上手机商城&#43;jsp" data-ralateuid="https://gitee.com/chen_q_i"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ssm%E7%BD%91%E4%B8%8A/">Ssm网上</a>,&nbsp;<a href="/tags/%E7%BD%91%E4%B8%8A%E6%89%8B%E6%9C%BA/">网上手机</a>,&nbsp;<a href="/tags/%E6%89%8B%E6%9C%BA%E5%95%86%E5%9F%8E/">手机商城</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/0104springboot%E5%9F%BA%E4%BA%8E%E4%BF%9D%E4%BF%A1%E6%81%AF%E5%AD%A6%E7%A7%91%E5%B9%B3%E5%8F%B0%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/" class="prev" rel="prev" title="0104springboot基于保信息学科平台系统设计与实现"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>0104springboot基于保信息学科平台系统设计与实现</a>
+            <a href="/ssm108%E5%86%9C%E4%B8%9A%E8%A7%86%E9%A2%91%E5%AE%9E%E6%97%B6%E5%8F%91%E5%B8%83%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1-jsp/" class="next" rel="next" title="ssm108农业视频实时发布管理系统设计&#43;jsp">ssm108农业视频实时发布管理系统设计+jsp<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.128.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="chenqi199" target="_blank">chenqi</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-CN","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

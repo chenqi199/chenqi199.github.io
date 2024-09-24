@@ -1,17 +1,16 @@
 # 0241springboot失物招领平台的设计与实现
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0241springboot失物招领平台的设计与实现](https://github.com/GraduationProject-springboot/0241springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1EbH?p=11)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
 ## 1.1课题研究背景意义
@@ -159,13 +158,13 @@ JSP技术提供了一个共同的机制类似的借口动态模型，设计更�
 ### 3.3.1 系统开发流程
 失物招领平台开发中时，首先进行需求分析，进而对系统进行总体的设计规划，设计系统功能模块，数据库的选择等，本系统的开发流程如图3-1所示
 
-![](/images/0200stringboot/0241springboot/blog.001.png)
+![](/images/0200wxapp//blog.001.png)
 
 图3-1系统开发流程图
 ### 3.3.2 系统登录流程
 用户要想进入系统，必须首先通过正确的用户名、密码、权限和验证码进行登录系统。登录模块主要完成系统管理员和用户的登入，输入账号、密码、权限和验证码，系统自动验证数据的正确与否，登录信息正确则进行对应用户主界面，否则无权进行登录系统。系统流程图如图3-2所示
 
-![](/images/0200stringboot/0241springboot/blog.002.png)
+![](/images/0200wxapp//blog.002.png)
 
 图3-2系统登录流程图
 ## 3.4系统设计规则与运行环境
@@ -200,7 +199,7 @@ CPU：酷睿i3 -3.0GHZ    内存：2G以上     硬盘：320GB
 
 服务器和程序
 
-![](/images/0200stringboot/0241springboot/blog.003.png)
+![](/images/0200wxapp//blog.003.png)
 
 图4-1 系统结构图
 ## 4.2 系统架构设计
@@ -267,13 +266,13 @@ CPU：酷睿i3 -3.0GHZ    内存：2G以上     硬盘：320GB
 
 公告信息添加
 
-![](/images/0200stringboot/0241springboot/blog.004.png)    
+![](/images/0200wxapp//blog.004.png)    
 
 图4-2 系统框架图
 ### 4.2.2系统网络拓扑结构图
 本失物招领平台采用先进的B/S架构，该架构具有开发简单、共享性强、维护简单方便等诸多优点。本系统的网络拓扑图如图4-3所示：
 
-![](/images/0200stringboot/0241springboot/blog.005.png)
+![](/images/0200wxapp//blog.005.png)
 
 图4-3 系统的网络拓扑图
 
@@ -287,52 +286,52 @@ CPU：酷睿i3 -3.0GHZ    内存：2G以上     硬盘：320GB
 
 （1）下图是论坛实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shiwuzhaoling\论坛.jpg](/images/0200stringboot/0241springboot/blog.006.jpeg "C:\Users\Administrator\Desktop\img\shiwuzhaoling\论坛.jpg")
+![C:\Users\Administrator\Desktop\img\shiwuzhaoling\论坛.jpg](/images/0200wxapp//blog.006.jpeg "C:\Users\Administrator\Desktop\img\shiwuzhaoling\论坛.jpg")
 图4.1 论坛实体属性图
 
 （2）下图是失物认领实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shiwuzhaoling\失物认领.jpg](/images/0200stringboot/0241springboot/blog.007.jpeg "C:\Users\Administrator\Desktop\img\shiwuzhaoling\失物认领.jpg")
+![C:\Users\Administrator\Desktop\img\shiwuzhaoling\失物认领.jpg](/images/0200wxapp//blog.007.jpeg "C:\Users\Administrator\Desktop\img\shiwuzhaoling\失物认领.jpg")
 图4.2 失物认领实体属性图
 
 （3）下图是用户实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shiwuzhaoling\用户.jpg](/images/0200stringboot/0241springboot/blog.008.jpeg "C:\Users\Administrator\Desktop\img\shiwuzhaoling\用户.jpg")
+![C:\Users\Administrator\Desktop\img\shiwuzhaoling\用户.jpg](/images/0200wxapp//blog.008.jpeg "C:\Users\Administrator\Desktop\img\shiwuzhaoling\用户.jpg")
 图4.3 用户实体属性图
 
 （4）下图是公告实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shiwuzhaoling\公告.jpg](/images/0200stringboot/0241springboot/blog.009.jpeg "C:\Users\Administrator\Desktop\img\shiwuzhaoling\公告.jpg")
+![C:\Users\Administrator\Desktop\img\shiwuzhaoling\公告.jpg](/images/0200wxapp//blog.009.jpeg "C:\Users\Administrator\Desktop\img\shiwuzhaoling\公告.jpg")
 图4.4 公告实体属性图
 
 （5）下图是字典表实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shiwuzhaoling\字典表.jpg](/images/0200stringboot/0241springboot/blog.010.jpeg "C:\Users\Administrator\Desktop\img\shiwuzhaoling\字典表.jpg")
+![C:\Users\Administrator\Desktop\img\shiwuzhaoling\字典表.jpg](/images/0200wxapp//blog.010.jpeg "C:\Users\Administrator\Desktop\img\shiwuzhaoling\字典表.jpg")
 图4.5 字典表实体属性图
 
 （6）下图是失物招领实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shiwuzhaoling\失物招领.jpg](/images/0200stringboot/0241springboot/blog.011.jpeg "C:\Users\Administrator\Desktop\img\shiwuzhaoling\失物招领.jpg")
+![C:\Users\Administrator\Desktop\img\shiwuzhaoling\失物招领.jpg](/images/0200wxapp//blog.011.jpeg "C:\Users\Administrator\Desktop\img\shiwuzhaoling\失物招领.jpg")
 图4.6 失物招领实体属性图
 
 （7）下图是物品挂失留言实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shiwuzhaoling\物品挂失留言.jpg](/images/0200stringboot/0241springboot/blog.012.jpeg "C:\Users\Administrator\Desktop\img\shiwuzhaoling\物品挂失留言.jpg")
+![C:\Users\Administrator\Desktop\img\shiwuzhaoling\物品挂失留言.jpg](/images/0200wxapp//blog.012.jpeg "C:\Users\Administrator\Desktop\img\shiwuzhaoling\物品挂失留言.jpg")
 图4.7 物品挂失留言实体属性图
 
 （8）下图是物品挂失实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shiwuzhaoling\物品挂失.jpg](/images/0200stringboot/0241springboot/blog.013.jpeg "C:\Users\Administrator\Desktop\img\shiwuzhaoling\物品挂失.jpg")
+![C:\Users\Administrator\Desktop\img\shiwuzhaoling\物品挂失.jpg](/images/0200wxapp//blog.013.jpeg "C:\Users\Administrator\Desktop\img\shiwuzhaoling\物品挂失.jpg")
 图4.8 物品挂失实体属性图
 
 （9）下图是失物招领留言实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shiwuzhaoling\失物招领留言.jpg](/images/0200stringboot/0241springboot/blog.014.jpeg "C:\Users\Administrator\Desktop\img\shiwuzhaoling\失物招领留言.jpg")
+![C:\Users\Administrator\Desktop\img\shiwuzhaoling\失物招领留言.jpg](/images/0200wxapp//blog.014.jpeg "C:\Users\Administrator\Desktop\img\shiwuzhaoling\失物招领留言.jpg")
 图4.9 失物招领留言实体属性图
 
 （10）下图是用户表实体和其具备的属性。
 
-![C:\Users\Administrator\Desktop\img\shiwuzhaoling\用户表.jpg](/images/0200stringboot/0241springboot/blog.015.jpeg "C:\Users\Administrator\Desktop\img\shiwuzhaoling\用户表.jpg")
+![C:\Users\Administrator\Desktop\img\shiwuzhaoling\用户表.jpg](/images/0200wxapp//blog.015.jpeg "C:\Users\Administrator\Desktop\img\shiwuzhaoling\用户表.jpg")
 图4.10 用户表实体属性图
 ### 4.3.4 数据库表
 本系统数据库的功能主要是存储网站中所有数据，以便进行操作。
@@ -438,28 +437,28 @@ CPU：酷睿i3 -3.0GHZ    内存：2G以上     硬盘：320GB
 
 还进行了对用户名称的模糊查询的条件
 
-![](/images/0200stringboot/0241springboot/blog.016.png)
+![](/images/0200wxapp//blog.016.png)
 
 图5.1 用户信息管理页面
 ### 5.2 失物招领管理
 如图5.2显示的就是失物招领管理页面，此页面提供给管理员的功能有：查看已发布的失物招领数据，修改失物招领，失物招领作废，即可删除。
 
-![](/images/0200stringboot/0241springboot/blog.017.png)
+![](/images/0200wxapp//blog.017.png)
 
-![](/images/0200stringboot/0241springboot/blog.018.png)
+![](/images/0200wxapp//blog.018.png)
 
 图5.2 失物招领管理页面
 ### 5.3失物认领管理
 如图5.3显示的就是失物认领管理页面，此页面提供给管理员的功能有：根据失物认领进行条件查询，还可以对失物认领进行新增、修改、查询操作等等。
 
 
-![](/images/0200stringboot/0241springboot/blog.019.png)
+![](/images/0200wxapp//blog.019.png)
 
 图5.3 失物认领管理页面
 ### 5.1公告信息管理
 如图5.4显示的就是公告信息管理页面，此页面提供给管理员的功能有：根据公告信息进行新增、修改、查询操作等等。
 
-![](/images/0200stringboot/0241springboot/blog.020.png)
+![](/images/0200wxapp//blog.020.png)
 
 
 图5.4 公告信息管理页面

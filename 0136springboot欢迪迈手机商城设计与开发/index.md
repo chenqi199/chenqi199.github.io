@@ -1,17 +1,16 @@
 # 0136springboot欢迪迈手机商城设计与开发
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0136springboot欢迪迈手机商城设计与开发](https://github.com/GraduationProject-springboot/0136springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1ECs?p=35)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 绪论
 ## 1.1 研究背景
@@ -38,13 +37,13 @@
 ## 2.2 B/S结构介绍  
 在早期，一些使用HTML语言编写的文件，再集合一些其它资源文件就可以组成一个最简单的Web程序，了解了Web程序也需要了解Web站点，它们之间的关系就是一个或者多个Web程序可以放在Internet上的一个Web站点（Web服务器）中进行使用。可以说Web应用程序的开发也带动了B/S这种网络结构模式的兴起。B是Brower（浏览器）的首字母，S是Server（服务器）的首字母，两个首字母进行组合就成了网络结构模式的简称B/S。由于这种结构模式通过安装在用户端的浏览器进行服务器的访问，可以把程序的核心功能安排在服务器中进行处理，给程序的开发，后期使用和维护省去了许多工作。图2.1展示的就是使用这种架构开发的程序的工作原理。
 
-![](/images/0100stringboot/0136springboot/blog.001.png)
+![](/images/0100wxapp//blog.001.png)
 
 图2.1 B/S架构的工作原理图
 ## 2.3 Mysql数据库介绍
 开发的程序面向用户的只是程序的功能界面，让用户操作程序界面的各个功能，那么很多人就会问，用户使用程序功能生成的数据信息放在哪里的？这个就需要涉及到数据库的知识了，一般来说，程序开发通常就会对常用数据存储工具的特点进行分析比对，比如Mysql数据库的特点与优势，Access数据库的特点与优势，Sqlserver数据库的特点与优势等，最终看哪个数据库与需要开发的程序比较匹配，也符合程序功能运行需要的数据存储要求，比如，需要开发商业级别的程序，存储的数据对数据库要求较高，可以选用Oracle，如果只是比较简单的程序，对数据存储没有过多要求，可以选用微软旗下的Access，当开发程序要求数据库占用空间小，并能满足程序数据存储要求时，就可以考虑Oracle公司从瑞典MySQL AB公司在很早之前就收购过一个关系型数据库，它是现在的Mysql数据库。在数据库工具里面它是最受认可的其中一个应用软件。需要说明的信息就是，本程序的开发就运用到了此数据库。它将程序数据通过使用不同的数据表格进行保存，在增加了程序数据的存储速度的时候，也提高了数据库的灵活性。 图2.2展示的就是MySQL的架构图。
 
-![](/images/0100stringboot/0136springboot/blog.002.png)
+![](/images/0100wxapp//blog.002.png)
 
 图2.2 MySQL数据库架构图
 
@@ -76,25 +75,25 @@
 ### 3.3.1 操作流程分析
 程序上交给用户进行使用时，需要提供程序的操作流程图（如图3.1所示），这样便于用户容易理解程序的具体工作步骤，现如今程序的操作流程都有一个大致的标准，即先通过登录页面提交登录数据，通过程序验证正确之后，用户才能在程序功能操作区页面操作对应的功能。
 
-![](/images/0100stringboot/0136springboot/blog.003.png)
+![](/images/0100wxapp//blog.003.png)
 
 图3.1 程序操作流程图
 ### 3.3.2 登录流程分析
 在这个部分，需要对程序的登录功能模块的运行流程（如图3.2所示），进行单独说明。程序设置登录模块也是为了安全起见，让用户使用放心，登录模块主要就是让用户提交登录信息，程序进行数据验证，验证通过的用户才能够成功登录程序。
 
-![](/images/0100stringboot/0136springboot/blog.004.png)
+![](/images/0100wxapp//blog.004.png)
 
 图3.2 程序登录流程图
 ### 3.3.3 信息添加流程分析
 程序的添加功能就是提供给操作者录入信息的功能，不管是涉及到用户信息添加，还是其它功能模块涉及到的信息添加，程序的信息添加流程（如图3.3所示）都是一致的。程序都是先对操作者录入的数据进行判定，这个判定规则是一段提前编写完成的程序代码，当程序判定数据符合要求时，才会把操作者录入的数据登记在数据表里面，比如添加的用户信息，就会把新添加的用户信息写入用户信息的数据表文件里面。
 
-![](/images/0100stringboot/0136springboot/blog.005.png)
+![](/images/0100wxapp//blog.005.png)
 
 图3.3 信息添加流程图
 ### 3.3.4 信息删除流程分析
 当从程序里面删除某种无效数据时，遵循程序的信息删除流程（如图3.4所示），先要选中操作者需要删除的数据，程序为了预防操作者误删信息，也会进行提示，当操作者真正确定要删选中的信息时，该信息就会从数据库中被永久删除。
 
-![](/images/0100stringboot/0136springboot/blog.006.png)
+![](/images/0100wxapp//blog.006.png)
 
 图3.4 信息删除流程图
 
@@ -103,7 +102,7 @@
 ## 4.1 系统概要设计
 本次拟开发的系统为了节约开发成本，也为了后期在维护和升级上的便利性，打算通过浏览器来实现系统功能界面的展示，让程序软件的主要事务集中在后台的服务器端处理，前端部分只用处理少量的事务逻辑。下面使用一张图（如图4.1所示）来说明程序的工作原理。
 
-![](/images/0100stringboot/0136springboot/blog.007.png)
+![](/images/0100wxapp//blog.007.png)
 
 图4.1 程序工作的原理图
 ## 4.2 系统功能结构设计
@@ -158,7 +157,7 @@
 反商品资讯添加
 
 
-![](/images/0100stringboot/0136springboot/blog.008.png)
+![](/images/0100wxapp//blog.008.png)
 
 图4.2 系统功能结构图
 
@@ -196,7 +195,7 @@
 管理
 
 查询
-![](/images/0100stringboot/0136springboot/blog.009.png)
+![](/images/0100wxapp//blog.009.png)
 
 图4.8 系统E-R图
 ### 4.3.2 数据库表结构设计
@@ -283,26 +282,26 @@
 
 还进行了对用户名称的模糊查询的条件
 
-![](/images/0100stringboot/0136springboot/blog.010.png)
+![](/images/0100wxapp//blog.010.png)
 
 图5.1 用户信息管理页面
 ### 5.2 商品分类管理
 如图5.2显示的就是商品分类管理页面，此页面提供给管理员的功能有：查看已发布的商品分类数据，修改商品分类，商品分类作废，即可删除。
 
-![](/images/0100stringboot/0136springboot/blog.011.png)
+![](/images/0100wxapp//blog.011.png)
 
 图5.2 商品分类管理页面
 ### 5.3商品信息管理
 如图5.3显示的就是商品信息管理页面，此页面提供给管理员的功能有：根据商品名称进行条件查询，还可以对商品数据进行新增、修改、查询操作等等。
 
 
-![](/images/0100stringboot/0136springboot/blog.012.png)
+![](/images/0100wxapp//blog.012.png)
 
 图5.3 商品信息管理页面
 ### 5.1商品资讯管理
 如图5.4显示的就是商品资讯管理页面，此页面提供给管理员的功能有：查看已发布的商品资讯数据，修改商品资讯，商品资讯作废，即可删除。
 
-![](/images/0100stringboot/0136springboot/blog.013.png)
+![](/images/0100wxapp//blog.013.png)
 
 图5.4 商品资讯管理页面
 # 系统

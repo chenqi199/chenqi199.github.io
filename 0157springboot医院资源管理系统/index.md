@@ -1,17 +1,16 @@
 # 0157springboot医院资源管理系统
 
 
+# [项目清单 包安装运行](http://chenqi1990.site) 官网地址 http://chenqi1990.site
+
 # [0157springboot医院资源管理系统](https://github.com/GraduationProject-springboot/0157springboot)
 
 ![picture](https://raw.githubusercontent.com/GraduationProject-springboot/.github/main/img/wx.png)
 
-# [项目清单](https://chenqi1990.site) 包安装运行
-
 ### [github 项目仓库](https://github.com/GraduationProject-springboot/allSpringbootProjects) 开源仅有后端代码
 
 ### 点击播放视频 ▼
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1jqaLe1ECs?p=55)
-
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://www.bilibili.com/video/BV1ULbQeREgz?p=1)
 
 # 第1章 绪论
 ## 1.1 课题背景
@@ -73,25 +72,25 @@ SpringBoot应用系统开发模板的基本架构设计从前端到后台进行�
 ### 3.2.1 操作流程
 进入本系统需要访问者提供验证信息。验证合格的访问者才能获取访问资格。其具体的操作流程见下图。访问者根据登录界面设置的信息项如实填写，待信息通过验证后，访问者可以进入指定的页面享受本系统提供的服务和阅读本系统的相关信息。
 
-![](/images/0100stringboot/0157springboot/blog.001.png)
+![](/images/0100wxapp//blog.001.png)
 
 图3.1 操作流程图
 ### 3.2.2 登录流程
 本系统的登录模块，其内部的流程见下图。主要对访问本系统的人员提供的验证信息进行逐个判断，系统面对录入错误的信息会给出提示，比如，提示账号不对，或提示密码不匹配等提示信息。总之，在登录页面填写的所有信息都符合要求，访问者就登录成功了。
 
-![](/images/0100stringboot/0157springboot/blog.002.png)
+![](/images/0100wxapp//blog.002.png)
 
 图3.2 登录流程图
 ### 3.2.3 删除信息流程
 本系统在经常性的使用后，会产生很多失去价值的信息，因此就需要及时清理数据，腾出系统的空间。对这些数据进行清理时，其对应的流程见下图。先选中要清理的数据，通过反复确认需要清理的数据，避免操作人员误删。已经删除的数据就不会出现在系统里面。
 
-![](/images/0100stringboot/0157springboot/blog.003.png)
+![](/images/0100wxapp//blog.003.png)
 
 图3.3 删除信息流程图
 ### 3.2.4 添加信息流程
 本系统主要用于显示信息，提供服务，其中，数据添加功能就是其中的服务之一，具体流程见下图。让操作者在信息添加的页面录入数据，待这些数据被提交检验合格后，就会在系统指定页面显示出来。
 
-![](/images/0100stringboot/0157springboot/blog.004.png)
+![](/images/0100wxapp//blog.004.png)
 
 图3.4 添加信息流程图
 ## 3.3 性能需求
@@ -169,7 +168,7 @@ SpringBoot应用系统开发模板的基本架构设计从前端到后台进行�
 
 
 药品类型管理
-## ![](/images/0100stringboot/0157springboot/blog.005.png)
+## ![](/images/0100wxapp//blog.005.png)
 图4.1 添加信息流程图
 ## 4.3 数据库设计
 开发一个系统也需要提前设计数据库。这里的数据库是相关数据的集合，存储在一起的这些数据也是按照一定的组织方式进行的。目前，数据库能够服务于多种应用程序，则是源于它存储方式最佳，具备数据冗余率低的优势。虽然数据库为程序提供信息存储服务，但它与程序之间也可以保持较高的独立性。总而言之，数据库经历了很长一段时间的发展，从最初的不为人知，到现在的人尽皆知，其相关技术也越发成熟，同时也拥有着坚实的理论基础。
@@ -178,43 +177,43 @@ SpringBoot应用系统开发模板的基本架构设计从前端到后台进行�
 
 关系：关系就是数据库中的一张数据表，每张数据表都有命名，也就是每个关系也有名字，那就是数据表名；元组：元组就是数据表中的一行记录；属性：属性就是数据表中的字段，也就是数据表中的一列；域：域就是对数据表中属性的取值进行限定；关键字：关键字就是数据表中的主键。各实体信息的E-R图如图4.2、图4.3、图4.4、图4.5、图4.6、图4.7、图4.8、图4.9、图4.10所示，系统总体E-R图如图4.11所示。
 
-![](/images/0100stringboot/0157springboot/blog.006.png)
+![](/images/0100wxapp//blog.006.png)
 
 图4.2 管理员信息E-R图
 
-![](/images/0100stringboot/0157springboot/blog.007.png)
+![](/images/0100wxapp//blog.007.png)
 
 图4.3 用户信息E-R图
 
-![](/images/0100stringboot/0157springboot/blog.008.png)
+![](/images/0100wxapp//blog.008.png)
 
 图4.4 医生信息E-R图
 
-![](/images/0100stringboot/0157springboot/blog.009.png)
+![](/images/0100wxapp//blog.009.png)
 
 图4.5 字典信息E-R图
 
-![](/images/0100stringboot/0157springboot/blog.010.png)
+![](/images/0100wxapp//blog.010.png)
 
 图4.6 医生预约信息E-R图
 
-![](/images/0100stringboot/0157springboot/blog.011.png)
+![](/images/0100wxapp//blog.011.png)
 
 图4.7 病史信息E-R图
 
-![](/images/0100stringboot/0157springboot/blog.012.png)
+![](/images/0100wxapp//blog.012.png)
 
 图4.8 住院信息E-R图
 
-![](/images/0100stringboot/0157springboot/blog.013.png)
+![](/images/0100wxapp//blog.013.png)
 
 图4.9 药品信息E-R图
 
-![](/images/0100stringboot/0157springboot/blog.014.png)
+![](/images/0100wxapp//blog.014.png)
 
 图4.10 公告信息E-R图
 
-![](/images/0100stringboot/0157springboot/blog.015.png)
+![](/images/0100wxapp//blog.015.png)
 
 图4.11 系统总体E-R图
 
@@ -352,35 +351,35 @@ SpringBoot应用系统开发模板的基本架构设计从前端到后台进行�
 
 还进行了对用户名称的模糊查询的条件
 
-![](/images/0100stringboot/0157springboot/blog.016.png)
+![](/images/0100wxapp//blog.016.png)
 
-![](/images/0100stringboot/0157springboot/blog.017.png)
+![](/images/0100wxapp//blog.017.png)
 
 图5.1 用户信息管理页面
 ### 5.2 医生信息管理
 如图5.2显示的就是医生信息管理页面，此页面提供给管理员的功能有：查看已发布的医生信息数据，修改医生信息，医生信息作废，即可删除，还进行了对医生信息名称的模糊查询 医生信息信息的类型查询等等一些条件。
 
-![](/images/0100stringboot/0157springboot/blog.018.png)
+![](/images/0100wxapp//blog.018.png)
 
-![](/images/0100stringboot/0157springboot/blog.019.png)
+![](/images/0100wxapp//blog.019.png)
 
 
 图5.2 医生信息管理页面
 ### 5.3药品信息管理
 如图5.3显示的就是药品信息管理页面，此页面提供给管理员的功能有：根据药品信息进行条件查询，还可以对药品信息进行新增、修改、查询操作等等。
 
-![](/images/0100stringboot/0157springboot/blog.020.png)
+![](/images/0100wxapp//blog.020.png)
 
-![](/images/0100stringboot/0157springboot/blog.021.png)
+![](/images/0100wxapp//blog.021.png)
 
 
 图5.3 药品信息管理页面
 ### 5.1公告信息管理
 如图5.4显示的就是公告信息管理页面，此页面提供给管理员的功能有：根据公告信息进行新增、修改、查询操作等等。
 
-![](/images/0100stringboot/0157springboot/blog.022.png)
+![](/images/0100wxapp//blog.022.png)
 
-![](/images/0100stringboot/0157springboot/blog.023.png)
+![](/images/0100wxapp//blog.023.png)
 
 图5.4 公告信息管理页面
 
